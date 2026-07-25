@@ -1,8 +1,10 @@
+import { useEffect, useState } from "react";
 import { Check } from "lucide-react";
 import type { Category, Course } from "@/types";
 import type { SubjectProgress } from "@/lib/subjectProgress";
 import { COURSES_PER_LEVEL } from "@/lib/subjectProgress";
 import { SUBJECT_GRADIENT, SUBJECT_BG } from "@/lib/subjectStyles";
+import { useReducedMotion } from "@/hooks/useReducedMotion";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
@@ -13,23 +15,119 @@ interface LearningDoneCardProps {
   category: Category;
   /** Progression de la matière, calculée après crédit du cours (reflète le niveau qu'on vient d'atteindre) */
   subject: SubjectProgress;
+  /** Progression de la matière juste avant le crédit du cours, pour animer le gain */
+  subjectBefore: SubjectProgress;
+  /** Cours déjà terminé avant cette tentative : aucun gain réel, pas d'animation */
+  isRevision: boolean;
   rankedUp: boolean;
   newRank: string;
   onMiniQuiz: () => void;
   onSkip: () => void;
 }
 
+const FILL_DELAY_MS = 300;
+const FILL_DURATION_MS = 900;
+/** Pause à 100 % pendant que le badge de niveau bascule, avant la remise à zéro */
+const LEVEL_BUMP_PAUSE_MS = 400;
+/** Pause à 0 % (sans transition) pour laisser le navigateur peindre le reset avant de relancer l'animation */
+const RESET_PAUSE_MS = 150;
+
+/** Étapes de l'animation « passage de niveau » : plein → bascule du badge → reset instantané → reste du niveau suivant */
+type LevelUpStage = "fillingToFull" | "atFull" | "reset" | "fillingRemainder";
+
 /** Écran de fin de leçons : « Apprentissage terminé ! », avant le Mini Quiz optionnel */
 export function LearningDoneCard({
   course,
   category,
   subject,
+  subjectBefore,
+  isRevision,
   rankedUp,
   newRank,
   onMiniQuiz,
   onSkip,
 }: LearningDoneCardProps) {
+  const reducedMotion = useReducedMotion();
+  const leveledUp = !isRevision && subject.level > subjectBefore.level;
   const coursesLeft = COURSES_PER_LEVEL - subject.coursesIntoLevel;
+
+  const [stage, setStage] = useState<LevelUpStage>("fillingToFull");
+  const [xpDisplayed, setXpDisplayed] = useState(isRevision || reducedMotion ? course.xp : 0);
+
+  useEffect(() => {
+    if (!leveledUp || reducedMotion) return;
+    setStage("fillingToFull");
+    const toFull = FILL_DELAY_MS + FILL_DURATION_MS;
+    const toReset = toFull + LEVEL_BUMP_PAUSE_MS;
+    const toRemainder = toReset + RESET_PAUSE_MS;
+    const t1 = window.setTimeout(() => setStage("atFull"), toFull);
+    const t2 = window.setTimeout(() => setStage("reset"), toReset);
+    const t3 = window.setTimeout(() => setStage("fillingRemainder"), toRemainder);
+    return () => {
+      window.clearTimeout(t1);
+      window.clearTimeout(t2);
+      window.clearTimeout(t3);
+    };
+  }, [leveledUp, reducedMotion]);
+
+  useEffect(() => {
+    if (isRevision || reducedMotion) {
+      setXpDisplayed(course.xp);
+      return;
+    }
+    setXpDisplayed(0);
+    let rafId = 0;
+    const startTimeout = window.setTimeout(() => {
+      const start = performance.now();
+      const step = (now: number) => {
+        const t = Math.min(1, (now - start) / FILL_DURATION_MS);
+        setXpDisplayed(Math.round(course.xp * t));
+        if (t < 1) rafId = requestAnimationFrame(step);
+      };
+      rafId = requestAnimationFrame(step);
+    }, FILL_DELAY_MS);
+    return () => {
+      window.clearTimeout(startTimeout);
+      cancelAnimationFrame(rafId);
+    };
+  }, [course.xp, isRevision, reducedMotion]);
+
+  const displayedLevel = leveledUp && !reducedMotion && stage === "fillingToFull" ? subjectBefore.level : subject.level;
+  const showLevelPop = leveledUp && !reducedMotion && stage !== "fillingToFull";
+
+  let barFrom = subject.progressPct;
+  let barPercent = subject.progressPct;
+  let barAnimated = false;
+  if (!isRevision && !reducedMotion) {
+    if (!leveledUp) {
+      barFrom = subjectBefore.progressPct;
+      barPercent = subject.progressPct;
+      barAnimated = true;
+    } else {
+      switch (stage) {
+        case "fillingToFull":
+          barFrom = subjectBefore.progressPct;
+          barPercent = 100;
+          barAnimated = true;
+          break;
+        case "atFull":
+          barFrom = 100;
+          barPercent = 100;
+          barAnimated = false;
+          break;
+        case "reset":
+          barFrom = 0;
+          barPercent = 0;
+          barAnimated = false;
+          break;
+        case "fillingRemainder":
+          barFrom = 0;
+          barPercent = subject.progressPct;
+          barAnimated = true;
+          break;
+      }
+    }
+  }
 
   return (
     <Card className="overflow-hidden text-center">
@@ -51,7 +149,9 @@ export function LearningDoneCard({
             <span className="font-heading text-sm font-bold">
               {category.emoji} {category.name}
             </span>
-            <Badge tone="gold">NIV. {subject.level}</Badge>
+            <Badge tone="gold">
+              <span className={`inline-block ${showLevelPop ? "sankofa-pop" : ""}`}>NIV. {displayedLevel}</span>
+            </Badge>
           </div>
           <div className="mt-2 flex items-center justify-between text-sm font-medium text-[#5c554b]">
             <span>★ {course.xp} XP</span>
@@ -59,11 +159,20 @@ export function LearningDoneCard({
               {coursesLeft} cours avant niv. {subject.level + 1}
             </span>
           </div>
-          <ProgressBar percent={subject.progressPct} fillClassName={SUBJECT_BG[category.color]} />
+          <ProgressBar
+            percent={barPercent}
+            from={barFrom}
+            animated={barAnimated}
+            fillClassName={SUBJECT_BG[category.color]}
+          />
         </div>
 
         <div className="mt-4 flex flex-wrap justify-center gap-2.5">
-          <Badge tone="gold">＋{course.xp} XP gagnés</Badge>
+          {isRevision ? (
+            <Badge tone="neutral">↻ Révision</Badge>
+          ) : (
+            <Badge tone="gold">＋{xpDisplayed} XP gagnés</Badge>
+          )}
           {rankedUp && <Badge tone="gold">🏅 Nouveau rang : {newRank}</Badge>}
         </div>
 

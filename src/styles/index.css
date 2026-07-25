@@ -56,3 +56,19 @@ h4 {
 .scrollbar-none::-webkit-scrollbar {
   display: none;
 }
+
+/* Petit "pop" pour signaler un changement de valeur (ex. badge de niveau) */
+@keyframes sankofa-pop {
+  0% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.sankofa-pop {
+  animation: sankofa-pop 420ms ease-out;
+}

@@ -20,6 +20,7 @@ export function Button({ children, variant = "primary", className = "", ...rest 
       className={`inline-flex items-center justify-center gap-2 rounded-full border-[3px] border-ink
         px-6 py-3 font-heading text-[15px] font-bold shadow-sm
         transition-transform active:translate-y-[3px] active:shadow-none
+        disabled:cursor-not-allowed disabled:opacity-40 disabled:active:translate-y-0 disabled:active:shadow-sm
         ${VARIANT_CLASSES[variant]} ${className}`}
       {...rest}
     >

@@ -6,7 +6,7 @@ import { getCategory } from "@/data/categories";
 import { PARCOURS } from "@/data/parcours";
 import { useAppStore } from "@/store/useAppStore";
 import { MASTERY_PER_COURSE } from "@/lib/gamification";
-import { getSubjectProgress } from "@/lib/subjectProgress";
+import { getSubjectProgress, type SubjectProgress } from "@/lib/subjectProgress";
 import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -38,6 +38,8 @@ export function CourseDetailScreen() {
   const [phase, setPhase] = useState<Phase>("lessons");
   const [lessonIndex, setLessonIndex] = useState(0);
   const [rankAtStart, setRankAtStart] = useState<string | null>(null);
+  const [subjectBefore, setSubjectBefore] = useState<SubjectProgress | null>(null);
+  const [isRevision, setIsRevision] = useState(false);
 
   useEffect(() => {
     if (course) setLastCourse(course.id);
@@ -74,6 +76,8 @@ export function CourseDetailScreen() {
   function finishLearning() {
     const alreadyCompleted = progress.completedCourseIds.includes(course!.id);
     setRankAtStart(progress.rank);
+    setSubjectBefore(getSubjectProgress(course!.categoryId, progress, COURSES));
+    setIsRevision(alreadyCompleted);
     completeLesson(course!.id, course!.lessons[lessonIndex].id);
     completeCourse(course!.id, course!.xp);
     if (!alreadyCompleted) addMastery(course!.categoryId, MASTERY_PER_COURSE);
@@ -133,11 +137,13 @@ export function CourseDetailScreen() {
         />
       )}
 
-      {phase === "learningDone" && (
+      {phase === "learningDone" && subjectBefore && (
         <LearningDoneCard
           course={course}
           category={category}
           subject={getSubjectProgress(course.categoryId, progress, COURSES)}
+          subjectBefore={subjectBefore}
+          isRevision={isRevision}
           rankedUp={rankedUp}
           newRank={progress.rank}
           onMiniQuiz={() => setPhase("quiz")}

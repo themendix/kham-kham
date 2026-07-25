@@ -4,7 +4,7 @@ import { Heart, BookOpen, CheckCircle2 } from "lucide-react";
 import type { Category, Course } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
-import { getCourseImage } from "@/lib/courseImages";
+import { getCourseImage, getCourseImagePosition } from "@/lib/courseImages";
 
 interface CourseCardProps {
   course: Course;
@@ -61,7 +61,9 @@ export function CourseCard({
             <img
               src={image}
               alt={course.title}
-              className="absolute inset-0 h-full w-full object-cover"
+              className={`absolute inset-0 h-full w-full object-cover ${
+                getCourseImagePosition(course.id) === "left" ? "object-left" : "object-right"
+              }`}
               loading="lazy"
             />
           ) : (
@@ -72,7 +74,9 @@ export function CourseCard({
             onClick={handleToggleFavorite}
             aria-label={isFavorite ? "Retirer des favoris" : "Ajouter aux favoris"}
             aria-pressed={isFavorite}
-            className="absolute right-2 top-2 z-10 grid h-8 w-8 place-items-center self-start rounded-full border-[2.5px] border-ink bg-card"
+            className={`absolute right-2 z-10 grid h-8 w-8 place-items-center rounded-full border-[2.5px] border-ink bg-card ${
+              category.id === "geo" ? "bottom-2" : "top-2 self-start"
+            }`}
           >
             <Heart
               className={`h-3.5 w-3.5 ${isFavorite ? "text-danger" : ""}`}
