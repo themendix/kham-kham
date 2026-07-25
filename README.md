@@ -1,5 +1,7 @@
 # Sankofa
 
+[![CI](https://github.com/themendix/kham-kham/actions/workflows/ci.yml/badge.svg)](https://github.com/themendix/kham-kham/actions/workflows/ci.yml)
+
 **Sankofa** est une application web de culture générale africaine, gamifiée façon micro-apprentissage : fil de cartes à swiper, bibliothèque de cours, parcours guidés et suivi de progression (XP, niveau, streak).
 
 Le nom vient du concept akan *Sankofa* — « retourner chercher le savoir du passé ».
