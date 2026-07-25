@@ -1,0 +1,25 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: lts/*
+          cache: npm
+
+      - run: npm ci
+
+      # Chantier 7.2 : ajouter ici `npm run validate` (intégrité du contenu) une fois le script en place.
+      # Chantier 7.4 : ajouter ici `npm test` (Vitest) une fois la suite de tests en place.
+
+      - run: npm run typecheck
+
+      - run: npm run build
