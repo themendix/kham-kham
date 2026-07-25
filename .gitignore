@@ -18,3 +18,8 @@ dist-ssr
 
 # Claude Code — état local de session (non partagé)
 .claude/
+
+# Matériel de référence/travail local (pas du code ni du contenu de l'app)
+/picture/
+/photo modele/
+docs/contenu histoire/photo/
