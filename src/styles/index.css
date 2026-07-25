@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+/*
+ * Design system Sankofa — style "néo-brutaliste" (contours noirs épais,
+ * ombres portées nettes, coins arrondis) sur une palette africaine.
+ * Ces tokens sont déclarés dans @theme pour générer les utilitaires
+ * Tailwind (bg-cream, text-ink, font-heading…) et sont aussi exposés
+ * comme variables CSS classiques pour un usage direct en style inline.
+ */
+@theme {
+  --color-cream: #f6eedd;
+  --color-ink: #1e1b18;
+  --color-card: #ffffff;
+
+  --color-primary: #e24c2b;
+  --color-gold: #f2b705;
+  --color-flame: #f27405;
+  --color-success: #2e8b57;
+  --color-danger: #e4572e;
+  --color-indigo: #2d3a8c;
+
+  --color-histoire: #f3d9a4;
+  --color-geo: #bfe3b0;
+  --color-perso: #c9c3f0;
+  --color-arts: #f6c2d0;
+  --color-trad: #f4c3a8;
+  --color-actu: #a9e0de;
+
+  --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --radius-card: 20px;
+
+  /* Ombres portées nettes (sans flou), signature du style néo-brutaliste */
+  --shadow-card: 6px 6px 0 0 var(--color-ink);
+  --shadow-sm: 4px 4px 0 0 var(--color-ink);
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background-color: var(--color-cream);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-heading);
+}
+
+/* Scrollbars discrètes pour les rangs de cartes en scroll horizontal */
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
