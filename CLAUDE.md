@@ -83,11 +83,11 @@ L'app a 4 onglets (bottom nav) :
 ## Livraison (Phase 7, chantier 7.1 — Sécurisation et mise en ligne)
 
 - **Dépôt** : `https://github.com/themendix/kham-kham` (branche `main`). Tout le travail en cours (correctifs d'interface, assets et contenu Géographie, documentation Phase 7) a été commité en commits thématiques séparés — voir `git log`.
-- **Identité web** (`public/`) : `favicon.svg` (source vectorielle du logo, même motif que le badge du `TopBar`) décliné en PNG 16/32/180/192/512, `manifest.webmanifest` (installabilité, sans service worker — le mode hors-ligne appartient au lot 5 de la Phase 7), `og-image.png` (1200×630) pour l'aperçu de partage. Balises correspondantes dans `index.html`. **À faire une fois le site déployé** : remplacer les chemins relatifs `og:image`/`og:url` par des URLs absolues (`https://<url-netlify>/...`).
+- **Identité web** (`public/`) : `favicon.svg` (source vectorielle du logo, même motif que le badge du `TopBar`) décliné en PNG 16/32/180/192/512, `manifest.webmanifest` (installabilité, sans service worker — le mode hors-ligne appartient au lot 5 de la Phase 7), `og-image.png` (1200×630) pour l'aperçu de partage. Balises correspondantes dans `index.html`, `og:url`/`og:image` en URLs absolues vers l'URL publique ci-dessous.
 - **CI** : `.github/workflows/ci.yml`, déclenchée sur `push`/`pull_request` — `npm ci` → `npm run typecheck` → `npm run build`, bloquante en cas d'échec. Emplacements commentés pour `npm run validate` (chantier 7.2) et `npm test` (chantier 7.4).
 - **Déploiement — Netlify choisi** (parmi Vercel/Netlify/GitHub Pages). `netlify.toml` à la racine : build `npm run build`, publish `dist`, redirect SPA (`/* → /index.html`, statut 200) pour que les routes profondes de React Router (`/cours/:id`…) fonctionnent en accès direct. Aucun changement de `vite.config.ts` requis (`base` reste `/`, pas de sous-chemin).
-  - **Procédure** (à faire manuellement, nécessite le compte Netlify de l'utilisateur) : sur app.netlify.com → « Add new site » → « Import an existing project » → sélectionner le repo GitHub `themendix/kham-kham` → Netlify détecte `netlify.toml` (build/publish/redirects déjà configurés) → déployer. Une fois l'URL attribuée (ou un sous-domaine personnalisé choisi), la reporter ici et dans les balises `og:url`/`og:image` de `index.html`.
-- **URL publique** : _à renseigner après déploiement._
+  - **Procédure** : sur app.netlify.com → « Add new site » → « Import an existing project » → sélectionner le repo GitHub `themendix/kham-kham` → Netlify détecte `netlify.toml` (build/publish/redirects déjà configurés) → déployer. Chaque push sur `main` redéploie automatiquement.
+- **URL publique** : **https://sankofaa.netlify.app/**
 
 ## Ce qui N'est PAS encore fait
 
