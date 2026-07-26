@@ -251,25 +251,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇦",
     title: "Maroc",
     description: "Un royaume entre Atlantique, Méditerranée et Sahara, dominé par les montagnes de l'Atlas. Découvre le Maroc, ses villes impériales, ses phosphates et sa culture arabo-berbère.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-04-maroc-lesson-1",
-        title: "Le Maroc",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Maroc occupe l'extrémité nord-ouest de l'Afrique, à la fois atlantique et méditerranéenne. Il est séparé de l'Europe par le seul détroit de Gibraltar, large d'une quinzaine de kilomètres. Sur environ 446 000 km² (hors Sahara occidental, dont il contrôle l'essentiel), il partage ses frontières avec l'Algérie et, au sud, la Mauritanie.\n\n" +
+      "Le royaume est organisé en 12 régions administratives, de Tanger-Tétouan-Al Hoceïma au nord à Dakhla-Oued Ed-Dahab au sud. Casablanca, sur la façade atlantique, est de loin la plus grande ville et le principal port du pays, loin devant Rabat, la capitale politique.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays est structuré par les chaînes de l'Atlas : le Haut Atlas, avec le mont Toubkal (environ 4 167 m), plus haut sommet d'Afrique du Nord, et le Rif au nord. Entre les montagnes et l'océan s'étendent des plaines atlantiques fertiles ; le Sahara commence au sud-est. Le climat va du méditerranéen, au nord, à l'aride, au sud.\n\n" +
-      "#### 3. Population\n" +
+      "Entre le Haut Atlas et l'Anti-Atlas, plus au sud, s'étendent des vallées présahariennes comme celle du Drâa, réputées pour leurs palmeraies et leurs kasbahs en pisé. Le littoral atlantique, long de plus d'un millier de kilomètres, alterne plages, falaises et grandes plaines céréalières comme la Chaouia.",
+      },
+      {
+        id: "course-geographie-04-maroc-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Maroc compte environ 37 millions d'habitants (2024), répartis surtout dans les plaines de l'ouest et les grandes villes du littoral atlantique.\n\n" +
-      "#### 4. Société\n" +
+      "Plus de 60 % des Marocains vivent aujourd'hui en ville, une urbanisation portée par l'axe Casablanca-Rabat-Kénitra. La population reste jeune, même si la natalité a fortement baissé depuis les années 1980, et l'émigration vers l'Europe, notamment la France, l'Espagne et les Pays-Bas, a constitué depuis des décennies une importante diaspora.\n\n" +
+      "#### 2. Société\n" +
       "La société marocaine mêle Arabes et Berbères (Amazighs). L'arabe et l'amazighe sont langues officielles ; le français reste très utilisé. L'islam sunnite est la religion d'État, le roi portant le titre de « Commandeur des croyants ».\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Berbères se répartissent en trois grandes aires linguistiques (tarifit au nord, tamazight au centre, tachelhit au sud) et représentent une part importante de la population, notamment dans les montagnes de l'Atlas et du Rif. Le pays compte aussi une petite minorité chrétienne et une communauté juive marocaine historique, aujourd'hui très réduite mais dont l'héritage culturel reste visible dans plusieurs villes.",
+      },
+      {
+        id: "course-geographie-04-maroc-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le Maroc est le premier exportateur mondial de phosphates (via le groupe public OCP), matière première des engrais. Son économie s'appuie aussi sur l'agriculture, le tourisme, une industrie automobile et aéronautique en plein essor, le textile et la pêche.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : monarchie constitutionnelle. Chef de l'État (2026) : le Roi Mohammed VI. Monnaie : le dirham marocain (MAD). Devise nationale : « Dieu, la Patrie, le Roi ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le Maroc est indépendant de la France et de l'Espagne depuis 1956. Membre de la Ligue arabe et de l'Union du Maghreb arabe, il a réintégré l'Union africaine en 2017 après plus de trente ans d'absence, liée au différend sur le Sahara occidental.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Rabat. Le pays est célèbre pour ses villes impériales et leurs médinas classées à l'UNESCO — Fès et Marrakech — tandis que Casablanca est le poumon économique. Son drapeau rouge porte une étoile verte à cinq branches. Artisanat, thé à la menthe et culture berbère font partie de son identité.",
       },
     ],
@@ -317,25 +332,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇷",
     title: "Mauritanie",
     description: "Un trait d'union entre le Maghreb et l'Afrique noire, aux trois quarts saharien, ouvert sur un Atlantique très poissonneux. Découvre la Mauritanie, ses villes caravanières et ses richesses minières.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-05-mauritanie-lesson-1",
-        title: "La Mauritanie",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Mauritanie se situe à la charnière du Maghreb et de l'Afrique de l'Ouest, avec une façade atlantique. Sur environ 1,03 million de km², en grande partie saharien, elle est bordée par le Sahara occidental, l'Algérie, le Mali et, au sud, le Sénégal — dont la frontière est marquée par le fleuve Sénégal.\n\n" +
+      "Le pays est découpé en une quinzaine de régions, dont Nouakchott, la capitale, forme à elle seule un district particulier sur la côte atlantique. La quasi-totalité de la vie économique et administrative se concentre dans cette étroite bande littorale et sahélienne du sud, tant l'intérieur saharien reste vide.\n\n" +
       "#### 2. Le milieu\n" +
       "Le Sahara couvre le nord et le centre du pays ; seule une frange sahélienne au sud, le long du fleuve Sénégal, permet l'agriculture. Le climat est aride et le pays est très exposé à la désertification. Sa côte atlantique, au niveau du banc d'Arguin, compte parmi les eaux les plus poissonneuses du monde.\n\n" +
-      "#### 3. Population\n" +
+      "À l'intérieur des terres, le plateau de l'Adrar et les massifs du Tagant portent d'anciennes cités caravanières bâties autour d'oasis, seuls points d'eau permanents dans un océan de dunes et de regs. Le parc national du Banc d'Arguin, sur la côte, protège à la fois les eaux poissonneuses et un vaste site de reproduction pour les oiseaux migrateurs.",
+      },
+      {
+        id: "course-geographie-05-mauritanie-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Mauritanie compte environ 4,9 millions d'habitants (2024), une population relativement faible pour un territoire aussi vaste.\n\n" +
-      "#### 4. Société\n" +
+      "Cette population se concentre presque entièrement dans le sud et sur la frange côtière : Nouakchott, ville quasiment inexistante avant l'indépendance, a connu une croissance urbaine fulgurante et rassemble aujourd'hui près d'un tiers des Mauritaniens. À l'inverse, l'immense intérieur saharien ne compte plus que de rares communautés nomades ou semi-nomades.\n\n" +
+      "#### 2. Société\n" +
       "La société réunit les Maures arabo-berbères (Bidhan et Haratines) et des populations négro-africaines (Halpulaar, Soninké, Wolof). L'arabe est langue officielle, aux côtés du pular, du soninké et du wolof reconnus. C'est une République islamique, l'islam étant religion d'État ; la société reste marquée par la question de l'esclavage, aboli tardivement.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette dualité entre Maures du nord et populations négro-africaines du sud, aggravée par l'héritage de l'esclavage et des tensions intercommunautaires des années 1980-1990, continue de peser sur la cohésion nationale. La société mauritanienne reste très majoritairement rurale ou récemment urbanisée, avec des solidarités tribales et claniques encore fortes.",
+      },
+      {
+        id: "course-geographie-05-mauritanie-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur le minerai de fer (principale exportation, via la SNIM), l'or et le cuivre, sur une pêche abondante et sur l'élevage. Le pays est aussi devenu producteur de gaz naturel offshore avec le champ Grand Tortue Ahmeyim (GTA), partagé avec le Sénégal.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : République islamique. Chef de l'État (2026) : Mohamed Ould Ghazouani. Monnaie : l'ouguiya (MRU). Devise nationale : « Honneur, Fraternité, Justice ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "La Mauritanie est indépendante de la France depuis le 28 novembre 1960. Elle est membre de l'Union africaine et de la Ligue arabe, mais a quitté la CEDEAO en 2000 pour se rapprocher du Maghreb ; elle appartient aujourd'hui à l'Union du Maghreb arabe.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Nouakchott. La Mauritanie abrite d'anciennes villes caravanières du désert — Ouadane, Chinguetti, Tichitt et Oualata — inscrites à l'UNESCO ; Chinguetti est une ville sainte réputée pour ses bibliothèques de manuscrits. Le banc d'Arguin est un sanctuaire majeur pour les oiseaux migrateurs.",
       },
     ],
@@ -383,25 +413,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇩",
     title: "Soudan",
     description: "Un géant sahélien traversé par le Nil, marqué par la sécession du Soudan du Sud et une guerre civile. Découvre le Soudan, la confluence des deux Nils et les pyramides de Méroé.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-06-soudan-lesson-1",
-        title: "Le Soudan",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Soudan s'étend dans le nord-est de l'Afrique sur environ 1,88 million de km², ce qui en fait le troisième plus grand pays du continent depuis l'indépendance du Soudan du Sud en 2011. Il possède une façade sur la mer Rouge et voisine avec l'Égypte, la Libye, le Tchad, la Centrafrique, le Soudan du Sud, l'Éthiopie et l'Érythrée. C'est à Khartoum, la capitale, que le Nil Blanc et le Nil Bleu se rejoignent pour former le Nil.\n\n" +
+      "Le pays est divisé en 18 États (wilayat), héritage d'un très vaste territoire longtemps administré depuis Khartoum. Le Darfour, à l'ouest, et le Kordofan, au centre, forment de vastes régions semi-arides longtemps marginalisées par rapport à la vallée du Nil.\n\n" +
       "#### 2. Le milieu\n" +
       "Le nord est désertique, le sud est une savane sahélienne ; le Nil constitue l'axe vital du pays. Le climat, aride à semi-aride, devient un peu plus humide vers le sud, où tombent les rares pluies.\n\n" +
-      "#### 3. Population\n" +
+      "Au-delà du désert de Nubie au nord, le pays conserve, le long du Nil, une étroite bande cultivable héritée de la civilisation nubienne antique. Vers l'est, les monts de la mer Rouge dominent une côte aride ; vers l'ouest, le massif volcanique du Jebel Marra, au Darfour, culmine à plus de 3 000 m et constitue l'un des rares points d'eau de la région.",
+      },
+      {
+        id: "course-geographie-06-soudan-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Soudan compte environ 48 millions d'habitants (2024), une population lourdement affectée par la guerre, qui a provoqué depuis 2023 des déplacements massifs parmi les plus importants du monde.\n\n" +
-      "#### 4. Société\n" +
+      "Avant la guerre, la population se concentrait déjà fortement le long du Nil et autour de Khartoum, la plus grande agglomération du pays ; les combats depuis 2023 ont vidé une partie de la capitale et poussé des millions de personnes vers l'est du pays, l'Égypte, le Tchad et le Soudan du Sud.\n\n" +
+      "#### 2. Société\n" +
       "C'est une mosaïque de peuples arabes et africains : Arabes soudanais, Nubiens, Beja, populations du Darfour (Four)… L'arabe et l'anglais sont langues officielles ; l'islam est la religion majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette diversité ethnique, longtemps mal représentée dans le pouvoir centralisé à Khartoum, est au cœur des tensions qui ont marqué le pays depuis l'indépendance : guerre civile avec le Sud chrétien et animiste jusqu'en 2005, puis conflit du Darfour à partir de 2003, aujourd'hui guerre entre l'armée et les Forces de soutien rapide.",
+      },
+      {
+        id: "course-geographie-06-soudan-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'agriculture est centrale : le Soudan est le premier producteur mondial de gomme arabique, en plus du sésame, du coton et du sorgho ; l'or et l'élevage complètent ses ressources. La guerre civile a toutefois dévasté l'économie.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Le pays est sous régime militaire de transition et plongé dans une guerre civile depuis avril 2023, qui oppose l'armée régulière aux Forces de soutien rapide (FSR). Chef de l'État de facto (2026) : le général Abdel Fattah al-Burhan, président du Conseil de souveraineté (Premier ministre : Kamel Idris). Monnaie : la livre soudanaise (SDG). Devise nationale : « La victoire est à nous ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le Soudan est indépendant du Royaume-Uni et de l'Égypte depuis le 1ᵉʳ janvier 1956. Membre de la Ligue arabe et de l'Union africaine, il a connu depuis l'indépendance une succession quasi ininterrompue de coups d'État et de guerres civiles, dont la sécession du Soudan du Sud en 2011 reste l'épisode le plus marquant.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Khartoum, à la confluence des deux Nils. Le Soudan abrite les pyramides de Méroé, héritage du royaume nubien de Koush, classées au patrimoine mondial de l'UNESCO. Le pays reste marqué par le conflit du Darfour et par la sécession du Soudan du Sud en 2011, qui lui a fait perdre l'essentiel de son pétrole.",
       },
     ],
@@ -449,25 +494,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇹🇳",
     title: "Tunisie",
     description: "Le plus petit pays du Maghreb, méditerranéen et cosmopolite, berceau de Carthage et du Printemps arabe. Découvre la Tunisie, ses oliviers, ses sites antiques et son littoral.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-07-tunisie-lesson-1",
-        title: "La Tunisie",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Tunisie occupe la pointe nord-est du Maghreb, avec une longue façade méditerranéenne. Sur environ 164 000 km², c'est le plus petit pays d'Afrique du Nord. Elle est bordée par l'Algérie à l'ouest et la Libye au sud-est ; le cap Blanc, en Tunisie, est le point le plus septentrional de l'Afrique.\n\n" +
+      "Le pays compte 24 gouvernorats, dont celui de Tunis, la capitale, au cœur d'une agglomération qui concentre à elle seule une part importante de la population et de la richesse nationale, loin devant les régions intérieures et le sud désertique.\n\n" +
       "#### 2. Le milieu\n" +
       "Le nord, prolongement de l'Atlas tellien, est montagneux et bien arrosé ; les plaines côtières, comme le Sahel tunisien, sont couvertes d'oliviers. Vers le sud apparaissent les chotts (lacs salés) puis le Sahara. Le climat passe du méditerranéen, au nord, à l'aride, au sud.\n\n" +
-      "#### 3. Population\n" +
+      "Le point culminant du pays, le Jebel Chambi (environ 1 544 m), se trouve dans le centre-ouest montagneux, non loin de la frontière algérienne. Plus au sud, le chott el-Jérid, immense lac salé asséché une grande partie de l'année, annonce les premières dunes du Sahara et les oasis de Tozeur et Nefta.",
+      },
+      {
+        id: "course-geographie-07-tunisie-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Tunisie compte environ 12 millions d'habitants (2024), concentrés sur le littoral nord et est, autour de Tunis, Sfax et Sousse.\n\n" +
-      "#### 4. Société\n" +
+      "Le pays est très majoritairement urbain, avec près de sept Tunisiens sur dix vivant en ville. Le grand Tunis, à lui seul, rassemble environ un quart de la population nationale, tandis que l'intérieur du pays et le sud, moins développés, connaissent un exode vers le littoral et vers l'étranger, notamment la France et l'Italie.\n\n" +
+      "#### 2. Société\n" +
       "La population est majoritairement arabo-berbère ; l'arabe est la langue officielle et le français très répandu. L'islam sunnite domine. La Tunisie est réputée pour son Code du statut personnel (1956), particulièrement avancé sur les droits des femmes dans la région.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Adopté sous la présidence de Habib Bourguiba au lendemain de l'indépendance, ce code a aboli la polygamie et instauré le divorce judiciaire, faisant longtemps de la Tunisie une référence régionale sur les droits des femmes. La société tunisienne, largement alphabétisée et scolarisée, reste marquée par un fort attachement à l'éducation.",
+      },
+      {
+        id: "course-geographie-07-tunisie-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur le tourisme (plages et sites antiques), le textile, l'agriculture — la Tunisie est un grand producteur d'huile d'olive, de dattes (Deglet Nour) et d'agrumes —, les phosphates et les industries manufacturières.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Kaïs Saïed. Monnaie : le dinar tunisien (TND). Devise nationale : « Liberté, Ordre, Justice ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "La Tunisie est indépendante de la France depuis le 20 mars 1956 ; Habib Bourguiba, premier président, proclame la république l'année suivante. Membre de la Ligue arabe et de l'Union du Maghreb arabe, elle reste, depuis 2010-2011, le seul pays du Printemps arabe à avoir engagé une transition démocratique durable, bien que le pouvoir se soit depuis reconcentré autour de la présidence.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Tunis. Le pays est riche en sites classés à l'UNESCO : l'antique Carthage, l'amphithéâtre romain d'El Jem, la ville sainte de Kairouan, sans oublier le village bleu et blanc de Sidi Bou Saïd. C'est en Tunisie qu'a débuté le Printemps arabe en 2010-2011.",
       },
     ],
@@ -515,25 +575,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇧🇯",
     title: "Bénin",
     description: "Un pays étroit du golfe de Guinée, berceau du vaudou et de l'ancien royaume du Dahomey. Découvre le Bénin, ses palais royaux et sa cité lacustre.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-08-benin-lesson-1",
-        title: "Le Bénin",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Bénin est un pays d'Afrique de l'Ouest, étroit et allongé du nord au sud, avec une petite façade sur le golfe de Guinée. Sur environ 114 800 km², il est bordé par le Togo, le Nigeria, le Niger et le Burkina Faso.\n\n" +
+      "Le pays est découpé en douze départements, de l'Atlantique et du Littoral au sud à l'Alibori et à l'Atacora au nord. Cette forme allongée fait traverser au Bénin plusieurs zones climatiques et culturelles très différentes sur une distance nord-sud d'environ 700 km.\n\n" +
       "#### 2. Le milieu\n" +
       "Le paysage passe d'un sud humide (côte, lagunes, palmeraies) à un nord plus sec de savanes. Le climat est tropical. Au nord-ouest, le parc de la Pendjari est une grande réserve de faune (éléphants, lions), inscrite dans une réserve de biosphère.\n\n" +
-      "#### 3. Population\n" +
+      "Le littoral, rectiligne et sableux, est doublé d'un chapelet de lagunes côtières, dont celle de Cotonou, où s'est développée la cité lacustre de Ganvié. Vers le nord, la chaîne de l'Atacora forme le relief le plus marqué du pays, à la frontière du Togo.",
+      },
+      {
+        id: "course-geographie-08-benin-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Bénin compte environ 13 à 14 millions d'habitants (2024), concentrés dans le sud, autour de Cotonou et de Porto-Novo.\n\n" +
-      "#### 4. Société\n" +
+      "La population est jeune et en croissance rapide, avec une urbanisation qui s'accélère le long du corridor côtier reliant Cotonou à Porto-Novo puis à Lagos, au Nigeria. Le nord du pays, plus rural, reste nettement moins peuplé que le sud.\n\n" +
+      "#### 2. Société\n" +
       "La société réunit de nombreux peuples : Fon, Yoruba, Bariba, Adja… Le français est la langue officielle, aux côtés de langues nationales (fon, yoruba). On y pratique le christianisme, l'islam et le vaudou, religion traditionnelle née précisément dans cette région.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Fon, majoritaires au sud, sont les héritiers directs du royaume du Dahomey ; les Yoruba, présents au sud-est, partagent une culture commune avec leurs voisins du Nigeria ; les Bariba et les Peuls dominent au nord. Le vaudou, loin d'être marginal, structure encore de nombreuses pratiques sociales et festives, notamment lors de la fête nationale qui lui est dédiée chaque 10 janvier.",
+      },
+      {
+        id: "course-geographie-08-benin-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur l'agriculture, en particulier le coton (principale exportation), l'ananas et l'anacarde. Le port de Cotonou joue un grand rôle dans le commerce régional, notamment la réexportation vers le Nigeria voisin.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Romuald Wadagni, élu en avril 2026, succédant à Patrice Talon. Monnaie : le franc CFA (XOF). Devise nationale : « Fraternité, Justice, Travail ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le Bénin est indépendant de la France depuis le 1er août 1960, sous le nom de Dahomey jusqu'en 1975. Membre de l'UEMOA et de la CEDEAO, il partage le franc CFA avec ses voisins ouest-africains francophones.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale officielle : Porto-Novo ; mais Cotonou est le siège du gouvernement et la capitale économique. Les palais royaux d'Abomey (UNESCO) rappellent le puissant royaume du Dahomey, et la cité lacustre de Ganvié est bâtie sur pilotis. Le Bénin est reconnu comme le berceau du vaudou.",
       },
     ],
@@ -581,25 +656,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇧🇫",
     title: "Burkina Faso",
     description: "Un pays sahélien enclavé, « la patrie des hommes intègres », marqué par le panafricanisme et un fort défi sécuritaire. Découvre le Burkina Faso.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-09-burkina-faso-lesson-1",
-        title: "Le Burkina Faso",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Burkina Faso est un pays enclavé d'Afrique de l'Ouest, sans accès à la mer. Sur environ 274 200 km², il est entouré par le Mali, le Niger, le Bénin, le Togo, le Ghana et la Côte d'Ivoire.\n\n" +
+      "Le pays est organisé en treize régions administratives autour de la capitale, Ouagadougou, au centre du territoire. Son enclavement, partagé avec le Mali et le Niger, pèse lourdement sur son commerce extérieur, dépendant des ports du golfe de Guinée (Abidjan, Téma, Lomé, Cotonou) pour ses importations et exportations.\n\n" +
       "#### 2. Le milieu\n" +
       "C'est un vaste plateau sahélien, au climat tropical sec : le nord est aride, le sud un peu plus arrosé. Trois grands cours d'eau le traversent (le Mouhoun ou Volta noire, le Nakambé, le Nazinon). Le pays est exposé à la désertification et, depuis quelques années, à l'insécurité liée au terrorisme dans le nord.\n\n" +
-      "#### 3. Population\n" +
+      "Le relief burkinabè est globalement plat, sans grand massif montagneux, dominé par un plateau latéritique peu élevé. Le sud-ouest, plus arrosé, concentre l'essentiel des terres cultivables et des réserves de faune, comme le parc national du W, partagé avec le Niger et le Bénin.",
+      },
+      {
+        id: "course-geographie-09-burkina-faso-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Burkina Faso compte environ 23 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population est jeune et majoritairement rurale, même si l'insécurité dans le nord a provoqué depuis 2019 des déplacements internes massifs vers les grandes villes, en premier lieu Ouagadougou et Bobo-Dioulasso, deuxième ville du pays.\n\n" +
+      "#### 2. Société\n" +
       "Le peuple mossi est majoritaire, aux côtés des Peuls, Gourmantché, Bobo et d'autres. Le français est officiel, le mooré très parlé. L'islam est majoritaire, avec des chrétiens et des religions traditionnelles.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Mossis, historiquement organisés autour de royaumes dont celui de Ouagadougou, dont le souverain porte toujours le titre de Moogho Naaba, forment le socle culturel du centre du pays. Les Peuls, éleveurs souvent transhumants, et les Bobo, à l'ouest, complètent cette mosaïque, dans un pays où les identités régionales restent fortes malgré la crise sécuritaire.",
+      },
+      {
+        id: "course-geographie-09-burkina-faso-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'or est devenu la première exportation (le pays est l'un des grands producteurs d'Afrique), aux côtés du coton (surnommé « l'or blanc ») et de l'élevage. L'insécurité fragilise fortement l'économie.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : transition militaire. Chef de l'État (2026) : le capitaine Ibrahim Traoré, au pouvoir depuis septembre 2022. Le Burkina Faso a quitté la CEDEAO (officialisé en janvier 2025) et forme, avec le Mali et le Niger, l'Alliance des États du Sahel (AES). Monnaie : le franc CFA (XOF). Devise nationale : « Unité, Progrès, Justice ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays, indépendant de la France depuis le 5 août 1960 sous le nom de Haute-Volta, l'a rebaptisé Burkina Faso en 1984 sous la présidence du révolutionnaire panafricaniste Thomas Sankara, avant que celui-ci ne soit renversé et assassiné en 1987.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Ouagadougou. Le pays abrite les ruines de Loropéni (UNESCO) et accueille le FESPACO, plus grand festival de cinéma d'Afrique. Il garde la mémoire de Thomas Sankara. Le nom « Burkina Faso » signifie « la patrie des hommes intègres ».",
       },
     ],
@@ -647,25 +737,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇻",
     title: "Cap-Vert",
     description: "Un archipel atlantique au large du Sénégal, terre de morna et de grande diaspora. Découvre le Cap-Vert, ses volcans et ses plages.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-10-cap-vert-lesson-1",
-        title: "Le Cap-Vert",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Cap-Vert est un archipel de dix îles volcaniques au milieu de l'océan Atlantique, à environ 570 km à l'ouest du Sénégal. Petit par la taille (environ 4 000 km²), il n'a aucune frontière terrestre.\n\n" +
+      "L'archipel se divise en deux groupes : les îles du Vent (Barlavento) au nord, dont Santo Antão et Sal, et les îles du Sous-le-Vent (Sotavento) au sud, dont Santiago, la plus peuplée, et Fogo. Chaque île forme une petite économie et une identité culturelle propres, malgré la petite taille de l'ensemble.\n\n" +
       "#### 2. Le milieu\n" +
       "Les îles sont volcaniques : le Pico do Fogo, volcan encore actif, culmine à environ 2 829 m. Le climat est sec, de type sahélien océanique, et l'eau douce est rare. Certaines îles sont montagneuses (Santo Antão), d'autres plates et sableuses (Sal, Boa Vista) avec de belles plages.\n\n" +
-      "#### 3. Population\n" +
+      "Cette aridité chronique, aggravée par des cycles réguliers de sécheresse, a longtemps rendu l'agriculture vivrière précaire et poussé une partie de la population à émigrer. Le relief volcanique et montagneux de certaines îles crée en revanche des microclimats plus humides en altitude, propices à de petites cultures en terrasses.",
+      },
+      {
+        id: "course-geographie-10-cap-vert-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Cap-Vert compte environ 525 000 habitants (2024) ; fait notable, sa diaspora est plus nombreuse que la population résidente.\n\n" +
-      "#### 4. Société\n" +
+      "Cette diaspora, installée notamment aux États-Unis, au Portugal, en France et aux Pays-Bas, entretient des liens économiques et culturels étroits avec l'archipel, à travers les transferts d'argent et un tourisme de retour. À l'intérieur du pays, la population se concentre surtout à Praia et sur l'île de Santiago.\n\n" +
+      "#### 2. Société\n" +
       "La population est créole, née du métissage entre Africains et Portugais. Le portugais est la langue officielle, le créole capverdien la langue du quotidien. Le christianisme est majoritaire. Le pays est célèbre pour sa musique, la morna, popularisée par Cesária Évora.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette identité créole, forgée dès la colonisation portugaise à partir du XVe siècle par le brassage entre colons et esclaves africains, fait du Cap-Vert un cas particulier en Afrique de l'Ouest : ni tout à fait africain, ni tout à fait lusophone au sens strict, mais un carrefour culturel atlantique à part entière.",
+      },
+      {
+        id: "course-geographie-10-cap-vert-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Pauvre en ressources naturelles, le Cap-Vert vit surtout du tourisme (plages de Sal et Boa Vista), des services, de la pêche et des transferts d'argent de sa diaspora.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république (démocratie stable et reconnue). Chef de l'État (2026) : le président José Maria Neves ; Premier ministre Ulisses Correia e Silva. Monnaie : l'escudo capverdien (CVE). Devise nationale : « Unité, Travail, Progrès ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le Cap-Vert est indépendant du Portugal depuis le 5 juillet 1975. Membre de l'Union africaine et de la CEDEAO, il fait figure d'exception régionale par la stabilité de ses institutions démocratiques depuis l'instauration du multipartisme en 1990.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Praia (sur l'île de Santiago). Cidade Velha, première ville coloniale européenne bâtie sous les tropiques, est classée à l'UNESCO, tout comme la morna au patrimoine immatériel. Le volcan de Fogo est l'un des symboles de l'archipel.",
       },
     ],
@@ -713,25 +818,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇮",
     title: "Côte d'Ivoire",
     description: "La locomotive économique de l'Afrique de l'Ouest francophone et le premier producteur mondial de cacao. Découvre la Côte d'Ivoire.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-11-cote-divoire-lesson-1",
-        title: "La Côte d'Ivoire",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Côte d'Ivoire s'ouvre sur le golfe de Guinée, avec une façade atlantique au sud. Sur environ 322 500 km², elle est bordée par le Liberia, la Guinée, le Mali, le Burkina Faso et le Ghana.\n\n" +
+      "Le pays est organisé en treize districts et une trentaine de régions. Abidjan, sur la lagune Ébrié, en est de loin la plus grande ville et le poumon économique, tandis que Yamoussoukro, plus au centre, est la capitale politique depuis 1983.\n\n" +
       "#### 2. Le milieu\n" +
       "Le sud est couvert de forêt tropicale humide, le nord de savane. Le climat est équatorial au sud, plus sec au nord. Le littoral est bordé de lagunes, et les parcs de Taï et de la Comoé (UNESCO) protègent une riche biodiversité.\n\n" +
-      "#### 3. Population\n" +
+      "Le relief est globalement peu élevé, à l'exception des monts Nimba et Man à l'extrême ouest, à la frontière guinéo-libérienne, qui portent une forêt montagnarde d'une grande richesse biologique. La déforestation liée à l'expansion des cultures de cacao et de café a toutefois fortement réduit le couvert forestier original du sud du pays.",
+      },
+      {
+        id: "course-geographie-11-cote-divoire-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Côte d'Ivoire compte environ 30 millions d'habitants (2024), avec une forte immigration venue des pays voisins.\n\n" +
-      "#### 4. Société\n" +
+      "Cette immigration, en particulier depuis le Burkina Faso, le Mali et la Guinée, attirée historiquement par les plantations de cacao et de café, fait de la Côte d'Ivoire l'un des pays les plus cosmopolites d'Afrique de l'Ouest ; Abidjan, mégapole de plusieurs millions d'habitants, en est le principal foyer urbain.\n\n" +
+      "#### 2. Société\n" +
       "C'est une mosaïque d'une soixantaine de groupes (Akan, Baoulé, Bété, Sénoufo, Malinké…). Le français est la langue officielle. Christianisme, islam et religions traditionnelles cohabitent.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Akan (dont les Baoulé) dominent au centre et à l'est, les Krou (dont les Bété) au sud-ouest, les Mandé au nord-ouest et les Voltaïques (dont les Sénoufo) au nord. Cette diversité régionale et religieuse, conjuguée à la question de la nationalité des populations d'origine étrangère, a nourri des tensions politiques marquées depuis les années 1990, jusqu'à la crise post-électorale de 2010-2011.",
+      },
+      {
+        id: "course-geographie-11-cote-divoire-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "La Côte d'Ivoire est le premier producteur mondial de cacao, mais aussi un grand producteur de café, d'hévéa (caoutchouc), d'anacarde et d'huile de palme. Le port d'Abidjan et une économie diversifiée en font la puissance de l'UEMOA.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Alassane Ouattara, réélu en octobre 2025 pour un quatrième mandat. Monnaie : le franc CFA (XOF). Devise nationale : « Union, Discipline, Travail ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 7 août 1960, sous la présidence fondatrice de Félix Houphouët-Boigny jusqu'en 1993. Membre de l'UEMOA et de la CEDEAO, il en est aujourd'hui la première économie francophone d'Afrique de l'Ouest.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale politique : Yamoussoukro, où se dresse la basilique Notre-Dame-de-la-Paix, l'une des plus grandes églises du monde ; Abidjan est la capitale économique. La ville historique de Grand-Bassam est classée à l'UNESCO.",
       },
     ],
@@ -779,25 +899,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇲",
     title: "Gambie",
     description: "Le plus petit pays d'Afrique continentale : un ruban de terre autour d'un fleuve, enclavé dans le Sénégal. Découvre la Gambie.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-12-gambie-lesson-1",
-        title: "La Gambie",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Gambie est le plus petit pays d'Afrique continentale (environ 11 300 km²). C'est une étroite bande de terre qui suit de part et d'autre le fleuve Gambie, presque entièrement enclavée dans le Sénégal, sauf par sa courte façade atlantique.\n\n" +
+      "Cette forme singulière, héritée du tracé colonial britannique calqué sur le cours du fleuve, fait de la Gambie une enclave presque totale à l'intérieur du Sénégal, avec lequel elle entretient des liens économiques et culturels très étroits malgré la frontière.\n\n" +
       "#### 2. Le milieu\n" +
       "Tout le pays s'organise autour du fleuve Gambie, navigable, qui en est l'axe de vie et de transport. Le climat est tropical ; on y trouve savane et mangroves le long du fleuve.\n\n" +
-      "#### 3. Population\n" +
+      "Le fleuve, navigable sur presque toute sa longueur en territoire gambien, a longtemps servi de voie de pénétration commerciale vers l'intérieur du continent, d'abord pour le commerce précolonial puis pour la traite négrière. Ses rives basses, couvertes de mangroves, abritent une faune abondante, notamment des oiseaux et des primates, protégée dans plusieurs réserves.",
+      },
+      {
+        id: "course-geographie-12-gambie-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Gambie compte environ 2,7 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "Malgré sa petite taille, le pays affiche l'une des densités de population les plus élevées d'Afrique continentale : la population se concentre surtout autour de l'estuaire, entre Banjul et la ville voisine de Serekunda, de loin la plus peuplée du pays.\n\n" +
+      "#### 2. Société\n" +
       "On y trouve les mêmes peuples que dans la région : Mandingues, Peuls, Wolofs, Diolas… L'anglais est la langue officielle (ancienne colonie britannique) et l'islam est très majoritaire. Le pays est surnommé la « Smiling Coast » (la côte souriante).\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette proximité culturelle avec le Sénégal environnant, malgré des langues coloniales différentes (anglais contre français), se traduit par une intense circulation des personnes, des biens et des familles de part et d'autre de la frontière. Le surnom de « Smiling Coast » reflète la réputation d'accueil et de convivialité du pays, un atout revendiqué pour son tourisme.",
+      },
+      {
+        id: "course-geographie-12-gambie-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur l'agriculture (l'arachide est la principale exportation), la pêche et surtout le tourisme balnéaire, qui attire des Européens durant l'hiver ; les transferts de la diaspora comptent aussi.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Adama Barrow, président depuis 2017. Monnaie : le dalasi (GMD). Devise nationale : « Progress, Peace, Prosperity » (Progrès, Paix, Prospérité).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "La Gambie est indépendante du Royaume-Uni depuis le 18 février 1965. Membre du Commonwealth (dont elle s'est brièvement retirée entre 2013 et 2017 sous la présidence de Yahya Jammeh) et de la CEDEAO, elle reste l'un des rares pays anglophones enclavés dans un ensemble francophone.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Banjul. L'île de Kunta Kinteh (ancienne James Island, UNESCO), liée au roman Racines d'Alex Haley, rappelle la traite négrière. Les cercles mégalithiques de Sénégambie (UNESCO) sont partagés avec le Sénégal.",
       },
     ],
@@ -845,25 +980,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇭",
     title: "Ghana",
     description: "Vitrine démocratique de l'Afrique de l'Ouest anglophone, pays de l'or et du cacao, ancienne « Gold Coast ». Découvre le Ghana.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-13-ghana-lesson-1",
-        title: "Le Ghana",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Ghana borde le golfe de Guinée, avec une façade atlantique au sud. Sur environ 238 500 km², il est entouré par la Côte d'Ivoire, le Burkina Faso et le Togo. Il est traversé par le méridien de Greenwich, tout près de l'équateur.\n\n" +
+      "Le pays est découpé en seize régions, dont celle du Grand Accra, autour de la capitale, forme le principal pôle urbain et économique du pays. Le Ghana revendique une position symbolique particulière : proche à la fois de l'équateur et du méridien d'origine, il se présente souvent comme situé « au centre du monde ».\n\n" +
       "#### 2. Le milieu\n" +
       "Le sud est forestier, le nord couvert de savane. Le pays abrite le lac Volta, l'un des plus grands lacs artificiels du monde, créé par le barrage d'Akosombo. Le climat est tropical.\n\n" +
-      "#### 3. Population\n" +
+      "Le lac Volta, qui s'étend sur une grande partie du pays du sud au centre, fournit l'essentiel de l'électricité hydroélectrique du Ghana et sert aussi de voie de transport intérieur. Le littoral, ponctué de lagunes et d'anciens forts coloniaux, cède progressivement la place, vers l'intérieur, à la forêt puis à la savane soudanienne du nord.",
+      },
+      {
+        id: "course-geographie-13-ghana-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Ghana compte environ 34 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population est jeune et de plus en plus urbaine, concentrée dans le sud du pays autour d'Accra et de Kumasi, capitale historique du royaume ashanti. Le nord, plus sec et moins industrialisé, reste davantage rural et connaît une migration interne vers le sud.\n\n" +
+      "#### 2. Société\n" +
       "Les peuples akan (Ashantis, Fantis) sont les plus nombreux, aux côtés des Ewe, Ga et Dagomba. L'anglais est la langue officielle. Le christianisme domine au sud, l'islam au nord.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Le royaume ashanti, dont le souverain (l'Asantehene) conserve aujourd'hui encore un rôle cérémoniel et social important depuis son trône d'or, structure fortement l'identité culturelle du centre du pays. Le Ghana est aussi connu pour son tissu traditionnel kente, tissé à l'origine par les Ashantis et les Ewe, devenu un symbole de fierté culturelle bien au-delà de ses frontières.",
+      },
+      {
+        id: "course-geographie-13-ghana-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le Ghana est l'un des premiers producteurs d'or d'Afrique et le deuxième producteur mondial de cacao. Il exploite aussi du pétrole offshore. Son économie est relativement diversifiée et dynamique.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république (démocratie stable, connue pour ses alternances pacifiques). Chef de l'État (2026) : John Dramani Mahama, élu en décembre 2024. Monnaie : le cedi ghanéen (GHS). Devise nationale : « Freedom and Justice » (Liberté et Justice).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le Ghana, ancienne colonie britannique de la « Gold Coast », est indépendant depuis le 6 mars 1957 sous la direction de Kwame Nkrumah, figure majeure du panafricanisme et premier président du pays. Membre fondateur de l'Union africaine (alors OUA, fondée en 1963) et de la CEDEAO, il est aujourd'hui considéré comme l'une des démocraties les plus stables du continent.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Accra. Les forts et châteaux de la traite négrière (Cape Coast, Elmina) sont classés à l'UNESCO. Le Ghana est l'héritier de l'empire ashanti et fut, avec Kwame Nkrumah, le premier pays d'Afrique subsaharienne à devenir indépendant, en 1957.",
       },
     ],
