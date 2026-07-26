@@ -1061,25 +1061,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇳",
     title: "Guinée",
     description: "Le « château d'eau de l'Afrique de l'Ouest », riche en bauxite, d'où naissent de grands fleuves. Découvre la Guinée.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-14-guinee-lesson-1",
-        title: "La Guinée",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Guinée (Guinée-Conakry) donne sur l'océan Atlantique. Sur environ 246 000 km², elle est bordée par la Guinée-Bissau, le Sénégal, le Mali, la Côte d'Ivoire, le Liberia et la Sierra Leone.\n\n" +
+      "Le pays est découpé en huit régions administratives autour de la capitale, Conakry, bâtie sur une presqu'île de la côte atlantique. Sa forme en croissant, de la côte au Fouta-Djalon puis à la Haute-Guinée intérieure, en fait un carrefour entre plusieurs aires géographiques ouest-africaines.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays se divise en quatre régions naturelles : la Basse-Guinée côtière, la Moyenne-Guinée du Fouta-Djalon, la Haute-Guinée de savane et la Guinée forestière. Le massif du Fouta-Djalon est le « château d'eau » de l'Afrique de l'Ouest : c'est là que naissent le Niger, le Sénégal et la Gambie. Le climat est tropical humide.\n\n" +
-      "#### 3. Population\n" +
+      "La Guinée forestière, au sud-est, prolonge la forêt guinéenne partagée avec le Liberia et la Côte d'Ivoire, l'un des points chauds de biodiversité les plus riches d'Afrique de l'Ouest. Le mont Nimba, à cheval sur les trois pays, en est le sommet emblématique et un site UNESCO.",
+      },
+      {
+        id: "course-geographie-14-guinee-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Guinée compte environ 14 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se répartit entre les quatre régions naturelles du pays, avec une forte concentration à Conakry, dont la croissance urbaine rapide contraste avec le peuplement plus dispersé du Fouta-Djalon et de la Guinée forestière. L'exode rural vers la capitale reste un phénomène marquant depuis l'indépendance.\n\n" +
+      "#### 2. Société\n" +
       "Les principaux peuples sont les Peuls (Fouta-Djalon), les Malinkés et les Soussous. Le français est la langue officielle et l'islam très majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Peuls du Fouta-Djalon, éleveurs et commerçants de tradition, les Malinkés de Haute-Guinée, héritiers de l'ancien empire du Mali, et les Soussous de la côte forment les trois grands ensembles culturels du pays, auxquels s'ajoutent de nombreux peuples forestiers au sud-est (Kissi, Toma, Guerzé). Cette diversité régionale a souvent pesé sur la vie politique guinéenne depuis l'indépendance.",
+      },
+      {
+        id: "course-geographie-14-guinee-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "La Guinée détient les plus grandes réserves mondiales de bauxite (minerai de l'aluminium) et en est un premier exportateur. Elle possède aussi de l'or, du diamant et d'énormes gisements de fer (mont Simandou), ainsi qu'un fort potentiel hydroélectrique.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république (Ve République). Chef de l'État (2026) : le général Mamadi Doumbouya, arrivé au pouvoir par un coup d'État en 2021, puis élu président en décembre 2025 et investi en janvier 2026. Monnaie : le franc guinéen (GNF). Devise nationale : « Travail, Justice, Solidarité ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "La Guinée est indépendante de la France depuis le 2 octobre 1958, seul territoire de l'Afrique-Occidentale française à avoir voté « non » au référendum proposé par le général de Gaulle, sous l'impulsion de Sékou Touré, qui en devint le premier président. Membre de l'Union africaine et de la CEDEAO, le pays a depuis connu plusieurs coups d'État.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Conakry. Le massif du Fouta-Djalon et la réserve du mont Nimba (UNESCO, à la frontière) sont des joyaux naturels. La Guinée est la patrie de Sékou Touré, qui dit « non » à la France en 1958 pour obtenir l'indépendance immédiate.",
       },
     ],
@@ -1127,25 +1142,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇼",
     title: "Guinée-Bissau",
     description: "Un petit pays lusophone d'estuaires et d'îles, marqué par l'instabilité politique. Découvre la Guinée-Bissau et son archipel des Bijagós.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-15-guinee-bissau-lesson-1",
-        title: "La Guinée-Bissau",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Guinée-Bissau borde l'Atlantique, en Afrique de l'Ouest. Sur environ 36 100 km², elle est encadrée par le Sénégal au nord et la Guinée au sud-est, et comprend l'archipel des Bijagós (une trentaine d'îles).\n\n" +
+      "C'est l'un des plus petits pays du continent, découpé en huit régions et un secteur autonome autour de Bissau, la capitale. Sa taille modeste et son relief très bas en font un pays particulièrement exposé à la montée du niveau de la mer.\n\n" +
       "#### 2. Le milieu\n" +
       "La côte est très découpée, faite d'estuaires et de mangroves, sur des terres basses. L'archipel des Bijagós, réserve de biosphère de l'UNESCO, abrite une faune remarquable (dont des hippopotames marins). Le climat est tropical humide.\n\n" +
-      "#### 3. Population\n" +
+      "Les mangroves et les rizières côtières occupent une place centrale dans le paysage et dans l'économie vivrière du pays. Les îles Bijagós, difficiles d'accès, ont conservé des pratiques traditionnelles fortes et une biodiversité marine remarquable, notamment des tortues de mer et des lamantins.",
+      },
+      {
+        id: "course-geographie-15-guinee-bissau-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Guinée-Bissau compte environ 2,1 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population reste majoritairement rurale, concentrée sur le continent plutôt que sur les îles Bijagós, peu peuplées. Bissau, la capitale, concentre l'essentiel de l'activité urbaine et administrative du pays.\n\n" +
+      "#### 2. Société\n" +
       "On y trouve les peuples balante, peul, mandingue, papel… Le portugais est la langue officielle, mais le créole bissau-guinéen est le plus parlé (ancienne colonie portugaise). Islam, religions traditionnelles et christianisme cohabitent.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Balantes, principal groupe du pays, sont surtout riziculteurs et pratiquent largement des religions traditionnelles ; les Peuls et Mandingues du nord et de l'est sont majoritairement musulmans. Cette diversité ethnique et religieuse cohabite dans un pays où l'armée a longtemps joué un rôle politique central, à l'origine d'une instabilité chronique depuis l'indépendance.",
+      },
+      {
+        id: "course-geographie-15-guinee-bissau-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur l'agriculture, surtout la noix de cajou (anacarde), première exportation dont le pays est l'un des plus gros producteurs, ainsi que la pêche et le riz. C'est l'une des économies les plus pauvres, fragilisée par l'instabilité et le narcotrafic.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : transition, à la suite du coup d'État de novembre 2025. Chef de l'État (2026) : le général Horta N'Tam, président de la transition (investi en novembre 2025 après la destitution d'Umaro Sissoco Embaló) ; des élections sont annoncées pour décembre 2026. Monnaie : le franc CFA (XOF). Devise nationale : « Unité, Lutte, Progrès ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "La Guinée-Bissau est indépendante du Portugal depuis le 24 septembre 1973 (reconnue en 1974), au terme d'une guerre de libération menée par Amílcar Cabral, assassiné peu avant. Membre de l'Union africaine et de la CEDEAO, le pays a connu depuis l'indépendance de très nombreux coups d'État et tentatives de coups d'État.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Bissau. L'archipel des Bijagós est le grand trésor naturel du pays. La Guinée-Bissau garde la mémoire de la lutte de libération menée par Amílcar Cabral contre le Portugal.",
       },
     ],
@@ -1193,25 +1223,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇱🇷",
     title: "Liberia",
     description: "La plus ancienne république d'Afrique, fondée par des Afro-Américains affranchis. Découvre le Liberia, ses forêts et son histoire singulière.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-16-liberia-lesson-1",
-        title: "Le Liberia",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Liberia borde l'Atlantique, en Afrique de l'Ouest. Sur environ 111 400 km², il est entouré par la Sierra Leone, la Guinée et la Côte d'Ivoire.\n\n" +
+      "Le pays est découpé en quinze comtés, dont celui de Montserrado, autour de Monrovia, concentre l'essentiel de la population et de l'activité économique. Le tracé de ses frontières porte encore la marque de son histoire singulière de colonie de peuplement fondée au XIXe siècle.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays est couvert d'une dense forêt tropicale humide, vestige important de la forêt guinéenne (grande biodiversité), et connaît de très fortes pluies. Le climat est équatorial, la côte bordée de plaines.\n\n" +
-      "#### 3. Population\n" +
+      "Le Liberia conserve l'une des dernières grandes étendues de forêt primaire d'Afrique de l'Ouest, refuge pour des espèces menacées comme le chimpanzé ou l'hippopotame pygmée. Cette forêt, en partie protégée, reste toutefois soumise à la pression de l'exploitation du bois et de l'agriculture.",
+      },
+      {
+        id: "course-geographie-16-liberia-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Liberia compte environ 5,4 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population, jeune, s'est fortement urbanisée pendant et après les guerres civiles, Monrovia ayant vu affluer des populations fuyant les combats dans les comtés de l'intérieur ; elle en reste aujourd'hui la ville de très loin la plus peuplée.\n\n" +
+      "#### 2. Société\n" +
       "La population mêle des peuples autochtones (Kpelle, Bassa, Gio…) et les descendants des « Américo-Libériens », esclaves affranchis venus des États-Unis qui fondèrent le pays en 1847. L'anglais est la langue officielle ; le christianisme est majoritaire, avec une minorité musulmane.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Américo-Libériens, minoritaires en nombre, ont dominé la vie politique et économique du pays pendant plus d'un siècle après l'indépendance, une domination qui a nourri des tensions avec les peuples autochtones et compté parmi les causes profondes des guerres civiles des années 1990-2000.",
+      },
+      {
+        id: "course-geographie-16-liberia-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur le caoutchouc (hévéa, avec les plantations historiques de Firestone), le minerai de fer, l'or, le diamant et le bois. Le Liberia possède aussi l'un des plus grands pavillons de complaisance du monde (immatriculation de navires). Deux guerres civiles (1989-2003) ont durablement affaibli le pays.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Joseph Boakai, président depuis janvier 2024. Monnaie : le dollar libérien (LRD). Devise nationale : « The love of liberty brought us here » (L'amour de la liberté nous a conduits ici).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Fondé en 1847 par la Société américaine de colonisation, le Liberia est la plus ancienne république d'Afrique. Membre de l'Union africaine et de la CEDEAO, il a mis en place, après les guerres civiles, une Commission Vérité et Réconciliation pour tenter de dépasser les divisions du passé.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Monrovia, nommée d'après le président américain James Monroe. Son drapeau ressemble à celui des États-Unis. Ellen Johnson Sirleaf, présidente de 2006 à 2018, fut la première femme élue chef d'État en Afrique et reçut le prix Nobel de la paix.",
       },
     ],
@@ -1259,25 +1304,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇱",
     title: "Mali",
     description: "Un vaste pays sahélien traversé par le fleuve Niger, héritier des grands empires et de Tombouctou. Découvre le Mali.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-17-mali-lesson-1",
-        title: "Le Mali",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Mali est un grand pays enclavé d'Afrique de l'Ouest. Sur environ 1,24 million de km², il est bordé par l'Algérie, le Niger, le Burkina Faso, la Côte d'Ivoire, la Guinée, le Sénégal et la Mauritanie.\n\n" +
+      "Le pays est organisé en dix régions et un district, celui de Bamako, la capitale. Cet enclavement, partagé avec plusieurs de ses voisins sahéliens, rend le Mali dépendant des ports du Sénégal et de la Côte d'Ivoire pour son commerce extérieur.\n\n" +
       "#### 2. Le milieu\n" +
       "Le nord est saharien (les deux tiers du pays), le centre sahélien, le sud plus arrosé de type soudanien. Le fleuve Niger est l'axe vital du pays et forme un vaste delta intérieur. Le Mali souffre de la désertification et, depuis quelques années, d'une forte insécurité au nord et au centre.\n\n" +
-      "#### 3. Population\n" +
+      "Le delta intérieur du Niger, vaste zone humide saisonnière, est une exception écologique majeure au milieu du Sahel : il nourrit pêche, riziculture et élevage transhumant pour des centaines de milliers de personnes. Plus au sud, la falaise de Bandiagara, en pays dogon, domine un plateau gréseux exceptionnel à la fois pour son paysage et pour le patrimoine culturel qu'il abrite.",
+      },
+      {
+        id: "course-geographie-17-mali-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Mali compte environ 23 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre le long du fleuve Niger et dans le sud plus arrosé, autour de Bamako, Sikasso et Ségou, tandis que le nord saharien reste très faiblement peuplé, en particulier depuis que l'insécurité y a limité les activités économiques et les déplacements.\n\n" +
+      "#### 2. Société\n" +
       "La société réunit Bambaras, Peuls, Songhaïs, Touaregs, Soninkés, Dogons… Le français est la langue officielle, le bambara très parlé. L'islam est très majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Bambaras, majoritaires au centre-sud, les Peuls, éleveurs présents dans tout le pays, les Songhaïs et Touaregs du nord, et les Dogons du plateau de Bandiagara, connus pour leur cosmogonie et leur art, illustrent la grande diversité culturelle du Mali — une diversité que la crise sécuritaire du nord et du centre a mise à rude épreuve depuis 2012.",
+      },
+      {
+        id: "course-geographie-17-mali-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'or est la grande ressource (le Mali est un important producteur africain), avec le coton et l'élevage. L'agriculture se concentre le long du Niger. L'insécurité fragilise l'ensemble de l'économie.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : transition militaire. Chef de l'État (2026) : le général Assimi Goïta, au pouvoir depuis 2021. Le Mali a quitté la CEDEAO (officialisé en janvier 2025) et forme, avec le Burkina Faso et le Niger, l'Alliance des États du Sahel (AES). Monnaie : le franc CFA (XOF). Devise nationale : « Un Peuple, Un But, Une Foi ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 22 septembre 1960. Héritier de puissants empires précoloniaux (Ghana, Mali, Songhaï), il a connu depuis 2012 une crise sécuritaire persistante dans le nord et le centre, à l'origine de plusieurs coups d'État militaires.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Bamako. Les villes historiques de Tombouctou et Djenné (mosquées de terre, manuscrits, UNESCO) rappellent la grandeur des empires du Ghana, du Mali (Soundiata, Mansa Moussa) et Songhaï. La falaise de Bandiagara, en pays dogon, est un site naturel et culturel majeur.",
       },
     ],
@@ -1325,25 +1385,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇳🇪",
     title: "Niger",
     description: "Un immense pays sahélien et saharien, traversé au sud-ouest par le fleuve Niger, riche en uranium. Découvre le Niger.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-18-niger-lesson-1",
-        title: "Le Niger",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Niger est un grand pays enclavé d'Afrique de l'Ouest, l'un des plus vastes de la région (environ 1,27 million de km²). Il est bordé par l'Algérie, la Libye, le Tchad, le Nigeria, le Bénin, le Burkina Faso et le Mali.\n\n" +
+      "Le pays compte huit régions autour de la capitale, Niamey, à l'extrême sud-ouest du territoire. Sa position à la charnière de l'Afrique du Nord et de l'Afrique de l'Ouest, avec des frontières partagées avec sept pays, en fait un carrefour aussi bien géographique que sécuritaire.\n\n" +
       "#### 2. Le milieu\n" +
       "Plus des trois quarts du territoire sont désertiques (Sahara, massif de l'Aïr, désert du Ténéré). Seule une frange sahélienne au sud est habitable, arrosée par le fleuve Niger au sud-ouest. Le climat est très chaud et aride, et le pays très exposé aux sécheresses et à la désertification.\n\n" +
-      "#### 3. Population\n" +
+      "Le massif volcanique de l'Aïr, îlot montagneux au cœur du Sahara nigérien, forme avec les dunes du Ténéré un ensemble classé à l'UNESCO, riche en gravures rupestres et en vestiges paléontologiques de dinosaures. Cette immensité désertique explique que l'essentiel de la vie du pays se concentre sur une bande sahélienne étroite au sud.",
+      },
+      {
+        id: "course-geographie-18-niger-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Niger compte environ 26 à 27 millions d'habitants (2024) et connaît l'un des taux de natalité les plus élevés du monde.\n\n" +
-      "#### 4. Société\n" +
+      "Cette croissance démographique très rapide, combinée à un territoire largement désertique, concentre la population sur une frange sahélienne étroite, ce qui alimente une forte pression sur les terres cultivables et les ressources en eau.\n\n" +
+      "#### 2. Société\n" +
       "Les Haoussas sont majoritaires, aux côtés des Zarma-Songhaïs, Touaregs, Peuls et Kanouris. Le français est officiel, le haoussa très parlé. L'islam est très majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Haoussas, présents surtout dans le centre et l'est, partagent une langue et une culture communes avec leurs voisins du nord du Nigeria ; les Zarma-Songhaïs dominent autour du fleuve Niger et de Niamey ; Touaregs et Peuls, souvent nomades ou semi-nomades, occupent les marges sahariennes et sahéliennes du pays.",
+      },
+      {
+        id: "course-geographie-18-niger-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le Niger est l'un des grands producteurs mondiaux d'uranium, et exploite aussi de l'or et du pétrole. L'agriculture et l'élevage vivriers dominent. C'est l'un des pays les plus pauvres du monde, très vulnérable aux sécheresses.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : transition militaire. Chef de l'État (2026) : le général Abdourahamane Tiani, au pouvoir après le coup d'État de juillet 2023. Le Niger a quitté la CEDEAO (officialisé en janvier 2025) et forme, avec le Mali et le Burkina Faso, l'Alliance des États du Sahel (AES). Monnaie : le franc CFA (XOF). Devise nationale : « Fraternité, Travail, Progrès ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 3 août 1960. Membre de l'Union africaine, il a connu depuis l'indépendance de nombreuses transitions militaires, la dernière en date renversant en 2023 le président élu Mohamed Bazoum.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Niamey. Le désert du Ténéré et le massif de l'Aïr (réserves naturelles classées à l'UNESCO) sont d'immenses espaces sahariens. Les girafes de Kouré sont les dernières d'Afrique de l'Ouest, et le Sahara nigérien est un haut lieu de la paléontologie (dinosaures).",
       },
     ],
@@ -1391,25 +1466,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇳🇬",
     title: "Nigeria",
     description: "Le géant de l'Afrique : pays le plus peuplé du continent, grande économie, poids lourd du pétrole et de la culture (Nollywood, afrobeats). Découvre le Nigeria.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-19-nigeria-lesson-1",
-        title: "Le Nigeria",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Nigeria s'ouvre sur le golfe de Guinée. Sur environ 924 000 km², il est bordé par le Bénin, le Niger, le Tchad et le Cameroun, et se prolonge au sud par le vaste delta du Niger.\n\n" +
+      "Le pays est organisé en 36 États fédérés et un territoire de la capitale fédérale, Abuja. Cette structure fédérale, l'une des plus complexes du continent, reflète l'immense diversité géographique et humaine d'un pays presque aussi peuplé, à lui seul, que l'ensemble de l'Afrique de l'Ouest francophone.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays passe d'un sud forestier et humide (delta, mangroves) à un nord de savane sahélienne. Les fleuves Niger et Bénoué se rejoignent au centre du pays. Au nord-est, le lac Tchad, en fort recul, illustre les défis environnementaux de la région.\n\n" +
-      "#### 3. Population\n" +
+      "Le delta du Niger, l'un des plus vastes deltas du monde, concentre à la fois une biodiversité de mangroves exceptionnelle et l'essentiel de la production pétrolière du pays, avec de lourdes conséquences environnementales sur les zones d'extraction. Au centre, le plateau de Jos, plus frais en altitude, tranche avec les basses terres environnantes.",
+      },
+      {
+        id: "course-geographie-19-nigeria-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Avec plus de 220 millions d'habitants (2024), le Nigeria est le pays le plus peuplé d'Afrique.\n\n" +
-      "#### 4. Société\n" +
+      "La population, très jeune, se concentre dans les grandes métropoles du sud, au premier rang desquelles Lagos, mégapole de plus de 15 millions d'habitants et l'une des villes à la croissance la plus rapide du monde, ainsi que dans le nord densément peuplé autour de Kano.\n\n" +
+      "#### 2. Société\n" +
       "Le pays réunit plus de 250 groupes ethniques, dont trois principaux : les Haoussa-Peuls (nord), les Yorubas (sud-ouest) et les Igbos (sud-est). L'anglais est officiel. Le nord est majoritairement musulman, le sud chrétien.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette diversité ethnique et religieuse, gérée par un savant équilibre fédéral entre les 36 États, reste une source de tensions récurrentes, illustrée par la guerre du Biafra (1967-1970), tentative de sécession de la région igbo, ou par l'insurrection de Boko Haram dans le nord-est depuis 2009.",
+      },
+      {
+        id: "course-geographie-19-nigeria-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le Nigeria est l'une des deux plus grandes économies d'Afrique. Le pétrole du delta du Niger en est le pilier (grand exportateur), avec le gaz et l'agriculture. Sa culture rayonne : Nollywood (deuxième industrie du cinéma au monde par le nombre de films) et la musique afrobeats.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république fédérale (36 États). Chef de l'État (2026) : Bola Ahmed Tinubu, président depuis mai 2023. Monnaie : le naira (NGN). Devise nationale : « Unity and Faith, Peace and Progress » (Unité et Foi, Paix et Progrès).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 1er octobre 1960. Membre fondateur de l'Union africaine et de la CEDEAO, il en est la première puissance démographique et l'une des deux premières économies, aux côtés de l'Afrique du Sud.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Abuja, ville construite au centre du pays. Lagos, mégapole côtière, est l'une des plus grandes villes d'Afrique et le cœur économique. Le Nigeria est l'héritier de grands royaumes (Bénin, Oyo, cités haoussa).",
       },
     ],
@@ -1457,25 +1547,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇳",
     title: "Sénégal",
     description: "La pointe la plus occidentale de l'Afrique, terre de teranga entre Sahel et Atlantique. Découvre le Sénégal, son histoire et ses paysages.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-20-senegal-lesson-1",
-        title: "Le Sénégal",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Sénégal s'ouvre sur l'Atlantique, en Afrique de l'Ouest. Sur environ 196 700 km², il est bordé par la Mauritanie, le Mali, la Guinée et la Guinée-Bissau, et entoure presque entièrement l'enclave de la Gambie. La pointe des Almadies, à Dakar, est l'extrémité ouest du continent africain.\n\n" +
+      "Le pays est découpé en quatorze régions, de Dakar, la capitale, à Ziguinchor, au sud, en Casamance, séparée du reste du territoire par l'enclave gambienne. Cette discontinuité territoriale a longtemps nourri des revendications autonomistes dans cette région du sud.\n\n" +
       "#### 2. Le milieu\n" +
       "Le climat est sahélien au nord et plus humide au sud, en Casamance. Le pays est arrosé par les fleuves Sénégal, Gambie, Casamance et Saloum. Savane et mangroves abritent de grands sanctuaires : le parc du Niokolo-Koba et celui des oiseaux du Djoudj (UNESCO).\n\n" +
-      "#### 3. Population\n" +
+      "La Casamance, au climat plus humide et à la végétation plus dense, tranche nettement avec le nord sahélien, autour du fleuve Sénégal, où l'agriculture irriguée s'est développée dans la vallée. Le parc national du Djoudj, delta du fleuve Sénégal, est l'un des plus importants sanctuaires d'oiseaux migrateurs d'Afrique de l'Ouest.",
+      },
+      {
+        id: "course-geographie-20-senegal-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Sénégal compte environ 18 millions d'habitants (2024), une population jeune, concentrée sur le littoral et dans l'agglomération de Dakar.\n\n" +
-      "#### 4. Société\n" +
+      "L'agglomération de Dakar, sur la presqu'île du Cap-Vert, concentre à elle seule environ un quart de la population du pays, loin devant les autres villes comme Touba, Thiès ou Saint-Louis, ce qui en fait l'une des zones urbaines les plus densément peuplées d'Afrique de l'Ouest.\n\n" +
+      "#### 2. Société\n" +
       "Le pays réunit Wolofs, Peuls, Sérères, Diolas, Mandingues… Le français est officiel, le wolof largement parlé. L'islam est très majoritaire (confréries mouride et tijane), avec une minorité chrétienne ; la culture de la teranga (hospitalité) est une fierté nationale.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les confréries soufies, en particulier la mouridiyya fondée par Cheikh Ahmadou Bamba et centrée sur la ville sainte de Touba, jouent un rôle social, économique et politique de premier plan dans la société sénégalaise, bien au-delà de la seule sphère religieuse.",
+      },
+      {
+        id: "course-geographie-20-senegal-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur l'agriculture (arachide, mil), la pêche, les phosphates, l'or et le tourisme. Depuis peu, le Sénégal est devenu producteur de pétrole et de gaz offshore, dont le champ gazier Grand Tortue Ahmeyim (GTA), partagé avec la Mauritanie.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république (démocratie reconnue pour ses alternances pacifiques). Chef de l'État (2026) : Bassirou Diomaye Faye, élu en mars 2024. Monnaie : le franc CFA (XOF). Devise nationale : « Un Peuple, Un But, Une Foi ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 20 août 1960, après une brève fédération du Mali (avec l'actuel Mali) ; Léopold Sédar Senghor, poète et chantre de la négritude, en fut le premier président. Membre de l'UEMOA et de la CEDEAO, il est réputé pour la stabilité de ses institutions démocratiques depuis l'indépendance.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Dakar. L'île de Gorée (mémoire de la traite négrière, UNESCO), le lac Rose (Retba), la Grande Mosquée de Touba (haut lieu du mouridisme) et la ville de Saint-Louis (UNESCO) comptent parmi ses sites emblématiques.",
       },
     ],
@@ -1523,25 +1628,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇱",
     title: "Sierra Leone",
     description: "Un pays côtier d'Afrique de l'Ouest, célèbre pour ses diamants et son grand port naturel, reconstruit après la guerre civile. Découvre la Sierra Leone.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-21-sierra-leone-lesson-1",
-        title: "La Sierra Leone",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Sierra Leone borde l'Atlantique, en Afrique de l'Ouest. Sur environ 71 700 km², elle est entourée par la Guinée et le Liberia. La presqu'île de Freetown abrite l'un des plus grands ports naturels du monde.\n\n" +
+      "Le pays compte cinq régions, dont celle de l'Ouest, autour de Freetown, la capitale, bâtie au pied de collines boisées qui dominent directement la baie. Ce relief particulier a valu son nom au pays, donné par les navigateurs portugais du XVe siècle.\n\n" +
       "#### 2. Le milieu\n" +
       "La côte est faite de mangroves et de plaines ; l'intérieur, plus élevé, est fait de collines et de montagnes. Le pays est l'un des plus arrosés d'Afrique de l'Ouest, couvert de forêt tropicale ; le climat est équatorial.\n\n" +
-      "#### 3. Population\n" +
+      "À l'est, les monts Loma culminent avec le mont Bintumani, point culminant du pays à plus de 1 900 m, au cœur d'une réserve forestière protégée. Ces fortes précipitations, parmi les plus abondantes de la sous-région, expliquent la densité de la forêt tropicale qui couvre encore une bonne partie du territoire.",
+      },
+      {
+        id: "course-geographie-21-sierra-leone-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Sierra Leone compte environ 8,6 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population, jeune et majoritairement rurale, s'est reconstituée progressivement après la guerre civile et l'épidémie d'Ebola, deux crises qui ont chacune provoqué d'importants déplacements vers Freetown, de loin la plus grande ville du pays.\n\n" +
+      "#### 2. Société\n" +
       "On y trouve les peuples temné, mendé et les Krios (descendants d'esclaves affranchis). L'anglais est officiel, le krio (créole) très parlé. L'islam est majoritaire, avec une minorité chrétienne. Freetown fut fondée comme refuge d'esclaves libérés.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Temnés, majoritaires au nord et au centre-ouest, et les Mendés, au sud et à l'est, forment les deux plus grands groupes du pays ; les Krios, installés à Freetown et sur la presqu'île depuis la fondation de la colonie à la fin du XVIIIe siècle, ont longtemps joué un rôle culturel et administratif de premier plan.",
+      },
+      {
+        id: "course-geographie-21-sierra-leone-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "La Sierra Leone est connue pour ses diamants (tristement associés aux « diamants de sang » de la guerre), ainsi que l'or, la bauxite et le rutile (titane). L'agriculture (riz, cacao) et la pêche comptent aussi. L'économie s'est reconstruite après la guerre civile (1991-2002) et l'épidémie d'Ebola (2014).\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Julius Maada Bio, président réélu en 2023. Monnaie : le leone (SLE). Devise nationale : « Unity, Freedom, Justice » (Unité, Liberté, Justice).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 27 avril 1961. Membre de l'Union africaine et de la CEDEAO, il a mis en place un processus de vérité et réconciliation après la guerre civile, et reste régulièrement cité comme exemple de sortie de crise réussie en Afrique de l'Ouest.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Freetown, dont le célèbre « Cotton Tree » est un symbole historique. L'île de Bunce rappelle la traite négrière. Le nom « Sierra Leone » signifie « les montagnes du lion ».",
       },
     ],
@@ -1589,25 +1709,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇹🇬",
     title: "Togo",
     description: "Un étroit couloir de terre du golfe de Guinée, du littoral aux savanes du nord, dominé de longue date par la dynastie Gnassingbé. Découvre le Togo.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-22-togo-lesson-1",
-        title: "Le Togo",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Togo est un pays étroit et allongé du nord au sud, avec une courte façade sur le golfe de Guinée. Sur environ 56 800 km², il est bordé par le Ghana, le Bénin et le Burkina Faso.\n\n" +
+      "Le pays est découpé en cinq régions, de la région Maritime au sud, autour de Lomé, la capitale, à la région des Savanes au nord, à la frontière du Burkina Faso. Cette forme allongée, comparable à celle du Bénin voisin, fait traverser au pays plusieurs zones climatiques sur une distance nord-sud d'environ 600 km.\n\n" +
       "#### 2. Le milieu\n" +
       "Du sud (littoral, lagunes, plateaux) au nord (savanes), le pays est traversé en diagonale par la chaîne de l'Atakora. Le climat est tropical ; le lac Togo borde le littoral.\n\n" +
-      "#### 3. Population\n" +
+      "La chaîne de l'Atakora, appelée localement monts Togo, culmine au pic d'Agou, point culminant du pays à un peu plus de 980 m, dans une région de plateaux frais propice à la culture du café et du cacao. Plus au nord, la savane cède la place à un paysage plus sec, proche de celui du Sahel.",
+      },
+      {
+        id: "course-geographie-22-togo-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Togo compte environ 9 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre dans le sud, autour de Lomé et des plateaux agricoles, tandis que le nord, plus sec et plus enclavé, reste davantage rural et moins densément peuplé.\n\n" +
+      "#### 2. Société\n" +
       "Les principaux peuples sont les Éwés (sud) et les Kabyè (nord), aux côtés des Tem et d'autres. Le français est la langue officielle. Religions traditionnelles (vaudou), christianisme et islam cohabitent.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette distinction régionale entre Éwés du sud, plus urbanisés et christianisés, et Kabyè du nord, dont sont originaires les dirigeants du pays depuis 1967, a longtemps structuré la vie politique togolaise et alimenté des tensions autour de la répartition du pouvoir.",
+      },
+      {
+        id: "course-geographie-22-togo-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur les phosphates (une des principales ressources), l'agriculture (café, cacao, coton) et surtout le port en eau profonde de Lomé, grand hub de transit pour la sous-région.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Le Togo est passé à un régime parlementaire avec la nouvelle Constitution de 2024. Homme fort et chef de l'exécutif (2026) : Faure Gnassingbé, Président du Conseil des ministres (fonction occupée depuis mai 2025), au pouvoir depuis 2005 ; la présidence de la République est devenue un rôle protocolaire. La famille Gnassingbé dirige le pays depuis 1967. Monnaie : le franc CFA (XOF). Devise nationale : « Travail, Liberté, Patrie ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 27 avril 1960, après avoir été un territoire sous mandat puis sous tutelle de la SDN puis de l'ONU, hérité de l'ancien « Togoland » allemand. Membre de l'UEMOA et de la CEDEAO, il reste l'un des rares pays africains dirigés par la même famille depuis près de six décennies.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Lomé, sur la côte. Ancienne colonie allemande (le « Togoland »), le pays abrite le Koutammakou, pays des Batammariba et de leurs maisons-tours de terre (takienta), classé à l'UNESCO.",
       },
     ],
@@ -1655,25 +1790,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇦🇴",
     title: "Angola",
     description: "Un géant pétrolier lusophone de la côte atlantique, immensément riche en ressources, reconstruit après une longue guerre civile. Découvre l'Angola.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-23-angola-lesson-1",
-        title: "L'Angola",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "L'Angola s'étend sur la côte atlantique de l'Afrique. Sur environ 1,25 million de km², il est bordé par la RD Congo, la Zambie et la Namibie. Son enclave de Cabinda, riche en pétrole, est séparée du reste du pays par un couloir de la RD Congo.\n\n" +
+      "Le pays est organisé en 21 provinces, dont celle de Luanda, autour de la capitale, concentre l'essentiel de l'activité économique. Cette configuration territoriale, avec l'enclave de Cabinda séparée du reste du pays, a longtemps alimenté des tensions séparatistes localisées.\n\n" +
       "#### 2. Le milieu\n" +
       "Une plaine côtière borde un vaste plateau intérieur de savanes et de forêts. Le pays est arrosé par de nombreuses rivières (Kwanza, Cunene). Le climat est tropical au nord et devient aride au sud-ouest, où commence le désert du Namib.\n\n" +
-      "#### 3. Population\n" +
+      "Le plateau intérieur, qui occupe l'essentiel du territoire, offre un climat plus tempéré que la côte grâce à l'altitude, propice à l'agriculture. Vers le sud, le pays s'assèche progressivement jusqu'aux confins du désert du Namib, partagé avec la Namibie, tandis que les chutes de Kalandula, parmi les plus impressionnantes d'Afrique, témoignent de l'abondance des cours d'eau du centre du pays.",
+      },
+      {
+        id: "course-geographie-23-angola-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "L'Angola compte environ 36 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population, jeune et en forte croissance, s'est fortement urbanisée depuis la fin de la guerre civile en 2002 : Luanda, la capitale, est devenue une mégapole de plusieurs millions d'habitants, l'une des villes à la croissance la plus rapide d'Afrique australe.\n\n" +
+      "#### 2. Société\n" +
       "La société réunit les peuples Ovimbundu, Ambundu, Bakongo et d'autres. Le portugais est la langue officielle et le christianisme la religion majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Ovimbundu, majoritaires sur les hauts plateaux du centre, les Ambundu autour de Luanda et du fleuve Kwanza, et les Bakongo au nord, proches de la RD Congo voisine, ont chacun pesé différemment dans les rivalités politiques de la guerre civile, structurée autour du MPLA, de l'UNITA et du FNLA.",
+      },
+      {
+        id: "course-geographie-23-angola-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'Angola est l'un des plus grands producteurs de pétrole d'Afrique subsaharienne et un important producteur de diamants. Son économie reste très dépendante du pétrole. Le pays s'est reconstruit après une longue guerre civile (1975-2002).\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : João Lourenço, président depuis 2017. Monnaie : le kwanza (AOA). Devise nationale : l'Angola n'a pas de devise nationale officielle consacrée.\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Portugal depuis le 11 novembre 1975, sous la présidence fondatrice d'Agostinho Neto, mais une guerre civile éclate aussitôt entre le MPLA au pouvoir et l'UNITA, et ne s'achève qu'en 2002. Membre de l'Union africaine, l'Angola est aujourd'hui l'une des principales puissances pétrolières du continent.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Luanda, régulièrement citée parmi les villes les plus chères du monde. L'enclave pétrolière de Cabinda, les chutes de Kalandula et la mémoire de la lutte anticoloniale menée par le MPLA et Agostinho Neto marquent l'identité du pays.",
       },
     ],
