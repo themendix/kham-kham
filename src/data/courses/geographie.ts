@@ -2681,25 +2681,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇩🇯",
     title: "Djibouti",
     description: "Un petit pays stratégique à l'entrée de la mer Rouge, carrefour maritime et grande base militaire mondiale. Découvre Djibouti.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-34-djibouti-lesson-1",
-        title: "Djibouti",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Djibouti se situe dans la Corne de l'Afrique, à l'entrée sud de la mer Rouge (près du détroit de Bab-el-Mandeb), face au Yémen. Petit (environ 23 200 km²), il est bordé par l'Érythrée, l'Éthiopie et la Somalie.\n\n" +
+      "Le pays est divisé en six régions autour de Djibouti-ville, la capitale, qui concentre l'essentiel de la population et de l'activité portuaire. Sa position au carrefour de la mer Rouge et de l'océan Indien, sur l'une des routes maritimes les plus fréquentées du monde, explique son importance stratégique disproportionnée par rapport à sa taille.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays est désertique et volcanique, avec une chaleur extrême. Le lac Assal, à environ 155 m sous le niveau de la mer, est le point le plus bas d'Afrique ; c'est un lac salé. Les terres cultivables sont rares.\n\n" +
-      "#### 3. Population\n" +
+      "Le pays se situe au point de rencontre de trois plaques tectoniques (africaine, arabique et somalienne), ce qui en fait une zone volcanique et sismique active, à l'origine de paysages spectaculaires comme le lac Assal ou le lac Abbé, aux cheminées de calcaire fumantes.",
+      },
+      {
+        id: "course-geographie-34-djibouti-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Djibouti compte environ 1,1 million d'habitants (2024), très concentrés dans la capitale.\n\n" +
-      "#### 4. Société\n" +
+      "Plus de deux tiers de la population vit dans la seule ville de Djibouti, ce qui en fait l'un des pays les plus urbanisés d'Afrique ; le reste du territoire, très aride, n'accueille qu'une faible population rurale et pastorale.\n\n" +
+      "#### 2. Société\n" +
       "Les deux principaux groupes sont les Afars et les Issas (Somalis). L'arabe et le français sont langues officielles ; l'islam est très majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cet équilibre entre Afars, présents aussi en Érythrée et en Éthiopie, et Issas, apparentés aux Somalis, structure la vie politique du pays depuis l'indépendance, avec un partage traditionnel des principales fonctions de l'État entre les deux communautés.",
+      },
+      {
+        id: "course-geographie-34-djibouti-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Djibouti tire sa richesse de sa position stratégique : c'est un grand port de transit (débouché maritime de l'Éthiopie enclavée) et un centre logistique, qui accueille de nombreuses bases militaires étrangères (France, États-Unis, Chine…). Le pays a peu de ressources naturelles.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Ismaïl Omar Guelleh, réélu en avril 2026, au pouvoir depuis 1999. Monnaie : le franc djiboutien (DJF). Devise nationale : « Unité, Égalité, Paix ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 27 juin 1977. Membre de l'Union africaine et de la Ligue arabe, il a su transformer sa position géographique en modèle économique, en louant des emplacements de bases militaires à plusieurs grandes puissances.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Djibouti. Le lac Assal (point le plus bas d'Afrique) et le détroit de Bab-el-Mandeb, l'un des passages maritimes les plus fréquentés du monde, font la singularité du pays.",
       },
     ],
@@ -2747,25 +2762,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇪🇷",
     title: "Érythrée",
     description: "Un pays de la Corne de l'Afrique sur la mer Rouge, discret et très fermé. Découvre l'Érythrée.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-35-erythree-lesson-1",
-        title: "L'Érythrée",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "L'Érythrée occupe la Corne de l'Afrique avec une longue façade sur la mer Rouge. Sur environ 117 600 km², elle est bordée par le Soudan, l'Éthiopie et Djibouti, et fait face à la péninsule Arabique. L'archipel des Dahlak lui appartient.\n\n" +
+      "Le pays est découpé en six régions autour d'Asmara, la capitale, perchée sur les hauts plateaux. Sa longue façade sur la mer Rouge, avec les ports de Massaoua et Assab, a longtemps été un enjeu stratégique, notamment lors de la guerre d'indépendance contre l'Éthiopie.\n\n" +
       "#### 2. Le milieu\n" +
       "Des hauts plateaux centraux dominent des plaines côtières très chaudes, dont la dépression du Danakil, parmi les lieux les plus chauds de la planète. Le climat est aride.\n\n" +
-      "#### 3. Population\n" +
+      "Les hauts plateaux, où se trouve Asmara à plus de 2 300 m d'altitude, offrent un climat tempéré qui tranche fortement avec les plaines côtières et la dépression du Danakil, où les températures comptent parmi les plus élevées enregistrées sur Terre. L'archipel des Dahlak, dans la mer Rouge, ajoute une dimension maritime à cette diversité de milieux.",
+      },
+      {
+        id: "course-geographie-35-erythree-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "L'Érythrée compte environ 3,5 millions d'habitants (2024), selon des estimations incertaines.\n\n" +
-      "#### 4. Société\n" +
+      "L'incertitude sur la population reflète en partie la fermeture du pays et l'ampleur de l'émigration, notamment vers l'Éthiopie, le Soudan et l'Europe, qui a vidé une partie de la population jeune et active depuis les années 2000.\n\n" +
+      "#### 2. Société\n" +
       "Les principaux groupes sont les Tigrinya, Tigré et Afars. Le tigrinya, l'arabe et l'anglais sont d'usage courant. Le christianisme orthodoxe et l'islam sont pratiqués à parts proches.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Tigrinya, majoritaires sur les hauts plateaux chrétiens, partagent une langue et une culture proches de celles du Tigré éthiopien voisin, tandis que les populations musulmanes se concentrent davantage sur la côte et dans les basses terres, un équilibre religieux et régional que l'État érythréen s'efforce de maintenir.",
+      },
+      {
+        id: "course-geographie-35-erythree-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie, très fermée, repose sur l'agriculture, l'élevage et les mines (or, potasse). Un long service militaire obligatoire et l'isolement du pays nourrissent une forte émigration.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république à parti unique (sans élections nationales). Chef de l'État (2026) : Isaias Afwerki, au pouvoir depuis l'indépendance (1991-1993). Monnaie : le nakfa (ERN). Devise nationale : l'Érythrée n'a pas de devise nationale officielle consacrée.\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays a obtenu son indépendance de facto en 1991 après trente ans de guerre, officialisée par référendum en 1993. Membre de l'Union africaine, il reste l'un des États les plus fermés et les moins documentés du monde, sans élections nationales depuis l'indépendance.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Asmara, réputée pour son architecture Art déco italienne (UNESCO). L'Érythrée est devenue indépendante de l'Éthiopie en 1993, après une longue guerre de libération.",
       },
     ],
@@ -2813,25 +2843,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇪🇹",
     title: "Éthiopie",
     description: "Un géant des hauts plateaux, berceau de l'humanité et seul pays africain jamais colonisé, deuxième le plus peuplé du continent. Découvre l'Éthiopie.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-36-ethiopie-lesson-1",
-        title: "L'Éthiopie",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "L'Éthiopie occupe le cœur de la Corne de l'Afrique. Enclavée (elle a perdu son accès à la mer avec l'indépendance de l'Érythrée), elle s'étend sur environ 1,1 million de km² et voisine avec l'Érythrée, Djibouti, la Somalie, le Kenya, le Soudan du Sud et le Soudan.\n\n" +
+      "Le pays est organisé en une dizaine d'États régionaux fédérés selon des critères largement ethnolinguistiques, autour d'Addis-Abeba, la capitale fédérale. Cette architecture fédérale, unique en Afrique par son ampleur, reflète l'extraordinaire diversité de peuples que rassemble le pays.\n\n" +
       "#### 2. Le milieu\n" +
       "De vastes hauts plateaux (le « toit de l'Afrique ») sont entaillés par la vallée du Rift. Le Nil Bleu y prend sa source, au lac Tana. Le climat est tempéré en altitude et brûlant dans les basses terres (Danakil).\n\n" +
-      "#### 3. Population\n" +
+      "Le Rift éthiopien, qui traverse le pays du nord-est au sud-ouest, sépare les hauts plateaux en deux blocs et est ponctué de lacs volcaniques. Au nord-est, la dépression du Danakil, l'une des régions les plus chaudes et les plus basses de la planète, contraste radicalement avec la fraîcheur des hauts plateaux voisins.",
+      },
+      {
+        id: "course-geographie-36-ethiopie-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Avec environ 130 millions d'habitants (2024), l'Éthiopie est le deuxième pays le plus peuplé d'Afrique, après le Nigeria.\n\n" +
-      "#### 4. Société\n" +
+      "La population, essentiellement rurale et agricole, se concentre sur les hauts plateaux fertiles, tandis que les basses terres périphériques, plus arides, restent le domaine de peuples pastoraux comme les Afars ou les Somalis de la région de l'Ogaden.\n\n" +
+      "#### 2. Société\n" +
       "C'est une mosaïque de peuples (Oromos, Amharas, Tigréens, Somalis…). L'amharique sert de langue de travail fédérale, parmi de nombreuses langues. Le christianisme orthodoxe, très ancien, et l'islam dominent. Le pays a son propre alphabet et son propre calendrier.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Oromos, premier groupe du pays par le nombre, les Amharas, historiquement dominants dans l'appareil d'État impérial, et les Tigréens, au nord, ont chacun pesé différemment dans l'histoire politique récente, notamment lors de la guerre du Tigré (2020-2022), qui a mis à l'épreuve l'équilibre fédéral du pays.",
+      },
+      {
+        id: "course-geographie-36-ethiopie-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'Éthiopie est le berceau du café et possède le premier cheptel d'Afrique. Le grand barrage de la Renaissance (GERD) sur le Nil Bleu doit fournir de l'électricité. La croissance a été forte, malgré des tensions internes (guerre du Tigré, 2020-2022).\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république fédérale parlementaire. Homme fort (2026) : le Premier ministre Abiy Ahmed, chef du gouvernement et prix Nobel de la paix 2019 ; la présidence de la République (Taye Atske Selassie) est un rôle protocolaire. Monnaie : le birr (ETB). Devise nationale : l'Éthiopie n'a pas de devise nationale officielle consacrée.\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Seul pays africain jamais colonisé (à l'exception d'une brève occupation italienne, 1936-1941), l'Éthiopie a conservé une monarchie multiséculaire jusqu'à la révolution de 1974, qui installa un régime marxiste renversé à son tour en 1991. Membre fondateur de l'Union africaine, dont elle abrite le siège, elle demeure l'une des puissances diplomatiques majeures du continent.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Addis-Abeba, siège de l'Union africaine. Les églises rupestres de Lalibela, la ville d'Aksoum et le fossile de Lucy rappellent que le pays est un berceau de l'humanité. L'Éthiopie est le seul pays africain à n'avoir jamais été colonisé (victoire d'Adoua, 1896).",
       },
     ],
@@ -2879,25 +2924,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇰🇪",
     title: "Kenya",
     description: "Terre de safaris et carrefour économique de l'Afrique de l'Est, à cheval sur l'équateur. Découvre le Kenya.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-37-kenya-lesson-1",
-        title: "Le Kenya",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Kenya s'ouvre sur l'océan Indien, à cheval sur l'équateur, en Afrique de l'Est. Sur environ 580 000 km², il est bordé par l'Éthiopie, la Somalie, le Soudan du Sud, l'Ouganda et la Tanzanie, et longé à l'ouest par le lac Victoria.\n\n" +
+      "Le pays est découpé en 47 comtés depuis la Constitution de 2010, qui a fortement décentralisé un pouvoir jusque-là très concentré à Nairobi. Sa position sur l'équateur et sa façade sur l'océan Indien, avec le grand port de Mombasa, en font un carrefour pour toute l'Afrique de l'Est enclavée.\n\n" +
       "#### 2. Le milieu\n" +
       "Une côte tropicale, de hauts plateaux centraux traversés par la vallée du Rift, le mont Kenya (environ 5 199 m, deuxième sommet d'Afrique) et de grandes savanes (Masai Mara) composent des paysages très variés.\n\n" +
-      "#### 3. Population\n" +
+      "La vallée du Rift, qui traverse le pays du nord au sud, est ponctuée de lacs souvent alcalins, comme le lac Nakuru, réputé pour ses flamants roses, ou le lac Turkana, l'un des plus grands lacs désertiques du monde et un site majeur de découvertes de fossiles humains.",
+      },
+      {
+        id: "course-geographie-37-kenya-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Kenya compte environ 55 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre sur les hauts plateaux fertiles du centre et de l'ouest, autour de Nairobi, ainsi que sur la côte, tandis que le nord, plus aride, reste peu peuplé et habité par des communautés pastorales.\n\n" +
+      "#### 2. Société\n" +
       "Le pays réunit de nombreux peuples (Kikuyu, Luo, Luhya, Kalenjin, Massaï…). Le swahili et l'anglais sont langues officielles ; le christianisme est majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Kikuyu, plus nombreux et souvent influents en politique et en affaires, les Luo, les Luhya et les Kalenjin comptent parmi la quarantaine de groupes du pays ; les Massaï, minoritaires en nombre mais mondialement connus, incarnent une culture pastorale traditionnelle encore vivace dans le sud du pays.",
+      },
+      {
+        id: "course-geographie-37-kenya-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le Kenya est un grand exportateur de thé et de café, ainsi que de fleurs (horticulture). Le tourisme (safaris) et surtout Nairobi, hub financier et technologique (« Silicon Savannah », paiement mobile M-Pesa), font sa force.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : William Ruto, président depuis 2022. Monnaie : le shilling kenyan (KES). Devise nationale : « Harambee » (« Tous ensemble »).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 12 décembre 1963, sous la présidence fondatrice de Jomo Kenyatta. Membre de l'Union africaine et de la Communauté d'Afrique de l'Est, il est aujourd'hui l'une des principales économies et l'un des hubs diplomatiques de la région.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Nairobi. La réserve du Masai Mara (grande migration des gnous), le mont Kenya et la région du lac Turkana (fossiles humains) sont mondialement connus ; le pays est aussi la patrie de grands marathoniens.",
       },
     ],
@@ -2945,25 +3005,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇬",
     title: "Madagascar",
     description: "La « grande île » de l'océan Indien, sanctuaire unique de biodiversité, peuplée d'un métissage afro-asiatique. Découvre Madagascar.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-38-madagascar-lesson-1",
-        title: "Madagascar",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Madagascar est la plus grande île d'Afrique et la quatrième plus grande île du monde, dans l'océan Indien, séparée du continent par le canal du Mozambique. Elle s'étend sur environ 587 000 km².\n\n" +
+      "L'île est découpée en 23 régions autour d'Antananarivo, la capitale, sur les hauts plateaux centraux. Séparée du continent africain depuis environ 90 millions d'années, elle forme un monde à part, souvent qualifié de « huitième continent » par les naturalistes.\n\n" +
       "#### 2. Le milieu\n" +
       "Des hauts plateaux centraux séparent une côte est humide et forestière d'un ouest plus sec. L'île abrite une biodiversité unique au monde : lémuriens, baobabs, caméléons — près de 90 % des espèces y sont endémiques. La déforestation est un défi majeur.\n\n" +
-      "#### 3. Population\n" +
+      "Les tsingy de Bemaraha, dans l'ouest, forment un extraordinaire massif calcaire aux aiguilles rocheuses tranchantes, classé à l'UNESCO. L'allée des baobabs, près de Morondava, et les forêts humides de l'est, encore refuges de nombreuses espèces de lémuriens, complètent cette mosaïque de paysages uniques au monde.",
+      },
+      {
+        id: "course-geographie-38-madagascar-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Madagascar compte environ 30 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre sur les hauts plateaux centraux, autour d'Antananarivo, et le long des côtes les plus fertiles, tandis que l'extrême sud, aride et régulièrement frappé par la sécheresse, reste l'une des régions les plus pauvres du pays.\n\n" +
+      "#### 2. Société\n" +
       "Fait unique : la population malgache est issue d'un métissage austronésien (venu d'Asie) et africain. Le malgache et le français sont langues officielles ; christianisme et religions traditionnelles cohabitent.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Ce peuplement, venu par vagues successives d'Asie du Sud-Est puis d'Afrique de l'Est il y a environ 1 500 à 2 000 ans, a donné naissance à une dix-huitaine de groupes ethniques (Merina, Betsileo, Sakalava…) partageant une même langue malgache, un cas rare d'unité linguistique sur un territoire aussi vaste.",
+      },
+      {
+        id: "course-geographie-38-madagascar-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Madagascar est le premier producteur mondial de vanille, avec le riz, le girofle, le nickel et le cobalt, et un tourisme tourné vers la nature. C'est l'un des pays les plus pauvres du monde.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : transition militaire depuis le coup d'État d'octobre 2025, qui a renversé le président Andry Rajoelina. Chef de l'État (2026) : le colonel Michael Randrianirina, président de la transition (investi en octobre 2025) ; une élection présidentielle est envisagée vers fin 2027. Monnaie : l'ariary (MGA). Devise nationale : « Fitiavana, Tanindrazana, Fandrosoana » (Amour, Patrie, Progrès).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 26 juin 1960. Membre de l'Union africaine, il a connu depuis l'indépendance plusieurs crises politiques et transitions de pouvoir en dehors du cadre constitutionnel, la plus récente en date datant d'octobre 2025.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Antananarivo (« Tana »). L'allée des baobabs, les lémuriens, les forêts humides de l'Atsinanana (UNESCO) et les tsingy de Bemaraha font la réputation naturelle de l'île.",
       },
     ],
@@ -3011,25 +3086,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇺",
     title: "Maurice",
     description: "Un modèle de réussite et de diversité dans l'océan Indien, célèbre pour son dodo disparu et ses lagons. Découvre l'île Maurice.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-39-maurice-lesson-1",
-        title: "Maurice",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Maurice est une île volcanique de l'océan Indien, à l'est de Madagascar, au sein de l'archipel des Mascareignes (avec Rodrigues). Petite (environ 2 040 km²), elle n'a aucune frontière terrestre.\n\n" +
+      "L'île principale et l'île de Rodrigues, plus petite et plus isolée à environ 560 km à l'est, ainsi que plusieurs îlots dispersés dans l'océan Indien, forment ensemble le territoire mauricien, ce qui donne au pays une zone économique maritime bien plus vaste que ne le laisserait supposer sa surface terrestre.\n\n" +
       "#### 2. Le milieu\n" +
       "L'île, volcanique, associe un plateau central, des montagnes et une ceinture de lagons et de récifs coralliens. Le climat est tropical. C'est ici que vivait le dodo, oiseau devenu le symbole des espèces disparues.\n\n" +
-      "#### 3. Population\n" +
+      "Le plateau central, plus frais en altitude, contraste avec les plaines côtières chaudes et humides, entièrement ceinturées par une barrière de corail qui crée les lagons calmes et transparents faisant la réputation touristique de l'île.",
+      },
+      {
+        id: "course-geographie-39-maurice-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Maurice compte environ 1,3 million d'habitants (2024), sur un territoire très densément peuplé.\n\n" +
-      "#### 4. Société\n" +
+      "Cette forte densité, l'une des plus élevées d'Afrique, résulte de l'histoire de peuplement de l'île, entièrement construite par la colonisation et l'immigration successive, sans population autochtone préalable — un cas unique sur le continent.\n\n" +
+      "#### 2. Société\n" +
       "La population est une mosaïque unique de descendants d'Indiens, d'Africains, de Chinois et d'Européens. L'anglais (officiel de fait), le français et le créole mauricien sont largement utilisés ; hindouisme majoritaire, christianisme et islam.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les descendants de travailleurs sous contrat venus d'Inde après l'abolition de l'esclavage au XIXe siècle forment aujourd'hui la majorité de la population, aux côtés des Créoles d'origine africaine et malgache, d'une minorité sino-mauricienne et de Franco-Mauriciens, dans un modèle de cohabitation souvent cité en exemple.",
+      },
+      {
+        id: "course-geographie-39-maurice-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Maurice a l'une des économies les plus prospères et diversifiées d'Afrique : tourisme haut de gamme, services financiers (place offshore), textile, sucre (canne à sucre) et technologies.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république à régime parlementaire. Chef du gouvernement (2026) : le Premier ministre Navin Ramgoolam (depuis novembre 2024) ; la présidence de la République (Dharam Gokhool) est un rôle protocolaire. Monnaie : la roupie mauricienne (MUR). Devise nationale : « Stella Clavisque Maris Indici » (L'étoile et la clé de l'océan Indien).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 12 mars 1968. Membre de l'Union africaine et du Commonwealth, il est régulièrement cité comme l'une des démocraties les plus stables et l'une des économies les plus performantes d'Afrique.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Port-Louis. Le dodo (symbole national disparu), Le Morne Brabant (mémoire de l'esclavage, UNESCO) et l'Aapravasi Ghat (immigration engagée, UNESCO) témoignent de son histoire ; ses plages et lagons attirent le monde entier.",
       },
     ],
@@ -3077,25 +3167,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇺🇬",
     title: "Ouganda",
     description: "« La perle de l'Afrique », pays équatorial des sources du Nil et des gorilles de montagne. Découvre l'Ouganda.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-40-ouganda-lesson-1",
-        title: "L'Ouganda",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "L'Ouganda est un pays enclavé d'Afrique de l'Est, à cheval sur l'équateur. Sur environ 241 550 km², il est bordé par le Kenya, le Soudan du Sud, la RD Congo, le Rwanda et la Tanzanie, et longé au sud par le lac Victoria.\n\n" +
+      "Le pays est découpé en une centaine de districts autour de Kampala, la capitale, sur les rives du lac Victoria. Sa position aux sources du Nil, au cœur de la région des Grands Lacs, en a longtemps fait un territoire convoité, notamment par le Royaume-Uni au XIXe siècle.\n\n" +
       "#### 2. Le milieu\n" +
       "C'est un plateau vert et fertile, riche en lacs. Le Nil Blanc sort du lac Victoria à Jinja. À l'ouest, les monts Rwenzori (« montagnes de la Lune ») portent des neiges à l'équateur. Le climat est tempéré par l'altitude.\n\n" +
-      "#### 3. Population\n" +
+      "Cette abondance de lacs et de terres fertiles, associée à un climat tempéré par l'altitude malgré la position équatoriale, vaut au pays sa réputation de « perle de l'Afrique » ; les monts Rwenzori, aux neiges éternelles rarissimes sous l'équateur, comptent parmi les curiosités géographiques les plus spectaculaires du continent.",
+      },
+      {
+        id: "course-geographie-40-ouganda-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "L'Ouganda compte environ 48 millions d'habitants (2024), une population très jeune.\n\n" +
-      "#### 4. Société\n" +
+      "Avec l'un des taux de natalité les plus élevés du monde, la population ougandaise est parmi les plus jeunes de la planète, ce qui crée à la fois un potentiel de croissance économique et une forte pression sur l'éducation et l'emploi.\n\n" +
+      "#### 2. Société\n" +
       "Les Bagandas (royaume du Buganda) et de nombreux autres peuples composent la nation. L'anglais et le swahili sont officiels, le luganda répandu ; le christianisme est majoritaire, avec une minorité musulmane.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Le royaume du Buganda, dont le roi (le Kabaka) conserve un rôle culturel et cérémoniel important autour de Kampala, illustre la survie de plusieurs royaumes traditionnels ougandais aux côtés de l'État moderne, un système de rois constitutionnels particulier en Afrique de l'Est.",
+      },
+      {
+        id: "course-geographie-40-ouganda-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur l'agriculture — le café est la principale exportation, avec le thé —, la pêche et un secteur pétrolier en développement autour du lac Albert. Le tourisme (gorilles de montagne) est prometteur.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Yoweri Museveni, réélu en janvier 2026, au pouvoir depuis 1986. Monnaie : le shilling ougandais (UGX). Devise nationale : « For God and My Country » (Pour Dieu et mon pays).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 9 octobre 1962. Membre de l'Union africaine et de la Communauté d'Afrique de l'Est, il a connu la sanglante dictature d'Idi Amin Dada (1971-1979) avant de se stabiliser sous la présidence, désormais très longue, de Yoweri Museveni.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Kampala. La source du Nil Blanc à Jinja, les gorilles de montagne de la forêt de Bwindi (UNESCO), les monts Rwenzori et le royaume traditionnel du Buganda font la richesse du pays.",
       },
     ],
@@ -3143,25 +3248,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇷🇼",
     title: "Rwanda",
     description: "Le « pays des mille collines », modèle de propreté et de reconstruction après le génocide de 1994. Découvre le Rwanda.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-41-rwanda-lesson-1",
-        title: "Le Rwanda",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Rwanda est un petit pays enclavé de la région des Grands Lacs. Sur environ 26 300 km², il est bordé par l'Ouganda, la Tanzanie, le Burundi et la RD Congo.\n\n" +
+      "Le pays est découpé en cinq provinces autour de Kigali, la capitale, au centre du territoire. Sa petite taille, associée à un relief très accidenté, en fait l'un des pays les plus densément peuplés et les plus intensément cultivés d'Afrique.\n\n" +
       "#### 2. Le milieu\n" +
       "Surnommé le « pays des mille collines », il est fait de collines et de montagnes, avec les volcans des Virunga au nord-ouest et le lac Kivu à l'ouest. Le climat est tempéré par l'altitude.\n\n" +
-      "#### 3. Population\n" +
+      "Les volcans des Virunga, dont certains encore actifs, culminent à plus de 4 500 m et abritent, avec la forêt de montagne environnante, l'un des derniers refuges des gorilles de montagne au monde. Le lac Kivu, l'un des grands lacs du Rift, offre un climat plus doux sur ses rives.",
+      },
+      {
+        id: "course-geographie-41-rwanda-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Rwanda compte environ 14 millions d'habitants (2024) et figure parmi les pays les plus densément peuplés d'Afrique.\n\n" +
-      "#### 4. Société\n" +
+      "Cette très forte densité, l'une des plus élevées du continent, s'accompagne d'une pression foncière considérable, que l'État rwandais gère par une politique volontariste d'aménagement du territoire et d'urbanisation planifiée, en particulier à Kigali.\n\n" +
+      "#### 2. Société\n" +
       "On y trouve les Hutus, les Tutsis et les Twa. Le kinyarwanda, le français, l'anglais et le swahili sont officiels ; le christianisme est majoritaire. Le pays reste profondément marqué par le génocide des Tutsis de 1994.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Depuis 1994, l'État rwandais a fait le choix de ne plus mentionner l'appartenance ethnique sur les documents officiels, dans une politique de réconciliation nationale volontariste qui reste, plus de trente ans après le génocide, un pilier central du discours politique du pays.",
+      },
+      {
+        id: "course-geographie-41-rwanda-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur le café, le thé, un tourisme haut de gamme (gorilles de montagne) et les services. Kigali est réputée pour sa propreté et sa sécurité, et le pays connaît une croissance soutenue.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Paul Kagame, président depuis 2000 (réélu en 2024). Monnaie : le franc rwandais (RWF). Devise nationale : « Unité, Travail, Patriotisme ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la Belgique depuis le 1er juillet 1962. Membre de l'Union africaine et de la Communauté d'Afrique de l'Est, il s'est reconstruit depuis le génocide de 1994 en misant sur la gouvernance, les technologies et le tourisme, devenant un modèle de développement souvent cité en exemple malgré des critiques sur les libertés politiques.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Kigali, l'une des villes les plus propres d'Afrique. Le parc des Volcans (gorilles de montagne), le lac Kivu et la mémoire du génocide de 1994 marquent le pays, surnommé « le pays des mille collines ».",
       },
     ],
@@ -3209,25 +3329,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇨",
     title: "Seychelles",
     description: "Un archipel paradisiaque de l'océan Indien, au PIB par habitant le plus élevé d'Afrique. Découvre les Seychelles.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-42-seychelles-lesson-1",
-        title: "Les Seychelles",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Les Seychelles forment un archipel de 115 îles dans l'océan Indien, au nord-est de Madagascar. Très petit (environ 455 km²), c'est le plus petit État d'Afrique par la superficie ; il n'a aucune frontière terrestre.\n\n" +
+      "L'immense majorité de la population et de l'activité se concentre sur les trois principales îles granitiques (Mahé, Praslin, La Digue), tandis que les nombreuses îles coralliennes éloignées, comme l'atoll d'Aldabra, sont largement inhabitées et vouées à la conservation de la nature.\n\n" +
       "#### 2. Le milieu\n" +
       "On distingue des îles granitiques (Mahé, Praslin, La Digue) et des îles coralliennes plus basses. Plages, forêts et récifs abritent une biodiversité unique : tortues géantes d'Aldabra et coco de mer. Le climat est tropical.\n\n" +
-      "#### 3. Population\n" +
+      "Les îles granitiques, uniques parmi les îles océaniques du monde par leur origine géologique continentale plutôt que volcanique ou corallienne, abritent des forêts primaires reliques, dont la vallée de Mai, à Praslin, où pousse le coco de mer, la plus grosse graine du règne végétal.",
+      },
+      {
+        id: "course-geographie-42-seychelles-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Les Seychelles comptent environ 130 000 habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La quasi-totalité de la population vit sur l'île de Mahé, où se trouve la capitale Victoria, faisant des Seychelles l'un des pays les plus concentrés géographiquement d'Afrique, malgré l'étendue de sa zone maritime.\n\n" +
+      "#### 2. Société\n" +
       "La population est créole, issue d'un métissage africain, européen et asiatique. Le créole seychellois, l'anglais et le français sont officiels ; le christianisme est majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette société créole, née de la colonisation française puis britannique et de l'arrivée d'esclaves africains puis de travailleurs indiens et chinois, partage des racines culturelles communes avec Maurice et La Réunion voisines, tout en ayant développé une identité seychelloise propre.",
+      },
+      {
+        id: "course-geographie-42-seychelles-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur le tourisme haut de gamme et la pêche au thon. Grâce à eux, les Seychelles affichent le PIB par habitant le plus élevé d'Afrique.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Patrick Herminie, élu en octobre 2025 (il a succédé à Wavel Ramkalawan). Monnaie : la roupie seychelloise (SCR). Devise nationale : « Finis Coronat Opus » (La fin couronne l'œuvre).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 29 juin 1976. Membre de l'Union africaine et du Commonwealth, il a fait de la préservation de son environnement exceptionnel un pilier de sa stratégie économique et diplomatique, notamment sur les enjeux de protection des océans.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Victoria, l'une des plus petites capitales du monde. L'atoll d'Aldabra (tortues géantes, UNESCO) et la vallée de Mai (coco de mer, UNESCO) sont des trésors naturels, tout comme les plages d'Anse Source d'Argent.",
       },
     ],
@@ -3275,25 +3410,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇴",
     title: "Somalie",
     description: "Le pays de la Corne de l'Afrique à la plus longue côte du continent, marqué par des décennies d'instabilité. Découvre la Somalie.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-43-somalie-lesson-1",
-        title: "La Somalie",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Somalie forme la pointe est de la Corne de l'Afrique. Sur environ 638 000 km², elle possède la plus longue côte d'Afrique continentale (sur l'océan Indien et le golfe d'Aden) et voisine avec Djibouti, l'Éthiopie et le Kenya.\n\n" +
+      "Le pays est officiellement divisé en dix-huit régions, mais son autorité centrale ne s'exerce que partiellement sur le territoire : le Somaliland, au nord-ouest, se gouverne comme un État indépendant de facto depuis 1991, et le Puntland, au nord-est, bénéficie d'une large autonomie.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays est fait de plateaux semi-arides et de savanes sèches, au climat chaud et aride. Deux rivières, le Jubba et le Shabelle, arrosent le sud, plus fertile.\n\n" +
-      "#### 3. Population\n" +
+      "Cette position à la pointe de la Corne de l'Afrique, entre le golfe d'Aden et l'océan Indien, fait de la Somalie un point de passage stratégique du commerce maritime mondial, un atout largement compromis ces dernières décennies par la piraterie et l'insécurité.",
+      },
+      {
+        id: "course-geographie-43-somalie-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Somalie compte environ 18 millions d'habitants (2024), en partie nomades pasteurs.\n\n" +
-      "#### 4. Société\n" +
+      "Cette tradition pastorale et nomade, encore vivace dans de vastes régions du pays, cohabite avec une urbanisation croissante autour de Mogadiscio et d'une importante diaspora, l'une des plus nombreuses d'Afrique rapportée à la population totale, installée notamment au Kenya, dans la péninsule Arabique, en Europe et en Amérique du Nord.\n\n" +
+      "#### 2. Société\n" +
       "Fait rare en Afrique, la population est très homogène : un même peuple somali, une même langue, une même religion. Le somali et l'arabe sont officiels ; l'islam est religion d'État. La société est organisée en clans.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette organisation clanique, qui structure aussi bien la vie sociale que la vie politique, a paradoxalement compté parmi les facteurs de la fragmentation du pays après la chute de l'État central en 1991, les rivalités entre clans ayant alimenté des décennies de conflit.",
+      },
+      {
+        id: "course-geographie-43-somalie-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur l'élevage (exportation de bétail vers la péninsule Arabique), l'agriculture, la pêche et les transferts de la diaspora. Des décennies de guerre civile et l'insécurité (Al-Shabaab) l'ont profondément désorganisée.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république fédérale (en reconstruction). Chef de l'État (2026) : Hassan Sheikh Mohamud, président depuis 2022. Le Somaliland, au nord, est une région séparatiste non reconnue internationalement. Monnaie : le shilling somalien (SOS). Devise nationale : la Somalie n'a pas de devise nationale officielle consacrée.\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant depuis le 1er juillet 1960, né de la fusion du Somaliland britannique et de la Somalie italienne. Membre de l'Union africaine et de la Ligue arabe, il tente depuis les années 2010 de reconstruire un État fédéral après l'effondrement de l'État central en 1991 et des décennies de guerre civile.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Mogadiscio, sur l'océan Indien. Le pays possède la plus longue côte du continent et une importante diaspora ; la région était liée dans l'Antiquité au commerce de l'encens (« pays de Pount »).",
       },
     ],
