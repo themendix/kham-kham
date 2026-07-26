@@ -8,25 +8,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇩🇿",
     title: "Algérie",
     description: "Le plus grand pays d'Afrique, tendu entre la Méditerranée et le Sahara. Découvre l'Algérie : son immense désert, ses montagnes de l'Atlas, ses peuples arabes et berbères et ses richesses en hydrocarbures.",
-    xp: 40,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-01-algerie-lesson-1",
-        title: "L'Algérie",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "L'Algérie occupe le centre du Maghreb, en Afrique du Nord, avec une façade méditerranéenne au nord. Avec près de 2,38 millions de km², c'est le plus grand pays d'Afrique par la superficie. Elle partage ses frontières avec le Maroc, la Tunisie, la Libye, le Niger, le Mali, la Mauritanie et le Sahara occidental. Le Sahara couvre à lui seul plus de 80 % du territoire.\n\n" +
+      "Le pays est organisé en 58 wilayas (l'équivalent de provinces), dont dix ont été créées dans le grand sud saharien pour mieux administrer un territoire immense et peu peuplé. La capitale, Alger, et les grandes villes côtières (Oran à l'ouest, Constantine et Annaba à l'est) concentrent l'essentiel de l'activité économique et administrative, loin devant les wilayas sahariennes du sud.\n\n" +
       "#### 2. Le milieu\n" +
       "Le nord, méditerranéen, connaît des hivers doux et pluvieux ; le sud, saharien, est brûlant et aride. Deux chaînes de l'Atlas (l'Atlas tellien près de la côte, l'Atlas saharien plus au sud) séparent le littoral fertile du désert. Au cœur du Sahara se dresse le massif volcanique du Hoggar, dont le mont Tahat culmine à environ 2 900 m.\n\n" +
-      "#### 3. Population\n" +
+      "Entre les deux chaînes de l'Atlas s'étendent les Hauts Plateaux, une steppe semi-aride vouée à l'élevage ovin. Plus au sud, le Sahara algérien alterne grands ergs de dunes (Grand Erg occidental, Grand Erg oriental), regs caillouteux et oasis, comme celles du Touat ou de Ouargla, où les palmeraies vivent grâce aux nappes souterraines. Le réseau hydrographique permanent y est quasi inexistant, en dehors des oueds qui ne coulent qu'après de fortes pluies.",
+      },
+      {
+        id: "course-geographie-01-algerie-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "L'Algérie compte environ 46 millions d'habitants (2024). La population, jeune, se concentre très largement sur la bande côtière du nord, où le climat et les terres sont plus favorables, tandis que l'immense Sahara reste peu peuplé.\n\n" +
-      "#### 4. Société\n" +
+      "Cette concentration s'est encore renforcée avec l'urbanisation : la majorité des Algériens vivent désormais en ville, notamment dans l'agglomération d'Alger et sur le littoral d'Oran à Annaba. La population reste marquée par sa jeunesse, avec une part importante de moins de 30 ans, ce qui pèse sur les besoins en logement, en emploi et en éducation.\n\n" +
+      "#### 2. Société\n" +
       "La société algérienne est composée d'Arabes et de Berbères (Kabyles, Chaouis, Mozabites, Touaregs du sud). L'arabe et le tamazight (berbère) sont langues officielles ; le français reste très présent dans l'enseignement et les affaires. L'islam sunnite est la religion de la grande majorité et la religion d'État.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "La Kabylie, région montagneuse à l'est d'Alger, est le principal foyer de la culture et de la langue berbères, avec une forte identité régionale. La société algérienne reste marquée par la mémoire de la guerre d'indépendance (1954-1962) et par des solidarités familiales et villageoises fortes, y compris au sein de l'importante diaspora installée en France et ailleurs en Europe.",
+      },
+      {
+        id: "course-geographie-01-algerie-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie algérienne repose massivement sur les hydrocarbures : le pays est l'un des grands producteurs et exportateurs de pétrole et surtout de gaz naturel du continent, exploités par la compagnie publique Sonatrach. L'agriculture (céréales, agrumes, dattes, vigne) et l'industrie complètent le tableau, mais la dépendance au pétrole et au gaz reste une fragilité.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Abdelmadjid Tebboune. Monnaie : le dinar algérien (DZD). Devise nationale : « Par le peuple et pour le peuple ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "L'Algérie a accédé à l'indépendance le 5 juillet 1962, au terme d'une guerre longue et meurtrière contre la France. Elle est membre de l'Union africaine, de la Ligue arabe, de l'Union du Maghreb arabe et de l'OPEP, et joue un rôle diplomatique de premier plan sur les dossiers régionaux (Sahel, Sahara occidental).\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Alger, surnommée « Alger la Blanche », dont la vieille Casbah est classée au patrimoine mondial de l'UNESCO. Le pays conserve de superbes ruines romaines (Timgad, Djémila) et l'art rupestre du Tassili n'Ajjer en plein Sahara. L'Algérie garde une mémoire forte de sa guerre d'indépendance contre la France (1954-1962).",
       },
     ],
@@ -74,25 +89,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇪🇬",
     title: "Égypte",
     description: "Un pays-pont entre l'Afrique et l'Asie, façonné par un seul fleuve. Découvre l'Égypte : le Nil, le canal de Suez, ses 100 millions d'habitants et l'héritage des pharaons.",
-    xp: 40,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-02-egypte-lesson-1",
-        title: "L'Égypte",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "L'Égypte occupe l'angle nord-est de l'Afrique et déborde sur l'Asie par la péninsule du Sinaï : c'est un véritable pont entre les deux continents. Sur environ 1 million de km², elle est bordée par la Méditerranée au nord et la mer Rouge à l'est, et voisine avec la Libye, le Soudan et Israël. Le canal de Suez, qui relie la Méditerranée à la mer Rouge, en fait un carrefour stratégique du commerce mondial.\n\n" +
+      "Le pays est découpé en 27 gouvernorats. En dehors de la vallée et du delta du Nil, le territoire égyptien comprend deux grands déserts : le désert Occidental (Libyque), qui prolonge le Sahara, et le désert Oriental (Arabique), qui borde la mer Rouge, de part et d'autre du fleuve qui traverse le pays du sud au nord.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays est presque entièrement désertique, mais le Nil le traverse du sud au nord et concentre toute la vie : la vallée et le vaste delta forment un long ruban vert au milieu des sables. Le climat est aride, très chaud en été. Au sud, le haut barrage d'Assouan retient le lac Nasser et régule les crues du fleuve.\n\n" +
-      "#### 3. Population\n" +
+      "Le désert Occidental abrite plusieurs oasis (Siwa, Kharga, Dakhla) où l'eau souterraine permet cultures et habitat permanent. Le désert Oriental, plus montagneux près de la mer Rouge, contraste avec les plages et récifs coralliens très fréquentés par le tourisme balnéaire, autour de villes comme Hurghada ou Charm el-Cheikh dans le Sinaï.",
+      },
+      {
+        id: "course-geographie-02-egypte-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Avec plus de 110 millions d'habitants (2024), l'Égypte est le pays le plus peuplé du monde arabe et l'un des plus peuplés d'Afrique. La quasi-totalité de cette population vit entassée le long du Nil et dans le delta, sur une petite fraction du territoire.\n\n" +
-      "#### 4. Société\n" +
+      "Cette densité extrême, l'une des plus fortes du monde le long d'un fleuve, s'accompagne d'une urbanisation rapide : Le Caire et sa région forment l'une des plus grandes agglomérations d'Afrique et du monde arabe, tandis qu'Alexandrie reste le grand port et la deuxième ville du pays. La population égyptienne est jeune, avec une natalité qui continue d'alimenter une forte croissance démographique.\n\n" +
+      "#### 2. Société\n" +
       "La population est majoritairement arabe ; l'arabe est la langue officielle. L'islam sunnite est la religion dominante, aux côtés d'une importante minorité chrétienne copte, l'une des plus anciennes communautés chrétiennes du monde. Le Caire est un grand foyer culturel et religieux du monde arabe.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Al-Azhar, au Caire, est l'une des plus anciennes et des plus prestigieuses institutions d'enseignement religieux sunnite au monde. La société égyptienne, très attachée à la vallée du Nil comme source de vie depuis l'Antiquité, reste également fière de sa culture populaire (cinéma, musique, presse) qui a longtemps rayonné dans tout le monde arabophone.",
+      },
+      {
+        id: "course-geographie-02-egypte-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur l'agriculture du Nil (coton, riz, blé), le tourisme, les revenus du canal de Suez, le gaz naturel et les transferts d'argent des Égyptiens travaillant à l'étranger. La forte croissance démographique pèse sur l'emploi et les ressources.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Abdel Fattah al-Sissi. Monnaie : la livre égyptienne (EGP). Devise nationale : l'Égypte n'a pas de devise officielle consacrée.\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "L'Égypte est une république depuis 1953, après le renversement de la monarchie lors de la révolution de 1952. Elle est membre de la Ligue arabe, dont elle a longtemps abrité le siège au Caire, et de l'Union africaine, et a joué un rôle pivot dans la diplomatie régionale, notamment sur les dossiers israélo-arabe et libyen.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Le Caire, mégapole de la vallée du Nil (une nouvelle capitale administrative a été bâtie à l'est). L'Égypte abrite parmi les monuments les plus célèbres du monde : les pyramides de Gizeh et le Sphinx, les temples de Louxor et Karnak. Son drapeau rouge-blanc-noir porte l'aigle de Saladin.",
       },
     ],
@@ -140,25 +170,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇱🇾",
     title: "Libye",
     description: "Un immense pays saharien ouvert sur la Méditerranée, riche en pétrole et marqué par une longue transition politique. Découvre la Libye, ses cités antiques et son désert.",
-    xp: 40,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-03-libye-lesson-1",
-        title: "La Libye",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Libye s'étend en Afrique du Nord, avec une longue façade sur la Méditerranée. Avec près de 1,76 million de km², c'est l'un des plus vastes pays du continent, mais près de 90 % de son territoire est désertique. Elle est entourée par la Tunisie, l'Algérie, le Niger, le Tchad, le Soudan et l'Égypte.\n\n" +
+      "Le pays se divise traditionnellement en trois grandes régions historiques : la Tripolitaine à l'ouest (autour de Tripoli), la Cyrénaïque à l'est (autour de Benghazi) et le Fezzan au sud, vaste espace désertique et peu peuplé. Cette division régionale a beaucoup pesé sur la vie politique du pays, notamment depuis 2011.\n\n" +
       "#### 2. Le milieu\n" +
       "Le Sahara domine le paysage : climat aride, très peu de cours d'eau permanents et de terres cultivables. Une étroite bande côtière, plus tempérée, concentre l'essentiel des cultures. Pour s'alimenter en eau, le pays puise dans des nappes fossiles profondes grâce au vaste réseau de la « Grande Rivière artificielle ».\n\n" +
-      "#### 3. Population\n" +
+      "Au sud, le désert libyen comprend quelques reliefs isolés, comme les contreforts du massif du Tibesti près de la frontière tchadienne et les hauteurs du Fezzan, ainsi que des oasis comme Ghadamès ou Koufra. La quasi-absence de relief élevé et de précipitations en fait l'un des espaces les plus arides du continent.",
+      },
+      {
+        id: "course-geographie-03-libye-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Libye compte environ 7 millions d'habitants (2024), massés sur le littoral, autour de Tripoli et de Benghazi. L'immense intérieur désertique est presque vide.\n\n" +
-      "#### 4. Société\n" +
+      "Cette concentration côtière fait de la Libye l'un des pays les plus urbanisés d'Afrique du Nord : la grande majorité de la population vit en ville, la vie rurale et nomade dans le Sahara ayant fortement reculé. La population reste jeune, et les années de conflit depuis 2011 ont provoqué d'importants déplacements internes vers les grandes villes côtières.\n\n" +
+      "#### 2. Société\n" +
       "La population est en majorité arabe et berbère (Amazighs), avec des minorités touarègue et toubou dans le sud saharien. L'arabe est la langue officielle et l'islam sunnite la religion de la quasi-totalité des habitants.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les minorités berbérophones, notamment dans le Jebel Nefoussa et à Zouara, ainsi que les Touaregs et Toubous du grand sud, entretiennent des identités régionales fortes, parfois en tension avec le pouvoir central. Avant les crises des années 2010, la Libye accueillait aussi une importante population de travailleurs migrants venus d'Afrique subsaharienne et d'Égypte.",
+      },
+      {
+        id: "course-geographie-03-libye-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie libyenne dépend presque entièrement du pétrole : le pays possède parmi les plus importantes réserves d'Afrique. Cette mono-dépendance et l'instabilité politique, qui a perturbé la production, laissent peu de place à la diversification.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Le pays est en transition depuis la chute de Mouammar Kadhafi en 2011, avec un pouvoir longtemps divisé entre l'est et l'ouest. Régime : transition politique. Chef de l'État (2026) : Mohamed al-Menfi, président du Conseil présidentiel reconnu internationalement ; Premier ministre du gouvernement d'union : Abdelhamid Dbeibah. Des élections nationales sont annoncées pour février 2027. Monnaie : le dinar libyen (LYD). Devise nationale : pas de devise officielle consacrée.\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Avant 2011, la Libye avait été un royaume indépendant à partir de 1951, avant de devenir en 1977 la « Jamahiriya » (l'État des masses) sous Mouammar Kadhafi. Elle est membre de l'Union africaine, de la Ligue arabe et de l'Union du Maghreb arabe.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Tripoli. La Libye conserve des sites antiques exceptionnels — les cités romaines de Leptis Magna et Sabratha, la cité grecque de Cyrène — inscrites au patrimoine mondial de l'UNESCO. Le pays reste marqué par les 42 ans de pouvoir de Kadhafi (1969-2011) et par la révolution de 2011.",
       },
     ],
@@ -206,7 +251,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇦",
     title: "Maroc",
     description: "Un royaume entre Atlantique, Méditerranée et Sahara, dominé par les montagnes de l'Atlas. Découvre le Maroc, ses villes impériales, ses phosphates et sa culture arabo-berbère.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-04-maroc-lesson-1",
@@ -272,7 +317,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇷",
     title: "Mauritanie",
     description: "Un trait d'union entre le Maghreb et l'Afrique noire, aux trois quarts saharien, ouvert sur un Atlantique très poissonneux. Découvre la Mauritanie, ses villes caravanières et ses richesses minières.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-05-mauritanie-lesson-1",
@@ -338,7 +383,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇩",
     title: "Soudan",
     description: "Un géant sahélien traversé par le Nil, marqué par la sécession du Soudan du Sud et une guerre civile. Découvre le Soudan, la confluence des deux Nils et les pyramides de Méroé.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-06-soudan-lesson-1",
@@ -404,7 +449,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇹🇳",
     title: "Tunisie",
     description: "Le plus petit pays du Maghreb, méditerranéen et cosmopolite, berceau de Carthage et du Printemps arabe. Découvre la Tunisie, ses oliviers, ses sites antiques et son littoral.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-07-tunisie-lesson-1",
@@ -470,7 +515,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇧🇯",
     title: "Bénin",
     description: "Un pays étroit du golfe de Guinée, berceau du vaudou et de l'ancien royaume du Dahomey. Découvre le Bénin, ses palais royaux et sa cité lacustre.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-08-benin-lesson-1",
@@ -536,7 +581,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇧🇫",
     title: "Burkina Faso",
     description: "Un pays sahélien enclavé, « la patrie des hommes intègres », marqué par le panafricanisme et un fort défi sécuritaire. Découvre le Burkina Faso.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-09-burkina-faso-lesson-1",
@@ -602,7 +647,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇻",
     title: "Cap-Vert",
     description: "Un archipel atlantique au large du Sénégal, terre de morna et de grande diaspora. Découvre le Cap-Vert, ses volcans et ses plages.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-10-cap-vert-lesson-1",
@@ -668,7 +713,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇮",
     title: "Côte d'Ivoire",
     description: "La locomotive économique de l'Afrique de l'Ouest francophone et le premier producteur mondial de cacao. Découvre la Côte d'Ivoire.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-11-cote-divoire-lesson-1",
@@ -734,7 +779,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇲",
     title: "Gambie",
     description: "Le plus petit pays d'Afrique continentale : un ruban de terre autour d'un fleuve, enclavé dans le Sénégal. Découvre la Gambie.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-12-gambie-lesson-1",
@@ -800,7 +845,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇭",
     title: "Ghana",
     description: "Vitrine démocratique de l'Afrique de l'Ouest anglophone, pays de l'or et du cacao, ancienne « Gold Coast ». Découvre le Ghana.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-13-ghana-lesson-1",
@@ -866,7 +911,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇳",
     title: "Guinée",
     description: "Le « château d'eau de l'Afrique de l'Ouest », riche en bauxite, d'où naissent de grands fleuves. Découvre la Guinée.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-14-guinee-lesson-1",
@@ -932,7 +977,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇼",
     title: "Guinée-Bissau",
     description: "Un petit pays lusophone d'estuaires et d'îles, marqué par l'instabilité politique. Découvre la Guinée-Bissau et son archipel des Bijagós.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-15-guinee-bissau-lesson-1",
@@ -998,7 +1043,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇱🇷",
     title: "Liberia",
     description: "La plus ancienne république d'Afrique, fondée par des Afro-Américains affranchis. Découvre le Liberia, ses forêts et son histoire singulière.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-16-liberia-lesson-1",
@@ -1064,7 +1109,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇱",
     title: "Mali",
     description: "Un vaste pays sahélien traversé par le fleuve Niger, héritier des grands empires et de Tombouctou. Découvre le Mali.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-17-mali-lesson-1",
@@ -1130,7 +1175,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇳🇪",
     title: "Niger",
     description: "Un immense pays sahélien et saharien, traversé au sud-ouest par le fleuve Niger, riche en uranium. Découvre le Niger.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-18-niger-lesson-1",
@@ -1196,7 +1241,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇳🇬",
     title: "Nigeria",
     description: "Le géant de l'Afrique : pays le plus peuplé du continent, grande économie, poids lourd du pétrole et de la culture (Nollywood, afrobeats). Découvre le Nigeria.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-19-nigeria-lesson-1",
@@ -1262,7 +1307,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇳",
     title: "Sénégal",
     description: "La pointe la plus occidentale de l'Afrique, terre de teranga entre Sahel et Atlantique. Découvre le Sénégal, son histoire et ses paysages.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-20-senegal-lesson-1",
@@ -1328,7 +1373,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇱",
     title: "Sierra Leone",
     description: "Un pays côtier d'Afrique de l'Ouest, célèbre pour ses diamants et son grand port naturel, reconstruit après la guerre civile. Découvre la Sierra Leone.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-21-sierra-leone-lesson-1",
@@ -1394,7 +1439,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇹🇬",
     title: "Togo",
     description: "Un étroit couloir de terre du golfe de Guinée, du littoral aux savanes du nord, dominé de longue date par la dynastie Gnassingbé. Découvre le Togo.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-22-togo-lesson-1",
@@ -1460,7 +1505,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇦🇴",
     title: "Angola",
     description: "Un géant pétrolier lusophone de la côte atlantique, immensément riche en ressources, reconstruit après une longue guerre civile. Découvre l'Angola.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-23-angola-lesson-1",
@@ -1526,7 +1571,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇲",
     title: "Cameroun",
     description: "« L'Afrique en miniature » : du Sahel au nord à la forêt équatoriale au sud, un pays-charnière entre Afrique de l'Ouest et centrale. Découvre le Cameroun.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-24-cameroun-lesson-1",
@@ -1592,7 +1637,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇫",
     title: "Centrafrique",
     description: "Un pays enclavé au cœur exact du continent, riche en ressources mais fragilisé par les conflits. Découvre la République centrafricaine.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-25-centrafrique-lesson-1",
@@ -1658,7 +1703,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇬",
     title: "Congo (Brazzaville)",
     description: "Un pays équatorial pétrolier couvert de forêt, dont la capitale fait face à Kinshasa de l'autre côté du fleuve Congo. Découvre la République du Congo.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-26-congo-brazzaville-lesson-1",
@@ -1724,7 +1769,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇩",
     title: "RD Congo",
     description: "Un géant au cœur de l'Afrique, cœur du bassin du Congo, immensément riche en minerais — un véritable « scandale géologique ». Découvre la RD Congo.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-27-rd-congo-lesson-1",
@@ -1790,7 +1835,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇦",
     title: "Gabon",
     description: "Un pays équatorial couvert de forêt, pétrolier et pionnier de la protection de la nature. Découvre le Gabon.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-28-gabon-lesson-1",
@@ -1856,7 +1901,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇶",
     title: "Guinée équatoriale",
     description: "Un petit État pétrolier hispanophone, à cheval entre le continent et des îles du golfe de Guinée. Découvre la Guinée équatoriale.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-29-guinee-equatoriale-lesson-1",
@@ -1922,7 +1967,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇹",
     title: "São Tomé-et-Príncipe",
     description: "Le pays le moins peuplé d'Afrique : un archipel équatorial lusophone de cacao et de forêt. Découvre São Tomé-et-Príncipe.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-30-sao-tome-et-principe-lesson-1",
@@ -1988,7 +2033,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇹🇩",
     title: "Tchad",
     description: "Un vaste pays enclavé, du désert saharien au lac Tchad, charnière entre le Sahel et l'Afrique centrale. Découvre le Tchad.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-31-tchad-lesson-1",
@@ -2054,7 +2099,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇧🇮",
     title: "Burundi",
     description: "Un petit pays des Grands Lacs, densément peuplé, réputé pour ses tambours sacrés. Découvre le Burundi.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-32-burundi-lesson-1",
@@ -2120,7 +2165,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇰🇲",
     title: "Comores",
     description: "Un archipel volcanique de l'océan Indien, « les îles de la Lune », entre l'Afrique et Madagascar. Découvre les Comores.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-33-comores-lesson-1",
@@ -2186,7 +2231,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇩🇯",
     title: "Djibouti",
     description: "Un petit pays stratégique à l'entrée de la mer Rouge, carrefour maritime et grande base militaire mondiale. Découvre Djibouti.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-34-djibouti-lesson-1",
@@ -2252,7 +2297,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇪🇷",
     title: "Érythrée",
     description: "Un pays de la Corne de l'Afrique sur la mer Rouge, discret et très fermé. Découvre l'Érythrée.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-35-erythree-lesson-1",
@@ -2318,7 +2363,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇪🇹",
     title: "Éthiopie",
     description: "Un géant des hauts plateaux, berceau de l'humanité et seul pays africain jamais colonisé, deuxième le plus peuplé du continent. Découvre l'Éthiopie.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-36-ethiopie-lesson-1",
@@ -2384,7 +2429,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇰🇪",
     title: "Kenya",
     description: "Terre de safaris et carrefour économique de l'Afrique de l'Est, à cheval sur l'équateur. Découvre le Kenya.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-37-kenya-lesson-1",
@@ -2450,7 +2495,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇬",
     title: "Madagascar",
     description: "La « grande île » de l'océan Indien, sanctuaire unique de biodiversité, peuplée d'un métissage afro-asiatique. Découvre Madagascar.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-38-madagascar-lesson-1",
@@ -2516,7 +2561,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇺",
     title: "Maurice",
     description: "Un modèle de réussite et de diversité dans l'océan Indien, célèbre pour son dodo disparu et ses lagons. Découvre l'île Maurice.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-39-maurice-lesson-1",
@@ -2582,7 +2627,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇺🇬",
     title: "Ouganda",
     description: "« La perle de l'Afrique », pays équatorial des sources du Nil et des gorilles de montagne. Découvre l'Ouganda.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-40-ouganda-lesson-1",
@@ -2648,7 +2693,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇷🇼",
     title: "Rwanda",
     description: "Le « pays des mille collines », modèle de propreté et de reconstruction après le génocide de 1994. Découvre le Rwanda.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-41-rwanda-lesson-1",
@@ -2714,7 +2759,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇨",
     title: "Seychelles",
     description: "Un archipel paradisiaque de l'océan Indien, au PIB par habitant le plus élevé d'Afrique. Découvre les Seychelles.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-42-seychelles-lesson-1",
@@ -2780,7 +2825,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇴",
     title: "Somalie",
     description: "Le pays de la Corne de l'Afrique à la plus longue côte du continent, marqué par des décennies d'instabilité. Découvre la Somalie.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-43-somalie-lesson-1",
@@ -2846,7 +2891,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇸",
     title: "Soudan du Sud",
     description: "Le plus jeune pays du monde, né en 2011, riche en pétrole mais fragilisé par les conflits. Découvre le Soudan du Sud.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-44-soudan-du-sud-lesson-1",
@@ -2912,7 +2957,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇹🇿",
     title: "Tanzanie",
     description: "Terre du Kilimandjaro, du Serengeti et de Zanzibar, joyau naturel de l'Afrique de l'Est. Découvre la Tanzanie.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-45-tanzanie-lesson-1",
@@ -2978,7 +3023,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇿🇦",
     title: "Afrique du Sud",
     description: "La nation « arc-en-ciel », première puissance industrielle du continent, aux trois capitales. Découvre l'Afrique du Sud.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-46-afrique-du-sud-lesson-1",
@@ -3044,7 +3089,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇧🇼",
     title: "Botswana",
     description: "Un modèle de stabilité démocratique, pays du désert du Kalahari, des diamants et du delta de l'Okavango. Découvre le Botswana.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-47-botswana-lesson-1",
@@ -3110,7 +3155,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇿",
     title: "Eswatini",
     description: "L'une des dernières monarchies absolues du monde, petit royaume enclavé d'Afrique australe. Découvre l'Eswatini.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-48-eswatini-lesson-1",
@@ -3176,7 +3221,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇱🇸",
     title: "Lesotho",
     description: "Le « royaume dans le ciel », entièrement entouré par l'Afrique du Sud, le pays le plus haut du monde. Découvre le Lesotho.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-49-lesotho-lesson-1",
@@ -3242,7 +3287,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇼",
     title: "Malawi",
     description: "« Le cœur chaud de l'Afrique », pays du grand lac Malawi, densément peuplé et agricole. Découvre le Malawi.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-50-malawi-lesson-1",
@@ -3308,7 +3353,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇿",
     title: "Mozambique",
     description: "Un long pays côtier lusophone de l'océan Indien, riche en gaz et en plages. Découvre le Mozambique.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-51-mozambique-lesson-1",
@@ -3374,7 +3419,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇳🇦",
     title: "Namibie",
     description: "Un pays de déserts spectaculaires et de faune, à la plus faible densité de population d'Afrique. Découvre la Namibie.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-52-namibie-lesson-1",
@@ -3440,7 +3485,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇿🇲",
     title: "Zambie",
     description: "Pays du cuivre et des chutes Victoria, au cœur de l'Afrique australe. Découvre la Zambie.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-53-zambie-lesson-1",
@@ -3506,7 +3551,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇿🇼",
     title: "Zimbabwe",
     description: "Pays des chutes Victoria et du Grand Zimbabwe, riche en minerais, à l'histoire mouvementée. Découvre le Zimbabwe.",
-    xp: 40,
+    xp: 30,
     lessons: [
       {
         id: "course-geographie-54-zimbabwe-lesson-1",
