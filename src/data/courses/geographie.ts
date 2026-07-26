@@ -1871,25 +1871,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇲",
     title: "Cameroun",
     description: "« L'Afrique en miniature » : du Sahel au nord à la forêt équatoriale au sud, un pays-charnière entre Afrique de l'Ouest et centrale. Découvre le Cameroun.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-24-cameroun-lesson-1",
-        title: "Le Cameroun",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Cameroun se trouve au fond du golfe de Guinée, à la charnière de l'Afrique de l'Ouest et de l'Afrique centrale. Sur environ 475 000 km², il est bordé par le Nigeria, le Tchad, la Centrafrique, le Congo, le Gabon et la Guinée équatoriale.\n\n" +
+      "Le pays est organisé en dix régions, de l'Extrême-Nord sahélien au Sud équatorial, en passant par l'Ouest montagneux et anglophone. Cette position charnière entre deux grandes zones du continent explique en partie l'extrême diversité de paysages et de peuples du Cameroun.\n\n" +
       "#### 2. Le milieu\n" +
       "On le surnomme « l'Afrique en miniature » tant ses paysages sont variés : forêt équatoriale et côte au sud, hauts plateaux à l'ouest, savane et zone sahélienne (lac Tchad) au nord. Le mont Cameroun, volcan actif d'environ 4 040 m, est le point culminant d'Afrique de l'Ouest.\n\n" +
-      "#### 3. Population\n" +
+      "Les hauts plateaux de l'Ouest, autour de Bamenda et Bafoussam, offrent un climat frais et de riches terres volcaniques propices au café ; ils tranchent avec les plaines chaudes et humides du littoral, où le mont Cameroun reçoit certaines des précipitations les plus abondantes du continent.",
+      },
+      {
+        id: "course-geographie-24-cameroun-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Cameroun compte environ 28 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population, jeune et de plus en plus urbaine, se concentre entre les métropoles de Yaoundé et Douala et les hauts plateaux de l'Ouest, densément peuplés, tandis que le grand Nord sahélien reste plus rural et exposé aux effets du recul du lac Tchad.\n\n" +
+      "#### 2. Société\n" +
       "Le pays réunit plus de 200 groupes ethniques. Il est bilingue français et anglais (héritage des colonisations française et britannique) — une dualité à l'origine de la « crise anglophone » dans les régions du Nord-Ouest et du Sud-Ouest. Christianisme au sud, islam au nord.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette dualité linguistique, héritée du partage de l'ancien Cameroun allemand entre la France et le Royaume-Uni après la Première Guerre mondiale, a dégénéré depuis 2016 en une crise sécuritaire dans les régions anglophones, où une partie de la population réclame davantage d'autonomie, voire l'indépendance.",
+      },
+      {
+        id: "course-geographie-24-cameroun-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie, diversifiée, repose sur le pétrole, le cacao, le café, le coton, le bois et la banane. Le port de Douala dessert aussi les pays voisins enclavés.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Paul Biya, réélu en octobre 2025 pour un huitième mandat, au pouvoir depuis 1982. Monnaie : le franc CFA d'Afrique centrale (XAF). Devise nationale : « Paix, Travail, Patrie ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le Cameroun est indépendant de la France depuis le 1er janvier 1960 ; le Cameroun britannique le rejoint par référendum en 1961, formant l'État bilingue actuel. Membre de l'Union africaine et de la CEMAC, le pays est dirigé par le même président depuis plus de quatre décennies, l'un des plus longs mandats au monde.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Yaoundé ; Douala est la capitale économique. Le pays est célèbre pour le mont Cameroun, sa grande diversité culturelle (Bamiléké, Peuls, Bantous…) et son équipe de football, les Lions Indomptables.",
       },
     ],
@@ -1937,25 +1952,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇫",
     title: "Centrafrique",
     description: "Un pays enclavé au cœur exact du continent, riche en ressources mais fragilisé par les conflits. Découvre la République centrafricaine.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-25-centrafrique-lesson-1",
-        title: "La Centrafrique",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La République centrafricaine se situe pratiquement au centre du continent africain et est enclavée (sans accès à la mer). Sur environ 623 000 km², elle est bordée par le Tchad, le Soudan, le Soudan du Sud, la RD Congo, le Congo et le Cameroun.\n\n" +
+      "Le pays est divisé en 16 préfectures autour de Bangui, la capitale, sur l'Oubangui. Cet enclavement au cœur du continent, cumulé à un réseau routier très limité, isole fortement l'intérieur du pays et fragilise l'acheminement de l'aide humanitaire.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays est fait de plateaux de savane au nord et de forêt équatoriale au sud. Il est arrosé par des rivières, dont l'Oubangui, affluent du Congo, qui marque la frontière sud. Le climat est tropical.\n\n" +
-      "#### 3. Population\n" +
+      "Au sud-ouest, la réserve de Dzanga-Sangha prolonge le grand massif forestier du bassin du Congo et abrite l'une des plus fortes concentrations de gorilles de plaine et d'éléphants de forêt du continent. Le nord du pays, plus sec, s'apparente davantage à la savane sahélienne du Tchad voisin.",
+      },
+      {
+        id: "course-geographie-25-centrafrique-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Centrafrique compte environ 5,5 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population, en grande partie rurale, a été durement affectée par les cycles de violence des années 2010, qui ont provoqué d'importants déplacements internes et poussé des centaines de milliers de personnes à fuir vers les pays voisins, notamment le Cameroun et le Tchad.\n\n" +
+      "#### 2. Société\n" +
       "On y trouve les peuples Gbaya, Banda, Mandjia, Sara… Le français est officiel, mais le sango est la langue nationale largement parlée par tous. Christianisme majoritaire, avec une minorité musulmane.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Le sango, langue véhiculaire née du commerce fluvial sur l'Oubangui, joue un rôle unificateur rare dans un pays autrement fragmenté en de nombreux groupes ethniques et religieux, une fragmentation qui a nourri les tensions intercommunautaires du conflit débuté en 2013.",
+      },
+      {
+        id: "course-geographie-25-centrafrique-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le sous-sol est riche en diamants, or, bois et uranium, mais l'agriculture vivrière domine. C'est l'un des pays les plus pauvres du monde, longtemps déchiré par des conflits armés.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Faustin-Archange Touadéra, réélu en décembre 2025 (après un référendum de 2023 ayant supprimé la limite des mandats). Monnaie : le franc CFA d'Afrique centrale (XAF). Devise nationale : « Unité, Dignité, Travail ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 13 août 1960. Membre de l'Union africaine et de la CEMAC, il reste l'un des États les plus fragiles du continent, marqué depuis 2013 par un conflit opposant plusieurs groupes armés, malgré le déploiement d'une mission de maintien de la paix de l'ONU.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Bangui, sur l'Oubangui. La réserve de Dzanga-Sangha (forêt, gorilles et éléphants de forêt, UNESCO) est un joyau naturel. Le pays garde le souvenir de l'éphémère « empire » de Bokassa (1976-1979).",
       },
     ],
@@ -2003,25 +2033,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇬",
     title: "Congo (Brazzaville)",
     description: "Un pays équatorial pétrolier couvert de forêt, dont la capitale fait face à Kinshasa de l'autre côté du fleuve Congo. Découvre la République du Congo.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-26-congo-brazzaville-lesson-1",
-        title: "Le Congo (Brazzaville)",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La République du Congo, dite Congo-Brazzaville, s'étend à cheval sur l'équateur avec une courte façade atlantique. Sur environ 342 000 km², elle est bordée par le Gabon, le Cameroun, la Centrafrique, la RD Congo et l'enclave angolaise de Cabinda. Sa capitale, Brazzaville, fait face à Kinshasa (RDC) de l'autre côté du fleuve : ce sont les deux capitales les plus proches du monde.\n\n" +
+      "Le pays est découpé en douze départements, entre Brazzaville, la capitale politique à l'intérieur des terres, et Pointe-Noire, le grand port pétrolier sur la façade atlantique, reliées par un axe ferroviaire historique.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays est couvert d'une vaste forêt équatoriale (bassin du Congo, deuxième poumon vert de la planète), avec des plaines côtières et des savanes. Le fleuve Congo et son affluent l'Oubangui le bordent à l'est. Le climat est équatorial humide.\n\n" +
-      "#### 3. Population\n" +
+      "Le nord du pays, autour du parc national d'Odzala-Kokoua, prolonge le grand massif forestier du bassin du Congo et abrite une faune exceptionnelle de gorilles de plaine et d'éléphants de forêt. Entre Brazzaville et la côte s'étend le Pool, une région de savanes et de plateaux qui tranche avec la forêt dominante ailleurs dans le pays.",
+      },
+      {
+        id: "course-geographie-26-congo-brazzaville-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Congo compte environ 6 millions d'habitants (2024), fortement urbanisés à Brazzaville et Pointe-Noire.\n\n" +
-      "#### 4. Société\n" +
+      "C'est l'un des pays les plus urbanisés d'Afrique subsaharienne : la grande majorité de la population vit en ville, l'essentiel des terres forestières et rurales restant très peu peuplé, à l'exception de quelques zones agricoles autour des grands axes de communication.\n\n" +
+      "#### 2. Société\n" +
       "Les peuples Kongo, Téké et Mbochi sont les plus nombreux. Le français est officiel, le lingala et le kituba sont des langues nationales. Le christianisme est majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Kongo, présents dans le sud autour de Brazzaville et Pointe-Noire, les Téké, autour du Pool, et les Mbochi, dans le nord, forment les trois grands ensembles régionaux du pays, dont l'équilibre politique reste un enjeu sensible depuis l'indépendance.",
+      },
+      {
+        id: "course-geographie-26-congo-brazzaville-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose largement sur le pétrole offshore, principale exportation, complété par le bois. Cette dépendance au pétrole fragilise les finances du pays.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Denis Sassou Nguesso, réélu en mars 2026 pour un cinquième mandat, au pouvoir sur la plupart des décennies depuis 1979. Monnaie : le franc CFA d'Afrique centrale (XAF). Devise nationale : « Unité, Travail, Progrès ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 15 août 1960. Membre de l'Union africaine et de la CEMAC, il a connu plusieurs guerres civiles dans les années 1990, avant un retour au pouvoir de Denis Sassou Nguesso qui le dirige depuis, avec une brève interruption, depuis 1979.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Brazzaville (face à Kinshasa). Pointe-Noire est le grand port pétrolier. Le parc national d'Odzala et la forêt du bassin du Congo abritent une faune remarquable (gorilles, éléphants de forêt).",
       },
     ],
@@ -2069,25 +2114,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇨🇩",
     title: "RD Congo",
     description: "Un géant au cœur de l'Afrique, cœur du bassin du Congo, immensément riche en minerais — un véritable « scandale géologique ». Découvre la RD Congo.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-27-rd-congo-lesson-1",
-        title: "La RD Congo",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La République démocratique du Congo occupe le cœur de l'Afrique centrale. Sur environ 2,34 millions de km², c'est le deuxième plus grand pays d'Afrique après l'Algérie. Presque enclavée (elle n'a qu'un minuscule accès à l'Atlantique par l'embouchure du Congo), elle a neuf pays voisins.\n\n" +
+      "Le pays est découpé en 26 provinces depuis le redécoupage de 2015, contre onze auparavant, dans le but de rapprocher l'administration d'un territoire aussi vaste que l'Europe de l'Ouest. Cet immense territoire et son enclavement quasi total expliquent en grande partie la difficulté à y assurer une présence étatique uniforme.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays est dominé par l'immense bassin du fleuve Congo, couvert de la deuxième plus grande forêt tropicale du monde. À l'est se dressent les montagnes du Rift, des volcans (le Nyiragongo) et de grands lacs. Le fleuve Congo est le deuxième du monde par son débit. Le climat est équatorial.\n\n" +
-      "#### 3. Population\n" +
+      "À l'est, la chaîne des volcans des Virunga, dont le Nyiragongo, l'un des volcans les plus actifs d'Afrique, domine les lacs Kivu, Édouard et Albert, dans une région montagneuse au climat plus frais que le bassin forestier central. Cette zone du Rift albertin est l'un des points chauds de biodiversité les plus riches du continent.",
+      },
+      {
+        id: "course-geographie-27-rd-congo-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La RD Congo compte environ 105 millions d'habitants (2024), l'un des pays les plus peuplés d'Afrique. Le français est la langue officielle.\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre à l'ouest, autour de Kinshasa, mégapole de plusieurs millions d'habitants, ainsi que dans les provinces minières du Katanga et du Kasaï et dans les Kivus densément peuplés à l'est, tandis que la grande forêt centrale reste très faiblement occupée.\n\n" +
+      "#### 2. Société\n" +
       "Le pays réunit plus de 200 groupes ethniques. Quatre grandes langues nationales — lingala, swahili, kikongo, tshiluba — s'ajoutent au français. Le christianisme est très majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette immense diversité ethnique et linguistique, répartie sur un territoire-continent, a favorisé l'émergence de quatre langues véhiculaires régionales (lingala à l'ouest et dans l'armée, swahili à l'est, kikongo au sud-ouest, tshiluba au centre-sud), qui structurent encore aujourd'hui les identités régionales du pays.",
+      },
+      {
+        id: "course-geographie-27-rd-congo-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "On parle de « scandale géologique » tant le sous-sol est riche : cuivre, cobalt (la RDC est le premier producteur mondial, clé des batteries), coltan, diamant, or, plus un énorme potentiel hydroélectrique (barrage d'Inga). Pourtant, la population reste pauvre et l'est du pays est ravagé par les conflits (offensive du M23).\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Félix Tshisekedi, président depuis 2019 (réélu en 2023). Depuis 2025, l'est du pays traverse une grave crise sécuritaire (prise de Goma par le M23). Monnaie : le franc congolais (CDF). Devise nationale : « Justice, Paix, Travail ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la Belgique depuis le 30 juin 1960, à l'issue d'une décolonisation précipitée qui a débouché sur une grave crise politique dès les premiers mois, marquée par l'assassinat du Premier ministre Patrice Lumumba. Rebaptisé Zaïre sous la dictature de Mobutu (1965-1997), le pays a repris son nom actuel après sa chute.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Kinshasa, l'une des plus grandes villes d'Afrique et la plus grande ville francophone du monde. Les parcs des Virunga et de Kahuzi-Biega (gorilles, UNESCO), le fleuve Congo et la mémoire de Patrice Lumumba et du Zaïre de Mobutu marquent son histoire.",
       },
     ],
@@ -2135,25 +2195,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇦",
     title: "Gabon",
     description: "Un pays équatorial couvert de forêt, pétrolier et pionnier de la protection de la nature. Découvre le Gabon.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-28-gabon-lesson-1",
-        title: "Le Gabon",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Gabon s'étend sur la côte atlantique, à cheval sur l'équateur. Sur environ 268 000 km², il est bordé par la Guinée équatoriale, le Cameroun et le Congo.\n\n" +
+      "Le pays est découpé en neuf provinces autour de Libreville, la capitale, sur l'estuaire du Gabon. Son faible peuplement rapporté à sa superficie en fait l'un des territoires les moins densément occupés d'Afrique centrale.\n\n" +
       "#### 2. Le milieu\n" +
       "Près de 85 % du territoire est couvert de forêt équatoriale (bassin du Congo). Le pays est arrosé par le fleuve Ogooué et compte un vaste réseau de 13 parcs nationaux (dont la Lopé et Ivindo, UNESCO). Le climat est équatorial humide.\n\n" +
-      "#### 3. Population\n" +
+      "Le fleuve Ogooué, principal cours d'eau du pays, traverse cette forêt quasi continue d'ouest en est et a longtemps servi de voie de pénétration et de transport du bois vers la côte. Ce réseau exceptionnel de parcs nationaux, créé dès 2002, a valu au Gabon une réputation de pionnier africain de la conservation.",
+      },
+      {
+        id: "course-geographie-28-gabon-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Gabon compte environ 2,4 millions d'habitants (2024), une population faible pour un si vaste territoire, et très urbanisée.\n\n" +
-      "#### 4. Société\n" +
+      "Près de 90 % des Gabonais vivent en ville, en premier lieu à Libreville et Port-Gentil, ce qui laisse l'essentiel du territoire forestier quasiment inhabité — une situation rare en Afrique, qui a facilité la préservation de vastes espaces naturels.\n\n" +
+      "#### 2. Société\n" +
       "Les principaux peuples sont les Fang, Punu et Nzebi. Le français est la langue officielle et le christianisme la religion majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Fang, présents surtout au nord, entretiennent des liens culturels avec leurs voisins du Cameroun et de la Guinée équatoriale ; les Punu et Nzebi, au sud, ont développé des traditions musicales et rituelles, comme le bwiti, reconnues bien au-delà des frontières du pays.",
+      },
+      {
+        id: "course-geographie-28-gabon-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur le pétrole (longtemps le pilier), le manganèse (le Gabon est un grand producteur) et le bois précieux (okoumé). Le revenu par habitant est parmi les plus élevés d'Afrique subsaharienne, mais les inégalités restent fortes.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Brice Clotaire Oligui Nguema, arrivé au pouvoir par un coup d'État en 2023, puis élu président en avril 2025. Monnaie : le franc CFA d'Afrique centrale (XAF). Devise nationale : « Union, Travail, Justice ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 17 août 1960. Membre de l'Union africaine et de la CEMAC, il a été dirigé pendant 56 ans par la famille Bongo (1967-2023), jusqu'au coup d'État de 2023 qui a ouvert une nouvelle période politique.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Libreville. Le pays est réputé pour ses parcs nationaux et sa faune (éléphants de forêt, gorilles) ; le parc de la Lopé est classé à l'UNESCO. L'élection de 2025 a mis fin à la longue dynastie Bongo (1967-2023).",
       },
     ],
@@ -2201,25 +2276,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇬🇶",
     title: "Guinée équatoriale",
     description: "Un petit État pétrolier hispanophone, à cheval entre le continent et des îles du golfe de Guinée. Découvre la Guinée équatoriale.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-29-guinee-equatoriale-lesson-1",
-        title: "La Guinée équatoriale",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Guinée équatoriale est faite de deux ensembles : une partie continentale (le Río Muni, entre le Cameroun et le Gabon) et des îles, dont Bioko, où se trouve la capitale Malabo. Sur environ 28 000 km², c'est le seul pays d'Afrique continentale ayant l'espagnol pour langue officielle.\n\n" +
+      "Le pays est divisé en huit provinces, dont deux insulaires (Bioko Nord et Sud) et six continentales sur le Río Muni. Cette double nature, continentale et insulaire, est unique en Afrique centrale et a longtemps rendu l'administration du pays plus complexe que sa petite taille ne le laisserait supposer.\n\n" +
       "#### 2. Le milieu\n" +
       "Le continent est couvert de forêt équatoriale ; les îles, comme Bioko, sont volcaniques. Le climat est équatorial humide.\n\n" +
-      "#### 3. Population\n" +
+      "L'île de Bioko, dominée par le pic Basilé, un volcan culminant à plus de 3 000 m, bénéficie de pluies parmi les plus abondantes d'Afrique, tandis que le Río Muni continental prolonge la grande forêt équatoriale partagée avec le Gabon et le Cameroun voisins.",
+      },
+      {
+        id: "course-geographie-29-guinee-equatoriale-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Guinée équatoriale compte environ 1,7 million d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se répartit entre le Río Muni continental, où vit la majorité des habitants, et l'île de Bioko, où se concentre la capitale Malabo ; la découverte du pétrole dans les années 1990 a accéléré l'urbanisation et attiré une importante main-d'œuvre étrangère.\n\n" +
+      "#### 2. Société\n" +
       "Les Fang dominent sur le continent, les Bubis sur l'île de Bioko. L'espagnol est la langue officielle (avec le français et le portugais). Le christianisme est majoritaire. C'est une ancienne colonie espagnole.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Bubis, peuple autochtone de Bioko, ont vu leur poids démographique et politique décliner face aux Fang du continent, majoritaires dans le pays et au pouvoir depuis l'indépendance, une situation qui a nourri des tensions régionales récurrentes.",
+      },
+      {
+        id: "course-geographie-29-guinee-equatoriale-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "La découverte de pétrole et de gaz dans les années 1990 a fait bondir le PIB par habitant, l'un des plus élevés d'Afrique — mais cette richesse est très mal répartie. Le bois et le cacao complètent les ressources.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Teodoro Obiang Nguema Mbasogo, au pouvoir depuis 1979 — c'est le plus ancien chef d'État en exercice au monde. Monnaie : le franc CFA d'Afrique centrale (XAF). Devise nationale : « Unité, Paix, Justice ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de l'Espagne depuis le 12 octobre 1968. Membre de l'Union africaine et de la CEMAC, il est dirigé sans interruption par Teodoro Obiang depuis qu'il a renversé son oncle Francisco Macías Nguema en 1979.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Malabo, sur l'île de Bioko. Une nouvelle capitale, Ciudad de la Paz (Djibloho), est en construction sur le continent. Le pic Basilé est un volcan emblématique de l'île.",
       },
     ],
@@ -2267,25 +2357,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇹",
     title: "São Tomé-et-Príncipe",
     description: "Le pays le moins peuplé d'Afrique : un archipel équatorial lusophone de cacao et de forêt. Découvre São Tomé-et-Príncipe.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-30-sao-tome-et-principe-lesson-1",
-        title: "São Tomé-et-Príncipe",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "São Tomé-et-Príncipe est un archipel de deux îles principales (São Tomé et Príncipe) et d'îlots, dans le golfe de Guinée, sur l'équateur, au large du Gabon. Avec environ 1 000 km², c'est le pays le moins peuplé du continent africain.\n\n" +
+      "Le pays se divise en deux régions autonomes, São Tomé et Príncipe, cette dernière disposant depuis 1995 d'un statut d'autonomie renforcée avec son propre gouvernement régional. Les deux îles principales, distantes d'environ 150 km, forment avec plusieurs îlots une chaîne volcanique alignée sur une même faille géologique.\n\n" +
       "#### 2. Le milieu\n" +
       "Les îles sont volcaniques et montagneuses, couvertes d'une forêt tropicale luxuriante. Le climat est équatorial humide. Le Pico Cão Grande, aiguille volcanique spectaculaire, est un symbole du pays.\n\n" +
-      "#### 3. Population\n" +
+      "Le point culminant de l'archipel, le Pico de São Tomé, dépasse 2 000 m et porte une forêt de nuages unique, riche en espèces endémiques d'oiseaux et de plantes. Cette végétation luxuriante et cet isolement insulaire en ont fait un haut lieu de biodiversité pour sa taille, comparable à celui d'autres archipels tropicaux comme les Galápagos.",
+      },
+      {
+        id: "course-geographie-30-sao-tome-et-principe-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "L'archipel compte environ 230 000 habitants (2024), la plus faible population d'Afrique.\n\n" +
-      "#### 4. Société\n" +
+      "La quasi-totalité de la population vit sur l'île de São Tomé, autour de la capitale du même nom ; l'île de Príncipe, beaucoup plus petite et isolée, ne compte que quelques milliers d'habitants, concentrés autour de sa capitale régionale, Santo António.\n\n" +
+      "#### 2. Société\n" +
       "La population est créole et lusophone. Le portugais est la langue officielle et le christianisme la religion majoritaire. C'est une ancienne colonie portugaise.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette société créole s'est formée à partir du XVe siècle par le brassage entre colons portugais et esclaves africains amenés pour travailler dans les plantations de canne à sucre puis de cacao, laissant un héritage culturel et linguistique très proche de celui du Cap-Vert.",
+      },
+      {
+        id: "course-geographie-30-sao-tome-et-principe-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur le cacao (culture historique — on parle des « îles chocolat »), la pêche et un tourisme naissant ; un potentiel pétrolier offshore est à l'étude. C'est une petite économie insulaire.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Carlos Vila Nova, réélu en juillet 2026 pour un deuxième mandat. Monnaie : la dobra (STN). Devise nationale : « Unité, Discipline, Travail ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Portugal depuis le 12 juillet 1975. Membre de l'Union africaine, il est considéré comme l'une des démocraties les plus stables d'Afrique, avec des alternances pacifiques régulières depuis l'instauration du multipartisme en 1990.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : São Tomé. Le Pico Cão Grande, les anciennes plantations (roças) de cacao et une nature préservée font le charme de l'archipel.",
       },
     ],
@@ -2333,25 +2438,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇹🇩",
     title: "Tchad",
     description: "Un vaste pays enclavé, du désert saharien au lac Tchad, charnière entre le Sahel et l'Afrique centrale. Découvre le Tchad.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-31-tchad-lesson-1",
-        title: "Le Tchad",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Tchad est un vaste pays enclavé au cœur du continent. Sur environ 1,28 million de km², c'est l'un des plus grands pays d'Afrique. Il est bordé par la Libye, le Soudan, la Centrafrique, le Cameroun, le Nigeria et le Niger.\n\n" +
+      "Le pays est découpé en 23 provinces autour de N'Djamena, la capitale, à l'extrême sud-ouest du territoire. Cet enclavement au centre du continent, conjugué à l'immensité du désert saharien au nord, rend l'accès aux régions les plus septentrionales particulièrement difficile.\n\n" +
       "#### 2. Le milieu\n" +
       "Le nord est saharien, avec le massif du Tibesti et son point culminant, l'Emi Koussi (environ 3 415 m, plus haut sommet du Sahara). Le centre est sahélien, le sud une savane plus arrosée. Au sud-ouest, le lac Tchad (partagé avec plusieurs voisins) est en fort recul. Le climat va de l'aride au tropical.\n\n" +
-      "#### 3. Population\n" +
+      "Les lacs d'Ounianga, dans le désert du Tibesti, forment un ensemble unique de lacs permanents au cœur du Sahara, classé à l'UNESCO. Le lac Tchad, qui a perdu environ 90 % de sa surface depuis les années 1960 sous l'effet du changement climatique et de la surexploitation de l'eau, illustre l'un des grands défis environnementaux de la région.",
+      },
+      {
+        id: "course-geographie-31-tchad-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Tchad compte environ 18 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre très largement dans le sud sahélien et soudanien, plus arrosé et cultivable, tandis que le nord saharien, immense mais aride, n'abrite plus que de rares communautés, notamment les Toubous du Tibesti.\n\n" +
+      "#### 2. Société\n" +
       "Le pays réunit plus de 200 groupes ethniques. Le français et l'arabe sont les deux langues officielles. Le nord est majoritairement musulman, le sud chrétien et animiste.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette opposition nord-sud, à la fois géographique, religieuse et ethnique, a structuré une grande partie de la vie politique tchadienne depuis l'indépendance, marquée par des rébellions et des guerres civiles récurrentes entre groupes du nord et du sud.",
+      },
+      {
+        id: "course-geographie-31-tchad-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose surtout sur le pétrole (principale exportation depuis les années 2000), le coton, l'élevage et la gomme arabique. C'est l'un des pays les plus pauvres du monde, très vulnérable aux sécheresses.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Mahamat Idriss Déby Itno, arrivé au pouvoir en 2021 à la mort de son père Idriss Déby, puis élu président en 2024. Monnaie : le franc CFA d'Afrique centrale (XAF). Devise nationale : « Unité, Travail, Progrès ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 11 août 1960. Membre de l'Union africaine et de la CEMAC, il a connu depuis l'indépendance une succession quasi continue de rébellions et de guerres civiles, la famille Déby dirigeant le pays depuis 1990.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : N'Djamena. Le massif du Tibesti et les lacs d'Ounianga (UNESCO) sont des merveilles sahariennes ; le lac Tchad et les Toubous du nord font aussi partie de l'identité du pays.",
       },
     ],
@@ -2399,25 +2519,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇧🇮",
     title: "Burundi",
     description: "Un petit pays des Grands Lacs, densément peuplé, réputé pour ses tambours sacrés. Découvre le Burundi.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-32-burundi-lesson-1",
-        title: "Le Burundi",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Burundi est un petit pays enclavé de la région des Grands Lacs, en Afrique de l'Est. Sur environ 27 800 km², il est bordé par le Rwanda, la Tanzanie et la RD Congo, et longé au sud-ouest par le lac Tanganyika.\n\n" +
+      "Le pays est découpé en 18 provinces autour de Bujumbura, la capitale économique, sur les rives du lac Tanganyika. Sa petite taille et son relief accidenté rapprochent fortement le Burundi de son voisin rwandais, avec lequel il partage une grande partie de son histoire.\n\n" +
       "#### 2. Le milieu\n" +
       "Comme son voisin rwandais, c'est un pays de collines et de hauts plateaux. Le climat tropical est tempéré par l'altitude. Le lac Tanganyika, l'un des plus profonds du monde, borde le pays à l'ouest.\n\n" +
-      "#### 3. Population\n" +
+      "Le relief burundais, fait de collines cultivées jusqu'aux sommets, laisse peu de place aux espaces naturels préservés, à l'exception de quelques réserves autour du lac Tanganyika et de la crête Congo-Nil, qui traverse le pays du nord au sud et sépare les bassins du Congo et du Nil.",
+      },
+      {
+        id: "course-geographie-32-burundi-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Burundi compte environ 13 millions d'habitants (2024) et figure parmi les pays les plus densément peuplés d'Afrique.\n\n" +
-      "#### 4. Société\n" +
+      "Cette densité, l'une des plus fortes du continent rapportée à la surface disponible, exerce une pression considérable sur des terres agricoles déjà rares, dans un pays où la population reste très majoritairement rurale malgré la croissance de Bujumbura.\n\n" +
+      "#### 2. Société\n" +
       "On y trouve les Hutus, les Tutsis et les Twa. Le kirundi, le français et l'anglais sont langues officielles ; le christianisme est majoritaire. Le pays a été marqué par une guerre civile (1993-2005).\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette composition ethnique, partagée avec le Rwanda voisin, a nourri des cycles de violence intercommunautaire depuis l'indépendance, dont l'assassinat du président Ndadaye en 1993 a déclenché la plus longue et la plus meurtrière guerre civile de l'histoire du pays.",
+      },
+      {
+        id: "course-geographie-32-burundi-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur une agriculture de subsistance et sur l'exportation de café et de thé. Le Burundi est l'un des pays les plus pauvres du monde ; il possède aussi du nickel.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Évariste Ndayishimiye, président depuis 2020. Monnaie : le franc burundais (BIF). Devise nationale : « Unité, Travail, Progrès ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la Belgique depuis le 1er juillet 1962, en même temps que le Rwanda voisin dont il partageait alors l'administration coloniale. Membre de l'Union africaine et de la Communauté d'Afrique de l'Est, il s'est progressivement stabilisé depuis la fin de la guerre civile en 2005.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale politique : Gitega (depuis 2019) ; Bujumbura, sur le lac Tanganyika, reste la capitale économique. Les tambours sacrés du Burundi sont inscrits au patrimoine immatériel de l'UNESCO.",
       },
     ],
@@ -2465,25 +2600,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇰🇲",
     title: "Comores",
     description: "Un archipel volcanique de l'océan Indien, « les îles de la Lune », entre l'Afrique et Madagascar. Découvre les Comores.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-33-comores-lesson-1",
-        title: "Les Comores",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Les Comores forment un archipel de l'océan Indien, dans le canal du Mozambique, entre le Mozambique et Madagascar. Sur environ 1 860 km², le pays compte trois îles (Grande Comore, Anjouan, Mohéli) ; la quatrième, Mayotte, est restée française.\n\n" +
+      "Le pays est organisé en trois îles autonomes dotées chacune d'un gouvernorat, sous une présidence fédérale tournante entre les îles. La séparation de Mayotte lors du référendum d'indépendance de 1974 reste une plaie ouverte de l'histoire nationale comorienne.\n\n" +
       "#### 2. Le milieu\n" +
       "Les îles sont volcaniques ; le Karthala, sur la Grande Comore, est un volcan encore actif. Le climat est tropical humide. Le pays est réputé pour ses plantes à parfum.\n\n" +
-      "#### 3. Population\n" +
+      "Le Karthala, qui culmine à plus de 2 300 m, entre régulièrement en éruption et façonne les paysages de la Grande Comore, île la plus vaste et la plus peuplée de l'archipel. Le climat tropical humide, tempéré par les alizés, favorise la culture de plantes à parfum comme l'ylang-ylang, le girofle et la vanille.",
+      },
+      {
+        id: "course-geographie-33-comores-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Les Comores comptent environ 850 000 habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "C'est l'un des pays les plus densément peuplés d'Afrique rapporté à sa surface, avec une forte émigration, notamment vers la France et vers Mayotte, qui entretient des liens économiques et familiaux étroits malgré la séparation politique.\n\n" +
+      "#### 2. Société\n" +
       "La population, d'origine swahilie, arabe et africaine, parle le comorien (shikomori) ; l'arabe et le français sont aussi officiels. L'islam est très majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette identité swahilie et arabo-africaine, façonnée par des siècles de commerce à travers l'océan Indien, rapproche les Comores autant du monde swahili côtier d'Afrique de l'Est que du monde arabe, une double appartenance qui se retrouve dans l'architecture et les traditions locales.",
+      },
+      {
+        id: "course-geographie-33-comores-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'agriculture domine : vanille, girofle et surtout ylang-ylang (les Comores sont un grand producteur mondial de cette fleur utilisée en parfumerie). La pêche et les transferts de la diaspora complètent une économie fragile.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république (avec une présidence tournante entre les îles). Chef de l'État (2026) : Azali Assoumani. Monnaie : le franc comorien (KMF). Devise nationale : « Unité, Solidarité, Développement ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de la France depuis le 6 juillet 1975, à l'exception de Mayotte, qui a choisi par référendum de rester française. Membre de l'Union africaine et de la Ligue arabe, il a connu depuis l'indépendance de nombreuses tentatives de coups d'État et de sécession, notamment sur l'île d'Anjouan.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Moroni (sur la Grande Comore). Le volcan Karthala domine l'archipel. La question de Mayotte, revendiquée par les Comores mais département français, reste sensible. On surnomme le pays « les îles de la Lune ».",
       },
     ],
