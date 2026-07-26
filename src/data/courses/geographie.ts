@@ -3491,25 +3491,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇸",
     title: "Soudan du Sud",
     description: "Le plus jeune pays du monde, né en 2011, riche en pétrole mais fragilisé par les conflits. Découvre le Soudan du Sud.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-44-soudan-du-sud-lesson-1",
-        title: "Le Soudan du Sud",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Soudan du Sud est un pays enclavé d'Afrique de l'Est. Sur environ 620 000 km², il est bordé par le Soudan, l'Éthiopie, le Kenya, l'Ouganda, la RD Congo et la Centrafrique, et traversé par le Nil Blanc.\n\n" +
+      "Le pays est découpé en dix États depuis sa naissance en 2011. Cet enclavement au cœur d'une région elle-même instable, cumulé à un réseau routier quasi inexistant en dehors de Juba, rend l'accès à une grande partie du territoire particulièrement difficile.\n\n" +
       "#### 2. Le milieu\n" +
       "De vastes plaines et savanes couvrent le pays. Le Sudd, immense marécage sur le Nil Blanc, est l'une des plus grandes zones humides du monde. Le climat est tropical, avec une saison des pluies marquée.\n\n" +
-      "#### 3. Population\n" +
+      "Le Sudd, qui s'étend sur des dizaines de milliers de km² au gré des crues du Nil Blanc, ralentit considérablement le débit du fleuve par évaporation et abrite l'une des dernières grandes migrations de grands mammifères d'Afrique, encore mal connue faute d'accès sécurisé pour l'étudier.",
+      },
+      {
+        id: "course-geographie-44-soudan-du-sud-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Soudan du Sud compte environ 11 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population, en grande partie rurale et agropastorale, a été durement affectée par la guerre civile de 2013-2018 et par des violences intercommunautaires persistantes, à l'origine d'importants déplacements internes et de flux de réfugiés vers les pays voisins.\n\n" +
+      "#### 2. Société\n" +
       "Les principaux peuples sont les Dinka, les Nuer et les Shilluk. L'anglais est la langue officielle. Le christianisme et les religions traditionnelles dominent — une différence avec le Soudan majoritairement musulman, à l'origine de la séparation.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "La rivalité entre Dinka et Nuer, les deux plus grands groupes du pays, a directement alimenté la guerre civile qui a suivi l'indépendance, illustrant la fragilité des équilibres politiques et ethniques du plus jeune État du monde.",
+      },
+      {
+        id: "course-geographie-44-soudan-du-sud-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie dépend presque entièrement du pétrole, qui fournit l'essentiel des revenus de l'État, complété par l'élevage. C'est l'un des pays les plus pauvres du monde, ravagé par une guerre civile (2013-2018) et une grande fragilité.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Salva Kiir Mayardit, président depuis l'indépendance de 2011 ; les élections y sont sans cesse reportées. Monnaie : la livre sud-soudanaise (SSP). Devise nationale : « Justice, Liberté, Prospérité ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est né le 9 juillet 2011 d'un référendum d'autodétermination approuvé par la quasi-totalité de la population du sud, mettant fin à des décennies de guerre avec le Soudan. Membre de l'Union africaine, il reste l'un des États les plus jeunes et les plus fragiles du monde.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Juba, sur le Nil Blanc. Le marais du Sudd et, surtout, l'indépendance obtenue en juillet 2011 — qui en fait le plus jeune État reconnu par l'ONU — marquent son identité.",
       },
     ],
@@ -3557,25 +3572,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇹🇿",
     title: "Tanzanie",
     description: "Terre du Kilimandjaro, du Serengeti et de Zanzibar, joyau naturel de l'Afrique de l'Est. Découvre la Tanzanie.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-45-tanzanie-lesson-1",
-        title: "La Tanzanie",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Tanzanie s'ouvre sur l'océan Indien, en Afrique de l'Est. Sur environ 945 000 km², elle est bordée par huit pays et comprend l'archipel de Zanzibar. Elle borde trois grands lacs : Victoria, Tanganyika et Malawi.\n\n" +
+      "Le pays est né en 1964 de l'union du Tanganyika continental et de l'archipel de Zanzibar, qui conserve un gouvernement et un président propres au sein de la République unie. Cette structure fédérale particulière, associée à une position au carrefour de huit voisins, fait de la Tanzanie un pays-charnière de l'Afrique de l'Est.\n\n" +
       "#### 2. Le milieu\n" +
       "Des plateaux et de vastes savanes (Serengeti) entourent le Kilimandjaro (environ 5 895 m, plus haut sommet d'Afrique). La vallée du Rift et les grands lacs complètent des paysages spectaculaires. Le climat est tropical, chaud sur la côte.\n\n" +
-      "#### 3. Population\n" +
+      "Les gorges d'Olduvai, dans le Rift, comptent parmi les sites paléontologiques les plus importants au monde pour l'étude des origines de l'humanité. Le plateau du Serengeti, prolongé par le Masai Mara kényan, accueille chaque année la plus grande migration terrestre d'animaux sauvages de la planète.",
+      },
+      {
+        id: "course-geographie-45-tanzanie-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Tanzanie compte environ 67 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre sur la côte, autour de Dar es Salaam, ainsi que sur les hauts plateaux fertiles du nord et de l'ouest, tandis que les vastes espaces de savane et de brousse restent, hors zones touristiques, peu peuplés.\n\n" +
+      "#### 2. Société\n" +
       "Le pays réunit plus de 120 groupes ethniques, mais avec une forte unité nationale. Le swahili, langue nationale unificatrice, et l'anglais sont officiels ; christianisme et islam sont pratiqués à parts proches (Zanzibar est musulmane).\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette remarquable unité nationale, rare dans une Afrique de l'Est autrement marquée par des tensions ethniques fortes, doit beaucoup à la politique linguistique et sociale menée après l'indépendance sous le président Julius Nyerere, qui a fait du swahili un puissant ciment national au-dessus des appartenances ethniques.",
+      },
+      {
+        id: "course-geographie-45-tanzanie-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur le tourisme (safaris, Kilimandjaro, plages de Zanzibar), l'agriculture (café, coton, noix de cajou, girofle de Zanzibar), l'or et le gaz naturel.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république unie (Tanganyika et Zanzibar semi-autonome). Chef de l'État (2026) : Samia Suluhu Hassan, réélue en octobre 2025 (première femme présidente du pays, arrivée au pouvoir en 2021). Monnaie : le shilling tanzanien (TZS). Devise nationale : « Uhuru na Umoja » (Liberté et Unité).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le Tanganyika est indépendant du Royaume-Uni depuis le 9 décembre 1961, Zanzibar depuis 1963 ; les deux territoires fusionnent en 1964 pour former la Tanzanie. Membre de l'Union africaine et de la Communauté d'Afrique de l'Est, le pays est réputé pour sa stabilité politique relative depuis l'indépendance.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale officielle : Dodoma ; Dar es Salaam est la capitale économique. Le Kilimandjaro, le Serengeti (grande migration), l'île de Zanzibar (Stone Town, UNESCO) et les gorges d'Olduvai (fossiles humains) sont mondialement célèbres.",
       },
     ],
@@ -3623,25 +3653,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇿🇦",
     title: "Afrique du Sud",
     description: "La nation « arc-en-ciel », première puissance industrielle du continent, aux trois capitales. Découvre l'Afrique du Sud.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-46-afrique-du-sud-lesson-1",
-        title: "L'Afrique du Sud",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "L'Afrique du Sud occupe la pointe sud du continent, où se rejoignent les océans Atlantique et Indien. Sur environ 1,22 million de km², elle est bordée par la Namibie, le Botswana, le Zimbabwe, le Mozambique et l'Eswatini, et entoure entièrement le Lesotho.\n\n" +
+      "Le pays est organisé en neuf provinces, de la province du Cap occidental, autour de la capitale législative, au Gauteng, la plus petite mais la plus riche et la plus peuplée, centrée sur Johannesburg. Le fait d'entourer entièrement le Lesotho, un État souverain, est une singularité territoriale rare au monde.\n\n" +
       "#### 2. Le milieu\n" +
       "Un vaste haut plateau intérieur (Highveld) est bordé par la chaîne du Drakensberg et des plaines côtières ; on y trouve aussi le désert du Karoo et une frange du Kalahari. Le climat est varié ; le cap de Bonne-Espérance marque la pointe sud-ouest.\n\n" +
-      "#### 3. Population\n" +
+      "Le Drakensberg, la plus haute chaîne d'Afrique australe, sépare le Highveld intérieur des plaines côtières du KwaZulu-Natal. Au cap de Bonne-Espérance, la rencontre des courants froids et chauds de l'Atlantique et de l'Indien crée un écosystème marin unique, à l'origine d'une biodiversité végétale (le fynbos) parmi les plus riches du monde.",
+      },
+      {
+        id: "course-geographie-46-afrique-du-sud-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "L'Afrique du Sud compte environ 62 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre dans les grandes agglomérations du Gauteng (Johannesburg, Pretoria) et du littoral (Le Cap, Durban), tandis que les provinces plus rurales du nord et de l'est restent plus pauvres, héritage direct des politiques d'aménagement du territoire de l'apartheid.\n\n" +
+      "#### 2. Société\n" +
       "C'est la nation « arc-en-ciel », aux onze langues officielles (zoulou, xhosa, afrikaans, anglais…). La majorité est noire (Zoulous, Xhosas…), avec des minorités blanche, métisse et indienne. Le pays reste marqué par l'apartheid, aboli en 1994 avec Nelson Mandela.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les townships, quartiers créés par l'apartheid en périphérie des villes pour y reléguer la population noire, comme Soweto près de Johannesburg, restent des lieux de mémoire et de vie majeurs, symboles à la fois des inégalités persistantes et de la résistance qui a mené à la démocratie.",
+      },
+      {
+        id: "course-geographie-46-afrique-du-sud-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "C'est l'économie la plus industrialisée et diversifiée d'Afrique : mines (or, platine — 1er producteur mondial —, diamants, charbon), industrie, finance (Johannesburg), vin et agriculture.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république (démocratie parlementaire). Chef de l'État (2026) : Cyril Ramaphosa, président à la tête d'un gouvernement d'union nationale depuis 2024. Monnaie : le rand (ZAR). Devise nationale : « ǃke e꞉ ǀxarra ǁke » (« Unité dans la diversité », en langue khoïsan).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis 1910 (union), devenu république en 1961. Les premières élections multiraciales de 1994, remportées par Nelson Mandela et l'ANC, ont mis fin à des décennies de régime d'apartheid ; l'Afrique du Sud, membre du G20 et des BRICS, est aujourd'hui l'une des deux premières puissances économiques du continent.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Le pays a trois capitales : Pretoria (exécutif), Le Cap (législatif) et Bloemfontein (judiciaire). Table Mountain, Robben Island (où Mandela fut emprisonné, UNESCO), Soweto et le parc Kruger sont emblématiques.",
       },
     ],
@@ -3689,25 +3734,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇧🇼",
     title: "Botswana",
     description: "Un modèle de stabilité démocratique, pays du désert du Kalahari, des diamants et du delta de l'Okavango. Découvre le Botswana.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-47-botswana-lesson-1",
-        title: "Le Botswana",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Botswana est un pays enclavé d'Afrique australe. Sur environ 582 000 km², il est bordé par la Namibie, l'Afrique du Sud, le Zimbabwe et la Zambie (avec un point de rencontre quadruple près du Zambèze).\n\n" +
+      "Le pays est découpé en une dizaine de districts autour de Gaborone, la capitale, au sud-est du territoire. Ce point de rencontre quadruple avec la Zambie, contesté selon les interprétations cartographiques, ferait du Botswana l'un des rares pays au monde à ne toucher ses voisins qu'en un seul point pour deux d'entre eux.\n\n" +
       "#### 2. Le milieu\n" +
       "Le désert du Kalahari (semi-aride) couvre une grande partie du pays. Au nord-ouest s'épanouit le magnifique delta de l'Okavango, un delta intérieur (le fleuve se perd dans les sables) riche en faune, classé à l'UNESCO. Le climat est aride à semi-aride.\n\n" +
-      "#### 3. Population\n" +
+      "Le delta de l'Okavango, phénomène rare où un grand fleuve se jette non pas dans la mer mais dans le sable du désert, crée chaque année une explosion de vie sauvage à la saison des crues, faisant de cette région l'une des plus riches d'Afrique en biodiversité malgré l'aridité environnante.",
+      },
+      {
+        id: "course-geographie-47-botswana-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Botswana compte environ 2,7 millions d'habitants (2024), avec une faible densité.\n\n" +
-      "#### 4. Société\n" +
+      "Cette faible densité, l'une des plus basses d'Afrique, s'explique par l'aridité du Kalahari qui couvre la majeure partie du territoire ; la population se concentre donc essentiellement dans le sud-est, autour de Gaborone, et le long des rares zones bien arrosées.\n\n" +
+      "#### 2. Société\n" +
       "La majorité est tswana. L'anglais (officiel) et le setswana sont parlés ; le christianisme est majoritaire. Le pays est une démocratie stable depuis son indépendance (1966).\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Le Botswana abrite aussi une minorité San (Bushmen), peuple parmi les plus anciens d'Afrique australe, dont une partie a longtemps vécu de chasse et de cueillette dans le Kalahari central, un mode de vie aujourd'hui menacé par les restrictions d'accès aux réserves naturelles.",
+      },
+      {
+        id: "course-geographie-47-botswana-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le diamant est le socle de la prospérité (le Botswana est l'un des plus grands producteurs mondiaux), avec le tourisme (Okavango, safaris) et l'élevage. Le pays affiche l'un des meilleurs revenus par habitant d'Afrique et une bonne gouvernance.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Duma Boko, président depuis novembre 2024 (première alternance après des décennies de pouvoir d'un même parti). Monnaie : le pula (BWP). Devise nationale : « Pula » (« Pluie »).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 30 septembre 1966. Membre de l'Union africaine et de la Communauté de développement d'Afrique australe (SADC), il est régulièrement cité comme l'un des modèles de bonne gouvernance et de gestion transparente des ressources naturelles du continent.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Gaborone. Le delta de l'Okavango, le désert du Kalahari et les grandes concentrations d'éléphants (parc de Chobe) font sa réputation, tout comme sa gestion exemplaire des diamants.",
       },
     ],
@@ -3755,25 +3815,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇸🇿",
     title: "Eswatini",
     description: "L'une des dernières monarchies absolues du monde, petit royaume enclavé d'Afrique australe. Découvre l'Eswatini.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-48-eswatini-lesson-1",
-        title: "L'Eswatini",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "L'Eswatini est un petit pays enclavé d'Afrique australe (environ 17 400 km²). Il est presque entièrement entouré par l'Afrique du Sud, avec une frontière à l'est avec le Mozambique.\n\n" +
+      "Le pays est divisé en quatre régions autour de ses deux capitales, Mbabane et Lobamba. Sa petite taille et sa quasi-inclusion dans le territoire sud-africain en font l'un des micro-États les plus dépendants économiquement de son voisin sur tout le continent.\n\n" +
       "#### 2. Le milieu\n" +
       "Le relief passe du Highveld montagneux à l'ouest au Lowveld chaud à l'est. Le climat est varié ; les paysages verdoyants et les réserves de faune sont réputés.\n\n" +
-      "#### 3. Population\n" +
+      "Cette gradation d'altitude sur un territoire réduit crée une diversité climatique remarquable en peu d'espace : fraîcheur et pluies abondantes sur le Highveld, propices à la forêt et aux plantations, chaleur et savane sur le Lowveld, plus proche du climat du Mozambique voisin.",
+      },
+      {
+        id: "course-geographie-48-eswatini-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "L'Eswatini compte environ 1,2 million d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population, rurale pour une large part, vit largement de l'agriculture de subsistance et du travail migrant vers l'Afrique du Sud voisine, dont l'économie sud-africaine absorbe une grande partie des échanges commerciaux et de la main-d'œuvre.\n\n" +
+      "#### 2. Société\n" +
       "La population swazie est très homogène. Le siSwati et l'anglais sont officiels ; le christianisme, mêlé de traditions, est majoritaire. La culture est vivace, avec des cérémonies comme l'Umhlanga (danse des roseaux).\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Cette homogénéité ethnique et linguistique, rare en Afrique australe, s'accompagne d'un attachement fort à la monarchie et aux traditions royales, qui continuent de structurer la vie sociale, notamment à travers les grandes cérémonies annuelles comme l'Umhlanga ou l'Incwala.",
+      },
+      {
+        id: "course-geographie-48-eswatini-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur le sucre (canne à sucre, principale exportation), le bois et le textile. Elle est très dépendante de l'Afrique du Sud, et sa monnaie est liée au rand.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : monarchie absolue (l'une des dernières au monde). Chef de l'État (2026) : le Roi Mswati III. Monnaie : le lilangeni (SZL), à parité avec le rand sud-africain. Devise nationale : « Siyinqaba » (« Nous sommes une forteresse »).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 6 septembre 1968. Membre de l'Union africaine et de la SADC, il reste l'une des dernières monarchies absolues au monde, où les partis politiques restent interdits, malgré des mouvements réguliers réclamant des réformes démocratiques.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitales : Mbabane (administrative) et Lobamba (royale et législative). La cérémonie de l'Umhlanga (danse des roseaux) est célèbre. Le pays, longtemps appelé Swaziland, a été rebaptisé Eswatini en 2018.",
       },
     ],
@@ -3821,25 +3896,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇱🇸",
     title: "Lesotho",
     description: "Le « royaume dans le ciel », entièrement entouré par l'Afrique du Sud, le pays le plus haut du monde. Découvre le Lesotho.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-49-lesotho-lesson-1",
-        title: "Le Lesotho",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Lesotho est un pays enclavé, entièrement entouré par l'Afrique du Sud — l'un des rares « États-enclaves » au monde. Il s'étend sur environ 30 355 km².\n\n" +
+      "Le pays est divisé en dix districts autour de Maseru, la capitale, à la frontière sud-africaine. Cette situation d'enclave totale, partagée avec seulement deux autres pays au monde (Saint-Marin et le Vatican, tous deux enclavés en Italie), en fait une singularité géopolitique majeure.\n\n" +
       "#### 2. Le milieu\n" +
       "C'est un pays de haute montagne (les monts Maloti, prolongement du Drakensberg) : tout son territoire se situe au-dessus de 1 000 m d'altitude, ce qui en fait le pays le plus « haut » du monde. Il connaît un climat frais, avec de la neige en hiver, et abrite la source du fleuve Orange.\n\n" +
-      "#### 3. Population\n" +
+      "Cette altitude uniforme, unique parmi tous les pays du monde, vaut au Lesotho un climat bien plus frais que celui attendu à cette latitude, avec des chutes de neige régulières en hiver sur les sommets des Maloti, qui culminent à plus de 3 400 m.",
+      },
+      {
+        id: "course-geographie-49-lesotho-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Lesotho compte environ 2,3 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population, majoritairement rurale, vit de l'agriculture de montagne et de l'élevage, avec une longue tradition de travail migrant vers les mines et l'économie sud-africaines, qui reste une source de revenus essentielle pour de nombreux foyers basotho.\n\n" +
+      "#### 2. Société\n" +
       "La population basotho est très homogène. Le sesotho et l'anglais sont officiels ; le christianisme est majoritaire. La culture du cheval et la fameuse couverture basotho font partie de l'identité nationale.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Le cheval basotho, introduit au XIXe siècle et parfaitement adapté au relief montagneux, reste un moyen de transport essentiel dans les régions les plus reculées, tandis que la couverture traditionnelle, portée par-dessus les vêtements, est devenue un symbole national fort, y compris hors des frontières du royaume.",
+      },
+      {
+        id: "course-geographie-49-lesotho-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'eau est une ressource clé, exportée vers l'Afrique du Sud (Lesotho Highlands Water Project). S'y ajoutent le textile, les diamants, l'élevage et les transferts des Basotho travaillant en Afrique du Sud.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : monarchie constitutionnelle. Chef de l'État (2026) : le Roi Letsie III (rôle protocolaire) ; le chef du gouvernement est le Premier ministre (Sam Matekane). Monnaie : le loti (LSL), à parité avec le rand. Devise nationale : « Khotso, Pula, Nala » (Paix, Pluie, Prospérité).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 4 octobre 1966, sous la forme d'un royaume qui a succédé au Basutoland colonial. Membre de l'Union africaine et de la SADC, il reste fortement dépendant, sur le plan économique comme monétaire, de l'Afrique du Sud qui l'entoure entièrement.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Maseru. Surnommé le « royaume dans le ciel », le Lesotho est le château d'eau de l'Afrique australe. Ses cavaliers basotho et leurs couvertures colorées sont emblématiques.",
       },
     ],
@@ -3887,25 +3977,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇼",
     title: "Malawi",
     description: "« Le cœur chaud de l'Afrique », pays du grand lac Malawi, densément peuplé et agricole. Découvre le Malawi.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-50-malawi-lesson-1",
-        title: "Le Malawi",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Malawi est un pays enclavé d'Afrique australe. Sur environ 118 500 km², il est bordé par la Tanzanie, le Mozambique et la Zambie. Le lac Malawi occupe une grande partie de sa frontière est.\n\n" +
+      "Le pays est étroit et allongé le long de la vallée du Rift, découpé en trois régions administratives (Nord, Centre, Sud). Cette forme, comparable à celle du Malawi lui-même le long de son lac, structure fortement l'organisation du territoire et des transports.\n\n" +
       "#### 2. Le milieu\n" +
       "Le lac Malawi, l'un des plus grands d'Afrique, très riche en poissons colorés endémiques (cichlidés), est classé à l'UNESCO. La vallée du Rift, des plateaux et de hauts reliefs (mont Mulanje) composent le paysage. Le climat est tropical.\n\n" +
-      "#### 3. Population\n" +
+      "Le mont Mulanje, au sud, isolé au milieu des plaines, culmine à plus de 3 000 m et constitue le point culminant du pays. Le lac Malawi, troisième plus grand lac d'Afrique, abrite plus d'espèces de poissons que n'importe quel autre lac au monde, ce qui en fait un site d'étude majeur pour l'évolution biologique.",
+      },
+      {
+        id: "course-geographie-50-malawi-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Malawi compte environ 21 millions d'habitants (2024), avec une forte densité.\n\n" +
-      "#### 4. Société\n" +
+      "Cette forte densité, l'une des plus élevées d'Afrique australe, exerce une pression croissante sur les terres agricoles dans un pays où la grande majorité de la population continue de vivre de l'agriculture de subsistance.\n\n" +
+      "#### 2. Société\n" +
       "Les peuples Chewa, Yao et Tumbuka sont les plus nombreux. Le chichewa et l'anglais sont officiels ; le christianisme est majoritaire, avec une minorité musulmane. Le pays est réputé pour son accueil.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Chewa, majoritaires au centre et au sud, les Yao, plus présents au sud-est et souvent musulmans, et les Tumbuka, au nord, forment les grands ensembles culturels du pays, dans une société connue pour sa réputation de convivialité, à l'origine du surnom « cœur chaud de l'Afrique ».",
+      },
+      {
+        id: "course-geographie-50-malawi-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'agriculture domine : le tabac est la principale exportation, avec le thé, le sucre et le maïs ; la pêche dans le lac complète les ressources. C'est l'un des pays les plus pauvres du monde.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Peter Mutharika, élu en septembre 2025 (il a battu le président sortant Lazarus Chakwera). Monnaie : le kwacha malawite (MWK). Devise nationale : « Unity and Freedom » (Unité et Liberté).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 6 juillet 1964, sous le nom de Nyassaland jusqu'à l'indépendance. Membre de l'Union africaine et de la SADC, il reste l'un des pays les plus pauvres du monde malgré une vie démocratique relativement stable depuis les années 1990.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Lilongwe. Le lac Malawi (plongée, poissons cichlidés) et le mont Mulanje sont ses grands atouts. Le pays est surnommé « le cœur chaud de l'Afrique ».",
       },
     ],
@@ -3953,25 +4058,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇲🇿",
     title: "Mozambique",
     description: "Un long pays côtier lusophone de l'océan Indien, riche en gaz et en plages. Découvre le Mozambique.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-51-mozambique-lesson-1",
-        title: "Le Mozambique",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Mozambique s'étire le long d'une très longue façade sur l'océan Indien (canal du Mozambique, face à Madagascar). Sur environ 801 000 km², il est bordé par la Tanzanie, le Malawi, la Zambie, le Zimbabwe, l'Afrique du Sud et l'Eswatini ; le fleuve Zambèze le traverse.\n\n" +
+      "Le pays est découpé en onze provinces, de Cabo Delgado au nord à Maputo au sud. Sa très longue façade maritime, l'une des plus étendues d'Afrique, et sa position au débouché de plusieurs pays enclavés (Malawi, Zambie, Zimbabwe) en font un couloir commercial stratégique pour toute l'Afrique australe.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays associe une longue côte de plages et de mangroves, des plaines côtières et des plateaux à l'intérieur. Le Zambèze et le barrage de Cahora Bassa fournissent de l'énergie. Le climat est tropical, exposé aux cyclones.\n\n" +
-      "#### 3. Population\n" +
+      "Le Zambèze, qui coupe le pays d'ouest en est, y forme le lac de retenue du barrage de Cahora Bassa, l'un des plus grands d'Afrique, avant de se jeter dans l'océan Indien par un vaste delta. La position du pays, exposée de plein fouet aux cyclones tropicaux venus de l'océan Indien, en fait l'un des territoires les plus vulnérables du continent aux catastrophes climatiques.",
+      },
+      {
+        id: "course-geographie-51-mozambique-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Mozambique compte environ 34 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre sur le littoral et dans les vallées fluviales, notamment celle du Zambèze, tandis que le nord, plus isolé et touché depuis 2017 par une insurrection armée, connaît d'importants déplacements de population.\n\n" +
+      "#### 2. Société\n" +
       "De nombreux peuples (Makhuwa, Tsonga, Sena…) composent la nation. Le portugais est la langue officielle ; christianisme et islam (côte swahilie au nord) cohabitent. C'est une ancienne colonie portugaise.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Le nord du pays, notamment la province de Cabo Delgado, entretient d'anciens liens culturels et commerciaux avec le monde swahili et arabo-musulman de l'océan Indien, tandis que le sud, plus proche de l'Afrique du Sud et de l'Eswatini, est davantage christianisé et tourné vers l'Afrique australe.",
+      },
+      {
+        id: "course-geographie-51-mozambique-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le gaz naturel offshore (immenses gisements du Cabo Delgado, au nord) est une richesse d'avenir, avec le charbon, l'aluminium, l'agriculture (noix de cajou, crevettes) et l'hydroélectricité. Le pays fait toutefois face à une insurrection au nord et à la pauvreté.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Daniel Chapo, président depuis janvier 2025. Monnaie : le metical (MZN). Devise nationale : le Mozambique n'a pas de devise nationale officielle consacrée.\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Portugal depuis le 25 juin 1975, à l'issue d'une guerre de libération menée par le FRELIMO. Membre de l'Union africaine et de la SADC, il a ensuite connu une longue et meurtrière guerre civile (1977-1992) avant de se stabiliser, puis de découvrir d'immenses réserves de gaz au large de Cabo Delgado.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Maputo. L'Ilha de Moçambique (UNESCO) et l'archipel de Bazaruto (plages) sont ses joyaux. Le pays garde la mémoire de la lutte anticoloniale (FRELIMO) et de Samora Machel.",
       },
     ],
@@ -4019,25 +4139,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇳🇦",
     title: "Namibie",
     description: "Un pays de déserts spectaculaires et de faune, à la plus faible densité de population d'Afrique. Découvre la Namibie.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-52-namibie-lesson-1",
-        title: "La Namibie",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Namibie s'étend sur la côte atlantique d'Afrique australe. Sur environ 825 000 km², elle est bordée par l'Angola, la Zambie, le Botswana et l'Afrique du Sud ; la fine bande de Caprivi s'étire au nord-est.\n\n" +
+      "Le pays est découpé en quatorze régions autour de Windhoek, la capitale, au centre du territoire. La bande de Caprivi, longue avancée étroite vers l'est jusqu'au Zambèze, est un héritage de la période coloniale allemande, pensée pour donner accès au fleuve.\n\n" +
       "#### 2. Le milieu\n" +
       "Le pays est marqué par deux déserts : le Namib (le plus vieux désert du monde, avec les dunes de Sossusvlei) le long de la côte, et le Kalahari à l'est. La côte des Squelettes et un climat aride en font l'un des pays les moins densément peuplés du monde.\n\n" +
-      "#### 3. Population\n" +
+      "La côte des Squelettes, brumeuse et jonchée d'épaves de navires échoués, doit son climat particulier à la rencontre du désert brûlant et du courant froid de Benguela, qui remonte de l'Antarctique. Les dunes de Sossusvlei, parmi les plus hautes du monde, comptent parmi les paysages les plus photographiés d'Afrique.",
+      },
+      {
+        id: "course-geographie-52-namibie-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Namibie compte environ 3 millions d'habitants (2024), avec une très faible densité.\n\n" +
-      "#### 4. Société\n" +
+      "Avec l'une des plus faibles densités de population au monde, la Namibie voit sa population concentrée dans le centre-nord, région d'Ovamboland, et à Windhoek, tandis que les vastes étendues désertiques du Namib et du Kalahari restent presque vides.\n\n" +
+      "#### 2. Société\n" +
       "De nombreux peuples (Ovambo, Herero, Nama, San, minorité germanophone) composent la nation. L'anglais est la langue officielle ; l'afrikaans et l'allemand sont présents (héritage colonial). Le christianisme est majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Ovambo, très largement majoritaires, dominent le nord du pays, tandis que les Herero et les Nama, durement touchés par le génocide colonial allemand du début du XXe siècle, et une minorité San, parmi les plus anciens peuples d'Afrique australe, complètent une mosaïque marquée par un lourd héritage colonial.",
+      },
+      {
+        id: "course-geographie-52-namibie-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "L'économie repose sur les mines : diamants, uranium (la Namibie est un grand producteur), or et zinc, ainsi que l'élevage, la pêche et le tourisme (Namib, faune d'Etosha). C'est un pays à revenu intermédiaire, mais très inégalitaire.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Netumbo Nandi-Ndaitwah, première femme présidente de la Namibie (depuis mars 2025). Monnaie : le dollar namibien (NAD), à parité avec le rand. Devise nationale : « Unity, Liberty, Justice » (Unité, Liberté, Justice).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant de l'Afrique du Sud depuis le 21 mars 1990, à l'issue d'une longue lutte de libération menée par la SWAPO. Membre de l'Union africaine et de la SADC, il reste l'un des pays les plus inégalitaires du monde, héritage direct des décennies de domination coloniale allemande puis sud-africaine.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Windhoek. Les dunes de Sossusvlei (désert du Namib), le parc d'Etosha et la côte des Squelettes sont mondialement connus. La Namibie est devenue indépendante de l'Afrique du Sud en 1990.",
       },
     ],
@@ -4085,25 +4220,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇿🇲",
     title: "Zambie",
     description: "Pays du cuivre et des chutes Victoria, au cœur de l'Afrique australe. Découvre la Zambie.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-53-zambie-lesson-1",
-        title: "La Zambie",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "La Zambie est un pays enclavé d'Afrique australe. Sur environ 752 000 km², elle est entourée par huit pays (RD Congo, Tanzanie, Malawi, Mozambique, Zimbabwe, Botswana, Namibie, Angola) ; le fleuve Zambèze la borde au sud.\n\n" +
+      "Le pays est découpé en dix provinces autour de Lusaka, la capitale, au centre-sud du territoire. Sa forme en papillon et ses huit frontières en font l'un des pays les plus centraux d'Afrique australe, au carrefour de multiples routes commerciales régionales.\n\n" +
       "#### 2. Le milieu\n" +
       "Ce sont surtout de hauts plateaux de savane. Le Zambèze y forme les spectaculaires chutes Victoria (partagées avec le Zimbabwe, UNESCO). De grandes rivières, des lacs et le barrage de Kariba complètent le tableau. Le climat est tropical à saisons.\n\n" +
-      "#### 3. Population\n" +
+      "Le lac de Kariba, l'un des plus grands lacs artificiels du monde par son volume, né du barrage construit sur le Zambèze dans les années 1950-1960, est partagé avec le Zimbabwe et fournit l'essentiel de l'électricité des deux pays. Les chutes Victoria, larges de plus d'un kilomètre, comptent parmi les plus spectaculaires chutes d'eau du monde.",
+      },
+      {
+        id: "course-geographie-53-zambie-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "La Zambie compte environ 20 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre le long de l'axe économique central, du Copperbelt minier au nord à Lusaka au sud, tandis que les provinces plus périphériques restent plus rurales et moins connectées au reste du pays.\n\n" +
+      "#### 2. Société\n" +
       "Plus de 70 groupes ethniques (Bemba, Tonga, Nyanja…) composent la nation. L'anglais est la langue officielle ; le christianisme est très majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Malgré cette importante diversité ethnique, la Zambie a connu une remarquable stabilité politique depuis l'indépendance, sans guerre civile majeure, un contraste notable avec plusieurs de ses huit voisins qui ont traversé des conflits prolongés.",
+      },
+      {
+        id: "course-geographie-53-zambie-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le cuivre est la grande richesse (la Zambie est l'un des principaux producteurs africains, dans la région du « Copperbelt »), avec le cobalt, l'agriculture, le tourisme (chutes Victoria) et l'hydroélectricité (Kariba). L'économie reste très dépendante du cours du cuivre.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Hakainde Hichilema, président depuis 2021. Monnaie : le kwacha zambien (ZMW). Devise nationale : « One Zambia, One Nation » (Une Zambie, une nation).\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 24 octobre 1964, sous la présidence fondatrice de Kenneth Kaunda. Membre de l'Union africaine et de la SADC, il est régulièrement cité pour la stabilité de sa vie politique et ses alternances pacifiques.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Lusaka. Les chutes Victoria (« Mosi-oa-Tunya », la fumée qui gronde), la région minière du Copperbelt et le lac de barrage de Kariba sont les grands repères du pays.",
       },
     ],
@@ -4151,25 +4301,40 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     emoji: "🇿🇼",
     title: "Zimbabwe",
     description: "Pays des chutes Victoria et du Grand Zimbabwe, riche en minerais, à l'histoire mouvementée. Découvre le Zimbabwe.",
-    xp: 30,
+    xp: 50,
     lessons: [
       {
         id: "course-geographie-54-zimbabwe-lesson-1",
-        title: "Le Zimbabwe",
+        title: "Le territoire",
         content:
       "#### 1. Situation territoriale\n" +
       "Le Zimbabwe est un pays enclavé d'Afrique australe. Sur environ 391 000 km², il est bordé par la Zambie, le Mozambique, l'Afrique du Sud et le Botswana, entre les fleuves Zambèze (au nord) et Limpopo (au sud).\n\n" +
+      "Le pays est découpé en dix provinces autour de Harare, la capitale, sur le Highveld central. Encadré au nord et au sud par deux grands fleuves, le Zambèze et le Limpopo, le Zimbabwe occupe une position charnière entre l'Afrique centrale et l'Afrique australe.\n\n" +
       "#### 2. Le milieu\n" +
       "Un haut plateau central (Highveld) domine le pays. Au nord-ouest, le Zambèze forme les chutes Victoria ; le Limpopo marque le sud. Le climat, tropical, est tempéré par l'altitude. Le parc de Hwange abrite une faune abondante.\n\n" +
-      "#### 3. Population\n" +
+      "Le Highveld, qui traverse le pays du sud-ouest au nord-est, bénéficie d'un climat plus frais et de sols volcaniques fertiles qui en ont fait historiquement la principale région agricole du pays. Le parc de Hwange, plus grande réserve du Zimbabwe, abrite l'une des plus importantes populations d'éléphants d'Afrique.",
+      },
+      {
+        id: "course-geographie-54-zimbabwe-lesson-2",
+        title: "Population et société",
+        content:
+      "#### 1. Population\n" +
       "Le Zimbabwe compte environ 16 millions d'habitants (2024).\n\n" +
-      "#### 4. Société\n" +
+      "La population se concentre sur le Highveld fertile, autour de Harare et Bulawayo, tandis que les basses terres plus chaudes et sèches du Zambèze et du Limpopo restent moins peuplées ; une importante diaspora vit aussi en Afrique du Sud et au Royaume-Uni, conséquence des crises économiques des années 2000.\n\n" +
+      "#### 2. Société\n" +
       "Les Shonas (majoritaires) et les Ndebele forment les principaux peuples. L'anglais, le shona et le ndebele sont officiels (le pays reconnaît 16 langues) ; le christianisme est majoritaire.\n\n" +
-      "#### 5. Économie et ressources\n" +
+      "Les Shonas, très largement majoritaires et présents dans la majeure partie du pays, et les Ndebele, concentrés autour de Bulawayo dans le sud-ouest et héritiers du royaume ndébélé du XIXe siècle, forment les deux grandes composantes de la nation, dont les relations ont parfois été tendues, notamment lors des violences des années 1980 (Gukurahundi).",
+      },
+      {
+        id: "course-geographie-54-zimbabwe-lesson-3",
+        title: "Économie, politique et repères",
+        content:
+      "#### 1. Économie et ressources\n" +
       "Le sous-sol est riche : or, platine, chrome, lithium (ressource montante) et diamants ; s'y ajoutent le tabac et l'agriculture. L'économie a toutefois été fragilisée par des décennies de crise et une hyperinflation historique.\n\n" +
-      "#### 6. Institutions et politique\n" +
+      "#### 2. Institutions et politique\n" +
       "Régime : république. Chef de l'État (2026) : Emmerson Mnangagwa, président depuis 2017 (réélu en 2023). Monnaie : le pays utilise le ZiG (Zimbabwe Gold), une monnaie adossée à l'or lancée récemment. Devise nationale : « Unité, Liberté, Travail ».\n\n" +
-      "#### 7. Repères et singularités\n" +
+      "Le pays est indépendant du Royaume-Uni depuis le 18 avril 1980, après une longue guerre d'indépendance contre le régime blanc autoproclamé de Rhodésie. Membre de l'Union africaine et de la SADC, il a été dirigé pendant 37 ans par Robert Mugabe (1980-2017), dont la chute a ouvert une nouvelle période politique encore marquée par de profondes difficultés économiques.\n\n" +
+      "#### 3. Repères et singularités\n" +
       "Capitale : Harare. Les ruines du Grand Zimbabwe — cité de pierre médiévale qui a donné son nom au pays (UNESCO) — et les chutes Victoria sont ses grands symboles. Le pays a tourné la page de l'ère Mugabe (1980-2017).",
       },
     ],
