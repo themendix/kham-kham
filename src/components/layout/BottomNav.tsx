@@ -19,7 +19,7 @@ export function BottomNav() {
           end={end}
           className={({ isActive }) =>
             `flex flex-col items-center gap-1 rounded-2xl px-3.5 py-1.5 font-heading text-[11px] font-bold ${
-              isActive ? "border-[2.5px] border-ink bg-histoire text-ink" : "text-[#9b9284]"
+              isActive ? "border-[2.5px] border-ink bg-histoire text-ink" : "text-ink-faint"
             }`
           }
         >

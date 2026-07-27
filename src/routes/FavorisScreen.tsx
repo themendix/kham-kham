@@ -4,7 +4,7 @@ import { ArrowLeft, Heart, Bookmark, ChevronDown } from "lucide-react";
 import type { SwipeCard } from "@/types";
 import { useAppStore } from "@/store/useAppStore";
 import { CARDS } from "@/data/cards";
-import { getCourse } from "@/data/courses";
+import { getCourseMetaOrWarn } from "@/data/courseMeta";
 import { getCategory } from "@/data/categories";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -17,7 +17,7 @@ export function FavorisScreen() {
   const toggleFavoriteCard = useAppStore((s) => s.toggleFavoriteCard);
 
   const favoriteCourses = progress.favoriteCourseIds
-    .map((id) => getCourse(id))
+    .map((id) => getCourseMetaOrWarn(id, "progress.favoriteCourseIds"))
     .filter((c): c is NonNullable<typeof c> => c !== undefined);
   const favoriteCards = progress.favoriteCardIds
     .map((id) => CARDS.find((c) => c.id === id))
@@ -28,7 +28,7 @@ export function FavorisScreen() {
     <div className="mx-auto max-w-2xl">
       <button
         onClick={() => navigate(-1)}
-        className="mb-3 inline-flex items-center gap-1.5 font-heading text-sm font-bold text-[#8a8071]"
+        className="mb-3 inline-flex items-center gap-1.5 font-heading text-sm font-bold text-ink-faint"
       >
         <ArrowLeft className="h-4 w-4" /> Retour
       </button>
@@ -37,8 +37,8 @@ export function FavorisScreen() {
 
       {hasNoFavorites ? (
         <Card className="p-8 text-center">
-          <p className="font-medium text-[#8a8071]">Aucun favori pour l'instant.</p>
-          <p className="mt-1 text-sm text-[#9b9284]">
+          <p className="font-medium text-ink-faint">Aucun favori pour l'instant.</p>
+          <p className="mt-1 text-sm text-ink-faint">
             Marque des cartes ou des cours d'un cœur pour les retrouver ici.
           </p>
           <div className="mt-4 flex flex-wrap justify-center gap-2.5">
@@ -54,7 +54,7 @@ export function FavorisScreen() {
         <div className="flex flex-col gap-6">
           {favoriteCourses.length > 0 && (
             <section>
-              <h2 className="mb-2.5 font-heading text-xs font-bold uppercase tracking-wide text-[#8a8071]">
+              <h2 className="mb-2.5 font-heading text-xs font-bold uppercase tracking-wide text-ink-faint">
                 Cours favoris
               </h2>
               <Card className="p-4">
@@ -71,7 +71,7 @@ export function FavorisScreen() {
                           <div className="min-w-0">
                             <div className="truncate font-bold">{course.title}</div>
                             {category && (
-                              <div className="text-[12px] font-semibold text-[#9b9284]">{category.name}</div>
+                              <div className="text-[12px] font-semibold text-ink-faint">{category.name}</div>
                             )}
                           </div>
                         </Link>
@@ -92,7 +92,7 @@ export function FavorisScreen() {
 
           {favoriteCards.length > 0 && (
             <section>
-              <h2 className="mb-2.5 font-heading text-xs font-bold uppercase tracking-wide text-[#8a8071]">
+              <h2 className="mb-2.5 font-heading text-xs font-bold uppercase tracking-wide text-ink-faint">
                 Cartes favorites
               </h2>
               <Card className="p-4">
@@ -125,7 +125,7 @@ function FavoriteCardItem({ card, onRemove }: { card: SwipeCard; onRemove: () =>
           <span className="text-xl">{card.emoji}</span>
           <div className="min-w-0 flex-1">
             <div className="truncate font-bold">{card.title}</div>
-            <div className="truncate text-[12px] font-semibold text-[#9b9284]">{card.teaser}</div>
+            <div className="truncate text-[12px] font-semibold text-ink-faint">{card.teaser}</div>
           </div>
           <ChevronDown className={`h-3.5 w-3.5 shrink-0 transition-transform ${expanded ? "rotate-180" : ""}`} />
         </button>
@@ -138,7 +138,7 @@ function FavoriteCardItem({ card, onRemove }: { card: SwipeCard; onRemove: () =>
         </button>
       </div>
       {expanded && (
-        <p className="mt-2 text-[13px] font-medium leading-relaxed text-[#5c554b]">{card.content}</p>
+        <p className="mt-2 text-[13px] font-medium leading-relaxed text-ink-muted">{card.content}</p>
       )}
     </div>
   );

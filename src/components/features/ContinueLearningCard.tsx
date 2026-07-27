@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import { PartyPopper } from "lucide-react";
-import type { Category, Course } from "@/types";
+import type { Category, CourseMeta } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Tag } from "@/components/ui/Tag";
 import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
 
 interface ContinueLearningCardProps {
-  course: Course | null;
+  course: CourseMeta | null;
   category: Category | null;
   /** true si ce cours est celui déjà entamé (lastCourseId), false si jamais ouvert */
   resumed: boolean;
@@ -23,7 +23,7 @@ export function ContinueLearningCard({ course, category, resumed }: ContinueLear
         </div>
         <div className="flex-1">
           <h3 className="font-extrabold">Tu as tout terminé, bravo !</h3>
-          <p className="text-sm font-medium text-[#5c554b]">Retourne à la Biblio pour découvrir plus de contenu.</p>
+          <p className="text-sm font-medium text-ink-muted">Retourne à la Biblio pour découvrir plus de contenu.</p>
         </div>
         <Link to="/biblio">
           <Button variant="secondary">Voir la Biblio</Button>
@@ -43,7 +43,7 @@ export function ContinueLearningCard({ course, category, resumed }: ContinueLear
         <div className="flex-1 py-4 pr-4">
           <Tag label={category.name} emoji={category.emoji} variant="dark" />
           <h3 className="mt-2 font-extrabold leading-tight">{course.title}</h3>
-          <div className="mt-1.5 font-heading text-[13px] font-bold text-primary">
+          <div className="mt-1.5 font-heading text-[13px] font-bold text-primary-text">
             {resumed ? "Reprendre →" : "Commencer →"}
           </div>
         </div>

@@ -78,15 +78,15 @@ export function SwipeCard({
           >
             <Tag label={category.name} emoji={category.emoji} variant="dark" />
             <h3 className="mt-3.5 text-2xl font-extrabold leading-tight">{card.title}</h3>
-            <p className="mt-2 text-[15.5px] font-medium leading-relaxed text-[#5c554b]">{card.teaser}</p>
+            <p className="mt-2 text-[15.5px] font-medium leading-relaxed text-ink-muted">{card.teaser}</p>
             {expanded && (
-              <p className="mt-2.5 border-t-2 border-ink/10 pt-2.5 text-[15px] font-medium leading-relaxed text-[#5c554b]">
+              <p className="mt-2.5 border-t-2 border-ink/10 pt-2.5 text-[15px] font-medium leading-relaxed text-ink-muted">
                 {card.content}
               </p>
             )}
             <div className="mt-3.5 flex items-center justify-between">
-              <span className="text-[12.5px] font-bold tracking-wide text-[#9b9284]">{indexLabel}</span>
-              <span className="flex items-center gap-1 text-[12.5px] font-bold text-primary">
+              <span className="text-[12.5px] font-bold tracking-wide text-ink-faint">{indexLabel}</span>
+              <span className="flex items-center gap-1 text-[12.5px] font-bold text-primary-text">
                 {expanded ? "Replier" : "En savoir plus"}
                 <ChevronDown className={`h-3.5 w-3.5 transition-transform ${expanded ? "rotate-180" : ""}`} />
               </span>
@@ -95,18 +95,21 @@ export function SwipeCard({
         </Card>
       </div>
 
-      <div className="mt-5 flex justify-center gap-14">
+      <p className="mt-4 text-center text-[13px] font-semibold text-ink-faint">
+        Glisse la carte, ou utilise les boutons ✗ / ✓
+      </p>
+      <div className="mt-2 flex justify-center gap-14">
         <button
           onClick={() => triggerCommit("left")}
           aria-label="Passer"
-          className="grid h-[74px] w-[74px] place-items-center rounded-full border-[3px] border-ink bg-[#F7B7A8] text-danger shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
+          className="grid h-[74px] w-[74px] place-items-center rounded-full border-[3px] border-ink bg-[#F7B7A8] text-ink shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
         >
           <X className="h-8 w-8" strokeWidth={3} />
         </button>
         <button
           onClick={() => triggerCommit("right")}
           aria-label="J'ai appris"
-          className="grid h-[74px] w-[74px] place-items-center rounded-full border-[3px] border-ink bg-[#A8E6BC] text-success shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
+          className="grid h-[74px] w-[74px] place-items-center rounded-full border-[3px] border-ink bg-[#A8E6BC] text-ink shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
         >
           <Check className="h-8 w-8" strokeWidth={3} />
         </button>

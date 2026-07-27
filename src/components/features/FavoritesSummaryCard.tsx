@@ -26,11 +26,11 @@ export function FavoritesSummaryCard({ courseCount, cardCount }: FavoritesSummar
         </div>
         <div className="min-w-0 flex-1">
           <h3 className="font-extrabold">Mes favoris</h3>
-          <p className="truncate text-sm font-medium text-[#8a8071]">
+          <p className="truncate text-sm font-medium text-ink-faint">
             {favoritesSubtitle(courseCount, cardCount)}
           </p>
         </div>
-        <ChevronRight className="h-5 w-5 shrink-0 text-[#9b9284]" />
+        <ChevronRight className="h-5 w-5 shrink-0 text-ink-faint" />
       </Card>
     </Link>
   );

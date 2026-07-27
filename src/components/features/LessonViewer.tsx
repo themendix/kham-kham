@@ -56,7 +56,7 @@ function renderLessonContent(content: string, accentColor: SubjectColor) {
           <div>
             <h3 className="font-heading text-[15px] font-extrabold text-ink">{heading}</h3>
             {body && (
-              <p className="mt-1 text-[15.5px] font-medium leading-relaxed text-[#5c554b]">{body}</p>
+              <p className="mt-1 text-[15.5px] font-medium leading-relaxed text-ink-muted">{body}</p>
             )}
           </div>
         </div>,
@@ -64,7 +64,7 @@ function renderLessonContent(content: string, accentColor: SubjectColor) {
       isFirstRubrique = false;
     } else {
       blocks.push(
-        <p key={i} className="mt-2.5 text-[15.5px] font-medium leading-relaxed text-[#5c554b]">
+        <p key={i} className="mt-2.5 text-[15.5px] font-medium leading-relaxed text-ink-muted">
           {line}
         </p>,
       );
@@ -86,7 +86,7 @@ export function LessonViewer({
 }: LessonViewerProps) {
   return (
     <Card className="p-6 md:p-8">
-      <div className="font-heading text-xs font-bold uppercase tracking-wide text-[#9b9284]">
+      <div className="font-heading text-xs font-bold uppercase tracking-wide text-ink-faint">
         Leçon {lessonIndex + 1} / {totalLessons}
       </div>
       <ProgressBar percent={((lessonIndex + 1) / totalLessons) * 100} fillClassName={SUBJECT_BG[accentColor]} />

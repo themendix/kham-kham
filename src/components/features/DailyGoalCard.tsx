@@ -24,7 +24,7 @@ export function DailyGoalCard({ cardsLearnedToday, goal, streakCount }: DailyGoa
       <div className="flex items-start justify-between gap-4">
         <div>
           <h2 className="text-xl font-extrabold md:text-2xl">{title} 👋</h2>
-          <p className="mt-1 font-medium text-[#5c554b]">{subtitle}</p>
+          <p className="mt-1 font-medium text-ink-muted">{subtitle}</p>
         </div>
         <div className="flex shrink-0 items-center gap-1.5 rounded-full border-[2.5px] border-ink bg-cream px-3.5 py-1.5 font-heading text-sm font-extrabold shadow-sm">
           <Flame className="h-4 w-4 text-flame" fill="currentColor" />
@@ -38,7 +38,7 @@ export function DailyGoalCard({ cardsLearnedToday, goal, streakCount }: DailyGoa
         </div>
       ) : (
         <>
-          <div className="mt-4 flex items-center justify-between font-heading text-sm font-bold text-[#5c554b]">
+          <div className="mt-4 flex items-center justify-between font-heading text-sm font-bold text-ink-muted">
             <span>Objectif du jour</span>
             <span>
               {cardsLearnedToday} / {goal} cartes

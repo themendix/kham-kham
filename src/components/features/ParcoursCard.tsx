@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { CheckCircle2 } from "lucide-react";
-import type { Course, Parcours } from "@/types";
+import type { CourseMeta, Parcours } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
@@ -8,8 +8,10 @@ import { ProgressBar } from "@/components/ui/ProgressBar";
 interface ParcoursCardProps {
   parcours: Parcours;
   completedCount: number;
-  courses: Course[];
+  courses: CourseMeta[];
   completedCourseIds: string[];
+  /** `progress.completedParcoursIds.includes(parcours.id)` — xpReward déjà créditée */
+  isCompleted: boolean;
   isExpanded: boolean;
   onToggleExpand: () => void;
 }
@@ -20,6 +22,7 @@ export function ParcoursCard({
   completedCount,
   courses,
   completedCourseIds,
+  isCompleted,
   isExpanded,
   onToggleExpand,
 }: ParcoursCardProps) {
@@ -30,18 +33,18 @@ export function ParcoursCard({
     <Card className="overflow-hidden">
       <div className="relative flex h-[130px] items-center justify-center bg-gradient-to-br from-indigo to-[#5c4b9e] text-[60px]">
         <span className="absolute right-3 top-3 grid h-12 w-12 place-items-center rounded-full border-[2.5px] border-ink bg-card font-heading text-[13px] font-extrabold">
-          {percent}%
+          {isCompleted ? <CheckCircle2 className="h-6 w-6 text-success" /> : `${percent}%`}
         </span>
         {parcours.emoji}
       </div>
       <div className="px-[18px] pb-[18px] pt-4">
         <div className="text-xl font-extrabold leading-tight">{parcours.title}</div>
-        <div className="mt-1.5 text-sm font-medium text-[#5c554b]">{parcours.description}</div>
+        <div className="mt-1.5 text-sm font-medium text-ink-muted">{parcours.description}</div>
         <div className="mt-3.5 flex items-center justify-between">
-          <span className="text-[13px] font-bold text-[#9b9284]">
+          <span className="text-[13px] font-bold text-ink-faint">
             {completedCount} / {total} cours
           </span>
-          <Badge tone="gold">＋{parcours.xpReward} XP</Badge>
+          <Badge tone="gold">{isCompleted ? "✓ Parcours terminé" : `＋${parcours.xpReward} XP`}</Badge>
         </div>
         <ProgressBar percent={percent} />
 

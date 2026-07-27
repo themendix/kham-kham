@@ -1,19 +1,45 @@
-const files = import.meta.glob("@/assets/cours/**/*.webp", {
+// Ne matche que les variantes 400w/800w : les fichiers pleine résolution (sans suffixe) ne
+// doivent jamais être copiés dans dist/ — ils ne servent que de source à
+// `npm run images:variants`, jamais affichés directement par l'app.
+const files = import.meta.glob("@/assets/cours/**/*-{400w,800w}.webp", {
   eager: true,
   query: "?url",
   import: "default",
 }) as Record<string, string>;
 
-const imagesByCourseId: Record<string, string> = Object.fromEntries(
-  Object.entries(files).map(([path, url]) => {
-    const name = path.split("/").pop()!.replace(/\.webp$/, "");
-    return [name, url];
-  }),
-);
+export interface CourseImageSet {
+  /** URL de repli (attribut `src`), palier 800w — utilisée par les navigateurs qui ignorent `srcset`. */
+  src: string;
+  /** Attribut `srcset` (400w/800w) : le navigateur choisit selon la taille d'affichage réelle de `CourseCard` (~150-350 px). */
+  srcSet: string;
+}
 
-/** Résout l'illustration d'un cours par convention de nommage (id de cours = nom de fichier), ou `undefined` si absente */
-export function getCourseImage(courseId: string): string | undefined {
-  return imagesByCourseId[courseId];
+const VARIANT_PATTERN = /-(400w|800w)\.webp$/;
+
+/**
+ * Variantes de résolution (`scripts/generate-image-variants.mjs`, `npm run images:variants`),
+ * générées à côté du fichier pleine résolution sans jamais le modifier. Seules les variantes
+ * 400w/800w sont servies par l'app : la source pleine résolution (~1000-1200 px, jusqu'à
+ * ~175 Ko) dépasse largement ce que `CourseCard` affiche jamais (~150-350 px), elle reste dans
+ * le dépôt comme référence pour régénérer les variantes, pas comme asset livré.
+ */
+const imagesByCourseId = new Map<string, { w400?: string; w800?: string }>();
+for (const [path, url] of Object.entries(files)) {
+  const filename = path.split("/").pop()!;
+  const match = VARIANT_PATTERN.exec(filename);
+  if (!match) continue;
+  const courseId = filename.slice(0, -match[0].length);
+  const entry = imagesByCourseId.get(courseId) ?? {};
+  if (match[1] === "400w") entry.w400 = url;
+  else entry.w800 = url;
+  imagesByCourseId.set(courseId, entry);
+}
+
+/** Résout les variantes d'illustration d'un cours par convention de nommage (id de cours = nom de fichier), ou `undefined` si absentes */
+export function getCourseImage(courseId: string): CourseImageSet | undefined {
+  const entry = imagesByCourseId.get(courseId);
+  if (!entry?.w400 || !entry.w800) return undefined;
+  return { src: entry.w800, srcSet: `${entry.w400} 400w, ${entry.w800} 800w` };
 }
 
 // Dans ce lot d'illustrations, le drapeau national est presque toujours à droite,

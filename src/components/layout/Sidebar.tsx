@@ -21,7 +21,7 @@ export function Sidebar() {
             `flex items-center gap-3 rounded-2xl border-[2.5px] px-4 py-3 font-heading text-sm font-bold transition-colors ${
               isActive
                 ? "border-ink bg-histoire text-ink shadow-sm"
-                : "border-transparent text-[#8a8071] hover:border-ink hover:bg-card"
+                : "border-transparent text-ink-faint hover:border-ink hover:bg-card"
             }`
           }
         >

@@ -15,7 +15,7 @@ export function QuizHistoryScreen() {
     <div className="mx-auto max-w-2xl">
       <button
         onClick={() => navigate(-1)}
-        className="mb-3 inline-flex items-center gap-1.5 font-heading text-sm font-bold text-[#8a8071]"
+        className="mb-3 inline-flex items-center gap-1.5 font-heading text-sm font-bold text-ink-faint"
       >
         <ArrowLeft className="h-4 w-4" /> Retour
       </button>
@@ -24,8 +24,8 @@ export function QuizHistoryScreen() {
 
       {results.length === 0 ? (
         <Card className="p-8 text-center">
-          <p className="font-medium text-[#8a8071]">Aucun quiz pour l'instant.</p>
-          <p className="mt-1 text-sm text-[#9b9284]">
+          <p className="font-medium text-ink-faint">Aucun quiz pour l'instant.</p>
+          <p className="mt-1 text-sm text-ink-faint">
             Termine un cours dans la Biblio pour voir tes résultats ici.
           </p>
           <Link to="/biblio">

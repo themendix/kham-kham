@@ -2,12 +2,15 @@ import { Check } from "lucide-react";
 import type { Parcours } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 
 interface CollectionProgressCardProps {
   parcours: Parcours;
   /** `progress.completedCourseIds` — sert à cocher les pastilles des cours du parcours déjà terminés */
   completedCourseIds: string[];
+  /** Vrai si le cours qu'on vient de terminer a complété ce parcours à l'instant (xpReward tout juste versée) */
+  justCompleted: boolean;
   onContinue: () => void;
 }
 
@@ -15,6 +18,7 @@ interface CollectionProgressCardProps {
 export function CollectionProgressCard({
   parcours,
   completedCourseIds,
+  justCompleted,
   onContinue,
 }: CollectionProgressCardProps) {
   const total = parcours.courseIds.length;
@@ -31,13 +35,18 @@ export function CollectionProgressCard({
       </div>
 
       <div className="px-[18px] pb-[18px] pt-5">
-        <h2 className="text-2xl font-extrabold">Collection avancée !</h2>
-        <p className="mt-1.5 font-medium text-[#5c554b]">{parcours.title}</p>
+        <h2 className="text-2xl font-extrabold">{justCompleted ? "Parcours terminé ! 🎉" : "Collection avancée !"}</h2>
+        <p className="mt-1.5 font-medium text-ink-muted">{parcours.title}</p>
+        {justCompleted && (
+          <div className="mt-2.5 flex justify-center">
+            <Badge tone="gold">＋{parcours.xpReward} XP</Badge>
+          </div>
+        )}
 
         <div className="mt-5 rounded-2xl border-[2.5px] border-ink bg-cream p-4">
           <div className="text-3xl font-extrabold">
             {completedCount}
-            <span className="text-lg font-bold text-[#5c554b]"> / {total} cours terminés</span>
+            <span className="text-lg font-bold text-ink-muted"> / {total} cours terminés</span>
           </div>
           <ProgressBar percent={pct} />
           <div className="mt-4 flex justify-center gap-2.5">

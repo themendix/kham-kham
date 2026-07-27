@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import { CheckCircle2, Target, Layers } from "lucide-react";
 import { useAppStore } from "@/store/useAppStore";
-import { getLevelInfo, MASTERY_PER_CARD } from "@/lib/gamification";
+import { getLevelInfo } from "@/lib/gamification";
+import { getMasteryByCategory } from "@/lib/subjectProgress";
 import { CARDS } from "@/data/cards";
+import { COURSE_INDEX } from "@/data/coursesIndex.generated";
+import { CATEGORIES } from "@/data/categories";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { Button } from "@/components/ui/Button";
 import { StreakTracker } from "@/components/features/StreakTracker";
@@ -15,11 +18,14 @@ import { QuizResultCard } from "@/components/features/QuizResultCard";
 export function ProfilScreen() {
   const progress = useAppStore((s) => s.progress);
   const levelInfo = getLevelInfo(progress.xp);
+  const masteryByCategory = getMasteryByCategory(progress, COURSE_INDEX, CATEGORIES);
 
-  const learnedCount = Math.round(
-    Object.values(progress.masteryByCategory).reduce((sum, v) => sum + v, 0) / MASTERY_PER_CARD,
-  );
-  const collectedPercent = Math.round((learnedCount / CARDS.length) * 100);
+  // Leçons apprises (convergence fil Home / « À la une » / vue cours, Phase 7 lot 3) : une
+  // seule source de vérité, `completedLessonIds`, sur le total réel de leçons disponibles
+  // (18 cartes éditoriales + toutes les leçons du catalogue).
+  const totalLessons = CARDS.length + COURSE_INDEX.reduce((sum, c) => sum + c.lessons.length, 0);
+  const lessonsLearnedCount = progress.completedLessonIds.length;
+  const lessonsPercent = Math.round((lessonsLearnedCount / totalLessons) * 100);
 
   const totalScored = progress.quizResults.reduce((sum, r) => sum + r.score, 0);
   const totalPossible = progress.quizResults.reduce((sum, r) => sum + r.total, 0);
@@ -41,8 +47,8 @@ export function ProfilScreen() {
                 <span className="inline-block rounded-full bg-ink px-2.5 py-1 font-heading text-[11px] font-bold tracking-wide text-white">
                   NIV. {levelInfo.level}
                 </span>{" "}
-                <span className="text-[13px] font-bold text-[#8a8071]">{levelInfo.rank}</span>
-                <div className="mt-1 text-[13px] font-semibold text-[#8a8071]">
+                <span className="text-[13px] font-bold text-ink-faint">{levelInfo.rank}</span>
+                <div className="mt-1 text-[13px] font-semibold text-ink-faint">
                   {progress.xp} XP
                   {levelInfo.xpToNextLevel !== null
                     ? ` · ${levelInfo.xpToNextLevel} XP avant ${levelInfo.nextRank}`
@@ -70,19 +76,19 @@ export function ProfilScreen() {
           <div className="mb-4 rounded-[22px] border-[3px] border-ink bg-card p-4 shadow-sm">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5 font-extrabold">
-                <Layers className="h-5 w-5" /> {learnedCount}{" "}
-                <span className="text-[#9b9284]">/ {CARDS.length}</span>
+                <Layers className="h-5 w-5" /> {lessonsLearnedCount}{" "}
+                <span className="text-ink-faint">/ {totalLessons}</span>
               </div>
-              <span className="text-[13px] font-bold text-[#9b9284]">Cartes →</span>
+              <span className="text-[13px] font-bold text-ink-faint">Leçons →</span>
             </div>
-            <ProgressBar percent={collectedPercent} />
+            <ProgressBar percent={lessonsPercent} />
           </div>
 
           <div className="mb-4 rounded-[22px] border-[3px] border-ink bg-card p-4 text-center shadow-sm">
-            <div className="mb-1 text-left font-heading text-xs font-bold uppercase tracking-wide text-[#6d655a]">
+            <div className="mb-1 text-left font-heading text-xs font-bold uppercase tracking-wide text-ink-muted">
               Ta forme de culture
             </div>
-            <MasteryRadar masteryByCategory={progress.masteryByCategory} />
+            <MasteryRadar masteryByCategory={masteryByCategory} />
           </div>
 
           <FavoritesSummaryCard
@@ -94,7 +100,7 @@ export function ProfilScreen() {
 
       <div className="mt-4 rounded-[22px] border-[3px] border-ink bg-card p-4 shadow-sm">
         <div className="mb-3 flex items-center justify-between">
-          <span className="font-heading text-xs font-bold uppercase tracking-wide text-[#6d655a]">
+          <span className="font-heading text-xs font-bold uppercase tracking-wide text-ink-muted">
             Mes quiz récents
           </span>
           {latestQuiz && (
@@ -105,8 +111,8 @@ export function ProfilScreen() {
         </div>
         {latestQuiz === null ? (
           <div className="py-6 text-center">
-            <p className="font-medium text-[#8a8071]">Aucun quiz pour l'instant.</p>
-            <p className="mt-1 text-sm text-[#9b9284]">
+            <p className="font-medium text-ink-faint">Aucun quiz pour l'instant.</p>
+            <p className="mt-1 text-sm text-ink-faint">
               Termine un cours dans la Biblio pour voir tes résultats ici.
             </p>
             <Link to="/biblio">

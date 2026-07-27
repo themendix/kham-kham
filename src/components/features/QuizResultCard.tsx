@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { Star, RotateCw } from "lucide-react";
 import type { QuizResult } from "@/types";
-import { getCourse } from "@/data/courses";
+import { getCourseMetaOrWarn } from "@/data/courseMeta";
 import { Card } from "@/components/ui/Card";
 
 interface QuizResultCardProps {
@@ -10,7 +10,8 @@ interface QuizResultCardProps {
 
 /** Résultat d'une tentative de quiz : titre du cours, notation en étoiles, bouton de reprise */
 export function QuizResultCard({ result }: QuizResultCardProps) {
-  const course = getCourse(result.courseId);
+  const course =
+    result.courseId === "defi-quotidien" ? undefined : getCourseMetaOrWarn(result.courseId, "quizResults");
 
   return (
     <Card shadow="sm" className="p-4">
@@ -35,7 +36,7 @@ export function QuizResultCard({ result }: QuizResultCardProps) {
             />
           ))}
         </div>
-        <span className="font-bold text-[#9b9284]">
+        <span className="font-bold text-ink-faint">
           {result.score}/{result.total}
         </span>
       </div>

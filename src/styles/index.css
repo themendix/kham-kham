@@ -1,6 +1,44 @@
 @import "tailwindcss";
 
 /*
+ * Polices auto-hébergées (sous-ensemble latin uniquement — l'app est 100 % en français, les
+ * sous-ensembles cyrillic/greek/vietnamese du CDN Google ne sont jamais utiles ici) : évite les
+ * allers-retours vers fonts.googleapis.com/fonts.gstatic.com (DNS + TLS + CSS + fichier, sur
+ * deux origines tierces) et rend les polices disponibles hors ligne comme le reste du shell
+ * (précachées par le service worker, `vite.config.ts`). `inter-variable.woff2` est une police
+ * variable : un seul fichier (47 Ko) couvre les poids 400 à 700 utilisés par l'app plutôt que
+ * quatre fichiers statiques quasi identiques.
+ *
+ * `font-display: optional` (et non `swap`) : les deux polices critiques sont préchargées
+ * (`index.html`, `<link rel="preload">`) et arrivent donc quasiment toujours avant la période
+ * de blocage de 100 ms. `swap` texte re-peint visiblement une fois la police arrivée, même
+ * après le premier rendu — ce repaint tardif d'un gros bloc de texte devenait le nouveau
+ * candidat LCP mesuré (+1 s environ, constaté lors de l'audit Lighthouse). `optional` peint
+ * directement dans la police de repli si elle n'est pas prête à temps, sans repaint différé.
+ */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: optional;
+  src: url("@/assets/fonts/inter-variable.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 700;
+  font-display: optional;
+  src: url("@/assets/fonts/poppins-700.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 800;
+  font-display: optional;
+  src: url("@/assets/fonts/poppins-800.woff2") format("woff2");
+}
+
+/*
  * Design system Sankofa — style "néo-brutaliste" (contours noirs épais,
  * ombres portées nettes, coins arrondis) sur une palette africaine.
  * Ces tokens sont déclarés dans @theme pour générer les utilitaires
@@ -18,6 +56,20 @@
   --color-success: #2e8b57;
   --color-danger: #e4572e;
   --color-indigo: #2d3a8c;
+
+  /*
+   * Textes secondaires : remplacent 5 gris codés en dur (#8a8071, #9b9284, #5c554b, #6d655a,
+   * #7a7266) trouvés dans les composants. Deux des cinq échouaient le contraste AA (4.5:1) sur
+   * fond cream/blanc — audit Lighthouse mobile, Phase 7 lot 5c. `ink-faint` (le plus clair
+   * possible tout en passant) remplace les deux teintes en échec ; `ink-muted` consolide les
+   * trois teintes plus sombres, déjà conformes, en un seul token.
+   */
+  --color-ink-muted: #5c554b;
+  --color-ink-faint: #726a5d;
+  /* Variante texte de `--color-primary`, assombrie pour les petits libellés en gras (≤13px) :
+     #e24c2b n'atteint que 3.4:1–4.0:1 sur cream/blanc à ces tailles, sous le seuil AA de 4.5:1.
+     `--color-primary` reste inchangé partout ailleurs (CTA, fonds de bouton, icônes ≥3:1). */
+  --color-primary-text: #b53d22;
 
   --color-histoire: #f3d9a4;
   --color-geo: #bfe3b0;
@@ -47,6 +99,19 @@ h2,
 h3,
 h4 {
   font-family: var(--font-heading);
+}
+
+/*
+ * Focus clavier : un seul style, appliqué globalement à tout élément interactif natif
+ * (bouton, lien, champ), plutôt qu'annoté au cas par cas dans chaque composant. `:focus-visible`
+ * (et non `:focus`) pour ne s'afficher qu'à la navigation clavier, pas au clic souris. Couvre
+ * aussi bien les cartes cliquables (`<Link>` → `<a>`) que les cœurs de favori (`<button>`) sans
+ * modification de leur côté. Contour épais + décalage : cohérent avec la signature
+ * néo-brutaliste (contours nets, pas de flou) plutôt qu'un anneau flouté par défaut.
+ */
+:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 2px;
 }
 
 /* Scrollbars discrètes pour les rangs de cartes en scroll horizontal */

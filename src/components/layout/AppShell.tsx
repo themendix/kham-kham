@@ -1,10 +1,38 @@
-import type { ReactNode } from "react";
+import { useEffect, type ReactNode } from "react";
 import { TopBar } from "@/components/layout/TopBar";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { BottomNav } from "@/components/layout/BottomNav";
+import { PwaUpdateToast } from "@/components/features/PwaUpdateToast";
+import { preloadAllSubjectContent } from "@/data/courseContent";
 
 interface AppShellProps {
   children: ReactNode;
+}
+
+/** `requestIdleCallback` avec repli `setTimeout` (Safari) : laisse le premier rendu et les
+ * ressources critiques (images visibles, police) passer devant sur un réseau contraint. */
+function whenIdle(callback: () => void): void {
+  if (typeof requestIdleCallback === "function") {
+    requestIdleCallback(callback);
+  } else {
+    setTimeout(callback, 200);
+  }
+}
+
+/**
+ * Attend l'événement `load` avant même de considérer une tâche de fond : `requestIdleCallback`
+ * garantit seulement que le thread principal est libre à l'instant T, pas que le travail lancé
+ * (ici, l'évaluation de ~367 Ko de JS générant des centaines d'objets `Course`) ne rivalisera
+ * pas avec un rendu encore en cours. Mesuré : sans cette attente, ce préchargement pouvait
+ * retarder le LCP d'environ 1 seconde (contention du thread principal juste après le premier
+ * rendu). En repoussant après `load`, il s'exécute une fois la peinture initiale déjà stabilisée.
+ */
+function whenIdleAfterLoad(callback: () => void): void {
+  if (document.readyState === "complete") {
+    whenIdle(callback);
+  } else {
+    window.addEventListener("load", () => whenIdle(callback), { once: true });
+  }
 }
 
 /**
@@ -14,6 +42,16 @@ interface AppShellProps {
  * cadre de type téléphone — l'app se comporte comme un vrai site web.
  */
 export function AppShell({ children }: AppShellProps) {
+  // Précharge en tâche de fond, une seule fois pour toute l'application, le contenu complet du
+  // catalogue (Histoire + Géographie) : le rend disponible en mémoire (`useCatalogContent`) pour
+  // la recherche en texte intégral, le Défi du jour et le fil Home, sans jamais bloquer le
+  // premier rendu. Voir docs/ARCHITECTURE.md § Découpage du bundle.
+  useEffect(() => {
+    whenIdleAfterLoad(() => {
+      preloadAllSubjectContent();
+    });
+  }, []);
+
   return (
     <div className="min-h-screen bg-cream">
       <TopBar />
@@ -22,6 +60,7 @@ export function AppShell({ children }: AppShellProps) {
         <main className="min-w-0 flex-1">{children}</main>
       </div>
       <BottomNav />
+      <PwaUpdateToast />
     </div>
   );
 }

@@ -19,7 +19,7 @@ export function StreakCelebration({ streak, subjectName, onHome }: StreakCelebra
       <div className="mt-1 font-heading text-lg font-bold uppercase tracking-wide">
         {streak.count > 1 ? "Jours" : "Jour"} de suite
       </div>
-      <p className="mt-3 font-medium text-[#5c554b]">
+      <p className="mt-3 font-medium text-ink-muted">
         Tu deviens vraiment cultivé, tu deviens incollable en {subjectName} !
       </p>
 

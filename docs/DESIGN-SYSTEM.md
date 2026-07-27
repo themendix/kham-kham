@@ -36,11 +36,30 @@ Tous les tokens sont déclarés dans un unique bloc `@theme` dans [`src/styles/i
 
 Ce mapping catégorie → couleur est défini dans `src/data/categories.ts` (champ `color`, de type `SubjectColor`).
 
+## Textes secondaires (contraste AA)
+
+| Token | Valeur | Contraste (cream / blanc) | Usage |
+|---|---|---|---|
+| `--color-ink-muted` → `text-ink-muted` | `#5C554B` | 6.4:1 / 7.4:1 | Texte secondaire lisible (descriptions, explications) |
+| `--color-ink-faint` → `text-ink-faint` | `#726A5D` | 4.6:1 / 5.3:1 | Libellés discrets, compteurs, métadonnées |
+| `--color-primary-text` → `text-primary-text` | `#B53D22` | 5.0:1 / 5.8:1 | Variante texte de `--color-primary` pour petits libellés en gras (≤ 13px) |
+
+Introduits en Phase 7 (lot 5c) : remplacent cinq gris codés en dur dans les composants
+(`#8a8071`, `#9b9284`, `#5c554b`, `#6d655a`, `#7a7266`), dont deux échouaient le contraste AA
+(4.5:1) — audit Lighthouse mobile. **Ne jamais coder une couleur de texte secondaire en dur dans
+un composant** : passer par ces tokens (ou en ajouter un nouveau ici si aucun ne convient).
+`--color-primary` reste inchangé pour tout le reste (CTA, fonds de bouton, icônes) : ces usages
+n'ont besoin que d'un contraste non-texte de 3:1, déjà respecté.
+
 ## Typographies
 
 - **Titres** (`font-heading`) : Poppins, graisses 700/800.
 - **Corps de texte** (`font-body`, appliqué par défaut sur `body`) : Inter.
-- Chargées via Google Fonts dans `index.html`.
+- Auto-hébergées (`src/assets/fonts/`, `@font-face` dans `src/styles/index.css`) depuis la Phase 7
+  (lot 5b) — plus de CDN Google Fonts. Sous-ensemble latin uniquement (app 100 % française).
+  `font-display: optional` : les deux polices critiques sont préchargées (`index.html`), donc
+  quasi toujours prêtes à temps ; `optional` évite un repaint tardif du texte déjà affiché dans
+  la police de repli (voir `docs/ARCHITECTURE.md` § Polices).
 
 ## Ombres et rayons
 
@@ -55,6 +74,7 @@ Ce mapping catégorie → couleur est défini dans `src/data/categories.ts` (cha
 - **Pas de dégradé de flou** : les illustrations utilisent des dégradés linéaires plats (`bg-gradient-to-br`) entre deux teintes d'une même couleur pastel, jamais de `blur()`.
 - **Effet d'appui** : boutons et actions swipe descendent de quelques pixels et perdent leur ombre au clic (`active:translate-y-[3px] active:shadow-none`), pour un retour tactile net.
 - **Emoji comme illustration** : en l'absence d'illustrations dessinées, les cartes et cours utilisent un emoji large (`text-[96px]` pour le swipe, plus petit pour les cartes compactes) sur fond dégradé pastel.
+- **Focus clavier** : un style global unique (`:focus-visible`, `src/styles/index.css`) — contour de 3px `--color-primary`, décalé de 2px, jamais de flou. Ne pas ajouter de `focus:outline-none` sans fournir un remplacement visible : ce serait invisible à la navigation clavier.
 
 ## Composants UI réutilisables (`src/components/ui/`)
 

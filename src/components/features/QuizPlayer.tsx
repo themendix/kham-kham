@@ -44,36 +44,57 @@ export function QuizPlayer({ questions, accentColor, onFinish }: QuizPlayerProps
     return "border-ink/30 bg-card text-ink/50";
   }
 
+  const questionHeadingId = `quiz-question-${index}`;
+
   return (
     <Card className="p-6 md:p-8">
-      <div className="font-heading text-xs font-bold uppercase tracking-wide text-[#9b9284]">
+      <div className="font-heading text-xs font-bold uppercase tracking-wide text-ink-faint">
         Question {index + 1} / {questions.length}
       </div>
       <ProgressBar percent={(index / questions.length) * 100} fillClassName={SUBJECT_BG[accentColor]} />
 
-      <h2 className="mt-5 text-xl font-extrabold leading-tight">{question.question}</h2>
+      <h2 id={questionHeadingId} className="mt-5 text-xl font-extrabold leading-tight">
+        {question.question}
+      </h2>
 
-      <div className="mt-4 flex flex-col gap-3">
-        {question.options.map((option, optionIndex) => (
-          <button
-            key={optionIndex}
-            onClick={() => handleSelect(optionIndex)}
-            disabled={locked}
-            className={`flex items-center justify-between rounded-2xl border-[3px] px-4 py-3.5 text-left font-bold shadow-sm transition-transform ${
-              locked ? "" : "active:translate-y-[3px] active:shadow-none"
-            } ${optionClassName(optionIndex)}`}
-          >
-            {option}
-            {locked && optionIndex === question.correctIndex && <Check className="h-5 w-5 text-success" />}
-            {locked && optionIndex === selected && selected !== question.correctIndex && (
-              <X className="h-5 w-5 text-danger" />
-            )}
-          </button>
-        ))}
+      <div role="radiogroup" aria-labelledby={questionHeadingId} className="mt-4 flex flex-col gap-3">
+        {question.options.map((option, optionIndex) => {
+          const isCorrectOption = optionIndex === question.correctIndex;
+          const isSelectedOption = optionIndex === selected;
+          const stateSuffix = !locked
+            ? ""
+            : isCorrectOption
+              ? ", bonne réponse"
+              : isSelectedOption
+                ? ", ta réponse, incorrecte"
+                : "";
+          return (
+            <button
+              key={optionIndex}
+              role="radio"
+              aria-checked={isSelectedOption}
+              aria-label={`${option}${stateSuffix}`}
+              onClick={() => handleSelect(optionIndex)}
+              disabled={locked}
+              className={`flex items-center justify-between rounded-2xl border-[3px] px-4 py-3.5 text-left font-bold shadow-sm transition-transform ${
+                locked ? "" : "active:translate-y-[3px] active:shadow-none"
+              } ${optionClassName(optionIndex)}`}
+            >
+              {option}
+              {locked && isCorrectOption && <Check className="h-5 w-5 text-success" aria-hidden />}
+              {locked && isSelectedOption && !isCorrectOption && <X className="h-5 w-5 text-danger" aria-hidden />}
+            </button>
+          );
+        })}
       </div>
 
       {locked && (
-        <div className="mt-4 rounded-2xl border-[2.5px] border-ink bg-cream p-4 text-sm font-medium leading-relaxed text-[#5c554b]">
+        <div
+          role="status"
+          aria-live="polite"
+          className="mt-4 rounded-2xl border-[2.5px] border-ink bg-cream p-4 text-sm font-medium leading-relaxed text-ink-muted"
+        >
+          {selected === question.correctIndex ? "Bonne réponse. " : "Réponse incorrecte. "}
           {question.explanation}
         </div>
       )}

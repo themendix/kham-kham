@@ -1,8 +1,8 @@
 import { useEffect, useMemo, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, Trophy, Zap } from "lucide-react";
-import { COURSES } from "@/data/courses";
 import { useAppStore } from "@/store/useAppStore";
+import { useCatalogContent } from "@/hooks/useCatalogContent";
 import { DAILY_CHALLENGE_XP_BONUS } from "@/lib/gamification";
 import { pickDailyQuestions } from "@/lib/daily";
 import { Card } from "@/components/ui/Card";
@@ -30,9 +30,14 @@ export function DailyChallengeScreen() {
     checkDailyReset();
   }, [checkDailyReset]);
 
+  // Les questions sont tirées de l'ensemble du catalogue (94 cours) : contrairement à l'ouverture
+  // d'un seul cours ou d'une seule leçon, ce tirage a besoin du contenu complet de toutes les
+  // matières. Chargé en tâche de fond (`useCatalogContent`, déclenché au montage de `AppShell`) ;
+  // cet écran attend simplement que le préchargement aboutisse.
+  const catalogContent = useCatalogContent();
   const questions = useMemo(
-    () => pickDailyQuestions(COURSES.flatMap((c) => c.quiz), DAILY_CHALLENGE_QUESTION_COUNT),
-    [],
+    () => (catalogContent ? pickDailyQuestions(catalogContent.flatMap((c) => c.quiz), DAILY_CHALLENGE_QUESTION_COUNT) : null),
+    [catalogContent],
   );
 
   if (progress.daily.challengeDone && !result) {
@@ -40,10 +45,18 @@ export function DailyChallengeScreen() {
       <div className="mx-auto max-w-md rounded-card border-[3px] border-ink bg-card p-8 text-center shadow-card">
         <Zap className="mx-auto h-12 w-12 text-gold" fill="currentColor" />
         <h3 className="mt-3 text-xl font-extrabold">Défi déjà relevé aujourd'hui !</h3>
-        <p className="mt-2 font-medium text-[#5c554b]">Reviens demain pour un nouveau défi.</p>
+        <p className="mt-2 font-medium text-ink-muted">Reviens demain pour un nouveau défi.</p>
         <Link to="/">
           <Button className="mt-5">Retour au Home</Button>
         </Link>
+      </div>
+    );
+  }
+
+  if (!questions) {
+    return (
+      <div className="mx-auto max-w-md rounded-card border-[3px] border-ink bg-card p-8 text-center shadow-card">
+        <p className="font-medium text-ink-faint">Chargement…</p>
       </div>
     );
   }
@@ -59,9 +72,10 @@ export function DailyChallengeScreen() {
 
   return (
     <div className="mx-auto max-w-2xl">
+      <h1 className="sr-only">Défi du jour</h1>
       <button
         onClick={() => navigate(-1)}
-        className="mb-3 inline-flex items-center gap-1.5 font-heading text-sm font-bold text-[#8a8071]"
+        className="mb-3 inline-flex items-center gap-1.5 font-heading text-sm font-bold text-ink-faint"
       >
         <ArrowLeft className="h-4 w-4" /> Retour
       </button>
@@ -72,7 +86,7 @@ export function DailyChallengeScreen() {
           <h2 className="mt-3 text-2xl font-extrabold">
             {result.score} / {result.total} bonnes réponses
           </h2>
-          <p className="mt-1.5 font-medium text-[#5c554b]">Défi relevé, à demain pour le prochain !</p>
+          <p className="mt-1.5 font-medium text-ink-muted">Défi relevé, à demain pour le prochain !</p>
           <div className="mt-4 flex justify-center">
             <Badge tone="gold">＋{DAILY_CHALLENGE_XP_BONUS} XP</Badge>
           </div>

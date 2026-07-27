@@ -1,13 +1,13 @@
 import { Link } from "react-router-dom";
 import type { MouseEvent } from "react";
 import { Heart, BookOpen, CheckCircle2 } from "lucide-react";
-import type { Category, Course } from "@/types";
+import type { Category, CourseMeta } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
 import { getCourseImage, getCourseImagePosition } from "@/lib/courseImages";
 
 interface CourseCardProps {
-  course: Course;
+  course: CourseMeta;
   category: Category;
   isCompleted?: boolean;
   isStarted?: boolean;
@@ -59,7 +59,9 @@ export function CourseCard({
         >
           {image ? (
             <img
-              src={image}
+              src={image.src}
+              srcSet={image.srcSet}
+              sizes={fluid ? "(min-width: 1024px) 260px, (min-width: 640px) 30vw, 45vw" : "210px"}
               alt={course.title}
               className={`absolute inset-0 h-full w-full object-cover ${
                 getCourseImagePosition(course.id) === "left" ? "object-left" : "object-right"
@@ -85,16 +87,16 @@ export function CourseCard({
           </button>
         </div>
         <div className="px-3 pb-3.5 pt-3">
-          <div className="font-heading text-[10.5px] font-bold uppercase tracking-wide text-[#6d655a]">
+          <div className="font-heading text-[10.5px] font-bold uppercase tracking-wide text-ink-muted">
             {category.name}
           </div>
           <div className="mt-1 text-[15px] font-extrabold leading-tight">{course.title}</div>
-          <div className="mt-2 flex items-center gap-2 text-[11.5px] font-bold text-[#9b9284]">
+          <div className="mt-2 flex items-center gap-2 text-[11.5px] font-bold text-ink-faint">
             <span className="flex items-center gap-1">
               <BookOpen className="h-3 w-3" /> {course.lessons.length}
             </span>
             <span className="flex items-center gap-1">
-              <CheckCircle2 className="h-3 w-3" /> {course.quiz.length}
+              <CheckCircle2 className="h-3 w-3" /> {course.quizCount}
             </span>
           </div>
         </div>

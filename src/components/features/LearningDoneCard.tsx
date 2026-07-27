@@ -21,6 +21,9 @@ interface LearningDoneCardProps {
   isRevision: boolean;
   rankedUp: boolean;
   newRank: string;
+  /** Montée de niveau numérique sans changement de rang nommé (au-delà de "Gardien du savoir") */
+  levelUp: boolean;
+  newLevel: number;
   onMiniQuiz: () => void;
   onSkip: () => void;
 }
@@ -44,6 +47,8 @@ export function LearningDoneCard({
   isRevision,
   rankedUp,
   newRank,
+  levelUp,
+  newLevel,
   onMiniQuiz,
   onSkip,
 }: LearningDoneCardProps) {
@@ -142,7 +147,7 @@ export function LearningDoneCard({
 
       <div className="px-[18px] pb-[18px] pt-5">
         <h2 className="text-2xl font-extrabold">Apprentissage terminé !</h2>
-        <p className="mt-1.5 font-medium text-[#5c554b]">{course.title}</p>
+        <p className="mt-1.5 font-medium text-ink-muted">{course.title}</p>
 
         <div className="mt-5 rounded-2xl border-[2.5px] border-ink bg-cream p-4 text-left">
           <div className="flex items-center justify-between">
@@ -153,7 +158,7 @@ export function LearningDoneCard({
               <span className={`inline-block ${showLevelPop ? "sankofa-pop" : ""}`}>NIV. {displayedLevel}</span>
             </Badge>
           </div>
-          <div className="mt-2 flex items-center justify-between text-sm font-medium text-[#5c554b]">
+          <div className="mt-2 flex items-center justify-between text-sm font-medium text-ink-muted">
             <span>★ {course.xp} XP</span>
             <span>
               {coursesLeft} cours avant niv. {subject.level + 1}
@@ -174,6 +179,7 @@ export function LearningDoneCard({
             <Badge tone="gold">＋{xpDisplayed} XP gagnés</Badge>
           )}
           {rankedUp && <Badge tone="gold">🏅 Nouveau rang : {newRank}</Badge>}
+          {levelUp && <Badge tone="gold">⭐ Niveau {newLevel}</Badge>}
         </div>
 
         <div className="mt-6 flex justify-center gap-3">
