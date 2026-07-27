@@ -4,20 +4,19 @@ import type { QuizResult, UserProgress } from "@/types";
 import { getLevelInfo, updateStreak as computeStreak, XP_PER_LESSON } from "@/lib/gamification";
 import { resetDailyIfNeeded } from "@/lib/daily";
 import { getLessonRef, lessonKey, pickNextFeaturedLesson } from "@/lib/featured";
-import { COURSES } from "@/data/courses";
+import { EDITORIAL_COURSE_ID } from "@/lib/homeFeed";
+import { getNewlyCompletedParcours } from "@/lib/parcoursProgress";
+import { COURSE_INDEX } from "@/data/coursesIndex.generated";
 import { CATEGORIES } from "@/data/categories";
+import { PARCOURS } from "@/data/parcours";
 
 interface AppState {
   progress: UserProgress;
-  /** Marque une carte du fil Home comme vue (passée en ✗ ou apprise en ✓) */
-  markCardSeen: (cardId: string) => void;
   toggleFavoriteCard: (cardId: string) => void;
   toggleFavoriteCourse: (courseId: string) => void;
   completeCourse: (courseId: string, xpReward: number) => void;
   addXp: (amount: number) => void;
   updateStreak: () => void;
-  /** Ajoute des points de maîtrise à une catégorie (plafonné à 100) */
-  addMastery: (categoryId: string, amount: number) => void;
   /** Enregistre le résultat d'une tentative de quiz (chaque tentative, y compris les retakes), conserve les 10 plus récentes */
   recordQuizResult: (result: QuizResult) => void;
   /** Remet le suivi quotidien à zéro si la date a changé depuis le dernier reset (appelé au montage du Home) */
@@ -42,10 +41,9 @@ const initialProgress: UserProgress = {
   rank: "Curieux",
   streak: { count: 0, lastActiveDate: null, weekDays: Array(7).fill(false) },
   completedCourseIds: [],
+  completedParcoursIds: [],
   favoriteCardIds: [],
   favoriteCourseIds: [],
-  seenCardIds: [],
-  masteryByCategory: {},
   quizResults: [],
   daily: { date: null, cardsLearned: 0, xpEarned: 0, challengeDone: false },
   lastCourseId: null,
@@ -55,20 +53,67 @@ const initialProgress: UserProgress = {
   featuredLessonKey: null,
 };
 
+/**
+ * Migration douce unique : chaque version historique (v1→v6) n'a fait qu'ajouter des champs à
+ * défaut sûr (sauf le renommage `favoriteIds` en v5 et les suppressions en v7), donc une seule
+ * fonction, indifférente à la version d'origine, suffit à ramener n'importe quel blob v1→v6 à la
+ * forme v7. Exportée (plutôt qu'inline dans `persist(...)`) pour être testable sans passer par
+ * `localStorage`/la réhydratation Zustand.
+ */
+export function migrate(persistedState: unknown): { progress: UserProgress } {
+  const state = persistedState as
+    | { progress?: Partial<UserProgress> & { favoriteIds?: string[] } }
+    | undefined;
+  if (!state?.progress) return { progress: initialProgress };
+  const { favoriteIds, ...rest } = state.progress;
+  // masteryByCategory (accumulation manuelle) et seenCardIds (jamais lu par l'app) sont
+  // abandonnés en v7 : la maîtrise est désormais dérivée à la lecture (getMasteryByCategory)
+  // et les cartes convergent dans completedLessonIds. On les retire explicitement du blob
+  // migré plutôt que de les laisser traîner sans être lus.
+  delete (rest as Record<string, unknown>).masteryByCategory;
+  delete (rest as Record<string, unknown>).seenCardIds;
+
+  const completedCourseIds = rest.completedCourseIds ?? [];
+  const completedParcoursIdsBefore = rest.completedParcoursIds ?? [];
+  // Rattrapage rétroactif : un parcours déjà entièrement terminé avant l'introduction de
+  // completedParcoursIds ne redéclenchera jamais `completeCourse` (idempotent) — sans ce
+  // rattrapage, son xpReward ne serait jamais crédité.
+  const newlyCompletedParcours = getNewlyCompletedParcours(
+    PARCOURS,
+    completedCourseIds,
+    completedParcoursIdsBefore,
+  );
+  const xp = (rest.xp ?? initialProgress.xp) + newlyCompletedParcours.reduce((sum, p) => sum + p.xpReward, 0);
+  const { level, rank } = getLevelInfo(xp);
+
+  return {
+    progress: {
+      ...initialProgress,
+      ...rest,
+      xp,
+      level,
+      rank,
+      completedParcoursIds: [
+        ...completedParcoursIdsBefore,
+        ...newlyCompletedParcours.map((p) => p.id),
+      ],
+      favoriteCardIds: rest.favoriteCardIds ?? favoriteIds ?? [],
+      favoriteCourseIds: state.progress.favoriteCourseIds ?? [],
+      quizResults: state.progress.quizResults ?? [],
+      daily: state.progress.daily ?? initialProgress.daily,
+      lastCourseId: state.progress.lastCourseId ?? null,
+      totalCardsLearned: state.progress.totalCardsLearned ?? 0,
+      startedCourseIds: state.progress.startedCourseIds ?? [],
+      completedLessonIds: state.progress.completedLessonIds ?? [],
+      featuredLessonKey: state.progress.featuredLessonKey ?? null,
+    },
+  };
+}
+
 export const useAppStore = create<AppState>()(
   persist(
     (set) => ({
       progress: initialProgress,
-
-      markCardSeen: (cardId) =>
-        set((state) => ({
-          progress: {
-            ...state.progress,
-            seenCardIds: state.progress.seenCardIds.includes(cardId)
-              ? state.progress.seenCardIds
-              : [...state.progress.seenCardIds, cardId],
-          },
-        })),
 
       toggleFavoriteCard: (cardId) =>
         set((state) => {
@@ -99,7 +144,18 @@ export const useAppStore = create<AppState>()(
       completeCourse: (courseId, xpReward) =>
         set((state) => {
           if (state.progress.completedCourseIds.includes(courseId)) return state;
-          const xp = state.progress.xp + xpReward;
+          const completedCourseIds = [...state.progress.completedCourseIds, courseId];
+
+          // Un parcours peut être complété par ce cours : vérifié ici (à la complétion du
+          // cours), pas au montage d'un écran, sinon la récompense dépendrait de la navigation.
+          const newlyCompletedParcours = getNewlyCompletedParcours(
+            PARCOURS,
+            completedCourseIds,
+            state.progress.completedParcoursIds,
+          );
+          const parcoursXp = newlyCompletedParcours.reduce((sum, p) => sum + p.xpReward, 0);
+
+          const xp = state.progress.xp + xpReward + parcoursXp;
           const { level, rank } = getLevelInfo(xp);
           return {
             progress: {
@@ -107,7 +163,11 @@ export const useAppStore = create<AppState>()(
               xp,
               level,
               rank,
-              completedCourseIds: [...state.progress.completedCourseIds, courseId],
+              completedCourseIds,
+              completedParcoursIds: [
+                ...state.progress.completedParcoursIds,
+                ...newlyCompletedParcours.map((p) => p.id),
+              ],
             },
           };
         }),
@@ -123,20 +183,6 @@ export const useAppStore = create<AppState>()(
         set((state) => ({
           progress: { ...state.progress, streak: computeStreak(state.progress.streak) },
         })),
-
-      addMastery: (categoryId, amount) =>
-        set((state) => {
-          const current = state.progress.masteryByCategory[categoryId] ?? 0;
-          return {
-            progress: {
-              ...state.progress,
-              masteryByCategory: {
-                ...state.progress.masteryByCategory,
-                [categoryId]: Math.min(100, current + amount),
-              },
-            },
-          };
-        }),
 
       recordQuizResult: (result) =>
         set((state) => ({
@@ -196,7 +242,10 @@ export const useAppStore = create<AppState>()(
           const completedLessonIds = [...state.progress.completedLessonIds, key];
           const xp = state.progress.xp + XP_PER_LESSON;
           const { level, rank } = getLevelInfo(xp);
+          // Le pseudo-cours des cartes éditoriales du fil Home (`EDITORIAL_COURSE_ID`) ne
+          // correspond à aucun vrai Course : il ne doit jamais polluer startedCourseIds.
           const startedCourseIds =
+            courseId === EDITORIAL_COURSE_ID ||
             state.progress.completedCourseIds.includes(courseId) ||
             state.progress.startedCourseIds.includes(courseId)
               ? state.progress.startedCourseIds
@@ -206,8 +255,8 @@ export const useAppStore = create<AppState>()(
           if (key === state.progress.featuredLessonKey) {
             featuredLessonKey = pickNextFeaturedLesson({
               completedLessonIds,
-              previousCategoryId: getLessonRef(key, COURSES)?.course.categoryId,
-              allCourses: COURSES,
+              previousCategoryId: getLessonRef(key, COURSE_INDEX)?.course.categoryId,
+              allCourses: COURSE_INDEX,
               allCategories: CATEGORIES,
             });
           }
@@ -228,14 +277,14 @@ export const useAppStore = create<AppState>()(
       ensureFeaturedLesson: () =>
         set((state) => {
           const { featuredLessonKey, completedLessonIds } = state.progress;
-          const ref = featuredLessonKey ? getLessonRef(featuredLessonKey, COURSES) : null;
+          const ref = featuredLessonKey ? getLessonRef(featuredLessonKey, COURSE_INDEX) : null;
           const isStale = featuredLessonKey === null || ref === null || completedLessonIds.includes(featuredLessonKey);
           if (!isStale) return state;
 
           const nextKey = pickNextFeaturedLesson({
             completedLessonIds,
             previousCategoryId: ref?.course.categoryId,
-            allCourses: COURSES,
+            allCourses: COURSE_INDEX,
             allCategories: CATEGORIES,
           });
           if (nextKey === featuredLessonKey) return state;
@@ -244,30 +293,9 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: "sankofa-progress",
-      version: 5,
+      version: 7,
       partialize: (state) => ({ progress: state.progress }),
-      migrate: (persistedState) => {
-        const state = persistedState as
-          | { progress?: Partial<UserProgress> & { favoriteIds?: string[] } }
-          | undefined;
-        if (!state?.progress) return { progress: initialProgress };
-        const { favoriteIds, ...rest } = state.progress;
-        return {
-          progress: {
-            ...initialProgress,
-            ...rest,
-            favoriteCardIds: rest.favoriteCardIds ?? favoriteIds ?? [],
-            favoriteCourseIds: state.progress.favoriteCourseIds ?? [],
-            quizResults: state.progress.quizResults ?? [],
-            daily: state.progress.daily ?? initialProgress.daily,
-            lastCourseId: state.progress.lastCourseId ?? null,
-            totalCardsLearned: state.progress.totalCardsLearned ?? 0,
-            startedCourseIds: state.progress.startedCourseIds ?? [],
-            completedLessonIds: state.progress.completedLessonIds ?? [],
-            featuredLessonKey: state.progress.featuredLessonKey ?? null,
-          },
-        };
-      },
+      migrate,
     },
   ),
 );

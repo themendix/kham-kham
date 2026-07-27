@@ -66,6 +66,24 @@ export interface Course {
   xp: number;
 }
 
+/**
+ * Métadonnées légères d'un cours : tout `Course` sauf le contenu qui pèse lourd (texte des
+ * leçons, questions de quiz). Généré au build (`scripts/generate-course-index.ts`) depuis le
+ * catalogue complet, pour que le bundle initial n'embarque que ce qui est nécessaire aux écrans
+ * de liste, à la recherche et à la logique de progression — le contenu complet est chargé à la
+ * demande par matière (`src/data/courseContent.ts`). Voir docs/ARCHITECTURE.md § Découpage du bundle.
+ */
+export interface CourseMeta {
+  id: string;
+  categoryId: string;
+  title: string;
+  description: string;
+  emoji: string;
+  xp: number;
+  lessons: { id: string }[];
+  quizCount: number;
+}
+
 /** Parcours guidé : enchaîne plusieurs cours autour d'un même thème */
 export interface Parcours {
   id: string;
@@ -106,11 +124,10 @@ export interface UserProgress {
   rank: string;
   streak: StreakState;
   completedCourseIds: string[];
+  /** Parcours dont tous les cours sont terminés et dont l'XP (`xpReward`) a déjà été créditée (une seule fois) */
+  completedParcoursIds: string[];
   favoriteCardIds: string[];
   favoriteCourseIds: string[];
-  seenCardIds: string[];
-  /** Score de maîtrise 0-100 par catégorie, alimente le radar du Profil */
-  masteryByCategory: Record<string, number>;
   /** Historique des tentatives de quiz, 10 plus récentes maximum, alimente le Profil */
   quizResults: QuizResult[];
   /** Activité du jour (objectif Home, défi quotidien) */
@@ -121,7 +138,9 @@ export interface UserProgress {
   totalCardsLearned: number;
   /** Cours dont au moins une leçon a été lue (au-delà de la 1ʳᵉ), alimente l'état « En cours » du tableau de bord de matière */
   startedCourseIds: string[];
-  /** Leçons lues, clés `${courseId}:${lessonId}` (lessonId n'est pas unique globalement) — partagé entre la vue cours et « À la une » */
+  /** Leçons lues, clés `${courseId}:${lessonId}` (lessonId n'est pas unique globalement) — partagé
+   * entre la vue cours, « À la une » et le fil Home (les 18 cartes éditoriales de `CARDS` sont
+   * comptées sous le pseudo-cours réservé `EDITORIAL_COURSE_ID`, voir `src/lib/homeFeed.ts`) */
   completedLessonIds: string[];
   /** Leçon actuellement mise en avant dans « À la une » (Biblio), clé `${courseId}:${lessonId}`, null si tout est lu */
   featuredLessonKey: string | null;

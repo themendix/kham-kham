@@ -1,4 +1,21 @@
-import type { Category, Course, Lesson } from "@/types";
+import type { Category } from "@/types";
+
+/**
+ * Ces fonctions ne touchent jamais au contenu d'une leçon (titre, texte) : seulement son `id`
+ * et la matière de son cours. Génériques sur ce sous-ensemble minimal, elles fonctionnent aussi
+ * bien avec le catalogue complet (`Course[]`) qu'avec l'index léger de métadonnées
+ * (`CourseMeta[]`, `@/data/coursesIndex.generated`) — c'est ce qui permet au store
+ * (`useAppStore`) de piloter la rotation « à la une » sans jamais charger le contenu complet
+ * des matières. Voir docs/ARCHITECTURE.md § Découpage du bundle.
+ */
+interface MinimalLesson {
+  id: string;
+}
+interface MinimalCourse {
+  id: string;
+  categoryId: string;
+  lessons: MinimalLesson[];
+}
 
 /** Clé unique d'une leçon, `lessonId` n'étant pas garanti unique globalement */
 export function lessonKey(courseId: string, lessonId: string): string {
@@ -6,10 +23,10 @@ export function lessonKey(courseId: string, lessonId: string): string {
 }
 
 /** Résout une clé de leçon (`courseId:lessonId`) en son cours et sa leçon, ou null si irrésolvable */
-export function getLessonRef(
+export function getLessonRef<C extends MinimalCourse>(
   key: string,
-  allCourses: Course[],
-): { course: Course; lesson: Lesson } | null {
+  allCourses: C[],
+): { course: C; lesson: C["lessons"][number] } | null {
   const sep = key.indexOf(":");
   if (sep === -1) return null;
   const courseId = key.slice(0, sep);
@@ -21,10 +38,10 @@ export function getLessonRef(
 }
 
 /** Renvoie la clé de la première leçon non lue d'une catégorie (ordre COURSES puis lessons), ou null si tout est lu */
-function firstUnreadKeyInCategory(
+function firstUnreadKeyInCategory<C extends MinimalCourse>(
   categoryId: string,
   completed: Set<string>,
-  allCourses: Course[],
+  allCourses: C[],
 ): string | null {
   for (const course of allCourses) {
     if (course.categoryId !== categoryId) continue;
@@ -43,14 +60,17 @@ function firstUnreadKeyInCategory(
  * puis la première leçon non lue de cette matière dans l'ordre du catalogue.
  * Fonction pure : ne mute ni ne lit de state externe.
  */
-export function pickNextFeaturedLesson(params: {
+export function pickNextFeaturedLesson<C extends MinimalCourse>(params: {
   completedLessonIds: string[];
   previousCategoryId?: string;
-  allCourses: Course[];
+  allCourses: C[];
   allCategories: Category[];
+  /** Clés supplémentaires à traiter comme non disponibles sans les marquer lues (ex. la
+   * vedette Biblio courante, pour que le fil Home ne propose jamais la même leçon qu'elle) */
+  excludeKeys?: string[];
 }): string | null {
-  const { completedLessonIds, previousCategoryId, allCourses, allCategories } = params;
-  const completed = new Set(completedLessonIds);
+  const { completedLessonIds, previousCategoryId, allCourses, allCategories, excludeKeys } = params;
+  const completed = new Set([...completedLessonIds, ...(excludeKeys ?? [])]);
 
   const candidateCategoryIds = allCategories
     .map((cat) => cat.id)
