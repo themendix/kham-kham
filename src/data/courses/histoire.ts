@@ -8,7 +8,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🏺",
     title: "L'Égypte antique",
     description: "Au bord du Nil, l'une des plus anciennes civilisations du monde est née en Afrique. Pharaons, pyramides, hiéroglyphes : découvre l'Égypte antique et ses liens profonds avec le reste du continent.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-01-egypte-antique-lesson-1",
@@ -80,7 +80,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🏹",
     title: "Le royaume de Koush et Méroé",
     description: "Au sud de l'Égypte, le long du Nil, un puissant royaume africain a rivalisé avec les pharaons, régné sur l'Égypte, puis brillé par son fer et son écriture : le royaume de Koush.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-02-koush-meroe-lesson-1",
@@ -152,7 +152,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "⛪",
     title: "Le royaume d'Aksoum",
     description: "Sur les hauts plateaux d'Éthiopie et d'Érythrée, Aksoum fut l'une des grandes puissances du monde antique, carrefour entre l'Afrique, l'Arabie et Rome — et l'un des premiers États chrétiens de l'histoire.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-03-aksoum-lesson-1",
@@ -224,7 +224,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "⚓",
     title: "Carthage et l'Afrique du Nord antique",
     description: "Fondée par des marchands venus d'Orient, Carthage devint une superpuissance méditerranéenne face à Rome. Autour d'elle, l'Afrique du Nord vit naître de puissants royaumes berbères.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-04-carthage-afrique-du-nord-lesson-1",
@@ -296,7 +296,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🥇",
     title: "L'empire du Ghana (Wagadou)",
     description: "Bien avant le pays qui porte aujourd'hui son nom, l'empire du Ghana dominait le Sahel ouest-africain grâce à l'or et au commerce transsaharien. Les Arabes l'appelaient « le pays de l'or ».",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-05-empire-du-ghana-lesson-1",
@@ -368,7 +368,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🦁",
     title: "Soundiata Keïta et la naissance de l'empire du Mali",
     description: "De prince exilé à fondateur d'empire, Soundiata Keïta a uni les Mandingues, bâti le Mali et donné à l'Afrique de l'Ouest l'une de ses plus anciennes chartes.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-06-soundiata-mali-lesson-1",
@@ -440,7 +440,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "👑",
     title: "Mansa Moussa et l'apogée du Mali",
     description: "Souvent présenté comme l'homme le plus riche de l'histoire, Mansa Moussa a fait rayonner le Mali de Tombouctou jusqu'à La Mecque, et inscrit l'Afrique de l'Ouest sur les cartes du monde.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-07-mansa-moussa-lesson-1",
@@ -512,7 +512,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🐟",
     title: "L'empire Songhaï et Askia Mohammed",
     description: "Sur les rives du Niger, le Songhaï devint le plus vaste empire de l'histoire ouest-africaine, avec Gao pour capitale et de grands souverains réformateurs.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-08-empire-songhai-lesson-1",
@@ -584,7 +584,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "📚",
     title: "Tombouctou et Djenné, foyers du savoir",
     description: "Deux villes de la boucle du Niger sont devenues des phares mondiaux de la connaissance, avec leurs universités, leurs bibliothèques de manuscrits et une architecture de terre unique au monde.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-1",
@@ -656,7 +656,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🐫",
     title: "L'empire du Kanem-Bornou",
     description: "Autour du lac Tchad, un empire a duré près de mille ans, reliant l'Afrique centrale au monde méditerranéen par le commerce, la diplomatie et l'islam.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-10-kanem-bornou-lesson-1",
@@ -728,7 +728,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🏙️",
     title: "Les cités-États haoussa",
     description: "Dans le nord de l'actuel Nigeria, un réseau de cités marchandes prospères — Kano, Katsina, Zaria — a rayonné par le commerce, l'artisanat et le savoir, sans jamais former un empire unique.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-1",
@@ -800,7 +800,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🎭",
     title: "Le royaume du Bénin (Edo) et ses bronzes",
     description: "Dans la forêt de l'actuel Nigeria, le royaume du Bénin a produit un art de cour d'une finesse exceptionnelle : les célèbres bronzes du Bénin, aujourd'hui au cœur d'un grand débat sur la restitution.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-1",
@@ -872,7 +872,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🐴",
     title: "L'empire Oyo et le monde yoruba",
     description: "Puissance de cavalerie de l'Afrique de l'Ouest, l'empire Oyo domina le pays yoruba grâce à un système politique équilibré et à une culture d'une richesse mondiale.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-1",
@@ -944,7 +944,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🪙",
     title: "Le royaume ashanti",
     description: "Au cœur de l'actuel Ghana, la confédération ashanti a bâti un puissant royaume de l'or, uni par un symbole sacré : le Tabouret d'or.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-14-royaume-ashanti-lesson-1",
@@ -1016,7 +1016,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "⚔️",
     title: "Le royaume du Dahomey",
     description: "État militaire redouté du golfe de Guinée, le royaume du Dahomey s'est distingué par son armée — dont un célèbre corps de femmes soldats.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-15-royaume-dahomey-lesson-1",
@@ -1088,7 +1088,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "✝️",
     title: "Le royaume du Kongo",
     description: "Vaste et bien organisé, le royaume du Kongo fut l'un des premiers États africains à nouer des relations diplomatiques d'égal à égal avec l'Europe — avant d'être miné par la traite.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-16-royaume-kongo-lesson-1",
@@ -1160,7 +1160,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🪨",
     title: "Le Grand Zimbabwe",
     description: "En Afrique australe, une cité de pierre monumentale, bâtie sans mortier, témoigne d'un puissant royaume de l'or et du commerce — et dément les préjugés coloniaux.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-1",
@@ -1232,7 +1232,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "👑",
     title: "Le royaume du Monomotapa (Mutapa)",
     description: "Héritier du Grand Zimbabwe, l'empire du Mutapa domina l'Afrique australe et fascina les Portugais par la légende de ses mines d'or.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-1",
@@ -1304,7 +1304,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🌊",
     title: "Les royaumes des Grands Lacs",
     description: "Autour des grands lacs d'Afrique de l'Est, des royaumes prospères — Buganda, Rwanda, Bunyoro — développèrent des États centralisés et des sociétés élaborées.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-1",
@@ -1376,7 +1376,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "⛪",
     title: "L'Éthiopie médiévale et les églises de Lalibela",
     description: "Héritière d'Aksoum, l'Éthiopie chrétienne médiévale a taillé dans le roc des églises extraordinaires et maintenu, en plein cœur de l'Afrique, une civilisation unique.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-1",
@@ -1448,7 +1448,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🐪",
     title: "Le commerce transsaharien",
     description: "Pendant près de mille ans, des caravanes ont traversé le Sahara, reliant l'Afrique de l'Ouest au monde méditerranéen et faisant la fortune des grands empires du Sahel.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-1",
@@ -1520,7 +1520,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "☪️",
     title: "L'islamisation de l'Afrique de l'Ouest",
     description: "Porté par le commerce plutôt que par la conquête, l'islam s'est diffusé progressivement en Afrique de l'Ouest, se mêlant aux cultures locales pour donner un islam profondément africain.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-1",
@@ -1592,7 +1592,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "⛵",
     title: "La côte swahilie et l'océan Indien",
     description: "Le long de la côte est-africaine, des cités marchandes florissantes ont fait le lien entre l'Afrique, l'Arabie, la Perse, l'Inde et la Chine, donnant naissance à la civilisation swahilie.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-23-cote-swahilie-lesson-1",
@@ -1664,7 +1664,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "⛓️",
     title: "La traite négrière transatlantique",
     description: "Du XVIᵉ au XIXᵉ siècle, des millions d'Africains furent déportés vers les Amériques. C'est l'une des plus grandes tragédies de l'histoire humaine, reconnue comme un crime contre l'humanité.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-24-traite-negriere-transatlantique-lesson-1",
@@ -1736,7 +1736,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🗺️",
     title: "La conférence de Berlin et le partage de l'Afrique",
     description: "En 1884-1885, les puissances européennes se réunirent à Berlin pour se partager l'Afrique — sans un seul Africain à la table. Ses conséquences pèsent encore aujourd'hui.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-25-conference-berlin-lesson-1",
@@ -1808,7 +1808,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "✊",
     title: "Les grandes résistances à la colonisation",
     description: "Partout, les Africains ont résisté à la conquête coloniale — par les armes, la diplomatie ou la révolte. Des figures d'héroïsme trop souvent oubliées.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-26-resistances-colonisation-lesson-1",
@@ -1880,7 +1880,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🦅",
     title: "La bataille d'Adoua (1896)",
     description: "En 1896, l'Éthiopie infligea à l'Italie une défaite retentissante — la plus grande victoire d'un État africain contre une puissance coloniale européenne.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-27-bataille-adoua-lesson-1",
@@ -1952,7 +1952,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🎉",
     title: "Les indépendances africaines",
     description: "Au milieu du XXᵉ siècle, les peuples africains reconquièrent leur souveraineté. L'année 1960 restera « l'année de l'Afrique ».",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-28-independances-africaines-lesson-1",
@@ -2024,7 +2024,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🌍",
     title: "Le panafricanisme et l'Union africaine",
     description: "L'idée que les Africains partagent un destin commun a donné naissance à de puissants mouvements et à des institutions d'unité continentale, de l'OUA à l'Union africaine.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-1",
@@ -2096,7 +2096,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🕊️",
     title: "L'apartheid et Nelson Mandela",
     description: "En Afrique du Sud, un régime de ségrégation raciale a opprimé la majorité noire — jusqu'à la victoire d'une longue lutte pour la liberté, incarnée par Nelson Mandela.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-30-apartheid-mandela-lesson-1",
@@ -2168,7 +2168,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🕌",
     title: "Le Tekrour, berceau de l'islam au Sénégal",
     description: "Sur les rives du fleuve Sénégal, le royaume du Tekrour fut l'un des tout premiers États d'Afrique de l'Ouest à embrasser l'islam, bien avant l'empire du Mali.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-31-tekrour-islam-lesson-1",
@@ -2240,7 +2240,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "👑",
     title: "L'empire du Djolof et les royaumes wolof",
     description: "Du XIVᵉ au XVIᵉ siècle, l'empire du Djolof rassembla les royaumes wolof et sérères du Sénégal, avant de se fragmenter en États rivaux qui structurèrent le pays jusqu'à la colonisation.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-1",
@@ -2312,7 +2312,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🪘",
     title: "Les royaumes sérères du Sine et du Saloum",
     description: "Au cœur du Sénégal, les royaumes sérères du Sine et du Saloum ont préservé une culture originale, une religion ancestrale et de mystérieux monuments de pierre.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-1",
@@ -2384,7 +2384,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "⚓",
     title: "Gorée et Saint-Louis : comptoirs et mémoire de la traite",
     description: "Deux sites du Sénégal, Gorée et Saint-Louis, furent des comptoirs européens majeurs — et sont aujourd'hui des lieux de mémoire classés au patrimoine mondial de l'UNESCO.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-34-goree-saint-louis-lesson-1",
@@ -2456,7 +2456,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🐎",
     title: "Lat Dior et la résistance du Cayor",
     description: "Damel du Cayor, Lat Dior incarna la résistance sénégalaise à la colonisation française, s'opposant notamment à la construction du chemin de fer.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-1",
@@ -2528,7 +2528,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "☪️",
     title: "Cheikh Ahmadou Bamba et le mouridisme",
     description: "Guide spirituel et fondateur du mouridisme, Cheikh Ahmadou Bamba mena une résistance pacifique à la colonisation et fonda la ville sainte de Touba.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-1",
@@ -2600,7 +2600,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "✊",
     title: "Aline Sitoé Diatta, héroïne de la Casamance",
     description: "Jeune femme diola de Casamance, Aline Sitoé Diatta se dressa contre l'ordre colonial français — au point d'être surnommée « la Jeanne d'Arc de la Casamance ».",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-1",
@@ -2672,7 +2672,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "📜",
     title: "Senghor, la Négritude et l'indépendance",
     description: "Poète, penseur et homme d'État, Léopold Sédar Senghor porta le mouvement de la Négritude et devint le premier président du Sénégal indépendant.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-1",
@@ -2744,7 +2744,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "👑",
     title: "La reine Nzinga, résistante d'Angola",
     description: "Reine du Ndongo et du Matamba, Nzinga fut une brillante diplomate et guerrière qui tint tête aux Portugais pendant près de quarante ans.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-1",
@@ -2816,7 +2816,7 @@ export const HISTOIRE_COURSES: Course[] = [
     emoji: "🛡️",
     title: "Chaka Zoulou et le royaume zoulou",
     description: "Chef militaire de génie, Chaka transforma un petit clan en un puissant royaume zoulou et révolutionna l'art de la guerre en Afrique australe.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-histoire-40-chaka-zoulou-lesson-1",

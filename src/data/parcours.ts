@@ -23,7 +23,7 @@ export const PARCOURS: Parcours[] = [
     title: "L'Afrique d'aujourd'hui et de toujours",
     description: "Du Sahara aux hubs technologiques : un continent entre grands espaces et innovation.",
     emoji: "🌍",
-    courseIds: ["course-geo-grand-continent", "course-actu-afrique-qui-innove"],
+    courseIds: ["course-geographie-01-algerie", "course-actu-afrique-qui-innove"],
     xpReward: 140,
   },
 ];
