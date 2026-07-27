@@ -52,37 +52,37 @@ Les chefs d'État portent le millésime **2026** (vérifiés par recherche web).
 | 20 | Sénégal | Afrique de l'Ouest | Bassirou Diomaye Faye |
 | 21 | Sierra Leone | Afrique de l'Ouest | Julius Maada Bio |
 | 22 | Togo | Afrique de l'Ouest | Faure Gnassingbé (Prés. du Conseil, régime parlementaire) |
-| 23 | Angola | Afrique centrale | — |
-| 24 | Cameroun | Afrique centrale | — |
-| 25 | Centrafrique | Afrique centrale | — |
-| 26 | Congo (Brazzaville) | Afrique centrale | — |
-| 27 | RD Congo | Afrique centrale | — |
+| 23 | Angola | Afrique centrale | João Lourenço |
+| 24 | Cameroun | Afrique centrale | Paul Biya (réélu oct. 2025) |
+| 25 | Centrafrique | Afrique centrale | Faustin-Archange Touadéra (réélu déc. 2025) |
+| 26 | Congo (Brazzaville) | Afrique centrale | Denis Sassou Nguesso (réélu mars 2026, 5e mandat) |
+| 27 | RD Congo | Afrique centrale | Félix Tshisekedi |
 | 28 | Gabon | Afrique centrale | Brice Oligui Nguema |
-| 29 | Guinée équatoriale | Afrique centrale | — |
-| 30 | São Tomé-et-Príncipe | Afrique centrale | — |
-| 31 | Tchad | Afrique centrale | — |
-| 32 | Burundi | Afrique de l'Est & Corne | — |
-| 33 | Comores | Afrique de l'Est & Corne | — |
-| 34 | Djibouti | Afrique de l'Est & Corne | — |
-| 35 | Érythrée | Afrique de l'Est & Corne | — |
-| 36 | Éthiopie | Afrique de l'Est & Corne | — |
-| 37 | Kenya | Afrique de l'Est & Corne | — |
-| 38 | Madagascar | Afrique de l'Est & Corne | — |
-| 39 | Maurice | Afrique de l'Est & Corne | — |
-| 40 | Ouganda | Afrique de l'Est & Corne | — |
-| 41 | Rwanda | Afrique de l'Est & Corne | — |
-| 42 | Seychelles | Afrique de l'Est & Corne | — |
-| 43 | Somalie | Afrique de l'Est & Corne | — |
-| 44 | Soudan du Sud | Afrique de l'Est & Corne | — |
-| 45 | Tanzanie | Afrique de l'Est & Corne | — |
-| 46 | Afrique du Sud | Afrique australe | — |
-| 47 | Botswana | Afrique australe | — |
+| 29 | Guinée équatoriale | Afrique centrale | Teodoro Obiang Nguema Mbasogo (au pouvoir depuis 1979) |
+| 30 | São Tomé-et-Príncipe | Afrique centrale | Carlos Vila Nova (réélu juil. 2026) |
+| 31 | Tchad | Afrique centrale | Mahamat Idriss Déby Itno (élu 2024) |
+| 32 | Burundi | Afrique de l'Est & Corne | Évariste Ndayishimiye |
+| 33 | Comores | Afrique de l'Est & Corne | Azali Assoumani |
+| 34 | Djibouti | Afrique de l'Est & Corne | Ismaïl Omar Guelleh (réélu avr. 2026) |
+| 35 | Érythrée | Afrique de l'Est & Corne | Isaias Afwerki (au pouvoir depuis 1991-1993) |
+| 36 | Éthiopie | Afrique de l'Est & Corne | PM Abiy Ahmed (régime parlementaire) |
+| 37 | Kenya | Afrique de l'Est & Corne | William Ruto |
+| 38 | Madagascar | Afrique de l'Est & Corne | Col. Michael Randrianirina (transition, coup oct. 2025) |
+| 39 | Maurice | Afrique de l'Est & Corne | PM Navin Ramgoolam (régime parlementaire) |
+| 40 | Ouganda | Afrique de l'Est & Corne | Yoweri Museveni (réélu janv. 2026) |
+| 41 | Rwanda | Afrique de l'Est & Corne | Paul Kagame (réélu 2024) |
+| 42 | Seychelles | Afrique de l'Est & Corne | Patrick Herminie (élu oct. 2025) |
+| 43 | Somalie | Afrique de l'Est & Corne | Hassan Sheikh Mohamud |
+| 44 | Soudan du Sud | Afrique de l'Est & Corne | Salva Kiir Mayardit (depuis 2011) |
+| 45 | Tanzanie | Afrique de l'Est & Corne | Samia Suluhu Hassan (réélue oct. 2025) |
+| 46 | Afrique du Sud | Afrique australe | Cyril Ramaphosa (gouvernement d'union nationale) |
+| 47 | Botswana | Afrique australe | Duma Boko |
 | 48 | Eswatini | Afrique australe | Roi Mswati III |
 | 49 | Lesotho | Afrique australe | Roi Letsie III |
-| 50 | Malawi | Afrique australe | — |
-| 51 | Mozambique | Afrique australe | — |
-| 52 | Namibie | Afrique australe | — |
-| 53 | Zambie | Afrique australe | — |
-| 54 | Zimbabwe | Afrique australe | — |
+| 50 | Malawi | Afrique australe | Peter Mutharika (élu sept. 2025) |
+| 51 | Mozambique | Afrique australe | Daniel Chapo |
+| 52 | Namibie | Afrique australe | Netumbo Nandi-Ndaitwah (1ère femme présidente, depuis mars 2025) |
+| 53 | Zambie | Afrique australe | Hakainde Hichilema |
+| 54 | Zimbabwe | Afrique australe | Emmerson Mnangagwa (réélu 2023) |
 
 **Note :** plusieurs pays d'Afrique de l'Ouest (Mali, Burkina Faso, Niger, Guinée) sont sous **régime militaire de transition** et ont quitté la CEDEAO (officialisé en janvier 2025) ; la Guinée-Bissau a connu un **coup d'État en 2025**. Ces situations seront datées et décrites prudemment dans les fiches concernées, chiffres et dirigeants vérifiés à la rédaction.
