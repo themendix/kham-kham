@@ -12,12 +12,11 @@ export const DAILY_CHALLENGE_XP_BONUS = 30;
 /**
  * Palier XP → niveau et rang affiché dans le Profil.
  * Recalibré une première fois (Phase 7, lot 3) sur l'XP total du catalogue d'alors (~7100 XP),
- * puis une seconde fois (chantier Géographie 3 leçons) sur le nouveau total (~9260 XP pour
- * 98 cours, la Géographie étant passée de 1 à 3 leçons par cours). Le dernier rang nommé
- * (« Gardien du savoir ») est fixé exactement au total du catalogue : il n'est atteint qu'en
- * terminant 100 % du contenu, jamais avant. Ce plafond est un point de calibrage éditorial
- * assumé, à revoir consciemment si le catalogue grossit fortement (Phase 8) — exactement comme
- * ce recalibrage revoit celui de la Phase 1.
+ * une seconde fois (chantier Géographie 3 leçons) sur ~9260 XP (98 cours), puis une troisième
+ * fois (Phase 8 — ajout de Personnalités) sur le total actuel (13 040 XP pour 128 cours). Le
+ * dernier rang nommé (« Gardien du savoir ») est fixé exactement au total du catalogue : il
+ * n'est atteint qu'en terminant 100 % du contenu, jamais avant. Ce plafond est un point de
+ * calibrage éditorial assumé, à revoir consciemment si le catalogue grossit fortement.
  */
 export interface LevelTier {
   minXp: number;
@@ -27,10 +26,10 @@ export interface LevelTier {
 
 export const LEVEL_TIERS: LevelTier[] = [
   { minXp: 0, level: 1, rank: "Curieux" },
-  { minXp: 900, level: 2, rank: "Éveillé" },
-  { minXp: 2750, level: 3, rank: "Initié" },
-  { minXp: 5550, level: 4, rank: "Sage" },
-  { minXp: 9260, level: 5, rank: "Gardien du savoir" },
+  { minXp: 1250, level: 2, rank: "Éveillé" },
+  { minXp: 3900, level: 3, rank: "Initié" },
+  { minXp: 7800, level: 4, rank: "Sage" },
+  { minXp: 13040, level: 5, rank: "Gardien du savoir" },
 ];
 
 /**
@@ -41,7 +40,7 @@ export const LEVEL_TIERS: LevelTier[] = [
  * cumulé — un nombre triangulaire, qui prolonge naturellement le rythme des rangs nommés
  * (écarts croissants : 900, 1800, 2700, 3600 XP).
  */
-const OPEN_LEVEL_STEP = 900;
+const OPEN_LEVEL_STEP = 1250;
 
 /** Seuil XP du niveau `level`, au-delà du dernier rang nommé (`level` > LEVEL_TIERS.length) */
 function openLevelThreshold(level: number): number {

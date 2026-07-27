@@ -41,14 +41,14 @@ describe("getLevelInfo — niveaux ouverts au-delà du dernier rang nommé", () 
 
   it("franchit un niveau ouvert exactement à son seuil, pas avant", () => {
     const lastTier = LEVEL_TIERS[LEVEL_TIERS.length - 1];
-    // OPEN_LEVEL_STEP = 900, seuil du niveau 6 = minXp dernier palier + 900*1
-    const thresholdLevel6 = lastTier.minXp + 900;
+    // OPEN_LEVEL_STEP = 1250, seuil du niveau 6 = minXp dernier palier + 1250*1
+    const thresholdLevel6 = lastTier.minXp + 1250;
     expect(getLevelInfo(thresholdLevel6 - 1).level).toBe(lastTier.level);
     expect(getLevelInfo(thresholdLevel6).level).toBe(lastTier.level + 1);
   });
 
   it("progression monotone : XP croissant n'entraîne jamais un niveau qui redescend", () => {
-    const samples = [0, 100, 899, 900, 2749, 2750, 5549, 5550, 9259, 9260, 10160, 20_000, 100_000];
+    const samples = [0, 100, 1249, 1250, 3899, 3900, 7799, 7800, 13039, 13040, 14290, 30_000, 100_000];
     let previousLevel = -Infinity;
     for (const xp of samples) {
       const { level } = getLevelInfo(xp);
