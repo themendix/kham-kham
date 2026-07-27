@@ -1,75 +1,13 @@
 import type { Course } from "@/types";
 
 /**
- * Les 4 matières encore réduites à un seul cours chacune (Personnalités, Arts & Musique,
- * Traditions & Sociétés, Afrique contemporaine — voir `isSubjectEmerging`). Suffisamment
- * léger pour rester bundlé avec le shell applicatif : pas de découpage par matière ici,
- * contrairement à Histoire/Géographie (`src/data/courses/histoire.ts`, `geographie.ts`),
- * qui sont chargées à la demande via `src/data/courseContent.ts`.
+ * Les 3 matières encore réduites à un seul cours chacune (Arts & Musique, Traditions &
+ * Sociétés, Afrique contemporaine — voir `isSubjectEmerging`). Suffisamment léger pour
+ * rester bundlé avec le shell applicatif : pas de découpage par matière ici, contrairement
+ * à Histoire/Géographie/Personnalités (`src/data/courses/histoire.ts`, `geographie.ts`,
+ * `personnalites.ts`), qui sont chargées à la demande via `src/data/courseContent.ts`.
  */
 export const MISC_COURSES: Course[] = [
-  {
-    id: "course-perso-voix-plumes-afrique",
-    categoryId: "perso",
-    emoji: "✍️",
-    title: "Voix et plumes d'Afrique",
-    description:
-      "Des pionniers du Nobel aux voix contemporaines : cinq écrivains qui ont porté la littérature africaine sur la scène mondiale.",
-    xp: 50,
-    lessons: [
-      {
-        id: "lesson-perso-pionniers-nobel",
-        title: "Les pionniers du Nobel",
-        content:
-          "Wole Soyinka, dramaturge et écrivain nigérian, devient en 1986 le premier Africain à recevoir le prix Nobel de littérature, notamment pour son théâtre engagé. Deux ans plus tard, en 1988, l'Égyptien Naguib Mahfouz, auteur de la Trilogie du Caire, devient le premier écrivain de langue arabe distingué par ce prix.",
-      },
-      {
-        id: "lesson-perso-peres-fondateurs",
-        title: "Pères fondateurs de la littérature africaine moderne",
-        content:
-          "Le Nigérian Chinua Achebe publie en 1958 « Le monde s'effondre », roman fondateur de la littérature africaine moderne en langue anglaise. Au Sénégal, Léopold Sédar Senghor, poète et premier président du pays, cofonde le mouvement de la Négritude et devient en 1983 le premier Africain élu à l'Académie française.",
-      },
-      {
-        id: "lesson-perso-nouvelle-generation",
-        title: "Une nouvelle génération de voix",
-        content:
-          "Chimamanda Ngozi Adichie, romancière nigériane, s'impose avec des œuvres comme « Americanah » et « L'autre moitié du soleil ». Sa conférence TED « Le danger de l'histoire unique » a marqué durablement les discussions sur la représentation de l'Afrique dans le monde.",
-      },
-    ],
-    quiz: [
-      {
-        id: "quiz-perso-1",
-        question: "Qui fut le premier Africain à recevoir le prix Nobel de littérature, en 1986 ?",
-        options: ["Chinua Achebe", "Wole Soyinka", "Naguib Mahfouz", "Léopold Sédar Senghor"],
-        correctIndex: 1,
-        explanation: "Wole Soyinka, dramaturge nigérian, a reçu le Nobel de littérature en 1986.",
-      },
-      {
-        id: "quiz-perso-2",
-        question: "Quel mouvement littéraire et culturel Léopold Sédar Senghor a-t-il cofondé ?",
-        options: ["Le panafricanisme", "La Négritude", "La Renaissance africaine", "L'Ubuntu"],
-        correctIndex: 1,
-        explanation:
-          "La Négritude, cofondée avec Aimé Césaire et Léon-Gontran Damas, valorise l'identité et la culture noires.",
-      },
-      {
-        id: "quiz-perso-3",
-        question: "Quel roman fondateur a été écrit par Chinua Achebe ?",
-        options: ["Americanah", "Le monde s'effondre", "L'enfant noir", "Une si longue lettre"],
-        correctIndex: 1,
-        explanation:
-          "« Le monde s'effondre » (1958) est considéré comme le roman fondateur de la littérature africaine moderne en anglais.",
-      },
-      {
-        id: "quiz-perso-4",
-        question: "De quel pays est originaire Naguib Mahfouz, Nobel de littérature 1988 ?",
-        options: ["Le Maroc", "L'Égypte", "L'Algérie", "La Tunisie"],
-        correctIndex: 1,
-        explanation:
-          "Naguib Mahfouz, auteur égyptien de la Trilogie du Caire, fut le premier écrivain de langue arabe à recevoir le Nobel de littérature.",
-      },
-    ],
-  },
   {
     id: "course-arts-rythmes-continent",
     categoryId: "arts",
