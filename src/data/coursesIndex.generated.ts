@@ -1,6 +1,6 @@
 /**
  * Fichier généré — ne pas éditer à la main.
- * Régénérer via `npm run gen:index` après toute modification du catalogue (98 cours).
+ * Régénérer via `npm run gen:index` après toute modification du catalogue (128 cours).
  * Métadonnées seules (pas de contenu de leçon ni de quiz) — voir docs/ARCHITECTURE.md § Découpage du bundle.
  */
 import type { CourseMeta } from "@/types";
@@ -2122,6 +2122,786 @@ export const COURSE_INDEX: CourseMeta[] = [
       },
       {
         "id": "course-geographie-54-zimbabwe-lesson-3"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-01-hatchepsout",
+    "categoryId": "perso",
+    "title": "Hatchepsout, la femme qui régna en pharaon",
+    "description": "Elle a gouverné l'Égypte pendant une vingtaine d'années, s'est fait représenter avec la barbe postiche des rois et a envoyé ses navires jusqu'au pays de Pount. Puis on a tenté d'effacer son nom. Voici Hatchepsout.",
+    "emoji": "👑",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-01-hatchepsout-lesson-1"
+      },
+      {
+        "id": "course-perso-01-hatchepsout-lesson-2"
+      },
+      {
+        "id": "course-perso-01-hatchepsout-lesson-3"
+      },
+      {
+        "id": "course-perso-01-hatchepsout-lesson-4"
+      },
+      {
+        "id": "course-perso-01-hatchepsout-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-02-taharqa",
+    "categoryId": "perso",
+    "title": "Taharqa, le pharaon venu de Koush",
+    "description": "Un roi nubien monté sur le trône d'Égypte, bâtisseur de temples de Karnak au Gebel Barkal, qui tint tête à l'empire le plus redouté de son temps. Taharqa, ou quand l'Afrique intérieure gouverna la vallée du Nil.",
+    "emoji": "🏛️",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-02-taharqa-lesson-1"
+      },
+      {
+        "id": "course-perso-02-taharqa-lesson-2"
+      },
+      {
+        "id": "course-perso-02-taharqa-lesson-3"
+      },
+      {
+        "id": "course-perso-02-taharqa-lesson-4"
+      },
+      {
+        "id": "course-perso-02-taharqa-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-03-dihya",
+    "categoryId": "perso",
+    "title": "Dihya, dite la Kahina, reine de l'Aurès",
+    "description": "Une reine berbère qui tint tête aux armées arabes dans les montagnes de l'Aurès, et dont la mémoire est aujourd'hui revendiquée par des camps opposés. Histoire d'une figure aussi célèbre que mal connue.",
+    "emoji": "⚔️",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-03-dihya-lesson-1"
+      },
+      {
+        "id": "course-perso-03-dihya-lesson-2"
+      },
+      {
+        "id": "course-perso-03-dihya-lesson-3"
+      },
+      {
+        "id": "course-perso-03-dihya-lesson-4"
+      },
+      {
+        "id": "course-perso-03-dihya-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-04-yennenga",
+    "categoryId": "perso",
+    "title": "Yennenga, la princesse cavalière",
+    "description": "Guerrière, cavalière, fugitive : la tradition mossi fait de Yennenga la mère fondatrice de tout un peuple. Un récit d'origine qui en dit long sur la manière dont l'Afrique de l'Ouest raconte sa propre histoire.",
+    "emoji": "🐎",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-04-yennenga-lesson-1"
+      },
+      {
+        "id": "course-perso-04-yennenga-lesson-2"
+      },
+      {
+        "id": "course-perso-04-yennenga-lesson-3"
+      },
+      {
+        "id": "course-perso-04-yennenga-lesson-4"
+      },
+      {
+        "id": "course-perso-04-yennenga-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-05-ibn-khaldoun",
+    "categoryId": "perso",
+    "title": "Ibn Khaldoun, l'invention de la science sociale",
+    "description": "Né à Tunis au XIVᵉ siècle, il a cherché à comprendre pourquoi les empires naissent, vieillissent et meurent. Quatre siècles avant la sociologie européenne, un Maghrébin en posait déjà les questions.",
+    "emoji": "📜",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-05-ibn-khaldoun-lesson-1"
+      },
+      {
+        "id": "course-perso-05-ibn-khaldoun-lesson-2"
+      },
+      {
+        "id": "course-perso-05-ibn-khaldoun-lesson-3"
+      },
+      {
+        "id": "course-perso-05-ibn-khaldoun-lesson-4"
+      },
+      {
+        "id": "course-perso-05-ibn-khaldoun-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-06-sayyida-al-hurra",
+    "categoryId": "perso",
+    "title": "Sayyida al-Hurra, la gouverneure de Tétouan",
+    "description": "Chassée d'Andalousie enfant, elle gouverna Tétouan pendant près de trente ans et devint une puissance de la Méditerranée occidentale. Une femme d'État que les chroniques espagnoles apprirent à redouter.",
+    "emoji": "⚓",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-06-sayyida-al-hurra-lesson-1"
+      },
+      {
+        "id": "course-perso-06-sayyida-al-hurra-lesson-2"
+      },
+      {
+        "id": "course-perso-06-sayyida-al-hurra-lesson-3"
+      },
+      {
+        "id": "course-perso-06-sayyida-al-hurra-lesson-4"
+      },
+      {
+        "id": "course-perso-06-sayyida-al-hurra-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-07-kimpa-vita",
+    "categoryId": "perso",
+    "title": "Kimpa Vita, la prophétesse du Kongo",
+    "description": "À vingt ans, elle voulut réunifier un royaume déchiré et affirma que le Christ était kongo. Brûlée vive en 1706, Kimpa Vita reste l'une des figures les plus troublantes de l'histoire religieuse africaine.",
+    "emoji": "🕯️",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-07-kimpa-vita-lesson-1"
+      },
+      {
+        "id": "course-perso-07-kimpa-vita-lesson-2"
+      },
+      {
+        "id": "course-perso-07-kimpa-vita-lesson-3"
+      },
+      {
+        "id": "course-perso-07-kimpa-vita-lesson-4"
+      },
+      {
+        "id": "course-perso-07-kimpa-vita-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-08-nanny-marrons",
+    "categoryId": "perso",
+    "title": "Nanny et les Marrons de Jamaïque",
+    "description": "Dans les montagnes de la Jamaïque, des Africains évadés ont bâti des communautés libres et tenu tête à l'armée britannique. À leur tête, une femme : Nanny, seule héroïne nationale de son pays.",
+    "emoji": "🌿",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-08-nanny-marrons-lesson-1"
+      },
+      {
+        "id": "course-perso-08-nanny-marrons-lesson-2"
+      },
+      {
+        "id": "course-perso-08-nanny-marrons-lesson-3"
+      },
+      {
+        "id": "course-perso-08-nanny-marrons-lesson-4"
+      },
+      {
+        "id": "course-perso-08-nanny-marrons-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-09-toussaint-louverture",
+    "categoryId": "perso",
+    "title": "Toussaint Louverture et la révolution de Saint-Domingue",
+    "description": "Né esclave dans la colonie la plus rentable du monde, il en devint le maître et écrivit une constitution abolissant l'esclavage. De son combat naîtra Haïti, première république noire de l'histoire.",
+    "emoji": "⛓️",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-09-toussaint-louverture-lesson-1"
+      },
+      {
+        "id": "course-perso-09-toussaint-louverture-lesson-2"
+      },
+      {
+        "id": "course-perso-09-toussaint-louverture-lesson-3"
+      },
+      {
+        "id": "course-perso-09-toussaint-louverture-lesson-4"
+      },
+      {
+        "id": "course-perso-09-toussaint-louverture-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-10-sojourner-truth",
+    "categoryId": "perso",
+    "title": "Sojourner Truth, la parole affranchie",
+    "description": "Vendue quatre fois avant l'âge de treize ans, elle devint l'une des voix les plus écoutées de l'Amérique du XIXᵉ siècle. Sojourner Truth ne savait ni lire ni écrire — et sa parole a traversé deux siècles.",
+    "emoji": "🗣️",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-10-sojourner-truth-lesson-1"
+      },
+      {
+        "id": "course-perso-10-sojourner-truth-lesson-2"
+      },
+      {
+        "id": "course-perso-10-sojourner-truth-lesson-3"
+      },
+      {
+        "id": "course-perso-10-sojourner-truth-lesson-4"
+      },
+      {
+        "id": "course-perso-10-sojourner-truth-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-11-abd-el-kader",
+    "categoryId": "perso",
+    "title": "Abd el-Kader, l'émir et le savant",
+    "description": "Il tint quinze ans face à la plus grande armée d'Europe, bâtit un État en pleine guerre, puis sauva des milliers de vies à Damas. Abd el-Kader, ou la résistance devenue morale.",
+    "emoji": "🕌",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-11-abd-el-kader-lesson-1"
+      },
+      {
+        "id": "course-perso-11-abd-el-kader-lesson-2"
+      },
+      {
+        "id": "course-perso-11-abd-el-kader-lesson-3"
+      },
+      {
+        "id": "course-perso-11-abd-el-kader-lesson-4"
+      },
+      {
+        "id": "course-perso-11-abd-el-kader-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-12-samori-toure",
+    "categoryId": "perso",
+    "title": "Samori Touré, l'empire wassoulou",
+    "description": "Parti de rien, il bâtit en vingt ans un empire de la taille d'un grand pays européen et tint la France en échec pendant seize années de guerre. L'histoire de Samori Touré est celle d'un stratège hors norme.",
+    "emoji": "🛡️",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-12-samori-toure-lesson-1"
+      },
+      {
+        "id": "course-perso-12-samori-toure-lesson-2"
+      },
+      {
+        "id": "course-perso-12-samori-toure-lesson-3"
+      },
+      {
+        "id": "course-perso-12-samori-toure-lesson-4"
+      },
+      {
+        "id": "course-perso-12-samori-toure-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-13-taytu-betul",
+    "categoryId": "perso",
+    "title": "Taytu Betul, l'impératrice d'Éthiopie",
+    "description": "Elle déchira un traité, mena ses troupes à Adoua et fonda Addis-Abeba. Sans Taytu Betul, l'Éthiopie ne serait peut-être pas le seul pays d'Afrique à n'avoir jamais été colonisé.",
+    "emoji": "👸",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-13-taytu-betul-lesson-1"
+      },
+      {
+        "id": "course-perso-13-taytu-betul-lesson-2"
+      },
+      {
+        "id": "course-perso-13-taytu-betul-lesson-3"
+      },
+      {
+        "id": "course-perso-13-taytu-betul-lesson-4"
+      },
+      {
+        "id": "course-perso-13-taytu-betul-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-14-yaa-asantewaa",
+    "categoryId": "perso",
+    "title": "Yaa Asantewaa, reine-mère d'Asante",
+    "description": "« Si vous, les hommes, ne voulez pas avancer, alors nous, les femmes, nous le ferons. » En 1900, une reine-mère d'une soixantaine d'années prit la tête de la dernière guerre asante contre l'Empire britannique.",
+    "emoji": "🪑",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-14-yaa-asantewaa-lesson-1"
+      },
+      {
+        "id": "course-perso-14-yaa-asantewaa-lesson-2"
+      },
+      {
+        "id": "course-perso-14-yaa-asantewaa-lesson-3"
+      },
+      {
+        "id": "course-perso-14-yaa-asantewaa-lesson-4"
+      },
+      {
+        "id": "course-perso-14-yaa-asantewaa-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-15-sarraounia",
+    "categoryId": "perso",
+    "title": "Sarraounia Mangou, la reine de Lougou",
+    "description": "En 1899, dans le sud de l'actuel Niger, une reine résista à la plus violente colonne coloniale que la France ait envoyée en Afrique de l'Ouest. Son nom : Sarraounia.",
+    "emoji": "🏹",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-15-sarraounia-lesson-1"
+      },
+      {
+        "id": "course-perso-15-sarraounia-lesson-2"
+      },
+      {
+        "id": "course-perso-15-sarraounia-lesson-3"
+      },
+      {
+        "id": "course-perso-15-sarraounia-lesson-4"
+      },
+      {
+        "id": "course-perso-15-sarraounia-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-16-du-bois",
+    "categoryId": "perso",
+    "title": "W. E. B. Du Bois et les congrès panafricains",
+    "description": "Il a organisé les congrès qui ont donné au panafricanisme sa forme politique, et il est mort au Ghana la veille d'une grande marche à Washington. Du Bois, ou le fil qui relie la diaspora au continent.",
+    "emoji": "🌍",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-16-du-bois-lesson-1"
+      },
+      {
+        "id": "course-perso-16-du-bois-lesson-2"
+      },
+      {
+        "id": "course-perso-16-du-bois-lesson-3"
+      },
+      {
+        "id": "course-perso-16-du-bois-lesson-4"
+      },
+      {
+        "id": "course-perso-16-du-bois-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-17-cheikh-anta-diop",
+    "categoryId": "perso",
+    "title": "Cheikh Anta Diop, réécrire l'histoire de l'Afrique",
+    "description": "Physicien, historien, linguiste : il a passé sa vie à démontrer que l'Afrique avait une histoire, et que l'Égypte antique en faisait partie. Une œuvre discutée, mais qui a changé le regard d'un continent sur lui-même.",
+    "emoji": "🔬",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-17-cheikh-anta-diop-lesson-1"
+      },
+      {
+        "id": "course-perso-17-cheikh-anta-diop-lesson-2"
+      },
+      {
+        "id": "course-perso-17-cheikh-anta-diop-lesson-3"
+      },
+      {
+        "id": "course-perso-17-cheikh-anta-diop-lesson-4"
+      },
+      {
+        "id": "course-perso-17-cheikh-anta-diop-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-18-frantz-fanon",
+    "categoryId": "perso",
+    "title": "Frantz Fanon, la clinique et la révolution",
+    "description": "Psychiatre martiniquais devenu diplomate de la révolution algérienne, il a décrit comme personne les blessures mentales que la colonisation inflige. Mort à trente-six ans, Fanon n'a jamais cessé d'être lu.",
+    "emoji": "🧠",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-18-frantz-fanon-lesson-1"
+      },
+      {
+        "id": "course-perso-18-frantz-fanon-lesson-2"
+      },
+      {
+        "id": "course-perso-18-frantz-fanon-lesson-3"
+      },
+      {
+        "id": "course-perso-18-frantz-fanon-lesson-4"
+      },
+      {
+        "id": "course-perso-18-frantz-fanon-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-19-amilcar-cabral",
+    "categoryId": "perso",
+    "title": "Amílcar Cabral, l'agronome stratège",
+    "description": "Il a commencé par recenser les sols de son pays et fini par en organiser la libération. Amílcar Cabral, le théoricien qui pensait que la culture était l'arme la plus sûre d'un peuple.",
+    "emoji": "🌾",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-19-amilcar-cabral-lesson-1"
+      },
+      {
+        "id": "course-perso-19-amilcar-cabral-lesson-2"
+      },
+      {
+        "id": "course-perso-19-amilcar-cabral-lesson-3"
+      },
+      {
+        "id": "course-perso-19-amilcar-cabral-lesson-4"
+      },
+      {
+        "id": "course-perso-19-amilcar-cabral-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-20-agostinho-neto",
+    "categoryId": "perso",
+    "title": "Agostinho Neto, le poète et le président",
+    "description": "Médecin, poète, prisonnier politique, chef de guérilla, puis premier président de l'Angola. Agostinho Neto a mené sa vie comme il écrivait ses vers : avec une obstination tournée vers un seul objectif.",
+    "emoji": "🖋️",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-20-agostinho-neto-lesson-1"
+      },
+      {
+        "id": "course-perso-20-agostinho-neto-lesson-2"
+      },
+      {
+        "id": "course-perso-20-agostinho-neto-lesson-3"
+      },
+      {
+        "id": "course-perso-20-agostinho-neto-lesson-4"
+      },
+      {
+        "id": "course-perso-20-agostinho-neto-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-21-kwame-nkrumah",
+    "categoryId": "perso",
+    "title": "Kwame Nkrumah, l'étoile noire",
+    "description": "Il a conduit le premier pays d'Afrique subsaharienne à l'indépendance et voulait un gouvernement unique pour tout le continent. Renversé, exilé, Nkrumah reste la figure la plus citée du panafricanisme.",
+    "emoji": "⭐",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-21-kwame-nkrumah-lesson-1"
+      },
+      {
+        "id": "course-perso-21-kwame-nkrumah-lesson-2"
+      },
+      {
+        "id": "course-perso-21-kwame-nkrumah-lesson-3"
+      },
+      {
+        "id": "course-perso-21-kwame-nkrumah-lesson-4"
+      },
+      {
+        "id": "course-perso-21-kwame-nkrumah-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-22-julius-nyerere",
+    "categoryId": "perso",
+    "title": "Julius Nyerere, le Mwalimu",
+    "description": "On l'appelait « l'instituteur ». Il a fait de la Tanzanie un pays uni dans un continent fracturé, soutenu toutes les luttes de libération d'Afrique australe, et quitté le pouvoir de lui-même.",
+    "emoji": "📖",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-22-julius-nyerere-lesson-1"
+      },
+      {
+        "id": "course-perso-22-julius-nyerere-lesson-2"
+      },
+      {
+        "id": "course-perso-22-julius-nyerere-lesson-3"
+      },
+      {
+        "id": "course-perso-22-julius-nyerere-lesson-4"
+      },
+      {
+        "id": "course-perso-22-julius-nyerere-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-23-haile-selassie",
+    "categoryId": "perso",
+    "title": "Haile Selassie et la naissance de l'OUA",
+    "description": "Empereur d'Éthiopie pendant plus de quarante ans, il a plaidé seul devant la Société des Nations, présidé la naissance de l'unité africaine, et fini renversé par une révolution. Une trajectoire à deux versants.",
+    "emoji": "🦁",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-23-haile-selassie-lesson-1"
+      },
+      {
+        "id": "course-perso-23-haile-selassie-lesson-2"
+      },
+      {
+        "id": "course-perso-23-haile-selassie-lesson-3"
+      },
+      {
+        "id": "course-perso-23-haile-selassie-lesson-4"
+      },
+      {
+        "id": "course-perso-23-haile-selassie-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-24-patrice-lumumba",
+    "categoryId": "perso",
+    "title": "Patrice Lumumba, sept mois qui ont marqué le siècle",
+    "description": "Il fut Premier ministre du Congo pendant moins de trois mois et assassiné à trente-cinq ans. Soixante ans après, Patrice Lumumba reste l'un des noms les plus puissants du panafricanisme.",
+    "emoji": "🕊️",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-24-patrice-lumumba-lesson-1"
+      },
+      {
+        "id": "course-perso-24-patrice-lumumba-lesson-2"
+      },
+      {
+        "id": "course-perso-24-patrice-lumumba-lesson-3"
+      },
+      {
+        "id": "course-perso-24-patrice-lumumba-lesson-4"
+      },
+      {
+        "id": "course-perso-24-patrice-lumumba-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-25-jeanne-martin-cisse",
+    "categoryId": "perso",
+    "title": "Jeanne Martin Cissé et les mères fondatrices",
+    "description": "Un an avant l'OUA, des femmes africaines créaient leur propre organisation continentale. Jeanne Martin Cissé en fut la première secrétaire générale — et la première femme à présider le Conseil de sécurité de l'ONU.",
+    "emoji": "🤝",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-25-jeanne-martin-cisse-lesson-1"
+      },
+      {
+        "id": "course-perso-25-jeanne-martin-cisse-lesson-2"
+      },
+      {
+        "id": "course-perso-25-jeanne-martin-cisse-lesson-3"
+      },
+      {
+        "id": "course-perso-25-jeanne-martin-cisse-lesson-4"
+      },
+      {
+        "id": "course-perso-25-jeanne-martin-cisse-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-26-funmilayo-ransome-kuti",
+    "categoryId": "perso",
+    "title": "Funmilayo Ransome-Kuti, la lionne d'Abeokuta",
+    "description": "Elle a organisé vingt mille femmes, fait tomber un roi et arraché aux Britanniques le droit de vote des Nigérianes. Funmilayo Ransome-Kuti, la femme la plus redoutée du Nigeria colonial.",
+    "emoji": "✊",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-26-funmilayo-ransome-kuti-lesson-1"
+      },
+      {
+        "id": "course-perso-26-funmilayo-ransome-kuti-lesson-2"
+      },
+      {
+        "id": "course-perso-26-funmilayo-ransome-kuti-lesson-3"
+      },
+      {
+        "id": "course-perso-26-funmilayo-ransome-kuti-lesson-4"
+      },
+      {
+        "id": "course-perso-26-funmilayo-ransome-kuti-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-27-aoua-keita",
+    "categoryId": "perso",
+    "title": "Aoua Keïta, sage-femme et députée",
+    "description": "Première femme élue à une assemblée nationale en Afrique occidentale francophone, fondatrice de l'organisation panafricaine des femmes, et autrice d'un livre où elle raconte tout. Aoua Keïta n'a jamais demandé la permission.",
+    "emoji": "🩺",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-27-aoua-keita-lesson-1"
+      },
+      {
+        "id": "course-perso-27-aoua-keita-lesson-2"
+      },
+      {
+        "id": "course-perso-27-aoua-keita-lesson-3"
+      },
+      {
+        "id": "course-perso-27-aoua-keita-lesson-4"
+      },
+      {
+        "id": "course-perso-27-aoua-keita-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-28-albertina-sisulu",
+    "categoryId": "perso",
+    "title": "Albertina Sisulu, mère de la nation",
+    "description": "Elle a tenu le combat pendant que les hommes étaient à Robben Island : vingt ans d'interdiction, de perquisitions et de prison, sans jamais renoncer. Albertina Sisulu, l'endurance faite politique.",
+    "emoji": "🌺",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-28-albertina-sisulu-lesson-1"
+      },
+      {
+        "id": "course-perso-28-albertina-sisulu-lesson-2"
+      },
+      {
+        "id": "course-perso-28-albertina-sisulu-lesson-3"
+      },
+      {
+        "id": "course-perso-28-albertina-sisulu-lesson-4"
+      },
+      {
+        "id": "course-perso-28-albertina-sisulu-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-29-miriam-makeba",
+    "categoryId": "perso",
+    "title": "Miriam Makeba, Mama Africa",
+    "description": "Son passeport fut annulé parce qu'elle avait témoigné devant l'ONU. Trente et un ans d'exil plus tard, elle rentrait chez elle. Miriam Makeba a fait de sa voix une arme diplomatique.",
+    "emoji": "🎤",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-29-miriam-makeba-lesson-1"
+      },
+      {
+        "id": "course-perso-29-miriam-makeba-lesson-2"
+      },
+      {
+        "id": "course-perso-29-miriam-makeba-lesson-3"
+      },
+      {
+        "id": "course-perso-29-miriam-makeba-lesson-4"
+      },
+      {
+        "id": "course-perso-29-miriam-makeba-lesson-5"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-perso-30-wangari-maathai",
+    "categoryId": "perso",
+    "title": "Wangari Maathai, la ceinture verte",
+    "description": "Elle a compris avant tout le monde que planter des arbres était un acte politique. Cinquante et un millions d'arbres plus tard, Wangari Maathai devenait la première Africaine prix Nobel de la paix.",
+    "emoji": "🌳",
+    "xp": 70,
+    "lessons": [
+      {
+        "id": "course-perso-30-wangari-maathai-lesson-1"
+      },
+      {
+        "id": "course-perso-30-wangari-maathai-lesson-2"
+      },
+      {
+        "id": "course-perso-30-wangari-maathai-lesson-3"
+      },
+      {
+        "id": "course-perso-30-wangari-maathai-lesson-4"
+      },
+      {
+        "id": "course-perso-30-wangari-maathai-lesson-5"
       }
     ],
     "quizCount": 5

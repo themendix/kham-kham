@@ -1,6 +1,7 @@
 import type { Course } from "@/types";
 import { HISTOIRE_COURSES } from "@/data/courses/histoire";
 import { GEOGRAPHIE_COURSES } from "@/data/courses/geographie";
+import { PERSONNALITES_COURSES } from "@/data/courses/personnalites";
 import { MISC_COURSES } from "@/data/courses/misc";
 
 /**
@@ -14,7 +15,12 @@ import { MISC_COURSES } from "@/data/courses/misc";
  * (`@/data/coursesIndex.generated`) pour les listes/la recherche, et `getSubjectContent`/
  * `getFullCourse` (`@/data/courseContent`) pour le contenu complet à la demande.
  */
-export const COURSES: Course[] = [...HISTOIRE_COURSES, ...GEOGRAPHIE_COURSES, ...MISC_COURSES];
+export const COURSES: Course[] = [
+  ...HISTOIRE_COURSES,
+  ...GEOGRAPHIE_COURSES,
+  ...PERSONNALITES_COURSES,
+  ...MISC_COURSES,
+];
 
 export function getCourse(id: string): Course | undefined {
   return COURSES.find((c) => c.id === id);

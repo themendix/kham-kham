@@ -4,16 +4,18 @@ import { MISC_COURSES } from "@/data/courses/misc";
 import { getLessonRef } from "@/lib/featured";
 
 /**
- * Chargement à la demande du contenu complet (leçons + quiz) par matière. Histoire et
- * Géographie représentent à elles seules ~430 Ko de texte : elles ne sont importées que
- * lorsqu'un écran a réellement besoin de leur contenu (ouverture d'un cours, lecture de la
- * vedette Biblio, Défi du jour). Les 4 matières émergentes (perso/arts/trad/actu) sont assez
- * légères pour rester bundlées avec le shell (`MISC_COURSES`) : pas de chunk dédié pour elles.
- * Voir docs/ARCHITECTURE.md § Découpage du bundle.
+ * Chargement à la demande du contenu complet (leçons + quiz) par matière. Histoire,
+ * Géographie et Personnalités représentent à elles seules l'essentiel du texte du
+ * catalogue : elles ne sont importées que lorsqu'un écran a réellement besoin de leur
+ * contenu (ouverture d'un cours, lecture de la vedette Biblio, Défi du jour). Les 3 matières
+ * émergentes restantes (arts/trad/actu) sont assez légères pour rester bundlées avec le
+ * shell (`MISC_COURSES`) : pas de chunk dédié pour elles. Voir docs/ARCHITECTURE.md §
+ * Découpage du bundle.
  */
 const SUBJECT_LOADERS: Record<string, () => Promise<Course[]>> = {
   histoire: () => import("@/data/courses/histoire").then((m) => m.HISTOIRE_COURSES),
   geo: () => import("@/data/courses/geographie").then((m) => m.GEOGRAPHIE_COURSES),
+  perso: () => import("@/data/courses/personnalites").then((m) => m.PERSONNALITES_COURSES),
 };
 
 const subjectCache = new Map<string, Course[]>();
