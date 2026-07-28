@@ -12,28 +12,162 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-01-egypte-antique-lesson-1",
-        title: "Une civilisation africaine née sur le Nil",
-        content: "L'Égypte antique s'est développée au nord-est de l'Afrique, le long du Nil, le fleuve qui la traverse du sud vers le nord. Chaque année, la crue déposait un limon noir et fertile sur ses rives : les Égyptiens appelaient leur pays Kemet, « la terre noire », par opposition au désert rouge qui l'entourait. Sans le Nil, aucune agriculture n'aurait été possible dans cette région aride — le fleuve était donc la source de toute vie. Dans sa Histoire générale de l'Afrique, l'UNESCO replace clairement l'Égypte au cœur de l'histoire africaine, dans ce qu'elle appelle le « corridor du Nil ». Vers 3100 av. J.-C., deux royaumes — la Haute-Égypte (au sud) et la Basse-Égypte (au nord, le delta) — furent unifiés en un seul État, un événement traditionnellement attribué au roi Narmer (souvent identifié à Ménès). Cette unification marque le début de près de trois mille ans d'histoire pharaonique.",
+        title: "Une civilisation née sur le Nil",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Chaque été, le Nil débordait et recouvrait ses rives d'un limon noir. Les Égyptiens n'appelaient pas leur pays « Égypte » : ils l'appelaient **Kemet**, « la terre noire ».",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "3100 av. J.-C.",
+            legende: "l'unification qui ouvre 3 000 ans d'histoire pharaonique",
+          },
+          {
+            type: "paragraphe",
+            text: "Sans cette crue, rien n'aurait poussé dans une région aride. Deux royaumes — la Haute-Égypte au sud, la Basse-Égypte au nord — sont alors unifiés, un geste attribué au roi **Narmer**. L'UNESCO replace cette civilisation au cœur de l'Afrique, dans ce qu'elle nomme le « corridor du Nil ».",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Kemet, « la terre noire », doit tout à la crue du Nil",
+              "Unification vers **3100 av. J.-C.**, attribuée au roi Narmer",
+              "Une civilisation africaine, en dialogue avec le continent",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le désert qui entourait Kemet, les Égyptiens l'appelaient **Deshret** — « la terre rouge ». Deux mondes que tout opposait, séparés par une berge.",
+          },
+        ],
       },
       {
         id: "course-histoire-01-egypte-antique-lesson-2",
-        title: "Les pharaons et l'organisation de l'État",
-        content: "À la tête de l'Égypte se trouvait le pharaon, considéré non comme un simple roi mais comme un dieu vivant, garant de l'ordre du monde (la Maât). Il commandait une administration puissante et hiérarchisée : vizirs, gouverneurs de provinces, prêtres et surtout scribes, chargés de compter, taxer et enregistrer. Les historiens découpent cette longue histoire en grandes périodes. L'Ancien Empire (vers 2700–2200 av. J.-C.) est l'âge des grandes pyramides. Le Moyen Empire (vers 2050–1650 av. J.-C.) est une période de reconstruction et de rayonnement. Le Nouvel Empire (vers 1550–1070 av. J.-C.) est l'apogée de la puissance égyptienne, avec des souverains célèbres comme la reine Hatchepsout, Toutânkhamon ou Ramsès II. Cette capacité à mobiliser des milliers de travailleurs et d'immenses ressources témoigne d'un État exceptionnellement organisé pour son époque.",
+        title: "Un dieu vivant à la tête de l'État",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Le pharaon n'est pas un roi. C'est un dieu vivant, chargé de maintenir la **Maât** — l'ordre juste du monde. Tout l'État égyptien tient sur cette idée.",
+          },
+          {
+            type: "frise",
+            unite: "av. J.-C.",
+            evenements: [
+              { date: "2700", texte: "Ancien Empire : l'âge des pyramides" },
+              { date: "2050", texte: "Moyen Empire : la reconstruction" },
+              { date: "1550", texte: "Nouvel Empire : Hatchepsout, Ramsès II" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Sous lui, une administration redoutable : vizirs, gouverneurs, prêtres, et surtout des **scribes** qui comptent, taxent et enregistrent tout. Mobiliser des milliers d'ouvriers pendant vingt ans pour une pyramide suppose un État d'une organisation exceptionnelle.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le pharaon est un dieu vivant, garant de la **Maât**",
+              "Trois grands Empires sur près de 3 000 ans",
+              "Les scribes sont le vrai moteur de l'État",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Un texte scolaire égyptien vante le métier de scribe : le seul, dit-il, où l'on ne se salit jamais les mains.",
+          },
+        ],
       },
       {
         id: "course-histoire-01-egypte-antique-lesson-3",
-        title: "Écriture, savoirs et vie quotidienne",
-        content: "Les Égyptiens ont mis au point l'un des plus anciens systèmes d'écriture : les hiéroglyphes, des signes gravés dans la pierre ou tracés à l'encre sur du papyrus. Longtemps illisibles, ils furent déchiffrés en 1822 par Jean-François Champollion grâce à la pierre de Rosette. L'écriture était l'affaire des scribes, une élite respectée. Cette civilisation a produit des savoirs remarquables : une médecine avancée, des mathématiques utiles pour l'architecture et l'arpentage des champs après la crue, une astronomie et un calendrier solaire de 365 jours, calé sur le retour de la crue et l'apparition de l'étoile Sirius. La vie quotidienne suivait le rythme du fleuve : semailles après la décrue, récoltes, puis nouvelle inondation. Comme le souligne l'UNESCO, le sacré et le quotidien étaient étroitement mêlés dans la vie des Égyptiens.",
+        title: "Le secret des hiéroglyphes",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Pendant plus de mille quatre cents ans, personne au monde ne savait lire les hiéroglyphes égyptiens. Il a fallu une pierre gravée trois fois pour qu'un jeune Français en perce enfin le secret.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1822",
+            legende: "Champollion déchiffre les hiéroglyphes",
+          },
+          {
+            type: "paragraphe",
+            text: "Le déchiffreur s'appelle **Jean-François Champollion**. Sa clé fut la **pierre de Rosette**, où un même texte est gravé en hiéroglyphes, en démotique et en grec. Seuls les scribes, une élite respectée, savaient tracer ces signes sur la pierre ou le papyrus.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1822** : Champollion déchiffre les hiéroglyphes grâce à la pierre de Rosette",
+              "Seuls les scribes, une élite respectée, savaient écrire",
+              "Médecine, mathématiques, astronomie : des savoirs égyptiens avancés",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le calendrier égyptien comptait déjà **365 jours** : il suivait le retour de la crue et le lever, à l'aube, de l'étoile **Sirius**.",
+          },
+        ],
       },
       {
         id: "course-histoire-01-egypte-antique-lesson-4",
-        title: "Religion, dieux et vie après la mort",
-        content: "L'Égypte antique était polythéiste : elle honorait de nombreux dieux, souvent représentés avec des corps humains et des têtes d'animaux. Parmi les plus importants : Rê, le dieu du soleil ; Osiris, dieu des morts et de la résurrection ; Isis, son épouse ; Horus, le faucon associé à la royauté ; et Anubis, à tête de chacal, gardien des morts. Les Égyptiens croyaient fermement en une vie après la mort. Pour préserver le corps, ils pratiquaient la momification, et déposaient dans les tombes des objets, des offrandes et des textes (le « Livre des morts ») destinés à guider le défunt. Cette croyance explique les grandes réalisations funéraires : les pyramides de l'Ancien Empire — comme celles de Giza — puis les tombes creusées dans la Vallée des Rois, ainsi que d'immenses temples comme ceux de Karnak et Louxor.",
+        title: "Peser le cœur du défunt",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Pour les Égyptiens, la mort n'était pas une fin brutale, mais un passage. C'était un examen que chacun devait réussir pour espérer vivre éternellement.",
+          },
+          {
+            type: "citation",
+            texte: "Je n'ai privé personne de nourriture, je n'ai fait pleurer personne, je n'ai pas menti.",
+            auteur: "Livre des Morts, formule 125",
+          },
+          {
+            type: "paragraphe",
+            text: "Les Égyptiens vénéraient de nombreux dieux : **Rê**, le soleil ; **Osiris**, maître des morts ; Isis, Horus et **Anubis**, le gardien à tête de chacal. Pour préserver le corps, ils pratiquaient la momification, jugée nécessaire à la survie de l'âme.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Un monde peuplé de dieux, dont **Osiris**, maître des morts",
+              "La momification préservait le corps pour l'éternité",
+              "Le cœur du défunt était jugé après la mort",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le cœur du défunt était pesé face à la plume de la **Maât**. Trop lourd, il était dévoré par un monstre ; sinon, le mort accédait à la vie éternelle.",
+          },
+        ],
       },
       {
         id: "course-histoire-01-egypte-antique-lesson-5",
-        title: "L'Égypte et le reste de l'Afrique",
-        content: "L'un des apports majeurs de l'UNESCO est d'avoir rappelé que l'Égypte n'était pas isolée du reste du continent. Au sud, le long du Nil, s'étendait la Nubie (le futur royaume de Koush), avec qui l'Égypte entretenait des échanges constants : or, ivoire, ébène, encens et échanges culturels circulaient dans les deux sens. Les relations furent parfois pacifiques, parfois conflictuelles. Fait souvent oublié : au VIIIᵉ siècle av. J.-C., des rois nubiens (koushites) conquirent l'Égypte et fondèrent la XXVᵉ dynastie, régnant sur le pays des pharaons pendant près d'un siècle. L'Égypte antique est donc pleinement une civilisation africaine, en dialogue avec ses voisins. C'est pourquoi la Histoire générale de l'Afrique lui accorde une place centrale — et c'est vers ce voisin du sud, le royaume de Koush, que nous nous tournerons dans le prochain cours.",
+        title: "L'Égypte, en dialogue avec l'Afrique",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Au sud de l'Égypte coulait le même fleuve, et vivait un partenaire constant : la Nubie. Alliée ou rivale selon les siècles, elle a même fini par régner sur l'Égypte.",
+          },
+          {
+            type: "frise",
+            unite: "av. J.-C.",
+            evenements: [
+              { date: "3100", texte: "Unification de l'Égypte" },
+              { date: "2600", texte: "Échanges d'or et d'ivoire avec la Nubie" },
+              { date: "730", texte: "Des rois nubiens conquièrent l'Égypte" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Au VIIIᵉ siècle av. J.-C., des rois nubiens conquirent l'Égypte et fondèrent la **XXVᵉ dynastie**, régnant depuis Napata près d'un siècle. Cette Égypte n'est pas isolée : c'est une civilisation africaine, en dialogue avec le royaume de **Koush**, que nous retrouverons dans le prochain cours.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Nubie et Égypte : échanges constants d'or et d'ivoire",
+              "**VIIIᵉ siècle av. J.-C.** : des rois nubiens règnent sur l'Égypte",
+              "Une civilisation pleinement africaine",
+            ],
+          },
+        ],
       },
     ],
     quiz: [
@@ -42,7 +176,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quel fleuve est au cœur de la civilisation égyptienne antique ?",
         options: ["Le Congo", "Le Niger", "Le Nil", "Le Zambèze"],
         correctIndex: 2,
-        explanation: "Le Nil traversait l'Égypte du sud au nord et, par sa crue annuelle, déposait le limon fertile qui rendait l'agriculture possible. Les Égyptiens nommaient leur pays Kemet, « la terre noire ».",
+        explanation: "Le Nil traversait l'Égypte du sud au nord et, par sa crue annuelle, déposait le limon fertile qui rendait l'agriculture possible. La vie quotidienne suivait ce rythme : semailles après la décrue, récoltes, puis nouvelle crue l'année suivante.",
       },
       {
         id: "course-histoire-01-egypte-antique-quiz-2",
@@ -56,14 +190,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment appelle-t-on l'écriture des anciens Égyptiens ?",
         options: ["Le cunéiforme", "Les hiéroglyphes", "L'alphabet latin", "Les idéogrammes chinois"],
         correctIndex: 1,
-        explanation: "Les hiéroglyphes étaient gravés dans la pierre ou écrits sur papyrus. Ils furent déchiffrés en 1822 par Champollion grâce à la pierre de Rosette.",
+        explanation: "Les hiéroglyphes étaient gravés dans la pierre ou écrits sur papyrus. Ils furent déchiffrés en 1822 par Champollion grâce à la pierre de Rosette, gravée du même texte en trois écritures.",
       },
       {
         id: "course-histoire-01-egypte-antique-quiz-4",
         question: "Quelle pratique les Égyptiens utilisaient-ils pour préparer le corps à la vie après la mort ?",
         options: ["La crémation", "La momification", "L'enterrement en mer", "L'exposition au soleil"],
         correctIndex: 1,
-        explanation: "Croyant en une vie après la mort, les Égyptiens momifiaient les corps pour les conserver, et plaçaient offrandes et textes dans les tombes pour accompagner le défunt.",
+        explanation: "Croyant en une vie après la mort, les Égyptiens momifiaient les corps. Cette croyance explique aussi les grandes réalisations funéraires : les pyramides de Giza, les tombes de la Vallée des Rois, et les temples de Karnak et Louxor.",
       },
       {
         id: "course-histoire-01-egypte-antique-quiz-5",
@@ -84,28 +218,165 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-02-koush-meroe-lesson-1",
-        title: "La Nubie, terre d'or au sud de l'Égypte",
-        content: "Au sud de l'Égypte, en amont du Nil (dans l'actuel Soudan), s'étendait la Nubie, que les Égyptiens appelaient Ta-Séti, « le pays de l'arc », en raison de ses redoutables archers. La région était riche en or, en ivoire et en ébène, ce qui en faisait un partenaire commercial convoité. C'est là qu'émergea le royaume de Koush, avec une première grande capitale à Kerma dès le IIIᵉ millénaire av. J.-C. Voisine et rivale de l'Égypte, la Nubie connut tour à tour le commerce, les alliances et la guerre. Loin d'être une simple périphérie, elle développa sa propre civilisation, profondément africaine, en dialogue constant avec le monde pharaonique.",
+        title: "Le pays de l'arc",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Les Égyptiens redoutaient tant les archers du sud qu'ils avaient surnommé leur voisin « **Ta-Séti** », le pays de l'arc. Ce voisin puissant, c'était la Nubie.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2500 av. J.-C.",
+            legende: "Kerma, première grande capitale du royaume de Koush",
+          },
+          {
+            type: "paragraphe",
+            text: "Riche en or, en ivoire et en ébène, la Nubie attirait les marchands autant qu'elle inquiétait les pharaons. Voisine et rivale de l'**Égypte**, elle développe très tôt sa propre civilisation, profondément africaine, sans jamais cesser de dialoguer avec elle.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Ta-Séti, « le pays de l'arc », nom donné par les Égyptiens",
+              "**Kerma** : première capitale, dès le IIIᵉ millénaire av. J.-C.",
+              "Une terre riche en or, en ivoire et en ébène",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Les archers nubiens étaient si redoutés que l'Égypte les recrutait souvent comme mercenaires dans sa propre armée.",
+          },
+        ],
       },
       {
         id: "course-histoire-02-koush-meroe-lesson-2",
-        title: "Les « pharaons noirs » de Napata",
-        content: "Depuis leur capitale de Napata, les rois de Koush devinrent si puissants qu'ils renversèrent la situation : vers 747 av. J.-C., le roi Piânkhy (Piye) conquit l'Égypte et fonda la XXVᵉ dynastie, celle des « pharaons noirs ». Son successeur Taharqa est l'un des souverains les plus célèbres de cette lignée, bâtisseur de temples des deux côtés de la frontière. Les rois koushites régnèrent sur un immense territoire allant du cœur du Soudan jusqu'à la Méditerranée, jusqu'à ce que l'invasion des Assyriens, mieux armés en fer, les repousse vers le sud vers 656 av. J.-C.",
+        title: "Les pharaons noirs de Napata",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Pendant des siècles, l'Égypte avait dominé la Nubie. Un jour, les rôles s'inversent : un roi nubien devient lui-même pharaon d'Égypte.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "747 av. J.-C.",
+            legende: "le roi Piânkhy conquiert l'Égypte",
+          },
+          {
+            type: "paragraphe",
+            text: "Depuis leur capitale de **Napata**, les rois de Koush conquièrent l'Égypte et fondent la XXVᵉ dynastie, celle des « pharaons noirs ». Le plus célèbre, **Taharqa**, bâtit des temples des deux côtés de la frontière — jusqu'à ce que les Assyriens, mieux armés en fer, repoussent Koush vers le sud.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**747 av. J.-C.** : Piânkhy conquiert l'Égypte, XXVᵉ dynastie",
+              "Taharqa, souverain bâtisseur, l'un des plus célèbres pharaons noirs",
+              "Les Assyriens, mieux armés en fer, repoussent Koush vers le sud",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "On appelle aujourd'hui ces souverains les « pharaons noirs » : des rois nubiens qui ont régné sur l'Égypte pendant près d'un siècle.",
+          },
+        ],
       },
       {
         id: "course-histoire-02-koush-meroe-lesson-3",
         title: "Méroé, la cité du fer",
-        content: "Après la perte de l'Égypte, le royaume déplaça sa capitale plus au sud, à Méroé, qui connut son apogée entre le IIIᵉ siècle av. J.-C. et le IVᵉ siècle de notre ère. Méroé devint un grand centre de production du fer — au point d'être parfois surnommée « la Birmingham de l'Afrique » — et un carrefour commercial reliant l'Afrique centrale, la mer Rouge, l'Inde et Rome. Sa richesse reposait sur la métallurgie, l'agriculture irriguée par le Nil et le commerce à longue distance.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "On a surnommé **Méroé** « la Birmingham de l'Afrique » : ses forges tournaient sans relâche, des siècles avant la révolution industrielle anglaise.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "IIIᵉ s. av. J.-C.", texte: "Méroé devient la nouvelle capitale" },
+              { date: "Iᵉʳ siècle", texte: "Apogée : fer, commerce, agriculture" },
+              { date: "IVᵉ siècle", texte: "Fin de l'âge d'or de Méroé" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Ce grand centre de production du **fer** devient aussi un carrefour commercial reliant l'Afrique centrale, la mer Rouge, l'Inde et Rome. Sa richesse repose sur la métallurgie, l'agriculture irriguée par le Nil et le commerce à longue distance.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Méroé, surnommée « la Birmingham de l'Afrique », pour son fer",
+              "Un carrefour commercial entre Afrique, mer Rouge, Inde et Rome",
+              "Apogée entre le **IIIᵉ siècle av. J.-C.** et le IVᵉ siècle",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Les scories de fer s'accumulaient si haut autour de Méroé qu'on peut aujourd'hui encore en voir les collines depuis le site.",
+          },
+        ],
       },
       {
         id: "course-histoire-02-koush-meroe-lesson-4",
-        title: "Une civilisation originale",
-        content: "Méroé développa une culture propre, distincte de l'Égypte. Les Koushites créèrent leur propre écriture, le méroïtique, encore partiellement indéchiffré aujourd'hui. Ils honoraient leurs propres dieux, comme Apédémak, le dieu-lion guerrier, aux côtés d'Amon. Ils bâtirent des pyramides — plus nombreuses qu'en Égypte, mais plus petites et plus pentues — pour abriter leurs souverains. Fait remarquable, des reines régnèrent en leur nom propre : on les appelait les Candaces (Kandakè), figures puissantes du pouvoir méroïtique.",
+        title: "Une écriture, des dieux, des reines",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Comment une civilisation africaine invente-t-elle sa propre écriture, ses propres dieux — et se fait-elle gouverner par des reines ? Bienvenue à Méroé.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "200+",
+            legende: "pyramides bâties à Méroé, plus qu'en Égypte",
+          },
+          {
+            type: "paragraphe",
+            text: "Les Koushites créent leur propre écriture, le **méroïtique**, encore partiellement indéchiffrée aujourd'hui. Ils honorent leurs propres dieux, comme **Apédémak**, le dieu-lion guerrier, aux côtés d'Amon. Fait remarquable : des reines règnent en leur nom propre, les **Candaces** (Kandakè).",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le méroïtique : une écriture propre, encore mal déchiffrée",
+              "**Apédémak**, le dieu-lion guerrier, honoré aux côtés d'Amon",
+              "Les Candaces : des reines qui régnaient en leur nom propre",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le méroïtique se lit en partie aujourd'hui — on en connaît les sons — mais personne ne comprend encore vraiment ce qu'il dit.",
+          },
+        ],
       },
       {
         id: "course-histoire-02-koush-meroe-lesson-5",
         title: "Déclin et héritage",
-        content: "Méroé déclina vers le IVᵉ siècle de notre ère, affaiblie par les changements des routes commerciales et la montée d'un nouveau rival, le royaume d'Aksoum. Mais son héritage est immense : Koush prouve qu'une civilisation africaine a maîtrisé, de manière autonome, le fer, l'écriture, la monarchie et l'architecture monumentale. Les sites de Méroé sont aujourd'hui classés au patrimoine mondial de l'UNESCO. C'est vers ce rival venu des hauts plateaux éthiopiens, Aksoum, que nous nous tournerons ensuite.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Vers le **IVᵉ siècle**, les forges de Méroé s'éteignent peu à peu. Un nouveau rival, venu des hauts plateaux éthiopiens, prend le relais du commerce de la mer Rouge.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "2500 av. J.-C.", texte: "Kerma, naissance du royaume de Koush" },
+              { date: "747 av. J.-C.", texte: "Piânkhy conquiert l'Égypte" },
+              { date: "IVᵉ siècle", texte: "Déclin de Méroé face à Aksoum" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Koush prouve qu'une civilisation africaine a maîtrisé, seule, le fer, l'écriture, la monarchie et l'architecture monumentale. Les sites de Méroé sont aujourd'hui classés au patrimoine mondial de l'UNESCO. C'est vers ce rival montant, le royaume d'**Aksoum**, que nous nous tournerons dans le prochain cours.",
+          },
+          {
+            type: "citation",
+            texte: "Celui qui a bu l'eau du Nil y reviendra toujours.",
+            auteur: "Proverbe nubien",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Koush a maîtrisé seul le fer, l'écriture et la monarchie",
+              "Méroé décline au **IVᵉ siècle**, face à la montée d'Aksoum",
+              "Les sites de Méroé, aujourd'hui classés par l'UNESCO",
+            ],
+          },
+        ],
       },
     ],
     quiz: [
@@ -114,14 +385,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment appelait-on la capitale du fer et du commerce du royaume de Koush ?",
         options: ["Kerma", "Napata", "Méroé", "Thèbes"],
         correctIndex: 2,
-        explanation: "Après la perte de l'Égypte, la capitale fut déplacée au sud à Méroé, grand centre de production du fer et du commerce.",
+        explanation: "Après la perte de l'Égypte, la capitale fut déplacée au sud à Méroé, grand centre de production du fer et carrefour commercial reliant l'Afrique centrale, la mer Rouge, l'Inde et Rome.",
       },
       {
         id: "course-histoire-02-koush-meroe-quiz-2",
         question: "Qu'ont fait les rois koushites de Napata au VIIIᵉ siècle av. J.-C. ?",
         options: ["Ils ont conquis l'Égypte (XXVᵉ dynastie)", "Ils ont détruit Carthage", "Ils ont fondé Rome", "Ils se sont convertis au christianisme"],
         correctIndex: 0,
-        explanation: "Vers 747 av. J.-C., le roi Piânkhy conquit l'Égypte et fonda la XXVᵉ dynastie, celle des « pharaons noirs ».",
+        explanation: "Vers 747 av. J.-C., le roi Piânkhy conquit l'Égypte et fonda la XXVᵉ dynastie, celle des « pharaons noirs ». Son successeur Taharqa bâtit des temples des deux côtés de la frontière.",
       },
       {
         id: "course-histoire-02-koush-meroe-quiz-3",
@@ -135,14 +406,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quel métal a fait la renommée industrielle de Méroé ?",
         options: ["L'or", "Le bronze", "Le fer", "L'argent"],
         correctIndex: 2,
-        explanation: "Méroé fut un grand centre de production du fer, ce qui lui a valu le surnom de « Birmingham de l'Afrique ».",
+        explanation: "Méroé fut un grand centre de production du fer, ce qui lui a valu le surnom de « Birmingham de l'Afrique » ; ses scories forment encore des collines visibles sur le site.",
       },
       {
         id: "course-histoire-02-koush-meroe-quiz-5",
         question: "Qu'est-ce que le méroïtique ?",
         options: ["Une langue et une écriture propres à Koush", "Un dieu égyptien", "Un type de pyramide", "Une route commerciale"],
         correctIndex: 0,
-        explanation: "Les Koushites développèrent leur propre écriture, le méroïtique, distincte des hiéroglyphes égyptiens et encore partiellement indéchiffrée.",
+        explanation: "Les Koushites développèrent leur propre écriture, le méroïtique, distincte des hiéroglyphes égyptiens et encore partiellement indéchiffrée : on en connaît les sons, mais pas toujours le sens.",
       },
     ],
   },
@@ -156,28 +427,165 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-03-aksoum-lesson-1",
-        title: "Un carrefour entre trois mondes",
-        content: "Du Iᵉʳ au VIIᵉ siècle de notre ère, le royaume d'Aksoum domina les hauts plateaux de l'actuelle Éthiopie et de l'Érythrée. Sa puissance reposait sur le commerce : par son port de Adoulis, sur la mer Rouge, Aksoum échangeait ivoire, or et encens avec l'Empire romain, l'Égypte, l'Arabie et jusqu'à l'Inde. Sa position en faisait un pont entre l'Afrique et le monde méditerranéen et oriental. Le prophète perse Mani, au IIIᵉ siècle, la comptait parmi les quatre plus grands royaumes du monde, aux côtés de Rome, de la Perse et de la Chine — signe de son prestige international.",
+        title: "Un pont entre trois mondes",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Rome, la Perse, la Chine — et un royaume africain. Au IIIᵉ siècle, un prophète perse plaçait **Aksoum** parmi les quatre plus grandes puissances du monde.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "Iᵉʳ siècle", texte: "Naissance du royaume d'Aksoum" },
+              { date: "IIIᵉ siècle", texte: "Compté parmi les 4 grandes puissances (Mani)" },
+              { date: "VIIᵉ siècle", texte: "Fin de l'apogée d'Aksoum" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Sa puissance reposait sur le commerce : par le port d'**Adoulis**, sur la mer Rouge, Aksoum échangeait ivoire, or et encens avec Rome, l'Égypte, l'Arabie et jusqu'à l'Inde. Sa position en faisait un pont entre l'Afrique et le monde méditerranéen et oriental.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Aksoum domine les hauts plateaux d'Éthiopie et d'Érythrée",
+              "Le port d'**Adoulis** relie Aksoum à Rome, l'Arabie, l'Inde",
+              "Comptée parmi les 4 plus grandes puissances du monde antique",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le prophète perse Mani rangeait Aksoum aux côtés de Rome, de la Perse et de la Chine — un honneur rare pour un royaume africain.",
+          },
+        ],
       },
       {
         id: "course-histoire-03-aksoum-lesson-2",
-        title: "Une grande puissance qui frappait monnaie",
-        content: "Signe rare d'un État fort et développé, Aksoum frappait sa propre monnaie en or, en argent et en bronze — l'un des très rares royaumes africains à le faire dans l'Antiquité. Sous le roi Ezana (IVᵉ siècle), le royaume atteignit son apogée : il contrôlait les routes commerciales, étendit son influence jusqu'en Arabie et conquit même son vieux rival, le royaume de Méroé, vers 350. Cette monnaie, portant le nom des souverains, servait aussi de puissant outil de propagande à travers tout le bassin de la mer Rouge.",
+        title: "Aksoum, royaume qui frappait monnaie",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Très peu de royaumes africains de l'Antiquité ont frappé leur propre monnaie. **Aksoum**, lui, en frappait trois : en or, en argent et en bronze.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "350",
+            legende: "Aksoum conquiert son rival, le royaume de Méroé",
+          },
+          {
+            type: "paragraphe",
+            text: "Sous le roi **Ezana**, au IVᵉ siècle, le royaume atteint son apogée : il contrôle les routes commerciales et étend son influence jusqu'en Arabie. Cette monnaie, gravée du nom des souverains, sert aussi de puissant outil de propagande dans tout le bassin de la mer Rouge.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Aksoum frappe sa propre monnaie : or, argent, bronze",
+              "**Ezana** (IVᵉ siècle) : apogée du royaume, influence jusqu'en Arabie",
+              "**350** : Aksoum conquiert son rival, le royaume de Méroé",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Chaque pièce aksoumite portait le nom et le portrait du roi — une signature qui voyageait plus loin que ses armées.",
+          },
+        ],
       },
       {
         id: "course-histoire-03-aksoum-lesson-3",
         title: "L'un des premiers États chrétiens",
-        content: "Vers le IVᵉ siècle, le roi Ezana se convertit au christianisme, faisant d'Aksoum l'un des tout premiers États chrétiens du monde, presque en même temps que l'Empire romain. Cette conversion donna naissance à l'Église orthodoxe éthiopienne, l'une des plus anciennes de la chrétienté, encore très vivante aujourd'hui. La religion s'exprima dans la langue liturgique locale, le guèze, qui a laissé un riche patrimoine de manuscrits.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Au **IVᵉ siècle**, Aksoum se convertit au christianisme presque en même temps que Rome. Un royaume africain devient l'un des tout premiers États chrétiens du monde.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "IVᵉ siècle",
+            legende: "le roi Ezana convertit Aksoum au christianisme",
+          },
+          {
+            type: "paragraphe",
+            text: "Cette conversion donne naissance à l'Église orthodoxe éthiopienne, l'une des plus anciennes de la chrétienté, encore très vivante aujourd'hui. La religion s'exprime dans la langue liturgique locale, le **guèze**, qui laisse un riche patrimoine de manuscrits.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Ezana** convertit Aksoum au christianisme au IVᵉ siècle",
+              "Naissance de l'Église orthodoxe éthiopienne, toujours vivante",
+              "Le **guèze** : langue liturgique et patrimoine de manuscrits",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "L'Église éthiopienne compte parmi les toutes premières du monde à avoir adopté le christianisme comme religion d'État — presque aussi tôt que Rome.",
+          },
+        ],
       },
       {
         id: "course-histoire-03-aksoum-lesson-4",
         title: "Les stèles géantes d'Aksoum",
-        content: "Aksoum est célèbre pour ses stèles monumentales : d'immenses obélisques taillés dans un seul bloc de granit, dressés comme monuments funéraires au-dessus des tombes royales. Certaines dépassaient 30 mètres de haut, ce qui témoigne d'une maîtrise technique remarquable pour tailler, transporter et ériger de telles masses. Ces stèles, sculptées pour imiter des tours à plusieurs étages, sont aujourd'hui classées au patrimoine mondial de l'UNESCO.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Un seul bloc de granit, taillé, transporté puis dressé à la verticale — sans grue, sans moteur. Certaines stèles d'**Aksoum** dépassent **30 mètres** de haut.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "30 m",
+            legende: "hauteur des plus grandes stèles d'Aksoum",
+          },
+          {
+            type: "paragraphe",
+            text: "Ces obélisques monumentaux servaient de monuments funéraires au-dessus des tombes royales, sculptés pour imiter des tours à plusieurs étages. Leur taille et leur transport témoignent d'une maîtrise technique remarquable pour l'époque.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Des stèles de granit, dressées au-dessus des tombes royales",
+              "Certaines dépassent **30 mètres** de haut, taillées d'un seul bloc",
+              "Classées aujourd'hui au patrimoine mondial de l'UNESCO",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Sculptées pour imiter des tours à plusieurs étages, ces stèles simulaient même de fausses portes et fenêtres — de véritables gratte-ciel de pierre.",
+          },
+        ],
       },
       {
         id: "course-histoire-03-aksoum-lesson-5",
         title: "Déclin et héritage",
-        content: "Aksoum déclina à partir du VIIᵉ-VIIIᵉ siècle, lorsque l'essor de l'Islam déplaça le commerce de la mer Rouge et isola le royaume. Mais son héritage fonde la civilisation éthiopienne : l'écriture guèze, le christianisme orthodoxe et une tradition impériale qui durera jusqu'au XXᵉ siècle. La légende relie Aksoum à la reine de Saba et à la dynastie dite salomonienne. C'est cette Éthiopie chrétienne médiévale, avec ses églises taillées dans le roc, que nous retrouverons plus loin dans le programme.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "À partir du **VIIᵉ siècle**, l'essor de l'islam déplace le commerce de la mer Rouge. Peu à peu, Aksoum se retrouve isolée du monde qui avait fait sa fortune.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "Iᵉʳ siècle", texte: "Naissance du royaume d'Aksoum" },
+              { date: "IVᵉ siècle", texte: "Apogée : monnaie, christianisme, Ezana" },
+              { date: "VIIᵉ-VIIIᵉ siècle", texte: "Déclin, isolement du commerce" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Son héritage fonde la civilisation éthiopienne : l'écriture guèze, le christianisme orthodoxe et une tradition impériale durable. La légende relie Aksoum à la reine de **Saba** ; cette Éthiopie chrétienne, aux églises taillées dans le roc, nous la retrouverons plus loin dans le programme.",
+          },
+          {
+            type: "citation",
+            texte: "De la reine de Saba descend la lignée des rois d'Éthiopie.",
+            auteur: "Kebra Nagast (Gloire des Rois)",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'islam déplace le commerce, Aksoum décline dès le **VIIᵉ siècle**",
+              "Héritage : écriture guèze, christianisme orthodoxe, tradition impériale",
+              "La légende de la reine de Saba, encore vivante aujourd'hui",
+            ],
+          },
+        ],
       },
     ],
     quiz: [
@@ -186,35 +594,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Où se situait le royaume d'Aksoum ?",
         options: ["Sur les hauts plateaux d'Éthiopie et d'Érythrée", "Au bord de l'océan Atlantique", "Dans le désert du Sahara central", "Sur les rives du fleuve Congo"],
         correctIndex: 0,
-        explanation: "Aksoum s'est développé sur les hauts plateaux de l'actuelle Éthiopie et de l'Érythrée, avec un débouché sur la mer Rouge.",
+        explanation: "Aksoum s'est développé sur les hauts plateaux de l'actuelle Éthiopie et de l'Érythrée. Au IIIᵉ siècle, le prophète perse Mani le comptait parmi les quatre plus grandes puissances du monde, avec Rome, la Perse et la Chine.",
       },
       {
         id: "course-histoire-03-aksoum-quiz-2",
         question: "Qu'est-ce qui, à Aksoum, témoignait d'un État particulièrement puissant et développé ?",
         options: ["La construction de pyramides", "La frappe de sa propre monnaie", "L'usage des hiéroglyphes", "La domestication du cheval"],
         correctIndex: 1,
-        explanation: "Aksoum était l'un des rares royaumes africains de l'Antiquité à frapper sa propre monnaie (or, argent, bronze).",
+        explanation: "Aksoum était l'un des rares royaumes africains de l'Antiquité à frapper sa propre monnaie (or, argent, bronze), gravée du nom de ses souverains.",
       },
       {
         id: "course-histoire-03-aksoum-quiz-3",
         question: "Quel roi a converti Aksoum au christianisme au IVᵉ siècle ?",
         options: ["Taharqa", "Hannibal", "Ezana", "Mansa Moussa"],
         correctIndex: 2,
-        explanation: "Le roi Ezana se convertit au christianisme au IVᵉ siècle, faisant d'Aksoum l'un des premiers États chrétiens du monde.",
+        explanation: "Le roi Ezana se convertit au christianisme au IVᵉ siècle, faisant d'Aksoum l'un des premiers États chrétiens du monde, presque en même temps que Rome.",
       },
       {
         id: "course-histoire-03-aksoum-quiz-4",
         question: "Pour quels monuments Aksoum est-il particulièrement célèbre ?",
         options: ["Ses stèles (obélisques) géantes", "Ses arènes romaines", "Ses mosquées de terre", "Ses temples grecs"],
         correctIndex: 0,
-        explanation: "Aksoum est connu pour ses immenses stèles de granit, dont certaines dépassaient 30 mètres, classées au patrimoine mondial de l'UNESCO.",
+        explanation: "Aksoum est connu pour ses immenses stèles de granit, dont certaines dépassaient 30 mètres et imitaient des tours à plusieurs étages, classées au patrimoine mondial de l'UNESCO.",
       },
       {
         id: "course-histoire-03-aksoum-quiz-5",
         question: "Quel port reliait Aksoum au commerce international ?",
         options: ["Alexandrie", "Adoulis", "Carthage", "Zanzibar"],
         correctIndex: 1,
-        explanation: "Le port d'Adoulis, sur la mer Rouge, reliait Aksoum à Rome, à l'Arabie et à l'Inde.",
+        explanation: "Le port d'Adoulis, sur la mer Rouge, reliait Aksoum à Rome, à l'Égypte, à l'Arabie et jusqu'à l'Inde.",
       },
     ],
   },
@@ -229,27 +637,157 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-04-carthage-afrique-du-nord-lesson-1",
         title: "Une fondation venue d'Orient",
-        content: "Vers 814 av. J.-C., des marchands phéniciens, venus de la cité de Tyr (actuel Liban), fondèrent sur la côte de l'actuelle Tunisie une colonie appelée Carthage. Grâce à sa position idéale au centre de la Méditerranée, la cité prospéra rapidement et devint indépendante. La légende attribue sa fondation à la reine Didon (Élissa). En quelques siècles, Carthage passa du statut de comptoir commercial à celui de véritable métropole, tête d'un empire maritime.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Une reine en fuite, venue d'Orient, aurait fondé la plus grande rivale de Rome. La légende de **Didon** commence par un exil.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "814 av. J.-C.",
+            legende: "fondation de Carthage par des marchands phéniciens",
+          },
+          {
+            type: "paragraphe",
+            text: "Venus de **Tyr** (actuel Liban), ces marchands s'installent sur la côte de l'actuelle Tunisie. Grâce à sa position idéale au centre de la Méditerranée, la cité prospère vite et devient indépendante, passant en quelques siècles du simple comptoir à la métropole.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**814 av. J.-C.** : des marchands phéniciens de Tyr fondent Carthage",
+              "La légende attribue sa fondation à la reine Didon",
+              "D'un comptoir commercial à une véritable métropole",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le nom légendaire de la fondatrice de Carthage, Didon, est aussi connu sous son nom phénicien : **Élissa**.",
+          },
+        ],
       },
       {
         id: "course-histoire-04-carthage-afrique-du-nord-lesson-2",
         title: "Un empire commercial et maritime",
-        content: "Carthage bâtit sa puissance sur le commerce et la mer. Sa flotte, l'une des plus redoutables de l'Antiquité, sillonnait la Méditerranée et l'Atlantique, établissant des comptoirs et des colonies des côtes espagnoles à la Sicile. La cité s'enrichit du commerce des métaux, des produits agricoles et de l'artisanat. Son arrière-pays africain, très fertile, fournissait d'abondantes récoltes. Cette domination commerciale finit par la mettre en concurrence directe avec une autre puissance montante : Rome.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "De l'Espagne à la Sicile, la flotte carthaginoise sillonnait toute la **Méditerranée**. Aucune autre puissance de son temps ne maîtrisait autant la mer.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "~670 ans",
+            legende: "de sa fondation à sa chute face à Rome",
+          },
+          {
+            type: "paragraphe",
+            text: "Carthage bâtit sa puissance sur le commerce et la mer : métaux, produits agricoles, artisanat. Son arrière-pays africain, très fertile, fournit d'abondantes récoltes. Cette domination finit par la mettre en concurrence directe avec une autre puissance montante : **Rome**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Une flotte redoutée, de l'Espagne à la Sicile",
+              "Un arrière-pays africain fertile, source de richesse",
+              "La rivale montante : **Rome**",
+            ],
+          },
+        ],
       },
       {
         id: "course-histoire-04-carthage-afrique-du-nord-lesson-3",
         title: "Les guerres puniques contre Rome",
-        content: "Entre 264 et 146 av. J.-C., Carthage et Rome se livrèrent trois guerres puniques pour la domination de la Méditerranée occidentale. Le général carthaginois Hannibal reste célèbre pour avoir franchi les Alpes avec ses éléphants (218 av. J.-C.) et infligé de lourdes défaites aux Romains sur leur propre sol. Mais Rome finit par l'emporter : en 146 av. J.-C., elle rasa Carthage. Ces guerres comptent parmi les plus décisives de l'histoire antique.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Pendant plus de cent ans, deux superpuissances s'affrontent pour dominer la Méditerranée. Un seul homme, avec des éléphants, a failli changer le cours de l'histoire.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "218 av. J.-C.",
+            legende: "Hannibal franchit les Alpes avec ses éléphants",
+          },
+          {
+            type: "paragraphe",
+            text: "Entre **264-146 av. J.-C.**, Carthage et Rome se livrent trois guerres puniques. Le général **Hannibal** inflige de lourdes défaites aux Romains sur leur propre sol. Mais Rome finit par l'emporter : en 146 av. J.-C., elle rase Carthage.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Trois guerres puniques opposent Carthage à Rome (**264-146 av. J.-C.**)",
+              "**Hannibal** franchit les Alpes avec des éléphants en 218 av. J.-C.",
+              "Rome l'emporte et rase Carthage en 146 av. J.-C.",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Pour franchir les Alpes, Hannibal perd la majeure partie de ses éléphants de guerre — mais jamais sa détermination à atteindre Rome.",
+          },
+        ],
       },
       {
         id: "course-histoire-04-carthage-afrique-du-nord-lesson-4",
         title: "Les royaumes berbères de Numidie",
-        content: "L'Afrique du Nord n'était pas seulement Carthage : elle abritait de puissants royaumes berbères (amazighs), notamment la Numidie. Le roi Massinissa unifia la Numidie au IIᵉ siècle av. J.-C. et en fit un État prospère, tour à tour allié et rival de Rome et de Carthage. Plus tard, le roi Jugurtha résista longuement à la conquête romaine. Ces royaumes rappellent l'ancienneté et la vitalité des peuples autochtones d'Afrique du Nord.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Carthage n'était pas seule en Afrique du Nord. À ses côtés, un royaume berbère s'alliait, résistait, puis résistait encore — face à Rome comme face à Carthage.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "IIe av. J.-C.",
+            legende: "Massinissa unifie le royaume de Numidie",
+          },
+          {
+            type: "paragraphe",
+            text: "Le roi **Massinissa** unifie la Numidie et en fait un État prospère, tour à tour allié et rival de Rome et de Carthage. Plus tard, le roi **Jugurtha** résiste longuement à la conquête romaine.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La Numidie : un puissant royaume berbère (amazigh)",
+              "**Massinissa** unifie la Numidie au IIᵉ siècle av. J.-C.",
+              "**Jugurtha** résiste longuement à la conquête romaine",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ces royaumes rappellent que l'Afrique du Nord antique, ce n'était pas que Carthage : des peuples autochtones y bâtissaient depuis longtemps leurs propres États.",
+          },
+        ],
       },
       {
         id: "course-histoire-04-carthage-afrique-du-nord-lesson-5",
         title: "L'Afrique romaine et l'héritage",
-        content: "Après la chute de Carthage, l'Afrique du Nord devint l'une des provinces les plus riches de Rome, surnommée le « grenier de Rome » pour son blé et son huile d'olive. Des villes brillantes s'y développèrent, comme Timgad ou la nouvelle Carthage romaine, avec théâtres et amphithéâtres. C'est de cette Afrique romaine que vint le grand penseur Augustin d'Hippone. Sous ces couches successives, le fond amazigh (berbère) de l'Afrique du Nord n'a jamais disparu et perdure aujourd'hui.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Après la chute de Carthage, l'Afrique du Nord ne disparaît pas : elle devient l'une des provinces les plus riches de tout l'**Empire romain**.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "814 av. J.-C.", texte: "Fondation de Carthage" },
+              { date: "146 av. J.-C.", texte: "Chute de Carthage face à Rome" },
+              { date: "IVᵉ-Vᵉ siècle", texte: "Augustin d'Hippone, penseur de l'Afrique romaine" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Surnommée le « grenier de Rome » pour son blé et son huile d'olive, la région voit se développer des villes brillantes, comme **Timgad**. Sous ces couches successives, le fond amazigh (berbère) de l'Afrique du Nord n'a jamais disparu et perdure aujourd'hui.",
+          },
+          {
+            type: "citation",
+            texte: "Notre cœur est sans repos tant qu'il ne repose en Toi.",
+            auteur: "Augustin d'Hippone, Confessions",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'Afrique du Nord devient le « grenier de Rome »",
+              "**Augustin d'Hippone**, grand penseur né dans l'Afrique romaine",
+              "Le fond amazigh (berbère) n'a jamais disparu",
+            ],
+          },
+        ],
       },
     ],
     quiz: [
@@ -258,35 +796,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quel peuple a fondé Carthage vers 814 av. J.-C. ?",
         options: ["Les Romains", "Les Grecs", "Les Phéniciens", "Les Égyptiens"],
         correctIndex: 2,
-        explanation: "Carthage fut fondée par des marchands phéniciens venus de Tyr, sur la côte de l'actuelle Tunisie.",
+        explanation: "Carthage fut fondée par des marchands phéniciens venus de Tyr, sur la côte de l'actuelle Tunisie. La légende attribue sa fondation à la reine Didon, aussi appelée Élissa.",
       },
       {
         id: "course-histoire-04-carthage-afrique-du-nord-quiz-2",
         question: "Quel général carthaginois a franchi les Alpes avec des éléphants ?",
         options: ["Hannibal", "Massinissa", "Jules César", "Taharqa"],
         correctIndex: 0,
-        explanation: "Hannibal franchit les Alpes en 218 av. J.-C. et menaça Rome durant la deuxième guerre punique.",
+        explanation: "Hannibal franchit les Alpes en 218 av. J.-C. et infligea de lourdes défaites aux Romains sur leur propre sol, durant la deuxième guerre punique.",
       },
       {
         id: "course-histoire-04-carthage-afrique-du-nord-quiz-3",
         question: "Contre quelle puissance Carthage a-t-elle mené les guerres puniques ?",
         options: ["La Perse", "Rome", "L'Égypte", "Aksoum"],
         correctIndex: 1,
-        explanation: "Les trois guerres puniques (264-146 av. J.-C.) opposèrent Carthage à Rome pour la Méditerranée occidentale.",
+        explanation: "Les trois guerres puniques (264-146 av. J.-C.) opposèrent Carthage à Rome pour la Méditerranée occidentale. Rome finit par l'emporter et rasa Carthage en 146 av. J.-C.",
       },
       {
         id: "course-histoire-04-carthage-afrique-du-nord-quiz-4",
         question: "Qui était Massinissa ?",
         options: ["Un pharaon égyptien", "Un roi berbère qui unifia la Numidie", "Un empereur romain", "Un dieu carthaginois"],
         correctIndex: 1,
-        explanation: "Massinissa unifia le royaume berbère de Numidie au IIᵉ siècle av. J.-C.",
+        explanation: "Massinissa unifia le royaume berbère de Numidie au IIᵉ siècle av. J.-C. Plus tard, le roi Jugurtha résista longuement, lui aussi, à la conquête romaine.",
       },
       {
         id: "course-histoire-04-carthage-afrique-du-nord-quiz-5",
         question: "Quel surnom l'Afrique du Nord romaine a-t-elle reçu ?",
         options: ["Le « toit du monde »", "La « côte de l'or »", "Le « grenier de Rome »", "La « porte de l'Orient »"],
         correctIndex: 2,
-        explanation: "Grâce à son blé et son huile, l'Afrique du Nord était surnommée le « grenier de Rome ».",
+        explanation: "Grâce à son blé et son huile, l'Afrique du Nord était surnommée le « grenier de Rome ». C'est de cette Afrique romaine qu'est issu le grand penseur Augustin d'Hippone.",
       },
     ],
   },
@@ -301,27 +839,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-05-empire-du-ghana-lesson-1",
         title: "Le premier grand empire du Sahel",
-        content: "Entre le IVᵉ et le XIIIᵉ siècle, l'empire du Ghana — que ses fondateurs, le peuple soninké, appelaient Wagadou — fut le premier grand empire connu de l'Afrique de l'Ouest. Attention : il ne se situait pas dans l'actuel Ghana, mais plus au nord-ouest, à cheval sur le sud de la Mauritanie et l'ouest du Mali d'aujourd'hui. Sa capitale était Koumbi Saleh. Le mot « Ghana » désignait à l'origine le titre du roi, « chef de guerre », avant de nommer tout le royaume.",
+        blocks: [
+          { type: "paragraphe", text: "Entre le IVᵉ et le XIIIᵉ siècle, l'empire du Ghana — que ses fondateurs, le peuple soninké, appelaient Wagadou — fut le premier grand empire connu de l'Afrique de l'Ouest. Attention : il ne se situait pas dans l'actuel Ghana, mais plus au nord-ouest, à cheval sur le sud de la Mauritanie et l'ouest du Mali d'aujourd'hui. Sa capitale était Koumbi Saleh. Le mot « Ghana » désignait à l'origine le titre du roi, « chef de guerre », avant de nommer tout le royaume." },
+        ],
       },
       {
         id: "course-histoire-05-empire-du-ghana-lesson-2",
         title: "L'or et le sel",
-        content: "La puissance du Ghana reposait sur le contrôle du commerce transsaharien. Deux marchandises précieuses s'y croisaient : l'or, extrait des régions du sud, et le sel, venu des mines du Sahara — un produit vital, parfois échangé à poids égal contre l'or. Le roi prélevait une taxe sur toutes les marchandises entrant et sortant du royaume, ce qui faisait sa fortune. Le géographe arabe al-Bakri, au XIᵉ siècle, a décrit la richesse fabuleuse de sa cour.",
+        blocks: [
+          { type: "paragraphe", text: "La puissance du Ghana reposait sur le contrôle du commerce transsaharien. Deux marchandises précieuses s'y croisaient : l'or, extrait des régions du sud, et le sel, venu des mines du Sahara — un produit vital, parfois échangé à poids égal contre l'or. Le roi prélevait une taxe sur toutes les marchandises entrant et sortant du royaume, ce qui faisait sa fortune. Le géographe arabe al-Bakri, au XIᵉ siècle, a décrit la richesse fabuleuse de sa cour." },
+        ],
       },
       {
         id: "course-histoire-05-empire-du-ghana-lesson-3",
         title: "L'organisation du royaume",
-        content: "Le Ghana était gouverné par un roi puissant, à la tête d'une grande armée et d'une administration structurée. Sa capitale comprenait deux villes distinctes reliées entre elles : l'une, royale, centre du pouvoir et des religions traditionnelles ; l'autre, habitée par les marchands musulmans venus du nord. Les récits arabes décrivent un souverain paré d'or, entouré d'une cour fastueuse et rendant lui-même la justice.",
+        blocks: [
+          { type: "paragraphe", text: "Le Ghana était gouverné par un roi puissant, à la tête d'une grande armée et d'une administration structurée. Sa capitale comprenait deux villes distinctes reliées entre elles : l'une, royale, centre du pouvoir et des religions traditionnelles ; l'autre, habitée par les marchands musulmans venus du nord. Les récits arabes décrivent un souverain paré d'or, entouré d'une cour fastueuse et rendant lui-même la justice." },
+        ],
       },
       {
         id: "course-histoire-05-empire-du-ghana-lesson-4",
         title: "Islam et commerce",
-        content: "Le commerce transsaharien amena aussi une religion nouvelle : l'islam, apporté par les marchands d'Afrique du Nord. Les rois du Ghana conservèrent longtemps leur religion traditionnelle, mais s'appuyèrent sur des lettrés et des administrateurs musulmans pour gérer le commerce et la diplomatie. Cette coexistence entre religion ancestrale et islam est caractéristique des grands États sahéliens.",
+        blocks: [
+          { type: "paragraphe", text: "Le commerce transsaharien amena aussi une religion nouvelle : l'islam, apporté par les marchands d'Afrique du Nord. Les rois du Ghana conservèrent longtemps leur religion traditionnelle, mais s'appuyèrent sur des lettrés et des administrateurs musulmans pour gérer le commerce et la diplomatie. Cette coexistence entre religion ancestrale et islam est caractéristique des grands États sahéliens." },
+        ],
       },
       {
         id: "course-histoire-05-empire-du-ghana-lesson-5",
         title: "Déclin et héritage",
-        content: "À partir des XIᵉ-XIIIᵉ siècles, le Ghana déclina, affaibli par les rivalités internes, la pression de voisins et le déplacement des routes commerciales. Son affaiblissement ouvrit la voie à un nouvel empire encore plus vaste : le Mali. L'héritage du Ghana est immense : il a fourni le modèle de l'empire sahélien fondé sur l'or et le commerce. Son prestige était tel que, en 1957, le premier pays d'Afrique subsaharienne à devenir indépendant choisit de reprendre son nom : le Ghana moderne.",
+        blocks: [
+          { type: "paragraphe", text: "À partir des XIᵉ-XIIIᵉ siècles, le Ghana déclina, affaibli par les rivalités internes, la pression de voisins et le déplacement des routes commerciales. Son affaiblissement ouvrit la voie à un nouvel empire encore plus vaste : le Mali. L'héritage du Ghana est immense : il a fourni le modèle de l'empire sahélien fondé sur l'or et le commerce. Son prestige était tel que, en 1957, le premier pays d'Afrique subsaharienne à devenir indépendant choisit de reprendre son nom : le Ghana moderne." },
+        ],
       },
     ],
     quiz: [
@@ -373,27 +921,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-06-soundiata-mali-lesson-1",
         title: "L'Afrique de l'Ouest après le Ghana",
-        content: "Après le déclin de l'empire du Ghana, l'Afrique de l'Ouest se morcela en petits royaumes rivaux. Parmi les peuples de la région, les Mandingues (Malinké), installés autour du petit royaume de Kangaba, sur le haut Niger. Un souverain redouté domina alors la région : Soumaoro Kanté, roi du Sosso, réputé cruel et invincible. C'est dans ce contexte d'oppression qu'allait émerger une figure fondatrice de l'histoire africaine.",
+        blocks: [
+          { type: "paragraphe", text: "Après le déclin de l'empire du Ghana, l'Afrique de l'Ouest se morcela en petits royaumes rivaux. Parmi les peuples de la région, les Mandingues (Malinké), installés autour du petit royaume de Kangaba, sur le haut Niger. Un souverain redouté domina alors la région : Soumaoro Kanté, roi du Sosso, réputé cruel et invincible. C'est dans ce contexte d'oppression qu'allait émerger une figure fondatrice de l'histoire africaine." },
+        ],
       },
       {
         id: "course-histoire-06-soundiata-mali-lesson-2",
         title: "Soundiata, l'enfant qui ne marchait pas",
-        content: "L'histoire de Soundiata Keïta nous est parvenue par la tradition orale, transmise de génération en génération par les griots. Selon l'épopée, Soundiata était un enfant fragile, incapable de marcher dans sa jeunesse, avant de se relever par un effort de volonté devenu légendaire. Contraint à l'exil pour échapper aux rivalités de cour, il grandit loin de son pays, se forma auprès d'autres souverains, puis revint pour libérer son peuple.",
+        blocks: [
+          { type: "paragraphe", text: "L'histoire de Soundiata Keïta nous est parvenue par la tradition orale, transmise de génération en génération par les griots. Selon l'épopée, Soundiata était un enfant fragile, incapable de marcher dans sa jeunesse, avant de se relever par un effort de volonté devenu légendaire. Contraint à l'exil pour échapper aux rivalités de cour, il grandit loin de son pays, se forma auprès d'autres souverains, puis revint pour libérer son peuple." },
+        ],
       },
       {
         id: "course-histoire-06-soundiata-mali-lesson-3",
         title: "La bataille de Kirina (vers 1235)",
-        content: "De retour parmi les siens, Soundiata rassembla les clans mandingues et affronta Soumaoro Kanté. Vers 1235, il remporta la décisive bataille de Kirina, mettant fin à la domination du Sosso. Cette victoire scella l'unité des Mandingues et marqua la naissance de l'empire du Mali. Soundiata prit le titre de mansa (roi des rois) et établit sa capitale à Niani.",
+        blocks: [
+          { type: "paragraphe", text: "De retour parmi les siens, Soundiata rassembla les clans mandingues et affronta Soumaoro Kanté. Vers 1235, il remporta la décisive bataille de Kirina, mettant fin à la domination du Sosso. Cette victoire scella l'unité des Mandingues et marqua la naissance de l'empire du Mali. Soundiata prit le titre de mansa (roi des rois) et établit sa capitale à Niani." },
+        ],
       },
       {
         id: "course-histoire-06-soundiata-mali-lesson-4",
         title: "La Charte du Manden (Kurukan Fuga)",
-        content: "Vers 1236, selon la tradition, une grande assemblée réunie à Kurukan Fuga proclama la Charte du Manden, un ensemble de règles orales organisant la société de l'empire. Elle répartissait les rôles entre clans, garantissait des droits et énonçait des principes de respect de la vie humaine et de solidarité. Transmise par les griots, cette charte est aujourd'hui inscrite au patrimoine culturel immatériel de l'UNESCO : elle est considérée comme l'une des plus anciennes « constitutions » d'Afrique.",
+        blocks: [
+          { type: "paragraphe", text: "Vers 1236, selon la tradition, une grande assemblée réunie à Kurukan Fuga proclama la Charte du Manden, un ensemble de règles orales organisant la société de l'empire. Elle répartissait les rôles entre clans, garantissait des droits et énonçait des principes de respect de la vie humaine et de solidarité. Transmise par les griots, cette charte est aujourd'hui inscrite au patrimoine culturel immatériel de l'UNESCO : elle est considérée comme l'une des plus anciennes « constitutions » d'Afrique." },
+        ],
       },
       {
         id: "course-histoire-06-soundiata-mali-lesson-5",
         title: "Les fondations d'un empire prospère",
-        content: "Sous Soundiata, le Mali posa les bases de sa prospérité : contrôle des routes de l'or, développement de l'agriculture dans la vallée du Niger et intégration de nombreux peuples. L'empire qu'il fonda allait devenir, sous ses successeurs, l'un des plus vastes et des plus riches du monde. Soundiata reste célébré comme un héros fondateur, et sa charte comme un symbole précoce de droits et de bonne gouvernance. C'est sous l'un de ses successeurs, Mansa Moussa, que le Mali atteindra son apogée.",
+        blocks: [
+          { type: "paragraphe", text: "Sous Soundiata, le Mali posa les bases de sa prospérité : contrôle des routes de l'or, développement de l'agriculture dans la vallée du Niger et intégration de nombreux peuples. L'empire qu'il fonda allait devenir, sous ses successeurs, l'un des plus vastes et des plus riches du monde. Soundiata reste célébré comme un héros fondateur, et sa charte comme un symbole précoce de droits et de bonne gouvernance. C'est sous l'un de ses successeurs, Mansa Moussa, que le Mali atteindra son apogée." },
+        ],
       },
     ],
     quiz: [
@@ -445,27 +1003,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-07-mansa-moussa-lesson-1",
         title: "L'empereur du Mali",
-        content: "Mansa Moussa (ou Kankou Moussa) régna sur l'empire du Mali d'environ 1312 à 1337. Sous son règne, l'empire atteignit sa plus grande étendue, couvrant une large part de l'Afrique de l'Ouest, de l'Atlantique aux confins du Niger. Le mot mansa signifie « roi des rois ». Maître des régions productrices d'or les plus riches de l'époque, Mansa Moussa disposait de moyens colossaux qui firent sa légende.",
+        blocks: [
+          { type: "paragraphe", text: "Mansa Moussa (ou Kankou Moussa) régna sur l'empire du Mali d'environ 1312 à 1337. Sous son règne, l'empire atteignit sa plus grande étendue, couvrant une large part de l'Afrique de l'Ouest, de l'Atlantique aux confins du Niger. Le mot mansa signifie « roi des rois ». Maître des régions productrices d'or les plus riches de l'époque, Mansa Moussa disposait de moyens colossaux qui firent sa légende." },
+        ],
       },
       {
         id: "course-histoire-07-mansa-moussa-lesson-2",
         title: "Le pèlerinage à La Mecque (1324)",
-        content: "En 1324, Mansa Moussa entreprit un grand pèlerinage (hajj) à La Mecque, accompagné d'une immense caravane de milliers de personnes et de quantités impressionnantes d'or. Lors de son passage au Caire, il distribua et dépensa tant d'or que, selon les chroniqueurs, la valeur du métal y resta déprimée pendant plusieurs années. Ce voyage spectaculaire révéla au monde entier la richesse du Mali.",
+        blocks: [
+          { type: "paragraphe", text: "En 1324, Mansa Moussa entreprit un grand pèlerinage (hajj) à La Mecque, accompagné d'une immense caravane de milliers de personnes et de quantités impressionnantes d'or. Lors de son passage au Caire, il distribua et dépensa tant d'or que, selon les chroniqueurs, la valeur du métal y resta déprimée pendant plusieurs années. Ce voyage spectaculaire révéla au monde entier la richesse du Mali." },
+        ],
       },
       {
         id: "course-histoire-07-mansa-moussa-lesson-3",
         title: "Une renommée mondiale",
-        content: "Le pèlerinage de Mansa Moussa fit connaître le Mali bien au-delà de l'Afrique. En 1375, l'Atlas catalan, célèbre carte européenne, le représente assis sur son trône, une pépite d'or à la main, désigné comme le souverain le plus riche de la région. Pour la première fois, un empire d'Afrique de l'Ouest figurait en bonne place sur les cartes du monde méditerranéen et proche-oriental.",
+        blocks: [
+          { type: "paragraphe", text: "Le pèlerinage de Mansa Moussa fit connaître le Mali bien au-delà de l'Afrique. En 1375, l'Atlas catalan, célèbre carte européenne, le représente assis sur son trône, une pépite d'or à la main, désigné comme le souverain le plus riche de la région. Pour la première fois, un empire d'Afrique de l'Ouest figurait en bonne place sur les cartes du monde méditerranéen et proche-oriental." },
+        ],
       },
       {
         id: "course-histoire-07-mansa-moussa-lesson-4",
         title: "Tombouctou, cité du savoir",
-        content: "À son retour, Mansa Moussa fit venir des savants et des architectes, dont Es-Sahéli, et lança de grands travaux. Il fit construire des mosquées, comme la Djinguereber à Tombouctou. Sous son impulsion et celle de ses successeurs, Tombouctou et Djenné devinrent de grands centres de savoir islamique, avec leurs universités (comme Sankoré), leurs bibliothèques et leurs milliers de manuscrits. Ces villes sont aujourd'hui classées au patrimoine mondial de l'UNESCO.",
+        blocks: [
+          { type: "paragraphe", text: "À son retour, Mansa Moussa fit venir des savants et des architectes, dont Es-Sahéli, et lança de grands travaux. Il fit construire des mosquées, comme la Djinguereber à Tombouctou. Sous son impulsion et celle de ses successeurs, Tombouctou et Djenné devinrent de grands centres de savoir islamique, avec leurs universités (comme Sankoré), leurs bibliothèques et leurs milliers de manuscrits. Ces villes sont aujourd'hui classées au patrimoine mondial de l'UNESCO." },
+        ],
       },
       {
         id: "course-histoire-07-mansa-moussa-lesson-5",
         title: "Héritage",
-        content: "Mansa Moussa est devenu, dans la mémoire mondiale, le symbole de la richesse, du savoir et de l'ouverture de l'Afrique médiévale. Son règne montre qu'un empire africain pouvait rivaliser avec les plus grandes puissances de son temps. Après lui, le Mali connut un lent déclin, laissant la place à un nouvel empire venu de l'est : le Songhaï, dont nous parlerons ensuite.",
+        blocks: [
+          { type: "paragraphe", text: "Mansa Moussa est devenu, dans la mémoire mondiale, le symbole de la richesse, du savoir et de l'ouverture de l'Afrique médiévale. Son règne montre qu'un empire africain pouvait rivaliser avec les plus grandes puissances de son temps. Après lui, le Mali connut un lent déclin, laissant la place à un nouvel empire venu de l'est : le Songhaï, dont nous parlerons ensuite." },
+        ],
       },
     ],
     quiz: [
@@ -517,27 +1085,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-08-empire-songhai-lesson-1",
         title: "Gao et la montée du Songhaï",
-        content: "Le long de la boucle du Niger, autour de la ville de Gao, vivait le peuple songhaï. Longtemps soumis au Mali, il s'en émancipa à mesure que ce dernier déclinait, et bâtit à son tour un vaste empire. Le Songhaï profita de sa position sur le fleuve, véritable axe de communication et de commerce, pour étendre son autorité sur les grandes cités marchandes de la région, dont Tombouctou et Djenné.",
+        blocks: [
+          { type: "paragraphe", text: "Le long de la boucle du Niger, autour de la ville de Gao, vivait le peuple songhaï. Longtemps soumis au Mali, il s'en émancipa à mesure que ce dernier déclinait, et bâtit à son tour un vaste empire. Le Songhaï profita de sa position sur le fleuve, véritable axe de communication et de commerce, pour étendre son autorité sur les grandes cités marchandes de la région, dont Tombouctou et Djenné." },
+        ],
       },
       {
         id: "course-histoire-08-empire-songhai-lesson-2",
         title: "Sonni Ali Ber, le conquérant",
-        content: "Le véritable fondateur de la puissance songhaï fut Sonni Ali Ber (règne 1464-1492), un chef de guerre redoutable. Il s'appuya sur une puissante cavalerie et sur une flotte de guerre naviguant sur le Niger pour conquérir Tombouctou puis Djenné, et repousser les peuples voisins. Sous son règne, le Songhaï devint l'État dominant de l'Afrique de l'Ouest. Sa mémoire reste partagée : grand conquérant pour les uns, souverain dur envers les lettrés de Tombouctou pour les autres.",
+        blocks: [
+          { type: "paragraphe", text: "Le véritable fondateur de la puissance songhaï fut Sonni Ali Ber (règne 1464-1492), un chef de guerre redoutable. Il s'appuya sur une puissante cavalerie et sur une flotte de guerre naviguant sur le Niger pour conquérir Tombouctou puis Djenné, et repousser les peuples voisins. Sous son règne, le Songhaï devint l'État dominant de l'Afrique de l'Ouest. Sa mémoire reste partagée : grand conquérant pour les uns, souverain dur envers les lettrés de Tombouctou pour les autres." },
+        ],
       },
       {
         id: "course-histoire-08-empire-songhai-lesson-3",
         title: "Askia Mohammed, le grand réformateur",
-        content: "Après Sonni Ali, le pouvoir passa à Askia Mohammed (règne 1493-1528), surnommé « Askia le Grand ». Musulman fervent, il accomplit un pèlerinage à La Mecque et surtout réorganisa l'empire : il créa des provinces dirigées par des gouverneurs, une administration centralisée, une armée permanente, des poids et mesures unifiés, et encouragea le savoir et la justice. Sous lui, le Songhaï atteignit son apogée politique et culturelle.",
+        blocks: [
+          { type: "paragraphe", text: "Après Sonni Ali, le pouvoir passa à Askia Mohammed (règne 1493-1528), surnommé « Askia le Grand ». Musulman fervent, il accomplit un pèlerinage à La Mecque et surtout réorganisa l'empire : il créa des provinces dirigées par des gouverneurs, une administration centralisée, une armée permanente, des poids et mesures unifiés, et encouragea le savoir et la justice. Sous lui, le Songhaï atteignit son apogée politique et culturelle." },
+        ],
       },
       {
         id: "course-histoire-08-empire-songhai-lesson-4",
         title: "Un empire vaste, organisé et savant",
-        content: "À son sommet, le Songhaï fut le plus vaste empire de l'histoire de l'Afrique de l'Ouest, s'étendant sur une grande partie du Sahel. Son administration structurée, son armée et son contrôle du commerce transsaharien en faisaient une puissance de premier plan. Les villes de Tombouctou et de Djenné connurent, sous sa protection, un remarquable rayonnement intellectuel, avec leurs écoles, leurs savants et leurs bibliothèques.",
+        blocks: [
+          { type: "paragraphe", text: "À son sommet, le Songhaï fut le plus vaste empire de l'histoire de l'Afrique de l'Ouest, s'étendant sur une grande partie du Sahel. Son administration structurée, son armée et son contrôle du commerce transsaharien en faisaient une puissance de premier plan. Les villes de Tombouctou et de Djenné connurent, sous sa protection, un remarquable rayonnement intellectuel, avec leurs écoles, leurs savants et leurs bibliothèques." },
+        ],
       },
       {
         id: "course-histoire-08-empire-songhai-lesson-5",
         title: "La chute de 1591",
-        content: "En 1591, l'empire s'effondra brutalement. Une armée venue du Maroc, équipée d'armes à feu — encore inconnues dans la région — écrasa la puissante mais traditionnelle armée songhaï à la bataille de Tondibi. Cette défaite marqua la fin des grands empires sahéliens fondés sur l'or et le commerce transsaharien. L'histoire de l'Afrique de l'Ouest allait dès lors se recomposer autour de nouveaux royaumes régionaux.",
+        blocks: [
+          { type: "paragraphe", text: "En 1591, l'empire s'effondra brutalement. Une armée venue du Maroc, équipée d'armes à feu — encore inconnues dans la région — écrasa la puissante mais traditionnelle armée songhaï à la bataille de Tondibi. Cette défaite marqua la fin des grands empires sahéliens fondés sur l'or et le commerce transsaharien. L'histoire de l'Afrique de l'Ouest allait dès lors se recomposer autour de nouveaux royaumes régionaux." },
+        ],
       },
     ],
     quiz: [
@@ -589,27 +1167,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-1",
         title: "Du commerce au savoir",
-        content: "Tombouctou et Djenné, situées aux carrefours du commerce transsaharien et fluvial, se sont d'abord enrichies grâce aux caravanes d'or et de sel. Cette prospérité attira des marchands, mais aussi des lettrés et des étudiants venus de tout le monde musulman. Peu à peu, ces cités marchandes se transformèrent en grands centres intellectuels, où le savoir devint une richesse aussi prisée que l'or.",
+        blocks: [
+          { type: "paragraphe", text: "Tombouctou et Djenné, situées aux carrefours du commerce transsaharien et fluvial, se sont d'abord enrichies grâce aux caravanes d'or et de sel. Cette prospérité attira des marchands, mais aussi des lettrés et des étudiants venus de tout le monde musulman. Peu à peu, ces cités marchandes se transformèrent en grands centres intellectuels, où le savoir devint une richesse aussi prisée que l'or." },
+        ],
       },
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-2",
         title: "L'université de Sankoré",
-        content: "Au cœur de Tombouctou, la mosquée-université de Sankoré accueillit, à son apogée, des milliers d'étudiants. On y enseignait le droit, la théologie, la grammaire, mais aussi l'astronomie, les mathématiques et la médecine. Des savants réputés, comme Ahmed Baba, y écrivirent des ouvrages qui circulaient dans tout le monde islamique. Tombouctou devint synonyme de savoir, au point d'entrer dans l'imaginaire mondial comme une cité mythique.",
+        blocks: [
+          { type: "paragraphe", text: "Au cœur de Tombouctou, la mosquée-université de Sankoré accueillit, à son apogée, des milliers d'étudiants. On y enseignait le droit, la théologie, la grammaire, mais aussi l'astronomie, les mathématiques et la médecine. Des savants réputés, comme Ahmed Baba, y écrivirent des ouvrages qui circulaient dans tout le monde islamique. Tombouctou devint synonyme de savoir, au point d'entrer dans l'imaginaire mondial comme une cité mythique." },
+        ],
       },
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-3",
         title: "Les manuscrits de Tombouctou",
-        content: "Tombouctou conserve des centaines de milliers de manuscrits, rassemblés dans des bibliothèques familiales transmises de génération en génération. Ils traitent de religion, de droit, d'histoire, de sciences et d'astronomie. Ces documents sont une preuve éclatante que l'Afrique de l'Ouest possédait une tradition écrite savante et raffinée, contredisant l'idée fausse d'un continent sans écriture ni histoire.",
+        blocks: [
+          { type: "paragraphe", text: "Tombouctou conserve des centaines de milliers de manuscrits, rassemblés dans des bibliothèques familiales transmises de génération en génération. Ils traitent de religion, de droit, d'histoire, de sciences et d'astronomie. Ces documents sont une preuve éclatante que l'Afrique de l'Ouest possédait une tradition écrite savante et raffinée, contredisant l'idée fausse d'un continent sans écriture ni histoire." },
+        ],
       },
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-4",
         title: "L'architecture de terre",
-        content: "Djenné et Tombouctou sont célèbres pour leur architecture de terre. La Grande Mosquée de Djenné est le plus vaste édifice en briques de terre crue du monde ; chaque année, toute la population participe à sa réfection lors d'une grande fête communautaire. À Tombouctou, la mosquée Djinguereber témoigne du même génie. Ces monuments sont classés au patrimoine mondial de l'UNESCO.",
+        blocks: [
+          { type: "paragraphe", text: "Djenné et Tombouctou sont célèbres pour leur architecture de terre. La Grande Mosquée de Djenné est le plus vaste édifice en briques de terre crue du monde ; chaque année, toute la population participe à sa réfection lors d'une grande fête communautaire. À Tombouctou, la mosquée Djinguereber témoigne du même génie. Ces monuments sont classés au patrimoine mondial de l'UNESCO." },
+        ],
       },
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-5",
         title: "Héritage et préservation",
-        content: "Tombouctou et Djenné symbolisent la richesse intellectuelle de l'Afrique médiévale. Ce patrimoine reste fragile : en 2012, des mausolées de Tombouctou furent détruits, et des habitants risquèrent leur vie pour sauver les manuscrits. L'UNESCO et les communautés locales œuvrent aujourd'hui à leur protection et à leur numérisation. Préserver ces trésors, c'est préserver la mémoire écrite de tout un continent.",
+        blocks: [
+          { type: "paragraphe", text: "Tombouctou et Djenné symbolisent la richesse intellectuelle de l'Afrique médiévale. Ce patrimoine reste fragile : en 2012, des mausolées de Tombouctou furent détruits, et des habitants risquèrent leur vie pour sauver les manuscrits. L'UNESCO et les communautés locales œuvrent aujourd'hui à leur protection et à leur numérisation. Préserver ces trésors, c'est préserver la mémoire écrite de tout un continent." },
+        ],
       },
     ],
     quiz: [
@@ -661,27 +1249,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-10-kanem-bornou-lesson-1",
         title: "Autour du lac Tchad",
-        content: "À l'est et au nord du lac Tchad émergea, vers le IXᵉ siècle, le royaume du Kanem, peuplé notamment de Kanouri. Il était gouverné par la dynastie des Sayfawa, l'une des plus durables de toute l'histoire mondiale : elle régna près de mille ans. Cette longévité exceptionnelle témoigne d'une remarquable stabilité politique, rare à une telle échelle de temps.",
+        blocks: [
+          { type: "paragraphe", text: "À l'est et au nord du lac Tchad émergea, vers le IXᵉ siècle, le royaume du Kanem, peuplé notamment de Kanouri. Il était gouverné par la dynastie des Sayfawa, l'une des plus durables de toute l'histoire mondiale : elle régna près de mille ans. Cette longévité exceptionnelle témoigne d'une remarquable stabilité politique, rare à une telle échelle de temps." },
+        ],
       },
       {
         id: "course-histoire-10-kanem-bornou-lesson-2",
         title: "L'essor du Kanem et l'islam",
-        content: "Le Kanem tira sa puissance du contrôle des routes transsahariennes reliant l'Afrique centrale au Maghreb et à l'Égypte, par lesquelles circulaient sel, cuivre, tissus et esclaves. Vers le XIᵉ siècle, ses souverains, les mai, adoptèrent l'islam, qui renforça leurs liens commerciaux et diplomatiques avec le monde musulman. Le royaume entretenait des relations jusqu'en Afrique du Nord.",
+        blocks: [
+          { type: "paragraphe", text: "Le Kanem tira sa puissance du contrôle des routes transsahariennes reliant l'Afrique centrale au Maghreb et à l'Égypte, par lesquelles circulaient sel, cuivre, tissus et esclaves. Vers le XIᵉ siècle, ses souverains, les mai, adoptèrent l'islam, qui renforça leurs liens commerciaux et diplomatiques avec le monde musulman. Le royaume entretenait des relations jusqu'en Afrique du Nord." },
+        ],
       },
       {
         id: "course-histoire-10-kanem-bornou-lesson-3",
         title: "Le déplacement vers le Bornou",
-        content: "Après des crises internes et des pressions extérieures, le centre du pouvoir se déplaça, au sud-ouest du lac Tchad, vers la région du Bornou. Le royaume renaquit sous le nom de Kanem-Bornou, avec une nouvelle capitale, Ngazargamu. Ce déplacement, loin de marquer un déclin, ouvrit une nouvelle période de prospérité pour l'empire.",
+        blocks: [
+          { type: "paragraphe", text: "Après des crises internes et des pressions extérieures, le centre du pouvoir se déplaça, au sud-ouest du lac Tchad, vers la région du Bornou. Le royaume renaquit sous le nom de Kanem-Bornou, avec une nouvelle capitale, Ngazargamu. Ce déplacement, loin de marquer un déclin, ouvrit une nouvelle période de prospérité pour l'empire." },
+        ],
       },
       {
         id: "course-histoire-10-kanem-bornou-lesson-4",
         title: "L'apogée sous Idris Alooma",
-        content: "L'empire atteignit son apogée sous le règne du mai Idris Alooma (fin du XVIᵉ siècle). Grand réformateur, il modernisa l'armée en introduisant des mousquetaires et des armes à feu, noua des relations diplomatiques avec l'Empire ottoman, et renforça la justice fondée sur la loi islamique. Sous lui, le Kanem-Bornou fut une puissance respectée du Soudan central.",
+        blocks: [
+          { type: "paragraphe", text: "L'empire atteignit son apogée sous le règne du mai Idris Alooma (fin du XVIᵉ siècle). Grand réformateur, il modernisa l'armée en introduisant des mousquetaires et des armes à feu, noua des relations diplomatiques avec l'Empire ottoman, et renforça la justice fondée sur la loi islamique. Sous lui, le Kanem-Bornou fut une puissance respectée du Soudan central." },
+        ],
       },
       {
         id: "course-histoire-10-kanem-bornou-lesson-5",
         title: "Longévité et héritage",
-        content: "Le Kanem-Bornou perdura, sous diverses formes, jusqu'au XIXᵉ siècle, ce qui en fait l'un des États les plus durables d'Afrique. Son histoire illustre le rôle des empires du Soudan central dans la diffusion de l'islam, le commerce à longue distance et la stabilité politique. Il rappelle que l'histoire des grands États africains ne se limite pas à l'Ouest sahélien, mais s'étend jusqu'au cœur du continent.",
+        blocks: [
+          { type: "paragraphe", text: "Le Kanem-Bornou perdura, sous diverses formes, jusqu'au XIXᵉ siècle, ce qui en fait l'un des États les plus durables d'Afrique. Son histoire illustre le rôle des empires du Soudan central dans la diffusion de l'islam, le commerce à longue distance et la stabilité politique. Il rappelle que l'histoire des grands États africains ne se limite pas à l'Ouest sahélien, mais s'étend jusqu'au cœur du continent." },
+        ],
       },
     ],
     quiz: [
@@ -733,27 +1331,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-1",
         title: "Un réseau de cités du nord",
-        content: "Dans le nord de l'actuel Nigeria et du Niger vivaient les Haoussa, organisés non pas en un seul empire, mais en plusieurs cités-États rivales et complémentaires. La tradition évoque les « sept vrais États haoussa » (Hausa Bakwai), parmi lesquels Kano, Katsina, Zaria (Zazzau) ou Gobir. Chaque cité était fortifiée, entourée de murailles, et gouvernée par un souverain, le sarki.",
+        blocks: [
+          { type: "paragraphe", text: "Dans le nord de l'actuel Nigeria et du Niger vivaient les Haoussa, organisés non pas en un seul empire, mais en plusieurs cités-États rivales et complémentaires. La tradition évoque les « sept vrais États haoussa » (Hausa Bakwai), parmi lesquels Kano, Katsina, Zaria (Zazzau) ou Gobir. Chaque cité était fortifiée, entourée de murailles, et gouvernée par un souverain, le sarki." },
+        ],
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-2",
         title: "Le commerce et l'artisanat",
-        content: "Situées à la charnière entre le Sahara et les régions forestières, les cités haoussa prospérèrent grâce au commerce. Kano, la plus célèbre, était un grand centre marchand, réputé pour ses textiles, son travail du cuir et sa teinture à l'indigo — ses fosses de teinture existent encore. Ce dynamisme artisanal fit des produits haoussa des marchandises recherchées dans tout le Soudan.",
+        blocks: [
+          { type: "paragraphe", text: "Situées à la charnière entre le Sahara et les régions forestières, les cités haoussa prospérèrent grâce au commerce. Kano, la plus célèbre, était un grand centre marchand, réputé pour ses textiles, son travail du cuir et sa teinture à l'indigo — ses fosses de teinture existent encore. Ce dynamisme artisanal fit des produits haoussa des marchandises recherchées dans tout le Soudan." },
+        ],
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-3",
         title: "Islam et savoir",
-        content: "À partir du XIVᵉ siècle, l'islam se diffusa parmi les élites haoussa. Les cités devinrent des centres d'administration et de savoir islamique, avec leurs écoles et leurs lettrés. La religion nouvelle se mêla longtemps aux croyances traditionnelles, avant de s'imposer plus fortement.",
+        blocks: [
+          { type: "paragraphe", text: "À partir du XIVᵉ siècle, l'islam se diffusa parmi les élites haoussa. Les cités devinrent des centres d'administration et de savoir islamique, avec leurs écoles et leurs lettrés. La religion nouvelle se mêla longtemps aux croyances traditionnelles, avant de s'imposer plus fortement." },
+        ],
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-4",
         title: "Rivalités et rayonnement culturel",
-        content: "Souvent en concurrence, parfois dominées par des voisins plus puissants comme le Songhaï ou le Kanem-Bornou, les cités haoussa surent néanmoins conserver une grande vitalité culturelle. La langue haoussa devint une véritable langue de commerce, comprise sur de vastes territoires — un rôle qu'elle joue encore aujourd'hui.",
+        blocks: [
+          { type: "paragraphe", text: "Souvent en concurrence, parfois dominées par des voisins plus puissants comme le Songhaï ou le Kanem-Bornou, les cités haoussa surent néanmoins conserver une grande vitalité culturelle. La langue haoussa devint une véritable langue de commerce, comprise sur de vastes territoires — un rôle qu'elle joue encore aujourd'hui." },
+        ],
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-5",
         title: "Le jihad de 1804 et le califat de Sokoto",
-        content: "Au début du XIXᵉ siècle, le réformateur peul Ousman dan Fodio lança en 1804 un jihad (mouvement de réforme religieuse) qui unifia une grande partie du pays haoussa dans un vaste État : le califat de Sokoto. Les cités haoussa entrèrent alors dans un nouvel ensemble politique. Leur héritage — langue, culture urbaine, artisanat — reste central dans le Nigeria contemporain.",
+        blocks: [
+          { type: "paragraphe", text: "Au début du XIXᵉ siècle, le réformateur peul Ousman dan Fodio lança en 1804 un jihad (mouvement de réforme religieuse) qui unifia une grande partie du pays haoussa dans un vaste État : le califat de Sokoto. Les cités haoussa entrèrent alors dans un nouvel ensemble politique. Leur héritage — langue, culture urbaine, artisanat — reste central dans le Nigeria contemporain." },
+        ],
       },
     ],
     quiz: [
@@ -805,27 +1413,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-1",
         title: "Un royaume de la forêt",
-        content: "Attention à ne pas confondre : le royaume du Bénin n'a rien à voir avec l'actuelle République du Bénin. Il s'agit du royaume du peuple Edo, situé dans le sud de l'actuel Nigeria, autour de sa capitale Benin City. Fondé vers les XIᵉ-XIIIᵉ siècles, ce royaume de la forêt était célèbre pour ses immenses remparts et fossés de terre, parmi les plus vastes ouvrages de ce type au monde.",
+        blocks: [
+          { type: "paragraphe", text: "Attention à ne pas confondre : le royaume du Bénin n'a rien à voir avec l'actuelle République du Bénin. Il s'agit du royaume du peuple Edo, situé dans le sud de l'actuel Nigeria, autour de sa capitale Benin City. Fondé vers les XIᵉ-XIIIᵉ siècles, ce royaume de la forêt était célèbre pour ses immenses remparts et fossés de terre, parmi les plus vastes ouvrages de ce type au monde." },
+        ],
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-2",
         title: "L'Oba et la cour",
-        content: "Le royaume était gouverné par l'Oba, un roi à la fois politique et sacré, entouré d'une cour raffinée et de puissantes corporations d'artisans. Le Bénin atteignit son apogée entre le XVᵉ et le XVIIᵉ siècle, notamment sous le règne de l'Oba Ewuare le Grand, réformateur et conquérant. C'était un État centralisé, organisé et puissant.",
+        blocks: [
+          { type: "paragraphe", text: "Le royaume était gouverné par l'Oba, un roi à la fois politique et sacré, entouré d'une cour raffinée et de puissantes corporations d'artisans. Le Bénin atteignit son apogée entre le XVᵉ et le XVIIᵉ siècle, notamment sous le règne de l'Oba Ewuare le Grand, réformateur et conquérant. C'était un État centralisé, organisé et puissant." },
+        ],
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-3",
         title: "Les bronzes du Bénin",
-        content: "La gloire du royaume tient à son art : les célèbres bronzes du Bénin, en réalité surtout en laiton, réalisés selon la technique de la cire perdue. Plaques et sculptures d'une extraordinaire finesse ornaient le palais royal, représentant les rois, la cour et l'histoire du royaume. Une corporation de fondeurs se transmettait ce savoir-faire de génération en génération, produisant des chefs-d'œuvre admirés dans le monde entier.",
+        blocks: [
+          { type: "paragraphe", text: "La gloire du royaume tient à son art : les célèbres bronzes du Bénin, en réalité surtout en laiton, réalisés selon la technique de la cire perdue. Plaques et sculptures d'une extraordinaire finesse ornaient le palais royal, représentant les rois, la cour et l'histoire du royaume. Une corporation de fondeurs se transmettait ce savoir-faire de génération en génération, produisant des chefs-d'œuvre admirés dans le monde entier." },
+        ],
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-4",
         title: "Le commerce avec les Européens",
-        content: "Dès la fin du XVᵉ siècle, le Bénin commerça avec les Portugais, puis d'autres Européens : poivre, ivoire, objets d'art, mais aussi, malheureusement, êtres humains réduits en esclavage. Le royaume, puissant, contrôlait les termes de ces échanges et restait maître chez lui.",
+        blocks: [
+          { type: "paragraphe", text: "Dès la fin du XVᵉ siècle, le Bénin commerça avec les Portugais, puis d'autres Européens : poivre, ivoire, objets d'art, mais aussi, malheureusement, êtres humains réduits en esclavage. Le royaume, puissant, contrôlait les termes de ces échanges et restait maître chez lui." },
+        ],
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-5",
         title: "Le pillage de 1897 et la restitution",
-        content: "En 1897, une expédition militaire britannique mit à sac Benin City et pilla des milliers de bronzes, dispersés depuis dans les musées occidentaux. Ce pillage est au cœur d'un grand débat sur la restitution des œuvres d'art africaines : certaines pièces ont récemment été rendues. Les bronzes du Bénin restent un symbole du génie artistique africain et des injustices de la période coloniale.",
+        blocks: [
+          { type: "paragraphe", text: "En 1897, une expédition militaire britannique mit à sac Benin City et pilla des milliers de bronzes, dispersés depuis dans les musées occidentaux. Ce pillage est au cœur d'un grand débat sur la restitution des œuvres d'art africaines : certaines pièces ont récemment été rendues. Les bronzes du Bénin restent un symbole du génie artistique africain et des injustices de la période coloniale." },
+        ],
       },
     ],
     quiz: [
@@ -877,27 +1495,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-1",
         title: "Le pays yoruba",
-        content: "Les Yoruba, installés dans le sud-ouest de l'actuel Nigeria et l'est du Bénin, s'organisaient en de nombreuses cités et royaumes. Ilé-Ifè en était le cœur spirituel : c'est là, selon la tradition, que le monde yoruba fut créé. Ifè est aussi célèbre pour ses extraordinaires têtes de terre cuite et de bronze, d'un réalisme saisissant, qui comptent parmi les chefs-d'œuvre de l'art mondial.",
+        blocks: [
+          { type: "paragraphe", text: "Les Yoruba, installés dans le sud-ouest de l'actuel Nigeria et l'est du Bénin, s'organisaient en de nombreuses cités et royaumes. Ilé-Ifè en était le cœur spirituel : c'est là, selon la tradition, que le monde yoruba fut créé. Ifè est aussi célèbre pour ses extraordinaires têtes de terre cuite et de bronze, d'un réalisme saisissant, qui comptent parmi les chefs-d'œuvre de l'art mondial." },
+        ],
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-2",
         title: "La montée d'Oyo",
-        content: "Entre le XVᵉ et le XVIIᵉ siècle, l'empire Oyo s'imposa comme la grande puissance yoruba. Sa force reposait sur une puissante cavalerie — les chevaux venaient du nord — qui lui permettait de dominer les plaines de savane et de contrôler de vastes territoires. Sa capitale était Oyo-Ilé.",
+        blocks: [
+          { type: "paragraphe", text: "Entre le XVᵉ et le XVIIᵉ siècle, l'empire Oyo s'imposa comme la grande puissance yoruba. Sa force reposait sur une puissante cavalerie — les chevaux venaient du nord — qui lui permettait de dominer les plaines de savane et de contrôler de vastes territoires. Sa capitale était Oyo-Ilé." },
+        ],
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-3",
         title: "Un pouvoir équilibré",
-        content: "Oyo est remarquable pour son système politique équilibré. Le roi, l'Alaafin, ne gouvernait pas seul : il était contrôlé par un conseil de notables, l'Oyo Mesi, et par des sociétés comme les Ogboni. Le chef du conseil, le Bashorun, pouvait même contraindre un roi jugé mauvais à abdiquer. C'est un exemple précoce et africain de séparation et de limitation des pouvoirs.",
+        blocks: [
+          { type: "paragraphe", text: "Oyo est remarquable pour son système politique équilibré. Le roi, l'Alaafin, ne gouvernait pas seul : il était contrôlé par un conseil de notables, l'Oyo Mesi, et par des sociétés comme les Ogboni. Le chef du conseil, le Bashorun, pouvait même contraindre un roi jugé mauvais à abdiquer. C'est un exemple précoce et africain de séparation et de limitation des pouvoirs." },
+        ],
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-4",
         title: "Puissance et commerce",
-        content: "Grâce à son armée et à sa position, Oyo contrôlait d'importantes routes commerciales et étendit son influence jusqu'à la côte, faisant même du royaume voisin du Dahomey un tributaire à certaines périodes. L'empire participait au commerce régional et atlantique.",
+        blocks: [
+          { type: "paragraphe", text: "Grâce à son armée et à sa position, Oyo contrôlait d'importantes routes commerciales et étendit son influence jusqu'à la côte, faisant même du royaume voisin du Dahomey un tributaire à certaines périodes. L'empire participait au commerce régional et atlantique." },
+        ],
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-5",
         title: "Déclin et héritage",
-        content: "Au début du XIXᵉ siècle, Oyo déclina, miné par des guerres civiles et la pression des jihads venus du nord. Mais la culture yoruba ne disparut pas : au contraire, elle rayonna dans le monde entier, notamment à travers la diaspora issue de la traite, jusqu'aux Amériques, où sa religion et ses arts restent bien vivants. Les chefs-d'œuvre d'Ifè témoignent encore de ce génie.",
+        blocks: [
+          { type: "paragraphe", text: "Au début du XIXᵉ siècle, Oyo déclina, miné par des guerres civiles et la pression des jihads venus du nord. Mais la culture yoruba ne disparut pas : au contraire, elle rayonna dans le monde entier, notamment à travers la diaspora issue de la traite, jusqu'aux Amériques, où sa religion et ses arts restent bien vivants. Les chefs-d'œuvre d'Ifè témoignent encore de ce génie." },
+        ],
       },
     ],
     quiz: [
@@ -949,27 +1577,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-14-royaume-ashanti-lesson-1",
         title: "La naissance de la confédération",
-        content: "Les Ashanti (Asante), un peuple akan, vivaient au centre de l'actuel Ghana. À la fin du XVIIᵉ siècle, le roi Osei Tutu unifia les différents clans en une puissante confédération, avec pour capitale Kumasi. Cette union fit de l'Ashanti l'un des États les plus organisés et redoutés de la région.",
+        blocks: [
+          { type: "paragraphe", text: "Les Ashanti (Asante), un peuple akan, vivaient au centre de l'actuel Ghana. À la fin du XVIIᵉ siècle, le roi Osei Tutu unifia les différents clans en une puissante confédération, avec pour capitale Kumasi. Cette union fit de l'Ashanti l'un des États les plus organisés et redoutés de la région." },
+        ],
       },
       {
         id: "course-histoire-14-royaume-ashanti-lesson-2",
         title: "Le Tabouret d'or",
-        content: "Au cœur de cette unité se trouve un symbole sacré : le Tabouret d'or (Sika Dwa). Selon la tradition, il descendit du ciel, invoqué par le prêtre Okomfo Anokye, pour incarner l'âme même de la nation ashanti. Nul, pas même le roi, ne peut s'y asseoir. Ce tabouret unit spirituellement tout le peuple : y toucher, c'est toucher à l'existence de la nation.",
+        blocks: [
+          { type: "paragraphe", text: "Au cœur de cette unité se trouve un symbole sacré : le Tabouret d'or (Sika Dwa). Selon la tradition, il descendit du ciel, invoqué par le prêtre Okomfo Anokye, pour incarner l'âme même de la nation ashanti. Nul, pas même le roi, ne peut s'y asseoir. Ce tabouret unit spirituellement tout le peuple : y toucher, c'est toucher à l'existence de la nation." },
+        ],
       },
       {
         id: "course-histoire-14-royaume-ashanti-lesson-3",
         title: "L'or et le commerce",
-        content: "La région était si riche en or que les Européens la nommèrent la « Côte de l'Or ». Les Ashanti commerçaient l'or, mais aussi, comme d'autres États côtiers, des captifs, avec les Européens installés sur le littoral. Le royaume, prospère, disposait d'une administration structurée, d'une armée et d'une riche culture de cour (étoffes kente, symboles adinkra).",
+        blocks: [
+          { type: "paragraphe", text: "La région était si riche en or que les Européens la nommèrent la « Côte de l'Or ». Les Ashanti commerçaient l'or, mais aussi, comme d'autres États côtiers, des captifs, avec les Européens installés sur le littoral. Le royaume, prospère, disposait d'une administration structurée, d'une armée et d'une riche culture de cour (étoffes kente, symboles adinkra)." },
+        ],
       },
       {
         id: "course-histoire-14-royaume-ashanti-lesson-4",
         title: "Les guerres anglo-ashanti",
-        content: "Au XIXᵉ siècle, les Ashanti livrèrent une série de guerres contre les Britanniques, qui convoitaient leur territoire. Pendant des décennies, ils résistèrent farouchement, infligeant parfois de lourdes pertes à l'envahisseur, avant que la supériorité militaire britannique ne finisse par l'emporter.",
+        blocks: [
+          { type: "paragraphe", text: "Au XIXᵉ siècle, les Ashanti livrèrent une série de guerres contre les Britanniques, qui convoitaient leur territoire. Pendant des décennies, ils résistèrent farouchement, infligeant parfois de lourdes pertes à l'envahisseur, avant que la supériorité militaire britannique ne finisse par l'emporter." },
+        ],
       },
       {
         id: "course-histoire-14-royaume-ashanti-lesson-5",
         title: "Yaa Asantewaa et l'héritage",
-        content: "En 1900, alors que les hommes hésitaient, la reine-mère Yaa Asantewaa prit la tête d'un ultime soulèvement, la « guerre du Tabouret d'or ». Malgré la défaite et l'annexion, l'identité ashanti n'a jamais disparu : l'Asantehene (roi) et le Tabouret d'or restent au cœur du Ghana moderne, tout comme le kente et les symboles adinkra, connus dans le monde entier.",
+        blocks: [
+          { type: "paragraphe", text: "En 1900, alors que les hommes hésitaient, la reine-mère Yaa Asantewaa prit la tête d'un ultime soulèvement, la « guerre du Tabouret d'or ». Malgré la défaite et l'annexion, l'identité ashanti n'a jamais disparu : l'Asantehene (roi) et le Tabouret d'or restent au cœur du Ghana moderne, tout comme le kente et les symboles adinkra, connus dans le monde entier." },
+        ],
       },
     ],
     quiz: [
@@ -1021,27 +1659,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-15-royaume-dahomey-lesson-1",
         title: "Un royaume militaire",
-        content: "Le royaume du Dahomey se situait dans l'actuelle République du Bénin. Fondé vers le XVIIᵉ siècle par le peuple Fon, avec pour capitale Abomey, c'était un État très centralisé et militarisé. Ses palais royaux d'Abomey, ornés de bas-reliefs, sont aujourd'hui classés au patrimoine mondial de l'UNESCO.",
+        blocks: [
+          { type: "paragraphe", text: "Le royaume du Dahomey se situait dans l'actuelle République du Bénin. Fondé vers le XVIIᵉ siècle par le peuple Fon, avec pour capitale Abomey, c'était un État très centralisé et militarisé. Ses palais royaux d'Abomey, ornés de bas-reliefs, sont aujourd'hui classés au patrimoine mondial de l'UNESCO." },
+        ],
       },
       {
         id: "course-histoire-15-royaume-dahomey-lesson-2",
         title: "Les « Amazones » du Dahomey",
-        content: "Le Dahomey est mondialement connu pour son corps de femmes soldats, les Agojie, que les Européens surnommèrent les « Amazones ». Ces guerrières d'élite, entraînées et redoutées, formaient une part importante de l'armée royale. Un tel corps militaire féminin est extrêmement rare dans l'histoire mondiale.",
+        blocks: [
+          { type: "paragraphe", text: "Le Dahomey est mondialement connu pour son corps de femmes soldats, les Agojie, que les Européens surnommèrent les « Amazones ». Ces guerrières d'élite, entraînées et redoutées, formaient une part importante de l'armée royale. Un tel corps militaire féminin est extrêmement rare dans l'histoire mondiale." },
+        ],
       },
       {
         id: "course-histoire-15-royaume-dahomey-lesson-3",
         title: "Le roi et le pouvoir",
-        content: "Le Dahomey était une monarchie absolue, dirigée par des rois puissants comme Agaja, Ghézo, Glèlè ou Béhanzin. La cour organisait chaque année de grandes cérémonies. Les bas-reliefs des palais d'Abomey servaient d'archives, racontant en images les hauts faits de chaque règne.",
+        blocks: [
+          { type: "paragraphe", text: "Le Dahomey était une monarchie absolue, dirigée par des rois puissants comme Agaja, Ghézo, Glèlè ou Béhanzin. La cour organisait chaque année de grandes cérémonies. Les bas-reliefs des palais d'Abomey servaient d'archives, racontant en images les hauts faits de chaque règne." },
+        ],
       },
       {
         id: "course-histoire-15-royaume-dahomey-lesson-4",
         title: "La traite et l'économie",
-        content: "Une part de l'économie du royaume reposa, pendant une période, sur la traite atlantique, via le port de Ouidah — une histoire douloureuse et controversée. Plus tard, le Dahomey se tourna vers le commerce de l'huile de palme. Ce passé rappelle la complexité et les tragédies de cette époque.",
+        blocks: [
+          { type: "paragraphe", text: "Une part de l'économie du royaume reposa, pendant une période, sur la traite atlantique, via le port de Ouidah — une histoire douloureuse et controversée. Plus tard, le Dahomey se tourna vers le commerce de l'huile de palme. Ce passé rappelle la complexité et les tragédies de cette époque." },
+        ],
       },
       {
         id: "course-histoire-15-royaume-dahomey-lesson-5",
         title: "Résistance et héritage",
-        content: "À la fin du XIXᵉ siècle, le roi Béhanzin résista à la conquête française, mais fut vaincu en 1894 et le Dahomey devint une colonie française. Son héritage demeure : les palais d'Abomey sont protégés par l'UNESCO, et en 2021, la France a restitué au Bénin des trésors royaux pillés durant la conquête. Nous retrouverons Béhanzin dans le cours sur les résistances à la colonisation.",
+        blocks: [
+          { type: "paragraphe", text: "À la fin du XIXᵉ siècle, le roi Béhanzin résista à la conquête française, mais fut vaincu en 1894 et le Dahomey devint une colonie française. Son héritage demeure : les palais d'Abomey sont protégés par l'UNESCO, et en 2021, la France a restitué au Bénin des trésors royaux pillés durant la conquête. Nous retrouverons Béhanzin dans le cours sur les résistances à la colonisation." },
+        ],
       },
     ],
     quiz: [
@@ -1093,27 +1741,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-16-royaume-kongo-lesson-1",
         title: "Un grand royaume d'Afrique centrale",
-        content: "Fondé vers le XIVᵉ siècle, le royaume du Kongo s'étendait autour du bas cours du fleuve Congo, sur des territoires des actuels Angola, RD Congo et Congo. Sa capitale, Mbanza-Kongo, est aujourd'hui classée au patrimoine mondial de l'UNESCO. C'était un État bien organisé, divisé en provinces dirigées par des gouverneurs, avec une monnaie faite de coquillages (les nzimbu).",
+        blocks: [
+          { type: "paragraphe", text: "Fondé vers le XIVᵉ siècle, le royaume du Kongo s'étendait autour du bas cours du fleuve Congo, sur des territoires des actuels Angola, RD Congo et Congo. Sa capitale, Mbanza-Kongo, est aujourd'hui classée au patrimoine mondial de l'UNESCO. C'était un État bien organisé, divisé en provinces dirigées par des gouverneurs, avec une monnaie faite de coquillages (les nzimbu)." },
+        ],
       },
       {
         id: "course-histoire-16-royaume-kongo-lesson-2",
         title: "La rencontre avec le Portugal",
-        content: "En 1483, des navigateurs portugais atteignirent le royaume. Contrairement à une simple conquête, s'établirent d'abord des relations diplomatiques. Le roi du Kongo échangea ambassades et courriers avec le souverain du Portugal, entamant une relation d'État à État.",
+        blocks: [
+          { type: "paragraphe", text: "En 1483, des navigateurs portugais atteignirent le royaume. Contrairement à une simple conquête, s'établirent d'abord des relations diplomatiques. Le roi du Kongo échangea ambassades et courriers avec le souverain du Portugal, entamant une relation d'État à État." },
+        ],
       },
       {
         id: "course-histoire-16-royaume-kongo-lesson-3",
         title: "Afonso Iᵉʳ et le christianisme",
-        content: "Le roi Afonso Iᵉʳ (Nzinga Mbemba, règne vers 1509-1543) se convertit au christianisme et en fit la religion de l'État. Lettré, il correspondait avec le roi du Portugal et le pape d'égal à égal, envoyait des jeunes Kongo étudier en Europe et fit construire des églises. Il incarne un souverain africain engageant l'Europe sur un pied d'égalité.",
+        blocks: [
+          { type: "paragraphe", text: "Le roi Afonso Iᵉʳ (Nzinga Mbemba, règne vers 1509-1543) se convertit au christianisme et en fit la religion de l'État. Lettré, il correspondait avec le roi du Portugal et le pape d'égal à égal, envoyait des jeunes Kongo étudier en Europe et fit construire des églises. Il incarne un souverain africain engageant l'Europe sur un pied d'égalité." },
+        ],
       },
       {
         id: "course-histoire-16-royaume-kongo-lesson-4",
         title: "La traite et les tensions",
-        content: "Mais la demande croissante des Portugais en captifs déstabilisa le royaume. Afonso lui-même écrivit des lettres pour protester contre les ravages de la traite sur son peuple. Les tensions s'aggravèrent, et en 1665, à la bataille de Mbwila, les Portugais vainquirent et tuèrent le roi du Kongo. Le royaume se fragmenta.",
+        blocks: [
+          { type: "paragraphe", text: "Mais la demande croissante des Portugais en captifs déstabilisa le royaume. Afonso lui-même écrivit des lettres pour protester contre les ravages de la traite sur son peuple. Les tensions s'aggravèrent, et en 1665, à la bataille de Mbwila, les Portugais vainquirent et tuèrent le roi du Kongo. Le royaume se fragmenta." },
+        ],
       },
       {
         id: "course-histoire-16-royaume-kongo-lesson-5",
         title: "Héritage",
-        content: "Le Kongo montre qu'un État africain a su dialoguer diplomatiquement avec l'Europe et adopter le christianisme selon ses propres termes. Son déclin illustre tragiquement l'impact destructeur de la traite sur les sociétés africaines. Sa culture a profondément marqué l'Afrique centrale et, à travers la diaspora, une partie des Amériques.",
+        blocks: [
+          { type: "paragraphe", text: "Le Kongo montre qu'un État africain a su dialoguer diplomatiquement avec l'Europe et adopter le christianisme selon ses propres termes. Son déclin illustre tragiquement l'impact destructeur de la traite sur les sociétés africaines. Sa culture a profondément marqué l'Afrique centrale et, à travers la diaspora, une partie des Amériques." },
+        ],
       },
     ],
     quiz: [
@@ -1165,27 +1823,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-1",
         title: "Une cité de pierre",
-        content: "Le Grand Zimbabwe, dans l'actuel Zimbabwe, connut son apogée entre le XIᵉ et le XVᵉ siècle. Il fut bâti par les ancêtres du peuple Shona. Son nom vient de l'expression dzimba dza mabwe, « les maisons de pierre ». Ses murailles monumentales, dont certaines atteignent 11 mètres de haut, furent édifiées en pierres sèches, sans aucun mortier — ce sont les plus vastes structures anciennes d'Afrique subsaharienne au sud de l'équateur.",
+        blocks: [
+          { type: "paragraphe", text: "Le Grand Zimbabwe, dans l'actuel Zimbabwe, connut son apogée entre le XIᵉ et le XVᵉ siècle. Il fut bâti par les ancêtres du peuple Shona. Son nom vient de l'expression dzimba dza mabwe, « les maisons de pierre ». Ses murailles monumentales, dont certaines atteignent 11 mètres de haut, furent édifiées en pierres sèches, sans aucun mortier — ce sont les plus vastes structures anciennes d'Afrique subsaharienne au sud de l'équateur." },
+        ],
       },
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-2",
         title: "Un royaume de l'or et du commerce",
-        content: "La richesse du Grand Zimbabwe reposait sur le bétail et surtout sur le commerce de l'or. Ce métal, extrait dans la région, était acheminé jusqu'à la côte swahilie (le port de Sofala) et de là vers tout le monde de l'océan Indien. Les fouilles y ont retrouvé de la porcelaine chinoise et du verre persan, preuve de l'ampleur de ces échanges lointains.",
+        blocks: [
+          { type: "paragraphe", text: "La richesse du Grand Zimbabwe reposait sur le bétail et surtout sur le commerce de l'or. Ce métal, extrait dans la région, était acheminé jusqu'à la côte swahilie (le port de Sofala) et de là vers tout le monde de l'océan Indien. Les fouilles y ont retrouvé de la porcelaine chinoise et du verre persan, preuve de l'ampleur de ces échanges lointains." },
+        ],
       },
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-3",
         title: "Une capitale organisée",
-        content: "À son apogée, la cité comptait peut-être 18 000 habitants. Elle comprenait un centre royal et religieux, avec la célèbre Grande Enceinte et le complexe de la colline. Les artisans y sculptèrent de remarquables oiseaux en stéatite, les « oiseaux du Zimbabwe », devenus aujourd'hui l'emblème national du pays, figurant sur son drapeau.",
+        blocks: [
+          { type: "paragraphe", text: "À son apogée, la cité comptait peut-être 18 000 habitants. Elle comprenait un centre royal et religieux, avec la célèbre Grande Enceinte et le complexe de la colline. Les artisans y sculptèrent de remarquables oiseaux en stéatite, les « oiseaux du Zimbabwe », devenus aujourd'hui l'emblème national du pays, figurant sur son drapeau." },
+        ],
       },
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-4",
         title: "Un mythe colonial démenti",
-        content: "Longtemps, les colonisateurs européens refusèrent de croire que des Africains aient pu bâtir un tel ensemble, et inventèrent des origines étrangères. L'archéologie a depuis clairement établi que le Grand Zimbabwe fut construit par les populations shona locales. Cet exemple est essentiel pour déconstruire les préjugés racistes sur les capacités des sociétés africaines.",
+        blocks: [
+          { type: "paragraphe", text: "Longtemps, les colonisateurs européens refusèrent de croire que des Africains aient pu bâtir un tel ensemble, et inventèrent des origines étrangères. L'archéologie a depuis clairement établi que le Grand Zimbabwe fut construit par les populations shona locales. Cet exemple est essentiel pour déconstruire les préjugés racistes sur les capacités des sociétés africaines." },
+        ],
       },
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-5",
         title: "Déclin et héritage",
-        content: "Le Grand Zimbabwe déclina vers le XVᵉ siècle, sans doute à cause de l'épuisement des ressources et du déplacement des routes commerciales, laissant la place au royaume du Mutapa. Classé au patrimoine mondial de l'UNESCO, il a donné son nom à la nation moderne du Zimbabwe, devenue indépendante en 1980 — un symbole de fierté retrouvée.",
+        blocks: [
+          { type: "paragraphe", text: "Le Grand Zimbabwe déclina vers le XVᵉ siècle, sans doute à cause de l'épuisement des ressources et du déplacement des routes commerciales, laissant la place au royaume du Mutapa. Classé au patrimoine mondial de l'UNESCO, il a donné son nom à la nation moderne du Zimbabwe, devenue indépendante en 1980 — un symbole de fierté retrouvée." },
+        ],
       },
     ],
     quiz: [
@@ -1237,27 +1905,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-1",
         title: "L'héritier du Grand Zimbabwe",
-        content: "Vers le XVᵉ siècle, alors que le Grand Zimbabwe déclinait, un chef shona nommé Nyatsimba Mutota fonda un nouveau royaume plus au nord : le Mutapa, que les Européens appelèrent Monomotapa. Il s'étendait entre les fleuves Zambèze et Limpopo (actuels Zimbabwe et Mozambique). Le titre du souverain, Mwene Mutapa, signifie « seigneur des terres conquises ».",
+        blocks: [
+          { type: "paragraphe", text: "Vers le XVᵉ siècle, alors que le Grand Zimbabwe déclinait, un chef shona nommé Nyatsimba Mutota fonda un nouveau royaume plus au nord : le Mutapa, que les Européens appelèrent Monomotapa. Il s'étendait entre les fleuves Zambèze et Limpopo (actuels Zimbabwe et Mozambique). Le titre du souverain, Mwene Mutapa, signifie « seigneur des terres conquises »." },
+        ],
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-2",
         title: "L'or et le commerce de l'océan Indien",
-        content: "Comme son prédécesseur, le Mutapa tira sa puissance du commerce de l'or et de l'ivoire, acheminés vers la côte swahilie et le port de Sofala, puis vers tout le monde de l'océan Indien. Les marchands arabes et swahilis venaient y échanger tissus, perles et porcelaines contre les richesses de l'intérieur.",
+        blocks: [
+          { type: "paragraphe", text: "Comme son prédécesseur, le Mutapa tira sa puissance du commerce de l'or et de l'ivoire, acheminés vers la côte swahilie et le port de Sofala, puis vers tout le monde de l'océan Indien. Les marchands arabes et swahilis venaient y échanger tissus, perles et porcelaines contre les richesses de l'intérieur." },
+        ],
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-3",
         title: "Les Portugais et le mythe de l'or",
-        content: "Lorsque les Portugais s'installèrent sur la côte au XVIᵉ siècle, ils furent fascinés par les récits des mines d'or du Monomotapa. Certains crurent y reconnaître le mythique pays d'Ophir de la Bible. Avides de contrôler ce commerce, ils cherchèrent à s'immiscer dans les affaires du royaume.",
+        blocks: [
+          { type: "paragraphe", text: "Lorsque les Portugais s'installèrent sur la côte au XVIᵉ siècle, ils furent fascinés par les récits des mines d'or du Monomotapa. Certains crurent y reconnaître le mythique pays d'Ophir de la Bible. Avides de contrôler ce commerce, ils cherchèrent à s'immiscer dans les affaires du royaume." },
+        ],
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-4",
         title: "Tensions et déclin",
-        content: "Aux XVIᵉ et XVIIᵉ siècles, les ingérences portugaises, l'envoi de missionnaires et les guerres affaiblirent progressivement le Mutapa. Le royaume devint de plus en plus dépendant, puis se fragmenta, sans jamais livrer aux Européens les fabuleuses richesses qu'ils imaginaient.",
+        blocks: [
+          { type: "paragraphe", text: "Aux XVIᵉ et XVIIᵉ siècles, les ingérences portugaises, l'envoi de missionnaires et les guerres affaiblirent progressivement le Mutapa. Le royaume devint de plus en plus dépendant, puis se fragmenta, sans jamais livrer aux Européens les fabuleuses richesses qu'ils imaginaient." },
+        ],
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-5",
         title: "Héritage",
-        content: "L'histoire du Grand Zimbabwe puis du Mutapa montre la continuité d'une puissante civilisation d'Afrique australe, bâtie sur l'or, le bétail et le commerce à longue distance. Ces royaumes shona rappellent que l'Afrique australe fut, bien avant la colonisation, le siège d'États organisés et prospères, intégrés aux grands courants commerciaux du monde.",
+        blocks: [
+          { type: "paragraphe", text: "L'histoire du Grand Zimbabwe puis du Mutapa montre la continuité d'une puissante civilisation d'Afrique australe, bâtie sur l'or, le bétail et le commerce à longue distance. Ces royaumes shona rappellent que l'Afrique australe fut, bien avant la colonisation, le siège d'États organisés et prospères, intégrés aux grands courants commerciaux du monde." },
+        ],
       },
     ],
     quiz: [
@@ -1309,27 +1987,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-1",
         title: "Une région de royaumes",
-        content: "La région des Grands Lacs (autour des lacs Victoria, Kivu et Tanganyika), dans les actuels Ouganda, Rwanda, Burundi et Tanzanie, est une zone de hauts plateaux fertiles. Cette richesse agricole permit de fortes densités de population et l'émergence de royaumes centralisés : Buganda, Bunyoro, Rwanda, Burundi ou encore Ankole.",
+        blocks: [
+          { type: "paragraphe", text: "La région des Grands Lacs (autour des lacs Victoria, Kivu et Tanganyika), dans les actuels Ouganda, Rwanda, Burundi et Tanzanie, est une zone de hauts plateaux fertiles. Cette richesse agricole permit de fortes densités de population et l'émergence de royaumes centralisés : Buganda, Bunyoro, Rwanda, Burundi ou encore Ankole." },
+        ],
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-2",
         title: "Le royaume du Buganda",
-        content: "Le Buganda, dans l'actuel Ouganda, fut l'un des plus puissants. Dirigé par le Kabaka (roi), c'était un État très organisé, doté d'une administration de chefs, de routes, d'une armée solide et d'une flotte de pirogues sur le lac Victoria. Il connut son apogée aux XVIIIᵉ et XIXᵉ siècles.",
+        blocks: [
+          { type: "paragraphe", text: "Le Buganda, dans l'actuel Ouganda, fut l'un des plus puissants. Dirigé par le Kabaka (roi), c'était un État très organisé, doté d'une administration de chefs, de routes, d'une armée solide et d'une flotte de pirogues sur le lac Victoria. Il connut son apogée aux XVIIIᵉ et XIXᵉ siècles." },
+        ],
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-3",
         title: "Le Rwanda et l'organisation sociale",
-        content: "Le royaume du Rwanda était dirigé par le Mwami (roi) et se distinguait par une organisation politique et sociale très élaborée. Le bétail y jouait un rôle central, dans l'économie comme dans les relations sociales. Les catégories sociales de l'époque (Hutu, Tutsi, Twa) étaient alors surtout sociales et fluides ; elles seront plus tard figées et instrumentalisées par les colonisateurs, avec des conséquences dramatiques.",
+        blocks: [
+          { type: "paragraphe", text: "Le royaume du Rwanda était dirigé par le Mwami (roi) et se distinguait par une organisation politique et sociale très élaborée. Le bétail y jouait un rôle central, dans l'économie comme dans les relations sociales. Les catégories sociales de l'époque (Hutu, Tutsi, Twa) étaient alors surtout sociales et fluides ; elles seront plus tard figées et instrumentalisées par les colonisateurs, avec des conséquences dramatiques." },
+        ],
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-4",
         title: "Économie et culture",
-        content: "L'économie de ces royaumes reposait sur l'agriculture (notamment la banane) et l'élevage. Leurs cultures de cour étaient riches : traditions orales, tambours royaux symboles du pouvoir, cérémonies et hiérarchies complexes. Ces sociétés étaient loin d'être « sans histoire ».",
+        blocks: [
+          { type: "paragraphe", text: "L'économie de ces royaumes reposait sur l'agriculture (notamment la banane) et l'élevage. Leurs cultures de cour étaient riches : traditions orales, tambours royaux symboles du pouvoir, cérémonies et hiérarchies complexes. Ces sociétés étaient loin d'être « sans histoire »." },
+        ],
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-5",
         title: "Colonisation et héritage",
-        content: "À la fin du XIXᵉ siècle, la région passa sous domination allemande, puis britannique et belge. Les colonisateurs rigidifièrent les identités sociales et exploitèrent les rivalités, préparant de futurs conflits. Malgré tout, l'héritage de ces royaumes — leurs cultures, leurs langues, leurs institutions — reste très vivant dans l'Afrique de l'Est d'aujourd'hui.",
+        blocks: [
+          { type: "paragraphe", text: "À la fin du XIXᵉ siècle, la région passa sous domination allemande, puis britannique et belge. Les colonisateurs rigidifièrent les identités sociales et exploitèrent les rivalités, préparant de futurs conflits. Malgré tout, l'héritage de ces royaumes — leurs cultures, leurs langues, leurs institutions — reste très vivant dans l'Afrique de l'Est d'aujourd'hui." },
+        ],
       },
     ],
     quiz: [
@@ -1381,27 +2069,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-1",
         title: "L'héritière d'Aksoum",
-        content: "Après le déclin d'Aksoum, la civilisation chrétienne éthiopienne se perpétua sur les hauts plateaux. Deux grandes dynasties marquèrent le Moyen Âge : la dynastie Zagwé (XIIᵉ-XIIIᵉ siècle), puis la dynastie dite salomonienne, qui prit le pouvoir en 1270 et prétendait descendre du roi Salomon et de la reine de Saba. L'Éthiopie resta ainsi un royaume chrétien continu, cas unique en Afrique.",
+        blocks: [
+          { type: "paragraphe", text: "Après le déclin d'Aksoum, la civilisation chrétienne éthiopienne se perpétua sur les hauts plateaux. Deux grandes dynasties marquèrent le Moyen Âge : la dynastie Zagwé (XIIᵉ-XIIIᵉ siècle), puis la dynastie dite salomonienne, qui prit le pouvoir en 1270 et prétendait descendre du roi Salomon et de la reine de Saba. L'Éthiopie resta ainsi un royaume chrétien continu, cas unique en Afrique." },
+        ],
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-2",
         title: "Les églises de Lalibela",
-        content: "Le roi Lalibela (dynastie Zagwé) fit tailler, vers les XIIᵉ-XIIIᵉ siècles, onze églises directement dans la roche, conçues comme une « Nouvelle Jérusalem ». Ces édifices monolithes, creusés vers le bas dans le sol puis sculptés, sont une prouesse d'ingénierie et de foi. Toujours en activité, ils sont classés au patrimoine mondial de l'UNESCO et restent un grand lieu de pèlerinage.",
+        blocks: [
+          { type: "paragraphe", text: "Le roi Lalibela (dynastie Zagwé) fit tailler, vers les XIIᵉ-XIIIᵉ siècles, onze églises directement dans la roche, conçues comme une « Nouvelle Jérusalem ». Ces édifices monolithes, creusés vers le bas dans le sol puis sculptés, sont une prouesse d'ingénierie et de foi. Toujours en activité, ils sont classés au patrimoine mondial de l'UNESCO et restent un grand lieu de pèlerinage." },
+        ],
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-3",
         title: "Un christianisme unique",
-        content: "L'Église orthodoxe éthiopienne est l'une des plus anciennes du monde. Elle a conservé une langue liturgique propre, le guèze, son propre calendrier, de nombreux monastères et de superbes manuscrits enluminés. Isolée du reste de la chrétienté, elle a développé des traditions originales qui perdurent depuis plus de quinze siècles.",
+        blocks: [
+          { type: "paragraphe", text: "L'Église orthodoxe éthiopienne est l'une des plus anciennes du monde. Elle a conservé une langue liturgique propre, le guèze, son propre calendrier, de nombreux monastères et de superbes manuscrits enluminés. Isolée du reste de la chrétienté, elle a développé des traditions originales qui perdurent depuis plus de quinze siècles." },
+        ],
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-4",
         title: "Un État qui a résisté",
-        content: "Gouvernée par des empereurs (les négus), l'Éthiopie médiévale sut se maintenir face aux changements et aux menaces. Son épopée nationale, le Kebra Nagast (« la Gloire des rois »), relie la dynastie à Salomon et à la reine de Saba, et la tradition affirme que l'Arche d'Alliance est conservée à Aksoum. Ces récits nourrissent une identité nationale forte.",
+        blocks: [
+          { type: "paragraphe", text: "Gouvernée par des empereurs (les négus), l'Éthiopie médiévale sut se maintenir face aux changements et aux menaces. Son épopée nationale, le Kebra Nagast (« la Gloire des rois »), relie la dynastie à Salomon et à la reine de Saba, et la tradition affirme que l'Arche d'Alliance est conservée à Aksoum. Ces récits nourrissent une identité nationale forte." },
+        ],
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-5",
         title: "Héritage",
-        content: "L'Éthiopie est unique en Afrique : elle n'a jamais été durablement colonisée, allant jusqu'à vaincre l'Italie à Adoua en 1896 (que nous verrons plus loin), et elle a maintenu une civilisation chrétienne continue. Lalibela, ses manuscrits et son Église orthodoxe témoignent de cette exceptionnelle profondeur historique, source de fierté pour tout le continent.",
+        blocks: [
+          { type: "paragraphe", text: "L'Éthiopie est unique en Afrique : elle n'a jamais été durablement colonisée, allant jusqu'à vaincre l'Italie à Adoua en 1896 (que nous verrons plus loin), et elle a maintenu une civilisation chrétienne continue. Lalibela, ses manuscrits et son Église orthodoxe témoignent de cette exceptionnelle profondeur historique, source de fierté pour tout le continent." },
+        ],
       },
     ],
     quiz: [
@@ -1453,27 +2151,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-1",
         title: "Traverser le désert",
-        content: "Le Sahara, immense « mer de sable », n'était pas une barrière infranchissable mais une route. Grâce au chameau, introduit dans les premiers siècles de notre ère, de longues caravanes — parfois des milliers de bêtes — pouvaient traverser le désert d'oasis en oasis. Ces pistes reliaient les villes du Sahel, au sud, aux ports et cités d'Afrique du Nord, ouvrant l'Afrique de l'Ouest sur la Méditerranée.",
+        blocks: [
+          { type: "paragraphe", text: "Le Sahara, immense « mer de sable », n'était pas une barrière infranchissable mais une route. Grâce au chameau, introduit dans les premiers siècles de notre ère, de longues caravanes — parfois des milliers de bêtes — pouvaient traverser le désert d'oasis en oasis. Ces pistes reliaient les villes du Sahel, au sud, aux ports et cités d'Afrique du Nord, ouvrant l'Afrique de l'Ouest sur la Méditerranée." },
+        ],
       },
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-2",
         title: "L'or contre le sel",
-        content: "Deux marchandises dominaient : l'or, extrait dans les régions du sud (Bambouk, Bouré), qui montait vers le nord ; et le sel, tiré des mines sahariennes (Taghaza, Taoudenni), qui descendait vers le sud. Le sel était si précieux qu'il s'échangeait parfois presque à poids égal contre l'or. Circulaient aussi cuivre, tissus, chevaux, livres — et, tragiquement, des captifs.",
+        blocks: [
+          { type: "paragraphe", text: "Deux marchandises dominaient : l'or, extrait dans les régions du sud (Bambouk, Bouré), qui montait vers le nord ; et le sel, tiré des mines sahariennes (Taghaza, Taoudenni), qui descendait vers le sud. Le sel était si précieux qu'il s'échangeait parfois presque à poids égal contre l'or. Circulaient aussi cuivre, tissus, chevaux, livres — et, tragiquement, des captifs." },
+        ],
       },
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-3",
         title: "Les villes-carrefours",
-        content: "Ce commerce fit naître de riches villes-étapes : Sijilmassa au nord, Oualata, Tombouctou, Djenné et Gao à la lisière sud du désert. Les grands empires — Ghana, Mali, Songhaï — bâtirent leur puissance en taxant les marchandises qui traversaient leur territoire. Contrôler les routes, c'était contrôler la richesse.",
+        blocks: [
+          { type: "paragraphe", text: "Ce commerce fit naître de riches villes-étapes : Sijilmassa au nord, Oualata, Tombouctou, Djenné et Gao à la lisière sud du désert. Les grands empires — Ghana, Mali, Songhaï — bâtirent leur puissance en taxant les marchandises qui traversaient leur territoire. Contrôler les routes, c'était contrôler la richesse." },
+        ],
       },
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-4",
         title: "Bien plus que des marchandises",
-        content: "Les caravanes ne transportaient pas que des biens : elles véhiculaient des idées. C'est par elles que l'islam, l'écriture arabe, les savants, les livres et de nouvelles techniques architecturales pénétrèrent en Afrique de l'Ouest. Le commerce transsaharien fut donc aussi un grand échange culturel et religieux.",
+        blocks: [
+          { type: "paragraphe", text: "Les caravanes ne transportaient pas que des biens : elles véhiculaient des idées. C'est par elles que l'islam, l'écriture arabe, les savants, les livres et de nouvelles techniques architecturales pénétrèrent en Afrique de l'Ouest. Le commerce transsaharien fut donc aussi un grand échange culturel et religieux." },
+        ],
       },
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-5",
         title: "Le déclin",
-        content: "À partir des XVᵉ-XVIᵉ siècles, l'essor du commerce maritime européen le long des côtes atlantiques détourna peu à peu les échanges des routes du désert. Les grandes cités caravanières déclinèrent. Mais pendant près d'un millénaire, le commerce transsaharien avait relié l'Afrique au reste du monde et nourri ses plus brillantes civilisations.",
+        blocks: [
+          { type: "paragraphe", text: "À partir des XVᵉ-XVIᵉ siècles, l'essor du commerce maritime européen le long des côtes atlantiques détourna peu à peu les échanges des routes du désert. Les grandes cités caravanières déclinèrent. Mais pendant près d'un millénaire, le commerce transsaharien avait relié l'Afrique au reste du monde et nourri ses plus brillantes civilisations." },
+        ],
       },
     ],
     quiz: [
@@ -1525,27 +2233,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-1",
         title: "Une religion venue par le commerce",
-        content: "En Afrique de l'Ouest, l'islam ne s'est pas imposé par la conquête, mais s'est diffusé pacifiquement et progressivement, à partir des IXᵉ-XIᵉ siècles, grâce aux marchands qui traversaient le Sahara. Les contacts commerciaux réguliers avec le monde musulman ouvrirent la voie à la nouvelle religion, sans violence militaire.",
+        blocks: [
+          { type: "paragraphe", text: "En Afrique de l'Ouest, l'islam ne s'est pas imposé par la conquête, mais s'est diffusé pacifiquement et progressivement, à partir des IXᵉ-XIᵉ siècles, grâce aux marchands qui traversaient le Sahara. Les contacts commerciaux réguliers avec le monde musulman ouvrirent la voie à la nouvelle religion, sans violence militaire." },
+        ],
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-2",
         title: "L'adoption par les élites",
-        content: "L'islam fut d'abord adopté par les marchands puis par les souverains et leurs cours : la religion facilitait le commerce et la diplomatie avec le monde musulman. Mais une grande partie de la population conserva longtemps ses religions traditionnelles. Cette coexistence entre islam et croyances ancestrales caractérise les grands empires comme le Ghana puis le Mali.",
+        blocks: [
+          { type: "paragraphe", text: "L'islam fut d'abord adopté par les marchands puis par les souverains et leurs cours : la religion facilitait le commerce et la diplomatie avec le monde musulman. Mais une grande partie de la population conserva longtemps ses religions traditionnelles. Cette coexistence entre islam et croyances ancestrales caractérise les grands empires comme le Ghana puis le Mali." },
+        ],
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-3",
         title: "Les grands foyers du savoir",
-        content: "Des villes comme Tombouctou et Djenné devinrent de brillants foyers de savoir islamique, avec leurs mosquées, leurs universités et leurs écoles coraniques. Le pèlerinage à La Mecque de Mansa Moussa (1324) illustre l'ancrage de l'islam au sommet de l'État malien et son ouverture sur le monde musulman.",
+        blocks: [
+          { type: "paragraphe", text: "Des villes comme Tombouctou et Djenné devinrent de brillants foyers de savoir islamique, avec leurs mosquées, leurs universités et leurs écoles coraniques. Le pèlerinage à La Mecque de Mansa Moussa (1324) illustre l'ancrage de l'islam au sommet de l'État malien et son ouverture sur le monde musulman." },
+        ],
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-4",
         title: "Un islam africain",
-        content: "En s'enracinant, l'islam se mêla aux coutumes locales, donnant des pratiques originales et diverses. Longtemps, il cohabita avec les traditions africaines plutôt que de les remplacer. Cet islam « africanisé » est l'une des grandes richesses culturelles et spirituelles de la région.",
+        blocks: [
+          { type: "paragraphe", text: "En s'enracinant, l'islam se mêla aux coutumes locales, donnant des pratiques originales et diverses. Longtemps, il cohabita avec les traditions africaines plutôt que de les remplacer. Cet islam « africanisé » est l'une des grandes richesses culturelles et spirituelles de la région." },
+        ],
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-5",
         title: "Réformes et jihads",
-        content: "Aux XVIIIᵉ et XIXᵉ siècles, des mouvements de réforme et des jihads voulurent imposer un islam plus strict et fondèrent des États théocratiques : Ousman dan Fodio créa le califat de Sokoto, El Hadj Oumar Tall un vaste empire. Aujourd'hui, l'islam est au cœur de l'identité de l'Afrique de l'Ouest, dans une forme qui lui est propre.",
+        blocks: [
+          { type: "paragraphe", text: "Aux XVIIIᵉ et XIXᵉ siècles, des mouvements de réforme et des jihads voulurent imposer un islam plus strict et fondèrent des États théocratiques : Ousman dan Fodio créa le califat de Sokoto, El Hadj Oumar Tall un vaste empire. Aujourd'hui, l'islam est au cœur de l'identité de l'Afrique de l'Ouest, dans une forme qui lui est propre." },
+        ],
       },
     ],
     quiz: [
@@ -1597,27 +2315,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-23-cote-swahilie-lesson-1",
         title: "Un chapelet de cités",
-        content: "À partir du VIIIᵉ siècle, la côte est-africaine (actuels Kenya, Tanzanie, Mozambique) se couvrit de cités-États marchandes tournées vers l'océan Indien : Kilwa, Mombasa, Zanzibar, Sofala, Lamu, Mogadiscio. Ces ports prospères vivaient du commerce maritime.",
+        blocks: [
+          { type: "paragraphe", text: "À partir du VIIIᵉ siècle, la côte est-africaine (actuels Kenya, Tanzanie, Mozambique) se couvrit de cités-États marchandes tournées vers l'océan Indien : Kilwa, Mombasa, Zanzibar, Sofala, Lamu, Mogadiscio. Ces ports prospères vivaient du commerce maritime." },
+        ],
       },
       {
         id: "course-histoire-23-cote-swahilie-lesson-2",
         title: "Le commerce de l'océan Indien",
-        content: "Ces cités exportaient or, ivoire, bois précieux — et des captifs — et importaient tissus, porcelaine chinoise, épices et verre. Les marins utilisaient les vents de la mousson, qui soufflent alternativement dans un sens puis dans l'autre, pour naviguer vers l'Arabie et l'Inde et en revenir. Kilwa, qui contrôlait l'or de Sofala, devint particulièrement riche.",
+        blocks: [
+          { type: "paragraphe", text: "Ces cités exportaient or, ivoire, bois précieux — et des captifs — et importaient tissus, porcelaine chinoise, épices et verre. Les marins utilisaient les vents de la mousson, qui soufflent alternativement dans un sens puis dans l'autre, pour naviguer vers l'Arabie et l'Inde et en revenir. Kilwa, qui contrôlait l'or de Sofala, devint particulièrement riche." },
+        ],
       },
       {
         id: "course-histoire-23-cote-swahilie-lesson-3",
         title: "La naissance de la culture swahilie",
-        content: "De la rencontre entre les racines africaines (bantoues) et les influences arabes, persanes et indiennes naquit une civilisation originale : la culture swahilie. Sa langue, le swahili, est une langue bantoue enrichie de nombreux mots arabes. Musulmane et urbaine, cette civilisation bâtit des villes de pierre de corail, avec mosquées et palais.",
+        blocks: [
+          { type: "paragraphe", text: "De la rencontre entre les racines africaines (bantoues) et les influences arabes, persanes et indiennes naquit une civilisation originale : la culture swahilie. Sa langue, le swahili, est une langue bantoue enrichie de nombreux mots arabes. Musulmane et urbaine, cette civilisation bâtit des villes de pierre de corail, avec mosquées et palais." },
+        ],
       },
       {
         id: "course-histoire-23-cote-swahilie-lesson-4",
         title: "Kilwa et l'apogée",
-        content: "Kilwa Kisiwani fut la plus riche de ces cités. Le voyageur Ibn Battuta, au XIVᵉ siècle, admira sa splendeur. On y frappait monnaie et l'on y bâtit le palais de Husuni Kubwa. Le site de Kilwa est aujourd'hui classé au patrimoine mondial de l'UNESCO.",
+        blocks: [
+          { type: "paragraphe", text: "Kilwa Kisiwani fut la plus riche de ces cités. Le voyageur Ibn Battuta, au XIVᵉ siècle, admira sa splendeur. On y frappait monnaie et l'on y bâtit le palais de Husuni Kubwa. Le site de Kilwa est aujourd'hui classé au patrimoine mondial de l'UNESCO." },
+        ],
       },
       {
         id: "course-histoire-23-cote-swahilie-lesson-5",
         title: "L'arrivée des Portugais",
-        content: "Vers 1500, les Portugais (Vasco de Gama) attaquèrent et prirent le contrôle des cités côtières pour dominer le commerce de l'océan Indien, provoquant leur déclin. Plus tard, les Arabes omanais s'imposèrent (Zanzibar). Malgré tout, l'héritage swahili demeure : la langue swahilie est aujourd'hui parlée par plus de cent millions de personnes en Afrique de l'Est.",
+        blocks: [
+          { type: "paragraphe", text: "Vers 1500, les Portugais (Vasco de Gama) attaquèrent et prirent le contrôle des cités côtières pour dominer le commerce de l'océan Indien, provoquant leur déclin. Plus tard, les Arabes omanais s'imposèrent (Zanzibar). Malgré tout, l'héritage swahili demeure : la langue swahilie est aujourd'hui parlée par plus de cent millions de personnes en Afrique de l'Est." },
+        ],
       },
     ],
     quiz: [
@@ -1669,27 +2397,149 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-24-traite-negriere-transatlantique-lesson-1",
         title: "Un commerce triangulaire",
-        content: "Du XVIᵉ au XIXᵉ siècle, les puissances européennes organisèrent la traite atlantique, souvent décrite comme un commerce triangulaire : des marchandises manufacturées partaient d'Europe vers l'Afrique ; des Africains réduits en esclavage étaient déportés d'Afrique vers les Amériques (la « traversée du milieu ») ; et les produits des plantations (sucre, coton, tabac) repartaient vers l'Europe.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Du XVIᵉ au XIXᵉ siècle, les puissances européennes organisent un commerce entre trois continents. Sur l'un de ses trois trajets : des femmes et des hommes réduits en esclavage.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "3 continents",
+            legende: "reliés par le commerce triangulaire",
+          },
+          {
+            type: "paragraphe",
+            text: "Des marchandises manufacturées partent d'Europe vers l'Afrique. Des Africains, déportés de force, traversent l'Atlantique vers les Amériques — la « **traversée du milieu** ». Les produits des plantations, sucre, coton, tabac, repartent ensuite vers l'Europe.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Un commerce entre trois continents, sur trois siècles",
+              "La « traversée du milieu » : Afrique vers les Amériques",
+              "Sucre, coton, tabac : le troisième trajet, vers l'Europe",
+            ],
+          },
+        ],
       },
       {
         id: "course-histoire-24-traite-negriere-transatlantique-lesson-2",
         title: "L'ampleur de la déportation",
-        content: "On estime qu'au moins douze millions d'Africains furent déportés à travers l'Atlantique. Entassés dans des conditions atroces, environ un million et demi à deux millions moururent durant la seule traversée. La plupart venaient d'Afrique de l'Ouest et d'Afrique centrale.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Douze millions de personnes : c'est le nombre estimé d'Africains déportés de force à travers l'Atlantique, entre le XVIᵉ et le XIXᵉ siècle.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "12 millions",
+            legende: "personnes déportées à travers l'Atlantique",
+          },
+          {
+            type: "paragraphe",
+            text: "Entassées à bord des navires, entre **un million et demi** et **deux millions** de personnes meurent durant la seule traversée. La plupart des personnes déportées viennent d'Afrique de l'Ouest et d'Afrique centrale.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**12 millions** de personnes déportées à travers l'Atlantique",
+              "Entre 1,5 et 2 millions meurent pendant la traversée",
+              "La majorité vient d'Afrique de l'Ouest et centrale",
+            ],
+          },
+        ],
       },
       {
         id: "course-histoire-24-traite-negriere-transatlantique-lesson-3",
         title: "Les conséquences pour l'Afrique",
-        content: "La traite eut des effets dévastateurs sur l'Afrique : dépeuplement, guerres entretenues pour capturer des prisonniers, déstabilisation des sociétés et des États, distorsions économiques et traumatisme durable. Des royaumes côtiers furent entraînés dans ce système funeste.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "La traite ne déplace pas seulement des personnes. Elle transforme en profondeur les sociétés qui restent sur le continent, pendant des générations.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "4",
+            legende: "effets majeurs sur les sociétés africaines",
+          },
+          {
+            type: "paragraphe",
+            text: "Dépeuplement, guerres menées pour capturer des prisonniers, déstabilisation des sociétés et des États, distorsions économiques : les effets touchent tout le continent. Des royaumes côtiers sont eux-mêmes entraînés dans ce système.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Dépeuplement et guerres menées pour capturer des prisonniers",
+              "Déstabilisation durable des sociétés et des États",
+              "Des royaumes côtiers eux-mêmes entraînés dans le système",
+            ],
+          },
+        ],
       },
       {
         id: "course-histoire-24-traite-negriere-transatlantique-lesson-4",
         title: "Résistances et abolitions",
-        content: "Les personnes réduites en esclavage n'ont cessé de résister : révoltes, fuites (le marronnage), préservation de leurs cultures. La révolution de Haïti (1791-1804) aboutit à la première république noire indépendante, née d'une révolte d'esclaves victorieuse. Sous la pression des mouvements abolitionnistes, la traite puis l'esclavage furent progressivement abolis au XIXᵉ siècle (Grande-Bretagne 1807, France 1848, États-Unis 1865, Brésil 1888).",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Face à la traite et à l'esclavage, la résistance ne cesse jamais : révoltes, fuites, préservation des cultures.",
+          },
+          {
+            type: "citation",
+            texte: "Il repoussera par les racines, car elles sont profondes et nombreuses.",
+            auteur: "Toussaint Louverture",
+          },
+          {
+            type: "paragraphe",
+            text: "La révolution de Haïti (**1791-1804**) aboutit à la première république noire indépendante, née d'une révolte d'esclaves victorieuse. Sous la pression des mouvements abolitionnistes, la traite puis l'esclavage sont progressivement abolis au XIXᵉ siècle.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Révoltes, fuites (marronnage), préservation des cultures : la résistance continue",
+              "**1791-1804** : la révolution de Haïti, première république noire indépendante",
+              "Abolitions progressives au XIXᵉ siècle, sous la pression abolitionniste",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le marronnage — la fuite vers des zones reculées — a permis à des communautés entières de personnes libres de se maintenir, parfois pendant des générations.",
+          },
+        ],
       },
       {
         id: "course-histoire-24-traite-negriere-transatlantique-lesson-5",
         title: "Mémoire et héritage",
-        content: "L'UNESCO a lancé le projet « La Route de l'esclave » pour étudier cette histoire et en entretenir la mémoire, autour de lieux comme Gorée, Ouidah ou Elmina. La diaspora africaine a profondément façonné les Amériques (musique, religion, cultures). Aujourd'hui reconnue comme un crime contre l'humanité, la traite impose un devoir de mémoire.",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "L'UNESCO a lancé le projet « La Route de l'esclave » pour étudier cette histoire et en entretenir la mémoire.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1807", texte: "Abolition de la traite au Royaume-Uni" },
+              { date: "1848", texte: "Abolition de l'esclavage en France" },
+              { date: "1865", texte: "Abolition de l'esclavage aux États-Unis" },
+              { date: "1888", texte: "Abolition de l'esclavage au Brésil" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "La diaspora africaine a profondément façonné les Amériques : musique, religion, cultures. Des lieux comme **Gorée**, Ouidah ou Elmina portent aujourd'hui cette mémoire.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le projet « La Route de l'esclave » entretient la mémoire",
+              "**Gorée**, Ouidah, Elmina : des lieux de mémoire",
+              "La diaspora a façonné les Amériques : musique, religion, cultures",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Reconnue aujourd'hui comme un crime contre l'humanité, la traite transatlantique impose, pour l'UNESCO comme pour de nombreux pays, un devoir de mémoire toujours actif.",
+          },
+        ],
       },
     ],
     quiz: [
@@ -1698,35 +2548,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment appelle-t-on souvent l'organisation de la traite atlantique ?",
         options: ["Le commerce triangulaire", "Le commerce transsaharien", "La route de la soie", "Le troc local"],
         correctIndex: 0,
-        explanation: "La traite atlantique est souvent décrite comme un commerce triangulaire entre l'Europe, l'Afrique et les Amériques.",
+        explanation: "La traite atlantique est souvent décrite comme un commerce triangulaire entre l'Europe, l'Afrique et les Amériques, reliant trois continents sur trois trajets successifs.",
       },
       {
         id: "course-histoire-24-traite-negriere-transatlantique-quiz-2",
         question: "Combien d'Africains furent, selon les estimations, déportés à travers l'Atlantique ?",
         options: ["Quelques milliers", "Environ 12 millions", "Environ 500", "Aucun"],
         correctIndex: 1,
-        explanation: "On estime qu'au moins douze millions d'Africains furent déportés vers les Amériques.",
+        explanation: "On estime qu'au moins douze millions d'Africains furent déportés vers les Amériques ; entre 1,5 et 2 millions moururent durant la seule traversée.",
       },
       {
         id: "course-histoire-24-traite-negriere-transatlantique-quiz-3",
         question: "Quelle a été une conséquence majeure de la traite pour l'Afrique ?",
         options: ["Un enrichissement général", "Le dépeuplement et la déstabilisation des sociétés", "Une longue période de paix", "Aucune conséquence"],
         correctIndex: 1,
-        explanation: "La traite provoqua dépeuplement, guerres et déstabilisation durable des sociétés africaines.",
+        explanation: "La traite provoqua dépeuplement, guerres menées pour capturer des prisonniers, et déstabilisation durable des sociétés et des États africains, y compris des royaumes côtiers.",
       },
       {
         id: "course-histoire-24-traite-negriere-transatlantique-quiz-4",
         question: "Quelle révolution aboutit à la première république noire indépendante ?",
         options: ["La révolution de Haïti", "La révolution française", "La révolution russe", "La révolution américaine"],
         correctIndex: 0,
-        explanation: "La révolution de Haïti (1791-1804), née d'une révolte d'esclaves, donna la première république noire indépendante.",
+        explanation: "La révolution de Haïti (1791-1804), née d'une révolte d'esclaves menée entre autres par Toussaint Louverture, donna la première république noire indépendante.",
       },
       {
         id: "course-histoire-24-traite-negriere-transatlantique-quiz-5",
         question: "Quel projet de l'UNESCO entretient la mémoire de la traite ?",
         options: ["« La Route de l'esclave »", "« La Route de la soie »", "« Le Grand Nil »", "« Mémoire du désert »"],
         correctIndex: 0,
-        explanation: "Le projet « La Route de l'esclave » de l'UNESCO étudie cette histoire et en entretient la mémoire (Gorée, Ouidah, Elmina).",
+        explanation: "Le projet « La Route de l'esclave » de l'UNESCO étudie cette histoire et en entretient la mémoire, autour de lieux comme Gorée, Ouidah et Elmina.",
       },
     ],
   },
@@ -1741,27 +2591,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-25-conference-berlin-lesson-1",
         title: "La « course à l'Afrique »",
-        content: "À la fin du XIXᵉ siècle, les puissances européennes se lancèrent dans une « course à l'Afrique » (Scramble for Africa) : chacune voulait s'emparer de territoires pour leurs ressources, leurs marchés et le prestige. Cette rivalité menaçait de dégénérer en conflits entre Européens.",
+        blocks: [
+          { type: "paragraphe", text: "À la fin du XIXᵉ siècle, les puissances européennes se lancèrent dans une « course à l'Afrique » (Scramble for Africa) : chacune voulait s'emparer de territoires pour leurs ressources, leurs marchés et le prestige. Cette rivalité menaçait de dégénérer en conflits entre Européens." },
+        ],
       },
       {
         id: "course-histoire-25-conference-berlin-lesson-2",
         title: "La conférence de Berlin (1884-1885)",
-        content: "Pour régler ces rivalités, le chancelier allemand Bismarck convoqua à Berlin, en 1884-1885, une conférence réunissant les puissances européennes. Elles y fixèrent les règles du partage du continent — notamment le principe d'« occupation effective ». Aucun représentant africain n'y fut convié. L'immense bassin du Congo fut même attribué à titre personnel au roi belge Léopold II.",
+        blocks: [
+          { type: "paragraphe", text: "Pour régler ces rivalités, le chancelier allemand Bismarck convoqua à Berlin, en 1884-1885, une conférence réunissant les puissances européennes. Elles y fixèrent les règles du partage du continent — notamment le principe d'« occupation effective ». Aucun représentant africain n'y fut convié. L'immense bassin du Congo fut même attribué à titre personnel au roi belge Léopold II." },
+        ],
       },
       {
         id: "course-histoire-25-conference-berlin-lesson-3",
         title: "Des frontières artificielles",
-        content: "Les Européens tracèrent des frontières à la règle sur des cartes, ignorant les peuples, royaumes et réalités ethniques ou linguistiques existants. Des communautés furent séparées, des groupes rivaux réunis de force. La plupart des frontières actuelles de l'Afrique datent de ce découpage arbitraire.",
+        blocks: [
+          { type: "paragraphe", text: "Les Européens tracèrent des frontières à la règle sur des cartes, ignorant les peuples, royaumes et réalités ethniques ou linguistiques existants. Des communautés furent séparées, des groupes rivaux réunis de force. La plupart des frontières actuelles de l'Afrique datent de ce découpage arbitraire." },
+        ],
       },
       {
         id: "course-histoire-25-conference-berlin-lesson-4",
         title: "La conquête",
-        content: "La conférence fut suivie d'une conquête militaire entre 1885 et 1914. À la veille de la Première Guerre mondiale, presque toute l'Afrique était colonisée ; seuls l'Éthiopie et le Liberia restaient à peu près indépendants. La conquête fut souvent brutale, comme les atrocités de l'« État indépendant du Congo » de Léopold II.",
+        blocks: [
+          { type: "paragraphe", text: "La conférence fut suivie d'une conquête militaire entre 1885 et 1914. À la veille de la Première Guerre mondiale, presque toute l'Afrique était colonisée ; seuls l'Éthiopie et le Liberia restaient à peu près indépendants. La conquête fut souvent brutale, comme les atrocités de l'« État indépendant du Congo » de Léopold II." },
+        ],
       },
       {
         id: "course-histoire-25-conference-berlin-lesson-5",
         title: "Des conséquences durables",
-        content: "Frontières artificielles, économies d'exploitation, sociétés bouleversées : les effets du partage de Berlin se font encore sentir aujourd'hui (conflits frontaliers, peuples divisés). La conférence de Berlin reste le symbole d'une Afrique dont le sort fut décidé sans les Africains.",
+        blocks: [
+          { type: "paragraphe", text: "Frontières artificielles, économies d'exploitation, sociétés bouleversées : les effets du partage de Berlin se font encore sentir aujourd'hui (conflits frontaliers, peuples divisés). La conférence de Berlin reste le symbole d'une Afrique dont le sort fut décidé sans les Africains." },
+        ],
       },
     ],
     quiz: [
@@ -1813,27 +2673,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-26-resistances-colonisation-lesson-1",
         title: "Une conquête contestée",
-        content: "La colonisation ne fut pas paisible : partout, les Africains résistèrent, militairement, diplomatiquement et spirituellement. On distingue une résistance « primaire », contre la conquête elle-même, puis des révoltes une fois l'occupation installée. L'idée d'une Afrique passive face à l'Europe est un mythe.",
+        blocks: [
+          { type: "paragraphe", text: "La colonisation ne fut pas paisible : partout, les Africains résistèrent, militairement, diplomatiquement et spirituellement. On distingue une résistance « primaire », contre la conquête elle-même, puis des révoltes une fois l'occupation installée. L'idée d'une Afrique passive face à l'Europe est un mythe." },
+        ],
       },
       {
         id: "course-histoire-26-resistances-colonisation-lesson-2",
         title: "Samory Touré",
-        content: "Samory Touré, fondateur de l'empire du Wassoulou en Afrique de l'Ouest, tint tête à l'armée française pendant près de dix-sept ans (années 1880-1898). Il disposait d'une armée bien organisée, pratiquait une guerre de mouvement et fabriquait lui-même des armes. Il ne fut capturé qu'en 1898.",
+        blocks: [
+          { type: "paragraphe", text: "Samory Touré, fondateur de l'empire du Wassoulou en Afrique de l'Ouest, tint tête à l'armée française pendant près de dix-sept ans (années 1880-1898). Il disposait d'une armée bien organisée, pratiquait une guerre de mouvement et fabriquait lui-même des armes. Il ne fut capturé qu'en 1898." },
+        ],
       },
       {
         id: "course-histoire-26-resistances-colonisation-lesson-3",
         title: "Béhanzin et les autres rois",
-        content: "Le roi Béhanzin du Dahomey combattit les Français (1890-1894) ; les Ashanti résistèrent aux Britanniques ; Lat Dior s'opposa à la pénétration française au Sénégal. En Namibie, les peuples Herero et Nama furent écrasés par les Allemands lors d'une répression d'une extrême violence (1904-1908), reconnue comme un génocide.",
+        blocks: [
+          { type: "paragraphe", text: "Le roi Béhanzin du Dahomey combattit les Français (1890-1894) ; les Ashanti résistèrent aux Britanniques ; Lat Dior s'opposa à la pénétration française au Sénégal. En Namibie, les peuples Herero et Nama furent écrasés par les Allemands lors d'une répression d'une extrême violence (1904-1908), reconnue comme un génocide." },
+        ],
       },
       {
         id: "course-histoire-26-resistances-colonisation-lesson-4",
         title: "Révoltes et résistances populaires",
-        content: "Après la conquête, les révoltes se poursuivirent. La révolte Maji Maji (Tanganyika, 1905-1907) souleva de nombreux peuples contre les Allemands. Ailleurs, la résistance passa par des prophètes, des mouvements religieux et le refus quotidien de l'ordre colonial.",
+        blocks: [
+          { type: "paragraphe", text: "Après la conquête, les révoltes se poursuivirent. La révolte Maji Maji (Tanganyika, 1905-1907) souleva de nombreux peuples contre les Allemands. Ailleurs, la résistance passa par des prophètes, des mouvements religieux et le refus quotidien de l'ordre colonial." },
+        ],
       },
       {
         id: "course-histoire-26-resistances-colonisation-lesson-5",
         title: "Un héritage de dignité",
-        content: "Militairement, ces résistances furent le plus souvent vaincues, en raison de la supériorité des armes européennes. Mais elles prouvèrent que les Africains n'ont jamais été passifs, et elles nourrirent les futurs mouvements nationalistes et la marche vers l'indépendance. Ces figures sont aujourd'hui célébrées comme des héros.",
+        blocks: [
+          { type: "paragraphe", text: "Militairement, ces résistances furent le plus souvent vaincues, en raison de la supériorité des armes européennes. Mais elles prouvèrent que les Africains n'ont jamais été passifs, et elles nourrirent les futurs mouvements nationalistes et la marche vers l'indépendance. Ces figures sont aujourd'hui célébrées comme des héros." },
+        ],
       },
     ],
     quiz: [
@@ -1885,27 +2755,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-27-bataille-adoua-lesson-1",
         title: "L'Éthiopie menacée",
-        content: "À la fin du XIXᵉ siècle, l'Italie cherchait à coloniser l'Éthiopie. Le conflit naquit d'un désaccord sur le traité de Wuchale (1889) : la version italienne prétendait établir un protectorat sur l'Éthiopie, ce que celle-ci refusa catégoriquement.",
+        blocks: [
+          { type: "paragraphe", text: "À la fin du XIXᵉ siècle, l'Italie cherchait à coloniser l'Éthiopie. Le conflit naquit d'un désaccord sur le traité de Wuchale (1889) : la version italienne prétendait établir un protectorat sur l'Éthiopie, ce que celle-ci refusa catégoriquement." },
+        ],
       },
       {
         id: "course-histoire-27-bataille-adoua-lesson-2",
         title: "Ménélik II",
-        content: "L'empereur Ménélik II sut unir les forces éthiopiennes et moderniser son armée : il acheta des armes modernes et rallia les seigneurs régionaux. L'impératrice Taytu joua également un rôle de premier plan dans la résistance à l'Italie.",
+        blocks: [
+          { type: "paragraphe", text: "L'empereur Ménélik II sut unir les forces éthiopiennes et moderniser son armée : il acheta des armes modernes et rallia les seigneurs régionaux. L'impératrice Taytu joua également un rôle de premier plan dans la résistance à l'Italie." },
+        ],
       },
       {
         id: "course-histoire-27-bataille-adoua-lesson-3",
         title: "La bataille (1er mars 1896)",
-        content: "Le 1er mars 1896, à Adoua, l'armée éthiopienne — environ 100 000 hommes — écrasa les forces italiennes venues l'envahir. Ce fut une victoire éclatante et décisive, l'une des plus célèbres de l'histoire militaire africaine.",
+        blocks: [
+          { type: "paragraphe", text: "Le 1er mars 1896, à Adoua, l'armée éthiopienne — environ 100 000 hommes — écrasa les forces italiennes venues l'envahir. Ce fut une victoire éclatante et décisive, l'une des plus célèbres de l'histoire militaire africaine." },
+        ],
       },
       {
         id: "course-histoire-27-bataille-adoua-lesson-4",
         title: "Une victoire au retentissement mondial",
-        content: "Adoua contraignit l'Italie à reconnaître la pleine indépendance de l'Éthiopie (traité d'Addis-Abeba). Ce fut la première grande défaite d'une puissance coloniale européenne face à un État africain. La nouvelle résonna dans le monde entier et inspira les panafricanistes et les peuples noirs du monde.",
+        blocks: [
+          { type: "paragraphe", text: "Adoua contraignit l'Italie à reconnaître la pleine indépendance de l'Éthiopie (traité d'Addis-Abeba). Ce fut la première grande défaite d'une puissance coloniale européenne face à un État africain. La nouvelle résonna dans le monde entier et inspira les panafricanistes et les peuples noirs du monde." },
+        ],
       },
       {
         id: "course-histoire-27-bataille-adoua-lesson-5",
         title: "Héritage",
-        content: "Grâce à Adoua, l'Éthiopie resta indépendante (hormis une brève occupation italienne de 1936 à 1941). La bataille devint un symbole de fierté, de dignité et de résistance anticoloniale, célébré à travers tout le continent et la diaspora. Elle prouva qu'une victoire africaine sur le colonialisme était possible.",
+        blocks: [
+          { type: "paragraphe", text: "Grâce à Adoua, l'Éthiopie resta indépendante (hormis une brève occupation italienne de 1936 à 1941). La bataille devint un symbole de fierté, de dignité et de résistance anticoloniale, célébré à travers tout le continent et la diaspora. Elle prouva qu'une victoire africaine sur le colonialisme était possible." },
+        ],
       },
     ],
     quiz: [
@@ -1957,27 +2837,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-28-independances-africaines-lesson-1",
         title: "La montée du nationalisme",
-        content: "Après la Seconde Guerre mondiale, le nationalisme africain s'affirma. Élites instruites, anciens combattants et mouvements urbains réclamèrent d'abord des droits, puis l'indépendance. Ils s'inspiraient du panafricanisme, du mouvement mondial de décolonisation et des principes de l'ONU. L'ordre colonial était désormais contesté de toutes parts.",
+        blocks: [
+          { type: "paragraphe", text: "Après la Seconde Guerre mondiale, le nationalisme africain s'affirma. Élites instruites, anciens combattants et mouvements urbains réclamèrent d'abord des droits, puis l'indépendance. Ils s'inspiraient du panafricanisme, du mouvement mondial de décolonisation et des principes de l'ONU. L'ordre colonial était désormais contesté de toutes parts." },
+        ],
       },
       {
         id: "course-histoire-28-independances-africaines-lesson-2",
         title: "Le Ghana, pionnier (1957)",
-        content: "En 1957, le Ghana, conduit par Kwame Nkrumah, devint la première colonie d'Afrique subsaharienne à accéder à l'indépendance. Ce fut une étincelle pour tout le continent. Au nord, plusieurs pays (Égypte, Libye, Soudan, Maroc, Tunisie) étaient déjà devenus indépendants dans les années 1950.",
+        blocks: [
+          { type: "paragraphe", text: "En 1957, le Ghana, conduit par Kwame Nkrumah, devint la première colonie d'Afrique subsaharienne à accéder à l'indépendance. Ce fut une étincelle pour tout le continent. Au nord, plusieurs pays (Égypte, Libye, Soudan, Maroc, Tunisie) étaient déjà devenus indépendants dans les années 1950." },
+        ],
       },
       {
         id: "course-histoire-28-independances-africaines-lesson-3",
         title: "1960, « l'année de l'Afrique »",
-        content: "L'année 1960 fut décisive : dix-sept pays africains accédèrent à l'indépendance la même année, dont de nombreuses anciennes colonies françaises, le Nigeria et le Congo. On l'a surnommée « l'année de l'Afrique ».",
+        blocks: [
+          { type: "paragraphe", text: "L'année 1960 fut décisive : dix-sept pays africains accédèrent à l'indépendance la même année, dont de nombreuses anciennes colonies françaises, le Nigeria et le Congo. On l'a surnommée « l'année de l'Afrique »." },
+        ],
       },
       {
         id: "course-histoire-28-independances-africaines-lesson-4",
         title: "Des voies diverses",
-        content: "Les indépendances suivirent des chemins variés. Certaines furent négociées pacifiquement, d'autres arrachées par la lutte armée : la guerre d'Algérie (1954-1962), plus tard les colonies portugaises (Angola, Mozambique, Guinée-Bissau) dans les années 1970, le Zimbabwe (1980), la Namibie (1990), et enfin la fin de l'apartheid en Afrique du Sud (1994).",
+        blocks: [
+          { type: "paragraphe", text: "Les indépendances suivirent des chemins variés. Certaines furent négociées pacifiquement, d'autres arrachées par la lutte armée : la guerre d'Algérie (1954-1962), plus tard les colonies portugaises (Angola, Mozambique, Guinée-Bissau) dans les années 1970, le Zimbabwe (1980), la Namibie (1990), et enfin la fin de l'apartheid en Afrique du Sud (1994)." },
+        ],
       },
       {
         id: "course-histoire-28-independances-africaines-lesson-5",
         title: "Espoirs et défis",
-        content: "L'indépendance apporta un immense espoir, mais aussi des défis : frontières héritées de la colonisation, économies fragiles, ingérences de la guerre froide, coups d'État. Le rêve d'une unité africaine (voir le cours suivant) restait à construire. Ces indépendances n'en demeurent pas moins un tournant majeur et une source de fierté.",
+        blocks: [
+          { type: "paragraphe", text: "L'indépendance apporta un immense espoir, mais aussi des défis : frontières héritées de la colonisation, économies fragiles, ingérences de la guerre froide, coups d'État. Le rêve d'une unité africaine (voir le cours suivant) restait à construire. Ces indépendances n'en demeurent pas moins un tournant majeur et une source de fierté." },
+        ],
       },
     ],
     quiz: [
@@ -2029,27 +2919,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-1",
         title: "L'idée panafricaine",
-        content: "Le panafricanisme est l'idée de solidarité et d'unité entre les peuples africains et leur diaspora. Ses racines se trouvent d'abord dans la diaspora, avec des figures comme W. E. B. Du Bois ou Marcus Garvey, et les premiers Congrès panafricains au début du XXᵉ siècle.",
+        blocks: [
+          { type: "paragraphe", text: "Le panafricanisme est l'idée de solidarité et d'unité entre les peuples africains et leur diaspora. Ses racines se trouvent d'abord dans la diaspora, avec des figures comme W. E. B. Du Bois ou Marcus Garvey, et les premiers Congrès panafricains au début du XXᵉ siècle." },
+        ],
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-2",
         title: "Les pères de l'unité",
-        content: "Après les indépendances, des dirigeants portèrent ce rêve. Kwame Nkrumah (Ghana) prônait des « États-Unis d'Afrique ». D'autres — Nyerere, Senghor, Haïlé Sélassié, Nasser — avaient des visions différentes, entre une fédération immédiate et une intégration plus progressive.",
+        blocks: [
+          { type: "paragraphe", text: "Après les indépendances, des dirigeants portèrent ce rêve. Kwame Nkrumah (Ghana) prônait des « États-Unis d'Afrique ». D'autres — Nyerere, Senghor, Haïlé Sélassié, Nasser — avaient des visions différentes, entre une fédération immédiate et une intégration plus progressive." },
+        ],
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-3",
         title: "L'OUA (1963)",
-        content: "En 1963, l'Organisation de l'unité africaine (OUA) fut fondée à Addis-Abeba par une trentaine d'États. Elle visait à promouvoir l'unité, à défendre la souveraineté et à achever la décolonisation, en soutenant les mouvements de libération (contre les dernières colonies et l'apartheid).",
+        blocks: [
+          { type: "paragraphe", text: "En 1963, l'Organisation de l'unité africaine (OUA) fut fondée à Addis-Abeba par une trentaine d'États. Elle visait à promouvoir l'unité, à défendre la souveraineté et à achever la décolonisation, en soutenant les mouvements de libération (contre les dernières colonies et l'apartheid)." },
+        ],
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-4",
         title: "De l'OUA à l'Union africaine (2002)",
-        content: "En 2002, l'OUA laissa place à l'Union africaine (UA), en partie inspirée du modèle de l'Union européenne : une Commission, un Parlement, des objectifs d'intégration, de paix et de développement. Son siège reste à Addis-Abeba.",
+        blocks: [
+          { type: "paragraphe", text: "En 2002, l'OUA laissa place à l'Union africaine (UA), en partie inspirée du modèle de l'Union européenne : une Commission, un Parlement, des objectifs d'intégration, de paix et de développement. Son siège reste à Addis-Abeba." },
+        ],
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-5",
         title: "Aujourd'hui",
-        content: "L'Union africaine (55 États membres) œuvre pour la paix et la sécurité, l'intégration économique — avec la Zone de libre-échange continentale africaine (ZLECAf) — et une vision de long terme, l'Agenda 2063. Le panafricanisme demeure un idéal directeur pour l'avenir du continent.",
+        blocks: [
+          { type: "paragraphe", text: "L'Union africaine (55 États membres) œuvre pour la paix et la sécurité, l'intégration économique — avec la Zone de libre-échange continentale africaine (ZLECAf) — et une vision de long terme, l'Agenda 2063. Le panafricanisme demeure un idéal directeur pour l'avenir du continent." },
+        ],
       },
     ],
     quiz: [
@@ -2101,27 +3001,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-30-apartheid-mandela-lesson-1",
         title: "Qu'est-ce que l'apartheid ?",
-        content: "L'apartheid (« séparation » en afrikaans) était un système de ségrégation raciale institutionnalisée, imposé en Afrique du Sud à partir de 1948 par le pouvoir de la minorité blanche. Des lois classaient les habitants selon leur « race », séparaient de force les populations et privaient la majorité noire de droits, de terres et de liberté de circulation (les fameux pass).",
+        blocks: [
+          { type: "paragraphe", text: "L'apartheid (« séparation » en afrikaans) était un système de ségrégation raciale institutionnalisée, imposé en Afrique du Sud à partir de 1948 par le pouvoir de la minorité blanche. Des lois classaient les habitants selon leur « race », séparaient de force les populations et privaient la majorité noire de droits, de terres et de liberté de circulation (les fameux pass)." },
+        ],
       },
       {
         id: "course-histoire-30-apartheid-mandela-lesson-2",
         title: "La résistance",
-        content: "Le Congrès national africain (ANC) et d'autres organisations menèrent la résistance. Les protestations furent souvent réprimées dans le sang : le massacre de Sharpeville (1960), le soulèvement de Soweto (1976). Face à l'échec de la lutte pacifique, Nelson Mandela, dirigeant de l'ANC, se tourna vers la lutte armée.",
+        blocks: [
+          { type: "paragraphe", text: "Le Congrès national africain (ANC) et d'autres organisations menèrent la résistance. Les protestations furent souvent réprimées dans le sang : le massacre de Sharpeville (1960), le soulèvement de Soweto (1976). Face à l'échec de la lutte pacifique, Nelson Mandela, dirigeant de l'ANC, se tourna vers la lutte armée." },
+        ],
       },
       {
         id: "course-histoire-30-apartheid-mandela-lesson-3",
         title: "Mandela emprisonné",
-        content: "Arrêté, Mandela fut condamné à la prison à vie et passa vingt-sept ans en détention, en grande partie sur l'île de Robben Island. Il devint le symbole mondial de la lutte contre l'apartheid. À l'étranger, sanctions et boycotts firent pression sur le régime sud-africain.",
+        blocks: [
+          { type: "paragraphe", text: "Arrêté, Mandela fut condamné à la prison à vie et passa vingt-sept ans en détention, en grande partie sur l'île de Robben Island. Il devint le symbole mondial de la lutte contre l'apartheid. À l'étranger, sanctions et boycotts firent pression sur le régime sud-africain." },
+        ],
       },
       {
         id: "course-histoire-30-apartheid-mandela-lesson-4",
         title: "La fin de l'apartheid",
-        content: "Sous la double pression de la résistance intérieure et de la communauté internationale, le président F. W. de Klerk libéra Mandela en 1990. Des négociations s'ouvrirent, les lois de l'apartheid furent abolies, et en 1994 eurent lieu les premières élections démocratiques multiraciales.",
+        blocks: [
+          { type: "paragraphe", text: "Sous la double pression de la résistance intérieure et de la communauté internationale, le président F. W. de Klerk libéra Mandela en 1990. Des négociations s'ouvrirent, les lois de l'apartheid furent abolies, et en 1994 eurent lieu les premières élections démocratiques multiraciales." },
+        ],
       },
       {
         id: "course-histoire-30-apartheid-mandela-lesson-5",
         title: "Mandela président et héritage",
-        content: "En 1994, Nelson Mandela devint le premier président noir d'Afrique du Sud, démocratiquement élu. Il choisit la voie de la réconciliation plutôt que de la vengeance, notamment avec la Commission « Vérité et Réconciliation ». Prix Nobel de la paix, il reste dans le monde entier un symbole de dignité, de pardon et de triomphe sur le racisme.",
+        blocks: [
+          { type: "paragraphe", text: "En 1994, Nelson Mandela devint le premier président noir d'Afrique du Sud, démocratiquement élu. Il choisit la voie de la réconciliation plutôt que de la vengeance, notamment avec la Commission « Vérité et Réconciliation ». Prix Nobel de la paix, il reste dans le monde entier un symbole de dignité, de pardon et de triomphe sur le racisme." },
+        ],
       },
     ],
     quiz: [
@@ -2173,27 +3083,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-31-tekrour-islam-lesson-1",
         title: "Un royaume sur le fleuve Sénégal",
-        content: "Le Tekrour (ou Takrour) se développa le long de la vallée du fleuve Sénégal, dans la région du Fouta Toro. C'est l'un des plus anciens royaumes d'Afrique de l'Ouest, contemporain et rival de l'empire du Ghana (IXᵉ-XIᵉ siècle). Ses habitants sont les ancêtres des Halpulaar (Toucouleurs), un nom qui dériverait justement de « Tekrour ».",
+        blocks: [
+          { type: "paragraphe", text: "Le Tekrour (ou Takrour) se développa le long de la vallée du fleuve Sénégal, dans la région du Fouta Toro. C'est l'un des plus anciens royaumes d'Afrique de l'Ouest, contemporain et rival de l'empire du Ghana (IXᵉ-XIᵉ siècle). Ses habitants sont les ancêtres des Halpulaar (Toucouleurs), un nom qui dériverait justement de « Tekrour »." },
+        ],
       },
       {
         id: "course-histoire-31-tekrour-islam-lesson-2",
         title: "L'adoption précoce de l'islam",
-        content: "Vers 1040, le roi War Jabi se convertit à l'islam. Le Tekrour devint ainsi l'un des tout premiers États d'Afrique de l'Ouest à adopter la religion musulmane — bien avant le Mali de Soundiata. Ses habitants furent réputés pour leur ferveur : dans le monde musulman, on appelait longtemps « Tekrour » les pèlerins venus d'Afrique de l'Ouest.",
+        blocks: [
+          { type: "paragraphe", text: "Vers 1040, le roi War Jabi se convertit à l'islam. Le Tekrour devint ainsi l'un des tout premiers États d'Afrique de l'Ouest à adopter la religion musulmane — bien avant le Mali de Soundiata. Ses habitants furent réputés pour leur ferveur : dans le monde musulman, on appelait longtemps « Tekrour » les pèlerins venus d'Afrique de l'Ouest." },
+        ],
       },
       {
         id: "course-histoire-31-tekrour-islam-lesson-3",
         title: "Commerce et puissance",
-        content: "Le royaume contrôlait le commerce sur le fleuve : or venu du Bambouk, sel, céréales. Sa position stratégique, entre le Sahara et l'Atlantique, en faisait un carrefour. Le Tekrour noua par moments des alliances avec les Almoravides, le mouvement religieux venu du Sahara.",
+        blocks: [
+          { type: "paragraphe", text: "Le royaume contrôlait le commerce sur le fleuve : or venu du Bambouk, sel, céréales. Sa position stratégique, entre le Sahara et l'Atlantique, en faisait un carrefour. Le Tekrour noua par moments des alliances avec les Almoravides, le mouvement religieux venu du Sahara." },
+        ],
       },
       {
         id: "course-histoire-31-tekrour-islam-lesson-4",
         title: "Le Fouta Toro",
-        content: "La région devint plus tard le Fouta Toro, grand foyer de savoir islamique. Au XVIIIᵉ siècle, une révolution menée par Souleymane Baal et les lettrés torodbe y fonda un État théocratique, l'Almamat, dirigé par un chef religieux, l'Almamy. Le Fouta resta un cœur battant de l'islam sénégalais.",
+        blocks: [
+          { type: "paragraphe", text: "La région devint plus tard le Fouta Toro, grand foyer de savoir islamique. Au XVIIIᵉ siècle, une révolution menée par Souleymane Baal et les lettrés torodbe y fonda un État théocratique, l'Almamat, dirigé par un chef religieux, l'Almamy. Le Fouta resta un cœur battant de l'islam sénégalais." },
+        ],
       },
       {
         id: "course-histoire-31-tekrour-islam-lesson-5",
         title: "Héritage",
-        content: "Le Tekrour puis le Fouta Toro sont considérés comme le berceau de l'islam au Sénégal. Cette terre a donné de grandes figures religieuses, dont plus tard El Hadj Oumar Tall. L'histoire du Tekrour est aussi celle de la formation de l'identité halpulaar, l'une des grandes composantes du Sénégal actuel.",
+        blocks: [
+          { type: "paragraphe", text: "Le Tekrour puis le Fouta Toro sont considérés comme le berceau de l'islam au Sénégal. Cette terre a donné de grandes figures religieuses, dont plus tard El Hadj Oumar Tall. L'histoire du Tekrour est aussi celle de la formation de l'identité halpulaar, l'une des grandes composantes du Sénégal actuel." },
+        ],
       },
     ],
     quiz: [
@@ -2245,27 +3165,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-1",
         title: "La naissance du Djolof",
-        content: "L'empire du Djolof (Jolof) fut fondé vers le XIVᵉ siècle. La tradition l'attribue au légendaire Ndiadiane Ndiaye, qui aurait uni les peuples wolof de la Sénégambie en une confédération. Le souverain portait le titre de Bourba Djolof.",
+        blocks: [
+          { type: "paragraphe", text: "L'empire du Djolof (Jolof) fut fondé vers le XIVᵉ siècle. La tradition l'attribue au légendaire Ndiadiane Ndiaye, qui aurait uni les peuples wolof de la Sénégambie en une confédération. Le souverain portait le titre de Bourba Djolof." },
+        ],
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-2",
         title: "Une confédération de royaumes",
-        content: "Le Djolof regroupait plusieurs royaumes qui lui payaient tribut : le Waalo, le Cayor (Kajoor), le Baol (Bawol), ainsi que les royaumes sérères du Sine et du Saloum. Chacun avait son propre souverain : le Brak du Waalo, le Damel du Cayor, le Teigne du Baol.",
+        blocks: [
+          { type: "paragraphe", text: "Le Djolof regroupait plusieurs royaumes qui lui payaient tribut : le Waalo, le Cayor (Kajoor), le Baol (Bawol), ainsi que les royaumes sérères du Sine et du Saloum. Chacun avait son propre souverain : le Brak du Waalo, le Damel du Cayor, le Teigne du Baol." },
+        ],
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-3",
         title: "L'organisation sociale",
-        content: "La société wolof était très structurée : nobles, hommes libres, castes d'artisans et de griots, et classes serviles. Les rois s'appuyaient sur des guerriers de la couronne, les ceddo. Les griots jouaient un rôle essentiel de mémoire, de conseil et de louange auprès des puissants.",
+        blocks: [
+          { type: "paragraphe", text: "La société wolof était très structurée : nobles, hommes libres, castes d'artisans et de griots, et classes serviles. Les rois s'appuyaient sur des guerriers de la couronne, les ceddo. Les griots jouaient un rôle essentiel de mémoire, de conseil et de louange auprès des puissants." },
+        ],
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-4",
         title: "La fragmentation (1549)",
-        content: "En 1549, le Cayor, sous Amari Ngoné Sobel Fall, remporta son indépendance à la bataille de Danki. L'empire se fragmenta alors en royaumes côtiers rivaux. Le déplacement du commerce vers l'Atlantique renforça les royaumes de la côte au détriment du Djolof, à l'intérieur des terres.",
+        blocks: [
+          { type: "paragraphe", text: "En 1549, le Cayor, sous Amari Ngoné Sobel Fall, remporta son indépendance à la bataille de Danki. L'empire se fragmenta alors en royaumes côtiers rivaux. Le déplacement du commerce vers l'Atlantique renforça les royaumes de la côte au détriment du Djolof, à l'intérieur des terres." },
+        ],
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-5",
         title: "Héritage",
-        content: "Les royaumes wolof — Cayor, Baol, Waalo, Djolof — structurèrent le Sénégal jusqu'à la colonisation, et virent naître des figures comme Lat Dior. La langue wolof et la culture qui en sont issues sont aujourd'hui au cœur de l'identité sénégalaise.",
+        blocks: [
+          { type: "paragraphe", text: "Les royaumes wolof — Cayor, Baol, Waalo, Djolof — structurèrent le Sénégal jusqu'à la colonisation, et virent naître des figures comme Lat Dior. La langue wolof et la culture qui en sont issues sont aujourd'hui au cœur de l'identité sénégalaise." },
+        ],
       },
     ],
     quiz: [
@@ -2317,27 +3247,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-1",
         title: "Les Sérères, un peuple ancien",
-        content: "Les Sérères comptent parmi les plus anciens peuples du Sénégal, installés dans les régions du Sine et du Saloum. Ils ont longtemps résisté à l'islamisation, conservant leur religion traditionnelle (avec un dieu suprême, Roog) et leurs coutumes. Une dynastie maternelle, les Guélowar, y régna.",
+        blocks: [
+          { type: "paragraphe", text: "Les Sérères comptent parmi les plus anciens peuples du Sénégal, installés dans les régions du Sine et du Saloum. Ils ont longtemps résisté à l'islamisation, conservant leur religion traditionnelle (avec un dieu suprême, Roog) et leurs coutumes. Une dynastie maternelle, les Guélowar, y régna." },
+        ],
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-2",
         title: "Les royaumes du Sine et du Saloum",
-        content: "Deux royaumes structuraient ce territoire, dirigés par le Maad a Sinig (roi du Sine) et le Maad Saloum (roi du Saloum). C'étaient des sociétés agraires stables, qui subsistèrent jusqu'à la colonisation. Le roi Kumba Ndoffène fut l'une de leurs grandes figures.",
+        blocks: [
+          { type: "paragraphe", text: "Deux royaumes structuraient ce territoire, dirigés par le Maad a Sinig (roi du Sine) et le Maad Saloum (roi du Saloum). C'étaient des sociétés agraires stables, qui subsistèrent jusqu'à la colonisation. Le roi Kumba Ndoffène fut l'une de leurs grandes figures." },
+        ],
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-3",
         title: "Les cercles mégalithiques",
-        content: "La région abrite les cercles mégalithiques de Sénégambie (Sine Ngayène, Wanar) : des milliers de pierres dressées et de tumulus, monuments funéraires parmi les plus grandes concentrations de mégalithes au monde. Ils sont classés au patrimoine mondial de l'UNESCO et témoignent d'une organisation sociale ancienne et élaborée.",
+        blocks: [
+          { type: "paragraphe", text: "La région abrite les cercles mégalithiques de Sénégambie (Sine Ngayène, Wanar) : des milliers de pierres dressées et de tumulus, monuments funéraires parmi les plus grandes concentrations de mégalithes au monde. Ils sont classés au patrimoine mondial de l'UNESCO et témoignent d'une organisation sociale ancienne et élaborée." },
+        ],
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-4",
         title: "Une culture préservée",
-        content: "Les Sérères sont réputés pour la lutte traditionnelle, leurs rituels agraires, leurs traditions orales et un fort sentiment d'identité. En résistant plus longtemps que leurs voisins à l'islamisation, ils ont maintenu vivantes des pratiques très anciennes.",
+        blocks: [
+          { type: "paragraphe", text: "Les Sérères sont réputés pour la lutte traditionnelle, leurs rituels agraires, leurs traditions orales et un fort sentiment d'identité. En résistant plus longtemps que leurs voisins à l'islamisation, ils ont maintenu vivantes des pratiques très anciennes." },
+        ],
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-5",
         title: "Héritage",
-        content: "Le peuple sérère a donné au Sénégal moderne de grandes figures — le président Léopold Sédar Senghor était sérère. Leurs mégalithes, leur langue et leurs traditions constituent une part précieuse et fière du patrimoine sénégalais.",
+        blocks: [
+          { type: "paragraphe", text: "Le peuple sérère a donné au Sénégal moderne de grandes figures — le président Léopold Sédar Senghor était sérère. Leurs mégalithes, leur langue et leurs traditions constituent une part précieuse et fière du patrimoine sénégalais." },
+        ],
       },
     ],
     quiz: [
@@ -2389,27 +3329,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-34-goree-saint-louis-lesson-1",
         title: "Des comptoirs sur l'Atlantique",
-        content: "Du XVᵉ au XVIIᵉ siècle, les Européens (Portugais, Néerlandais, Français, Britanniques) établirent des comptoirs sur la côte sénégalaise. L'île de Gorée, au large de Dakar, et Saint-Louis, fondée en 1659 à l'embouchure du fleuve Sénégal, en devinrent les points les plus importants.",
+        blocks: [
+          { type: "paragraphe", text: "Du XVᵉ au XVIIᵉ siècle, les Européens (Portugais, Néerlandais, Français, Britanniques) établirent des comptoirs sur la côte sénégalaise. L'île de Gorée, au large de Dakar, et Saint-Louis, fondée en 1659 à l'embouchure du fleuve Sénégal, en devinrent les points les plus importants." },
+        ],
       },
       {
         id: "course-histoire-34-goree-saint-louis-lesson-2",
         title: "Gorée, lieu de mémoire de la traite",
-        content: "Gorée est devenue le symbole de la traite négrière atlantique, avec sa Maison des Esclaves et sa « porte du voyage sans retour ». Les historiens débattent du nombre exact de captifs ayant transité par l'île elle-même, mais Gorée s'impose comme un puissant lieu de mémoire, classé au patrimoine mondial de l'UNESCO, pour l'ensemble de cette tragédie.",
+        blocks: [
+          { type: "paragraphe", text: "Gorée est devenue le symbole de la traite négrière atlantique, avec sa Maison des Esclaves et sa « porte du voyage sans retour ». Les historiens débattent du nombre exact de captifs ayant transité par l'île elle-même, mais Gorée s'impose comme un puissant lieu de mémoire, classé au patrimoine mondial de l'UNESCO, pour l'ensemble de cette tragédie." },
+        ],
       },
       {
         id: "course-histoire-34-goree-saint-louis-lesson-3",
         title: "Saint-Louis, capitale coloniale",
-        content: "Saint-Louis fut le premier établissement français d'Afrique de l'Ouest. Elle devint la capitale du Sénégal, puis celle de l'Afrique-Occidentale française (AOF). Son architecture coloniale, entre le fleuve et la mer, est aujourd'hui classée au patrimoine mondial de l'UNESCO.",
+        blocks: [
+          { type: "paragraphe", text: "Saint-Louis fut le premier établissement français d'Afrique de l'Ouest. Elle devint la capitale du Sénégal, puis celle de l'Afrique-Occidentale française (AOF). Son architecture coloniale, entre le fleuve et la mer, est aujourd'hui classée au patrimoine mondial de l'UNESCO." },
+        ],
       },
       {
         id: "course-histoire-34-goree-saint-louis-lesson-4",
         title: "Les signares",
-        content: "Gorée et Saint-Louis virent naître les signares : des femmes commerçantes métisses, euro-africaines, qui détenaient un réel pouvoir économique et animaient une société créole originale, avec ses codes, sa mode et son influence.",
+        blocks: [
+          { type: "paragraphe", text: "Gorée et Saint-Louis virent naître les signares : des femmes commerçantes métisses, euro-africaines, qui détenaient un réel pouvoir économique et animaient une société créole originale, avec ses codes, sa mode et son influence." },
+        ],
       },
       {
         id: "course-histoire-34-goree-saint-louis-lesson-5",
         title: "Héritage et mémoire",
-        content: "Ces deux îles incarnent l'entrée du Sénégal dans le monde atlantique et la mémoire de l'esclavage. Gorée accueille aujourd'hui des commémorations et la visite de dirigeants du monde entier. Elles rappellent un devoir de mémoire essentiel, au cœur de l'histoire sénégalaise.",
+        blocks: [
+          { type: "paragraphe", text: "Ces deux îles incarnent l'entrée du Sénégal dans le monde atlantique et la mémoire de l'esclavage. Gorée accueille aujourd'hui des commémorations et la visite de dirigeants du monde entier. Elles rappellent un devoir de mémoire essentiel, au cœur de l'histoire sénégalaise." },
+        ],
       },
     ],
     quiz: [
@@ -2461,27 +3411,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-1",
         title: "Le Damel du Cayor",
-        content: "Lat Dior Ngoné Latyr Diop fut le Damel (roi) du Cayor, l'un des plus puissants royaumes wolof, à la fin du XIXᵉ siècle. Roi-guerrier, il régna à une époque où la France cherchait à étendre son emprise sur le Sénégal.",
+        blocks: [
+          { type: "paragraphe", text: "Lat Dior Ngoné Latyr Diop fut le Damel (roi) du Cayor, l'un des plus puissants royaumes wolof, à la fin du XIXᵉ siècle. Roi-guerrier, il régna à une époque où la France cherchait à étendre son emprise sur le Sénégal." },
+        ],
       },
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-2",
         title: "La conversion et la lutte",
-        content: "Lat Dior se convertit à l'islam et s'allia par moments aux mouvements religieux de son temps. Face à la pénétration française, il alterna la guerre et la négociation, cherchant sans cesse à préserver l'indépendance de son royaume.",
+        blocks: [
+          { type: "paragraphe", text: "Lat Dior se convertit à l'islam et s'allia par moments aux mouvements religieux de son temps. Face à la pénétration française, il alterna la guerre et la négociation, cherchant sans cesse à préserver l'indépendance de son royaume." },
+        ],
       },
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-3",
         title: "Le refus du chemin de fer",
-        content: "Les Français voulaient construire la voie ferrée Dakar–Saint-Louis à travers le Cayor. Lat Dior s'y opposa fermement, comprenant que ce chemin de fer signerait la fin de l'indépendance de son royaume. Son refus est devenu un symbole de la résistance à la domination coloniale.",
+        blocks: [
+          { type: "paragraphe", text: "Les Français voulaient construire la voie ferrée Dakar–Saint-Louis à travers le Cayor. Lat Dior s'y opposa fermement, comprenant que ce chemin de fer signerait la fin de l'indépendance de son royaume. Son refus est devenu un symbole de la résistance à la domination coloniale." },
+        ],
       },
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-4",
         title: "La bataille de Dékheulé (1886)",
-        content: "Lat Dior tomba les armes à la main lors de la bataille de Dékheulé, en 1886, en combattant les Français, aux côtés de son fidèle cheval Malaw. Sa mort marqua la fin de l'indépendance du Cayor.",
+        blocks: [
+          { type: "paragraphe", text: "Lat Dior tomba les armes à la main lors de la bataille de Dékheulé, en 1886, en combattant les Français, aux côtés de son fidèle cheval Malaw. Sa mort marqua la fin de l'indépendance du Cayor." },
+        ],
       },
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-5",
         title: "Héritage",
-        content: "Lat Dior est aujourd'hui un héros national du Sénégal, symbole de dignité et de résistance. Son cheval Malaw et son épée sont célébrés, et de nombreux lieux portent son nom. Il incarne le refus de se soumettre à la conquête coloniale.",
+        blocks: [
+          { type: "paragraphe", text: "Lat Dior est aujourd'hui un héros national du Sénégal, symbole de dignité et de résistance. Son cheval Malaw et son épée sont célébrés, et de nombreux lieux portent son nom. Il incarne le refus de se soumettre à la conquête coloniale." },
+        ],
       },
     ],
     quiz: [
@@ -2533,27 +3493,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-1",
         title: "Un guide spirituel",
-        content: "Cheikh Ahmadou Bamba Mbacké (1853-1927) était un maître soufi sénégalais, fondateur de la confrérie mouride (la Mouridiyya). Dans un Sénégal bouleversé par la conquête coloniale, il proposa une voie spirituelle nouvelle, qui rencontra un immense écho.",
+        blocks: [
+          { type: "paragraphe", text: "Cheikh Ahmadou Bamba Mbacké (1853-1927) était un maître soufi sénégalais, fondateur de la confrérie mouride (la Mouridiyya). Dans un Sénégal bouleversé par la conquête coloniale, il proposa une voie spirituelle nouvelle, qui rencontra un immense écho." },
+        ],
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-2",
         title: "Une résistance pacifique",
-        content: "Bamba prêcha la foi, la paix et surtout le travail et l'éducation comme chemins de dignité. Sa résistance à l'ordre colonial fut non-violente : il ne prit jamais les armes, mais son influence grandissante et son indépendance d'esprit inquiétèrent l'administration française.",
+        blocks: [
+          { type: "paragraphe", text: "Bamba prêcha la foi, la paix et surtout le travail et l'éducation comme chemins de dignité. Sa résistance à l'ordre colonial fut non-violente : il ne prit jamais les armes, mais son influence grandissante et son indépendance d'esprit inquiétèrent l'administration française." },
+        ],
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-3",
         title: "L'exil",
-        content: "Craignant son pouvoir sur les foules, les Français exilèrent Cheikh Ahmadou Bamba : d'abord au Gabon (1895-1902), puis en Mauritanie. Cet exil est au cœur de la tradition mouride, riche de récits de foi et de miracles, comme la célèbre prière accomplie sur la mer.",
+        blocks: [
+          { type: "paragraphe", text: "Craignant son pouvoir sur les foules, les Français exilèrent Cheikh Ahmadou Bamba : d'abord au Gabon (1895-1902), puis en Mauritanie. Cet exil est au cœur de la tradition mouride, riche de récits de foi et de miracles, comme la célèbre prière accomplie sur la mer." },
+        ],
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-4",
         title: "Touba et le mouridisme",
-        content: "Bamba fonda la ville sainte de Touba, dont la Grande Mosquée est devenue l'une des plus grandes d'Afrique. La confrérie mouride se développa en une puissante force sociale et économique, fondée sur le travail (notamment la culture de l'arachide), la solidarité et la discipline.",
+        blocks: [
+          { type: "paragraphe", text: "Bamba fonda la ville sainte de Touba, dont la Grande Mosquée est devenue l'une des plus grandes d'Afrique. La confrérie mouride se développa en une puissante force sociale et économique, fondée sur le travail (notamment la culture de l'arachide), la solidarité et la discipline." },
+        ],
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-5",
         title: "Le Grand Magal et l'héritage",
-        content: "Chaque année, le Grand Magal de Touba commémore le départ en exil du cheikh et rassemble des millions de pèlerins. Cheikh Ahmadou Bamba demeure une figure centrale de l'islam et de l'identité sénégalaise, symbole d'une résistance par la foi et le travail.",
+        blocks: [
+          { type: "paragraphe", text: "Chaque année, le Grand Magal de Touba commémore le départ en exil du cheikh et rassemble des millions de pèlerins. Cheikh Ahmadou Bamba demeure une figure centrale de l'islam et de l'identité sénégalaise, symbole d'une résistance par la foi et le travail." },
+        ],
       },
     ],
     quiz: [
@@ -2605,27 +3575,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-1",
         title: "Une jeune femme de Casamance",
-        content: "Aline Sitoé Diatta (vers 1920-1944) était une jeune femme diola, née à Kabrousse, en Casamance, dans le sud du Sénégal. Elle travailla un temps comme domestique à Dakar avant de revenir dans sa région natale, où elle affirma une vocation de guide.",
+        blocks: [
+          { type: "paragraphe", text: "Aline Sitoé Diatta (vers 1920-1944) était une jeune femme diola, née à Kabrousse, en Casamance, dans le sud du Sénégal. Elle travailla un temps comme domestique à Dakar avant de revenir dans sa région natale, où elle affirma une vocation de guide." },
+        ],
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-2",
         title: "Un appel à la résistance",
-        content: "Pendant la Seconde Guerre mondiale, elle s'éleva contre les réquisitions coloniales (de riz, de bétail) et le travail forcé imposés par l'administration française. Elle appela au retour aux traditions diola et à la résistance à l'autorité coloniale, et fut perçue comme une prophétesse.",
+        blocks: [
+          { type: "paragraphe", text: "Pendant la Seconde Guerre mondiale, elle s'éleva contre les réquisitions coloniales (de riz, de bétail) et le travail forcé imposés par l'administration française. Elle appela au retour aux traditions diola et à la résistance à l'autorité coloniale, et fut perçue comme une prophétesse." },
+        ],
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-3",
         title: "La révolte",
-        content: "Son message se répandit dans la région. Elle exhorta les populations à refuser de livrer leur riz à l'effort de guerre français. Ce mouvement menaça directement le contrôle colonial sur la Casamance.",
+        blocks: [
+          { type: "paragraphe", text: "Son message se répandit dans la région. Elle exhorta les populations à refuser de livrer leur riz à l'effort de guerre français. Ce mouvement menaça directement le contrôle colonial sur la Casamance." },
+        ],
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-4",
         title: "Arrestation et mort",
-        content: "Arrêtée par les Français en 1943, Aline Sitoé Diatta fut déportée loin de chez elle, à Tombouctou (Mali), où elle mourut en 1944, âgée d'environ vingt-quatre ans.",
+        blocks: [
+          { type: "paragraphe", text: "Arrêtée par les Français en 1943, Aline Sitoé Diatta fut déportée loin de chez elle, à Tombouctou (Mali), où elle mourut en 1944, âgée d'environ vingt-quatre ans." },
+        ],
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-5",
         title: "Héritage",
-        content: "Surnommée « la Jeanne d'Arc de la Casamance », elle est devenue un symbole de la résistance et du rôle des femmes dans l'histoire du Sénégal. Le grand stade de Ziguinchor et une résidence universitaire de Dakar portent son nom.",
+        blocks: [
+          { type: "paragraphe", text: "Surnommée « la Jeanne d'Arc de la Casamance », elle est devenue un symbole de la résistance et du rôle des femmes dans l'histoire du Sénégal. Le grand stade de Ziguinchor et une résidence universitaire de Dakar portent son nom." },
+        ],
       },
     ],
     quiz: [
@@ -2677,27 +3657,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-1",
         title: "Un poète et un intellectuel",
-        content: "Léopold Sédar Senghor (1906-2001), né à Joal dans une famille sérère, fut un élève brillant devenu poète et penseur. Il fut l'un des premiers Africains à obtenir l'agrégation en France, où il enseigna avant de s'engager en politique.",
+        blocks: [
+          { type: "paragraphe", text: "Léopold Sédar Senghor (1906-2001), né à Joal dans une famille sérère, fut un élève brillant devenu poète et penseur. Il fut l'un des premiers Africains à obtenir l'agrégation en France, où il enseigna avant de s'engager en politique." },
+        ],
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-2",
         title: "La Négritude",
-        content: "Avec Aimé Césaire (Martinique) et Léon-Gontran Damas (Guyane), Senghor fonda dans les années 1930 le mouvement de la Négritude : une affirmation de la valeur, de la dignité et de la culture des peuples noirs, contre le mépris colonial. Ce courant littéraire et philosophique marqua tout le XXᵉ siècle.",
+        blocks: [
+          { type: "paragraphe", text: "Avec Aimé Césaire (Martinique) et Léon-Gontran Damas (Guyane), Senghor fonda dans les années 1930 le mouvement de la Négritude : une affirmation de la valeur, de la dignité et de la culture des peuples noirs, contre le mépris colonial. Ce courant littéraire et philosophique marqua tout le XXᵉ siècle." },
+        ],
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-3",
         title: "Le chemin vers l'indépendance",
-        content: "Député au parlement français, Senghor participa activement aux négociations vers l'indépendance. Après l'éphémère Fédération du Mali (1959-1960), le Sénégal devint indépendant le 4 avril 1960.",
+        blocks: [
+          { type: "paragraphe", text: "Député au parlement français, Senghor participa activement aux négociations vers l'indépendance. Après l'éphémère Fédération du Mali (1959-1960), le Sénégal devint indépendant le 4 avril 1960." },
+        ],
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-4",
         title: "Premier président du Sénégal",
-        content: "Senghor devint le premier président du Sénégal indépendant (1960-1980). Il promut la culture, l'éducation et le dialogue. Fait rare pour l'époque en Afrique, il quitta volontairement le pouvoir en 1980, assurant une transition pacifique — un geste qui força le respect.",
+        blocks: [
+          { type: "paragraphe", text: "Senghor devint le premier président du Sénégal indépendant (1960-1980). Il promut la culture, l'éducation et le dialogue. Fait rare pour l'époque en Afrique, il quitta volontairement le pouvoir en 1980, assurant une transition pacifique — un geste qui força le respect." },
+        ],
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-5",
         title: "Héritage",
-        content: "Senghor fut le premier Africain élu à l'Académie française. Figure mondiale de la culture et de la Francophonie, il laisse une œuvre poétique majeure et l'idéal de la Négritude. Il incarne le mariage de la politique et de la culture au service de son pays.",
+        blocks: [
+          { type: "paragraphe", text: "Senghor fut le premier Africain élu à l'Académie française. Figure mondiale de la culture et de la Francophonie, il laisse une œuvre poétique majeure et l'idéal de la Négritude. Il incarne le mariage de la politique et de la culture au service de son pays." },
+        ],
       },
     ],
     quiz: [
@@ -2749,27 +3739,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-1",
         title: "Une reine d'Afrique centrale",
-        content: "Nzinga Mbande (vers 1583-1663) fut reine du Ndongo puis du Matamba, dans l'actuel Angola. Elle accéda au pouvoir au début du XVIIᵉ siècle, à une époque où les Portugais étendaient leur emprise et intensifiaient la traite des esclaves en Afrique centrale.",
+        blocks: [
+          { type: "paragraphe", text: "Nzinga Mbande (vers 1583-1663) fut reine du Ndongo puis du Matamba, dans l'actuel Angola. Elle accéda au pouvoir au début du XVIIᵉ siècle, à une époque où les Portugais étendaient leur emprise et intensifiaient la traite des esclaves en Afrique centrale." },
+        ],
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-2",
         title: "Une diplomate hors pair",
-        content: "Une anecdote célèbre illustre son génie : lors d'une négociation à Luanda, en 1622, le gouverneur portugais ne lui offrit pas de siège pour l'humilier. Nzinga fit alors s'agenouiller un serviteur pour s'asseoir sur son dos, affirmant qu'elle traitait en égale, de souveraine à souverain.",
+        blocks: [
+          { type: "paragraphe", text: "Une anecdote célèbre illustre son génie : lors d'une négociation à Luanda, en 1622, le gouverneur portugais ne lui offrit pas de siège pour l'humilier. Nzinga fit alors s'agenouiller un serviteur pour s'asseoir sur son dos, affirmant qu'elle traitait en égale, de souveraine à souverain." },
+        ],
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-3",
         title: "La guerre contre les Portugais",
-        content: "Pendant près de quarante ans, Nzinga résista aux Portugais et à la traite, par la guerre, la diplomatie et les alliances — y compris avec les Néerlandais, rivaux du Portugal. Elle accueillait les esclaves en fuite et les soldats déserteurs pour renforcer son royaume.",
+        blocks: [
+          { type: "paragraphe", text: "Pendant près de quarante ans, Nzinga résista aux Portugais et à la traite, par la guerre, la diplomatie et les alliances — y compris avec les Néerlandais, rivaux du Portugal. Elle accueillait les esclaves en fuite et les soldats déserteurs pour renforcer son royaume." },
+        ],
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-4",
         title: "Une stratège et cheffe de guerre",
-        content: "Nzinga menait ses armées en personne, nouait et rompait les alliances selon les circonstances, et fit du Matamba une base solide. Toute sa vie, elle empêcha les Portugais de conquérir totalement la région.",
+        blocks: [
+          { type: "paragraphe", text: "Nzinga menait ses armées en personne, nouait et rompait les alliances selon les circonstances, et fit du Matamba une base solide. Toute sa vie, elle empêcha les Portugais de conquérir totalement la région." },
+        ],
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-5",
         title: "Héritage",
-        content: "Nzinga est un symbole de résistance et de la puissance des femmes africaines. Héroïne nationale de l'Angola, elle est célébrée à travers l'Afrique et la diaspora comme l'une des grandes figures de la lutte contre la colonisation.",
+        blocks: [
+          { type: "paragraphe", text: "Nzinga est un symbole de résistance et de la puissance des femmes africaines. Héroïne nationale de l'Angola, elle est célébrée à travers l'Afrique et la diaspora comme l'une des grandes figures de la lutte contre la colonisation." },
+        ],
       },
     ],
     quiz: [
@@ -2821,27 +3821,37 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-40-chaka-zoulou-lesson-1",
         title: "La naissance d'un royaume",
-        content: "Chaka (vers 1787-1828) est le roi fondateur du royaume zoulou, en Afrique australe (actuelle Afrique du Sud). Au début du XIXᵉ siècle, il transforma un petit clan en une grande puissance régionale par son génie militaire et politique.",
+        blocks: [
+          { type: "paragraphe", text: "Chaka (vers 1787-1828) est le roi fondateur du royaume zoulou, en Afrique australe (actuelle Afrique du Sud). Au début du XIXᵉ siècle, il transforma un petit clan en une grande puissance régionale par son génie militaire et politique." },
+        ],
       },
       {
         id: "course-histoire-40-chaka-zoulou-lesson-2",
         title: "Un génie militaire",
-        content: "Chaka révolutionna l'art de la guerre : il introduisit une courte sagaie d'estoc (l'iklwa), de meilleurs boucliers, des régiments disciplinés (les impis) et la célèbre formation en « cornes de buffle », destinée à encercler l'ennemi. Ces innovations rendirent son armée redoutable.",
+        blocks: [
+          { type: "paragraphe", text: "Chaka révolutionna l'art de la guerre : il introduisit une courte sagaie d'estoc (l'iklwa), de meilleurs boucliers, des régiments disciplinés (les impis) et la célèbre formation en « cornes de buffle », destinée à encercler l'ennemi. Ces innovations rendirent son armée redoutable." },
+        ],
       },
       {
         id: "course-histoire-40-chaka-zoulou-lesson-3",
         title: "L'expansion zouloue",
-        content: "Grâce à cette armée, Chaka étendit rapidement son royaume par la conquête et l'intégration des peuples voisins, bâtissant un État centralisé et militarisé d'une efficacité remarquable.",
+        blocks: [
+          { type: "paragraphe", text: "Grâce à cette armée, Chaka étendit rapidement son royaume par la conquête et l'intégration des peuples voisins, bâtissant un État centralisé et militarisé d'une efficacité remarquable." },
+        ],
       },
       {
         id: "course-histoire-40-chaka-zoulou-lesson-4",
         title: "Le Mfecane",
-        content: "Ses conquêtes sont associées au Mfecane (« l'écrasement »), une période de bouleversements, de migrations et de guerres qui secoua toute l'Afrique australe au début du XIXᵉ siècle — un temps de grands troubles et de déplacements de populations.",
+        blocks: [
+          { type: "paragraphe", text: "Ses conquêtes sont associées au Mfecane (« l'écrasement »), une période de bouleversements, de migrations et de guerres qui secoua toute l'Afrique australe au début du XIXᵉ siècle — un temps de grands troubles et de déplacements de populations." },
+        ],
       },
       {
         id: "course-histoire-40-chaka-zoulou-lesson-5",
         title: "Mort et héritage",
-        content: "Chaka fut assassiné en 1828 par ses demi-frères. Le royaume qu'il avait bâti résista plus tard farouchement aux Britanniques, remportant notamment la victoire d'Isandlwana (1879). Les Zoulous restent l'un des plus grands peuples d'Afrique du Sud, et Chaka demeure une figure emblématique, admirée et discutée.",
+        blocks: [
+          { type: "paragraphe", text: "Chaka fut assassiné en 1828 par ses demi-frères. Le royaume qu'il avait bâti résista plus tard farouchement aux Britanniques, remportant notamment la victoire d'Isandlwana (1879). Les Zoulous restent l'un des plus grands peuples d'Afrique du Sud, et Chaka demeure une figure emblématique, admirée et discutée." },
+        ],
       },
     ],
     quiz: [
