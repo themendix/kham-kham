@@ -838,37 +838,155 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-05-empire-du-ghana-lesson-1",
-        title: "Le premier grand empire du Sahel",
+        title: "Wagadou, pas le Ghana d'aujourd'hui",
         blocks: [
-          { type: "paragraphe", text: "Entre le IVᵉ et le XIIIᵉ siècle, l'empire du Ghana — que ses fondateurs, le peuple soninké, appelaient Wagadou — fut le premier grand empire connu de l'Afrique de l'Ouest. Attention : il ne se situait pas dans l'actuel Ghana, mais plus au nord-ouest, à cheval sur le sud de la Mauritanie et l'ouest du Mali d'aujourd'hui. Sa capitale était Koumbi Saleh. Le mot « Ghana » désignait à l'origine le titre du roi, « chef de guerre », avant de nommer tout le royaume." },
+          {
+            type: "paragraphe",
+            text: "Le premier grand empire d'Afrique de l'Ouest ne se trouvait pas dans le pays qui porte aujourd'hui son nom. Ses fondateurs l'appelaient **Wagadou**.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "IVe-XIIIe s.",
+            legende: "l'empire du Ghana domine le Sahel ouest-africain",
+          },
+          {
+            type: "paragraphe",
+            text: "Fondé par le peuple **soninké**, l'empire s'étend sur le sud de la Mauritanie et l'ouest du Mali actuels, avec pour capitale **Koumbi Saleh**. « Ghana » désignait à l'origine le titre du roi, « chef de guerre ».",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Wagadou** : le nom donné par les Soninké à leur empire",
+              "Capitale à **Koumbi Saleh**, entre Mauritanie et Mali actuels",
+              "« Ghana » : d'abord un titre royal, pas un lieu",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le pays qui porte aujourd'hui le nom Ghana n'a, historiquement, aucun territoire commun avec cet empire médiéval : le nom a simplement été repris par fierté.",
+          },
         ],
       },
       {
         id: "course-histoire-05-empire-du-ghana-lesson-2",
         title: "L'or et le sel",
         blocks: [
-          { type: "paragraphe", text: "La puissance du Ghana reposait sur le contrôle du commerce transsaharien. Deux marchandises précieuses s'y croisaient : l'or, extrait des régions du sud, et le sel, venu des mines du Sahara — un produit vital, parfois échangé à poids égal contre l'or. Le roi prélevait une taxe sur toutes les marchandises entrant et sortant du royaume, ce qui faisait sa fortune. Le géographe arabe al-Bakri, au XIᵉ siècle, a décrit la richesse fabuleuse de sa cour." },
+          {
+            type: "paragraphe",
+            text: "Le sel valait presque son pesant d'or. Sur les routes du **Sahara**, deux richesses se croisaient sans jamais venir du même endroit.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XIe siècle",
+            legende: "al-Bakri décrit la richesse de la cour du Ghana",
+          },
+          {
+            type: "paragraphe",
+            text: "L'or vient des régions du sud, le sel des mines du Sahara. Le roi prélève une taxe sur tout ce qui entre et sort du royaume — la vraie source de sa fortune. Le géographe arabe **al-Bakri** a décrit cette richesse fabuleuse.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'or du sud contre le sel du Sahara : deux flux inverses",
+              "Une taxe sur tout le commerce : la vraie richesse du roi",
+              "**Al-Bakri** (XIᵉ siècle) décrit la cour fabuleuse du Ghana",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le sel était parfois si rare au sud qu'il s'échangeait presque à poids égal contre l'or qui remontait vers le nord.",
+          },
         ],
       },
       {
         id: "course-histoire-05-empire-du-ghana-lesson-3",
-        title: "L'organisation du royaume",
+        title: "Deux villes pour un royaume",
         blocks: [
-          { type: "paragraphe", text: "Le Ghana était gouverné par un roi puissant, à la tête d'une grande armée et d'une administration structurée. Sa capitale comprenait deux villes distinctes reliées entre elles : l'une, royale, centre du pouvoir et des religions traditionnelles ; l'autre, habitée par les marchands musulmans venus du nord. Les récits arabes décrivent un souverain paré d'or, entouré d'une cour fastueuse et rendant lui-même la justice." },
+          {
+            type: "paragraphe",
+            text: "Deux villes, un seul royaume : d'un côté le pouvoir et les religions traditionnelles, de l'autre les marchands venus du nord.",
+          },
+          {
+            type: "citation",
+            texte: "Derrière le roi se tiennent dix pages, portant boucliers et épées garnis d'or.",
+            auteur: "Al-Bakri, XIe siècle",
+          },
+          {
+            type: "paragraphe",
+            text: "La capitale, **Koumbi Saleh**, comprend deux villes reliées entre elles : l'une royale, l'autre habitée par les marchands musulmans. Le roi rend lui-même la justice, entouré d'une cour fastueuse.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Deux villes reliées : la cité royale et la cité marchande",
+              "Le roi rendait lui-même la justice",
+              "Une cour fastueuse, décrite par les récits arabes",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-05-empire-du-ghana-lesson-4",
         title: "Islam et commerce",
         blocks: [
-          { type: "paragraphe", text: "Le commerce transsaharien amena aussi une religion nouvelle : l'islam, apporté par les marchands d'Afrique du Nord. Les rois du Ghana conservèrent longtemps leur religion traditionnelle, mais s'appuyèrent sur des lettrés et des administrateurs musulmans pour gérer le commerce et la diplomatie. Cette coexistence entre religion ancestrale et islam est caractéristique des grands États sahéliens." },
+          {
+            type: "paragraphe",
+            text: "Les marchands du Sahara n'apportent pas que de l'or et du sel : ils apportent aussi une religion nouvelle.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "VIIIe s.", texte: "Les marchands du nord introduisent l'islam" },
+              { date: "XIe s.", texte: "Lettrés musulmans intégrés à l'administration" },
+              { date: "XIe-XIIIe s.", texte: "Les rois restent fidèles à la religion traditionnelle" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les rois du **Ghana** conservent longtemps leur religion traditionnelle, mais s'appuient sur des lettrés et administrateurs musulmans pour gérer le commerce et la diplomatie. Cette coexistence est caractéristique des grands États sahéliens.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'islam arrive par les marchands du nord",
+              "Les rois gardent leur religion, mais emploient des lettrés musulmans",
+              "Une coexistence caractéristique des grands États sahéliens",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-05-empire-du-ghana-lesson-5",
         title: "Déclin et héritage",
         blocks: [
-          { type: "paragraphe", text: "À partir des XIᵉ-XIIIᵉ siècles, le Ghana déclina, affaibli par les rivalités internes, la pression de voisins et le déplacement des routes commerciales. Son affaiblissement ouvrit la voie à un nouvel empire encore plus vaste : le Mali. L'héritage du Ghana est immense : il a fourni le modèle de l'empire sahélien fondé sur l'or et le commerce. Son prestige était tel que, en 1957, le premier pays d'Afrique subsaharienne à devenir indépendant choisit de reprendre son nom : le Ghana moderne." },
+          {
+            type: "paragraphe",
+            text: "Un empire ne meurt jamais tout à fait. Six siècles après la chute du **Ghana**, son nom renaît — à des centaines de kilomètres de distance.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "IVe s.", texte: "Naissance de l'empire du Ghana (Wagadou)" },
+              { date: "XIe-XIIIe s.", texte: "Déclin face aux rivalités et à l'essor du Mali" },
+              { date: "1957", texte: "Le Ghana moderne reprend son nom" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Affaibli par les rivalités internes et le déplacement des routes commerciales, le Ghana laisse place à un empire plus vaste : le **Mali**, fondé par un prince en exil que nous découvrons dans le prochain cours.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Déclin aux **XIᵉ-XIIIᵉ siècles**, face aux rivalités et au Mali montant",
+              "Un modèle : l'empire sahélien fondé sur l'or et le commerce",
+              "**1957** : le Ghana moderne reprend le nom de l'empire",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "En 1957, le Ghana devient le premier pays d'Afrique subsaharienne indépendant — et choisit, par fierté, le nom de cet empire disparu six siècles plus tôt.",
+          },
         ],
       },
     ],
@@ -878,35 +996,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment le peuple soninké appelait-il l'empire du Ghana ?",
         options: ["Wagadou", "Koush", "Aksoum", "Songhaï"],
         correctIndex: 0,
-        explanation: "Les Soninké, fondateurs de l'empire, l'appelaient Wagadou ; « Ghana » était à l'origine le titre du roi.",
+        explanation: "Les Soninké, fondateurs de l'empire, l'appelaient Wagadou ; « Ghana » était à l'origine le titre du roi, « chef de guerre », avant de nommer tout le royaume.",
       },
       {
         id: "course-histoire-05-empire-du-ghana-quiz-2",
         question: "Sur quel commerce reposait la richesse du Ghana ?",
         options: ["Le commerce de la soie", "Le commerce de l'or et du sel", "Le commerce des épices", "Le commerce du café"],
         correctIndex: 1,
-        explanation: "Le Ghana contrôlait le commerce transsaharien de l'or (venu du sud) et du sel (venu du Sahara).",
+        explanation: "Le Ghana contrôlait le commerce transsaharien de l'or (venu du sud) et du sel (venu du Sahara), taxé à l'entrée comme à la sortie du royaume.",
       },
       {
         id: "course-histoire-05-empire-du-ghana-quiz-3",
         question: "L'empire du Ghana se situait-il dans l'actuel pays du Ghana ?",
         options: ["Oui, exactement au même endroit", "Non, il était plus au nord-ouest (Mali/Mauritanie actuels)", "Non, il était en Afrique de l'Est", "Non, il était en Afrique du Nord"],
         correctIndex: 1,
-        explanation: "L'empire se trouvait à cheval sur le sud de la Mauritanie et l'ouest du Mali actuels, pas dans le Ghana moderne.",
+        explanation: "L'empire se trouvait à cheval sur le sud de la Mauritanie et l'ouest du Mali actuels, avec Koumbi Saleh pour capitale — pas dans le Ghana moderne.",
       },
       {
         id: "course-histoire-05-empire-du-ghana-quiz-4",
         question: "Quelle était la capitale de l'empire du Ghana ?",
         options: ["Tombouctou", "Gao", "Koumbi Saleh", "Niani"],
         correctIndex: 2,
-        explanation: "La capitale de l'empire du Ghana était Koumbi Saleh.",
+        explanation: "La capitale de l'empire du Ghana était Koumbi Saleh, qui comprenait une ville royale et une ville marchande reliées entre elles.",
       },
       {
         id: "course-histoire-05-empire-du-ghana-quiz-5",
         question: "Quel empire a succédé au Ghana en Afrique de l'Ouest ?",
         options: ["L'empire du Mali", "L'empire romain", "Le royaume du Kongo", "Le royaume d'Aksoum"],
         correctIndex: 0,
-        explanation: "L'affaiblissement du Ghana ouvrit la voie à l'empire du Mali.",
+        explanation: "L'affaiblissement du Ghana ouvrit la voie à l'empire du Mali, fondé par Soundiata Keïta, que nous découvrons dans le prochain cours.",
       },
     ],
   },
@@ -920,37 +1038,156 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-06-soundiata-mali-lesson-1",
-        title: "L'Afrique de l'Ouest après le Ghana",
+        title: "L'ombre du roi du Sosso",
         blocks: [
-          { type: "paragraphe", text: "Après le déclin de l'empire du Ghana, l'Afrique de l'Ouest se morcela en petits royaumes rivaux. Parmi les peuples de la région, les Mandingues (Malinké), installés autour du petit royaume de Kangaba, sur le haut Niger. Un souverain redouté domina alors la région : Soumaoro Kanté, roi du Sosso, réputé cruel et invincible. C'est dans ce contexte d'oppression qu'allait émerger une figure fondatrice de l'histoire africaine." },
+          {
+            type: "paragraphe",
+            text: "Après la chute du Ghana, un roi redouté domine l'Afrique de l'Ouest : **Soumaoro Kanté**, du royaume du Sosso, que l'on dit invincible.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIIIe s.", texte: "Chute du Ghana, morcellement régional" },
+              { date: "avant 1235", texte: "Soumaoro Kanté domine le Sosso" },
+              { date: "1235", texte: "Naissance de l'empire du Mali" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les Mandingues (Malinké), installés autour du royaume de **Kangaba**, sur le haut Niger, vivent alors sous la menace de Soumaoro. C'est dans ce contexte d'oppression qu'émerge une figure fondatrice de l'histoire africaine : **Soundiata Keïta**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Après le Ghana, l'Afrique de l'Ouest se morcelle en royaumes rivaux",
+              "**Soumaoro Kanté**, roi du Sosso, domine et opprime la région",
+              "Les Mandingues vivent autour de Kangaba, sur le haut Niger",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Soumaoro Kanté, roi du Sosso, était réputé si cruel et si puissant qu'on le disait invincible — jusqu'à sa rencontre avec Soundiata.",
+          },
         ],
       },
       {
         id: "course-histoire-06-soundiata-mali-lesson-2",
         title: "Soundiata, l'enfant qui ne marchait pas",
         blocks: [
-          { type: "paragraphe", text: "L'histoire de Soundiata Keïta nous est parvenue par la tradition orale, transmise de génération en génération par les griots. Selon l'épopée, Soundiata était un enfant fragile, incapable de marcher dans sa jeunesse, avant de se relever par un effort de volonté devenu légendaire. Contraint à l'exil pour échapper aux rivalités de cour, il grandit loin de son pays, se forma auprès d'autres souverains, puis revint pour libérer son peuple." },
+          {
+            type: "paragraphe",
+            text: "On le disait incapable de marcher, enfant. Ce même enfant allait devenir le fondateur d'un empire.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "~800 ans",
+            legende: "l'épopée transmise oralement par les griots",
+          },
+          {
+            type: "paragraphe",
+            text: "Selon l'épopée, **Soundiata** se relève par un effort de volonté devenu légendaire. Contraint à l'exil pour échapper aux rivalités de cour, il grandit loin de son pays, se forme auprès d'autres souverains, puis revient pour libérer son peuple.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Un enfant fragile, incapable de marcher dans sa jeunesse",
+              "Il se relève par un effort de volonté devenu légendaire",
+              "L'exil, la formation, puis le retour pour libérer son peuple",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "L'histoire de Soundiata nous vient uniquement de la tradition orale des **griots** : aucun texte écrit de l'époque ne la raconte.",
+          },
         ],
       },
       {
         id: "course-histoire-06-soundiata-mali-lesson-3",
-        title: "La bataille de Kirina (vers 1235)",
+        title: "La bataille de Kirina",
         blocks: [
-          { type: "paragraphe", text: "De retour parmi les siens, Soundiata rassembla les clans mandingues et affronta Soumaoro Kanté. Vers 1235, il remporta la décisive bataille de Kirina, mettant fin à la domination du Sosso. Cette victoire scella l'unité des Mandingues et marqua la naissance de l'empire du Mali. Soundiata prit le titre de mansa (roi des rois) et établit sa capitale à Niani." },
+          {
+            type: "paragraphe",
+            text: "De retour parmi les siens, Soundiata rassemble les clans mandingues. Une seule bataille va sceller le sort de toute la région.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1235",
+            legende: "Soundiata vainc Soumaoro à la bataille de Kirina",
+          },
+          {
+            type: "paragraphe",
+            text: "Soundiata affronte **Soumaoro Kanté** et remporte la décisive bataille de **Kirina**, mettant fin à la domination du Sosso. Il prend le titre de mansa (roi des rois) et établit sa capitale à Niani.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1235** : victoire de Soundiata à Kirina sur Soumaoro Kanté",
+              "Naissance de l'empire du Mali, capitale à Niani",
+              "Soundiata prend le titre de mansa, « roi des rois »",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-06-soundiata-mali-lesson-4",
-        title: "La Charte du Manden (Kurukan Fuga)",
+        title: "La Charte du Manden",
         blocks: [
-          { type: "paragraphe", text: "Vers 1236, selon la tradition, une grande assemblée réunie à Kurukan Fuga proclama la Charte du Manden, un ensemble de règles orales organisant la société de l'empire. Elle répartissait les rôles entre clans, garantissait des droits et énonçait des principes de respect de la vie humaine et de solidarité. Transmise par les griots, cette charte est aujourd'hui inscrite au patrimoine culturel immatériel de l'UNESCO : elle est considérée comme l'une des plus anciennes « constitutions » d'Afrique." },
+          {
+            type: "paragraphe",
+            text: "Vers 1236, une grande assemblée se réunit à Kurukan Fuga. Elle proclame l'une des plus anciennes chartes de droits connues en Afrique.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1236",
+            legende: "proclamation de la Charte du Manden à Kurukan Fuga",
+          },
+          {
+            type: "paragraphe",
+            text: "Cette charte répartit les rôles entre clans, garantit des droits et énonce des principes de respect de la vie humaine et de solidarité. Transmise par les **griots**, elle est aujourd'hui inscrite au patrimoine immatériel de l'**UNESCO**.",
+          },
+          {
+            type: "citation",
+            texte: "Toute vie humaine est une vie.",
+            auteur: "Charte du Manden, Kurukan Fuga (1236)",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1236** : proclamation de la Charte du Manden à Kurukan Fuga",
+              "Des droits, des rôles par clan, et un principe de solidarité",
+              "Une des plus anciennes « constitutions » d'Afrique, inscrite par l'UNESCO",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-06-soundiata-mali-lesson-5",
         title: "Les fondations d'un empire prospère",
         blocks: [
-          { type: "paragraphe", text: "Sous Soundiata, le Mali posa les bases de sa prospérité : contrôle des routes de l'or, développement de l'agriculture dans la vallée du Niger et intégration de nombreux peuples. L'empire qu'il fonda allait devenir, sous ses successeurs, l'un des plus vastes et des plus riches du monde. Soundiata reste célébré comme un héros fondateur, et sa charte comme un symbole précoce de droits et de bonne gouvernance. C'est sous l'un de ses successeurs, Mansa Moussa, que le Mali atteindra son apogée." },
+          {
+            type: "paragraphe",
+            text: "Soundiata ne fonde pas seulement un empire : il pose les bases d'une prospérité qui dépassera son propre règne.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIIIe s.", texte: "Chute du Ghana, essor de Soumaoro Kanté" },
+              { date: "1235", texte: "Victoire de Kirina, naissance du Mali" },
+              { date: "1236", texte: "Charte du Manden à Kurukan Fuga" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Sous **Soundiata**, le Mali contrôle les routes de l'or, développe l'agriculture dans la vallée du Niger et intègre de nombreux peuples. C'est sous l'un de ses successeurs, **Mansa Moussa**, que le Mali atteindra son apogée.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Contrôle de l'or, agriculture du Niger, intégration des peuples",
+              "Soundiata, héros fondateur et symbole de bonne gouvernance",
+              "Son successeur **Mansa Moussa** mènera le Mali à son apogée",
+            ],
+          },
         ],
       },
     ],
@@ -960,35 +1197,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qui est le fondateur de l'empire du Mali ?",
         options: ["Soundiata Keïta", "Mansa Moussa", "Soumaoro Kanté", "Askia Mohammed"],
         correctIndex: 0,
-        explanation: "Soundiata Keïta fonda l'empire du Mali après sa victoire de Kirina.",
+        explanation: "Soundiata Keïta fonda l'empire du Mali après sa victoire de Kirina, en 1235, et établit sa capitale à Niani.",
       },
       {
         id: "course-histoire-06-soundiata-mali-quiz-2",
         question: "Quelle bataille a marqué la naissance de l'empire du Mali (vers 1235) ?",
         options: ["La bataille d'Adoua", "La bataille de Kirina", "La bataille des Pyramides", "La bataille de Zama"],
         correctIndex: 1,
-        explanation: "Vers 1235, Soundiata vainquit Soumaoro Kanté à Kirina, fondant l'empire du Mali.",
+        explanation: "Vers 1235, Soundiata vainquit Soumaoro Kanté à Kirina, fondant l'empire du Mali et prenant le titre de mansa, « roi des rois ».",
       },
       {
         id: "course-histoire-06-soundiata-mali-quiz-3",
         question: "Comment appelle-t-on la charte proclamée sous Soundiata, inscrite au patrimoine de l'UNESCO ?",
         options: ["La Charte du Manden (Kurukan Fuga)", "La Grande Charte", "Le Code de Hammurabi", "La Charte de Tombouctou"],
         correctIndex: 0,
-        explanation: "La Charte du Manden (Kurukan Fuga), transmise oralement par les griots, est inscrite au patrimoine immatériel de l'UNESCO.",
+        explanation: "La Charte du Manden (Kurukan Fuga), transmise oralement par les griots, est inscrite au patrimoine immatériel de l'UNESCO comme l'une des plus anciennes « constitutions » d'Afrique.",
       },
       {
         id: "course-histoire-06-soundiata-mali-quiz-4",
         question: "Qui transmettait l'histoire de Soundiata de génération en génération ?",
         options: ["Les scribes", "Les moines", "Les griots", "Les marchands"],
         correctIndex: 2,
-        explanation: "Les griots, gardiens de la tradition orale, ont transmis l'épopée de Soundiata.",
+        explanation: "Les griots, gardiens de la tradition orale, ont transmis l'épopée de Soundiata : aucun texte écrit de l'époque ne la raconte.",
       },
       {
         id: "course-histoire-06-soundiata-mali-quiz-5",
         question: "Quel roi cruel Soundiata a-t-il vaincu ?",
         options: ["Jugurtha", "Soumaoro Kanté", "Taharqa", "Hannibal"],
         correctIndex: 1,
-        explanation: "Soundiata vainquit Soumaoro Kanté, roi du Sosso, à la bataille de Kirina.",
+        explanation: "Soundiata vainquit Soumaoro Kanté, roi du Sosso réputé invincible, à la bataille de Kirina.",
       },
     ],
   },
@@ -1002,37 +1239,160 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-07-mansa-moussa-lesson-1",
-        title: "L'empereur du Mali",
+        title: "Le plus riche souverain du monde",
         blocks: [
-          { type: "paragraphe", text: "Mansa Moussa (ou Kankou Moussa) régna sur l'empire du Mali d'environ 1312 à 1337. Sous son règne, l'empire atteignit sa plus grande étendue, couvrant une large part de l'Afrique de l'Ouest, de l'Atlantique aux confins du Niger. Le mot mansa signifie « roi des rois ». Maître des régions productrices d'or les plus riches de l'époque, Mansa Moussa disposait de moyens colossaux qui firent sa légende." },
+          {
+            type: "paragraphe",
+            text: "On a longtemps présenté **Mansa Moussa** comme l'homme le plus riche de toute l'histoire. Il régnait sur l'un des plus vastes empires d'Afrique de l'Ouest.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1312-1337",
+            legende: "le règne de Mansa Moussa sur l'empire du Mali",
+          },
+          {
+            type: "paragraphe",
+            text: "Sous son règne, l'empire atteint sa plus grande étendue, de l'Atlantique aux confins du Niger. Le mot **mansa** signifie « roi des rois ». Maître des régions productrices d'or les plus riches de l'époque, il dispose de moyens colossaux.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1312-1337** : le règne de Mansa Moussa (Kankou Moussa)",
+              "Mansa : « roi des rois », un empire de l'Atlantique au Niger",
+              "Maître des régions d'or les plus riches de son temps",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Mansa Moussa est aussi appelé Kankou Moussa, du nom de sa mère, **Kankou** — une pratique fréquente dans la tradition mandingue.",
+          },
         ],
       },
       {
         id: "course-histoire-07-mansa-moussa-lesson-2",
-        title: "Le pèlerinage à La Mecque (1324)",
+        title: "Le pèlerinage à La Mecque",
         blocks: [
-          { type: "paragraphe", text: "En 1324, Mansa Moussa entreprit un grand pèlerinage (hajj) à La Mecque, accompagné d'une immense caravane de milliers de personnes et de quantités impressionnantes d'or. Lors de son passage au Caire, il distribua et dépensa tant d'or que, selon les chroniqueurs, la valeur du métal y resta déprimée pendant plusieurs années. Ce voyage spectaculaire révéla au monde entier la richesse du Mali." },
+          {
+            type: "paragraphe",
+            text: "En **1324**, un souverain africain traverse le désert avec une caravane de milliers de personnes — et assez d'or pour changer, pour des années, l'économie d'une ville entière.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1324",
+            legende: "le pèlerinage de Mansa Moussa à La Mecque",
+          },
+          {
+            type: "paragraphe",
+            text: "Accompagné d'une immense caravane, Mansa Moussa distribue et dépense tant d'or lors de son passage au **Caire** que sa valeur y reste déprimée pendant plusieurs années, selon les chroniqueurs.",
+          },
+          {
+            type: "citation",
+            texte: "La main qui donne est au-dessus de la main qui reçoit.",
+            auteur: "Tradition islamique",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1324** : le grand pèlerinage (hajj) de Mansa Moussa",
+              "Au Caire, ses dépenses en or font chuter sa valeur",
+              "Ce voyage révèle au monde la richesse du Mali",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Selon les chroniqueurs, la valeur de l'or resta affaiblie au Caire pendant plusieurs années après le passage de Mansa Moussa.",
+          },
         ],
       },
       {
         id: "course-histoire-07-mansa-moussa-lesson-3",
         title: "Une renommée mondiale",
         blocks: [
-          { type: "paragraphe", text: "Le pèlerinage de Mansa Moussa fit connaître le Mali bien au-delà de l'Afrique. En 1375, l'Atlas catalan, célèbre carte européenne, le représente assis sur son trône, une pépite d'or à la main, désigné comme le souverain le plus riche de la région. Pour la première fois, un empire d'Afrique de l'Ouest figurait en bonne place sur les cartes du monde méditerranéen et proche-oriental." },
+          {
+            type: "paragraphe",
+            text: "En **1375**, une carte européenne représente pour la première fois un souverain d'Afrique de l'Ouest — assis sur son trône, une pépite d'or à la main.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1375",
+            legende: "l'Atlas catalan représente Mansa Moussa",
+          },
+          {
+            type: "paragraphe",
+            text: "L'**Atlas catalan**, célèbre carte européenne, désigne Mansa Moussa comme le souverain le plus riche de la région. Pour la première fois, un empire d'Afrique de l'Ouest figure en bonne place sur les cartes du monde méditerranéen.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1375** : l'Atlas catalan représente Mansa Moussa sur son trône",
+              "Une pépite d'or à la main, souverain le plus riche",
+              "Le Mali apparaît enfin sur les cartes du monde méditerranéen",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-07-mansa-moussa-lesson-4",
         title: "Tombouctou, cité du savoir",
         blocks: [
-          { type: "paragraphe", text: "À son retour, Mansa Moussa fit venir des savants et des architectes, dont Es-Sahéli, et lança de grands travaux. Il fit construire des mosquées, comme la Djinguereber à Tombouctou. Sous son impulsion et celle de ses successeurs, Tombouctou et Djenné devinrent de grands centres de savoir islamique, avec leurs universités (comme Sankoré), leurs bibliothèques et leurs milliers de manuscrits. Ces villes sont aujourd'hui classées au patrimoine mondial de l'UNESCO." },
+          {
+            type: "paragraphe",
+            text: "De retour chez lui, Mansa Moussa ne rapporte pas que des souvenirs de voyage : il ramène des savants, des architectes, et un projet de ville.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1324", texte: "Retour du pèlerinage avec savants et architectes" },
+              { date: "XIVe s.", texte: "Construction de la mosquée Djinguereber" },
+              { date: "XIVe-XVe s.", texte: "Essor de l'université de Sankoré" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il fait venir des savants, dont **Es-Sahéli**, et construit des mosquées comme la **Djinguereber**. Sous son impulsion, Tombouctou et Djenné deviennent de grands centres du savoir islamique, avec leurs bibliothèques et leurs milliers de manuscrits.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Es-Sahéli** conçoit la mosquée Djinguereber à Tombouctou",
+              "Tombouctou et Djenné deviennent de grands centres de savoir",
+              "Des bibliothèques et des milliers de manuscrits",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ces mêmes villes de Tombouctou et de Djenné sont aujourd'hui classées au patrimoine mondial de l'UNESCO.",
+          },
         ],
       },
       {
         id: "course-histoire-07-mansa-moussa-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Mansa Moussa est devenu, dans la mémoire mondiale, le symbole de la richesse, du savoir et de l'ouverture de l'Afrique médiévale. Son règne montre qu'un empire africain pouvait rivaliser avec les plus grandes puissances de son temps. Après lui, le Mali connut un lent déclin, laissant la place à un nouvel empire venu de l'est : le Songhaï, dont nous parlerons ensuite." },
+          {
+            type: "paragraphe",
+            text: "**Mansa Moussa** est devenu, dans la mémoire mondiale, le symbole de la richesse, du savoir et de l'ouverture de l'Afrique médiévale.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1312", texte: "Mansa Moussa devient empereur du Mali" },
+              { date: "1324", texte: "Pèlerinage à La Mecque, renommée mondiale" },
+              { date: "1337", texte: "Fin du règne, Tombouctou rayonne" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Son règne montre qu'un empire africain pouvait rivaliser avec les plus grandes puissances de son temps. Après lui, le Mali connaît un lent déclin, laissant la place à un nouvel empire venu de l'est : le **Songhaï**, dont nous parlerons ensuite.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Symbole mondial de la richesse et du savoir africains",
+              "Un empire qui rivalisait avec les plus grandes puissances",
+              "Le déclin du Mali ouvre la voie au Songhaï",
+            ],
+          },
         ],
       },
     ],
@@ -1042,35 +1402,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "De quel empire Mansa Moussa était-il le souverain ?",
         options: ["L'empire du Ghana", "L'empire du Mali", "L'empire Songhaï", "Le royaume d'Aksoum"],
         correctIndex: 1,
-        explanation: "Mansa Moussa régna sur l'empire du Mali, d'environ 1312 à 1337.",
+        explanation: "Mansa Moussa régna sur l'empire du Mali, d'environ 1312 à 1337, aussi sous le nom de Kankou Moussa (du nom de sa mère).",
       },
       {
         id: "course-histoire-07-mansa-moussa-quiz-2",
         question: "En quelle année Mansa Moussa a-t-il effectué son célèbre pèlerinage à La Mecque ?",
         options: ["En 1324", "En 1235", "En 1492", "En 1000"],
         correctIndex: 0,
-        explanation: "Son pèlerinage (hajj) eut lieu en 1324 et marqua les mémoires par son faste.",
+        explanation: "Son pèlerinage (hajj) eut lieu en 1324, accompagné d'une immense caravane, et marqua les mémoires par son faste.",
       },
       {
         id: "course-histoire-07-mansa-moussa-quiz-3",
         question: "Que se passa-t-il lorsqu'il distribua son or au Caire ?",
         options: ["Rien de particulier", "La valeur de l'or y chuta pour plusieurs années", "Il fut emprisonné", "Il fut couronné empereur d'Égypte"],
         correctIndex: 1,
-        explanation: "Ses dépenses en or furent si massives qu'elles firent baisser la valeur du métal au Caire pendant des années.",
+        explanation: "Ses dépenses en or furent si massives qu'elles firent baisser la valeur du métal au Caire pendant des années, selon les chroniqueurs.",
       },
       {
         id: "course-histoire-07-mansa-moussa-quiz-4",
         question: "Quelle ville est devenue, sous et après Mansa Moussa, un grand centre du savoir ?",
         options: ["Carthage", "Le Caire", "Tombouctou", "Kirina"],
         correctIndex: 2,
-        explanation: "Tombouctou (comme Djenné) devint un centre majeur de savoir islamique, avec l'université de Sankoré.",
+        explanation: "Tombouctou (comme Djenné) devint un centre majeur de savoir islamique, avec la mosquée Djinguereber et l'université de Sankoré.",
       },
       {
         id: "course-histoire-07-mansa-moussa-quiz-5",
         question: "Quel document européen de 1375 a représenté Mansa Moussa avec une pépite d'or ?",
         options: ["La Bible de Gutenberg", "L'Atlas catalan", "La carte de Ptolémée", "La tapisserie de Bayeux"],
         correctIndex: 1,
-        explanation: "L'Atlas catalan (1375) le montre sur son trône, tenant une pépite d'or.",
+        explanation: "L'Atlas catalan (1375) le montre sur son trône, tenant une pépite d'or — la première fois qu'un empire d'Afrique de l'Ouest figure sur une carte européenne.",
       },
     ],
   },
@@ -1086,35 +1446,154 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-08-empire-songhai-lesson-1",
         title: "Gao et la montée du Songhaï",
         blocks: [
-          { type: "paragraphe", text: "Le long de la boucle du Niger, autour de la ville de Gao, vivait le peuple songhaï. Longtemps soumis au Mali, il s'en émancipa à mesure que ce dernier déclinait, et bâtit à son tour un vaste empire. Le Songhaï profita de sa position sur le fleuve, véritable axe de communication et de commerce, pour étendre son autorité sur les grandes cités marchandes de la région, dont Tombouctou et Djenné." },
+          {
+            type: "paragraphe",
+            text: "Longtemps soumis au Mali, un peuple du fleuve profite de son déclin pour bâtir, à son tour, un empire.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIe s.", texte: "Le royaume songhaï existe autour de Gao" },
+              { date: "XIVe s.", texte: "Vassal de l'empire du Mali" },
+              { date: "XVe s.", texte: "Émancipation et essor du Songhaï" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Installé le long de la boucle du **Niger**, autour de **Gao**, le peuple songhaï profite de sa position sur le fleuve — un axe de communication et de commerce — pour étendre son autorité sur les grandes cités marchandes, dont Tombouctou et Djenné.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le peuple songhaï s'installe autour de **Gao**, sur le Niger",
+              "Longtemps vassal du Mali, il s'émancipe à son déclin",
+              "Le fleuve Niger : un axe de commerce et de pouvoir",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-08-empire-songhai-lesson-2",
         title: "Sonni Ali Ber, le conquérant",
         blocks: [
-          { type: "paragraphe", text: "Le véritable fondateur de la puissance songhaï fut Sonni Ali Ber (règne 1464-1492), un chef de guerre redoutable. Il s'appuya sur une puissante cavalerie et sur une flotte de guerre naviguant sur le Niger pour conquérir Tombouctou puis Djenné, et repousser les peuples voisins. Sous son règne, le Songhaï devint l'État dominant de l'Afrique de l'Ouest. Sa mémoire reste partagée : grand conquérant pour les uns, souverain dur envers les lettrés de Tombouctou pour les autres." },
+          {
+            type: "paragraphe",
+            text: "Grand conquérant pour les uns, souverain redouté pour les autres : la mémoire de Sonni Ali Ber reste profondément partagée.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1464-1492",
+            legende: "le règne de Sonni Ali Ber",
+          },
+          {
+            type: "paragraphe",
+            text: "Chef de guerre redoutable, il s'appuie sur une puissante cavalerie et sur une flotte de guerre naviguant sur le **Niger** pour conquérir **Tombouctou** puis **Djenné**. Sous son règne, le Songhaï devient l'État dominant de l'Afrique de l'Ouest.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1464-1492** : le règne de Sonni Ali Ber",
+              "Une cavalerie et une flotte fluviale, armes de conquête",
+              "Conquête de Tombouctou et Djenné ; le Songhaï domine",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Les lettrés de Tombouctou gardent de Sonni Ali Ber un souvenir sévère — quand les chroniques militaires célèbrent avant tout le conquérant.",
+          },
         ],
       },
       {
         id: "course-histoire-08-empire-songhai-lesson-3",
-        title: "Askia Mohammed, le grand réformateur",
+        title: "Askia Mohammed, le réformateur",
         blocks: [
-          { type: "paragraphe", text: "Après Sonni Ali, le pouvoir passa à Askia Mohammed (règne 1493-1528), surnommé « Askia le Grand ». Musulman fervent, il accomplit un pèlerinage à La Mecque et surtout réorganisa l'empire : il créa des provinces dirigées par des gouverneurs, une administration centralisée, une armée permanente, des poids et mesures unifiés, et encouragea le savoir et la justice. Sous lui, le Songhaï atteignit son apogée politique et culturelle." },
+          {
+            type: "paragraphe",
+            text: "Après le conquérant vient le bâtisseur. Askia Mohammed n'agrandit pas l'empire : il le réorganise, pièce par pièce.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1493-1528",
+            legende: "le règne d'Askia Mohammed, « Askia le Grand »",
+          },
+          {
+            type: "paragraphe",
+            text: "Musulman fervent, il accomplit un pèlerinage à **La Mecque** et réorganise l'empire : provinces dirigées par des gouverneurs, administration centralisée, armée permanente, poids et mesures unifiés. Sous lui, le **Songhaï** atteint son apogée.",
+          },
+          {
+            type: "citation",
+            texte: "Un chef est le berger de son peuple, il est responsable de son troupeau.",
+            auteur: "Tradition islamique",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1493-1528** : le règne d'Askia Mohammed, « Askia le Grand »",
+              "Provinces, gouverneurs, armée permanente : un empire réorganisé",
+              "Apogée politique et culturelle du Songhaï",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-08-empire-songhai-lesson-4",
-        title: "Un empire vaste, organisé et savant",
+        title: "Un empire vaste et savant",
         blocks: [
-          { type: "paragraphe", text: "À son sommet, le Songhaï fut le plus vaste empire de l'histoire de l'Afrique de l'Ouest, s'étendant sur une grande partie du Sahel. Son administration structurée, son armée et son contrôle du commerce transsaharien en faisaient une puissance de premier plan. Les villes de Tombouctou et de Djenné connurent, sous sa protection, un remarquable rayonnement intellectuel, avec leurs écoles, leurs savants et leurs bibliothèques." },
+          {
+            type: "paragraphe",
+            text: "À son sommet, un seul empire domine tout le Sahel ouest-africain — plus vaste qu'aucun autre avant lui dans la région.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "~35 ans",
+            legende: "la durée de l'apogée politique et culturelle du Songhaï",
+          },
+          {
+            type: "paragraphe",
+            text: "Son administration structurée, son armée et son contrôle du commerce transsaharien en font une puissance de premier plan. **Tombouctou** et **Djenné** connaissent, sous sa protection, un remarquable rayonnement intellectuel, avec leurs écoles et leurs bibliothèques.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le plus vaste empire de l'histoire de l'Afrique de l'Ouest",
+              "Administration, armée, commerce transsaharien : une puissance de premier plan",
+              "Tombouctou et Djenné rayonnent sous la protection du Songhaï",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-08-empire-songhai-lesson-5",
         title: "La chute de 1591",
         blocks: [
-          { type: "paragraphe", text: "En 1591, l'empire s'effondra brutalement. Une armée venue du Maroc, équipée d'armes à feu — encore inconnues dans la région — écrasa la puissante mais traditionnelle armée songhaï à la bataille de Tondibi. Cette défaite marqua la fin des grands empires sahéliens fondés sur l'or et le commerce transsaharien. L'histoire de l'Afrique de l'Ouest allait dès lors se recomposer autour de nouveaux royaumes régionaux." },
+          {
+            type: "paragraphe",
+            text: "En 1591, une armée équipée d'un tout nouvel outil de guerre met fin à des siècles de puissance sahélienne : les armes à feu.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XVe s.", texte: "Émancipation du Songhaï, essor sous Sonni Ali Ber" },
+              { date: "1493-1528", texte: "Réformes d'Askia Mohammed, apogée de l'empire" },
+              { date: "1591", texte: "Défaite de Tondibi face au Maroc" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Une armée venue du **Maroc**, équipée d'armes à feu encore inconnues dans la région, écrase l'armée songhaï à la bataille de **Tondibi**. Cette défaite marque la fin des grands empires sahéliens fondés sur l'or et le commerce transsaharien.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1591** : défaite de Tondibi face à une armée marocaine",
+              "Les armes à feu, inconnues dans la région, font la différence",
+              "La fin des grands empires sahéliens (Ghana, Mali, Songhaï)",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "L'éclat intellectuel de Tombouctou et de Djenné, lui, survit à la chute politique du Songhaï — c'est leur histoire que nous racontons dans le prochain cours.",
+          },
         ],
       },
     ],
@@ -1124,35 +1603,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quelle était la capitale de l'empire Songhaï ?",
         options: ["Gao", "Koumbi Saleh", "Niani", "Ngazargamu"],
         correctIndex: 0,
-        explanation: "L'empire Songhaï avait pour capitale Gao, sur la boucle du Niger.",
+        explanation: "L'empire Songhaï avait pour capitale Gao, sur la boucle du Niger, un axe de communication et de commerce majeur.",
       },
       {
         id: "course-histoire-08-empire-songhai-quiz-2",
         question: "Qui fut le grand conquérant fondateur de la puissance songhaï ?",
         options: ["Askia Mohammed", "Sonni Ali Ber", "Soundiata Keïta", "Mansa Moussa"],
         correctIndex: 1,
-        explanation: "Sonni Ali Ber (1464-1492) conquit Tombouctou et Djenné grâce à sa cavalerie et sa flotte.",
+        explanation: "Sonni Ali Ber (1464-1492) conquit Tombouctou et Djenné grâce à sa cavalerie et sa flotte de guerre naviguant sur le Niger.",
       },
       {
         id: "course-histoire-08-empire-songhai-quiz-3",
         question: "Quel souverain a réorganisé l'empire en provinces et administration centralisée ?",
         options: ["Sonni Ali Ber", "Idris Alooma", "Askia Mohammed", "Ezana"],
         correctIndex: 2,
-        explanation: "Askia Mohammed « le Grand » (1493-1528) réforma en profondeur l'administration de l'empire.",
+        explanation: "Askia Mohammed « le Grand » (1493-1528) réforma en profondeur l'administration de l'empire : provinces, gouverneurs, armée permanente, poids et mesures unifiés.",
       },
       {
         id: "course-histoire-08-empire-songhai-quiz-4",
         question: "Qu'est-ce qui a permis au Maroc de vaincre le Songhaï en 1591 ?",
         options: ["Une flotte plus nombreuse", "Les armes à feu", "Une alliance avec le Mali", "Une famine"],
         correctIndex: 1,
-        explanation: "À la bataille de Tondibi (1591), les armes à feu marocaines écrasèrent l'armée songhaï traditionnelle.",
+        explanation: "À la bataille de Tondibi (1591), les armes à feu marocaines, encore inconnues dans la région, écrasèrent l'armée songhaï traditionnelle.",
       },
       {
         id: "course-histoire-08-empire-songhai-quiz-5",
         question: "Que représente la chute du Songhaï dans l'histoire de l'Afrique de l'Ouest ?",
         options: ["Le début de l'Antiquité", "La fin des grands empires sahéliens", "Le début du commerce de l'or", "La naissance de l'islam"],
         correctIndex: 1,
-        explanation: "La chute de 1591 marque la fin de l'ère des grands empires sahéliens (Ghana, Mali, Songhaï).",
+        explanation: "La chute de 1591 marque la fin de l'ère des grands empires sahéliens (Ghana, Mali, Songhaï), même si le rayonnement intellectuel de Tombouctou et Djenné, lui, perdure.",
       },
     ],
   },
@@ -1168,35 +1647,154 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-09-tombouctou-djenne-lesson-1",
         title: "Du commerce au savoir",
         blocks: [
-          { type: "paragraphe", text: "Tombouctou et Djenné, situées aux carrefours du commerce transsaharien et fluvial, se sont d'abord enrichies grâce aux caravanes d'or et de sel. Cette prospérité attira des marchands, mais aussi des lettrés et des étudiants venus de tout le monde musulman. Peu à peu, ces cités marchandes se transformèrent en grands centres intellectuels, où le savoir devint une richesse aussi prisée que l'or." },
+          {
+            type: "paragraphe",
+            text: "L'or et le sel ont fait la fortune de ces villes. Mais c'est un autre trésor qui allait les rendre immortelles : le savoir.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIe-XIIe s.", texte: "Tombouctou et Djenné, carrefours commerciaux" },
+              { date: "XIVe s.", texte: "Essor sous Mansa Moussa" },
+              { date: "XVe-XVIe s.", texte: "Apogée intellectuelle sous le Songhaï" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Situées aux carrefours du commerce transsaharien et fluvial, **Tombouctou** et **Djenné** s'enrichissent d'abord grâce aux caravanes d'or et de sel. Cette prospérité attire des marchands, mais aussi des lettrés et des étudiants venus de tout le monde musulman.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Deux villes enrichies par le commerce de l'or et du sel",
+              "La prospérité attire aussi des lettrés et des étudiants",
+              "Le savoir devient une richesse aussi prisée que l'or",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-2",
         title: "L'université de Sankoré",
         blocks: [
-          { type: "paragraphe", text: "Au cœur de Tombouctou, la mosquée-université de Sankoré accueillit, à son apogée, des milliers d'étudiants. On y enseignait le droit, la théologie, la grammaire, mais aussi l'astronomie, les mathématiques et la médecine. Des savants réputés, comme Ahmed Baba, y écrivirent des ouvrages qui circulaient dans tout le monde islamique. Tombouctou devint synonyme de savoir, au point d'entrer dans l'imaginaire mondial comme une cité mythique." },
+          {
+            type: "paragraphe",
+            text: "Des milliers d'étudiants, venus de tout le monde musulman, étudient dans une seule mosquée-université au cœur du **Sahel**.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "6",
+            legende: "disciplines enseignées à l'université de Sankoré",
+          },
+          {
+            type: "paragraphe",
+            text: "On y enseigne le droit, la théologie, la grammaire, mais aussi l'astronomie, les mathématiques et la médecine. Des savants réputés, comme **Ahmed Baba**, y écrivent des ouvrages qui circulent dans tout le monde islamique.",
+          },
+          {
+            type: "citation",
+            texte: "Cherche le savoir du berceau jusqu'à la tombe.",
+            auteur: "Tradition islamique",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**6** disciplines enseignées, du droit à l'astronomie",
+              "**Ahmed Baba**, savant réputé, diffusé dans le monde islamique",
+              "Tombouctou devient synonyme de savoir, cité mythique",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Tombouctou est entrée dans l'imaginaire mondial comme une cité mythique du savoir — un nom utilisé encore aujourd'hui pour désigner un lieu lointain.",
+          },
         ],
       },
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-3",
         title: "Les manuscrits de Tombouctou",
         blocks: [
-          { type: "paragraphe", text: "Tombouctou conserve des centaines de milliers de manuscrits, rassemblés dans des bibliothèques familiales transmises de génération en génération. Ils traitent de religion, de droit, d'histoire, de sciences et d'astronomie. Ces documents sont une preuve éclatante que l'Afrique de l'Ouest possédait une tradition écrite savante et raffinée, contredisant l'idée fausse d'un continent sans écriture ni histoire." },
+          {
+            type: "paragraphe",
+            text: "Des centaines de milliers de pages, conservées de génération en génération, dans des bibliothèques familiales : les manuscrits de **Tombouctou**.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "100 000+",
+            legende: "manuscrits conservés à Tombouctou",
+          },
+          {
+            type: "paragraphe",
+            text: "Ces manuscrits traitent de religion, de droit, d'histoire, de sciences et d'astronomie, rassemblés dans des bibliothèques familiales transmises de génération en génération. Ils prouvent que l'**Afrique de l'Ouest** possédait une tradition écrite savante.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Des centaines de milliers de manuscrits, en bibliothèques familiales",
+              "Religion, droit, histoire, sciences, astronomie : tous les savoirs",
+              "La preuve d'une tradition écrite savante en Afrique de l'Ouest",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-4",
         title: "L'architecture de terre",
         blocks: [
-          { type: "paragraphe", text: "Djenné et Tombouctou sont célèbres pour leur architecture de terre. La Grande Mosquée de Djenné est le plus vaste édifice en briques de terre crue du monde ; chaque année, toute la population participe à sa réfection lors d'une grande fête communautaire. À Tombouctou, la mosquée Djinguereber témoigne du même génie. Ces monuments sont classés au patrimoine mondial de l'UNESCO." },
+          {
+            type: "paragraphe",
+            text: "Le plus vaste édifice en terre crue du monde ne se trouve ni en Asie ni en Europe : il est à Djenné.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "N° 1 mondial",
+            legende: "plus vaste édifice en terre crue du monde",
+          },
+          {
+            type: "paragraphe",
+            text: "Chaque année, toute la population de **Djenné** participe à la réfection de sa Grande Mosquée, lors d'une grande fête communautaire. À **Tombouctou**, la mosquée Djinguereber témoigne du même génie de l'architecture de terre.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La Grande Mosquée de Djenné : le plus vaste édifice en terre crue",
+              "Une réfection collective chaque année, en fête communautaire",
+              "Djinguereber, à Tombouctou, le même génie architectural",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ces monuments de terre, entretenus depuis des siècles par les mêmes gestes collectifs, sont aujourd'hui classés au patrimoine mondial de l'UNESCO.",
+          },
         ],
       },
       {
         id: "course-histoire-09-tombouctou-djenne-lesson-5",
         title: "Héritage et préservation",
         blocks: [
-          { type: "paragraphe", text: "Tombouctou et Djenné symbolisent la richesse intellectuelle de l'Afrique médiévale. Ce patrimoine reste fragile : en 2012, des mausolées de Tombouctou furent détruits, et des habitants risquèrent leur vie pour sauver les manuscrits. L'UNESCO et les communautés locales œuvrent aujourd'hui à leur protection et à leur numérisation. Préserver ces trésors, c'est préserver la mémoire écrite de tout un continent." },
+          {
+            type: "paragraphe",
+            text: "Ce patrimoine reste fragile. En **2012**, des mausolées de Tombouctou furent détruits — et des habitants ont risqué leur vie pour sauver les manuscrits.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIe-XVIe s.", texte: "Âge d'or intellectuel de Tombouctou et Djenné" },
+              { date: "2012", texte: "Destruction de mausolées, manuscrits mis à l'abri" },
+              { date: "XXIe s.", texte: "Protection et numérisation du patrimoine" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'**UNESCO** et les communautés locales œuvrent aujourd'hui à la protection et à la numérisation de ces trésors. Préserver ces manuscrits et ces monuments, c'est préserver la mémoire écrite de tout un continent.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**2012** : des mausolées détruits, des manuscrits sauvés par les habitants",
+              "UNESCO et communautés locales : protection et numérisation",
+              "Préserver ce patrimoine, c'est préserver la mémoire d'un continent",
+            ],
+          },
         ],
       },
     ],
@@ -1206,14 +1804,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quelle célèbre université-mosquée se trouvait à Tombouctou ?",
         options: ["Sankoré", "Al-Azhar", "La Sorbonne", "Karaouiyine"],
         correctIndex: 0,
-        explanation: "La mosquée-université de Sankoré, à Tombouctou, accueillait des milliers d'étudiants.",
+        explanation: "La mosquée-université de Sankoré, à Tombouctou, accueillait des milliers d'étudiants et enseignait six disciplines, du droit à l'astronomie.",
       },
       {
         id: "course-histoire-09-tombouctou-djenne-quiz-2",
         question: "Que prouvent les manuscrits de Tombouctou ?",
         options: ["Que l'Afrique n'avait pas d'écriture", "Que l'Afrique de l'Ouest avait une riche tradition écrite", "Que la ville était inhabitée", "Qu'il n'y avait pas de commerce"],
         correctIndex: 1,
-        explanation: "Les centaines de milliers de manuscrits attestent d'une tradition savante et écrite en Afrique de l'Ouest.",
+        explanation: "Les plus de cent mille manuscrits, conservés dans des bibliothèques familiales, attestent d'une tradition savante et écrite en Afrique de l'Ouest.",
       },
       {
         id: "course-histoire-09-tombouctou-djenne-quiz-3",
@@ -1234,7 +1832,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quel savant réputé de Tombouctou est cité dans ce cours ?",
         options: ["Ibn Battuta", "Ahmed Baba", "Champollion", "Al-Bakri"],
         correctIndex: 1,
-        explanation: "Ahmed Baba est l'un des grands savants de Tombouctou, auteur d'ouvrages diffusés dans le monde musulman.",
+        explanation: "Ahmed Baba est l'un des grands savants de Tombouctou, auteur d'ouvrages diffusés dans le monde musulman depuis l'université de Sankoré.",
       },
     ],
   },
