@@ -1846,37 +1846,156 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-10-kanem-bornou-lesson-1",
-        title: "Autour du lac Tchad",
+        title: "Mille ans d'une seule dynastie",
         blocks: [
-          { type: "paragraphe", text: "À l'est et au nord du lac Tchad émergea, vers le IXᵉ siècle, le royaume du Kanem, peuplé notamment de Kanouri. Il était gouverné par la dynastie des Sayfawa, l'une des plus durables de toute l'histoire mondiale : elle régna près de mille ans. Cette longévité exceptionnelle témoigne d'une remarquable stabilité politique, rare à une telle échelle de temps." },
+          {
+            type: "paragraphe",
+            text: "Une seule famille a gouverné le même royaume pendant près de mille ans. Peu d'États, dans le monde entier, peuvent en dire autant.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "~1000 ans",
+            legende: "le règne de la dynastie Sayfawa au Kanem",
+          },
+          {
+            type: "paragraphe",
+            text: "Vers le IXᵉ siècle, à l'est et au nord du lac **Tchad**, émerge le royaume du **Kanem**, peuplé notamment de Kanouri. Il est gouverné par la dynastie des **Sayfawa**, l'une des plus durables de toute l'histoire mondiale.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le royaume du Kanem émerge vers le **IXᵉ siècle**",
+              "La dynastie **Sayfawa** règne près de mille ans",
+              "Une stabilité politique rare à cette échelle de temps",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Peu de dynasties dans l'histoire du monde — Europe ou Asie comprises — ont gouverné un même royaume aussi longtemps que les Sayfawa du Kanem.",
+          },
         ],
       },
       {
         id: "course-histoire-10-kanem-bornou-lesson-2",
         title: "L'essor du Kanem et l'islam",
         blocks: [
-          { type: "paragraphe", text: "Le Kanem tira sa puissance du contrôle des routes transsahariennes reliant l'Afrique centrale au Maghreb et à l'Égypte, par lesquelles circulaient sel, cuivre, tissus et esclaves. Vers le XIᵉ siècle, ses souverains, les mai, adoptèrent l'islam, qui renforça leurs liens commerciaux et diplomatiques avec le monde musulman. Le royaume entretenait des relations jusqu'en Afrique du Nord." },
+          {
+            type: "paragraphe",
+            text: "Le sel, le cuivre, les tissus — et une religion nouvelle. Tout circule sur les mêmes routes qui traversent le Sahara vers le Kanem.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XIe siècle",
+            legende: "les mai du Kanem adoptent l'islam",
+          },
+          {
+            type: "paragraphe",
+            text: "Le Kanem tire sa puissance du contrôle des routes transsahariennes reliant l'Afrique centrale au Maghreb et à l'Égypte. Vers le XIᵉ siècle, ses souverains, les **mai**, adoptent l'**islam**, qui renforce leurs liens commerciaux et diplomatiques avec le monde musulman.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le Kanem contrôle les routes transsahariennes vers le Maghreb",
+              "**XIᵉ siècle** : les mai adoptent l'islam",
+              "Des liens commerciaux et diplomatiques avec le monde musulman",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-10-kanem-bornou-lesson-3",
         title: "Le déplacement vers le Bornou",
         blocks: [
-          { type: "paragraphe", text: "Après des crises internes et des pressions extérieures, le centre du pouvoir se déplaça, au sud-ouest du lac Tchad, vers la région du Bornou. Le royaume renaquit sous le nom de Kanem-Bornou, avec une nouvelle capitale, Ngazargamu. Ce déplacement, loin de marquer un déclin, ouvrit une nouvelle période de prospérité pour l'empire." },
+          {
+            type: "paragraphe",
+            text: "Après des crises internes, un royaume ne s'effondre pas forcément : il se déplace, se relève ailleurs, et prend un nouveau nom.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "IXe s.", texte: "Naissance du royaume du Kanem" },
+              { date: "XIVe s.", texte: "Crises internes, pressions extérieures" },
+              { date: "XVe s.", texte: "Renaissance sous le nom de Kanem-Bornou" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le centre du pouvoir se déplace au sud-ouest du lac Tchad, vers la région du **Bornou**. Le royaume renaît sous le nom de **Kanem-Bornou**, avec une nouvelle capitale, **Ngazargamu** — loin de marquer un déclin, une nouvelle prospérité s'ouvre.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le pouvoir se déplace vers le Bornou, au sud-ouest",
+              "Nouvelle capitale : **Ngazargamu**",
+              "Un déplacement, pas un déclin : une nouvelle prospérité",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-10-kanem-bornou-lesson-4",
         title: "L'apogée sous Idris Alooma",
         blocks: [
-          { type: "paragraphe", text: "L'empire atteignit son apogée sous le règne du mai Idris Alooma (fin du XVIᵉ siècle). Grand réformateur, il modernisa l'armée en introduisant des mousquetaires et des armes à feu, noua des relations diplomatiques avec l'Empire ottoman, et renforça la justice fondée sur la loi islamique. Sous lui, le Kanem-Bornou fut une puissance respectée du Soudan central." },
+          {
+            type: "paragraphe",
+            text: "Un roi peut agrandir un empire par les armes. Idris Alooma, lui, le transforme aussi par les mousquets, la diplomatie et la loi.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "fin XVIe s.",
+            legende: "l'apogée du Kanem-Bornou sous Idris Alooma",
+          },
+          {
+            type: "paragraphe",
+            text: "Grand réformateur, il modernise l'armée en introduisant des mousquetaires et des armes à feu, noue des relations diplomatiques avec l'Empire **ottoman**, et renforce la justice fondée sur la loi islamique.",
+          },
+          {
+            type: "citation",
+            texte: "Ô vous qui croyez, soyez fermes pour la justice.",
+            auteur: "Coran, sourate 4",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Idris Alooma** modernise l'armée avec des armes à feu",
+              "Relations diplomatiques avec l'Empire ottoman",
+              "Une justice renforcée, fondée sur la loi islamique",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le Kanem-Bornou d'Idris Alooma est l'un des rares États d'Afrique subsaharienne de son temps à nouer des relations directes avec Istanbul.",
+          },
         ],
       },
       {
         id: "course-histoire-10-kanem-bornou-lesson-5",
         title: "Longévité et héritage",
         blocks: [
-          { type: "paragraphe", text: "Le Kanem-Bornou perdura, sous diverses formes, jusqu'au XIXᵉ siècle, ce qui en fait l'un des États les plus durables d'Afrique. Son histoire illustre le rôle des empires du Soudan central dans la diffusion de l'islam, le commerce à longue distance et la stabilité politique. Il rappelle que l'histoire des grands États africains ne se limite pas à l'Ouest sahélien, mais s'étend jusqu'au cœur du continent." },
+          {
+            type: "paragraphe",
+            text: "Le **Kanem-Bornou** n'a pas seulement duré. Il a montré que les grands États africains ne s'arrêtaient pas au Sahel de l'Ouest.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "IXe s.", texte: "Naissance du Kanem, dynastie Sayfawa" },
+              { date: "XVe s.", texte: "Renaissance sous le nom de Kanem-Bornou" },
+              { date: "XIXe s.", texte: "Fin de près de mille ans d'histoire" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Son histoire illustre le rôle des empires du **Soudan central** dans la diffusion de l'islam, le commerce à longue distance et la stabilité politique — la preuve que les grands États africains s'étendent bien au-delà du Sahel de l'Ouest.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le Kanem-Bornou perdure jusqu'au **XIXᵉ siècle**",
+              "Un des États les plus durables d'Afrique",
+              "Les grands États africains s'étendent bien au-delà du Sahel",
+            ],
+          },
         ],
       },
     ],
@@ -1886,28 +2005,28 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Autour de quel lac s'est développé l'empire du Kanem-Bornou ?",
         options: ["Le lac Victoria", "Le lac Tchad", "Le lac Tanganyika", "Le lac Malawi"],
         correctIndex: 1,
-        explanation: "L'empire s'est développé autour du lac Tchad, au cœur du Soudan central.",
+        explanation: "L'empire s'est développé autour du lac Tchad, au cœur du Soudan central, à partir du IXᵉ siècle.",
       },
       {
         id: "course-histoire-10-kanem-bornou-quiz-2",
         question: "Qu'a de remarquable la dynastie des Sayfawa ?",
         options: ["Elle a régné près de mille ans", "Elle n'a duré que dix ans", "Elle était grecque", "Elle refusait le commerce"],
         correctIndex: 0,
-        explanation: "La dynastie Sayfawa est l'une des plus durables de l'histoire mondiale, avec près de mille ans de règne.",
+        explanation: "La dynastie Sayfawa est l'une des plus durables de l'histoire mondiale, avec près de mille ans de règne — Europe et Asie comprises.",
       },
       {
         id: "course-histoire-10-kanem-bornou-quiz-3",
         question: "Sous quel souverain l'empire a-t-il atteint son apogée ?",
         options: ["Sonni Ali Ber", "Idris Alooma", "Ezana", "Soundiata"],
         correctIndex: 1,
-        explanation: "Le mai Idris Alooma, à la fin du XVIᵉ siècle, marqua l'apogée du Kanem-Bornou.",
+        explanation: "Le mai Idris Alooma, à la fin du XVIᵉ siècle, marqua l'apogée du Kanem-Bornou, y compris par ses relations diplomatiques avec l'Empire ottoman.",
       },
       {
         id: "course-histoire-10-kanem-bornou-quiz-4",
         question: "Quelle innovation militaire Idris Alooma a-t-il introduite ?",
         options: ["Les chars de guerre", "Les armes à feu (mousquetaires)", "Les éléphants de combat", "Les navires de guerre"],
         correctIndex: 1,
-        explanation: "Idris Alooma modernisa l'armée en introduisant des mousquetaires et des armes à feu.",
+        explanation: "Idris Alooma modernisa l'armée en introduisant des mousquetaires et des armes à feu, aux côtés d'une justice renforcée par la loi islamique.",
       },
       {
         id: "course-histoire-10-kanem-bornou-quiz-5",
@@ -1928,37 +2047,152 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-1",
-        title: "Un réseau de cités du nord",
+        title: "Sept cités, aucun empire",
         blocks: [
-          { type: "paragraphe", text: "Dans le nord de l'actuel Nigeria et du Niger vivaient les Haoussa, organisés non pas en un seul empire, mais en plusieurs cités-États rivales et complémentaires. La tradition évoque les « sept vrais États haoussa » (Hausa Bakwai), parmi lesquels Kano, Katsina, Zaria (Zazzau) ou Gobir. Chaque cité était fortifiée, entourée de murailles, et gouvernée par un souverain, le sarki." },
+          {
+            type: "paragraphe",
+            text: "Pas de capitale unique, pas de souverain commun : les Haoussa ont bâti leur puissance sur des cités rivales et complémentaires.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "7",
+            legende: "cités-États haoussa (Hausa Bakwai)",
+          },
+          {
+            type: "paragraphe",
+            text: "Dans le nord de l'actuel Nigeria et du Niger vivent les **Haoussa**. La tradition évoque les « sept vrais États haoussa », parmi lesquels **Kano**, **Katsina** et Zaria. Chaque cité, fortifiée, est gouvernée par un souverain, le sarki.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**7** cités-États : les « vrais États haoussa » (Hausa Bakwai)",
+              "**Kano**, Katsina, Zaria : parmi les plus connues",
+              "Chaque cité fortifiée, gouvernée par un sarki",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Contrairement au Ghana, au Mali ou au Songhaï, les Haoussa n'ont jamais formé un empire unique — leur force venait de ce réseau de cités indépendantes.",
+          },
         ],
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-2",
         title: "Le commerce et l'artisanat",
         blocks: [
-          { type: "paragraphe", text: "Situées à la charnière entre le Sahara et les régions forestières, les cités haoussa prospérèrent grâce au commerce. Kano, la plus célèbre, était un grand centre marchand, réputé pour ses textiles, son travail du cuir et sa teinture à l'indigo — ses fosses de teinture existent encore. Ce dynamisme artisanal fit des produits haoussa des marchandises recherchées dans tout le Soudan." },
+          {
+            type: "paragraphe",
+            text: "À Kano, des fosses de teinture creusées il y a des siècles servent encore aujourd'hui. Peu d'ateliers, dans le monde, ont une telle continuité.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "3",
+            legende: "savoir-faire qui firent la réputation de Kano",
+          },
+          {
+            type: "paragraphe",
+            text: "Situées à la charnière entre le Sahara et les régions forestières, les cités haoussa prospèrent grâce au commerce. **Kano**, la plus célèbre, est réputée pour ses textiles, son travail du cuir et sa teinture à l'indigo.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Kano** : textiles, cuir, teinture à l'indigo",
+              "Une position charnière entre Sahara et régions forestières",
+              "Des produits haoussa recherchés dans tout le Soudan",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-3",
         title: "Islam et savoir",
         blocks: [
-          { type: "paragraphe", text: "À partir du XIVᵉ siècle, l'islam se diffusa parmi les élites haoussa. Les cités devinrent des centres d'administration et de savoir islamique, avec leurs écoles et leurs lettrés. La religion nouvelle se mêla longtemps aux croyances traditionnelles, avant de s'imposer plus fortement." },
+          {
+            type: "paragraphe",
+            text: "L'islam n'a pas conquis les cités **haoussa** par les armes. Il s'est installé, siècle après siècle, dans les écoles et les cours royales.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XIVe siècle",
+            legende: "l'islam se diffuse parmi les élites haoussa",
+          },
+          {
+            type: "paragraphe",
+            text: "Les cités deviennent des centres d'administration et de savoir islamique, avec leurs écoles et leurs lettrés. La religion nouvelle se mêle longtemps aux croyances traditionnelles, avant de s'imposer plus fortement.",
+          },
+          {
+            type: "citation",
+            texte: "Lis, au nom de ton Seigneur qui a créé.",
+            auteur: "Coran, sourate 96 (Iqra)",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**XIVᵉ siècle** : l'islam se diffuse parmi les élites",
+              "Des écoles et des lettrés dans les cités haoussa",
+              "Longue coexistence entre islam et croyances traditionnelles",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-4",
         title: "Rivalités et rayonnement culturel",
         blocks: [
-          { type: "paragraphe", text: "Souvent en concurrence, parfois dominées par des voisins plus puissants comme le Songhaï ou le Kanem-Bornou, les cités haoussa surent néanmoins conserver une grande vitalité culturelle. La langue haoussa devint une véritable langue de commerce, comprise sur de vastes territoires — un rôle qu'elle joue encore aujourd'hui." },
+          {
+            type: "paragraphe",
+            text: "Souvent en rivalité, parfois dominées par des voisins plus puissants, les cités haoussa ont pourtant légué à l'Afrique de l'Ouest l'une de ses grandes langues de commerce.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XVe-XVIe s.", texte: "Domination songhaïe sur certaines cités" },
+              { date: "XVIe-XVIIe s.", texte: "Influence du Kanem-Bornou" },
+              { date: "XXIe s.", texte: "Le haoussa, langue de commerce vivante" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Souvent en concurrence, parfois dominées par des voisins plus puissants comme le **Songhaï** ou le **Kanem-Bornou**, les cités haoussa conservent une grande vitalité culturelle. La langue haoussa devient une véritable langue de commerce, comprise sur de vastes territoires.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Dominées tour à tour par le Songhaï et le Kanem-Bornou",
+              "Une grande vitalité culturelle malgré les rivalités",
+              "Le haoussa, langue de commerce sur de vastes territoires",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-lesson-5",
-        title: "Le jihad de 1804 et le califat de Sokoto",
+        title: "Le jihad de 1804",
         blocks: [
-          { type: "paragraphe", text: "Au début du XIXᵉ siècle, le réformateur peul Ousman dan Fodio lança en 1804 un jihad (mouvement de réforme religieuse) qui unifia une grande partie du pays haoussa dans un vaste État : le califat de Sokoto. Les cités haoussa entrèrent alors dans un nouvel ensemble politique. Leur héritage — langue, culture urbaine, artisanat — reste central dans le Nigeria contemporain." },
+          {
+            type: "paragraphe",
+            text: "Au début du XIXᵉ siècle, un seul homme unifie par la réforme religieuse ce que des siècles de rivalité n'avaient jamais réuni.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIVe s.", texte: "L'islam s'installe dans les cités haoussa" },
+              { date: "1804", texte: "Jihad d'Ousman dan Fodio" },
+              { date: "XIXe s.", texte: "Califat de Sokoto, nouvel ensemble politique" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le réformateur peul **Ousman dan Fodio** lance en 1804 un jihad qui unifie une grande partie du pays haoussa dans un vaste État : le califat de **Sokoto**. Leur héritage — langue, culture urbaine, artisanat — reste central dans le Nigeria contemporain.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1804** : jihad d'Ousman dan Fodio",
+              "Naissance du califat de Sokoto",
+              "Un héritage toujours vivant : langue, culture urbaine, artisanat",
+            ],
+          },
         ],
       },
     ],
@@ -1968,14 +2202,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment étaient organisés les Haoussa ?",
         options: ["En un seul grand empire centralisé", "En plusieurs cités-États rivales", "En tribus nomades sans villes", "En royaume insulaire"],
         correctIndex: 1,
-        explanation: "Les Haoussa formaient un réseau de cités-États (Kano, Katsina, Zaria…), pas un empire unique.",
+        explanation: "Les Haoussa formaient un réseau de sept cités-États (Kano, Katsina, Zaria…), pas un empire unique — à la différence du Ghana, du Mali ou du Songhaï.",
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-quiz-2",
         question: "Pour quel artisanat la ville de Kano est-elle réputée ?",
         options: ["La sculpture sur glace", "Les textiles et la teinture à l'indigo", "La porcelaine", "La construction navale"],
         correctIndex: 1,
-        explanation: "Kano était réputée pour ses textiles, son cuir et ses fosses de teinture à l'indigo.",
+        explanation: "Kano était réputée pour ses textiles, son cuir et ses fosses de teinture à l'indigo, encore visibles aujourd'hui.",
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-quiz-3",
@@ -1989,14 +2223,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qui a lancé le jihad de 1804 qui aboutit au califat de Sokoto ?",
         options: ["Askia Mohammed", "Ousman dan Fodio", "Soundiata Keïta", "Idris Alooma"],
         correctIndex: 1,
-        explanation: "Le réformateur peul Ousman dan Fodio lança le jihad de 1804, fondant le califat de Sokoto.",
+        explanation: "Le réformateur peul Ousman dan Fodio lança le jihad de 1804, fondant le califat de Sokoto et unifiant une grande partie du pays haoussa.",
       },
       {
         id: "course-histoire-11-cites-etats-haoussa-quiz-5",
         question: "Quel rôle particulier joue la langue haoussa ?",
         options: ["C'est une langue morte", "C'est une grande langue de commerce", "C'est une langue uniquement religieuse", "C'est une langue européenne"],
         correctIndex: 1,
-        explanation: "Le haoussa est devenu une importante langue de commerce, comprise sur de vastes territoires.",
+        explanation: "Le haoussa est devenu une importante langue de commerce, comprise sur de vastes territoires — un rôle qu'il joue encore aujourd'hui.",
       },
     ],
   },
@@ -2750,35 +2984,145 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-21-commerce-transsaharien-lesson-1",
         title: "Traverser le désert",
         blocks: [
-          { type: "paragraphe", text: "Le Sahara, immense « mer de sable », n'était pas une barrière infranchissable mais une route. Grâce au chameau, introduit dans les premiers siècles de notre ère, de longues caravanes — parfois des milliers de bêtes — pouvaient traverser le désert d'oasis en oasis. Ces pistes reliaient les villes du Sahel, au sud, aux ports et cités d'Afrique du Nord, ouvrant l'Afrique de l'Ouest sur la Méditerranée." },
+          {
+            type: "paragraphe",
+            text: "Le Sahara n'était pas un mur. C'était une route — à condition de savoir la traverser.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Ier s.",
+            legende: "le chameau, introduit dans la région saharienne",
+          },
+          {
+            type: "paragraphe",
+            text: "Grâce au **chameau**, introduit dans les premiers siècles de notre ère, de longues caravanes — parfois des milliers de bêtes — traversent le désert d'oasis en oasis. Ces pistes relient les villes du Sahel aux ports et cités d'Afrique du Nord.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **chameau** rend possible la traversée du Sahara",
+              "Des caravanes de parfois des milliers de bêtes",
+              "Les pistes relient le Sahel à l'Afrique du Nord",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Avant le chameau, traverser le Sahara relevait presque de l'exploit : c'est cet animal, seul, qui a ouvert le désert au grand commerce.",
+          },
         ],
       },
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-2",
         title: "L'or contre le sel",
         blocks: [
-          { type: "paragraphe", text: "Deux marchandises dominaient : l'or, extrait dans les régions du sud (Bambouk, Bouré), qui montait vers le nord ; et le sel, tiré des mines sahariennes (Taghaza, Taoudenni), qui descendait vers le sud. Le sel était si précieux qu'il s'échangeait parfois presque à poids égal contre l'or. Circulaient aussi cuivre, tissus, chevaux, livres — et, tragiquement, des captifs." },
+          {
+            type: "paragraphe",
+            text: "Deux richesses filaient en sens inverse sur les mêmes pistes : l'or montait, le sel descendait — et parfois s'échangeaient à poids égal.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1:1",
+            legende: "l'or et le sel, parfois échangés à poids égal",
+          },
+          {
+            type: "paragraphe",
+            text: "L'or, extrait dans les régions du sud (**Bambouk**, **Bouré**), monte vers le nord ; le sel, tiré des mines sahariennes (**Taghaza**, Taoudenni), descend vers le sud. Circulent aussi cuivre, tissus, chevaux, livres — et, tragiquement, des captifs.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'or du sud (Bambouk, Bouré) monte vers le nord",
+              "Le sel du Sahara (Taghaza, Taoudenni) descend vers le sud",
+              "Cuivre, tissus, chevaux, livres — et, tragiquement, des captifs",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-3",
         title: "Les villes-carrefours",
         blocks: [
-          { type: "paragraphe", text: "Ce commerce fit naître de riches villes-étapes : Sijilmassa au nord, Oualata, Tombouctou, Djenné et Gao à la lisière sud du désert. Les grands empires — Ghana, Mali, Songhaï — bâtirent leur puissance en taxant les marchandises qui traversaient leur territoire. Contrôler les routes, c'était contrôler la richesse." },
+          {
+            type: "paragraphe",
+            text: "Contrôler une route commerciale, c'était contrôler une fortune. Des villes entières sont nées de ce seul principe.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "VIIIe-IXe s.", texte: "Sijilmassa, porte nord du Sahara" },
+              { date: "XIe s.", texte: "Oualata, étape caravanière majeure" },
+              { date: "XIVe-XVIe s.", texte: "Tombouctou, Djenné, Gao : cités du sud" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Ce commerce fait naître de riches villes-étapes : **Sijilmassa** au nord, **Oualata**, Tombouctou, Djenné et Gao à la lisière sud du désert. Les grands empires bâtissent leur puissance en taxant les marchandises qui traversent leur territoire.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Sijilmassa**, porte nord du grand commerce saharien",
+              "Tombouctou, Djenné, Gao : cités-étapes à la lisière sud",
+              "Contrôler les routes, c'était contrôler la richesse",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-4",
         title: "Bien plus que des marchandises",
         blocks: [
-          { type: "paragraphe", text: "Les caravanes ne transportaient pas que des biens : elles véhiculaient des idées. C'est par elles que l'islam, l'écriture arabe, les savants, les livres et de nouvelles techniques architecturales pénétrèrent en Afrique de l'Ouest. Le commerce transsaharien fut donc aussi un grand échange culturel et religieux." },
+          {
+            type: "paragraphe",
+            text: "Les caravanes ne transportaient pas que des sacs de sel et d'or. Elles transportaient aussi des idées — et celles-ci ont changé un continent.",
+          },
+          {
+            type: "citation",
+            texte: "Celui qui ne voyage pas ne connaît pas la valeur des hommes.",
+            auteur: "Proverbe touareg",
+          },
+          {
+            type: "paragraphe",
+            text: "C'est par les caravanes que l'**islam**, l'écriture arabe, les savants, les livres et de nouvelles techniques architecturales pénètrent en **Afrique de l'Ouest**. Le commerce transsaharien est aussi un grand échange culturel et religieux.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'islam et l'écriture arabe voyagent avec les marchandises",
+              "Savants, livres, techniques architecturales : un échange culturel",
+              "Le commerce transsaharien, aussi un vecteur religieux",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-21-commerce-transsaharien-lesson-5",
         title: "Le déclin",
         blocks: [
-          { type: "paragraphe", text: "À partir des XVᵉ-XVIᵉ siècles, l'essor du commerce maritime européen le long des côtes atlantiques détourna peu à peu les échanges des routes du désert. Les grandes cités caravanières déclinèrent. Mais pendant près d'un millénaire, le commerce transsaharien avait relié l'Afrique au reste du monde et nourri ses plus brillantes civilisations." },
+          {
+            type: "paragraphe",
+            text: "Pendant près de mille ans, le désert a relié l'Afrique au monde. Puis l'océan a pris le relais.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "VIIIe s.", texte: "Essor du grand commerce transsaharien" },
+              { date: "XIe-XVIe s.", texte: "Apogée : Ghana, Mali, Songhaï" },
+              { date: "XVe-XVIe s.", texte: "Essor du commerce maritime européen" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "À partir des **XVe-XVIe siècles**, l'essor du commerce maritime européen le long des côtes atlantiques détourne peu à peu les échanges des routes du désert. Mais pendant près d'un millénaire, ce commerce avait relié l'**Afrique** au reste du monde.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**XVe-XVIe siècles** : le commerce maritime détourne les échanges",
+              "Les grandes cités caravanières déclinent peu à peu",
+              "Près d'un millénaire de lien entre l'Afrique et le monde",
+            ],
+          },
         ],
       },
     ],
@@ -2788,35 +3132,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Grâce à quel animal les caravanes traversaient-elles le Sahara ?",
         options: ["Le cheval", "Le chameau", "L'âne", "L'éléphant"],
         correctIndex: 1,
-        explanation: "Le chameau, introduit dans les premiers siècles de notre ère, rendit possible la traversée du désert.",
+        explanation: "Le chameau, introduit dans les premiers siècles de notre ère, rendit possible la traversée du désert d'oasis en oasis.",
       },
       {
         id: "course-histoire-21-commerce-transsaharien-quiz-2",
         question: "Quelles étaient les deux marchandises principales de ce commerce ?",
         options: ["L'or et le sel", "Le thé et la soie", "Le café et le cacao", "Le fer et le bois"],
         correctIndex: 0,
-        explanation: "L'or venu du sud et le sel venu du Sahara étaient au cœur du commerce transsaharien.",
+        explanation: "L'or venu du sud (Bambouk, Bouré) et le sel venu du Sahara (Taghaza, Taoudenni) étaient au cœur du commerce transsaharien, parfois échangés à poids égal.",
       },
       {
         id: "course-histoire-21-commerce-transsaharien-quiz-3",
         question: "Comment les empires du Sahel s'enrichissaient-ils grâce à ce commerce ?",
         options: ["En interdisant le commerce", "En taxant les marchandises qui traversaient leur territoire", "En fabriquant des chameaux", "En cultivant du blé"],
         correctIndex: 1,
-        explanation: "Ghana, Mali et Songhaï taxaient les marchandises en transit, source majeure de leur richesse.",
+        explanation: "Ghana, Mali et Songhaï taxaient les marchandises en transit, source majeure de leur richesse : contrôler les routes, c'était contrôler la richesse.",
       },
       {
         id: "course-histoire-21-commerce-transsaharien-quiz-4",
         question: "Qu'est-ce que le commerce transsaharien a aussi diffusé, outre les marchandises ?",
         options: ["L'islam et l'écriture arabe", "Le christianisme et le latin", "Rien d'autre", "Le bouddhisme"],
         correctIndex: 0,
-        explanation: "Les caravanes véhiculaient aussi des idées : l'islam, l'écriture arabe, les livres et les savants.",
+        explanation: "Les caravanes véhiculaient aussi des idées : l'islam, l'écriture arabe, les livres, les savants et de nouvelles techniques architecturales.",
       },
       {
         id: "course-histoire-21-commerce-transsaharien-quiz-5",
         question: "Qu'est-ce qui a provoqué le déclin du commerce transsaharien ?",
         options: ["Une glaciation du Sahara", "L'essor du commerce maritime européen sur les côtes", "La disparition des chameaux", "Une interdiction de l'or"],
         correctIndex: 1,
-        explanation: "À partir des XVᵉ-XVIᵉ siècles, le commerce maritime atlantique détourna les échanges des routes du désert.",
+        explanation: "À partir des XVᵉ-XVIᵉ siècles, le commerce maritime atlantique détourna les échanges des routes du désert, après près d'un millénaire de commerce transsaharien.",
       },
     ],
   },
@@ -2832,35 +3176,141 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-1",
         title: "Une religion venue par le commerce",
         blocks: [
-          { type: "paragraphe", text: "En Afrique de l'Ouest, l'islam ne s'est pas imposé par la conquête, mais s'est diffusé pacifiquement et progressivement, à partir des IXᵉ-XIᵉ siècles, grâce aux marchands qui traversaient le Sahara. Les contacts commerciaux réguliers avec le monde musulman ouvrirent la voie à la nouvelle religion, sans violence militaire." },
+          {
+            type: "paragraphe",
+            text: "L'**islam** n'est pas arrivé en Afrique de l'Ouest par la conquête. Il est arrivé par les routes du commerce, sans une seule bataille.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "IXe-XIe s.",
+            legende: "diffusion pacifique de l'islam par les marchands",
+          },
+          {
+            type: "paragraphe",
+            text: "En Afrique de l'Ouest, l'islam se diffuse pacifiquement et progressivement, grâce aux marchands qui traversent le **Sahara**. Les contacts commerciaux réguliers avec le monde musulman ouvrent la voie à la nouvelle religion, sans violence militaire.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'islam se diffuse par le commerce, pas la conquête",
+              "**IXᵉ-XIᵉ siècles** : diffusion pacifique et progressive",
+              "Les marchands transsahariens, premiers vecteurs de la religion",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-2",
         title: "L'adoption par les élites",
         blocks: [
-          { type: "paragraphe", text: "L'islam fut d'abord adopté par les marchands puis par les souverains et leurs cours : la religion facilitait le commerce et la diplomatie avec le monde musulman. Mais une grande partie de la population conserva longtemps ses religions traditionnelles. Cette coexistence entre islam et croyances ancestrales caractérise les grands empires comme le Ghana puis le Mali." },
+          {
+            type: "paragraphe",
+            text: "La religion nouvelle a d'abord conquis les palais, avant de conquérir les cœurs. Les deux mondes ont longtemps coexisté.",
+          },
+          {
+            type: "citation",
+            texte: "Nulle contrainte en religion.",
+            auteur: "Coran, sourate 2",
+          },
+          {
+            type: "paragraphe",
+            text: "L'islam est d'abord adopté par les marchands puis par les souverains et leurs cours : la religion facilite le commerce et la diplomatie. Mais une grande partie de la population conserve longtemps ses religions traditionnelles.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les marchands puis les souverains adoptent l'islam en premier",
+              "Le peuple garde longtemps ses religions traditionnelles",
+              "Une coexistence caractéristique des grands empires sahéliens",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-3",
         title: "Les grands foyers du savoir",
         blocks: [
-          { type: "paragraphe", text: "Des villes comme Tombouctou et Djenné devinrent de brillants foyers de savoir islamique, avec leurs mosquées, leurs universités et leurs écoles coraniques. Le pèlerinage à La Mecque de Mansa Moussa (1324) illustre l'ancrage de l'islam au sommet de l'État malien et son ouverture sur le monde musulman." },
+          {
+            type: "paragraphe",
+            text: "Prier, apprendre, échanger : dans certaines villes, ces trois gestes se confondaient au même endroit, sous le même toit.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2 villes",
+            legende: "Tombouctou et Djenné, foyers de savoir islamique",
+          },
+          {
+            type: "paragraphe",
+            text: "Des villes comme **Tombouctou** et **Djenné** deviennent de brillants foyers de savoir islamique, avec leurs mosquées, leurs écoles coraniques et leurs lettrés. Le pèlerinage de Mansa Moussa à La Mecque, en 1324, illustre l'ancrage de l'islam au sommet de l'État malien.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Tombouctou et Djenné, brillants foyers de savoir islamique",
+              "Mosquées, écoles coraniques et lettrés dans ces cités",
+              "**1324** : le pèlerinage de Mansa Moussa illustre cet ancrage",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-4",
         title: "Un islam africain",
         blocks: [
-          { type: "paragraphe", text: "En s'enracinant, l'islam se mêla aux coutumes locales, donnant des pratiques originales et diverses. Longtemps, il cohabita avec les traditions africaines plutôt que de les remplacer. Cet islam « africanisé » est l'une des grandes richesses culturelles et spirituelles de la région." },
+          {
+            type: "paragraphe",
+            text: "En s'enracinant loin de ses terres d'origine, l'**islam** n'a pas effacé les traditions locales. Il s'y est mêlé.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "IXe-XIe s.", texte: "Premiers contacts, diffusion pacifique" },
+              { date: "XIe-XVIe s.", texte: "Coexistence avec les traditions locales" },
+              { date: "XVIIIe-XIXe s.", texte: "Mouvements de réforme plus stricts" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "En s'enracinant, l'islam se mêle aux coutumes locales, donnant des pratiques originales et diverses. Longtemps, il cohabite avec les traditions africaines plutôt que de les remplacer. Cet islam « **africanisé** » est l'une des grandes richesses de la région.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'islam se mêle aux coutumes locales, sans les effacer",
+              "Un islam « africanisé », original et divers",
+              "Une richesse culturelle et spirituelle propre à la région",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-lesson-5",
         title: "Réformes et jihads",
         blocks: [
-          { type: "paragraphe", text: "Aux XVIIIᵉ et XIXᵉ siècles, des mouvements de réforme et des jihads voulurent imposer un islam plus strict et fondèrent des États théocratiques : Ousman dan Fodio créa le califat de Sokoto, El Hadj Oumar Tall un vaste empire. Aujourd'hui, l'islam est au cœur de l'identité de l'Afrique de l'Ouest, dans une forme qui lui est propre." },
+          {
+            type: "paragraphe",
+            text: "Aux XVIIIᵉ et XIXᵉ siècles, la coexistence tranquille des débuts ne suffit plus à certains réformateurs, qui veulent un islam plus strict.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1804", texte: "Jihad d'Ousman dan Fodio, califat de Sokoto" },
+              { date: "XIXe s.", texte: "El Hadj Oumar Tall fonde un vaste empire" },
+              { date: "XXIe s.", texte: "L'islam au cœur de l'identité ouest-africaine" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Ousman dan Fodio** crée le califat de Sokoto ; **El Hadj Oumar Tall** fonde un vaste empire. Ces mouvements imposent un islam plus strict, par la réforme et le jihad. Aujourd'hui, l'islam est au cœur de l'identité de l'Afrique de l'Ouest, dans une forme qui lui est propre.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1804** : jihad d'Ousman dan Fodio, califat de Sokoto",
+              "**El Hadj Oumar Tall** fonde un vaste empire réformateur",
+              "L'islam, aujourd'hui au cœur de l'identité ouest-africaine",
+            ],
+          },
         ],
       },
     ],
@@ -2870,35 +3320,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment l'islam s'est-il principalement diffusé en Afrique de l'Ouest ?",
         options: ["Par la conquête militaire", "Par le commerce, de façon pacifique", "Par la mer uniquement", "Il ne s'y est jamais diffusé"],
         correctIndex: 1,
-        explanation: "L'islam s'est répandu surtout grâce aux marchands transsahariens, de manière progressive et pacifique.",
+        explanation: "L'islam s'est répandu surtout grâce aux marchands transsahariens, à partir des IXᵉ-XIᵉ siècles, de manière progressive et pacifique.",
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-quiz-2",
         question: "Qui a adopté l'islam en premier en Afrique de l'Ouest ?",
         options: ["Les paysans des campagnes", "Les marchands et les souverains", "Les enfants", "Personne"],
         correctIndex: 1,
-        explanation: "L'islam fut d'abord adopté par les marchands puis les cours royales, utile au commerce et à la diplomatie.",
+        explanation: "L'islam fut d'abord adopté par les marchands puis les cours royales, utile au commerce et à la diplomatie, tandis que le peuple gardait longtemps ses religions traditionnelles.",
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-quiz-3",
         question: "Quelle ville fut un grand foyer de savoir islamique ?",
         options: ["Tombouctou", "Carthage", "Le Grand Zimbabwe", "Kilwa"],
         correctIndex: 0,
-        explanation: "Tombouctou (comme Djenné) fut un centre majeur de savoir islamique en Afrique de l'Ouest.",
+        explanation: "Tombouctou (comme Djenné) fut un centre majeur de savoir islamique en Afrique de l'Ouest, avec ses mosquées et ses écoles coraniques.",
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-quiz-4",
         question: "Qu'est-ce qui caractérise longtemps l'islam en Afrique de l'Ouest ?",
         options: ["Sa coexistence avec les religions traditionnelles", "L'interdiction totale des traditions", "L'absence de mosquées", "Le rejet du commerce"],
         correctIndex: 0,
-        explanation: "L'islam a longtemps coexisté avec les croyances traditionnelles, donnant un islam africanisé.",
+        explanation: "L'islam a longtemps coexisté avec les croyances traditionnelles, donnant un islam « africanisé », original et divers.",
       },
       {
         id: "course-histoire-22-islamisation-afrique-ouest-quiz-5",
         question: "Qui a lancé un jihad et fondé le califat de Sokoto au XIXᵉ siècle ?",
         options: ["Mansa Moussa", "Ousman dan Fodio", "Soundiata Keïta", "Ezana"],
         correctIndex: 1,
-        explanation: "Ousman dan Fodio mena le jihad de 1804 et fonda le califat de Sokoto.",
+        explanation: "Ousman dan Fodio mena le jihad de 1804 et fonda le califat de Sokoto ; El Hadj Oumar Tall fonda un autre vaste empire réformateur.",
       },
     ],
   },
@@ -2914,35 +3364,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-23-cote-swahilie-lesson-1",
         title: "Un chapelet de cités",
         blocks: [
-          { type: "paragraphe", text: "À partir du VIIIᵉ siècle, la côte est-africaine (actuels Kenya, Tanzanie, Mozambique) se couvrit de cités-États marchandes tournées vers l'océan Indien : Kilwa, Mombasa, Zanzibar, Sofala, Lamu, Mogadiscio. Ces ports prospères vivaient du commerce maritime." },
+          {
+            type: "paragraphe",
+            text: "À l'est de l'Afrique, face à l'océan Indien, un tout autre monde commercial s'est développé — tourné vers l'Arabie, la Perse et l'Inde.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "VIIIe siècle",
+            legende: "essor des cités-États swahilies sur la côte est",
+          },
+          {
+            type: "paragraphe",
+            text: "La côte est-africaine (actuels Kenya, Tanzanie, Mozambique) se couvre de cités-États marchandes tournées vers l'océan Indien : **Kilwa**, **Mombasa**, **Zanzibar**, Sofala, Lamu, Mogadiscio. Ces ports prospères vivent du commerce maritime.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**VIIIᵉ siècle** : essor des cités-États swahilies",
+              "Kilwa, Mombasa, Zanzibar : des ports tournés vers l'océan Indien",
+              "Une prospérité fondée sur le commerce maritime",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-23-cote-swahilie-lesson-2",
         title: "Le commerce de l'océan Indien",
         blocks: [
-          { type: "paragraphe", text: "Ces cités exportaient or, ivoire, bois précieux — et des captifs — et importaient tissus, porcelaine chinoise, épices et verre. Les marins utilisaient les vents de la mousson, qui soufflent alternativement dans un sens puis dans l'autre, pour naviguer vers l'Arabie et l'Inde et en revenir. Kilwa, qui contrôlait l'or de Sofala, devint particulièrement riche." },
+          {
+            type: "paragraphe",
+            text: "Deux fois par an, le vent change de sens sur l'océan Indien — et avec lui, le sens du commerce tout entier.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2",
+            legende: "saisons de mousson qui rythment la navigation",
+          },
+          {
+            type: "paragraphe",
+            text: "Ces cités exportent or, ivoire, bois précieux — et des captifs — et importent tissus, porcelaine chinoise, épices et verre. Les marins utilisent les vents de la **mousson** pour naviguer vers l'Arabie et l'Inde et en revenir. **Kilwa**, qui contrôle l'or de Sofala, devient particulièrement riche.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Or, ivoire, bois précieux exportés ; tissus, épices importés",
+              "Les vents de **mousson** rythment les allers-retours",
+              "**Kilwa**, enrichie par le contrôle de l'or de Sofala",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Les marins swahilis exploitaient un rythme que l'océan leur offrait gratuitement : les moussons soufflent dans un sens, puis dans l'autre, comme une horloge naturelle.",
+          },
         ],
       },
       {
         id: "course-histoire-23-cote-swahilie-lesson-3",
         title: "La naissance de la culture swahilie",
         blocks: [
-          { type: "paragraphe", text: "De la rencontre entre les racines africaines (bantoues) et les influences arabes, persanes et indiennes naquit une civilisation originale : la culture swahilie. Sa langue, le swahili, est une langue bantoue enrichie de nombreux mots arabes. Musulmane et urbaine, cette civilisation bâtit des villes de pierre de corail, avec mosquées et palais." },
+          {
+            type: "paragraphe",
+            text: "Ni tout à fait africaine, ni tout à fait arabe : une civilisation nouvelle est née de la rencontre entre deux mondes que l'océan reliait.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "3",
+            legende: "influences venues d'Arabie, de Perse et d'Inde",
+          },
+          {
+            type: "paragraphe",
+            text: "De la rencontre entre les racines africaines (bantoues) et ces influences naît une civilisation originale : la culture **swahilie**. Sa langue, le **swahili**, est une langue bantoue enrichie de nombreux mots arabes. Musulmane et urbaine, elle bâtit des villes de pierre de corail.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Racines bantoues + influences arabes, persanes, indiennes",
+              "Le **swahili** : une langue bantoue enrichie de mots arabes",
+              "Des villes de pierre de corail, musulmanes et urbaines",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-23-cote-swahilie-lesson-4",
         title: "Kilwa et l'apogée",
         blocks: [
-          { type: "paragraphe", text: "Kilwa Kisiwani fut la plus riche de ces cités. Le voyageur Ibn Battuta, au XIVᵉ siècle, admira sa splendeur. On y frappait monnaie et l'on y bâtit le palais de Husuni Kubwa. Le site de Kilwa est aujourd'hui classé au patrimoine mondial de l'UNESCO." },
+          {
+            type: "paragraphe",
+            text: "Un voyageur venu de loin y admira, au XIVᵉ siècle, une richesse qu'il ne s'attendait pas à trouver sur cette côte.",
+          },
+          {
+            type: "citation",
+            texte: "Kilwa est l'une des plus belles et des mieux bâties villes du monde.",
+            auteur: "Ibn Battuta, XIVe siècle",
+          },
+          {
+            type: "paragraphe",
+            text: "**Kilwa Kisiwani** est la plus riche de ces cités. On y frappe monnaie et l'on y bâtit le palais de **Husuni Kubwa**. Le site de Kilwa est aujourd'hui classé au patrimoine mondial de l'UNESCO.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Kilwa Kisiwani**, la plus riche des cités swahilies",
+              "Une monnaie propre et le palais de Husuni Kubwa",
+              "Classée aujourd'hui au patrimoine mondial de l'UNESCO",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-23-cote-swahilie-lesson-5",
         title: "L'arrivée des Portugais",
         blocks: [
-          { type: "paragraphe", text: "Vers 1500, les Portugais (Vasco de Gama) attaquèrent et prirent le contrôle des cités côtières pour dominer le commerce de l'océan Indien, provoquant leur déclin. Plus tard, les Arabes omanais s'imposèrent (Zanzibar). Malgré tout, l'héritage swahili demeure : la langue swahilie est aujourd'hui parlée par plus de cent millions de personnes en Afrique de l'Est." },
+          {
+            type: "paragraphe",
+            text: "Vers 1500, des navires venus d'Europe changèrent en quelques années l'équilibre d'un commerce vieux de sept cents ans.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "VIIIe s.", texte: "Naissance des cités-États swahilies" },
+              { date: "XIVe s.", texte: "Apogée de Kilwa, admirée par Ibn Battuta" },
+              { date: "1500", texte: "Arrivée des Portugais, début du déclin" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Vers 1500, les **Portugais** (Vasco de Gama) attaquent et prennent le contrôle des cités côtières, provoquant leur déclin. Plus tard, les Arabes omanais s'imposent à **Zanzibar**. Malgré tout, l'héritage swahili demeure : sa langue est aujourd'hui parlée par plus de cent millions de personnes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1500** : les Portugais prennent le contrôle des cités côtières",
+              "Plus tard, les Arabes omanais s'imposent à Zanzibar",
+              "Le swahili : plus de 100 millions de locuteurs aujourd'hui",
+            ],
+          },
         ],
       },
     ],
@@ -2952,35 +3509,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Où se situait la côte swahilie ?",
         options: ["Sur la côte est-africaine", "Sur la côte atlantique", "Au bord de la Méditerranée", "Au milieu du Sahara"],
         correctIndex: 0,
-        explanation: "La côte swahilie longeait l'Afrique de l'Est (Kenya, Tanzanie, Mozambique), face à l'océan Indien.",
+        explanation: "La côte swahilie longeait l'Afrique de l'Est (Kenya, Tanzanie, Mozambique), face à l'océan Indien, avec des ports comme Kilwa, Mombasa et Zanzibar.",
       },
       {
         id: "course-histoire-23-cote-swahilie-quiz-2",
         question: "Qu'utilisaient les marins pour naviguer sur l'océan Indien ?",
         options: ["Des moteurs à vapeur", "Les vents de la mousson", "Des rames uniquement", "Des courants souterrains"],
         correctIndex: 1,
-        explanation: "Les vents de la mousson, qui changent de sens, permettaient d'aller vers l'Arabie et l'Inde et d'en revenir.",
+        explanation: "Les vents de la mousson, qui changent de sens deux fois par an, permettaient d'aller vers l'Arabie et l'Inde et d'en revenir.",
       },
       {
         id: "course-histoire-23-cote-swahilie-quiz-3",
         question: "De quel mélange est née la culture swahilie ?",
         options: ["De racines africaines (bantoues) et d'influences arabes, persanes, indiennes", "De cultures uniquement européennes", "D'aucun mélange", "De cultures amérindiennes"],
         correctIndex: 0,
-        explanation: "Le swahili est une culture bantoue enrichie d'apports arabes, persans et indiens.",
+        explanation: "Le swahili est une culture bantoue enrichie d'apports arabes, persans et indiens ; sa langue en porte encore la trace.",
       },
       {
         id: "course-histoire-23-cote-swahilie-quiz-4",
         question: "Quelle cité swahilie, admirée par Ibn Battuta, était la plus riche ?",
         options: ["Le Caire", "Kilwa", "Tombouctou", "Carthage"],
         correctIndex: 1,
-        explanation: "Kilwa Kisiwani, qui contrôlait l'or de Sofala, était la plus riche ; Ibn Battuta en admira la splendeur.",
+        explanation: "Kilwa Kisiwani, qui contrôlait l'or de Sofala, était la plus riche ; Ibn Battuta la décrivit comme l'une des plus belles villes du monde.",
       },
       {
         id: "course-histoire-23-cote-swahilie-quiz-5",
         question: "Qui a provoqué le déclin des cités swahilies vers 1500 ?",
         options: ["Les Portugais", "Les Romains", "Les Mongols", "Les Aztèques"],
         correctIndex: 0,
-        explanation: "Vers 1500, les Portugais prirent le contrôle des cités côtières, provoquant leur déclin.",
+        explanation: "Vers 1500, les Portugais (Vasco de Gama) prirent le contrôle des cités côtières ; les Arabes omanais s'imposèrent plus tard à Zanzibar.",
       },
     ],
   },
