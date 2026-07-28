@@ -20,20 +20,23 @@ export const MISC_COURSES: Course[] = [
       {
         id: "lesson-arts-afrobeat",
         title: "Afrobeat : la voix rebelle du Nigeria",
-        content:
-          "L'Afrobeat est créé dans les années 1970 par le musicien nigérian Fela Kuti, qui fusionne jazz, funk, highlife et rythmes traditionnels yoruba. Ce genre se distingue par ses morceaux longs et ses cuivres puissants, portés par un fort engagement politique et social.",
+        blocks: [
+          { type: "paragraphe", text: "L'Afrobeat est créé dans les années 1970 par le musicien nigérian Fela Kuti, qui fusionne jazz, funk, highlife et rythmes traditionnels yoruba. Ce genre se distingue par ses morceaux longs et ses cuivres puissants, portés par un fort engagement politique et social." },
+        ],
       },
       {
         id: "lesson-arts-mbalax-soukous",
         title: "Mbalax et Soukous : deux courants d'Afrique de l'Ouest et Centrale",
-        content:
-          "Le Mbalax, né au Sénégal, mêle les percussions sabar traditionnelles à la pop et au jazz ; il a été popularisé dans le monde entier par Youssou N'Dour. Le Soukous, originaire du bassin du Congo, est hérité de la rumba congolaise et se reconnaît à ses guitares entrelacées si caractéristiques.",
+        blocks: [
+          { type: "paragraphe", text: "Le Mbalax, né au Sénégal, mêle les percussions sabar traditionnelles à la pop et au jazz ; il a été popularisé dans le monde entier par Youssou N'Dour. Le Soukous, originaire du bassin du Congo, est hérité de la rumba congolaise et se reconnaît à ses guitares entrelacées si caractéristiques." },
+        ],
       },
       {
         id: "lesson-arts-amapiano",
         title: "Amapiano : le son sud-africain qui conquiert le monde",
-        content:
-          "Apparu au milieu des années 2010 dans les townships autour de Pretoria, en Afrique du Sud, l'Amapiano mélange house profonde, jazz et mélodies au piano. Sa basse caractéristique, le « log drum », en fait aujourd'hui l'un des sons africains les plus exportés au monde.",
+        blocks: [
+          { type: "paragraphe", text: "Apparu au milieu des années 2010 dans les townships autour de Pretoria, en Afrique du Sud, l'Amapiano mélange house profonde, jazz et mélodies au piano. Sa basse caractéristique, le « log drum », en fait aujourd'hui l'un des sons africains les plus exportés au monde." },
+        ],
       },
     ],
     quiz: [
@@ -88,20 +91,23 @@ export const MISC_COURSES: Course[] = [
       {
         id: "lesson-trad-griots",
         title: "Les griots, gardiens de la mémoire",
-        content:
-          "En Afrique de l'Ouest, les griots (ou djeli en mandingue) sont des conteurs, généalogistes et musiciens traditionnellement attachés à une famille noble, chargés de transmettre oralement, de génération en génération, l'histoire et la généalogie de leur communauté. Leur instrument emblématique, la kora, une harpe-luth à 21 cordes, accompagne encore aujourd'hui récits et chants de louange.",
+        blocks: [
+          { type: "paragraphe", text: "En Afrique de l'Ouest, les griots (ou djeli en mandingue) sont des conteurs, généalogistes et musiciens traditionnellement attachés à une famille noble, chargés de transmettre oralement, de génération en génération, l'histoire et la généalogie de leur communauté. Leur instrument emblématique, la kora, une harpe-luth à 21 cordes, accompagne encore aujourd'hui récits et chants de louange." },
+        ],
       },
       {
         id: "lesson-trad-rites-passage",
         title: "Rites de passage et sociétés initiatiques",
-        content:
-          "De nombreuses sociétés africaines organisent le passage à l'âge adulte par des rites d'initiation collectifs. Chez les Maasaï d'Afrique de l'Est, les jeunes hommes deviennent « moran » (guerriers) à l'issue d'un rite marquant leur entrée dans un nouveau groupe d'âge. En Afrique de l'Ouest, les sociétés initiatiques Poro (hommes) et Sandé (femmes) transmettent aux jeunes les savoirs et responsabilités sociales de l'âge adulte.",
+        blocks: [
+          { type: "paragraphe", text: "De nombreuses sociétés africaines organisent le passage à l'âge adulte par des rites d'initiation collectifs. Chez les Maasaï d'Afrique de l'Est, les jeunes hommes deviennent « moran » (guerriers) à l'issue d'un rite marquant leur entrée dans un nouveau groupe d'âge. En Afrique de l'Ouest, les sociétés initiatiques Poro (hommes) et Sandé (femmes) transmettent aux jeunes les savoirs et responsabilités sociales de l'âge adulte." },
+        ],
       },
       {
         id: "lesson-trad-ubuntu",
         title: "Ubuntu, une philosophie de l'interdépendance",
-        content:
-          "Originaire d'Afrique australe, la philosophie Ubuntu se résume par la formule « je suis parce que nous sommes » : l'humanité d'une personne se réalise à travers ses liens avec les autres. Popularisée dans le monde entier par Desmond Tutu et Nelson Mandela, notamment lors du processus de réconciliation post-apartheid, elle continue d'irriguer les valeurs communautaires de nombreuses sociétés africaines.",
+        blocks: [
+          { type: "paragraphe", text: "Originaire d'Afrique australe, la philosophie Ubuntu se résume par la formule « je suis parce que nous sommes » : l'humanité d'une personne se réalise à travers ses liens avec les autres. Popularisée dans le monde entier par Desmond Tutu et Nelson Mandela, notamment lors du processus de réconciliation post-apartheid, elle continue d'irriguer les valeurs communautaires de nombreuses sociétés africaines." },
+        ],
       },
     ],
     quiz: [
@@ -165,20 +171,23 @@ export const MISC_COURSES: Course[] = [
       {
         id: "lesson-actu-mobile-money",
         title: "La révolution du mobile money",
-        content:
-          "Lancé en 2007 au Kenya par l'opérateur Safaricom, M-Pesa permet d'envoyer, recevoir et stocker de l'argent depuis un simple téléphone mobile, sans compte bancaire. Ce service a rapidement transformé l'inclusion financière sur le continent et inspiré de nombreux services similaires ailleurs en Afrique.",
+        blocks: [
+          { type: "paragraphe", text: "Lancé en 2007 au Kenya par l'opérateur Safaricom, M-Pesa permet d'envoyer, recevoir et stocker de l'argent depuis un simple téléphone mobile, sans compte bancaire. Ce service a rapidement transformé l'inclusion financière sur le continent et inspiré de nombreux services similaires ailleurs en Afrique." },
+        ],
       },
       {
         id: "lesson-actu-union-africaine",
         title: "L'Union africaine et l'intégration continentale",
-        content:
-          "Fondée en 2002 à Addis-Abeba, en Éthiopie, l'Union africaine succède à l'Organisation de l'unité africaine (OUA, créée en 1963). En 2021 entre en vigueur la Zone de libre-échange continentale africaine (ZLECAf), qui vise à créer un marché unique pour les biens et services entre les pays du continent.",
+        blocks: [
+          { type: "paragraphe", text: "Fondée en 2002 à Addis-Abeba, en Éthiopie, l'Union africaine succède à l'Organisation de l'unité africaine (OUA, créée en 1963). En 2021 entre en vigueur la Zone de libre-échange continentale africaine (ZLECAf), qui vise à créer un marché unique pour les biens et services entre les pays du continent." },
+        ],
       },
       {
         id: "lesson-actu-nollywood",
         title: "Nollywood, la puissance du cinéma nigérian",
-        content:
-          "Née dans les années 1990 de productions tournées rapidement et à petit budget, l'industrie cinématographique nigériane, surnommée Nollywood, est aujourd'hui l'une des plus prolifiques au monde par le nombre de films produits chaque année, rayonnant bien au-delà du Nigeria sur tout le continent et sa diaspora.",
+        blocks: [
+          { type: "paragraphe", text: "Née dans les années 1990 de productions tournées rapidement et à petit budget, l'industrie cinématographique nigériane, surnommée Nollywood, est aujourd'hui l'une des plus prolifiques au monde par le nombre de films produits chaque année, rayonnant bien au-delà du Nigeria sur tout le continent et sa diaspora." },
+        ],
       },
     ],
     quiz: [

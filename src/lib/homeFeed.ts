@@ -34,7 +34,7 @@ function catalogFeedCard(course: Course, lesson: Lesson): FeedCard {
       categoryId: course.categoryId,
       title: lesson.title,
       teaser: course.description,
-      content: lesson.content,
+      blocks: lesson.blocks,
       emoji: course.emoji,
     },
   };

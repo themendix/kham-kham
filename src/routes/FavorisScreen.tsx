@@ -8,6 +8,7 @@ import { getCourseMetaOrWarn } from "@/data/courseMeta";
 import { getCategory } from "@/data/categories";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
+import { LessonBlocks } from "@/components/features/LessonBlocks";
 
 /** Page complète des favoris (cours + cartes), ouverte depuis le résumé du Profil */
 export function FavorisScreen() {
@@ -138,7 +139,9 @@ function FavoriteCardItem({ card, onRemove }: { card: SwipeCard; onRemove: () =>
         </button>
       </div>
       {expanded && (
-        <p className="mt-2 text-[13px] font-medium leading-relaxed text-ink-muted">{card.content}</p>
+        <div className="mt-2">
+          <LessonBlocks blocks={card.blocks} accent={getCategory(card.categoryId)!.color} density="compact" />
+        </div>
       )}
     </div>
   );

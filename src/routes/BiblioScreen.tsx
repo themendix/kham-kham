@@ -17,6 +17,7 @@ import { Tag } from "@/components/ui/Tag";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { CourseCard } from "@/components/features/CourseCard";
+import { LessonBlocks } from "@/components/features/LessonBlocks";
 
 /** Nombre de cours affichés en aperçu par matière (le reste est visible via « Voir plus → »). */
 const BIBLIO_PREVIEW_COUNT = 3;
@@ -251,7 +252,7 @@ function FeaturedLessonCard({
 
         {expanded ? (
           <>
-            <p className="text-sm font-medium leading-relaxed text-ink-muted">{lesson.content}</p>
+            <LessonBlocks blocks={lesson.blocks} accent={category.color} density="compact" />
             <div className="mt-4 flex flex-wrap items-center gap-3">
               <Button variant="primary" onClick={onComplete}>
                 J'ai terminé

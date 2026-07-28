@@ -6,6 +6,7 @@ import { Tag } from "@/components/ui/Tag";
 import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
 import { useSwipeGesture } from "@/hooks/useSwipeGesture";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { LessonBlocks } from "@/components/features/LessonBlocks";
 
 interface SwipeCardProps {
   card: SwipeCardData;
@@ -80,9 +81,9 @@ export function SwipeCard({
             <h3 className="mt-3.5 text-2xl font-extrabold leading-tight">{card.title}</h3>
             <p className="mt-2 text-[15.5px] font-medium leading-relaxed text-ink-muted">{card.teaser}</p>
             {expanded && (
-              <p className="mt-2.5 border-t-2 border-ink/10 pt-2.5 text-[15px] font-medium leading-relaxed text-ink-muted">
-                {card.content}
-              </p>
+              <div className="mt-2.5 border-t-2 border-ink/10 pt-2.5">
+                <LessonBlocks blocks={card.blocks} accent={category.color} density="compact" />
+              </div>
             )}
             <div className="mt-3.5 flex items-center justify-between">
               <span className="text-[12.5px] font-bold tracking-wide text-ink-faint">{indexLabel}</span>

@@ -1,3 +1,5 @@
+import { lessonPlainText, type LessonBlock } from "@/lib/lessonBlocks";
+
 /** Où la correspondance a été trouvée dans le cours, par ordre de pertinence décroissante. */
 export type SearchMatchLocation = "titre" | "description" | "leçon";
 
@@ -11,7 +13,7 @@ export type SearchMatchLocation = "titre" | "description" | "leçon";
 interface SearchableLesson {
   id: string;
   title?: string;
-  content?: string;
+  blocks?: LessonBlock[];
 }
 interface SearchableCourse {
   id: string;
@@ -60,7 +62,7 @@ export function searchCourses<C extends SearchableCourse>(query: string, courses
     const matchedLesson = course.lessons.find(
       (lesson) =>
         (lesson.title && normalizeSearchText(lesson.title).includes(normalizedQuery)) ||
-        (lesson.content && normalizeSearchText(lesson.content).includes(normalizedQuery)),
+        (lesson.blocks && normalizeSearchText(lessonPlainText(lesson.blocks)).includes(normalizedQuery)),
     );
     if (matchedLesson) {
       results.push({ course, matchLocation: "leçon", matchedLessonTitle: matchedLesson.title });

@@ -16,7 +16,7 @@ function course(id: string, categoryId: string, lessonIds: string[]): Course {
     description: "",
     emoji: "📘",
     xp: 30,
-    lessons: lessonIds.map((lid) => ({ id: lid, title: lid, content: lid })),
+    lessons: lessonIds.map((lid) => ({ id: lid, title: lid, blocks: [{ type: "paragraphe" as const, text: lid }] })),
     quiz: [],
   };
 }

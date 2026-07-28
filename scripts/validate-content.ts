@@ -1,10 +1,13 @@
 /**
  * Validateur d'intégrité du contenu Sankofa.
  *
- * Contrôle neuf règles sur `src/data/*` (unicité des id, résolution des références
- * entre fichiers, validité des questions de quiz, présence des illustrations…).
- * Toutes les règles sont bloquantes sauf les règles 8 et 9 (illustrations),
- * qui restent des avertissements tant que les 4 cours hérités n'ont pas d'image.
+ * Contrôle les règles 1 à 9 (unicité des id, résolution des références entre fichiers,
+ * validité des questions de quiz, présence des illustrations…) sur l'ensemble du catalogue,
+ * plus les règles 10 à 19 de docs/CHARTE-LECONS.md § 9 (modèle de blocs typés des leçons).
+ * La règle 10 est structurelle et bloquante pour tout le catalogue ; les règles 11 à 18 ne
+ * s'appliquent qu'aux matières listées dans `CHARTE_APPLIQUEE` (§ 9.1 : activation progressive,
+ * le contenu non encore réécrit ne respecte pas la charte éditoriale). Rules 8 et 9
+ * (illustrations) et une partie de la règle 19 restent des avertissements.
  *
  * Usage : npm run validate
  * Intégré au script `build` et au workflow CI — un contenu invalide bloque le build.
@@ -16,6 +19,15 @@ import { COURSES } from "../src/data/courses";
 import { PARCOURS } from "../src/data/parcours";
 import { CATEGORIES } from "../src/data/categories";
 import { CARDS } from "../src/data/cards";
+import { lessonPlainText, lessonWordCount, parseInline, type LessonBlock } from "../src/lib/lessonBlocks";
+import type { Course } from "../src/types";
+
+/**
+ * Matières dont le contenu a subi la passe éditoriale de la charte (docs/CHARTE-LECONS.md).
+ * Les règles 11 à 18 ne s'y appliquent qu'à ces matières. On étend cette liste à chaque
+ * matière achevée — jamais avant.
+ */
+const CHARTE_APPLIQUEE: readonly string[] = [];
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -123,15 +135,295 @@ for (const course of COURSES) {
   }
 }
 
-// 7. Chaque cours a au moins une leçon, et aucun texte de leçon n'est vide.
+// 7. Chaque cours a au moins une leçon, et aucune leçon n'a un texte visible vide.
 for (const course of COURSES) {
   if (course.lessons.length === 0) {
     error("7. Leçons non vides", `${course.id} n'a aucune leçon`);
     continue;
   }
   for (const lesson of course.lessons) {
-    if (!lesson.content.trim()) {
+    if (!lessonPlainText(lesson.blocks).trim()) {
       error("7. Leçons non vides", `${course.id} / ${lesson.id} : contenu vide`);
+    }
+  }
+}
+
+// --- docs/CHARTE-LECONS.md § 9 — règles 10 à 19 ---
+
+const WORD_LIMITS: Record<string, number> = {
+  paragraphe: 50,
+  aRetenirPoint: 14,
+  leSavaisTu: 35,
+  citation: 25,
+  chiffreCleLegende: 10,
+  friseEvenement: 10,
+};
+
+function words(text: string): number {
+  const t = text.trim();
+  return t ? t.split(/\s+/).filter(Boolean).length : 0;
+}
+
+// 10. Blocs bien formés — tout le catalogue, bloquante.
+function checkBlocksWellFormed(ref: string, blocks: LessonBlock[]) {
+  if (blocks.length === 0) {
+    error("10. Blocs bien formés", `${ref} : aucun bloc`);
+    return;
+  }
+  for (const [i, block] of blocks.entries()) {
+    const at = `${ref} / bloc ${i + 1} (${block.type})`;
+    switch (block.type) {
+      case "paragraphe":
+        if (!block.text.trim()) error("10. Blocs bien formés", `${at} : texte vide`);
+        break;
+      case "aRetenir":
+        if (block.points.length === 0) error("10. Blocs bien formés", `${at} : aucune puce`);
+        if (block.points.some((p) => !p.trim())) error("10. Blocs bien formés", `${at} : puce vide`);
+        break;
+      case "leSavaisTu":
+        if (!block.text.trim()) error("10. Blocs bien formés", `${at} : texte vide`);
+        break;
+      case "chiffreCle":
+        if (!block.valeur.trim()) error("10. Blocs bien formés", `${at} : valeur vide`);
+        if (!block.legende.trim()) error("10. Blocs bien formés", `${at} : légende vide`);
+        break;
+      case "citation":
+        if (!block.texte.trim()) error("10. Blocs bien formés", `${at} : texte vide`);
+        if (!block.auteur.trim()) error("10. Blocs bien formés", `${at} : auteur vide`);
+        break;
+      case "frise":
+        if (block.evenements.length === 0) error("10. Blocs bien formés", `${at} : aucun événement`);
+        if (block.evenements.some((e) => !e.date.trim() || !e.texte.trim()))
+          error("10. Blocs bien formés", `${at} : événement incomplet`);
+        break;
+      case "reperes":
+        if (block.items.length === 0) error("10. Blocs bien formés", `${at} : aucun repère`);
+        if (block.items.some((it) => !it.label.trim() || !it.valeur.trim()))
+          error("10. Blocs bien formés", `${at} : repère incomplet`);
+        break;
+      case "image":
+        if (!block.alt.trim()) error("10. Blocs bien formés", `${at} : alt vide`);
+        break;
+    }
+  }
+}
+
+for (const course of COURSES) {
+  for (const lesson of course.lessons) {
+    checkBlocksWellFormed(`${course.id} / ${lesson.id}`, lesson.blocks);
+  }
+}
+for (const card of CARDS) {
+  checkBlocksWellFormed(`carte ${card.id}`, card.blocks);
+}
+
+// 11 à 18 — uniquement sur les matières listées dans CHARTE_APPLIQUEE.
+for (const course of COURSES) {
+  if (!CHARTE_APPLIQUEE.includes(course.categoryId)) continue;
+
+  for (const [lessonIndex, lesson] of course.lessons.entries()) {
+    const ref = `${course.id} / ${lesson.id}`;
+    const blocks = lesson.blocks;
+    const hasImage = blocks.some((b) => b.type === "image");
+
+    // 11. Budget de mots.
+    const wc = lessonWordCount(blocks);
+    const [nominalMin, nominalMax] = hasImage ? [70, 110] : [90, 140];
+    const [outerMin, outerMax] = hasImage ? [55, 125] : [70, 150];
+    if (wc < outerMin || wc > outerMax) {
+      error("11. Budget de mots", `${ref} : ${wc} mots, hors de [${outerMin}, ${outerMax}]`);
+    } else if (wc < nominalMin || wc > nominalMax) {
+      warn("11. Budget de mots", `${ref} : ${wc} mots, hors de la fourchette nominale [${nominalMin}, ${nominalMax}]`);
+    }
+
+    // 12. aRetenir obligatoire et unique.
+    const aRetenirBlocks = blocks.filter((b) => b.type === "aRetenir");
+    if (aRetenirBlocks.length !== 1) {
+      error("12. À retenir obligatoire et unique", `${ref} : ${aRetenirBlocks.length} bloc(s) aRetenir, 1 attendu`);
+    }
+
+    // 13. Jamais deux paragraphes consécutifs.
+    for (let i = 0; i < blocks.length - 1; i++) {
+      if (blocks[i].type === "paragraphe" && blocks[i + 1].type === "paragraphe") {
+        error("13. Jamais deux paragraphes consécutifs", `${ref} : blocs ${i + 1} et ${i + 2} sont deux paragraphes`);
+      }
+    }
+
+    // 14. Nombre de blocs.
+    if (blocks.length < 4 || blocks.length > 7) {
+      error("14. Nombre de blocs", `${ref} : ${blocks.length} bloc(s), attendu entre 4 et 7`);
+    }
+
+    // 15. Ordre du squelette.
+    if (blocks[0]?.type !== "paragraphe") {
+      error("15. Ordre du squelette", `${ref} : le premier bloc n'est pas un paragraphe`);
+    }
+    const aRetenirIndex = blocks.findIndex((b) => b.type === "aRetenir");
+    if (aRetenirIndex !== -1 && aRetenirIndex < blocks.length - 2) {
+      error("15. Ordre du squelette", `${ref} : aRetenir n'est ni avant-dernier ni dernier`);
+    }
+    const leSavaisTuIndex = blocks.findIndex((b) => b.type === "leSavaisTu");
+    if (leSavaisTuIndex !== -1 && leSavaisTuIndex !== blocks.length - 1) {
+      error("15. Ordre du squelette", `${ref} : leSavaisTu n'est pas le dernier bloc`);
+    }
+
+    // 16. Contraintes de longueur fines.
+    for (const block of blocks) {
+      if (block.type === "paragraphe" && words(block.text) > WORD_LIMITS.paragraphe) {
+        error("16. Contraintes de longueur fines", `${ref} : paragraphe de ${words(block.text)} mots (> 50)`);
+      }
+      if (block.type === "aRetenir") {
+        if (block.points.length < 2 || block.points.length > 3) {
+          error("16. Contraintes de longueur fines", `${ref} : ${block.points.length} puce(s) aRetenir, attendu 2 à 3`);
+        }
+        for (const point of block.points) {
+          if (words(point) > WORD_LIMITS.aRetenirPoint) {
+            error("16. Contraintes de longueur fines", `${ref} : puce aRetenir de ${words(point)} mots (> 14)`);
+          }
+        }
+      }
+      if (block.type === "leSavaisTu" && words(block.text) > WORD_LIMITS.leSavaisTu) {
+        error("16. Contraintes de longueur fines", `${ref} : leSavaisTu de ${words(block.text)} mots (> 35)`);
+      }
+      if (block.type === "citation" && words(block.texte) > WORD_LIMITS.citation) {
+        error("16. Contraintes de longueur fines", `${ref} : citation de ${words(block.texte)} mots (> 25)`);
+      }
+      if (block.type === "chiffreCle") {
+        if (block.valeur.length > 15) {
+          error("16. Contraintes de longueur fines", `${ref} : chiffreCle.valeur de ${block.valeur.length} caractères (> 15)`);
+        }
+        if (words(block.legende) > WORD_LIMITS.chiffreCleLegende) {
+          error("16. Contraintes de longueur fines", `${ref} : chiffreCle.legende de ${words(block.legende)} mots (> 10)`);
+        }
+      }
+      if (block.type === "frise") {
+        if (block.evenements.length < 3 || block.evenements.length > 5) {
+          error("16. Contraintes de longueur fines", `${ref} : ${block.evenements.length} événement(s) de frise, attendu 3 à 5`);
+        }
+        for (const evenement of block.evenements) {
+          if (words(evenement.texte) > WORD_LIMITS.friseEvenement) {
+            error("16. Contraintes de longueur fines", `${ref} : événement de frise de ${words(evenement.texte)} mots (> 10)`);
+          }
+        }
+      }
+      if (block.type === "reperes" && (block.items.length < 2 || block.items.length > 6)) {
+        error("16. Contraintes de longueur fines", `${ref} : ${block.items.length} repère(s), attendu 2 à 6`);
+      }
+    }
+
+    // 17. Densité de gras.
+    const NO_INLINE_TYPES = new Set(["chiffreCle", "citation", "frise", "reperes"]);
+    for (const block of blocks) {
+      if (!NO_INLINE_TYPES.has(block.type)) continue;
+      const texts =
+        block.type === "chiffreCle"
+          ? [block.legende]
+          : block.type === "citation"
+            ? [block.texte, block.auteur]
+            : block.type === "frise"
+              ? block.evenements.map((e) => e.texte)
+              : block.items.map((it) => it.valeur);
+      for (const t of texts) {
+        if (t.includes("**")) {
+          error("17. Densité de gras", `${ref} : balisage gras interdit dans un bloc ${block.type}`);
+        }
+      }
+    }
+    let paragrapheBoldCount = 0;
+    for (const block of blocks) {
+      if (block.type !== "paragraphe") continue;
+      for (const segment of parseInline(block.text)) {
+        if (!segment.bold) continue;
+        paragrapheBoldCount++;
+        if (words(segment.text) > 4) {
+          error("17. Densité de gras", `${ref} : passage en gras de plus de 4 mots ("${segment.text}")`);
+        }
+      }
+    }
+    if (paragrapheBoldCount < 2 || paragrapheBoldCount > 5) {
+      warn("17. Densité de gras", `${ref} : ${paragrapheBoldCount} passage(s) en gras dans les paragraphes, cible 2 à 5`);
+    }
+    for (const block of blocks) {
+      if (block.type === "aRetenir") {
+        for (const point of block.points) {
+          const bold = parseInline(point).filter((s) => s.bold);
+          if (bold.length > 1) warn("17. Densité de gras", `${ref} : une puce aRetenir a plus d'un passage en gras`);
+          for (const segment of bold) {
+            if (words(segment.text) > 4) error("17. Densité de gras", `${ref} : passage en gras de plus de 4 mots dans aRetenir`);
+          }
+        }
+      }
+      if (block.type === "leSavaisTu") {
+        const bold = parseInline(block.text).filter((s) => s.bold);
+        if (bold.length > 2) warn("17. Densité de gras", `${ref} : leSavaisTu a plus de 2 passages en gras`);
+        for (const segment of bold) {
+          if (words(segment.text) > 4) error("17. Densité de gras", `${ref} : passage en gras de plus de 4 mots dans leSavaisTu`);
+        }
+      }
+    }
+
+    // 19. Blocs image.
+    const imageBlocks = blocks.filter((b) => b.type === "image");
+    if (imageBlocks.length > 1) {
+      error("19. Blocs image", `${ref} : ${imageBlocks.length} blocs image, au plus 1 attendu`);
+    }
+    for (const block of imageBlocks) {
+      if (block.type === "image" && block.legende && block.alt.trim() === block.legende.trim()) {
+        error("19. Blocs image", `${ref} : alt identique à la légende`);
+      }
+    }
+  }
+
+  // 18. Gabarit de matière.
+  checkSubjectTemplate(course);
+}
+
+/** Règle 18 — gabarit de matière imposé (docs/CHARTE-LECONS.md § 7). */
+function checkSubjectTemplate(course: Course) {
+  const ref = course.id;
+  const blocksOf = (i: number) => course.lessons[i]?.blocks ?? [];
+  const has = (i: number, type: LessonBlock["type"]) => blocksOf(i).some((b) => b.type === type);
+  const anyLessonHas = (type: LessonBlock["type"]) => course.lessons.some((l) => l.blocks.some((b) => b.type === type));
+
+  if (course.categoryId === "histoire") {
+    if (course.lessons.length < 5) return;
+    if (!has(0, "chiffreCle") && !has(0, "frise")) {
+      error("18. Gabarit de matière", `${ref} : leçon 1 sans chiffreCle ni frise`);
+    }
+    if (!has(4, "frise") && !has(4, "citation")) {
+      error("18. Gabarit de matière", `${ref} : leçon 5 sans frise ni citation`);
+    }
+    if (!anyLessonHas("citation")) {
+      error("18. Gabarit de matière", `${ref} : aucune citation sur les 5 leçons`);
+    }
+    if (!anyLessonHas("frise")) {
+      error("18. Gabarit de matière", `${ref} : aucune frise sur les 5 leçons`);
+    }
+  }
+
+  if (course.categoryId === "geo") {
+    if (course.lessons.length < 3) return;
+    if (!has(0, "chiffreCle")) {
+      error("18. Gabarit de matière", `${ref} : leçon 1 (Le territoire) sans chiffreCle`);
+    }
+    if (!has(1, "chiffreCle") && !has(1, "citation")) {
+      error("18. Gabarit de matière", `${ref} : leçon 2 (Population et société) sans chiffreCle ni citation`);
+    }
+    if (!has(2, "reperes")) {
+      error("18. Gabarit de matière", `${ref} : leçon 3 (Économie, politique et repères) sans reperes`);
+    }
+  }
+
+  if (course.categoryId === "perso") {
+    if (course.lessons.length < 5) return;
+    if (!has(0, "frise")) {
+      error("18. Gabarit de matière", `${ref} : leçon 1 sans frise`);
+    }
+    if (!has(4, "citation")) {
+      error("18. Gabarit de matière", `${ref} : leçon 5 (la postérité) sans citation`);
+    }
+    if (!anyLessonHas("citation")) {
+      error("18. Gabarit de matière", `${ref} : aucune citation sur les 5 leçons`);
     }
   }
 }

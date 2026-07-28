@@ -37,7 +37,9 @@ describe("searchCourses", () => {
       id: "course-mali-histoire",
       title: "L'empire du Mali",
       description: "Un grand empire ouest-africain médiéval.",
-      lessons: [{ id: "l1", title: "Soundiata Keïta", content: "Fondateur de l'empire du Mali." }],
+      lessons: [
+        { id: "l1", title: "Soundiata Keïta", blocks: [{ type: "paragraphe", text: "Fondateur de l'empire du Mali." }] },
+      ],
     }),
   ];
 
@@ -71,7 +73,9 @@ describe("searchCourses", () => {
         id: "course-mentioned-in-lesson",
         title: "Autre pays",
         description: "Rien à voir.",
-        lessons: [{ id: "l1", title: "Voisinage", content: "Frontalier du Sénégal." }],
+        lessons: [
+          { id: "l1", title: "Voisinage", blocks: [{ type: "paragraphe", text: "Frontalier du Sénégal." }] },
+        ],
       }),
       course({
         id: "course-mentioned-in-description",

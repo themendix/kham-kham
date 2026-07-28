@@ -6,6 +6,9 @@
  * persistée en localStorage via le store Zustand.
  */
 
+export type { LessonBlock } from "@/lib/lessonBlocks";
+import type { LessonBlock } from "@/lib/lessonBlocks";
+
 /** Clé de couleur de matière, utilisée comme suffixe des tokens Tailwind (bg-histoire, text-geo…) */
 export type SubjectColor =
   | "histoire"
@@ -28,14 +31,14 @@ export interface SwipeCard {
   categoryId: string;
   title: string;
   teaser: string;
-  content: string;
+  blocks: LessonBlock[];
   emoji: string;
 }
 
 export interface Lesson {
   id: string;
   title: string;
-  content: string;
+  blocks: LessonBlock[];
 }
 
 export interface QuizQuestion {
