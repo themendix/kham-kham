@@ -5542,37 +5542,144 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-31-tekrour-islam-lesson-1",
-        title: "Un royaume sur le fleuve Sénégal",
+        title: "Un royaume sur le fleuve",
         blocks: [
-          { type: "paragraphe", text: "Le Tekrour (ou Takrour) se développa le long de la vallée du fleuve Sénégal, dans la région du Fouta Toro. C'est l'un des plus anciens royaumes d'Afrique de l'Ouest, contemporain et rival de l'empire du Ghana (IXᵉ-XIᵉ siècle). Ses habitants sont les ancêtres des Halpulaar (Toucouleurs), un nom qui dériverait justement de « Tekrour »." },
+          {
+            type: "paragraphe",
+            text: "Bien avant que l'empire du Mali n'embrasse l'islam, un royaume plus discret, sur les rives du fleuve Sénégal, l'avait déjà fait.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "IXe-XIe s.",
+            legende: "le Tekrour, rival de l'empire du Ghana",
+          },
+          {
+            type: "paragraphe",
+            text: "Le **Tekrour** (ou Takrour) se développe le long de la vallée du fleuve Sénégal, dans la région du **Fouta Toro**. Ses habitants sont les ancêtres des **Halpulaar** (Toucouleurs), un nom qui dériverait justement de « Tekrour ».",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Tekrour**, dans la vallée du fleuve Sénégal (Fouta Toro)",
+              "Contemporain et rival de l'empire du **Ghana**",
+              "Les ancêtres des **Halpulaar** (Toucouleurs)",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-31-tekrour-islam-lesson-2",
         title: "L'adoption précoce de l'islam",
         blocks: [
-          { type: "paragraphe", text: "Vers 1040, le roi War Jabi se convertit à l'islam. Le Tekrour devint ainsi l'un des tout premiers États d'Afrique de l'Ouest à adopter la religion musulmane — bien avant le Mali de Soundiata. Ses habitants furent réputés pour leur ferveur : dans le monde musulman, on appelait longtemps « Tekrour » les pèlerins venus d'Afrique de l'Ouest." },
+          {
+            type: "paragraphe",
+            text: "Vers 1040, un roi se convertit — et son royaume devient, deux siècles avant le Mali, l'un des tout premiers musulmans d'Afrique de l'Ouest.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1040",
+            legende: "le roi War Jabi se convertit à l'islam",
+          },
+          {
+            type: "paragraphe",
+            text: "Le **Tekrour** devient ainsi l'un des tout premiers États d'Afrique de l'Ouest à adopter la religion musulmane — bien avant le Mali de Soundiata. Ses habitants sont réputés pour leur ferveur : dans le monde musulman, on appelait longtemps « Tekrour » les pèlerins venus d'Afrique de l'Ouest.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1040** : le roi War Jabi se convertit à l'islam",
+              "Bien avant l'adoption de l'islam par le Mali",
+              "« Tekrour » : un nom donné aux pèlerins d'Afrique de l'Ouest",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le nom même du Tekrour a fini par désigner, dans tout le monde musulman, l'ensemble des pèlerins venus d'Afrique de l'Ouest en route vers La Mecque.",
+          },
         ],
       },
       {
         id: "course-histoire-31-tekrour-islam-lesson-3",
         title: "Commerce et puissance",
         blocks: [
-          { type: "paragraphe", text: "Le royaume contrôlait le commerce sur le fleuve : or venu du Bambouk, sel, céréales. Sa position stratégique, entre le Sahara et l'Atlantique, en faisait un carrefour. Le Tekrour noua par moments des alliances avec les Almoravides, le mouvement religieux venu du Sahara." },
+          {
+            type: "paragraphe",
+            text: "Entre le Sahara et l'Atlantique, un seul fleuve suffisait à faire d'un royaume un carrefour commercial incontournable.",
+          },
+          {
+            type: "citation",
+            texte: "Le commerçant honnête et digne de confiance sera avec les prophètes.",
+            auteur: "Tradition islamique",
+          },
+          {
+            type: "paragraphe",
+            text: "Le royaume contrôle le commerce sur le fleuve : or venu du **Bambouk**, sel, céréales. Sa position stratégique, entre le Sahara et l'Atlantique, en fait un carrefour. Le Tekrour noue par moments des alliances avec les **Almoravides**, le mouvement religieux venu du Sahara.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Contrôle du commerce fluvial : or du Bambouk, sel, céréales",
+              "Une position stratégique entre Sahara et Atlantique",
+              "Des alliances par moments avec les **Almoravides**",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-31-tekrour-islam-lesson-4",
         title: "Le Fouta Toro",
         blocks: [
-          { type: "paragraphe", text: "La région devint plus tard le Fouta Toro, grand foyer de savoir islamique. Au XVIIIᵉ siècle, une révolution menée par Souleymane Baal et les lettrés torodbe y fonda un État théocratique, l'Almamat, dirigé par un chef religieux, l'Almamy. Le Fouta resta un cœur battant de l'islam sénégalais." },
+          {
+            type: "paragraphe",
+            text: "Des siècles plus tard, cette même région donne naissance à un État dirigé non par un roi, mais par un chef religieux.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XVIIIe s.",
+            legende: "révolution de Souleymane Baal, fondation de l'Almamat",
+          },
+          {
+            type: "paragraphe",
+            text: "La région devient le **Fouta Toro**, grand foyer de savoir islamique. Une révolution menée par **Souleymane Baal** et les lettrés torodbe y fonde un État théocratique, l'**Almamat**, dirigé par un chef religieux, l'Almamy.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Fouta Toro**, grand foyer de savoir islamique",
+              "**XVIIIᵉ siècle** : révolution de Souleymane Baal",
+              "L'**Almamat**, État théocratique dirigé par l'Almamy",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-31-tekrour-islam-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Le Tekrour puis le Fouta Toro sont considérés comme le berceau de l'islam au Sénégal. Cette terre a donné de grandes figures religieuses, dont plus tard El Hadj Oumar Tall. L'histoire du Tekrour est aussi celle de la formation de l'identité halpulaar, l'une des grandes composantes du Sénégal actuel." },
+          {
+            type: "paragraphe",
+            text: "Un royaume discret a posé, sans le savoir, les fondations religieuses d'un pays tout entier.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "IXe-XIe s.", texte: "Le Tekrour, rival du Ghana" },
+              { date: "1040", texte: "Conversion du roi War Jabi à l'islam" },
+              { date: "XVIIIe s.", texte: "Fouta Toro, révolution et Almamat" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le **Tekrour** puis le **Fouta Toro** sont considérés comme le berceau de l'islam au Sénégal. Cette terre a donné de grandes figures religieuses, dont plus tard **El Hadj Oumar Tall**. C'est aussi l'histoire de la formation de l'identité halpulaar.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le berceau de l'islam au Sénégal",
+              "A donné de grandes figures religieuses, dont **El Hadj Oumar Tall**",
+              "La formation de l'identité **halpulaar**",
+            ],
+          },
         ],
       },
     ],
@@ -5582,14 +5689,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Le long de quel fleuve s'est développé le Tekrour ?",
         options: ["Le fleuve Sénégal", "Le Nil", "Le fleuve Congo", "Le Zambèze"],
         correctIndex: 0,
-        explanation: "Le Tekrour s'est développé dans la vallée du fleuve Sénégal, dans la région du Fouta Toro.",
+        explanation: "Le Tekrour s'est développé dans la vallée du fleuve Sénégal, dans la région du Fouta Toro, contemporain et rival de l'empire du Ghana.",
       },
       {
         id: "course-histoire-31-tekrour-islam-quiz-2",
         question: "Qu'est-ce qui rend le Tekrour remarquable dans l'histoire de l'islam ?",
         options: ["Il a rejeté l'islam", "Il fut l'un des premiers États ouest-africains à l'adopter", "Il a inventé l'islam", "Il n'a jamais connu l'islam"],
         correctIndex: 1,
-        explanation: "Vers 1040, le roi War Jabi se convertit, faisant du Tekrour l'un des premiers États musulmans d'Afrique de l'Ouest.",
+        explanation: "Vers 1040, le roi War Jabi se convertit, faisant du Tekrour l'un des premiers États musulmans d'Afrique de l'Ouest, bien avant le Mali.",
       },
       {
         id: "course-histoire-31-tekrour-islam-quiz-3",
@@ -5603,14 +5710,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment appelle-t-on la région du Tekrour par la suite ?",
         options: ["Le Fouta Toro", "Le Cayor", "Le Sine", "Le Kanem"],
         correctIndex: 0,
-        explanation: "La région devint le Fouta Toro, grand foyer de savoir islamique.",
+        explanation: "La région devint le Fouta Toro, grand foyer de savoir islamique et berceau de figures comme El Hadj Oumar Tall.",
       },
       {
         id: "course-histoire-31-tekrour-islam-quiz-5",
         question: "Quel titre portait le chef de l'État théocratique du Fouta au XVIIIᵉ siècle ?",
         options: ["L'Almamy", "Le Damel", "Le Bourba", "Le Négus"],
         correctIndex: 0,
-        explanation: "L'État théocratique du Fouta (l'Almamat) était dirigé par un chef religieux, l'Almamy.",
+        explanation: "L'État théocratique du Fouta (l'Almamat), né de la révolution de Souleymane Baal, était dirigé par un chef religieux, l'Almamy.",
       },
     ],
   },
@@ -5626,35 +5733,138 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-1",
         title: "La naissance du Djolof",
         blocks: [
-          { type: "paragraphe", text: "L'empire du Djolof (Jolof) fut fondé vers le XIVᵉ siècle. La tradition l'attribue au légendaire Ndiadiane Ndiaye, qui aurait uni les peuples wolof de la Sénégambie en une confédération. Le souverain portait le titre de Bourba Djolof." },
+          {
+            type: "paragraphe",
+            text: "La tradition raconte qu'un seul homme aurait uni tous les peuples wolof de la Sénégambie en une seule confédération.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XIVe siècle",
+            legende: "fondation légendaire de l'empire du Djolof",
+          },
+          {
+            type: "paragraphe",
+            text: "L'empire du **Djolof** (Jolof) est fondé vers le XIVᵉ siècle. La tradition l'attribue au légendaire **Ndiadiane Ndiaye**, qui aurait uni les peuples wolof de la Sénégambie en une confédération. Le souverain porte le titre de **Bourba Djolof**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Fondation légendaire attribuée à **Ndiadiane Ndiaye**, XIVᵉ siècle",
+              "Le souverain porte le titre de **Bourba Djolof**",
+              "Une confédération des peuples wolof de la Sénégambie",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-2",
         title: "Une confédération de royaumes",
         blocks: [
-          { type: "paragraphe", text: "Le Djolof regroupait plusieurs royaumes qui lui payaient tribut : le Waalo, le Cayor (Kajoor), le Baol (Bawol), ainsi que les royaumes sérères du Sine et du Saloum. Chacun avait son propre souverain : le Brak du Waalo, le Damel du Cayor, le Teigne du Baol." },
+          {
+            type: "paragraphe",
+            text: "Un seul empire, cinq royaumes, cinq titres royaux différents : la confédération du Djolof n'avait rien d'un pouvoir uniforme.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "5",
+            legende: "royaumes tributaires du Djolof",
+          },
+          {
+            type: "paragraphe",
+            text: "Le Djolof regroupe plusieurs royaumes qui lui paient tribut : le **Waalo**, le **Cayor** (Kajoor), le **Baol** (Bawol), ainsi que les royaumes sérères du Sine et du Saloum. Chacun a son propre souverain : le Brak du Waalo, le Damel du Cayor, le Teigne du Baol.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**5** royaumes tributaires : Waalo, Cayor, Baol, Sine, Saloum",
+              "Chaque royaume a son propre titre royal",
+              "Le **Damel** du Cayor, le Brak du Waalo",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-3",
         title: "L'organisation sociale",
         blocks: [
-          { type: "paragraphe", text: "La société wolof était très structurée : nobles, hommes libres, castes d'artisans et de griots, et classes serviles. Les rois s'appuyaient sur des guerriers de la couronne, les ceddo. Les griots jouaient un rôle essentiel de mémoire, de conseil et de louange auprès des puissants." },
+          {
+            type: "paragraphe",
+            text: "Nobles, artisans, griots, guerriers : la société wolof suivait un ordre précis, où chacun avait sa place et son rôle.",
+          },
+          {
+            type: "citation",
+            texte: "En Afrique, quand un vieillard meurt, c'est une bibliothèque qui brûle.",
+            auteur: "Amadou Hampâté Bâ",
+          },
+          {
+            type: "paragraphe",
+            text: "La société wolof est très structurée : nobles, hommes libres, castes d'artisans et de griots, et classes serviles. Les rois s'appuient sur des guerriers de la couronne, les **ceddo**. Les **griots** jouent un rôle essentiel de mémoire, de conseil et de louange.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Une société structurée : nobles, artisans, griots, classes serviles",
+              "Les **ceddo**, guerriers de la couronne au service des rois",
+              "Les **griots**, gardiens de la mémoire et du conseil",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-4",
-        title: "La fragmentation (1549)",
+        title: "La fragmentation de 1549",
         blocks: [
-          { type: "paragraphe", text: "En 1549, le Cayor, sous Amari Ngoné Sobel Fall, remporta son indépendance à la bataille de Danki. L'empire se fragmenta alors en royaumes côtiers rivaux. Le déplacement du commerce vers l'Atlantique renforça les royaumes de la côte au détriment du Djolof, à l'intérieur des terres." },
+          {
+            type: "paragraphe",
+            text: "En une seule bataille, un royaume vassal devient indépendant — et l'empire tout entier commence à se défaire.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1549",
+            legende: "le Cayor gagne son indépendance à la bataille de Danki",
+          },
+          {
+            type: "paragraphe",
+            text: "En 1549, le **Cayor**, sous **Amari Ngoné Sobel Fall**, remporte son indépendance à la bataille de **Danki**. L'empire se fragmente alors en royaumes côtiers rivaux. Le déplacement du commerce vers l'Atlantique renforce les royaumes de la côte au détriment du Djolof.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1549** : le Cayor gagne son indépendance à Danki",
+              "L'empire se fragmente en royaumes côtiers rivaux",
+              "Le commerce atlantique renforce la côte, affaiblit le Djolof",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Les royaumes wolof — Cayor, Baol, Waalo, Djolof — structurèrent le Sénégal jusqu'à la colonisation, et virent naître des figures comme Lat Dior. La langue wolof et la culture qui en sont issues sont aujourd'hui au cœur de l'identité sénégalaise." },
+          {
+            type: "paragraphe",
+            text: "Fragmentés depuis le XVIᵉ siècle, ces royaumes ont pourtant façonné, ensemble, l'identité d'un pays qui n'existait pas encore.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIVe s.", texte: "Fondation de l'empire du Djolof" },
+              { date: "1549", texte: "Indépendance du Cayor, fragmentation" },
+              { date: "XIXe s.", texte: "Résistance de Lat Dior, dernier Damel du Cayor" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les royaumes wolof — **Cayor**, Baol, Waalo, Djolof — structurent le Sénégal jusqu'à la colonisation, et voient naître des figures comme **Lat Dior**. La langue wolof et la culture qui en sont issues sont aujourd'hui au cœur de l'identité sénégalaise.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les royaumes wolof structurent le Sénégal jusqu'à la colonisation",
+              "Ont vu naître des figures comme **Lat Dior**",
+              "La langue et la culture wolof, au cœur du Sénégal actuel",
+            ],
+          },
         ],
       },
     ],
@@ -5664,7 +5874,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "À qui la tradition attribue-t-elle la fondation de l'empire du Djolof ?",
         options: ["Ndiadiane Ndiaye", "Soundiata Keïta", "Chaka Zoulou", "Mansa Moussa"],
         correctIndex: 0,
-        explanation: "La tradition attribue la fondation du Djolof au légendaire Ndiadiane Ndiaye.",
+        explanation: "La tradition attribue la fondation du Djolof au légendaire Ndiadiane Ndiaye, vers le XIVᵉ siècle.",
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-quiz-2",
@@ -5685,7 +5895,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Que s'est-il passé en 1549 à la bataille de Danki ?",
         options: ["Le Cayor a gagné son indépendance", "Le Djolof a conquis l'Égypte", "Les Portugais ont pris Dakar", "L'empire a été agrandi"],
         correctIndex: 0,
-        explanation: "En 1549, le Cayor remporta son indépendance à la bataille de Danki, provoquant la fragmentation de l'empire.",
+        explanation: "En 1549, le Cayor, sous Amari Ngoné Sobel Fall, remporta son indépendance à la bataille de Danki, provoquant la fragmentation de l'empire.",
       },
       {
         id: "course-histoire-32-djolof-royaumes-wolof-quiz-5",
@@ -5708,35 +5918,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-1",
         title: "Les Sérères, un peuple ancien",
         blocks: [
-          { type: "paragraphe", text: "Les Sérères comptent parmi les plus anciens peuples du Sénégal, installés dans les régions du Sine et du Saloum. Ils ont longtemps résisté à l'islamisation, conservant leur religion traditionnelle (avec un dieu suprême, Roog) et leurs coutumes. Une dynastie maternelle, les Guélowar, y régna." },
+          {
+            type: "paragraphe",
+            text: "Autour d'eux, les empires se convertissaient à l'islam les uns après les autres. Les Sérères, eux, ont choisi de rester fidèles à leurs propres dieux.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Roog",
+            legende: "le dieu suprême de la religion traditionnelle sérère",
+          },
+          {
+            type: "paragraphe",
+            text: "Les Sérères comptent parmi les plus anciens peuples du Sénégal, installés dans les régions du **Sine** et du **Saloum**. Ils ont longtemps résisté à l'islamisation, conservant leur religion traditionnelle et leurs coutumes. Une dynastie maternelle, les **Guélowar**, y règne.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Un des plus anciens peuples du Sénégal",
+              "Une religion traditionnelle préservée, autour du dieu **Roog**",
+              "Une dynastie maternelle, les **Guélowar**",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-2",
-        title: "Les royaumes du Sine et du Saloum",
+        title: "Sine et Saloum, deux royaumes",
         blocks: [
-          { type: "paragraphe", text: "Deux royaumes structuraient ce territoire, dirigés par le Maad a Sinig (roi du Sine) et le Maad Saloum (roi du Saloum). C'étaient des sociétés agraires stables, qui subsistèrent jusqu'à la colonisation. Le roi Kumba Ndoffène fut l'une de leurs grandes figures." },
+          {
+            type: "paragraphe",
+            text: "Deux royaumes, deux rois, un seul peuple : le Sine et le Saloum ont vécu côte à côte pendant des siècles, sans jamais fusionner.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2",
+            legende: "royaumes sérères : le Sine et le Saloum",
+          },
+          {
+            type: "paragraphe",
+            text: "Deux royaumes structurent ce territoire, dirigés par le **Maad a Sinig** (roi du Sine) et le **Maad Saloum** (roi du Saloum). Ce sont des sociétés agraires stables, qui subsistent jusqu'à la colonisation. Le roi **Kumba Ndoffène** fut l'une de leurs grandes figures.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Maad a Sinig**, roi du Sine",
+              "Le **Maad Saloum**, roi du Saloum",
+              "Des sociétés agraires stables, jusqu'à la colonisation",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-3",
         title: "Les cercles mégalithiques",
         blocks: [
-          { type: "paragraphe", text: "La région abrite les cercles mégalithiques de Sénégambie (Sine Ngayène, Wanar) : des milliers de pierres dressées et de tumulus, monuments funéraires parmi les plus grandes concentrations de mégalithes au monde. Ils sont classés au patrimoine mondial de l'UNESCO et témoignent d'une organisation sociale ancienne et élaborée." },
+          {
+            type: "paragraphe",
+            text: "Des milliers de pierres dressées forment, dans cette région, l'une des plus grandes concentrations de mégalithes au monde.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2",
+            legende: "sites mégalithiques classés par l'UNESCO",
+          },
+          {
+            type: "paragraphe",
+            text: "La région abrite les cercles mégalithiques de Sénégambie (**Sine Ngayène**, **Wanar**) : des milliers de pierres dressées et de tumulus, monuments funéraires parmi les plus grandes concentrations de mégalithes au monde. Ils témoignent d'une organisation sociale ancienne et élaborée.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Sine Ngayène** et Wanar, cercles mégalithiques classés par l'UNESCO",
+              "Des milliers de pierres dressées et de tumulus",
+              "Une des plus grandes concentrations de mégalithes au monde",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ces pierres dressées sont aussi des monuments funéraires : chaque cercle marquait autrefois une sépulture, preuve d'une société capable d'organiser, il y a des siècles, des chantiers considérables.",
+          },
         ],
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-4",
         title: "Une culture préservée",
         blocks: [
-          { type: "paragraphe", text: "Les Sérères sont réputés pour la lutte traditionnelle, leurs rituels agraires, leurs traditions orales et un fort sentiment d'identité. En résistant plus longtemps que leurs voisins à l'islamisation, ils ont maintenu vivantes des pratiques très anciennes." },
+          {
+            type: "paragraphe",
+            text: "La lutte traditionnelle, les rituels agraires, les récits transmis de bouche à oreille : chez les Sérères, la culture ancienne n'a jamais cessé de vivre.",
+          },
+          {
+            type: "citation",
+            texte: "La terre ne ment jamais à celui qui la travaille.",
+            auteur: "Proverbe sérère",
+          },
+          {
+            type: "paragraphe",
+            text: "Les Sérères sont réputés pour la **lutte traditionnelle**, leurs rituels agraires, leurs traditions orales et un fort sentiment d'identité. En résistant plus longtemps que leurs voisins à l'islamisation, ils ont maintenu vivantes des pratiques très anciennes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **lutte traditionnelle**, sport emblématique des Sérères",
+              "Rituels agraires et traditions orales, transmis sans interruption",
+              "Une résistance culturelle plus longue que chez leurs voisins",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Le peuple sérère a donné au Sénégal moderne de grandes figures — le président Léopold Sédar Senghor était sérère. Leurs mégalithes, leur langue et leurs traditions constituent une part précieuse et fière du patrimoine sénégalais." },
+          {
+            type: "paragraphe",
+            text: "Un peuple resté fidèle à ses racines a fini par donner au Sénégal indépendant son tout premier président.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "avant XVe s.", texte: "Installation des Sérères, dynastie Guélowar" },
+              { date: "XVe-XIXe s.", texte: "Royaumes du Sine et du Saloum" },
+              { date: "1960", texte: "Léopold Sédar Senghor, premier président sénégalais" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le peuple sérère a donné au Sénégal moderne de grandes figures — le président **Léopold Sédar Senghor** était sérère. Leurs mégalithes, leur langue et leurs traditions constituent une part précieuse du patrimoine sénégalais.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Léopold Sédar Senghor**, premier président du Sénégal, était sérère",
+              "Mégalithes, langue, traditions : un patrimoine préservé",
+              "Une part précieuse et fière de l'identité sénégalaise",
+            ],
+          },
         ],
       },
     ],
@@ -5746,14 +6063,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Dans quelles régions du Sénégal vivaient les Sérères ?",
         options: ["Le Sine et le Saloum", "Le Fouta Toro", "La Casamance uniquement", "Le Sahara"],
         correctIndex: 0,
-        explanation: "Les royaumes sérères étaient ceux du Sine et du Saloum.",
+        explanation: "Les royaumes sérères étaient ceux du Sine et du Saloum, dirigés par une dynastie maternelle, les Guélowar.",
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-quiz-2",
         question: "Comment appelait-on le roi du Sine ?",
         options: ["Le Maad a Sinig", "Le Damel", "Le Bourba", "L'Almamy"],
         correctIndex: 0,
-        explanation: "Le roi du Sine portait le titre de Maad a Sinig.",
+        explanation: "Le roi du Sine portait le titre de Maad a Sinig ; celui du Saloum, Maad Saloum.",
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-quiz-3",
@@ -5767,7 +6084,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quelle particularité religieuse distingue longtemps les Sérères ?",
         options: ["Ils ont conservé leur religion traditionnelle", "Ils étaient chrétiens dès l'Antiquité", "Ils n'avaient aucune religion", "Ils ont fondé l'islam"],
         correctIndex: 0,
-        explanation: "Les Sérères ont longtemps résisté à l'islamisation, conservant leur religion traditionnelle.",
+        explanation: "Les Sérères ont longtemps résisté à l'islamisation, conservant leur religion traditionnelle autour du dieu Roog.",
       },
       {
         id: "course-histoire-33-royaumes-serer-sine-saloum-quiz-5",
@@ -5980,35 +6297,138 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-35-lat-dior-cayor-lesson-1",
         title: "Le Damel du Cayor",
         blocks: [
-          { type: "paragraphe", text: "Lat Dior Ngoné Latyr Diop fut le Damel (roi) du Cayor, l'un des plus puissants royaumes wolof, à la fin du XIXᵉ siècle. Roi-guerrier, il régna à une époque où la France cherchait à étendre son emprise sur le Sénégal." },
+          {
+            type: "paragraphe",
+            text: "À la fin du XIXᵉ siècle, un roi-guerrier règne sur l'un des plus puissants royaumes wolof — au moment précis où la France cherche à l'annexer.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "fin XIXe s.",
+            legende: "le règne de Lat Dior, Damel du Cayor",
+          },
+          {
+            type: "paragraphe",
+            text: "**Lat Dior** Ngoné Latyr Diop est le Damel (roi) du **Cayor**, l'un des plus puissants royaumes wolof. Roi-guerrier, il règne à une époque où la France cherche à étendre son emprise sur le Sénégal.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Lat Dior**, Damel (roi) du Cayor, fin XIXᵉ siècle",
+              "Le Cayor, l'un des plus puissants royaumes wolof",
+              "Un règne marqué par la pression coloniale française",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-2",
         title: "La conversion et la lutte",
         blocks: [
-          { type: "paragraphe", text: "Lat Dior se convertit à l'islam et s'allia par moments aux mouvements religieux de son temps. Face à la pénétration française, il alterna la guerre et la négociation, cherchant sans cesse à préserver l'indépendance de son royaume." },
+          {
+            type: "paragraphe",
+            text: "Converti à l'islam, allié aux mouvements religieux de son temps, Lat Dior n'a jamais choisi entre la guerre et la négociation : il a mené les deux.",
+          },
+          {
+            type: "citation",
+            texte: "On ne connaît la valeur d'un cavalier qu'au moment de la charge.",
+            auteur: "Proverbe wolof",
+          },
+          {
+            type: "paragraphe",
+            text: "**Lat Dior** se convertit à l'islam et s'allie par moments aux mouvements religieux de son temps. Face à la pénétration française, il alterne la guerre et la négociation, cherchant sans cesse à préserver l'indépendance de son royaume.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Lat Dior** se convertit à l'islam",
+              "Des alliances ponctuelles avec les mouvements religieux",
+              "Guerre et négociation, pour préserver l'indépendance du Cayor",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-3",
         title: "Le refus du chemin de fer",
         blocks: [
-          { type: "paragraphe", text: "Les Français voulaient construire la voie ferrée Dakar–Saint-Louis à travers le Cayor. Lat Dior s'y opposa fermement, comprenant que ce chemin de fer signerait la fin de l'indépendance de son royaume. Son refus est devenu un symbole de la résistance à la domination coloniale." },
+          {
+            type: "paragraphe",
+            text: "Une simple voie ferrée. Pour Lat Dior, elle ne transportait pas que des marchandises : elle transportait la fin de son royaume.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1 voie ferrée",
+            legende: "que Lat Dior refuse de laisser traverser le Cayor",
+          },
+          {
+            type: "paragraphe",
+            text: "Les Français veulent construire la voie ferrée Dakar–Saint-Louis à travers le **Cayor**. **Lat Dior** s'y oppose fermement, comprenant que ce chemin de fer signerait la fin de l'indépendance de son royaume.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les Français veulent traverser le Cayor par le rail",
+              "**Lat Dior** refuse, y voyant la fin de l'indépendance",
+              "Son refus, un symbole de résistance à la domination coloniale",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-4",
-        title: "La bataille de Dékheulé (1886)",
+        title: "La bataille de Dékheulé",
         blocks: [
-          { type: "paragraphe", text: "Lat Dior tomba les armes à la main lors de la bataille de Dékheulé, en 1886, en combattant les Français, aux côtés de son fidèle cheval Malaw. Sa mort marqua la fin de l'indépendance du Cayor." },
+          {
+            type: "paragraphe",
+            text: "Lat Dior tombe les armes à la main, en 1886, aux côtés de son fidèle cheval, en combattant les Français.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1886",
+            legende: "mort de Lat Dior à la bataille de Dékheulé",
+          },
+          {
+            type: "paragraphe",
+            text: "**Lat Dior** tombe les armes à la main lors de la bataille de **Dékheulé**, en 1886, en combattant les Français, aux côtés de son fidèle cheval **Malaw**. Sa mort marque la fin de l'indépendance du Cayor.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1886** : bataille de Dékheulé, mort de Lat Dior",
+              "Il tombe aux côtés de son cheval **Malaw**",
+              "Sa mort marque la fin de l'indépendance du Cayor",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-35-lat-dior-cayor-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Lat Dior est aujourd'hui un héros national du Sénégal, symbole de dignité et de résistance. Son cheval Malaw et son épée sont célébrés, et de nombreux lieux portent son nom. Il incarne le refus de se soumettre à la conquête coloniale." },
+          {
+            type: "paragraphe",
+            text: "Lat Dior n'a pas gagné sa dernière bataille. Il a pourtant gagné une place, définitive, dans la mémoire du Sénégal.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "fin XIXe s.", texte: "Lat Dior, Damel du Cayor" },
+              { date: "1886", texte: "Bataille de Dékheulé, mort de Lat Dior" },
+              { date: "XXe-XXIe s.", texte: "Héros national, symbole de résistance" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Lat Dior** est aujourd'hui un héros national du Sénégal, symbole de dignité et de résistance. Son cheval **Malaw** et son épée sont célébrés, et de nombreux lieux portent son nom. Il incarne le refus de se soumettre à la conquête coloniale.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Lat Dior**, héros national, symbole de dignité et de résistance",
+              "Son cheval Malaw et son épée, encore célébrés",
+              "De nombreux lieux portent aujourd'hui son nom",
+            ],
+          },
         ],
       },
     ],
@@ -6018,7 +6438,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "De quel royaume Lat Dior était-il le Damel ?",
         options: ["Le Cayor", "Le Sine", "Le Fouta Toro", "Le Mali"],
         correctIndex: 0,
-        explanation: "Lat Dior était le Damel (roi) du Cayor, puissant royaume wolof.",
+        explanation: "Lat Dior était le Damel (roi) du Cayor, puissant royaume wolof, à la fin du XIXᵉ siècle.",
       },
       {
         id: "course-histoire-35-lat-dior-cayor-quiz-2",
@@ -6032,7 +6452,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Où et quand Lat Dior est-il tombé au combat ?",
         options: ["À Dékheulé, en 1886", "À Adoua, en 1896", "À Kirina, en 1235", "À Tondibi, en 1591"],
         correctIndex: 0,
-        explanation: "Lat Dior tomba à la bataille de Dékheulé en 1886, en combattant les Français.",
+        explanation: "Lat Dior tomba à la bataille de Dékheulé en 1886, en combattant les Français aux côtés de son cheval Malaw.",
       },
       {
         id: "course-histoire-35-lat-dior-cayor-quiz-4",
@@ -6062,35 +6482,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-1",
         title: "Un guide spirituel",
         blocks: [
-          { type: "paragraphe", text: "Cheikh Ahmadou Bamba Mbacké (1853-1927) était un maître soufi sénégalais, fondateur de la confrérie mouride (la Mouridiyya). Dans un Sénégal bouleversé par la conquête coloniale, il proposa une voie spirituelle nouvelle, qui rencontra un immense écho." },
+          {
+            type: "paragraphe",
+            text: "Dans un Sénégal bouleversé par la conquête coloniale, un maître soufi propose une voie spirituelle nouvelle — et des centaines de milliers de personnes le suivent.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1853-1927",
+            legende: "les années de vie de Cheikh Ahmadou Bamba",
+          },
+          {
+            type: "paragraphe",
+            text: "**Cheikh Ahmadou Bamba Mbacké** est un maître soufi sénégalais, fondateur de la confrérie **mouride** (la Mouridiyya). Dans un Sénégal bouleversé par la conquête coloniale, il propose une voie spirituelle nouvelle, qui rencontre un immense écho.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Cheikh Ahmadou Bamba** (1853-1927), maître soufi sénégalais",
+              "Fondateur de la confrérie **mouride** (Mouridiyya)",
+              "Une voie spirituelle nouvelle, dans un Sénégal bouleversé",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-2",
         title: "Une résistance pacifique",
         blocks: [
-          { type: "paragraphe", text: "Bamba prêcha la foi, la paix et surtout le travail et l'éducation comme chemins de dignité. Sa résistance à l'ordre colonial fut non-violente : il ne prit jamais les armes, mais son influence grandissante et son indépendance d'esprit inquiétèrent l'administration française." },
+          {
+            type: "paragraphe",
+            text: "Il n'a jamais pris les armes. Et pourtant, cet homme a autant inquiété l'administration coloniale que n'importe quel chef de guerre.",
+          },
+          {
+            type: "citation",
+            texte: "Nul n'a jamais mangé de meilleure nourriture que celle gagnée par le travail de ses propres mains.",
+            auteur: "Tradition islamique",
+          },
+          {
+            type: "paragraphe",
+            text: "**Bamba** prêche la foi, la paix et surtout le **travail** et l'éducation comme chemins de dignité. Sa résistance à l'ordre colonial est non-violente : il ne prend jamais les armes, mais son influence grandissante inquiète l'administration française.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Bamba** prêche la foi, la paix, le travail, l'éducation",
+              "Une résistance non-violente, jamais les armes",
+              "Son influence grandissante inquiète l'administration française",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-3",
         title: "L'exil",
         blocks: [
-          { type: "paragraphe", text: "Craignant son pouvoir sur les foules, les Français exilèrent Cheikh Ahmadou Bamba : d'abord au Gabon (1895-1902), puis en Mauritanie. Cet exil est au cœur de la tradition mouride, riche de récits de foi et de miracles, comme la célèbre prière accomplie sur la mer." },
+          {
+            type: "paragraphe",
+            text: "Craignant son pouvoir sur les foules, les autorités coloniales choisissent l'exil plutôt que la confrontation directe.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1895-1902",
+            legende: "premier exil de Cheikh Ahmadou Bamba, au Gabon",
+          },
+          {
+            type: "paragraphe",
+            text: "Craignant son pouvoir sur les foules, les Français exilent **Cheikh Ahmadou Bamba** : d'abord au **Gabon** (1895-1902), puis en Mauritanie. Cet exil est au cœur de la tradition mouride, riche de récits de foi transmis de génération en génération.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Exilé par les Français, craignant son influence",
+              "**1895-1902** : premier exil au Gabon, puis en Mauritanie",
+              "Un exil au cœur de la tradition mouride",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Cet exil a inspiré, dans la tradition mouride, de nombreux récits de foi transmis de génération en génération — dont celui, célèbre, d'une prière accomplie en pleine mer.",
+          },
         ],
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-4",
         title: "Touba et le mouridisme",
         blocks: [
-          { type: "paragraphe", text: "Bamba fonda la ville sainte de Touba, dont la Grande Mosquée est devenue l'une des plus grandes d'Afrique. La confrérie mouride se développa en une puissante force sociale et économique, fondée sur le travail (notamment la culture de l'arachide), la solidarité et la discipline." },
+          {
+            type: "paragraphe",
+            text: "Une ville entière est née d'un exil. Sa mosquée est aujourd'hui l'une des plus grandes de tout le continent.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1",
+            legende: "des plus grandes mosquées d'Afrique, à Touba",
+          },
+          {
+            type: "paragraphe",
+            text: "**Bamba** fonde la ville sainte de **Touba**, dont la Grande Mosquée devient l'une des plus grandes d'Afrique. La confrérie mouride se développe en une puissante force sociale et économique, fondée sur le travail (notamment la culture de l'**arachide**), la solidarité et la discipline.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Touba**, ville sainte fondée par Bamba",
+              "Sa Grande Mosquée, l'une des plus grandes d'Afrique",
+              "Une force économique fondée sur le travail (l'**arachide**), la solidarité",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-5",
-        title: "Le Grand Magal et l'héritage",
+        title: "Le Grand Magal de Touba",
         blocks: [
-          { type: "paragraphe", text: "Chaque année, le Grand Magal de Touba commémore le départ en exil du cheikh et rassemble des millions de pèlerins. Cheikh Ahmadou Bamba demeure une figure centrale de l'islam et de l'identité sénégalaise, symbole d'une résistance par la foi et le travail." },
+          {
+            type: "paragraphe",
+            text: "Chaque année, des millions de pèlerins convergent vers Touba pour commémorer non une victoire, mais un départ en exil.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1853-1927", texte: "Vie de Cheikh Ahmadou Bamba" },
+              { date: "1895", texte: "Premier exil, au Gabon" },
+              { date: "XXe-XXIe s.", texte: "Grand Magal, des millions de pèlerins" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Chaque année, le **Grand Magal** de Touba commémore le départ en exil du cheikh et rassemble des millions de pèlerins. **Cheikh Ahmadou Bamba** demeure une figure centrale de l'islam et de l'identité sénégalaise, symbole d'une résistance par la foi et le travail.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Grand Magal** commémore chaque année le départ en exil",
+              "Des millions de pèlerins rassemblés à Touba",
+              "Une résistance par la foi et le travail, toujours vivante",
+            ],
+          },
         ],
       },
     ],
@@ -6100,7 +6627,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quelle confrérie Cheikh Ahmadou Bamba a-t-il fondée ?",
         options: ["Le mouridisme (la Mouridiyya)", "Le bouddhisme", "La franc-maçonnerie", "Le protestantisme"],
         correctIndex: 0,
-        explanation: "Cheikh Ahmadou Bamba est le fondateur de la confrérie mouride (Mouridiyya).",
+        explanation: "Cheikh Ahmadou Bamba (1853-1927) est le fondateur de la confrérie mouride (Mouridiyya).",
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-quiz-2",
@@ -6114,7 +6641,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Où les Français ont-ils d'abord exilé Cheikh Ahmadou Bamba ?",
         options: ["Au Gabon", "En France", "au Brésil", "en Égypte"],
         correctIndex: 0,
-        explanation: "Il fut exilé au Gabon (1895-1902), puis en Mauritanie.",
+        explanation: "Il fut exilé au Gabon (1895-1902), puis en Mauritanie — un épisode central de la tradition mouride.",
       },
       {
         id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-quiz-4",
