@@ -12,6 +12,7 @@
     "validate": "tsx --tsconfig tsconfig.app.json scripts/validate-content.ts",
     "gen:index": "tsx --tsconfig tsconfig.app.json scripts/generate-course-index.ts",
     "icons": "node scripts/generate-icons.mjs",
+    "images:generate": "node scripts/generate-course-images.mjs",
     "images:variants": "node scripts/generate-image-variants.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
