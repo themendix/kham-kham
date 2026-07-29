@@ -3775,35 +3775,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-1",
         title: "L'héritière d'Aksoum",
         blocks: [
-          { type: "paragraphe", text: "Après le déclin d'Aksoum, la civilisation chrétienne éthiopienne se perpétua sur les hauts plateaux. Deux grandes dynasties marquèrent le Moyen Âge : la dynastie Zagwé (XIIᵉ-XIIIᵉ siècle), puis la dynastie dite salomonienne, qui prit le pouvoir en 1270 et prétendait descendre du roi Salomon et de la reine de Saba. L'Éthiopie resta ainsi un royaume chrétien continu, cas unique en Afrique." },
+          {
+            type: "paragraphe",
+            text: "Quand Aksoum décline, sa civilisation ne meurt pas. Elle se retire sur les hauts plateaux, et continue son histoire pendant plusieurs siècles de plus.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1270",
+            legende: "la dynastie salomonienne prend le pouvoir en Éthiopie",
+          },
+          {
+            type: "paragraphe",
+            text: "Deux grandes dynasties marquent le Moyen Âge : la dynastie **Zagwé** (XIIᵉ-XIIIᵉ siècle), puis la dynastie dite **salomonienne**, qui prétend descendre du roi Salomon et de la reine de Saba. L'Éthiopie reste ainsi un royaume chrétien continu, cas unique en Afrique.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La civilisation chrétienne éthiopienne prolonge celle d'Aksoum",
+              "Dynastie Zagwé, puis dynastie **salomonienne** (dès 1270)",
+              "Un royaume chrétien continu, cas unique en Afrique",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-2",
         title: "Les églises de Lalibela",
         blocks: [
-          { type: "paragraphe", text: "Le roi Lalibela (dynastie Zagwé) fit tailler, vers les XIIᵉ-XIIIᵉ siècles, onze églises directement dans la roche, conçues comme une « Nouvelle Jérusalem ». Ces édifices monolithes, creusés vers le bas dans le sol puis sculptés, sont une prouesse d'ingénierie et de foi. Toujours en activité, ils sont classés au patrimoine mondial de l'UNESCO et restent un grand lieu de pèlerinage." },
+          {
+            type: "paragraphe",
+            text: "Onze églises entières, creusées dans le sol puis sculptées vers le bas — sans qu'une seule pierre n'ait jamais été transportée jusqu'ici.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "11",
+            legende: "églises monolithes taillées dans la roche à Lalibela",
+          },
+          {
+            type: "paragraphe",
+            text: "Le roi **Lalibela** (dynastie Zagwé) fait tailler ces églises, vers les XIIᵉ-XIIIᵉ siècles, conçues comme une « Nouvelle Jérusalem ». Toujours en activité, elles sont classées au patrimoine mondial de l'**UNESCO** et restent un grand lieu de pèlerinage.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**11** églises monolithes, taillées directement dans la roche",
+              "Conçues comme une « Nouvelle Jérusalem » par le roi Lalibela",
+              "Toujours en activité, classées par l'UNESCO",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ces églises ne sont pas construites, mais creusées : les bâtisseurs ont taillé la roche vers le bas, sculptant l'édifice depuis l'extérieur jusqu'à en faire émerger les murs.",
+          },
         ],
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-3",
         title: "Un christianisme unique",
         blocks: [
-          { type: "paragraphe", text: "L'Église orthodoxe éthiopienne est l'une des plus anciennes du monde. Elle a conservé une langue liturgique propre, le guèze, son propre calendrier, de nombreux monastères et de superbes manuscrits enluminés. Isolée du reste de la chrétienté, elle a développé des traditions originales qui perdurent depuis plus de quinze siècles." },
+          {
+            type: "paragraphe",
+            text: "Une Église coupée du reste du monde chrétien pendant des siècles — et qui en a profité pour devenir profondément, radicalement elle-même.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "15+ siècles",
+            legende: "l'ancienneté de l'Église orthodoxe éthiopienne",
+          },
+          {
+            type: "paragraphe",
+            text: "L'Église orthodoxe éthiopienne a conservé une langue liturgique propre, le **guèze**, son propre calendrier, de nombreux monastères et de superbes manuscrits enluminés. Isolée du reste de la chrétienté, elle a développé des traditions originales.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **guèze**, langue liturgique propre à l'Éthiopie",
+              "Un calendrier propre, des monastères, des manuscrits enluminés",
+              "Plus de **15 siècles** de traditions originales",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-4",
         title: "Un État qui a résisté",
         blocks: [
-          { type: "paragraphe", text: "Gouvernée par des empereurs (les négus), l'Éthiopie médiévale sut se maintenir face aux changements et aux menaces. Son épopée nationale, le Kebra Nagast (« la Gloire des rois »), relie la dynastie à Salomon et à la reine de Saba, et la tradition affirme que l'Arche d'Alliance est conservée à Aksoum. Ces récits nourrissent une identité nationale forte." },
+          {
+            type: "paragraphe",
+            text: "Un texte sacré relie les empereurs d'Éthiopie à un roi biblique — et la tradition affirme qu'un trésor plus sacré encore repose à Aksoum.",
+          },
+          {
+            type: "citation",
+            texte: "Celui qui n'a pas d'ancêtres n'a pas d'avenir.",
+            auteur: "Proverbe éthiopien",
+          },
+          {
+            type: "paragraphe",
+            text: "Gouvernée par des empereurs (les **négus**), l'Éthiopie médiévale sait se maintenir face aux changements et aux menaces. Son épopée nationale, le **Kebra Nagast** (« la Gloire des rois »), relie la dynastie à Salomon et à la reine de Saba.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Gouvernée par des empereurs, les **négus**",
+              "Le **Kebra Nagast** relie la dynastie à Salomon et Saba",
+              "La tradition situe l'Arche d'Alliance à Aksoum",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "L'Éthiopie est unique en Afrique : elle n'a jamais été durablement colonisée, allant jusqu'à vaincre l'Italie à Adoua en 1896 (que nous verrons plus loin), et elle a maintenu une civilisation chrétienne continue. Lalibela, ses manuscrits et son Église orthodoxe témoignent de cette exceptionnelle profondeur historique, source de fierté pour tout le continent." },
+          {
+            type: "paragraphe",
+            text: "L'Éthiopie n'a jamais connu, comme le reste du continent, la rupture d'une colonisation durable. Son histoire, elle, ne s'est jamais interrompue.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "IVe s.", texte: "Aksoum se convertit au christianisme" },
+              { date: "1270", texte: "Dynastie salomonienne, continuité chrétienne" },
+              { date: "1896", texte: "Victoire d'Adoua sur l'Italie" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'Éthiopie est unique en Afrique : elle n'a jamais été durablement colonisée, allant jusqu'à vaincre l'Italie à **Adoua** en 1896 (que nous découvrons dans un prochain cours). Lalibela, ses manuscrits et son Église orthodoxe témoignent de cette exceptionnelle profondeur historique.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Jamais durablement colonisée, victoire d'**Adoua** en 1896",
+              "Une civilisation chrétienne continue depuis Aksoum",
+              "Lalibela et l'Église orthodoxe, témoins de cette profondeur",
+            ],
+          },
         ],
       },
     ],
@@ -3813,28 +3920,28 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "De quelle civilisation antique l'Éthiopie médiévale est-elle l'héritière ?",
         options: ["D'Aksoum", "de Carthage", "du Grand Zimbabwe", "du Mali"],
         correctIndex: 0,
-        explanation: "L'Éthiopie chrétienne médiévale prolonge la civilisation d'Aksoum sur les hauts plateaux.",
+        explanation: "L'Éthiopie chrétienne médiévale prolonge la civilisation d'Aksoum sur les hauts plateaux, après le déclin de celle-ci.",
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-quiz-2",
         question: "Qu'ont de particulier les églises de Lalibela ?",
         options: ["Elles sont taillées directement dans la roche", "Elles sont construites en verre", "Elles flottent sur un lac", "Elles sont en briques de terre"],
         correctIndex: 0,
-        explanation: "Les onze églises de Lalibela sont monolithes, taillées directement dans le roc.",
+        explanation: "Les onze églises de Lalibela sont monolithes, taillées directement dans le roc, conçues comme une « Nouvelle Jérusalem ».",
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-quiz-3",
         question: "Quelle est la langue liturgique de l'Église orthodoxe éthiopienne ?",
         options: ["Le latin", "Le guèze", "L'arabe", "Le grec"],
         correctIndex: 1,
-        explanation: "Le guèze est la langue liturgique ancienne de l'Église orthodoxe éthiopienne.",
+        explanation: "Le guèze est la langue liturgique ancienne de l'Église orthodoxe éthiopienne, qui a aussi son propre calendrier.",
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-quiz-4",
         question: "En quelle année la dynastie salomonienne prit-elle le pouvoir ?",
         options: ["En 1270", "En 1896", "En 330", "En 1591"],
         correctIndex: 0,
-        explanation: "La dynastie dite salomonienne prit le pouvoir en 1270, se disant issue de Salomon et de la reine de Saba.",
+        explanation: "La dynastie dite salomonienne prit le pouvoir en 1270, se disant issue de Salomon et de la reine de Saba, comme le raconte le Kebra Nagast.",
       },
       {
         id: "course-histoire-20-ethiopie-medievale-lalibela-quiz-5",
@@ -4620,35 +4727,146 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-25-conference-berlin-lesson-1",
         title: "La « course à l'Afrique »",
         blocks: [
-          { type: "paragraphe", text: "À la fin du XIXᵉ siècle, les puissances européennes se lancèrent dans une « course à l'Afrique » (Scramble for Africa) : chacune voulait s'emparer de territoires pour leurs ressources, leurs marchés et le prestige. Cette rivalité menaçait de dégénérer en conflits entre Européens." },
+          {
+            type: "paragraphe",
+            text: "À la fin du XIXᵉ siècle, les puissances européennes se lancent dans une compétition pour s'emparer de territoires africains.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "fin XIXe s.",
+            legende: "début de la « course à l'Afrique »",
+          },
+          {
+            type: "paragraphe",
+            text: "Chaque puissance veut s'emparer de territoires pour leurs ressources, leurs marchés et le prestige. Cette rivalité entre pays européens menace de dégénérer en conflits directs entre eux.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Fin du **XIXᵉ siècle** : rivalité européenne pour l'Afrique",
+              "Ressources, marchés, prestige : les moteurs de cette course",
+              "Un risque de conflit direct entre puissances européennes",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-25-conference-berlin-lesson-2",
-        title: "La conférence de Berlin (1884-1885)",
+        title: "La conférence de Berlin",
         blocks: [
-          { type: "paragraphe", text: "Pour régler ces rivalités, le chancelier allemand Bismarck convoqua à Berlin, en 1884-1885, une conférence réunissant les puissances européennes. Elles y fixèrent les règles du partage du continent — notamment le principe d'« occupation effective ». Aucun représentant africain n'y fut convié. L'immense bassin du Congo fut même attribué à titre personnel au roi belge Léopold II." },
+          {
+            type: "paragraphe",
+            text: "En 1884 et 1885, des représentants de plusieurs pays européens se réunissent à Berlin pour décider du partage de l'Afrique. Aucun Africain n'est présent.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "0",
+            legende: "représentant africain présent à la conférence de Berlin",
+          },
+          {
+            type: "paragraphe",
+            text: "Le chancelier allemand **Bismarck** convoque cette conférence, qui fixe les règles du partage du continent — notamment le principe d'« occupation effective ». L'immense bassin du Congo est même attribué à titre personnel au roi belge **Léopold II**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1884-1885** : conférence de Berlin, convoquée par Bismarck",
+              "Le principe d'« occupation effective » fixe les règles du partage",
+              "Le bassin du Congo attribué à titre personnel à Léopold II",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-25-conference-berlin-lesson-3",
         title: "Des frontières artificielles",
         blocks: [
-          { type: "paragraphe", text: "Les Européens tracèrent des frontières à la règle sur des cartes, ignorant les peuples, royaumes et réalités ethniques ou linguistiques existants. Des communautés furent séparées, des groupes rivaux réunis de force. La plupart des frontières actuelles de l'Afrique datent de ce découpage arbitraire." },
+          {
+            type: "paragraphe",
+            text: "Les frontières sont tracées à la règle, sur des cartes, par des hommes qui n'ont jamais mis les pieds sur les terres qu'ils divisent.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1884-1885", texte: "Conférence de Berlin, tracé des zones d'influence" },
+              { date: "1885-1914", texte: "Frontières imposées par la conquête militaire" },
+              { date: "XXe-XXIe s.", texte: "Conflits frontaliers hérités de ce découpage" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les Européens tracent des frontières à la règle sur des cartes, ignorant les peuples, royaumes et réalités ethniques ou linguistiques existants. Des communautés sont séparées, des groupes rivaux réunis de force.",
+          },
+          {
+            type: "citation",
+            texte: "Quand les éléphants se battent, c'est l'herbe qui souffre.",
+            auteur: "Proverbe swahili",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Des frontières tracées à la règle, sans égard aux peuples",
+              "Communautés séparées, groupes rivaux réunis de force",
+              "La plupart des frontières africaines actuelles datent de ce découpage",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-25-conference-berlin-lesson-4",
         title: "La conquête",
         blocks: [
-          { type: "paragraphe", text: "La conférence fut suivie d'une conquête militaire entre 1885 et 1914. À la veille de la Première Guerre mondiale, presque toute l'Afrique était colonisée ; seuls l'Éthiopie et le Liberia restaient à peu près indépendants. La conquête fut souvent brutale, comme les atrocités de l'« État indépendant du Congo » de Léopold II." },
+          {
+            type: "paragraphe",
+            text: "Entre 1885 et 1914, la conférence de Berlin est suivie d'une conquête militaire. À la veille de la Première Guerre mondiale, presque tout le continent est colonisé.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2",
+            legende: "pays restés à peu près indépendants en 1914 (Éthiopie, Liberia)",
+          },
+          {
+            type: "paragraphe",
+            text: "La conférence est suivie d'une conquête militaire entre 1885 et 1914. Seuls l'**Éthiopie** et le **Liberia** restent à peu près indépendants. La conquête est souvent brutale, comme les atrocités de l'« État indépendant du Congo » de Léopold II.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1885-1914** : conquête militaire de presque tout le continent",
+              "Seuls l'Éthiopie et le Liberia restent à peu près indépendants",
+              "Des atrocités documentées, notamment au Congo de Léopold II",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-25-conference-berlin-lesson-5",
         title: "Des conséquences durables",
         blocks: [
-          { type: "paragraphe", text: "Frontières artificielles, économies d'exploitation, sociétés bouleversées : les effets du partage de Berlin se font encore sentir aujourd'hui (conflits frontaliers, peuples divisés). La conférence de Berlin reste le symbole d'une Afrique dont le sort fut décidé sans les Africains." },
+          {
+            type: "paragraphe",
+            text: "Frontières artificielles, économies d'exploitation, sociétés bouleversées : les effets du partage de Berlin se font encore sentir aujourd'hui.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1884-1885", texte: "Conférence de Berlin" },
+              { date: "1885-1914", texte: "Conquête coloniale de l'Afrique" },
+              { date: "XXe-XXIe s.", texte: "Conflits frontaliers, peuples divisés" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les effets du partage de Berlin se font encore sentir aujourd'hui : conflits frontaliers, peuples divisés. La conférence de Berlin reste le symbole d'une Afrique dont le sort fut décidé sans les Africains.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Frontières artificielles, économies d'exploitation, sociétés bouleversées",
+              "Des effets encore sensibles aujourd'hui : conflits, peuples divisés",
+              "Le symbole d'un continent dont le sort fut décidé sans lui",
+            ],
+          },
         ],
       },
     ],
@@ -4658,35 +4876,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment appelle-t-on la ruée européenne sur l'Afrique à la fin du XIXᵉ siècle ?",
         options: ["La « course à l'Afrique »", "La « route de la soie »", "La « paix des braves »", "La « ruée vers l'or »"],
         correctIndex: 0,
-        explanation: "Cette ruée est appelée la « course à l'Afrique » (Scramble for Africa).",
+        explanation: "Cette ruée est appelée la « course à l'Afrique » (Scramble for Africa) ; chaque puissance y cherche ressources, marchés et prestige.",
       },
       {
         id: "course-histoire-25-conference-berlin-quiz-2",
         question: "Qui participait à la conférence de Berlin de 1884-1885 ?",
         options: ["Les puissances européennes, sans aucun Africain", "Uniquement des rois africains", "Les Nations unies", "Des représentants de chaque peuple africain"],
         correctIndex: 0,
-        explanation: "Seules les puissances européennes y participaient ; aucun représentant africain ne fut convié.",
+        explanation: "Seules les puissances européennes y participaient, convoquées par le chancelier allemand Bismarck ; aucun représentant africain ne fut convié.",
       },
       {
         id: "course-histoire-25-conference-berlin-quiz-3",
         question: "Comment les frontières coloniales ont-elles été tracées ?",
         options: ["Selon les peuples et royaumes existants", "À la règle sur des cartes, en ignorant les réalités locales", "Par des votes populaires", "Selon les fleuves uniquement"],
         correctIndex: 1,
-        explanation: "Les frontières furent tracées arbitrairement, ignorant peuples, royaumes et réalités ethniques.",
+        explanation: "Les frontières furent tracées arbitrairement, ignorant peuples, royaumes et réalités ethniques ou linguistiques.",
       },
       {
         id: "course-histoire-25-conference-berlin-quiz-4",
         question: "Quels pays africains restaient à peu près indépendants vers 1914 ?",
         options: ["L'Éthiopie et le Liberia", "Le Mali et le Ghana", "L'Égypte et le Maroc", "Aucun"],
         correctIndex: 0,
-        explanation: "À la veille de 1914, seuls l'Éthiopie et le Liberia demeuraient à peu près indépendants.",
+        explanation: "À la veille de 1914, seuls l'Éthiopie et le Liberia demeuraient à peu près indépendants ; le reste du continent était colonisé.",
       },
       {
         id: "course-histoire-25-conference-berlin-quiz-5",
         question: "À qui le bassin du Congo fut-il attribué à titre personnel ?",
         options: ["Au roi Léopold II de Belgique", "À la reine Victoria", "À Bismarck", "Au sultan ottoman"],
         correctIndex: 0,
-        explanation: "Le bassin du Congo fut attribué personnellement au roi belge Léopold II.",
+        explanation: "Le bassin du Congo fut attribué personnellement au roi belge Léopold II, sous le nom d'« État indépendant du Congo ».",
       },
     ],
   },
@@ -4702,35 +4920,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-26-resistances-colonisation-lesson-1",
         title: "Une conquête contestée",
         blocks: [
-          { type: "paragraphe", text: "La colonisation ne fut pas paisible : partout, les Africains résistèrent, militairement, diplomatiquement et spirituellement. On distingue une résistance « primaire », contre la conquête elle-même, puis des révoltes une fois l'occupation installée. L'idée d'une Afrique passive face à l'Europe est un mythe." },
+          {
+            type: "paragraphe",
+            text: "La colonisation ne s'est pas faite sans résistance. Partout sur le continent, des peuples se sont opposés à la conquête.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1880s-1900s", texte: "Résistance « primaire » à la conquête coloniale" },
+              { date: "1904-1908", texte: "Répression herero et nama en Namibie" },
+              { date: "1905-1907", texte: "Révolte Maji Maji au Tanganyika" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Partout, les Africains résistent, militairement, diplomatiquement et spirituellement. On distingue une résistance « primaire », contre la conquête elle-même, puis des révoltes une fois l'occupation installée. L'idée d'une Afrique passive face à l'Europe est un mythe.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Une résistance militaire, diplomatique et spirituelle, partout",
+              "Résistance « primaire », puis révoltes une fois l'occupation installée",
+              "Le mythe d'une Afrique passive, définitivement contredit",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-26-resistances-colonisation-lesson-2",
         title: "Samory Touré",
         blocks: [
-          { type: "paragraphe", text: "Samory Touré, fondateur de l'empire du Wassoulou en Afrique de l'Ouest, tint tête à l'armée française pendant près de dix-sept ans (années 1880-1898). Il disposait d'une armée bien organisée, pratiquait une guerre de mouvement et fabriquait lui-même des armes. Il ne fut capturé qu'en 1898." },
+          {
+            type: "paragraphe",
+            text: "Samory Touré tient tête à l'armée française pendant près de dix-sept ans, en fabriquant lui-même une partie de ses armes.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "~17 ans",
+            legende: "la résistance de Samory Touré face aux Français",
+          },
+          {
+            type: "paragraphe",
+            text: "**Samory Touré**, fondateur de l'empire du **Wassoulou** en Afrique de l'Ouest, dispose d'une armée bien organisée, pratique une guerre de mouvement et fabrique lui-même des armes. Il n'est capturé qu'en 1898.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Samory Touré**, fondateur de l'empire du Wassoulou",
+              "Une guerre de mouvement, des armes fabriquées sur place",
+              "Capturé en **1898**, après près de 17 ans de résistance",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-26-resistances-colonisation-lesson-3",
         title: "Béhanzin et les autres rois",
         blocks: [
-          { type: "paragraphe", text: "Le roi Béhanzin du Dahomey combattit les Français (1890-1894) ; les Ashanti résistèrent aux Britanniques ; Lat Dior s'opposa à la pénétration française au Sénégal. En Namibie, les peuples Herero et Nama furent écrasés par les Allemands lors d'une répression d'une extrême violence (1904-1908), reconnue comme un génocide." },
+          {
+            type: "paragraphe",
+            text: "D'un bout à l'autre du continent, des rois résistent aux colonisateurs. En Namibie, cette résistance se heurte à une répression d'une extrême violence.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1904-1908",
+            legende: "répression allemande des Herero et Nama, reconnue comme un génocide",
+          },
+          {
+            type: "paragraphe",
+            text: "Le roi **Béhanzin** du Dahomey combat les Français (1890-1894) ; les **Ashanti** résistent aux Britanniques ; **Lat Dior** s'oppose à la pénétration française au Sénégal. En Namibie, les peuples **Herero** et **Nama** sont écrasés par les Allemands lors d'une répression reconnue comme un génocide.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Béhanzin**, les Ashanti, Lat Dior : des résistances à travers le continent",
+              "**1904-1908** : répression allemande des Herero et Nama en Namibie",
+              "Une répression reconnue aujourd'hui comme un génocide",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-26-resistances-colonisation-lesson-4",
         title: "Révoltes et résistances populaires",
         blocks: [
-          { type: "paragraphe", text: "Après la conquête, les révoltes se poursuivirent. La révolte Maji Maji (Tanganyika, 1905-1907) souleva de nombreux peuples contre les Allemands. Ailleurs, la résistance passa par des prophètes, des mouvements religieux et le refus quotidien de l'ordre colonial." },
+          {
+            type: "paragraphe",
+            text: "Une fois la conquête achevée, la résistance ne s'arrête pas. Elle continue, sous d'autres formes, partout où l'ordre colonial s'installe.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1905-1907",
+            legende: "la révolte Maji Maji au Tanganyika",
+          },
+          {
+            type: "paragraphe",
+            text: "La révolte **Maji Maji** (Tanganyika, 1905-1907) soulève de nombreux peuples contre les Allemands. Ailleurs, la résistance passe par des prophètes, des mouvements religieux et le refus quotidien de l'ordre colonial.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La révolte **Maji Maji** (1905-1907) soulève le Tanganyika",
+              "Des prophètes et mouvements religieux portent aussi la résistance",
+              "Le refus quotidien de l'ordre colonial, une résistance discrète",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-26-resistances-colonisation-lesson-5",
         title: "Un héritage de dignité",
         blocks: [
-          { type: "paragraphe", text: "Militairement, ces résistances furent le plus souvent vaincues, en raison de la supériorité des armes européennes. Mais elles prouvèrent que les Africains n'ont jamais été passifs, et elles nourrirent les futurs mouvements nationalistes et la marche vers l'indépendance. Ces figures sont aujourd'hui célébrées comme des héros." },
+          {
+            type: "paragraphe",
+            text: "Militairement, la plupart de ces résistances furent vaincues. Mais elles n'ont pas disparu : elles ont nourri ce qui allait suivre.",
+          },
+          {
+            type: "citation",
+            texte: "Un arbre qu'on abat peut repousser de ses racines.",
+            auteur: "Proverbe ouest-africain",
+          },
+          {
+            type: "paragraphe",
+            text: "Militairement, ces résistances sont le plus souvent vaincues, en raison de la supériorité des armes européennes. Mais elles prouvent que les Africains n'ont jamais été passifs, et elles nourrissent les futurs mouvements nationalistes et la marche vers l'indépendance.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Vaincues militairement, face à la supériorité des armes européennes",
+              "La preuve que les Africains n'ont jamais été passifs",
+              "Un terreau pour le nationalisme et les indépendances à venir",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ces figures de résistance, longtemps passées sous silence dans les récits coloniaux, sont aujourd'hui célébrées comme des héros à travers tout le continent et sa diaspora.",
+          },
         ],
       },
     ],
@@ -4740,14 +5065,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "La colonisation de l'Afrique s'est-elle faite sans résistance ?",
         options: ["Oui, sans aucune résistance", "Non, les Africains ont résisté partout", "Seuls quelques villages ont résisté", "La résistance fut uniquement diplomatique"],
         correctIndex: 1,
-        explanation: "Les Africains ont résisté partout, par les armes, la diplomatie et la révolte.",
+        explanation: "Les Africains ont résisté partout, par les armes, la diplomatie et la révolte, contredisant le mythe d'une Afrique passive.",
       },
       {
         id: "course-histoire-26-resistances-colonisation-quiz-2",
         question: "Combien de temps Samory Touré a-t-il résisté aux Français ?",
         options: ["Près de dix-sept ans", "Une semaine", "Cinquante ans", "Six mois"],
         correctIndex: 0,
-        explanation: "Samory Touré tint tête aux Français pendant près de dix-sept ans, jusqu'à sa capture en 1898.",
+        explanation: "Samory Touré, fondateur de l'empire du Wassoulou, tint tête aux Français pendant près de dix-sept ans, jusqu'à sa capture en 1898.",
       },
       {
         id: "course-histoire-26-resistances-colonisation-quiz-3",
@@ -4768,7 +5093,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quel a été l'héritage de ces résistances ?",
         options: ["Elles ont nourri les futurs mouvements d'indépendance", "Elles ont été oubliées sans effet", "Elles ont renforcé la colonisation", "Elles n'ont jamais existé"],
         correctIndex: 0,
-        explanation: "Bien que souvent vaincues, ces résistances ont nourri le nationalisme et la marche vers l'indépendance.",
+        explanation: "Bien que souvent vaincues militairement, ces résistances ont nourri le nationalisme et la marche vers l'indépendance.",
       },
     ],
   },
@@ -4784,35 +5109,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-27-bataille-adoua-lesson-1",
         title: "L'Éthiopie menacée",
         blocks: [
-          { type: "paragraphe", text: "À la fin du XIXᵉ siècle, l'Italie cherchait à coloniser l'Éthiopie. Le conflit naquit d'un désaccord sur le traité de Wuchale (1889) : la version italienne prétendait établir un protectorat sur l'Éthiopie, ce que celle-ci refusa catégoriquement." },
+          {
+            type: "paragraphe",
+            text: "À la fin du XIXᵉ siècle, un désaccord sur un traité met le feu aux poudres entre l'Italie et l'Éthiopie.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1889",
+            legende: "le traité de Wuchale, à l'origine du conflit",
+          },
+          {
+            type: "paragraphe",
+            text: "L'**Italie** cherche à coloniser l'Éthiopie. Le conflit naît d'un désaccord sur le traité de **Wuchale** (1889) : la version italienne prétend établir un protectorat sur l'Éthiopie, ce que celle-ci refuse catégoriquement.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'Italie cherche à coloniser l'Éthiopie, fin XIXᵉ siècle",
+              "**1889** : désaccord sur le traité de Wuchale",
+              "L'Éthiopie refuse catégoriquement le protectorat italien",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-27-bataille-adoua-lesson-2",
         title: "Ménélik II",
         blocks: [
-          { type: "paragraphe", text: "L'empereur Ménélik II sut unir les forces éthiopiennes et moderniser son armée : il acheta des armes modernes et rallia les seigneurs régionaux. L'impératrice Taytu joua également un rôle de premier plan dans la résistance à l'Italie." },
+          {
+            type: "paragraphe",
+            text: "Un empereur qui achète des armes modernes, unit ses seigneurs régionaux, et prépare une guerre qu'il n'a pas cherchée.",
+          },
+          {
+            type: "citation",
+            texte: "Une seule main ne peut applaudir.",
+            auteur: "Proverbe amharique",
+          },
+          {
+            type: "paragraphe",
+            text: "L'empereur **Ménélik II** sait unir les forces éthiopiennes et moderniser son armée : il achète des armes modernes et rallie les seigneurs régionaux. L'impératrice **Taytu** joue également un rôle de premier plan dans la résistance à l'Italie.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Ménélik II** unit les forces éthiopiennes, modernise l'armée",
+              "Achat d'armes modernes, ralliement des seigneurs régionaux",
+              "L'impératrice **Taytu**, rôle de premier plan dans la résistance",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-27-bataille-adoua-lesson-3",
-        title: "La bataille (1er mars 1896)",
+        title: "La bataille d'Adoua",
         blocks: [
-          { type: "paragraphe", text: "Le 1er mars 1896, à Adoua, l'armée éthiopienne — environ 100 000 hommes — écrasa les forces italiennes venues l'envahir. Ce fut une victoire éclatante et décisive, l'une des plus célèbres de l'histoire militaire africaine." },
+          {
+            type: "paragraphe",
+            text: "Environ 100 000 soldats éthiopiens affrontent l'armée italienne venue les envahir. En une seule journée, le sort du continent bascule.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "100 000",
+            legende: "soldats éthiopiens engagés à la bataille d'Adoua",
+          },
+          {
+            type: "paragraphe",
+            text: "Le 1er mars **1896**, à **Adoua**, l'armée éthiopienne écrase les forces italiennes venues l'envahir. Ce fut une victoire éclatante et décisive, l'une des plus célèbres de l'histoire militaire africaine.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1er mars 1896** : bataille d'Adoua",
+              "**100 000** soldats éthiopiens engagés",
+              "Une victoire décisive, l'une des plus célèbres d'Afrique",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-27-bataille-adoua-lesson-4",
         title: "Une victoire au retentissement mondial",
         blocks: [
-          { type: "paragraphe", text: "Adoua contraignit l'Italie à reconnaître la pleine indépendance de l'Éthiopie (traité d'Addis-Abeba). Ce fut la première grande défaite d'une puissance coloniale européenne face à un État africain. La nouvelle résonna dans le monde entier et inspira les panafricanistes et les peuples noirs du monde." },
+          {
+            type: "paragraphe",
+            text: "Pour la première fois, une puissance coloniale européenne doit reconnaître, noir sur blanc, la pleine indépendance d'un État africain.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1",
+            legende: "première grande défaite coloniale face à un État africain",
+          },
+          {
+            type: "paragraphe",
+            text: "**Adoua** contraint l'**Italie** à reconnaître la pleine indépendance de l'Éthiopie (traité d'Addis-Abeba). La nouvelle résonne dans le monde entier et inspire les panafricanistes et les peuples noirs du monde.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'Italie reconnaît la pleine indépendance de l'Éthiopie",
+              "La première grande défaite coloniale face à un État africain",
+              "Une nouvelle qui inspire les panafricanistes du monde entier",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "La nouvelle de la victoire d'Adoua traversa les océans et fut célébrée jusque dans la presse afro-américaine, des décennies avant les grands mouvements de décolonisation.",
+          },
         ],
       },
       {
         id: "course-histoire-27-bataille-adoua-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Grâce à Adoua, l'Éthiopie resta indépendante (hormis une brève occupation italienne de 1936 à 1941). La bataille devint un symbole de fierté, de dignité et de résistance anticoloniale, célébré à travers tout le continent et la diaspora. Elle prouva qu'une victoire africaine sur le colonialisme était possible." },
+          {
+            type: "paragraphe",
+            text: "**Adoua** ne fut pas qu'une bataille gagnée. Ce fut la preuve, pour tout un continent, qu'une autre issue était possible.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1889", texte: "Traité de Wuchale, désaccord initial" },
+              { date: "1896", texte: "Victoire éthiopienne à Adoua" },
+              { date: "1936-1941", texte: "Brève occupation italienne" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Grâce à Adoua, l'Éthiopie reste indépendante (hormis une brève occupation italienne de **1936 à 1941**). La bataille devient un symbole de fierté et de résistance anticoloniale, célébré à travers tout le continent et la diaspora.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'Éthiopie reste indépendante, sauf occupation brève (1936-1941)",
+              "Un symbole de fierté et de résistance anticoloniale",
+              "La preuve qu'une victoire africaine sur le colonialisme était possible",
+            ],
+          },
         ],
       },
     ],
@@ -4822,7 +5254,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quelle puissance européenne cherchait à coloniser l'Éthiopie ?",
         options: ["L'Italie", "La France", "La Grande-Bretagne", "Le Portugal"],
         correctIndex: 0,
-        explanation: "C'est l'Italie qui chercha à coloniser l'Éthiopie à la fin du XIXᵉ siècle.",
+        explanation: "C'est l'Italie qui chercha à coloniser l'Éthiopie à la fin du XIXᵉ siècle, sur fond de désaccord autour du traité de Wuchale.",
       },
       {
         id: "course-histoire-27-bataille-adoua-quiz-2",
@@ -4836,21 +5268,21 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quel empereur éthiopien a mené la résistance à Adoua ?",
         options: ["Ménélik II", "Ezana", "Lalibela", "Haïlé Sélassié"],
         correctIndex: 0,
-        explanation: "L'empereur Ménélik II unit les forces éthiopiennes et remporta la bataille d'Adoua.",
+        explanation: "L'empereur Ménélik II unit les forces éthiopiennes et remporta la bataille d'Adoua, aux côtés de l'impératrice Taytu.",
       },
       {
         id: "course-histoire-27-bataille-adoua-quiz-4",
         question: "En quelle année eut lieu la bataille d'Adoua ?",
         options: ["En 1896", "En 1591", "En 1960", "En 1235"],
         correctIndex: 0,
-        explanation: "La bataille d'Adoua eut lieu le 1er mars 1896.",
+        explanation: "La bataille d'Adoua eut lieu le 1er mars 1896, avec environ 100 000 soldats éthiopiens engagés.",
       },
       {
         id: "course-histoire-27-bataille-adoua-quiz-5",
         question: "Pourquoi la bataille d'Adoua est-elle si importante ?",
         options: ["C'est la première grande défaite d'une puissance coloniale face à un État africain", "C'est la première bataille de l'histoire", "Elle a marqué le début de la colonisation", "Elle n'a eu aucune conséquence"],
         correctIndex: 0,
-        explanation: "Adoua fut la première grande victoire d'un État africain sur une puissance coloniale européenne, un symbole mondial.",
+        explanation: "Adoua fut la première grande victoire d'un État africain sur une puissance coloniale européenne, célébrée jusque dans la presse afro-américaine.",
       },
     ],
   },
@@ -5358,35 +5790,143 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-34-goree-saint-louis-lesson-1",
         title: "Des comptoirs sur l'Atlantique",
         blocks: [
-          { type: "paragraphe", text: "Du XVᵉ au XVIIᵉ siècle, les Européens (Portugais, Néerlandais, Français, Britanniques) établirent des comptoirs sur la côte sénégalaise. L'île de Gorée, au large de Dakar, et Saint-Louis, fondée en 1659 à l'embouchure du fleuve Sénégal, en devinrent les points les plus importants." },
+          {
+            type: "paragraphe",
+            text: "Du XVᵉ au XVIIᵉ siècle, plusieurs puissances européennes installent des comptoirs sur la côte sénégalaise.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1659",
+            legende: "fondation de Saint-Louis à l'embouchure du fleuve Sénégal",
+          },
+          {
+            type: "paragraphe",
+            text: "Les Européens (Portugais, Néerlandais, Français, Britanniques) établissent des comptoirs sur la côte sénégalaise. L'île de **Gorée**, au large de Dakar, et **Saint-Louis**, fondée en 1659, en deviennent les points les plus importants.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Comptoirs européens sur la côte sénégalaise, XVᵉ-XVIIᵉ siècle",
+              "**1659** : fondation de Saint-Louis",
+              "**Gorée** et Saint-Louis, les points les plus importants",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-34-goree-saint-louis-lesson-2",
-        title: "Gorée, lieu de mémoire de la traite",
+        title: "Gorée, lieu de mémoire",
         blocks: [
-          { type: "paragraphe", text: "Gorée est devenue le symbole de la traite négrière atlantique, avec sa Maison des Esclaves et sa « porte du voyage sans retour ». Les historiens débattent du nombre exact de captifs ayant transité par l'île elle-même, mais Gorée s'impose comme un puissant lieu de mémoire, classé au patrimoine mondial de l'UNESCO, pour l'ensemble de cette tragédie." },
+          {
+            type: "paragraphe",
+            text: "L'île de Gorée est devenue, avec sa Maison des Esclaves, le symbole mondial de la mémoire de la traite négrière atlantique.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1",
+            legende: "la « porte du voyage sans retour »",
+          },
+          {
+            type: "paragraphe",
+            text: "Les historiens débattent du nombre exact de captifs ayant transité par l'île elle-même, mais **Gorée** s'impose comme un puissant lieu de mémoire, classé au patrimoine mondial de l'**UNESCO**, pour l'ensemble de cette tragédie.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Gorée** : symbole mondial de la mémoire de la traite",
+              "La Maison des Esclaves et sa « porte du voyage sans retour »",
+              "Classée au patrimoine mondial de l'UNESCO",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-34-goree-saint-louis-lesson-3",
         title: "Saint-Louis, capitale coloniale",
         blocks: [
-          { type: "paragraphe", text: "Saint-Louis fut le premier établissement français d'Afrique de l'Ouest. Elle devint la capitale du Sénégal, puis celle de l'Afrique-Occidentale française (AOF). Son architecture coloniale, entre le fleuve et la mer, est aujourd'hui classée au patrimoine mondial de l'UNESCO." },
+          {
+            type: "paragraphe",
+            text: "Avant de devenir la capitale de toute l'Afrique-Occidentale française, cette ville fut d'abord un simple comptoir, posé entre un fleuve et la mer.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "AOF",
+            legende: "Saint-Louis devient capitale de l'Afrique-Occidentale française",
+          },
+          {
+            type: "paragraphe",
+            text: "**Saint-Louis** fut le premier établissement français d'Afrique de l'Ouest. Elle devient la capitale du Sénégal, puis celle de l'**Afrique-Occidentale française** (AOF). Son architecture coloniale, entre le fleuve et la mer, est aujourd'hui classée au patrimoine mondial de l'UNESCO.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Saint-Louis** : premier établissement français d'Afrique de l'Ouest",
+              "Capitale du Sénégal, puis de l'**AOF**",
+              "Une architecture coloniale classée par l'UNESCO",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-34-goree-saint-louis-lesson-4",
         title: "Les signares",
         blocks: [
-          { type: "paragraphe", text: "Gorée et Saint-Louis virent naître les signares : des femmes commerçantes métisses, euro-africaines, qui détenaient un réel pouvoir économique et animaient une société créole originale, avec ses codes, sa mode et son influence." },
+          {
+            type: "paragraphe",
+            text: "Ni tout à fait africaines, ni tout à fait européennes : ces femmes ont bâti, à Gorée et à Saint-Louis, un pouvoir économique bien à elles.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2",
+            legende: "villes où les signares ont prospéré (Gorée, Saint-Louis)",
+          },
+          {
+            type: "paragraphe",
+            text: "Gorée et Saint-Louis voient naître les **signares** : des femmes commerçantes métisses, euro-africaines, qui détiennent un réel pouvoir économique et animent une société créole originale, avec ses codes, sa mode et son influence.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les **signares** : femmes commerçantes métisses, euro-africaines",
+              "Un réel pouvoir économique, dans le commerce colonial",
+              "Une société créole originale, avec ses codes et sa mode",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-34-goree-saint-louis-lesson-5",
         title: "Héritage et mémoire",
         blocks: [
-          { type: "paragraphe", text: "Ces deux îles incarnent l'entrée du Sénégal dans le monde atlantique et la mémoire de l'esclavage. Gorée accueille aujourd'hui des commémorations et la visite de dirigeants du monde entier. Elles rappellent un devoir de mémoire essentiel, au cœur de l'histoire sénégalaise." },
+          {
+            type: "paragraphe",
+            text: "Ces deux îles portent aujourd'hui une double mémoire : celle de l'ouverture du Sénégal sur le monde atlantique, et celle de la traite.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XVe-XVIIe s.", texte: "Comptoirs européens à Gorée et Saint-Louis" },
+              { date: "XIXe-XXe s.", texte: "Saint-Louis, capitale coloniale de l'AOF" },
+              { date: "XXe-XXIe s.", texte: "Gorée, lieu de mémoire et de commémoration" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Gorée** accueille aujourd'hui des commémorations et la visite de dirigeants du monde entier. Ces deux îles rappellent un devoir de mémoire essentiel, au cœur de l'histoire sénégalaise.",
+          },
+          {
+            type: "citation",
+            texte: "La mémoire d'un peuple ne s'efface pas, elle se transmet.",
+            auteur: "Proverbe sénégalais",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Gorée**, lieu de commémorations mondiales",
+              "Un devoir de mémoire essentiel, au cœur de l'histoire sénégalaise",
+              "Deux îles, deux mémoires : l'Atlantique et la traite",
+            ],
+          },
         ],
       },
     ],
@@ -5396,14 +5936,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Où se situent Gorée et Saint-Louis ?",
         options: ["Au Sénégal", "En Égypte", "en Afrique du Sud", "au Kenya"],
         correctIndex: 0,
-        explanation: "Gorée (au large de Dakar) et Saint-Louis (embouchure du fleuve Sénégal) sont au Sénégal.",
+        explanation: "Gorée (au large de Dakar) et Saint-Louis (embouchure du fleuve Sénégal, fondée en 1659) sont au Sénégal.",
       },
       {
         id: "course-histoire-34-goree-saint-louis-quiz-2",
         question: "De quoi l'île de Gorée est-elle devenue le symbole ?",
         options: ["De la mémoire de la traite négrière", "Du commerce de l'or", "De la conquête romaine", "De l'islamisation"],
         correctIndex: 0,
-        explanation: "Gorée, avec sa Maison des Esclaves, est un lieu de mémoire majeur de la traite atlantique, classé par l'UNESCO.",
+        explanation: "Gorée, avec sa Maison des Esclaves et sa « porte du voyage sans retour », est un lieu de mémoire majeur de la traite atlantique, classé par l'UNESCO.",
       },
       {
         id: "course-histoire-34-goree-saint-louis-quiz-3",
@@ -5417,7 +5957,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qui étaient les signares ?",
         options: ["Des femmes commerçantes métisses influentes", "Des reines égyptiennes", "Des guerrières du Dahomey", "Des exploratrices européennes"],
         correctIndex: 0,
-        explanation: "Les signares étaient des femmes commerçantes euro-africaines de Gorée et Saint-Louis, dotées d'un vrai pouvoir économique.",
+        explanation: "Les signares étaient des femmes commerçantes euro-africaines de Gorée et Saint-Louis, dotées d'un vrai pouvoir économique et d'une société créole propre.",
       },
       {
         id: "course-histoire-34-goree-saint-louis-quiz-5",
