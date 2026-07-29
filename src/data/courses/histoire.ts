@@ -5298,35 +5298,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-28-independances-africaines-lesson-1",
         title: "La montée du nationalisme",
         blocks: [
-          { type: "paragraphe", text: "Après la Seconde Guerre mondiale, le nationalisme africain s'affirma. Élites instruites, anciens combattants et mouvements urbains réclamèrent d'abord des droits, puis l'indépendance. Ils s'inspiraient du panafricanisme, du mouvement mondial de décolonisation et des principes de l'ONU. L'ordre colonial était désormais contesté de toutes parts." },
+          {
+            type: "paragraphe",
+            text: "Après 1945, un mouvement traverse tout le continent : celui des peuples qui refusent, de plus en plus fort, de rester colonisés.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1945",
+            legende: "fin de la Seconde Guerre mondiale, essor du nationalisme africain",
+          },
+          {
+            type: "paragraphe",
+            text: "Élites instruites, anciens combattants et mouvements urbains réclament d'abord des droits, puis l'indépendance. Ils s'inspirent du **panafricanisme**, du mouvement mondial de décolonisation et des principes de l'**ONU**. L'ordre colonial est désormais contesté de toutes parts.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1945** : la fin de la guerre relance le nationalisme africain",
+              "Élites, anciens combattants, mouvements urbains portent la contestation",
+              "L'inspiration du panafricanisme et de la décolonisation mondiale",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-28-independances-africaines-lesson-2",
-        title: "Le Ghana, pionnier (1957)",
+        title: "Le Ghana, pionnier",
         blocks: [
-          { type: "paragraphe", text: "En 1957, le Ghana, conduit par Kwame Nkrumah, devint la première colonie d'Afrique subsaharienne à accéder à l'indépendance. Ce fut une étincelle pour tout le continent. Au nord, plusieurs pays (Égypte, Libye, Soudan, Maroc, Tunisie) étaient déjà devenus indépendants dans les années 1950." },
+          {
+            type: "paragraphe",
+            text: "En 1957, un seul pays ouvre la voie — et devient, pour tout le continent, une étincelle.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1957",
+            legende: "le Ghana, première indépendance d'Afrique subsaharienne",
+          },
+          {
+            type: "paragraphe",
+            text: "Le **Ghana**, conduit par **Kwame Nkrumah**, devient la première colonie d'Afrique subsaharienne à accéder à l'indépendance. Au nord, plusieurs pays (Égypte, Libye, Soudan, Maroc, Tunisie) étaient déjà devenus indépendants dans les années 1950.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1957** : le Ghana, première indépendance subsaharienne",
+              "Mené par **Kwame Nkrumah**, une étincelle pour le continent",
+              "L'Afrique du Nord, déjà indépendante dans les années 1950",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-28-independances-africaines-lesson-3",
-        title: "1960, « l'année de l'Afrique »",
+        title: "1960, l'année de l'Afrique",
         blocks: [
-          { type: "paragraphe", text: "L'année 1960 fut décisive : dix-sept pays africains accédèrent à l'indépendance la même année, dont de nombreuses anciennes colonies françaises, le Nigeria et le Congo. On l'a surnommée « l'année de l'Afrique »." },
+          {
+            type: "paragraphe",
+            text: "Dix-sept pays. Une seule année. Jamais l'Afrique n'avait connu une vague d'indépendances aussi massive et aussi rapide.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "17",
+            legende: "pays africains indépendants en une seule année, 1960",
+          },
+          {
+            type: "paragraphe",
+            text: "L'année 1960 est décisive : dix-sept pays africains accèdent à l'indépendance la même année, dont de nombreuses anciennes colonies françaises, le **Nigeria** et le **Congo**. On l'a surnommée « l'année de l'Afrique ».",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**17** pays deviennent indépendants en 1960",
+              "Anciennes colonies françaises, le **Nigeria**, le **Congo**",
+              "1960, surnommée « l'année de l'Afrique »",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "En une seule année, l'Afrique a vu naître plus de nouveaux États indépendants que n'importe quel autre continent n'en avait jamais connu sur une aussi courte période.",
+          },
         ],
       },
       {
         id: "course-histoire-28-independances-africaines-lesson-4",
         title: "Des voies diverses",
         blocks: [
-          { type: "paragraphe", text: "Les indépendances suivirent des chemins variés. Certaines furent négociées pacifiquement, d'autres arrachées par la lutte armée : la guerre d'Algérie (1954-1962), plus tard les colonies portugaises (Angola, Mozambique, Guinée-Bissau) dans les années 1970, le Zimbabwe (1980), la Namibie (1990), et enfin la fin de l'apartheid en Afrique du Sud (1994)." },
+          {
+            type: "paragraphe",
+            text: "Certaines indépendances se sont signées à la table des négociations. D'autres se sont payées, très cher, par les armes.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1954-1962", texte: "Guerre d'indépendance de l'Algérie" },
+              { date: "années 1970", texte: "Indépendance des colonies portugaises" },
+              { date: "1990-1994", texte: "Namibie puis fin de l'apartheid" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les indépendances suivent des chemins variés. Certaines sont négociées pacifiquement, d'autres arrachées par la lutte armée : la guerre d'**Algérie** (1954-1962), plus tard les colonies portugaises dans les années 1970, le **Zimbabwe** (1980), la **Namibie** (1990), et enfin la fin de l'apartheid en Afrique du Sud (1994).",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Des voies négociées, d'autres arrachées par la lutte armée",
+              "**1954-1962** : la guerre d'indépendance de l'Algérie",
+              "Jusqu'en 1994, avec la fin de l'apartheid",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-28-independances-africaines-lesson-5",
         title: "Espoirs et défis",
         blocks: [
-          { type: "paragraphe", text: "L'indépendance apporta un immense espoir, mais aussi des défis : frontières héritées de la colonisation, économies fragiles, ingérences de la guerre froide, coups d'État. Le rêve d'une unité africaine (voir le cours suivant) restait à construire. Ces indépendances n'en demeurent pas moins un tournant majeur et une source de fierté." },
+          {
+            type: "paragraphe",
+            text: "L'indépendance n'a pas résolu tous les problèmes d'un seul coup. Elle a surtout donné aux Africains le droit de les affronter eux-mêmes.",
+          },
+          {
+            type: "citation",
+            texte: "Enfin, la bataille est terminée ! Le Ghana, notre cher pays, est libre à jamais !",
+            auteur: "Kwame Nkrumah, 1957",
+          },
+          {
+            type: "paragraphe",
+            text: "L'indépendance apporte un immense espoir, mais aussi des défis : frontières héritées de la colonisation, économies fragiles, ingérences de la guerre froide, coups d'État. Le rêve d'une unité africaine reste à construire.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Un immense espoir, mais des défis bien réels",
+              "Frontières héritées, économies fragiles, ingérences de la guerre froide",
+              "Un tournant majeur, une source de fierté durable",
+            ],
+          },
         ],
       },
     ],
@@ -5350,7 +5457,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Pourquoi 1960 est-elle appelée « l'année de l'Afrique » ?",
         options: ["Parce que 17 pays y devinrent indépendants", "Parce que l'Afrique fut colonisée", "Parce qu'une guerre mondiale y éclata", "Parce que l'ONU fut créée"],
         correctIndex: 0,
-        explanation: "En 1960, dix-sept pays africains accédèrent à l'indépendance : « l'année de l'Afrique ».",
+        explanation: "En 1960, dix-sept pays africains accédèrent à l'indépendance, dont le Nigeria et le Congo : « l'année de l'Afrique ».",
       },
       {
         id: "course-histoire-28-independances-africaines-quiz-4",
@@ -5380,35 +5487,138 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-1",
         title: "L'idée panafricaine",
         blocks: [
-          { type: "paragraphe", text: "Le panafricanisme est l'idée de solidarité et d'unité entre les peuples africains et leur diaspora. Ses racines se trouvent d'abord dans la diaspora, avec des figures comme W. E. B. Du Bois ou Marcus Garvey, et les premiers Congrès panafricains au début du XXᵉ siècle." },
+          {
+            type: "paragraphe",
+            text: "Avant même que la plupart des pays africains ne soient indépendants, une idée circulait déjà : celle d'un destin commun à tous les peuples africains.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "début XXe s.",
+            legende: "les premiers Congrès panafricains",
+          },
+          {
+            type: "paragraphe",
+            text: "Le panafricanisme est l'idée de solidarité et d'unité entre les peuples africains et leur diaspora. Ses racines se trouvent d'abord dans la diaspora, avec des figures comme **Du Bois** ou **Marcus Garvey**, et les premiers Congrès panafricains.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le panafricanisme : solidarité entre l'Afrique et sa diaspora",
+              "Des racines dans la diaspora : **Du Bois**, Garvey",
+              "Les premiers Congrès panafricains, début du XXᵉ siècle",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-2",
         title: "Les pères de l'unité",
         blocks: [
-          { type: "paragraphe", text: "Après les indépendances, des dirigeants portèrent ce rêve. Kwame Nkrumah (Ghana) prônait des « États-Unis d'Afrique ». D'autres — Nyerere, Senghor, Haïlé Sélassié, Nasser — avaient des visions différentes, entre une fédération immédiate et une intégration plus progressive." },
+          {
+            type: "paragraphe",
+            text: "Une fédération immédiate, ou une intégration plus lente ? Après les indépendances, les grands dirigeants africains ne s'accordaient pas tous sur la marche à suivre.",
+          },
+          {
+            type: "citation",
+            texte: "Il vaut mieux se gouverner soi-même mal que d'être bien gouverné par d'autres.",
+            auteur: "Kwame Nkrumah",
+          },
+          {
+            type: "paragraphe",
+            text: "Après les indépendances, des dirigeants portent ce rêve. **Kwame Nkrumah** (Ghana) prône des « États-Unis d'Afrique ». D'autres — **Nyerere**, **Senghor**, Haïlé Sélassié, Nasser — ont des visions différentes, entre fédération immédiate et intégration progressive.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Kwame Nkrumah** prône des « États-Unis d'Afrique »",
+              "**Nyerere**, Senghor, Haïlé Sélassié, Nasser : d'autres visions",
+              "Fédération immédiate ou intégration progressive : le débat",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-3",
-        title: "L'OUA (1963)",
+        title: "L'OUA",
         blocks: [
-          { type: "paragraphe", text: "En 1963, l'Organisation de l'unité africaine (OUA) fut fondée à Addis-Abeba par une trentaine d'États. Elle visait à promouvoir l'unité, à défendre la souveraineté et à achever la décolonisation, en soutenant les mouvements de libération (contre les dernières colonies et l'apartheid)." },
+          {
+            type: "paragraphe",
+            text: "En 1963, une trentaine d'États encore jeunes décident de se donner, ensemble, une organisation commune.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1963",
+            legende: "fondation de l'OUA à Addis-Abeba",
+          },
+          {
+            type: "paragraphe",
+            text: "L'**Organisation de l'unité africaine** (OUA) est fondée à Addis-Abeba par une trentaine d'États. Elle vise à promouvoir l'unité, à défendre la souveraineté et à achever la décolonisation, en soutenant les mouvements de libération.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1963** : fondation de l'OUA à Addis-Abeba",
+              "Une trentaine d'États fondateurs",
+              "Objectif : unité, souveraineté, fin de la décolonisation",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-4",
-        title: "De l'OUA à l'Union africaine (2002)",
+        title: "De l'OUA à l'Union africaine",
         blocks: [
-          { type: "paragraphe", text: "En 2002, l'OUA laissa place à l'Union africaine (UA), en partie inspirée du modèle de l'Union européenne : une Commission, un Parlement, des objectifs d'intégration, de paix et de développement. Son siège reste à Addis-Abeba." },
+          {
+            type: "paragraphe",
+            text: "En 2002, une organisation vieille de près de quarante ans cède la place à une nouvelle, inspirée d'un modèle venu d'un autre continent.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2002",
+            legende: "l'OUA laisse place à l'Union africaine",
+          },
+          {
+            type: "paragraphe",
+            text: "L'**OUA** laisse place à l'**Union africaine** (UA), en partie inspirée du modèle de l'Union européenne : une Commission, un Parlement, des objectifs d'intégration, de paix et de développement. Son siège reste à **Addis-Abeba**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**2002** : l'OUA devient l'Union africaine",
+              "Un modèle en partie inspiré de l'Union européenne",
+              "Siège à **Addis-Abeba**, comme l'OUA avant elle",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-lesson-5",
         title: "Aujourd'hui",
         blocks: [
-          { type: "paragraphe", text: "L'Union africaine (55 États membres) œuvre pour la paix et la sécurité, l'intégration économique — avec la Zone de libre-échange continentale africaine (ZLECAf) — et une vision de long terme, l'Agenda 2063. Le panafricanisme demeure un idéal directeur pour l'avenir du continent." },
+          {
+            type: "paragraphe",
+            text: "55 États membres, une zone de libre-échange continentale : le panafricanisme n'est plus seulement un rêve, c'est aussi une administration.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1963", texte: "Fondation de l'OUA" },
+              { date: "2002", texte: "Naissance de l'Union africaine" },
+              { date: "2063", texte: "Horizon de l'Agenda 2063" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'**Union africaine** (55 États membres) œuvre pour la paix et la sécurité, l'intégration économique — avec la Zone de libre-échange continentale africaine (**ZLECAf**) — et une vision de long terme, l'**Agenda 2063**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**55** États membres de l'Union africaine",
+              "La **ZLECAf**, zone de libre-échange continentale",
+              "L'**Agenda 2063**, vision de long terme",
+            ],
+          },
         ],
       },
     ],
@@ -5418,35 +5628,35 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qu'est-ce que le panafricanisme ?",
         options: ["L'idée d'unité et de solidarité entre les peuples africains et la diaspora", "Une religion", "Une langue africaine", "Un fleuve"],
         correctIndex: 0,
-        explanation: "Le panafricanisme prône l'unité et la solidarité des peuples africains et de leur diaspora.",
+        explanation: "Le panafricanisme prône l'unité et la solidarité des peuples africains et de leur diaspora, avec des racines chez Du Bois et Garvey.",
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-quiz-2",
         question: "Quel dirigeant prônait les « États-Unis d'Afrique » ?",
         options: ["Kwame Nkrumah", "Nelson Mandela", "Ménélik II", "Léopold II"],
         correctIndex: 0,
-        explanation: "Kwame Nkrumah, du Ghana, défendait l'idée d'« États-Unis d'Afrique ».",
+        explanation: "Kwame Nkrumah, du Ghana, défendait l'idée d'« États-Unis d'Afrique », face à des visions plus progressives comme celle de Senghor.",
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-quiz-3",
         question: "En quelle année l'OUA a-t-elle été fondée ?",
         options: ["En 1963", "En 1884", "En 2002", "En 1896"],
         correctIndex: 0,
-        explanation: "L'Organisation de l'unité africaine fut fondée en 1963 à Addis-Abeba.",
+        explanation: "L'Organisation de l'unité africaine fut fondée en 1963 à Addis-Abeba, par une trentaine d'États.",
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-quiz-4",
         question: "Par quelle organisation l'OUA a-t-elle été remplacée en 2002 ?",
         options: ["L'Union africaine", "L'ONU", "L'Union européenne", "La CEDEAO"],
         correctIndex: 0,
-        explanation: "En 2002, l'OUA laissa place à l'Union africaine (UA).",
+        explanation: "En 2002, l'OUA laissa place à l'Union africaine (UA), en partie inspirée du modèle européen.",
       },
       {
         id: "course-histoire-29-panafricanisme-union-africaine-quiz-5",
         question: "Comment s'appelle la vision de long terme de l'Union africaine ?",
         options: ["L'Agenda 2063", "Le Plan Marshall", "Le rêve américain", "L'Agenda 21"],
         correctIndex: 0,
-        explanation: "L'Agenda 2063 est la vision de développement à long terme de l'Union africaine.",
+        explanation: "L'Agenda 2063 est la vision de développement à long terme de l'Union africaine, aux côtés de la ZLECAf.",
       },
     ],
   },
@@ -5462,35 +5672,138 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-30-apartheid-mandela-lesson-1",
         title: "Qu'est-ce que l'apartheid ?",
         blocks: [
-          { type: "paragraphe", text: "L'apartheid (« séparation » en afrikaans) était un système de ségrégation raciale institutionnalisée, imposé en Afrique du Sud à partir de 1948 par le pouvoir de la minorité blanche. Des lois classaient les habitants selon leur « race », séparaient de force les populations et privaient la majorité noire de droits, de terres et de liberté de circulation (les fameux pass)." },
+          {
+            type: "paragraphe",
+            text: "À partir de 1948, un système de lois sépare et classe les habitants d'Afrique du Sud selon leur « race ».",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1948",
+            legende: "l'apartheid devient un système institutionnalisé",
+          },
+          {
+            type: "paragraphe",
+            text: "L'**apartheid** (« séparation » en afrikaans) est un système de ségrégation raciale institutionnalisée, imposé par le pouvoir de la minorité blanche. Des lois classent les habitants selon leur « race », séparent de force les populations et privent la majorité noire de droits, de terres et de liberté de circulation.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1948** : début de l'apartheid en Afrique du Sud",
+              "Un système de lois classant les habitants par « race »",
+              "La majorité noire privée de droits, de terres, de liberté",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-30-apartheid-mandela-lesson-2",
         title: "La résistance",
         blocks: [
-          { type: "paragraphe", text: "Le Congrès national africain (ANC) et d'autres organisations menèrent la résistance. Les protestations furent souvent réprimées dans le sang : le massacre de Sharpeville (1960), le soulèvement de Soweto (1976). Face à l'échec de la lutte pacifique, Nelson Mandela, dirigeant de l'ANC, se tourna vers la lutte armée." },
+          {
+            type: "paragraphe",
+            text: "Face à l'apartheid, une résistance s'organise. Elle est réprimée à plusieurs reprises, par la force.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2",
+            legende: "répressions majeures : Sharpeville (1960), Soweto (1976)",
+          },
+          {
+            type: "paragraphe",
+            text: "Le **Congrès national africain** (ANC) et d'autres organisations mènent la résistance. Les protestations sont réprimées : le massacre de **Sharpeville** (1960), le soulèvement de **Soweto** (1976). Face à l'échec de la lutte pacifique, **Nelson Mandela**, dirigeant de l'ANC, se tourne vers la lutte armée.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**ANC** mène la résistance à l'apartheid",
+              "**Sharpeville** (1960), **Soweto** (1976) : des répressions marquantes",
+              "**Mandela** se tourne vers la lutte armée après l'échec pacifique",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-30-apartheid-mandela-lesson-3",
         title: "Mandela emprisonné",
         blocks: [
-          { type: "paragraphe", text: "Arrêté, Mandela fut condamné à la prison à vie et passa vingt-sept ans en détention, en grande partie sur l'île de Robben Island. Il devint le symbole mondial de la lutte contre l'apartheid. À l'étranger, sanctions et boycotts firent pression sur le régime sud-africain." },
+          {
+            type: "paragraphe",
+            text: "Mandela passe vingt-sept ans en prison. Vingt-sept ans, en grande partie sur une île.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "27 ans",
+            legende: "durée de l'emprisonnement de Nelson Mandela",
+          },
+          {
+            type: "paragraphe",
+            text: "Arrêté, **Mandela** est condamné à la prison à vie et passe vingt-sept ans en détention, en grande partie sur l'île de **Robben Island**. Il devient le symbole mondial de la lutte contre l'apartheid. À l'étranger, sanctions et boycotts font pression sur le régime sud-africain.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**27 ans** de détention, dont l'île de Robben Island",
+              "Mandela devient le symbole mondial de la lutte",
+              "Sanctions et boycotts internationaux font pression sur le régime",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-30-apartheid-mandela-lesson-4",
         title: "La fin de l'apartheid",
         blocks: [
-          { type: "paragraphe", text: "Sous la double pression de la résistance intérieure et de la communauté internationale, le président F. W. de Klerk libéra Mandela en 1990. Des négociations s'ouvrirent, les lois de l'apartheid furent abolies, et en 1994 eurent lieu les premières élections démocratiques multiraciales." },
+          {
+            type: "paragraphe",
+            text: "Sous la double pression de la résistance intérieure et de la communauté internationale, le régime sud-africain finit par céder.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1990", texte: "Libération de Nelson Mandela" },
+              { date: "1990-1993", texte: "Négociations, abolition des lois de l'apartheid" },
+              { date: "1994", texte: "Premières élections démocratiques multiraciales" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le président **F. W. de Klerk** libère **Mandela** en 1990. Des négociations s'ouvrent, les lois de l'apartheid sont abolies, et en 1994 ont lieu les premières élections démocratiques multiraciales.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1990** : F. W. de Klerk libère Nelson Mandela",
+              "Négociations, puis abolition des lois de l'apartheid",
+              "**1994** : premières élections démocratiques multiraciales",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-30-apartheid-mandela-lesson-5",
         title: "Mandela président et héritage",
         blocks: [
-          { type: "paragraphe", text: "En 1994, Nelson Mandela devint le premier président noir d'Afrique du Sud, démocratiquement élu. Il choisit la voie de la réconciliation plutôt que de la vengeance, notamment avec la Commission « Vérité et Réconciliation ». Prix Nobel de la paix, il reste dans le monde entier un symbole de dignité, de pardon et de triomphe sur le racisme." },
+          {
+            type: "paragraphe",
+            text: "En 1994, Nelson Mandela devient le premier président noir d'Afrique du Sud, démocratiquement élu.",
+          },
+          {
+            type: "citation",
+            texte: "J'ai chéri l'idéal d'une société libre et démocratique. C'est un idéal pour lequel je suis prêt à mourir.",
+            auteur: "Nelson Mandela, procès de Rivonia (1964)",
+          },
+          {
+            type: "paragraphe",
+            text: "**Mandela** choisit la voie de la réconciliation plutôt que de la vengeance, notamment avec la Commission « Vérité et Réconciliation ». Prix Nobel de la paix, il reste un symbole de dignité et de pardon.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1994** : Mandela, premier président noir d'Afrique du Sud",
+              "La réconciliation choisie plutôt que la vengeance",
+              "Prix Nobel de la paix, symbole de dignité et de pardon",
+            ],
+          },
         ],
       },
     ],
@@ -5500,14 +5813,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qu'était l'apartheid ?",
         options: ["Un système de ségrégation raciale en Afrique du Sud", "Une monnaie africaine", "Un royaume médiéval", "Une fête traditionnelle"],
         correctIndex: 0,
-        explanation: "L'apartheid était un système de ségrégation raciale institutionnalisée, imposé dès 1948.",
+        explanation: "L'apartheid était un système de ségrégation raciale institutionnalisée, imposé dès 1948 par le pouvoir de la minorité blanche.",
       },
       {
         id: "course-histoire-30-apartheid-mandela-quiz-2",
         question: "Quelle organisation a mené la lutte contre l'apartheid ?",
         options: ["Le Congrès national africain (ANC)", "L'OTAN", "La Ligue arabe", "L'OUA uniquement"],
         correctIndex: 0,
-        explanation: "Le Congrès national africain (ANC) fut au cœur de la résistance à l'apartheid.",
+        explanation: "Le Congrès national africain (ANC) fut au cœur de la résistance à l'apartheid, malgré des répressions comme Sharpeville et Soweto.",
       },
       {
         id: "course-histoire-30-apartheid-mandela-quiz-3",
@@ -5521,7 +5834,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "En quelle année eurent lieu les premières élections démocratiques multiraciales ?",
         options: ["En 1994", "En 1960", "En 1948", "En 1976"],
         correctIndex: 0,
-        explanation: "Les premières élections démocratiques multiraciales se tinrent en 1994.",
+        explanation: "Les premières élections démocratiques multiraciales se tinrent en 1994, après la libération de Mandela en 1990.",
       },
       {
         id: "course-histoire-30-apartheid-mandela-quiz-5",
@@ -6671,35 +6984,138 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-37-aline-sitoe-diatta-lesson-1",
         title: "Une jeune femme de Casamance",
         blocks: [
-          { type: "paragraphe", text: "Aline Sitoé Diatta (vers 1920-1944) était une jeune femme diola, née à Kabrousse, en Casamance, dans le sud du Sénégal. Elle travailla un temps comme domestique à Dakar avant de revenir dans sa région natale, où elle affirma une vocation de guide." },
+          {
+            type: "paragraphe",
+            text: "Elle a d'abord travaillé comme domestique à Dakar. Rien, dans ce début de vie, ne laissait présager qu'elle deviendrait une figure de résistance.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "vers 1920",
+            legende: "naissance d'Aline Sitoé Diatta à Kabrousse",
+          },
+          {
+            type: "paragraphe",
+            text: "**Aline Sitoé Diatta** est une jeune femme **diola**, née à **Kabrousse**, en Casamance, dans le sud du Sénégal. Elle travaille un temps comme domestique à Dakar avant de revenir dans sa région natale, où elle affirme une vocation de guide.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née vers **1920** à Kabrousse, en Casamance",
+              "Une jeune femme **diola**, domestique à Dakar",
+              "De retour en Casamance, elle affirme une vocation de guide",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-2",
         title: "Un appel à la résistance",
         blocks: [
-          { type: "paragraphe", text: "Pendant la Seconde Guerre mondiale, elle s'éleva contre les réquisitions coloniales (de riz, de bétail) et le travail forcé imposés par l'administration française. Elle appela au retour aux traditions diola et à la résistance à l'autorité coloniale, et fut perçue comme une prophétesse." },
+          {
+            type: "paragraphe",
+            text: "Pendant la Seconde Guerre mondiale, une seule voix s'élève en Casamance contre les réquisitions imposées par l'administration française.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2",
+            legende: "réquisitions coloniales contestées : riz et bétail",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle s'élève contre les réquisitions coloniales (de riz, de bétail) et le travail forcé imposés par l'administration française. Elle appelle au retour aux traditions **diola** et à la résistance à l'autorité coloniale, et est perçue comme une prophétesse.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "S'élève contre réquisitions et travail forcé",
+              "Un appel au retour aux traditions **diola**",
+              "Perçue par beaucoup comme une prophétesse",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-3",
         title: "La révolte",
         blocks: [
-          { type: "paragraphe", text: "Son message se répandit dans la région. Elle exhorta les populations à refuser de livrer leur riz à l'effort de guerre français. Ce mouvement menaça directement le contrôle colonial sur la Casamance." },
+          {
+            type: "paragraphe",
+            text: "Son message se répand vite en Casamance. Un mot d'ordre simple : ne plus livrer le riz à l'effort de guerre français.",
+          },
+          {
+            type: "citation",
+            texte: "La terre appartient à ceux qui la cultivent, pas à ceux qui la conquièrent.",
+            auteur: "Proverbe diola",
+          },
+          {
+            type: "paragraphe",
+            text: "Son message se répand dans la région. Elle exhorte les populations à refuser de livrer leur riz à l'effort de guerre français. Ce mouvement menace directement le contrôle colonial sur la **Casamance**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Un appel à refuser de livrer le riz aux Français",
+              "Un message qui se répand dans toute la Casamance",
+              "Une menace directe pour le contrôle colonial de la région",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-4",
         title: "Arrestation et mort",
         blocks: [
-          { type: "paragraphe", text: "Arrêtée par les Français en 1943, Aline Sitoé Diatta fut déportée loin de chez elle, à Tombouctou (Mali), où elle mourut en 1944, âgée d'environ vingt-quatre ans." },
+          {
+            type: "paragraphe",
+            text: "Arrêtée en 1943, elle est déportée à des milliers de kilomètres de chez elle.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1943",
+            legende: "arrestation d'Aline Sitoé Diatta par les Français",
+          },
+          {
+            type: "paragraphe",
+            text: "Arrêtée par les Français en 1943, **Aline Sitoé Diatta** est déportée loin de chez elle, à **Tombouctou** (Mali), où elle meurt en 1944, âgée d'environ vingt-quatre ans.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1943** : arrestation par les autorités françaises",
+              "Déportée à **Tombouctou** (Mali), loin de la Casamance",
+              "Morte en 1944, âgée d'environ vingt-quatre ans",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Surnommée « la Jeanne d'Arc de la Casamance », elle est devenue un symbole de la résistance et du rôle des femmes dans l'histoire du Sénégal. Le grand stade de Ziguinchor et une résidence universitaire de Dakar portent son nom." },
+          {
+            type: "paragraphe",
+            text: "Une vie brève, interrompue en exil. Mais un nom resté, depuis, gravé dans la mémoire du Sénégal.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "vers 1920", texte: "Naissance à Kabrousse, en Casamance" },
+              { date: "1943", texte: "Arrestation par les autorités françaises" },
+              { date: "1944", texte: "Mort en exil, à Tombouctou" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Surnommée « la **Jeanne d'Arc** de la Casamance », elle est devenue un symbole de la résistance et du rôle des femmes dans l'histoire du Sénégal. Le grand stade de Ziguinchor et une résidence universitaire de Dakar portent son nom.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Surnommée « la Jeanne d'Arc de la Casamance »",
+              "Un symbole de résistance et du rôle des femmes",
+              "Un stade et une résidence universitaire portent son nom",
+            ],
+          },
         ],
       },
     ],
@@ -6716,7 +7132,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Contre quoi s'est-elle dressée pendant la Seconde Guerre mondiale ?",
         options: ["Les réquisitions coloniales et le travail forcé", "Le commerce de l'or", "La construction de pyramides", "L'islamisation"],
         correctIndex: 0,
-        explanation: "Elle s'éleva contre les réquisitions (riz, bétail) et le travail forcé imposés par les Français.",
+        explanation: "Elle s'éleva contre les réquisitions (riz, bétail) et le travail forcé imposés par les Français, prêchant un retour aux traditions diola.",
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-quiz-3",
@@ -6730,7 +7146,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Où fut-elle déportée par les Français ?",
         options: ["À Tombouctou (Mali)", "À Paris", "Au Gabon", "En Algérie"],
         correctIndex: 0,
-        explanation: "Arrêtée en 1943, elle fut déportée à Tombouctou, où elle mourut en 1944.",
+        explanation: "Arrêtée en 1943, elle fut déportée à Tombouctou, où elle mourut en 1944, âgée d'environ vingt-quatre ans.",
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-quiz-5",
@@ -6753,35 +7169,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-38-senghor-negritude-independance-lesson-1",
         title: "Un poète et un intellectuel",
         blocks: [
-          { type: "paragraphe", text: "Léopold Sédar Senghor (1906-2001), né à Joal dans une famille sérère, fut un élève brillant devenu poète et penseur. Il fut l'un des premiers Africains à obtenir l'agrégation en France, où il enseigna avant de s'engager en politique." },
+          {
+            type: "paragraphe",
+            text: "Il fut l'un des tout premiers Africains à réussir l'un des concours les plus difficiles de France — avant même de devenir chef d'État.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1906-2001",
+            legende: "les années de vie de Léopold Sédar Senghor",
+          },
+          {
+            type: "paragraphe",
+            text: "**Léopold Sédar Senghor**, né à **Joal** dans une famille sérère, est un élève brillant devenu poète et penseur. Il est l'un des premiers Africains à obtenir l'**agrégation** en France, où il enseigne avant de s'engager en politique.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Senghor** (1906-2001), né à Joal dans une famille sérère",
+              "Parmi les premiers Africains à obtenir l'**agrégation** en France",
+              "Enseignant, avant de s'engager en politique",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-2",
         title: "La Négritude",
         blocks: [
-          { type: "paragraphe", text: "Avec Aimé Césaire (Martinique) et Léon-Gontran Damas (Guyane), Senghor fonda dans les années 1930 le mouvement de la Négritude : une affirmation de la valeur, de la dignité et de la culture des peuples noirs, contre le mépris colonial. Ce courant littéraire et philosophique marqua tout le XXᵉ siècle." },
+          {
+            type: "paragraphe",
+            text: "Trois hommes, trois continents, une même conviction : la culture noire n'a besoin de la permission de personne pour exister pleinement.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "3",
+            legende: "fondateurs de la Négritude : Senghor, Césaire, Damas",
+          },
+          {
+            type: "paragraphe",
+            text: "Avec **Aimé Césaire** (Martinique) et **Léon-Gontran Damas** (Guyane), Senghor fonde dans les années 1930 le mouvement de la **Négritude** : une affirmation de la valeur, de la dignité et de la culture des peuples noirs, contre le mépris colonial.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**3** fondateurs : Senghor, **Césaire**, Damas",
+              "La **Négritude** : dignité et culture noires affirmées",
+              "Un courant littéraire et philosophique qui a marqué le XXᵉ siècle",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ce mouvement littéraire, né dans les années 1930 à Paris, allait influencer la pensée et la culture noires bien au-delà de l'Afrique, jusqu'aux Caraïbes et aux Amériques.",
+          },
         ],
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-3",
         title: "Le chemin vers l'indépendance",
         blocks: [
-          { type: "paragraphe", text: "Député au parlement français, Senghor participa activement aux négociations vers l'indépendance. Après l'éphémère Fédération du Mali (1959-1960), le Sénégal devint indépendant le 4 avril 1960." },
+          {
+            type: "paragraphe",
+            text: "Avant de devenir président, Senghor a d'abord siégé, pendant des années, au parlement d'un pays qui n'était pas encore le sien : la France.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1945-1958", texte: "Senghor, député au parlement français" },
+              { date: "1959-1960", texte: "Éphémère Fédération du Mali" },
+              { date: "4 avril 1960", texte: "Indépendance du Sénégal" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Député au parlement français, **Senghor** participe activement aux négociations vers l'indépendance. Après l'éphémère **Fédération du Mali** (1959-1960), le Sénégal devient indépendant le 4 avril 1960.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Senghor**, député au parlement français, négocie l'indépendance",
+              "L'éphémère **Fédération du Mali** (1959-1960)",
+              "**4 avril 1960** : indépendance du Sénégal",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-4",
         title: "Premier président du Sénégal",
         blocks: [
-          { type: "paragraphe", text: "Senghor devint le premier président du Sénégal indépendant (1960-1980). Il promut la culture, l'éducation et le dialogue. Fait rare pour l'époque en Afrique, il quitta volontairement le pouvoir en 1980, assurant une transition pacifique — un geste qui força le respect." },
+          {
+            type: "paragraphe",
+            text: "Vingt ans au pouvoir. Puis, fait rare en Afrique à l'époque, un départ volontaire — sans coup d'État, sans guerre civile.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1960-1980",
+            legende: "la présidence de Léopold Sédar Senghor",
+          },
+          {
+            type: "paragraphe",
+            text: "**Senghor** devient le premier président du Sénégal indépendant. Il promeut la culture, l'éducation et le dialogue. Fait rare pour l'époque en Afrique, il quitte volontairement le pouvoir en 1980, assurant une transition pacifique.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1960-1980** : Senghor, premier président du Sénégal",
+              "Il promeut culture, éducation, dialogue",
+              "**1980** : départ volontaire, transition pacifique — un geste rare",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Senghor fut le premier Africain élu à l'Académie française. Figure mondiale de la culture et de la Francophonie, il laisse une œuvre poétique majeure et l'idéal de la Négritude. Il incarne le mariage de la politique et de la culture au service de son pays." },
+          {
+            type: "paragraphe",
+            text: "Poète autant que chef d'État, Senghor a fini par entrer là où aucun Africain n'était encore entré avant lui.",
+          },
+          {
+            type: "citation",
+            texte: "Femme nue, femme noire, vêtue de ta couleur qui est vie.",
+            auteur: "Léopold Sédar Senghor, Femme noire",
+          },
+          {
+            type: "paragraphe",
+            text: "**Senghor** est le premier Africain élu à l'**Académie française**. Figure mondiale de la culture et de la Francophonie, il laisse une œuvre poétique majeure et l'idéal de la **Négritude**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Premier Africain élu à l'**Académie française**",
+              "Une œuvre poétique majeure, l'idéal de la Négritude",
+              "Le mariage de la politique et de la culture",
+            ],
+          },
         ],
       },
     ],
@@ -6798,7 +7321,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quel mouvement Senghor a-t-il fondé avec Césaire et Damas ?",
         options: ["La Négritude", "Le panafricanisme militaire", "Le surréalisme", "Le romantisme"],
         correctIndex: 0,
-        explanation: "Senghor fonda la Négritude avec Aimé Césaire et Léon-Gontran Damas.",
+        explanation: "Senghor fonda la Négritude avec Aimé Césaire et Léon-Gontran Damas, dans les années 1930.",
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-quiz-3",
@@ -6812,14 +7335,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "En quelle année le Sénégal est-il devenu indépendant ?",
         options: ["En 1960", "En 1886", "En 1914", "En 2000"],
         correctIndex: 0,
-        explanation: "Le Sénégal devint indépendant le 4 avril 1960.",
+        explanation: "Le Sénégal devint indépendant le 4 avril 1960, après l'éphémère Fédération du Mali.",
       },
       {
         id: "course-histoire-38-senghor-negritude-independance-quiz-5",
         question: "Qu'a fait Senghor en 1980, fait rare en Afrique à l'époque ?",
         options: ["Il a quitté volontairement le pouvoir", "Il a déclaré la guerre", "Il a aboli les élections", "Il s'est proclamé empereur"],
         correctIndex: 0,
-        explanation: "En 1980, Senghor quitta volontairement le pouvoir, assurant une transition pacifique.",
+        explanation: "En 1980, Senghor quitta volontairement le pouvoir, assurant une transition pacifique — un geste rare pour l'époque.",
       },
     ],
   },
