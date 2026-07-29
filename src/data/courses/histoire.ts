@@ -2244,37 +2244,149 @@ export const HISTOIRE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-1",
-        title: "Un royaume de la forêt",
+        title: "Pas la République du Bénin",
         blocks: [
-          { type: "paragraphe", text: "Attention à ne pas confondre : le royaume du Bénin n'a rien à voir avec l'actuelle République du Bénin. Il s'agit du royaume du peuple Edo, situé dans le sud de l'actuel Nigeria, autour de sa capitale Benin City. Fondé vers les XIᵉ-XIIIᵉ siècles, ce royaume de la forêt était célèbre pour ses immenses remparts et fossés de terre, parmi les plus vastes ouvrages de ce type au monde." },
+          {
+            type: "paragraphe",
+            text: "Il porte le même nom qu'un pays voisin, mais n'a jamais eu de frontière commune avec lui. Le royaume du Bénin, c'est une tout autre histoire.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XIe-XIIIe s.",
+            legende: "fondation du royaume du Bénin (peuple Edo)",
+          },
+          {
+            type: "paragraphe",
+            text: "Il s'agit du royaume du peuple **Edo**, situé dans le sud de l'actuel Nigeria, autour de sa capitale **Benin City**. Ce royaume de la forêt était célèbre pour ses immenses remparts et fossés de terre, parmi les plus vastes ouvrages de ce type au monde.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le royaume du Bénin (Edo) : différent de la République du Bénin",
+              "Capitale : **Benin City**, dans le sud du Nigeria actuel",
+              "Des remparts et fossés de terre, parmi les plus vastes au monde",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-2",
         title: "L'Oba et la cour",
         blocks: [
-          { type: "paragraphe", text: "Le royaume était gouverné par l'Oba, un roi à la fois politique et sacré, entouré d'une cour raffinée et de puissantes corporations d'artisans. Le Bénin atteignit son apogée entre le XVᵉ et le XVIIᵉ siècle, notamment sous le règne de l'Oba Ewuare le Grand, réformateur et conquérant. C'était un État centralisé, organisé et puissant." },
+          {
+            type: "paragraphe",
+            text: "Un roi qui n'est pas qu'un roi : à la fois chef politique et figure sacrée, l'Oba incarnait l'État tout entier.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XVe-XVIIe s.",
+            legende: "l'apogée du royaume du Bénin",
+          },
+          {
+            type: "paragraphe",
+            text: "Le royaume est gouverné par l'**Oba**, un roi à la fois politique et sacré, entouré d'une cour raffinée et de puissantes corporations d'artisans. Le Bénin atteint son apogée notamment sous le règne de l'Oba **Ewuare le Grand**, réformateur et conquérant.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**Oba** : roi à la fois politique et sacré",
+              "**Ewuare le Grand** : réformateur et conquérant",
+              "Un État centralisé, organisé et puissant",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-3",
         title: "Les bronzes du Bénin",
         blocks: [
-          { type: "paragraphe", text: "La gloire du royaume tient à son art : les célèbres bronzes du Bénin, en réalité surtout en laiton, réalisés selon la technique de la cire perdue. Plaques et sculptures d'une extraordinaire finesse ornaient le palais royal, représentant les rois, la cour et l'histoire du royaume. Une corporation de fondeurs se transmettait ce savoir-faire de génération en génération, produisant des chefs-d'œuvre admirés dans le monde entier." },
+          {
+            type: "paragraphe",
+            text: "Un métal en fusion, versé dans un moule de cire fondue : de ce geste répété pendant des siècles sont nées des œuvres admirées dans le monde entier.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Laiton",
+            legende: "le vrai métal des « bronzes » du Bénin",
+          },
+          {
+            type: "paragraphe",
+            text: "Plaques et sculptures d'une extraordinaire finesse, réalisées selon la technique de la **cire perdue**, ornaient le palais royal, représentant les rois, la cour et l'histoire du royaume. Une corporation de fondeurs se transmettait ce savoir-faire de génération en génération.",
+          },
+          {
+            type: "citation",
+            texte: "Benvenuto Cellini lui-même n'aurait pu réaliser un meilleur moulage.",
+            auteur: "Felix von Luschan, ethnologue allemand",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Des « bronzes » en réalité surtout en **laiton**",
+              "Réalisés selon la technique de la cire perdue",
+              "Un savoir-faire transmis de génération en génération de fondeurs",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ces plaques et sculptures ne décoraient pas au hasard : elles servaient d'archives visuelles, racontant en images l'histoire même du royaume.",
+          },
         ],
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-4",
         title: "Le commerce avec les Européens",
         blocks: [
-          { type: "paragraphe", text: "Dès la fin du XVᵉ siècle, le Bénin commerça avec les Portugais, puis d'autres Européens : poivre, ivoire, objets d'art, mais aussi, malheureusement, êtres humains réduits en esclavage. Le royaume, puissant, contrôlait les termes de ces échanges et restait maître chez lui." },
+          {
+            type: "paragraphe",
+            text: "Dès la fin du XVᵉ siècle, des navires européens accostent sur les côtes du Bénin. Le royaume, lui, impose ses propres règles du jeu.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "fin XVe s.",
+            legende: "début du commerce entre le Bénin et le Portugal",
+          },
+          {
+            type: "paragraphe",
+            text: "Le Bénin commerce avec les **Portugais**, puis d'autres Européens : poivre, ivoire, objets d'art, mais aussi, malheureusement, des êtres humains réduits en esclavage. Le royaume, puissant, contrôle les termes de ces échanges et reste maître chez lui.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Commerce avec les **Portugais** dès la fin du XVᵉ siècle",
+              "Poivre, ivoire, objets d'art — et, tragiquement, des captifs",
+              "Le Bénin contrôle les termes de l'échange, reste maître chez lui",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-lesson-5",
-        title: "Le pillage de 1897 et la restitution",
+        title: "Le pillage de 1897",
         blocks: [
-          { type: "paragraphe", text: "En 1897, une expédition militaire britannique mit à sac Benin City et pilla des milliers de bronzes, dispersés depuis dans les musées occidentaux. Ce pillage est au cœur d'un grand débat sur la restitution des œuvres d'art africaines : certaines pièces ont récemment été rendues. Les bronzes du Bénin restent un symbole du génie artistique africain et des injustices de la période coloniale." },
+          {
+            type: "paragraphe",
+            text: "En **1897**, une expédition militaire britannique met à sac Benin City. Des milliers d'œuvres d'art quittent alors le royaume, de force.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIe-XIIIe s.", texte: "Fondation du royaume du Bénin" },
+              { date: "1897", texte: "Pillage de Benin City par les Britanniques" },
+              { date: "XXIe s.", texte: "Débats et premières restitutions" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Ce pillage est aujourd'hui au cœur d'un grand débat sur la restitution des œuvres d'art africaines : certaines pièces ont récemment été rendues. Les bronzes du Bénin restent un symbole du génie artistique africain et des injustices de la période coloniale.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1897** : pillage de Benin City par une expédition britannique",
+              "Des milliers de bronzes dispersés dans les musées occidentaux",
+              "Un symbole du génie africain, et du débat sur la restitution",
+            ],
+          },
         ],
       },
     ],
@@ -2291,28 +2403,28 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment appelait-on le roi du Bénin ?",
         options: ["L'Oba", "Le Mansa", "Le Pharaon", "L'Alaafin"],
         correctIndex: 0,
-        explanation: "Le souverain du royaume du Bénin portait le titre d'Oba.",
+        explanation: "Le souverain du royaume du Bénin portait le titre d'Oba ; le royaume atteignit son apogée sous l'Oba Ewuare le Grand.",
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-quiz-3",
         question: "Selon quelle technique les bronzes du Bénin étaient-ils réalisés ?",
         options: ["Le soufflage du verre", "La cire perdue", "La sculpture sur bois", "La poterie tournée"],
         correctIndex: 1,
-        explanation: "Les bronzes (surtout en laiton) étaient coulés selon la technique de la cire perdue.",
+        explanation: "Les bronzes (en réalité surtout en laiton) étaient coulés selon la technique de la cire perdue, un savoir-faire transmis de génération en génération.",
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-quiz-4",
         question: "Que s'est-il passé à Benin City en 1897 ?",
         options: ["La ville fut agrandie", "Une expédition britannique la pilla", "Elle devint la capitale du Mali", "Elle fut engloutie par la mer"],
         correctIndex: 1,
-        explanation: "En 1897, une expédition punitive britannique mit à sac la ville et pilla des milliers de bronzes.",
+        explanation: "En 1897, une expédition punitive britannique mit à sac la ville et pilla des milliers de bronzes, aujourd'hui dispersés dans les musées occidentaux.",
       },
       {
         id: "course-histoire-12-royaume-benin-bronzes-quiz-5",
         question: "De quel grand débat actuel les bronzes du Bénin sont-ils le symbole ?",
         options: ["Le débat sur la restitution des œuvres d'art africaines", "Le débat sur le climat", "Le débat sur l'espace", "Le débat sur l'agriculture"],
         correctIndex: 0,
-        explanation: "Les bronzes du Bénin sont au cœur du débat sur la restitution des œuvres pillées durant la colonisation.",
+        explanation: "Les bronzes du Bénin sont au cœur du débat sur la restitution des œuvres pillées durant la colonisation ; certaines pièces ont récemment été rendues.",
       },
     ],
   },
@@ -2328,35 +2440,141 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-13-empire-oyo-yoruba-lesson-1",
         title: "Le pays yoruba",
         blocks: [
-          { type: "paragraphe", text: "Les Yoruba, installés dans le sud-ouest de l'actuel Nigeria et l'est du Bénin, s'organisaient en de nombreuses cités et royaumes. Ilé-Ifè en était le cœur spirituel : c'est là, selon la tradition, que le monde yoruba fut créé. Ifè est aussi célèbre pour ses extraordinaires têtes de terre cuite et de bronze, d'un réalisme saisissant, qui comptent parmi les chefs-d'œuvre de l'art mondial." },
+          {
+            type: "paragraphe",
+            text: "Selon la tradition, c'est ici même que le monde a été créé. Ici, c'est Ilé-Ifè, cœur spirituel de tout le monde yoruba.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2",
+            legende: "matières des célèbres têtes d'Ifè (terre cuite, bronze)",
+          },
+          {
+            type: "paragraphe",
+            text: "Les **Yoruba**, installés dans le sud-ouest de l'actuel Nigeria et l'est du Bénin, s'organisent en de nombreuses cités et royaumes. **Ilé-Ifè** en est le cœur spirituel : selon la tradition, c'est là que le monde yoruba fut créé.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Ilé-Ifè** : le cœur spirituel du monde yoruba",
+              "Des têtes de terre cuite et de bronze, d'un réalisme saisissant",
+              "Les Yoruba, organisés en de nombreuses cités et royaumes",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-2",
         title: "La montée d'Oyo",
         blocks: [
-          { type: "paragraphe", text: "Entre le XVᵉ et le XVIIᵉ siècle, l'empire Oyo s'imposa comme la grande puissance yoruba. Sa force reposait sur une puissante cavalerie — les chevaux venaient du nord — qui lui permettait de dominer les plaines de savane et de contrôler de vastes territoires. Sa capitale était Oyo-Ilé." },
+          {
+            type: "paragraphe",
+            text: "Entre le XVᵉ et le XVIIᵉ siècle, un empire s'impose sur les plaines de savane grâce à une arme que peu de ses voisins forestiers possédaient : le cheval.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XVe-XVIIe s.",
+            legende: "Oyo s'impose comme la grande puissance yoruba",
+          },
+          {
+            type: "paragraphe",
+            text: "Sa force repose sur une puissante **cavalerie** — les chevaux viennent du nord — qui lui permet de dominer les plaines de savane et de contrôler de vastes territoires. Sa capitale est **Oyo-Ilé**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**XVe-XVIIe siècle** : Oyo, grande puissance yoruba",
+              "Une cavalerie, arme rare dans la région forestière",
+              "Capitale : **Oyo-Ilé**",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-3",
         title: "Un pouvoir équilibré",
         blocks: [
-          { type: "paragraphe", text: "Oyo est remarquable pour son système politique équilibré. Le roi, l'Alaafin, ne gouvernait pas seul : il était contrôlé par un conseil de notables, l'Oyo Mesi, et par des sociétés comme les Ogboni. Le chef du conseil, le Bashorun, pouvait même contraindre un roi jugé mauvais à abdiquer. C'est un exemple précoce et africain de séparation et de limitation des pouvoirs." },
+          {
+            type: "paragraphe",
+            text: "Un roi qui peut être destitué par ses propres conseillers : dans l'Afrique de l'Ouest précoloniale, Oyo avait déjà inventé la limitation du pouvoir.",
+          },
+          {
+            type: "citation",
+            texte: "Un roi n'est fort que par le conseil de son peuple.",
+            auteur: "Proverbe yoruba",
+          },
+          {
+            type: "paragraphe",
+            text: "Le roi, l'**Alaafin**, ne gouverne pas seul : il est contrôlé par un conseil de notables, l'**Oyo Mesi**, et par des sociétés comme les Ogboni. Le chef du conseil, le Bashorun, peut même contraindre un roi jugé mauvais à abdiquer.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**Alaafin** ne gouverne pas seul, contrôlé par l'Oyo Mesi",
+              "Le Bashorun peut contraindre un roi mauvais à abdiquer",
+              "Un exemple précoce de limitation du pouvoir royal",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-4",
         title: "Puissance et commerce",
         blocks: [
-          { type: "paragraphe", text: "Grâce à son armée et à sa position, Oyo contrôlait d'importantes routes commerciales et étendit son influence jusqu'à la côte, faisant même du royaume voisin du Dahomey un tributaire à certaines périodes. L'empire participait au commerce régional et atlantique." },
+          {
+            type: "paragraphe",
+            text: "Grâce à son armée et à sa position, un empire de l'intérieur des terres a fini par imposer sa loi jusque sur la côte.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XVIIe s.", texte: "Oyo contrôle les routes commerciales de l'intérieur" },
+              { date: "XVIIIe s.", texte: "Le Dahomey devient tributaire d'Oyo" },
+              { date: "XVIIIe-XIXe s.", texte: "Oyo, acteur du commerce atlantique" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Grâce à son armée et à sa position, Oyo contrôle d'importantes routes commerciales et étend son influence jusqu'à la côte, faisant même du royaume voisin du **Dahomey** un tributaire à certaines périodes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Oyo contrôle d'importantes routes commerciales de l'intérieur",
+              "Le **Dahomey**, tributaire d'Oyo à certaines périodes",
+              "Une participation au commerce régional et atlantique",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-lesson-5",
         title: "Déclin et héritage",
         blocks: [
-          { type: "paragraphe", text: "Au début du XIXᵉ siècle, Oyo déclina, miné par des guerres civiles et la pression des jihads venus du nord. Mais la culture yoruba ne disparut pas : au contraire, elle rayonna dans le monde entier, notamment à travers la diaspora issue de la traite, jusqu'aux Amériques, où sa religion et ses arts restent bien vivants. Les chefs-d'œuvre d'Ifè témoignent encore de ce génie." },
+          {
+            type: "paragraphe",
+            text: "Un empire peut s'effondrer. Une culture, elle, peut traverser un océan et continuer de vivre, des siècles plus tard, à des milliers de kilomètres.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XVe-XVIIe s.", texte: "Apogée d'Oyo, grande puissance yoruba" },
+              { date: "début XIXe s.", texte: "Déclin : guerres civiles, pression des jihads" },
+              { date: "XIXe-XXe s.", texte: "La culture yoruba rayonne via la diaspora" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Au début du **XIXᵉ siècle**, Oyo décline, miné par des guerres civiles et la pression des jihads venus du nord. Mais la culture yoruba ne disparaît pas : elle rayonne dans le monde entier, notamment à travers la diaspora issue de la traite, jusqu'aux Amériques.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**XIXᵉ siècle** : déclin d'Oyo, guerres civiles et jihads",
+              "La culture yoruba rayonne à travers la diaspora",
+              "Religion et arts yoruba, encore bien vivants aux Amériques",
+            ],
+          },
         ],
       },
     ],
@@ -2366,14 +2584,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quelle ville est considérée comme le berceau spirituel du monde yoruba ?",
         options: ["Ilé-Ifè", "Kumasi", "Abomey", "Gao"],
         correctIndex: 0,
-        explanation: "Ilé-Ifè est le cœur spirituel des Yoruba et un grand centre artistique (têtes de bronze et terre cuite).",
+        explanation: "Ilé-Ifè est le cœur spirituel des Yoruba et un grand centre artistique (têtes de bronze et terre cuite d'un réalisme saisissant).",
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-quiz-2",
         question: "Sur quelle force militaire reposait la puissance d'Oyo ?",
         options: ["La marine de guerre", "La cavalerie", "Les éléphants de combat", "Les archers à pied"],
         correctIndex: 1,
-        explanation: "La cavalerie d'Oyo, montée sur des chevaux venus du nord, lui permettait de dominer la savane.",
+        explanation: "La cavalerie d'Oyo, montée sur des chevaux venus du nord, lui permettait de dominer les plaines de savane depuis sa capitale, Oyo-Ilé.",
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-quiz-3",
@@ -2387,14 +2605,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qu'est-ce qui rend le système politique d'Oyo remarquable ?",
         options: ["Le roi avait tous les pouvoirs sans contrôle", "Le pouvoir du roi était limité par un conseil (Oyo Mesi)", "Il n'y avait pas de roi du tout", "Le pouvoir était héréditaire chez les marchands"],
         correctIndex: 1,
-        explanation: "L'Alaafin était contrôlé par l'Oyo Mesi ; le Bashorun pouvait même l'obliger à abdiquer — un exemple de limitation du pouvoir.",
+        explanation: "L'Alaafin était contrôlé par l'Oyo Mesi et les sociétés Ogboni ; le Bashorun pouvait même l'obliger à abdiquer — un exemple précoce de limitation du pouvoir.",
       },
       {
         id: "course-histoire-13-empire-oyo-yoruba-quiz-5",
         question: "Comment la culture yoruba a-t-elle survécu au déclin d'Oyo ?",
         options: ["Elle a totalement disparu", "Elle a rayonné dans le monde via la diaspora", "Elle a été interdite partout", "Elle s'est limitée à une seule ville"],
         correctIndex: 1,
-        explanation: "La culture yoruba (religion, arts) s'est diffusée mondialement, notamment via la diaspora issue de la traite.",
+        explanation: "La culture yoruba (religion, arts) s'est diffusée mondialement, notamment via la diaspora issue de la traite, jusqu'aux Amériques.",
       },
     ],
   },
@@ -2410,35 +2628,147 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-14-royaume-ashanti-lesson-1",
         title: "La naissance de la confédération",
         blocks: [
-          { type: "paragraphe", text: "Les Ashanti (Asante), un peuple akan, vivaient au centre de l'actuel Ghana. À la fin du XVIIᵉ siècle, le roi Osei Tutu unifia les différents clans en une puissante confédération, avec pour capitale Kumasi. Cette union fit de l'Ashanti l'un des États les plus organisés et redoutés de la région." },
+          {
+            type: "paragraphe",
+            text: "Des clans dispersés, un seul roi, et une capitale nouvelle : en quelques années, un peuple change complètement d'échelle.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "fin XVIIe s.",
+            legende: "Osei Tutu unifie les clans ashanti",
+          },
+          {
+            type: "paragraphe",
+            text: "Les **Ashanti** (Asante), un peuple akan, vivent au centre de l'actuel Ghana. Le roi **Osei Tutu** unifie les différents clans en une puissante confédération, avec pour capitale **Kumasi**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Osei Tutu** unifie les clans ashanti, fin XVIIᵉ siècle",
+              "Capitale : **Kumasi**",
+              "L'un des États les plus organisés et redoutés de la région",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-14-royaume-ashanti-lesson-2",
         title: "Le Tabouret d'or",
         blocks: [
-          { type: "paragraphe", text: "Au cœur de cette unité se trouve un symbole sacré : le Tabouret d'or (Sika Dwa). Selon la tradition, il descendit du ciel, invoqué par le prêtre Okomfo Anokye, pour incarner l'âme même de la nation ashanti. Nul, pas même le roi, ne peut s'y asseoir. Ce tabouret unit spirituellement tout le peuple : y toucher, c'est toucher à l'existence de la nation." },
+          {
+            type: "paragraphe",
+            text: "Un trône que personne, pas même le roi, n'a le droit de toucher. Ce paradoxe est au cœur de l'unité ashanti.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "0",
+            legende: "personne ne peut s'asseoir sur le Tabouret d'or",
+          },
+          {
+            type: "paragraphe",
+            text: "Selon la tradition, le **Tabouret d'or** (Sika Dwa) descendit du ciel, invoqué par le prêtre **Okomfo Anokye**, pour incarner l'âme même de la nation ashanti. Ce tabouret unit spirituellement tout le peuple : y toucher, c'est toucher à l'existence de la nation.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Tabouret d'or** (Sika Dwa) incarne l'âme de la nation",
+              "Selon la tradition, invoqué du ciel par Okomfo Anokye",
+              "Nul, pas même le roi, ne peut s'y asseoir",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le Tabouret d'or n'est ni un trône ni un objet de pouvoir personnel : c'est un symbole si sacré qu'il possède, dans la tradition ashanti, sa propre âme.",
+          },
         ],
       },
       {
         id: "course-histoire-14-royaume-ashanti-lesson-3",
         title: "L'or et le commerce",
         blocks: [
-          { type: "paragraphe", text: "La région était si riche en or que les Européens la nommèrent la « Côte de l'Or ». Les Ashanti commerçaient l'or, mais aussi, comme d'autres États côtiers, des captifs, avec les Européens installés sur le littoral. Le royaume, prospère, disposait d'une administration structurée, d'une armée et d'une riche culture de cour (étoffes kente, symboles adinkra)." },
+          {
+            type: "paragraphe",
+            text: "Les Européens ont donné à cette région un nom qui dit tout : la Côte de l'Or.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Côte de l'Or",
+            legende: "surnom européen de la région, riche en or",
+          },
+          {
+            type: "paragraphe",
+            text: "Les Ashanti commercent l'or, mais aussi, comme d'autres États côtiers, des captifs, avec les Européens installés sur le littoral. Le royaume, prospère, dispose d'une administration structurée, d'une armée et d'une riche culture de cour (étoffes **kente**, symboles **adinkra**).",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La région surnommée « Côte de l'Or » par les Européens",
+              "Or, mais aussi, comme d'autres États côtiers, des captifs",
+              "Une riche culture de cour : kente, symboles adinkra",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-14-royaume-ashanti-lesson-4",
         title: "Les guerres anglo-ashanti",
         blocks: [
-          { type: "paragraphe", text: "Au XIXᵉ siècle, les Ashanti livrèrent une série de guerres contre les Britanniques, qui convoitaient leur territoire. Pendant des décennies, ils résistèrent farouchement, infligeant parfois de lourdes pertes à l'envahisseur, avant que la supériorité militaire britannique ne finisse par l'emporter." },
+          {
+            type: "paragraphe",
+            text: "Pendant des décennies, un royaume africain a résisté, les armes à la main, à l'une des plus grandes puissances coloniales du monde.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XIXe siècle",
+            legende: "les guerres anglo-ashanti",
+          },
+          {
+            type: "paragraphe",
+            text: "Les **Ashanti** livrent une série de guerres contre les **Britanniques**, qui convoitent leur territoire. Pendant des décennies, ils résistent farouchement, infligeant parfois de lourdes pertes à l'envahisseur, avant que la supériorité militaire britannique ne finisse par l'emporter.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**XIXᵉ siècle** : une série de guerres anglo-ashanti",
+              "Une résistance farouche, pendant des décennies",
+              "La supériorité militaire britannique finit par l'emporter",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-14-royaume-ashanti-lesson-5",
         title: "Yaa Asantewaa et l'héritage",
         blocks: [
-          { type: "paragraphe", text: "En 1900, alors que les hommes hésitaient, la reine-mère Yaa Asantewaa prit la tête d'un ultime soulèvement, la « guerre du Tabouret d'or ». Malgré la défaite et l'annexion, l'identité ashanti n'a jamais disparu : l'Asantehene (roi) et le Tabouret d'or restent au cœur du Ghana moderne, tout comme le kente et les symboles adinkra, connus dans le monde entier." },
+          {
+            type: "paragraphe",
+            text: "En 1900, alors que les hommes hésitaient, une reine-mère a pris seule la tête d'un dernier soulèvement.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "fin XVIIe s.", texte: "Naissance de la confédération ashanti" },
+              { date: "XIXe s.", texte: "Guerres anglo-ashanti" },
+              { date: "1900", texte: "Yaa Asantewaa mène la guerre du Tabouret d'or" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "La reine-mère **Yaa Asantewaa** prend la tête d'un ultime soulèvement, la « guerre du Tabouret d'or ». Malgré la défaite et l'annexion, l'identité ashanti n'a jamais disparu : l'Asantehene (roi) et le Tabouret d'or restent au cœur du Ghana moderne.",
+          },
+          {
+            type: "citation",
+            texte: "Si vous, hommes ashanti, refusez d'avancer, alors nous le ferons. Nous, les femmes, combattrons les hommes blancs.",
+            auteur: "Yaa Asantewaa, 1900",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1900** : Yaa Asantewaa mène la « guerre du Tabouret d'or »",
+              "Malgré la défaite, l'identité ashanti n'a jamais disparu",
+              "Le Tabouret d'or et l'Asantehene, toujours au cœur du Ghana",
+            ],
+          },
         ],
       },
     ],
@@ -2455,7 +2785,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Que représente le Tabouret d'or pour les Ashanti ?",
         options: ["Un simple siège pour le roi", "L'âme de la nation", "Une monnaie", "Un instrument de musique"],
         correctIndex: 1,
-        explanation: "Le Tabouret d'or (Sika Dwa) incarne l'âme de la nation ashanti ; nul ne peut s'y asseoir.",
+        explanation: "Le Tabouret d'or (Sika Dwa), invoqué du ciel selon la tradition par le prêtre Okomfo Anokye, incarne l'âme de la nation ashanti ; nul ne peut s'y asseoir.",
       },
       {
         id: "course-histoire-14-royaume-ashanti-quiz-3",
@@ -2469,14 +2799,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qui a dirigé la résistance ashanti de 1900 ?",
         options: ["La reine-mère Yaa Asantewaa", "La reine de Saba", "La Candace de Méroé", "La reine Amina"],
         correctIndex: 0,
-        explanation: "La reine-mère Yaa Asantewaa mena la « guerre du Tabouret d'or » en 1900.",
+        explanation: "La reine-mère Yaa Asantewaa mena la « guerre du Tabouret d'or » en 1900, appelant les femmes à combattre là où les hommes hésitaient.",
       },
       {
         id: "course-histoire-14-royaume-ashanti-quiz-5",
         question: "Quelle étoffe traditionnelle est associée aux Ashanti ?",
         options: ["Le kente", "Le tweed", "La soie de Chine", "Le lin égyptien"],
         correctIndex: 0,
-        explanation: "Le kente, étoffe tissée aux couleurs vives, est emblématique de la culture ashanti.",
+        explanation: "Le kente, étoffe tissée aux couleurs vives, est emblématique de la culture ashanti, aux côtés des symboles adinkra.",
       },
     ],
   },
@@ -2492,35 +2822,150 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-15-royaume-dahomey-lesson-1",
         title: "Un royaume militaire",
         blocks: [
-          { type: "paragraphe", text: "Le royaume du Dahomey se situait dans l'actuelle République du Bénin. Fondé vers le XVIIᵉ siècle par le peuple Fon, avec pour capitale Abomey, c'était un État très centralisé et militarisé. Ses palais royaux d'Abomey, ornés de bas-reliefs, sont aujourd'hui classés au patrimoine mondial de l'UNESCO." },
+          {
+            type: "paragraphe",
+            text: "Fondé au XVIIᵉ siècle, ce royaume n'a jamais caché ce qu'il était : un État bâti, dès l'origine, pour la guerre.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XVIIe siècle",
+            legende: "fondation du royaume du Dahomey par le peuple Fon",
+          },
+          {
+            type: "paragraphe",
+            text: "Le royaume du Dahomey se situe dans l'actuelle **République du Bénin**. Fondé par le peuple **Fon**, avec pour capitale **Abomey**, c'est un État très centralisé et militarisé. Ses palais royaux, ornés de bas-reliefs, sont aujourd'hui classés au patrimoine mondial de l'UNESCO.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le Dahomey, fondé au **XVIIᵉ siècle** par le peuple Fon",
+              "Capitale : **Abomey**, dans l'actuelle République du Bénin",
+              "Un État très centralisé et militarisé",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-15-royaume-dahomey-lesson-2",
         title: "Les « Amazones » du Dahomey",
         blocks: [
-          { type: "paragraphe", text: "Le Dahomey est mondialement connu pour son corps de femmes soldats, les Agojie, que les Européens surnommèrent les « Amazones ». Ces guerrières d'élite, entraînées et redoutées, formaient une part importante de l'armée royale. Un tel corps militaire féminin est extrêmement rare dans l'histoire mondiale." },
+          {
+            type: "paragraphe",
+            text: "Un corps de femmes soldats d'élite, entraînées pour le combat : ce modèle est presque unique dans toute l'histoire militaire mondiale.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Agojie",
+            legende: "le nom réel des guerrières surnommées « Amazones »",
+          },
+          {
+            type: "paragraphe",
+            text: "Le Dahomey est mondialement connu pour son corps de femmes soldats, les **Agojie**, que les Européens surnommèrent les « Amazones ». Ces guerrières d'élite, entraînées et redoutées, forment une part importante de l'armée royale.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les **Agojie**, corps de femmes soldats d'élite",
+              "Surnommées « Amazones » par les Européens",
+              "Un corps militaire féminin extrêmement rare dans l'histoire",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Redoutées au combat, les Agojie suivaient un entraînement aussi dur que celui des soldats hommes — un fait qui stupéfiait les observateurs européens de l'époque.",
+          },
         ],
       },
       {
         id: "course-histoire-15-royaume-dahomey-lesson-3",
         title: "Le roi et le pouvoir",
         blocks: [
-          { type: "paragraphe", text: "Le Dahomey était une monarchie absolue, dirigée par des rois puissants comme Agaja, Ghézo, Glèlè ou Béhanzin. La cour organisait chaque année de grandes cérémonies. Les bas-reliefs des palais d'Abomey servaient d'archives, racontant en images les hauts faits de chaque règne." },
+          {
+            type: "paragraphe",
+            text: "Chaque année, la cour du Dahomey organisait de grandes cérémonies. Sur les murs du palais, l'histoire du royaume se lisait comme un livre.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XVIIIe s.", texte: "Règnes d'Agaja puis de Ghézo" },
+              { date: "XIXe s.", texte: "Règne de Glèlè" },
+              { date: "fin XIXe s.", texte: "Règne de Béhanzin" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le Dahomey est une monarchie absolue, dirigée par des rois puissants comme **Agaja**, **Ghézo**, Glèlè ou **Béhanzin**. Les bas-reliefs des palais d'Abomey servent d'archives, racontant en images les hauts faits de chaque règne.",
+          },
+          {
+            type: "citation",
+            texte: "Le roi voit avec les yeux du peuple.",
+            auteur: "Proverbe fon",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Une monarchie absolue, avec de grandes cérémonies annuelles",
+              "Rois marquants : Agaja, Ghézo, Glèlè, **Béhanzin**",
+              "Les bas-reliefs d'Abomey, des archives murales du royaume",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-15-royaume-dahomey-lesson-4",
         title: "La traite et l'économie",
         blocks: [
-          { type: "paragraphe", text: "Une part de l'économie du royaume reposa, pendant une période, sur la traite atlantique, via le port de Ouidah — une histoire douloureuse et controversée. Plus tard, le Dahomey se tourna vers le commerce de l'huile de palme. Ce passé rappelle la complexité et les tragédies de cette époque." },
+          {
+            type: "paragraphe",
+            text: "Une part de l'économie du royaume a longtemps reposé sur un commerce dont l'histoire reste douloureuse et controversée.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Ouidah",
+            legende: "le port par lequel transitait la traite atlantique",
+          },
+          {
+            type: "paragraphe",
+            text: "Une part de l'économie du royaume repose, pendant une période, sur la traite atlantique, via le port de **Ouidah**. Plus tard, le Dahomey se tourne vers le commerce de l'**huile de palme**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Ouidah** : le port par lequel transitait la traite atlantique",
+              "Un passé qui rappelle la complexité de cette époque",
+              "Plus tard, le royaume se tourne vers l'huile de palme",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-15-royaume-dahomey-lesson-5",
         title: "Résistance et héritage",
         blocks: [
-          { type: "paragraphe", text: "À la fin du XIXᵉ siècle, le roi Béhanzin résista à la conquête française, mais fut vaincu en 1894 et le Dahomey devint une colonie française. Son héritage demeure : les palais d'Abomey sont protégés par l'UNESCO, et en 2021, la France a restitué au Bénin des trésors royaux pillés durant la conquête. Nous retrouverons Béhanzin dans le cours sur les résistances à la colonisation." },
+          {
+            type: "paragraphe",
+            text: "À la fin du XIXᵉ siècle, un roi résiste à la conquête française. Sa défaite ne clôt pas l'histoire — elle la transforme.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XVIIe s.", texte: "Fondation du royaume du Dahomey" },
+              { date: "1894", texte: "Défaite de Béhanzin, colonisation française" },
+              { date: "2021", texte: "Restitution de trésors royaux par la France" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le roi **Béhanzin** résiste à la conquête française, mais est vaincu en 1894 et le Dahomey devient une colonie française. En 2021, la France restitue au Bénin des trésors royaux pillés durant la conquête. Nous retrouverons Béhanzin dans le cours sur les résistances à la colonisation.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1894** : défaite de Béhanzin, colonisation française",
+              "**2021** : la France restitue des trésors royaux au Bénin",
+              "Les palais d'Abomey, protégés par l'UNESCO",
+            ],
+          },
         ],
       },
     ],
@@ -2537,14 +2982,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Par quel corps militaire particulier le Dahomey est-il célèbre ?",
         options: ["Ses archers à cheval", "Son corps de femmes soldats (Agojie)", "Sa marine de guerre", "Ses éléphants de combat"],
         correctIndex: 1,
-        explanation: "Les Agojie, femmes soldats d'élite surnommées « Amazones », formaient une part importante de l'armée.",
+        explanation: "Les Agojie, femmes soldats d'élite surnommées « Amazones » par les Européens, formaient une part importante de l'armée.",
       },
       {
         id: "course-histoire-15-royaume-dahomey-quiz-3",
         question: "Quelle était la capitale du Dahomey ?",
         options: ["Ouidah", "Abomey", "Kumasi", "Benin City"],
         correctIndex: 1,
-        explanation: "La capitale du royaume était Abomey, dont les palais sont classés par l'UNESCO.",
+        explanation: "La capitale du royaume était Abomey, dont les palais ornés de bas-reliefs sont classés par l'UNESCO.",
       },
       {
         id: "course-histoire-15-royaume-dahomey-quiz-4",
@@ -2558,7 +3003,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qu'a fait la France en 2021 concernant le Dahomey ?",
         options: ["Elle a recolonisé la région", "Elle a restitué des trésors royaux pillés", "Elle a détruit les palais d'Abomey", "Elle a interdit la langue fon"],
         correctIndex: 1,
-        explanation: "En 2021, la France a restitué au Bénin des trésors royaux pillés durant la conquête.",
+        explanation: "En 2021, la France a restitué au Bénin des trésors royaux pillés durant la conquête de 1894.",
       },
     ],
   },
@@ -2574,35 +3019,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-16-royaume-kongo-lesson-1",
         title: "Un grand royaume d'Afrique centrale",
         blocks: [
-          { type: "paragraphe", text: "Fondé vers le XIVᵉ siècle, le royaume du Kongo s'étendait autour du bas cours du fleuve Congo, sur des territoires des actuels Angola, RD Congo et Congo. Sa capitale, Mbanza-Kongo, est aujourd'hui classée au patrimoine mondial de l'UNESCO. C'était un État bien organisé, divisé en provinces dirigées par des gouverneurs, avec une monnaie faite de coquillages (les nzimbu)." },
+          {
+            type: "paragraphe",
+            text: "Bien avant l'arrivée des premiers navires européens, un État déjà vaste et organisé prospérait au bord du fleuve Congo.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XIVe siècle",
+            legende: "fondation du royaume du Kongo",
+          },
+          {
+            type: "paragraphe",
+            text: "Le royaume s'étend autour du bas cours du fleuve **Congo**, sur des territoires des actuels Angola, RD Congo et Congo. Sa capitale, **Mbanza-Kongo**, est aujourd'hui classée au patrimoine mondial de l'UNESCO — un État divisé en provinces, avec une monnaie de coquillages, les **nzimbu**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Fondé vers le **XIVᵉ siècle**, autour du fleuve Congo",
+              "Capitale : **Mbanza-Kongo**, classée par l'UNESCO",
+              "Une monnaie de coquillages, les nzimbu",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-16-royaume-kongo-lesson-2",
         title: "La rencontre avec le Portugal",
         blocks: [
-          { type: "paragraphe", text: "En 1483, des navigateurs portugais atteignirent le royaume. Contrairement à une simple conquête, s'établirent d'abord des relations diplomatiques. Le roi du Kongo échangea ambassades et courriers avec le souverain du Portugal, entamant une relation d'État à État." },
+          {
+            type: "paragraphe",
+            text: "Un premier contact entre l'Afrique centrale et l'Europe qui ne commence ni par une bataille, ni par une conquête — mais par une ambassade.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1483",
+            legende: "des navigateurs portugais atteignent le royaume du Kongo",
+          },
+          {
+            type: "paragraphe",
+            text: "Contrairement à une simple conquête, s'établissent d'abord des relations diplomatiques. Le roi du **Kongo** échange ambassades et courriers avec le souverain du **Portugal**, entamant une relation d'État à État.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1483** : des navigateurs portugais atteignent le Kongo",
+              "Des relations diplomatiques, pas une conquête immédiate",
+              "Échanges d'ambassades et de courriers, d'État à État",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-16-royaume-kongo-lesson-3",
         title: "Afonso Iᵉʳ et le christianisme",
         blocks: [
-          { type: "paragraphe", text: "Le roi Afonso Iᵉʳ (Nzinga Mbemba, règne vers 1509-1543) se convertit au christianisme et en fit la religion de l'État. Lettré, il correspondait avec le roi du Portugal et le pape d'égal à égal, envoyait des jeunes Kongo étudier en Europe et fit construire des églises. Il incarne un souverain africain engageant l'Europe sur un pied d'égalité." },
+          {
+            type: "paragraphe",
+            text: "Il correspond avec le pape et le roi du Portugal, d'égal à égal. Ce souverain d'Afrique centrale ne demande la permission de personne.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1509-1543",
+            legende: "le règne d'Afonso Iᵉʳ (Nzinga Mbemba)",
+          },
+          {
+            type: "paragraphe",
+            text: "**Afonso Iᵉʳ** (Nzinga Mbemba) se convertit au christianisme et en fait la religion de l'État. Lettré, il correspond avec le roi du Portugal et le pape d'égal à égal, envoie des jeunes Kongo étudier en Europe et fait construire des églises.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Afonso Iᵉʳ** (1509-1543) fait du christianisme la religion d'État",
+              "Correspond d'égal à égal avec le Portugal et le pape",
+              "Envoie des jeunes Kongo étudier en Europe",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Afonso Iᵉʳ ne s'est pas contenté d'adopter le christianisme : il l'a fait sien, au point de discuter théologie directement avec le pape.",
+          },
         ],
       },
       {
         id: "course-histoire-16-royaume-kongo-lesson-4",
         title: "La traite et les tensions",
         blocks: [
-          { type: "paragraphe", text: "Mais la demande croissante des Portugais en captifs déstabilisa le royaume. Afonso lui-même écrivit des lettres pour protester contre les ravages de la traite sur son peuple. Les tensions s'aggravèrent, et en 1665, à la bataille de Mbwila, les Portugais vainquirent et tuèrent le roi du Kongo. Le royaume se fragmenta." },
+          {
+            type: "paragraphe",
+            text: "Le même roi qui avait construit des églises finit par écrire au Portugal pour dénoncer ce que son propre partenaire faisait subir à son peuple.",
+          },
+          {
+            type: "citation",
+            texte: "Chaque jour, les marchands enlèvent nos gens, jusqu'aux enfants de nos propres nobles et de notre famille.",
+            auteur: "Afonso Iᵉʳ, lettre au roi du Portugal (1526)",
+          },
+          {
+            type: "paragraphe",
+            text: "La demande croissante des Portugais en captifs déstabilise le royaume. **Afonso** écrit plusieurs lettres pour protester contre les ravages de la traite sur son peuple. Les tensions s'aggravent, jusqu'à la bataille de **Mbwila** en 1665.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Afonso** proteste par lettres contre les ravages de la traite",
+              "Les tensions s'aggravent avec les Portugais",
+              "**1665** : bataille de Mbwila, le royaume se fragmente",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-16-royaume-kongo-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Le Kongo montre qu'un État africain a su dialoguer diplomatiquement avec l'Europe et adopter le christianisme selon ses propres termes. Son déclin illustre tragiquement l'impact destructeur de la traite sur les sociétés africaines. Sa culture a profondément marqué l'Afrique centrale et, à travers la diaspora, une partie des Amériques." },
+          {
+            type: "paragraphe",
+            text: "Le **Kongo** a montré qu'un État africain pouvait dialoguer d'égal à égal avec l'Europe — avant d'être emporté par la traite qu'il avait lui-même dénoncée.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIVe s.", texte: "Fondation du royaume du Kongo" },
+              { date: "1483", texte: "Premiers contacts diplomatiques avec le Portugal" },
+              { date: "1665", texte: "Bataille de Mbwila, fragmentation du royaume" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le Kongo montre qu'un État africain a su dialoguer diplomatiquement avec l'Europe et adopter le christianisme selon ses propres termes. Son déclin illustre l'impact destructeur de la traite. Sa culture a profondément marqué l'Afrique centrale et, via la diaspora, une partie des Amériques.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Un dialogue diplomatique d'égal à égal avec l'Europe",
+              "Un déclin qui illustre l'impact destructeur de la traite",
+              "Une culture qui a marqué l'Afrique centrale et les Amériques",
+            ],
+          },
         ],
       },
     ],
@@ -2612,14 +3164,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Autour de quel fleuve s'est développé le royaume du Kongo ?",
         options: ["Le Nil", "Le fleuve Congo", "Le Niger", "Le Zambèze"],
         correctIndex: 1,
-        explanation: "Le royaume du Kongo s'étendait autour du bas cours du fleuve Congo.",
+        explanation: "Le royaume du Kongo s'étendait autour du bas cours du fleuve Congo, avec Mbanza-Kongo pour capitale.",
       },
       {
         id: "course-histoire-16-royaume-kongo-quiz-2",
         question: "Quel roi du Kongo s'est converti au christianisme et correspondait avec le pape ?",
         options: ["Afonso Iᵉʳ", "Béhanzin", "Ezana", "Idris Alooma"],
         correctIndex: 0,
-        explanation: "Afonso Iᵉʳ (Nzinga Mbemba) fit du christianisme la religion d'État et correspondait d'égal à égal avec l'Europe.",
+        explanation: "Afonso Iᵉʳ (Nzinga Mbemba) fit du christianisme la religion d'État et correspondait d'égal à égal avec le Portugal et le pape.",
       },
       {
         id: "course-histoire-16-royaume-kongo-quiz-3",
@@ -2633,7 +3185,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Contre quoi le roi Afonso Iᵉʳ a-t-il protesté dans ses lettres ?",
         options: ["Les ravages de la traite des esclaves", "Le climat", "Les impôts sur l'or", "La construction d'églises"],
         correctIndex: 0,
-        explanation: "Afonso Iᵉʳ protesta contre l'impact destructeur de la traite atlantique sur son peuple.",
+        explanation: "Afonso Iᵉʳ protesta, dans plusieurs lettres au roi du Portugal, contre l'impact destructeur de la traite atlantique sur son peuple.",
       },
       {
         id: "course-histoire-16-royaume-kongo-quiz-5",
