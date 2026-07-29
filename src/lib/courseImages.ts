@@ -42,7 +42,7 @@ export function getCourseImage(courseId: string): CourseImageSet | undefined {
   return { src: entry.w800, srcSet: `${entry.w400} 400w, ${entry.w800} 800w` };
 }
 
-// Dans ce lot d'illustrations, le drapeau national est presque toujours à droite,
+// Dans ce lot d'illustrations de Géographie, le drapeau national est presque toujours à droite,
 // sauf pour ce sous-ensemble (Afrique centrale/grands lacs) où il est à gauche.
 const LEFT_FLAG_COURSE_IDS = new Set([
   "course-geographie-26-congo-brazzaville",
@@ -57,7 +57,11 @@ const LEFT_FLAG_COURSE_IDS = new Set([
   "course-geographie-35-erythree",
 ]);
 
-/** Côté vers lequel cadrer l'illustration (object-position) pour garder le drapeau visible au recadrage `object-cover`. */
-export function getCourseImagePosition(courseId: string): "left" | "right" {
-  return LEFT_FLAG_COURSE_IDS.has(courseId) ? "left" : "right";
+/** Côté vers lequel cadrer l'illustration (object-position) au recadrage `object-cover`. */
+export function getCourseImagePosition(courseId: string): "left" | "right" | "center" {
+  if (LEFT_FLAG_COURSE_IDS.has(courseId)) return "left";
+  // Les illustrations de Personnalités sont des scènes au sujet centré, sans drapeau latéral
+  // à préserver : les rogner à droite les décentrerait.
+  if (courseId.startsWith("course-perso-")) return "center";
+  return "right";
 }

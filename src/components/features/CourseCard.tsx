@@ -6,6 +6,12 @@ import { Card } from "@/components/ui/Card";
 import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
 import { getCourseImage, getCourseImagePosition } from "@/lib/courseImages";
 
+const OBJECT_POSITION = {
+  left: "object-left",
+  right: "object-right",
+  center: "object-center",
+} as const;
+
 interface CourseCardProps {
   course: CourseMeta;
   category: Category;
@@ -63,9 +69,7 @@ export function CourseCard({
               srcSet={image.srcSet}
               sizes={fluid ? "(min-width: 1024px) 260px, (min-width: 640px) 30vw, 45vw" : "210px"}
               alt={course.title}
-              className={`absolute inset-0 h-full w-full object-cover ${
-                getCourseImagePosition(course.id) === "left" ? "object-left" : "object-right"
-              }`}
+              className={`absolute inset-0 h-full w-full object-cover ${OBJECT_POSITION[getCourseImagePosition(course.id)]}`}
               loading="lazy"
             />
           ) : (
