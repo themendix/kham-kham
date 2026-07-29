@@ -3208,35 +3208,146 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-17-grand-zimbabwe-lesson-1",
         title: "Une cité de pierre",
         blocks: [
-          { type: "paragraphe", text: "Le Grand Zimbabwe, dans l'actuel Zimbabwe, connut son apogée entre le XIᵉ et le XVᵉ siècle. Il fut bâti par les ancêtres du peuple Shona. Son nom vient de l'expression dzimba dza mabwe, « les maisons de pierre ». Ses murailles monumentales, dont certaines atteignent 11 mètres de haut, furent édifiées en pierres sèches, sans aucun mortier — ce sont les plus vastes structures anciennes d'Afrique subsaharienne au sud de l'équateur." },
+          {
+            type: "paragraphe",
+            text: "Onze mètres de haut, en pierres sèches, sans une seule goutte de mortier. Certaines murailles du Grand Zimbabwe défient encore l'ingénierie moderne.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "11 m",
+            legende: "hauteur de certaines murailles du Grand Zimbabwe",
+          },
+          {
+            type: "paragraphe",
+            text: "Le Grand Zimbabwe, dans l'actuel Zimbabwe, connaît son apogée entre le XIᵉ et le XVᵉ siècle. Il est bâti par les ancêtres du peuple **Shona**. Son nom vient de l'expression *dzimba dza mabwe*, « les maisons de pierre ».",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Apogée entre les **XIᵉ-XVᵉ siècles**",
+              "Bâti par les ancêtres du peuple **Shona**",
+              "Les plus vastes structures anciennes d'Afrique subsaharienne australe",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ces murailles massives ont été édifiées sans aucun mortier : chaque pierre est taillée et assemblée avec une précision telle qu'elle tient seule, depuis près de mille ans.",
+          },
         ],
       },
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-2",
-        title: "Un royaume de l'or et du commerce",
+        title: "Un royaume de l'or",
         blocks: [
-          { type: "paragraphe", text: "La richesse du Grand Zimbabwe reposait sur le bétail et surtout sur le commerce de l'or. Ce métal, extrait dans la région, était acheminé jusqu'à la côte swahilie (le port de Sofala) et de là vers tout le monde de l'océan Indien. Les fouilles y ont retrouvé de la porcelaine chinoise et du verre persan, preuve de l'ampleur de ces échanges lointains." },
+          {
+            type: "paragraphe",
+            text: "L'or extrait dans ces collines a voyagé jusqu'en Chine et en Perse — sans qu'aucun marchand du Grand Zimbabwe n'ait jamais quitté l'Afrique australe.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Sofala",
+            legende: "le port par lequel l'or rejoignait l'océan Indien",
+          },
+          {
+            type: "paragraphe",
+            text: "La richesse du Grand Zimbabwe repose sur le bétail et surtout sur le commerce de l'**or**, acheminé jusqu'à la côte swahilie puis vers tout le monde de l'océan Indien. Les fouilles y ont retrouvé de la **porcelaine chinoise** et du verre persan.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'or, acheminé jusqu'à **Sofala** puis l'océan Indien",
+              "Porcelaine chinoise et verre persan retrouvés sur le site",
+              "Une richesse aussi fondée sur le bétail",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-3",
         title: "Une capitale organisée",
         blocks: [
-          { type: "paragraphe", text: "À son apogée, la cité comptait peut-être 18 000 habitants. Elle comprenait un centre royal et religieux, avec la célèbre Grande Enceinte et le complexe de la colline. Les artisans y sculptèrent de remarquables oiseaux en stéatite, les « oiseaux du Zimbabwe », devenus aujourd'hui l'emblème national du pays, figurant sur son drapeau." },
+          {
+            type: "paragraphe",
+            text: "18 000 habitants, un centre royal, une Grande Enceinte : le Grand Zimbabwe n'était pas un village, c'était une capitale.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "18 000",
+            legende: "habitants estimés à l'apogée du Grand Zimbabwe",
+          },
+          {
+            type: "paragraphe",
+            text: "La cité comprend un centre royal et religieux, avec la célèbre **Grande Enceinte** et le complexe de la colline. Les artisans y sculptent de remarquables oiseaux en stéatite, les « oiseaux du Zimbabwe », devenus aujourd'hui l'emblème national du pays.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**18 000** habitants, peut-être, à l'apogée de la cité",
+              "La **Grande Enceinte** et le complexe de la colline",
+              "Les oiseaux du Zimbabwe, sculptés en stéatite",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ces oiseaux en stéatite figurent aujourd'hui sur le drapeau du Zimbabwe : un emblème national né d'une sculpture vieille de plusieurs siècles.",
+          },
         ],
       },
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-4",
         title: "Un mythe colonial démenti",
         blocks: [
-          { type: "paragraphe", text: "Longtemps, les colonisateurs européens refusèrent de croire que des Africains aient pu bâtir un tel ensemble, et inventèrent des origines étrangères. L'archéologie a depuis clairement établi que le Grand Zimbabwe fut construit par les populations shona locales. Cet exemple est essentiel pour déconstruire les préjugés racistes sur les capacités des sociétés africaines." },
+          {
+            type: "paragraphe",
+            text: "Pendant plus d'un siècle, des colonisateurs ont refusé de croire que des Africains aient pu bâtir cette cité. L'archéologie leur a donné tort.",
+          },
+          {
+            type: "citation",
+            texte: "Ce que la pierre a vu, le vent ne peut l'effacer.",
+            auteur: "Proverbe shona",
+          },
+          {
+            type: "paragraphe",
+            text: "L'archéologie a depuis clairement établi que le Grand Zimbabwe fut construit par les populations **shona** locales. Cet exemple est essentiel pour déconstruire les préjugés racistes sur les capacités des sociétés africaines.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les colonisateurs ont longtemps nié une origine africaine",
+              "L'archéologie a établi l'origine **shona** du site",
+              "Un exemple clé contre les préjugés coloniaux",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-17-grand-zimbabwe-lesson-5",
         title: "Déclin et héritage",
         blocks: [
-          { type: "paragraphe", text: "Le Grand Zimbabwe déclina vers le XVᵉ siècle, sans doute à cause de l'épuisement des ressources et du déplacement des routes commerciales, laissant la place au royaume du Mutapa. Classé au patrimoine mondial de l'UNESCO, il a donné son nom à la nation moderne du Zimbabwe, devenue indépendante en 1980 — un symbole de fierté retrouvée." },
+          {
+            type: "paragraphe",
+            text: "Le Grand Zimbabwe s'éteint peu à peu au XVᵉ siècle. Mais son nom, lui, renaîtra cinq siècles plus tard, porté par toute une nation.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIe-XVe s.", texte: "Apogée du Grand Zimbabwe" },
+              { date: "XVe s.", texte: "Déclin, essor du royaume du Mutapa" },
+              { date: "1980", texte: "Indépendance du Zimbabwe, nom repris avec fierté" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le Grand Zimbabwe décline vers le **XVᵉ siècle**, sans doute à cause de l'épuisement des ressources et du déplacement des routes commerciales, laissant la place au royaume du **Mutapa**. Classé au patrimoine mondial de l'UNESCO, il donne son nom à la nation moderne.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Déclin au **XVᵉ siècle**, place au royaume du Mutapa",
+              "Classé au patrimoine mondial de l'UNESCO",
+              "**1980** : le Zimbabwe indépendant reprend fièrement ce nom",
+            ],
+          },
         ],
       },
     ],
@@ -3246,21 +3357,21 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Comment les murailles du Grand Zimbabwe ont-elles été construites ?",
         options: ["En béton armé", "En pierres sèches, sans mortier", "En briques de terre cuite", "En bois"],
         correctIndex: 1,
-        explanation: "Les murailles, hautes de plusieurs mètres, furent bâties en pierres sèches, sans mortier.",
+        explanation: "Les murailles, hautes de plusieurs mètres (jusqu'à 11 m), furent bâties en pierres sèches, sans mortier.",
       },
       {
         id: "course-histoire-17-grand-zimbabwe-quiz-2",
         question: "Quel peuple a bâti le Grand Zimbabwe ?",
         options: ["Les ancêtres des Shona", "Les Romains", "Les Phéniciens", "Les Égyptiens"],
         correctIndex: 0,
-        explanation: "Le site fut construit par les ancêtres du peuple shona, comme l'a démontré l'archéologie.",
+        explanation: "Le site fut construit par les ancêtres du peuple shona, comme l'a démontré l'archéologie, malgré les théories coloniales d'origine étrangère.",
       },
       {
         id: "course-histoire-17-grand-zimbabwe-quiz-3",
         question: "Sur quel commerce reposait la richesse du Grand Zimbabwe ?",
         options: ["Le commerce de la soie", "Le commerce de l'or", "Le commerce du café", "Le commerce du sel"],
         correctIndex: 1,
-        explanation: "L'or, exporté vers la côte swahilie et l'océan Indien, faisait la richesse du royaume.",
+        explanation: "L'or, exporté via le port de Sofala vers la côte swahilie et l'océan Indien, faisait la richesse du royaume.",
       },
       {
         id: "course-histoire-17-grand-zimbabwe-quiz-4",
@@ -3274,7 +3385,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qu'a démontré l'archéologie face au mythe colonial ?",
         options: ["Que le site fut bâti par des étrangers", "Que le site fut bâti par les populations africaines locales", "Que le site est naturel", "Que le site est récent"],
         correctIndex: 1,
-        explanation: "L'archéologie a prouvé que le Grand Zimbabwe fut bâti par les Shona locaux, déconstruisant les préjugés coloniaux.",
+        explanation: "L'archéologie a prouvé que le Grand Zimbabwe fut bâti par les Shona locaux, déconstruisant les préjugés coloniaux sur les capacités des sociétés africaines.",
       },
     ],
   },
@@ -3290,35 +3401,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-18-monomotapa-mutapa-lesson-1",
         title: "L'héritier du Grand Zimbabwe",
         blocks: [
-          { type: "paragraphe", text: "Vers le XVᵉ siècle, alors que le Grand Zimbabwe déclinait, un chef shona nommé Nyatsimba Mutota fonda un nouveau royaume plus au nord : le Mutapa, que les Européens appelèrent Monomotapa. Il s'étendait entre les fleuves Zambèze et Limpopo (actuels Zimbabwe et Mozambique). Le titre du souverain, Mwene Mutapa, signifie « seigneur des terres conquises »." },
+          {
+            type: "paragraphe",
+            text: "Quand le Grand Zimbabwe décline, un chef shona ne laisse pas mourir son héritage : il fonde, plus au nord, un nouveau royaume.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XVe siècle",
+            legende: "Nyatsimba Mutota fonde le royaume du Mutapa",
+          },
+          {
+            type: "paragraphe",
+            text: "Un chef shona nommé **Nyatsimba Mutota** fonde ce nouveau royaume, que les Européens appellent **Monomotapa**. Il s'étend entre les fleuves Zambèze et Limpopo. Le titre du souverain, **Mwene Mutapa**, signifie « seigneur des terres conquises ».",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Nyatsimba Mutota** fonde le Mutapa au XVᵉ siècle",
+              "Entre les fleuves Zambèze et Limpopo",
+              "**Mwene Mutapa** : « seigneur des terres conquises »",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-2",
-        title: "L'or et le commerce de l'océan Indien",
+        title: "L'or et l'océan Indien",
         blocks: [
-          { type: "paragraphe", text: "Comme son prédécesseur, le Mutapa tira sa puissance du commerce de l'or et de l'ivoire, acheminés vers la côte swahilie et le port de Sofala, puis vers tout le monde de l'océan Indien. Les marchands arabes et swahilis venaient y échanger tissus, perles et porcelaines contre les richesses de l'intérieur." },
+          {
+            type: "paragraphe",
+            text: "Comme son prédécesseur le Grand Zimbabwe, le Mutapa a compris une chose simple : l'or ne vaut rien tant qu'il ne voyage pas.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Sofala",
+            legende: "le port par lequel l'or du Mutapa rejoignait l'océan Indien",
+          },
+          {
+            type: "paragraphe",
+            text: "Le Mutapa tire sa puissance du commerce de l'**or** et de l'ivoire, acheminés vers la côte swahilie et le port de **Sofala**. Les marchands arabes et swahilis viennent y échanger tissus, perles et porcelaines contre les richesses de l'intérieur.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'or et l'ivoire acheminés vers **Sofala**",
+              "Des marchands arabes et swahilis viennent y échanger",
+              "Tissus, perles, porcelaines contre les richesses de l'intérieur",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-3",
-        title: "Les Portugais et le mythe de l'or",
+        title: "Les Portugais et le mythe",
         blocks: [
-          { type: "paragraphe", text: "Lorsque les Portugais s'installèrent sur la côte au XVIᵉ siècle, ils furent fascinés par les récits des mines d'or du Monomotapa. Certains crurent y reconnaître le mythique pays d'Ophir de la Bible. Avides de contrôler ce commerce, ils cherchèrent à s'immiscer dans les affaires du royaume." },
+          {
+            type: "paragraphe",
+            text: "Certains Portugais crurent avoir retrouvé, au cœur de l'Afrique australe, un lieu mentionné dans la Bible.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XVIe siècle",
+            legende: "les Portugais s'installent, fascinés par l'or du Mutapa",
+          },
+          {
+            type: "paragraphe",
+            text: "Les Portugais sont fascinés par les récits des mines d'or du **Monomotapa**. Certains croient y reconnaître le mythique pays d'**Ophir** de la Bible. Avides de contrôler ce commerce, ils cherchent à s'immiscer dans les affaires du royaume.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**XVIᵉ siècle** : les Portugais s'installent sur la côte",
+              "Certains croient reconnaître le pays biblique d'**Ophir**",
+              "Ils cherchent à s'immiscer dans les affaires du royaume",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le mythique pays d'Ophir, source d'or du roi Salomon selon la Bible, n'a jamais été localisé avec certitude — mais des Portugais crurent l'avoir enfin trouvé, à tort, au Mutapa.",
+          },
         ],
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-4",
         title: "Tensions et déclin",
         blocks: [
-          { type: "paragraphe", text: "Aux XVIᵉ et XVIIᵉ siècles, les ingérences portugaises, l'envoi de missionnaires et les guerres affaiblirent progressivement le Mutapa. Le royaume devint de plus en plus dépendant, puis se fragmenta, sans jamais livrer aux Européens les fabuleuses richesses qu'ils imaginaient." },
+          {
+            type: "paragraphe",
+            text: "Les Portugais rêvaient de richesses fabuleuses. Le Mutapa, lui, ne leur offrit jamais que des dettes et des rivalités.",
+          },
+          {
+            type: "citation",
+            texte: "On ne cueille pas la richesse d'un arbre qu'on n'a pas planté.",
+            auteur: "Proverbe shona",
+          },
+          {
+            type: "paragraphe",
+            text: "Aux XVIᵉ et XVIIᵉ siècles, les ingérences portugaises, l'envoi de missionnaires et les guerres affaiblissent progressivement le **Mutapa**. Le royaume devient de plus en plus dépendant, puis se fragmente, sans jamais livrer aux Européens les richesses qu'ils imaginaient.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**XVIᵉ-XVIIᵉ siècles** : ingérences, missionnaires, guerres affaiblissent le Mutapa",
+              "Le royaume devient dépendant, puis se fragmente",
+              "Les Européens n'obtiennent jamais les richesses fabuleuses espérées",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "L'histoire du Grand Zimbabwe puis du Mutapa montre la continuité d'une puissante civilisation d'Afrique australe, bâtie sur l'or, le bétail et le commerce à longue distance. Ces royaumes shona rappellent que l'Afrique australe fut, bien avant la colonisation, le siège d'États organisés et prospères, intégrés aux grands courants commerciaux du monde." },
+          {
+            type: "paragraphe",
+            text: "Deux royaumes, une seule et même histoire : celle d'une civilisation d'Afrique australe restée puissante pendant près de sept siècles.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIe-XVe s.", texte: "Le Grand Zimbabwe, premier grand État shona" },
+              { date: "XVe-XVIIe s.", texte: "Le Mutapa prend le relais" },
+              { date: "XVIIe s.", texte: "Fragmentation face aux ingérences portugaises" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'histoire du Grand Zimbabwe puis du **Mutapa** montre la continuité d'une puissante civilisation d'Afrique australe, bâtie sur l'or, le bétail et le commerce à longue distance. Ces royaumes shona rappellent que la région fut, bien avant la colonisation, le siège d'États organisés et prospères.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Grand Zimbabwe puis Mutapa : une même civilisation shona",
+              "Bâtie sur l'or, le bétail, le commerce à longue distance",
+              "Des États organisés, bien avant la colonisation",
+            ],
+          },
         ],
       },
     ],
@@ -3328,14 +3546,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "De quel grand site le royaume du Mutapa est-il l'héritier ?",
         options: ["Du Grand Zimbabwe", "de Carthage", "d'Aksoum", "de Tombouctou"],
         correctIndex: 0,
-        explanation: "Le Mutapa fut fondé alors que le Grand Zimbabwe déclinait, dans la continuité de la civilisation shona.",
+        explanation: "Le Mutapa fut fondé par Nyatsimba Mutota alors que le Grand Zimbabwe déclinait, dans la continuité de la civilisation shona.",
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-quiz-2",
         question: "Comment appelait-on le souverain du Mutapa ?",
         options: ["Le Mwene Mutapa", "L'Oba", "Le Kabaka", "Le Négus"],
         correctIndex: 0,
-        explanation: "Le titre du souverain était Mwene Mutapa, d'où le nom « Monomotapa » donné par les Européens.",
+        explanation: "Le titre du souverain était Mwene Mutapa, « seigneur des terres conquises », d'où le nom « Monomotapa » donné par les Européens.",
       },
       {
         id: "course-histoire-18-monomotapa-mutapa-quiz-3",
@@ -3372,35 +3590,138 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-19-royaumes-grands-lacs-lesson-1",
         title: "Une région de royaumes",
         blocks: [
-          { type: "paragraphe", text: "La région des Grands Lacs (autour des lacs Victoria, Kivu et Tanganyika), dans les actuels Ouganda, Rwanda, Burundi et Tanzanie, est une zone de hauts plateaux fertiles. Cette richesse agricole permit de fortes densités de population et l'émergence de royaumes centralisés : Buganda, Bunyoro, Rwanda, Burundi ou encore Ankole." },
+          {
+            type: "paragraphe",
+            text: "Des hauts plateaux si fertiles qu'ils ont permis à des royaumes entiers de prospérer, serrés les uns contre les autres, autour de trois grands lacs.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "5",
+            legende: "grands royaumes (Buganda, Bunyoro, Rwanda, Burundi, Ankole)",
+          },
+          {
+            type: "paragraphe",
+            text: "La région des Grands Lacs, dans les actuels Ouganda, Rwanda, Burundi et Tanzanie, est une zone de hauts plateaux fertiles. Cette richesse agricole permet de fortes densités de population et l'émergence de royaumes centralisés : **Buganda**, Bunyoro, **Rwanda**, Burundi ou encore Ankole.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Des hauts plateaux fertiles, autour des lacs Victoria, Kivu, Tanganyika",
+              "Une forte densité de population, favorable aux royaumes",
+              "**5** royaumes centralisés : Buganda, Bunyoro, Rwanda, Burundi, Ankole",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-2",
         title: "Le royaume du Buganda",
         blocks: [
-          { type: "paragraphe", text: "Le Buganda, dans l'actuel Ouganda, fut l'un des plus puissants. Dirigé par le Kabaka (roi), c'était un État très organisé, doté d'une administration de chefs, de routes, d'une armée solide et d'une flotte de pirogues sur le lac Victoria. Il connut son apogée aux XVIIIᵉ et XIXᵉ siècles." },
+          {
+            type: "paragraphe",
+            text: "Une flotte de pirogues, une administration de chefs, des routes : le Buganda ressemblait, par bien des aspects, à un État moderne.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "XVIIIe-XIXe s.",
+            legende: "l'apogée du royaume du Buganda",
+          },
+          {
+            type: "paragraphe",
+            text: "Le **Buganda**, dans l'actuel Ouganda, est l'un des plus puissants. Dirigé par le **Kabaka** (roi), c'est un État très organisé, doté d'une administration de chefs, de routes, d'une armée solide et d'une flotte de pirogues sur le lac Victoria.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Kabaka**, roi du Buganda, à la tête d'un État organisé",
+              "Administration de chefs, routes, armée, flotte de pirogues",
+              "Apogée aux **XVIIIᵉ et XIXᵉ siècles**",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-3",
         title: "Le Rwanda et l'organisation sociale",
         blocks: [
-          { type: "paragraphe", text: "Le royaume du Rwanda était dirigé par le Mwami (roi) et se distinguait par une organisation politique et sociale très élaborée. Le bétail y jouait un rôle central, dans l'économie comme dans les relations sociales. Les catégories sociales de l'époque (Hutu, Tutsi, Twa) étaient alors surtout sociales et fluides ; elles seront plus tard figées et instrumentalisées par les colonisateurs, avec des conséquences dramatiques." },
+          {
+            type: "paragraphe",
+            text: "Au Rwanda précolonial, des catégories sociales existaient — mais elles n'avaient pas encore le sens rigide qu'on leur donnera plus tard.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "3",
+            legende: "catégories sociales fluides : Hutu, Tutsi, Twa",
+          },
+          {
+            type: "paragraphe",
+            text: "Le royaume du **Rwanda** est dirigé par le **Mwami** (roi) et se distingue par une organisation politique très élaborée. Le bétail y joue un rôle central, dans l'économie comme dans les relations sociales. Ces catégories, alors surtout sociales et fluides, seront plus tard figées et instrumentalisées par les colonisateurs.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Mwami**, roi du Rwanda, à la tête d'un État élaboré",
+              "Le bétail, central dans l'économie et les relations sociales",
+              "Des catégories sociales fluides, plus tard figées par la colonisation",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-4",
         title: "Économie et culture",
         blocks: [
-          { type: "paragraphe", text: "L'économie de ces royaumes reposait sur l'agriculture (notamment la banane) et l'élevage. Leurs cultures de cour étaient riches : traditions orales, tambours royaux symboles du pouvoir, cérémonies et hiérarchies complexes. Ces sociétés étaient loin d'être « sans histoire »." },
+          {
+            type: "paragraphe",
+            text: "Des tambours qui parlent le pouvoir, des récits qui traversent les siècles : ces royaumes n'ont jamais été « sans histoire ».",
+          },
+          {
+            type: "citation",
+            texte: "Le tambour ne parle pas seul, il parle pour tout le royaume.",
+            auteur: "Proverbe ganda",
+          },
+          {
+            type: "paragraphe",
+            text: "L'économie de ces royaumes repose sur l'agriculture (notamment la **banane**) et l'élevage. Leurs cultures de cour sont riches : traditions orales, **tambours royaux** symboles du pouvoir, cérémonies et hiérarchies complexes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Agriculture (banane) et élevage, bases de l'économie",
+              "Les **tambours royaux**, symboles majeurs du pouvoir",
+              "Des sociétés riches en traditions, « loin d'être sans histoire »",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-lesson-5",
         title: "Colonisation et héritage",
         blocks: [
-          { type: "paragraphe", text: "À la fin du XIXᵉ siècle, la région passa sous domination allemande, puis britannique et belge. Les colonisateurs rigidifièrent les identités sociales et exploitèrent les rivalités, préparant de futurs conflits. Malgré tout, l'héritage de ces royaumes — leurs cultures, leurs langues, leurs institutions — reste très vivant dans l'Afrique de l'Est d'aujourd'hui." },
+          {
+            type: "paragraphe",
+            text: "À la fin du **XIXᵉ siècle**, des puissances européennes se partagent la région. Elles transforment, au passage, des catégories sociales autrefois fluides en frontières rigides.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "avant XIXe s.", texte: "Royaumes centralisés, catégories sociales fluides" },
+              { date: "fin XIXe s.", texte: "Domination allemande, puis britannique et belge" },
+              { date: "XXe-XXIe s.", texte: "Un héritage culturel toujours vivant" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les colonisateurs rigidifient les identités sociales et exploitent les rivalités, préparant de futurs conflits. Malgré tout, l'héritage de ces royaumes — leurs cultures, leurs langues, leurs institutions — reste très vivant dans l'Afrique de l'Est d'aujourd'hui.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Fin **XIXᵉ siècle** : domination allemande, puis britannique et belge",
+              "Des identités sociales rigidifiées, aux conséquences dramatiques",
+              "Un héritage culturel toujours vivant en Afrique de l'Est",
+            ],
+          },
         ],
       },
     ],
@@ -3410,14 +3731,14 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Dans quelle partie de l'Afrique se trouve la région des Grands Lacs ?",
         options: ["En Afrique de l'Est", "En Afrique du Nord", "En Afrique de l'Ouest", "Au Sahara"],
         correctIndex: 0,
-        explanation: "La région des Grands Lacs se situe en Afrique de l'Est (Ouganda, Rwanda, Burundi, Tanzanie).",
+        explanation: "La région des Grands Lacs se situe en Afrique de l'Est (Ouganda, Rwanda, Burundi, Tanzanie), autour des lacs Victoria, Kivu et Tanganyika.",
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-quiz-2",
         question: "Comment appelait-on le roi du Buganda ?",
         options: ["Le Kabaka", "Le Mwami", "L'Oba", "Le Mansa"],
         correctIndex: 0,
-        explanation: "Le souverain du Buganda portait le titre de Kabaka.",
+        explanation: "Le souverain du Buganda portait le titre de Kabaka ; celui du Rwanda portait le titre de Mwami.",
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-quiz-3",
@@ -3431,7 +3752,7 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Qu'ont fait les colonisateurs des identités sociales de la région ?",
         options: ["Ils les ont ignorées", "Ils les ont figées et instrumentalisées", "Ils les ont supprimées", "Ils les ont inventées de toutes pièces sans effet"],
         correctIndex: 1,
-        explanation: "Les colonisateurs rigidifièrent des catégories sociales auparavant fluides, avec des conséquences dramatiques.",
+        explanation: "Les colonisateurs rigidifièrent des catégories sociales (Hutu, Tutsi, Twa) auparavant fluides, avec des conséquences dramatiques.",
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-quiz-5",
@@ -5447,35 +5768,142 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-39-reine-nzinga-angola-lesson-1",
         title: "Une reine d'Afrique centrale",
         blocks: [
-          { type: "paragraphe", text: "Nzinga Mbande (vers 1583-1663) fut reine du Ndongo puis du Matamba, dans l'actuel Angola. Elle accéda au pouvoir au début du XVIIᵉ siècle, à une époque où les Portugais étendaient leur emprise et intensifiaient la traite des esclaves en Afrique centrale." },
+          {
+            type: "paragraphe",
+            text: "Une femme accède au pouvoir à un moment où deux mondes s'affrontent déjà en Angola : les royaumes africains, et les marchands d'esclaves portugais.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1583-1663",
+            legende: "les années de vie de la reine Nzinga Mbande",
+          },
+          {
+            type: "paragraphe",
+            text: "**Nzinga Mbande** est reine du **Ndongo** puis du **Matamba**, dans l'actuel Angola. Elle accède au pouvoir au début du XVIIᵉ siècle, à une époque où les Portugais étendent leur emprise et intensifient la traite des esclaves en Afrique centrale.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Nzinga Mbande** (1583-1663), reine du Ndongo puis du Matamba",
+              "Accède au pouvoir au début du **XVIIᵉ siècle**",
+              "Une époque d'expansion portugaise et de traite intensifiée",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-2",
         title: "Une diplomate hors pair",
         blocks: [
-          { type: "paragraphe", text: "Une anecdote célèbre illustre son génie : lors d'une négociation à Luanda, en 1622, le gouverneur portugais ne lui offrit pas de siège pour l'humilier. Nzinga fit alors s'agenouiller un serviteur pour s'asseoir sur son dos, affirmant qu'elle traitait en égale, de souveraine à souverain." },
+          {
+            type: "paragraphe",
+            text: "Faute de siège, on voulait l'humilier. Nzinga a transformé l'affront en démonstration de pouvoir, sous les yeux mêmes de ceux qui l'avaient tendu.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1622",
+            legende: "la négociation de Luanda et le siège refusé",
+          },
+          {
+            type: "paragraphe",
+            text: "Lors d'une négociation à **Luanda**, en 1622, le gouverneur portugais ne lui offre pas de siège pour l'humilier. **Nzinga** fait alors s'agenouiller un serviteur pour s'asseoir sur son dos, affirmant qu'elle traite en égale, de souveraine à souverain.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1622** : négociation à Luanda, siège refusé à Nzinga",
+              "Elle s'assoit sur le dos d'un serviteur agenouillé",
+              "Un geste pour affirmer : souveraine à souverain",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Ce geste n'était pas un caprice : c'était un message diplomatique calculé, compris de tous, pour rappeler qu'aucune reine ne négocie assise plus bas qu'un gouverneur.",
+          },
         ],
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-3",
         title: "La guerre contre les Portugais",
         blocks: [
-          { type: "paragraphe", text: "Pendant près de quarante ans, Nzinga résista aux Portugais et à la traite, par la guerre, la diplomatie et les alliances — y compris avec les Néerlandais, rivaux du Portugal. Elle accueillait les esclaves en fuite et les soldats déserteurs pour renforcer son royaume." },
+          {
+            type: "paragraphe",
+            text: "Pendant près de quarante ans, une seule reine a empêché une puissance coloniale de conquérir entièrement son royaume.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "~40 ans",
+            legende: "la résistance de Nzinga face aux Portugais",
+          },
+          {
+            type: "paragraphe",
+            text: "**Nzinga** résiste aux Portugais et à la traite, par la guerre, la diplomatie et les alliances — y compris avec les **Néerlandais**, rivaux du Portugal. Elle accueille les esclaves en fuite et les soldats déserteurs pour renforcer son royaume.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Près de **40 ans** de résistance, guerre et diplomatie",
+              "Alliance avec les Néerlandais, rivaux du Portugal",
+              "Accueil des esclaves en fuite pour renforcer le royaume",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-4",
         title: "Une stratège et cheffe de guerre",
         blocks: [
-          { type: "paragraphe", text: "Nzinga menait ses armées en personne, nouait et rompait les alliances selon les circonstances, et fit du Matamba une base solide. Toute sa vie, elle empêcha les Portugais de conquérir totalement la région." },
+          {
+            type: "paragraphe",
+            text: "Elle ne dirigeait pas ses armées depuis un palais. Nzinga les menait elle-même, sur le terrain, jusqu'à un âge avancé.",
+          },
+          {
+            type: "citation",
+            texte: "Le chef qui reste au palais perd le respect de son peuple.",
+            auteur: "Proverbe mbundu",
+          },
+          {
+            type: "paragraphe",
+            text: "**Nzinga** mène ses armées en personne, noue et rompt les alliances selon les circonstances, et fait du **Matamba** une base solide. Toute sa vie, elle empêche les Portugais de conquérir totalement la région.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Nzinga** mène ses armées en personne",
+              "Alliances nouées et rompues selon les circonstances",
+              "Le **Matamba** devient une base solide de résistance",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-lesson-5",
         title: "Héritage",
         blocks: [
-          { type: "paragraphe", text: "Nzinga est un symbole de résistance et de la puissance des femmes africaines. Héroïne nationale de l'Angola, elle est célébrée à travers l'Afrique et la diaspora comme l'une des grandes figures de la lutte contre la colonisation." },
+          {
+            type: "paragraphe",
+            text: "Une reine qui a résisté quarante ans à un empire n'appartient plus seulement à son royaume : elle appartient à tout un continent.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1583-1663", texte: "Vie de la reine Nzinga Mbande" },
+              { date: "1622", texte: "La négociation de Luanda, symbole d'égalité" },
+              { date: "XXe-XXIe s.", texte: "Héroïne nationale de l'Angola, figure panafricaine" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Nzinga** est un symbole de résistance et de la puissance des femmes africaines. Héroïne nationale de l'**Angola**, elle est célébrée à travers l'Afrique et la diaspora comme l'une des grandes figures de la lutte contre la colonisation.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Un symbole de résistance et de puissance féminine",
+              "Héroïne nationale de l'**Angola**",
+              "Célébrée à travers l'Afrique et la diaspora",
+            ],
+          },
         ],
       },
     ],
@@ -5485,28 +5913,28 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "De quels royaumes Nzinga était-elle la reine ?",
         options: ["Le Ndongo et le Matamba (Angola)", "Le Cayor et le Baol", "Le Sine et le Saloum", "Le Ghana et le Mali"],
         correctIndex: 0,
-        explanation: "Nzinga fut reine du Ndongo puis du Matamba, dans l'actuel Angola.",
+        explanation: "Nzinga fut reine du Ndongo puis du Matamba, dans l'actuel Angola, de 1583 à 1663.",
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-quiz-2",
         question: "Contre quelle puissance européenne Nzinga a-t-elle résisté ?",
         options: ["Le Portugal", "La Russie", "La Chine", "La Suède"],
         correctIndex: 0,
-        explanation: "Nzinga résista aux Portugais et à la traite qu'ils intensifiaient.",
+        explanation: "Nzinga résista aux Portugais et à la traite qu'ils intensifiaient, en s'alliant parfois aux Néerlandais.",
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-quiz-3",
         question: "Quelle anecdote célèbre illustre son sens de la diplomatie ?",
         options: ["Elle s'assit sur le dos d'un serviteur faute de siège", "Elle traversa les Alpes", "Elle brûla sa flotte", "Elle offrit de l'or au Caire"],
         correctIndex: 0,
-        explanation: "Privée de siège lors d'une négociation, elle fit s'agenouiller un serviteur pour s'asseoir, affirmant son égalité.",
+        explanation: "Privée de siège lors d'une négociation à Luanda en 1622, elle fit s'agenouiller un serviteur pour s'asseoir, affirmant son égalité.",
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-quiz-4",
         question: "Combien de temps Nzinga a-t-elle résisté aux Portugais ?",
         options: ["Près de quarante ans", "Une semaine", "Un an", "Un siècle"],
         correctIndex: 0,
-        explanation: "Nzinga résista aux Portugais pendant près de quarante ans, par la guerre et la diplomatie.",
+        explanation: "Nzinga résista aux Portugais pendant près de quarante ans, par la guerre et la diplomatie, menant elle-même ses armées.",
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-quiz-5",
@@ -5529,35 +5957,138 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-40-chaka-zoulou-lesson-1",
         title: "La naissance d'un royaume",
         blocks: [
-          { type: "paragraphe", text: "Chaka (vers 1787-1828) est le roi fondateur du royaume zoulou, en Afrique australe (actuelle Afrique du Sud). Au début du XIXᵉ siècle, il transforma un petit clan en une grande puissance régionale par son génie militaire et politique." },
+          {
+            type: "paragraphe",
+            text: "Un petit clan, presque invisible sur la carte. En quelques années à peine, un seul homme en a fait une grande puissance régionale.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1787-1828",
+            legende: "les années de vie de Chaka, roi zoulou",
+          },
+          {
+            type: "paragraphe",
+            text: "**Chaka** est le roi fondateur du royaume **zoulou**, en Afrique australe (actuelle Afrique du Sud). Au début du XIXᵉ siècle, il transforme un petit clan en une grande puissance régionale par son génie militaire et politique.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Chaka** (1787-1828), roi fondateur du royaume zoulou",
+              "Un petit clan transformé en grande puissance régionale",
+              "Un génie à la fois militaire et politique",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-40-chaka-zoulou-lesson-2",
         title: "Un génie militaire",
         blocks: [
-          { type: "paragraphe", text: "Chaka révolutionna l'art de la guerre : il introduisit une courte sagaie d'estoc (l'iklwa), de meilleurs boucliers, des régiments disciplinés (les impis) et la célèbre formation en « cornes de buffle », destinée à encercler l'ennemi. Ces innovations rendirent son armée redoutable." },
+          {
+            type: "paragraphe",
+            text: "Une sagaie courte, des boucliers renforcés, une formation en cornes de buffle : Chaka a réinventé la guerre avant même de conquérir son premier territoire.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "3",
+            legende: "innovations militaires majeures de Chaka",
+          },
+          {
+            type: "paragraphe",
+            text: "**Chaka** révolutionne l'art de la guerre : il introduit une courte sagaie d'estoc (l'**iklwa**), de meilleurs boucliers, des régiments disciplinés (les **impis**) et la célèbre formation en « cornes de buffle », destinée à encercler l'ennemi.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**iklwa**, une sagaie courte pour le combat rapproché",
+              "Les **impis**, des régiments disciplinés",
+              "La formation en « cornes de buffle », pour encercler l'ennemi",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-40-chaka-zoulou-lesson-3",
         title: "L'expansion zouloue",
         blocks: [
-          { type: "paragraphe", text: "Grâce à cette armée, Chaka étendit rapidement son royaume par la conquête et l'intégration des peuples voisins, bâtissant un État centralisé et militarisé d'une efficacité remarquable." },
+          {
+            type: "paragraphe",
+            text: "Une armée réformée ne sert à rien si elle reste immobile. Chaka, lui, ne l'a jamais laissée inactive.",
+          },
+          {
+            type: "citation",
+            texte: "Seul, un bâton se casse facilement ; en faisceau, jamais.",
+            auteur: "Proverbe zoulou",
+          },
+          {
+            type: "paragraphe",
+            text: "Grâce à cette armée, **Chaka** étend rapidement son royaume par la conquête et l'intégration des peuples voisins, bâtissant un État centralisé et militarisé d'une efficacité remarquable.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Chaka** étend son royaume par conquête et intégration",
+              "Un État centralisé et militarisé, d'une efficacité remarquable",
+              "Les peuples voisins intégrés, pas seulement soumis",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-40-chaka-zoulou-lesson-4",
         title: "Le Mfecane",
         blocks: [
-          { type: "paragraphe", text: "Ses conquêtes sont associées au Mfecane (« l'écrasement »), une période de bouleversements, de migrations et de guerres qui secoua toute l'Afrique australe au début du XIXᵉ siècle — un temps de grands troubles et de déplacements de populations." },
+          {
+            type: "paragraphe",
+            text: "Les conquêtes de Chaka ne se limitent pas à son propre royaume. Elles déclenchent, dans toute l'Afrique australe, une vague de bouleversements qui porte un nom : le Mfecane.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "l'écrasement",
+            legende: "traduction du mot Mfecane",
+          },
+          {
+            type: "paragraphe",
+            text: "Ses conquêtes sont associées au **Mfecane**, une période de bouleversements, de migrations et de guerres qui secoue toute l'Afrique australe au début du XIXᵉ siècle — un temps de grands troubles et de déplacements de populations.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Mfecane** : une vague de bouleversements en Afrique australe",
+              "Migrations, guerres, déplacements de populations, début XIXᵉ siècle",
+              "Un épisode majeur, encore étudié et débattu aujourd'hui",
+            ],
+          },
         ],
       },
       {
         id: "course-histoire-40-chaka-zoulou-lesson-5",
         title: "Mort et héritage",
         blocks: [
-          { type: "paragraphe", text: "Chaka fut assassiné en 1828 par ses demi-frères. Le royaume qu'il avait bâti résista plus tard farouchement aux Britanniques, remportant notamment la victoire d'Isandlwana (1879). Les Zoulous restent l'un des plus grands peuples d'Afrique du Sud, et Chaka demeure une figure emblématique, admirée et discutée." },
+          {
+            type: "paragraphe",
+            text: "Chaka meurt assassiné par les siens. Le royaume qu'il a bâti, lui, continuera longtemps à résister — jusque contre les Britanniques.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1787-1828", texte: "Vie de Chaka, fondateur du royaume zoulou" },
+              { date: "1828", texte: "Assassinat de Chaka par ses demi-frères" },
+              { date: "1879", texte: "Victoire zouloue d'Isandlwana sur les Britanniques" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Chaka** est assassiné en 1828 par ses demi-frères. Le royaume qu'il avait bâti résiste plus tard farouchement aux Britanniques, remportant notamment la victoire d'**Isandlwana** (1879). Les Zoulous restent l'un des plus grands peuples d'Afrique du Sud.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**1828** : assassinat de Chaka par ses demi-frères",
+              "**1879** : victoire zouloue d'Isandlwana sur les Britanniques",
+              "Les Zoulous, l'un des plus grands peuples d'Afrique du Sud",
+            ],
+          },
         ],
       },
     ],
@@ -5567,21 +6098,21 @@ export const HISTOIRE_COURSES: Course[] = [
         question: "Quel royaume Chaka a-t-il fondé ?",
         options: ["Le royaume zoulou", "L'empire du Mali", "Le royaume du Kongo", "Le royaume d'Aksoum"],
         correctIndex: 0,
-        explanation: "Chaka est le roi fondateur du royaume zoulou, en Afrique australe.",
+        explanation: "Chaka est le roi fondateur du royaume zoulou, en Afrique australe, qu'il bâtit à partir d'un petit clan au début du XIXᵉ siècle.",
       },
       {
         id: "course-histoire-40-chaka-zoulou-quiz-2",
         question: "Quelle innovation militaire est associée à Chaka ?",
         options: ["La formation en « cornes de buffle »", "Le char à cheval", "La poudre à canon", "La flotte de guerre"],
         correctIndex: 0,
-        explanation: "Chaka introduisit la courte sagaie (iklwa), les régiments disciplinés et la formation en « cornes de buffle ».",
+        explanation: "Chaka introduisit la courte sagaie (iklwa), les régiments disciplinés (impis) et la formation en « cornes de buffle ».",
       },
       {
         id: "course-histoire-40-chaka-zoulou-quiz-3",
         question: "Comment appelle-t-on la période de bouleversements liée à son expansion ?",
         options: ["Le Mfecane", "La Renaissance", "Le Grand Magal", "La Réforme"],
         correctIndex: 0,
-        explanation: "Le Mfecane (« l'écrasement ») fut une période de guerres et de migrations en Afrique australe.",
+        explanation: "Le Mfecane (« l'écrasement ») fut une période de guerres et de migrations en Afrique australe, au début du XIXᵉ siècle.",
       },
       {
         id: "course-histoire-40-chaka-zoulou-quiz-4",
