@@ -4125,32 +4125,62 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-geographie-39-maurice-lesson-1",
-        title: "Le territoire",
+        title: "L'oiseau qui a disparu d'ici",
         blocks: [
-          { type: "paragraphe", text: "**Situation territoriale.** Maurice est une île volcanique de l'océan Indien, à l'est de Madagascar, au sein de l'archipel des Mascareignes (avec Rodrigues). Petite (environ 2 040 km²), elle n'a aucune frontière terrestre." },
-          { type: "paragraphe", text: "L'île principale et l'île de Rodrigues, plus petite et plus isolée à environ 560 km à l'est, ainsi que plusieurs îlots dispersés dans l'océan Indien, forment ensemble le territoire mauricien, ce qui donne au pays une zone économique maritime bien plus vaste que ne le laisserait supposer sa surface terrestre." },
-          { type: "paragraphe", text: "**Le milieu.** L'île, volcanique, associe un plateau central, des montagnes et une ceinture de lagons et de récifs coralliens. Le climat est tropical. C'est ici que vivait le dodo, oiseau devenu le symbole des espèces disparues." },
-          { type: "paragraphe", text: "Le plateau central, plus frais en altitude, contraste avec les plaines côtières chaudes et humides, entièrement ceinturées par une barrière de corail qui crée les lagons calmes et transparents faisant la réputation touristique de l'île." },
+          { type: "paragraphe", text: "Maurice fut la seule maison du dodo, cet oiseau incapable de voler, disparu en quelques décennies après l'arrivée des marins européens — un symbole devenu mondial de ce que l'humanité peut effacer." },
+          { type: "chiffreCle", valeur: "560 km", legende: "jusqu'à Rodrigues, sa petite île sœur" },
+          { type: "paragraphe", text: "L'île, volcanique, associe un plateau central plus frais et des plaines côtières chaudes, entièrement ceinturées par une barrière de **corail** qui crée les **lagons** calmes et transparents faisant la réputation touristique de l'île." },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **dodo**, oiseau disparu, symbole mondial des extinctions",
+              "Une île volcanique ceinturée de récifs de **corail**",
+              "L'île de Rodrigues, à 560 km à l'est",
+            ],
+          },
+          { type: "leSavaisTu", text: "Le dodo n'a côtoyé l'homme qu'une centaine d'années environ avant de disparaître à jamais — l'une des extinctions les plus rapides jamais provoquées par l'arrivée d'une espèce humaine sur une île." },
         ],
       },
       {
         id: "course-geographie-39-maurice-lesson-2",
-        title: "Population et société",
+        title: "Un peuple entièrement venu d'ailleurs",
         blocks: [
-          { type: "paragraphe", text: "**Population.** Maurice compte environ 1,3 million d'habitants (2024), sur un territoire très densément peuplé." },
-          { type: "paragraphe", text: "Cette forte densité, l'une des plus élevées d'Afrique, résulte de l'histoire de peuplement de l'île, entièrement construite par la colonisation et l'immigration successive, sans population autochtone préalable — un cas unique sur le continent." },
-          { type: "paragraphe", text: "**Société.** La population est une mosaïque unique de descendants d'Indiens, d'Africains, de Chinois et d'Européens. L'anglais (officiel de fait), le français et le créole mauricien sont largement utilisés ; hindouisme majoritaire, christianisme et islam." },
-          { type: "paragraphe", text: "Les descendants de travailleurs sous contrat venus d'Inde après l'abolition de l'esclavage au XIXe siècle forment aujourd'hui la majorité de la population, aux côtés des Créoles d'origine africaine et malgache, d'une minorité sino-mauricienne et de Franco-Mauriciens, dans un modèle de cohabitation souvent cité en exemple." },
+          { type: "paragraphe", text: "Maurice est un cas unique en Afrique : l'île n'avait aucune population avant l'arrivée des Européens, et tous ses habitants actuels descendent de vagues successives de colons, d'esclaves et de travailleurs venus d'ailleurs." },
+          { type: "chiffreCle", valeur: "1,3 M", legende: "habitants, aucun peuple autochtone avant eux" },
+          { type: "paragraphe", text: "Les descendants de travailleurs sous contrat venus d'**Inde** après l'abolition de l'esclavage forment aujourd'hui la majorité de la population, aux côtés des Créoles d'origine africaine, d'une minorité **sino-mauricienne** et de Franco-Mauriciens." },
+          {
+            type: "aRetenir",
+            points: [
+              "Environ **1,3 million** d'habitants, une population entièrement immigrée",
+              "Majorité d'origine **indienne**, arrivée après l'abolition",
+              "Un modèle de cohabitation souvent cité en exemple",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-39-maurice-lesson-3",
-        title: "Économie, politique et repères",
+        title: "La réussite au milieu de l'océan",
         blocks: [
-          { type: "paragraphe", text: "**Économie et ressources.** Maurice a l'une des économies les plus prospères et diversifiées d'Afrique : tourisme haut de gamme, services financiers (place offshore), textile, sucre (canne à sucre) et technologies." },
-          { type: "paragraphe", text: "**Institutions et politique.** Régime : république à régime parlementaire. Chef du gouvernement (2026) : le Premier ministre Navin Ramgoolam (depuis novembre 2024) ; la présidence de la République (Dharam Gokhool) est un rôle protocolaire. Monnaie : la roupie mauricienne (MUR). Devise nationale : « Stella Clavisque Maris Indici » (L'étoile et la clé de l'océan Indien)." },
-          { type: "paragraphe", text: "Le pays est indépendant du Royaume-Uni depuis le 12 mars 1968. Membre de l'Union africaine et du Commonwealth, il est régulièrement cité comme l'une des démocraties les plus stables et l'une des économies les plus performantes d'Afrique." },
-          { type: "paragraphe", text: "**Repères et singularités.** Capitale : Port-Louis. Le dodo (symbole national disparu), Le Morne Brabant (mémoire de l'esclavage, UNESCO) et l'Aapravasi Ghat (immigration engagée, UNESCO) témoignent de son histoire ; ses plages et lagons attirent le monde entier." },
+          { type: "paragraphe", text: "Sans pétrole ni minerais, Maurice est devenue l'une des économies les plus prospères et les plus stables d'Afrique, en misant sur le tourisme haut de gamme, la finance et les technologies." },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Port-Louis" },
+              { label: "Monnaie", valeur: "Roupie mauricienne (MUR)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "12 mars 1968" },
+            ],
+          },
+          { type: "paragraphe", text: "Le **Morne Brabant**, ancien refuge d'esclaves marrons, et l'Aapravasi Ghat, premier lieu d'accueil des travailleurs engagés venus d'Inde, sont classés à l'UNESCO. La canne à sucre couvre encore une grande partie de l'île." },
+          {
+            type: "aRetenir",
+            points: [
+              "Une économie diversifiée : tourisme, finance, technologies",
+              "Le **Morne Brabant** et l'Aapravasi Ghat, lieux de mémoire classés",
+              "La canne à sucre, héritage colonial toujours visible",
+            ],
+          },
         ],
       },
     ],
@@ -4167,14 +4197,14 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quel oiseau disparu est le symbole de l'île Maurice ?",
         options: ["Le dodo", "Le pingouin", "L'autruche", "Le calao"],
         correctIndex: 0,
-        explanation: "Le dodo, endémique de Maurice, a disparu au XVIIᵉ siècle et symbolise les extinctions.",
+        explanation: "Le dodo, endémique de Maurice, a disparu en quelques décennies après l'arrivée des marins européens et symbolise aujourd'hui les extinctions.",
       },
       {
         id: "course-geographie-39-maurice-quiz-3",
         question: "Quels sont les grands piliers de l'économie mauricienne ?",
         options: ["Le tourisme et les services financiers", "Le pétrole et le gaz", "Les mines de cuivre", "L'élevage nomade"],
         correctIndex: 0,
-        explanation: "Maurice s'est développée grâce au tourisme, à la finance offshore, au textile et au sucre.",
+        explanation: "Maurice s'est développée grâce au tourisme, à la finance offshore, au textile et au sucre, sans disposer de ressources minières ou pétrolières.",
       },
       {
         id: "course-geographie-39-maurice-quiz-4",
@@ -4202,32 +4232,61 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-geographie-40-ouganda-lesson-1",
-        title: "Le territoire",
+        title: "De la neige sur l'équateur",
         blocks: [
-          { type: "paragraphe", text: "**Situation territoriale.** L'Ouganda est un pays enclavé d'Afrique de l'Est, à cheval sur l'équateur. Sur environ 241 550 km², il est bordé par le Kenya, le Soudan du Sud, la RD Congo, le Rwanda et la Tanzanie, et longé au sud par le lac Victoria." },
-          { type: "paragraphe", text: "Le pays est découpé en une centaine de districts autour de Kampala, la capitale, sur les rives du lac Victoria. Sa position aux sources du Nil, au cœur de la région des Grands Lacs, en a longtemps fait un territoire convoité, notamment par le Royaume-Uni au XIXe siècle." },
-          { type: "paragraphe", text: "**Le milieu.** C'est un plateau vert et fertile, riche en lacs. Le Nil Blanc sort du lac Victoria à Jinja. À l'ouest, les monts Rwenzori (« montagnes de la Lune ») portent des neiges à l'équateur. Le climat est tempéré par l'altitude." },
-          { type: "paragraphe", text: "Cette abondance de lacs et de terres fertiles, associée à un climat tempéré par l'altitude malgré la position équatoriale, vaut au pays sa réputation de « perle de l'Afrique » ; les monts Rwenzori, aux neiges éternelles rarissimes sous l'équateur, comptent parmi les curiosités géographiques les plus spectaculaires du continent." },
+          { type: "paragraphe", text: "Sur l'équateur, en plein cœur de l'Afrique, les monts Rwenzori portent des neiges éternelles — un paradoxe géographique si rare qu'on les surnomme les « montagnes de la Lune », un nom vieux de plus de deux mille ans." },
+          { type: "chiffreCle", valeur: "Jinja", legende: "où le Nil Blanc sort du lac Victoria" },
+          { type: "paragraphe", text: "Le Nil Blanc sort du lac Victoria à **Jinja**, point de départ symbolique du plus long fleuve du monde. Cette abondance de lacs et de terres fertiles, tempérée par l'altitude malgré la position équatoriale, vaut au pays sa réputation de « perle de l'Afrique »." },
+          {
+            type: "aRetenir",
+            points: [
+              "Les monts **Rwenzori**, neiges éternelles sur l'équateur",
+              "Le Nil Blanc sort du lac Victoria à **Jinja**",
+              "Surnommé la « perle de l'Afrique » pour sa verdure",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-40-ouganda-lesson-2",
-        title: "Population et société",
+        title: "Un roi dans une république",
         blocks: [
-          { type: "paragraphe", text: "**Population.** L'Ouganda compte environ 48 millions d'habitants (2024), une population très jeune." },
-          { type: "paragraphe", text: "Avec l'un des taux de natalité les plus élevés du monde, la population ougandaise est parmi les plus jeunes de la planète, ce qui crée à la fois un potentiel de croissance économique et une forte pression sur l'éducation et l'emploi." },
-          { type: "paragraphe", text: "**Société.** Les Bagandas (royaume du Buganda) et de nombreux autres peuples composent la nation. L'anglais et le swahili sont officiels, le luganda répandu ; le christianisme est majoritaire, avec une minorité musulmane." },
-          { type: "paragraphe", text: "Le royaume du Buganda, dont le roi (le Kabaka) conserve un rôle culturel et cérémoniel important autour de Kampala, illustre la survie de plusieurs royaumes traditionnels ougandais aux côtés de l'État moderne, un système de rois constitutionnels particulier en Afrique de l'Est." },
+          { type: "paragraphe", text: "À Kampala, aux côtés de l'État moderne, un roi traditionnel règne encore : le Kabaka du Buganda conserve un rôle culturel et cérémoniel important, dans l'un des rares systèmes de royautés constitutionnelles d'Afrique de l'Est." },
+          { type: "chiffreCle", valeur: "48 M", legende: "l'une des populations les plus jeunes au monde" },
+          { type: "paragraphe", text: "Avec l'un des **taux de natalité** les plus élevés du monde, l'Ouganda a l'une des populations les plus jeunes de la planète. Les **Bagandas** et de nombreux autres peuples composent la nation ; l'anglais et le swahili sont langues officielles." },
+          {
+            type: "aRetenir",
+            points: [
+              "Environ **48 millions** d'habitants, parmi les plus jeunes du monde",
+              "Les **Bagandas**, principal peuple, aux côtés de nombreux autres",
+              "Le roi du Buganda, le Kabaka, conserve un rôle cérémoniel",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-40-ouganda-lesson-3",
-        title: "Économie, politique et repères",
+        title: "La perle que Churchill a vue",
         blocks: [
-          { type: "paragraphe", text: "**Économie et ressources.** L'économie repose sur l'agriculture — le café est la principale exportation, avec le thé —, la pêche et un secteur pétrolier en développement autour du lac Albert. Le tourisme (gorilles de montagne) est prometteur." },
-          { type: "paragraphe", text: "**Institutions et politique.** Régime : république. Chef de l'État (2026) : Yoweri Museveni, réélu en janvier 2026, au pouvoir depuis 1986. Monnaie : le shilling ougandais (UGX). Devise nationale : « For God and My Country » (Pour Dieu et mon pays)." },
-          { type: "paragraphe", text: "Le pays est indépendant du Royaume-Uni depuis le 9 octobre 1962. Membre de l'Union africaine et de la Communauté d'Afrique de l'Est, il a connu la sanglante dictature d'Idi Amin Dada (1971-1979) avant de se stabiliser sous la présidence, désormais très longue, de Yoweri Museveni." },
-          { type: "paragraphe", text: "**Repères et singularités.** Capitale : Kampala. La source du Nil Blanc à Jinja, les gorilles de montagne de la forêt de Bwindi (UNESCO), les monts Rwenzori et le royaume traditionnel du Buganda font la richesse du pays." },
+          { type: "paragraphe", text: "En 1908, Winston Churchill traverse l'Ouganda et le surnomme « la perle de l'Afrique », séduit par la verdure de ses plateaux et la richesse de sa faune — un surnom resté célèbre depuis plus d'un siècle." },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Kampala" },
+              { label: "Monnaie", valeur: "Shilling ougandais (UGX)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "9 octobre 1962" },
+            ],
+          },
+          { type: "paragraphe", text: "Le **café**, principale exportation, et le thé portent l'économie, aux côtés d'un secteur pétrolier naissant. Les **gorilles de montagne** de la forêt de Bwindi attirent des touristes du monde entier. Le pays a connu la sanglante dictature d'Idi Amin Dada (1971-1979) avant de se stabiliser." },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **café** est la première exportation du pays",
+              "Les **gorilles de montagne** de Bwindi, attraction mondiale",
+              "La dictature d'Idi Amin Dada a marqué les années 1970",
+            ],
+          },
         ],
       },
     ],
@@ -4237,7 +4296,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quel surnom célèbre est donné à l'Ouganda ?",
         options: ["« La perle de l'Afrique »", "« Le toit du monde »", "« Le grenier du Sahel »", "« La corne d'abondance »"],
         correctIndex: 0,
-        explanation: "Winston Churchill surnomma l'Ouganda « la perle de l'Afrique » pour sa nature verdoyante.",
+        explanation: "Winston Churchill surnomma l'Ouganda « la perle de l'Afrique » en 1908, séduit par sa nature verdoyante.",
       },
       {
         id: "course-geographie-40-ouganda-quiz-2",
@@ -4251,7 +4310,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quelle est la principale exportation de l'Ouganda ?",
         options: ["Le café", "Le pétrole", "Le coton", "L'or"],
         correctIndex: 0,
-        explanation: "Le café est de longue date la première exportation agricole ougandaise.",
+        explanation: "Le café est de longue date la première exportation agricole ougandaise, aux côtés du thé.",
       },
       {
         id: "course-geographie-40-ouganda-quiz-4",
@@ -4265,7 +4324,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quel animal rare attire les touristes dans la forêt de Bwindi ?",
         options: ["Le gorille de montagne", "Le panda", "L'ours polaire", "Le tigre"],
         correctIndex: 0,
-        explanation: "La forêt impénétrable de Bwindi abrite une grande partie des gorilles de montagne du monde.",
+        explanation: "La forêt impénétrable de Bwindi abrite une grande partie des gorilles de montagne du monde, l'une des attractions touristiques majeures du pays.",
       },
     ],
   },
@@ -4279,32 +4338,61 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-geographie-41-rwanda-lesson-1",
-        title: "Le territoire",
+        title: "Le pays des mille collines",
         blocks: [
-          { type: "paragraphe", text: "**Situation territoriale.** Le Rwanda est un petit pays enclavé de la région des Grands Lacs. Sur environ 26 300 km², il est bordé par l'Ouganda, la Tanzanie, le Burundi et la RD Congo." },
-          { type: "paragraphe", text: "Le pays est découpé en cinq provinces autour de Kigali, la capitale, au centre du territoire. Sa petite taille, associée à un relief très accidenté, en fait l'un des pays les plus densément peuplés et les plus intensément cultivés d'Afrique." },
-          { type: "paragraphe", text: "**Le milieu.** Surnommé le « pays des mille collines », il est fait de collines et de montagnes, avec les volcans des Virunga au nord-ouest et le lac Kivu à l'ouest. Le climat est tempéré par l'altitude." },
-          { type: "paragraphe", text: "Les volcans des Virunga, dont certains encore actifs, culminent à plus de 4 500 m et abritent, avec la forêt de montagne environnante, l'un des derniers refuges des gorilles de montagne au monde. Le lac Kivu, l'un des grands lacs du Rift, offre un climat plus doux sur ses rives." },
+          { type: "paragraphe", text: "Le Rwanda porte bien son surnom, « le pays des mille collines » : nulle part ailleurs en Afrique le relief n'est aussi dense de sommets, de volcans actifs et d'un grand lac aux eaux calmes, le Kivu." },
+          { type: "chiffreCle", valeur: "4 500 m", legende: "les volcans des Virunga, encore actifs" },
+          { type: "paragraphe", text: "Les volcans des **Virunga**, dont certains encore actifs, abritent avec la forêt environnante l'un des derniers refuges des **gorilles de montagne** au monde. Le lac Kivu, l'un des grands lacs du Rift, offre un climat plus doux sur ses rives." },
+          {
+            type: "aRetenir",
+            points: [
+              "Surnommé le « pays des mille collines »",
+              "Les volcans des **Virunga**, refuge des gorilles de montagne",
+              "Le lac **Kivu**, l'un des grands lacs du Rift",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-41-rwanda-lesson-2",
-        title: "Population et société",
+        title: "Une identité qu'on ne demande plus",
         blocks: [
-          { type: "paragraphe", text: "**Population.** Le Rwanda compte environ 14 millions d'habitants (2024) et figure parmi les pays les plus densément peuplés d'Afrique." },
-          { type: "paragraphe", text: "Cette très forte densité, l'une des plus élevées du continent, s'accompagne d'une pression foncière considérable, que l'État rwandais gère par une politique volontariste d'aménagement du territoire et d'urbanisation planifiée, en particulier à Kigali." },
-          { type: "paragraphe", text: "**Société.** On y trouve les Hutus, les Tutsis et les Twa. Le kinyarwanda, le français, l'anglais et le swahili sont officiels ; le christianisme est majoritaire. Le pays reste profondément marqué par le génocide des Tutsis de 1994." },
-          { type: "paragraphe", text: "Depuis 1994, l'État rwandais a fait le choix de ne plus mentionner l'appartenance ethnique sur les documents officiels, dans une politique de réconciliation nationale volontariste qui reste, plus de trente ans après le génocide, un pilier central du discours politique du pays." },
+          { type: "paragraphe", text: "Depuis 1994, l'État rwandais a choisi de ne plus jamais faire mentionner l'appartenance ethnique sur les documents officiels — un choix radical, au cœur d'une politique de réconciliation nationale unique en Afrique." },
+          { type: "chiffreCle", valeur: "14 M", legende: "l'une des densités les plus fortes d'Afrique" },
+          { type: "paragraphe", text: "On y trouve les **Hutus**, les Tutsis et les Twa. Le pays reste profondément marqué par le génocide des Tutsis de **1994**, qui a fait entre 800 000 et un million de morts en quelques mois seulement." },
+          {
+            type: "aRetenir",
+            points: [
+              "Environ **14 millions** d'habitants, très forte densité",
+              "**Hutus**, Tutsis et Twa composent la population",
+              "Le génocide des Tutsis de **1994** marque encore le pays",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-41-rwanda-lesson-3",
-        title: "Économie, politique et repères",
+        title: "La capitale la plus propre d'Afrique",
         blocks: [
-          { type: "paragraphe", text: "**Économie et ressources.** L'économie repose sur le café, le thé, un tourisme haut de gamme (gorilles de montagne) et les services. Kigali est réputée pour sa propreté et sa sécurité, et le pays connaît une croissance soutenue." },
-          { type: "paragraphe", text: "**Institutions et politique.** Régime : république. Chef de l'État (2026) : Paul Kagame, président depuis 2000 (réélu en 2024). Monnaie : le franc rwandais (RWF). Devise nationale : « Unité, Travail, Patriotisme »." },
-          { type: "paragraphe", text: "Le pays est indépendant de la Belgique depuis le 1er juillet 1962. Membre de l'Union africaine et de la Communauté d'Afrique de l'Est, il s'est reconstruit depuis le génocide de 1994 en misant sur la gouvernance, les technologies et le tourisme, devenant un modèle de développement souvent cité en exemple malgré des critiques sur les libertés politiques." },
-          { type: "paragraphe", text: "**Repères et singularités.** Capitale : Kigali, l'une des villes les plus propres d'Afrique. Le parc des Volcans (gorilles de montagne), le lac Kivu et la mémoire du génocide de 1994 marquent le pays, surnommé « le pays des mille collines »." },
+          { type: "paragraphe", text: "Kigali est régulièrement citée comme l'une des villes les plus propres et les plus sûres du continent — un symbole de la reconstruction rwandaise depuis le génocide de 1994, fondée sur la gouvernance et la technologie." },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Kigali" },
+              { label: "Monnaie", valeur: "Franc rwandais (RWF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "1er juillet 1962" },
+            ],
+          },
+          { type: "paragraphe", text: "L'économie repose sur le **café**, le thé et un tourisme haut de gamme autour des gorilles de montagne. Le pays s'est reconstruit en misant sur la **gouvernance et les technologies**, devenant un modèle de développement souvent cité en exemple, malgré des critiques sur les libertés politiques." },
+          {
+            type: "aRetenir",
+            points: [
+              "**Kigali**, l'une des capitales les plus propres d'Afrique",
+              "L'économie repose sur le **café**, le thé et le tourisme",
+              "Un modèle de développement souvent cité en exemple",
+            ],
+          },
         ],
       },
     ],
@@ -4321,14 +4409,14 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quel événement tragique a marqué le Rwanda en 1994 ?",
         options: ["Le génocide des Tutsis", "Un séisme majeur", "Une éruption volcanique", "Une invasion étrangère"],
         correctIndex: 0,
-        explanation: "En 1994, le génocide des Tutsis a fait environ 800 000 à un million de morts en quelques mois.",
+        explanation: "En 1994, le génocide des Tutsis a fait entre 800 000 et un million de morts en quelques mois.",
       },
       {
         id: "course-geographie-41-rwanda-quiz-3",
         question: "Quelle est la capitale du Rwanda, réputée pour sa propreté ?",
         options: ["Kigali", "Butare", "Gisenyi", "Ruhengeri"],
         correctIndex: 0,
-        explanation: "Kigali est régulièrement citée parmi les capitales les plus propres et les plus sûres d'Afrique.",
+        explanation: "Kigali est régulièrement citée parmi les capitales les plus propres et les plus sûres d'Afrique, symbole de la reconstruction du pays.",
       },
       {
         id: "course-geographie-41-rwanda-quiz-4",
@@ -4356,32 +4444,61 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-geographie-42-seychelles-lesson-1",
-        title: "Le territoire",
+        title: "Les seules vraies îles de granit",
         blocks: [
-          { type: "paragraphe", text: "**Situation territoriale.** Les Seychelles forment un archipel de 115 îles dans l'océan Indien, au nord-est de Madagascar. Très petit (environ 455 km²), c'est le plus petit État d'Afrique par la superficie ; il n'a aucune frontière terrestre." },
-          { type: "paragraphe", text: "L'immense majorité de la population et de l'activité se concentre sur les trois principales îles granitiques (Mahé, Praslin, La Digue), tandis que les nombreuses îles coralliennes éloignées, comme l'atoll d'Aldabra, sont largement inhabitées et vouées à la conservation de la nature." },
-          { type: "paragraphe", text: "**Le milieu.** On distingue des îles granitiques (Mahé, Praslin, La Digue) et des îles coralliennes plus basses. Plages, forêts et récifs abritent une biodiversité unique : tortues géantes d'Aldabra et coco de mer. Le climat est tropical." },
-          { type: "paragraphe", text: "Les îles granitiques, uniques parmi les îles océaniques du monde par leur origine géologique continentale plutôt que volcanique ou corallienne, abritent des forêts primaires reliques, dont la vallée de Mai, à Praslin, où pousse le coco de mer, la plus grosse graine du règne végétal." },
+          { type: "paragraphe", text: "Contrairement à presque toutes les îles océaniques du monde, nées de volcans ou de coraux, les îles principales des Seychelles sont faites du même granit que les continents — un cas unique sur Terre." },
+          { type: "chiffreCle", valeur: "115", legende: "îles, le plus petit État d'Afrique par la superficie" },
+          { type: "paragraphe", text: "La **vallée de Mai**, à Praslin, abrite des forêts primaires reliques où pousse le **coco de mer**, la plus grosse graine du règne végétal. L'atoll d'Aldabra, îles coralliennes éloignées, abrite pour sa part d'immenses tortues géantes." },
+          {
+            type: "aRetenir",
+            points: [
+              "Les îles granitiques, un cas géologique unique au monde",
+              "Le **coco de mer**, la plus grosse graine du monde",
+              "L'atoll d'**Aldabra**, sanctuaire de tortues géantes",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-42-seychelles-lesson-2",
-        title: "Population et société",
+        title: "Un peuple concentré sur une île",
         blocks: [
-          { type: "paragraphe", text: "**Population.** Les Seychelles comptent environ 130 000 habitants (2024)." },
-          { type: "paragraphe", text: "La quasi-totalité de la population vit sur l'île de Mahé, où se trouve la capitale Victoria, faisant des Seychelles l'un des pays les plus concentrés géographiquement d'Afrique, malgré l'étendue de sa zone maritime." },
-          { type: "paragraphe", text: "**Société.** La population est créole, issue d'un métissage africain, européen et asiatique. Le créole seychellois, l'anglais et le français sont officiels ; le christianisme est majoritaire." },
-          { type: "paragraphe", text: "Cette société créole, née de la colonisation française puis britannique et de l'arrivée d'esclaves africains puis de travailleurs indiens et chinois, partage des racines culturelles communes avec Maurice et La Réunion voisines, tout en ayant développé une identité seychelloise propre." },
+          { type: "paragraphe", text: "Les Seychelles comptent environ 130 000 habitants, mais la quasi-totalité vit sur une seule île, Mahé, laissant les 114 autres presque désertes ou entièrement vouées à la conservation de la nature." },
+          { type: "chiffreCle", valeur: "130 000", legende: "presque tous concentrés sur l'île de Mahé" },
+          { type: "paragraphe", text: "La population **créole**, issue d'un métissage africain, européen et asiatique, partage des racines culturelles communes avec Maurice et La Réunion voisines, tout en ayant développé une identité **seychelloise** bien à elle." },
+          {
+            type: "aRetenir",
+            points: [
+              "Environ **130 000** habitants, presque tous sur Mahé",
+              "Une société **créole**, métissage africain, européen, asiatique",
+              "Des racines communes avec Maurice et La Réunion",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-42-seychelles-lesson-3",
-        title: "Économie, politique et repères",
+        title: "Le revenu le plus élevé d'Afrique",
         blocks: [
-          { type: "paragraphe", text: "**Économie et ressources.** L'économie repose sur le tourisme haut de gamme et la pêche au thon. Grâce à eux, les Seychelles affichent le PIB par habitant le plus élevé d'Afrique." },
-          { type: "paragraphe", text: "**Institutions et politique.** Régime : république. Chef de l'État (2026) : Patrick Herminie, élu en octobre 2025 (il a succédé à Wavel Ramkalawan). Monnaie : la roupie seychelloise (SCR). Devise nationale : « Finis Coronat Opus » (La fin couronne l'œuvre)." },
-          { type: "paragraphe", text: "Le pays est indépendant du Royaume-Uni depuis le 29 juin 1976. Membre de l'Union africaine et du Commonwealth, il a fait de la préservation de son environnement exceptionnel un pilier de sa stratégie économique et diplomatique, notamment sur les enjeux de protection des océans." },
-          { type: "paragraphe", text: "**Repères et singularités.** Capitale : Victoria, l'une des plus petites capitales du monde. L'atoll d'Aldabra (tortues géantes, UNESCO) et la vallée de Mai (coco de mer, UNESCO) sont des trésors naturels, tout comme les plages d'Anse Source d'Argent." },
+          { type: "paragraphe", text: "Grâce au tourisme haut de gamme et à la pêche au thon, les Seychelles affichent le revenu par habitant le plus élevé de tout le continent africain — une réussite bâtie sur un territoire minuscule." },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Victoria" },
+              { label: "Monnaie", valeur: "Roupie seychelloise (SCR)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "29 juin 1976" },
+            ],
+          },
+          { type: "paragraphe", text: "**Victoria**, l'une des plus petites capitales du monde, abrite l'essentiel de la vie du pays. Les Seychelles ont fait de la préservation de leur environnement exceptionnel un pilier de leur stratégie économique et diplomatique, notamment sur la protection des océans." },
+          {
+            type: "aRetenir",
+            points: [
+              "Le PIB par habitant le plus élevé d'Afrique",
+              "**Victoria**, l'une des plus petites capitales du monde",
+              "La protection des océans, pilier de la diplomatie",
+            ],
+          },
         ],
       },
     ],
@@ -4391,14 +4508,14 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Les Seychelles sont géographiquement…",
         options: ["Un archipel de l'océan Indien", "Un pays enclavé", "Une péninsule désertique", "Un haut plateau"],
         correctIndex: 0,
-        explanation: "Les Seychelles sont un archipel de 115 îles dans l'océan Indien.",
+        explanation: "Les Seychelles sont un archipel de 115 îles dans l'océan Indien, dont les îles principales sont faites de granit — un cas unique parmi les îles océaniques du monde.",
       },
       {
         id: "course-geographie-42-seychelles-quiz-2",
         question: "Quels sont les deux piliers de l'économie seychelloise ?",
         options: ["Le tourisme et la pêche au thon", "Le pétrole et le gaz", "Les mines et l'industrie lourde", "L'élevage et la vigne"],
         correctIndex: 0,
-        explanation: "Le tourisme haut de gamme et la pêche au thon soutiennent l'économie des Seychelles.",
+        explanation: "Le tourisme haut de gamme et la pêche au thon soutiennent l'économie des Seychelles, qui affiche le revenu par habitant le plus élevé d'Afrique.",
       },
       {
         id: "course-geographie-42-seychelles-quiz-3",
@@ -4433,32 +4550,61 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-geographie-43-somalie-lesson-1",
-        title: "Le territoire",
+        title: "La plus longue côte du continent",
         blocks: [
-          { type: "paragraphe", text: "**Situation territoriale.** La Somalie forme la pointe est de la Corne de l'Afrique. Sur environ 638 000 km², elle possède la plus longue côte d'Afrique continentale (sur l'océan Indien et le golfe d'Aden) et voisine avec Djibouti, l'Éthiopie et le Kenya." },
-          { type: "paragraphe", text: "Le pays est officiellement divisé en dix-huit régions, mais son autorité centrale ne s'exerce que partiellement sur le territoire : le Somaliland, au nord-ouest, se gouverne comme un État indépendant de facto depuis 1991, et le Puntland, au nord-est, bénéficie d'une large autonomie." },
-          { type: "paragraphe", text: "**Le milieu.** Le pays est fait de plateaux semi-arides et de savanes sèches, au climat chaud et aride. Deux rivières, le Jubba et le Shabelle, arrosent le sud, plus fertile." },
-          { type: "paragraphe", text: "Cette position à la pointe de la Corne de l'Afrique, entre le golfe d'Aden et l'océan Indien, fait de la Somalie un point de passage stratégique du commerce maritime mondial, un atout largement compromis ces dernières décennies par la piraterie et l'insécurité." },
+          { type: "paragraphe", text: "La Somalie déploie la plus longue côte de toute l'Afrique continentale, entre le golfe d'Aden et l'océan Indien — un atout stratégique majeur, largement compromis ces dernières décennies par la piraterie et l'insécurité." },
+          { type: "chiffreCle", valeur: "Pays de Pount", legende: "lié dans l'Antiquité au commerce de l'encens" },
+          { type: "paragraphe", text: "Le pays est fait de plateaux semi-arides et de savanes sèches. Deux rivières, le **Jubba** et le **Shabelle**, arrosent le sud, seule région vraiment fertile d'un territoire par ailleurs aride et chaud." },
+          {
+            type: "aRetenir",
+            points: [
+              "La plus longue côte d'Afrique continentale",
+              "Le **Jubba** et le **Shabelle**, seules rivières du pays",
+              "Liée dans l'Antiquité au commerce de l'encens, le « pays de Pount »",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-43-somalie-lesson-2",
-        title: "Population et société",
+        title: "Un seul peuple, mille clans",
         blocks: [
-          { type: "paragraphe", text: "**Population.** La Somalie compte environ 18 millions d'habitants (2024), en partie nomades pasteurs." },
-          { type: "paragraphe", text: "Cette tradition pastorale et nomade, encore vivace dans de vastes régions du pays, cohabite avec une urbanisation croissante autour de Mogadiscio et d'une importante diaspora, l'une des plus nombreuses d'Afrique rapportée à la population totale, installée notamment au Kenya, dans la péninsule Arabique, en Europe et en Amérique du Nord." },
-          { type: "paragraphe", text: "**Société.** Fait rare en Afrique, la population est très homogène : un même peuple somali, une même langue, une même religion. Le somali et l'arabe sont officiels ; l'islam est religion d'État. La société est organisée en clans." },
-          { type: "paragraphe", text: "Cette organisation clanique, qui structure aussi bien la vie sociale que la vie politique, a paradoxalement compté parmi les facteurs de la fragmentation du pays après la chute de l'État central en 1991, les rivalités entre clans ayant alimenté des décennies de conflit." },
+          { type: "paragraphe", text: "Fait rare en Afrique, la Somalie est ethniquement homogène : un même peuple, une même langue, une même religion — mais cette unité se fragmente en une multitude de clans qui structurent toute la vie sociale et politique." },
+          { type: "chiffreCle", valeur: "18 M", legende: "un peuple homogène, mais divisé en clans" },
+          { type: "paragraphe", text: "Une importante tradition pastorale et nomade cohabite avec une urbanisation croissante autour de **Mogadiscio** et une importante diaspora installée au Kenya, en Europe et dans le Golfe. Les rivalités entre clans ont alimenté des décennies de conflit après la chute de l'État central en **1991**." },
+          {
+            type: "aRetenir",
+            points: [
+              "Environ **18 millions** d'habitants, ethniquement homogènes",
+              "Une société organisée en clans, source d'unité et de tensions",
+              "L'État central s'est effondré en **1991**",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-43-somalie-lesson-3",
-        title: "Économie, politique et repères",
+        title: "Une région qui s'est déclarée libre",
         blocks: [
-          { type: "paragraphe", text: "**Économie et ressources.** L'économie repose sur l'élevage (exportation de bétail vers la péninsule Arabique), l'agriculture, la pêche et les transferts de la diaspora. Des décennies de guerre civile et l'insécurité (Al-Shabaab) l'ont profondément désorganisée." },
-          { type: "paragraphe", text: "**Institutions et politique.** Régime : république fédérale (en reconstruction). Chef de l'État (2026) : Hassan Sheikh Mohamud, président depuis 2022. Le Somaliland, au nord, est une région séparatiste non reconnue internationalement. Monnaie : le shilling somalien (SOS). Devise nationale : la Somalie n'a pas de devise nationale officielle consacrée." },
-          { type: "paragraphe", text: "Le pays est indépendant depuis le 1er juillet 1960, né de la fusion du Somaliland britannique et de la Somalie italienne. Membre de l'Union africaine et de la Ligue arabe, il tente depuis les années 2010 de reconstruire un État fédéral après l'effondrement de l'État central en 1991 et des décennies de guerre civile." },
-          { type: "paragraphe", text: "**Repères et singularités.** Capitale : Mogadiscio, sur l'océan Indien. Le pays possède la plus longue côte du continent et une importante diaspora ; la région était liée dans l'Antiquité au commerce de l'encens (« pays de Pount »)." },
+          { type: "paragraphe", text: "Depuis 1991, le Somaliland, au nord-ouest du pays, se gouverne comme un État indépendant de facto — avec son propre drapeau, sa propre monnaie et ses propres élections — sans être reconnu par aucun pays au monde." },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Mogadiscio" },
+              { label: "Monnaie", valeur: "Shilling somalien (SOS)" },
+              { label: "Régime", valeur: "République fédérale (en reconstruction)" },
+              { label: "Indépendance", valeur: "1er juillet 1960" },
+            ],
+          },
+          { type: "paragraphe", text: "L'économie repose sur l'**élevage**, avec l'exportation de bétail vers la péninsule Arabique, la pêche et les transferts de la diaspora. Des décennies de guerre civile et l'insécurité liée au groupe Al-Shabaab ont profondément désorganisé le pays, qui tente depuis les années 2010 de reconstruire un **État fédéral**." },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Somaliland** se gouverne comme un État indépendant depuis 1991",
+              "L'élevage, exporté vers la péninsule Arabique, porte l'économie",
+              "Le pays reconstruit un État fédéral depuis les années 2010",
+            ],
+          },
         ],
       },
     ],
@@ -4468,7 +4614,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "La Somalie possède la plus longue… d'Afrique continentale.",
         options: ["Côte", "Chaîne de montagnes", "Frontière terrestre", "Voie ferrée"],
         correctIndex: 0,
-        explanation: "La Somalie a la plus longue façade maritime de tous les pays continentaux d'Afrique.",
+        explanation: "La Somalie a la plus longue façade maritime de tous les pays continentaux d'Afrique, entre le golfe d'Aden et l'océan Indien.",
       },
       {
         id: "course-geographie-43-somalie-quiz-2",
@@ -4482,7 +4628,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quelle activité domine l'économie somalienne ?",
         options: ["L'élevage", "L'extraction pétrolière", "L'industrie automobile", "La viticulture"],
         correctIndex: 0,
-        explanation: "L'élevage et l'exportation de bétail vers la péninsule Arabique sont au cœur de l'économie.",
+        explanation: "L'élevage et l'exportation de bétail vers la péninsule Arabique sont au cœur de l'économie somalienne.",
       },
       {
         id: "course-geographie-43-somalie-quiz-4",
@@ -4496,7 +4642,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quelle langue, avec l'arabe, est officielle en Somalie ?",
         options: ["Le somali", "Le swahili", "L'amharique", "Le français"],
         correctIndex: 0,
-        explanation: "Le somali est la langue nationale, parlée par la quasi-totalité de la population.",
+        explanation: "Le somali est la langue nationale, parlée par la quasi-totalité d'une population remarquablement homogène pour l'Afrique.",
       },
     ],
   },
@@ -4510,32 +4656,61 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-geographie-44-soudan-du-sud-lesson-1",
-        title: "Le territoire",
+        title: "Le marais qui ralentit le Nil",
         blocks: [
-          { type: "paragraphe", text: "**Situation territoriale.** Le Soudan du Sud est un pays enclavé d'Afrique de l'Est. Sur environ 620 000 km², il est bordé par le Soudan, l'Éthiopie, le Kenya, l'Ouganda, la RD Congo et la Centrafrique, et traversé par le Nil Blanc." },
-          { type: "paragraphe", text: "Le pays est découpé en dix États depuis sa naissance en 2011. Cet enclavement au cœur d'une région elle-même instable, cumulé à un réseau routier quasi inexistant en dehors de Juba, rend l'accès à une grande partie du territoire particulièrement difficile." },
-          { type: "paragraphe", text: "**Le milieu.** De vastes plaines et savanes couvrent le pays. Le Sudd, immense marécage sur le Nil Blanc, est l'une des plus grandes zones humides du monde. Le climat est tropical, avec une saison des pluies marquée." },
-          { type: "paragraphe", text: "Le Sudd, qui s'étend sur des dizaines de milliers de km² au gré des crues du Nil Blanc, ralentit considérablement le débit du fleuve par évaporation et abrite l'une des dernières grandes migrations de grands mammifères d'Afrique, encore mal connue faute d'accès sécurisé pour l'étudier." },
+          { type: "paragraphe", text: "Le Sudd, sur le Nil Blanc, est l'une des plus grandes zones humides du monde — si vaste et si dense qu'il **ralentit** sensiblement le débit du fleuve par simple évaporation." },
+          { type: "chiffreCle", valeur: "Le Sudd", legende: "ralentit le débit du Nil par évaporation" },
+          { type: "paragraphe", text: "Sur environ 620 000 km², le Soudan du Sud est **enclavé** entre six pays — Soudan, Éthiopie, Kenya, Ouganda, RD Congo, Centrafrique — et découpé en dix États depuis 2011. Hors de Juba, le réseau routier reste quasi inexistant." },
+          {
+            type: "aRetenir",
+            points: [
+              "Le Sudd abrite l'une des dernières grandes **migrations** de mammifères d'Afrique.",
+              "Le pays compte dix États depuis son indépendance en 2011.",
+              "L'accès au territoire reste très difficile hors de la capitale Juba.",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-44-soudan-du-sud-lesson-2",
-        title: "Population et société",
+        title: "Une rivalité née de l'indépendance",
         blocks: [
-          { type: "paragraphe", text: "**Population.** Le Soudan du Sud compte environ 11 millions d'habitants (2024)." },
-          { type: "paragraphe", text: "La population, en grande partie rurale et agropastorale, a été durement affectée par la guerre civile de 2013-2018 et par des violences intercommunautaires persistantes, à l'origine d'importants déplacements internes et de flux de réfugiés vers les pays voisins." },
-          { type: "paragraphe", text: "**Société.** Les principaux peuples sont les Dinka, les Nuer et les Shilluk. L'anglais est la langue officielle. Le christianisme et les religions traditionnelles dominent — une différence avec le Soudan majoritairement musulman, à l'origine de la séparation." },
-          { type: "paragraphe", text: "La rivalité entre Dinka et Nuer, les deux plus grands groupes du pays, a directement alimenté la guerre civile qui a suivi l'indépendance, illustrant la fragilité des équilibres politiques et ethniques du plus jeune État du monde." },
+          { type: "paragraphe", text: "La rivalité entre **Dinka** et Nuer, les deux plus grands peuples du pays, a nourri la guerre civile qui a suivi l'indépendance de 2011." },
+          { type: "chiffreCle", valeur: "11 M", legende: "durement affectés par la guerre civile de 2013-2018" },
+          { type: "paragraphe", text: "Sur environ 11 millions d'habitants (2024), la population reste largement rurale et agropastorale, marquée par des déplacements internes massifs. L'anglais est langue officielle ; **christianisme** et religions traditionnelles dominent, à la différence du Soudan musulman voisin." },
+          {
+            type: "aRetenir",
+            points: [
+              "Les Dinka, Nuer et **Shilluk** sont les principaux peuples du pays.",
+              "La guerre civile de 2013-2018 a provoqué d'importants déplacements de population.",
+              "La religion distingue le Soudan du Sud du Soudan voisin, majoritairement musulman.",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-44-soudan-du-sud-lesson-3",
-        title: "Économie, politique et repères",
+        title: "Le plus jeune pays du monde",
         blocks: [
-          { type: "paragraphe", text: "**Économie et ressources.** L'économie dépend presque entièrement du pétrole, qui fournit l'essentiel des revenus de l'État, complété par l'élevage. C'est l'un des pays les plus pauvres du monde, ravagé par une guerre civile (2013-2018) et une grande fragilité." },
-          { type: "paragraphe", text: "**Institutions et politique.** Régime : république. Chef de l'État (2026) : Salva Kiir Mayardit, président depuis l'indépendance de 2011 ; les élections y sont sans cesse reportées. Monnaie : la livre sud-soudanaise (SSP). Devise nationale : « Justice, Liberté, Prospérité »." },
-          { type: "paragraphe", text: "Le pays est né le 9 juillet 2011 d'un référendum d'autodétermination approuvé par la quasi-totalité de la population du sud, mettant fin à des décennies de guerre avec le Soudan. Membre de l'Union africaine, il reste l'un des États les plus jeunes et les plus fragiles du monde." },
-          { type: "paragraphe", text: "**Repères et singularités.** Capitale : Juba, sur le Nil Blanc. Le marais du Sudd et, surtout, l'indépendance obtenue en juillet 2011 — qui en fait le plus jeune État reconnu par l'ONU — marquent son identité." },
+          { type: "paragraphe", text: "Le Soudan du Sud est né le 9 juillet 2011 d'un référendum approuvé par la quasi-totalité du sud, devenant le plus jeune État reconnu par l'ONU." },
+          { type: "paragraphe", text: "L'économie dépend presque entièrement du **pétrole**, complété par l'élevage. C'est l'un des pays les plus pauvres du monde, ravagé par une **guerre civile** entre 2013 et 2018, dont les séquelles pèsent encore sur la reconstruction." },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Juba" },
+              { label: "Monnaie", valeur: "Livre sud-soudanaise (SSP)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "9 juillet 2011" },
+            ],
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le pays reste l'un des plus pauvres et fragiles du monde.",
+              "Le pétrole fournit l'essentiel des revenus de l'État sud-soudanais.",
+              "Juba, sur le Nil Blanc, est la capitale du pays.",
+            ],
+          },
         ],
       },
     ],
@@ -4545,14 +4720,14 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "En quelle année le Soudan du Sud est-il devenu indépendant ?",
         options: ["En 2011", "En 1960", "En 1994", "En 2020"],
         correctIndex: 0,
-        explanation: "Le Soudan du Sud est devenu indépendant en juillet 2011, ce qui en fait le plus jeune pays reconnu par l'ONU.",
+        explanation: "Le Soudan du Sud est devenu indépendant le 9 juillet 2011, ce qui en fait le plus jeune pays reconnu par l'ONU.",
       },
       {
         id: "course-geographie-44-soudan-du-sud-quiz-2",
         question: "De quel pays le Soudan du Sud a-t-il fait sécession ?",
         options: ["Le Soudan", "L'Éthiopie", "Le Kenya", "L'Ouganda"],
         correctIndex: 0,
-        explanation: "Le Soudan du Sud s'est séparé du Soudan, notamment pour des raisons religieuses et politiques.",
+        explanation: "Le Soudan du Sud s'est séparé du Soudan en 2011, après des décennies de guerre et de différences religieuses.",
       },
       {
         id: "course-geographie-44-soudan-du-sud-quiz-3",
@@ -4573,7 +4748,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quel grand fleuve traverse le Soudan du Sud ?",
         options: ["Le Nil Blanc", "Le Niger", "Le Congo", "Le Zambèze"],
         correctIndex: 0,
-        explanation: "Le Nil Blanc traverse le pays et y forme l'immense marécage du Sudd.",
+        explanation: "Le Nil Blanc traverse le pays et y forme le Sudd, immense marécage qui ralentit son débit par évaporation.",
       },
     ],
   },
@@ -4587,32 +4762,61 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-geographie-45-tanzanie-lesson-1",
-        title: "Le territoire",
+        title: "Le sommet et la grande migration",
         blocks: [
-          { type: "paragraphe", text: "**Situation territoriale.** La Tanzanie s'ouvre sur l'océan Indien, en Afrique de l'Est. Sur environ 945 000 km², elle est bordée par huit pays et comprend l'archipel de Zanzibar. Elle borde trois grands lacs : Victoria, Tanganyika et Malawi." },
-          { type: "paragraphe", text: "Le pays est né en 1964 de l'union du Tanganyika continental et de l'archipel de Zanzibar, qui conserve un gouvernement et un président propres au sein de la République unie. Cette structure fédérale particulière, associée à une position au carrefour de huit voisins, fait de la Tanzanie un pays-charnière de l'Afrique de l'Est." },
-          { type: "paragraphe", text: "**Le milieu.** Des plateaux et de vastes savanes (Serengeti) entourent le Kilimandjaro (environ 5 895 m, plus haut sommet d'Afrique). La vallée du Rift et les grands lacs complètent des paysages spectaculaires. Le climat est tropical, chaud sur la côte." },
-          { type: "paragraphe", text: "Les gorges d'Olduvai, dans le Rift, comptent parmi les sites paléontologiques les plus importants au monde pour l'étude des origines de l'humanité. Le plateau du Serengeti, prolongé par le Masai Mara kényan, accueille chaque année la plus grande migration terrestre d'animaux sauvages de la planète." },
+          { type: "paragraphe", text: "Le Kilimandjaro, à environ 5 895 m, domine des plaines où se joue chaque année la plus grande **migration** terrestre d'animaux sauvages de la planète, entre Serengeti et Masai Mara." },
+          { type: "chiffreCle", valeur: "5 895 m", legende: "le Kilimandjaro, plus haut sommet d'Afrique" },
+          { type: "paragraphe", text: "Sur environ 945 000 km², la Tanzanie borde huit pays, l'océan Indien et **trois grands lacs** — Victoria, Tanganyika, Malawi. Les gorges d'Olduvai, dans le Rift, comptent parmi les sites paléontologiques majeurs pour l'étude des origines de l'humanité." },
+          {
+            type: "aRetenir",
+            points: [
+              "Le Kilimandjaro est le plus haut sommet d'Afrique, à 5 895 m.",
+              "Le Serengeti accueille la plus grande migration animale terrestre au monde.",
+              "Les gorges d'Olduvai sont un site clé sur les origines de l'humanité.",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-45-tanzanie-lesson-2",
-        title: "Population et société",
+        title: "Le swahili, ciment d'une nation",
         blocks: [
-          { type: "paragraphe", text: "**Population.** La Tanzanie compte environ 67 millions d'habitants (2024)." },
-          { type: "paragraphe", text: "La population se concentre sur la côte, autour de Dar es Salaam, ainsi que sur les hauts plateaux fertiles du nord et de l'ouest, tandis que les vastes espaces de savane et de brousse restent, hors zones touristiques, peu peuplés." },
-          { type: "paragraphe", text: "**Société.** Le pays réunit plus de 120 groupes ethniques, mais avec une forte unité nationale. Le swahili, langue nationale unificatrice, et l'anglais sont officiels ; christianisme et islam sont pratiqués à parts proches (Zanzibar est musulmane)." },
-          { type: "paragraphe", text: "Cette remarquable unité nationale, rare dans une Afrique de l'Est autrement marquée par des tensions ethniques fortes, doit beaucoup à la politique linguistique et sociale menée après l'indépendance sous le président Julius Nyerere, qui a fait du swahili un puissant ciment national au-dessus des appartenances ethniques." },
+          { type: "paragraphe", text: "Plus de **120 groupes ethniques** cohabitent en Tanzanie sans les tensions ethniques fortes qui marquent souvent l'Afrique de l'Est — un résultat direct de la politique linguistique menée après l'indépendance." },
+          { type: "chiffreCle", valeur: "120+", legende: "groupes ethniques, unis par le swahili" },
+          { type: "paragraphe", text: "Sur environ 67 millions d'habitants (2024), la population se concentre sur la côte et les hauts plateaux fertiles. Le **swahili**, langue nationale unificatrice, et l'anglais sont officiels ; Zanzibar, à majorité musulmane, contraste avec un pays à parts proches entre christianisme et islam." },
+          {
+            type: "aRetenir",
+            points: [
+              "Le swahili, langue nationale, unit plus de 120 groupes ethniques.",
+              "Zanzibar est majoritairement musulmane, à la différence du reste du pays.",
+              "Cette unité linguistique reste rare dans l'Afrique de l'Est.",
+            ],
+          },
         ],
       },
       {
         id: "course-geographie-45-tanzanie-lesson-3",
-        title: "Économie, politique et repères",
+        title: "Deux pays fondus en un seul",
         blocks: [
-          { type: "paragraphe", text: "**Économie et ressources.** L'économie repose sur le tourisme (safaris, Kilimandjaro, plages de Zanzibar), l'agriculture (café, coton, noix de cajou, girofle de Zanzibar), l'or et le gaz naturel." },
-          { type: "paragraphe", text: "**Institutions et politique.** Régime : république unie (Tanganyika et Zanzibar semi-autonome). Chef de l'État (2026) : Samia Suluhu Hassan, réélue en octobre 2025 (première femme présidente du pays, arrivée au pouvoir en 2021). Monnaie : le shilling tanzanien (TZS). Devise nationale : « Uhuru na Umoja » (Liberté et Unité)." },
-          { type: "paragraphe", text: "Le Tanganyika est indépendant du Royaume-Uni depuis le 9 décembre 1961, Zanzibar depuis 1963 ; les deux territoires fusionnent en 1964 pour former la Tanzanie. Membre de l'Union africaine et de la Communauté d'Afrique de l'Est, le pays est réputé pour sa stabilité politique relative depuis l'indépendance." },
-          { type: "paragraphe", text: "**Repères et singularités.** Capitale officielle : Dodoma ; Dar es Salaam est la capitale économique. Le Kilimandjaro, le Serengeti (grande migration), l'île de Zanzibar (Stone Town, UNESCO) et les gorges d'Olduvai (fossiles humains) sont mondialement célèbres." },
+          { type: "paragraphe", text: "En 1964, le Tanganyika continental et l'archipel de Zanzibar fusionnent pour former la Tanzanie — un nom né de la contraction de leurs deux noms d'origine." },
+          { type: "paragraphe", text: "**Zanzibar** conserve son propre gouvernement au sein de la République unie. Son cœur historique, **Stone Town**, classé à l'UNESCO, garde la mémoire du commerce des épices et de la route swahilie de l'océan Indien." },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Dodoma (officielle)" },
+              { label: "Monnaie", valeur: "Shilling tanzanien (TZS)" },
+              { label: "Régime", valeur: "République unie" },
+              { label: "Indépendance", valeur: "9 décembre 1961 (Tanganyika)" },
+            ],
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le Tanganyika et Zanzibar fusionnent en 1964 pour former la Tanzanie.",
+              "Zanzibar garde son propre gouvernement au sein de la République unie.",
+              "Stone Town, classée UNESCO, témoigne du commerce des épices.",
+            ],
+          },
         ],
       },
     ],
@@ -4643,7 +4847,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quelle langue nationale unifie la Tanzanie ?",
         options: ["Le swahili", "Le zoulou", "L'amharique", "Le haoussa"],
         correctIndex: 0,
-        explanation: "Le swahili, langue nationale, est un puissant facteur d'unité en Tanzanie.",
+        explanation: "Le swahili, langue nationale, unit plus de 120 groupes ethniques en Tanzanie.",
       },
       {
         id: "course-geographie-45-tanzanie-quiz-5",
