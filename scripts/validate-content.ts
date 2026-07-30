@@ -27,7 +27,7 @@ import type { Course } from "../src/types";
  * Les règles 11 à 18 ne s'y appliquent qu'à ces matières. On étend cette liste à chaque
  * matière achevée — jamais avant.
  */
-const CHARTE_APPLIQUEE: readonly string[] = ["histoire"];
+const CHARTE_APPLIQUEE: readonly string[] = ["histoire", "geo"];
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 

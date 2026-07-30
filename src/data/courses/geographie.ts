@@ -69,7 +69,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               "Alger la Blanche : sa Casbah est classée à l'**UNESCO**",
             ],
           },
-          { type: "leSavaisTu", text: "La devise de l'Algérie, gravée sur les frontons officiels, est simple et directe : « **Par le peuple et pour le peuple** »." },
+          { type: "leSavaisTu", text: "La **devise** de l'Algérie, gravée sur les frontons officiels, est simple et directe : « Par le peuple et pour le peuple »." },
         ],
       },
     ],
@@ -897,7 +897,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               "L'**insécurité** au nord pousse à l'exode vers les villes",
             ],
           },
-          { type: "leSavaisTu", text: "Le parc national du W doit son nom à la forme du fleuve Niger à cet endroit, qui dessine un grand « W » — le parc est partagé entre le Burkina Faso, le Niger et le Bénin." },
+          { type: "leSavaisTu", text: "Le parc national du W doit son nom à la forme du fleuve Niger, qui y dessine un grand « W » — partagé entre le Burkina Faso, le Niger et le Bénin." },
         ],
       },
       {
@@ -932,13 +932,13 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               { label: "Indépendance", valeur: "5 août 1960" },
             ],
           },
-          { type: "paragraphe", text: "L'or est devenu la première exportation du pays, devant le coton, surnommé « l'or blanc ». Le Burkina Faso a quitté la **CEDEAO** pour former, avec le Mali et le Niger, l'**Alliance des États du Sahel**." },
+          { type: "paragraphe", text: "L'or est devenu la première exportation du pays, devant le coton, surnommé « l'or blanc ». Le Burkina Faso a quitté la **CEDEAO** pour former, avec le Mali et le Niger, l'Alliance des **États du Sahel**." },
           {
             type: "aRetenir",
             points: [
               "L'**or** est devenu la première exportation du pays",
               "Le nom signifie « la patrie des hommes intègres »",
-              "Membre fondateur de l'**Alliance des États du Sahel**",
+              "Membre fondateur de l'Alliance des **États du Sahel**",
             ],
           },
           { type: "leSavaisTu", text: "Tous les deux ans, Ouagadougou accueille le **FESPACO**, le plus grand festival de cinéma d'Afrique — des cinéastes de tout le continent y présentent leurs films devant un public immense." },
@@ -4693,7 +4693,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le plus jeune pays du monde",
         blocks: [
           { type: "paragraphe", text: "Le Soudan du Sud est né le 9 juillet 2011 d'un référendum approuvé par la quasi-totalité du sud, devenant le plus jeune État reconnu par l'ONU." },
-          { type: "paragraphe", text: "L'économie dépend presque entièrement du **pétrole**, complété par l'élevage. C'est l'un des pays les plus pauvres du monde, ravagé par une **guerre civile** entre 2013 et 2018, dont les séquelles pèsent encore sur la reconstruction." },
           {
             type: "reperes",
             items: [
@@ -4703,6 +4702,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               { label: "Indépendance", valeur: "9 juillet 2011" },
             ],
           },
+          { type: "paragraphe", text: "L'économie dépend presque entièrement du **pétrole**, complété par l'élevage. C'est l'un des pays les plus pauvres du monde, ravagé par une **guerre civile** entre 2013 et 2018, dont les séquelles pèsent encore sur la reconstruction." },
           {
             type: "aRetenir",
             points: [
@@ -4799,7 +4799,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Deux pays fondus en un seul",
         blocks: [
           { type: "paragraphe", text: "En 1964, le Tanganyika continental et l'archipel de Zanzibar fusionnent pour former la Tanzanie — un nom né de la contraction de leurs deux noms d'origine." },
-          { type: "paragraphe", text: "**Zanzibar** conserve son propre gouvernement au sein de la République unie. Son cœur historique, **Stone Town**, classé à l'UNESCO, garde la mémoire du commerce des épices et de la route swahilie de l'océan Indien." },
           {
             type: "reperes",
             items: [
@@ -4809,6 +4808,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               { label: "Indépendance", valeur: "9 décembre 1961 (Tanganyika)" },
             ],
           },
+          { type: "paragraphe", text: "**Zanzibar** conserve son propre gouvernement au sein de la République unie. Son cœur historique, **Stone Town**, classé à l'UNESCO, garde la mémoire du commerce des épices et de la route swahilie de l'océan Indien." },
           {
             type: "aRetenir",
             points: [
@@ -5509,7 +5509,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le plus vieux désert du monde",
         blocks: [
           { type: "paragraphe", text: "Le désert du Namib serait le plus vieux désert du monde, aride depuis peut-être 55 millions d'années. Le long de sa côte brumeuse, des dizaines d'épaves de navires rouillent depuis des décennies, échouées sans jamais avoir pu repartir." },
-          { type: "chiffreCle", valeur: "Côte des Squelettes", legende: "brumeuse, jonchée d'épaves de navires" },
+          { type: "chiffreCle", valeur: "55 M ans", legende: "l'âge estimé du désert du Namib" },
           { type: "paragraphe", text: "Cette **côte des Squelettes** doit son climat particulier à la rencontre du désert brûlant et du courant froid de **Benguela**, remonté de l'Antarctique. Les dunes de Sossusvlei, parmi les plus hautes du monde, comptent parmi les paysages les plus photographiés d'Afrique." },
           {
             type: "aRetenir",
