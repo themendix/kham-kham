@@ -438,7 +438,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-decouverte-01-masques-sculptures-lesson-1",
-        title: "Le masque n'est pas un objet",
+        title: "À quoi sert un masque africain",
         blocks: [
           {
             type: "paragraphe",
@@ -465,7 +465,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-01-masques-sculptures-lesson-2",
-        title: "Les bronzes du Bénin",
+        title: "Les bronzes du royaume du Bénin",
         blocks: [
           {
             type: "paragraphe",
@@ -496,26 +496,26 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-01-masques-sculptures-lesson-3",
-        title: "Ce que Picasso a vu",
+        title: "Les sculptures africaines et les peintres de Paris",
         blocks: [
           {
             type: "paragraphe",
-            text: "Vers 1906, un peintre espagnol découvre à Paris des sculptures sans nom d'auteur. L'art européen ne s'en remettra pas.",
+            text: "Vers 1906, des sculptures africaines arrivent dans les collections et les ateliers de Paris. Ce qui s'est joué ensuite se discute encore aujourd'hui.",
           },
           {
             type: "chiffreCle",
             valeur: "1907",
-            legende: "Les Demoiselles d'Avignon, marquées par ces formes",
+            legende: "Picasso peint Les Demoiselles d'Avignon",
           },
           {
             type: "paragraphe",
-            text: "**Picasso**, Matisse et Derain y trouvent une liberté qu'ils cherchaient : un visage n'a plus à ressembler, il peut signifier. On parlera longtemps d'**art nègre**, terme daté qui effaçait royaumes, siècles et sculpteurs.",
+            text: "**Picasso**, Matisse et Derain fréquentent ces collections. L'ampleur de leur dette fait débat — Picasso l'a lui-même niée — mais le vocabulaire de l'époque, l'**art nègre**, effaçait déjà royaumes, siècles et sculpteurs.",
           },
           {
             type: "aRetenir",
             points: [
-              "Les sculptures africaines nourrissent le **cubisme** naissant",
-              "Picasso, Matisse et Derain s'en inspirent ouvertement",
+              "Ces sculptures circulent dans le Paris du début du **XXe siècle**",
+              "L'ampleur de l'influence sur Picasso reste **débattue**",
               "Le terme « art nègre » effaçait leurs véritables auteurs",
             ],
           },
@@ -590,7 +590,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-decouverte-02-tissus-parures-lesson-1",
-        title: "Le kente se lit",
+        title: "Le kente ghanéen, un tissu qui porte des proverbes",
         blocks: [
           {
             type: "paragraphe",
@@ -620,7 +620,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-02-tissus-parures-lesson-2",
-        title: "Teindre avec de la terre",
+        title: "Le bogolan et l'indigo : teindre avec la terre",
         blocks: [
           {
             type: "paragraphe",
@@ -647,7 +647,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-02-tissus-parures-lesson-3",
-        title: "Le wax n'est pas ce qu'on croit",
+        title: "Le wax, une invention européenne devenue africaine",
         blocks: [
           {
             type: "paragraphe",
@@ -675,7 +675,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "À Lomé, les commerçantes surnommées « Nana Benz » ont bâti des fortunes sur le wax — leur surnom venait des Mercedes qu'elles conduisaient.",
+            text: "À Lomé, les commerçantes surnommées « Nana Benz » ont bâti des fortunes sur le wax dans les années 1970 — leur surnom venait des Mercedes qu'elles conduisaient.",
           },
         ],
       },
@@ -759,7 +759,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-decouverte-03-architectures-terre-lesson-1",
-        title: "Une mosquée qu'on recrépit à la main",
+        title: "Djenné, le plus grand édifice en terre du monde",
         blocks: [
           {
             type: "paragraphe",
@@ -772,7 +772,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La Grande Mosquée de **Djenné** est bâtie en **banco**, mélange de terre et de paille. Les poutres de palmier qui hérissent ses murs ne sont pas un décor : ce sont les échafaudages permanents de son entretien annuel.",
+            text: "La Grande Mosquée de **Djenné**, dans sa forme actuelle achevée en 1907, est bâtie en **banco**, mélange de terre et de paille. Les poutres de palmier qui hérissent ses murs ne sont pas un décor : ce sont les échafaudages permanents de son entretien annuel.",
           },
           {
             type: "aRetenir",
@@ -786,7 +786,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-03-architectures-terre-lesson-2",
-        title: "Bâtir contre la chaleur",
+        title: "Pourquoi les murs de terre rafraîchissent",
         blocks: [
           {
             type: "paragraphe",
@@ -816,7 +816,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-03-architectures-terre-lesson-3",
-        title: "Un patrimoine qu'il faut refaire",
+        title: "Conserver un patrimoine qu'il faut reconstruire",
         blocks: [
           {
             type: "paragraphe",
@@ -914,7 +914,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-decouverte-04-photographie-africaine-lesson-1",
-        title: "Le studio de Bamako",
+        title: "Les studios de Bamako : Seydou Keïta et Malick Sidibé",
         blocks: [
           {
             type: "paragraphe",
@@ -941,7 +941,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-04-photographie-africaine-lesson-2",
-        title: "Du studio au musée",
+        title: "Du studio de quartier aux collections internationales",
         blocks: [
           {
             type: "paragraphe",
@@ -971,7 +971,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-04-photographie-africaine-lesson-3",
-        title: "Photographier chez soi",
+        title: "Image coloniale contre portrait choisi",
         blocks: [
           {
             type: "paragraphe",
@@ -1069,7 +1069,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-decouverte-05-cinema-auteur-lesson-1",
-        title: "Le père du cinéma africain",
+        title: "Ousmane Sembène, de l'écriture au cinéma",
         blocks: [
           {
             type: "paragraphe",
@@ -1078,7 +1078,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           {
             type: "chiffreCle",
             valeur: "1966",
-            legende: "La Noire de…, premier long métrage subsaharien",
+            legende: "La Noire de…, premier long métrage de Sembène",
           },
           {
             type: "paragraphe",
@@ -1096,7 +1096,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-05-cinema-auteur-lesson-2",
-        title: "Le FESPACO",
+        title: "Le FESPACO, grand rendez-vous du cinéma africain",
         blocks: [
           {
             type: "paragraphe",
@@ -1105,16 +1105,16 @@ export const DECOUVERTE_COURSES: Course[] = [
           {
             type: "chiffreCle",
             valeur: "1969",
-            legende: "première édition du FESPACO, à Ouagadougou",
+            legende: "première Semaine du cinéma africain, à Ouagadougou",
           },
           {
             type: "paragraphe",
-            text: "Le **FESPACO** de **Ouagadougou** est le plus grand festival de cinéma d'Afrique. Il a fait exister une circulation des films entre pays africains, là où les salles de cinéma diffusaient presque uniquement des productions importées d'Europe, d'Inde et des États-Unis.",
+            text: "Institutionnalisé en **1972**, le **FESPACO** de Ouagadougou est le plus grand festival de cinéma d'Afrique. Il a fait exister une circulation des films entre pays africains, là où les salles diffusaient presque uniquement des productions importées d'Europe, d'Inde et des États-Unis.",
           },
           {
             type: "aRetenir",
             points: [
-              "Le **FESPACO** se tient à Ouagadougou depuis 1969",
+              "Né d'une Semaine du cinéma en 1969, institutionnalisé en **1972**",
               "Plus grand festival de cinéma du continent",
               "Il fait **circuler** les films entre pays africains",
             ],
@@ -1123,7 +1123,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-05-cinema-auteur-lesson-3",
-        title: "Filmer sans industrie",
+        title: "Faire du cinéma sans industrie ni financement",
         blocks: [
           {
             type: "paragraphe",
@@ -1184,7 +1184,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         options: ["Dakar", "Ouagadougou", "Tunis", "Le Caire"],
         correctIndex: 1,
         explanation:
-          "Le FESPACO se tient à Ouagadougou, au Burkina Faso, depuis 1969. C'est le plus grand festival de cinéma du continent.",
+          "Le FESPACO se tient à Ouagadougou, au Burkina Faso. Né de la Semaine du cinéma africain de 1969, il est institutionnalisé en 1972.",
       },
       {
         id: "quiz-decouverte-05-4",
@@ -1220,7 +1220,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-decouverte-06-litteratures-africaines-lesson-1",
-        title: "Écrire dans la langue de l'autre",
+        title: "Ngugi wa Thiong'o et le choix de la langue",
         blocks: [
           {
             type: "paragraphe",
@@ -1247,7 +1247,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-06-litteratures-africaines-lesson-2",
-        title: "Le roman qui répond",
+        title: "Chinua Achebe renverse le récit colonial",
         blocks: [
           {
             type: "paragraphe",
@@ -1274,7 +1274,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-06-litteratures-africaines-lesson-3",
-        title: "Prix, traductions et diaspora",
+        title: "Prix Nobel, traductions et écrivains de la diaspora",
         blocks: [
           {
             type: "paragraphe",
@@ -1372,7 +1372,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-decouverte-07-danses-lesson-1",
-        title: "La danse n'est pas un spectacle",
+        title: "La danse comme rite, pas comme spectacle",
         blocks: [
           {
             type: "paragraphe",
@@ -1399,7 +1399,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-07-danses-lesson-2",
-        title: "Ce que le corps a gardé",
+        title: "Ce que la traite a transporté : capoeira, rumba, jazz",
         blocks: [
           {
             type: "paragraphe",
@@ -1429,7 +1429,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-07-danses-lesson-3",
-        title: "Des cours aux écrans",
+        title: "Pantsula, azonto, amapiano : les danses en ligne",
         blocks: [
           {
             type: "paragraphe",
@@ -1528,7 +1528,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-decouverte-08-mode-creation-lesson-1",
-        title: "S'habiller, c'est se situer",
+        title: "Boubou, kanga, shweshwe : le vêtement comme message",
         blocks: [
           {
             type: "paragraphe",
@@ -1558,7 +1558,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-08-mode-creation-lesson-2",
-        title: "Des créateurs, pas des inspirations",
+        title: "Chris Seydou et la naissance d'une mode africaine",
         blocks: [
           {
             type: "paragraphe",
@@ -1585,7 +1585,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "course-decouverte-08-mode-creation-lesson-3",
-        title: "L'envers du décor",
+        title: "La friperie importée et ses effets",
         blocks: [
           {
             type: "paragraphe",
