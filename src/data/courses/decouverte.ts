@@ -442,7 +442,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Dans une vitrine de musée, il ne se passe rien. Le masque africain n'existe vraiment que porté, dansé, entouré de tambours et de chants.",
+            text: "Chez les **Dogon** du Mali, un masque ne reste pas accroché au mur. On le sort, on le porte, et on danse avec, au son des tambours.",
           },
           {
             type: "chiffreCle",
@@ -451,14 +451,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Chez les **Dogon** du Mali comme chez les **Baoulé** de Côte d'Ivoire, le masque sort aux moments qui comptent : funérailles, initiations, semailles. Il donne un visage à un ancêtre ou à une force qu'on ne voit pas.",
+            text: "Le masque sort aux moments qui comptent : funérailles, initiations, semailles. Il représente un ancêtre ou une force invisible. Chez les **Baoulé** de Côte d'Ivoire, la fonction est la même. La cérémonie finie, le masque est rangé.",
           },
           {
             type: "aRetenir",
             points: [
-              "Le masque est **dansé**, jamais seulement exposé",
-              "Il intervient aux rites : funérailles, initiations, semailles",
-              "Dogon et Baoulé, deux grandes traditions sculptées",
+              "Le masque africain se porte et se **danse**",
+              "Il sort pour les funérailles, initiations et semailles",
+              "Dogon du Mali et **Baoulé** de Côte d'Ivoire",
             ],
           },
         ],
@@ -469,7 +469,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 1897, une colonne britannique quitte un palais d'Afrique de l'Ouest avec des milliers de bronzes. Ils sont toujours en Europe.",
+            text: "Le royaume du Bénin se trouvait dans l'actuel Nigeria. Ses artisans coulaient le bronze depuis des siècles, et leurs œuvres ornaient le palais du roi.",
           },
           {
             type: "frise",
@@ -482,14 +482,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Au royaume du Bénin, dans l'actuel Nigeria, on coule le bronze à la **cire perdue** depuis des siècles. Plaques et têtes ornaient le palais de l'**oba** et racontaient l'histoire de la dynastie.",
+            text: "Le roi portait le titre d'**oba**. Les fondeurs travaillaient à la **cire perdue**, une technique qui permet des détails très fins. En 1897, une expédition britannique pilla le palais. Des milliers de pièces partirent dans les musées d'Europe et d'Amérique.",
           },
           {
             type: "aRetenir",
             points: [
-              "Bronzes coulés à la **cire perdue**, à Benin City",
-              "Ils ornaient le palais de l'**oba** et racontaient la dynastie",
-              "Pillés en 1897, ils font l'objet de **restitutions**",
+              "Les bronzes ornaient le palais de l'**oba**, à Benin City",
+              "Ils étaient coulés à la **cire perdue**",
+              "Pillés en 1897, ils sont aujourd'hui **restitués**",
             ],
           },
         ],
@@ -500,7 +500,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Vers 1906, des sculptures africaines arrivent dans les collections et les ateliers de Paris. Ce qui s'est joué ensuite se discute encore aujourd'hui.",
+            text: "Vers 1906, des sculptures africaines arrivent dans les musées et les ateliers de Paris. **Picasso**, Matisse et Derain vont les voir.",
           },
           {
             type: "chiffreCle",
@@ -509,14 +509,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Picasso**, Matisse et Derain fréquentent ces collections. L'ampleur de leur dette fait débat — Picasso l'a lui-même niée — mais le vocabulaire de l'époque, l'**art nègre**, effaçait déjà royaumes, siècles et sculpteurs.",
+            text: "Ces artistes cherchaient une autre façon de représenter un visage. Ont-ils copié ces sculptures ? Le débat dure encore, et Picasso l'a lui-même nié. À l'époque, on parlait d'**art nègre** : ce mot effaçait les royaumes, les siècles et les sculpteurs.",
           },
           {
             type: "aRetenir",
             points: [
-              "Ces sculptures circulent dans le Paris du début du **XXe siècle**",
-              "L'ampleur de l'influence sur Picasso reste **débattue**",
-              "Le terme « art nègre » effaçait leurs véritables auteurs",
+              "Ces sculptures circulent à Paris vers **1906**",
+              "L'influence sur Picasso reste **débattue**",
+              "Le mot « art nègre » effaçait leurs auteurs",
             ],
           },
           {
@@ -594,7 +594,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Chez les Ashanti, on ne choisit pas un tissu pour sa couleur. On le choisit pour ce qu'il dit.",
+            text: "Le kente est tissé au **Ghana**, en pays ashanti. Il est fait de bandes étroites, cousues ensemble une fois tissées.",
           },
           {
             type: "reperes",
@@ -606,7 +606,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le **kente** est tissé en bandes étroites, assemblées ensuite. Chaque motif porte un nom et un **proverbe** : s'habiller, c'est afficher une phrase. Longtemps réservé à la cour royale, il est devenu un symbole panafricain.",
+            text: "Chaque motif de kente a un nom. À ce nom correspond un **proverbe**. Porter un kente, c'est donc afficher une phrase. Longtemps réservé à la cour royale, il est aujourd'hui porté comme un symbole panafricain, jusque dans les universités américaines.",
           },
           {
             type: "aRetenir",
@@ -624,7 +624,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un vêtement qui sort littéralement du sol : au Mali, la boue n'est pas une salissure, c'est la teinture.",
+            text: "Au **Mali**, on teint le coton avec de la boue. Le tissu obtenu s'appelle le bogolan.",
           },
           {
             type: "chiffreCle",
@@ -633,14 +633,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le coton est d'abord teint aux feuilles, puis peint à la terre fermentée qui fixe les motifs en noir profond. Plus à l'ouest, les teinturières de **Kano** travaillent l'**indigo** en fosses, un savoir transmis entre femmes depuis des siècles.",
+            text: "Le coton est d'abord teint avec des feuilles. On le peint ensuite à la terre fermentée, qui fixe les motifs en noir profond. Plus à l'ouest, à **Kano** au Nigeria, les teinturières plongent les étoffes dans des fosses d'indigo. Ce savoir se transmet entre femmes depuis des siècles.",
           },
           {
             type: "aRetenir",
             points: [
               "Le **bogolan** malien est peint à la terre fermentée",
-              "L'**indigo** se teint en fosses, savoir-faire souvent féminin",
-              "Deux techniques nommées d'après leur matière première",
+              "L'**indigo** se teint en fosses, à Kano notamment",
+              "Deux techniques nommées d'après leur matière",
             ],
           },
         ],
@@ -651,7 +651,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le tissu le plus identifié à l'Afrique de l'Ouest a été inventé aux Pays-Bas, pour le marché indonésien, et n'y a jamais marché.",
+            text: "Le wax est le tissu le plus associé à l'Afrique de l'Ouest. Il a pourtant été inventé aux Pays-Bas, pour le marché indonésien.",
           },
           {
             type: "frise",
@@ -663,14 +663,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Des industriels **néerlandais** copient le batik javanais, échouent là-bas, et trouvent preneur sur les côtes africaines. Adopté, renommé, chargé de sens locaux, le **wax** y est devenu profondément africain.",
+            text: "Des industriels **néerlandais** copient le batik de Java au XIXe siècle. Le produit échoue en Indonésie. Ils le vendent alors sur les côtes africaines, où il est adopté. Chaque motif y reçoit un surnom local, et le **wax** devient un tissu africain.",
           },
           {
             type: "aRetenir",
             points: [
-              "Le **wax** vient d'une copie européenne du batik indonésien",
-              "Il a été **approprié** et renommé en Afrique de l'Ouest",
-              "Ses motifs portent des surnoms connus de tous",
+              "Le **wax** imite le batik indonésien",
+              "Vendu en Afrique après un échec en Indonésie",
+              "Ses motifs portent des **surnoms** locaux",
             ],
           },
           {
@@ -763,7 +763,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Chaque année, la ville entière escalade sa mosquée pour la recouvrir de terre fraîche. Sans ce geste collectif, elle finirait par fondre.",
+            text: "À **Djenné**, au Mali, la mosquée est construite en terre. Chaque année, les habitants la recouvrent d'une nouvelle couche pour qu'elle ne fonde pas sous la pluie.",
           },
           {
             type: "chiffreCle",
@@ -772,14 +772,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La Grande Mosquée de **Djenné**, dans sa forme actuelle achevée en 1907, est bâtie en **banco**, mélange de terre et de paille. Les poutres de palmier qui hérissent ses murs ne sont pas un décor : ce sont les échafaudages permanents de son entretien annuel.",
+            text: "C'est le plus grand bâtiment en terre crue du monde. Ses murs sont faits de **banco**, un mélange de terre et de paille. Sa forme actuelle date de 1907. Les poutres de palmier qui dépassent des murs servent d'échafaudage pendant les travaux.",
           },
           {
             type: "aRetenir",
             points: [
-              "**Djenné** abrite le plus vaste édifice en terre crue",
+              "**Djenné** abrite le plus grand édifice en terre crue",
               "Le **banco** mêle terre et paille",
-              "Les poutres servent d'échafaudage à l'entretien annuel",
+              "Les poutres servent d'échafaudage au recrépissage annuel",
             ],
           },
         ],
@@ -790,7 +790,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Bien avant la climatisation, on savait faire des murs qui rafraîchissent. La terre est le plus ancien de ces dispositifs.",
+            text: "Un mur de terre épais garde la maison fraîche en pleine chaleur. Le matériau agit comme un régulateur de température.",
           },
           {
             type: "reperes",
@@ -802,14 +802,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Un mur de terre épais absorbe la chaleur du jour et la restitue la nuit : c'est l'**inertie thermique**. Des **ksour** sahariens aux cases à impluvium de Casamance, la même contrainte a produit des formes très différentes.",
+            text: "Le jour, le mur absorbe la chaleur. La nuit, il la restitue. On appelle cela l'**inertie thermique**. Les **ksour** du Sahara et les cases à impluvium de Casamance utilisent le même principe, avec des formes très différentes.",
           },
           {
             type: "aRetenir",
             points: [
-              "L'**inertie thermique** de la terre régule la température",
-              "Le climat, pas la mode, dicte les formes",
-              "Des ksour sahariens aux cases à impluvium casamançaises",
+              "L'**inertie thermique** régule la température intérieure",
+              "Le mur absorbe la chaleur le jour, la rend la nuit",
+              "Ksour sahariens et cases à impluvium, même principe",
             ],
           },
         ],
@@ -820,7 +820,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un monument qui doit être refait pour durer pose une question inédite : que protège-t-on au juste, la matière ou le geste ?",
+            text: "La pierre se conserve pendant des siècles. La terre doit être refaite régulièrement. Cela pose un problème particulier aux gardiens du patrimoine.",
           },
           {
             type: "frise",
@@ -832,13 +832,13 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Ces édifices ne se conservent pas comme la pierre : ils exigent un **entretien annuel** et des artisans formés. L'UNESCO y protège donc autant un **savoir-faire vivant** qu'un bâtiment.",
+            text: "Ces bâtiments réclament un **entretien annuel** et des maçons formés. L'UNESCO protège donc ici un **savoir-faire vivant** autant qu'un monument. Si les artisans disparaissent, le bâtiment disparaît avec eux.",
           },
           {
             type: "aRetenir",
             points: [
-              "La terre exige un **entretien annuel**, pas une simple conservation",
-              "C'est un **savoir-faire** autant qu'un monument",
+              "La terre exige un **entretien annuel**",
+              "L'UNESCO protège un **savoir-faire**, pas qu'un bâtiment",
               "Djenné, Bandiagara et les tombes du Buganda sont classées",
             ],
           },
@@ -918,7 +918,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Dans le Bamako des années 1960, on ne va pas chez le photographe pour garder un souvenir. On y va pour se montrer tel qu'on veut être.",
+            text: "**Seydou Keïta** et **Malick Sidibé** tenaient des studios photo à Bamako, au Mali. Dans les années 1950 et 1960, toute la ville venait s'y faire tirer le portrait.",
           },
           {
             type: "chiffreCle",
@@ -927,14 +927,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Seydou Keïta** et **Malick Sidibé** photographient une jeunesse qui danse, s'habille, pose avec une montre ou un scooter emprunté. Leurs portraits en noir et blanc disent une modernité africaine choisie, et non subie.",
+            text: "Le client choisissait sa pose, son décor et ses accessoires. Beaucoup empruntaient une montre, une radio ou un scooter pour la photo. Ces portraits montrent une jeunesse qui décide de son image.",
           },
           {
             type: "aRetenir",
             points: [
-              "**Seydou Keïta** et Malick Sidibé, figures des studios de Bamako",
-              "Le modèle choisit sa pose, son décor, ses accessoires",
-              "Une modernité africaine revendiquée, pas subie",
+              "**Seydou Keïta** et Malick Sidibé, studios de Bamako",
+              "Le client choisit sa pose, son décor, ses accessoires",
+              "Des portraits d'une jeunesse qui décide de son image",
             ],
           },
         ],
@@ -945,7 +945,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Ces images ont d'abord été des commandes payées quelques francs. Elles valent aujourd'hui des fortunes dans les ventes internationales.",
+            text: "Ces photos étaient des commandes ordinaires, payées quelques francs. Elles se vendent aujourd'hui très cher dans les ventes internationales.",
           },
           {
             type: "frise",
@@ -957,14 +957,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La reconnaissance tardive a posé une question dérangeante : qui touche l'argent, et qui décide de ce qui fait **œuvre** ? Plusieurs de ces photographes sont morts avant d'avoir vu la valeur prise par leurs **négatifs**.",
+            text: "Les galeries occidentales ont redécouvert ces images dans les années 1990, soit trente ans après. Cette reconnaissance tardive pose deux questions : qui touche l'argent, et qui décide de ce qui fait **œuvre** ? Plusieurs photographes sont morts avant de voir la valeur prise par leurs **négatifs**.",
           },
           {
             type: "aRetenir",
             points: [
-              "Des commandes ordinaires devenues **œuvres** de collection",
-              "La reconnaissance est venue tard, et d'ailleurs",
-              "La question des **droits** et des négatifs reste sensible",
+              "Des commandes de quartier devenues **œuvres** de collection",
+              "Redécouvertes par les galeries dans les années 1990",
+              "La question des **droits** sur les négatifs reste vive",
             ],
           },
         ],
@@ -975,7 +975,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pendant un siècle, l'Afrique a surtout été photographiée par d'autres. Le studio a renversé le point de vue.",
+            text: "Pendant un siècle, les photographies d'Afrique ont été prises par des Européens. Les studios africains ont changé qui tient l'appareil.",
           },
           {
             type: "reperes",
@@ -987,14 +987,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Aux images coloniales répondent des portraits où le modèle décide de tout. La photographie africaine contemporaine, de **Zanele Muholi** à **Omar Victor Diop**, a fait de ce renversement son sujet même.",
+            text: "Sur les images coloniales, les personnes sont alignées, anonymes, classées par « type ». Dans le studio, le modèle décide de tout. Des photographes contemporains comme **Zanele Muholi** ou **Omar Victor Diop** ont fait de ce renversement leur sujet.",
           },
           {
             type: "aRetenir",
             points: [
-              "L'image coloniale classait ; le studio laisse **choisir**",
-              "Le renversement du regard est devenu un sujet",
-              "Muholi et Omar Victor Diop en sont deux figures actuelles",
+              "L'image coloniale classait des sujets **anonymes**",
+              "Dans le studio, le modèle décide de tout",
+              "Muholi et Omar Victor Diop poursuivent ce **renversement**",
             ],
           },
         ],
@@ -1073,7 +1073,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Il fut docker à Marseille, puis écrivain reconnu. Il s'est finalement mis au cinéma en constatant que ses livres n'atteignaient jamais ceux dont il parlait.",
+            text: "**Ousmane Sembène** était sénégalais. Il a été docker à Marseille, puis écrivain, avant de devenir cinéaste à plus de quarante ans.",
           },
           {
             type: "chiffreCle",
@@ -1082,13 +1082,13 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Ousmane Sembène**, sénégalais, tourne en wolof pour être compris chez lui et filme les humiliations ordinaires du quotidien plutôt que les grands récits héroïques. Le cinéma devient son « **école du soir** ».",
+            text: "Ses livres touchaient peu de lecteurs au Sénégal, où beaucoup ne lisaient pas le français. Il choisit donc le cinéma, et tourne en **wolof**. Il filme les humiliations du quotidien. Il appelait le cinéma son « école du soir ».",
           },
           {
             type: "aRetenir",
             points: [
-              "**Ousmane Sembène**, pionnier du cinéma subsaharien",
-              "Il tourne en **wolof**, pour être compris chez lui",
+              "**Ousmane Sembène**, pionnier du cinéma sénégalais",
+              "Il tourne en **wolof** pour être compris chez lui",
               "Le cinéma comme « école du soir » populaire",
             ],
           },
@@ -1100,7 +1100,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Tous les deux ans, une capitale sahélienne devient pendant une semaine entière le centre du cinéma de tout un continent.",
+            text: "Le FESPACO est un festival de cinéma qui se tient à **Ouagadougou**, au Burkina Faso. Il a lieu tous les deux ans.",
           },
           {
             type: "chiffreCle",
@@ -1109,14 +1109,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Institutionnalisé en **1972**, le **FESPACO** de Ouagadougou est le plus grand festival de cinéma d'Afrique. Il a fait exister une circulation des films entre pays africains, là où les salles diffusaient presque uniquement des productions importées d'Europe, d'Inde et des États-Unis.",
+            text: "Tout commence en 1969 avec une Semaine du cinéma africain. Le festival est institutionnalisé en **1972** sous le nom de FESPACO. C'est aujourd'hui le plus grand festival de cinéma du continent. Il a permis aux films africains de circuler entre pays africains.",
           },
           {
             type: "aRetenir",
             points: [
+              "Le FESPACO se tient à **Ouagadougou**, tous les deux ans",
               "Né d'une Semaine du cinéma en 1969, institutionnalisé en **1972**",
-              "Plus grand festival de cinéma du continent",
-              "Il fait **circuler** les films entre pays africains",
+              "Il fait circuler les films entre pays africains",
             ],
           },
         ],
@@ -1127,7 +1127,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Faire un film coûte cher, et les guichets sont ailleurs. Cette contrainte a façonné une esthétique autant qu'une économie.",
+            text: "Un film coûte cher. En Afrique, il n'existe pas de grande industrie du cinéma pour le financer.",
           },
           {
             type: "reperes",
@@ -1139,14 +1139,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Financer un film africain a longtemps supposé convaincre des guichets du Nord. Des cinéastes comme **Djibril Diop Mambéty** ont fait de la **rareté des moyens** une liberté de forme plutôt qu'un handicap.",
+            text: "Pendant longtemps, il fallait convaincre des guichets européens pour tourner. Ces financiers décidaient donc en partie des sujets. **Djibril Diop Mambéty** a choisi l'autre voie : tourner avec très peu, et gagner en **liberté de forme**.",
           },
           {
             type: "aRetenir",
             points: [
-              "Le financement extérieur pèse sur les projets",
-              "**Mambéty** a fait de la contrainte une liberté formelle",
-              "Une esthétique née de l'absence d'**industrie**",
+              "Le financement venait surtout de guichets **européens**",
+              "**Mambéty** tournait avec très peu de moyens",
+              "La contrainte a produit une esthétique propre",
             ],
           },
           {
@@ -1224,7 +1224,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un écrivain kényan a cessé d'écrire en anglais au sommet de sa notoriété. Ce n'était pas un caprice, c'était une thèse.",
+            text: "**Ngugi wa Thiong'o** est un écrivain kényan. Célèbre pour ses romans en anglais, il a décidé en 1986 d'écrire désormais en gikuyu, sa langue maternelle.",
           },
           {
             type: "chiffreCle",
@@ -1233,14 +1233,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Ngugi wa Thiong'o** soutient que la langue porte une vision du monde : écrire en anglais, c'est penser dans le cadre du colonisateur. Il passe au **gikuyu**, sa langue maternelle, quitte à réduire fortement son lectorat immédiat.",
+            text: "Il explique son choix dans un essai, « Decolonising the Mind ». Selon lui, une langue transporte une façon de voir le monde. Écrire en anglais reviendrait donc à penser dans le cadre du colonisateur. Ce choix a réduit son **lectorat immédiat**.",
           },
           {
             type: "aRetenir",
             points: [
-              "**Ngugi wa Thiong'o** abandonne l'anglais pour le gikuyu",
-              "La langue porte une **vision du monde**, pas seulement des mots",
-              "Un choix politique assumé, au prix du lectorat",
+              "**Ngugi wa Thiong'o** écrit en gikuyu depuis 1986",
+              "Une langue transporte une façon de voir le monde",
+              "Un choix politique, au prix du **lectorat**",
             ],
           },
         ],
@@ -1251,7 +1251,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 1958, un romancier nigérian entreprend de raconter l'arrivée des Européens du point de vue de ceux qui les voient débarquer.",
+            text: "**Chinua Achebe** était nigérian. En 1958, il publie « Things Fall Apart », un roman sur l'arrivée des Européens dans un village igbo.",
           },
           {
             type: "chiffreCle",
@@ -1260,14 +1260,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Chinua Achebe** écrit contre une bibliothèque entière de récits coloniaux où l'Africain n'a pas la parole. Traduit dans des dizaines de langues et lu dans le monde entier, son roman a ouvert la voie à toute une **génération d'écrivains** africains.",
+            text: "Jusque-là, les récits coloniaux racontaient cette rencontre du point de vue européen. Achebe la raconte du point de vue du village. Le roman est traduit dans des dizaines de langues. Il ouvre la voie à toute une **génération d'écrivains** africains.",
           },
           {
             type: "aRetenir",
             points: [
-              "**Achebe** renverse le point de vue du récit colonial",
-              "Things Fall Apart paraît en **1958**",
-              "Un livre fondateur pour la génération suivante",
+              "**Achebe** publie « Things Fall Apart » en 1958",
+              "Il raconte la colonisation du point de vue africain",
+              "Un livre fondateur pour la **génération** suivante",
             ],
           },
         ],
@@ -1278,7 +1278,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "La littérature africaine contemporaine se vend, se traduit et gagne des prix. Elle se demande aussi depuis où elle parle.",
+            text: "La littérature africaine est aujourd'hui traduite, primée et lue dans le monde entier. Une question revient pourtant : pour qui écrit-on ?",
           },
           {
             type: "frise",
@@ -1290,12 +1290,12 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Une part de ces auteurs vit et publie hors du continent, ce qui nourrit un débat ancien : écrit-on pour un **lectorat africain** ou pour les jurys du Nord ? La **diaspora** rend la question plus vive encore.",
+            text: "**Wole Soyinka**, nigérian, reçoit le prix Nobel en 1986. Abdulrazak Gurnah, tanzanien, le reçoit en 2021. Beaucoup de ces auteurs vivent et publient hors d'Afrique. Écrivent-ils pour un **lectorat africain** ou pour les jurys du Nord ?",
           },
           {
             type: "aRetenir",
             points: [
-              "Soyinka en 1986, **Gurnah** en 2021 : deux prix Nobel",
+              "**Soyinka** en 1986, Gurnah en 2021 : deux Nobel",
               "Beaucoup d'auteurs publient depuis la diaspora",
               "Le débat sur le **lectorat visé** reste ouvert",
             ],
@@ -1376,7 +1376,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Dans bien des contextes africains, personne ne regarde la danse assis. Il n'y a pas de scène, et donc pas vraiment de public.",
+            text: "Au **Sénégal**, le sabar désigne à la fois un tambour et une danse. Les deux vont ensemble : le tambour lance un rythme, le danseur y répond.",
           },
           {
             type: "chiffreCle",
@@ -1385,14 +1385,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La danse accompagne un mariage, une récolte, une initiation : elle **fait** quelque chose plutôt qu'elle ne représente. Le tambour dialogue avec le danseur, qui lui répond — le **sabar** sénégalais en est l'exemple le plus net.",
+            text: "La danse accompagne un mariage, une récolte ou une initiation. Elle a une **fonction précise** dans la cérémonie. Le public et les danseurs se mélangent, et chacun peut entrer dans le cercle à son tour.",
           },
           {
             type: "aRetenir",
             points: [
-              "La danse **agit** dans un rite, elle ne représente pas",
-              "Ni scène ni public : tout le monde participe",
-              "Le **sabar** fait dialoguer tambour et danseur",
+              "Le **sabar** unit un tambour et une danse",
+              "La danse a une fonction dans la cérémonie",
+              "Public et danseurs se mélangent dans le cercle",
             ],
           },
         ],
@@ -1403,7 +1403,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Déportées sans rien, des millions de personnes ont emporté ce qu'on ne peut pas confisquer : des gestes et des rythmes.",
+            text: "Les personnes déportées par la traite arrivaient sans aucun bien. Elles emportaient en revanche des gestes, des rythmes et des chants.",
           },
           {
             type: "frise",
@@ -1415,14 +1415,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La **capoeira** brésilienne, la rumba cubaine et les danses de la Nouvelle-Orléans gardent des structures rythmiques venues d'Afrique. La **transmission par le corps** a survécu là où tout le reste avait été arraché.",
+            text: "La **capoeira** brésilienne, la rumba cubaine et le jazz de la Nouvelle-Orléans gardent des structures rythmiques venues d'Afrique. Ces formes ont été transmises par le **corps**, de génération en génération, sans écrit ni instrument à conserver.",
           },
           {
             type: "aRetenir",
             points: [
               "La traite a transporté des **rythmes** avec les personnes",
               "Capoeira, rumba et jazz en gardent la trace",
-              "Le **corps** a transmis ce que l'écrit ne pouvait pas",
+              "Une transmission par le **corps**, sans écrit",
             ],
           },
         ],
@@ -1433,7 +1433,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Une chorégraphie née dans une cour d'Afrique du Sud peut être reprise à Séoul quinze jours plus tard.",
+            text: "Le **pantsula** vient d'Afrique du Sud, l'**azonto** du Ghana. Ces danses circulent aujourd'hui par vidéo, et sont reprises partout dans le monde.",
           },
           {
             type: "chiffreCle",
@@ -1442,14 +1442,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le pantsula sud-africain, l'**azonto** ghanéen et les danses de l'**amapiano** circulent désormais par vidéo. La reprise mondiale pose la question devenue habituelle : qui est crédité, et qui gagne de l'argent ?",
+            text: "Une chorégraphie née dans une cour de township peut être reprise à Séoul deux semaines plus tard. Cette diffusion rapide soulève une question : qui est crédité pour le pas, et qui gagne l'argent ? Les créateurs sont souvent oubliés.",
           },
           {
             type: "aRetenir",
             points: [
-              "Les danses circulent aujourd'hui par **vidéo**",
-              "Pantsula, azonto et amapiano se sont mondialisés",
-              "La question du **crédit** aux créateurs reste posée",
+              "Pantsula, azonto et amapiano circulent par **vidéo**",
+              "Une danse peut faire le tour du monde en jours",
+              "Les créateurs sont rarement **crédités**",
             ],
           },
           {
@@ -1532,7 +1532,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un boubou n'est jamais neutre. La coupe, le tissu et la façon de le porter disent d'où l'on vient et ce qu'on veut signifier.",
+            text: "Le **kanga** est un pagne imprimé d'Afrique de l'Est. Un proverbe est imprimé dans sa bordure, et c'est ce proverbe qui compte.",
           },
           {
             type: "reperes",
@@ -1544,14 +1544,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le **kanga** est-africain porte un proverbe imprimé dans sa bordure : on l'offre pour dire ce qu'on ne dirait pas à voix haute. Le vêtement fonctionne ici comme un **message**.",
+            text: "On offre un kanga pour dire quelque chose qu'on ne dirait pas à voix haute. Ailleurs, le boubou d'Afrique de l'Ouest et le **shweshwe** d'Afrique australe suivent d'autres codes. Dans les trois cas, la coupe et le tissu situent celui qui les porte.",
           },
           {
             type: "aRetenir",
             points: [
-              "Le vêtement **situe** celui qui le porte",
-              "Le **kanga** porte un proverbe imprimé",
-              "Boubou, kanga et shweshwe, trois traditions distinctes",
+              "Le **kanga** porte un proverbe dans sa bordure",
+              "On l'offre pour faire passer un message",
+              "Boubou, kanga et shweshwe, trois codes distincts",
             ],
           },
         ],
@@ -1562,7 +1562,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pendant des décennies, l'Afrique a été créditée comme « inspiration » par les grandes maisons de mode européennes. Rarement comme créatrice à part entière.",
+            text: "**Chris Seydou** était un styliste malien, né en 1949 et mort en 1994. Il a coupé le bogolan comme un tissu de haute couture.",
           },
           {
             type: "chiffreCle",
@@ -1571,14 +1571,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Chris Seydou** a traité le bogolan comme un tissu de couture, non comme un folklore. Après lui, des créateurs comme **Alphadi** ou Imane Ayissi ont fait exister une mode africaine de création sur les grands circuits internationaux.",
+            text: "Avant lui, les grandes maisons européennes citaient l'Afrique comme une « inspiration », sans nommer de créateurs africains. Il a montré qu'un tissu traditionnel pouvait devenir un vêtement de mode. Après lui, **Alphadi** et Imane Ayissi ont installé une mode africaine sur les circuits internationaux.",
           },
           {
             type: "aRetenir",
             points: [
               "**Chris Seydou** fait entrer le bogolan en haute couture",
-              "L'Afrique passe d'**inspiration** à créatrice",
-              "Alphadi et Imane Ayissi prolongent cette voie",
+              "Styliste malien, 1949-1994",
+              "**Alphadi** et Imane Ayissi ont prolongé cette voie",
             ],
           },
         ],
@@ -1589,7 +1589,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Chaque semaine, des tonnes de vêtements usagés venus d'Europe et d'Amérique arrivent dans les ports africains.",
+            text: "Chaque semaine, des tonnes de vêtements usagés d'Europe et d'Amérique arrivent dans les ports africains. Le marché de **Kantamanto**, à Accra, en est une plaque tournante.",
           },
           {
             type: "chiffreCle",
@@ -1598,14 +1598,14 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La **friperie** importée habille des millions de personnes à bas prix, mais concurrence les filières textiles locales et laisse des montagnes d'invendus. Plusieurs pays d'Afrique de l'Est ont tenté de la **restreindre**, sous forte pression commerciale.",
+            text: "Cette **friperie** habille des millions de personnes à très bas prix. Elle concurrence aussi les filières textiles locales, et laisse des montagnes d'invendus. Plusieurs pays d'Afrique de l'Est ont voulu la limiter, sous forte pression commerciale.",
           },
           {
             type: "aRetenir",
             points: [
-              "La **friperie** importée habille à bas prix",
-              "Elle concurrence les filières **textiles** locales",
-              "Les tentatives de restriction se heurtent aux pressions commerciales",
+              "La **friperie** importée habille à très bas prix",
+              "Elle concurrence les filières textiles locales",
+              "Les tentatives de restriction se heurtent au commerce",
             ],
           },
           {
