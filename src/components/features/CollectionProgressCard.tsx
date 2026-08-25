@@ -1,9 +1,8 @@
 import { Check } from "lucide-react";
 import type { Parcours } from "@/types";
-import { Card } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
 import { Badge } from "@/components/ui/Badge";
 import { ProgressBar } from "@/components/ui/ProgressBar";
+import { OutroLayout } from "@/components/features/OutroLayout";
 
 interface CollectionProgressCardProps {
   parcours: Parcours;
@@ -11,67 +10,73 @@ interface CollectionProgressCardProps {
   completedCourseIds: string[];
   /** Vrai si le cours qu'on vient de terminer a complété ce parcours à l'instant (xpReward tout juste versée) */
   justCompleted: boolean;
-  onContinue: () => void;
+  primaryLabel: string;
+  onPrimary: () => void;
+  secondaryLabel?: string;
+  onSecondary?: () => void;
 }
 
-/** Écran de fin de cours (conditionnel) : « Collection avancée ! », affiché seulement si le cours appartient à un parcours */
+/** Écran 3 (conditionnel) : « Collection avancée ! » — uniquement si le cours appartient à un parcours */
 export function CollectionProgressCard({
   parcours,
   completedCourseIds,
   justCompleted,
-  onContinue,
+  primaryLabel,
+  onPrimary,
+  secondaryLabel,
+  onSecondary,
 }: CollectionProgressCardProps) {
   const total = parcours.courseIds.length;
-  const completedCount = parcours.courseIds.filter((id) => completedCourseIds.includes(id)).length;
+  const completedFlags = parcours.courseIds.map((id) => completedCourseIds.includes(id));
+  const completedCount = completedFlags.filter(Boolean).length;
   const pct = (completedCount / total) * 100;
 
   return (
-    <Card className="overflow-hidden text-center">
-      <div className="relative flex h-[130px] items-center justify-center border-b-[3px] border-ink bg-gradient-to-br from-gold to-[#E9B871] text-[54px]">
+    <OutroLayout
+      primaryLabel={primaryLabel}
+      onPrimary={onPrimary}
+      secondaryLabel={secondaryLabel}
+      onSecondary={onSecondary}
+    >
+      <h2 className="text-[26px] font-extrabold leading-tight sm:text-[34px] md:text-[40px]">
+        {justCompleted ? "Parcours terminé ! 🎉" : "Collection avancée !"}
+      </h2>
+      <p className="mt-1.5 font-medium text-ink-muted">{parcours.title}</p>
+
+      <div className="mt-4 flex h-24 w-full items-center justify-center rounded-2xl border-[3px] border-ink bg-gradient-to-br from-gold to-[#E9B871] text-[36px] shadow-card sm:mt-5 sm:h-[140px] sm:text-[54px]">
         {parcours.emoji}
-        <div className="absolute right-4 top-4 grid h-8 w-8 place-items-center rounded-full border-[2.5px] border-ink bg-success text-white">
-          <Check className="h-4 w-4" />
-        </div>
       </div>
 
-      <div className="px-[18px] pb-[18px] pt-5">
-        <h2 className="text-2xl font-extrabold">{justCompleted ? "Parcours terminé ! 🎉" : "Collection avancée !"}</h2>
-        <p className="mt-1.5 font-medium text-ink-muted">{parcours.title}</p>
-        {justCompleted && (
-          <div className="mt-2.5 flex justify-center">
-            <Badge tone="gold">＋{parcours.xpReward} XP</Badge>
-          </div>
-        )}
-
-        <div className="mt-5 rounded-2xl border-[2.5px] border-ink bg-cream p-4">
-          <div className="text-3xl font-extrabold">
-            {completedCount}
-            <span className="text-lg font-bold text-ink-muted"> / {total} cours terminés</span>
-          </div>
-          <ProgressBar percent={pct} />
-          <div className="mt-4 flex justify-center gap-2.5">
-            {parcours.courseIds.map((id) => {
-              const done = completedCourseIds.includes(id);
-              return (
-                <div
-                  key={id}
-                  className={`grid h-8 w-8 place-items-center rounded-full border-[2.5px] border-ink ${
-                    done ? "bg-gold" : "bg-card"
-                  }`}
-                >
-                  {done && <Check className="h-4 w-4" />}
-                </div>
-              );
-            })}
-          </div>
+      {justCompleted && (
+        <div className="mt-3.5 flex justify-center sm:mt-4">
+          <Badge tone="gold">＋{parcours.xpReward} XP</Badge>
         </div>
+      )}
 
-        <div className="mt-6 flex justify-center">
-          <Button variant="primary" onClick={onContinue}>
-            Continuer →
-          </Button>
-        </div>
+      <div className="mt-4 text-2xl font-extrabold sm:mt-5 sm:text-3xl">
+        {completedCount}
+        <span className="text-base font-bold text-ink-muted sm:text-lg"> / {total} cours terminés</span>
       </div>
-    </Card>
+      <ProgressBar percent={pct} />
+
+      <div className="mt-4 flex items-center justify-center sm:mt-5">
+        {parcours.courseIds.map((id, i) => (
+          <div key={id} className="flex items-center">
+            {i > 0 && (
+              <div
+                className={`h-[3px] w-6 shrink-0 ${completedFlags[i - 1] && completedFlags[i] ? "bg-ink" : "bg-ink/20"}`}
+              />
+            )}
+            <div
+              className={`grid h-9 w-9 shrink-0 place-items-center rounded-full border-[2.5px] border-ink ${
+                completedFlags[i] ? "bg-gold" : "bg-card"
+              }`}
+            >
+              {completedFlags[i] && <Check className="h-4 w-4" />}
+            </div>
+          </div>
+        ))}
+      </div>
+    </OutroLayout>
   );
 }

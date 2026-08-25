@@ -644,17 +644,28 @@ politique et repères).
 
 | Leçon | Bloc visuel imposé |
 |---|---|
-| 1 — Le territoire | `chiffreCle` (superficie, altitude, part de désert…) |
-| 2 — Population et société | `chiffreCle` (population, taux d'urbanisation) **ou** `citation` (proverbe local sourcé) |
-| 3 — Économie, politique et repères | **`reperes` obligatoire** : capitale, monnaie, régime, indépendance |
+| 1 — le territoire | `chiffreCle` (superficie, altitude, part de désert…) |
+| 2 — population et société | `chiffreCle` (population, urbanisation) **ou** `citation` (proverbe local attesté) |
+| 3 — économie et repères | **`reperes` obligatoire** : capitale, monnaie, régime, indépendance |
+
+**La Géographie a son propre registre**, distinct du récit historique : angle unique par pays,
+comparaison plutôt que superlatif, contraste interne comme moteur, proverbe local en `citation`,
+« le savais-tu ? » promu en pièce maîtresse, et **titres de leçon propres au pays** (« Le royaume
+dans le ciel » plutôt que « Le territoire ») — la structure sous-jacente reste fixe, seule la
+surface devient unique. Le détail, la règle de repli pour les pays sans superlatif et les exemples
+de référence sont dans `docs/PROMPT-REECRITURE-GEOGRAPHIE.md`.
+
+**Raison** : en Histoire la monotonie est *dans* la leçon ; en Géographie elle est **entre les
+54 fiches**. Un gabarit rigide, qui sauve l'Histoire, aggraverait la Géographie s'il se voyait.
 
 Le bloc `reperes` de la leçon 3 absorbe intégralement le contenu « carte d'identité » actuellement
 noyé en prose (« Régime : république. Chef de l'État (2026) : … Monnaie : le dinar algérien
 (DZD). »). Cette prose disparaît.
 
-**Note de maintenance** : les noms de chefs d'État datés « (2026) » dans le contenu actuel sont une
-dette. Passés en `reperes`, ils restent une dette — mais localisée dans un champ identifiable, ce
-qui rend une mise à jour de masse possible. À trancher séparément (Annexe B, Q4).
+**Les noms de chefs d'État sont supprimés de toutes les fiches** (décision du 29/07/2026, Q4). Les
+mentions « Chef de l'État (2026) : … » seraient fausses dans deux ans sur 54 fiches, et une
+application de culture générale n'a pas vocation à être un annuaire politique à jour. Capitale,
+monnaie, régime et date d'indépendance sont stables : eux passent en `reperes`.
 
 ### 7.3 Personnalités — le portrait
 
@@ -1061,11 +1072,9 @@ leçon visible descend à ~110 mots et l'utilisateur choisit d'en savoir plus. R
 replié est un bloc non lu, et c'est précisément celui qui donne envie de continuer.
 **Recommandation : déplié**, décision à réévaluer après le pilote.
 
-**Q4 — Les données datées des fiches Géographie.**
-« Chef de l'État (2026) : … » sera faux dans deux ans, sur 54 fiches. Le bloc `reperes` localise
-le problème sans le résoudre. Options : retirer les chefs d'État des `reperes` (le régime et la
-capitale, eux, ne bougent pas), ou assumer une revue annuelle. À trancher lors de la passe
-Géographie.
+**Q4 — Les données datées des fiches Géographie. — TRANCHÉE le 29/07/2026.**
+Les noms de chefs d'État sont retirés des 54 fiches. `reperes` ne porte que des données stables :
+capitale, monnaie, régime, indépendance. Voir § 7.2.
 
 **Q5 — Exception de ton pour les sujets graves.**
 Traite négrière, apartheid, génocide des Tutsi, colonisation. Le pilote inclut le cours 24
@@ -1091,6 +1100,10 @@ précisément pour éprouver ce point. Si la charte doit prévoir une exception 
 | J11 | Sources d'images mixtes pour Personnalités : illustration pour les figures anciennes, archive pour le XXᵉ siècle | Tout illustrer, ou tout photographier | Illustrer une figure dont la photo existe serait une falsification douce. Réserve assumée : deux esthétiques à rapprocher par le traitement (§ 4.8) |
 | J12 | `frise.unite` ajouté au schéma | Répéter « av. J.-C. » dans chaque pastille | Débordement à 360 px et jusqu'à 10 mots de budget gaspillés. Découvert en maquettant, pas en spécifiant (§ 4.6) |
 | J13 | L'Histoire saute la conversion mécanique | Convertir les 524 leçons uniformément | Les 200 leçons d'Histoire sont des paragraphes monolithiques : la conversion produirait un bloc que la réécriture jetterait aussitôt. Voir `docs/PROMPT-REECRITURE-HISTOIRE.md` § 1 |
+| J14 | La Géographie a son propre registre, pas une variante du style Histoire | Un seul style éditorial pour tout le catalogue | Les deux matières souffrent de monotonies différentes : *dans* la leçon en Histoire, **entre les fiches** en Géographie. Le même remède aggraverait la seconde (§ 7.2) |
+| J15 | Titres de leçon propres au pays, structure fixe en dessous | Garder « Le territoire » / « Population et société » sur 54 fiches | C'est le marqueur anti-répétition le plus visible. Le lecteur garde ses repères (le découpage ne bouge pas) sans avoir l'impression de relire la même fiche. Coût : 162 titres |
+| J16 | Proverbe local en `citation`, optionnel et seulement si attesté | Obligatoire sur 54 fiches, ou pas de citation du tout | C'est la signature de Sankofa, mais 54 proverbes sourcés est un travail de recherche : rendre le bloc obligatoire pousserait à en fabriquer un sous contrainte, ce qui trahirait la mission plutôt que de l'illustrer |
+| J17 | Chefs d'État retirés des 54 fiches | Les garder dans `reperes`, ou les dater visiblement | Une donnée fausse dans deux ans sur 54 fiches coûte plus en crédibilité qu'elle n'apporte. `reperes` ne porte que du stable (§ 7.2) |
 
 ---
 

@@ -1,8 +1,7 @@
 import { Flame } from "lucide-react";
 import type { StreakState } from "@/types";
-import { Card } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
 import { WeekDayRow } from "@/components/features/WeekDayRow";
+import { OutroLayout } from "@/components/features/OutroLayout";
 
 interface StreakCelebrationProps {
   streak: StreakState;
@@ -10,12 +9,12 @@ interface StreakCelebrationProps {
   onHome: () => void;
 }
 
-/** Dernier écran de la séquence de fin de cours : célébration du streak, retour à l'accueil */
+/** Écran 5 (conditionnel) : dernier écran possible de la séquence, affiché seulement si la série a réellement progressé aujourd'hui */
 export function StreakCelebration({ streak, subjectName, onHome }: StreakCelebrationProps) {
   return (
-    <Card className="p-8 text-center">
-      <Flame className="mx-auto h-16 w-16 text-flame" fill="currentColor" />
-      <div className="mt-2 text-5xl font-extrabold">{streak.count}</div>
+    <OutroLayout primaryLabel="Retour à l'accueil 🏠" onPrimary={onHome}>
+      <Flame className="mx-auto h-12 w-12 text-flame sm:h-16 sm:w-16" fill="currentColor" />
+      <div className="mt-3 text-[40px] font-extrabold leading-none sm:text-[56px]">{streak.count}</div>
       <div className="mt-1 font-heading text-lg font-bold uppercase tracking-wide">
         {streak.count > 1 ? "Jours" : "Jour"} de suite
       </div>
@@ -26,12 +25,6 @@ export function StreakCelebration({ streak, subjectName, onHome }: StreakCelebra
       <div className="mt-6">
         <WeekDayRow weekDays={streak.weekDays} />
       </div>
-
-      <div className="mt-6">
-        <Button variant="primary" onClick={onHome}>
-          Retour à l'accueil 🏠
-        </Button>
-      </div>
-    </Card>
+    </OutroLayout>
   );
 }

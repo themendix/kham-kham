@@ -61,6 +61,26 @@ n'ont besoin que d'un contraste non-texte de 3:1, déjà respecté.
   quasi toujours prêtes à temps ; `optional` évite un repaint tardif du texte déjà affiché dans
   la police de repli (voir `docs/ARCHITECTURE.md` § Polices).
 
+## Échelle typographique des écrans de fin de cours
+
+Les titres de la séquence de fin de cours (`OutroLayout` et les écrans qui l'utilisent :
+`LearningDoneCard`, `LevelUpCard`, `CollectionProgressCard`, `QuizOutcomeCard`) utilisent une
+échelle nettement au-dessus du reste de l'application, pour marquer ces écrans plein écran
+comme un moment fort plutôt qu'un titre de carte parmi d'autres :
+
+| Usage | Classe | Taille |
+|---|---|---|
+| Titre d'écran d'outro | `text-[34px] md:text-[40px]` (`font-heading`, 800) | ~34 px mobile / ~40 px desktop |
+| Titre de carte standard (référence) | `text-2xl` | 24 px |
+
+## Boutons pleine largeur (`Button` `size="lg"`)
+
+`Button` accepte une prop `size?: "md" | "lg"` (défaut `"md"`, rendu strictement inchangé).
+`size="lg"` produit une pilule **pleine largeur**, plus haute (`py-4` contre `py-3`) et au
+libellé plus grand (`text-base` contre `text-[15px]`) — réservée au pied de page de la séquence
+de fin de cours (`OutroLayout`), où chaque écran ne porte qu'un ou deux boutons empilés plutôt
+que plusieurs actions côte à côte.
+
 ## Ombres et rayons
 
 - `shadow-card` : `6px 6px 0 0 var(--color-ink)` — ombre large, cartes principales (swipe card, cours à la une, parcours).

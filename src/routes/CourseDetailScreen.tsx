@@ -9,18 +9,24 @@ import { PARCOURS } from "@/data/parcours";
 import { useAppStore } from "@/store/useAppStore";
 import { getSubjectProgress, type SubjectProgress } from "@/lib/subjectProgress";
 import { lessonKey } from "@/lib/featured";
-import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
-import { Card } from "@/components/ui/Card";
+import { toISODate } from "@/lib/gamification";
+import {
+  buildCelebrationSegment,
+  resolveOutroTail,
+  type CelebrationScreen,
+  type OutroScreen,
+} from "@/lib/outroSequence";
 import { Button } from "@/components/ui/Button";
-import { Tag } from "@/components/ui/Tag";
-import { Badge } from "@/components/ui/Badge";
 import { LessonViewer } from "@/components/features/LessonViewer";
 import { QuizPlayer } from "@/components/features/QuizPlayer";
 import { LearningDoneCard } from "@/components/features/LearningDoneCard";
+import { LevelUpCard } from "@/components/features/LevelUpCard";
 import { CollectionProgressCard } from "@/components/features/CollectionProgressCard";
+import { QuizOutcomeCard } from "@/components/features/QuizOutcomeCard";
 import { StreakCelebration } from "@/components/features/StreakCelebration";
 
-type Phase = "lessons" | "learningDone" | "quiz" | "collection" | "streak";
+/** "lessons" (lecture des leçons) suivi de la séquence de fin de cours (voir src/lib/outroSequence.ts) */
+type Stage = "lessons" | OutroScreen;
 
 /**
  * Charge le contenu complet du cours demandé (leçons + quiz) — en ne récupérant que le chunk de
@@ -75,7 +81,7 @@ export function CourseDetailScreen() {
   return <CourseDetailBody key={course.id} course={course} />;
 }
 
-/** Écran de détail d'un cours : leçons paginées, puis séquence de fin de cours (apprentissage terminé, mini quiz optionnel, collection, streak) */
+/** Écran de détail d'un cours : leçons paginées, puis séquence de fin de cours (célébration, mini quiz optionnel, streak) */
 function CourseDetailBody({ course }: { course: Course }) {
   const navigate = useNavigate();
   const progress = useAppStore((s) => s.progress);
@@ -86,7 +92,7 @@ function CourseDetailBody({ course }: { course: Course }) {
   const markCourseStarted = useAppStore((s) => s.markCourseStarted);
   const completeLesson = useAppStore((s) => s.completeLesson);
 
-  const [phase, setPhase] = useState<Phase>("lessons");
+  const [stage, setStage] = useState<Stage>("lessons");
   // Reprise de lecture : reprend à la première leçon non lue, sauf cours déjà terminé
   // (relecture depuis le début, cohérent avec `isRevision` ci-dessous) ; repli sur 0.
   const [lessonIndex, setLessonIndex] = useState(() => {
@@ -97,16 +103,36 @@ function CourseDetailBody({ course }: { course: Course }) {
     return firstUnread === -1 ? 0 : firstUnread;
   });
   const [rankAtStart, setRankAtStart] = useState<string | null>(null);
-  // Niveau numérique (distinct du rang nommé) : seul indicateur de progression une fois le
+  // Niveau numérique global (distinct du rang nommé) : seul indicateur de progression une fois le
   // dernier rang nommé atteint (A1), où `rank` reste figé sur "Gardien du savoir".
   const [levelAtStart, setLevelAtStart] = useState<number | null>(null);
   const [subjectBefore, setSubjectBefore] = useState<SubjectProgress | null>(null);
   const [isRevision, setIsRevision] = useState(false);
   const [parcoursJustCompleted, setParcoursJustCompleted] = useState(false);
+  // La série a réellement progressé aujourd'hui : conditionne l'écran 5 (streak), capturé avant
+  // l'appel à `updateStreak()` — qui est un no-op si l'utilisateur a déjà été actif aujourd'hui.
+  const [streakAdvanced, setStreakAdvanced] = useState(false);
+
+  const [celebrationSegment, setCelebrationSegment] = useState<CelebrationScreen[]>([]);
+  const [celebrationIndex, setCelebrationIndex] = useState(0);
+  const [tailScreens, setTailScreens] = useState<OutroScreen[]>([]);
+  const [tailIndex, setTailIndex] = useState(0);
+  // Change à chaque "Refaire le quiz" : force le remontage de QuizPlayer (state interne remis à zéro)
+  const [quizAttempt, setQuizAttempt] = useState(0);
+  const [quizResultState, setQuizResultState] = useState<{ score: number; total: number } | null>(
+    null,
+  );
 
   useEffect(() => {
     setLastCourse(course.id);
   }, [course.id, setLastCourse]);
+
+  // Chaque écran de la séquence démarre en haut de page : sans ça, le scroll résiduel d'une
+  // leçon longue (ou d'un écran d'outro précédent) peut masquer le bouton "Retour", pourtant
+  // censé rester visible pendant toute la séquence (voir docs/PROMPT-refonte-ecrans-fin-de-cours.md § 1.3).
+  useEffect(() => {
+    window.scrollTo({ top: 0 });
+  }, [stage]);
 
   const category = getCategory(course.categoryId)!;
   const parcours = PARCOURS.find((p) => p.courseIds.includes(course.id));
@@ -128,34 +154,94 @@ function CourseDetailBody({ course }: { course: Course }) {
 
   function finishLearning() {
     const alreadyCompleted = progress.completedCourseIds.includes(course.id);
-    setRankAtStart(progress.rank);
-    setLevelAtStart(progress.level);
-    setSubjectBefore(getSubjectProgress(course.categoryId, progress, COURSE_INDEX));
-    setIsRevision(alreadyCompleted);
+    const rankBefore = progress.rank;
+    const levelBefore = progress.level;
+    const subjectBeforeCredit = getSubjectProgress(course.categoryId, progress, COURSE_INDEX);
+    const streakAlreadyToday = progress.streak.lastActiveDate === toISODate(new Date());
+    const parcoursAlreadyDone = !!parcours && progress.completedParcoursIds.includes(parcours.id);
+
     completeLesson(course.id, course.lessons[lessonIndex].id);
     completeCourse(course.id, course.xp);
     updateStreak();
-    if (parcours && !progress.completedParcoursIds.includes(parcours.id)) {
-      // completeCourse (set Zustand) est synchrone : l'état est déjà à jour ici.
-      setParcoursJustCompleted(useAppStore.getState().progress.completedParcoursIds.includes(parcours.id));
-    }
-    setPhase("learningDone");
+
+    // completeCourse/updateStreak (set Zustand) sont synchrones : l'état est déjà à jour ici.
+    const stateAfter = useAppStore.getState().progress;
+    const subjectAfterCredit = getSubjectProgress(course.categoryId, stateAfter, COURSE_INDEX);
+
+    setRankAtStart(rankBefore);
+    setLevelAtStart(levelBefore);
+    setSubjectBefore(subjectBeforeCredit);
+    setIsRevision(alreadyCompleted);
+    setStreakAdvanced(!streakAlreadyToday);
+    setParcoursJustCompleted(
+      !parcoursAlreadyDone && !!parcours && stateAfter.completedParcoursIds.includes(parcours.id),
+    );
+
+    const subjectLeveledUp = !alreadyCompleted && subjectAfterCredit.level > subjectBeforeCredit.level;
+    const segment = buildCelebrationSegment({
+      leveledUp: subjectLeveledUp,
+      hasParcours: !alreadyCompleted && !!parcours,
+    });
+    setCelebrationSegment(segment);
+    setCelebrationIndex(0);
+    setStage(segment[0]);
   }
 
-  function advanceOutro() {
-    setPhase(parcours ? "collection" : "streak");
+  function advanceCelebration() {
+    const nextIndex = celebrationIndex + 1;
+    setCelebrationIndex(nextIndex);
+    setStage(celebrationSegment[nextIndex]);
+  }
+
+  /** Carrefour de décision porté par le dernier écran de célébration : faire ou sauter le quiz */
+  function decideQuiz(takeQuiz: boolean) {
+    const tail = resolveOutroTail({ takeQuiz, streakAdvanced });
+    setTailScreens(tail);
+    setTailIndex(0);
+    if (tail.length === 0) {
+      navigate("/");
+      return;
+    }
+    setStage(tail[0]);
+  }
+
+  function advanceTail() {
+    const nextIndex = tailIndex + 1;
+    if (nextIndex >= tailScreens.length) {
+      navigate("/");
+      return;
+    }
+    setTailIndex(nextIndex);
+    setStage(tailScreens[nextIndex]);
   }
 
   function handleQuizFinish(score: number, total: number) {
     recordQuizResult({ courseId: course.id, score, total, date: new Date().toISOString() });
-    advanceOutro();
+    setQuizResultState({ score, total });
+    advanceTail();
+  }
+
+  function retryQuiz() {
+    setQuizAttempt((a) => a + 1);
+    setQuizResultState(null);
+    setTailIndex(0);
+    setStage("quiz");
   }
 
   const rankedUp = rankAtStart !== null && progress.rank !== rankAtStart;
-  // Célébration de montée de niveau numérique, distincte du changement de rang nommé — c'est
-  // elle qui prend le relais une fois "Gardien du savoir" atteint (A1), où `rankedUp` ne se
-  // déclenchera plus jamais puisque `rank` reste figé.
+  // Célébration de montée de niveau numérique global, distincte du changement de rang nommé —
+  // elle prend le relais une fois "Gardien du savoir" atteint (A1), où `rankedUp` ne se
+  // déclenchera plus jamais puisque `rank` reste figé. Sans lien avec l'écran 2 (niveau de
+  // matière) : affichée en pastille sur l'écran 1 uniquement.
   const levelUp = levelAtStart !== null && progress.level > levelAtStart && !rankedUp;
+
+  const isLastCelebration = celebrationIndex === celebrationSegment.length - 1;
+  const celebrationPrimaryLabel = isLastCelebration ? "Passer au quiz →" : "Continuer →";
+  const celebrationOnPrimary = isLastCelebration ? () => decideQuiz(true) : advanceCelebration;
+  const celebrationSecondaryLabel = isLastCelebration ? "Retour à l'accueil" : undefined;
+  const celebrationOnSecondary = isLastCelebration ? () => decideQuiz(false) : undefined;
+
+  const streakFollows = tailIndex + 1 < tailScreens.length;
 
   return (
     <div className="mx-auto max-w-2xl">
@@ -167,27 +253,7 @@ function CourseDetailBody({ course }: { course: Course }) {
         <ArrowLeft className="h-4 w-4" /> Retour
       </button>
 
-      {phase !== "lessons" && (
-        <Card className="mb-4 overflow-hidden">
-          <div
-            className={`flex h-[130px] items-center justify-center border-b-[3px] border-ink bg-gradient-to-br text-[54px] ${SUBJECT_GRADIENT[category.color]}`}
-          >
-            {course.emoji}
-          </div>
-          <div className="px-[18px] pb-[18px] pt-4">
-            <Tag label={category.name} emoji={category.emoji} variant="dark" />
-            <div className="mt-2.5 text-xl font-extrabold">{course.title}</div>
-            <p className="mt-1.5 text-sm font-medium text-ink-muted">{course.description}</p>
-            <div className="mt-3 flex flex-wrap gap-2.5">
-              <Badge>📖 {course.lessons.length} leçons</Badge>
-              <Badge>✅ {course.quiz.length} quiz</Badge>
-              <Badge tone="gold">＋{course.xp} XP</Badge>
-            </div>
-          </div>
-        </Card>
-      )}
-
-      {phase === "lessons" && (
+      {stage === "lessons" && (
         <LessonViewer
           lesson={course.lessons[lessonIndex]}
           lessonIndex={lessonIndex}
@@ -199,7 +265,7 @@ function CourseDetailBody({ course }: { course: Course }) {
         />
       )}
 
-      {phase === "learningDone" && subjectBefore && (
+      {stage === "done" && subjectBefore && (
         <LearningDoneCard
           course={course}
           category={category}
@@ -210,26 +276,63 @@ function CourseDetailBody({ course }: { course: Course }) {
           newRank={progress.rank}
           levelUp={levelUp}
           newLevel={progress.level}
-          onMiniQuiz={() => setPhase("quiz")}
-          onSkip={advanceOutro}
+          primaryLabel={celebrationPrimaryLabel}
+          onPrimary={celebrationOnPrimary}
+          secondaryLabel={celebrationSecondaryLabel}
+          onSecondary={celebrationOnSecondary}
         />
       )}
 
-      {phase === "quiz" && (
-        <QuizPlayer questions={course.quiz} accentColor={category.color} onFinish={handleQuizFinish} />
+      {stage === "levelUp" && subjectBefore && (
+        <LevelUpCard
+          category={category}
+          fromLevel={subjectBefore.level}
+          toLevel={getSubjectProgress(course.categoryId, progress, COURSE_INDEX).level}
+          primaryLabel={celebrationPrimaryLabel}
+          onPrimary={celebrationOnPrimary}
+          secondaryLabel={celebrationSecondaryLabel}
+          onSecondary={celebrationOnSecondary}
+        />
       )}
 
-      {phase === "collection" && parcours && (
+      {stage === "collection" && parcours && (
         <CollectionProgressCard
           parcours={parcours}
           completedCourseIds={progress.completedCourseIds}
           justCompleted={parcoursJustCompleted}
-          onContinue={() => setPhase("streak")}
+          primaryLabel={celebrationPrimaryLabel}
+          onPrimary={celebrationOnPrimary}
+          secondaryLabel={celebrationSecondaryLabel}
+          onSecondary={celebrationOnSecondary}
         />
       )}
 
-      {phase === "streak" && (
-        <StreakCelebration streak={progress.streak} subjectName={category.name} onHome={() => navigate("/")} />
+      {stage === "quiz" && (
+        <QuizPlayer
+          key={quizAttempt}
+          questions={course.quiz}
+          accentColor={category.color}
+          onFinish={handleQuizFinish}
+        />
+      )}
+
+      {stage === "quizResult" && quizResultState && (
+        <QuizOutcomeCard
+          score={quizResultState.score}
+          total={quizResultState.total}
+          primaryLabel={streakFollows ? "Continuer →" : "Retour à l'accueil"}
+          onPrimary={streakFollows ? advanceTail : () => navigate("/")}
+          secondaryLabel="↻ Refaire le quiz"
+          onSecondary={retryQuiz}
+        />
+      )}
+
+      {stage === "streak" && (
+        <StreakCelebration
+          streak={progress.streak}
+          subjectName={category.name}
+          onHome={() => navigate("/")}
+        />
       )}
     </div>
   );

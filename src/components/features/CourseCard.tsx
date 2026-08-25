@@ -4,13 +4,7 @@ import { Heart, BookOpen, CheckCircle2 } from "lucide-react";
 import type { Category, CourseMeta } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
-import { getCourseImage, getCourseImagePosition } from "@/lib/courseImages";
-
-const OBJECT_POSITION = {
-  left: "object-left",
-  right: "object-right",
-  center: "object-center",
-} as const;
+import { getCourseImage, getCourseImagePosition, OBJECT_POSITION } from "@/lib/courseImages";
 
 interface CourseCardProps {
   course: CourseMeta;

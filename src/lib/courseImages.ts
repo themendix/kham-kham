@@ -65,3 +65,10 @@ export function getCourseImagePosition(courseId: string): "left" | "right" | "ce
   if (courseId.startsWith("course-perso-")) return "center";
   return "right";
 }
+
+/** Classe Tailwind `object-position` correspondante, partagée par `CourseCard` et `LearningDoneCard`. */
+export const OBJECT_POSITION = {
+  left: "object-left",
+  right: "object-right",
+  center: "object-center",
+} as const;

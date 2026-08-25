@@ -210,6 +210,44 @@ cours. Détail complet (table des chiffres, seuils, impact utilisateur) dans
   côté matières émergentes.
 - Périmètre volontairement limité à la Géographie et à la gamification — pas de contenu Phase 8.
 
+## Livraison (chantier Refonte des écrans de fin de cours)
+
+La séquence de fin de cours (Phase 7) a été entièrement refondue : structure, rythme vertical et
+hiérarchie typographique repris d'une application de référence, mais couleurs/contours/ombres/
+polices restant strictement ceux du design system néo-brutaliste de Sankofa. Aucune migration du
+store (version de persistance toujours **7**). Détail complet dans `docs/ARCHITECTURE.md` §
+Séquence de fin de cours.
+
+- **Segment de célébration (1 à 3 écrans) + queue conditionnelle**, au lieu de l'ancienne chaîne
+  figée `learningDone → quiz → collection → streak` : « Apprentissage terminé ! » (toujours) →
+  « Niveau supérieur ! » (nouveau, seulement si le **niveau de matière** vient de monter — distinct
+  du rang/niveau global, resté en pastilles sur l'écran 1) → « Collection avancée ! » (seulement
+  si le cours appartient à un parcours) → quiz optionnel avec **écran de résultat** (nouveau,
+  n'existait pas) → streak (seulement si la série a réellement progressé aujourd'hui, plus
+  affichée systématiquement). Logique d'enchaînement extraite en module pur testé
+  (`src/lib/outroSequence.ts`, `buildCelebrationSegment`/`resolveOutroTail`).
+- **Le dernier écran de célébration porte toujours le carrefour de décision** (`Passer au quiz →`
+  / `Retour à l'accueil`) : sauter le quiz ne veut plus dire sortir immédiatement — si la série
+  progresse, l'écran streak s'affiche quand même avant le retour à l'accueil. Seul chemin sans
+  écran de clôture : quiz sauté **et** série déjà validée aujourd'hui.
+- Nouveaux composants présentationnels : `OutroLayout` (mise en page plein écran commune, pied de
+  page à boutons pleine largeur), `LevelUpCard` (écran « Niveau supérieur ! »), `QuizOutcomeCard`
+  (écran de résultat du quiz). `LearningDoneCard`, `CollectionProgressCard`, `StreakCelebration`
+  refondus visuellement (vignette carrée pour la première, bandeau 16:9 + chemin de pastilles pour
+  la deuxième) ; la machine à états `LevelUpStage` de l'ancien `LearningDoneCard` (~60 lignes,
+  simulait la montée de niveau dans cet écran) est supprimée, remplacée par l'écran dédié.
+- `Button` gagne `size?: "md" | "lg"` (rendu par défaut inchangé) pour la pilule pleine largeur du
+  pied de page de la séquence. `OBJECT_POSITION` (recadrage `object-position` d'une illustration
+  de cours) déplacé de `CourseCard.tsx` vers `src/lib/courseImages.ts` pour être partagé avec
+  `LearningDoneCard`.
+- Bouton « Retour » toujours visible : un `window.scrollTo({ top: 0 })` à chaque changement
+  d'écran de la séquence corrige un défaut réel trouvé en vérification navigateur (le scroll
+  résiduel d'une leçon longue pouvait le masquer).
+- Vérifié en navigateur (Playwright piloté manuellement, pas de nouvelle dépendance projet) : les
+  8 combinaisons niveau/collection/quiz/streak du cahier des charges, plus la révision, plus la
+  vignette carrée sur 9 cours répartis Histoire/Géographie/Personnalités (dont les pays à drapeau
+  cadré à gauche) ; navigation clavier et `prefers-reduced-motion` vérifiés sans régression.
+
 ## Ce qui N'est PAS encore fait
 
 - Animations avancées au-delà du geste de swipe (transitions d'écran, micro-interactions).

@@ -108,22 +108,94 @@ La carte « À la une » de la Biblio (`BiblioScreen`, route `/biblio`) ne met p
 
 `BiblioScreen` orchestre (résolution de la clé vedette, appel des actions) ; le rendu de la carte est un composant local `FeaturedLessonCard` (repli/dépliage du contenu de la leçon), keyé par `featuredLessonKey` pour repartir replié à chaque nouvelle vedette sans `useEffect` dédié.
 
-## Séquence de fin de cours (Phase 7)
+## Séquence de fin de cours (Phase 7, puis refonte)
 
-`CourseDetailScreen` (route `/cours/:courseId`) ne se termine plus sur un unique écran de résultat de quiz : après les leçons, une **séquence de fin de cours** enchaîne plusieurs écrans, pilotée par une machine à états locale (`Phase = "lessons" | "learningDone" | "quiz" | "collection" | "streak"`) :
+`CourseDetailScreen` (route `/cours/:courseId`) enchaîne, après les leçons, un **segment de
+célébration** (1 à 3 écrans plein écran, sans `Card` englobante) suivi d'une **queue**
+conditionnelle (quiz optionnel puis streak) :
 
 ```
-lessons → learningDone → (quiz, optionnel) → collection (si le cours appartient à un Parcours) → streak → navigate("/")
+lessons → [done] → (levelUp, si le niveau de matière vient de monter)
+                 → (collection, si le cours appartient à un Parcours)
+                 → (quiz → quizResult, si l'utilisateur choisit de le faire)
+                 → (streak, si la série a réellement progressé aujourd'hui)
+                 → navigate("/")
 ```
 
-- **`lessons → learningDone`** : `goNextLesson` appelle `finishLearning()` sur la dernière leçon au lieu d'enchaîner vers un quiz obligatoire. `finishLearning()` centralise tout le crédit en une fois — `completeLesson` (dernière leçon), `completeCourse` (XP, idempotent), `addMastery` (seulement si le cours n'était pas déjà terminé) et `updateStreak` — donc **le cours est considéré terminé dès la fin des leçons**, avant même le quiz.
-- **`learningDone`** : le quiz devient un bonus optionnel (« Mini Quiz »). Le bouton ✗ saute directement à la suite (`advanceOutro()`), sans perdre le crédit déjà accordé.
-- **`quiz → outro`** : si l'utilisateur fait le Mini Quiz, `handleQuizFinish` ne fait plus qu'un `recordQuizResult` (historique du Profil) puis appelle `advanceOutro()` — il ne crédite plus l'XP/la maîtrise, déjà attribués par `finishLearning()`.
-- **`advanceOutro()`** : cherche un `Parcours` contenant le cours (`PARCOURS.find(p => p.courseIds.includes(course.id))`) ; s'il en trouve un, passe par l'écran « Collection avancée ! » (`collection`), sinon saute directement à « Jour de suite » (`streak`).
+Le **segment de célébration** est entièrement déterminé dès la fin des leçons (`finishLearning()`,
+via la fonction pure `buildCelebrationSegment({ leveledUp, hasParcours })`,
+`src/lib/outroSequence.ts`) : toujours `"done"`, puis `"levelUp"` et/ou `"collection"` selon le
+cours. Le **dernier écran de ce segment porte toujours un carrefour de décision** — `Passer au
+quiz →` (bouton principal) et `Retour à l'accueil` (bouton secondaire) — qui résout la **queue**
+au clic, via la fonction pure `resolveOutroTail({ takeQuiz, streakAdvanced })` : `[]`,
+`["streak"]`, `["quiz","quizResult"]` ou `["quiz","quizResult","streak"]`. Une queue vide
+navigue directement vers `/` — c'est le seul chemin de sortie sans écran de clôture. Ces deux
+fonctions et leurs types (`CelebrationScreen`, `OutroScreen`) sont testés indépendamment
+(`src/lib/outroSequence.test.ts`) sur les 4 combinaisons de chaque fonction plus le cas révision.
 
-Trois nouveaux composants présentationnels dans `src/components/features/` habillent la séquence : `LearningDoneCard` (résumé du cours + progression de matière via `getSubjectProgress`, calculée après `completeCourse` donc à jour du niveau qu'on vient d'atteindre), `CollectionProgressCard` (nombre de cours terminés du parcours + pastilles cochées via `progress.completedCourseIds`), `StreakCelebration` (streak courant + rangée hebdomadaire). Cette dernière réutilise `WeekDayRow` (`src/components/features/WeekDayRow.tsx`), extrait de `StreakTracker` pour ne pas dupliquer le rendu des pastilles L-M-M-J-V-S-D.
+`CourseDetailScreen` pilote l'ensemble avec un seul état `Stage = "lessons" | OutroScreen` (donc
+directement `"done" | "levelUp" | "collection" | "quiz" | "quizResult" | "streak"`, sans état
+intermédiaire « célébration » à part), plus `celebrationIndex`/`tailScreens`/`tailIndex` pour
+savoir où on en est dans le segment puis la queue. `streakAdvanced` (capturé dans
+`finishLearning()`, **avant** l'appel à `updateStreak()`, en comparant
+`progress.streak.lastActiveDate` à `toISODate(new Date())`) conditionne à la fois l'écran streak
+et le libellé du bouton principal de l'écran de résultat du quiz (`Continuer →` s'il suit,
+`Retour à l'accueil` sinon). `↻ Refaire le quiz` (toujours présent sur l'écran de résultat)
+incrémente un compteur `quizAttempt` utilisé comme `key` de `QuizPlayer` pour le remonter à zéro,
+sans retoucher `tailScreens`. Chaque changement de `stage` déclenche un `window.scrollTo({top:0})`
+: sans ça, le scroll résiduel d'une leçon longue masquait le bouton « Retour », censé rester
+visible pendant toute la séquence.
 
-Aucun champ n'a été ajouté à `UserProgress` et la version de persistance du store n'a pas bougé : toute la séquence ne consomme que de l'état déjà existant, plus de l'état d'UI éphémère (`phase`, `lessonIndex`, `rankAtStart`) local à `CourseDetailScreen`.
+L'XP et le crédit du cours restent attribués dans `finishLearning()` (avant même le premier
+écran), inchangé depuis la Phase 7 initiale : `completeLesson`, `completeCourse`, `updateStreak`.
+Ce qui a changé, c'est le déclencheur de l'écran « Niveau supérieur ! » : il porte spécifiquement
+sur le **niveau de matière** (`getSubjectProgress(...).level`, avant/après crédit du cours), pas
+sur le rang/niveau global (`rankedUp`/`levelUp`), qui restent affichés en pastilles sur l'écran 1
+uniquement — sans quoi un cours chanceux pourrait enchaîner plusieurs écrans de félicitations
+redondants. Cas révision (cours déjà terminé, refait) : aucun gain d'XP donc `leveledUp` et
+`hasParcours` sont forcés à `false` dans `finishLearning()`, ramenant le segment à un seul écran
+(`["done"]`) qui porte directement le carrefour.
+
+**Composants** (`src/components/features/`), tous purement présentationnels (aucun accès au
+store, props uniquement) :
+- `OutroLayout` — mise en page commune à tous les écrans de la séquence (visuel/texte centrés,
+  espace généreux au-dessus, pied de page à boutons pleine largeur type `Button size="lg"`,
+  `sticky bottom-20` sur mobile pour rester au-dessus de la `BottomNav` fixe, `md:static` sur
+  desktop où il n'y a pas de nav fixe en bas). Ne connaît ni l'ordre des écrans ni leurs
+  conditions d'affichage : reçoit `children` (visuel + texte, chaque écran choisit son propre
+  ordre interne) et les props des deux boutons.
+- `LearningDoneCard` (écran « done », toujours affiché) — vignette carrée ~180px de
+  l'illustration du cours (`getCourseImage`/`getCourseImagePosition`/`OBJECT_POSITION`, ces trois
+  exports vivant dans `src/lib/courseImages.ts` — `OBJECT_POSITION` y a été déplacé depuis
+  `CourseCard.tsx` pour être partagé), repli emoji sinon ; barre de progression de matière
+  animée de `subjectBefore.progressPct` vers sa valeur d'arrivée (100 % si le niveau de matière
+  vient de monter, auquel cas le badge `NIV.` affiché reste volontairement celui d'avant crédit
+  — c'est l'écran « levelUp » qui célèbre seul le passage au niveau suivant, pour ne pas dupliquer
+  l'effet). Machine à états `LevelUpStage` (fillingToFull/atFull/reset/fillingRemainder, ~60
+  lignes) de l'ancienne version **supprimée** : elle simulait la montée de niveau à l'intérieur de
+  cet écran, rôle repris par l'écran dédié.
+- `LevelUpCard` (écran « levelUp », conditionnel — nouveau) — carré pastel de la matière, « NIV.
+  {avant} → **NIV. {après}** » en contraste d'échelle typographique (le ressort visuel de l'écran).
+- `CollectionProgressCard` (écran « collection », conditionnel) — titre au-dessus d'un bandeau
+  16:9 (au lieu de la bannière emoji en tête utilisée auparavant), pastilles de cours du parcours
+  reliées par un chemin (trait plein entre deux pastilles terminées, effacé sinon) plutôt qu'une
+  rangée simplement espacée. Logique de comptage/`justCompleted` inchangée.
+- `QuizOutcomeCard` (écran « quizResult », conditionnel — nouveau) — n'existait pas avant cette
+  refonte : `QuizPlayer` (inchangé) continue d'appeler `onFinish(score, total)` immédiatement
+  après la dernière question, sans afficher lui-même de résultat ; c'est `CourseDetailScreen` qui
+  stocke `{ score, total }` et affiche cet écran, sur le modèle du résultat déjà inline de
+  `DailyChallengeScreen` (qui reste un écran séparé, non factorisé, car il accorde un bonus XP
+  que le quiz de cours n'accorde pas).
+- `StreakCelebration` (écran « streak », conditionnel) — contenu inchangé (flamme, compteur,
+  `WeekDayRow`), affiché seulement si la série a progressé, plus un seul bouton toujours terminal.
+
+`Button` (`src/components/ui/Button.tsx`) gagne une prop `size?: "md" | "lg"` (défaut `"md"`,
+rendu par défaut strictement inchangé) : `"lg"` produit la pilule pleine largeur du pied de page
+de `OutroLayout`, motif qui n'existait pas ailleurs dans l'app.
+
+Aucun champ n'a été ajouté à `UserProgress` et la version de persistance du store n'a pas bougé
+(toujours **7**) : toute la séquence ne consomme que de l'état déjà existant, plus de l'état
+d'UI éphémère local à `CourseDetailScreen`.
 
 ## Consolidation du contenu (Phase 7, lot 2)
 

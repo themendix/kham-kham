@@ -1,10 +1,13 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 type Variant = "primary" | "secondary" | "ghost";
+type Size = "md" | "lg";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant?: Variant;
+  /** "lg" : pilule pleine largeur, plus haute, libellé plus grand — pied de page de la séquence de fin de cours */
+  size?: Size;
 }
 
 const VARIANT_CLASSES: Record<Variant, string> = {
@@ -13,15 +16,26 @@ const VARIANT_CLASSES: Record<Variant, string> = {
   ghost: "bg-cream text-ink",
 };
 
+const SIZE_CLASSES: Record<Size, string> = {
+  md: "px-6 py-3 text-[15px]",
+  lg: "w-full px-6 py-3.5 text-[15px] sm:py-4 sm:text-base",
+};
+
 /** Bouton néo-brutaliste : contour épais, ombre nette, effet d'appui au clic */
-export function Button({ children, variant = "primary", className = "", ...rest }: ButtonProps) {
+export function Button({
+  children,
+  variant = "primary",
+  size = "md",
+  className = "",
+  ...rest
+}: ButtonProps) {
   return (
     <button
       className={`inline-flex items-center justify-center gap-2 rounded-full border-[3px] border-ink
-        px-6 py-3 font-heading text-[15px] font-bold shadow-sm
+        font-heading font-bold shadow-sm
         transition-transform active:translate-y-[3px] active:shadow-none
         disabled:cursor-not-allowed disabled:opacity-40 disabled:active:translate-y-0 disabled:active:shadow-sm
-        ${VARIANT_CLASSES[variant]} ${className}`}
+        ${SIZE_CLASSES[size]} ${VARIANT_CLASSES[variant]} ${className}`}
       {...rest}
     >
       {children}
