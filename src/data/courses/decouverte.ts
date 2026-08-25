@@ -7,13 +7,12 @@ import type { Course } from "@/types";
  * volontairement conservés : ce sont des clés de `localStorage`, les renommer effacerait la
  * progression des utilisateurs existants pour un gain purement cosmétique.
  *
- * Suffisamment léger pour rester bundlé avec le shell applicatif : pas de découpage par matière
- * ici, contrairement à Histoire/Géographie/Personnalités (`src/data/courses/histoire.ts`,
- * `geographie.ts`, `personnalites.ts`), qui sont chargées à la demande via
- * `src/data/courseContent.ts`. À rebasculer sur un chunk dédié si Découverte grossit du même
- * ordre.
+ * Chargé à la demande via `src/data/courseContent.ts`, comme les trois autres matières : la
+ * montée en charge prévue (3 → 30 cours) rendait intenable de garder ce fichier bundlé avec le
+ * shell applicatif, ce qu'il était tant qu'il ne portait que 3 cours. Voir
+ * docs/ARCHITECTURE.md § Découpage du bundle.
  */
-export const MISC_COURSES: Course[] = [
+export const DECOUVERTE_COURSES: Course[] = [
   {
     id: "course-arts-rythmes-continent",
     categoryId: "decouverte",

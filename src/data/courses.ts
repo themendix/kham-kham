@@ -2,7 +2,7 @@ import type { Course } from "@/types";
 import { HISTOIRE_COURSES } from "@/data/courses/histoire";
 import { GEOGRAPHIE_COURSES } from "@/data/courses/geographie";
 import { PERSONNALITES_COURSES } from "@/data/courses/personnalites";
-import { MISC_COURSES } from "@/data/courses/misc";
+import { DECOUVERTE_COURSES } from "@/data/courses/decouverte";
 
 /**
  * Catalogue complet, contenu inclus (leçons + quiz) — source canonique utilisée par le
@@ -19,7 +19,7 @@ export const COURSES: Course[] = [
   ...HISTOIRE_COURSES,
   ...GEOGRAPHIE_COURSES,
   ...PERSONNALITES_COURSES,
-  ...MISC_COURSES,
+  ...DECOUVERTE_COURSES,
 ];
 
 export function getCourse(id: string): Course | undefined {
