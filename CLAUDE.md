@@ -262,11 +262,15 @@ contenu.
 | Découverte | 11 |
 | **Total** | **136** |
 
-**548 leçons**, **676 questions de quiz**, **13 680 XP disponibles** (8200 XP de complétion de
-cours + 5480 XP de leçons à `XP_PER_LESSON = 10`).
+**564 leçons**, **676 questions de quiz**, **14 000 XP disponibles** (8360 XP de complétion de
+cours + 5640 XP de leçons à `XP_PER_LESSON = 10`).
+
+Découverte compte 11 cours : les 8 du lot 1 à **5 leçons** (`xp: 70`) et les 3 cours hérités
+laissés à **3 leçons** (`xp: 50`) — deux formats coexistent donc dans la matière, c'est une
+décision assumée.
 
 > ⚠️ **`LEVEL_TIERS` est calibré sur 13 040 XP, soit l'état d'avant le lot 1 de Découverte.**
-> « Gardien du savoir » est donc atteignable vers 95 % du catalogue au lieu de 100 %. Le
+> « Gardien du savoir » est donc atteignable vers 93 % du catalogue au lieu de 100 %. Le
 > recalibrage est volontairement reporté **en fin de chantier Découverte** (lots 2 à 4) plutôt
 > que refait à chaque lot — voir Prochaines étapes.
 
@@ -353,8 +357,27 @@ mouvement · Mode et création contemporaine.
 - **Prérequis fait avant d'écrire** : `misc.ts` renommé `decouverte.ts` et sorti du bundle du
   shell vers un chunk chargé à la demande (commit séparé). À 30 cours il aurait pesé ~110 Ko
   dans le chunk d'entrée.
-- **Structure retenue pour la matière** : 3 leçons par cours (comme Géographie, et comme les
-  3 cours hérités), donc `xp: 50` par cours selon la règle `20 + 10 × leçons`.
+- **Structure finale : 5 leçons par cours** (comme Histoire et Personnalités), donc `xp: 70`
+  selon la règle `20 + 10 × leçons`. Les 3 cours hérités restent à 3 leçons sur décision
+  explicite. Chaque leçon porte un thème autonome — nécessaire parce qu'une leçon est servie
+  seule dans le fil Home et en vedette Biblio, hors du contexte de son cours.
+- **Quiz : 5 questions, une par leçon** (même ratio qu'Histoire), refaits pour couvrir les
+  leçons 4 et 5.
+- **Titres explicites, pas des accroches.** Première version corrigée : « Ce que Picasso a
+  vu » → « Les sculptures africaines et les peintres de Paris ». Un titre allusif ne dit pas
+  son sujet quand la leçon apparaît seule dans un fil.
+- **Trois règles de narration**, appliquées après un retour utilisateur sur la difficulté de
+  lecture, et à tenir pour les lots suivants : (1) nommer le lieu, la personne ou l'objet dans
+  la première phrase ; (2) une idée par phrase, aucune incise entre sujet et verbe ; (3) aucune
+  construction « ce n'est pas X, c'est Y » — elle oblige à se représenter une idée fausse avant
+  de la remplacer, et revenait dans presque toutes les leçons.
+- **Contenu sourcé.** Les faits ont été vérifiés en ligne (recherche web) avant écriture, ce qui
+  a corrigé trois erreurs réelles : le FESPACO date de 1972 et non 1969 (1969 = Semaine du
+  cinéma africain) ; « premier long métrage subsaharien » pour La Noire de… est une formule
+  contestable, remplacée par « premier long métrage de Sembène » ; et la dette du cubisme
+  envers les sculptures africaines est un débat rouvert, pas un fait établi. Sources
+  principales : UNESCO, Met Museum, Quai Branly, Smithsonian, Smarthistory, Persée, The Art
+  Newspaper, RFI, Harvard Film Archive.
 - **Ton calé sur Histoire et Géographie** : chaque leçon suit le squelette accroche →
   `chiffreCle`/`frise`/`reperes` → paragraphe de substance → `aRetenir`, avec `leSavaisTu`
   en clôture quand il y a une anecdote qui le mérite. La première phrase est un hameçon, pas

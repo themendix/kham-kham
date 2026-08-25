@@ -434,7 +434,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "Masques et sculptures",
     description:
       "Un masque africain dans une vitrine ne fait plus rien. Découvre ce qu'il faisait vraiment, d'où viennent les bronzes du Bénin, et comment ces formes ont retourné l'art européen.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-decouverte-01-masques-sculptures-lesson-1",
@@ -525,6 +525,63 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+          {
+        id: "course-decouverte-01-masques-sculptures-lesson-4",
+        title: "Les statues fang du Gabon",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Chez les **Fang** du Gabon, les crânes des ancêtres étaient conservés dans des boîtes en écorce. Une statue de bois était posée sur le couvercle.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "byeri",
+            legende: "le culte des ancêtres chez les Fang",
+          },
+          {
+            type: "paragraphe",
+            text: "Cette statue est appelée **eyema byeri**. Elle gardait la boîte et son contenu. Les anciens s'en servaient aussi pour enseigner la généalogie du clan aux jeunes. Avec l'arrivée des missions chrétiennes, les Fang ont abandonné le byeri.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **byeri** est le culte fang des ancêtres",
+              "La statue **eyema byeri** gardait la boîte à reliques",
+              "Elle servait à enseigner la généalogie du clan",
+            ],
+          },
+        ],
+      },
+      {
+        id: "course-decouverte-01-masques-sculptures-lesson-5",
+        title: "Les restitutions d'œuvres africaines",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Des milliers d'objets africains sont conservés dans les musées d'Europe et d'Amérique. Depuis quelques années, certains repartent vers leur pays d'origine.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "Juillet 2022", texte: "Accord Allemagne-Nigeria sur 1 100 pièces" },
+              { date: "Octobre 2022", texte: "Le Smithsonian rend 29 bronzes au Nigeria" },
+              { date: "Décembre 2022", texte: "L'Allemagne renvoie ses 20 premiers objets" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'accord entre l'**Allemagne** et le Nigeria porte sur environ 1 100 bronzes. Le **Smithsonian**, aux États-Unis, en a rendu 29. Le débat porte désormais sur la suite : où les exposer, qui en est propriétaire, et à quelles conditions.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**Allemagne** s'est engagée sur environ 1 100 bronzes",
+              "Le Smithsonian en a **restitué** 29 en 2022",
+              "Le débat porte sur la propriété et l'exposition",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
@@ -538,44 +595,59 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Le masque n'est pas conçu pour être exposé : il n'existe pleinement que porté et dansé, lors de funérailles, d'initiations ou de semailles.",
+          "Le masque n'est pas conçu pour être exposé : il se porte et se danse, lors de funérailles, d'initiations ou de semailles.",
       },
       {
         id: "quiz-decouverte-01-2",
-        question: "Quel peuple du Mali sculpte le long des falaises de Bandiagara ?",
-        options: ["Les Baoulé", "Les Dogon", "Les Ashanti", "Les Zoulous"],
-        correctIndex: 1,
-        explanation:
-          "Les Dogon, installés le long des falaises de Bandiagara, comptent parmi les grandes traditions sculptées du continent.",
-      },
-      {
-        id: "quiz-decouverte-01-3",
         question: "Quelle technique était utilisée pour couler les bronzes du Bénin ?",
-        options: ["Le moulage au sable", "La cire perdue", "Le martelage à froid", "L'électrolyse"],
+        options: [
+          "Le moulage au sable",
+          "La cire perdue",
+          "Le martelage à froid",
+          "L'électrolyse",
+        ],
         correctIndex: 1,
         explanation:
           "La cire perdue permet une très grande finesse de détail : c'est la technique des fondeurs du royaume du Bénin.",
       },
       {
-        id: "quiz-decouverte-01-4",
-        question: "Que s'est-il passé au palais de l'oba du Bénin en 1897 ?",
+        id: "quiz-decouverte-01-3",
+        question: "Que dit-on aujourd'hui de l'influence des sculptures africaines sur Picasso ?",
         options: [
-          "Il a été fondé",
-          "Il a été pillé par une expédition britannique",
-          "Il a été inscrit au patrimoine mondial",
-          "Il a été reconstruit en bronze",
+          "Elle est prouvée par ses carnets",
+          "Elle est débattue, et Picasso l'a lui-même niée",
+          "Elle n'a jamais été évoquée",
+          "Elle ne concerne que Matisse",
         ],
         correctIndex: 1,
         explanation:
-          "Une expédition britannique a mis à sac le palais en 1897, dispersant des milliers de pièces dans les musées occidentaux.",
+          "Ces sculptures circulaient bien à Paris vers 1906, mais l'ampleur de la dette de Picasso fait débat, et il l'a lui-même niée.",
+      },
+      {
+        id: "quiz-decouverte-01-4",
+        question: "Qu'est-ce que le byeri, chez les Fang du Gabon ?",
+        options: [
+          "Un type de tambour",
+          "Le culte des ancêtres et les objets qui s'y rattachent",
+          "Une danse de mariage",
+          "Un tissu de raphia",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Le byeri désigne le culte des ancêtres fang, ses rites et ses objets, dont les boîtes à reliques et leurs statues gardiennes.",
       },
       {
         id: "quiz-decouverte-01-5",
-        question: "Quel mouvement artistique européen s'est nourri des formes sculpturales africaines ?",
-        options: ["L'impressionnisme", "Le cubisme", "Le romantisme", "Le néoclassicisme"],
+        question: "Sur combien de bronzes l'Allemagne s'est-elle engagée envers le Nigeria ?",
+        options: [
+          "Une dizaine",
+          "Environ 1 100",
+          "Environ 10 000",
+          "Aucun",
+        ],
         correctIndex: 1,
         explanation:
-          "Picasso, Matisse et Derain y ont trouvé une liberté formelle qui a nourri le cubisme naissant, à partir de 1906-1907.",
+          "L'accord signé en juillet 2022 porte sur environ 1 100 pièces ; les 20 premières ont été renvoyées en décembre 2022.",
       },
     ],
   },
@@ -586,7 +658,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "Tissus et parures",
     description:
       "Kente, bogolan, indigo, wax : quatre étoffes qui portent des proverbes, des savoir-faire et une histoire commerciale bien plus retorse qu'il n'y paraît.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-decouverte-02-tissus-parures-lesson-1",
@@ -679,6 +751,63 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+          {
+        id: "course-decouverte-02-tissus-parures-lesson-4",
+        title: "L'or des Akan et les poids à peser l'or",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Chez les **Akan**, au Ghana et en Côte d'Ivoire, on payait en poudre d'or. Pour la peser, on utilisait de petits poids en laiton.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "mrammou",
+            legende: "nom local des poids à peser l'or akan",
+          },
+          {
+            type: "paragraphe",
+            text: "Ces poids sont des miniatures. Certains sont géométriques, d'autres représentent des animaux, des outils ou des scènes de la vie. Beaucoup illustrent un **proverbe** : on les appelle des poids-proverbes. Une balance et une boîte complétaient le nécessaire du marchand.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les **Akan** pesaient la poudre d'or en laiton",
+              "Les poids sont géométriques ou **figuratifs**",
+              "Certains illustrent un proverbe : les poids-proverbes",
+            ],
+          },
+        ],
+      },
+      {
+        id: "course-decouverte-02-tissus-parures-lesson-5",
+        title: "Le raphia des Kuba, au Congo",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Les **Kuba** vivent dans la région du Kasaï, en République démocratique du Congo. Ils tissent des étoffes à partir des fibres du palmier-raphia.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Peuple", valeur: "Kuba, groupe shoowa" },
+              { label: "Région", valeur: "Kasaï-Sankuru, RD Congo" },
+              { label: "Matière", valeur: "Fibre de palmier-raphia" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le groupe **shoowa** brode ces tissus au point coupé, ce qui donne un relief de velours. Chaque panneau porte un motif géométrique unique. Ces étoffes servaient d'objets de prestige, de dot et de monnaie d'échange entre groupes kuba.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les **Kuba** tissent la fibre de palmier-raphia",
+              "Le groupe shoowa brode au **point coupé**",
+              "Ces tissus servaient de prestige, de dot, de monnaie",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
@@ -688,7 +817,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           "Les Dogon du Mali",
           "Les Ashanti du Ghana",
           "Les Yoruba du Nigeria",
-          "Les Zoulous d'Afrique du Sud",
+          "Les Kuba du Congo",
         ],
         correctIndex: 1,
         explanation:
@@ -696,19 +825,6 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "quiz-decouverte-02-2",
-        question: "Que porte chaque motif de kente, en plus de son dessin ?",
-        options: [
-          "Un numéro de série",
-          "Un nom et un proverbe",
-          "Une date de fabrication",
-          "Le nom du roi régnant",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Chaque motif a un nom et un proverbe associé : porter un kente, c'est afficher un message.",
-      },
-      {
-        id: "quiz-decouverte-02-3",
         question: "À quoi le bogolan malien doit-il son nom ?",
         options: [
           "À la boue utilisée pour le teindre",
@@ -721,7 +837,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           "« Bogolanfini » signifie en bambara « tissu fait avec de la boue » : le coton est peint à la terre fermentée.",
       },
       {
-        id: "quiz-decouverte-02-4",
+        id: "quiz-decouverte-02-3",
         question: "Quelle est l'origine réelle du tissu wax ?",
         options: [
           "Une invention ghanéenne du XVIIIe siècle",
@@ -734,17 +850,30 @@ export const DECOUVERTE_COURSES: Course[] = [
           "Des industriels néerlandais ont copié le batik javanais au XIXe siècle avant de trouver leur marché en Afrique de l'Ouest.",
       },
       {
-        id: "quiz-decouverte-02-5",
-        question: "Qui étaient les « Nana Benz » de Lomé ?",
+        id: "quiz-decouverte-02-4",
+        question: "Comment les Akan pesaient-ils la poudre d'or ?",
         options: [
-          "Des reines traditionnelles",
-          "Des commerçantes enrichies par le négoce du wax",
-          "Des tisserandes de kente",
-          "Des chanteuses togolaises",
+          "Avec de petits poids en laiton, souvent figuratifs",
+          "Avec des pierres calibrées",
+          "À la main, sans instrument",
+          "Avec des coquillages",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Les poids akan, ou mrammou, sont des miniatures de laiton ; beaucoup illustrent un proverbe.",
+      },
+      {
+        id: "quiz-decouverte-02-5",
+        question: "De quelle matière sont faits les tissus kuba du Kasaï ?",
+        options: [
+          "De coton",
+          "De fibre de palmier-raphia",
+          "De laine",
+          "De soie",
         ],
         correctIndex: 1,
         explanation:
-          "Ces commerçantes togolaises ont bâti des fortunes sur le wax ; leur surnom venait des Mercedes qu'elles conduisaient.",
+          "Les Kuba tissent la fibre de palmier-raphia ; le groupe shoowa la brode au point coupé, ce qui donne un relief de velours.",
       },
     ],
   },
@@ -755,7 +884,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "Architectures de terre",
     description:
       "Le plus vaste édifice en terre crue du monde est africain, et il faut le refaire chaque année pour qu'il tienne. Découvre une architecture qui vit de son entretien.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-decouverte-03-architectures-terre-lesson-1",
@@ -844,52 +973,90 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+          {
+        id: "course-decouverte-03-architectures-terre-lesson-4",
+        title: "Hassan Fathy et le village de New Gourna",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "**Hassan Fathy** était un architecte égyptien, né en 1900 et mort en 1989. Entre 1946 et 1952, il a construit en terre un village entier près de Louxor.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1946-1952",
+            legende: "construction du village de New Gourna",
+          },
+          {
+            type: "paragraphe",
+            text: "Ce village s'appelle **New Gourna**. Fathy voulait loger des familles avec les matériaux et les techniques du lieu, sans béton importé. Le projet a beaucoup inspiré l'architecture dite durable. L'UNESCO a mené un programme de sauvegarde du site entre 2018 et 2021.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Hassan Fathy** bâtit New Gourna entre 1946 et 1952",
+              "Il utilise les matériaux et techniques **du lieu**",
+              "L'UNESCO a mené une sauvegarde de 2018 à 2021",
+            ],
+          },
+        ],
+      },
+      {
+        id: "course-decouverte-03-architectures-terre-lesson-5",
+        title: "Francis Kéré, bâtir en terre aujourd'hui",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "**Francis Kéré** est né à Gando, au Burkina Faso. En 2022, il est devenu le premier Africain à recevoir le prix Pritzker, la plus haute distinction en architecture.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2022",
+            legende: "Francis Kéré reçoit le prix Pritzker",
+          },
+          {
+            type: "paragraphe",
+            text: "Son premier bâtiment est l'école primaire de **Gando**, achevée en 2001. Il l'a construite en briques de terre, avec les habitants du village. Un toit surélevé laisse circuler l'air et évite la chaleur des tôles. La terre est ici un choix technique.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Francis Kéré**, premier Africain lauréat du Pritzker",
+              "Son école de **Gando** est achevée en 2001",
+              "La terre est un choix technique, pas nostalgique",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
         id: "quiz-decouverte-03-1",
         question: "Où se trouve le plus vaste édifice en terre crue du monde ?",
-        options: ["À Tombouctou, au Mali", "À Djenné, au Mali", "À Kano, au Nigeria", "À Ouidah, au Bénin"],
+        options: [
+          "À Tombouctou, au Mali",
+          "À Djenné, au Mali",
+          "À Kano, au Nigeria",
+          "À Gando, au Burkina Faso",
+        ],
         correctIndex: 1,
         explanation:
-          "La Grande Mosquée de Djenné, au Mali, est le plus vaste édifice en terre crue du monde.",
+          "La Grande Mosquée de Djenné, au Mali, est le plus grand bâtiment en terre crue du monde.",
       },
       {
         id: "quiz-decouverte-03-2",
-        question: "Qu'est-ce que le banco ?",
+        question: "Quelle propriété rend la terre efficace face à la chaleur ?",
         options: [
-          "Un mélange de terre et de paille",
-          "Une pierre volcanique",
-          "Un bois imputrescible",
-          "Un ciment importé",
+          "Sa transparence",
+          "Son inertie thermique",
+          "Sa conductivité électrique",
+          "Sa légèreté",
         ],
-        correctIndex: 0,
+        correctIndex: 1,
         explanation:
-          "Le banco est un mélange de terre et de paille, matériau de base de l'architecture de terre sahélienne.",
+          "Le jour, le mur absorbe la chaleur ; la nuit, il la restitue. C'est l'inertie thermique.",
       },
       {
         id: "quiz-decouverte-03-3",
-        question: "À quoi servent les poutres de palmier qui dépassent des murs de Djenné ?",
-        options: [
-          "À soutenir la toiture",
-          "À servir d'échafaudage lors du recrépissage annuel",
-          "À évacuer l'eau de pluie",
-          "À marquer les heures de prière",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Elles forment un échafaudage permanent, indispensable au recrépissage collectif de la mosquée chaque année.",
-      },
-      {
-        id: "quiz-decouverte-03-4",
-        question: "Quelle propriété rend la terre efficace face à la chaleur ?",
-        options: ["Sa transparence", "Son inertie thermique", "Sa conductivité électrique", "Sa légèreté"],
-        correctIndex: 1,
-        explanation:
-          "Un mur de terre épais absorbe la chaleur du jour et la restitue la nuit : c'est l'inertie thermique.",
-      },
-      {
-        id: "quiz-decouverte-03-5",
         question: "Pourquoi ce patrimoine pose-t-il un problème de conservation particulier ?",
         options: [
           "Il est impossible à dater",
@@ -899,7 +1066,33 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 1,
         explanation:
-          "La terre exige un entretien annuel : l'UNESCO y protège un savoir-faire vivant autant qu'un bâtiment.",
+          "La terre exige un entretien annuel et des maçons formés : l'UNESCO y protège un savoir-faire vivant autant qu'un bâtiment.",
+      },
+      {
+        id: "quiz-decouverte-03-4",
+        question: "Qui a conçu le village de New Gourna, en Égypte ?",
+        options: [
+          "Hassan Fathy",
+          "Francis Kéré",
+          "Le Corbusier",
+          "Jean Nouvel",
+        ],
+        correctIndex: 0,
+        explanation:
+          "L'architecte égyptien Hassan Fathy a conçu et bâti New Gourna, près de Louxor, entre 1946 et 1952.",
+      },
+      {
+        id: "quiz-decouverte-03-5",
+        question: "Quelle distinction Francis Kéré a-t-il reçue en 2022 ?",
+        options: [
+          "Le prix Pritzker",
+          "Le prix Nobel",
+          "La Palme d'or",
+          "Le prix Noma",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Il est le premier Africain lauréat du prix Pritzker, la plus haute distinction en architecture.",
       },
     ],
   },
@@ -910,7 +1103,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "La photographie africaine",
     description:
       "Dans les studios de Bamako, une jeunesse a choisi comment elle voulait être vue. Découvre comment le portrait africain a renversé un siècle de regard extérieur.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-decouverte-04-photographie-africaine-lesson-1",
@@ -999,52 +1192,93 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+          {
+        id: "course-decouverte-04-photographie-africaine-lesson-4",
+        title: "Les Rencontres de Bamako",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Les Rencontres de **Bamako** sont une biennale de photographie africaine. Elles ont été créées en 1994 au Mali, et se tiennent tous les deux ans.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1994",
+            legende: "première édition des Rencontres de Bamako",
+          },
+          {
+            type: "paragraphe",
+            text: "L'initiative revient à la photographe française Françoise **Huguier**. La biennale expose des photographes de tout le continent et de la diaspora. Son premier prix porte le nom de **Seydou Keïta**. Elle est devenue le grand rendez-vous de la photographie africaine.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Biennale de photographie africaine créée en **1994**",
+              "Elle se tient à Bamako, au Mali",
+              "Son premier prix porte le nom de **Seydou Keïta**",
+            ],
+          },
+        ],
+      },
+      {
+        id: "course-decouverte-04-photographie-africaine-lesson-5",
+        title: "Zanele Muholi et Omar Victor Diop",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "**Zanele Muholi** est sud-africaine, **Omar Victor Diop** est sénégalais. Tous deux se photographient eux-mêmes pour parler des autres.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Zanele Muholi", valeur: "Afrique du Sud, autoportraits" },
+              { label: "Omar Victor Diop", valeur: "Sénégal, mises en scène historiques" },
+              { label: "Point commun", valeur: "L'artiste est son propre modèle" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "La série **Somnyama Ngonyama** de Muholi, « Salut à toi, lionne noire », est une suite d'autoportraits en noir profond. Diop, dans « Diaspora », se met en scène en personnages africains oubliés de l'histoire européenne, costume et accessoires à l'appui.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Muholi signe les autoportraits de **Somnyama Ngonyama**",
+              "Diop rejoue des personnages oubliés dans « **Diaspora** »",
+              "L'artiste devient son propre modèle",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
         id: "quiz-decouverte-04-1",
         question: "Quelle ville est associée aux grands studios photo ouest-africains ?",
-        options: ["Dakar", "Bamako", "Abidjan", "Lagos"],
+        options: [
+          "Dakar",
+          "Bamako",
+          "Abidjan",
+          "Lagos",
+        ],
         correctIndex: 1,
         explanation:
           "Bamako, avec Seydou Keïta et Malick Sidibé, est la capitale des studios photo ouest-africains.",
       },
       {
         id: "quiz-decouverte-04-2",
-        question: "Que montrent avant tout les portraits de studio des années 1960 ?",
+        question: "Quand les galeries occidentales ont-elles redécouvert ces photographies ?",
         options: [
-          "Des scènes de guerre",
-          "Une jeunesse qui choisit son image et sa modernité",
-          "Des paysages ruraux",
-          "Des cérémonies royales",
+          "Dans les années 1930",
+          "Dans les années 1960",
+          "Dans les années 1990",
+          "En 2020",
         ],
-        correctIndex: 1,
+        correctIndex: 2,
         explanation:
-          "Le modèle choisit sa pose, son décor et ses accessoires : c'est une modernité revendiquée, pas subie.",
+          "La redécouverte par les galeries occidentales date des années 1990, soit trente ans après la prise des clichés.",
       },
       {
         id: "quiz-decouverte-04-3",
-        question: "Quand ces photographies ont-elles été redécouvertes par les galeries occidentales ?",
-        options: ["Dans les années 1930", "Dans les années 1960", "Dans les années 1990", "En 2020"],
-        correctIndex: 2,
-        explanation:
-          "La redécouverte par les galeries occidentales date des années 1990, longtemps après la prise des clichés.",
-      },
-      {
-        id: "quiz-decouverte-04-4",
-        question: "Quelle question la reconnaissance tardive de ces photographes a-t-elle soulevée ?",
-        options: [
-          "Celle de la datation des clichés",
-          "Celle des droits et de la propriété des négatifs",
-          "Celle du choix du noir et blanc",
-          "Celle du format des tirages",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Plusieurs photographes sont morts avant d'avoir vu la valeur prise par leurs négatifs : la question des droits reste sensible.",
-      },
-      {
-        id: "quiz-decouverte-04-5",
         question: "Qu'est-ce qui distingue le portrait de studio de l'image coloniale ?",
         options: [
           "Le modèle y choisit sa pose et son décor",
@@ -1056,6 +1290,32 @@ export const DECOUVERTE_COURSES: Course[] = [
         explanation:
           "L'image coloniale classait des sujets anonymes ; dans le studio, le modèle décide de tout.",
       },
+      {
+        id: "quiz-decouverte-04-4",
+        question: "En quelle année les Rencontres de Bamako ont-elles été créées ?",
+        options: [
+          "1974",
+          "1994",
+          "2004",
+          "2014",
+        ],
+        correctIndex: 1,
+        explanation:
+          "La biennale africaine de la photographie est née en 1994, d'une initiative de la photographe Françoise Huguier.",
+      },
+      {
+        id: "quiz-decouverte-04-5",
+        question: "Que contient la série Somnyama Ngonyama de Zanele Muholi ?",
+        options: [
+          "Des paysages",
+          "Une suite d'autoportraits",
+          "Des scènes de rue",
+          "Des natures mortes",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Somnyama Ngonyama, « Salut à toi, lionne noire », est une suite d'autoportraits en noir profond.",
+      },
     ],
   },
   {
@@ -1065,7 +1325,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "Le cinéma d'auteur africain",
     description:
       "Un docker devenu écrivain, puis cinéaste parce que ses livres n'atteignaient pas ceux dont il parlait. Découvre Sembène, le FESPACO et un cinéma né sans industrie.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-decouverte-05-cinema-auteur-lesson-1",
@@ -1155,19 +1415,68 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+          {
+        id: "course-decouverte-05-cinema-auteur-lesson-4",
+        title: "Safi Faye et les réalisatrices africaines",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "**Safi Faye** était sénégalaise, née en 1943 et morte en 2023. Elle est la première Africaine à avoir réalisé un long métrage distribué en salles.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1975",
+            legende: "Kaddu Beykat, le film de Safi Faye",
+          },
+          {
+            type: "paragraphe",
+            text: "Son film s'appelle **Kaddu Beykat**. Il est tourné en sérère, dans son village, avec les habitants. **Sarah Maldoror**, née en France de parents guadeloupéens, a filmé de son côté les luttes de libération en Angola et en Guinée-Bissau.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Safi Faye**, première Africaine à réaliser un long métrage",
+              "Kaddu Beykat est tourné en sérère, en 1975",
+              "**Sarah Maldoror** a filmé les luttes de libération",
+            ],
+          },
+        ],
+      },
+      {
+        id: "course-decouverte-05-cinema-auteur-lesson-5",
+        title: "Le cinéma africain à l'heure du streaming",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Depuis 2016, **Netflix** et d'autres plateformes de streaming achètent et produisent des films africains. Le Nigeria est le premier pays concerné.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Avantage", valeur: "Une diffusion mondiale immédiate" },
+              { label: "Risque", valeur: "Des formats dictés de l'extérieur" },
+              { label: "Pays moteur", valeur: "Nigeria, industrie Nollywood" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "La plateforme offre une diffusion que les salles africaines ne permettaient pas. En échange, elle pèse sur les formats et garde les **droits**. Des chercheurs parlent d'une **plateformisation** de la distribution, c'est-à-dire d'un déplacement du pouvoir vers les plateformes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les plateformes offrent une **diffusion mondiale**",
+              "Elles pèsent sur les formats et gardent les **droits**",
+              "Le Nigeria est le premier pays concerné",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
         id: "quiz-decouverte-05-1",
-        question: "Qui est considéré comme le père du cinéma d'Afrique subsaharienne ?",
-        options: ["Djibril Diop Mambéty", "Ousmane Sembène", "Souleymane Cissé", "Med Hondo"],
-        correctIndex: 1,
-        explanation:
-          "Ousmane Sembène, docker puis écrivain, s'est tourné vers le cinéma pour toucher un public que ses livres n'atteignaient pas.",
-      },
-      {
-        id: "quiz-decouverte-05-2",
-        question: "Pourquoi Sembène tournait-il en wolof ?",
+        question: "Pourquoi Ousmane Sembène tournait-il en wolof ?",
         options: [
           "Pour plaire aux festivals européens",
           "Pour être compris de son public au Sénégal",
@@ -1176,36 +1485,59 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Tourner en wolof lui permettait d'être compris chez lui : il voyait le cinéma comme une « école du soir » populaire.",
+          "Ses livres touchaient peu de lecteurs au Sénégal : il choisit le cinéma en wolof, son « école du soir ».",
       },
       {
-        id: "quiz-decouverte-05-3",
+        id: "quiz-decouverte-05-2",
         question: "Dans quelle ville se tient le FESPACO ?",
-        options: ["Dakar", "Ouagadougou", "Tunis", "Le Caire"],
-        correctIndex: 1,
-        explanation:
-          "Le FESPACO se tient à Ouagadougou, au Burkina Faso. Né de la Semaine du cinéma africain de 1969, il est institutionnalisé en 1972.",
-      },
-      {
-        id: "quiz-decouverte-05-4",
-        question: "Quel a été l'apport principal du FESPACO ?",
         options: [
-          "Financer les studios de Nollywood",
-          "Faire circuler les films entre pays africains",
-          "Imposer le format numérique",
-          "Former les techniciens du son",
+          "Dakar",
+          "Ouagadougou",
+          "Tunis",
+          "Le Caire",
         ],
         correctIndex: 1,
         explanation:
-          "Il a créé une circulation des films entre pays africains, là où les salles diffusaient surtout des productions importées.",
+          "Le FESPACO se tient à Ouagadougou. Né de la Semaine du cinéma africain de 1969, il est institutionnalisé en 1972.",
       },
       {
-        id: "quiz-decouverte-05-5",
+        id: "quiz-decouverte-05-3",
         question: "Quel film de Djibril Diop Mambéty, tourné en 1973, est devenu un classique ?",
-        options: ["Touki Bouki", "Yeelen", "Xala", "Sarraounia"],
+        options: [
+          "Touki Bouki",
+          "Yeelen",
+          "Kaddu Beykat",
+          "Sarraounia",
+        ],
         correctIndex: 0,
         explanation:
           "Touki Bouki, tourné avec des moyens minimes, est aujourd'hui considéré comme un classique du cinéma mondial.",
+      },
+      {
+        id: "quiz-decouverte-05-4",
+        question: "Qui est la première Africaine à avoir réalisé un long métrage distribué en salles ?",
+        options: [
+          "Safi Faye",
+          "Sarah Maldoror",
+          "Miriam Makeba",
+          "Germaine Acogny",
+        ],
+        correctIndex: 0,
+        explanation:
+          "La Sénégalaise Safi Faye (1943-2023) réalise Kaddu Beykat en 1975, tourné en sérère dans son village.",
+      },
+      {
+        id: "quiz-decouverte-05-5",
+        question: "Quel effet les plateformes de streaming ont-elles sur le cinéma africain ?",
+        options: [
+          "Elles offrent une diffusion mondiale mais pèsent sur les formats et les droits",
+          "Elles n'ont aucun effet",
+          "Elles ne financent que des documentaires",
+          "Elles ont fermé toutes les salles",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Le gain de diffusion se paie d'une perte de contrôle : des chercheurs parlent d'une plateformisation de la distribution.",
       },
     ],
   },
@@ -1216,7 +1548,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "Littératures africaines",
     description:
       "Un écrivain kényan a cessé d'écrire en anglais au sommet de sa notoriété. Découvre pourquoi la question de la langue traverse toute la littérature africaine.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-decouverte-06-litteratures-africaines-lesson-1",
@@ -1302,6 +1634,60 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+          {
+        id: "course-decouverte-06-litteratures-africaines-lesson-4",
+        title: "L'épopée de Soundiata, de l'oral à l'écrit",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "L'épopée de **Soundiata** raconte la fondation de l'empire du Mali. Elle a été transmise oralement par les griots pendant des siècles.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1960",
+            legende: "D. T. Niane publie l'épopée en français",
+          },
+          {
+            type: "paragraphe",
+            text: "Chaque griot en donnait sa version, avec ses variantes. En 1960, l'historien guinéen **Djibril Tamsir Niane** en publie une version écrite en français. Le texte devient alors fixe, alors que l'oral était **mouvant** par nature, chaque récitation étant une création.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'épopée de **Soundiata** fonde l'empire du Mali",
+              "Transmise par les griots, en versions **multiples**",
+              "D. T. Niane la publie par écrit en 1960",
+            ],
+          },
+        ],
+      },
+      {
+        id: "course-decouverte-06-litteratures-africaines-lesson-5",
+        title: "Mariama Bâ et les écrivaines africaines",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "**Mariama Bâ** était sénégalaise. En 1979, elle publie « Une si longue lettre », un roman écrit sous la forme d'une lettre d'une veuve à son amie.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1979",
+            legende: "Une si longue lettre, de Mariama Bâ",
+          },
+          {
+            type: "paragraphe",
+            text: "Le livre paraît à Dakar, aux Nouvelles Éditions Africaines. Il reçoit le **prix Noma**. Bâ y parle de polygamie, de veuvage et de la place des femmes. Elle est morte en 1981, après un second roman.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Mariama Bâ** publie « Une si longue lettre » en 1979",
+              "Le roman reçoit le **prix Noma**",
+              "Il traite de polygamie, de veuvage, du statut des femmes",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
@@ -1309,25 +1695,17 @@ export const DECOUVERTE_COURSES: Course[] = [
         question: "Pourquoi Ngugi wa Thiong'o a-t-il cessé d'écrire en anglais ?",
         options: [
           "Parce qu'il ne le maîtrisait plus",
-          "Parce que la langue porte selon lui la vision du monde du colonisateur",
+          "Parce qu'une langue transporte selon lui la vision du monde du colonisateur",
           "Pour vendre davantage de livres",
           "Sur ordre du gouvernement kényan",
         ],
         correctIndex: 1,
         explanation:
-          "Il défend dans Decolonising the Mind l'idée que la langue porte une vision du monde, et passe au gikuyu.",
+          "Il défend cette thèse dans « Decolonising the Mind » (1986) et passe au gikuyu, sa langue maternelle.",
       },
       {
         id: "quiz-decouverte-06-2",
-        question: "Dans quelle langue Ngugi wa Thiong'o a-t-il choisi d'écrire ?",
-        options: ["Le swahili", "Le gikuyu", "Le haoussa", "L'amharique"],
-        correctIndex: 1,
-        explanation:
-          "Il est passé au gikuyu, sa langue maternelle, quitte à réduire fortement son lectorat immédiat.",
-      },
-      {
-        id: "quiz-decouverte-06-3",
-        question: "Quelle est la particularité du roman Things Fall Apart de Chinua Achebe ?",
+        question: "Quelle est la particularité du roman Things Fall Apart, de Chinua Achebe ?",
         options: [
           "Il raconte l'arrivée des Européens du point de vue africain",
           "Il est écrit en gikuyu",
@@ -1336,28 +1714,46 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 0,
         explanation:
-          "Achebe renverse le point de vue des récits coloniaux, où l'Africain n'avait pas la parole. Le roman paraît en 1958.",
+          "Achebe renverse le point de vue des récits coloniaux. Le roman paraît en 1958.",
       },
       {
-        id: "quiz-decouverte-06-4",
+        id: "quiz-decouverte-06-3",
         question: "Qui fut le premier écrivain africain à recevoir le prix Nobel de littérature ?",
-        options: ["Chinua Achebe", "Wole Soyinka", "Léopold Sédar Senghor", "Naguib Mahfouz"],
-        correctIndex: 1,
-        explanation:
-          "Le Nigérian Wole Soyinka reçoit le prix Nobel de littérature en 1986.",
-      },
-      {
-        id: "quiz-decouverte-06-5",
-        question: "Quel débat traverse la littérature africaine contemporaine ?",
         options: [
-          "Le choix entre poésie et roman",
-          "La question du lectorat visé : africain ou occidental",
-          "L'abandon de la fiction",
-          "Le refus des traductions",
+          "Chinua Achebe",
+          "Wole Soyinka",
+          "Abdulrazak Gurnah",
+          "Mariama Bâ",
         ],
         correctIndex: 1,
         explanation:
-          "Beaucoup d'auteurs publient depuis la diaspora : écrit-on pour un lectorat africain ou pour les jurys du Nord ?",
+          "Le Nigérian Wole Soyinka reçoit le prix Nobel de littérature en 1986 ; Abdulrazak Gurnah le reçoit en 2021.",
+      },
+      {
+        id: "quiz-decouverte-06-4",
+        question: "Qui a publié en 1960 une version écrite de l'épopée de Soundiata ?",
+        options: [
+          "Djibril Tamsir Niane",
+          "Chinua Achebe",
+          "Mariama Bâ",
+          "Wole Soyinka",
+        ],
+        correctIndex: 0,
+        explanation:
+          "L'historien guinéen D. T. Niane fixe par écrit, en français, un récit jusque-là transmis oralement par les griots.",
+      },
+      {
+        id: "quiz-decouverte-06-5",
+        question: "Quel prix a reçu « Une si longue lettre », de Mariama Bâ ?",
+        options: [
+          "Le prix Noma",
+          "Le prix Nobel",
+          "Le prix Goncourt",
+          "Le prix Pritzker",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Publié à Dakar en 1979 aux Nouvelles Éditions Africaines, le roman reçoit le prix Noma.",
       },
     ],
   },
@@ -1368,7 +1764,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "Danses et corps en mouvement",
     description:
       "Pas de scène, pas de public assis : la danse africaine fait quelque chose plutôt qu'elle ne représente. Découvre ce que le corps a transporté jusqu'aux Amériques.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-decouverte-07-danses-lesson-1",
@@ -1458,23 +1854,64 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+          {
+        id: "course-decouverte-07-danses-lesson-4",
+        title: "Germaine Acogny et la danse contemporaine",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "**Germaine Acogny** est une chorégraphe franco-sénégalaise. Elle a créé une technique qui mêle mouvements traditionnels africains et danse moderne, enseignée aujourd'hui bien au-delà du Sénégal.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1996",
+            legende: "première pierre de l'École des Sables",
+          },
+          {
+            type: "paragraphe",
+            text: "Avec Helmut Vogt, elle fonde l'association Jant-Bi en 1994. Deux ans plus tard, ils posent la première pierre de l'**École des Sables**, à **Toubab Dialaw**, au Sénégal. Des danseurs du monde entier viennent s'y former.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Germaine Acogny**, pionnière de la danse africaine contemporaine",
+              "Elle fonde l'**École des Sables** à Toubab Dialaw",
+              "Une technique mêlant traditions africaines et danse moderne",
+            ],
+          },
+        ],
+      },
+      {
+        id: "course-decouverte-07-danses-lesson-5",
+        title: "Le dama, la danse des masques dogon",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Chez les **Dogon** du Mali, le dama est une cérémonie qui marque la fin du deuil. Les masques sortent alors et dansent dans le village.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "dama",
+            legende: "chez les Dogon, la levée du deuil",
+          },
+          {
+            type: "paragraphe",
+            text: "Le dama concerne toutes les personnes mortes les années précédentes. La cérémonie peut durer trois jours. Elle est conduite par l'**awa**, une société initiatique masculine. À Sangha, des danseurs évoluent sur de hautes **échasses**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **dama** marque la levée du deuil chez les Dogon",
+              "La cérémonie peut durer trois jours",
+              "Elle est conduite par l'**awa**, société initiatique",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
         id: "quiz-decouverte-07-1",
-        question: "Qu'est-ce qui distingue la danse dans son contexte rituel africain ?",
-        options: [
-          "Elle se joue sur une scène",
-          "Elle agit dans un rite plutôt qu'elle ne représente",
-          "Elle est toujours silencieuse",
-          "Elle est réservée aux enfants",
-        ],
-        correctIndex: 1,
-        explanation:
-          "Il n'y a ni scène ni public assis : la danse accompagne un mariage, une récolte ou une initiation, et fait quelque chose.",
-      },
-      {
-        id: "quiz-decouverte-07-2",
         question: "Qu'est-ce que le sabar ?",
         options: [
           "Un masque dogon",
@@ -1484,18 +1921,10 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Le sabar désigne à la fois le tambour et la danse sénégalais, indissociables l'un de l'autre.",
+          "Le sabar désigne à la fois le tambour et la danse sénégalais : le tambour lance un rythme, le danseur y répond.",
       },
       {
-        id: "quiz-decouverte-07-3",
-        question: "Dans quel pays la capoeira s'est-elle structurée ?",
-        options: ["À Cuba", "Au Brésil", "En Haïti", "En Jamaïque"],
-        correctIndex: 1,
-        explanation:
-          "La capoeira s'est structurée au Brésil, à partir de pratiques transportées par les personnes déportées d'Afrique.",
-      },
-      {
-        id: "quiz-decouverte-07-4",
+        id: "quiz-decouverte-07-2",
         question: "Qu'est-ce que la traite a transmis malgré la déportation ?",
         options: [
           "Des instruments de musique",
@@ -1505,15 +1934,46 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Le corps a transmis ce qu'on ne pouvait pas confisquer : des gestes et des rythmes, qu'on retrouve dans la capoeira, la rumba et le jazz.",
+          "Le corps a transmis ce qu'on ne pouvait pas confisquer : on en retrouve la trace dans la capoeira, la rumba et le jazz.",
       },
       {
-        id: "quiz-decouverte-07-5",
-        question: "Quel genre sud-africain s'est diffusé mondialement par la danse dans les années 2010 ?",
-        options: ["Le highlife", "L'amapiano", "Le mbalax", "Le soukous"],
+        id: "quiz-decouverte-07-3",
+        question: "Quel genre sud-africain s'est diffusé mondialement par la danse ?",
+        options: [
+          "Le highlife",
+          "L'amapiano",
+          "Le mbalax",
+          "Le soukous",
+        ],
         correctIndex: 1,
         explanation:
           "L'amapiano, né dans les townships sud-africains, s'est diffusé mondialement, largement porté par ses danses en vidéo.",
+      },
+      {
+        id: "quiz-decouverte-07-4",
+        question: "Qu'est-ce que l'École des Sables, au Sénégal ?",
+        options: [
+          "Un centre de danse fondé par Germaine Acogny",
+          "Un musée d'art contemporain",
+          "Une école de cinéma",
+          "Un festival de mode",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Fondée par Germaine Acogny et Helmut Vogt à Toubab Dialaw, sa première pierre est posée en 1996.",
+      },
+      {
+        id: "quiz-decouverte-07-5",
+        question: "Que marque le dama, chez les Dogon ?",
+        options: [
+          "La levée du deuil",
+          "Le début des semailles",
+          "Un mariage",
+          "Une naissance",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Le dama est une cérémonie collective de levée du deuil, où les masques sortent et dansent ; elle peut durer trois jours.",
       },
     ],
   },
@@ -1524,7 +1984,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "Mode et création contemporaine",
     description:
       "Un pagne qui porte un proverbe, un créateur malien qui coupe le bogolan en haute couture, et des montagnes de friperie importée. Découvre les trois faces de la mode africaine.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "course-decouverte-08-mode-creation-lesson-1",
@@ -1614,26 +2074,77 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+          {
+        id: "course-decouverte-08-mode-creation-lesson-4",
+        title: "Les semaines de la mode africaines",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "La **Lagos Fashion Week** a été fondée en 2011 au Nigeria par Omoyemi Akerele. Elle accueille chaque saison des créateurs venus de tout le continent.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "32 pays",
+            legende: "organisent une semaine de la mode en Afrique",
+          },
+          {
+            type: "paragraphe",
+            text: "Des semaines de la mode se tiennent aujourd'hui dans une trentaine de pays africains, de Casablanca à Nairobi. Elles servent de **vitrine** aux créateurs, mais aussi de lieu de rencontre avec les acheteurs et la presse internationale.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **Lagos Fashion Week** est née en 2011",
+              "Une trentaine de pays africains ont la leur",
+              "Elles servent de **vitrine** et de place de marché",
+            ],
+          },
+        ],
+      },
+      {
+        id: "course-decouverte-08-mode-creation-lesson-5",
+        title: "Ce que pèse la mode africaine",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "En octobre 2023, l'**UNESCO** a publié son premier rapport consacré au secteur de la mode en Afrique. Il en fait un secteur économique à part entière.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2023",
+            legende: "premier rapport de l'UNESCO sur la mode africaine",
+          },
+          {
+            type: "paragraphe",
+            text: "Le rapport décrit une industrie qui crée des emplois et de la croissance. Il pointe aussi des obstacles : accès au financement, transformation locale du **coton**, contrefaçon, logistique. L'UNESCO y voit un **champion mondial** possible.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**UNESCO** publie son premier rapport mode en 2023",
+              "La mode est un vrai secteur d'**emploi** en Afrique",
+              "Financement et transformation locale restent des obstacles",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
         id: "quiz-decouverte-08-1",
         question: "Qu'est-ce qui est imprimé dans la bordure d'un kanga est-africain ?",
-        options: ["Un numéro de série", "Un proverbe", "Le nom du fabricant", "Une date"],
+        options: [
+          "Un numéro de série",
+          "Un proverbe",
+          "Le nom du fabricant",
+          "Une date",
+        ],
         correctIndex: 1,
         explanation:
           "Le kanga porte un proverbe imprimé : on l'offre pour dire quelque chose qu'on ne dirait pas à voix haute.",
       },
       {
         id: "quiz-decouverte-08-2",
-        question: "De quelle région le shweshwe est-il originaire ?",
-        options: ["Afrique de l'Ouest", "Afrique australe", "Afrique de l'Est", "Afrique du Nord"],
-        correctIndex: 1,
-        explanation:
-          "Le shweshwe est un coton imprimé d'Afrique australe, distinct du boubou ouest-africain et du kanga est-africain.",
-      },
-      {
-        id: "quiz-decouverte-08-3",
         question: "Qu'a fait le créateur malien Chris Seydou avec le bogolan ?",
         options: [
           "Il l'a interdit",
@@ -1643,10 +2154,10 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Chris Seydou a traité le bogolan comme un tissu de couture, non comme un folklore, ouvrant la voie à une mode africaine.",
+          "Chris Seydou (1949-1994) a montré qu'un tissu traditionnel pouvait devenir un vêtement de mode contemporain.",
       },
       {
-        id: "quiz-decouverte-08-4",
+        id: "quiz-decouverte-08-3",
         question: "Quel est l'effet ambigu de la friperie importée en Afrique ?",
         options: [
           "Elle habille à bas prix mais concurrence les filières locales",
@@ -1656,15 +2167,33 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 0,
         explanation:
-          "Elle habille des millions de personnes à bas prix, mais concurrence les textiles locaux et laisse des montagnes d'invendus.",
+          "Elle habille des millions de personnes à très bas prix, mais concurrence les textiles locaux et laisse des montagnes d'invendus.",
+      },
+      {
+        id: "quiz-decouverte-08-4",
+        question: "Quand la Lagos Fashion Week a-t-elle été fondée ?",
+        options: [
+          "En 1991",
+          "En 2001",
+          "En 2011",
+          "En 2021",
+        ],
+        correctIndex: 2,
+        explanation:
+          "Elle a été fondée en 2011 par Omoyemi Akerele ; une trentaine de pays africains ont aujourd'hui leur semaine de la mode.",
       },
       {
         id: "quiz-decouverte-08-5",
-        question: "Où se trouve le marché de Kantamanto, plaque tournante de la friperie ?",
-        options: ["À Lagos", "À Accra", "À Nairobi", "À Dakar"],
-        correctIndex: 1,
+        question: "Qu'a publié l'UNESCO en 2023 au sujet de la mode africaine ?",
+        options: [
+          "Son premier rapport sur le secteur de la mode en Afrique",
+          "Une interdiction de la friperie",
+          "Un label textile continental",
+          "Un concours de jeunes créateurs",
+        ],
+        correctIndex: 0,
         explanation:
-          "Kantamanto, à Accra au Ghana, reçoit chaque semaine des millions de vêtements de seconde main.",
+          "Le rapport décrit un secteur créateur d'emplois, tout en pointant le financement et la transformation locale comme obstacles.",
       },
     ],
   },
