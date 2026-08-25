@@ -404,7 +404,12 @@ de nommage, procédure d'ajout, registre des images et liste de ce qui ne peut p
   `src/assets/lecons/`.
 - **Une image abaisse le budget de mots de 90-140 à 70-110** (règle 11, déjà en place) : toute
   leçon illustrée doit être raccourcie d'environ un quart, `alt` compris dans le décompte.
-- Lot pilote en cours : 1 image sur 10 (mosquée de Djenné, CC BY-SA 3.0).
+- **Règle de travail permanente** (`docs/IMAGES-LECONS.md` § 0) : pour toute leçon conçue ou
+  réécrite, **chercher systématiquement une image**. Si elle existe et sert la leçon, l'ajouter
+  sans demander ; si rien d'utilisable n'existe, le dire explicitement. « Sert la leçon » = elle
+  montre le sujet, pas seulement le lieu.
+- **14 images en place** : 4 objets du Met en CC0, 10 fichiers Wikimedia Commons (CC0, CC BY,
+  CC BY-SA ou domaine public). Registre complet dans `docs/IMAGES-LECONS.md`.
 
 ## Ce qui N'est PAS encore fait
 

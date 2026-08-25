@@ -11,6 +11,24 @@ remplir sa ligne.
 
 ---
 
+## 0. Règle de travail — chercher une image pour chaque leçon
+
+**Pour toute leçon conçue ou réécrite, chercher systématiquement une image**, sans attendre qu'on
+le demande.
+
+- Si une image libre existe **et sert la leçon**, l'ajouter — sans validation préalable.
+- Si aucune image utilisable n'existe, **le dire explicitement** dans le compte rendu, plutôt que
+  de rester silencieux ou de combler avec une image approchante.
+- « Sert la leçon » veut dire : elle montre **le sujet**, pas seulement le lieu ou l'époque. Une
+  photo juste de cadrage mais fausse de sujet ne vaut pas mieux qu'une absence d'image (voir § 5,
+  le cas Bandiagara).
+
+Ne jamais présumer qu'un sujet est sous droits sans vérifier : les portraits d'écrivains ont été
+écartés du lot pilote sur cette présomption, alors que quatre sur cinq étaient disponibles, dont
+deux en CC0 ou dans le domaine public.
+
+---
+
 ## 1. Règle de licence
 
 **Une photo d'objet ou de bâtiment est elle-même une œuvre protégée**, même quand le sujet a
@@ -98,7 +116,7 @@ le projet ; **une seule image par leçon**.
 
 ## 4. Registre des images
 
-Dix images, lot pilote complet. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
+Quatorze images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 
 | Leçon | Sujet | Source | Licence | Auteur | Source → webp |
 |---|---|---|---|---|---|
@@ -111,7 +129,11 @@ Dix images, lot pilote complet. `MET` = The Metropolitan Museum of Art, domaine 
 | `…02-tissus-parures-lesson-4` | Poids akan à peser l'or, en tabouret | [Met 317686](https://www.metmuseum.org/art/collection/search/317686) | CC0 | — | 1200×856 |
 | `…02-tissus-parures-lesson-5` | Panneau de raphia brodé, shoowa | [Commons](https://commons.wikimedia.org/wiki/File:Panel,_Shoowa_people,_raffia_palm_fiber,_plain_weave,_and_embroidery,_HMA.JPG) | CC0 | Hiart | 3430×2415 → 1200×845 |
 | `…03-architectures-terre-lesson-1` | La Grande Mosquée de Djenné | [Commons](https://commons.wikimedia.org/wiki/File:MaliDjenn%C3%A9Mosqu%C3%A9e.JPG) | CC BY-SA 3.0 | BluesyPete | 4521×2094 → 1200×556 |
-| `…03-architectures-terre-lesson-3` | Les falaises de Bandiagara | [Commons](https://commons.wikimedia.org/wiki/File:Hike_Between_Kani-Kombole_and_Teli_(6835826).jpg) | CC BY 2.0 | upyernoz | 2788×1830 → 1200×788 |
+| `…03-architectures-terre-lesson-3` | Village dogon, falaises de Bandiagara | [Commons](https://commons.wikimedia.org/wiki/File:Dogon.jpg) | CC BY-SA 4.0 | Ondřej Havelka | 2000×816 → 1200×490 |
+| `…06-litteratures-africaines-lesson-1` | Portrait de Ngugi wa Thiong'o | [Commons](https://commons.wikimedia.org/wiki/File:Ng%C5%A9g%C4%A9_wa_Thiong%27o_2019_(48139052733).jpg) | CC0 | Library of Congress Life | 3600×2400 → 1200×800 |
+| `…06-litteratures-africaines-lesson-2` | Portrait de Chinua Achebe | [Commons](https://commons.wikimedia.org/wiki/File:Chinua_Achebe_-_Buffalo_25Sep2008_crop.jpg) | CC BY 3.0 | Stuart C. Shapiro | 1340×980 → 1200×878 |
+| `…06-litteratures-africaines-lesson-3` | Portrait de Wole Soyinka | [Commons](https://commons.wikimedia.org/wiki/File:Wole_Soyinka_in_2018-5.jpg) | CC BY-SA 4.0 | Frankie Fouganthin | 2500×1671 → 1200×802 |
+| `…06-litteratures-africaines-lesson-5` | Portrait de Mariama Bâ | [Commons](https://commons.wikimedia.org/wiki/File:Mariama_B%C3%A2_%C3%A0_l%27%C3%89cole_normale_de_Rufisque.jpg) | Domaine public | auteur inconnu | 923×690 |
 
 Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
 les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.
@@ -131,11 +153,15 @@ correctement licencié sur Commons est intitulé « Eric Huyten is filming touri
 dancers, Sangha, 1994 » : il montre une représentation touristique, pas une levée de deuil.
 L'illustrer avec cette image aurait menti sur le sujet de la leçon. Elle attendra une photo juste.
 
-**Une photo trop verticale se rend mal.** Le premier choix pour Bandiagara (village de Teli,
-2592×3872) donnait, avec la règle « jamais de recadrage », une bande étroite au milieu du cadre.
-Remplacé par une vue horizontale de la falaise. **Règle à suivre : privilégier des sources entre
-16:9 et 3:4**, et ne pas descendre en dessous — au-delà, l'image se réduit à un filet. Les photos
-d'objets de musée (masque, statue, plaque) restent verticales sans gêne : le format y est attendu.
+**Bandiagara a demandé trois essais.** Le premier choix (village de Teli, 2592×3872) donnait,
+avec la règle « jamais de recadrage », une bande étroite au milieu du cadre. Le deuxième corrigeait
+le format mais montrait surtout un paysage. Le troisième, un village dogon en panoramique
+(2000×816), montre le bâti de terre et remplit toute la largeur du cadre.
+
+Deux règles en sortent : **privilégier des sources entre 2,5:1 et 3:4** — au-delà en hauteur,
+l'image se réduit à un filet ; et **vérifier que la photo montre le sujet de la leçon, pas
+seulement le lieu**. Les photos d'objets de musée (masque, statue, plaque) restent verticales sans
+gêne : le format y est attendu, et le fond crème les présente comme sur un socle.
 
 **Le kente du Met (objet 85576) était en CC0 mais ne faisait que 298 px de large** — trop petit
 pour la variante 800w, donc flou à l'affichage. Remplacé par une photo Commons de bandes de kente,

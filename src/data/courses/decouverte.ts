@@ -984,9 +984,9 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "image",
-            alt: "Longue falaise de grès surplombant la plaine et des villages de terre.",
-            legende: "Les falaises de Bandiagara, au Mali",
-            credit: "Photo upyernoz, CC BY 2.0, via Wikimedia Commons",
+            alt: "Village dogon aux maisons de terre, adossé à la falaise de Bandiagara.",
+            legende: "Village dogon, falaises de Bandiagara",
+            credit: "Photo Ondřej Havelka, CC BY-SA 4.0, via Wikimedia Commons",
           },
           {
             type: "frise",
@@ -1593,7 +1593,13 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "**Ngugi wa Thiong'o** est un écrivain kényan. Célèbre pour ses romans en anglais, il a décidé en 1986 d'écrire désormais en gikuyu, sa langue maternelle.",
+            text: "**Ngugi wa Thiong'o** est un écrivain kényan. Célèbre pour ses romans en anglais, il a décidé en 1986 d'écrire en gikuyu, sa langue maternelle.",
+          },
+          {
+            type: "image",
+            alt: "Ngugi wa Thiong'o lisant devant un micro.",
+            legende: "Ngugi wa Thiong'o en lecture publique, 2019",
+            credit: "Library of Congress Life, CC0, via Wikimedia Commons",
           },
           {
             type: "chiffreCle",
@@ -1602,7 +1608,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Il explique son choix dans un essai, « Decolonising the Mind ». Selon lui, une langue transporte une façon de voir le monde. Écrire en anglais reviendrait donc à penser dans le cadre du colonisateur. Ce choix a réduit son **lectorat immédiat**.",
+            text: "Il l'explique dans un essai, « Decolonising the Mind ». Selon lui, une langue transporte une façon de voir le monde : écrire en anglais, c'est penser dans le cadre du **colonisateur**.",
           },
           {
             type: "aRetenir",
@@ -1623,13 +1629,19 @@ export const DECOUVERTE_COURSES: Course[] = [
             text: "**Chinua Achebe** était nigérian. En 1958, il publie « Things Fall Apart », un roman sur l'arrivée des Européens dans un village igbo.",
           },
           {
+            type: "image",
+            alt: "Chinua Achebe pendant une lecture publique.",
+            legende: "Chinua Achebe, lecture à Buffalo, 2008",
+            credit: "Photo Stuart C. Shapiro, CC BY 3.0, via Wikimedia Commons",
+          },
+          {
             type: "chiffreCle",
             valeur: "1958",
             legende: "Things Fall Apart, de Chinua Achebe",
           },
           {
             type: "paragraphe",
-            text: "Jusque-là, les récits coloniaux racontaient cette rencontre du point de vue européen. Achebe la raconte du point de vue du village. Le roman est traduit dans des dizaines de langues. Il ouvre la voie à toute une **génération d'écrivains** africains.",
+            text: "Jusque-là, ces récits étaient écrits du point de vue européen. Achebe raconte du point de vue du village. Traduit dans des dizaines de langues, il a ouvert la voie à une **génération d'écrivains**.",
           },
           {
             type: "aRetenir",
@@ -1647,7 +1659,13 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "La littérature africaine est aujourd'hui traduite, primée et lue dans le monde entier. Une question revient pourtant : pour qui écrit-on ?",
+            text: "La littérature africaine est aujourd'hui traduite, primée et lue partout. Une question revient pourtant : pour qui écrit-on ?",
+          },
+          {
+            type: "image",
+            alt: "Wole Soyinka pendant une conférence.",
+            legende: "Wole Soyinka, Nobel de littérature 1986",
+            credit: "Photo Frankie Fouganthin, CC BY-SA 4.0, via Wikimedia Commons",
           },
           {
             type: "frise",
@@ -1659,12 +1677,12 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Wole Soyinka**, nigérian, reçoit le prix Nobel en 1986. Abdulrazak Gurnah, tanzanien, le reçoit en 2021. Beaucoup de ces auteurs vivent et publient hors d'Afrique. Écrivent-ils pour un **lectorat africain** ou pour les jurys du Nord ?",
+            text: "**Wole Soyinka** reçoit le Nobel en 1986, Abdulrazak Gurnah en 2021. Beaucoup de ces auteurs vivent hors d'Afrique : écrivent-ils pour un **lectorat africain** ?",
           },
           {
             type: "aRetenir",
             points: [
-              "**Soyinka** en 1986, Gurnah en 2021 : deux Nobel",
+              "Soyinka en 1986, **Gurnah** en 2021 : deux prix Nobel",
               "Beaucoup d'auteurs publient depuis la diaspora",
               "Le débat sur le **lectorat visé** reste ouvert",
             ],
@@ -1707,13 +1725,19 @@ export const DECOUVERTE_COURSES: Course[] = [
             text: "**Mariama Bâ** était sénégalaise. En 1979, elle publie « Une si longue lettre », un roman écrit sous la forme d'une lettre d'une veuve à son amie.",
           },
           {
+            type: "image",
+            alt: "Mariama Bâ debout au micro, pendant un discours.",
+            legende: "Mariama Bâ, discours à l'École normale de Rufisque",
+            credit: "Domaine public, via Wikimedia Commons",
+          },
+          {
             type: "chiffreCle",
             valeur: "1979",
             legende: "Une si longue lettre, de Mariama Bâ",
           },
           {
             type: "paragraphe",
-            text: "Le livre paraît à Dakar, aux Nouvelles Éditions Africaines. Il reçoit le **prix Noma**. Bâ y parle de polygamie, de veuvage et de la place des femmes. Elle est morte en 1981, après un second roman.",
+            text: "Le livre paraît à Dakar, aux Nouvelles Éditions Africaines, et reçoit le **prix Noma**. Bâ y parle de polygamie, de veuvage et de la place des femmes.",
           },
           {
             type: "aRetenir",
