@@ -221,7 +221,7 @@ for (const card of CARDS) {
 for (const course of COURSES) {
   if (!CHARTE_APPLIQUEE.includes(course.categoryId)) continue;
 
-  for (const [lessonIndex, lesson] of course.lessons.entries()) {
+  for (const lesson of course.lessons) {
     const ref = `${course.id} / ${lesson.id}`;
     const blocks = lesson.blocks;
     const hasImage = blocks.some((b) => b.type === "image");
