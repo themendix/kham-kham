@@ -793,35 +793,143 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-05-ibn-khaldoun-lesson-1",
         title: "Une vie de lettré et de diplomate",
         blocks: [
-          { type: "paragraphe", text: "Abd al-Rahman Ibn Khaldoun naît à Tunis en 1332, dans une famille andalouse installée au Maghreb après la reconquête chrétienne de Séville. Il reçoit la formation classique des élites lettrées : Coran, droit, grammaire, philosophie, mathématiques. À dix-sept ans, la peste noire emporte ses parents et une grande partie de ses maîtres — un événement qui marque durablement sa vision des cycles et des effondrements. Sa vie adulte est un enchaînement de fonctions politiques dans un Maghreb morcelé entre dynasties rivales : secrétaire, chambellan, ambassadeur, négociateur auprès des tribus, à Tunis, Fès, Grenade, Bougie, Tlemcen. Il connaît la faveur des princes, la disgrâce et la prison. C'est un homme qui a vu de l'intérieur comment on prend le pouvoir, comment on le perd, et comment les alliances tribales se font et se défont. Vers 1375, épuisé par ces intrigues, il se retire quatre ans dans une forteresse de l'actuelle Algérie, à Qalat Ibn Salama. C'est là qu'il écrit." },
+          {
+            type: "paragraphe",
+            text: "**Ibn Khaldoun** naît le 27 mai 1332 à Tunis, dans une famille andalouse installée au Maghreb depuis des générations.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1332", texte: "Naissance à Tunis" },
+              { date: "1375", texte: "Retraite à Qalat Ibn Salama" },
+              { date: "1377", texte: "Rédaction de la Muqaddima" },
+              { date: "1406", texte: "Mort au Caire" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il reçoit une éducation arabe classique très poussée, puis passe sa vie entre les cours de Fès, Grenade, Tlemcen et Le Caire. Il y est tour à tour secrétaire, ambassadeur, **conseiller** — et parfois **prisonnier** des princes qu'il sert.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né à **Tunis** en 1332, mort au Caire en 1406",
+              "Une carrière entre Fès, Grenade, Tlemcen et Le Caire",
+              "Homme de cour autant que **savant**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-05-ibn-khaldoun-lesson-2",
         title: "La Muqaddima",
         blocks: [
-          { type: "paragraphe", text: "Ce qu'il rédige dans cette retraite est la Muqaddima, c'est-à-dire la « Prolégomènes » ou l'introduction à une vaste histoire universelle, le Kitab al-'Ibar. Mais l'introduction dépasse de très loin son objet : elle constitue un traité autonome, et c'est elle qui a fait sa gloire. Ibn Khaldoun y formule un projet inédit — fonder une science nouvelle, qu'il nomme la « science de la civilisation » ('ilm al-'umran), destinée à expliquer les sociétés humaines par des causes naturelles et non par la seule volonté divine ou le mérite des grands hommes. Il commence par une critique méthodique des historiens qui l'ont précédé : ils recopient sans vérifier, ils accueillent l'invraisemblable, ils ne se demandent jamais si un fait est possible compte tenu de l'état de la société qu'ils décrivent. À la place, il propose de confronter chaque récit aux conditions matérielles — géographie, climat, économie, organisation du travail, structures de parenté. C'est cette exigence qui fait de la Muqaddima un texte fondateur." },
+          {
+            type: "paragraphe",
+            text: "En 1375, **Ibn Khaldoun** se retire dans une forteresse d'Algérie. Il y écrit en quelques mois la Muqaddima.",
+          },
+          {
+            type: "image",
+            alt: "Page de manuscrit arabe, de la main d'Ibn Khaldoun.",
+            legende: "La Muqaddima, de la main d'Ibn Khaldoun",
+            credit: "Domaine public, via Wikimedia Commons",
+          },
+          {
+            type: "paragraphe",
+            text: "Le mot signifie « prolégomènes » : c'est l'introduction d'une histoire universelle. Mais l'introduction dépasse l'ouvrage. Ibn Khaldoun y cherche les **lois** qui gouvernent les sociétés, là où ses prédécesseurs alignaient les règnes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **Muqaddima** est écrite vers 1377, en quelques mois",
+              "C'est l'introduction d'une histoire universelle",
+              "Il y cherche les **lois** des sociétés humaines",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-05-ibn-khaldoun-lesson-3",
         title: "L'asabiyya et le cycle des dynasties",
         blocks: [
-          { type: "paragraphe", text: "Le concept central d'Ibn Khaldoun est l'asabiyya, souvent traduite par « esprit de corps », « solidarité de groupe » ou « cohésion sociale ». C'est la force qui unit les membres d'un clan, d'une tribu ou d'une communauté, et qui les rend capables d'agir ensemble, de se sacrifier et de conquérir. Cette asabiyya, observe-t-il, est maximale chez les populations rurales et nomades, endurcies par des conditions de vie difficiles, et faible chez les citadins habitués au confort. D'où son modèle cyclique, resté célèbre : un groupe à forte asabiyya venu des marges conquiert une ville et fonde une dynastie ; installée au pouvoir, celle-ci développe le luxe, l'administration, l'impôt et les arts ; mais ce raffinement même dissout la solidarité initiale, les souverains recourent à des mercenaires et alourdissent la fiscalité, la légitimité s'érode ; au bout de trois ou quatre générations — environ un siècle et demi —, la dynastie affaiblie tombe devant un nouveau groupe venu des marges, et le cycle recommence. Ibn Khaldoun ne théorise pas dans le vide : il décrit ce qu'il a vu au Maghreb." },
+          {
+            type: "paragraphe",
+            text: "Le mot **asabiyya** se traduit mal. Il désigne la force de cohésion d'un groupe : ce qui fait que ses membres se tiennent les uns aux autres.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "4 générations",
+            legende: "la durée qu'il donne à une dynastie",
+          },
+          {
+            type: "paragraphe",
+            text: "Selon Ibn Khaldoun, un groupe soudé conquiert le pouvoir. Installé dans les villes, il s'amollit et perd son **asabiyya**. Un autre groupe, plus rude, le renverse. Le cycle dure environ quatre générations, puis recommence.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**asabiyya** est la force de cohésion d'un groupe",
+              "Elle se perd avec la vie urbaine et le confort",
+              "Le cycle des dynasties dure environ **quatre générations**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-05-ibn-khaldoun-lesson-4",
         title: "Son regard sur l'Afrique, et ses limites",
         blocks: [
-          { type: "paragraphe", text: "Ibn Khaldoun est une source majeure pour l'histoire africaine. Ses écrits fournissent des informations précieuses sur les Berbères, auxquels il consacre une partie considérable de son œuvre, sur les dynasties maghrébines, sur le commerce transsaharien et sur les royaumes du Sahel — c'est notamment chez lui que l'on trouve des éléments sur l'empire du Mali et sur ses souverains. Il a par ailleurs collecté des traditions relatives à des figures comme Dihya. L'Histoire générale de l'Afrique mobilise abondamment son témoignage. Mais elle invite aussi à le lire avec un esprit critique : Ibn Khaldoun est un homme du XIVᵉ siècle, et ses jugements sur les populations d'Afrique subsaharienne reprennent des préjugés climatiques courants dans le monde savant de son époque — l'idée que le climat déterminerait les tempéraments et les aptitudes. Ces passages ont été utilisés bien plus tard pour justifier des thèses racialistes qui lui étaient étrangères. Un grand auteur n'est pas un auteur infaillible ; le lire sérieusement, c'est aussi voir où il se trompe." },
+          {
+            type: "paragraphe",
+            text: "**Ibn Khaldoun** décrit l'Afrique du Nord avec une précision inégalée. Sur les régions plus au sud, son regard est bien moins sûr.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Point fort", valeur: "Histoire des Berbères, source majeure" },
+              { label: "Point faible", valeur: "L'Afrique subsaharienne, mal connue" },
+              { label: "À corriger", valeur: "Des jugements datés sur les peuples du Sud" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Son **Histoire des Berbères** reste une source de premier ordre, parfois la seule sur certaines tribus. Mais il reprend sur les peuples subsahariens des jugements courants à son époque, que les savoirs actuels ont **démentis**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**Histoire des Berbères** est une source majeure",
+              "Son savoir sur l'Afrique subsaharienne est mince",
+              "Il reprend des préjugés de son temps",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-05-ibn-khaldoun-lesson-5",
         title: "Postérité d'un précurseur",
         blocks: [
-          { type: "paragraphe", text: "La fin de sa vie se passe en Égypte : appelé au Caire en 1382, il y enseigne le droit malikite et occupe à plusieurs reprises la charge de grand cadi. En 1401, il est envoyé négocier avec Tamerlan, qui assiège Damas ; les deux hommes s'entretiennent longuement, et Ibn Khaldoun laisse de cette rencontre un récit saisissant. Il meurt au Caire en 1406. Son œuvre reste ensuite peu lue pendant des siècles, avant d'être redécouverte au XIXᵉ siècle et traduite en Europe. Depuis, l'ampleur de son apport n'a cessé d'être reconnue : historiens, sociologues, économistes et anthropologues voient en lui un précurseur — certains le tiennent pour le premier sociologue, d'autres soulignent ses intuitions sur le rôle du travail dans la valeur ou sur les effets d'une fiscalité excessive. L'essentiel est peut-être ailleurs : Ibn Khaldoun a montré, depuis l'Afrique du Nord et bien avant l'Europe moderne, que les sociétés humaines pouvaient être des objets de science." },
+          {
+            type: "paragraphe",
+            text: "Pendant des siècles, **Ibn Khaldoun** a été lu comme un historien parmi d'autres. Le XIXe siècle européen le redécouvre autrement.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1863",
+            legende: "traduction française de Slane, à Paris",
+          },
+          {
+            type: "paragraphe",
+            text: "Traduit en français par **de Slane**, puis discuté par les sociologues, il apparaît comme un précurseur : il cherchait des régularités là où l'on ne voyait que des récits. On le lit aujourd'hui au Caire comme à Chicago, dans les départements d'histoire autant que de sociologie.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Redécouvert en Europe au **XIXe siècle**",
+              "Lu comme un précurseur de la **sociologie**",
+              "Il cherchait des régularités, pas seulement des récits",
+            ],
+          },
         ],
       },
     ],
@@ -875,35 +983,146 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-06-sayyida-al-hurra-lesson-1",
         title: "L'exil d'al-Andalus",
         blocks: [
-          { type: "paragraphe", text: "En 1492, la prise de Grenade met fin à huit siècles de présence musulmane en Espagne. Les années qui suivent voient des dizaines de milliers de musulmans et de juifs quitter la péninsule Ibérique, contraints par les conversions forcées, l'Inquisition et les expulsions successives. Une grande partie de ces réfugiés traversent le détroit et s'installent sur la côte nord du Maroc, où ils reconstruisent des villes en partie ruinées : Chefchaouen, Salé, et surtout Tétouan. Ils y apportent leurs métiers, leur architecture, leur musique et une mémoire brûlante de la dépossession. C'est dans cette population d'exilés qu'apparaît la femme que l'histoire retiendra sous le nom de Sayyida al-Hurra — expression arabe qui n'est pas un prénom mais un titre, signifiant à peu près « la dame libre » ou « la souveraine indépendante ». Née vers 1490 dans une famille andalouse de haut rang, elle a connu enfant l'exode. Cet arrachement expliquera l'essentiel de sa politique." },
+          {
+            type: "paragraphe",
+            text: "**Sayyida al-Hurra** naît en 1485 à Grenade, sept ans avant la chute de la ville aux mains des Rois catholiques.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1485", texte: "Naissance à Grenade" },
+              { date: "1492", texte: "Chute de Grenade, exil au Maroc" },
+              { date: "1515", texte: "Elle devient gouverneure de Tétouan" },
+              { date: "1542", texte: "Évincée par son beau-fils" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Sa famille fuit au Maroc et s'installe à **Chefchaouen**, ville fondée pour accueillir les réfugiés d'al-Andalus. Elle y grandit dans le souvenir de la perte, entourée d'exilés qui n'ont pas renoncé.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née à **Grenade** en 1485, exilée après 1492",
+              "Sa famille s'installe à **Chefchaouen**",
+              "Elle grandit parmi les réfugiés d'al-Andalus",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-06-sayyida-al-hurra-lesson-2",
         title: "Gouverner Tétouan",
         blocks: [
-          { type: "paragraphe", text: "Sa famille s'établit à Chefchaouen, où son père exerce l'autorité. Instruite, elle reçoit une éducation soignée et est mariée à un homme puissant, al-Mandri, qui dirige la reconstruction et la défense de Tétouan. Elle ne se contente pas d'être son épouse : elle s'associe étroitement au gouvernement de la cité, apprend l'administration, la fiscalité, la diplomatie. Lorsque son mari meurt, vers 1515, elle lui succède à la tête de Tétouan — non par intérim, mais comme gouvernante reconnue, exerçant l'autorité effective pendant environ trois décennies. C'est le point remarquable de sa trajectoire : dans un espace politique où le pouvoir urbain est habituellement masculin, elle dirige une ville portuaire stratégique, négocie avec les puissances étrangères en son nom propre et signe des accords. Les documents espagnols et portugais de l'époque la désignent comme l'interlocutrice avec qui il faut traiter — ce qui, venant d'adversaires, vaut reconnaissance." },
+          {
+            type: "paragraphe",
+            text: "En 1515, **Sayyida al-Hurra** prend la tête de Tétouan. Elle gouvernera la ville pendant trente ans.",
+          },
+          {
+            type: "image",
+            alt: "Vue de la médina de Tétouan, maisons blanches serrées au pied des montagnes.",
+            legende: "La médina de Tétouan, qu'elle gouverna trente ans",
+            credit: "Photo Ideophagous, CC BY-SA 4.0, via Wikimedia Commons",
+          },
+          {
+            type: "paragraphe",
+            text: "Son titre, **al-Hurra**, signifie « la libre », « la souveraine ». Elle relève la ville, en fait un port actif et l'administre en son nom propre, sans tuteur ni régent au-dessus d'elle.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Gouverneure de **Tétouan** de 1515 à 1542",
+              "**al-Hurra** signifie « la libre », « la souveraine »",
+              "Elle relève la ville et en fait un port actif",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-06-sayyida-al-hurra-lesson-3",
         title: "La Méditerranée du XVIᵉ siècle",
         blocks: [
-          { type: "paragraphe", text: "Pour comprendre son action, il faut se représenter la Méditerranée occidentale de ce temps : un espace de guerre permanente. Portugais et Espagnols tiennent des places fortes sur la côte marocaine — Ceuta, Tanger, Melilla, Mazagan — et lancent des raids vers l'intérieur ; en face, les ports du Maghreb arment des navires qui attaquent la navigation chrétienne, capturent des bâtiments et rançonnent des prisonniers. Cette course n'est pas de la piraterie au sens d'un banditisme privé : c'est une activité encadrée, autorisée par les autorités, qui y voient à la fois une ressource économique et un moyen de riposte contre des puissances qui ont chassé les musulmans d'Espagne et occupent leurs côtes. Sayyida al-Hurra s'y engage pleinement : Tétouan devient sous son autorité l'un des grands ports de course de la côte occidentale, en lien avec Alger, où opèrent les frères Barberousse. Les captifs et les marchandises alimentent l'économie de la ville et financent sa défense." },
+          {
+            type: "paragraphe",
+            text: "Au XVIe siècle, la Méditerranée est un champ de bataille entre l'Espagne, le Portugal et l'Empire ottoman.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1492", texte: "Fin de la présence musulmane à Grenade" },
+              { date: "1497", texte: "L'Espagne prend Melilla" },
+              { date: "1500-1550", texte: "Essor de la course en Méditerranée" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "La **course** — la guerre navale autorisée par un souverain — est à la fois une arme et une économie. Sayyida al-Hurra s'allie au corsaire turc **Arudj Barberousse** : butin et rançons deviennent une ressource pour Tétouan.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La Méditerranée oppose Espagne, Portugal et **Ottomans**",
+              "La **course** est une arme autant qu'une économie",
+              "Alliance avec Arudj Barberousse, corsaire turc",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-06-sayyida-al-hurra-lesson-4",
         title: "Une souveraine face aux puissances ibériques",
         blocks: [
-          { type: "paragraphe", text: "Face aux Portugais et aux Espagnols, elle mène une politique cohérente qui n'est pas seulement militaire. Elle négocie directement les échanges de captifs et les rançons, conclut des trêves quand elles servent Tétouan, les rompt quand elles ne servent plus. Les chroniqueurs ibériques la nomment « la reine de Tétouan » et rapportent l'exaspération qu'elle suscite : ils ont affaire à une adversaire qui tient parole, connaît la valeur de ce qu'elle détient et ne se laisse pas intimider. Son autorité est telle qu'en 1541 elle épouse le sultan wattaside Ahmed al-Wattassi — et l'on retient que le souverain se déplaça jusqu'à Tétouan pour la cérémonie, elle-même refusant de quitter sa ville. Le geste est politique autant que symbolique : elle épouse un sultan sans renoncer à son propre pouvoir ni à sa base territoriale. Peu de figures féminines de cette période ont laissé une trace aussi nette dans les archives de leurs adversaires." },
+          {
+            type: "paragraphe",
+            text: "Les Portugais tiennent Ceuta et Tanger, les Espagnols Melilla. **Sayyida al-Hurra** traite avec eux d'égale à égal.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "30 ans",
+            legende: "la durée de son gouvernement sur Tétouan",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle négocie les rançons de captifs, signe des trêves, contrôle les échanges du port. Les chroniques ibériques la nomment et la craignent : c'est l'un des très rares cas, à cette époque, où une femme est reconnue comme **interlocutrice** politique par ces puissances.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Elle négocie directement avec Portugais et **Espagnols**",
+              "Rançons, trêves et contrôle des échanges",
+              "Les chroniques ibériques la nomment et la **craignent**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-06-sayyida-al-hurra-lesson-5",
         title: "Chute et mémoire",
         blocks: [
-          { type: "paragraphe", text: "Le pouvoir de Sayyida al-Hurra s'achève brutalement. Vers 1542, elle est renversée — la tradition attribue le coup de force à son gendre, ou à une coalition de notables lassés de son autorité —, dépouillée de ses biens et écartée de Tétouan. Elle se retire à Chefchaouen, où elle meurt quelques années plus tard, sans que la date soit assurée. Son nom disparaît ensuite des grands récits, comme il arrive souvent aux femmes de pouvoir dont l'exercice a été jugé anormal. Elle a pourtant laissé des traces solides : dans les chroniques ibériques, dans les archives portugaises, dans la mémoire de Tétouan et de Chefchaouen. L'UNESCO l'a intégrée à son projet Femmes dans l'histoire de l'Afrique précisément pour cela — elle démontre qu'au XVIᵉ siècle, dans le monde méditerranéen musulman, une femme a pu gouverner une cité-État, mener une politique étrangère et être traitée d'égale à égal par les puissances européennes de son temps." },
+          {
+            type: "paragraphe",
+            text: "En 1542, **Sayyida al-Hurra** est évincée par son propre beau-fils. Elle se retire à Chefchaouen, la ville de son enfance, où elle meurt.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Titre", valeur: "al-Hurra, « la libre »" },
+              { label: "Fin", valeur: "Évincée en 1542" },
+              { label: "Mémoire", valeur: "Longtemps absente des manuels" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle a longtemps disparu des récits, y compris marocains. La sociologue **Fatema Mernissi** est de celles qui l'ont tirée de l'oubli, en montrant que le pouvoir exercé par des femmes en terre d'islam avait une **histoire** documentée.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Évincée en **1542** par son beau-fils",
+              "Elle meurt à Chefchaouen, où elle avait grandi",
+              "Redécouverte tardivement, notamment par **Fatema Mernissi**",
+            ],
+          },
         ],
       },
     ],
@@ -957,35 +1176,143 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-07-kimpa-vita-lesson-1",
         title: "Un royaume en ruines",
         blocks: [
-          { type: "paragraphe", text: "Le royaume Kongo, situé de part et d'autre de l'embouchure du fleuve Congo, avait été l'un des États les plus structurés d'Afrique centrale. Christianisé à partir de la fin du XVᵉ siècle par contact avec les Portugais — le roi Nzinga a Nkuwu puis surtout son fils Afonso Iᵉʳ adoptent le catholicisme et en font une religion d'État —, il possédait une capitale, Mbanza Kongo rebaptisée São Salvador, une administration provinciale et des relations diplomatiques directes avec Lisbonne et le Vatican. Mais la traite atlantique, dont le royaume devient à la fois un partenaire et une victime, le désorganise profondément. Le choc décisif survient en 1665 à la bataille de Mbwila (Ambuila) : l'armée kongo est écrasée par les Portugais, le roi tué. S'ensuivent des décennies de guerre civile entre lignages rivaux. La capitale est abandonnée et livrée à la brousse, les provinces se déchirent, les captures d'esclaves se multiplient. C'est un pays en morceaux que découvre la génération de Kimpa Vita." },
+          {
+            type: "paragraphe",
+            text: "À la fin du XVIIe siècle, le royaume du **Kongo** n'est plus qu'un champ de ruines et de guerres entre prétendants.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1665", texte: "Défaite de Mbwila contre les Portugais" },
+              { date: "1665-1700", texte: "Guerre civile, capitale abandonnée" },
+              { date: "1704", texte: "Kimpa Vita se dit habitée par saint Antoine" },
+              { date: "1706", texte: "Elle est brûlée vive" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "La bataille de **Mbwila**, en 1665, a coûté au royaume son roi et son unité. **São Salvador**, la capitale, est désertée. Les prétendants se disputent un trône vide pendant des décennies.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La défaite de **Mbwila** (1665) brise le royaume",
+              "**São Salvador**, la capitale, est abandonnée",
+              "Des prétendants rivaux se disputent le trône",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-07-kimpa-vita-lesson-2",
         title: "Une jeune femme devenue prophétesse",
         blocks: [
-          { type: "paragraphe", text: "Kimpa Vita naît vers 1684 dans une famille de l'aristocratie kongo. Baptisée sous le nom de Béatrice (d'où le nom de « Dona Beatriz » que lui donnent les sources portugaises), elle est formée comme nganga marinda, une fonction rituelle traditionnelle de médiation et de guérison, socialement respectée. Elle grandit donc à l'intersection de deux univers religieux : le catholicisme importé, enseigné par les missionnaires capucins, et les pratiques spirituelles kongo. En 1704, à environ vingt ans, elle tombe gravement malade et déclare, à son réveil, avoir été possédée par saint Antoine de Padoue — le saint le plus populaire du Kongo, dont les missionnaires avaient largement diffusé le culte. Elle affirme mourir chaque vendredi, monter au ciel s'entretenir avec Dieu, et renaître le lundi. Elle abandonne ses biens, se met à prêcher et rassemble en quelques mois une audience considérable." },
+          {
+            type: "paragraphe",
+            text: "**Kimpa Vita** est une jeune femme kongo, formée aux pratiques de médiation avec l'invisible, dans une société où ce rôle est reconnu.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1704",
+            legende: "elle se dit habitée par saint Antoine",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle est baptisée sous le nom de **Dona Béatrice**. En 1704, elle déclare que saint Antoine de Padoue est entré en elle et parle par sa bouche. Elle appelle aussitôt à reconstruire le royaume et à réoccuper la capitale.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Baptisée **Dona Béatrice**, formée aux traditions kongo",
+              "En 1704, elle se dit habitée par **saint Antoine**",
+              "Elle appelle à réunifier le royaume",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-07-kimpa-vita-lesson-3",
         title: "L'antonianisme, un christianisme kongo",
         blocks: [
-          { type: "paragraphe", text: "Son message est simple et explosif. Jésus, Marie et saint François seraient nés au Kongo : le Christ à Mbanza Kongo, sa mère d'une esclave. Les saints européens représentés dans les églises ne sont pas les vrais ; les objets du culte importés — croix, médailles, chapelets — sont sans pouvoir et doivent être écartés. Le pardon ne s'obtient pas par les sacrements administrés par des prêtres étrangers, mais par l'intention et la foi. Surtout, Dieu exige la réunification du royaume et le retour du roi dans sa capitale abandonnée. Ce mouvement, que les historiens appellent l'antonianisme, est bien plus qu'une hérésie de circonstance : c'est la première tentative documentée d'africanisation du christianisme, l'affirmation qu'un peuple peut être chrétien dans ses propres termes, avec sa propre géographie sacrée. L'Histoire générale de l'Afrique y voit un moment fondateur, précurseur lointain des Églises indépendantes africaines des XIXᵉ et XXᵉ siècles." },
+          {
+            type: "paragraphe",
+            text: "Le mouvement de **Kimpa Vita** prend le nom d'antonianisme, du saint qui parle par elle.",
+          },
+          {
+            type: "image",
+            alt: "Crucifix kongo en laiton, au Christ aux traits africains.",
+            legende: "Crucifix kongo en laiton, art chrétien local",
+            credit: "Cleveland Museum of Art, domaine public (CC0)",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle enseigne que le Christ, Marie et saint François étaient **kongo**, nés à São Salvador. Le christianisme devient ainsi une histoire du pays lui-même, enracinée dans sa terre et dans sa langue.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**antonianisme** naît de ses prédications",
+              "Elle situe le Christ et Marie à **São Salvador**",
+              "Un christianisme enraciné dans le pays kongo",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-07-kimpa-vita-lesson-4",
         title: "La reconquête de São Salvador et le bûcher",
         blocks: [
-          { type: "paragraphe", text: "Le mouvement n'est pas seulement spirituel : il est politique et il agit. Kimpa Vita envoie ses disciples, les « petits Antoines », prêcher dans les provinces, et elle-même conduit ses fidèles vers la capitale abandonnée. São Salvador est réoccupée et repeuplée par des milliers de personnes venues de toutes les régions — un succès spectaculaire, qui inquiète autant les prétendants au trône que les missionnaires capucins. Ces derniers dénoncent une hérésie ; les rivaux y voient une force politique incontrôlable. En 1706, Kimpa Vita est capturée par les hommes du roi Pedro IV, alors qu'elle vient d'avoir un enfant. Jugée pour hérésie et sorcellerie sous l'influence des capucins, elle est condamnée et brûlée vive, avec son compagnon. Elle avait environ vingt-deux ans. Son mouvement lui survit quelques années avant d'être écrasé — mais São Salvador, elle, restera réoccupée." },
+          {
+            type: "paragraphe",
+            text: "Des milliers de personnes suivent **Kimpa Vita** et repeuplent la capitale abandonnée depuis des décennies.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1706",
+            legende: "Kimpa Vita est condamnée au bûcher",
+          },
+          {
+            type: "paragraphe",
+            text: "Le mouvement devient en quelques mois une force politique que plus personne ne peut ignorer. Les prétendants au trône s'en inquiètent, les missionnaires **capucins** y voient une hérésie. Kimpa Vita est capturée sur ordre du roi, jugée par un tribunal ecclésiastique, puis brûlée vive en 1706 avec son enfant nouveau-né.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Ses partisans réoccupent **São Salvador**",
+              "Les **capucins** la jugent hérétique",
+              "Elle est brûlée vive en **1706**, avec son enfant",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-07-kimpa-vita-lesson-5",
         title: "Relectures : hérésie, résistance ou renaissance ?",
         blocks: [
-          { type: "paragraphe", text: "Longtemps, l'histoire de Kimpa Vita n'a été racontée que par ceux qui l'avaient condamnée : les rapports des missionnaires capucins, principale source dont nous disposons, en font une illuminée manipulée ou une possédée. L'historiographie africaine et africaniste du XXᵉ siècle a renversé cette lecture. On y voit désormais, selon les angles : une réformatrice religieuse qui tenta d'enraciner le christianisme dans une culture au lieu de l'y importer ; une figure politique qui porta un projet de réunification nationale dans un pays disloqué par la traite et la guerre civile ; une résistante précoce à la domination européenne, deux siècles avant la colonisation formelle. En République démocratique du Congo et en Angola, elle est aujourd'hui une figure de mémoire nationale, et son nom est invoqué par plusieurs mouvements religieux africains. L'UNESCO l'a inscrite dans son projet Femmes dans l'histoire de l'Afrique comme l'une des consciences les plus originales de l'Afrique du XVIIIᵉ siècle naissant." },
+          {
+            type: "paragraphe",
+            text: "Trois siècles plus tard, on ne s'accorde toujours pas sur ce que fut **Kimpa Vita**.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Pour les missionnaires", valeur: "Une hérétique à réduire" },
+              { label: "Pour les nationalistes", valeur: "Une résistante à la domination" },
+              { label: "Pour les historiens", valeur: "Une réforme religieuse kongo" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les sources dont on dispose sont **capucines** : elles la décrivent pour la condamner. Les historiens y lisent aujourd'hui une tentative de refonder à la fois une religion et un État — l'une des premières **prophétesses** africaines documentées.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Nos sources viennent de ses **juges**",
+              "Hérétique, résistante ou réformatrice selon les lectures",
+              "L'une des premières prophétesses africaines documentées",
+            ],
+          },
         ],
       },
     ],
@@ -1039,35 +1366,143 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-08-nanny-marrons-lesson-1",
         title: "De l'Afrique aux Caraïbes",
         blocks: [
-          { type: "paragraphe", text: "Entre le XVIᵉ et le XIXᵉ siècle, la traite transatlantique déporte des millions d'Africains vers les Amériques. La Jamaïque, prise par les Anglais aux Espagnols en 1655, devient l'une des colonies sucrières les plus rentables du monde — et l'une des plus meurtrières. Le travail dans les plantations de canne y est d'une brutalité telle que la mortalité dépasse la natalité : la colonie ne se maintient qu'en important continuellement de nouveaux captifs. Une part importante d'entre eux vient de la Côte de l'Or, l'actuel Ghana, et notamment des populations akan — les colons les appellent « Coromantee », du nom du port de Kormantine. Ces déportés arrivent avec des langues, des organisations sociales, des savoirs militaires et des pratiques spirituelles qu'ils ne perdent pas. L'Histoire générale de l'Afrique consacre son volume X à ces diasporas : elle rappelle qu'elles ne sont pas une simple annexe de l'histoire africaine, mais l'un de ses prolongements, et que la résistance y fut constante." },
+          {
+            type: "paragraphe",
+            text: "Au XVIIe siècle, des dizaines de milliers de personnes sont déportées d'Afrique de l'Ouest vers les plantations de **Jamaïque**.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1655", texte: "Les Anglais prennent la Jamaïque aux Espagnols" },
+              { date: "XVIIe s.", texte: "Essor des plantations sucrières" },
+              { date: "1728-1739", texte: "Première guerre des Marrons" },
+              { date: "1739", texte: "Traité entre Marrons et Couronne" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Beaucoup viennent du pays **akan**, dans l'actuel Ghana ; on les appelle en Jamaïque les Coromantee. Ils arrivent avec des langues, des savoirs militaires et une expérience de l'organisation politique.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Déportation massive vers les plantations de **Jamaïque**",
+              "Beaucoup viennent du pays **akan**, l'actuel Ghana",
+              "Ils arrivent avec des savoirs militaires et politiques",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-08-nanny-marrons-lesson-2",
         title: "Le marronnage comme système",
         blocks: [
-          { type: "paragraphe", text: "Fuir la plantation s'appelle le marronnage. En Jamaïque, il prend une ampleur exceptionnelle, pour deux raisons : l'île possède un intérieur montagneux, couvert de forêt dense et creusé de reliefs karstiques presque impraticables — la région dite Cockpit Country —, et les Espagnols, en quittant l'île, y avaient laissé des groupes d'Africains libres qui servirent de noyau. Les Marrons ne sont donc pas des fugitifs isolés : ils fondent des communautés organisées, avec des villages, des cultures vivrières, des chefs, des conseils, un système d'alerte et une discipline militaire. Ils pratiquent la guérilla : embuscades, camouflage végétal, usage de l'abeng, une corne de bœuf dont les sonorités transmettent des messages codés à des kilomètres. Deux grands ensembles se forment : les Marrons sous le vent, à l'ouest, et les Marrons au vent, à l'est, dans les Blue Mountains. C'est parmi ces derniers qu'apparaît Nanny." },
+          {
+            type: "paragraphe",
+            text: "**Marron** vient de l'espagnol cimarrón : l'animal domestique retourné à l'état sauvage. Le mot désigne ceux qui fuient les plantations.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Blue Mountains",
+            legende: "le massif où se réfugient les Marrons",
+          },
+          {
+            type: "paragraphe",
+            text: "Fuir ne suffit pas : il faut tenir. Les Marrons s'installent dans les **Blue Mountains**, cultivent, s'organisent et se défendent. Ils y créent des communautés durables, avec leurs chefs, leurs règles, leurs cultures vivrières et leurs alliances.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Marron** vient de cimarrón, « retourné à l'état sauvage »",
+              "Les Blue Mountains servent de refuge et de base",
+              "Des communautés durables, organisées et armées",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-08-nanny-marrons-lesson-3",
         title: "Nanny Town et la guerre des Marrons",
         blocks: [
-          { type: "paragraphe", text: "Nanny — que la tradition dit née en pays akan, dans l'actuel Ghana, et arrivée en Jamaïque comme captive au début du XVIIIᵉ siècle — dirige la communauté marronne des Blue Mountains dans les années 1720-1730. Le village fortifié qu'elle établit, connu sous le nom de Nanny Town, est bâti sur une crête d'accès quasi impossible, dominant les vallées : les assaillants doivent progresser en file sur des sentiers dominés de toutes parts. Elle y exerce une autorité à la fois politique, militaire et spirituelle — les sources la décrivent comme une cheffe et une figure religieuse, dépositaire de savoirs venus d'Afrique. Sous sa direction, les Marrons harcèlent les plantations, libèrent des captifs — la tradition parle de centaines de personnes affranchies — et infligent des pertes répétées aux troupes coloniales. La première guerre des Marrons dure plus d'une décennie. Nanny Town finit par être détruite par les Britanniques en 1734, mais la communauté se reforme ailleurs et la guerre continue." },
+          {
+            type: "paragraphe",
+            text: "**Nanny** dirige les Marrons de l'est de l'île, depuis un village perché qui porte son nom.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1728", texte: "Les Britanniques lancent l'offensive" },
+              { date: "1734", texte: "Nanny Town est prise et détruite" },
+              { date: "1739", texte: "Traité de paix avec la Couronne" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Perchée dans les montagnes, **Nanny Town** contrôle les passages. Les Marrons y pratiquent l'embuscade, le camouflage végétal et l'usage de l'**abeng**, une corne taillée dans une défense de bœuf, qui transmet les messages d'une crête à l'autre.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Nanny Town** domine les montagnes de l'est",
+              "Embuscade, camouflage et signaux à l'**abeng**",
+              "Le village est pris et détruit en 1734",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-08-nanny-marrons-lesson-4",
         title: "Le traité de 1739",
         blocks: [
-          { type: "paragraphe", text: "Épuisés par un conflit qu'ils ne parviennent pas à gagner et qui coûte cher, les Britanniques changent de stratégie et proposent la négociation. En 1739, des traités sont signés avec les deux groupes marrons. Ils reconnaissent aux communautés leur liberté, une autonomie interne et des terres — ce qui, dans une colonie esclavagiste, constitue une concession considérable et un aveu d'échec militaire. Un document connu sous le nom de Nanny Town land patent, daté de 1740, attribue des terres à « Nanny et au peuple qui l'accompagne » : c'est la trace administrative la plus directe de son existence. Mais ces traités ont une contrepartie lourde : les Marrons s'engagent à restituer les futurs fugitifs et à aider à réprimer les révoltes d'esclaves. Cette clause pèsera durablement sur leur mémoire et sur leurs relations avec le reste de la population noire de l'île. Une liberté conquise, donc — mais payée d'un prix que l'histoire n'a pas oublié." },
+          {
+            type: "paragraphe",
+            text: "Après plus de dix ans de guerre, les Britanniques renoncent à vaincre les **Marrons** par les armes et choisissent de négocier.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1739",
+            legende: "traité entre les Marrons et la Couronne",
+          },
+          {
+            type: "paragraphe",
+            text: "Le traité leur reconnaît des terres et une autonomie réelle, chose rare dans les Caraïbes de l'époque. En échange, ils doivent rendre les fugitifs qui les rejoindraient — une clause lourde, qui a divisé les Marrons et pèse encore sur la **mémoire** du traité.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le traité de **1739** reconnaît terres et autonomie",
+              "En contrepartie : rendre les nouveaux fugitifs",
+              "Une clause qui **divise** encore les mémoires",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-08-nanny-marrons-lesson-5",
         title: "Héroïne nationale",
         blocks: [
-          { type: "paragraphe", text: "Nanny meurt vraisemblablement dans les années 1750. Comme beaucoup de figures issues de sociétés à transmission orale, sa vie est documentée par un mélange de sources coloniales — rapports militaires, actes administratifs — et de traditions marronnes, ce qui laisse des zones d'ombre : sa date de naissance, sa mort, l'étendue exacte de son autorité. Son existence historique, en revanche, n'est pas contestée. En 1975, la Jamaïque l'a proclamée héroïne nationale : elle est la seule femme parmi les sept héros nationaux du pays, et son portrait figure sur le billet de 500 dollars jamaïcains. Les communautés marronnes de Moore Town, Accompong et Scott's Hall existent toujours et conservent leurs traditions ; le patrimoine musical et rituel des Marrons de Moore Town est inscrit par l'UNESCO au patrimoine culturel immatériel de l'humanité. Nanny, pour l'Histoire générale de l'Afrique, illustre un fait essentiel : la déportation n'a jamais signifié l'effacement, et l'Afrique a continué de se défendre de l'autre côté de l'océan." },
+          {
+            type: "paragraphe",
+            text: "En 1975, le gouvernement jamaïcain fait de **Nanny** une héroïne nationale.",
+          },
+          {
+            type: "image",
+            alt: "Rue d'un village des Blue Mountains, en Jamaïque.",
+            legende: "Moore Town, village marron de Jamaïque",
+            credit: "Photo Diego Tirira, CC BY-SA 2.0, via Wikimedia Commons",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle est la **seule femme** du panthéon national jamaïcain, et le seul membre marron. Son portrait figure sur le billet de 500 dollars. À **Moore Town**, les descendants des Marrons vivent toujours sur les terres du traité.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Héroïne nationale de la Jamaïque depuis **1975**",
+              "**Seule femme** du panthéon national jamaïcain",
+              "Moore Town perpétue la communauté marronne",
+            ],
+          },
         ],
       },
     ],

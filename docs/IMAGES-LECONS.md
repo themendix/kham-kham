@@ -119,7 +119,7 @@ le projet ; **une seule image par leçon**.
 
 ## 4. Registre des images
 
-Dix-sept images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
+Vingt et une images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 
 | Leçon | Sujet | Source | Licence | Auteur | Source → webp |
 |---|---|---|---|---|---|
@@ -140,6 +140,10 @@ Dix-sept images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 | `course-perso-01-hatchepsout-lesson-3` | Statue agenouillée d'Hatchepsout | [Commons](https://commons.wikimedia.org/wiki/File:Large_Kneeling_Statue_of_Hatshepsut_MET_DP117949.jpg) | CC0 | Met Museum | 3554×4000 → 1200×1351 |
 | `course-perso-02-taharqa-lesson-3` | Sanctuaire et sphinx de Taharqa | [Commons](https://commons.wikimedia.org/wiki/File:Shrine_%26_Sphinx_of_Taharqa.jpg) | CC BY-SA 2.0 | Aidan McRae Thomson | 2848×2136 → 1200×900 |
 | `course-perso-03-dihya-lesson-3` | Les monts Aurès, en Algérie | [Commons](https://commons.wikimedia.org/wiki/File:Aur%C3%A8s_enneig%C3%A9s.JPG) | CC BY-SA 3.0 | Yelles | 3648×2736 → 1200×900 |
+| `course-perso-05-ibn-khaldoun-lesson-2` | Manuscrit autographe de la Muqaddima | [Commons](https://commons.wikimedia.org/wiki/File:Ibn_Khald%C5%ABn_autograph,_al-Muqaddima,_MS_At%C4%B1f_Efendi_1936,_f._7a.png) | Domaine public | Ibn Khaldoun | 994×1464 |
+| `course-perso-06-sayyida-al-hurra-lesson-2` | La médina de Tétouan | [Commons](https://commons.wikimedia.org/wiki/File:Tetouan,_near_the_Medina_and_Qasba.jpg) | CC BY-SA 4.0 | Ideophagous | 4080×3060 → 1200×900 |
+| `course-perso-07-kimpa-vita-lesson-3` | Crucifix kongo en laiton | [Commons](https://commons.wikimedia.org/wiki/File:Clevelandart_2010.444.jpg) | CC0 | Cleveland Museum of Art | 2240×3400 → 1200×1821 |
+| `course-perso-08-nanny-marrons-lesson-5` | Moore Town, village marron | [Commons](https://commons.wikimedia.org/wiki/File:JM_Moore_Town_1010_(6)_(17070794889).jpg) | CC BY-SA 2.0 | Diego Tirira | 800×535 |
 
 Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
 les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.
