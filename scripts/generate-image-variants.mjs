@@ -1,8 +1,10 @@
 /**
- * Génère des variantes de résolution des illustrations de cours, pour le `srcset` de
- * `CourseCard` (`src/lib/courseImages.ts`).
+ * Génère des variantes de résolution des illustrations, pour les `srcset` de `CourseCard`
+ * (`src/lib/courseImages.ts`) et du bloc image d'une leçon (`src/lib/lessonImages.ts`).
  *
- * Source  : src/assets/cours/**\/*.webp (fichiers pleine résolution, ~1000-1200 px de large,
+ * Sources : src/assets/lecons/**\/*.webp — photos intra-leçon (id de leçon = nom de fichier,
+ *           voir docs/IMAGES-LECONS.md)
+ *           src/assets/cours/**\/*.webp (fichiers pleine résolution, ~1000-1200 px de large,
  *           convention de nommage courseId = nom de fichier — voir `LEFT_FLAG_COURSE_IDS`)
  * Sorties : <même dossier>/<nom>-400w.webp et <nom>-800w.webp, à côté de l'original.
  *
@@ -21,7 +23,10 @@ import { fileURLToPath } from "node:url";
 import { dirname, join } from "node:path";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const COURS_DIR = join(ROOT, "src", "assets", "cours");
+const SOURCE_DIRS = [
+  join(ROOT, "src", "assets", "cours"),
+  join(ROOT, "src", "assets", "lecons"),
+];
 
 const VARIANTS = [
   { suffix: "400w", width: 400 },
@@ -47,7 +52,11 @@ async function needsRegeneration(source, target) {
 }
 
 async function main() {
-  const sources = await walk(COURS_DIR);
+  let sources = [];
+  for (const dir of SOURCE_DIRS) {
+    // `src/assets/lecons/` peut ne pas exister tant qu'aucune leçon n'est illustrée.
+    if (existsSync(dir)) sources = sources.concat(await walk(dir));
+  }
   console.log(`${sources.length} illustration(s) source trouvée(s).\n`);
 
   let generated = 0;

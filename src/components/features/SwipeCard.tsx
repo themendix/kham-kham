@@ -82,7 +82,7 @@ export function SwipeCard({
             <p className="mt-2 text-[15.5px] font-medium leading-relaxed text-ink-muted">{card.teaser}</p>
             {expanded && (
               <div className="mt-2.5 border-t-2 border-ink/10 pt-2.5">
-                <LessonBlocks blocks={card.blocks} accent={category.color} density="compact" />
+                <LessonBlocks blocks={card.blocks} accent={category.color} density="compact" imageKey={card.id} />
               </div>
             )}
             <div className="mt-3.5 flex items-center justify-between">

@@ -892,16 +892,17 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "À **Djenné**, au Mali, la mosquée est construite en terre. Chaque année, les habitants la recouvrent d'une nouvelle couche pour qu'elle ne fonde pas sous la pluie.",
+            text: "À **Djenné**, au Mali, la mosquée est construite en terre. Chaque année, les habitants la recouvrent d'une couche fraîche pour qu'elle ne fonde pas sous la pluie.",
           },
           {
-            type: "chiffreCle",
-            valeur: "Djenné",
-            legende: "au Mali, plus vaste édifice en terre crue",
+            type: "image",
+            alt: "La Grande Mosquée de Djenné et les poutres de palmier qui hérissent ses murs.",
+            legende: "La Grande Mosquée de Djenné, au Mali",
+            credit: "Photo BluesyPete, CC BY-SA 3.0, via Wikimedia Commons",
           },
           {
             type: "paragraphe",
-            text: "C'est le plus grand bâtiment en terre crue du monde. Ses murs sont faits de **banco**, un mélange de terre et de paille. Sa forme actuelle date de 1907. Les poutres de palmier qui dépassent des murs servent d'échafaudage pendant les travaux.",
+            text: "C'est le plus grand bâtiment en terre crue du monde. Ses murs sont faits de **banco**, un mélange de terre et de paille. Les poutres servent d'échafaudage pendant les travaux.",
           },
           {
             type: "aRetenir",

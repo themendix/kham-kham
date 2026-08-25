@@ -252,7 +252,7 @@ function FeaturedLessonCard({
 
         {expanded ? (
           <>
-            <LessonBlocks blocks={lesson.blocks} accent={category.color} density="compact" />
+            <LessonBlocks blocks={lesson.blocks} accent={category.color} density="compact" imageKey={lesson.id} />
             <div className="mt-4 flex flex-wrap items-center gap-3">
               <Button variant="primary" onClick={onComplete}>
                 J'ai terminé

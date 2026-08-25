@@ -383,6 +383,29 @@ mouvement · Mode et création contemporaine.
   en clôture quand il y a une anecdote qui le mérite. La première phrase est un hameçon, pas
   une définition.
 
+## Images des leçons (bloc `image`)
+
+Distinct des bannières de cours (`src/assets/cours/`, illustrations **générées par IA** via
+`npm run images:generate`) : il s'agit ici de **vraies photographies documentaires** affichées
+dans le corps d'une leçon. **`docs/IMAGES-LECONS.md` fait foi** — règles de licence, convention
+de nommage, procédure d'ajout, registre des images et liste de ce qui ne peut pas être illustré.
+
+- Le bloc `image` existait dans le type depuis la charte mais n'était **ni utilisé ni rendu**
+  (un rectangle vide). Le rendu réel est en place : `<img>` avec `srcset` 400w/800w, `alt`,
+  chargement paresseux, **ratio naturel jamais recadré** (`object-contain`, hauteur plafonnée)
+  et bande de légende/crédit **à l'intérieur du cadre**, séparée par une bordure — même famille
+  visuelle que les autres blocs.
+- Résolution **par convention de nommage** (`src/lib/lessonImages.ts`, calqué sur
+  `courseImages.ts`) : `src/assets/lecons/<id de leçon>.webp`. Le fichier n'est jamais
+  référencé dans les données. Repli propre sur le cadre vide si le fichier manque.
+- `LessonBlocks` gagne une prop `imageKey` (id de leçon, ou id de carte pour le fil Home),
+  câblée aux 4 sites d'affichage.
+- `npm run images:variants` couvre désormais les deux dossiers et tolère l'absence de
+  `src/assets/lecons/`.
+- **Une image abaisse le budget de mots de 90-140 à 70-110** (règle 11, déjà en place) : toute
+  leçon illustrée doit être raccourcie d'environ un quart, `alt` compris dans le décompte.
+- Lot pilote en cours : 1 image sur 10 (mosquée de Djenné, CC BY-SA 3.0).
+
 ## Ce qui N'est PAS encore fait
 
 - Animations avancées au-delà du geste de swipe (transitions d'écran, micro-interactions).

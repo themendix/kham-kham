@@ -140,7 +140,12 @@ function FavoriteCardItem({ card, onRemove }: { card: SwipeCard; onRemove: () =>
       </div>
       {expanded && (
         <div className="mt-2">
-          <LessonBlocks blocks={card.blocks} accent={getCategory(card.categoryId)!.color} density="compact" />
+          <LessonBlocks
+            blocks={card.blocks}
+            accent={getCategory(card.categoryId)!.color}
+            density="compact"
+            imageKey={card.id}
+          />
         </div>
       )}
     </div>

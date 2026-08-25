@@ -34,7 +34,7 @@ export function LessonViewer({
 
       <h2 className="mt-5 text-xl font-extrabold leading-tight">{lesson.title}</h2>
       <div className="mt-3.5">
-        <LessonBlocks blocks={lesson.blocks} accent={accentColor} density="full" />
+        <LessonBlocks blocks={lesson.blocks} accent={accentColor} density="full" imageKey={lesson.id} />
       </div>
 
       <div className="mt-6 flex justify-between gap-3">

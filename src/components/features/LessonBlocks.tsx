@@ -3,6 +3,7 @@ import { Lightbulb } from "lucide-react";
 import type { LessonBlock, SubjectColor } from "@/types";
 import { parseInline } from "@/lib/lessonBlocks";
 import { SUBJECT_BG } from "@/lib/subjectStyles";
+import { getLessonImage } from "@/lib/lessonImages";
 
 /** Rend un texte portant le balisage `**gras**` (§ 5 de la charte). */
 function Inline({ text }: { text: string }) {
@@ -26,6 +27,13 @@ interface LessonBlocksProps {
   accent: SubjectColor;
   /** `full` (page de cours) ou `compact` (« À la une », fil Home, favoris) — mêmes blocs, même sémantique. */
   density?: "full" | "compact";
+  /**
+   * Identifiant du porteur des blocs (id de leçon, ou id de carte pour le fil Home). Sert
+   * uniquement à résoudre la photo du bloc `image` par convention de nommage
+   * (`src/lib/lessonImages.ts`). Absent ou sans fichier correspondant : le bloc `image` retombe
+   * sur son cadre vide, sans casser la leçon.
+   */
+  imageKey?: string;
 }
 
 /**
@@ -33,7 +41,7 @@ interface LessonBlocksProps {
  * Un seul composant pour les quatre sites d'affichage d'une leçon : page de cours, « À la une »,
  * fil Home, favoris. Aucune divergence tolérée entre ces sites.
  */
-export function LessonBlocks({ blocks, accent, density = "full" }: LessonBlocksProps) {
+export function LessonBlocks({ blocks, accent, density = "full", imageKey }: LessonBlocksProps) {
   const compact = density === "compact";
 
   return (
@@ -135,14 +143,48 @@ export function LessonBlocks({ blocks, accent, density = "full" }: LessonBlocksP
               </div>
             );
 
-          case "image":
+          case "image": {
+            // Résolue par convention de nommage, jamais référencée dans les données (§ 4.8).
+            const image = getLessonImage(imageKey);
             return (
-              <figure key={i}>
-                <div className="aspect-[4/3] w-full rounded-[16px] border-[2.5px] border-ink bg-cream shadow-sm" />
-                {block.legende && <figcaption className="mt-1.5 text-[12.5px] text-ink-faint">{block.legende}</figcaption>}
-                {block.credit && <div className="text-[11px] text-ink-faint">{block.credit}</div>}
+              <figure
+                key={i}
+                className="overflow-hidden rounded-card border-[2.5px] border-ink bg-card shadow-sm"
+              >
+                {/* Ratio naturel plafonné et jamais recadré (`object-contain`) : une statue
+                    verticale se centre sur le fond, une vue large remplit la largeur. */}
+                {image ? (
+                  <img
+                    src={image.src}
+                    srcSet={image.srcSet}
+                    sizes={compact ? "(min-width: 768px) 420px, 100vw" : "(min-width: 768px) 620px, 100vw"}
+                    alt={block.alt}
+                    loading="lazy"
+                    decoding="async"
+                    className={`w-full bg-cream object-contain ${compact ? "max-h-[220px]" : "max-h-[380px]"}`}
+                  />
+                ) : (
+                  <div className={`w-full bg-cream ${compact ? "aspect-[16/9]" : "aspect-[4/3]"}`} />
+                )}
+                {(block.legende || block.credit) && (
+                  <figcaption
+                    className={`border-t-[2.5px] border-ink bg-card ${compact ? "px-3 py-2" : "px-4 py-2.5"}`}
+                  >
+                    {block.legende && (
+                      <div
+                        className={`font-medium leading-snug text-ink ${compact ? "text-[12.5px]" : "text-[13.5px]"}`}
+                      >
+                        {block.legende}
+                      </div>
+                    )}
+                    {block.credit && (
+                      <div className="mt-0.5 text-[11px] leading-snug text-ink-faint">{block.credit}</div>
+                    )}
+                  </figcaption>
+                )}
               </figure>
             );
+          }
         }
       })}
     </div>
