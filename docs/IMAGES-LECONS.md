@@ -98,30 +98,48 @@ le projet ; **une seule image par leçon**.
 
 ## 4. Registre des images
 
-| Leçon | Sujet | Source | Licence | Auteur | Dimensions |
-|---|---|---|---|---|---|
-| `course-decouverte-03-architectures-terre-lesson-1` | La Grande Mosquée de Djenné | [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:MaliDjenn%C3%A9Mosqu%C3%A9e.JPG) | CC BY-SA 3.0 | BluesyPete | source 4521×2094 → webp 1200×556 |
+Dix images, lot pilote complet. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 
-Crédit affiché dans l'application : `Photo BluesyPete, CC BY-SA 3.0, via Wikimedia Commons`.
+| Leçon | Sujet | Source | Licence | Auteur | Source → webp |
+|---|---|---|---|---|---|
+| `…01-masques-sculptures-lesson-1` | Masque baoulé (performance *mblo*) | [Met 643506](https://www.metmuseum.org/art/collection/search/643506) | CC0 | — | 1200×1590 |
+| `…01-masques-sculptures-lesson-2` | Plaque : l'*oba* à cheval, royaume du Bénin | [Met 310752](https://www.metmuseum.org/art/collection/search/310752) | CC0 | — | 1200×1487 |
+| `…01-masques-sculptures-lesson-4` | Statue *eyema byeri*, Fang du Gabon | [Met 310870](https://www.metmuseum.org/art/collection/search/310870) | CC0 | — | 1200×1500 |
+| `…02-tissus-parures-lesson-1` | Bandes de kente avant assemblage | [Commons](https://commons.wikimedia.org/wiki/File:Kente_strips.jpg) | CC BY-SA 4.0 | Mwintirew | 4080×3072 → 1200×904 |
+| `…02-tissus-parures-lesson-2` | Bogolan bamana, Mali, 1954 | [Commons](https://commons.wikimedia.org/wiki/File:Mali,_bamana,_tessuto_dipinto_a_motivi_geometrici_bogolan,_1954_(mnpe).jpg) | CC BY-SA 4.0 | Sailko | 3116×1652 → 1200×636 |
+| `…02-tissus-parures-lesson-3` | Motif de wax « Nsubura », Ghana | [Commons](https://commons.wikimedia.org/wiki/File:Nsubura_fabric.jpg) | CC BY-SA 4.0 | Naa2Darkoa | 1280×786 → 1200×737 |
+| `…02-tissus-parures-lesson-4` | Poids akan à peser l'or, en tabouret | [Met 317686](https://www.metmuseum.org/art/collection/search/317686) | CC0 | — | 1200×856 |
+| `…02-tissus-parures-lesson-5` | Panneau de raphia brodé, shoowa | [Commons](https://commons.wikimedia.org/wiki/File:Panel,_Shoowa_people,_raffia_palm_fiber,_plain_weave,_and_embroidery,_HMA.JPG) | CC0 | Hiart | 3430×2415 → 1200×845 |
+| `…03-architectures-terre-lesson-1` | La Grande Mosquée de Djenné | [Commons](https://commons.wikimedia.org/wiki/File:MaliDjenn%C3%A9Mosqu%C3%A9e.JPG) | CC BY-SA 3.0 | BluesyPete | 4521×2094 → 1200×556 |
+| `…03-architectures-terre-lesson-3` | Les falaises de Bandiagara | [Commons](https://commons.wikimedia.org/wiki/File:Hike_Between_Kani-Kombole_and_Teli_(6835826).jpg) | CC BY 2.0 | upyernoz | 2788×1830 → 1200×788 |
+
+Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
+les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.
 
 ---
 
-## 5. Lot pilote — état
+## 5. Trois refus et un recadrage, et pourquoi ils comptent
 
-Objectif : 8 à 10 images, pour valider la chaîne complète avant d'illustrer plus largement.
+**Le panneau kuba du Met (objet 318389) n'est pas dans le domaine public.** Il figurait dans le
+plan initial, choisi parce qu'il correspondait exactement à la leçon. La vérification
+`isPublicDomain` l'a écarté au moment du téléchargement. Remplacé par un panneau shoowa du
+Honolulu Museum of Art, en CC0 sur Commons. **Ne jamais présumer qu'un objet ancien dans un
+grand musée est libre** : c'est la photo qui compte, pas l'objet.
 
-| # | Leçon visée | Sujet | Source pressentie | État |
-|---|---|---|---|---|
-| 1 | `…03-architectures-terre-lesson-1` | Mosquée de Djenné | Wikimedia, CC BY-SA | ✅ **fait** |
-| 2 | `…01-masques-sculptures-lesson-4` | Statue fang *eyema byeri* | Met, objet 310870 (CC0 confirmé) | à faire |
-| 3 | `…02-tissus-parures-lesson-5` | Panneau de raphia kuba shoowa | Met, objet 318389 | à faire |
-| 4 | `…02-tissus-parures-lesson-4` | Poids akan à peser l'or | Met | à faire |
-| 5 | `…01-masques-sculptures-lesson-2` | Plaque ou tête de bronze du Bénin | Met | à faire |
-| 6 | `…01-masques-sculptures-lesson-1` | Masque dogon ou baoulé | Met | à faire |
-| 7 | `…02-tissus-parures-lesson-1` | Tissu kente | Met | à faire |
-| 8 | `…02-tissus-parures-lesson-2` | Bogolan malien | Met ou Smithsonian | à faire |
-| 9 | `…07-danses-lesson-5` | Danseurs dogon sur échasses, Sangha | Wikimedia, licence à vérifier | à faire |
-| 10 | `…03-architectures-terre-lesson-3` | Falaises de Bandiagara | Wikimedia, licence à vérifier | à faire |
+**La leçon sur le *dama* dogon (`…07-danses-lesson-5`) reste sans photo.** Le seul candidat
+correctement licencié sur Commons est intitulé « Eric Huyten is filming tourists among the masked
+dancers, Sangha, 1994 » : il montre une représentation touristique, pas une levée de deuil.
+L'illustrer avec cette image aurait menti sur le sujet de la leçon. Elle attendra une photo juste.
+
+**Une photo trop verticale se rend mal.** Le premier choix pour Bandiagara (village de Teli,
+2592×3872) donnait, avec la règle « jamais de recadrage », une bande étroite au milieu du cadre.
+Remplacé par une vue horizontale de la falaise. **Règle à suivre : privilégier des sources entre
+16:9 et 3:4**, et ne pas descendre en dessous — au-delà, l'image se réduit à un filet. Les photos
+d'objets de musée (masque, statue, plaque) restent verticales sans gêne : le format y est attendu.
+
+**Le kente du Met (objet 85576) était en CC0 mais ne faisait que 298 px de large** — trop petit
+pour la variante 800w, donc flou à l'affichage. Remplacé par une photo Commons de bandes de kente,
+qui illustre en prime le tissage en bandes décrit dans la leçon.
 
 ---
 

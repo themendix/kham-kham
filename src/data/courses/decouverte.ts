@@ -442,16 +442,17 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Chez les **Dogon** du Mali, un masque ne reste pas accroché au mur. On le sort, on le porte, et on danse avec, au son des tambours.",
+            text: "Chez les **Dogon** du Mali, un masque ne reste pas accroché au mur. On le sort, on le porte, et on danse avec.",
           },
           {
-            type: "chiffreCle",
-            valeur: "Dogon",
-            legende: "peuple sculpteur des falaises de Bandiagara",
+            type: "image",
+            alt: "Masque facial baoulé en bois sombre, au visage allongé et aux traits fins.",
+            legende: "Masque baoulé, Côte d'Ivoire",
+            credit: "The Metropolitan Museum of Art, domaine public (CC0)",
           },
           {
             type: "paragraphe",
-            text: "Le masque sort aux moments qui comptent : funérailles, initiations, semailles. Il représente un ancêtre ou une force invisible. Chez les **Baoulé** de Côte d'Ivoire, la fonction est la même. La cérémonie finie, le masque est rangé.",
+            text: "Le masque sort aux moments qui comptent : funérailles, initiations, semailles. Il représente un ancêtre ou une force invisible. Chez les **Baoulé** de Côte d'Ivoire, la fonction est la même.",
           },
           {
             type: "aRetenir",
@@ -469,7 +470,13 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le royaume du Bénin se trouvait dans l'actuel Nigeria. Ses artisans coulaient le bronze depuis des siècles, et leurs œuvres ornaient le palais du roi.",
+            text: "Le royaume du Bénin se trouvait dans l'actuel Nigeria. Ses fondeurs coulaient le bronze.",
+          },
+          {
+            type: "image",
+            alt: "Plaque de bronze : l'oba à cheval, entouré de serviteurs.",
+            legende: "L'oba à cheval, plaque du palais",
+            credit: "The Metropolitan Museum of Art, domaine public (CC0)",
           },
           {
             type: "frise",
@@ -482,12 +489,12 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le roi portait le titre d'**oba**. Les fondeurs travaillaient à la **cire perdue**, une technique qui permet des détails très fins. En 1897, une expédition britannique pilla le palais. Des milliers de pièces partirent dans les musées d'Europe et d'Amérique.",
+            text: "Le roi portait le titre d'**oba**. Les plaques étaient coulées à la **cire perdue**, technique qui permet des détails très fins.",
           },
           {
             type: "aRetenir",
             points: [
-              "Les bronzes ornaient le palais de l'**oba**, à Benin City",
+              "Les bronzes ornaient le palais de l'**oba**",
               "Ils étaient coulés à la **cire perdue**",
               "Pillés en 1897, ils sont aujourd'hui **restitués**",
             ],
@@ -534,13 +541,14 @@ export const DECOUVERTE_COURSES: Course[] = [
             text: "Chez les **Fang** du Gabon, les crânes des ancêtres étaient conservés dans des boîtes en écorce. Une statue de bois était posée sur le couvercle.",
           },
           {
-            type: "chiffreCle",
-            valeur: "byeri",
-            legende: "le culte des ancêtres chez les Fang",
+            type: "image",
+            alt: "Statue fang en bois sombre, tête ronde et bras repliés devant le torse.",
+            legende: "Statue eyema byeri, gardienne d'une boîte à reliques",
+            credit: "The Metropolitan Museum of Art, domaine public (CC0)",
           },
           {
             type: "paragraphe",
-            text: "Cette statue est appelée **eyema byeri**. Elle gardait la boîte et son contenu. Les anciens s'en servaient aussi pour enseigner la généalogie du clan aux jeunes. Avec l'arrivée des missions chrétiennes, les Fang ont abandonné le byeri.",
+            text: "Cette statue est appelée **eyema byeri**. Elle gardait la boîte et son contenu. Les anciens s'en servaient aussi pour enseigner la généalogie du clan aux jeunes.",
           },
           {
             type: "aRetenir",
@@ -669,6 +677,12 @@ export const DECOUVERTE_COURSES: Course[] = [
             text: "Le kente est tissé au **Ghana**, en pays ashanti. Il est fait de bandes étroites, cousues ensemble une fois tissées.",
           },
           {
+            type: "image",
+            alt: "Bandes de kente aux motifs colorés, alignées avant leur assemblage.",
+            legende: "Bandes de kente, avant assemblage",
+            credit: "Photo Mwintirew, CC BY-SA 4.0, via Wikimedia Commons",
+          },
+          {
             type: "reperes",
             items: [
               { label: "Origine", valeur: "Pays ashanti, Ghana" },
@@ -678,7 +692,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Chaque motif de kente a un nom. À ce nom correspond un **proverbe**. Porter un kente, c'est donc afficher une phrase. Longtemps réservé à la cour royale, il est aujourd'hui porté comme un symbole panafricain, jusque dans les universités américaines.",
+            text: "Chaque motif a un nom, et à ce nom correspond un **proverbe**. Porter un kente, c'est afficher une phrase. Réservé autrefois à la cour, il est devenu un symbole panafricain.",
           },
           {
             type: "aRetenir",
@@ -699,13 +713,19 @@ export const DECOUVERTE_COURSES: Course[] = [
             text: "Au **Mali**, on teint le coton avec de la boue. Le tissu obtenu s'appelle le bogolan.",
           },
           {
+            type: "image",
+            alt: "Tissu bogolan à motifs géométriques blancs sur fond brun foncé.",
+            legende: "Bogolan bamana à motifs géométriques, Mali",
+            credit: "Photo Sailko, CC BY-SA 4.0, via Wikimedia Commons",
+          },
+          {
             type: "chiffreCle",
             valeur: "Bogolanfini",
             legende: "en bambara, tissu fait avec de la boue",
           },
           {
             type: "paragraphe",
-            text: "Le coton est d'abord teint avec des feuilles. On le peint ensuite à la terre fermentée, qui fixe les motifs en noir profond. Plus à l'ouest, à **Kano** au Nigeria, les teinturières plongent les étoffes dans des fosses d'indigo. Ce savoir se transmet entre femmes depuis des siècles.",
+            text: "Le coton est d'abord teint aux feuilles. On le peint ensuite à la terre fermentée, qui fixe les motifs en noir profond. Plus à l'est, à **Kano**, les teinturières travaillent l'indigo en fosses.",
           },
           {
             type: "aRetenir",
@@ -723,31 +743,29 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le wax est le tissu le plus associé à l'Afrique de l'Ouest. Il a pourtant été inventé aux Pays-Bas, pour le marché indonésien.",
+            text: "Le wax est le tissu emblématique de l'Afrique de l'Ouest. Il a pourtant été inventé aux Pays-Bas.",
           },
           {
-            type: "frise",
-            evenements: [
-              { date: "XIXe s.", texte: "Imitation industrielle du batik javanais" },
-              { date: "1900-1960", texte: "Le wax s'impose en Afrique de l'Ouest" },
-              { date: "Aujourd'hui", texte: "Concurrence des impressions asiatiques" },
-            ],
+            type: "image",
+            alt: "Pièce de wax à motif circulaire répété.",
+            legende: "Motif de wax nommé « Nsubura », Ghana",
+            credit: "Photo Naa2Darkoa, CC BY-SA 4.0, via Wikimedia Commons",
           },
           {
             type: "paragraphe",
-            text: "Des industriels **néerlandais** copient le batik de Java au XIXe siècle. Le produit échoue en Indonésie. Ils le vendent alors sur les côtes africaines, où il est adopté. Chaque motif y reçoit un surnom local, et le **wax** devient un tissu africain.",
+            text: "Des industriels **néerlandais** copient le batik de Java au XIXe siècle, sans succès. Ils le vendent sur les côtes africaines, où chaque motif reçoit un **surnom local**.",
           },
           {
             type: "aRetenir",
             points: [
               "Le **wax** imite le batik indonésien",
-              "Vendu en Afrique après un échec en Indonésie",
+              "Vendu en Afrique après son échec asiatique",
               "Ses motifs portent des **surnoms** locaux",
             ],
           },
           {
             type: "leSavaisTu",
-            text: "À Lomé, les commerçantes surnommées « Nana Benz » ont bâti des fortunes sur le wax dans les années 1970 — leur surnom venait des Mercedes qu'elles conduisaient.",
+            text: "À Lomé, les « Nana Benz » ont fait fortune sur le wax dans les années 1970, d'où leur surnom tiré des Mercedes.",
           },
         ],
       },
@@ -760,13 +778,19 @@ export const DECOUVERTE_COURSES: Course[] = [
             text: "Chez les **Akan**, au Ghana et en Côte d'Ivoire, on payait en poudre d'or. Pour la peser, on utilisait de petits poids en laiton.",
           },
           {
+            type: "image",
+            alt: "Poids akan en laiton représentant un tabouret miniature, vu de trois quarts.",
+            legende: "Poids à peser l'or en forme de tabouret",
+            credit: "The Metropolitan Museum of Art, domaine public (CC0)",
+          },
+          {
             type: "chiffreCle",
             valeur: "mrammou",
             legende: "nom local des poids à peser l'or akan",
           },
           {
             type: "paragraphe",
-            text: "Ces poids sont des miniatures. Certains sont géométriques, d'autres représentent des animaux, des outils ou des scènes de la vie. Beaucoup illustrent un **proverbe** : on les appelle des poids-proverbes. Une balance et une boîte complétaient le nécessaire du marchand.",
+            text: "Ces poids sont des miniatures. Certains sont géométriques, d'autres figurent des animaux, des outils ou des scènes. Beaucoup illustrent un **proverbe**.",
           },
           {
             type: "aRetenir",
@@ -784,7 +808,13 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Les **Kuba** vivent dans la région du Kasaï, en République démocratique du Congo. Ils tissent des étoffes à partir des fibres du palmier-raphia.",
+            text: "Les **Kuba** vivent dans la région du Kasaï, en République démocratique du Congo. Ils tissent la fibre du palmier-raphia.",
+          },
+          {
+            type: "image",
+            alt: "Panneau de raphia brodé, à motifs géométriques imbriqués, au relief de velours.",
+            legende: "Panneau de raphia brodé, groupe shoowa",
+            credit: "Photo Hiart, CC0, via Wikimedia Commons",
           },
           {
             type: "reperes",
@@ -796,7 +826,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le groupe **shoowa** brode ces tissus au point coupé, ce qui donne un relief de velours. Chaque panneau porte un motif géométrique unique. Ces étoffes servaient d'objets de prestige, de dot et de monnaie d'échange entre groupes kuba.",
+            text: "Le groupe **shoowa** brode ces tissus au point coupé, ce qui donne un relief de velours. Ces étoffes servaient de prestige, de dot et de monnaie d'échange.",
           },
           {
             type: "aRetenir",
@@ -950,7 +980,13 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "La pierre se conserve pendant des siècles. La terre doit être refaite régulièrement. Cela pose un problème particulier aux gardiens du patrimoine.",
+            text: "La pierre se conserve des siècles. La terre doit être refaite régulièrement. Cela pose un problème aux gardiens du patrimoine.",
+          },
+          {
+            type: "image",
+            alt: "Longue falaise de grès surplombant la plaine et des villages de terre.",
+            legende: "Les falaises de Bandiagara, au Mali",
+            credit: "Photo upyernoz, CC BY 2.0, via Wikimedia Commons",
           },
           {
             type: "frise",
@@ -962,7 +998,7 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Ces bâtiments réclament un **entretien annuel** et des maçons formés. L'UNESCO protège donc ici un **savoir-faire vivant** autant qu'un monument. Si les artisans disparaissent, le bâtiment disparaît avec eux.",
+            text: "Ces bâtiments réclament un **entretien annuel** et des maçons formés. L'UNESCO protège donc un **savoir-faire vivant** autant qu'un monument.",
           },
           {
             type: "aRetenir",
