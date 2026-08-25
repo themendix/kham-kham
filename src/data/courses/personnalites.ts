@@ -1556,35 +1556,140 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-09-toussaint-louverture-lesson-1",
         title: "La colonie la plus riche du monde",
         blocks: [
-          { type: "paragraphe", text: "À la fin du XVIIIᵉ siècle, Saint-Domingue — la partie occidentale de l'île d'Hispaniola, colonie française — est la possession coloniale la plus rentable de la planète. Elle produit à elle seule une part considérable du sucre et du café consommés en Europe. Cette richesse repose entièrement sur le travail forcé de près d'un demi-million d'Africains déportés, pour quelques dizaines de milliers de Blancs et un groupe intermédiaire de libres de couleur, souvent propriétaires eux-mêmes. Le régime des plantations y est d'une violence extrême : l'espérance de vie d'un captif nouvellement débarqué se compte en quelques années, et la colonie ne se maintient qu'en important sans relâche de nouveaux déportés, principalement d'Afrique centrale et occidentale. Cette proportion écrasante d'Africains nés en Afrique, porteurs de leurs langues, de leurs religions et parfois d'une expérience militaire, est un élément décisif de ce qui va suivre : la société de Saint-Domingue est une société africaine sous contrainte." },
+          {
+            type: "paragraphe",
+            text: "À la fin du XVIIIe siècle, **Saint-Domingue** est la colonie la plus rentable du monde. Sa richesse repose entièrement sur le travail forcé.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1791", texte: "Soulèvement des esclaves du Nord" },
+              { date: "1794", texte: "Abolition votée par la Convention" },
+              { date: "1801", texte: "Constitution de Toussaint Louverture" },
+              { date: "1804", texte: "Indépendance d'Haïti" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'île fournit une grande part du sucre et du café consommés en Europe. Un demi-million de personnes y sont réduites en **esclavage**, pour quelques dizaines de milliers de colons. La mortalité y est telle qu'il faut sans cesse déporter de nouveaux captifs.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Saint-Domingue** est la colonie la plus rentable du monde",
+              "Sucre et café, produits par le travail **forcé**",
+              "Un demi-million de personnes y sont réduites en esclavage",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-09-toussaint-louverture-lesson-2",
         title: "1791 : le soulèvement",
         blocks: [
-          { type: "paragraphe", text: "Toussaint naît vers 1743 sur l'habitation Bréda, près du Cap-Français. Son père serait un Africain de haut rang déporté depuis le royaume d'Allada, dans l'actuel Bénin. Esclave, il occupe des fonctions de confiance — cocher, responsable du bétail —, apprend à lire, se familiarise avec les plantes médicinales, et obtient sa liberté vers 1776, une quinzaine d'années avant la révolution. En août 1791, une insurrection générale embrase la plaine du Nord : elle est préparée lors d'une cérémonie devenue légendaire, celle du Bois-Caïman, et menée par des chefs comme Boukman, Jean-François et Biassou. Les plantations brûlent. Toussaint, alors âgé d'environ quarante-huit ans, rejoint le mouvement quelques semaines plus tard — d'abord comme médecin des armées, puis comme officier. Sa connaissance du terrain, sa discipline et son sens tactique le font monter très vite. En quelques années, il devient le principal chef militaire de l'insurrection." },
+          {
+            type: "paragraphe",
+            text: "Dans la nuit du 22 août 1791, les plantations du Nord s'embrasent. Le soulèvement est massif, coordonné, et il ne s'arrêtera plus.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1791",
+            legende: "l'insurrection générale du Nord de l'île",
+          },
+          {
+            type: "paragraphe",
+            text: "**Toussaint**, affranchi depuis des années, rejoint l'insurrection et s'y impose vite. Il passe alors d'un camp à l'autre selon les promesses faites à la liberté des Noirs : d'abord aux côtés des Espagnols, puis de la **France** quand celle-ci abolit l'esclavage en 1794.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'insurrection éclate en août **1791**",
+              "**Toussaint** s'y impose rapidement comme chef",
+              "Il choisit son camp selon la cause de la liberté",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-09-toussaint-louverture-lesson-3",
         title: "Le stratège et l'administrateur",
         blocks: [
-          { type: "paragraphe", text: "La situation est d'une complexité redoutable : la France révolutionnaire, l'Espagne et la Grande-Bretagne se disputent l'île, et chacune tente d'utiliser les insurgés. Toussaint sert d'abord l'Espagne, puis se rallie à la France en 1794, quand la Convention abolit l'esclavage — un ralliement qui n'est pas de la soumission mais un calcul : il choisit le camp qui garantit la liberté. Il chasse ensuite les Britanniques de l'île, neutralise ses rivaux, et prend le contrôle de toute la colonie, y compris la partie espagnole. Devenu gouverneur, il se révèle un administrateur exigeant : il relance la production sucrière — en imposant aux anciens esclaves un travail obligatoire mais salarié sur les plantations, mesure impopulaire —, rétablit l'ordre, protège les propriétaires restés sur place et cherche à maintenir les exportations. Sa ligne est constante : la liberté est non négociable, mais l'économie doit tenir, sans quoi la liberté ne survivra pas." },
+          {
+            type: "paragraphe",
+            text: "**Toussaint Louverture** est né vers 1743 sur l'habitation Bréda. Devenu général, il gouverne l'île en son nom propre.",
+          },
+          {
+            type: "image",
+            alt: "Portrait gravé de Toussaint Louverture en uniforme de général.",
+            legende: "Toussaint Louverture, gravure de 1806",
+            credit: "Regge & Meineck, CC BY-SA 4.0, via Wikimedia Commons",
+          },
+          {
+            type: "paragraphe",
+            text: "Il bat successivement les Espagnols, les Britanniques et ses **rivaux**. Puis il administre : il relance les plantations, rétablit les cultures et impose une discipline du travail sévère, au risque de décevoir ceux qui l'avaient suivi.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né vers **1743** sur l'habitation Bréda",
+              "Il bat Espagnols, Britanniques et rivaux",
+              "Administrateur autant que **stratège**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-09-toussaint-louverture-lesson-4",
         title: "La constitution de 1801 et l'arrestation",
         blocks: [
-          { type: "paragraphe", text: "En 1801, Toussaint fait promulguer une constitution pour Saint-Domingue. Le texte abolit définitivement l'esclavage, proclame l'égalité de tous les habitants sans distinction de couleur, et le désigne gouverneur à vie avec le droit de nommer son successeur. Il ne proclame pas l'indépendance — la colonie reste formellement française — mais il agit en souverain, et Bonaparte, alors Premier consul, le comprend ainsi. En 1802, une expédition considérable est envoyée sous le commandement du général Leclerc pour reprendre le contrôle de l'île et, dans un second temps, rétablir l'esclavage. La guerre est acharnée. Toussaint accepte finalement de traiter, puis il est arrêté par traîtrise en juin 1802 et déporté en France. Enfermé au fort de Joux, dans le Jura, il meurt de froid, de faim et de maladie le 7 avril 1803. Avant son embarquement, il aurait prononcé une phrase restée célèbre : en le renversant, on n'aurait abattu que le tronc de l'arbre de la liberté, dont les racines sont profondes et nombreuses." },
+          {
+            type: "paragraphe",
+            text: "En 1801, **Toussaint Louverture** promulgue une constitution pour Saint-Domingue. Elle abolit l'esclavage à jamais et le nomme gouverneur à vie.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1801",
+            legende: "la constitution qui scelle la rupture",
+          },
+          {
+            type: "paragraphe",
+            text: "Le texte reconnaît encore la souveraineté française, mais dans les faits l'île se gouverne seule. **Bonaparte** envoie une expédition. Toussaint est arrêté par ruse en 1802 et déporté en France, où il meurt de froid et de faim au **fort de Joux** en avril 1803.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La constitution de **1801** abolit l'esclavage à jamais",
+              "Bonaparte envoie une expédition dès 1802",
+              "Toussaint meurt au **fort de Joux** en 1803",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-09-toussaint-louverture-lesson-5",
         title: "Haïti 1804 et l'onde de choc",
         blocks: [
-          { type: "paragraphe", text: "Il avait vu juste. La déportation de Toussaint ne met pas fin à la révolution : quand il devient évident que la France entend rétablir l'esclavage, la lutte reprend avec une intensité nouvelle sous la conduite de Jean-Jacques Dessalines. L'armée française, décimée par la guerre et la fièvre jaune, est vaincue. Le 1ᵉʳ janvier 1804, l'indépendance est proclamée : la colonie reprend son nom amérindien, Haïti, et devient la première république noire du monde et le premier État issu d'une révolte victorieuse d'esclaves. L'onde de choc est mondiale. Pour les puissances esclavagistes, Haïti est un contre-exemple à étouffer : la jeune république sera isolée diplomatiquement pendant des décennies et contrainte, en 1825, de verser à la France une indemnité colossale en échange de la reconnaissance de son indépendance — une dette qui pèsera sur son économie pendant plus d'un siècle. Pour les peuples asservis, en revanche, Haïti devient une preuve. L'Histoire générale de l'Afrique place cet événement au cœur de l'histoire des diasporas africaines." },
+          {
+            type: "paragraphe",
+            text: "Toussaint meurt en captivité, mais la guerre continue sans lui. Le 1er janvier 1804, l'indépendance d'**Haïti** est proclamée.",
+          },
+          {
+            type: "citation",
+            texte: "On n'a abattu que le tronc de l'arbre de la liberté, mais il repoussera car ses racines sont profondes et nombreuses.",
+            auteur: "Paroles attribuées à Toussaint Louverture, 1802",
+          },
+          {
+            type: "paragraphe",
+            text: "C'est la première république née d'une révolte d'esclaves victorieuse. L'onde de choc traverse les Amériques et terrifie les puissances **esclavagistes**. La France imposera en 1825 une dette écrasante, que Haïti mettra plus d'un siècle à rembourser.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Haïti** proclame son indépendance en 1804",
+              "Première république issue d'une révolte d'esclaves",
+              "La **dette** de 1825 pèsera plus d'un siècle",
+            ],
+          },
         ],
       },
     ],
@@ -1638,35 +1743,143 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-10-sojourner-truth-lesson-1",
         title: "Isabella Baumfree, esclave dans l'État de New York",
         blocks: [
-          { type: "paragraphe", text: "On oublie souvent que l'esclavage n'a pas existé qu'au sud des États-Unis. Isabella Baumfree naît vers 1797 dans le comté d'Ulster, dans l'État de New York, au sein d'une famille asservie d'ascendance africaine dont la langue maternelle est le néerlandais — l'héritage de la colonisation hollandaise de la région. Elle est vendue quatre fois avant ses treize ans, séparée de ses parents dès l'enfance, et subit chez plusieurs de ses propriétaires des violences physiques que ses récits ultérieurs évoqueront sans détour. Contrainte de s'unir à un autre esclave, elle a plusieurs enfants qui, en tant que descendants d'esclaves, appartiennent légalement à son maître. L'État de New York a engagé une abolition progressive : une loi de 1817 prévoit l'émancipation générale des adultes esclaves pour le 4 juillet 1827. Son propriétaire lui promet la liberté un an plus tôt, puis se rétracte. En 1826, elle n'attend plus : elle part à pied, à l'aube, avec son bébé." },
+          {
+            type: "paragraphe",
+            text: "**Isabella Baumfree** naît vers 1797 à Hurley, dans l'État de New York. L'esclavage n'existe pas qu'au Sud : il est légal ici aussi.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "v. 1797", texte: "Naissance à Hurley, État de New York" },
+              { date: "1827", texte: "Elle se libère avant l'abolition de l'État" },
+              { date: "1828", texte: "Procès gagné pour récupérer son fils" },
+              { date: "1851", texte: "Discours à la convention d'Akron" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle grandit dans une famille d'esclaves d'anciens colons **néerlandais** : sa langue d'enfance est le néerlandais, pas l'anglais. Vendue plusieurs fois, séparée des siens, elle passe entre les mains de quatre propriétaires successifs.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née vers **1797** dans l'État de New York",
+              "L'esclavage y était légal, comme au Sud",
+              "Sa langue d'enfance est le **néerlandais**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-10-sojourner-truth-lesson-2",
         title: "La liberté conquise et le procès gagné",
         blocks: [
-          { type: "paragraphe", text: "Elle est recueillie par une famille de fermiers, les Van Wagenen, qui rachètent sa liberté pour une somme modeste. Elle apprend alors que son fils Peter, âgé de cinq ans, a été vendu illégalement à un propriétaire de l'Alabama — un État où la loi de New York ne s'applique pas et où l'esclavage est à vie. Une femme noire, tout juste sortie de l'esclavage, sans instruction ni argent, décide de poursuivre un homme blanc en justice. Avec l'aide de quakers, elle porte l'affaire devant les tribunaux. Et elle gagne : la justice ordonne le retour de Peter, qui lui est rendu en 1828. C'est, dans l'Amérique de cette époque, un événement rare au point d'être remarquable — l'un des premiers cas où une femme noire obtient gain de cause contre un Blanc devant un tribunal américain. Cet épisode révèle ce qui sera la constante de sa vie : la conviction qu'il faut porter la parole là où elle n'est pas attendue." },
+          {
+            type: "paragraphe",
+            text: "En 1827, son maître revient sur sa promesse d'affranchissement. Isabella ne l'attend pas : elle part, à pied, avec son bébé.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1828",
+            legende: "elle gagne son procès et récupère son fils",
+          },
+          {
+            type: "paragraphe",
+            text: "Son fils **Peter**, cinq ans, a été vendu illégalement vers l'Alabama. Elle porte l'affaire devant un tribunal et **gagne** : c'est l'une des premières fois qu'une femme noire obtient gain de cause contre un homme blanc aux États-Unis.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Elle se libère elle-même en **1827**",
+              "Elle attaque en justice pour récupérer son fils",
+              "L'une des premières victoires judiciaires de ce type",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-10-sojourner-truth-lesson-3",
         title: "Devenir Sojourner Truth",
         blocks: [
-          { type: "paragraphe", text: "Installée à New York, elle traverse une période d'intense recherche spirituelle et s'engage dans plusieurs communautés religieuses. En 1843, elle prend une décision qui change sa vie : elle abandonne le nom que l'esclavage lui avait donné et se rebaptise Sojourner Truth — « voyageuse » et « vérité ». Elle expliquera avoir reçu l'appel de parcourir le pays pour dire ce qui est vrai. Elle part sur les routes, prêche en plein air, dans les camps religieux, les assemblées abolitionnistes, les salles de réunion. Elle ne sait ni lire ni écrire : son autobiographie, The Narrative of Sojourner Truth, est dictée en 1850 à une amie, et elle en vendra les exemplaires de ville en ville pour vivre. Sa voix grave, sa haute stature, sa manière directe et son usage de la parabole biblique font d'elle une oratrice redoutable, capable de retourner une salle hostile. Elle rejoint le cercle des grandes figures abolitionnistes américaines." },
+          {
+            type: "paragraphe",
+            text: "En 1843, Isabella Baumfree change de nom. Elle devient **Sojourner Truth** : « voyageuse » et « vérité ».",
+          },
+          {
+            type: "image",
+            alt: "Photographie de Sojourner Truth assise, tricot posé sur les genoux.",
+            legende: "Sojourner Truth, photographie de 1870",
+            credit: "Randall Studio, domaine public, via Wikimedia Commons",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle prend la route, prêche, parle de l'abolition et du droit des femmes. Ne sachant ni lire ni écrire, elle dicte ses mémoires et **vend ses propres photographies** pour financer ses tournées — une manière très moderne de vivre de son image.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Elle prend le nom de **Sojourner Truth** en 1843",
+              "Prédicatrice itinérante, abolitionniste et féministe",
+              "Elle finance ses tournées en vendant ses **photographies**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-10-sojourner-truth-lesson-4",
         title: "« Ne suis-je pas une femme ? »",
         blocks: [
-          { type: "paragraphe", text: "En 1851, elle prend la parole à une convention pour les droits des femmes à Akron, dans l'Ohio. Son intervention devient le texte le plus célèbre qui lui soit attribué, connu sous le titre « Ain't I a Woman? » — « Ne suis-je pas une femme ? ». Elle y met en évidence une contradiction que le mouvement féministe blanc de son temps préférait ignorer : on justifie le refus des droits politiques aux femmes par leur prétendue faiblesse, mais elle, on l'a fait labourer, porter des charges, endurer le fouet et voir ses enfants vendus — sans que jamais cette délicatesse supposée lui soit accordée. Si les femmes sont trop fragiles pour voter, alors qu'est-elle ? Une précision d'honnêteté s'impose : le texte le plus diffusé de ce discours a été publié douze ans plus tard par une militante blanche, dans un anglais du Sud qui n'était pas le sien — elle parlait l'anglais du nord de l'État de New York. Les mots exacts sont donc incertains ; l'argument, lui, est bien le sien, et il fonde ce qu'on appellera plus tard la pensée de l'intersection entre racisme et sexisme." },
+          {
+            type: "paragraphe",
+            text: "En 1851, à la convention des femmes d'**Akron**, dans l'Ohio, Sojourner Truth prend la parole sans texte préparé.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Juin 1851", valeur: "Compte rendu de l'Anti-Slavery Bugle" },
+              { label: "1863", valeur: "Version réécrite par Frances Gage" },
+              { label: "Différence", valeur: "La question répétée est ajoutée en 1863" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le discours n'a pas de titre. Un journal abolitionniste en publie un compte rendu quelques semaines plus tard. Douze ans après, **Frances Gage** en donne une version très différente, dans un parler du Sud qui n'a jamais été le sien.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Discours prononcé sans notes à **Akron**, en 1851",
+              "Le compte rendu d'époque paraît en juin 1851",
+              "**Frances Gage** en publie une réécriture en 1863",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-10-sojourner-truth-lesson-5",
         title: "Une voix de la diaspora",
         blocks: [
-          { type: "paragraphe", text: "Pendant la guerre de Sécession, elle recrute des soldats noirs pour l'armée de l'Union, où sert son petit-fils. Elle organise l'aide aux affranchis affluant vers Washington, milite pour que des terres de l'Ouest leur soient attribuées afin qu'ils accèdent à une véritable autonomie économique — une revendication qui ne sera pas satisfaite —, et proteste contre la ségrégation dans les tramways de la capitale, dont elle force l'accès. Elle est reçue à la Maison-Blanche par Abraham Lincoln en 1864. Elle meurt en 1883 à Battle Creek, dans le Michigan. L'Histoire générale de l'Afrique consacre son volume X aux diasporas africaines et à ce qu'elles ont apporté aux sociétés modernes : Sojourner Truth y occupe une place particulière, parce qu'elle a lié dans un même combat l'abolition de l'esclavage et les droits des femmes, à une époque où presque personne ne voyait le rapport. L'UNESCO l'a intégrée à son projet Femmes dans l'histoire de l'Afrique pour cette raison — une femme née dans les chaînes qui a fait de sa parole un instrument politique." },
+          {
+            type: "paragraphe",
+            text: "La phrase qui l'a rendue célèbre dans le monde entier vient de la version de 1863, pas du discours de 1851.",
+          },
+          {
+            type: "citation",
+            texte: "Ne suis-je pas une femme ?",
+            auteur: "Version publiée par Frances Gage en 1863, absente du compte rendu d'origine",
+          },
+          {
+            type: "paragraphe",
+            text: "**Sojourner Truth** meurt en 1883 à Battle Creek. Elle est devenue une figure de la **diaspora** africaine et du féminisme, citée dans le monde entier — souvent par des mots qu'elle n'a probablement pas prononcés sous cette forme.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Morte en **1883** à Battle Creek, dans le Michigan",
+              "Figure du féminisme et de la **diaspora** africaine",
+              "Sa phrase la plus célèbre est une réécriture tardive",
+            ],
+          },
         ],
       },
     ],
@@ -1720,35 +1933,146 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-11-abd-el-kader-lesson-1",
         title: "L'Algérie de 1830",
         blocks: [
-          { type: "paragraphe", text: "En juin 1830, une flotte française débarque à Sidi-Ferruch et s'empare d'Alger. La régence d'Alger, province autonome de l'Empire ottoman, s'effondre en quelques semaines. Mais la prise de la capitale ne signifie nullement le contrôle du pays : l'intérieur algérien est peuplé de tribus, de confréries religieuses et de villes qui n'ont aucune intention de se soumettre. Ce qui manque, c'est une autorité capable de fédérer des groupes habitués à se gouverner séparément. Elle va venir de l'ouest, de la région de Mascara, où domine la confrérie soufie de la Qadiriyya. En 1832, les tribus de l'Oranie prêtent allégeance à un jeune homme de vingt-quatre ans, Abd el-Kader ibn Muhieddine, fils du chef de la confrérie. Ce n'est pas un militaire de formation : c'est un lettré, formé au Coran, au droit, à la théologie et à la philosophie, qui a accompli le pèlerinage à La Mecque et voyagé à Damas et à Bagdad. On lui donne le titre d'émir." },
+          {
+            type: "paragraphe",
+            text: "En 1830, la France débarque à Alger et met fin à trois siècles de **régence ottomane**. Le pays se retrouve sans État.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1830", texte: "Prise d'Alger par la France" },
+              { date: "1832", texte: "Abd el-Kader proclamé émir" },
+              { date: "1837", texte: "Traité de la Tafna avec la France" },
+              { date: "1847", texte: "Reddition d'Abd el-Kader" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les tribus de l'ouest cherchent un chef capable de les fédérer. Elles se tournent vers une famille religieuse respectée, les **Qadiriyya**, installée près de Mascara. C'est de là que vient Abd el-Kader, né vers 1808.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La France prend Alger en **1830**",
+              "La régence ottomane s'effondre, l'État disparaît",
+              "Les tribus se tournent vers une famille **religieuse**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-11-abd-el-kader-lesson-2",
         title: "Bâtir un État en guerre",
         blocks: [
-          { type: "paragraphe", text: "L'originalité d'Abd el-Kader n'est pas d'avoir résisté — d'autres l'ont fait — mais d'avoir construit un État pendant qu'il résistait. Il dote son territoire d'une administration : des gouverneurs de province (les khalifas), une justice fondée sur le droit musulman appliquée uniformément, un impôt régulier remplaçant les prélèvements arbitraires. Il crée une armée régulière, payée, uniformisée et instruite, en lieu et place des contingents tribaux fournis au coup par coup — une rupture profonde avec les habitudes locales. Il fait fabriquer des armes, installe des ateliers, fonde des places fortes et une capitale mobile, la smala, ville de tentes qui se déplace avec l'État et abrite ses archives, son trésor et ses écoles. Il cherche aussi à dépasser les rivalités de tribus au profit d'une allégeance unique. L'Histoire générale de l'Afrique souligne ce point : il ne s'agit pas d'une révolte, mais de la fondation d'un État algérien moderne dans les conditions les plus défavorables qui soient." },
+          {
+            type: "paragraphe",
+            text: "En 1832, à vingt-quatre ans, **Abd el-Kader** est proclamé émir. Il ne se contente pas de lever des troupes : il bâtit un État.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1832",
+            legende: "il est proclamé émir à vingt-quatre ans",
+          },
+          {
+            type: "paragraphe",
+            text: "Il lève l'impôt, frappe **monnaie**, nomme des juges, crée des dépôts d'armes et une armée régulière payée. Sa capitale est mobile : la **smala**, une ville de tentes qui se déplace avec lui et abrite des milliers de personnes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Proclamé émir en **1832**, à vingt-quatre ans",
+              "Impôt, monnaie, justice et armée régulière",
+              "La **smala**, capitale mobile de tentes",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-11-abd-el-kader-lesson-3",
         title: "Quinze ans de résistance",
         blocks: [
-          { type: "paragraphe", text: "La guerre dure de 1832 à 1847. Elle connaît des phases de négociation — le traité de la Tafna, en 1837, reconnaît à Abd el-Kader la souveraineté sur les deux tiers de l'Algérie — puis de reprise des hostilités. À partir de 1840, la France change de méthode avec le général Bugeaud : colonnes mobiles, guerre de destruction systématique, razzias contre les villages, les récoltes et les troupeaux, pratique des « enfumades » où des populations réfugiées dans des grottes sont asphyxiées. L'objectif n'est plus de battre une armée mais de détruire la base sociale qui la nourrit. En 1843, la smala est surprise et capturée. Abd el-Kader, réduit à la guerre de mouvement, se replie au Maroc, où il obtient d'abord un appui ; mais la défaite marocaine d'Isly, en 1844, isole le sultan, qui finit par se retourner contre lui. Privé de sanctuaire et de ravitaillement, l'émir se rend en décembre 1847, contre la promesse d'être conduit en Orient." },
+          {
+            type: "paragraphe",
+            text: "Pendant quinze ans, **Abd el-Kader** tient tête à la première armée d'Europe, sur un terrain qu'il connaît mieux qu'elle.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Tactique", valeur: "Harcèlement, mobilité, refus du choc frontal" },
+              { label: "1837", valeur: "Traité de la Tafna, reconnaissance de fait" },
+              { label: "Riposte", valeur: "Colonnes mobiles et razzias françaises" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il pratique le harcèlement et évite la bataille rangée. Le traité de la **Tafna**, en 1837, lui reconnaît de fait deux tiers de l'Algérie. La guerre reprend, et la France répond par les colonnes mobiles et la destruction des récoltes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Quinze ans de guerre, de **1832** à 1847",
+              "Harcèlement et mobilité contre la bataille rangée",
+              "Le traité de la **Tafna** lui reconnaît deux tiers du pays",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-11-abd-el-kader-lesson-4",
         title: "La captivité et l'exil",
         blocks: [
-          { type: "paragraphe", text: "La promesse n'est pas tenue. Au lieu de l'Orient, Abd el-Kader est transféré en France et détenu cinq ans, notamment au château d'Amboise, avec sa famille et ses compagnons. Sa captivité devient une affaire publique : des voix s'élèvent en France pour dénoncer le manquement à la parole donnée, et l'émir prisonnier acquiert un prestige inattendu auprès de ceux-là mêmes qui l'avaient combattu. En 1852, Louis-Napoléon Bonaparte le libère. Il s'installe d'abord à Brousse, en Anatolie, puis à Damas en 1855, où il se consacre à ce qui avait été sa première vocation : l'étude, l'enseignement et la mystique soufie. Il commente l'œuvre du grand maître andalou Ibn Arabi, dont il fait restaurer le tombeau, écrit et enseigne. Il n'est plus un chef de guerre ; il redevient le savant qu'il n'avait jamais cessé d'être." },
+          {
+            type: "paragraphe",
+            text: "En 1847, épuisé et encerclé, **Abd el-Kader** se rend. On lui promet un exil en Orient ; on l'enferme en France.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1847", texte: "Reddition, contre promesse d'exil" },
+              { date: "1848-1852", texte: "Captivité en France, dont le château d'Amboise" },
+              { date: "1852", texte: "Libéré par Louis-Napoléon Bonaparte" },
+              { date: "1855", texte: "Installation à Damas" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il passe cinq ans en captivité, notamment au château d'**Amboise**. Libéré en 1852, il s'installe finalement à **Damas**, où il se consacre à la théologie, à la poésie et à l'enseignement soufi.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Reddition en **1847**, promesse d'exil non tenue",
+              "Cinq ans de captivité en France",
+              "Il s'installe à **Damas** en 1855",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-11-abd-el-kader-lesson-5",
         title: "Damas 1860, et la mémoire algérienne",
         blocks: [
-          { type: "paragraphe", text: "En juillet 1860, des massacres visent les chrétiens de Damas dans un climat de violences communautaires. Abd el-Kader, avec ses hommes, ouvre sa maison, parcourt la ville et protège plusieurs milliers de personnes, qu'il abrite et défend contre les émeutiers. L'événement lui vaut une renommée internationale considérable ; il reçoit des distinctions de plusieurs pays et son geste est commenté dans toute l'Europe. Il justifie son action par le droit musulman lui-même, qui interdit selon lui de s'en prendre aux non-combattants — la même règle qu'il avait cherché à faire respecter dans le traitement de ses prisonniers pendant la guerre d'Algérie. Il meurt à Damas en 1883. Ses restes seront rapatriés en Algérie en 1966, quatre ans après l'indépendance. Le pays en a fait l'une de ses figures fondatrices : non seulement le premier résistant à la conquête, mais l'homme qui a montré qu'une résistance pouvait s'imposer des règles morales à elle-même." },
+          {
+            type: "paragraphe",
+            text: "En juillet 1860, des massacres de chrétiens éclatent à **Damas**. Abd el-Kader ouvre sa maison et envoie ses hommes en protéger des milliers.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1860",
+            legende: "il protège les chrétiens de Damas",
+          },
+          {
+            type: "paragraphe",
+            text: "Le geste lui vaut une renommée mondiale, jusqu'à donner son nom à une ville de l'Iowa. En Algérie, sa mémoire est **disputée** : héros de la résistance pour les uns, figure récupérée par l'État pour d'autres. Il meurt à Damas en 1883.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "En **1860**, il protège les chrétiens de Damas",
+              "Une renommée qui dépasse largement l'Algérie",
+              "Sa mémoire reste **disputée** dans son pays",
+            ],
+          },
         ],
       },
     ],
@@ -1802,35 +2126,145 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-12-samori-toure-lesson-1",
         title: "Un marchand devenu chef de guerre",
         blocks: [
-          { type: "paragraphe", text: "Samori Touré naît vers 1830 à Manyambaladugu, en pays malinké, dans l'actuelle Guinée. Sa famille est de condition modeste et il commence sa vie comme colporteur : il parcourt la région, apprend les routes, les marchés, les langues et les rapports de force entre chefferies — une formation commerciale qui expliquera plus tard son sens de la logistique et de la négociation. Le tournant vient vers 1853 : sa mère est capturée lors d'un raid, et Samori s'engage auprès du chef qui la détient pour obtenir sa libération. Il y découvre le métier des armes, s'y révèle, et prend rapidement du grade. Dans les années 1860, il rassemble ses propres partisans et commence à soumettre les chefferies voisines. En 1867-1868, il se proclame chef à Sanankoro. En vingt ans, ce colporteur devenu soldat va construire l'un des plus vastes ensembles politiques de l'Afrique de l'Ouest du XIXᵉ siècle." },
+          {
+            type: "paragraphe",
+            text: "**Samori Touré** naît vers 1830 à Miniambaladougou, dans l'actuelle Guinée, dans une famille de commerçants dioula.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "v. 1830", texte: "Naissance en pays malinké" },
+              { date: "1878", texte: "Il prend le titre de faama" },
+              { date: "1882", texte: "Premiers affrontements avec la France" },
+              { date: "1898", texte: "Capture et déportation" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il commence sa vie sur les routes du commerce, entre la forêt et le Sahel. La légende veut qu'il ait pris les armes pour libérer sa **mère**, capturée lors d'un raid. De marchand, il devient chef de guerre, puis souverain.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né vers **1830** en pays malinké",
+              "D'abord commerçant **dioula**, sur les routes du Sahel",
+              "Il prend les armes et devient chef de guerre",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-12-samori-toure-lesson-2",
         title: "Bâtir un empire",
         blocks: [
-          { type: "paragraphe", text: "L'empire wassoulou — appelé ainsi d'après la région du Wassoulou — finit par s'étendre sur une grande partie des actuelles Guinée, Mali, Côte d'Ivoire, Sierra Leone et Burkina Faso. Samori l'organise méthodiquement. Il le divise en provinces confiées à des gouverneurs, s'appuie sur une administration où les fonctions sont attribuées au mérite autant qu'à la parenté, et adopte le titre d'almami, à la fois politique et religieux : il fait de l'islam un ciment unificateur au-dessus des appartenances claniques. Son armée est permanente, entraînée et disciplinée, organisée en unités d'infanterie (sofa) et de cavalerie. Surtout, il comprend très tôt que la guerre moderne est une affaire d'équipement : il achète massivement des fusils à répétition auprès des comptoirs britanniques de Sierra Leone, et il installe des ateliers de forgerons capables de réparer les armes et, fait remarquable, d'en fabriquer et d'en copier. Peu de pouvoirs africains ont poussé aussi loin l'autonomie militaire." },
+          {
+            type: "paragraphe",
+            text: "En une vingtaine d'années, **Samori Touré** bâtit un empire qui s'étend sur une bonne partie de l'actuelle Guinée, du Mali et de la Côte d'Ivoire.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "faama",
+            legende: "le titre de souverain qu'il prend en 1878",
+          },
+          {
+            type: "paragraphe",
+            text: "Il organise l'État en provinces, unifie la justice et lève une armée permanente. Il achète des **fusils à répétition** aux comptoirs anglais de Sierra Leone, et fait former des forgerons capables de les réparer et d'en copier les pièces.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Un empire sur la Guinée, le Mali et la Côte d'Ivoire",
+              "Il prend le titre de **faama** en 1878",
+              "Armée permanente et **fusils** modernes",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-12-samori-toure-lesson-3",
         title: "Seize ans de guerre contre la France",
         blocks: [
-          { type: "paragraphe", text: "À partir de 1882, l'expansion française vers le haut Niger place les deux puissances face à face. Le conflit va durer, avec des interruptions négociées, jusqu'en 1898. Samori pratique une guerre de mouvement : il évite les batailles rangées où l'artillerie française l'écraserait, harcèle les colonnes, coupe les lignes de ravitaillement, abandonne le terrain pour mieux revenir. Il joue également des rivalités européennes, se procurant des armes chez les Britanniques tout en négociant avec les Français, et signe plusieurs traités qu'il utilise pour gagner du temps et se réarmer. La France, de son côté, mène une guerre d'usure et de destruction, s'appuie sur les ennemis locaux de Samori et sur les populations lassées de vingt ans de guerres. L'Histoire générale de l'Afrique insiste sur la durée exceptionnelle de cette résistance : seize années face à une puissance industrielle, ce qui en fait l'une des plus longues du continent." },
+          {
+            type: "paragraphe",
+            text: "De 1882 à 1898, **Samori Touré** affronte l'armée française. Seize ans : c'est la plus longue résistance armée d'Afrique de l'Ouest.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Durée", valeur: "1882-1898, seize années de guerre" },
+              { label: "Tactique", valeur: "Mobilité, terre brûlée, repli organisé" },
+              { label: "Armement", valeur: "Fusils achetés, puis copiés sur place" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il évite les batailles rangées, déplace ses forces, brûle derrière lui. Ses **sofas**, soldats professionnels, tiennent tête à des colonnes mieux équipées. La France doit engager des moyens considérables et n'en vient jamais à bout par les seules armes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Seize ans** de guerre contre la France",
+              "La plus longue résistance armée de la région",
+              "Ses **sofas** tiennent tête aux colonnes françaises",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-12-samori-toure-lesson-4",
         title: "Le grand déplacement vers l'est",
         blocks: [
-          { type: "paragraphe", text: "À partir de 1892, comprenant qu'il ne tiendra pas sur ses bases d'origine, Samori prend une décision d'une ampleur inouïe : déplacer l'empire entier vers l'est, en direction de la région de Kong et du nord de l'actuelle Côte d'Ivoire. Ce n'est pas une fuite mais une reconstruction — il entend recréer plus loin l'État, l'armée et l'économie, hors de portée immédiate des Français. L'opération entraîne des populations considérables sur des centaines de kilomètres, et elle est terrible : pour subsister et se réarmer, ses troupes pratiquent razzias et captures, ravageant des régions entières et suscitant des hostilités durables. C'est cette phase qui alimente aujourd'hui encore les mémoires les plus douloureuses à son égard, particulièrement dans certaines régions ivoiriennes et burkinabè. La manœuvre échoue : les Britanniques ferment l'accès aux armes, l'étau se resserre, et le nouvel empire ne parvient jamais à se stabiliser." },
+          {
+            type: "paragraphe",
+            text: "Vers 1892, **Samori Touré** prend une décision rare dans l'histoire militaire : il déplace son empire entier vers l'est.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1892",
+            legende: "le grand déplacement vers l'est",
+          },
+          {
+            type: "paragraphe",
+            text: "Population, troupeaux, ateliers, administration : tout suit. L'objectif est de trouver un territoire hors de portée française, vers l'actuel nord de la Côte d'Ivoire et le Ghana. Le coût humain de ce déplacement est **terrible**, et la manœuvre lui vaut aujourd'hui encore des accusations sévères.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Vers **1892**, il déplace son État vers l'est",
+              "Population, troupeaux et ateliers suivent",
+              "Un coût humain lourd, encore discuté aujourd'hui",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-12-samori-toure-lesson-5",
         title: "Capture, exil et mémoire disputée",
         blocks: [
-          { type: "paragraphe", text: "Le 29 septembre 1898, Samori est surpris et capturé dans son campement de Guélémou, dans l'actuelle Côte d'Ivoire. Il est déporté au Gabon, sur l'île de N'Jolé, où il meurt le 2 juin 1900. Sa capture marque, pour l'Afrique de l'Ouest, la fin des grandes résistances armées à la conquête coloniale. Sa mémoire, elle, est double et il serait malhonnête de n'en présenter qu'une face. En Guinée, il est une figure fondatrice de la nation — Ahmed Sékou Touré, premier président du pays, revendiquait d'ailleurs sa descendance. Pour l'historiographie africaine, il incarne à la fois le génie militaire et la capacité africaine à construire des États modernes face à l'agression coloniale. Mais dans les régions traversées par le déplacement de 1892, on se souvient d'abord des razzias et des destructions. L'Histoire générale de l'Afrique tient les deux ensemble : un bâtisseur d'État et un résistant remarquable, dont les méthodes de guerre ont durement frappé des populations africaines." },
+          {
+            type: "paragraphe",
+            text: "Le 29 septembre 1898, **Samori Touré** est capturé par surprise. Il est déporté au Gabon, où il meurt le 2 juin 1900.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capture", valeur: "29 septembre 1898" },
+              { label: "Exil", valeur: "Ndjolé, au Gabon" },
+              { label: "Mort", valeur: "2 juin 1900" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Sa mémoire est **disputée**. Les uns retiennent le résistant, l'un des derniers à tenir tête à la conquête ; les autres rappellent la dureté de son État et les razzias d'esclaves qui le finançaient. Son petit-fils **Ahmed Sékou Touré** deviendra le premier président de la Guinée.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Capturé en **1898**, mort en exil au Gabon en 1900",
+              "Une mémoire **disputée**, entre résistance et dureté",
+              "Son petit-fils sera le premier président de Guinée",
+            ],
+          },
         ],
       },
     ],
@@ -1884,35 +2318,143 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-13-taytu-betul-lesson-1",
         title: "L'ascension d'une aristocrate",
         blocks: [
-          { type: "paragraphe", text: "Taytu Betul naît vers 1851 dans une grande famille de l'aristocratie du Semien, au nord de l'Éthiopie, apparentée à la dynastie salomonienne. Elle reçoit une éducation soignée, rare pour une femme de son temps : elle sait lire et écrire le guèze, la langue liturgique éthiopienne, connaît les Écritures, joue de la musique et compose des poèmes. Elle a été mariée plusieurs fois avant sa rencontre décisive, ce qui lui a permis d'acquérir une expérience directe des jeux de pouvoir régionaux et un réseau d'alliances propre. En 1883, elle épouse Menelik, alors roi du Choa et prétendant au trône impérial. Ce n'est pas une union ordinaire : Taytu apporte à Menelik les appuis du nord, dont il a besoin pour asseoir sa légitimité. Lorsqu'il devient empereur (négus negest) en 1889, elle est couronnée impératrice — et elle entend exercer ce titre." },
+          {
+            type: "paragraphe",
+            text: "**Taytu Betul** naît vers 1851 dans le Semien, au nord de l'Éthiopie, dans une famille de la haute aristocratie.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "v. 1851", texte: "Naissance dans le Semien" },
+              { date: "1883", texte: "Mariage avec Ménélik II" },
+              { date: "1889", texte: "Elle devient impératrice" },
+              { date: "1896", texte: "Victoire d'Adoua" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle est mariée plusieurs fois avant d'épouser en 1883 le roi du Choa, futur **Ménélik II**. Instruite, lettrée, elle connaît les manœuvres de cour et ne se contente pas du rôle d'épouse : elle gouverne avec lui.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née vers **1851** dans le Semien",
+              "Elle épouse **Ménélik II** en 1883",
+              "Impératrice dès 1889, et pleinement au pouvoir",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-13-taytu-betul-lesson-2",
         title: "Le traité de Wuchale et le piège des deux versions",
         blocks: [
-          { type: "paragraphe", text: "En 1889, l'Éthiopie signe avec l'Italie le traité de Wuchale. Le texte existe en deux langues, et les deux versions ne disent pas la même chose. Dans la version amharique, l'Éthiopie peut recourir aux bons offices de l'Italie pour ses relations extérieures — une simple faculté. Dans la version italienne, elle doit passer par l'Italie — ce qui fait de l'Éthiopie un protectorat. Rome s'empresse de notifier aux puissances européennes qu'elle exerce désormais un protectorat sur le pays. Taytu est parmi les premiers à mesurer la gravité de la manœuvre et elle est la plus intransigeante de la cour : elle refuse tout compromis et pousse Menelik à la dénonciation, contre l'avis de conseillers partisans de la négociation. La tradition rapporte qu'elle aurait déclaré aux émissaires italiens n'être pas femme à craindre la guerre. Le traité est dénoncé en 1893. La guerre devient inévitable." },
+          {
+            type: "paragraphe",
+            text: "En 1889, l'Éthiopie signe avec l'Italie le traité de **Wuchale**. Les deux versions du texte ne disent pas la même chose.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1889",
+            legende: "le traité de Wuchale et ses deux versions",
+          },
+          {
+            type: "paragraphe",
+            text: "L'article 17 amharique laisse l'Éthiopie libre de traiter avec les puissances étrangères. La version italienne en fait une obligation, donc un **protectorat**. **Taytu** est parmi les premiers à dénoncer le piège, et elle refuse tout compromis là où d'autres conseillent la prudence.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le traité de **Wuchale** date de 1889",
+              "Les versions amharique et italienne divergent",
+              "**Taytu** dénonce le piège et refuse de céder",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-13-taytu-betul-lesson-3",
         title: "Adoua, 1896",
         blocks: [
-          { type: "paragraphe", text: "Le 1ᵉʳ mars 1896, les armées éthiopienne et italienne s'affrontent près d'Adoua, dans le Tigré. Taytu n'est pas restée à la capitale : elle est sur le terrain, à la tête de ses propres troupes — plusieurs milliers d'hommes selon les sources — et de milliers de femmes chargées du ravitaillement et des soins, dont l'organisation est décisive dans une campagne où l'eau et la nourriture manquent. On lui attribue en particulier un rôle déterminant lors du siège du fort italien de Mekele, où elle aurait conseillé de couper l'accès des assiégés à la source qui les alimentait, provoquant leur reddition sans assaut coûteux. À Adoua, l'armée italienne est écrasée. La victoire a une portée mondiale : c'est la première fois qu'une armée africaine inflige une défaite décisive à une puissance européenne en campagne coloniale. L'Italie doit reconnaître l'indépendance pleine et entière de l'Éthiopie, qui restera le seul pays du continent à n'avoir jamais été colonisé durablement." },
+          {
+            type: "paragraphe",
+            text: "Le 1er mars 1896, à **Adoua**, l'armée éthiopienne écrase les forces italiennes. C'est la seule victoire décisive d'un État africain contre une puissance coloniale.",
+          },
+          {
+            type: "image",
+            alt: "Gravure d'époque représentant l'impératrice Taytu Betul.",
+            legende: "L'impératrice Taytu Betul, gravure du Petit Journal",
+            credit: "H. Meyer, Le Petit Journal, domaine public",
+          },
+          {
+            type: "paragraphe",
+            text: "**Taytu** commande en personne un contingent et joue un rôle décisif au siège de Mekele, en coupant l'eau à la garnison italienne. Adoua garantit l'indépendance éthiopienne pour quarante ans.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Victoire décisive d'**Adoua**, le 1er mars 1896",
+              "Taytu commande un contingent et coupe l'eau à Mekele",
+              "L'indépendance éthiopienne est préservée",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-13-taytu-betul-lesson-4",
         title: "La fondation d'Addis-Abeba",
         blocks: [
-          { type: "paragraphe", text: "Taytu n'est pas seulement une figure de guerre. C'est elle qui, selon la tradition, choisit le site de la nouvelle capitale et lui donne son nom : Addis-Abeba, « la nouvelle fleur » en amharique. Séduite par les sources chaudes de la région de Finfinne, elle obtient de Menelik l'autorisation d'y bâtir une résidence, autour de laquelle la ville se développe à partir de 1886. Elle y fait construire, y attribue des terrains aux nobles, y encourage l'installation de commerçants. Quand la déforestation menace l'approvisionnement en bois de la ville naissante, c'est encore sous son impulsion que sont plantés les eucalyptus qui donnent aujourd'hui à Addis-Abeba sa silhouette caractéristique. Elle fonde également le premier hôtel moderne du pays. Un siècle plus tard, cette capitale qu'elle a nommée est devenue le siège de l'Organisation de l'unité africaine puis de l'Union africaine — le centre politique du continent." },
+          {
+            type: "paragraphe",
+            text: "**Taytu Betul** choisit l'emplacement de la nouvelle capitale et lui donne son nom : Addis-Abeba, « la fleur nouvelle ».",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Addis-Abeba",
+            legende: "« la fleur nouvelle », en amharique",
+          },
+          {
+            type: "paragraphe",
+            text: "La cour siégeait à Entoto, sur les hauteurs, où le froid et le manque de bois épuisaient tout le monde. Taytu obtient le déplacement de la cour vers les sources chaudes situées en contrebas, puis fait planter des **eucalyptus** pour fournir du combustible.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Elle nomme et choisit **Addis-Abeba**",
+              "Le déplacement depuis Entoto vient d'elle",
+              "Les **eucalyptus** plantés résolvent le manque de bois",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-13-taytu-betul-lesson-5",
         title: "La régence, l'écartement, l'héritage",
         blocks: [
-          { type: "paragraphe", text: "Après 1906, la santé de Menelik décline et Taytu exerce de fait le pouvoir : elle préside le conseil, nomme aux fonctions, arbitre les affaires de l'État et mène la politique étrangère. Cette autorité exercée par une femme provoque une opposition croissante d'une partie de la noblesse, qui lui reproche son intransigeance et le favoritisme dont elle userait envers sa famille du nord. En 1910, un coup de force de la cour l'écarte du pouvoir. Elle se retire à Entoto, au-dessus d'Addis-Abeba, où elle meurt en 1918. L'UNESCO l'a intégrée à son projet Femmes dans l'histoire de l'Afrique, et l'Union africaine la compte parmi les mères fondatrices dont elle honore la mémoire. La raison en est claire : sans son refus obstiné du traité de Wuchale, l'Éthiopie serait probablement devenue un protectorat italien — et l'Afrique aurait perdu le symbole de souveraineté qui a nourri, pendant tout le XXᵉ siècle, l'imaginaire panafricain." },
+          {
+            type: "paragraphe",
+            text: "Quand Ménélik tombe malade, **Taytu** assure la régence. Elle place ses proches et gouverne — ce que la cour ne lui pardonne pas.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "1909-1910", valeur: "Régence pendant la maladie de Ménélik" },
+              { label: "1910", valeur: "La noblesse l'écarte du pouvoir" },
+              { label: "1918", valeur: "Mort à Entoto" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "En 1910, la noblesse la contraint à se retirer. Elle finit sa vie à **Entoto**, là même d'où elle avait fait descendre la capitale, et meurt en 1918. L'Éthiopie la tient aujourd'hui pour l'une des grandes figures de sa souveraineté.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Régente pendant la maladie de **Ménélik**",
+              "Écartée par la noblesse en **1910**",
+              "Morte en 1918 à Entoto",
+            ],
+          },
         ],
       },
     ],
@@ -1966,35 +2508,145 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-14-yaa-asantewaa-lesson-1",
         title: "La confédération asante et la reine-mère",
         blocks: [
-          { type: "paragraphe", text: "La confédération asante, dans l'actuel Ghana, est l'un des États les plus puissants de l'Afrique de l'Ouest depuis le XVIIIᵉ siècle. Elle est fondée sur une organisation politique élaborée : un souverain, l'Asantehene, siégeant à Kumasi, des États confédérés, un conseil, une armée redoutable et une richesse tirée de l'or et du commerce. Sa société est matrilinéaire : la filiation et la succession se transmettent par les femmes, ce qui donne à celles-ci un rôle institutionnel que peu d'observateurs européens ont compris. La fonction d'Ohemaa, la reine-mère, en est l'expression : elle n'est pas l'épouse du roi mais la plus haute autorité féminine du lignage royal. Elle désigne les candidats au trône, siège au conseil, exerce une justice et peut publiquement critiquer le souverain. Chaque État de la confédération a sa reine-mère. Celle d'Ejisu, à partir de la fin du XIXᵉ siècle, s'appelle Yaa Asantewaa." },
+          {
+            type: "paragraphe",
+            text: "Chez les **Asante**, au centre de l'actuel Ghana, la reine-mère n'est pas l'épouse du roi. C'est une fonction politique à part entière.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XVIIe s.", texte: "Fondation de la confédération asante" },
+              { date: "1874", texte: "Les Britanniques pillent Kumasi" },
+              { date: "1896", texte: "Le roi Prempeh Ier est déporté" },
+              { date: "1900", texte: "Guerre du Tabouret d'or" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'**ohemaa**, la reine-mère, désigne les candidats au trône, siège au conseil et peut s'opposer au roi. **Yaa Asantewaa** occupe cette fonction à Ejisu, où elle a été nommée par son frère.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Chez les Asante, la **reine-mère** est une fonction politique",
+              "Elle désigne les candidats au trône et siège au conseil",
+              "**Yaa Asantewaa** est reine-mère d'Ejisu",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-14-yaa-asantewaa-lesson-2",
         title: "Le Tabouret d'or et l'exil du roi",
         blocks: [
-          { type: "paragraphe", text: "Au cœur de l'identité asante se trouve le Sika Dwa Kofi, le Tabouret d'or. Selon la tradition, il descendit du ciel pour se poser sur les genoux du fondateur Osei Tutu : il contient l'âme de la nation asante. Nul, pas même l'Asantehene, ne s'y assoit ; il n'est exposé qu'exceptionnellement et repose sur son propre siège. Après plusieurs guerres anglo-asante au cours du XIXᵉ siècle, les Britanniques prennent Kumasi et, en 1896, déportent l'Asantehene Prempeh Iᵉʳ aux Seychelles, avec sa famille et des dignitaires. La confédération est décapitée mais non résignée. En mars 1900, le gouverneur britannique Frederick Hodgson réunit les chefs à Kumasi et commet une erreur qui restera célèbre : il exige qu'on lui livre le Tabouret d'or pour qu'il puisse s'y asseoir en signe de souveraineté. Il ignore ce qu'il demande. L'assemblée reste silencieuse." },
+          {
+            type: "paragraphe",
+            text: "Le **Tabouret d'or** n'est pas un trône : personne ne s'y assoit, pas même le roi. Il contient l'âme de la nation asante.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Sika Dwa Kofi",
+            legende: "le Tabouret d'or, âme de la nation asante",
+          },
+          {
+            type: "paragraphe",
+            text: "En 1896, les Britanniques déportent le roi **Prempeh Ier** aux Seychelles. Quatre ans plus tard, leur gouverneur exige publiquement de s'asseoir sur le Tabouret d'or. La demande est une humiliation que le conseil ne peut pas accepter.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Tabouret d'or** contient l'âme de la nation",
+              "Le roi **Prempeh Ier** est déporté en 1896",
+              "Le gouverneur britannique exige de s'y asseoir",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-14-yaa-asantewaa-lesson-3",
         title: "1900 : la guerre du Tabouret d'or",
         blocks: [
-          { type: "paragraphe", text: "Dans le conseil qui suit, les chefs hésitent : beaucoup redoutent une nouvelle guerre perdue d'avance. C'est alors que Yaa Asantewaa, qui a une soixantaine d'années, prend la parole. Le discours qui lui est attribué par la tradition est resté dans la mémoire ghanéenne : elle rappelle le temps où les chefs asante mouraient sur le champ de bataille plutôt que de céder, constate que ce temps semble révolu, et déclare que si les hommes refusent d'avancer, les femmes le feront — elles appelleront leurs compagnes, et elles combattront jusqu'à la dernière. L'effet est immédiat. Le conseil bascule et Yaa Asantewaa est désignée pour conduire la guerre — fait exceptionnel dans l'histoire asante, où le commandement militaire suprême était masculin. Sous sa direction, plusieurs milliers de combattants assiègent le fort britannique de Kumasi, où le gouverneur et sa suite se retrouvent pris au piège pendant plusieurs mois." },
+          {
+            type: "paragraphe",
+            text: "Au conseil, les chefs hésitent. **Yaa Asantewaa** prend la parole et déclare que si les hommes ne se battent pas, les femmes le feront.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1900",
+            legende: "la guerre du Tabouret d'or",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle prend aussitôt la tête du soulèvement : c'est la seule fois de leur histoire qu'une femme dirige une armée asante. Plusieurs milliers de combattants venus de tout le pays assiègent le fort britannique de **Kumasi** pendant plusieurs mois.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Yaa Asantewaa** prend la tête du soulèvement",
+              "La seule femme à avoir commandé une armée asante",
+              "Le fort de **Kumasi** est assiégé plusieurs mois",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-14-yaa-asantewaa-lesson-4",
         title: "La défaite et la déportation",
         blocks: [
-          { type: "paragraphe", text: "Le siège de Kumasi tient une grande partie de l'année 1900. Hodgson parvient à s'échapper avec une partie de la garnison, mais les assiégés restants sont réduits à la famine. Il faut à la Grande-Bretagne l'envoi d'un corps expéditionnaire de plusieurs milliers d'hommes, doté d'artillerie et de mitrailleuses, pour briser l'encerclement puis réduire la résistance. Le rapport de forces matériel est écrasant. Yaa Asantewaa est capturée en 1901 et déportée aux Seychelles, où se trouve déjà l'Asantehene Prempeh Iᵉʳ. Elle y meurt en 1921, sans avoir revu son pays. La guerre de 1900 est la dernière guerre anglo-asante : le territoire est annexé et intégré à la colonie de la Gold Coast. Mais il faut noter ce que les Britanniques n'ont pas obtenu : le Tabouret d'or n'a jamais été livré. Il avait été caché dans la forêt et ne fut redécouvert que des années plus tard, par hasard." },
+          {
+            type: "paragraphe",
+            text: "Les Britanniques font venir des renforts de toute la région. Le siège est brisé, et la résistance asante cède peu à peu.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "Mars 1900", texte: "Début du siège du fort de Kumasi" },
+              { date: "Juillet 1900", texte: "Arrivée des renforts britanniques" },
+              { date: "1901", texte: "Le pays asante est annexé" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Yaa Asantewaa** est capturée puis déportée aux **Seychelles**, où le roi Prempeh se trouve déjà. Elle y meurt en 1921, sans avoir revu son pays. Le Tabouret d'or, lui, n'a jamais été pris : il avait été caché.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le siège est brisé par les renforts britanniques",
+              "**Yaa Asantewaa** est déportée aux Seychelles",
+              "Le **Tabouret d'or** n'a jamais été capturé",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-14-yaa-asantewaa-lesson-5",
         title: "Postérité",
         blocks: [
-          { type: "paragraphe", text: "Prempeh Iᵉʳ fut autorisé à rentrer en 1924 et la fonction d'Asantehene fut restaurée en 1935 ; les restes de Yaa Asantewaa furent rapatriés en 1926. Aujourd'hui, elle est au Ghana une figure nationale majeure : écoles, monuments, chants et pièces de théâtre portent son nom, et un musée lui a été consacré à Ejisu — ravagé par un incendie en 2004, puis reconstruit. Sa mémoire dépasse largement les frontières ghanéennes : elle est devenue, pour le mouvement panafricain et pour les mouvements de femmes du continent, l'image même de l'autorité féminine assumée en temps de crise. L'UNESCO l'a intégrée à son projet Femmes dans l'histoire de l'Afrique. Ce que son histoire rappelle avec force, c'est que la place politique des femmes asante n'était pas une exception individuelle mais une institution — et que l'administration coloniale, en n'y voyant qu'un folklore, s'est trompée sur ce à quoi elle avait affaire." },
+          {
+            type: "paragraphe",
+            text: "Au Ghana, **Yaa Asantewaa** est une figure nationale : écoles, chants et cérémonies portent son nom.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Fonction", valeur: "Reine-mère d'Ejisu" },
+              { label: "Fait d'armes", valeur: "Direction de la guerre de 1900" },
+              { label: "Mémoire", valeur: "Écoles, chants et musée à Ejisu" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Sa guerre a été la dernière grande résistance armée du pays asante face aux Britanniques. Elle est devenue le symbole d'une **autorité féminine** que les Britanniques n'avaient pas su voir, persuadés comme ils l'étaient que le pouvoir asante ne se jouait qu'entre hommes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Figure nationale au **Ghana**",
+              "La dernière grande résistance armée asante",
+              "Symbole d'une **autorité féminine** longtemps ignorée",
+            ],
+          },
         ],
       },
     ],
@@ -2048,35 +2700,145 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-15-sarraounia-lesson-1",
         title: "Le pays azna et la fonction de sarraounia",
         blocks: [
-          { type: "paragraphe", text: "Dans le sud de l'actuel Niger, autour de la localité de Lougou, vivent les Azna — une population haoussaphone restée fidèle aux religions traditionnelles alors que la région s'islamisait largement, notamment sous l'influence du califat de Sokoto au XIXᵉ siècle. Ce refus n'est pas anecdotique : il définit l'identité politique de la communauté, qui a résisté aux tentatives de conversion armée venues du sud. À la tête de cette communauté se trouve une sarraounia : le mot, en haoussa, désigne une reine, et il s'agit ici d'une fonction héréditaire à la fois politique et religieuse. La sarraounia gouverne, arbitre les conflits et exerce une autorité rituelle — on lui prête la maîtrise de savoirs sur les plantes, la pluie et la protection de la communauté. C'est une charge tenue par des femmes depuis des générations. Celle qui l'occupe à la fin du XIXᵉ siècle est appelée Sarraounia Mangou." },
+          {
+            type: "paragraphe",
+            text: "Chez les **Azna**, dans l'actuel Niger, « sarraounia » est un titre : celui de la reine-prêtresse qui gouverne Lougou.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XVIIe s.", texte: "Installation des Azna dans la région" },
+              { date: "XIXe s.", texte: "Pression des États peuls voisins" },
+              { date: "1899", texte: "Passage de la colonne Voulet-Chanoine" },
+              { date: "Avril 1899", texte: "Bataille de Lougou" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les Azna ont refusé l'islamisation et conservé leurs cultes. La **sarraounia** cumule l'autorité politique et la fonction religieuse : elle commande et elle intercède. **Mangou** occupe cette charge à la fin du XIXe siècle.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "« **Sarraounia** » est un titre, pas un prénom",
+              "Les **Azna** ont conservé leurs cultes propres",
+              "La fonction est à la fois politique et religieuse",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-15-sarraounia-lesson-2",
         title: "Résister sur deux fronts",
         blocks: [
-          { type: "paragraphe", text: "La position des Azna est difficile car la menace vient de deux directions. Au sud et à l'est, le califat de Sokoto et les États peuls qui en relèvent ont mené, tout au long du XIXᵉ siècle, des campagnes d'islamisation par les armes contre les communautés restées attachées aux cultes anciens ; Lougou a repoussé plusieurs de ces offensives et en a gardé une solide expérience défensive. À l'ouest, à partir des années 1890, arrive une menace nouvelle : la France, engagée dans la conquête du bassin du Niger et du lac Tchad. Les Azna se retrouvent ainsi à défendre leur autonomie contre deux expansions successives, sans allié durable. L'Histoire générale de l'Afrique rappelle que beaucoup de résistances africaines à la conquête coloniale se sont jouées dans ce type de configuration — des communautés déjà éprouvées par des conflits régionaux, obligées d'affronter un envahisseur bien plus puissant sans pouvoir compter sur leurs voisins." },
+          {
+            type: "paragraphe",
+            text: "À la fin du XIXe siècle, **Lougou** est prise entre deux pressions : les États peuls islamisés au nord, les colonnes françaises qui remontent du sud.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Lougou",
+            legende: "la cité que gouverne la sarraounia",
+          },
+          {
+            type: "paragraphe",
+            text: "Refuser l'islam avait déjà valu aux Azna des décennies de conflits avec leurs voisins. La cité s'est fortifiée, entraînée, habituée au siège et aux longues résistances. Quand les Français arrivent à leur tour, **Sarraounia Mangou** refuse également de se soumettre.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Pression des États **peuls** au nord",
+              "Avancée des colonnes françaises au sud",
+              "Lougou refuse de se soumettre aux deux",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-15-sarraounia-lesson-3",
         title: "La colonne Voulet-Chanoine",
         blocks: [
-          { type: "paragraphe", text: "En 1898, la France lance la mission Afrique centrale, chargée de relier ses possessions du Soudan à celles du Tchad. Elle est confiée aux capitaines Paul Voulet et Julien Chanoine. La colonne devient rapidement tristement célèbre : privée de ravitaillement régulier, elle se nourrit par la razzia et laisse derrière elle une traînée de villages incendiés, de pillages et de massacres de civils, dont l'ampleur finit par être connue à Paris. C'est l'un des épisodes les plus documentés de la violence coloniale française, précisément parce qu'il a fait scandale dans la métropole même. Une mission est envoyée pour relever les deux officiers ; à son arrivée, en juillet 1899, son chef, le lieutenant-colonel Klobb, est abattu sur ordre de Voulet, qui s'est déclaré en rupture avec la France. Voulet et Chanoine seront tués peu après par leurs propres tirailleurs révoltés. C'est cette colonne que Sarraounia voit approcher." },
+          {
+            type: "paragraphe",
+            text: "En 1899, la mission **Voulet-Chanoine** traverse le Niger pour relier les possessions françaises. Elle laisse derrière elle une traînée de villages brûlés.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Objectif", valeur: "Relier le Niger au lac Tchad" },
+              { label: "Méthode", valeur: "Villages brûlés, exécutions massives" },
+              { label: "Fin", valeur: "Les deux officiers tués par leurs hommes" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les exactions sont telles que Paris envoie un officier pour relever les deux capitaines. Voulet et Chanoine le font abattre, puis sont tués par leurs propres **tirailleurs**. L'affaire deviendra l'un des scandales les mieux documentés de la conquête.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La mission **Voulet-Chanoine** traverse le Niger en 1899",
+              "Villages brûlés et exécutions massives",
+              "Les deux officiers sont tués par leurs **tirailleurs**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-15-sarraounia-lesson-4",
         title: "La bataille de Lougou, avril 1899",
         blocks: [
-          { type: "paragraphe", text: "Le 16 avril 1899, la colonne se présente devant Lougou. La plupart des chefs de la région ont choisi de se soumettre ou de fuir devant une troupe équipée de fusils modernes et de canons. Sarraounia, elle, refuse. Elle organise la défense de sa localité, fait évacuer une partie des habitants vers la brousse et affronte la colonne. Le combat est violent ; les Azna ne peuvent tenir un choc frontal, mais ils ne sont ni anéantis ni capturés : ils se replient en bon ordre dans la forêt environnante et poursuivent le harcèlement. Voulet occupe puis quitte Lougou sans avoir soumis la communauté ni pris la reine. Les sources précises sur la suite de sa vie manquent : on sait qu'elle survécut, mais les circonstances et la date de sa mort ne sont pas établies. Ce qui est retenu, c'est le fait brut — face à la colonne la plus redoutée de la région, une reine a choisi de se battre quand presque tous cédaient." },
+          {
+            type: "paragraphe",
+            text: "En avril 1899, la colonne arrive devant **Lougou**. La sarraounia a fait évacuer une partie de la population et préparé la défense.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Avril 1899",
+            legende: "la bataille de Lougou",
+          },
+          {
+            type: "paragraphe",
+            text: "Le combat est violent. La cité tombe, mais **Sarraounia Mangou** et ses combattants se replient dans la brousse au lieu de se rendre. La colonne reprend sa route sans avoir obtenu la soumission qu'elle exigeait.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La bataille de **Lougou** a lieu en avril 1899",
+              "La cité tombe, mais la reine ne se rend pas",
+              "Elle se **replie** dans la brousse avec ses combattants",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-15-sarraounia-lesson-5",
         title: "Du récit oral au film",
         blocks: [
-          { type: "paragraphe", text: "L'histoire de Sarraounia est un cas d'école pour comprendre comment se fabrique une mémoire. Elle repose sur trois strates distinctes. D'abord les sources coloniales — rapports d'officiers, correspondance militaire — qui mentionnent la résistance de Lougou mais depuis le point de vue de l'agresseur. Ensuite la tradition orale azna et haoussa, qui a conservé la figure de la reine, ses savoirs et son refus, avec la part d'amplification propre à ce type de transmission. Enfin une réappropriation littéraire et cinématographique : le roman Sarraounia de l'écrivain nigérien Abdoulaye Mamani (1980), puis le film du réalisateur mauritanien Med Hondo (1986), qui obtint l'Étalon d'or de Yennenga au FESPACO. C'est largement par ces œuvres que Sarraounia est devenue une figure panafricaine. Distinguer ces couches n'affaiblit pas son histoire : cela permet de mesurer à la fois ce qui est établi — la résistance de Lougou en avril 1899 — et ce que l'Afrique contemporaine a choisi d'en faire." },
+          {
+            type: "paragraphe",
+            text: "L'histoire de **Sarraounia** a d'abord vécu par la parole, transmise à Lougou et dans les villages azna.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "1980", valeur: "Roman d'Abdoulaye Mamani" },
+              { label: "1986", valeur: "Film de Med Hondo" },
+              { label: "Aujourd'hui", valeur: "Figure nationale nigérienne" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'écrivain nigérien **Abdoulaye Mamani** en tire un roman en 1980, que le cinéaste mauritanien **Med Hondo** porte à l'écran en 1986. Le film la fait connaître bien au-delà du Niger et lui donne une seconde vie.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Une histoire d'abord portée par la **tradition orale**",
+              "Le roman d'**Abdoulaye Mamani** paraît en 1980",
+              "Le film de Med Hondo la fait connaître en 1986",
+            ],
+          },
         ],
       },
     ],
@@ -2130,35 +2892,144 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-16-du-bois-lesson-1",
         title: "Un intellectuel noir dans l'Amérique de la ségrégation",
         blocks: [
-          { type: "paragraphe", text: "William Edward Burghardt Du Bois naît en 1868 à Great Barrington, dans le Massachusetts, trois ans après l'abolition de l'esclavage aux États-Unis. Il grandit dans une petite communauté du Nord où la ségrégation est moins brutale qu'au Sud, mais où il fait très tôt l'expérience de la ligne de couleur. Étudiant brillant, il fréquente l'université Fisk à Nashville — où il découvre le Sud ségrégué —, puis Harvard, et poursuit sa formation à Berlin. En 1895, il devient le premier Afro-Américain à obtenir un doctorat de Harvard. Sa thèse porte sur la suppression de la traite négrière aux États-Unis. Sociologue de formation, il conduit ensuite l'une des premières grandes enquêtes de terrain de la discipline, The Philadelphia Negro, appliquant des méthodes statistiques rigoureuses à l'étude d'une communauté noire urbaine. Sa conviction est établie dès ce moment : contre le racisme, il faut opposer des faits établis et une pensée exigeante." },
+          {
+            type: "paragraphe",
+            text: "W. E. B. **Du Bois** naît en 1868 dans le Massachusetts, trois ans après l'abolition de l'esclavage aux États-Unis.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1868", texte: "Naissance à Great Barrington" },
+              { date: "1895", texte: "Premier doctorat noir de Harvard" },
+              { date: "1903", texte: "The Souls of Black Folk" },
+              { date: "1963", texte: "Mort à Accra, au Ghana" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il grandit dans un Nord où la ségrégation existe sans les lois du Sud. En 1895, il devient le premier Afro-Américain à obtenir un **doctorat** à Harvard. Il choisit la sociologie pour établir par les faits ce que le pays préfère ignorer.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né en **1868** dans le Massachusetts",
+              "Premier Afro-Américain **docteur** de Harvard, en 1895",
+              "Il choisit la sociologie pour établir les faits",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-16-du-bois-lesson-2",
         title: "The Souls of Black Folk et la double conscience",
         blocks: [
-          { type: "paragraphe", text: "En 1903, il publie The Souls of Black Folk, recueil d'essais qui devient l'un des textes majeurs de la pensée afro-américaine. Il y formule deux idées appelées à une longue postérité. La première : « le problème du XXᵉ siècle est le problème de la ligne de couleur » — formule prononcée dès 1900 et qui donne au racisme une dimension mondiale, non un simple héritage local. La seconde est le concept de double conscience : l'expérience de se voir toujours à travers le regard d'un monde qui vous méprise, de porter en soi deux appartenances — américaine et noire — sans pouvoir les réconcilier. Du Bois s'oppose alors publiquement à Booker T. Washington, qui prônait la formation professionnelle et la patience politique ; il défend au contraire l'accès à l'enseignement supérieur et la revendication immédiate des droits civiques. En 1909, il participe à la fondation de la NAACP et dirige sa revue, The Crisis, pendant près d'un quart de siècle." },
+          {
+            type: "paragraphe",
+            text: "En 1903, **Du Bois** publie The Souls of Black Folk, un recueil d'essais qui change la manière de poser la question raciale.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique de W. E. B. Du Bois, en costume.",
+            legende: "W. E. B. Du Bois en 1907",
+            credit: "James E. Purdy, domaine public, via Wikimedia Commons",
+          },
+          {
+            type: "paragraphe",
+            text: "Il y forge la notion de **double conscience** : l'expérience de se voir toujours à travers le regard d'un autre monde, qui vous méprise. Le livre mêle sociologie, autobiographie et musique — chaque chapitre s'ouvre sur un chant spirituel.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "« The Souls of Black Folk » paraît en **1903**",
+              "Il y forge la notion de **double conscience**",
+              "Sociologie, autobiographie et chants spirituels mêlés",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-16-du-bois-lesson-3",
         title: "Les congrès panafricains",
         blocks: [
-          { type: "paragraphe", text: "L'apport de Du Bois à l'histoire africaine tient surtout à ceci : il a donné au panafricanisme une forme organisée. Après une première conférence tenue à Londres en 1900, il organise à partir de 1919 une série de congrès panafricains — Paris en 1919, en marge de la conférence de la paix, puis Londres et Bruxelles en 1921, Londres et Lisbonne en 1923, New York en 1927. Ces rencontres réunissent des délégués d'Afrique, des Antilles et des Amériques, et formulent des revendications précises : la fin du travail forcé dans les colonies, l'accès à l'éducation, la participation des Africains au gouvernement de leurs territoires, la restitution des terres. Le tournant est le cinquième congrès, à Manchester en 1945. Du Bois, âgé de soixante-dix-sept ans, y siège au côté d'une génération nouvelle — Kwame Nkrumah, Jomo Kenyatta, George Padmore, Amy Ashwood Garvey. Le ton change : on ne demande plus des réformes, on exige l'indépendance." },
+          {
+            type: "paragraphe",
+            text: "Dès 1919, **Du Bois** organise à Paris le premier d'une série de congrès qui réunissent Africains, Antillais et Afro-Américains.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1919", texte: "Premier congrès panafricain, à Paris" },
+              { date: "1921", texte: "Congrès de Londres, Bruxelles et Paris" },
+              { date: "1945", texte: "Congrès de Manchester" },
+              { date: "1957", texte: "Indépendance du Ghana" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Ces **congrès panafricains** réclament d'abord des réformes, puis l'indépendance. Celui de **Manchester**, en 1945, réunit Nkrumah et Kenyatta : les futurs dirigeants des indépendances s'y rencontrent et s'y accordent sur un programme.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Premier congrès **panafricain** à Paris, en 1919",
+              "Celui de **Manchester** (1945) réunit les futurs dirigeants",
+              "On y passe de la réforme à l'exigence d'indépendance",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-16-du-bois-lesson-4",
         title: "Le Ghana, terme du voyage",
         blocks: [
-          { type: "paragraphe", text: "Manchester est le pivot. Les hommes qui y siégeaient rentrent chez eux et deviennent, en une quinzaine d'années, les dirigeants d'États indépendants. Du Bois, lui, subit dans l'Amérique de la guerre froide une répression sévère : ses engagements pacifistes et ses sympathies socialistes lui valent d'être poursuivi, et son passeport lui est retiré pendant des années, l'empêchant de voyager. En 1961, à quatre-vingt-treize ans, il accepte l'invitation de Kwame Nkrumah, devenu président du Ghana indépendant, qui lui propose de diriger un projet auquel il pense depuis un demi-siècle : une Encyclopaedia Africana, somme des savoirs sur l'Afrique rédigée par des Africains. Il s'installe à Accra, prend la nationalité ghanéenne, et travaille à l'ouvrage. Il meurt à Accra le 27 août 1963 — la veille de la grande marche sur Washington, où Martin Luther King prononce son discours le plus célèbre et où l'annonce de sa mort est faite à la foule. Il est enterré à Accra." },
+          {
+            type: "paragraphe",
+            text: "En 1961, à quatre-vingt-treize ans, **Du Bois** quitte les États-Unis pour le **Ghana**, à l'invitation de Kwame Nkrumah.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1961",
+            legende: "il s'installe au Ghana, à 93 ans",
+          },
+          {
+            type: "paragraphe",
+            text: "Il vient y diriger un projet d'Encyclopedia Africana, une somme sur l'Afrique écrite par des Africains. Il prend la nationalité ghanéenne et meurt à **Accra** le 27 août 1963, la veille exacte de la grande marche sur Washington.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Il s'installe au **Ghana** en 1961, invité par Nkrumah",
+              "Il y dirige le projet d'**Encyclopedia Africana**",
+              "Mort à Accra la veille de la marche sur Washington",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-16-du-bois-lesson-5",
         title: "De la diaspora à l'Union africaine",
         blocks: [
-          { type: "paragraphe", text: "Le fil est direct, et l'Union africaine le revendique explicitement dans sa présentation du mouvement panafricaniste : les congrès organisés depuis la diaspora ont préparé le terrain politique et intellectuel des indépendances africaines, et l'Organisation de l'unité africaine, fondée à Addis-Abeba en 1963 — l'année même de la mort de Du Bois —, en est l'héritière institutionnelle. C'est aussi pourquoi l'Union africaine considère aujourd'hui la diaspora comme une composante à part entière du projet continental, allant jusqu'à la désigner comme sa « sixième région ». Quant au projet d'Encyclopaedia Africana, resté inachevé à sa mort, il trouve un écho direct dans l'entreprise que l'UNESCO lancera peu après : l'Histoire générale de l'Afrique, écrite par des historiens africains, dont le volume X est précisément consacré aux diasporas. Du Bois n'aura pas vu ce livre. Il en avait formulé le besoin soixante ans plus tôt." },
+          {
+            type: "paragraphe",
+            text: "La phrase qui ouvre The Souls of Black Folk a traversé le siècle qu'elle annonçait.",
+          },
+          {
+            type: "citation",
+            texte: "Le problème du XXe siècle est le problème de la ligne de partage des couleurs.",
+            auteur: "W. E. B. Du Bois, The Souls of Black Folk, 1903",
+          },
+          {
+            type: "paragraphe",
+            text: "Du panafricanisme des congrès à l'**Union africaine**, la filiation est directe : les hommes qui ont fait les indépendances s'étaient rencontrés à **Manchester**. Du Bois n'a pas gouverné, mais il a fourni le cadre intellectuel de ceux qui l'ont fait.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Sa phrase de **1903** a défini le siècle",
+              "Les congrès panafricains mènent aux **indépendances**",
+              "Une filiation directe jusqu'à l'Union africaine",
+            ],
+          },
         ],
       },
     ],

@@ -119,7 +119,7 @@ le projet ; **une seule image par leçon**.
 
 ## 4. Registre des images
 
-Vingt et une images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
+Vingt-cinq images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 
 | Leçon | Sujet | Source | Licence | Auteur | Source → webp |
 |---|---|---|---|---|---|
@@ -144,6 +144,10 @@ Vingt et une images. `MET` = The Metropolitan Museum of Art, domaine public (CC0
 | `course-perso-06-sayyida-al-hurra-lesson-2` | La médina de Tétouan | [Commons](https://commons.wikimedia.org/wiki/File:Tetouan,_near_the_Medina_and_Qasba.jpg) | CC BY-SA 4.0 | Ideophagous | 4080×3060 → 1200×900 |
 | `course-perso-07-kimpa-vita-lesson-3` | Crucifix kongo en laiton | [Commons](https://commons.wikimedia.org/wiki/File:Clevelandart_2010.444.jpg) | CC0 | Cleveland Museum of Art | 2240×3400 → 1200×1821 |
 | `course-perso-08-nanny-marrons-lesson-5` | Moore Town, village marron | [Commons](https://commons.wikimedia.org/wiki/File:JM_Moore_Town_1010_(6)_(17070794889).jpg) | CC BY-SA 2.0 | Diego Tirira | 800×535 |
+| `course-perso-09-toussaint-louverture-lesson-3` | Toussaint Louverture, gravure de 1806 | [Commons](https://commons.wikimedia.org/wiki/File:Toussaint_Louverture._Kupfer,_1806.jpg) | CC BY-SA 4.0 | Regge & Meineck | 2293×4016 → 1200×2102 |
+| `course-perso-10-sojourner-truth-lesson-3` | Sojourner Truth, photographie de 1870 | [Commons](https://commons.wikimedia.org/wiki/File:Sojourner_Truth,_1870_(cropped,_restored).jpg) | Domaine public | Randall Studio | 3035×4210 → 1200×1665 |
+| `course-perso-13-taytu-betul-lesson-3` | L'impératrice Taytu Betul, gravure | [Commons](https://commons.wikimedia.org/wiki/File:Taytu_Betul.jpg) | Domaine public | H. Meyer, Le Petit Journal | 3734×5433 → 1200×1746 |
+| `course-perso-16-du-bois-lesson-2` | W. E. B. Du Bois en 1907 | [Commons](https://commons.wikimedia.org/wiki/File:W.E.B._Du_Bois_by_James_E._Purdy,_1907_(3x4).jpg) | Domaine public | James E. Purdy | 2808×3744 → 1200×1600 |
 
 Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
 les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.
