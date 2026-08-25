@@ -95,7 +95,10 @@ curl -s "https://collectionapi.metmuseum.org/public/collection/v1/objects/310870
 curl -sL -A "SankofaEdu/0.1 (educational app)" "<url>" -o /tmp/src.jpg
 
 # 3. Convertir en webp ~1200 px, au nom exact de la leçon
-node -e "require('sharp')('/tmp/src.jpg').resize(1200,null,{withoutEnlargement:true,kernel:require('sharp').kernel.lanczos3}).webp({quality:82}).toFile('src/assets/lecons/<id>.webp')"
+node -e "const s=require('sharp');s('/tmp/src.jpg').rotate().resize(1200,null,{withoutEnlargement:true,kernel:s.kernel.lanczos3}).webp({quality:82}).toFile('src/assets/lecons/<id>.webp')"
+# `.rotate()` est OBLIGATOIRE : sans lui, sharp ignore l'orientation EXIF et une photo
+# portrait ressort couchée. Vérifier que les dimensions de sortie correspondent bien à
+# celles annoncées par Commons.
 
 # 4. Générer les variantes 400w/800w
 npm run images:variants
@@ -179,8 +182,16 @@ reste honnête — à condition que **la légende le dise franchement**. « Les 
 Dihya » ne laisse pas croire qu'on voit Dihya. C'est une extension assumée de la règle du § 0, pas
 une entorse : la légende ne ment pas.
 
-Cas où rien n'a été trouvé, et où la leçon reste sans image plutôt que d'en porter une approximative :
-**Yennenga** (aucune photo utilisable de sa statue de Ouagadougou).
+**Chercher les autres orthographes.** Pour les noms africains, essayer systématiquement les
+variantes de transcription : le seul fichier Commons sur Yennenga est classé sous « Yennega », et
+toutes les recherches sur la graphie usuelle passaient à côté.
+
+**Cas Yennenga : leçon laissée sans image, décision de l'utilisateur.** Il existe bien une statue
+monumentale de la princesse à Ouagadougou, œuvre du sculpteur Siriki Ky. Aucune photo n'en est
+disponible sous licence libre : ni Commons, ni les articles Wikipédia français et anglais, qui
+n'utilisent qu'un fichier de 265 × 320 px, inexploitable. Le trophée du FESPACO, qui représente
+aussi Yennenga à cheval, a été proposé puis **écarté** : ce n'est pas la statue. La leçon reste
+donc sans image.
 
 ---
 
