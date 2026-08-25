@@ -116,7 +116,7 @@ le projet ; **une seule image par leçon**.
 
 ## 4. Registre des images
 
-Quatorze images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
+Dix-sept images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 
 | Leçon | Sujet | Source | Licence | Auteur | Source → webp |
 |---|---|---|---|---|---|
@@ -134,6 +134,9 @@ Quatorze images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 | `…06-litteratures-africaines-lesson-2` | Portrait de Chinua Achebe | [Commons](https://commons.wikimedia.org/wiki/File:Chinua_Achebe_-_Buffalo_25Sep2008_crop.jpg) | CC BY 3.0 | Stuart C. Shapiro | 1340×980 → 1200×878 |
 | `…06-litteratures-africaines-lesson-3` | Portrait de Wole Soyinka | [Commons](https://commons.wikimedia.org/wiki/File:Wole_Soyinka_in_2018-5.jpg) | CC BY-SA 4.0 | Frankie Fouganthin | 2500×1671 → 1200×802 |
 | `…06-litteratures-africaines-lesson-5` | Portrait de Mariama Bâ | [Commons](https://commons.wikimedia.org/wiki/File:Mariama_B%C3%A2_%C3%A0_l%27%C3%89cole_normale_de_Rufisque.jpg) | Domaine public | auteur inconnu | 923×690 |
+| `course-perso-01-hatchepsout-lesson-3` | Statue agenouillée d'Hatchepsout | [Commons](https://commons.wikimedia.org/wiki/File:Large_Kneeling_Statue_of_Hatshepsut_MET_DP117949.jpg) | CC0 | Met Museum | 3554×4000 → 1200×1351 |
+| `course-perso-02-taharqa-lesson-3` | Sanctuaire et sphinx de Taharqa | [Commons](https://commons.wikimedia.org/wiki/File:Shrine_%26_Sphinx_of_Taharqa.jpg) | CC BY-SA 2.0 | Aidan McRae Thomson | 2848×2136 → 1200×900 |
+| `course-perso-03-dihya-lesson-3` | Les monts Aurès, en Algérie | [Commons](https://commons.wikimedia.org/wiki/File:Aur%C3%A8s_enneig%C3%A9s.JPG) | CC BY-SA 3.0 | Yelles | 3648×2736 → 1200×900 |
 
 Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
 les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.
@@ -166,6 +169,18 @@ gêne : le format y est attendu, et le fond crème les présente comme sur un so
 **Le kente du Met (objet 85576) était en CC0 mais ne faisait que 298 px de large** — trop petit
 pour la variante 800w, donc flou à l'affichage. Remplacé par une photo Commons de bandes de kente,
 qui illustre en prime le tissage en bandes décrit dans la leçon.
+
+---
+
+## 5 bis. Personnalités sans portrait : ce qu'on montre à la place
+
+Pour une figure dont **aucune image ne subsiste**, montrer ce qu'elle a bâti, gouverné ou défendu
+reste honnête — à condition que **la légende le dise franchement**. « Les Aurès, refuge et base de
+Dihya » ne laisse pas croire qu'on voit Dihya. C'est une extension assumée de la règle du § 0, pas
+une entorse : la légende ne ment pas.
+
+Cas où rien n'a été trouvé, et où la leçon reste sans image plutôt que d'en porter une approximative :
+**Yennenga** (aucune photo utilisable de sa statue de Ouagadougou).
 
 ---
 

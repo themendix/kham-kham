@@ -18,35 +18,145 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-01-hatchepsout-lesson-1",
         title: "L'Égypte du Nouvel Empire",
         blocks: [
-          { type: "paragraphe", text: "Vers 1550 avant notre ère, l'Égypte sort d'une période de division et entre dans ce que les historiens appellent le Nouvel Empire. C'est l'âge d'or de la puissance égyptienne : les frontières sont repoussées vers la Nubie au sud et vers la Syrie au nord-est, les temples de Karnak et de Louxor s'agrandissent sans cesse, et l'or de Nubie afflue dans les caisses de l'État. La XVIIIᵉ dynastie, à laquelle appartient Hatchepsout, est celle qui a chassé les Hyksôs, ces envahisseurs venus du Proche-Orient qui avaient dominé le delta du Nil. Dans cette Égypte reconquise, le pharaon n'est pas seulement un roi : il est le garant de la Maât, l'ordre juste du monde, et sa légitimité repose sur une filiation divine soigneusement mise en scène. Comme le rappelle l'Histoire générale de l'Afrique de l'UNESCO, cette Égypte-là n'est pas isolée du continent : elle commerce en permanence avec la Nubie et avec les régions de la mer Rouge. C'est dans ce monde-là qu'une femme va prendre le titre de roi." },
+          {
+            type: "paragraphe",
+            text: "Vers 1550 avant notre ère, l'Égypte sort d'une longue division. Commence le Nouvel Empire, son âge d'or.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "v. 1550", texte: "Début du Nouvel Empire, XVIIIe dynastie" },
+              { date: "1479", texte: "Hatchepsout devient régente" },
+              { date: "v. 1473", texte: "Elle se fait couronner pharaon" },
+              { date: "1458", texte: "Mort d'Hatchepsout" },
+            ],
+            unite: "av. J.-C.",
+          },
+          {
+            type: "paragraphe",
+            text: "Les frontières sont repoussées vers la **Nubie** au sud et la Syrie au nord-est. L'or nubien remplit les caisses de l'État. Karnak et Louxor s'agrandissent sans cesse. Le pharaon garantit la **Maât**, l'ordre juste du monde.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Nouvel Empire** commence vers 1550 avant notre ère",
+              "L'Égypte s'étend de la **Nubie** à la Syrie",
+              "Le pharaon garantit la Maât, l'ordre du monde",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-01-hatchepsout-lesson-2",
         title: "D'épouse royale à régente",
         blocks: [
-          { type: "paragraphe", text: "Hatchepsout est la fille du pharaon Thoutmosis Iᵉʳ et de la grande épouse royale Ahmès. Selon la coutume dynastique, elle épouse son demi-frère, Thoutmosis II, et devient grande épouse royale à son tour. De cette union naît une fille, Néferourê, mais aucun fils. À la mort de Thoutmosis II, vers 1479 avant notre ère, l'héritier désigné est un enfant en bas âge né d'une épouse secondaire : le futur Thoutmosis III. Hatchepsout assure alors la régence, comme d'autres reines l'avaient fait avant elle — la fonction n'a rien d'exceptionnel en soi. Ce qui l'est, en revanche, c'est ce qui suit. Au bout de quelques années, Hatchepsout cesse de gouverner au nom de l'enfant-roi et se fait couronner elle-même. Elle prend les cinq noms de la titulature royale, adopte le titre de « roi de Haute et Basse-Égypte » et règne conjointement avec son neveu, qui reste officiellement pharaon mais dont elle éclipse totalement l'autorité pendant une vingtaine d'années." },
+          {
+            type: "paragraphe",
+            text: "**Hatchepsout** est la fille du pharaon Thoutmosis Iᵉʳ. Selon la coutume dynastique, elle épouse son demi-frère Thoutmosis II et devient grande épouse royale.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1479",
+            legende: "Hatchepsout prend la régence, av. J.-C.",
+          },
+          {
+            type: "paragraphe",
+            text: "De cette union naît une fille, mais aucun fils. À la mort de son époux, l'héritier désigné est un enfant en bas âge, né d'une épouse secondaire : le futur **Thoutmosis III**. Hatchepsout assure la régence, comme d'autres reines l'avaient fait avant elle.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Fille de **Thoutmosis Iᵉʳ**, épouse de Thoutmosis II",
+              "Elle devient régente pour l'enfant **Thoutmosis III**",
+              "La régence n'a alors rien d'exceptionnel",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-01-hatchepsout-lesson-3",
         title: "Se faire couronner pharaon : le pouvoir et ses images",
         blocks: [
-          { type: "paragraphe", text: "Comment une femme peut-elle occuper une fonction que la théologie égyptienne décrit comme masculine ? Hatchepsout ne cache pas son sexe : elle résout le problème par les images et par le récit. Sur les murs de ses monuments, elle se fait représenter avec les attributs du pharaon — le pagne court, la coiffe némès, et la barbe postiche cérémonielle que portaient les rois. Les inscriptions alternent le masculin et le féminin pour la désigner, sans que cela paraisse contradictoire. Elle fait surtout graver à Deir el-Bahari le récit de sa « naissance divine » : le dieu Amon en personne se serait uni à sa mère pour l'engendrer, faisant d'elle la fille du dieu et donc l'héritière incontestable du trône. Cette stratégie n'est pas un déguisement mais une construction politique et religieuse cohérente : dans un système où le pharaon est une fonction sacrée avant d'être une personne, Hatchepsout démontre qu'une femme peut l'incarner pleinement." },
+          {
+            type: "paragraphe",
+            text: "Au bout de quelques années, **Hatchepsout** cesse de gouverner au nom de l'enfant-roi. Elle se fait couronner elle-même.",
+          },
+          {
+            type: "image",
+            alt: "Grande statue agenouillée d'Hatchepsout en pharaon, offrant deux vases.",
+            legende: "Statue agenouillée d'Hatchepsout, en pharaon",
+            credit: "The Metropolitan Museum of Art, domaine public (CC0)",
+          },
+          {
+            type: "paragraphe",
+            text: "Sur ses monuments, elle porte les attributs royaux : le pagne court, la coiffe némès, la **barbe postiche** des rois. Les inscriptions alternent masculin et féminin. À Deir el-Bahari, elle fait graver sa naissance divine : le dieu Amon l'aurait engendrée.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Elle prend les cinq noms de la **titulature royale**",
+              "Pagne, coiffe némès et **barbe postiche** sur ses portraits",
+              "Sa « naissance divine » légitime le couronnement",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-01-hatchepsout-lesson-4",
         title: "Pount et Deir el-Bahari",
         blocks: [
-          { type: "paragraphe", text: "Le règne d'Hatchepsout n'est pas marqué par les grandes campagnes militaires de ses prédécesseurs, mais par le commerce et par la construction. L'événement le plus célèbre est l'expédition maritime qu'elle envoie au pays de Pount, une région située selon toute vraisemblance vers la Corne de l'Afrique ou les rives de la mer Rouge. Les navires en reviennent chargés d'encens, de myrrhe, d'ébène, d'ivoire, d'or, de peaux de panthère et même d'arbres à encens transplantés vivants — une expédition dont les reliefs conservent le détail, jusqu'aux maisons sur pilotis des habitants de Pount. Hatchepsout fait aussi ériger des obélisques monumentaux à Karnak et élever, au pied de la falaise de Deir el-Bahari, son temple funéraire aux terrasses superposées, l'un des chefs-d'œuvre de l'architecture égyptienne. Ces réalisations disent une chose simple : son pouvoir était assez solide et assez riche pour mobiliser le pays entier sur de très longs chantiers." },
+          {
+            type: "paragraphe",
+            text: "Le règne d'**Hatchepsout** ne se distingue pas par ses campagnes militaires, mais par le commerce et par les chantiers.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Pount",
+            legende: "pays lointain, vers la Corne de l'Afrique",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle envoie une expédition maritime au pays de **Pount**. Les navires reviennent chargés d'encens, de myrrhe, d'ébène, d'ivoire et d'or — et d'arbres à encens transplantés vivants, plantés devant son temple de **Deir el-Bahari**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Une expédition maritime part vers le pays de **Pount**",
+              "Retour chargé d'encens, myrrhe, ébène, ivoire et or",
+              "Les reliefs de **Deir el-Bahari** en gardent le récit",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Les reliefs de Deir el-Bahari montrent jusqu'aux maisons sur pilotis des habitants de Pount, et le portrait de leur reine Ati.",
+          },
         ],
       },
       {
         id: "course-perso-01-hatchepsout-lesson-5",
         title: "L'effacement et la redécouverte",
         blocks: [
-          { type: "paragraphe", text: "Hatchepsout meurt vers 1458 avant notre ère et Thoutmosis III règne enfin seul. Des années plus tard, une campagne systématique s'attaque à sa mémoire : son nom est martelé sur les cartouches, ses statues sont brisées et enfouies, ses représentations sont remplacées par celles de son père, de son époux ou de son neveu, et les listes royales officielles l'omettent. Longtemps, on y a vu la vengeance d'un successeur humilié ; les égyptologues penchent aujourd'hui plutôt pour une opération tardive et politique, destinée à sécuriser la succession en gommant le précédent d'une femme couronnée. L'effacement a d'ailleurs échoué : c'est en reconstituant, au XIXᵉ siècle, les blocs martelés de Deir el-Bahari que les archéologues ont redécouvert son règne. Hatchepsout est ainsi devenue ce qu'on avait voulu qu'elle ne soit pas — l'une des souveraines les plus étudiées de l'Afrique ancienne, et la preuve que l'exercice du pouvoir suprême par une femme y a bel et bien eu lieu." },
+          {
+            type: "paragraphe",
+            text: "**Hatchepsout** meurt vers 1458 avant notre ère. Des années plus tard, une campagne s'attaque méthodiquement à sa mémoire.",
+          },
+          {
+            type: "citation",
+            texte: "Mon cœur balance, à songer à ce que diront ceux qui verront mes monuments dans les années à venir.",
+            auteur: "Hatchepsout, inscription d'un obélisque de Karnak",
+          },
+          {
+            type: "paragraphe",
+            text: "Son nom est martelé, ses statues brisées et enfouies, ses images remplacées par celles de son père ou de son neveu. Les listes royales l'omettent. L'effacement a pourtant **échoué**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Son nom est **martelé**, ses statues enfouies",
+              "Une opération politique, pour sécuriser la succession",
+              "Les blocs brisés ont permis de la **redécouvrir**",
+            ],
+          },
         ],
       },
     ],
@@ -100,35 +210,150 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-02-taharqa-lesson-1",
         title: "Napata et le royaume de Koush",
         blocks: [
-          { type: "paragraphe", text: "Bien en amont de l'Égypte, au sud de la quatrième cataracte du Nil, s'étend depuis des siècles le royaume de Koush, en Nubie — l'actuel Soudan. Longtemps dominée puis colonisée par l'Égypte du Nouvel Empire, la Nubie a absorbé une part de sa culture : elle en a repris les dieux, l'écriture hiéroglyphique et les formes architecturales, tout en conservant ses propres traditions. Quand la puissance égyptienne décline, vers le début du premier millénaire avant notre ère, Koush ne disparaît pas : il se reconstitue autour de Napata, au pied de la montagne sacrée du Gebel Barkal, que l'on considérait comme la demeure du dieu Amon. L'Histoire générale de l'Afrique insiste sur ce point : Koush n'est pas une périphérie de l'Égypte mais une civilisation africaine à part entière, riche en or, en fer et en bétail, dotée de ses propres dynasties. C'est de là que va partir, au VIIIᵉ siècle avant notre ère, une conquête qui prend l'Égypte à revers." },
+          {
+            type: "paragraphe",
+            text: "Au sud de l'Égypte, sur le Nil, le royaume de **Koush** a sa capitale à Napata, dans l'actuel Soudan.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "v. 750", texte: "Piânkhy soumet l'Égypte depuis Napata" },
+              { date: "690", texte: "Taharqa monte sur le trône" },
+              { date: "671", texte: "Les Assyriens prennent Memphis" },
+              { date: "664", texte: "Fin du règne, repli sur Koush" },
+            ],
+            unite: "av. J.-C.",
+          },
+          {
+            type: "paragraphe",
+            text: "Les rois de Koush se disent héritiers des pharaons et servent le dieu **Amon**, dont le grand temple domine le Gebel Barkal. Vers 750 avant notre ère, le roi **Piânkhy** descend le Nil et soumet l'Égypte entière.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Koush** a sa capitale à Napata, dans l'actuel Soudan",
+              "Ses rois se disent héritiers des pharaons",
+              "**Piânkhy** conquiert l'Égypte vers 750 avant notre ère",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-02-taharqa-lesson-2",
         title: "La XXVᵉ dynastie : quand la Nubie gouverne l'Égypte",
         blocks: [
-          { type: "paragraphe", text: "Vers 730 avant notre ère, le roi koushite Piânkhi (Piye) remonte le Nil vers le nord et soumet une Égypte morcelée entre principautés rivales. Ses successeurs — Chabaka, Chabataka, puis Taharqa — s'installent durablement sur le trône : c'est la XXVᵉ dynastie, dite « nubienne » ou « koushite », qui règne près d'un siècle sur un ensemble s'étendant du delta du Nil aux confins du Soudan actuel. Ces souverains ne se présentent pas en occupants étrangers mais en restaurateurs de la tradition : ils se réclament d'Amon, respectent scrupuleusement les rites, protègent les temples et relancent un archaïsme artistique qui imite délibérément les chefs-d'œuvre de l'Ancien Empire. Taharqa, monté sur le trône vers 690 avant notre ère, est le plus célèbre d'entre eux. Son règne d'environ vingt-six ans est aussi le plus long et le plus prospère de la dynastie — et celui qui affrontera le plus grand danger." },
+          {
+            type: "paragraphe",
+            text: "Pendant près d'un siècle, des rois venus de l'actuel Soudan règnent sur l'Égypte entière. Les égyptologues les appellent la **XXVe dynastie**.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "690-664",
+            legende: "le règne de Taharqa, av. J.-C.",
+          },
+          {
+            type: "paragraphe",
+            text: "**Taharqa** est le fils de Piânkhy et de la reine Abar, et le frère de Chabataka. Il monte sur le trône en 690, à Napata. Son règne marque l'apogée de la domination koushite sur toute la vallée du Nil.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **XXVe dynastie** est koushite, venue de Napata",
+              "Taharqa règne de 690 à 664 avant notre ère",
+              "Fils de **Piânkhy**, il en marque l'apogée",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-02-taharqa-lesson-3",
         title: "Taharqa bâtisseur",
         blocks: [
-          { type: "paragraphe", text: "Taharqa est d'abord un roi constructeur, et ses chantiers se déploient sur toute la longueur du Nil, ce qui est en soi un message politique : il gouverne un seul et même royaume, de la Méditerranée à la Nubie. À Karnak, il fait élever une colonnade monumentale dans la première cour du grand temple d'Amon — une colonne se dresse encore aujourd'hui — et aménage un lac sacré ainsi que des chapelles. Au Gebel Barkal, il agrandit considérablement le sanctuaire d'Amon, taille des temples à même la falaise et couvre les murs de reliefs et d'inscriptions. Il bâtit également à Kawa, à Sanam et en plusieurs points de Nubie. Ses années de règne sont marquées par des crues abondantes du Nil, dont ses inscriptions font un signe de faveur divine : les récoltes sont bonnes, les greniers pleins. Enfin, il choisit d'être inhumé non pas en Égypte mais à Nouri, en Nubie, sous une pyramide à pente raide — la marque durable des rois koushites." },
+          {
+            type: "paragraphe",
+            text: "**Taharqa** a couvert de chantiers les deux rives de son royaume, de Karnak en Égypte jusqu'à Kawa au Soudan.",
+          },
+          {
+            type: "image",
+            alt: "Sanctuaire de pierre et sphinx à l'effigie de Taharqa.",
+            legende: "Sanctuaire et sphinx de Taharqa",
+            credit: "Photo Aidan McRae Thomson, CC BY-SA 2.0, via Wikimedia Commons",
+          },
+          {
+            type: "paragraphe",
+            text: "Il fait élever colonnes, temples et pyramides. À **Kawa**, ses stèles racontent les travaux qu'il commande. Les rois de Koush se font enterrer sous des pyramides à pente raide, plus étroites que celles d'Égypte.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Il bâtit de **Karnak** au Soudan, sur les deux rives",
+              "Ses stèles de **Kawa** racontent ses chantiers",
+              "Les rois koushites reposent sous des pyramides étroites",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-02-taharqa-lesson-4",
         title: "L'affrontement avec l'Assyrie",
         blocks: [
-          { type: "paragraphe", text: "Au nord-est, une puissance monte : l'Assyrie, l'empire militaire le plus efficace du Proche-Orient. Taharqa soutient les cités de Palestine et de Phénicie qui lui résistent, ce qui fait de l'Égypte une cible. En 671 avant notre ère, le roi assyrien Assarhaddon envahit le delta et s'empare de Memphis ; Taharqa se replie vers le sud, puis reprend la ville dès que l'armée assyrienne s'éloigne. Le scénario se répète : les Assyriens reviennent, Taharqa recule, revient, harcèle. Sous Assourbanipal, la pression s'accentue et les troupes assyriennes poussent jusqu'à Thèbes. Taharqa meurt vers 664 avant notre ère ; son successeur Tanoutamon tente une dernière reconquête, mais Thèbes est prise et pillée. La XXVᵉ dynastie perd l'Égypte. Ce que retient l'Histoire générale de l'Afrique, ce n'est pas seulement la défaite finale : c'est qu'un royaume africain de l'intérieur a tenu tête, pendant des décennies, à l'empire le plus puissant de son époque." },
+          {
+            type: "paragraphe",
+            text: "L'empire assyrien veut l'Égypte. **Taharqa** va passer une bonne part de son règne à lui résister.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "674", texte: "Première offensive assyrienne repoussée" },
+              { date: "671", texte: "Assarhaddon prend Memphis" },
+              { date: "669", texte: "Taharqa reprend brièvement le Nord" },
+              { date: "667", texte: "Assurbanipal contre-attaque" },
+            ],
+            unite: "av. J.-C.",
+          },
+          {
+            type: "paragraphe",
+            text: "En 671, **Assarhaddon** prend Memphis et emmène la famille royale en captivité. Taharqa reprend le Nord, puis le perd de nouveau. La supériorité militaire assyrienne, avec ses armes de **fer**, finit par l'emporter.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**Assyrie** conquiert la Basse-Égypte à partir de 671",
+              "Taharqa reprend Memphis, puis la reperd",
+              "Les armes de **fer** assyriennes font la différence",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-02-taharqa-lesson-5",
         title: "Le repli vers Méroé et l'héritage koushite",
         blocks: [
-          { type: "paragraphe", text: "Chassés d'Égypte, les rois de Koush ne s'effondrent pas : ils se replient sur leurs bases nubiennes et, quelques générations plus tard, déplacent leur centre de gravité plus au sud, vers Méroé, à l'abri des invasions et au contact des routes commerciales de l'intérieur africain. Le royaume méroïtique prospérera encore près de mille ans, développera une écriture propre, le méroïtique — distincte des hiéroglyphes égyptiens et encore aujourd'hui imparfaitement déchiffrée —, une industrie du fer réputée, et un panthéon mêlant divinités égyptiennes et africaines comme le dieu-lion Apédémak. Les nécropoles royales, avec leurs centaines de pyramides à Nouri, El-Kourrou et Méroé, en sont le témoignage visible ; elles sont aujourd'hui inscrites au patrimoine mondial de l'UNESCO. Quant à Taharqa, il reste la figure qui incarne le moment où l'Afrique nubienne, loin d'être une province lointaine, a porté la double couronne et gouverné la vallée du Nil." },
+          {
+            type: "paragraphe",
+            text: "Après **Taharqa**, les rois de Koush quittent l'Égypte. Leur royaume ne disparaît pas pour autant : il se déplace vers le sud.",
+          },
+          {
+            type: "citation",
+            texte: "Tirhaqa, roi de Koush, s'est mis en marche pour te faire la guerre.",
+            auteur: "Deuxième livre des Rois, 19, 9",
+          },
+          {
+            type: "paragraphe",
+            text: "La cour s'installe à **Méroé**, entre la cinquième et la sixième cataracte. Le royaume y prospère près de mille ans encore, développe sa propre écriture, le **méroïtique**, et une industrie du fer réputée.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Koush se replie sur **Méroé**, plus au sud",
+              "Le royaume dure près de mille ans encore",
+              "Il invente sa propre écriture, le **méroïtique**",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "L'écriture méroïtique se lit — on connaît la valeur de ses signes — mais la langue qu'elle note reste largement incomprise aujourd'hui.",
+          },
         ],
       },
     ],
@@ -182,35 +407,148 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-03-dihya-lesson-1",
         title: "Le Maghreb berbère à la veille des conquêtes",
         blocks: [
-          { type: "paragraphe", text: "Au VIIᵉ siècle de notre ère, l'Afrique du Nord n'est ni un désert vide ni un bloc homogène. Les populations berbères (amazighes) occupent l'ensemble du territoire, organisées en confédérations tribales aux structures politiques variées : certaines sédentaires et agricoles, d'autres nomades et pastorales. Sur les côtes subsistent les restes de la domination byzantine, héritière de Rome, retranchée dans quelques villes fortifiées et incapable de contrôler l'intérieur. Le paysage religieux est composite : christianisme dans les zones romanisées, communautés juives anciennes, cultes berbères traditionnels. C'est dans ce Maghreb morcelé qu'arrivent, à partir des années 640, les armées arabes venues d'Orient, porteuses de l'islam. Leur avancée n'a rien d'une promenade : elle s'étale sur plus d'un demi-siècle et se heurte à des résistances berbères répétées, dont la plus fameuse est celle du chef Koceila. Après la mort de ce dernier, une autre figure prend le relais dans le massif de l'Aurès, dans l'actuelle Algérie orientale." },
+          {
+            type: "paragraphe",
+            text: "Au VIIe siècle, le Maghreb est tenu par des confédérations **berbères**, longtemps sous influence romaine puis byzantine.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "647", texte: "Premières incursions arabes en Ifriqiya" },
+              { date: "670", texte: "Fondation de Kairouan" },
+              { date: "v. 688", texte: "Dihya prend la tête des Jarawa" },
+              { date: "703", texte: "Bataille finale dans l'Aurès" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les massifs de l'**Aurès**, dans l'Algérie actuelle, servent à la fois de refuge et de forteresse. Les tribus y gardent leurs chefs, leurs cultes et leurs troupeaux. La conquête arabe s'y heurte à une résistance durable.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le Maghreb est tenu par des confédérations **berbères**",
+              "L'**Aurès** sert de refuge et de forteresse",
+              "La conquête arabe y rencontre une longue résistance",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-03-dihya-lesson-2",
         title: "Qui était Dihya ?",
         blocks: [
-          { type: "paragraphe", text: "Son nom véritable serait Dihya (ou Damiya) ; la postérité l'a surtout retenue sous le surnom de Kahina, mot arabe signifiant à peu près « la devineresse » — un sobriquet donné par ses adversaires, qui lui prêtaient des dons de divination. Elle dirigeait la confédération berbère des Djeraoua, dans l'Aurès. Au-delà de cela, presque tout est incertain. Les sources qui la décrivent sont tardives : les principaux récits sont écrits plusieurs siècles après les faits, et Ibn Khaldoun lui-même, qui en parle au XIVᵉ siècle, travaille sur des traditions déjà remaniées. Sa religion est indécidable : on l'a dite juive, chrétienne ou fidèle aux cultes berbères, chaque hypothèse ayant servi tour à tour des causes différentes. Son âge, sa généalogie et jusqu'à la durée de son pouvoir varient d'une source à l'autre. L'Histoire générale de l'Afrique invite précisément à distinguer ce qui relève du fait historique établi — l'existence d'une résistance berbère dirigée par une femme dans l'Aurès — de ce qui relève de la légende accumulée." },
+          {
+            type: "paragraphe",
+            text: "**Dihya** dirige la confédération des Jarawa, dans l'Aurès. Les sources arabes la surnomment « al-Kahina », la devineresse.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "al-Kahina",
+            legende: "« la devineresse », surnom venu de ses adversaires",
+          },
+          {
+            type: "paragraphe",
+            text: "Ce surnom vient de ses ennemis, qui lui prêtent un don de divination. On ignore sa religion : chrétienne, juive ou berbère traditionnelle, les sources se contredisent. **Ibn Khaldoun**, sept siècles plus tard, reste notre principale source à son sujet.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Dihya** dirige les Jarawa, dans le massif de l'Aurès",
+              "« al-Kahina » est un surnom donné par ses **adversaires**",
+              "Sa religion reste incertaine, les sources se contredisent",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-03-dihya-lesson-3",
         title: "La résistance de l'Aurès",
         blocks: [
-          { type: "paragraphe", text: "Vers la fin des années 680, le général arabe Hassan ibn al-Nu'man mène une campagne d'envergure en Ifriqiya : il prend Carthage aux Byzantins, puis se tourne vers l'intérieur. C'est là qu'il se heurte à Dihya. Selon les récits, la reine rassemble les tribus de l'Aurès et inflige aux troupes arabes une défaite sévère, probablement aux abords de l'oued Nini ou de la Meskiana. Hassan doit se retirer vers l'est, jusqu'en Tripolitaine ou en Cyrénaïque, et attendre plusieurs années des renforts venus d'Égypte. Pendant cet intervalle, Dihya exerce une autorité reconnue sur une grande partie de l'Ifriqiya. Cet épisode est le noyau historique le plus solide de son histoire : une coalition berbère dirigée par une femme a bel et bien arrêté, pour un temps, l'expansion arabe au Maghreb. Ce n'est pas rien — et cela suffit à expliquer pourquoi les chroniqueurs ultérieurs se sont tant intéressés à elle." },
+          {
+            type: "paragraphe",
+            text: "Entre 698 et 703, **Dihya** gouverne un territoire qui va de l'Aurès jusqu'à l'oasis de Ghadamès.",
+          },
+          {
+            type: "image",
+            alt: "Sommets enneigés des montagnes de l'Aurès, en Algérie.",
+            legende: "Les Aurès, refuge et base de Dihya",
+            credit: "Photo Yelles, CC BY-SA 3.0, via Wikimedia Commons",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle bat les armées arabes à plusieurs reprises et repousse leur avancée pendant des années. Son autorité s'étend sur des tribus qui ne s'unissaient pas facilement : c'est là sa véritable **réussite politique**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "De 698 à 703, elle gouverne un **État berbère**",
+              "Il s'étend de l'Aurès à l'oasis de **Ghadamès**",
+              "Elle unit des tribus qui s'unissaient rarement",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-03-dihya-lesson-4",
         title: "La terre brûlée et la défaite",
         blocks: [
-          { type: "paragraphe", text: "Lorsque Hassan revient avec des forces renforcées, Dihya aurait adopté une stratégie radicale : la terre brûlée. Détruire les vergers, les récoltes et les villes de la plaine pour priver l'envahisseur de ressources et le décourager de s'installer. Les récits ajoutent que cette décision lui aliéna une partie de ses soutiens, notamment les populations sédentaires des régions côtières, dont elle ruinait les moyens d'existence — et qui se rallièrent aux Arabes. Il faut lire ce détail avec prudence : le motif de la souveraine qui détruit son propre pays et se coupe des siens est un procédé narratif fréquent chez les chroniqueurs, et il sert ici à expliquer commodément la victoire finale des conquérants. Toujours est-il que Dihya est défaite et tuée, aux alentours de 700 ; le lieu de sa mort, que la tradition situe près d'un puits qui porterait son nom dans l'Aurès, n'est pas établi. Ses fils, selon plusieurs récits, se rallièrent à Hassan et furent intégrés à l'armée arabe." },
+          {
+            type: "paragraphe",
+            text: "Pour affamer l'envahisseur, **Dihya** aurait ordonné de détruire vergers et récoltes. La mesure lui aurait coûté le soutien des siens.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "703",
+            legende: "bataille finale et mort de Dihya",
+          },
+          {
+            type: "paragraphe",
+            text: "Ce récit de la terre brûlée vient des chroniqueurs arabes, longtemps après les faits : les historiens le tiennent aujourd'hui pour douteux. En 703, Dihya tombe les armes à la main, au lieu qu'on appelle depuis **Bir al-Kahina**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **terre brûlée** est un récit tardif, aujourd'hui contesté",
+              "Dihya meurt les armes à la main en **703**",
+              "Le lieu porte encore le nom de Bir al-Kahina",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-03-dihya-lesson-5",
         title: "Une figure disputée",
         blocks: [
-          { type: "paragraphe", text: "Peu de personnages africains ont été autant réinterprétés. Pour une partie du mouvement culturel berbère, Dihya est l'incarnation de la résistance amazighe à toutes les dominations extérieures et la preuve du rôle politique des femmes dans les sociétés berbères anciennes. Pour un courant du nationalisme algérien, elle est une héroïne de la résistance à l'envahisseur, quel qu'il soit, et figure à ce titre dans le récit national. À l'inverse, une lecture traditionnelle arabo-musulmane a longtemps vu en elle une adversaire de l'islam, avant que d'autres n'insistent sur le ralliement de ses fils et sur l'intégration ultérieure des Berbères à la civilisation islamique. La littérature coloniale française, enfin, s'en est emparée pour opposer artificiellement Berbères et Arabes. L'UNESCO, en l'intégrant à son projet Femmes dans l'histoire de l'Afrique, la présente d'abord comme une figure de commandement féminin dans l'Afrique ancienne. Le plus honnête est peut-être de dire ceci : ce que chaque époque a projeté sur Dihya en dit souvent davantage sur elle que sur la reine de l'Aurès." },
+          {
+            type: "paragraphe",
+            text: "**Dihya** a été tour à tour héroïne nationale algérienne, symbole berbère, figure féministe et repoussoir. Chaque époque l'a relue selon ses besoins.",
+          },
+          {
+            type: "citation",
+            texte: "Elle les dirigeait à sa fantaisie et gouvernait, par leur intermédiaire, toute la tribu.",
+            auteur: "Ibn Khaldoun, Histoire des Berbères",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Sources", valeur: "Chroniqueurs arabes, sept siècles après" },
+              { label: "Religion", valeur: "Chrétienne, juive ou berbère : incertain" },
+              { label: "Mémoire", valeur: "Revendiquée par des courants opposés" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Les nationalistes algériens y ont vu la résistance à l'étranger ; les mouvements **berbères**, l'affirmation amazighe. Ce que l'histoire établit avec certitude tient en quelques lignes ; ce qu'on lui fait dire remplit des bibliothèques.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Une figure **relue** différemment à chaque époque",
+              "Nos sources sont tardives et souvent hostiles",
+              "Le certain est mince, le symbolique immense",
+            ],
+          },
         ],
       },
     ],
@@ -264,35 +602,144 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-04-yennenga-lesson-1",
         title: "Une histoire portée par la tradition orale",
         blocks: [
-          { type: "paragraphe", text: "Avant d'entrer dans le récit, une précaution s'impose. Yennenga n'est pas connue par des chroniques écrites contemporaines de sa vie : elle nous parvient par la tradition orale, transmise de génération en génération dans les cours royales mossi et par les gardiens de la mémoire. On la situe généralement autour des XIᵉ-XIIᵉ siècles, sans certitude. L'Histoire générale de l'Afrique consacre une part importante de son premier volume à cette question de méthode : les traditions orales africaines ne sont pas des « légendes » à écarter, mais des sources historiques à part entière, à condition de les traiter comme telles — en repérant leur fonction sociale, leurs variantes et ce qu'elles cherchent à établir. Le récit de Yennenga appartient à un genre précis : le récit de fondation, qui explique l'origine d'une dynastie et légitime un ordre politique. Le lire ainsi ne le disqualifie pas ; cela permet de comprendre ce qu'il dit vraiment." },
+          {
+            type: "paragraphe",
+            text: "**Yennenga** n'a laissé ni inscription ni chronique. Son histoire est portée par les griots mossi, transmise de bouche à oreille.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "XIe s. ?", texte: "Datation la plus haute proposée" },
+              { date: "XVe s. ?", texte: "Datation la plus basse proposée" },
+              { date: "Depuis", texte: "Les royaumes mossi se réclament de son fils" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle serait la fille du **Naaba Nedega**, roi de Dagomba, et de la reine Napoko. Les versions varient d'un griot à l'autre, et les historiens ne s'accordent pas sur l'époque. Cette incertitude ne diminue pas son rôle de **mère fondatrice**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Aucune source écrite : **tradition orale** seule",
+              "Les historiens la situent entre le XIe et le XVe siècle",
+              "Fille du Naaba Nedega, roi de **Dagomba**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-04-yennenga-lesson-2",
         title: "La princesse guerrière",
         blocks: [
-          { type: "paragraphe", text: "Selon la tradition, Yennenga est la fille de Nedega, roi du pays dagomba, dans le nord de l'actuel Ghana. Élevée comme un garçon, elle apprend très jeune le maniement de l'arc, de la lance et surtout du cheval. Devenue une cavalière d'exception, elle commande des unités de l'armée de son père et se distingue au combat contre les royaumes voisins. Le récit insiste sur ce point : elle n'est pas une princesse guerrière symbolique, mais une combattante dont la valeur militaire est reconnue et dont dépend une part de la sécurité du royaume. C'est précisément là que naît le conflit. Yennenga arrive en âge de se marier, et plusieurs prétendants se présentent ; mais son père, qui ne veut pas se priver de sa meilleure cavalière, refuse toutes les demandes. La tradition raconte que Yennenga lui fit alors comprendre son désaccord en semant un champ de blé qu'elle laissa pourrir sur pied — image d'une jeunesse qu'on laisse se perdre. Le roi comprit le message, mais ne céda pas." },
+          {
+            type: "paragraphe",
+            text: "Dans le récit que transmettent les griots, **Yennenga** monte à cheval et combat aux côtés de son père dès l'adolescence.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Dagomba",
+            legende: "le royaume de son père, dans l'actuel Ghana",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle commande une unité de cavalerie et se distingue au combat, au point de devenir indispensable à l'armée de son père. Celui-ci tient tant à elle qu'il refuse tous les prétendants et la garde auprès de lui. Le récit dit qu'il finit par l'**enfermer**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Cavalière et guerrière dès l'**adolescence**",
+              "Son père refuse tous les prétendants",
+              "Le récit dit qu'il l'enferme pour la retenir",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-04-yennenga-lesson-3",
         title: "La fuite et la rencontre",
         blocks: [
-          { type: "paragraphe", text: "Yennenga décide alors de partir. Une nuit, elle s'échappe à cheval, seule, vers le nord. La chevauchée est longue et périlleuse ; épuisée, elle finit par se perdre dans la forêt. Elle y rencontre Riale, un chasseur d'origine mandé, qui la recueille et la soigne. De leur union naît un fils, que Yennenga nomme Ouédraogo — un nom qui, en langue mooré, évoque l'étalon, en mémoire du cheval qui l'avait portée jusque-là. L'enfant grandit, est envoyé auprès de son grand-père Nedega qui, réconcilié, l'accueille, lui enseigne l'art de gouverner et lui remet des cavaliers. Ouédraogo revient alors vers le nord avec ses hommes et s'établit dans la région, où il soumet et fédère les populations locales. La tradition mossi fait de lui l'ancêtre fondateur de la dynastie, et de sa mère la matrice de tout un peuple." },
+          {
+            type: "paragraphe",
+            text: "Une nuit, **Yennenga** s'échappe à cheval, seule, et prend la direction du sud, loin du royaume de son père.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Le cheval", valeur: "Un étalon, dans la plupart des versions" },
+              { label: "La rencontre", valeur: "Riale, chasseur mandé" },
+              { label: "Le fils", valeur: "Ouedraogo, « étalon mâle » en moore" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Épuisée, elle atteint une rivière et rencontre **Riale**, un chasseur mandé qui la recueille. De leur union naît un fils. Ils l'appellent **Ouedraogo**, du nom du cheval qui l'a menée jusque-là.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Yennenga fuit seule, à cheval, vers le **sud**",
+              "Elle rencontre **Riale**, un chasseur mandé",
+              "Leur fils Ouedraogo doit son nom au cheval",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-04-yennenga-lesson-4",
         title: "Aux origines des royaumes mossi",
         blocks: [
-          { type: "paragraphe", text: "De cette souche naîtront les royaumes mossi, qui occupent à partir du XVᵉ siècle une grande partie du plateau central de l'actuel Burkina Faso. Le plus puissant est celui de Ouagadougou, dirigé par le Mogho Naaba, « le roi du monde », entouré des royaumes de Yatenga, de Tenkodogo et de Fada N'Gourma. L'Histoire générale de l'Afrique souligne la solidité remarquable de cette construction politique : une administration hiérarchisée, une aristocratie de cavaliers, un système de succession codifié et une capacité militaire qui leur permit de résister durablement à leurs puissants voisins — les empires du Mali puis du Songhaï, qui ne parvinrent jamais à les soumettre durablement, malgré des raids répétés. Les royaumes mossi conservèrent leur indépendance jusqu'à la conquête coloniale française, à la toute fin du XIXᵉ siècle. Peu d'ensembles politiques ouest-africains ont tenu aussi longtemps." },
+          {
+            type: "paragraphe",
+            text: "**Ouedraogo**, le fils de Yennenga et de Riale, est présenté par la tradition orale comme l'ancêtre de tous les rois mossi qui régneront sur le plateau central.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Moogo",
+            legende: "le pays mossi, dans l'actuel Burkina Faso",
+          },
+          {
+            type: "paragraphe",
+            text: "Ses descendants fondent des royaumes qui tiennent la région pendant des siècles : **Ouagadougou**, Yatenga, Tenkodogo. Leur organisation politique, avec le Mogho Naaba à sa tête, a survécu à la colonisation et existe encore aujourd'hui.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Ouedraogo** est l'ancêtre revendiqué des rois mossi",
+              "Ouagadougou, Yatenga, Tenkodogo en sont issus",
+              "Le **Mogho Naaba** est toujours en fonction",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-04-yennenga-lesson-5",
         title: "Yennenga aujourd'hui",
         blocks: [
-          { type: "paragraphe", text: "Le récit ne s'est pas figé : il vit. Au Burkina Faso, Yennenga est une figure nationale de premier plan, présente dans les manuels, les monuments et l'espace public. Son nom a été donné au trophée le plus prestigieux du FESPACO, le Festival panafricain du cinéma et de la télévision de Ouagadougou : l'Étalon d'or de Yennenga, en référence directe au cheval et au nom de son fils. L'équipe nationale de football est surnommée les Étalons. Son image — la cavalière lance au poing — est devenue un emblème du courage et de l'autonomie féminine bien au-delà du Burkina. L'UNESCO l'a intégrée à son projet Femmes dans l'histoire de l'Afrique pour cette raison : Yennenga illustre à la fois le rôle des femmes dans les récits fondateurs africains et la vitalité de la transmission orale. Ce qu'il faut en retenir n'est pas « ceci s'est-il produit exactement ainsi ? », mais qu'un peuple entier a choisi de faire remonter son origine à une femme qui refusa qu'on décide de sa vie à sa place." },
+          {
+            type: "paragraphe",
+            text: "Au Burkina Faso, **Yennenga** est partout : dans les statues, sur la monnaie, dans le sport et jusque dans le nom du plus grand prix de cinéma d'Afrique.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Étalon d'or", valeur: "Grand prix du FESPACO, à son nom" },
+              { label: "Sport", valeur: "Les Étalons, équipe nationale burkinabè" },
+              { label: "Espace public", valeur: "Statues et monuments à Ouagadougou" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le grand prix du **FESPACO** s'appelle l'Étalon d'or de Yennenga. L'équipe nationale de football se nomme les **Étalons**. Une figure sans date certaine est ainsi devenue le symbole d'un pays entier.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**Étalon d'or de Yennenga** couronne le FESPACO",
+              "Les Étalons, c'est l'équipe nationale du Burkina",
+              "Une fondatrice sans date, devenue symbole national",
+            ],
+          },
         ],
       },
     ],
