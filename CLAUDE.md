@@ -259,9 +259,7 @@ contenu.
 | Géographie | 54 |
 | Histoire | 40 |
 | Personnalités | 31 |
-| Arts & Musique | 1 |
-| Traditions & Sociétés | 1 |
-| Afrique contemporaine | 1 |
+| Découverte | 3 |
 | **Total** | **128** |
 
 **524 leçons**, **636 questions de quiz**, **13 040 XP disponibles** (7800 XP de complétion de
@@ -273,8 +271,10 @@ cours + 5240 XP de leçons à `XP_PER_LESSON = 10`).
   chaque ajout notable de contenu**, sans quoi il devient atteignable avant d'avoir tout terminé.
   Aucun changement de schéma de `UserProgress` : version de persistance toujours **7**.
 - **Phase 8, chantier Personnalités** : `src/data/courses/personnalites.ts` (31 cours, ~150
-  leçons), sorti du lot « matières émergentes ». Les 3 matières restantes à 1 cours n'ont pas
-  été traitées.
+  leçons), sorti du lot « matières émergentes ».
+- **Fusion en « Découverte »** : les 3 matières restantes à 1 cours (Arts & Musique,
+  Traditions & Sociétés, Afrique contemporaine) ont été fusionnées en une seule matière
+  transversale `decouverte` (« Découverte », ✨, turquoise). Voir la section dédiée plus bas.
 - **Charte des leçons** (`docs/CHARTE-LECONS.md`) : les leçons ne sont plus du Markdown libre mais
   des **blocs typés** (`src/lib/lessonBlocks.ts` : `paragraphe`, `aRetenir`, `leSavaisTu`,
   `chiffreCle`, `image`…), rendus par `src/components/features/LessonBlocks.tsx` et contrôlés par
@@ -287,19 +287,62 @@ cours + 5240 XP de leçons à `XP_PER_LESSON = 10`).
 - **CI en vigueur** : `npm ci` → `npm run lint` → `npm run validate` → `npm test` →
   `npm run typecheck` → `npm run build`, bloquante à chaque étape.
 
+## Livraison (Phase 8 — Fusion des matières résiduelles en « Découverte »)
+
+Les 3 matières bloquées à 1 cours (Arts & Musique, Traditions & Sociétés, Afrique
+contemporaine) ont été fusionnées en une matière transversale unique : **`decouverte`**,
+« Découverte », emoji ✨, couleur turquoise `#a9e0de`.
+
+- **Décision éditoriale assumée** : Découverte est un fourre-tout *revendiqué*, pas un
+  reliquat. Le nom annonce l'hétérogénéité au lieu de la masquer — c'est ce qui rend le
+  regroupement tenable là où un « Cultures & sociétés » aurait menti sur son contenu. La
+  contrepartie : **le nom de la matière ne porte plus le sujet, ce sont les titres de cours
+  qui doivent le faire**. À tenir sur tout ajout futur.
+- **Effet mécanique immédiat** : 3 cours ≥ `EMERGING_SUBJECT_MAX_COURSES` (= 3), donc
+  `isSubjectEmerging` est faux — les 3 badges « 🚧 En construction » disparaissent et le bonus
+  de découverte des recommandations se réactive, sans une ligne de contenu ajoutée. Le
+  déséquilibre de fond (125 cours contre 3) n'est pas résolu pour autant : c'est l'objet des
+  lots de contenu à venir.
+- **Aucune migration du store, version de persistance toujours 7.** `UserProgress` ne stocke
+  aucun `categoryId` (depuis la v7, `masteryByCategory` est supprimé et la maîtrise est dérivée
+  à la lecture via `getMasteryByCategory`). Changer la catégorie d'un cours n'invalide donc
+  rien dans le `localStorage` existant.
+- **Les identifiants de cours et de leçon sont volontairement inchangés**
+  (`course-arts-rythmes-continent`, `lesson-trad-griots`, `quiz-actu-1`…) : ce sont des clés
+  de `localStorage`, et les renommer par cohérence effacerait la progression réelle des
+  utilisateurs pour un gain purement cosmétique. Les préfixes `arts`/`trad`/`actu` survivent
+  donc dans les ids sans correspondre à aucune matière — c'est voulu, pas un oubli.
+- **Points de contact** : `types/index.ts` (`SubjectColor`, 6 → 4 clés), `data/categories.ts`,
+  `data/courses/misc.ts` (3 `categoryId`), `data/cards.ts` (9 cartes du fil Home),
+  `lib/subjectStyles.ts`, `styles/index.css`, `routes/DailyChallengeScreen.tsx`. Index
+  régénéré (`npm run gen:index`). `data/parcours.ts` n'a rien nécessité : les parcours
+  référencent des `courseIds`, jamais des catégories.
+- **Deux tokens de couleur séparés** : `--color-decouverte` (#a9e0de) est réservé à la
+  matière ; `--color-accent-rose` (#f6c2d0, l'ancien `--color-arts`) est un accent purement
+  décoratif, utilisé par `FavoritesSummaryCard` et une `StatCard` du Profil sans rapport avec
+  une matière. La confusion des deux usages sur un même token était préexistante.
+- **Conséquences visuelles à surveiller** : le radar du Profil passe de 6 axes (hexagone) à 4
+  (losange) ; Découverte porte 9 cartes du fil Home contre 3 par autre matière ; et sa
+  rotation « à la une » s'épuisera vite tant qu'elle n'a que 9 leçons
+  (`pickNextFeaturedLesson` exclut les matières entièrement lues).
+- **Découverte comme pépinière** : une famille de cours qui y atteint une masse critique
+  (par exemple « Arts & création ») pourra en ressortir comme matière autonome — un
+  `categoryId` ne coûte rien à changer, ce chantier vient de le démontrer.
+
 ## Ce qui N'est PAS encore fait
 
 - Animations avancées au-delà du geste de swipe (transitions d'écran, micro-interactions).
 - Authentification / comptes utilisateurs / back-end / synchronisation multi-appareil.
 - Reformatage global du dépôt par Prettier (outillage en place, non appliqué — voir chantier 7.4 ci-dessus).
 - Tests de rendu de composants et tests end-to-end (hors périmètre du chantier 7.4, volontairement).
-- Équilibrage éditorial du catalogue : **partiellement fait**. Personnalités est passée de 1 à 31 cours (Phase 8) ; **Arts & Musique, Traditions & Sociétés et Afrique contemporaine restent à 1 cours chacune**, donc toujours signalées « 🚧 En construction » par `isSubjectEmerging`. Ce sont aussi 3 des 4 cours sans illustration signalés par le validateur.
-- Charte des leçons non activée sur Personnalités : `CHARTE_APPLIQUEE` (`scripts/validate-content.ts`) ne contient que `histoire` et `geo`, donc les règles 11 à 18 ne contrôlent pas encore les 31 cours Personnalités.
+- Équilibrage éditorial du catalogue : **en cours**. Personnalités est passée de 1 à 31 cours, et les 3 matières restantes ont été fusionnées en « Découverte » (3 cours). L'objectif retenu est de porter Découverte à **30 cours**, par lots de 8, sur le modèle des chantiers Histoire et Géographie.
+- Charte des leçons non activée sur Personnalités ni sur Découverte : `CHARTE_APPLIQUEE` (`scripts/validate-content.ts`) ne contient que `histoire` et `geo`, donc les règles 11 à 18 ne contrôlent ni les 31 cours Personnalités ni les 3 cours Découverte.
+- Illustrations manquantes : les 4 cours signalés par le validateur (3 dans Découverte, 1 dans Personnalités).
 - Performance Lighthouse mobile < 90 (voir chantier 7.5 : le goulot restant est le coût d'exécution JS générique React/Router/Zustand sous throttling CPU simulé, pas le catalogue — nécessiterait une réduction plus profonde du bundle vendor ou un changement d'architecture de rendu, hors périmètre de ce lot).
 
 ## Prochaines étapes suggérées
 
-1. Poursuite de la Phase 8 : porter Arts & Musique, Traditions & Sociétés et Afrique contemporaine au-delà du seuil de matière émergente (≥ 3 cours), en s'appuyant sur `docs/CHARTE-LECONS.md` et le validateur (`npm run validate`). Régénérer l'index (`npm run gen:index`) et recalibrer `LEVEL_TIERS` après tout ajout notable.
-2. Passer les 31 cours Personnalités sous la charte, puis ajouter `"perso"` à `CHARTE_APPLIQUEE`.
+1. Poursuite de la Phase 8 : porter **Découverte de 3 à 30 cours**, par lots de 8 (modèle des chantiers Histoire et Géographie), en s'appuyant sur `docs/CHARTE-LECONS.md` et le validateur (`npm run validate`). Régénérer l'index (`npm run gen:index`) après chaque lot et recalibrer `LEVEL_TIERS` en fin de chantier (+27 cours ≈ +2160 XP, catalogue à ~15 200 XP).
+2. Passer les 31 cours Personnalités et les cours Découverte sous la charte, puis ajouter `"perso"` et `"decouverte"` à `CHARTE_APPLIQUEE`.
 3. Résorber les 121 avertissements du validateur (densité de gras, budget de mots) et fournir les 4 illustrations manquantes.
 4. Éventuellement : reformatage global Prettier (commit dédié), tests de rendu/E2E, authentification si un compte utilisateur devient nécessaire, poursuite de l'optimisation Performance (chantier 7.5) si le score < 90 devient bloquant.

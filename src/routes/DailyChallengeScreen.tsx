@@ -95,7 +95,7 @@ export function DailyChallengeScreen() {
           </Link>
         </Card>
       ) : (
-        <QuizPlayer questions={questions} accentColor="actu" onFinish={handleFinish} />
+        <QuizPlayer questions={questions} accentColor="decouverte" onFinish={handleFinish} />
       )}
     </div>
   );

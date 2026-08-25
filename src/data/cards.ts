@@ -36,7 +36,7 @@ export const CARDS: SwipeCard[] = [
   },
   {
     id: "card-fela-kuti",
-    categoryId: "arts",
+    categoryId: "decouverte",
     emoji: "🎺",
     title: "L'Afrobeat de Fela Kuti",
     teaser: "Genre né au Nigeria dans les années 1970.",
@@ -46,7 +46,7 @@ export const CARDS: SwipeCard[] = [
   },
   {
     id: "card-griot",
-    categoryId: "trad",
+    categoryId: "decouverte",
     emoji: "🪕",
     title: "Le griot",
     teaser: "Gardien de la mémoire, conteur et musicien en Afrique de l'Ouest.",
@@ -56,7 +56,7 @@ export const CARDS: SwipeCard[] = [
   },
   {
     id: "card-silicon-savannah",
-    categoryId: "actu",
+    categoryId: "decouverte",
     emoji: "📱",
     title: 'La « Silicon Savannah »',
     teaser: "Nairobi, l'un des pôles technologiques du continent.",
@@ -126,7 +126,7 @@ export const CARDS: SwipeCard[] = [
   },
   {
     id: "card-sculptures-nok",
-    categoryId: "arts",
+    categoryId: "decouverte",
     emoji: "🗿",
     title: "Les terres cuites Nok",
     teaser: "Une des plus anciennes traditions de sculpture d'Afrique subsaharienne.",
@@ -136,7 +136,7 @@ export const CARDS: SwipeCard[] = [
   },
   {
     id: "card-tissu-kente",
-    categoryId: "arts",
+    categoryId: "decouverte",
     emoji: "🧵",
     title: "Le kente",
     teaser: "Étoffe tissée ghanéenne, aux motifs porteurs de sens.",
@@ -146,7 +146,7 @@ export const CARDS: SwipeCard[] = [
   },
   {
     id: "card-arbre-a-palabres",
-    categoryId: "trad",
+    categoryId: "decouverte",
     emoji: "🗣️",
     title: "L'arbre à palabres",
     teaser: "Le baobab, lieu traditionnel de rassemblement et de dialogue.",
@@ -156,7 +156,7 @@ export const CARDS: SwipeCard[] = [
   },
   {
     id: "card-masques-dogons",
-    categoryId: "trad",
+    categoryId: "decouverte",
     emoji: "🎭",
     title: "Les masques dogons",
     teaser: "Chez les Dogons du Mali, des danses masquées rythment les grandes cérémonies.",
@@ -166,7 +166,7 @@ export const CARDS: SwipeCard[] = [
   },
   {
     id: "card-barrage-renaissance",
-    categoryId: "actu",
+    categoryId: "decouverte",
     emoji: "🏗️",
     title: "Le Grand barrage de la Renaissance",
     teaser: "Le plus grand barrage hydroélectrique d'Afrique, sur le Nil Bleu.",
@@ -176,7 +176,7 @@ export const CARDS: SwipeCard[] = [
   },
   {
     id: "card-satellite-kenyan",
-    categoryId: "actu",
+    categoryId: "decouverte",
     emoji: "🛰️",
     title: "Le premier satellite kényan",
     teaser: "En 2018, des étudiants kényans envoient leur premier satellite dans l'espace.",

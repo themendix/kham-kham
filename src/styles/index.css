@@ -74,9 +74,12 @@
   --color-histoire: #f3d9a4;
   --color-geo: #bfe3b0;
   --color-perso: #c9c3f0;
-  --color-arts: #f6c2d0;
-  --color-trad: #f4c3a8;
-  --color-actu: #a9e0de;
+  --color-decouverte: #a9e0de;
+
+  /* Accent décoratif, hors matière : sert de fond de pastille (résumé des favoris, carte de
+     statistique du Profil). Distinct des 4 couleurs de matière ci-dessus, qui ne doivent être
+     employées que pour désigner une matière. */
+  --color-accent-rose: #f6c2d0;
 
   --font-heading: "Poppins", ui-sans-serif, system-ui, sans-serif;
   --font-body: "Inter", ui-sans-serif, system-ui, sans-serif;

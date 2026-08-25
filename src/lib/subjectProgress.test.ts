@@ -98,7 +98,7 @@ describe("getMasteryByCategory", () => {
   });
 
   it("ne divise jamais par zéro pour une matière sans cours", () => {
-    const emptyCategories: Category[] = [{ id: "vide", name: "Vide", emoji: "❓", color: "actu" }];
+    const emptyCategories: Category[] = [{ id: "vide", name: "Vide", emoji: "❓", color: "decouverte" }];
     const mastery = getMasteryByCategory(progress(), COURSES, emptyCategories);
     expect(mastery.vide).toBe(0);
   });

@@ -1,16 +1,22 @@
 import type { Course } from "@/types";
 
 /**
- * Les 3 matières encore réduites à un seul cours chacune (Arts & Musique, Traditions &
- * Sociétés, Afrique contemporaine — voir `isSubjectEmerging`). Suffisamment léger pour
- * rester bundlé avec le shell applicatif : pas de découpage par matière ici, contrairement
- * à Histoire/Géographie/Personnalités (`src/data/courses/histoire.ts`, `geographie.ts`,
- * `personnalites.ts`), qui sont chargées à la demande via `src/data/courseContent.ts`.
+ * Contenu de la matière « Découverte » (`decouverte`), issue de la fusion des trois anciennes
+ * matières Arts & Musique / Traditions & Sociétés / Afrique contemporaine. Les identifiants de
+ * cours et de leçon d'origine (`course-arts-…`, `course-trad-…`, `course-actu-…`) sont
+ * volontairement conservés : ce sont des clés de `localStorage`, les renommer effacerait la
+ * progression des utilisateurs existants pour un gain purement cosmétique.
+ *
+ * Suffisamment léger pour rester bundlé avec le shell applicatif : pas de découpage par matière
+ * ici, contrairement à Histoire/Géographie/Personnalités (`src/data/courses/histoire.ts`,
+ * `geographie.ts`, `personnalites.ts`), qui sont chargées à la demande via
+ * `src/data/courseContent.ts`. À rebasculer sur un chunk dédié si Découverte grossit du même
+ * ordre.
  */
 export const MISC_COURSES: Course[] = [
   {
     id: "course-arts-rythmes-continent",
-    categoryId: "arts",
+    categoryId: "decouverte",
     emoji: "🎶",
     title: "Rythmes du continent",
     description:
@@ -81,7 +87,7 @@ export const MISC_COURSES: Course[] = [
   },
   {
     id: "course-trad-griots-sagesses",
-    categoryId: "trad",
+    categoryId: "decouverte",
     emoji: "🪘",
     title: "Griots et sagesses ancestrales",
     description:
@@ -161,7 +167,7 @@ export const MISC_COURSES: Course[] = [
   },
   {
     id: "course-actu-afrique-qui-innove",
-    categoryId: "actu",
+    categoryId: "decouverte",
     emoji: "🌍",
     title: "L'Afrique qui innove",
     description:

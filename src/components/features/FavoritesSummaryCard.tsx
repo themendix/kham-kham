@@ -21,7 +21,7 @@ export function FavoritesSummaryCard({ courseCount, cardCount }: FavoritesSummar
   return (
     <Link to="/favoris">
       <Card shadow="sm" className="flex items-center gap-4 p-4">
-        <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full border-[2.5px] border-ink bg-arts">
+        <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full border-[2.5px] border-ink bg-accent-rose">
           <Heart className="h-[22px] w-[22px]" fill="currentColor" />
         </div>
         <div className="min-w-0 flex-1">

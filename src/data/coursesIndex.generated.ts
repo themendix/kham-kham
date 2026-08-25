@@ -2928,7 +2928,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   },
   {
     "id": "course-arts-rythmes-continent",
-    "categoryId": "arts",
+    "categoryId": "decouverte",
     "title": "Rythmes du continent",
     "description": "De l'Afrobeat à l'Amapiano : un voyage à travers les grands courants musicaux qui ont façonné le son de l'Afrique.",
     "emoji": "🎶",
@@ -2948,7 +2948,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   },
   {
     "id": "course-trad-griots-sagesses",
-    "categoryId": "trad",
+    "categoryId": "decouverte",
     "title": "Griots et sagesses ancestrales",
     "description": "Griots, rites de passage, philosophie Ubuntu : voyage au cœur des traditions qui structurent encore les sociétés africaines aujourd'hui.",
     "emoji": "🪘",
@@ -2968,7 +2968,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   },
   {
     "id": "course-actu-afrique-qui-innove",
-    "categoryId": "actu",
+    "categoryId": "decouverte",
     "title": "L'Afrique qui innove",
     "description": "Mobile money, intégration continentale, cinéma : trois visages d'une Afrique contemporaine en pleine transformation.",
     "emoji": "🌍",

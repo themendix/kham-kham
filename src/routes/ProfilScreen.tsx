@@ -68,7 +68,7 @@ export function ProfilScreen() {
               value={progress.completedCourseIds.length}
               label="cours terminés"
             />
-            <StatCard icon={Target} iconBgClassName="bg-arts" value={`${successRate}%`} label="taux de réussite" />
+            <StatCard icon={Target} iconBgClassName="bg-accent-rose" value={`${successRate}%`} label="taux de réussite" />
           </div>
         </div>
 

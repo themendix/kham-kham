@@ -10,13 +10,7 @@ export type { LessonBlock } from "@/lib/lessonBlocks";
 import type { LessonBlock } from "@/lib/lessonBlocks";
 
 /** Clé de couleur de matière, utilisée comme suffixe des tokens Tailwind (bg-histoire, text-geo…) */
-export type SubjectColor =
-  | "histoire"
-  | "geo"
-  | "perso"
-  | "arts"
-  | "trad"
-  | "actu";
+export type SubjectColor = "histoire" | "geo" | "perso" | "decouverte";
 
 export interface Category {
   id: string;

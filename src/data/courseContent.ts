@@ -7,9 +7,9 @@ import { getLessonRef } from "@/lib/featured";
  * Chargement à la demande du contenu complet (leçons + quiz) par matière. Histoire,
  * Géographie et Personnalités représentent à elles seules l'essentiel du texte du
  * catalogue : elles ne sont importées que lorsqu'un écran a réellement besoin de leur
- * contenu (ouverture d'un cours, lecture de la vedette Biblio, Défi du jour). Les 3 matières
- * émergentes restantes (arts/trad/actu) sont assez légères pour rester bundlées avec le
- * shell (`MISC_COURSES`) : pas de chunk dédié pour elles. Voir docs/ARCHITECTURE.md §
+ * contenu (ouverture d'un cours, lecture de la vedette Biblio, Défi du jour). La matière
+ * « Découverte » (`decouverte`) est assez légère pour rester bundlée avec le shell
+ * (`MISC_COURSES`) : pas de chunk dédié pour elle. Voir docs/ARCHITECTURE.md §
  * Découpage du bundle.
  */
 const SUBJECT_LOADERS: Record<string, () => Promise<Course[]>> = {
