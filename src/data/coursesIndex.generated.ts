@@ -1,6 +1,6 @@
 /**
  * Fichier généré — ne pas éditer à la main.
- * Régénérer via `npm run gen:index` après toute modification du catalogue (128 cours).
+ * Régénérer via `npm run gen:index` après toute modification du catalogue (136 cours).
  * Métadonnées seules (pas de contenu de leçon ni de quiz) — voir docs/ARCHITECTURE.md § Découpage du bundle.
  */
 import type { CourseMeta } from "@/types";
@@ -2985,5 +2985,165 @@ export const COURSE_INDEX: CourseMeta[] = [
       }
     ],
     "quizCount": 4
+  },
+  {
+    "id": "course-decouverte-01-masques-sculptures",
+    "categoryId": "decouverte",
+    "title": "Masques et sculptures",
+    "description": "Un masque africain dans une vitrine ne fait plus rien. Découvre ce qu'il faisait vraiment, d'où viennent les bronzes du Bénin, et comment ces formes ont retourné l'art européen.",
+    "emoji": "🎭",
+    "xp": 50,
+    "lessons": [
+      {
+        "id": "course-decouverte-01-masques-sculptures-lesson-1"
+      },
+      {
+        "id": "course-decouverte-01-masques-sculptures-lesson-2"
+      },
+      {
+        "id": "course-decouverte-01-masques-sculptures-lesson-3"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-decouverte-02-tissus-parures",
+    "categoryId": "decouverte",
+    "title": "Tissus et parures",
+    "description": "Kente, bogolan, indigo, wax : quatre étoffes qui portent des proverbes, des savoir-faire et une histoire commerciale bien plus retorse qu'il n'y paraît.",
+    "emoji": "🧵",
+    "xp": 50,
+    "lessons": [
+      {
+        "id": "course-decouverte-02-tissus-parures-lesson-1"
+      },
+      {
+        "id": "course-decouverte-02-tissus-parures-lesson-2"
+      },
+      {
+        "id": "course-decouverte-02-tissus-parures-lesson-3"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-decouverte-03-architectures-terre",
+    "categoryId": "decouverte",
+    "title": "Architectures de terre",
+    "description": "Le plus vaste édifice en terre crue du monde est africain, et il faut le refaire chaque année pour qu'il tienne. Découvre une architecture qui vit de son entretien.",
+    "emoji": "🕌",
+    "xp": 50,
+    "lessons": [
+      {
+        "id": "course-decouverte-03-architectures-terre-lesson-1"
+      },
+      {
+        "id": "course-decouverte-03-architectures-terre-lesson-2"
+      },
+      {
+        "id": "course-decouverte-03-architectures-terre-lesson-3"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-decouverte-04-photographie-africaine",
+    "categoryId": "decouverte",
+    "title": "La photographie africaine",
+    "description": "Dans les studios de Bamako, une jeunesse a choisi comment elle voulait être vue. Découvre comment le portrait africain a renversé un siècle de regard extérieur.",
+    "emoji": "📷",
+    "xp": 50,
+    "lessons": [
+      {
+        "id": "course-decouverte-04-photographie-africaine-lesson-1"
+      },
+      {
+        "id": "course-decouverte-04-photographie-africaine-lesson-2"
+      },
+      {
+        "id": "course-decouverte-04-photographie-africaine-lesson-3"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-decouverte-05-cinema-auteur",
+    "categoryId": "decouverte",
+    "title": "Le cinéma d'auteur africain",
+    "description": "Un docker devenu écrivain, puis cinéaste parce que ses livres n'atteignaient pas ceux dont il parlait. Découvre Sembène, le FESPACO et un cinéma né sans industrie.",
+    "emoji": "🎬",
+    "xp": 50,
+    "lessons": [
+      {
+        "id": "course-decouverte-05-cinema-auteur-lesson-1"
+      },
+      {
+        "id": "course-decouverte-05-cinema-auteur-lesson-2"
+      },
+      {
+        "id": "course-decouverte-05-cinema-auteur-lesson-3"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-decouverte-06-litteratures-africaines",
+    "categoryId": "decouverte",
+    "title": "Littératures africaines",
+    "description": "Un écrivain kényan a cessé d'écrire en anglais au sommet de sa notoriété. Découvre pourquoi la question de la langue traverse toute la littérature africaine.",
+    "emoji": "📚",
+    "xp": 50,
+    "lessons": [
+      {
+        "id": "course-decouverte-06-litteratures-africaines-lesson-1"
+      },
+      {
+        "id": "course-decouverte-06-litteratures-africaines-lesson-2"
+      },
+      {
+        "id": "course-decouverte-06-litteratures-africaines-lesson-3"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-decouverte-07-danses",
+    "categoryId": "decouverte",
+    "title": "Danses et corps en mouvement",
+    "description": "Pas de scène, pas de public assis : la danse africaine fait quelque chose plutôt qu'elle ne représente. Découvre ce que le corps a transporté jusqu'aux Amériques.",
+    "emoji": "💃",
+    "xp": 50,
+    "lessons": [
+      {
+        "id": "course-decouverte-07-danses-lesson-1"
+      },
+      {
+        "id": "course-decouverte-07-danses-lesson-2"
+      },
+      {
+        "id": "course-decouverte-07-danses-lesson-3"
+      }
+    ],
+    "quizCount": 5
+  },
+  {
+    "id": "course-decouverte-08-mode-creation",
+    "categoryId": "decouverte",
+    "title": "Mode et création contemporaine",
+    "description": "Un pagne qui porte un proverbe, un créateur malien qui coupe le bogolan en haute couture, et des montagnes de friperie importée. Découvre les trois faces de la mode africaine.",
+    "emoji": "👗",
+    "xp": 50,
+    "lessons": [
+      {
+        "id": "course-decouverte-08-mode-creation-lesson-1"
+      },
+      {
+        "id": "course-decouverte-08-mode-creation-lesson-2"
+      },
+      {
+        "id": "course-decouverte-08-mode-creation-lesson-3"
+      }
+    ],
+    "quizCount": 5
   }
 ];

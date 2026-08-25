@@ -259,11 +259,16 @@ contenu.
 | Géographie | 54 |
 | Histoire | 40 |
 | Personnalités | 31 |
-| Découverte | 3 |
-| **Total** | **128** |
+| Découverte | 11 |
+| **Total** | **136** |
 
-**524 leçons**, **636 questions de quiz**, **13 040 XP disponibles** (7800 XP de complétion de
-cours + 5240 XP de leçons à `XP_PER_LESSON = 10`).
+**548 leçons**, **676 questions de quiz**, **13 680 XP disponibles** (8200 XP de complétion de
+cours + 5480 XP de leçons à `XP_PER_LESSON = 10`).
+
+> ⚠️ **`LEVEL_TIERS` est calibré sur 13 040 XP, soit l'état d'avant le lot 1 de Découverte.**
+> « Gardien du savoir » est donc atteignable vers 95 % du catalogue au lieu de 100 %. Le
+> recalibrage est volontairement reporté **en fin de chantier Découverte** (lots 2 à 4) plutôt
+> que refait à chaque lot — voir Prochaines étapes.
 
 - **Barème en vigueur** (`src/lib/gamification.ts`) : `LEVEL_TIERS` = 0 / 1250 / 3900 / 7800 /
   13 040 (Curieux / Éveillé / Initié / Sage / Gardien du savoir), `OPEN_LEVEL_STEP = 1250`. Le
@@ -329,6 +334,32 @@ contemporaine) ont été fusionnées en une matière transversale unique : **`de
   (par exemple « Arts & création ») pourra en ressortir comme matière autonome — un
   `categoryId` ne coûte rien à changer, ce chantier vient de le démontrer.
 
+## Livraison (Phase 8 — Découverte, lot 1 : Arts & création)
+
+Premier des 4 lots portant Découverte de 3 à 30 cours. **8 cours neufs** (24 leçons,
+40 questions de quiz), tous écrits directement sous la charte (`docs/CHARTE-LECONS.md`) :
+Masques et sculptures · Tissus et parures · Architectures de terre · La photographie
+africaine · Le cinéma d'auteur africain · Littératures africaines · Danses et corps en
+mouvement · Mode et création contemporaine.
+
+- **Les 3 cours hérités ont été réécrits dans le même mouvement.** Ils étaient encore au
+  format d'avant la charte (une leçon = un unique bloc paragraphe), ce qui produisait
+  30 erreurs de validation et aurait laissé 3 cours sur 11 visiblement en décalage dans la
+  matière. Leurs **identifiants de cours, de leçon et de quiz sont inchangés**, ainsi que les
+  questions de quiz : seuls les blocs de leçon et les titres de leçon ont été refaits.
+- **`"decouverte"` ajouté à `CHARTE_APPLIQUEE`** : les règles 11 à 18 contrôlent désormais
+  toute la matière, qui passe à **0 erreur**. Les seuls avertissements restants la concernant
+  sont les 11 illustrations manquantes.
+- **Prérequis fait avant d'écrire** : `misc.ts` renommé `decouverte.ts` et sorti du bundle du
+  shell vers un chunk chargé à la demande (commit séparé). À 30 cours il aurait pesé ~110 Ko
+  dans le chunk d'entrée.
+- **Structure retenue pour la matière** : 3 leçons par cours (comme Géographie, et comme les
+  3 cours hérités), donc `xp: 50` par cours selon la règle `20 + 10 × leçons`.
+- **Ton calé sur Histoire et Géographie** : chaque leçon suit le squelette accroche →
+  `chiffreCle`/`frise`/`reperes` → paragraphe de substance → `aRetenir`, avec `leSavaisTu`
+  en clôture quand il y a une anecdote qui le mérite. La première phrase est un hameçon, pas
+  une définition.
+
 ## Ce qui N'est PAS encore fait
 
 - Animations avancées au-delà du geste de swipe (transitions d'écran, micro-interactions).
@@ -336,13 +367,14 @@ contemporaine) ont été fusionnées en une matière transversale unique : **`de
 - Reformatage global du dépôt par Prettier (outillage en place, non appliqué — voir chantier 7.4 ci-dessus).
 - Tests de rendu de composants et tests end-to-end (hors périmètre du chantier 7.4, volontairement).
 - Équilibrage éditorial du catalogue : **en cours**. Personnalités est passée de 1 à 31 cours, et les 3 matières restantes ont été fusionnées en « Découverte » (3 cours). L'objectif retenu est de porter Découverte à **30 cours**, par lots de 8, sur le modèle des chantiers Histoire et Géographie.
-- Charte des leçons non activée sur Personnalités ni sur Découverte : `CHARTE_APPLIQUEE` (`scripts/validate-content.ts`) ne contient que `histoire` et `geo`, donc les règles 11 à 18 ne contrôlent ni les 31 cours Personnalités ni les 3 cours Découverte.
+- Charte des leçons non activée sur Personnalités : `CHARTE_APPLIQUEE` (`scripts/validate-content.ts`) contient `histoire`, `geo` et `decouverte` — les 31 cours Personnalités restent hors du contrôle des règles 11 à 18.
 - Illustrations manquantes : les 4 cours signalés par le validateur (3 dans Découverte, 1 dans Personnalités).
 - Performance Lighthouse mobile < 90 (voir chantier 7.5 : le goulot restant est le coût d'exécution JS générique React/Router/Zustand sous throttling CPU simulé, pas le catalogue — nécessiterait une réduction plus profonde du bundle vendor ou un changement d'architecture de rendu, hors périmètre de ce lot).
 
 ## Prochaines étapes suggérées
 
-1. Poursuite de la Phase 8 : porter **Découverte de 3 à 30 cours**, par lots de 8 (modèle des chantiers Histoire et Géographie), en s'appuyant sur `docs/CHARTE-LECONS.md` et le validateur (`npm run validate`). Régénérer l'index (`npm run gen:index`) après chaque lot et recalibrer `LEVEL_TIERS` en fin de chantier (+27 cours ≈ +2160 XP, catalogue à ~15 200 XP).
-2. Passer les 31 cours Personnalités et les cours Découverte sous la charte, puis ajouter `"perso"` et `"decouverte"` à `CHARTE_APPLIQUEE`.
-3. Résorber les 121 avertissements du validateur (densité de gras, budget de mots) et fournir les 4 illustrations manquantes.
-4. Éventuellement : reformatage global Prettier (commit dédié), tests de rendu/E2E, authentification si un compte utilisateur devient nécessaire, poursuite de l'optimisation Performance (chantier 7.5) si le score < 90 devient bloquant.
+1. Poursuite de la Phase 8 : **lots 2 à 4 de Découverte** (11 → 30 cours). Lot 2 « Sociétés, croyances, quotidien », lot 3 « Savoirs & sciences », lot 4 à composer. Régénérer l'index (`npm run gen:index`) après chaque lot.
+2. **Recalibrer `LEVEL_TIERS` en fin de chantier Découverte** — actuellement calibré sur 13 040 XP alors que le catalogue en est à 13 680, et montera vers ~15 200.
+3. Passer les 31 cours Personnalités sous la charte, puis ajouter `"perso"` à `CHARTE_APPLIQUEE`.
+4. Résorber les avertissements du validateur (densité de gras, budget de mots) et fournir les 4 illustrations manquantes.
+5. Éventuellement : reformatage global Prettier (commit dédié), tests de rendu/E2E, authentification si un compte utilisateur devient nécessaire, poursuite de l'optimisation Performance (chantier 7.5) si le score < 90 devient bloquant.
