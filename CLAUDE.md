@@ -101,7 +101,7 @@ L'app a 4 onglets (bottom nav) :
 
 ## Livraison (Phase 7, chantier 7.3 — Recalibrage de la gamification)
 
-- **Catalogue chiffré** (calibrage sur des chiffres, pas au jugé) : 98 cours (40 Histoire, 54 Géographie, 4 hérités Personnalités/Arts/Traditions/Actu à 1 cours chacun), 266 leçons, **7100 XP total disponible** (4440 XP de complétion de cours + 2660 XP de leçons). L'ancien plafond (1000 XP) représentait 14 % de ce total — d'où la saturation quasi immédiate du rang maximal.
+- **Catalogue chiffré** ⚠️ *chiffres d'époque, périmés — voir § Catalogue et outillage, chiffres de référence pour l'état actuel* (calibrage sur des chiffres, pas au jugé) : 98 cours (40 Histoire, 54 Géographie, 4 hérités Personnalités/Arts/Traditions/Actu à 1 cours chacun), 266 leçons, **7100 XP total disponible** (4440 XP de complétion de cours + 2660 XP de leçons). L'ancien plafond (1000 XP) représentait 14 % de ce total — d'où la saturation quasi immédiate du rang maximal.
 - **Barème recalibré (`src/lib/gamification.ts`)** : `LEVEL_TIERS` étalé sur les 7100 XP actuels (0 / 700 / 2100 / 4250 / 7100 — Curieux / Éveillé / Initié / Sage / Gardien du savoir), « Gardien du savoir » s'atteignant exactement à 100 % du catalogue. Au-delà, `getLevelInfo` bascule sur des **niveaux numérotés sans plafond**, formule de seuil croissant indépendante de la taille du catalogue (aucun recalibrage requis si la Phase 8 ajoute du contenu). `rank` se fige sur « Gardien du savoir » une fois ce régime atteint ; les écrans affichent niveau + rang ensemble. Détail complet (table, formule, impact sur un utilisateur existant) dans `docs/ARCHITECTURE.md` § Recalibrage de la gamification.
 - **Maîtrise dérivée (E2)** : `addMastery`, `MASTERY_PER_CARD`, `MASTERY_PER_COURSE` supprimés. `getMasteryByCategory` (`src/lib/subjectProgress.ts`) calcule à la lecture `cours terminés / cours de la matière` par catégorie — même principe que `getSubjectProgress`, étendu au radar du Profil et à `recommendCourses`.
 - **Matières émergentes (E4)** : `isSubjectEmerging` (seuil : < 3 cours) signale honnêtement en Biblio et sur l'écran de matière (badge « 🚧 En construction ») les matières encore réduites à un seul cours, et neutralise leur bonus de découverte dans les recommandations pour éviter qu'elles ne monopolisent la mise en avant tant qu'elles ne sont pas terminées.
@@ -119,7 +119,7 @@ L'app a 4 onglets (bottom nav) :
 - **Tests des fonctions pures de `src/lib/`** : `gamification.test.ts` (paliers nommés, formule des niveaux ouverts, monotonie, `updateStreak` avec date injectée — même jour/jour suivant/saut/changement de semaine/année), `daily.test.ts` (déterminisme journalier, `resetDailyIfNeeded`, `pickDailyQuestions`), `featured.test.ts` (exclusion de la matière précédente, repli à une seule matière, `null` si tout lu, `excludeKeys`), `subjectProgress.test.ts` (bornes de niveau de matière, statuts, maîtrise dérivée), `recommendations.test.ts` (exclusion des cours terminés, priorité de matière, stabilité du tri, matières émergentes), `homeFeed.test.ts` (pas de doublon avec les leçons déjà lues ni avec la vedette Biblio, non-épuisement), `parcoursProgress.test.ts` (détection et idempotence de la complétion de parcours). Toutes utilisent des catalogues de cours/catégories **synthétiques** (pas le catalogue réel) pour rester découplées du contenu éditorial — seuls les tests de migration et d'idempotence du store, qui dépendent réellement du catalogue via `PARCOURS`/`COURSES`, utilisent les données réelles.
 - **Tests d'idempotence du store** (`src/store/useAppStore.idempotence.test.ts`) : `completeLesson`, `completeCourse` (y compris le crédit XP de parcours), `markCourseStarted` ne créditent/n'ajoutent qu'une fois lorsqu'appelés deux fois ; `toggleFavoriteCard`/`toggleFavoriteCourse` reviennent proprement à l'état initial sur un double appel ; `recordQuizResult` ne conserve que les 10 tentatives les plus récentes.
 - **ESLint** (config plate `eslint.config.js`, `typescript-eslint` recommandé + `eslint-plugin-react-refresh` (préréglage `vite`) + seulement `react-hooks/rules-of-hooks` et `react-hooks/exhaustive-deps` de `eslint-plugin-react-hooks` — le préréglage `recommended` de la v7 de ce plugin embarque les règles du React Compiler (`set-state-in-effect`, `purity`…), hors sujet pour un projet React 18 sans Compiler, et qui signalait à tort des animations intentionnelles (`LearningDoneCard`, `ProgressBar`) comme des erreurs) + `eslint-config-prettier` (désactive les règles de style qui entreraient en conflit avec Prettier). **Prettier** configuré (`.prettierrc.json`, `printWidth: 100`) mais **aucun reformatage global du dépôt n'a été appliqué** dans ce lot (163 fichiers préexistants ne respectent pas le style par défaut) — `npm run format` est disponible, à lancer volontairement dans un commit dédié si un reformatage global est souhaité.
-- **CI complétée** (`.github/workflows/ci.yml`) : `npm ci` → `npm run validate` → `npm test` → `npm run typecheck` → `npm run build`, bloquante en cas d'échec de l'une des quatre étapes.
+- **CI complétée** (`.github/workflows/ci.yml`) : `npm ci` → `npm run validate` → `npm test` → `npm run typecheck` → `npm run build`, bloquante en cas d'échec de l'une des quatre étapes. (`npm run lint` a été ajouté depuis, en tête — voir § Catalogue et outillage, chiffres de référence.)
 - Scripts npm ajoutés : `test`, `test:watch`, `lint`, `format`.
 
 **Reconstitution de la chaîne de versions du store** (base des tests de migration) :
@@ -199,7 +199,7 @@ cours. Détail complet (table des chiffres, seuils, impact utilisateur) dans
   contenu) sont strictement inchangés.
 - **XP recalculée** : `course.xp` passe de 30 à **50** pour les 54 cours (règle mécanique déjà
   en place, chantier 7.3 : `20 + 10 × nombre de leçons`).
-- **Gamification recalibrée** (`src/lib/gamification.ts`) : `LEVEL_TIERS` (0/900/2750/5550/9260,
+- **Gamification recalibrée** ⚠️ *barème d'époque, recalibré depuis (Phase 8) — voir § Catalogue et outillage* (`src/lib/gamification.ts`) : `LEVEL_TIERS` (0/900/2750/5550/9260,
   contre 0/700/2100/4250/7100) et `OPEN_LEVEL_STEP` (700→900), en conservant les proportions du
   barème précédent — XP total du catalogue passé de 7100 à **9260** (374 leçons contre 266).
   Aucun changement de schéma de `UserProgress` : version de persistance toujours à **7**, aucune
@@ -248,16 +248,58 @@ Séquence de fin de cours.
   vignette carrée sur 9 cours répartis Histoire/Géographie/Personnalités (dont les pays à drapeau
   cadré à gauche) ; navigation clavier et `prefers-reduced-motion` vérifiés sans régression.
 
+## Catalogue et outillage — chiffres de référence (au 25/08/2026)
+
+Les chiffres cités dans les sections de livraison ci-dessus sont ceux **de leur époque**. Cette
+section est la seule à faire foi sur l'état courant ; la remettre à jour après tout chantier de
+contenu.
+
+| Matière | Cours |
+|---|---|
+| Géographie | 54 |
+| Histoire | 40 |
+| Personnalités | 31 |
+| Arts & Musique | 1 |
+| Traditions & Sociétés | 1 |
+| Afrique contemporaine | 1 |
+| **Total** | **128** |
+
+**524 leçons**, **636 questions de quiz**, **13 040 XP disponibles** (7800 XP de complétion de
+cours + 5240 XP de leçons à `XP_PER_LESSON = 10`).
+
+- **Barème en vigueur** (`src/lib/gamification.ts`) : `LEVEL_TIERS` = 0 / 1250 / 3900 / 7800 /
+  13 040 (Curieux / Éveillé / Initié / Sage / Gardien du savoir), `OPEN_LEVEL_STEP = 1250`. Le
+  dernier rang nommé est fixé exactement au total du catalogue — **à recalibrer consciemment à
+  chaque ajout notable de contenu**, sans quoi il devient atteignable avant d'avoir tout terminé.
+  Aucun changement de schéma de `UserProgress` : version de persistance toujours **7**.
+- **Phase 8, chantier Personnalités** : `src/data/courses/personnalites.ts` (31 cours, ~150
+  leçons), sorti du lot « matières émergentes ». Les 3 matières restantes à 1 cours n'ont pas
+  été traitées.
+- **Charte des leçons** (`docs/CHARTE-LECONS.md`) : les leçons ne sont plus du Markdown libre mais
+  des **blocs typés** (`src/lib/lessonBlocks.ts` : `paragraphe`, `aRetenir`, `leSavaisTu`,
+  `chiffreCle`, `image`…), rendus par `src/components/features/LessonBlocks.tsx` et contrôlés par
+  les règles 11 à 18 du validateur. Activation **progressive** par matière via `CHARTE_APPLIQUEE`
+  (`scripts/validate-content.ts`), aujourd'hui `["histoire", "geo"]`.
+- **État de santé mesuré** : `npm test` 128 tests / 14 fichiers verts · `npm run typecheck`
+  propre · `npm run lint` propre · `npm run validate` **0 erreur**, 121 avertissements
+  (non bloquants : densité de gras, budget de mots, 4 cours sans illustration) ·
+  `npm run gen:index` sans diff (index à jour).
+- **CI en vigueur** : `npm ci` → `npm run lint` → `npm run validate` → `npm test` →
+  `npm run typecheck` → `npm run build`, bloquante à chaque étape.
+
 ## Ce qui N'est PAS encore fait
 
 - Animations avancées au-delà du geste de swipe (transitions d'écran, micro-interactions).
 - Authentification / comptes utilisateurs / back-end / synchronisation multi-appareil.
 - Reformatage global du dépôt par Prettier (outillage en place, non appliqué — voir chantier 7.4 ci-dessus).
 - Tests de rendu de composants et tests end-to-end (hors périmètre du chantier 7.4, volontairement).
-- Équilibrage éditorial du catalogue (Personnalités, Arts & Musique, Traditions & Sociétés, Afrique contemporaine n'ont encore qu'un seul cours chacun — Phase 8, la Phase 7 se contente de rendre ce déséquilibre non pénalisant).
+- Équilibrage éditorial du catalogue : **partiellement fait**. Personnalités est passée de 1 à 31 cours (Phase 8) ; **Arts & Musique, Traditions & Sociétés et Afrique contemporaine restent à 1 cours chacune**, donc toujours signalées « 🚧 En construction » par `isSubjectEmerging`. Ce sont aussi 3 des 4 cours sans illustration signalés par le validateur.
+- Charte des leçons non activée sur Personnalités : `CHARTE_APPLIQUEE` (`scripts/validate-content.ts`) ne contient que `histoire` et `geo`, donc les règles 11 à 18 ne contrôlent pas encore les 31 cours Personnalités.
 - Performance Lighthouse mobile < 90 (voir chantier 7.5 : le goulot restant est le coût d'exécution JS générique React/Router/Zustand sous throttling CPU simulé, pas le catalogue — nécessiterait une réduction plus profonde du bundle vendor ou un changement d'architecture de rendu, hors périmètre de ce lot).
 
 ## Prochaines étapes suggérées
 
-1. Phase 8 : équilibrage éditorial des 4 matières à 1 seul cours, en s'appuyant sur la procédure d'ajout de contenu et le validateur (`npm run validate`).
-2. Éventuellement : reformatage global Prettier (commit dédié), tests de rendu/E2E, authentification si un compte utilisateur devient nécessaire, poursuite de l'optimisation Performance (chantier 7.5) si le score < 90 devient bloquant.
+1. Poursuite de la Phase 8 : porter Arts & Musique, Traditions & Sociétés et Afrique contemporaine au-delà du seuil de matière émergente (≥ 3 cours), en s'appuyant sur `docs/CHARTE-LECONS.md` et le validateur (`npm run validate`). Régénérer l'index (`npm run gen:index`) et recalibrer `LEVEL_TIERS` après tout ajout notable.
+2. Passer les 31 cours Personnalités sous la charte, puis ajouter `"perso"` à `CHARTE_APPLIQUEE`.
+3. Résorber les 121 avertissements du validateur (densité de gras, budget de mots) et fournir les 4 illustrations manquantes.
+4. Éventuellement : reformatage global Prettier (commit dédié), tests de rendu/E2E, authentification si un compte utilisateur devient nécessaire, poursuite de l'optimisation Performance (chantier 7.5) si le score < 90 devient bloquant.
