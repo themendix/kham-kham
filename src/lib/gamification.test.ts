@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getLevelInfo, updateStreak, LEVEL_TIERS } from "@/lib/gamification";
+import { getLevelInfo, updateStreak, LEVEL_TIERS, OPEN_LEVEL_STEP } from "@/lib/gamification";
 import type { StreakState } from "@/types";
 
 describe("getLevelInfo — paliers nommés", () => {
@@ -41,14 +41,26 @@ describe("getLevelInfo — niveaux ouverts au-delà du dernier rang nommé", () 
 
   it("franchit un niveau ouvert exactement à son seuil, pas avant", () => {
     const lastTier = LEVEL_TIERS[LEVEL_TIERS.length - 1];
-    // OPEN_LEVEL_STEP = 1250, seuil du niveau 6 = minXp dernier palier + 1250*1
-    const thresholdLevel6 = lastTier.minXp + 1250;
+    // Seuil du premier niveau ouvert = dernier palier nomme + OPEN_LEVEL_STEP. Derive de la
+    // constante plutot qu'ecrit en dur : le bareme est recalibre a chaque chantier de contenu,
+    // et ce test doit continuer a verifier la frontiere, pas une valeur d'epoque.
+    const thresholdLevel6 = lastTier.minXp + OPEN_LEVEL_STEP;
     expect(getLevelInfo(thresholdLevel6 - 1).level).toBe(lastTier.level);
     expect(getLevelInfo(thresholdLevel6).level).toBe(lastTier.level + 1);
   });
 
   it("progression monotone : XP croissant n'entraîne jamais un niveau qui redescend", () => {
-    const samples = [0, 100, 1249, 1250, 3899, 3900, 7799, 7800, 13039, 13040, 14290, 30_000, 100_000];
+    // Echantillons derives des paliers reels : chaque seuil, la valeur juste en dessous, puis
+    // quelques points au-dela du dernier rang nomme.
+    const last = LEVEL_TIERS[LEVEL_TIERS.length - 1];
+    const samples = [
+      0,
+      100,
+      ...LEVEL_TIERS.flatMap((t) => (t.minXp === 0 ? [] : [t.minXp - 1, t.minXp])),
+      last.minXp + OPEN_LEVEL_STEP,
+      30_000,
+      100_000,
+    ].sort((a, b) => a - b);
     let previousLevel = -Infinity;
     for (const xp of samples) {
       const { level } = getLevelInfo(xp);

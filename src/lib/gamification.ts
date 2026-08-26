@@ -22,19 +22,36 @@ export const DAILY_CHALLENGE_XP_BONUS = 30;
  * × nombre de questions du catalogue — qui l'empêche de faire exploser `LEVEL_TIERS`. Ce qu'on
  * farme en jouant, ce sont les cauris, qui ne touchent ni le niveau ni le rang.
  *
- * ⚠️ Ce plafond s'ajoute au total du catalogue et doit être intégré au prochain recalibrage de
- * `LEVEL_TIERS` (déjà prévu en fin de chantier Découverte — voir CLAUDE.md § Prochaines étapes).
+ * Ce plafond (676 × 5 = 3 380 XP) est intégré au calibrage de `LEVEL_TIERS` ci-dessous.
  */
 export const XP_PER_QUESTION_LEARNED = 5;
 
 /**
  * Palier XP → niveau et rang affiché dans le Profil.
- * Recalibré une première fois (Phase 7, lot 3) sur l'XP total du catalogue d'alors (~7100 XP),
- * une seconde fois (chantier Géographie 3 leçons) sur ~9260 XP (98 cours), puis une troisième
- * fois (Phase 8 — ajout de Personnalités) sur le total actuel (13 040 XP pour 128 cours). Le
- * dernier rang nommé (« Gardien du savoir ») est fixé exactement au total du catalogue : il
- * n'est atteint qu'en terminant 100 % du contenu, jamais avant. Ce plafond est un point de
- * calibrage éditorial assumé, à revoir consciemment si le catalogue grossit fortement.
+ *
+ * Recalibré une première fois (Phase 7, lot 3) sur ~7100 XP, une deuxième (chantier Géographie
+ * 3 leçons) sur ~9260 XP, une troisième (Phase 8 — Personnalités) sur 13 040 XP, et une
+ * **quatrième** (Phase 9 — module Quiz) sur les **17 960 XP** aujourd'hui disponibles :
+ *
+ * | Source | XP |
+ * |---|---|
+ * | Complétion des 136 cours | 8 360 |
+ * | 564 leçons × XP_PER_LESSON | 5 640 |
+ * | Module Quiz : 676 questions × XP_PER_QUESTION_LEARNED | 3 380 |
+ * | 3 parcours (xpReward) | 400 |
+ * | 18 cartes éditoriales du fil Home | 180 |
+ *
+ * Sans ce recalibrage, le dernier rang serait tombé à **72,6 %** du catalogue.
+ *
+ * Le dernier rang nommé (« Gardien du savoir ») est fixé exactement au total : il n'est atteint
+ * qu'en terminant 100 % du contenu, jamais avant. Les proportions des rangs intermédiaires sont
+ * conservées d'un recalibrage à l'autre (0 / 9,6 / 29,9 / 59,8 / 100 %), pour que le rythme de
+ * progression ressenti ne change pas.
+ *
+ * ⚠️ **Une source échappe à ce calibrage** : le Défi du jour rapporte DAILY_CHALLENGE_XP_BONUS
+ * chaque jour, indéfiniment — environ 11 000 XP par an sans apprendre quoi que ce soit de neuf.
+ * La propriété « le dernier rang = 100 % du catalogue » ne vaut donc à la lettre que pour un
+ * utilisateur récent. C'est une limite connue et antérieure à ce recalibrage, pas un oubli.
  */
 export interface LevelTier {
   minXp: number;
@@ -44,10 +61,10 @@ export interface LevelTier {
 
 export const LEVEL_TIERS: LevelTier[] = [
   { minXp: 0, level: 1, rank: "Curieux" },
-  { minXp: 1250, level: 2, rank: "Éveillé" },
-  { minXp: 3900, level: 3, rank: "Initié" },
-  { minXp: 7800, level: 4, rank: "Sage" },
-  { minXp: 13040, level: 5, rank: "Gardien du savoir" },
+  { minXp: 1700, level: 2, rank: "Éveillé" },
+  { minXp: 5350, level: 3, rank: "Initié" },
+  { minXp: 10750, level: 4, rank: "Sage" },
+  { minXp: 17960, level: 5, rank: "Gardien du savoir" },
 ];
 
 /**
@@ -56,9 +73,9 @@ export const LEVEL_TIERS: LevelTier[] = [
  * table figée : tout ajout futur de contenu se traduit directement en niveaux supplémentaires,
  * sans recalibrage. Coût du niveau n (n > dernier rang nommé) = OPEN_LEVEL_STEP × (n - 5) XP,
  * cumulé — un nombre triangulaire, qui prolonge naturellement le rythme des rangs nommés
- * (écarts croissants : 900, 1800, 2700, 3600 XP).
+ * (écarts croissants : 1700, 3400, 5100, 6800 XP).
  */
-const OPEN_LEVEL_STEP = 1250;
+export const OPEN_LEVEL_STEP = 1700;
 
 /** Seuil XP du niveau `level`, au-delà du dernier rang nommé (`level` > LEVEL_TIERS.length) */
 function openLevelThreshold(level: number): number {
