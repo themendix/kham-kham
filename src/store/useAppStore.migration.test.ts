@@ -11,8 +11,8 @@ import type { UserProgress } from "@/types";
  *
  * Chaque blob ci-dessous représente un utilisateur ayant réellement progressé, figé dans la
  * forme exacte d'une version historique du store (voir CLAUDE.md pour la reconstitution de la
- * chaîne v1→v7). `migrate` ignore son paramètre de version : une seule fonction, indifférente à
- * l'origine du blob, ramène n'importe quelle version passée à la forme v7 — les blobs ci-dessous
+ * chaîne v1→v8). `migrate` ignore son paramètre de version : une seule fonction, indifférente à
+ * l'origine du blob, ramène n'importe quelle version passée à la forme v8 — les blobs ci-dessous
  * vérifient que c'est vrai pour chacune d'entre elles.
  */
 
@@ -294,6 +294,117 @@ describe("migrate — blob v6 (completedParcoursIds déjà présent)", () => {
     const once = migrate(v6Blob());
     const twice = migrate(once);
     expect(twice).toEqual(once);
+  });
+});
+
+describe("migrate — blob v7 (dernière version avant le module Quiz)", () => {
+  function v7Blob() {
+    return {
+      progress: {
+        xp: 640 + PARCOURS_XP_REWARD,
+        level: 2,
+        rank: "Éveillé",
+        streak: { count: 5, lastActiveDate: "2026-03-10", weekDays: Array(7).fill(false) },
+        completedCourseIds: [PARCOURS_COURSE_A, PARCOURS_COURSE_B],
+        completedParcoursIds: [PARCOURS_ID],
+        favoriteCardIds: ["card-savane-1"],
+        favoriteCourseIds: [PARCOURS_COURSE_A],
+        quizResults: [
+          { courseId: PARCOURS_COURSE_B, score: 5, total: 5, date: "2026-03-10T09:00:00.000Z" },
+        ],
+        daily: { date: "2026-03-10", cardsLearned: 2, xpEarned: 20, challengeDone: true },
+        lastCourseId: PARCOURS_COURSE_B,
+        totalCardsLearned: 15,
+        startedCourseIds: ["course-geographie-01-algerie"],
+        completedLessonIds: ["course-geographie-01-algerie:course-geographie-01-algerie-lesson-1"],
+        featuredLessonKey: "course-geographie-01-algerie:course-geographie-01-algerie-lesson-1",
+      },
+    };
+  }
+
+  it("backfille quizGame à vide sans toucher au reste de la progression", () => {
+    const { progress } = migrate(v7Blob());
+    expect(progress.quizGame).toEqual({ cauris: 0, questions: {}, records: {}, gamesPlayed: 0 });
+    expect(progress.xp).toBe(v7Blob().progress.xp);
+    expect(progress.completedLessonIds).toEqual(v7Blob().progress.completedLessonIds);
+  });
+
+  it("ne crédite aucun cauris ni aucune XP au passage en v8", () => {
+    const { progress } = migrate(v7Blob());
+    expect(progress.quizGame.cauris).toBe(0);
+    expect(progress.quizGame.gamesPlayed).toBe(0);
+    expect(progress.xp).toBe(v7Blob().progress.xp);
+  });
+
+  it("est stable si rejoué une seconde fois", () => {
+    const once = migrate(v7Blob());
+    expect(migrate(once)).toEqual(once);
+  });
+});
+
+describe("migrate — blob v8 (module Quiz déjà joué)", () => {
+  const QUESTION_KEY = "course-histoire-05-empire-du-ghana:quiz-histoire-05-1";
+
+  function v8Blob(quizGame: unknown) {
+    return {
+      progress: {
+        xp: 900,
+        level: 2,
+        rank: "Éveillé",
+        streak: { count: 5, lastActiveDate: "2026-03-10", weekDays: Array(7).fill(false) },
+        completedCourseIds: [],
+        completedParcoursIds: [],
+        favoriteCardIds: [],
+        favoriteCourseIds: [],
+        quizResults: [],
+        daily: { date: "2026-03-10", cardsLearned: 0, xpEarned: 0, challengeDone: false },
+        lastCourseId: null,
+        totalCardsLearned: 0,
+        startedCourseIds: [],
+        completedLessonIds: [],
+        featuredLessonKey: null,
+        quizGame,
+      },
+    };
+  }
+
+  const played = {
+    cauris: 340,
+    questions: { [QUESTION_KEY]: { correct: 2, wrong: 1, box: 2, dueDate: "2026-03-22" } },
+    records: { ouest: { blitz: 14, survie: 9 } },
+    gamesPlayed: 7,
+  };
+
+  it("préserve intégralement un état de jeu existant", () => {
+    const { progress } = migrate(v8Blob(played));
+    expect(progress.quizGame).toEqual(played);
+  });
+
+  it("complète champ par champ un quizGame partiel plutôt que de le remettre à zéro", () => {
+    // Un blob tronqué (écriture interrompue, édition manuelle du localStorage) doit conserver
+    // ce qui est lisible — perdre les cauris d'un joueur parce que `records` manque serait pire
+    // que le trou lui-même.
+    const { progress } = migrate(v8Blob({ cauris: 120, gamesPlayed: 3 }));
+    expect(progress.quizGame).toEqual({
+      cauris: 120,
+      questions: {},
+      records: {},
+      gamesPlayed: 3,
+    });
+  });
+
+  it("tolère un quizGame null ou d'un type inattendu", () => {
+    expect(migrate(v8Blob(null)).progress.quizGame).toEqual({
+      cauris: 0,
+      questions: {},
+      records: {},
+      gamesPlayed: 0,
+    });
+  });
+
+  it("est stable si rejoué une seconde fois", () => {
+    const once = migrate(v8Blob(played));
+    expect(migrate(once)).toEqual(once);
   });
 });
 

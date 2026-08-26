@@ -8,6 +8,7 @@
 
 export type { LessonBlock } from "@/lib/lessonBlocks";
 import type { LessonBlock } from "@/lib/lessonBlocks";
+import type { TerritoryId } from "@/lib/territories";
 
 /** Clé de couleur de matière, utilisée comme suffixe des tokens Tailwind (bg-histoire, text-geo…) */
 export type SubjectColor = "histoire" | "geo" | "perso" | "decouverte";
@@ -115,6 +116,66 @@ export interface DailyState {
   challengeDone: boolean;
 }
 
+/** Modes de jeu portant un record par territoire */
+export type QuizGameMode = "blitz" | "survie";
+
+/**
+ * Mode réellement joué par le moteur de partie : les deux modes à record, plus le Défi du jour.
+ * Le défi est délibérément hors de `QuizGameMode` — il ne se joue sur aucun territoire en
+ * particulier et ne doit donc pas ouvrir une case de record.
+ */
+export type QuizPlayMode = QuizGameMode | "defi";
+
+/**
+ * Une question de quiz telle que le module Quiz la consomme : la question elle-même, augmentée
+ * de son origine (cours, matière) et de ses territoires. Générée au build
+ * (`scripts/generate-quiz-index.ts`) dans `src/data/quizIndex.generated.ts`, chargée seule pour
+ * ne pas tirer le texte des leçons — voir docs/ARCHITECTURE.md § Module Quiz.
+ */
+export interface QuizEntry {
+  /** Clé stable `${courseId}:${questionId}`, clé de révision dans `UserProgress` (même convention que `completedLessonIds`) */
+  key: string;
+  courseId: string;
+  categoryId: string;
+  /** Leçon qui donne la réponse, dépliée sur place quand l'utilisateur se trompe ; `null` quand le
+   * rattachement n'est pas encore fait — le module renvoie alors vers le cours (voir `src/data/quizLessonMap.ts`) */
+  lessonId: string | null;
+  territories: TerritoryId[];
+  question: string;
+  options: string[];
+  correctIndex: number;
+  explanation: string;
+}
+
+/**
+ * Suivi d'une question pour la révision espacée. Le palier (`box`) monte à chaque réussite et
+ * retombe à 0 à chaque échec ; `dueDate` est la date à partir de laquelle la question doit
+ * revenir en priorité dans une partie. Voir `src/lib/quizReview.ts`.
+ */
+export interface QuestionStat {
+  correct: number;
+  wrong: number;
+  /** 0 → revoir à J+1, 1 → J+3, 2 → J+7, 3 → acquise (plus de rappel programmé) */
+  box: number;
+  /** Date ISO (YYYY-MM-DD) d'échéance de révision ; null quand la question est acquise */
+  dueDate: string | null;
+}
+
+/** Meilleur score par mode, pour un territoire */
+export type TerritoryRecords = Record<QuizGameMode, number>;
+
+/** État du module Quiz, persisté dans `UserProgress` */
+export interface QuizGameState {
+  /** Monnaie du module Quiz, gagnée en partie — sans effet sur l'XP ni sur le rang */
+  cauris: number;
+  /** Statistiques par question, clé `${courseId}:${questionId}` */
+  questions: Record<string, QuestionStat>;
+  /** Meilleurs scores par territoire (clé = `TerritoryId`) */
+  records: Record<string, TerritoryRecords>;
+  /** Nombre total de parties terminées */
+  gamesPlayed: number;
+}
+
 export interface UserProgress {
   xp: number;
   level: number;
@@ -141,4 +202,6 @@ export interface UserProgress {
   completedLessonIds: string[];
   /** Leçon actuellement mise en avant dans « À la une » (Biblio), clé `${courseId}:${lessonId}`, null si tout est lu */
   featuredLessonKey: string | null;
+  /** État du module Quiz (onglet Jeu) : cauris, révision espacée, records par territoire */
+  quizGame: QuizGameState;
 }

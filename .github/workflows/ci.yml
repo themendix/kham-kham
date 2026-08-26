@@ -17,6 +17,15 @@ jobs:
 
       - run: npm ci
 
+      # Les index générés sont commités et lus par les tests et le typecheck, qui tournent avant
+      # le build : sans ce garde-fou, un catalogue modifié sans régénération passerait la CI en
+      # étant validé contre un index périmé.
+      - name: Index générés à jour
+        run: |
+          npm run gen:index
+          npm run gen:quiz
+          git diff --exit-code src/data/coursesIndex.generated.ts src/data/quizIndex.generated.ts
+
       - run: npm run lint
 
       - run: npm run validate

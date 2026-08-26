@@ -8,6 +8,24 @@ export const XP_PER_LESSON = 10;
 export const DAILY_GOAL = 5;
 /** Bonus d'XP attribué à la réussite du Défi du jour (quiz éclair) */
 export const DAILY_CHALLENGE_XP_BONUS = 30;
+/**
+ * XP attribué à la **deuxième** réussite d'une question dans le module Quiz — jamais avant, jamais
+ * après.
+ *
+ * Pourquoi pas la première : le module sert **tout** le catalogue dès la première partie, y compris
+ * des questions dont le cours n'a pas été lu. Avec 4 options, une bonne réponse sur quatre tombe
+ * par hasard ; créditer la première réussite rendrait tout le stock farmable à l'aveugle. Une
+ * question réussie **deux fois**, à quelques jours d'intervalle (la révision espacée écarte les
+ * rappels), ne relève plus du coup de chance : c'est ce seuil qui est payé.
+ *
+ * Le module est illimité (pas de compteur d'énergie) : c'est ce plafond — XP_PER_QUESTION_LEARNED
+ * × nombre de questions du catalogue — qui l'empêche de faire exploser `LEVEL_TIERS`. Ce qu'on
+ * farme en jouant, ce sont les cauris, qui ne touchent ni le niveau ni le rang.
+ *
+ * ⚠️ Ce plafond s'ajoute au total du catalogue et doit être intégré au prochain recalibrage de
+ * `LEVEL_TIERS` (déjà prévu en fin de chantier Découverte — voir CLAUDE.md § Prochaines étapes).
+ */
+export const XP_PER_QUESTION_LEARNED = 5;
 
 /**
  * Palier XP → niveau et rang affiché dans le Profil.

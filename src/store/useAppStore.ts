@@ -1,7 +1,14 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type { QuizResult, UserProgress } from "@/types";
-import { getLevelInfo, updateStreak as computeStreak, XP_PER_LESSON } from "@/lib/gamification";
+import type { QuizGameMode, QuizGameState, QuizResult, UserProgress } from "@/types";
+import {
+  getLevelInfo,
+  updateStreak as computeStreak,
+  XP_PER_QUESTION_LEARNED,
+  XP_PER_LESSON,
+} from "@/lib/gamification";
+import { applyAnswer, earnsXpOnCorrect } from "@/lib/quizReview";
+import type { TerritoryId } from "@/lib/territories";
 import { resetDailyIfNeeded } from "@/lib/daily";
 import { getLessonRef, lessonKey, pickNextFeaturedLesson } from "@/lib/featured";
 import { EDITORIAL_COURSE_ID } from "@/lib/homeFeed";
@@ -33,6 +40,18 @@ interface AppState {
   completeLesson: (courseId: string, lessonId: string) => void;
   /** Vérifie que `featuredLessonKey` pointe vers une leçon valide et non lue, la recalcule sinon (appelé au montage de la Biblio) */
   ensureFeaturedLesson: () => void;
+  /** Enregistre une réponse du module Quiz : reprogramme la révision de la question et crédite l'XP si c'est sa première réussite */
+  recordQuizAnswer: (questionKey: string, isCorrect: boolean) => void;
+  /**
+   * Clôt une partie du module Quiz : crédite les cauris et compte la partie. `record` porte le
+   * territoire, le mode et le score quand la partie en tient un ; il vaut `null` pour le Défi du
+   * jour, qui traverse tout le catalogue et n'appartient donc à aucun territoire. Un seul champ
+   * nullable plutôt que trois : il n'y a pas d'état intermédiaire à représenter.
+   */
+  finishQuizGame: (result: {
+    cauris: number;
+    record: { territoryId: TerritoryId; mode: QuizGameMode; score: number } | null;
+  }) => void;
 }
 
 const initialProgress: UserProgress = {
@@ -51,14 +70,30 @@ const initialProgress: UserProgress = {
   startedCourseIds: [],
   completedLessonIds: [],
   featuredLessonKey: null,
+  quizGame: { cauris: 0, questions: {}, records: {}, gamesPlayed: 0 },
 };
 
 /**
- * Migration douce unique : chaque version historique (v1→v6) n'a fait qu'ajouter des champs à
+ * Ramène le sous-état du module Quiz à une forme complète. Écrit champ par champ plutôt qu'avec
+ * un simple `?? initialProgress.quizGame` : un blob v8 partiellement écrit (ou tronqué) doit
+ * repartir avec ses champs valides conservés, pas être remis à zéro en bloc.
+ */
+function normalizeQuizGame(raw: Partial<QuizGameState> | undefined): QuizGameState {
+  return {
+    cauris: raw?.cauris ?? 0,
+    questions: raw?.questions ?? {},
+    records: raw?.records ?? {},
+    gamesPlayed: raw?.gamesPlayed ?? 0,
+  };
+}
+
+/**
+ * Migration douce unique : chaque version historique (v1→v7) n'a fait qu'ajouter des champs à
  * défaut sûr (sauf le renommage `favoriteIds` en v5 et les suppressions en v7), donc une seule
- * fonction, indifférente à la version d'origine, suffit à ramener n'importe quel blob v1→v6 à la
- * forme v7. Exportée (plutôt qu'inline dans `persist(...)`) pour être testable sans passer par
- * `localStorage`/la réhydratation Zustand.
+ * fonction, indifférente à la version d'origine, suffit à ramener n'importe quel blob v1→v7 à la
+ * forme v8. La v8 ajoute `quizGame` (module Quiz), backfillé par `normalizeQuizGame`. Exportée
+ * (plutôt qu'inline dans `persist(...)`) pour être testable sans passer par `localStorage`/la
+ * réhydratation Zustand.
  */
 export function migrate(persistedState: unknown): { progress: UserProgress } {
   const state = persistedState as
@@ -106,6 +141,7 @@ export function migrate(persistedState: unknown): { progress: UserProgress } {
       startedCourseIds: state.progress.startedCourseIds ?? [],
       completedLessonIds: state.progress.completedLessonIds ?? [],
       featuredLessonKey: state.progress.featuredLessonKey ?? null,
+      quizGame: normalizeQuizGame(state.progress.quizGame),
     },
   };
 }
@@ -290,10 +326,73 @@ export const useAppStore = create<AppState>()(
           if (nextKey === featuredLessonKey) return state;
           return { progress: { ...state.progress, featuredLessonKey: nextKey } };
         }),
+
+      recordQuizAnswer: (questionKey, isCorrect) =>
+        set((state) => {
+          const { quizGame } = state.progress;
+          const previousStat = quizGame.questions[questionKey];
+
+          // L'XP n'est créditée qu'à la **deuxième** réussite de cette question : le module sert
+          // tout le catalogue, une première bonne réponse peut n'être qu'un tirage heureux sur
+          // quatre options (voir XP_PER_QUESTION_LEARNED).
+          const earnsXp = isCorrect && earnsXpOnCorrect(previousStat);
+          const xp = state.progress.xp + (earnsXp ? XP_PER_QUESTION_LEARNED : 0);
+          const { level, rank } = getLevelInfo(xp);
+
+          // L'XP gagnée en jouant compte dans le suivi du jour, comme celle d'une leçon lue.
+          // Traité ici plutôt que par un appel séparé à `addDailyProgress` depuis l'écran :
+          // seul le store sait si cette réponse a effectivement crédité de l'XP (deuxième
+          // réussite), l'écran l'ignore.
+          const daily = resetDailyIfNeeded(state.progress.daily);
+
+          return {
+            progress: {
+              ...state.progress,
+              xp,
+              level,
+              rank,
+              daily: earnsXp ? { ...daily, xpEarned: daily.xpEarned + XP_PER_QUESTION_LEARNED } : daily,
+              quizGame: {
+                ...quizGame,
+                questions: {
+                  ...quizGame.questions,
+                  [questionKey]: applyAnswer(previousStat, isCorrect),
+                },
+              },
+            },
+          };
+        }),
+
+      finishQuizGame: ({ cauris, record }) =>
+        set((state) => {
+          const { quizGame } = state.progress;
+          let records = quizGame.records;
+          if (record) {
+            const current = records[record.territoryId] ?? { blitz: 0, survie: 0 };
+            if (record.score > current[record.mode]) {
+              records = {
+                ...records,
+                [record.territoryId]: { ...current, [record.mode]: record.score },
+              };
+            }
+          }
+
+          return {
+            progress: {
+              ...state.progress,
+              quizGame: {
+                ...quizGame,
+                cauris: quizGame.cauris + cauris,
+                gamesPlayed: quizGame.gamesPlayed + 1,
+                records,
+              },
+            },
+          };
+        }),
     }),
     {
       name: "sankofa-progress",
-      version: 7,
+      version: 8,
       partialize: (state) => ({ progress: state.progress }),
       migrate,
     },

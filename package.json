@@ -6,18 +6,20 @@
   "description": "Sankofa — l'application de culture générale africaine, gamifiée et mobile-first.",
   "scripts": {
     "dev": "vite",
-    "build": "npm run gen:index && npm run validate && tsc -b && vite build",
+    "build": "npm run gen:index && npm run gen:quiz && npm run validate && tsc -b && vite build",
     "preview": "vite preview",
     "typecheck": "tsc -b --noEmit",
     "validate": "tsx --tsconfig tsconfig.app.json scripts/validate-content.ts",
     "gen:index": "tsx --tsconfig tsconfig.app.json scripts/generate-course-index.ts",
+    "gen:quiz": "tsx --tsconfig tsconfig.app.json scripts/generate-quiz-index.ts",
     "icons": "node scripts/generate-icons.mjs",
     "images:generate": "node scripts/generate-course-images.mjs",
     "images:variants": "node scripts/generate-image-variants.mjs",
     "test": "vitest run",
     "test:watch": "vitest",
     "lint": "eslint .",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "gen:map": "node scripts/generate-africa-map.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.469.0",

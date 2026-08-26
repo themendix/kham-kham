@@ -8,6 +8,7 @@
  * s'appliquent qu'aux matières listées dans `CHARTE_APPLIQUEE` (§ 9.1 : activation progressive,
  * le contenu non encore réécrit ne respecte pas la charte éditoriale). Rules 8 et 9
  * (illustrations) et une partie de la règle 19 restent des avertissements.
+ * Les règles 20 à 22 servent le module Quiz (voir src/lib/territories.ts).
  *
  * Usage : npm run validate
  * Intégré au script `build` et au workflow CI — un contenu invalide bloque le build.
@@ -19,6 +20,9 @@ import { COURSES } from "../src/data/courses";
 import { PARCOURS } from "../src/data/parcours";
 import { CATEGORIES } from "../src/data/categories";
 import { CARDS } from "../src/data/cards";
+import { COURSE_TERRITORIES } from "../src/data/courseTerritories";
+import { QUIZ_LESSON_MAP } from "../src/data/quizLessonMap";
+import { TERRITORY_IDS } from "../src/lib/territories";
 import { lessonPlainText, lessonWordCount, parseInline, type LessonBlock } from "../src/lib/lessonBlocks";
 import type { Course } from "../src/types";
 
@@ -460,7 +464,111 @@ for (const id of illustrationIds) {
   }
 }
 
+// 20. Unicité des id de question sur l'ensemble du catalogue.
+// La règle 3 ne garantit l'unicité qu'à l'intérieur d'un même quiz, ce qui suffisait tant que les
+// questions n'étaient lues que dans le contexte de leur cours. Le module Quiz mémorise la révision
+// par question via la clé `${courseId}:${questionId}` : cette clé resterait unique même en cas de
+// collision d'id entre deux cours, mais une collision resterait un piège pour toute lecture par id
+// seul. On l'interdit donc explicitement.
+checkUnique(
+  "20. Unicité globale des id de question",
+  COURSES.flatMap((c) => c.quiz.map((q) => q.id)),
+  (id, count) => `"${id}" apparaît ${count} fois dans l'ensemble des quiz du catalogue`,
+);
+
+// 21. Rattachement territorial : tout cours hors Géographie doit figurer dans COURSE_TERRITORIES
+// (un tableau vide y signifie « transversal », et est une réponse valide). Les fiches Géographie
+// dérivent leur territoire de leur numéro d'ordre et n'ont rien à déclarer.
+const KNOWN_TERRITORIES = new Set<string>(TERRITORY_IDS);
+for (const course of COURSES) {
+  if (course.categoryId === "geo") {
+    if (course.id in COURSE_TERRITORIES) {
+      error(
+        "21. Rattachement territorial",
+        `${course.id} est une fiche Géographie : son territoire est dérivé, il ne doit pas être déclaré dans COURSE_TERRITORIES`,
+      );
+    }
+    continue;
+  }
+  const territories = COURSE_TERRITORIES[course.id];
+  if (territories === undefined) {
+    error(
+      "21. Rattachement territorial",
+      `${course.id} n'est rattaché à aucun territoire — ajouter une entrée dans src/data/courseTerritories.ts (tableau vide pour un sujet transversal)`,
+    );
+    continue;
+  }
+  for (const territoryId of territories) {
+    if (!KNOWN_TERRITORIES.has(territoryId)) {
+      error("21. Rattachement territorial", `${course.id} : territoire inconnu "${territoryId}"`);
+    }
+  }
+  if (new Set(territories).size !== territories.length) {
+    error("21. Rattachement territorial", `${course.id} : territoire répété`);
+  }
+}
+
+// Entrées de COURSE_TERRITORIES ne correspondant à aucun cours (cours supprimé ou renommé).
+const allCourseIds = new Set(COURSES.map((c) => c.id));
+for (const id of Object.keys(COURSE_TERRITORIES)) {
+  if (!allCourseIds.has(id)) {
+    error(
+      "21. Rattachement territorial",
+      `"${id}" est rattaché à un territoire mais n'existe pas dans COURSES`,
+    );
+  }
+}
+
+// 22. Rattachement des questions à leur leçon (module Quiz).
+// Deux régimes : un cours dont le quiz compte autant de questions que de leçons est « aligné » et
+// son rattachement se dérive par position ; les autres doivent être déclarés dans QUIZ_LESSON_MAP.
+// Une question non rattachée n'est pas bloquante (le module renvoie alors vers le cours), mais on
+// en tient le compte pour que le reste à faire reste visible.
+const coursesById = new Map(COURSES.map((c) => [c.id, c]));
+for (const [questionKey, lessonId] of Object.entries(QUIZ_LESSON_MAP)) {
+  const separator = questionKey.lastIndexOf(":");
+  const courseId = separator === -1 ? "" : questionKey.slice(0, separator);
+  const questionId = separator === -1 ? "" : questionKey.slice(separator + 1);
+  const course = coursesById.get(courseId);
+  if (!course) {
+    error("22. Rattachement question → leçon", `"${questionKey}" ne référence aucun cours connu`);
+    continue;
+  }
+  if (!course.quiz.some((q) => q.id === questionId)) {
+    error(
+      "22. Rattachement question → leçon",
+      `"${questionKey}" ne référence aucune question du quiz de ${courseId}`,
+    );
+    continue;
+  }
+  if (!course.lessons.some((l) => l.id === lessonId)) {
+    error(
+      "22. Rattachement question → leçon",
+      `"${questionKey}" renvoie vers "${lessonId}", qui n'est pas une leçon de ${courseId}`,
+    );
+  }
+}
+
+let unmappedQuestions = 0;
+const unmappedCourses: string[] = [];
+for (const course of COURSES) {
+  if (course.quiz.length === course.lessons.length) continue;
+  const missing = course.quiz.filter((q) => !(`${course.id}:${q.id}` in QUIZ_LESSON_MAP)).length;
+  if (missing > 0) {
+    unmappedQuestions += missing;
+    unmappedCourses.push(course.id);
+  }
+}
+if (unmappedQuestions > 0) {
+  warn(
+    "22. Rattachement question → leçon",
+    `${unmappedQuestions} question(s) sur ${unmappedCourses.length} cours non alignés n'ont pas de leçon déclarée dans src/data/quizLessonMap.ts — le module Quiz renverra vers le cours au lieu de la leçon`,
+  );
+}
+
 // Rapport.
+
+
 function printGroup(title: string, issues: Issue[]) {
   if (issues.length === 0) return;
   console.log(`\n${title} :`);
