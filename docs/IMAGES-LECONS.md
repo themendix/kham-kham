@@ -42,6 +42,7 @@ Licences acceptées :
 | **CC0** / domaine public | facultative (on la met quand même) | ✅ idéal |
 | **CC BY** | obligatoire | ✅ |
 | **CC BY-SA** | obligatoire | ✅ (la page qui affiche l'image ne devient pas une œuvre dérivée) |
+| **OGL v1.0** (Open Government Licence, Royaume-Uni) | obligatoire | ✅ licence ouverte, réutilisation commerciale permise |
 | CC BY-**NC** | — | ❌ non commercial : exclu |
 | CC BY-**ND** | — | ❌ sans modification : on redimensionne, donc exclu |
 | « libre de droits » sans licence nommée | — | ❌ formule commerciale, sans valeur juridique |
@@ -119,7 +120,7 @@ le projet ; **une seule image par leçon**.
 
 ## 4. Registre des images
 
-Vingt-cinq images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
+Vingt-six images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 
 | Leçon | Sujet | Source | Licence | Auteur | Source → webp |
 |---|---|---|---|---|---|
@@ -148,6 +149,7 @@ Vingt-cinq images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 | `course-perso-10-sojourner-truth-lesson-3` | Sojourner Truth, photographie de 1870 | [Commons](https://commons.wikimedia.org/wiki/File:Sojourner_Truth,_1870_(cropped,_restored).jpg) | Domaine public | Randall Studio | 3035×4210 → 1200×1665 |
 | `course-perso-13-taytu-betul-lesson-3` | L'impératrice Taytu Betul, gravure | [Commons](https://commons.wikimedia.org/wiki/File:Taytu_Betul.jpg) | Domaine public | H. Meyer, Le Petit Journal | 3734×5433 → 1200×1746 |
 | `course-perso-16-du-bois-lesson-2` | W. E. B. Du Bois en 1907 | [Commons](https://commons.wikimedia.org/wiki/File:W.E.B._Du_Bois_by_James_E._Purdy,_1907_(3x4).jpg) | Domaine public | James E. Purdy | 2808×3744 → 1200×1600 |
+| `course-perso-21-kwame-nkrumah-lesson-1` | Portrait de Kwame Nkrumah | [Commons](https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_-_The_National_Archives_UK_-_CO_1069-50-1-crop.jpg) | OGL v1.0 | The National Archives UK | 941×1254 |
 
 Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
 les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.
