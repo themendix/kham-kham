@@ -2131,6 +2131,12 @@ export const PERSONNALITES_COURSES: Course[] = [
             text: "**Samori Touré** naît vers 1830 à Miniambaladougou, dans l'actuelle Guinée, dans une famille de commerçants dioula.",
           },
           {
+            type: "image",
+            alt: "Portrait photographique de Samori Touré.",
+            legende: "Samori Touré",
+            credit: "Domaine public, via Wikimedia Commons",
+          },
+          {
             type: "frise",
             evenements: [
               { date: "v. 1830", texte: "Naissance en pays malinké" },
@@ -2141,7 +2147,7 @@ export const PERSONNALITES_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Il commence sa vie sur les routes du commerce, entre la forêt et le Sahel. La légende veut qu'il ait pris les armes pour libérer sa **mère**, capturée lors d'un raid. De marchand, il devient chef de guerre, puis souverain.",
+            text: "Il commence sa vie sur les routes du commerce, entre la forêt et le Sahel. La légende veut qu'il ait pris les armes pour libérer sa **mère**, capturée lors d'un raid.",
           },
           {
             type: "aRetenir",
@@ -2628,6 +2634,12 @@ export const PERSONNALITES_COURSES: Course[] = [
             text: "Au Ghana, **Yaa Asantewaa** est une figure nationale : écoles, chants et cérémonies portent son nom.",
           },
           {
+            type: "image",
+            alt: "Statue de Yaa Asantewaa, fusil à la main, au musée d'Ejisu.",
+            legende: "Statue de Yaa Asantewaa, au musée d'Ejisu",
+            credit: "Photo Noahalorwu, CC BY-SA 4.0, via Wikimedia Commons",
+          },
+          {
             type: "reperes",
             items: [
               { label: "Fonction", valeur: "Reine-mère d'Ejisu" },
@@ -2637,7 +2649,7 @@ export const PERSONNALITES_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Sa guerre a été la dernière grande résistance armée du pays asante face aux Britanniques. Elle est devenue le symbole d'une **autorité féminine** que les Britanniques n'avaient pas su voir, persuadés comme ils l'étaient que le pouvoir asante ne se jouait qu'entre hommes.",
+            text: "Sa guerre a été la dernière grande résistance armée du pays asante face aux Britanniques. Elle est devenue le symbole d'une **autorité féminine** que les Britanniques n'avaient pas su voir.",
           },
           {
             type: "aRetenir",
@@ -3085,7 +3097,13 @@ export const PERSONNALITES_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "**Cheikh Anta Diop** naît en 1923 à Thieytou, près de Diourbel, au Sénégal. Il consacrera sa vie à replacer l'Afrique au centre de sa propre histoire.",
+            text: "**Cheikh Anta Diop** naît en 1923 à Thieytou, au Sénégal. Il consacrera sa vie à replacer l'Afrique au centre de sa propre histoire.",
+          },
+          {
+            type: "image",
+            alt: "Cheikh Anta Diop jeune, au Sénégal.",
+            legende: "Cheikh Anta Diop dans sa jeunesse",
+            credit: "Domaine public, via Wikimedia Commons",
           },
           {
             type: "frise",
@@ -3098,13 +3116,13 @@ export const PERSONNALITES_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Formé à l'école coranique puis à l'école française, il part à Paris en 1946 étudier la physique, la chimie et l'histoire. Il y travaille auprès de **Frédéric Joliot-Curie**, tout en préparant une thèse que la Sorbonne refusera deux fois.",
+            text: "Formé à l'école coranique puis française, il part à Paris en 1946. Il y travaille auprès de **Frédéric Joliot-Curie**, tout en préparant une thèse refusée deux fois.",
           },
           {
             type: "aRetenir",
             points: [
               "Né en **1923** à Thieytou, au Sénégal",
-              "Physicien et historien, formé à **Paris**",
+              "Physicien et historien, formé à Paris",
               "Sa thèse est refusée deux fois avant d'être soutenue",
             ],
           },

@@ -71,7 +71,13 @@ Licences acceptées :
   années 1960-70 en haute définition et en **CC0**. Neto, Nyerere et Lumumba en viennent.
 
 **Seuil de résolution :** 800 px de large était trop strict. Un portrait s'affiche sur ~250 à
-320 px de large dans le cadre ; 450 à 500 px de source suffisent largement.
+320 px de large dans le cadre ; 350 à 500 px de source suffisent. Samori Touré (346 px) et Cheikh
+Anta Diop (386 px) avaient été écartés à tort sur ce critère.
+
+**Chercher aussi hors de Commons.** Le portrait de Samori Touré n'apparaissait que via l'article
+Wikipédia anglais, avec un nom de fichier absent des recherches Commons — mais le fichier était
+bien hébergé sur Commons. Interroger `prop=imageinfo` depuis l'édition linguistique où l'image
+s'affiche, pas seulement Commons.
 
 ---
 
@@ -132,7 +138,7 @@ le projet ; **une seule image par leçon**.
 
 ## 4. Registre des images
 
-Trente-huit images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
+Quarante et une images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 
 | Leçon | Sujet | Source | Licence | Auteur | Source → webp |
 |---|---|---|---|---|---|
@@ -174,6 +180,9 @@ Trente-huit images. `MET` = The Metropolitan Museum of Art, domaine public (CC0)
 | `course-perso-28-albertina-sisulu-lesson-1` | Portrait d'Albertina Sisulu | [Commons](https://commons.wikimedia.org/wiki/File:Albertina_Sisulu.jpg) | CC BY-SA 2.5 | Dawidl | 670×1024 |
 | `course-perso-29-miriam-makeba-lesson-1` | Portrait de Miriam Makeba | [Commons](https://commons.wikimedia.org/wiki/File:Miriam_makeba_01.jpg) | CC BY-SA 3.0 | Paul Weinberg | 523×633 |
 | `course-perso-30-wangari-maathai-lesson-1` | Wangari Maathai en 2001 | [Commons](https://commons.wikimedia.org/wiki/File:Wangari_Maathai_in_2001.jpg) | CC BY-SA 2.0 | Kingkongphoto | 466×751 |
+| `course-perso-12-samori-toure-lesson-1` | Portrait de Samori Touré | [Commons](https://commons.wikimedia.org/wiki/File:Almamy_Samory_Tour%C3%A9.jpg) | Domaine public | auteur inconnu | 346×457 |
+| `course-perso-14-yaa-asantewaa-lesson-5` | Statue de Yaa Asantewaa, musée d'Ejisu | [Commons](https://commons.wikimedia.org/wiki/File:Yaa_Asantewaa_Museum_(4).jpg) | CC BY-SA 4.0 | Noahalorwu | 6000×3376 → 1200×675 |
+| `course-perso-17-cheikh-anta-diop-lesson-1` | Cheikh Anta Diop dans sa jeunesse | [Commons](https://commons.wikimedia.org/wiki/File:Young_Cheikh_Anta_Diop_01.jpg) | Domaine public | auteur inconnu | 386×513 |
 
 Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
 les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.
