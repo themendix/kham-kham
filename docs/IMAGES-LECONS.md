@@ -120,7 +120,7 @@ le projet ; **une seule image par leçon**.
 
 ## 4. Registre des images
 
-Vingt-six images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
+Trente-deux images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 
 | Leçon | Sujet | Source | Licence | Auteur | Source → webp |
 |---|---|---|---|---|---|
@@ -150,6 +150,12 @@ Vingt-six images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 | `course-perso-13-taytu-betul-lesson-3` | L'impératrice Taytu Betul, gravure | [Commons](https://commons.wikimedia.org/wiki/File:Taytu_Betul.jpg) | Domaine public | H. Meyer, Le Petit Journal | 3734×5433 → 1200×1746 |
 | `course-perso-16-du-bois-lesson-2` | W. E. B. Du Bois en 1907 | [Commons](https://commons.wikimedia.org/wiki/File:W.E.B._Du_Bois_by_James_E._Purdy,_1907_(3x4).jpg) | Domaine public | James E. Purdy | 2808×3744 → 1200×1600 |
 | `course-perso-21-kwame-nkrumah-lesson-1` | Portrait de Kwame Nkrumah | [Commons](https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_-_The_National_Archives_UK_-_CO_1069-50-1-crop.jpg) | OGL v1.0 | The National Archives UK | 941×1254 |
+| `course-perso-18-frantz-fanon-lesson-1` | Portrait de Frantz Fanon | [Commons](https://commons.wikimedia.org/wiki/File:Photograph_of_Frantz_Fanon_from_Black_Skin_White_Masks_(1967)_dust_jacket.webp) | Domaine public | auteur inconnu | 1400×1945 → 1200×1667 |
+| `course-perso-19-amilcar-cabral-lesson-1` | Portrait d'Amílcar Cabral | [Commons](https://commons.wikimedia.org/wiki/File:Cabral_2.png) | Domaine public | auteur inconnu | 1834×1337 → 1200×875 |
+| `course-perso-20-agostinho-neto-lesson-1` | Portrait d'Agostinho Neto | [Commons](https://commons.wikimedia.org/wiki/File:President_MPLA,_heer_Neto_door_Den_Uyl_ontvangen_premier_Den_Uyl_en_A_Neto_(r),_Bestanddeelnr_927-8518_(cropped).jpg) | CC0 | Rob Mieremet / Anefo | 1276×1702 → 1200×1601 |
+| `course-perso-22-julius-nyerere-lesson-1` | Portrait de Julius Nyerere | [Commons](https://commons.wikimedia.org/wiki/File:President_Nyerere_van_Tanzania,_koppen,_Bestanddeelnr_928-2879_(cropped).jpg) | CC0 | Rob Mieremet / Anefo | 2323×3412 → 1200×1763 |
+| `course-perso-23-haile-selassie-lesson-1` | L'empereur Haïlé Sélassié | [Commons](https://commons.wikimedia.org/wiki/File:Haile_Selassie_in_full_dress_(3x4_cropped).jpg) | Domaine public | auteur inconnu | 600×800 |
+| `course-perso-24-patrice-lumumba-lesson-1` | Patrice Lumumba à Bruxelles, 1960 | [Commons](https://commons.wikimedia.org/wiki/File:LumumbaBrussel1960.jpg) | CC0 | Harry Pot | 3687×2388 → 1200×777 |
 
 Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
 les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.

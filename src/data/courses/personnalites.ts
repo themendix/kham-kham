@@ -3083,35 +3083,145 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-17-cheikh-anta-diop-lesson-1",
         title: "De Diourbel à la Sorbonne",
         blocks: [
-          { type: "paragraphe", text: "Cheikh Anta Diop naît en 1923 à Caytu, près de Diourbel, au Sénégal, dans une famille wolof de tradition mouride. Il suit d'abord l'enseignement coranique, puis l'école française, et se révèle un élève exceptionnel. En 1946, il part à Paris. Il y entreprend un parcours d'une ampleur inhabituelle : licence de philosophie, puis études de physique nucléaire — il travaille au laboratoire de chimie nucléaire du Collège de France, sous la direction de Frédéric Joliot-Curie, gendre de Marie Curie — tout en se formant à la linguistique, à l'histoire et à l'égyptologie. Ce cumul n'est pas de la dispersion : il correspond à un projet précis. Diop est convaincu que l'histoire africaine ne pourra être établie qu'en mobilisant les sciences dures — physique, chimie, biologie — à côté des sciences humaines, parce que les preuves matérielles résistent mieux aux préjugés que les interprétations. Toute sa méthode découle de cette conviction." },
+          {
+            type: "paragraphe",
+            text: "**Cheikh Anta Diop** naît en 1923 à Thieytou, près de Diourbel, au Sénégal. Il consacrera sa vie à replacer l'Afrique au centre de sa propre histoire.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1923", texte: "Naissance à Thieytou, au Sénégal" },
+              { date: "1946", texte: "Départ pour Paris" },
+              { date: "1954", texte: "Nations nègres et culture" },
+              { date: "1960", texte: "Thèse soutenue à la Sorbonne" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Formé à l'école coranique puis à l'école française, il part à Paris en 1946 étudier la physique, la chimie et l'histoire. Il y travaille auprès de **Frédéric Joliot-Curie**, tout en préparant une thèse que la Sorbonne refusera deux fois.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né en **1923** à Thieytou, au Sénégal",
+              "Physicien et historien, formé à **Paris**",
+              "Sa thèse est refusée deux fois avant d'être soutenue",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-17-cheikh-anta-diop-lesson-2",
         title: "Nations nègres et culture",
         blocks: [
-          { type: "paragraphe", text: "Sa thèse de doctorat, soutenue à la Sorbonne, est d'abord refusée : le jury juge ses positions trop hétérodoxes. Il en publie le contenu en 1954 sous le titre Nations nègres et culture, livre qui fait immédiatement scandale et devient l'un des ouvrages les plus lus de la pensée africaine du XXᵉ siècle. Sa thèse centrale : l'Égypte antique était une civilisation négro-africaine, et elle constitue pour l'Afrique noire ce que la Grèce et Rome représentent pour l'Europe — une matrice culturelle, linguistique et scientifique. Il s'appuie sur des arguments d'anthropologie physique, sur les témoignages d'auteurs grecs anciens, sur des rapprochements linguistiques entre l'égyptien ancien et des langues africaines, en particulier le wolof, et sur des analyses de la mélanine des momies qu'il conduira plus tard dans son laboratoire. Son objectif dépasse l'érudition : il veut rendre aux Africains une antériorité historique que la science coloniale leur déniait. Il finit par obtenir son doctorat en 1960, avec un jury différent." },
+          {
+            type: "paragraphe",
+            text: "En 1954, **Cheikh Anta Diop** publie Nations nègres et culture. Le livre soutient une thèse que l'université française de l'époque juge tout simplement inacceptable.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1954",
+            legende: "parution de Nations nègres et culture",
+          },
+          {
+            type: "paragraphe",
+            text: "Il y défend l'idée que l'**Égypte antique** était une civilisation négro-africaine, et que les langues et cultures du continent en descendent. Il appuie sa démonstration sur la linguistique, l'anthropologie physique et les textes anciens, les sources grecques et égyptiennes comprises.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Nations nègres et culture** paraît en 1954",
+              "Il rattache l'**Égypte antique** au monde négro-africain",
+              "Une démonstration linguistique et anthropologique",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-17-cheikh-anta-diop-lesson-3",
         title: "Le colloque du Caire, 1974",
         blocks: [
-          { type: "paragraphe", text: "Le moment décisif est le colloque international organisé par l'UNESCO au Caire en 1974, consacré au peuplement de l'Égypte ancienne et au déchiffrement de l'écriture méroïtique, dans le cadre de la préparation de l'Histoire générale de l'Afrique. Diop y confronte ses thèses à celles des égyptologues du monde entier, aux côtés de son compatriote Théophile Obenga. Le rapport final du colloque est mesuré et honnête : il constate que la démonstration de Diop et d'Obenga n'a pas emporté l'adhésion générale, mais il souligne que leurs communications ont été rigoureusement préparées, qu'elles ont profondément renouvelé les termes du débat, et que les égyptologues présents n'avaient pas anticipé l'ampleur de leur argumentation. C'est un fait notable, souvent déformé dans les deux sens : Diop n'a ni triomphé ni été disqualifié. Il a obligé une discipline à examiner sérieusement une question qu'elle écartait." },
+          {
+            type: "paragraphe",
+            text: "En 1974, l'UNESCO réunit au **Caire** un colloque d'égyptologues pour trancher la question du peuplement de l'Égypte ancienne.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1974",
+            legende: "le colloque du Caire, organisé par l'UNESCO",
+          },
+          {
+            type: "paragraphe",
+            text: "**Diop** et le Congolais Théophile Obenga y présentent leurs travaux face à des spécialistes venus du monde entier. Le rapport final reconnaît que leurs arguments ont été les plus **documentés** de tout le colloque, sans que la controverse s'éteigne pour autant.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'UNESCO organise le colloque du **Caire** en 1974",
+              "Diop et **Obenga** y défendent leurs travaux",
+              "Le rapport final salue la solidité de leur dossier",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-17-cheikh-anta-diop-lesson-4",
         title: "Sa contribution à l'Histoire générale de l'Afrique",
         blocks: [
-          { type: "paragraphe", text: "L'UNESCO ne l'a pas tenu à l'écart, au contraire : Cheikh Anta Diop est l'un des auteurs de l'Histoire générale de l'Afrique. Il signe, dans le volume II consacré à l'Afrique ancienne, le chapitre sur l'origine des anciens Égyptiens — une reconnaissance institutionnelle considérable, dans une collection dirigée par un comité scientifique international majoritairement africain. Cette place mérite d'être comprise pour ce qu'elle est : l'UNESCO n'a pas entériné toutes ses conclusions, mais elle a jugé que sa contribution devait figurer dans l'ouvrage de référence, avec ses arguments exposés en son nom propre. C'est le fonctionnement normal d'une science vivante. En parallèle, Diop poursuit une œuvre abondante — L'Afrique noire précoloniale, Antériorité des civilisations nègres, Civilisation ou barbarie — où il aborde aussi les structures politiques africaines, les systèmes de parenté et les conditions d'un développement scientifique du continent." },
+          {
+            type: "paragraphe",
+            text: "L'UNESCO lance dans les années 1960 une **Histoire générale de l'Afrique**, écrite pour la première fois par des Africains.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Projet", valeur: "Histoire générale de l'Afrique, UNESCO" },
+              { label: "Volumes", valeur: "Huit tomes, publiés à partir de 1980" },
+              { label: "Rôle de Diop", valeur: "Auteur du chapitre sur l'Égypte ancienne" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Cheikh Anta Diop** y signe le chapitre sur l'origine des anciens Égyptiens. Sa présence dans cette somme officielle marque un tournant : ses thèses, longtemps marginalisées, entrent dans un **ouvrage de référence** international.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**Histoire générale de l'Afrique** est écrite par des Africains",
+              "Diop y signe le chapitre sur l'Égypte ancienne",
+              "Ses thèses entrent dans un **ouvrage de référence**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-17-cheikh-anta-diop-lesson-5",
         title: "Le laboratoire, la politique, l'héritage",
         blocks: [
-          { type: "paragraphe", text: "Rentré au Sénégal, il obtient en 1966 la création d'un laboratoire de radiocarbone à l'IFAN de Dakar — l'un des premiers d'Afrique — où il applique les datations au carbone 14 à l'archéologie africaine et poursuit ses analyses sur la mélanine. Il s'engage aussi en politique, fonde plusieurs formations d'opposition et connaît l'interdiction de ses partis et l'emprisonnement sous la présidence de Senghor, avec qui il entretient une relation d'adversaires respectueux. Il meurt à Dakar en 1986. L'université de Dakar porte aujourd'hui son nom. Son héritage est double et il faut le dire tel quel : plusieurs de ses thèses restent contestées par une part de la communauté scientifique, et certains de ses continuateurs les ont durcies bien au-delà de ce qu'il affirmait ; mais son apport de fond n'est pas discuté — il a établi que l'Afrique devait écrire elle-même son histoire, avec ses propres chercheurs et des méthodes vérifiables. L'Histoire générale de l'Afrique est née de cette exigence." },
+          {
+            type: "paragraphe",
+            text: "De retour au Sénégal, **Cheikh Anta Diop** monte un laboratoire de datation au carbone 14, le premier du continent hors d'Égypte.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Science", valeur: "Laboratoire de radiocarbone à Dakar" },
+              { label: "Politique", valeur: "Opposant à Senghor, plusieurs fois empêché" },
+              { label: "Héritage", valeur: "L'université de Dakar porte son nom" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il fonde aussi des partis d'opposition et se heurte au pouvoir de **Senghor**. Mort en 1986, il laisse un héritage discuté : ses thèses restent débattues, mais la question qu'il a posée — qui écrit l'histoire de l'Afrique — a changé la discipline.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Il crée un laboratoire de **radiocarbone** à Dakar",
+              "Opposant politique à **Senghor**, souvent empêché",
+              "L'université de Dakar porte aujourd'hui son nom",
+            ],
+          },
         ],
       },
     ],
@@ -3165,35 +3275,148 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-18-frantz-fanon-lesson-1",
         title: "Martinique, France libre, psychiatrie",
         blocks: [
-          { type: "paragraphe", text: "Frantz Fanon naît en 1925 à Fort-de-France, en Martinique, alors colonie française. Il grandit dans une famille de la classe moyenne et reçoit une éducation qui l'invite à se penser comme français ; l'un de ses professeurs de lycée est Aimé Césaire, dont l'enseignement et la poésie lui font découvrir la négritude. En 1943, à dix-huit ans, il quitte clandestinement l'île pour rejoindre les Forces françaises libres et combat en Afrique du Nord puis en Europe ; il est blessé et décoré. Cette expérience est décisive à rebours : il découvre le racisme au sein même de l'armée qui prétend libérer le monde, et mesure l'écart entre les principes proclamés et le traitement réservé aux soldats des colonies. Après la guerre, il étudie la médecine et la psychiatrie à Lyon, où il suit aussi les cours de philosophie. Il se forme ensuite à Saint-Alban, auprès de François Tosquelles, à une psychiatrie qui soigne aussi l'institution et pas seulement le patient." },
+          {
+            type: "paragraphe",
+            text: "**Frantz Fanon** naît en 1925 à Fort-de-France, en Martinique. Il sera psychiatre, puis théoricien de la décolonisation.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique de Frantz Fanon.",
+            legende: "Frantz Fanon",
+            credit: "Domaine public, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1925", texte: "Naissance à Fort-de-France" },
+              { date: "1943", texte: "Il rejoint la France libre" },
+              { date: "1952", texte: "Peau noire, masques blancs" },
+              { date: "1961", texte: "Les Damnés de la terre, et sa mort" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "À dix-huit ans, il quitte l'île pour s'engager dans la **France libre**. Il en revient décoré et désabusé : le racisme de l'armée qu'il a servie lui apprend ce que vaut la promesse d'égalité.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né en **1925** en Martinique",
+              "Engagé dans la **France libre** à dix-huit ans",
+              "Psychiatre de formation, théoricien par nécessité",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-18-frantz-fanon-lesson-2",
         title: "Peau noire, masques blancs",
         blocks: [
-          { type: "paragraphe", text: "En 1952, à vingt-sept ans, il publie Peau noire, masques blancs. Le livre — refusé comme thèse, puis publié à part — analyse ce que la domination coloniale produit dans la psychè des dominés. Fanon y décrit l'intériorisation du regard blanc, l'aliénation de celui qui apprend à se juger avec les catégories de son oppresseur, et le rapport à la langue : parler la langue du colonisateur, c'est en assumer la vision du monde. Il examine l'expérience du Noir antillais découvrant en France qu'il n'est pas ce qu'il croyait être, et il forge des analyses qui deviendront classiques sur le complexe d'infériorité produit par le racisme. Son originalité est de refuser à la fois l'explication purement individuelle et l'explication purement économique : pour lui, l'aliénation coloniale est un fait social qui se loge dans la psychologie, et on ne peut la soigner sans transformer la situation qui la produit." },
+          {
+            type: "paragraphe",
+            text: "En 1952, **Fanon** publie Peau noire, masques blancs. Il y examine ce que la colonisation fait à l'intérieur des têtes.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1952",
+            legende: "parution de Peau noire, masques blancs",
+          },
+          {
+            type: "paragraphe",
+            text: "Le livre décrit l'**aliénation** de l'homme noir sommé de se conformer à un modèle blanc : la langue, le désir, l'image de soi. Fanon y mêle la clinique et la philosophie, et refuse de séparer le trouble psychique de sa cause **politique** — ce qui était alors inaudible.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Peau noire, masques blancs** paraît en 1952",
+              "Il analyse l'**aliénation** produite par la colonisation",
+              "Clinique et politique y sont inséparables",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-18-frantz-fanon-lesson-3",
         title: "Blida-Joinville : soigner en pays colonisé",
         blocks: [
-          { type: "paragraphe", text: "En 1953, Fanon est nommé médecin-chef à l'hôpital psychiatrique de Blida-Joinville, en Algérie. Il y introduit des méthodes de psychothérapie institutionnelle, refuse la ségrégation des services, forme le personnel, ouvre les pavillons. Mais il se heurte à une contradiction qu'il ne pourra pas contourner. La guerre d'indépendance éclate en novembre 1954, et son service reçoit à la fois des militants algériens torturés et des policiers français que la pratique de la torture rend malades. Il constate que la psychiatrie coloniale, telle qu'elle s'enseigne alors, tient les troubles des Algériens pour l'effet d'une infériorité constitutive — une doctrine qu'il réfute méthodiquement. Il conclut qu'il est impossible de rendre un homme à la santé mentale tout en le renvoyant dans le système qui le rend malade. En 1956, il démissionne par une lettre au ministre résident restée célèbre, et il est expulsé d'Algérie en 1957." },
+          {
+            type: "paragraphe",
+            text: "En 1953, **Fanon** prend la direction d'un service à l'hôpital psychiatrique de Blida-Joinville, en Algérie.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1953",
+            legende: "il arrive à l'hôpital de Blida-Joinville",
+          },
+          {
+            type: "paragraphe",
+            text: "Il y supprime les entraves, ouvre les services et introduit la **sociothérapie**. Il soigne à la fois des combattants algériens torturés et des policiers français qui les ont torturés. Cette double clinique, unique en son genre, lui montre le colonialisme à l'œuvre jusque dans les corps.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Il dirige un service à **Blida-Joinville** dès 1953",
+              "Il supprime les entraves et ouvre les services",
+              "Il soigne torturés et **tortionnaires** dans le même hôpital",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-18-frantz-fanon-lesson-4",
         title: "Le FLN, l'Afrique, la diplomatie de la révolution",
         blocks: [
-          { type: "paragraphe", text: "Fanon rejoint alors le Front de libération nationale algérien. Installé à Tunis, il écrit dans El Moudjahid, l'organe du FLN, soigne les combattants, forme des infirmiers, et devient l'un des porte-parole de la révolution algérienne à l'échelle du continent. En 1960, le Gouvernement provisoire de la République algérienne le nomme ambassadeur au Ghana, à Accra — la capitale de Nkrumah, alors centre névralgique du panafricanisme. Il participe aux conférences panafricaines, plaide pour l'ouverture d'un front sud qui permettrait de ravitailler l'Algérie à travers le Sahara, et reconnaît ce trajet à travers le Mali au péril de sa vie. Son horizon a changé d'échelle : l'indépendance algérienne n'est plus pour lui une affaire nationale, mais l'un des fronts d'une libération continentale. C'est cette dimension africaine, souvent effacée derrière le penseur, que l'Histoire générale de l'Afrique met en avant." },
+          {
+            type: "paragraphe",
+            text: "En 1956, **Fanon** démissionne de son poste par une lettre au ministre. Il rejoint le FLN algérien.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "1956", valeur: "Lettre de démission au ministre résident" },
+              { label: "1957-1960", valeur: "Rédacteur à El Moudjahid, à Tunis" },
+              { label: "1960", valeur: "Ambassadeur du GPRA au Ghana" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Expulsé d'Algérie, il écrit à Tunis dans **El Moudjahid**, le journal du FLN. Nommé ambassadeur du gouvernement provisoire au **Ghana**, il parcourt le continent pour ouvrir des routes d'approvisionnement vers le maquis algérien.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Il démissionne en **1956** et rejoint le FLN",
+              "Rédacteur à **El Moudjahid**, à Tunis",
+              "Ambassadeur du gouvernement provisoire au Ghana",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-18-frantz-fanon-lesson-5",
         title: "Les Damnés de la terre et la postérité",
         blocks: [
-          { type: "paragraphe", text: "Atteint d'une leucémie diagnostiquée en 1960, Fanon dicte en quelques mois son dernier livre, Les Damnés de la terre, publié en 1961 avec une préface de Jean-Paul Sartre. L'ouvrage analyse la violence coloniale et la violence de la libération, mais il contient surtout un chapitre d'une lucidité rare, « Mésaventures de la conscience nationale », où il prévient les futurs États indépendants : si une bourgeoisie nationale se contente de remplacer le colon sans transformer les structures, l'indépendance ne sera qu'un changement de personnel, et le pouvoir dérivera vers l'autoritarisme et le clientélisme. Le livre se clôt sur une série d'observations cliniques tirées de sa pratique en Algérie. Fanon meurt aux États-Unis le 6 décembre 1961, à trente-six ans, quelques mois avant l'indépendance algérienne. Il est enterré, selon sa volonté, en Algérie. Son œuvre nourrira les mouvements de libération africains, la lutte anti-apartheid, les études postcoloniales et les mouvements des droits civiques américains." },
+          {
+            type: "paragraphe",
+            text: "Atteint d'une leucémie, **Fanon** dicte Les Damnés de la terre en quelques semaines. Il meurt en décembre 1961, à trente-six ans.",
+          },
+          {
+            type: "citation",
+            texte: "Nous ne sommes rien si nous ne sommes d'abord les esclaves d'une cause : celle des peuples, de la justice et de la liberté.",
+            auteur: "Frantz Fanon, lettre à Roger Tayeb, 1961",
+          },
+          {
+            type: "paragraphe",
+            text: "Le livre paraît quelques jours avant sa mort, préfacé par **Sartre**. Il devient une référence des mouvements de libération du monde entier, de l'Afrique du Sud aux Black Panthers, et reste discuté pour ses pages sur la violence.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "« Les Damnés de la terre » paraît en **1961**",
+              "Préfacé par **Sartre**, lu par tous les mouvements de libération",
+              "Mort à trente-six ans, quelques jours après la parution",
+            ],
+          },
         ],
       },
     ],
@@ -3247,35 +3470,148 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-19-amilcar-cabral-lesson-1",
         title: "Une jeunesse dans l'empire portugais",
         blocks: [
-          { type: "paragraphe", text: "Amílcar Cabral naît en 1924 à Bafatá, en Guinée portugaise — l'actuelle Guinée-Bissau —, de parents originaires du Cap-Vert. Il grandit entre les deux territoires, tous deux colonies du Portugal, et connaît au Cap-Vert les grandes famines des années 1940, qui tuent des dizaines de milliers de personnes dans l'indifférence de l'administration coloniale. Cette expérience marque durablement sa manière de poser les problèmes politiques en termes concrets : la terre, l'eau, les récoltes, la survie. La colonisation portugaise est alors la plus rigide d'Afrique : le régime de Salazar refuse toute évolution, considère ses colonies comme des provinces d'outre-mer et classe la population en « indigènes » et en une minorité d'« assimilés » disposant de droits limités. En 1945, Cabral obtient une bourse et part étudier à Lisbonne, où il s'inscrit en agronomie." },
+          {
+            type: "paragraphe",
+            text: "**Amílcar Cabral** naît en 1924 à Bafatá, en Guinée portugaise, d'un père cap-verdien. Il fera de l'agronomie une arme politique.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique d'Amílcar Cabral.",
+            legende: "Amílcar Cabral",
+            credit: "Domaine public, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1924", texte: "Naissance à Bafatá, Guinée portugaise" },
+              { date: "1945", texte: "Études d'agronomie à Lisbonne" },
+              { date: "1956", texte: "Fondation du PAIGC" },
+              { date: "1973", texte: "Assassinat à Conakry" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il grandit au Cap-Vert, marqué par les famines qui y tuent des dizaines de milliers de personnes sous l'administration portugaise. Il obtient une bourse pour **Lisbonne**, où il étudie l'agronomie et rencontre d'autres étudiants des colonies.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né en **1924** en Guinée portugaise",
+              "Marqué par les **famines** du Cap-Vert",
+              "Agronome formé à Lisbonne",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-19-amilcar-cabral-lesson-2",
         title: "Le recensement agricole comme enquête politique",
         blocks: [
-          { type: "paragraphe", text: "À Lisbonne, il rencontre d'autres étudiants venus des colonies portugaises — Agostinho Neto pour l'Angola, Mário de Andrade, Eduardo Mondlane pour le Mozambique. Ils forment un cercle de discussion sur l'identité africaine et la décolonisation, dans un pays où toute activité politique est surveillée par la police politique. Diplômé ingénieur agronome, Cabral revient en Guinée en 1952 et est chargé par l'administration coloniale d'une mission d'une portée qu'elle n'a pas mesurée : le premier recensement agricole du territoire. Pendant deux ans, il parcourt le pays village par village, mesure les sols, évalue les rendements, interroge les paysans. Il en sort avec une connaissance de la Guinée que personne ne possède — géographie, structures sociales, langues, hiérarchies, rapports fonciers, degré de pénétration coloniale selon les régions. Cette enquête technique deviendra la base de sa stratégie politique et militaire." },
+          {
+            type: "paragraphe",
+            text: "De retour en Guinée en 1952, **Cabral** est chargé du recensement agricole de la colonie. Il en fera tout autre chose.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1953",
+            legende: "le recensement agricole de la Guinée portugaise",
+          },
+          {
+            type: "paragraphe",
+            text: "Pendant des mois, il parcourt chaque village, note les sols, les cultures, les rendements — et surtout les **structures sociales** : qui possède, qui décide, qui obéit. Aucun militant de sa génération n'aura jamais connu son pays avec une telle précision de détail.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Chargé du **recensement agricole** de la colonie",
+              "Il relève les sols, mais aussi les rapports sociaux",
+              "Une connaissance du terrain sans équivalent",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-19-amilcar-cabral-lesson-3",
         title: "Fonder le PAIGC",
         blocks: [
-          { type: "paragraphe", text: "En 1956, Cabral fonde avec quelques compagnons le Parti africain pour l'indépendance de la Guinée et du Cap-Vert (PAIGC). Le mouvement tente d'abord la voie pacifique : grèves et revendications syndicales. La réponse tombe en août 1959 au port de Pidjiguiti, à Bissau, où la police tire sur des dockers en grève et fait des dizaines de morts. Le PAIGC en tire la conclusion que la voie légale est fermée. Mais Cabral refuse de lancer immédiatement la lutte armée : il consacre plusieurs années à la préparation politique, envoyant des militants former les paysans dans les campagnes, expliquer les raisons du combat, organiser les comités de village. Sa conviction est nette et il la répétera : une guerre de libération se gagne d'abord dans la conscience des populations rurales, non dans les états-majors. La lutte armée commence en 1963." },
+          {
+            type: "paragraphe",
+            text: "En 1956, **Cabral** fonde avec quelques compagnons le PAIGC, parti de libération de la Guinée et du Cap-Vert.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "PAIGC",
+            legende: "le parti fondé par Cabral en 1956",
+          },
+          {
+            type: "paragraphe",
+            text: "Après le massacre de dockers grévistes en 1959, le parti passe à la **lutte armée**. Cabral en refuse le romantisme : il insiste pour que chaque combattant sache pourquoi il se bat, et fait de la formation politique une **discipline** au même titre que le maniement des armes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **PAIGC** est fondé en 1956",
+              "Passage à la lutte armée après 1959",
+              "La **formation politique** compte autant que les armes",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-19-amilcar-cabral-lesson-4",
         title: "Zones libérées, culture et éducation",
         blocks: [
-          { type: "paragraphe", text: "La guerre menée par le PAIGC devient un modèle étudié dans le monde entier. Le mouvement ne se contente pas de harceler l'armée portugaise : il libère des territoires et y installe une administration civile — tribunaux populaires, magasins d'approvisionnement du peuple pour échapper aux commerçants coloniaux, dispensaires, et surtout écoles. Au plus fort du conflit, le PAIGC contrôle une grande partie des campagnes, et le Portugal ne tient plus que les villes et les axes. Cabral y déploie sa pensée la plus originale, exposée dans des textes comme L'arme de la théorie : la libération nationale est un acte de culture. La domination coloniale, dit-il, ne peut se maintenir qu'en interdisant à un peuple de poursuivre son propre développement historique ; le retour à ce développement passe donc par la culture, entendue non comme un folklore à célébrer mais comme la capacité vivante d'un peuple à produire son histoire. Il demande aussi aux cadres issus de la petite bourgeoisie de « se suicider comme classe » pour se fondre dans le peuple — formule brutale et restée célèbre." },
+          {
+            type: "paragraphe",
+            text: "Dès le milieu des années 1960, le PAIGC contrôle une grande partie des campagnes. **Cabral** y installe un État avant l'indépendance.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Écoles", valeur: "Enseignement dans les zones libérées" },
+              { label: "Santé", valeur: "Dispensaires et formation d'infirmiers" },
+              { label: "Justice", valeur: "Tribunaux populaires et magasins du peuple" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Écoles, dispensaires, tribunaux, magasins : les **zones libérées** fonctionnent. Cabral théorise aussi le « retour aux sources » — pour lui, la **culture** est ce qui résiste quand tout le reste est occupé, et la libération commence par elle.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les **zones libérées** ont écoles, dispensaires et tribunaux",
+              "Un État en place avant même l'indépendance",
+              "La **culture** est pour lui le socle de la libération",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-19-amilcar-cabral-lesson-5",
         title: "L'assassinat de 1973 et l'indépendance conquise",
         blocks: [
-          { type: "paragraphe", text: "Le 20 janvier 1973, Amílcar Cabral est assassiné à Conakry, où le PAIGC avait sa base arrière, par des membres de son propre mouvement manipulés dans une opération à laquelle la police politique portugaise n'était pas étrangère. Il a quarante-huit ans. Le calcul échoue : le parti ne se disloque pas. Le 24 septembre 1973, la Guinée-Bissau proclame unilatéralement son indépendance, reconnue par des dizaines d'États et par l'Assemblée générale des Nations unies avant même que le Portugal ne l'admette. L'onde de choc atteint la métropole : l'enlisement des guerres coloniales en Guinée, en Angola et au Mozambique contribue directement à la révolution des Œillets d'avril 1974, qui renverse la dictature à Lisbonne. Le Portugal reconnaît alors l'indépendance de la Guinée-Bissau, puis celle du Cap-Vert en 1975. L'aéroport de Bissau et l'université du Cap-Vert portent son nom ; sa pensée reste enseignée bien au-delà de l'Afrique." },
+          {
+            type: "paragraphe",
+            text: "Le 20 janvier 1973, **Amílcar Cabral** est assassiné à Conakry par des membres de son propre parti, manipulés par la police coloniale portugaise.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1973",
+            legende: "assassinat de Cabral, à Conakry",
+          },
+          {
+            type: "paragraphe",
+            text: "Il meurt à quarante-huit ans, à quelques mois du but. La Guinée-Bissau proclame son indépendance en septembre 1973, le Cap-Vert en 1975. Son frère **Luís** devient le premier président de la Guinée-Bissau, ce pays qu'il n'aura pas vu naître.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Assassiné en **1973** à Conakry, à quarante-huit ans",
+              "L'indépendance est proclamée quelques mois plus tard",
+              "Son frère **Luís** devient le premier président",
+            ],
+          },
         ],
       },
     ],
@@ -3329,35 +3665,152 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-20-agostinho-neto-lesson-1",
         title: "Un médecin angolais formé au Portugal",
         blocks: [
-          { type: "paragraphe", text: "António Agostinho Neto naît en 1922 à Icolo e Bengo, près de Luanda, en Angola, dans une famille protestante — son père est pasteur méthodiste et instituteur. Cette origine compte : les missions protestantes ont formé une partie de l'élite angolaise et ont maintenu, contre la politique d'assimilation portugaise, un attachement aux langues locales. Excellent élève, Neto travaille d'abord aux services de santé de Luanda, puis obtient en 1947 une bourse pour étudier la médecine au Portugal, à Coimbra puis à Lisbonne. Il y retrouve le cercle d'étudiants africains qui deviendra la matrice de la libération lusophone : Amílcar Cabral, Mário de Andrade, Eduardo Mondlane. Ensemble, ils animent la Maison des étudiants de l'Empire, lieu de discussion sur l'identité africaine que la police politique de Salazar surveille étroitement. Neto est arrêté à plusieurs reprises dès cette période, pour ses activités politiques et ses écrits." },
+          {
+            type: "paragraphe",
+            text: "**Agostinho Neto** naît en 1922 près de Luanda, en Angola. Il sera médecin, poète, puis le premier président de son pays.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique d'Agostinho Neto.",
+            legende: "Agostinho Neto",
+            credit: "Rob Mieremet / Anefo, CC0, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1922", texte: "Naissance près de Luanda" },
+              { date: "1947", texte: "Études de médecine au Portugal" },
+              { date: "1962", texte: "Il prend la tête du MPLA" },
+              { date: "1975", texte: "Indépendance, il devient président" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Fils d'un pasteur méthodiste, il obtient une bourse pour étudier la **médecine** au Portugal, où la police politique de Salazar l'arrête plusieurs fois.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né en **1922** en Angola, fils de pasteur",
+              "Étudiant en **médecine** au Portugal",
+              "Arrêté plusieurs fois par la police de Salazar",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-20-agostinho-neto-lesson-2",
         title: "La poésie comme arme",
         blocks: [
-          { type: "paragraphe", text: "Neto est aussi, et très tôt, un poète. Son œuvre — dont le recueil Sagrada Esperança, « Sacrée espérance » — est écrite en portugais mais tournée entièrement vers l'Angola : les travailleurs des plantations de café, les femmes des quartiers pauvres de Luanda, les rythmes et les chants du pays, la mémoire des humiliations quotidiennes de la colonisation. Ce n'est pas une activité annexe de son combat : dans un empire où toute expression politique est interdite, la poésie devient l'un des rares espaces où une conscience nationale peut se dire. Ses textes circulent clandestinement, sont traduits, et le font connaître bien au-delà de l'Angola — des intellectuels et des artistes internationaux se mobiliseront d'ailleurs pour obtenir sa libération lors de ses emprisonnements. La littérature africaine de langue portugaise lui doit l'une de ses voix majeures, et l'Histoire générale de l'Afrique souligne ce lien étroit, dans les colonies portugaises, entre création littéraire et éveil politique." },
+          {
+            type: "paragraphe",
+            text: "Avant d'être un chef politique, **Neto** est un poète. Ses vers circulent sous le manteau bien avant les armes.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "Espérance",
+            legende: "Sagrada Esperança, son recueil le plus connu",
+          },
+          {
+            type: "paragraphe",
+            text: "Il écrit en portugais, la langue du colonisateur, pour dire l'Angola des **contract workers** et des villages vidés. La poésie lui sert à nommer ce que la censure interdit de dire, et à faire circuler l'idée d'une nation angolaise avant même qu'elle existe.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Poète avant d'être chef politique",
+              "Il écrit en **portugais** contre le pouvoir portugais",
+              "La poésie fait circuler l'idée de **nation**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-20-agostinho-neto-lesson-3",
         title: "Le MPLA et la lutte armée",
         blocks: [
-          { type: "paragraphe", text: "De retour en Angola en 1959 comme médecin, Neto est arrêté l'année suivante dans son cabinet. La population du village de Catete manifeste pour réclamer sa libération ; la troupe tire, faisant plusieurs dizaines de morts — un épisode connu comme le « massacre d'Icolo e Bengo ». Déporté au Cap-Vert puis au Portugal, il est assigné à résidence à Lisbonne, d'où il s'évade en 1962 et gagne le Maroc, puis le Congo. Il prend alors la direction du Mouvement populaire de libération de l'Angola (MPLA), l'une des trois organisations qui combattent la présence portugaise, aux côtés du FNLA d'Holden Roberto et, plus tard, de l'UNITA de Jonas Savimbi. La guerre commence en 1961 et dure treize ans. Cette division du camp indépendantiste, sur des bases régionales, ethniques et idéologiques, et attisée par les soutiens extérieurs de chaque camp, pèsera lourdement sur la suite." },
+          {
+            type: "paragraphe",
+            text: "En 1962, **Neto** s'évade d'une résidence surveillée au Portugal et rejoint le MPLA, dont il prend la direction.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1961", texte: "Début de la lutte armée en Angola" },
+              { date: "1962", texte: "Neto prend la tête du MPLA" },
+              { date: "1966", texte: "L'UNITA apparaît, troisième mouvement" },
+              { date: "1974", texte: "Révolution des Œillets au Portugal" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "La guerre oppose les Angolais au Portugal, mais aussi trois mouvements rivaux : le **MPLA**, le FNLA et l'UNITA. Chacun a ses appuis étrangers, ce qui pèsera lourd après le départ des Portugais.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Il prend la tête du **MPLA** en 1962",
+              "Trois mouvements rivaux se disputent la direction",
+              "Chacun s'appuie sur des soutiens **étrangers**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-20-agostinho-neto-lesson-4",
         title: "L'indépendance de 1975 et la guerre froide",
         blocks: [
-          { type: "paragraphe", text: "La révolution des Œillets d'avril 1974 renverse la dictature à Lisbonne et ouvre brutalement la voie à la décolonisation. Le Portugal se retire, mais les trois mouvements angolais ne parviennent pas à s'entendre et le pays bascule dans la guerre civile avant même d'être indépendant. Le 11 novembre 1975, le MPLA proclame l'indépendance de l'Angola à Luanda et Agostinho Neto en devient le premier président. L'Angola se retrouve immédiatement au cœur des affrontements de la guerre froide : le MPLA reçoit l'appui de l'Union soviétique et surtout de Cuba, dont les troupes interviennent massivement ; le FNLA et l'UNITA sont soutenus par les États-Unis, le Zaïre de Mobutu et l'Afrique du Sud de l'apartheid, qui envoie ses forces sur le territoire angolais. Le pays devient l'un des principaux champs de bataille indirects entre les blocs — une guerre qui durera, sous diverses formes, jusqu'en 2002." },
+          {
+            type: "paragraphe",
+            text: "Le 11 novembre 1975, l'Angola devient indépendant. **Neto** en proclame la naissance à Luanda, alors que la guerre continue.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1975",
+            legende: "indépendance de l'Angola, le 11 novembre",
+          },
+          {
+            type: "paragraphe",
+            text: "La **guerre froide** s'installe aussitôt dans le pays : Cuba et l'URSS soutiennent le MPLA, tandis que les États-Unis et l'Afrique du Sud arment ses adversaires. Le pays devient pour près de trente ans un terrain d'affrontement entre puissances étrangères, bien après le départ des Portugais.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Indépendance le **11 novembre 1975**",
+              "Neto devient le premier président de l'Angola",
+              "La **guerre froide** s'installe dans le pays",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-20-agostinho-neto-lesson-5",
         title: "Diriger un pays en guerre",
         blocks: [
-          { type: "paragraphe", text: "Neto gouverne un pays en guerre, vidé de ses cadres par le départ massif des colons portugais, et dont l'économie repose sur le pétrole et les diamants. Il engage une politique d'inspiration socialiste : nationalisations, planification, et surtout un effort considérable en matière d'alphabétisation et de santé publique, dans un pays où l'immense majorité de la population n'avait jamais eu accès à l'école. L'Angola devient aussi une base arrière essentielle pour les mouvements de libération d'Afrique australe — la SWAPO namibienne et l'ANC sud-africain —, ce qui lui vaut les incursions répétées de l'armée sud-africaine. Le bilan comporte une face sombre qu'il serait malhonnête d'omettre : la répression violente de la tentative de coup d'État de mai 1977 fit, selon les estimations, des milliers de victimes, et reste un traumatisme non réglé de l'histoire angolaise. Neto meurt à Moscou le 10 septembre 1979, des suites d'un cancer. La date de sa naissance, le 17 septembre, est en Angola la Journée nationale du héros ; il reste célébré autant comme poète que comme fondateur de l'État." },
+          {
+            type: "paragraphe",
+            text: "**Neto** gouverne un pays en guerre pendant quatre ans. Il meurt à Moscou en 1979, opéré d'un cancer, à cinquante-six ans.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Durée", valeur: "Président de 1975 à 1979" },
+              { label: "Contexte", valeur: "Guerre civile et ingérences étrangères" },
+              { label: "Mémoire", valeur: "Le 17 septembre est fête nationale" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Son bilan est **disputé** : il a doté l'Angola d'un État et d'un système de santé, mais aussi réprimé durement une tentative de coup en 1977. La date de sa naissance est aujourd'hui la journée nationale du héros angolais.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Président de 1975 à sa mort en **1979**",
+              "Un bilan **disputé** entre construction et répression",
+              "Sa naissance est devenue fête nationale",
+            ],
+          },
         ],
       },
     ],
@@ -3606,35 +4059,151 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-22-julius-nyerere-lesson-1",
         title: "L'instituteur devenu leader",
         blocks: [
-          { type: "paragraphe", text: "Julius Kambarage Nyerere naît en 1922 à Butiama, au bord du lac Victoria, dans le Tanganyika — territoire administré par la Grande-Bretagne sous mandat de la Société des Nations après avoir été colonie allemande. Il est le fils d'un chef zanaki. Scolarisé tardivement, il rattrape son retard avec une facilité remarquable, étudie à Makerere en Ouganda, puis obtient une bourse pour l'université d'Édimbourg — devenant l'un des premiers Tanganyikais diplômés d'une université britannique. Il enseigne à son retour, ce qui lui vaut le surnom qu'il gardera toute sa vie : Mwalimu, « l'instituteur » en swahili. En 1954, il transforme une association existante en parti politique de masse, la TANU (Tanganyika African National Union), et démissionne de l'enseignement pour se consacrer à la politique. Il plaide la cause de l'indépendance devant les Nations unies et mène une campagne pacifique, méthodique, fondée sur l'organisation de dizaines de milliers d'adhérents." },
+          {
+            type: "paragraphe",
+            text: "**Julius Nyerere** naît en 1922 à Butiama, au Tanganyika. On l'appellera Mwalimu, « l'instituteur » en swahili.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique de Julius Nyerere.",
+            legende: "Julius Nyerere",
+            credit: "Rob Mieremet / Anefo, CC0, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1922", texte: "Naissance à Butiama, au Tanganyika" },
+              { date: "1954", texte: "Fondation de la TANU" },
+              { date: "1961", texte: "Indépendance du Tanganyika" },
+              { date: "1967", texte: "Déclaration d'Arusha" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Fils d'un chef zanaki, il devient enseignant, puis part étudier à Édimbourg. De retour au pays, il fonde en 1954 la **TANU** et choisit la voie des urnes plutôt que celle des armes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né en 1922, surnommé **Mwalimu**, l'instituteur en swahili",
+              "Il fonde la TANU en 1954",
+              "Il choisit les urnes plutôt que la lutte armée",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-22-julius-nyerere-lesson-2",
         title: "L'indépendance et l'union avec Zanzibar",
         blocks: [
-          { type: "paragraphe", text: "La stratégie non violente aboutit : le Tanganyika accède à l'indépendance en décembre 1961, sans guerre, et Nyerere en devient Premier ministre puis président de la République en 1962. Fait rare et révélateur, il démissionne peu après son premier mandat de Premier ministre pour se consacrer à la réorganisation du parti à la base, avant de revenir. En 1964, une révolution renverse le sultanat de Zanzibar, île voisine à l'histoire distincte — commerciale, swahilie, longtemps liée à Oman. Nyerere négocie alors l'union des deux territoires : le 26 avril 1964 naît la République-Unie de Tanzanie, dont le nom même combine Tanganyika et Zanzibar. Cette union, qui conserve à Zanzibar un gouvernement propre et une large autonomie, tient depuis plus de soixante ans — une longévité exceptionnelle en Afrique, où la plupart des tentatives de fédération de la même époque ont échoué en quelques années." },
+          {
+            type: "paragraphe",
+            text: "Le Tanganyika devient indépendant en 1961, sans guerre de libération. Trois ans plus tard, il s'unit à l'île de Zanzibar.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1964",
+            legende: "naissance de la Tanzanie, par union",
+          },
+          {
+            type: "paragraphe",
+            text: "**Nyerere** obtient l'indépendance par la seule négociation, fait rare dans une région où elle s'arrache ailleurs par les armes. En 1964, une révolution renverse le sultan de **Zanzibar** ; l'île s'unit alors au continent, et le nouvel État prend le nom de Tanzanie, contraction des deux territoires.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Indépendance du Tanganyika en **1961**, sans guerre",
+              "Union avec **Zanzibar** en 1964",
+              "Le pays prend le nom de Tanzanie",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-22-julius-nyerere-lesson-3",
         title: "Arusha et l'ujamaa",
         blocks: [
-          { type: "paragraphe", text: "En 1967, Nyerere promulgue la déclaration d'Arusha, texte fondateur de sa politique. Il y expose l'ujamaa — mot swahili signifiant « famille élargie », qu'il traduit par socialisme africain. Sa thèse : les sociétés africaines traditionnelles reposaient sur l'entraide et le partage, et le développement doit s'appuyer sur ces principes plutôt que sur l'imitation des modèles étrangers. Concrètement, la déclaration prévoit la nationalisation des banques et des grandes entreprises, un code de conduite interdisant aux dirigeants du parti de posséder des actions ou de percevoir plusieurs salaires — et Nyerere s'y astreint personnellement —, la priorité à l'agriculture et à l'autonomie nationale plutôt qu'à l'aide extérieure. Il lance surtout la villagisation : le regroupement des populations rurales dispersées en villages collectifs, pour y installer écoles, dispensaires et eau potable. Le résultat est contrasté et il faut le dire nettement." },
+          {
+            type: "paragraphe",
+            text: "En 1967, à Arusha, **Nyerere** énonce un programme qui tranche avec tout ce qui se fait alors sur le continent.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "ujamaa",
+            legende: "en swahili, « la famille élargie »",
+          },
+          {
+            type: "paragraphe",
+            text: "La déclaration d'**Arusha** nationalise banques et grandes entreprises, impose l'égalité des dirigeants et lance l'**ujamaa** : des villages coopératifs où l'on met en commun terre et travail. Le swahili devient la langue de l'école, de l'administration et de la vie publique, dans un pays qui compte plus de cent langues.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La déclaration d'**Arusha** date de 1967",
+              "L'**ujamaa** organise des villages coopératifs",
+              "Le swahili devient langue nationale",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-22-julius-nyerere-lesson-4",
         title: "Un bilan à deux faces",
         blocks: [
-          { type: "paragraphe", text: "Les réussites sont massives et mesurables. L'alphabétisation passe d'une petite minorité à l'un des taux les plus élevés d'Afrique de l'époque ; l'école primaire devient quasi universelle ; l'espérance de vie progresse fortement ; les dispensaires et les points d'eau se multiplient. Surtout, la Tanzanie évite ce qui ravage ses voisins : Nyerere impose le swahili comme langue nationale, ce qui donne un ciment commun à plus de cent groupes linguistiques et neutralise les rivalités ethniques. Le pays ne connaîtra ni guerre civile ni coup d'État. À l'inverse, l'économie décroche : la villagisation, d'abord volontaire, devient contrainte au milieu des années 1970 — des millions de personnes sont déplacées, souvent brutalement, vers des villages parfois mal choisis —, la production agricole chute, la pénurie s'installe et la dépendance à l'aide extérieure augmente, contredisant l'objectif d'autonomie. Nyerere reconnaîtra lui-même publiquement une partie de ces échecs." },
+          {
+            type: "paragraphe",
+            text: "Le bilan de l'ujamaa se lit dans deux colonnes qu'il faut regarder ensemble.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Réussites", valeur: "Alphabétisation, unité nationale, santé" },
+              { label: "Échecs", valeur: "Villagisation forcée, économie exsangue" },
+              { label: "Constat", valeur: "Nyerere reconnaît lui-même l'échec économique" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'**alphabétisation** passe de 30 à plus de 80 %, et la Tanzanie échappe aux fractures ethniques qui déchirent ses voisins. Mais les déplacements forcés de villageois et l'effondrement de la production agricole conduisent le pays au **bord de la faillite**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**alphabétisation** passe de 30 à plus de 80 %",
+              "Une unité nationale rare dans la région",
+              "Mais villagisation forcée et **faillite** économique",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-22-julius-nyerere-lesson-5",
         title: "L'Afrique australe et le départ volontaire",
         blocks: [
-          { type: "paragraphe", text: "Sur le plan continental, son rôle est considérable. Dar es-Salaam devient le quartier général des mouvements de libération d'Afrique australe : l'ANC sud-africain, la SWAPO namibienne, la ZANU et la ZAPU zimbabwéennes, le FRELIMO mozambicain y installent leurs bureaux, leurs camps d'entraînement et leurs écoles. Nyerere préside les « États de la ligne de front » qui coordonnent le soutien à la lutte contre l'apartheid, au prix de représailles et d'un coût économique lourd pour son pays. En 1979, il engage l'armée tanzanienne pour renverser le régime d'Idi Amin Dada en Ouganda, après que celui-ci a envahi le nord de la Tanzanie. Puis, en 1985, il fait ce que presque aucun de ses pairs n'a fait : il quitte volontairement le pouvoir, en pleine santé, et organise sa succession. Il continue ensuite à médier des conflits africains, notamment au Burundi. Il meurt à Londres en 1999. L'Union africaine le compte parmi ses pères fondateurs ; en Tanzanie, on l'appelle toujours simplement Mwalimu." },
+          {
+            type: "paragraphe",
+            text: "En 1985, **Nyerere** quitte le pouvoir de son plein gré, après vingt-quatre ans. Le geste est presque sans exemple à l'époque.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "1979", valeur: "L'armée tanzanienne renverse Idi Amin Dada" },
+              { label: "1985", valeur: "Il quitte volontairement le pouvoir" },
+              { label: "1999", valeur: "Mort à Londres" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il avait auparavant accueilli les mouvements de libération d'Afrique australe et envoyé son armée renverser **Idi Amin Dada** en Ouganda. Retiré à Butiama, il meurt en 1999, laissant l'image rare d'un dirigeant sans **fortune** personnelle.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Il quitte le pouvoir volontairement en **1985**",
+              "Il a soutenu les luttes d'**Afrique australe**",
+              "Mort en 1999, sans fortune personnelle",
+            ],
+          },
         ],
       },
     ],
@@ -3688,35 +4257,148 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-23-haile-selassie-lesson-1",
         title: "Ras Tafari Makonnen",
         blocks: [
-          { type: "paragraphe", text: "Tafari Makonnen naît le 23 juillet 1892 à Ejersa Goro, dans la province du Harar. Son père, le ras Makonnen, est un cousin et un général de l'empereur Menelik II, vainqueur d'Adoua. Éduqué par des précepteurs éthiopiens et français, Tafari est nommé très jeune gouverneur de province et se distingue par son intelligence politique. Dans la crise de succession qui suit la mort de Menelik, il s'impose progressivement : en 1916, il devient régent et héritier du trône, avec le titre de ras — d'où le nom de « Ras Tafari » sous lequel il est alors connu. Il gouverne aux côtés de l'impératrice Zewditou, fille de Menelik. Réformateur, il fait adhérer l'Éthiopie à la Société des Nations en 1923, abolit officiellement l'esclavage, envoie des étudiants se former à l'étranger et voyage en Europe. À la mort de Zewditou, en 1930, il est couronné empereur sous le nom de Haile Selassie Iᵉʳ — « puissance de la Trinité »." },
+          {
+            type: "paragraphe",
+            text: "**Ras Tafari Makonnen** naît en 1892 en Éthiopie. Couronné empereur en 1930, il prend le nom d'Haïlé Sélassié.",
+          },
+          {
+            type: "image",
+            alt: "Portrait de l'empereur Haïlé Sélassié en grand uniforme.",
+            legende: "L'empereur Haïlé Sélassié",
+            credit: "Domaine public, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1892", texte: "Naissance de Tafari Makonnen" },
+              { date: "1930", texte: "Couronnement impérial" },
+              { date: "1936-1941", texte: "Occupation italienne et exil" },
+              { date: "1974", texte: "Déposé par le Derg" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Cousin de l'empereur Ménélik II, il devient régent en 1916 avant de monter sur le trône. Son nom de couronnement signifie « **Puissance de la Trinité** » ; son titre princier, ras Tafari, donnera son nom au **rastafarisme**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né **Tafari Makonnen** en 1892",
+              "Couronné empereur en **1930**",
+              "Son titre princier donne son nom au rastafarisme",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-23-haile-selassie-lesson-2",
         title: "1936 : le discours à Genève",
         blocks: [
-          { type: "paragraphe", text: "En octobre 1935, l'Italie fasciste de Mussolini envahit l'Éthiopie, quarante ans après l'humiliation d'Adoua. La guerre est d'une brutalité extrême : l'armée italienne emploie l'aviation et les gaz de combat contre les troupes et les populations civiles, en violation des conventions internationales. Addis-Abeba tombe en mai 1936 et l'empereur part en exil. Le 30 juin 1936, il se présente devant l'assemblée de la Société des Nations à Genève — seul chef d'État africain indépendant à y siéger — et prononce le discours qui fixera son image dans le monde entier. Il y décrit les gaz déversés sur les villages, dénonce l'agression, et avertit l'assemblée que si la sécurité collective n'est pas appliquée à un petit État aujourd'hui, elle ne protégera personne demain : « C'est nous aujourd'hui. Ce sera vous demain. » Les grandes puissances ne font rien. Trois ans plus tard, la guerre mondiale commence." },
+          {
+            type: "paragraphe",
+            text: "En 1935, l'Italie fasciste envahit l'Éthiopie. L'empereur part plaider sa cause à Genève, devant la Société des Nations.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1936",
+            legende: "son discours devant la Société des Nations",
+          },
+          {
+            type: "paragraphe",
+            text: "Il y décrit devant les délégués les bombardements au **gaz moutarde** déversés sur les villages, les troupeaux et les hôpitaux. La Société des Nations l'écoute poliment, puis lève les sanctions contre Rome quelques semaines plus tard. Le discours devient le symbole de l'impuissance de la **sécurité collective**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'Italie envahit l'Éthiopie en **1935**",
+              "Il dénonce les bombardements au **gaz** à Genève",
+              "La Société des Nations ne fait rien",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-23-haile-selassie-lesson-3",
         title: "Moderniser l'Éthiopie",
         blocks: [
-          { type: "paragraphe", text: "Revenu au pouvoir en 1941 avec l'appui des forces britanniques et de la résistance éthiopienne — les arbegnoch, « patriotes », qui n'avaient jamais cessé de combattre —, Haile Selassie entreprend de moderniser l'État. Il promulgue des constitutions, crée une administration centrale au détriment des grands féodaux, fonde l'université d'Addis-Abeba, développe les écoles, l'aviation civile et les infrastructures. Sur le plan diplomatique, l'Éthiopie devient membre fondateur de l'Organisation des Nations unies et joue un rôle actif dans le mouvement des non-alignés. Mais la modernisation reste partielle : le régime demeure une monarchie absolue appuyée sur une aristocratie foncière, la réforme agraire attendue n'a pas lieu, et la paysannerie continue de vivre sous un système de redevances écrasantes. Ce décalage entre une élite formée et un pays maintenu en l'état finira par se retourner contre lui." },
+          {
+            type: "paragraphe",
+            text: "Revenu au pouvoir en 1941, **Haïlé Sélassié** entreprend de moderniser un empire encore largement féodal.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "1931", valeur: "Première constitution éthiopienne" },
+              { label: "1955", valeur: "Constitution révisée, parlement élu" },
+              { label: "Limite", valeur: "Le pouvoir impérial reste absolu" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Il crée des écoles, une université, une armée moderne et une administration centrale. Mais la réforme **agraire** n'a pas lieu, et le pouvoir reste concentré dans ses mains. La modernisation transforme l'État bien plus qu'elle ne change la vie des paysans, qui restent liés à leurs seigneurs.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Écoles, université et administration moderne",
+              "La réforme **agraire** n'a jamais lieu",
+              "Le pouvoir impérial demeure **absolu**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-23-haile-selassie-lesson-4",
         title: "Addis-Abeba, capitale de l'unité africaine",
         blocks: [
-          { type: "paragraphe", text: "L'Éthiopie possède un capital symbolique unique : c'est le seul pays africain qui n'a jamais été durablement colonisé, et Adoua en a fait, pour tout le continent, la preuve vivante qu'une puissance européenne pouvait être vaincue. Haile Selassie s'en sert méthodiquement. Il soutient les mouvements d'indépendance, accueille des étudiants africains, se pose en médiateur entre les blocs rivaux du continent — le groupe de Casablanca de Nkrumah et le groupe de Monrovia. Le 25 mai 1963, il réunit à Addis-Abeba les chefs d'État de trente-deux pays africains indépendants, préside la conférence et obtient un compromis entre les deux courants. L'Organisation de l'unité africaine (OUA) est créée ce jour-là, avec son siège à Addis-Abeba, et Haile Selassie en devient le premier président en exercice. L'Union africaine, qui lui succède en 2002, le compte parmi ses pères fondateurs. Le 25 mai est resté la Journée de l'Afrique." },
+          {
+            type: "paragraphe",
+            text: "En mai 1963, trente-deux chefs d'État se réunissent à Addis-Abeba. C'est **Haïlé Sélassié** qui les accueille et arbitre.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1963",
+            legende: "création de l'OUA, à Addis-Abeba",
+          },
+          {
+            type: "paragraphe",
+            text: "L'Éthiopie n'ayant jamais été colonisée, elle offre un terrain neutre entre les partisans de l'unité politique immédiate et ceux d'une simple coopération entre États. L'**OUA** naît de ce compromis, et Addis-Abeba en devient le siège — comme elle est aujourd'hui celui de l'**Union africaine**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**OUA** est fondée à Addis-Abeba en 1963",
+              "L'Éthiopie, jamais colonisée, sert de terrain neutre",
+              "La ville reste le siège de l'**Union africaine**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-23-haile-selassie-lesson-5",
         title: "La chute de 1974 et une figure ambivalente",
         blocks: [
-          { type: "paragraphe", text: "Au début des années 1970, la situation intérieure se dégrade. Une famine frappe la province du Wollo en 1972-1973, faisant des dizaines de milliers de morts ; le pouvoir tarde à réagir et tente d'en minimiser l'ampleur, ce qui provoque une indignation profonde quand un documentaire étranger la révèle. S'y ajoutent l'inflation, les grèves, la contestation étudiante et le mécontentement de l'armée. En 1974, un groupe d'officiers, le Derg, prend le pouvoir par étapes et dépose l'empereur le 12 septembre. Détenu au palais, il meurt en août 1975 dans des circonstances non élucidées ; ses restes ne seront retrouvés et inhumés que bien plus tard. Le Derg, dirigé par Mengistu Haile Mariam, instaure un régime militaire d'une violence extrême. La mémoire de Haile Selassie est ainsi partagée : figure de la souveraineté africaine et fondateur de l'unité continentale d'un côté, souverain absolu d'un pays maintenu dans l'inégalité de l'autre. Il est par ailleurs vénéré comme une figure messianique par le mouvement rastafari, né en Jamaïque à partir de son nom de régent — un culte qu'il n'a jamais revendiqué." },
+          {
+            type: "paragraphe",
+            text: "En 1974, une famine cachée par le palais et une armée en colère emportent le régime. L'empereur est déposé par le **Derg**.",
+          },
+          {
+            type: "citation",
+            texte: "C'est nous aujourd'hui. Ce sera vous demain.",
+            auteur: "Haïlé Sélassié, devant la Société des Nations, 1936",
+          },
+          {
+            type: "paragraphe",
+            text: "Il meurt en détention l'année suivante. Sa mémoire est **ambivalente** : symbole de la résistance africaine à l'étranger, souverain autoritaire et sourd à la misère à l'intérieur. Pour les rastafariens de Jamaïque, il reste une figure sacrée.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Déposé par le **Derg** en 1974, mort en 1975",
+              "Une mémoire **ambivalente**, selon d'où on regarde",
+              "Figure sacrée du rastafarisme jamaïcain",
+            ],
+          },
         ],
       },
     ],
@@ -3770,35 +4452,149 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-24-patrice-lumumba-lesson-1",
         title: "Le Congo belge et la formation d'un autodidacte",
         blocks: [
-          { type: "paragraphe", text: "Le Congo belge est un cas extrême dans l'histoire coloniale. D'abord propriété personnelle du roi Léopold II sous le nom d'État indépendant du Congo, il fut le théâtre d'une exploitation du caoutchouc d'une violence telle qu'elle provoqua un scandale international et contraignit la Belgique à en reprendre l'administration en 1908. Le régime qui suit repose sur une doctrine explicite : développer les infrastructures et l'enseignement primaire, mais empêcher la formation d'une élite politique africaine. À la veille de l'indépendance, le pays compte à peine une poignée de diplômés universitaires congolais. Patrice Émery Lumumba naît en 1925 dans la province du Kasaï. Formé à l'école des missions, il devient employé des postes puis commis à Stanleyville, se forme seul par la lecture, écrit dans la presse, milite dans les associations d'« évolués » — cette catégorie administrative d'Africains jugés assimilés — et devient un orateur remarqué." },
+          {
+            type: "paragraphe",
+            text: "**Patrice Lumumba** naît en 1925 au Congo belge. Il sera Premier ministre pendant soixante-sept jours, et son nom traversera le siècle.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique de Patrice Lumumba, à Bruxelles en 1960.",
+            legende: "Patrice Lumumba à Bruxelles, en 1960",
+            credit: "Harry Pot, CC0, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1925", texte: "Naissance au Congo belge" },
+              { date: "1958", texte: "Fondation du MNC" },
+              { date: "30 juin 1960", texte: "Indépendance du Congo" },
+              { date: "Janvier 1961", texte: "Assassinat au Katanga" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le Congo belge ne forme presque aucun cadre africain : à l'indépendance, le pays comptera une poignée de diplômés. **Lumumba** est employé des postes, autodidacte et orateur remarqué.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Né en **1925** au Congo belge",
+              "La colonie ne forme presque aucun **cadre** africain",
+              "Autodidacte et orateur, employé des postes",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-24-patrice-lumumba-lesson-2",
         title: "Le Mouvement national congolais",
         blocks: [
-          { type: "paragraphe", text: "En 1958, Lumumba fonde le Mouvement national congolais (MNC). Sa différence avec les autres formations est décisive : alors que la plupart des partis congolais se constituent sur des bases régionales ou ethniques, le MNC est explicitement unitaire et national, refusant que le pays se fragmente. La même année, Lumumba assiste à la conférence panafricaine d'Accra organisée par Nkrumah, où il rencontre les figures du continent et revient transformé. En janvier 1959, des émeutes à Léopoldville font des dizaines de morts et ébranlent la certitude belge d'avoir le temps. Bruxelles accélère brutalement le calendrier. Lumumba est emprisonné, puis libéré pour participer à la Table ronde de Bruxelles en janvier 1960, où l'indépendance est fixée au 30 juin 1960 — six mois plus tard. Aux élections de mai, le MNC arrive en tête. Lumumba devient Premier ministre, Joseph Kasa-Vubu président." },
+          {
+            type: "paragraphe",
+            text: "En 1958, **Lumumba** fonde le Mouvement national congolais. C'est le premier parti à se vouloir national plutôt qu'ethnique.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1958",
+            legende: "fondation du Mouvement national congolais",
+          },
+          {
+            type: "paragraphe",
+            text: "Les autres formations s'appuient sur une région ou un peuple ; le **MNC** vise le Congo entier. La même année, Lumumba assiste à la conférence panafricaine d'Accra, où il rencontre **Nkrumah** et les autres figures de la décolonisation. Il en revient convaincu que l'indépendance doit être immédiate.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **MNC** est fondé en 1958",
+              "Premier parti à se vouloir **national**, pas ethnique",
+              "La conférence d'Accra le convainc d'exiger l'immédiat",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-24-patrice-lumumba-lesson-3",
         title: "Le discours du 30 juin 1960",
         blocks: [
-          { type: "paragraphe", text: "La cérémonie d'indépendance, à Léopoldville, devait être une célébration consensuelle. Le roi Baudouin y prononce un discours louant l'œuvre civilisatrice de Léopold II ; Kasa-Vubu répond dans un registre courtois. Puis Lumumba, qui n'était pas prévu à la tribune, prend la parole. Il s'adresse aux Congolais et non au roi, et énumère ce que la colonisation a réellement été : le travail forcé, les salaires de misère, les logements et les lois séparées, les insultes quotidiennes, les prisons pour ceux qui protestaient. Il déclare que cette indépendance n'a pas été octroyée mais conquise par la lutte. Le discours provoque un choc immédiat à Bruxelles et fait de Lumumba, dans l'heure, une figure mondiale — et pour certaines chancelleries occidentales, un homme à écarter. Ce texte reste l'un des plus cités de l'histoire politique africaine." },
+          {
+            type: "paragraphe",
+            text: "Le 30 juin 1960, à Léopoldville, le roi des Belges prononce un discours célébrant l'œuvre coloniale. **Lumumba** demande la parole.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "30 juin 1960",
+            legende: "le discours de l'indépendance",
+          },
+          {
+            type: "paragraphe",
+            text: "Il n'était pas prévu qu'il parle. Il décrit alors le travail forcé, les coups, les logements réservés aux Blancs et les terres confisquées. Le discours est retransmis à la radio dans tout le pays. Il fait de lui un héros — et, à Bruxelles, un **ennemi**.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le discours du **30 juin 1960** n'était pas prévu",
+              "Il décrit la colonisation vue par les colonisés",
+              "Il devient un héros et un **ennemi** le même jour",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-24-patrice-lumumba-lesson-4",
         title: "Sécession, crise et intervention étrangère",
         blocks: [
-          { type: "paragraphe", text: "Tout s'effondre en quelques jours. Début juillet, l'armée se mutine contre son encadrement resté entièrement belge. La Belgique envoie des troupes sans l'accord du gouvernement congolais. Le 11 juillet, la province du Katanga, qui concentre l'essentiel des richesses minières du pays, fait sécession sous la conduite de Moïse Tshombé, avec l'appui de la Belgique et des intérêts miniers ; le Sud-Kasaï suit. Lumumba demande l'aide de l'ONU, qui déploie une force mais refuse de l'employer contre la sécession katangaise. Il se tourne alors vers l'Union soviétique pour obtenir un appui logistique — ce qui, en pleine guerre froide, achève de le désigner comme une menace aux yeux de Washington et de Bruxelles. En septembre 1960, Kasa-Vubu le révoque, Lumumba conteste la révocation, et le colonel Mobutu neutralise les deux pouvoirs par un coup de force. Lumumba est placé en résidence surveillée." },
+          {
+            type: "paragraphe",
+            text: "Onze jours après l'indépendance, le **Katanga**, province la plus riche du pays, fait sécession avec l'appui de Bruxelles.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "11 juillet 1960", texte: "Sécession du Katanga" },
+              { date: "Juillet 1960", texte: "Lumumba appelle l'ONU, puis l'URSS" },
+              { date: "5 septembre 1960", texte: "Il est destitué par le président Kasavubu" },
+              { date: "Décembre 1960", texte: "Arrêté par les hommes de Mobutu" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "L'ONU envoie des casques bleus, mais refuse d'employer la force pour reprendre la province sécessionniste. Lumumba se tourne alors vers l'**URSS** — ce qui, en pleine guerre froide, scelle son sort auprès de Washington et de Bruxelles.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **Katanga** fait sécession dès juillet 1960",
+              "L'ONU refuse de rétablir l'unité du pays",
+              "L'appel à l'**URSS** le condamne aux yeux de l'Ouest",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-24-patrice-lumumba-lesson-5",
         title: "L'assassinat et la mémoire",
         blocks: [
-          { type: "paragraphe", text: "Il s'échappe fin novembre pour rejoindre ses partisans à Stanleyville, mais il est capturé. Le 17 janvier 1961, il est transféré par avion au Katanga, aux mains de ses adversaires les plus déterminés, avec deux compagnons, Maurice Mpolo et Joseph Okito. Tous trois sont torturés puis exécutés le soir même, et leurs corps dissous dans l'acide pour ne laisser aucune trace. Il avait trente-cinq ans. Une commission d'enquête parlementaire belge a conclu en 2001 à une responsabilité morale de la Belgique dans les circonstances de sa mort, et le gouvernement belge a présenté des excuses ; en 2022, une dent — seul reste identifié — a été restituée à sa famille. La disparition de Lumumba ouvre une longue période : Mobutu prend le pouvoir en 1965 et gouverne le pays pendant trente-deux ans. Mais son nom, lui, a essaimé bien au-delà du Congo : rues, universités, mouvements et chansons le portent sur tout le continent. Il est devenu la figure de l'indépendance confisquée." },
+          {
+            type: "paragraphe",
+            text: "Le 17 janvier 1961, **Lumumba** est livré aux autorités katangaises et abattu, avec deux compagnons. Son corps est dissous dans l'acide.",
+          },
+          {
+            type: "citation",
+            texte: "Nous qui avons souffert dans notre corps et dans notre cœur de l'oppression colonialiste, nous vous le disons : tout cela est fini.",
+            auteur: "Patrice Lumumba, discours du 30 juin 1960",
+          },
+          {
+            type: "paragraphe",
+            text: "Une commission parlementaire belge a reconnu en 2001 la **responsabilité morale** de la Belgique. Devenu symbole des indépendances confisquées, Lumumba donne son nom à des rues et à des universités sur plusieurs continents.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Assassiné le **17 janvier 1961** au Katanga",
+              "La Belgique reconnaît sa **responsabilité** en 2001",
+              "Symbole mondial des indépendances confisquées",
+            ],
+          },
         ],
       },
     ],
