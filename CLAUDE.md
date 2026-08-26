@@ -263,23 +263,25 @@ contenu.
 | Découverte | 11 |
 | **Total** | **136** |
 
-**564 leçons**, **676 questions de quiz**, **14 000 XP disponibles** (8360 XP de complétion de
-cours + 5640 XP de leçons à `XP_PER_LESSON = 10`).
+**564 leçons**, **676 questions de quiz**. **17 960 XP disponibles au total** : 8 360 de
+complétion de cours + 5 640 de leçons (`XP_PER_LESSON = 10`) + 3 380 du module Quiz
+(`XP_PER_QUESTION_LEARNED = 5`, à la 2ᵉ réussite) + 400 de parcours + 180 de cartes éditoriales.
+C'est ce total qui calibre `LEVEL_TIERS`.
 
 Découverte compte 11 cours : les 8 du lot 1 à **5 leçons** (`xp: 70`) et les 3 cours hérités
 laissés à **3 leçons** (`xp: 50`) — deux formats coexistent donc dans la matière, c'est une
 décision assumée.
 
-> ⚠️ **`LEVEL_TIERS` est calibré sur 13 040 XP, soit l'état d'avant le lot 1 de Découverte.**
-> « Gardien du savoir » est donc atteignable vers 93 % du catalogue au lieu de 100 %. Le
-> recalibrage est volontairement reporté **en fin de chantier Découverte** (lots 2 à 4) plutôt
-> que refait à chaque lot — voir Prochaines étapes.
+> `LEVEL_TIERS` a été recalibré en Phase 9 sur 17 960 XP (module Quiz compris). À revoir
+> consciemment à chaque ajout notable de contenu — les lots 2 à 4 de Découverte le nécessiteront.
 
-- **Barème en vigueur** (`src/lib/gamification.ts`) : `LEVEL_TIERS` = 0 / 1250 / 3900 / 7800 /
-  13 040 (Curieux / Éveillé / Initié / Sage / Gardien du savoir), `OPEN_LEVEL_STEP = 1250`. Le
+- **Barème en vigueur** (`src/lib/gamification.ts`) : `LEVEL_TIERS` = 0 / 1 700 / 5 350 / 10 750 /
+  17 960 (Curieux / Éveillé / Initié / Sage / Gardien du savoir), `OPEN_LEVEL_STEP = 1700`,
+  recalibré en Phase 9 sur les 17 960 XP réellement disponibles (module Quiz compris). Le
   dernier rang nommé est fixé exactement au total du catalogue — **à recalibrer consciemment à
   chaque ajout notable de contenu**, sans quoi il devient atteignable avant d'avoir tout terminé.
-  Aucun changement de schéma de `UserProgress` : version de persistance toujours **7**.
+  Le recalibrage ne touche pas au schéma de `UserProgress` (version de persistance **8** depuis le
+  module Quiz) : l'XP acquise n'est jamais recalculée, seuls `level` et `rank` le sont.
 - **Phase 8, chantier Personnalités** : `src/data/courses/personnalites.ts` (31 cours, ~150
   leçons), sorti du lot « matières émergentes ».
 - **Fusion en « Découverte »** : les 3 matières restantes à 1 cours (Arts & Musique,
@@ -591,6 +593,61 @@ Dernier lot du module. Détail complet dans `docs/ARCHITECTURE.md` § Module Qui
   **aucune** transition, `animationName: none` et score affiché d'emblée de l'autre. Zéro erreur
   console dans l'une comme dans l'autre.
 
+## Livraison (Phase 9 — Rattachement des questions aux leçons et recalibrage du barème)
+
+Deux dettes ouvertes par le module Quiz, soldées.
+
+### Rattachement question → leçon : 657 / 676
+
+Les 286 questions non alignées (54 fiches Géographie à 3 leçons pour 5 questions, 4 cours hérités
+à 3 pour 4) ont été traitées. **267 sont désormais rattachées**, soit **657 des 676 questions du
+catalogue** une fois les 390 dérivées par position comptées.
+
+- **Méthode** : rapprochement de contenu — la réponse est-elle citée dans la leçon ? — avec une
+  pondération discriminante (un mot présent dans les 3 leçons ne départage rien, un mot présent
+  dans une seule la désigne). 222 questions citent leur réponse mot pour mot dans une seule leçon.
+- **Découverte en chemin** : les leçons de Géographie **ne suivent plus** le template à 7 rubriques
+  décrit plus haut dans ce fichier. Elles ont des titres narratifs (« Un lac qui vire au rose »),
+  donc aucun rattachement par position n'était possible — c'est ce qui a imposé le rapprochement
+  par contenu.
+- **Relecture manuelle** des 12 rattachements les plus faibles : 1 correction (Ubuntu renvoyait
+  vers « Rites de passage » au lieu de la leçon qui porte son nom) et 5 retraits, où
+  l'automatisme avait accroché un mot incident — l'alliance AES captée par « Sahel », par exemple.
+- **Les 19 questions restantes ne sont pas un oubli** : leur réponse ne figure dans *aucune* leçon
+  de leur propre cours (langue officielle du Ghana, du Liberia et du Kenya ; devise du Cameroun ;
+  sortie du Niger de la CEDEAO ; océan bordant l'Angola et Madagascar ; enclavement de neuf pays…).
+  Les rattacher enverrait vers une leçon qui ne répond pas. **C'est un trou de contenu, pas un
+  trou de données** : le correctif est éditorial. La règle 22 du validateur en tient le compte.
+
+### `LEVEL_TIERS` recalibré sur 17 960 XP
+
+Quatrième recalibrage. Le total réellement disponible a été **recompté source par source** :
+
+| Source | XP |
+|---|---|
+| Complétion des 136 cours | 8 360 |
+| 564 leçons × `XP_PER_LESSON` | 5 640 |
+| Module Quiz : 676 questions × `XP_PER_QUESTION_LEARNED` | 3 380 |
+| 3 parcours (`xpReward`) | 400 |
+| 18 cartes éditoriales du fil Home | 180 |
+| **Total** | **17 960** |
+
+Sans recalibrage, « Gardien du savoir » serait tombé à **72,6 %** du catalogue. Nouveau barème,
+**à proportions constantes** (0 / 9,6 / 29,9 / 59,8 / 100 %) : **0 / 1 700 / 5 350 / 10 750 /
+17 960**, `OPEN_LEVEL_STEP` de 1 250 à **1 700**.
+
+- **Aucune migration** : la version de persistance reste **8**. L'XP acquise n'est jamais
+  recalculée ; seuls `level` et `rank` le sont, ce qui **fait redescendre d'un rang** un
+  utilisateur proche d'une ancienne frontière (13 040 XP : « Gardien du savoir » → « Sage »).
+  Assumé, et déjà le cas au recalibrage précédent.
+- **Une limite documentée dans le code** : le Défi du jour rapporte 30 XP par jour indéfiniment,
+  soit ~11 000 XP par an sans apprendre quoi que ce soit de neuf. La propriété « dernier rang =
+  100 % du catalogue » ne vaut donc à la lettre que pour un utilisateur récent. Limite antérieure
+  à ce recalibrage, désormais écrite noir sur blanc.
+- **Les tests ne codent plus les seuils en dur** : `gamification.test.ts` dérive ses échantillons
+  de `LEVEL_TIERS` et de `OPEN_LEVEL_STEP` (désormais exporté). Ils vérifient la frontière, pas une
+  valeur d'époque, et survivront au prochain recalibrage.
+
 ## Ce qui N'est PAS encore fait
 
 - Animations avancées hors du module Quiz : le geste de swipe et le module Quiz sont animés, mais les transitions d'écran globales et les micro-interactions du Home, de la Biblio et du Profil restent à faire.
@@ -605,11 +662,8 @@ Dernier lot du module. Détail complet dans `docs/ARCHITECTURE.md` § Module Qui
 
 ## Prochaines étapes suggérées
 
-1. **Rattacher les 286 questions restantes à leur leçon** (`src/data/quizLessonMap.ts`) : 54 fiches
-   Géographie et 4 cours hérités. Sans ça, une erreur sur ces questions renvoie vers le cours au lieu
-   de la leçon. Suivi par la règle 22 de `npm run validate`.
-2. Poursuite de la Phase 8 : **lots 2 à 4 de Découverte** (11 → 30 cours). Lot 2 « Sociétés, croyances, quotidien », lot 3 « Savoirs & sciences », lot 4 à composer. Régénérer les index (`npm run gen:index`, `npm run gen:quiz`) après chaque lot.
-3. **Recalibrer `LEVEL_TIERS` en fin de chantier Découverte** — actuellement calibré sur 13 040 XP alors que le catalogue en est à 13 680, montera vers ~15 200, **et doit désormais intégrer l'XP du module Quiz** (676 × 5 = 3 380 XP au plafond actuel).
-4. Passer les 31 cours Personnalités sous la charte, puis ajouter `"perso"` à `CHARTE_APPLIQUEE`.
-5. Résorber les avertissements du validateur (densité de gras, budget de mots) et fournir les 4 illustrations manquantes.
-6. Éventuellement : reformatage global Prettier (commit dédié), tests de rendu/E2E, authentification si un compte utilisateur devient nécessaire, poursuite de l'optimisation Performance (chantier 7.5) si le score < 90 devient bloquant.
+1. **Combler les 19 trous de contenu du quiz** : ces questions n'ont leur réponse dans aucune leçon de leur cours (langue officielle du Ghana, du Liberia et du Kenya ; devise du Cameroun ; sortie du Niger de la CEDEAO ; océan bordant l'Angola et Madagascar ; équateur au Gabon ; frontière nord de la Guinée-Bissau ; enclavement de neuf pays). Ajouter le fait à la leçon, puis rattacher dans `src/data/quizLessonMap.ts`. Suivi par la règle 22 de `npm run validate`.
+2. Poursuite de la Phase 8 : **lots 2 à 4 de Découverte** (11 → 30 cours). Lot 2 « Sociétés, croyances, quotidien », lot 3 « Savoirs & sciences », lot 4 à composer. Régénérer les index (`npm run gen:index`, `npm run gen:quiz`) après chaque lot, **et recalibrer `LEVEL_TIERS` en fin de chantier** — chaque cours ajouté déplace le total de 17 960 XP sur lequel le barème est calé.
+3. Passer les 31 cours Personnalités sous la charte, puis ajouter `"perso"` à `CHARTE_APPLIQUEE`.
+4. Résorber les avertissements du validateur (densité de gras, budget de mots) et fournir les 4 illustrations manquantes.
+5. Éventuellement : reformatage global Prettier (commit dédié), tests de rendu/E2E, authentification si un compte utilisateur devient nécessaire, poursuite de l'optimisation Performance (chantier 7.5) si le score < 90 devient bloquant.

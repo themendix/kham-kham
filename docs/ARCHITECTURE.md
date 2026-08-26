@@ -1091,6 +1091,88 @@ Playwright piloté manuellement, une passe `no-preference` et une passe `reduce`
 
 Aucune erreur console dans l'une ou l'autre passe.
 
+## Rattachement des questions aux leçons et quatrième recalibrage (Phase 9, après le module Quiz)
+
+### Rattachement question → leçon
+
+Le module Quiz promet qu'une erreur ouvre la leçon qui donne la réponse. Encore faut-il savoir
+laquelle. 390 questions le déduisaient déjà par position (cours à autant de questions que de
+leçons) ; les 286 restantes — 54 fiches Géographie (3 leçons, 5 questions) et 4 cours hérités
+(3 pour 4) — ont été traitées ici. **657 des 676 questions du catalogue sont désormais rattachées.**
+
+**Le template attendu n'existait plus.** La section « chantier Géographie » de `CLAUDE.md` décrit
+trois leçons génériques (Le territoire / Population et société / Économie, politique et repères).
+En pratique les fiches ont depuis été réécrites sous la charte, avec des titres narratifs (« Un lac
+qui vire au rose »). Aucun rattachement par position n'était donc possible : il a fallu rapprocher
+par le contenu.
+
+**Méthode.** Pour chaque question, on cherche dans quelle leçon figure la réponse :
+
+1. réponse citée mot pour mot → signal fort ; répétée dans la leçon → signal plus fort encore
+   (la leçon qui y revient en traite vraiment, celle qui la cite en passant non) ;
+2. réponse figurant dans le **titre** de la leçon → décisif ;
+3. sinon, recouvrement de vocabulaire, avec une **pondération discriminante** : un mot présent dans
+   les trois leçons ne départage rien (poids ⅓), un mot présent dans une seule la désigne (poids 1).
+
+Deux défauts ont été trouvés et corrigés en cours de route, tous deux visibles dans les résultats
+avant de l'être dans le code :
+
+- une **répartition trop penchée vers la leçon 3** a fait suspecter un biais de longueur ; mesure
+  faite, les trois leçons font la même taille (128 / 119 / 122 mots) et les faits factuels
+  (capitale, monnaie) sont réellement concentrés dans la troisième — le déséquilibre était vrai ;
+- la présence d'un mot était testée par **sous-chaîne**, si bien que « or » matchait dans « encore »
+  et « nord ». Corrigé par un test de début de mot.
+
+**Relecture manuelle** des 12 rattachements les plus faibles : 1 correction (Ubuntu renvoyait vers
+« Rites de passage » alors que seule la troisième leçon porte son nom) et 5 retraits, où
+l'automatisme avait accroché un mot incident — l'alliance AES captée par le mot « Sahel ».
+
+**Les 19 questions restées non rattachées sont un constat, pas un reste.** Leur réponse ne figure
+dans aucune leçon de leur propre cours. Les rattacher quand même enverrait l'utilisateur vers une
+leçon qui ne répond pas ; le module renvoie donc vers le cours. **Le correctif est éditorial**, pas
+technique. Le cas symétrique confirme la règle : le Burkina Faso a bien une leçon sur son
+enclavement (« À la merci des ports voisins »), et sa question y renvoie.
+
+### Quatrième recalibrage de `LEVEL_TIERS`
+
+Le total réellement atteignable a été recompté source par source plutôt que repris de la
+documentation :
+
+| Source | XP |
+|---|---|
+| Complétion des 136 cours | 8 360 |
+| 564 leçons × `XP_PER_LESSON` | 5 640 |
+| Module Quiz : 676 questions × `XP_PER_QUESTION_LEARNED` | 3 380 |
+| 3 parcours (`xpReward`) | 400 |
+| 18 cartes éditoriales du fil Home | 180 |
+| **Total** | **17 960** |
+
+Le barème calé sur 13 040 XP aurait donné le dernier rang à **72,6 %** du catalogue. Nouveau
+barème, proportions inchangées (0 / 9,6 / 29,9 / 59,8 / 100 %) :
+
+| Rang | Avant | Après |
+|---|---|---|
+| Curieux | 0 | 0 |
+| Éveillé | 1 250 | 1 700 |
+| Initié | 3 900 | 5 350 |
+| Sage | 7 800 | 10 750 |
+| Gardien du savoir | 13 040 | 17 960 |
+| `OPEN_LEVEL_STEP` | 1 250 | 1 700 |
+
+**Aucune migration** : la version de persistance reste 8. L'XP acquise n'est jamais recalculée,
+seuls `level` et `rank` le sont — ce qui **fait redescendre d'un rang** un utilisateur assis sur
+une ancienne frontière (13 040 XP passe de « Gardien du savoir » à « Sage »). Assumé, et déjà le
+cas aux recalibrages précédents.
+
+**Une limite désormais écrite dans le code** : le Défi du jour rapporte 30 XP par jour
+indéfiniment, soit environ 11 000 XP par an sans apprendre quoi que ce soit de neuf. La propriété
+« dernier rang = 100 % du catalogue » ne vaut donc à la lettre que pour un utilisateur récent.
+Cette faille est antérieure au recalibrage ; elle n'était simplement écrite nulle part.
+
+**Les tests ne codent plus les seuils en dur.** `gamification.test.ts` dérive ses échantillons de
+`LEVEL_TIERS` et de `OPEN_LEVEL_STEP` (désormais exporté) : ils vérifient la frontière, pas une
+valeur d'époque, et survivront au prochain recalibrage sans intervention.
+
 ## Prochaines étapes (hors périmètre de cette phase)
 
 Voir [CLAUDE.md](../CLAUDE.md) pour la feuille de route détaillée : contenu éditorial complet, système de quiz interactif, animations de swipe avancées, authentification, etc.
