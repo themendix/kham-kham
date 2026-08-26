@@ -61,6 +61,18 @@ Licences acceptées :
 > ⚠️ Le certificat TLS de l'installation Python locale est expiré : les appels réseau échouent
 > depuis `urllib`. Passer par `curl`, qui fonctionne.
 
+**Deux sources qui se sont révélées très productives pour les personnalités :**
+
+- **L'image principale de l'article Wikipédia** (`prop=pageimages&piprop=original`) donne de
+  bien meilleurs résultats qu'une recherche par nom, qui ramène surtout des rues et des places
+  portant le nom de la personne. Essayer plusieurs langues : l'article allemand a fourni le
+  portrait de Wangari Maathai quand le français et l'anglais n'en avaient aucun.
+- **Les archives néerlandaises Anefo**, sur Commons, couvrent les dirigeants africains des
+  années 1960-70 en haute définition et en **CC0**. Neto, Nyerere et Lumumba en viennent.
+
+**Seuil de résolution :** 800 px de large était trop strict. Un portrait s'affiche sur ~250 à
+320 px de large dans le cadre ; 450 à 500 px de source suffisent largement.
+
 ---
 
 ## 2. Convention de nommage
@@ -120,7 +132,7 @@ le projet ; **une seule image par leçon**.
 
 ## 4. Registre des images
 
-Trente-deux images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
+Trente-huit images. `MET` = The Metropolitan Museum of Art, domaine public (CC0).
 
 | Leçon | Sujet | Source | Licence | Auteur | Source → webp |
 |---|---|---|---|---|---|
@@ -156,6 +168,12 @@ Trente-deux images. `MET` = The Metropolitan Museum of Art, domaine public (CC0)
 | `course-perso-22-julius-nyerere-lesson-1` | Portrait de Julius Nyerere | [Commons](https://commons.wikimedia.org/wiki/File:President_Nyerere_van_Tanzania,_koppen,_Bestanddeelnr_928-2879_(cropped).jpg) | CC0 | Rob Mieremet / Anefo | 2323×3412 → 1200×1763 |
 | `course-perso-23-haile-selassie-lesson-1` | L'empereur Haïlé Sélassié | [Commons](https://commons.wikimedia.org/wiki/File:Haile_Selassie_in_full_dress_(3x4_cropped).jpg) | Domaine public | auteur inconnu | 600×800 |
 | `course-perso-24-patrice-lumumba-lesson-1` | Patrice Lumumba à Bruxelles, 1960 | [Commons](https://commons.wikimedia.org/wiki/File:LumumbaBrussel1960.jpg) | CC0 | Harry Pot | 3687×2388 → 1200×777 |
+| `course-perso-25-jeanne-martin-cisse-lesson-1` | Jeanne Martin Cissé à l'ONU, 1975 | [Commons](https://commons.wikimedia.org/wiki/File:Jeanne_Martin_Cisse_(United_Nations_Special_Committee_on_Apartheid)_Receives_100,000_Petitions_to_Oust_South_Africa_from_United_Nations._Dec_10,_1975_Slide_3_Ciss%C3%A9_Crop.png) | Domaine public | Victoria Missick | 900×1201 |
+| `course-perso-26-funmilayo-ransome-kuti-lesson-1` | Funmilayo Ransome-Kuti | [Commons](https://commons.wikimedia.org/wiki/File:70_year_old_Funmilayo_Ransome-Kuti_on_her_birthday.png) | CC BY-SA 3.0 | UNESCO | 325×485 |
+| `course-perso-27-aoua-keita-lesson-1` | Portrait d'Aoua Kéita | [Commons](https://commons.wikimedia.org/wiki/File:Fran%C3%A7oise_Foliot_-_Togo_-_060_-_Keita.jpg) | CC BY-SA 4.0 | Françoise Foliot | 5618×8410 → 1200×1796 |
+| `course-perso-28-albertina-sisulu-lesson-1` | Portrait d'Albertina Sisulu | [Commons](https://commons.wikimedia.org/wiki/File:Albertina_Sisulu.jpg) | CC BY-SA 2.5 | Dawidl | 670×1024 |
+| `course-perso-29-miriam-makeba-lesson-1` | Portrait de Miriam Makeba | [Commons](https://commons.wikimedia.org/wiki/File:Miriam_makeba_01.jpg) | CC BY-SA 3.0 | Paul Weinberg | 523×633 |
+| `course-perso-30-wangari-maathai-lesson-1` | Wangari Maathai en 2001 | [Commons](https://commons.wikimedia.org/wiki/File:Wangari_Maathai_in_2001.jpg) | CC BY-SA 2.0 | Kingkongphoto | 466×751 |
 
 Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
 les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.

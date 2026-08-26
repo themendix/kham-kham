@@ -4648,35 +4648,151 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-25-jeanne-martin-cisse-lesson-1",
         title: "Une institutrice guinéenne en politique",
         blocks: [
-          { type: "paragraphe", text: "Jeanne Martin Cissé naît en 1926 à Kankan, en Guinée, alors colonie française. Elle est formée à l'École normale de jeunes filles de Rufisque, au Sénégal — un établissement décisif dans l'histoire des femmes d'Afrique de l'Ouest francophone, qui a formé la plupart des premières institutrices africaines de la région et, par là, une grande partie des militantes de la génération des indépendances. Devenue enseignante puis directrice d'école, elle s'engage dans le syndicalisme et dans le mouvement politique guinéen. En 1958, la Guinée est le seul territoire d'Afrique française à voter « non » au référendum proposé par de Gaulle et accède immédiatement à l'indépendance, dans un isolement brutal — la France retire ses cadres, ses équipements et son aide. Jeanne Martin Cissé appartient à cette génération qui doit tout construire sans transition, et qui considère l'engagement des femmes comme une condition de ce chantier, non comme une revendication séparée." },
+          {
+            type: "paragraphe",
+            text: "**Jeanne Martin Cissé** naît en 1926 à Kankan, en Guinée. Elle présidera le Conseil de sécurité des Nations unies.",
+          },
+          {
+            type: "image",
+            alt: "Jeanne Martin Cissé aux Nations unies.",
+            legende: "Jeanne Martin Cissé à l'ONU, en 1975",
+            credit: "Victoria Missick, domaine public, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1926", texte: "Naissance à Kankan, en Guinée" },
+              { date: "1962", texte: "Conférence des femmes africaines à Dar es-Salaam" },
+              { date: "1972", texte: "Elle préside le Conseil de sécurité de l'ONU" },
+              { date: "2017", texte: "Mort à Conakry" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Institutrice puis directrice d'école, elle entre en politique par le syndicat. La Guinée de **Sékou Touré**, cherche des cadres.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née en **1926** à Kankan, en Guinée",
+              "Institutrice, puis dirigeante syndicale",
+              "Première femme à présider le **Conseil de sécurité**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-25-jeanne-martin-cisse-lesson-2",
         title: "Dar es-Salaam, juillet 1962",
         blocks: [
-          { type: "paragraphe", text: "Un fait est très largement ignoré : l'organisation continentale des femmes africaines est née avant celle des chefs d'État. En juillet 1962, à Dar es-Salaam, au Tanganyika, se tient la première Conférence des femmes africaines. Quatorze pays et une douzaine de mouvements de libération y sont représentés — venus de territoires indépendants comme de territoires encore colonisés. Les participantes décident de créer une plateforme commune pour la solidarité et la mobilisation : l'Union des femmes africaines. Leurs objectifs sont explicitement politiques : soutenir les luttes d'indépendance, combattre l'apartheid et la ségrégation sous toutes leurs formes, et obtenir la participation des femmes africaines aux structures de décision politique. La même conférence proclame le 31 juillet Journée de la femme africaine, célébrée depuis chaque année. L'Organisation de l'unité africaine ne sera fondée qu'un an plus tard, en mai 1963." },
+          {
+            type: "paragraphe",
+            text: "En juillet 1962, des déléguées de tout le continent se retrouvent à **Dar es-Salaam**, en Tanzanie. Aucune organisation panafricaine de femmes n'existe encore.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1962",
+            legende: "la conférence des femmes africaines",
+          },
+          {
+            type: "paragraphe",
+            text: "La conférence se tient un an avant la création de l'OUA. Les déléguées venues de tout le continent y posent une exigence simple : que l'unité africaine alors en construction ne se fasse pas **sans elles**. Aoua Kéita, du Mali, compte parmi les participantes.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Conférence de **Dar es-Salaam**, juillet 1962",
+              "Elle précède d'un an la création de l'**OUA**",
+              "Les déléguées exigent une place dans l'unité africaine",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-25-jeanne-martin-cisse-lesson-3",
         title: "La PAWO et ses fondatrices",
         blocks: [
-          { type: "paragraphe", text: "En 1974, l'Union des femmes africaines devient l'Organisation panafricaine des femmes (PAWO), dont Jeanne Martin Cissé avait été la première secrétaire générale. L'organisation est aujourd'hui présente dans les 55 États membres de l'Union africaine, avec cinq représentations régionales. Ses fondatrices forment une liste que l'Union africaine honore sous le nom de « mères fondatrices » et qui mérite d'être connue : Aoua Keïta pour le Mali, Funmilayo Ransome-Kuti pour le Nigeria, Gisèle Rabesahala pour Madagascar, Bibi Titi Mohamed pour le Tanganyika, Huda Shaarawi pour l'Égypte, Marie Koré pour la Côte d'Ivoire, Angie Brooks pour le Liberia, Alda do Espírito Santo pour São Tomé, Putuse Apollos pour la Namibie, Adelaide Tambo et Albertina Sisulu pour l'Afrique du Sud, Josina Machel pour le Mozambique, parmi des dizaines d'autres. Beaucoup étaient institutrices, sages-femmes ou syndicalistes — des métiers qui donnaient accès aux populations et permettaient d'organiser." },
+          {
+            type: "paragraphe",
+            text: "De cette conférence naît une organisation continentale : l'Organisation panafricaine des femmes, la **PAWO**.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Fondation", valeur: "Dar es-Salaam, juillet 1962" },
+              { label: "Nom actuel", valeur: "Organisation panafricaine des femmes" },
+              { label: "Statut", valeur: "Reconnue par l'Union africaine" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Jeanne Martin Cissé** en devient secrétaire générale. L'organisation coordonne les mouvements de femmes du continent, soutient les luttes de libération encore en cours et pousse les jeunes États indépendants à légiférer sur l'éducation des filles et le statut des épouses.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **PAWO** naît de la conférence de 1962",
+              "Cissé en est la secrétaire générale",
+              "Elle est aujourd'hui reconnue par l'**Union africaine**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-25-jeanne-martin-cisse-lesson-4",
         title: "1972 : présider le Conseil de sécurité",
         blocks: [
-          { type: "paragraphe", text: "La carrière de Jeanne Martin Cissé se poursuit sur la scène internationale. Elle est élue députée à l'Assemblée nationale guinéenne, dont elle devient vice-présidente, puis nommée ambassadrice de la Guinée auprès des Nations unies. En 1972, la Guinée siégeant comme membre non permanent du Conseil de sécurité, elle en assure la présidence tournante : elle devient la première femme de l'histoire à présider le Conseil de sécurité des Nations unies. Elle y consacre son mandat à une cause précise : durcir la position internationale contre le régime d'apartheid sud-africain, plaidant pour l'adoption de sanctions et pour la reconnaissance des mouvements de libération d'Afrique australe. Elle sera ensuite ministre des Affaires sociales de son pays. Elle meurt en 2017, à quatre-vingt-onze ans." },
+          {
+            type: "paragraphe",
+            text: "En 1972, ambassadrice de Guinée aux Nations unies, **Jeanne Martin Cissé** prend la présidence tournante du Conseil de sécurité.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1972",
+            legende: "première femme à ce poste, en vingt-sept ans d'ONU",
+          },
+          {
+            type: "paragraphe",
+            text: "Aucune femme ne l'avait fait depuis la création de l'organisation en 1945. Elle y porte les dossiers de la **décolonisation** et de l'apartheid, à un moment où les colonies portugaises se battent encore les armes à la main pour leur indépendance.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Présidente du **Conseil de sécurité** en 1972",
+              "La première femme en vingt-sept ans d'existence",
+              "Elle y porte la **décolonisation** et l'apartheid",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-25-jeanne-martin-cisse-lesson-5",
         title: "Les fondatrices oubliées de l'unité africaine",
         blocks: [
-          { type: "paragraphe", text: "Pourquoi ces noms sont-ils si peu connus ? L'Union africaine elle-même pose la question en consacrant à ces femmes une page de son site officiel du soixantenaire de l'OUA : elle rappelle que « les femmes étaient au premier rang de la libération et doivent être célébrées parmi les héros de l'Afrique ». Plusieurs facteurs se conjuguent. Les récits nationaux des indépendances se sont construits autour de figures masculines devenues chefs d'État ; les archives ont mieux conservé les discours officiels que les procès-verbaux d'organisations de femmes ; et l'histoire de la mobilisation sociale a longtemps été jugée moins importante que celle des institutions. Le travail de l'UNESCO avec son projet Femmes dans l'histoire de l'Afrique et celui de l'Union africaine avec ses Founding Mothers visent précisément à corriger ce déséquilibre. Retenir un fait suffit à changer le regard : la première organisation panafricaine née à l'échelle du continent fut celle des femmes, et elle précède l'OUA d'un an." },
+          {
+            type: "paragraphe",
+            text: "Les récits de l'unité africaine retiennent les noms de Nkrumah, Nyerere ou Sélassié. Ceux des fondatrices ont disparu des manuels.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Oubliées", valeur: "Les déléguées de Dar es-Salaam, 1962" },
+              { label: "Pourtant", valeur: "Elles précèdent l'OUA d'une année" },
+              { label: "Aujourd'hui", valeur: "La PAWO existe toujours" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Jeanne Martin Cissé** meurt à Conakry en 2017. La conférence des femmes de 1962 est pourtant antérieure à l'OUA : l'unité africaine a commencé par une **assemblée de femmes**, ce que l'histoire officielle a longtemps omis.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Les fondatrices ont disparu des récits officiels",
+              "La conférence de 1962 **précède** pourtant l'OUA",
+              "Jeanne Martin Cissé meurt en 2017 à Conakry",
+            ],
+          },
         ],
       },
     ],
@@ -4730,35 +4846,148 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-26-funmilayo-ransome-kuti-lesson-1",
         title: "Une jeunesse de premières fois",
         blocks: [
-          { type: "paragraphe", text: "Frances Abigail Olufunmilayo Thomas naît en 1900 à Abeokuta, en pays yoruba, dans l'actuel Nigeria. Sa famille est chrétienne et lettrée ; son père descend d'un ancêtre libéré d'un navire négrier et rétabli en Sierra Leone. Elle est la première élève fille admise à l'Abeokuta Grammar School, jusque-là réservée aux garçons. Envoyée poursuivre ses études en Angleterre, elle y séjourne trois ans et revient en 1922 avec une double conviction : la valeur de l'instruction et le refus de la condescendance coloniale. C'est à ce retour qu'elle abandonne son prénom anglais Frances pour n'utiliser que Funmilayo, son nom yoruba — geste politique avant l'heure. Elle devient enseignante, épouse le pasteur et éducateur Israel Oludotun Ransome-Kuti, et se fait remarquer par une série de premières : elle serait la première femme du pays à conduire une automobile, et l'une des premières à se déplacer à moto." },
+          {
+            type: "paragraphe",
+            text: "**Funmilayo Ransome-Kuti** naît en 1900 à Abeokuta, au Nigeria. Elle fera abdiquer un roi.",
+          },
+          {
+            type: "image",
+            alt: "Funmilayo Ransome-Kuti photographiée à soixante-dix ans.",
+            legende: "Funmilayo Ransome-Kuti, à soixante-dix ans",
+            credit: "UNESCO, CC BY-SA 3.0, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1900", texte: "Naissance à Abeokuta" },
+              { date: "1944", texte: "Fondation de l'Abeokuta Women's Union" },
+              { date: "1949", texte: "L'alake d'Abeokuta abdique" },
+              { date: "1978", texte: "Mort, après l'assaut sur Kalakuta" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle est la première fille admise à la **Abeokuta Grammar School**, et l'une des premières Nigérianes à conduire une automobile. Institutrice de formation, elle commence par apprendre à lire aux femmes du marché.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née en **1900** à Abeokuta, au Nigeria",
+              "Première fille admise à l'Abeokuta Grammar School",
+              "Elle alphabétise les **femmes du marché**",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-26-funmilayo-ransome-kuti-lesson-2",
         title: "L'Abeokuta Women's Union",
         blocks: [
-          { type: "paragraphe", text: "Elle commence par des cours d'alphabétisation destinés aux femmes du marché, puis comprend que leur problème n'est pas seulement l'instruction. Le système colonial britannique repose sur l'administration indirecte : les Britanniques gouvernent par l'intermédiaire des autorités traditionnelles, et à Abeokuta par l'alake, le souverain. Or les femmes du marché, qui font vivre l'économie locale, subissent un impôt forfaitaire dont elles sont les seules à s'acquitter directement, des réquisitions arbitraires de riz par les agents chargés du contrôle des prix, et des humiliations lors des contrôles. Funmilayo transforme son club de dames instruites en une organisation de masse ouverte à toutes : l'Abeokuta Women's Union (AWU), qui atteindra plus de vingt mille membres. Elle impose que les réunions se tiennent en yoruba et non en anglais, adopte le vêtement traditionnel, et abolit toute distinction entre les femmes lettrées et celles du marché. C'est ce qui fera sa force." },
+          {
+            type: "paragraphe",
+            text: "Ce qui commence comme un cercle d'alphabétisation devient en quelques années la plus grande organisation de femmes du Nigeria.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "20 000",
+            legende: "membres revendiquées par l'Abeokuta Women's Union",
+          },
+          {
+            type: "paragraphe",
+            text: "L'**Abeokuta Women's Union** rassemble commerçantes, paysannes et lettrées. Funmilayo impose une règle : toutes portent le même **pagne yoruba** aux réunions, pour effacer les différences de rang. Les cotisations financent des cours du soir, une caisse d'entraide et les frais de justice des membres.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**Abeokuta Women's Union** compte des milliers de membres",
+              "Commerçantes, paysannes et lettrées ensemble",
+              "Le même **pagne** pour toutes, pour effacer les rangs",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-26-funmilayo-ransome-kuti-lesson-3",
         title: "Faire tomber un roi",
         blocks: [
-          { type: "paragraphe", text: "Entre 1946 et 1949, l'AWU engage l'épreuve de force. Les femmes refusent de payer l'impôt, déposent des pétitions détaillées, organisent des veillées de protestation devant le palais — parfois des jours entiers, avec chants et danses satiriques, une forme de contestation collective enracinée dans les pratiques yoruba. Elles subissent gaz lacrymogènes et arrestations sans céder. Leur revendication est double : la suppression de l'impôt frappant les femmes, et la représentation des femmes dans les organes de décision — car, argumentent-elles, il n'y a pas d'imposition légitime sans participation. L'issue est spectaculaire : l'impôt est supprimé, quatre femmes entrent au conseil local, et l'alake Ademola II, contraint et discrédité, doit abdiquer en 1949. Il ne reviendra qu'en 1950. Rares sont les mouvements coloniaux de femmes ayant obtenu un tel résultat, et il est obtenu sans une seule arme." },
+          {
+            type: "paragraphe",
+            text: "Les Britanniques gouvernent Abeokuta par l'intermédiaire de l'**alake**, le roi traditionnel, chargé de lever l'impôt sur les femmes du marché.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1949",
+            legende: "l'abdication de l'alake d'Abeokuta",
+          },
+          {
+            type: "paragraphe",
+            text: "L'Union refuse l'impôt et organise des manifestations qui durent des jours devant le palais. Les femmes campent devant les grilles du palais, chantent des chants de moquerie, tiennent bon des jours durant. En 1949, l'**alake** abdique et quitte la ville. Une organisation de femmes vient de faire tomber un souverain.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'impôt sur les femmes du marché déclenche la révolte",
+              "Manifestations et campements devant le palais",
+              "L'**alake** abdique en 1949",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-26-funmilayo-ransome-kuti-lesson-4",
         title: "Le suffrage, l'indépendance, le monde",
         blocks: [
-          { type: "paragraphe", text: "Le combat s'élargit. Funmilayo fonde la Federation of Nigerian Women's Societies, qui fédère les organisations de femmes à l'échelle du pays et revendique le droit de vote. Elle rejoint le mouvement nationaliste, devient l'une des rares femmes aux instances dirigeantes du principal parti indépendantiste, et participe aux délégations qui négocient l'avenir constitutionnel du Nigeria à Londres. Le suffrage féminin est acquis dans le sud du pays avant l'indépendance de 1960 — plus tardivement dans le nord. Sur la scène internationale, elle voyage beaucoup, siège dans des organisations féminines mondiales, se rend en Union soviétique, en Chine — où elle rencontre Mao Zedong — et en Europe de l'Est. Ces voyages lui valent le retrait de son passeport par les autorités nigérianes, qui la soupçonnent de sympathies communistes. En 1962, elle est l'une des fondatrices de l'Organisation panafricaine des femmes à Dar es-Salaam." },
+          {
+            type: "paragraphe",
+            text: "Forte de cette victoire, **Funmilayo Ransome-Kuti** porte le combat sur le terrain national puis international.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Nigeria", valeur: "Campagne pour le droit de vote des femmes" },
+              { label: "Parti", valeur: "Membre dirigeante du NCNC" },
+              { label: "International", valeur: "Voyages en URSS, en Chine, à l'Est" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle réclame le **suffrage féminin** et une place pour les femmes dans le futur État indépendant. Ses voyages dans les pays de l'Est lui valent le retrait de son passeport par les autorités britanniques, qui la jugent trop à gauche.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Elle réclame le **suffrage féminin** au Nigeria",
+              "Dirigeante du NCNC, parti indépendantiste",
+              "Son **passeport** lui est retiré pour ses voyages à l'Est",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-26-funmilayo-ransome-kuti-lesson-5",
         title: "Une famille, un héritage",
         blocks: [
-          { type: "paragraphe", text: "La famille Ransome-Kuti occupe une place singulière dans l'histoire nigériane. Ses fils sont Fela Anikulapo Kuti, créateur de l'afrobeat et opposant permanent aux régimes militaires, Beko Ransome-Kuti, médecin et figure majeure de la défense des droits humains, et Olikoye Ransome-Kuti, médecin et ministre de la Santé reconnu pour son action en santé publique ; l'écrivain Wole Soyinka, prix Nobel de littérature, est son parent. En février 1977, l'armée nigériane attaque la résidence de Fela à Lagos, la Kalakuta Republic, en représailles à ses chansons. Funmilayo, âgée de soixante-dix-sept ans, est jetée par une fenêtre de l'étage. Elle ne se remettra pas de ses blessures et meurt en avril 1978. Fela déposera symboliquement son cercueil devant la caserne de Lagos et lui consacrera le morceau Coffin for Head of State. Elle est aujourd'hui honorée par l'UNESCO et par l'Union africaine, qui la compte parmi les mères fondatrices du panafricanisme." },
+          {
+            type: "paragraphe",
+            text: "En février 1977, l'armée nigériane donne l'assaut à Kalakuta, la résidence de son fils **Fela Kuti**.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1978",
+            legende: "sa mort, un an après l'assaut",
+          },
+          {
+            type: "paragraphe",
+            text: "Âgée de soixante-dix-sept ans, elle est jetée par une fenêtre. Elle meurt de ses blessures l'année suivante. Fela déposera son cercueil devant la caserne principale de Lagos et lui consacrera une chanson vengeresse. Elle laisse derrière elle une famille de **musiciens** et de médecins engagés, qui reprendront son combat autrement.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'armée assaille **Kalakuta** en février 1977",
+              "Défenestrée à soixante-dix-sept ans, elle meurt en 1978",
+              "Mère de **Fela Kuti**, elle inspire ses chansons",
+            ],
+          },
         ],
       },
     ],
@@ -4812,35 +5041,148 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-27-aoua-keita-lesson-1",
         title: "Sage-femme dans le Soudan français",
         blocks: [
-          { type: "paragraphe", text: "Aoua Keïta naît en 1912 à Bamako, dans le Soudan français — l'actuel Mali. Son père, militaire, décide de la scolariser, ce qui suscite l'hostilité d'une partie de l'entourage familial : envoyer une fille à l'école française est alors une décision contestée. Elle poursuit néanmoins jusqu'à l'École de médecine de Dakar, où elle obtient en 1931 son diplôme de sage-femme. Elle est affectée à Gao, puis dans plusieurs localités du pays. Ce métier, qu'elle exercera pendant des décennies, est la clé de tout son parcours politique : une sage-femme entre dans les familles, connaît les conditions réelles d'existence des femmes, gagne leur confiance et parle avec une autorité que personne ne lui conteste. Elle constate au quotidien la mortalité maternelle, le poids des mariages précoces, l'absence de soins — et comprend que ces réalités ne relèvent pas de la fatalité mais de décisions politiques." },
+          {
+            type: "paragraphe",
+            text: "**Aoua Kéita** naît en 1912 à Bamako, dans le Soudan français. Elle sera sage-femme, syndicaliste, puis la première femme députée de son pays.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique d'Aoua Kéita.",
+            legende: "Aoua Kéita",
+            credit: "Photo Françoise Foliot, CC BY-SA 4.0, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1912", texte: "Naissance à Bamako" },
+              { date: "1931", texte: "Diplôme de sage-femme à Dakar" },
+              { date: "1959", texte: "Élue députée au Soudan français" },
+              { date: "1975", texte: "Publication de Femme d'Afrique" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Son père s'oppose à ce qu'elle aille à l'école ; sa mère l'y inscrit malgré tout. Formée à l'**École de médecine** de Dakar, elle est nommée sage-femme à Gao.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née en **1912** à Bamako, scolarisée contre l'avis paternel",
+              "Sage-femme formée à **Dakar**",
+              "Mutée sans cesse à cause de son militantisme",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-27-aoua-keita-lesson-2",
         title: "L'entrée en politique",
         blocks: [
-          { type: "paragraphe", text: "Après la Seconde Guerre mondiale, l'Afrique occidentale française connaît un réveil politique : les partis se créent, les syndicats se structurent, les assemblées territoriales apparaissent. Aoua Keïta rejoint l'Union soudanaise-RDA, section soudanaise du Rassemblement démocratique africain, le grand mouvement interterritorial dirigé notamment par Félix Houphouët-Boigny et où milite Modibo Keïta. Elle y fait un travail que peu font : elle organise les femmes, crée une section féminine du parti, monte un syndicat de sages-femmes, parcourt les villages pour recruter et former des militantes. Son engagement lui coûte cher. Elle est mutée à répétition par l'administration coloniale, qui utilise l'affectation comme sanction ; son mariage n'y résiste pas, et elle divorce — un choix qu'elle assumera publiquement. Elle continue." },
+          {
+            type: "paragraphe",
+            text: "Sage-femme de brousse, **Aoua Kéita** connaît les villages un par un. Cette connaissance devient un capital politique.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "US-RDA",
+            legende: "le parti qu'elle rejoint dès sa fondation",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle rejoint l'**Union soudanaise-RDA**, le parti indépendantiste de Modibo Keïta. Les femmes qu'elle a accouchées la connaissent, lui font confiance et l'écoutent quand elle parle politique. Elle organise, collecte les cotisations, mobilise — et l'administration coloniale la déplace de région en région, chaque fois plus loin, pour la faire taire.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Elle rejoint l'**US-RDA**, parti indépendantiste",
+              "Son métier lui donne un réseau dans tous les villages",
+              "L'administration la **mute** pour l'écarter",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-27-aoua-keita-lesson-3",
         title: "Première députée",
         blocks: [
-          { type: "paragraphe", text: "En 1959, à la veille de l'indépendance, Aoua Keïta est élue à l'Assemblée législative du Soudan français — devenant la première femme élue à une assemblée nationale en Afrique occidentale francophone. L'année suivante, le Mali accède à l'indépendance et elle siège à l'Assemblée nationale du nouvel État. Elle entre également au bureau politique de l'Union soudanaise-RDA, seule femme parmi les dirigeants du parti au pouvoir. Elle y défend des positions constantes : la formation des femmes, l'accès aux soins et à la maternité, l'encadrement juridique du mariage, la place des femmes dans les instances politiques — non comme une catégorie à protéger mais comme une force à mobiliser. Elle a une formule directe pour résumer sa conviction : un pays qui laisse la moitié de sa population à l'écart ne se développera pas." },
+          {
+            type: "paragraphe",
+            text: "En 1959, à la veille de l'indépendance, **Aoua Kéita** est élue à l'Assemblée législative du Soudan français.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1959",
+            legende: "première femme députée du Soudan français",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle est la seule femme de l'assemblée. Elle y porte les questions de **santé maternelle**, d'éducation des filles et de statut de la femme mariée. Le Mali devient indépendant l'année suivante, et elle siège naturellement dans sa toute première assemblée nationale.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Élue **députée** en 1959, seule femme de l'assemblée",
+              "Elle porte la **santé maternelle** et l'école des filles",
+              "Elle siège à la première assemblée du Mali indépendant",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-27-aoua-keita-lesson-4",
         title: "Dar es-Salaam, 1962",
         blocks: [
-          { type: "paragraphe", text: "En juillet 1962, Aoua Keïta fait partie des femmes réunies à Dar es-Salaam pour la première Conférence des femmes africaines, qui donne naissance à l'Union des femmes africaines, future Organisation panafricaine des femmes (PAWO). Elle y côtoie Jeanne Martin Cissé, Funmilayo Ransome-Kuti, Bibi Titi Mohamed, Gisèle Rabesahala et des dizaines d'autres venues de quatorze pays et d'une douzaine de mouvements de libération. L'Union africaine la compte aujourd'hui parmi ses mères fondatrices. Ce que cette réunion établit vaut d'être souligné : ces femmes ne se contentent pas de soutenir les luttes d'indépendance de leurs pays respectifs, elles construisent une structure continentale autonome, avec ses propres objectifs — la fin du colonialisme, la fin de l'apartheid, et l'accès des femmes africaines aux positions de décision. Cette organisation naît un an avant l'OUA." },
+          {
+            type: "paragraphe",
+            text: "En juillet 1962, **Aoua Kéita** fait partie des déléguées réunies à Dar es-Salaam pour la conférence des femmes africaines.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Lieu", valeur: "Dar es-Salaam, Tanzanie" },
+              { label: "Date", valeur: "Juillet 1962, un an avant l'OUA" },
+              { label: "Issue", valeur: "Création d'une organisation panafricaine" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle y retrouve **Jeanne Martin Cissé** et des déléguées venues de tout le continent. Ces femmes se connaissent déjà, correspondent entre elles et coordonnent leurs actions bien avant que les chefs d'État ne se réunissent à Addis-Abeba, un an plus tard.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Déléguée à **Dar es-Salaam** en 1962",
+              "Un réseau de femmes **antérieur** à l'OUA",
+              "Elle y côtoie Jeanne Martin Cissé",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-27-aoua-keita-lesson-5",
         title: "Femme d'Afrique : écrire sa propre vie",
         blocks: [
-          { type: "paragraphe", text: "En 1975, Aoua Keïta publie Femme d'Afrique. La vie d'Aoua Kéita racontée par elle-même, qui reçoit le Grand prix littéraire d'Afrique noire. Le livre est un document rare : ce n'est ni un essai théorique ni un témoignage recueilli par un tiers, mais une autobiographie politique écrite à la première personne par une militante africaine de sa génération. Elle y raconte l'école contestée, la formation à Dakar, le métier de sage-femme dans les villages, les mutations-sanctions, le divorce, les réunions clandestines, les campagnes électorales, les rivalités du parti — sans lisser les difficultés ni s'ériger en héroïne. Pour les historiens, c'est une source de première main sur la période des indépendances vue depuis l'intérieur d'un parti et depuis la position d'une femme. Aoua Keïta meurt à Bamako en 1980. Un centre de santé et des institutions maliennes portent son nom, et l'UNESCO l'a intégrée à son projet Femmes dans l'histoire de l'Afrique." },
+          {
+            type: "paragraphe",
+            text: "En 1975, **Aoua Kéita** publie Femme d'Afrique, le récit de sa propre vie. C'est l'une des premières autobiographies d'une Africaine.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1975",
+            legende: "parution de Femme d'Afrique",
+          },
+          {
+            type: "paragraphe",
+            text: "Le livre reçoit le Grand prix littéraire d'**Afrique noire** l'année suivante, une reconnaissance rare pour un texte de femme. Elle y raconte les accouchements de brousse, les mutations punitives, les réunions clandestines, et le prix payé dans sa vie privée. Écrire sa propre vie, pour elle, c'était refuser que d'autres l'écrivent à sa place.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Femme d'Afrique** paraît en 1975",
+              "Grand prix littéraire d'Afrique noire",
+              "L'une des premières **autobiographies** d'une Africaine",
+            ],
+          },
         ],
       },
     ],
@@ -4894,35 +5236,151 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-28-albertina-sisulu-lesson-1",
         title: "Infirmière à Johannesburg",
         blocks: [
-          { type: "paragraphe", text: "Nontsikelelo Albertina Thethiwe naît en 1918 à Camama, dans le Transkei, une région rurale pauvre de l'actuelle province du Cap-Oriental. Orpheline de père à onze ans, elle élève ses frères et sœurs tout en poursuivant sa scolarité grâce aux missions catholiques. En 1940, elle obtient une bourse pour se former comme infirmière au General Hospital de Johannesburg. La ville lui apprend en quelques mois ce que la campagne lui avait caché : la ségrégation urbaine, les laissez-passer, les salaires différenciés, les services séparés. Le métier d'infirmière, comme celui de sage-femme ailleurs sur le continent, la met en contact direct avec les conditions de vie des populations noires des townships. C'est à l'hôpital qu'elle rencontre Walter Sisulu, militant de l'ANC, qu'elle épouse en 1944. Nelson Mandela est le témoin du marié. Ce mariage sera aussi un engagement partagé." },
+          {
+            type: "paragraphe",
+            text: "**Albertina Sisulu** naît en 1918 dans le Transkei, en Afrique du Sud. On l'appellera la mère de la nation.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique d'Albertina Sisulu.",
+            legende: "Albertina Sisulu",
+            credit: "Photo Dawidl, CC BY-SA 2.5, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1918", texte: "Naissance dans le Transkei" },
+              { date: "1944", texte: "Fondation de l'ANC Youth League" },
+              { date: "1956", texte: "Marche des femmes sur Pretoria" },
+              { date: "1994", texte: "Élue au Parlement sud-africain" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Orpheline tôt, elle élève ses frères et sœurs avant d'obtenir une bourse pour devenir **infirmière** à Johannesburg. C'est l'un des rares métiers qualifiés ouverts aux femmes noires sous la ségrégation.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née en **1918** dans le Transkei",
+              "**Infirmière** à Johannesburg, métier rare pour une femme noire",
+              "Surnommée la mère de la nation",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-28-albertina-sisulu-lesson-2",
         title: "La seule femme à la création de l'ANC Youth League",
         blocks: [
-          { type: "paragraphe", text: "En 1944 est fondée la Ligue de la jeunesse de l'ANC, qui va radicaliser le mouvement et en renouveler la direction — c'est d'elle que viendront Mandela, Sisulu et Oliver Tambo. Albertina est la seule femme présente à sa réunion de fondation. Elle s'engage ensuite dans la Ligue des femmes de l'ANC et dans la Fédération des femmes sud-africaines (FEDSAW), créée en 1954. En 1948, le Parti national arrive au pouvoir et institue l'apartheid : classification raciale de la population, interdiction des mariages mixtes, ségrégation généralisée, déplacements forcés vers des zones assignées, et surtout extension aux femmes du système des laissez-passer, ces documents que tout Africain devait présenter en permanence sous peine d'arrestation. C'est cette extension qui va déclencher l'une des plus grandes mobilisations de l'histoire du pays." },
+          {
+            type: "paragraphe",
+            text: "En 1944, un groupe de jeunes militants fonde la Ligue de la jeunesse de l'ANC. **Albertina** est la seule femme présente.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1944",
+            legende: "fondation de l'ANC Youth League",
+          },
+          {
+            type: "paragraphe",
+            text: "Autour d'elle : **Mandela**, Tambo, Sisulu — qu'elle épouse la même année. Le mariage se fait sous surveillance policière, comme tout rassemblement de militants noirs. Elle comprend vite que sa vie sera celle d'une militante autant que d'une épouse, et souvent celle d'une femme seule.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Seule femme à la fondation de l'**ANC Youth League**",
+              "Elle épouse Walter **Sisulu** la même année",
+              "Une vie de militante autant que d'épouse",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-28-albertina-sisulu-lesson-3",
         title: "La marche des vingt mille, 1956",
         blocks: [
-          { type: "paragraphe", text: "Le 9 août 1956, vingt mille femmes — africaines, indiennes, métisses et blanches — convergent vers les Union Buildings, siège du gouvernement à Pretoria, pour déposer des pétitions contre l'extension des laissez-passer aux femmes. Albertina Sisulu est parmi les organisatrices, aux côtés de Lilian Ngoyi, Helen Joseph et Rahima Moosa. La marche est silencieuse ; les femmes déposent leurs pétitions, se tiennent immobiles pendant trente minutes, puis entonnent un chant devenu emblématique dont le refrain avertit le pouvoir qu'il a frappé les femmes et heurté un rocher. Le 9 août est aujourd'hui la Journée nationale de la femme en Afrique du Sud. Albertina avait déjà participé, l'année précédente, au Congrès du peuple qui adopta la Charte de la liberté, texte fondateur de l'ANC proclamant que l'Afrique du Sud appartient à tous ceux qui y vivent, noirs et blancs." },
+          {
+            type: "paragraphe",
+            text: "Le 9 août 1956, vingt mille femmes marchent sur les bâtiments du gouvernement à **Pretoria**.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "20 000",
+            legende: "femmes marchant sur Pretoria, le 9 août 1956",
+          },
+          {
+            type: "paragraphe",
+            text: "Elles protestent contre l'extension aux femmes du **passeport intérieur**, ce laissez-passer qui contrôle tout déplacement des Noirs. Elles déposent des milliers de pétitions à la porte du Premier ministre, puis restent debout trente minutes dans un silence complet. Le 9 août est aujourd'hui fête nationale en Afrique du Sud.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Vingt mille** femmes marchent sur Pretoria en 1956",
+              "Contre l'extension du **passeport intérieur** aux femmes",
+              "Le 9 août est devenu la Journée nationale des femmes",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-28-albertina-sisulu-lesson-4",
         title: "Vingt ans d'interdiction",
         blocks: [
-          { type: "paragraphe", text: "La répression s'abat. En 1963, Walter Sisulu est arrêté ; au procès de Rivonia, en 1964, il est condamné à la perpétuité avec Mandela et envoyé à Robben Island, où il restera vingt-six ans. Albertina reste seule avec cinq enfants, dans un pays qui fait tout pour l'empêcher d'exister. Elle est la première femme arrêtée en vertu de la loi de 1963 autorisant la détention sans jugement, et subit près de deux mois d'isolement total. Elle est ensuite frappée de banning orders successifs pendant près de vingt ans : interdiction de quitter son quartier, de se trouver avec plus d'une personne à la fois, d'être citée dans la presse, de participer à toute réunion. Ses enfants sont arrêtés, torturés, contraints à l'exil. Elle continue pourtant : elle travaille comme infirmière dans une clinique de Soweto, où elle soigne, informe et fait circuler les messages, sous surveillance permanente." },
+          {
+            type: "paragraphe",
+            text: "Son mari est condamné à perpétuité en 1964 et emprisonné à Robben Island. **Albertina** reste dehors, et l'État s'acharne sur elle.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Bannissement", valeur: "Près de vingt ans d'interdictions" },
+              { label: "Règle", valeur: "Interdite de réunion, même familiale" },
+              { label: "Résultat", valeur: "Elle continue, par d'autres moyens" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle est frappée d'une mesure de **bannissement** : interdiction de quitter son quartier, de parler à plus d'une personne à la fois, d'être citée dans la presse. Elle élève ses enfants, exerce son métier et continue d'organiser, en silence.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Walter Sisulu est emprisonné à **Robben Island**",
+              "Près de vingt ans de **bannissement** pour elle",
+              "Interdite de réunion, elle organise malgré tout",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-28-albertina-sisulu-lesson-5",
         title: "1994 et la mémoire des femmes",
         blocks: [
-          { type: "paragraphe", text: "Quand l'étau se desserre dans les années 1980, elle revient au premier plan : elle est élue coprésidente du Front démocratique uni (UDF), vaste coalition anti-apartheid légale, en 1983, et présidente de la Ligue des femmes de l'ANC. En 1989, elle conduit une délégation qui rencontre plusieurs chefs d'État occidentaux pour plaider le maintien des sanctions. Mandela est libéré en 1990, Walter Sisulu la même année. En 1994, aux premières élections libres, elle est élue députée et c'est elle qui a l'honneur de proposer officiellement la candidature de Nelson Mandela à la présidence devant le Parlement. Elle se retire en 1999 et meurt en 2011. On l'appelle en Afrique du Sud « Ma Sisulu », mère de la nation. L'Union africaine la compte parmi ses mères fondatrices : son parcours rappelle que la lutte anti-apartheid ne s'est pas seulement menée dans les prisons et les tribunaux dont on a retenu les noms, mais aussi, année après année, dans les cliniques et les cuisines des townships, tenue par des femmes." },
+          {
+            type: "paragraphe",
+            text: "En 1994, aux premières élections libres d'Afrique du Sud, **Albertina Sisulu** est élue au Parlement.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "1989", valeur: "Elle reçoit Mandela à sa sortie de prison" },
+              { label: "1994", valeur: "Élue au premier Parlement démocratique" },
+              { label: "2011", valeur: "Mort à Johannesburg" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle avait accueilli **Mandela** libéré cinq ans plus tôt. Sa trajectoire rappelle que la lutte anti-apartheid a tenu aussi grâce à des femmes restées dehors, tenant les familles, les réseaux et les hôpitaux pendant que les hommes étaient enfermés.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Élue au **Parlement** en 1994, à soixante-seize ans",
+              "Les femmes ont tenu les **réseaux** pendant les emprisonnements",
+              "Morte en 2011 à Johannesburg",
+            ],
+          },
         ],
       },
     ],
@@ -4976,35 +5434,148 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-29-miriam-makeba-lesson-1",
         title: "Sophiatown et les débuts",
         blocks: [
-          { type: "paragraphe", text: "Zenzile Miriam Makeba naît en 1932 à Johannesburg. Sa mère est employée de maison et guérisseuse traditionnelle ; l'enfant passe ses premières semaines en prison avec elle, condamnée pour avoir brassé de la bière clandestinement — un détail qui dit l'ordinaire de la vie noire sud-africaine. Elle grandit en partie à Sophiatown, quartier de Johannesburg où se mêlent musiciens, écrivains et journalistes, et qui est alors le foyer d'une culture urbaine noire d'une vitalité exceptionnelle — avant d'être rasé par le régime en 1955 et ses habitants déportés à Soweto. Miriam chante d'abord dans les chorales scolaires et les églises, puis rejoint les Cuban Brothers, et surtout les Manhattan Brothers, l'un des grands groupes vocaux du pays. Elle forme ensuite les Skylarks, ensemble féminin qui mêle jazz américain et harmonies sud-africaines. Sa voix, la précision de sa diction en xhosa, en zoulou et en anglais, la font vite remarquer." },
+          {
+            type: "paragraphe",
+            text: "**Miriam Makeba** naît en 1932 à Johannesburg. Sa voix la fera connaître du monde entier, et interdire de son propre pays.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique de Miriam Makeba.",
+            legende: "Miriam Makeba",
+            credit: "Photo Paul Weinberg, CC BY-SA 3.0, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1932", texte: "Naissance à Johannesburg" },
+              { date: "1959", texte: "Come Back, Africa et le départ" },
+              { date: "1963", texte: "Témoignage devant l'ONU" },
+              { date: "1990", texte: "Retour en Afrique du Sud" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle grandit à **Sophiatown**, quartier noir où se mêlent musiciens, écrivains et gangsters, et que le régime rasera en 1955. Elle y chante dans des groupes de jazz.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née en **1932** à Johannesburg",
+              "Elle grandit à **Sophiatown**, rasé par le régime en 1955",
+              "Débuts dans le jazz et le mbube sud-africains",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-29-miriam-makeba-lesson-2",
         title: "Come Back, Africa et le passeport retiré",
         blocks: [
-          { type: "paragraphe", text: "En 1959, elle tient un petit rôle dans Come Back, Africa, film tourné clandestinement en Afrique du Sud par l'Américain Lionel Rogosin pour documenter la réalité de l'apartheid. Le film est présenté au festival de Venise et Makeba obtient l'autorisation de s'y rendre. Elle enchaîne sur Londres, où elle rencontre Harry Belafonte, puis sur les États-Unis, où sa carrière décolle immédiatement : passages télévisés à très forte audience, concerts, premier album américain. Elle chante Pata Pata et le « chant du clic » xhosa, qui la rendent mondialement célèbre. Mais quand elle veut rentrer en Afrique du Sud pour les funérailles de sa mère, en 1960, elle découvre que son passeport a été annulé. Le régime lui interdit le retour. Elle est apatride ; plusieurs pays africains et européens lui délivreront des passeports d'honneur pour lui permettre de voyager." },
+          {
+            type: "paragraphe",
+            text: "En 1959, **Makeba** apparaît quelques minutes dans Come Back, Africa, un film tourné clandestinement sur l'apartheid.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1959",
+            legende: "Come Back, Africa, tourné clandestinement",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle se rend à Venise pour la présentation du film, puis à Londres et à New York. Quand elle veut rentrer au pays pour l'enterrement de sa mère, elle découvre que son **passeport** a été annulé. Le régime vient de la transformer en exilée, à vingt-sept ans.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le film est tourné **clandestinement** en 1959",
+              "Elle part le présenter à l'étranger",
+              "Son **passeport** est annulé : elle ne peut plus rentrer",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-29-miriam-makeba-lesson-3",
         title: "Témoigner à l'ONU",
         blocks: [
-          { type: "paragraphe", text: "En 1963, Miriam Makeba fait ce qu'aucune artiste de sa notoriété n'avait fait : elle témoigne devant le Comité spécial des Nations unies contre l'apartheid. Elle y décrit le système de l'intérieur — les laissez-passer, les déplacements forcés, les familles séparées par le travail migrant, la violence policière — et demande explicitement un embargo et des sanctions internationales contre le régime de Pretoria. Elle témoignera à nouveau à plusieurs reprises au fil des années. La réponse du régime est immédiate : sa musique est interdite en Afrique du Sud, ses disques retirés de la vente, sa citoyenneté révoquée. À partir de ce moment, sa carrière et son engagement ne se distinguent plus : chacun de ses concerts dans le monde devient une tribune, et elle est l'une des voix qui installent l'apartheid dans la conscience internationale, bien avant que les sanctions ne deviennent un consensus." },
+          {
+            type: "paragraphe",
+            text: "En 1963, **Miriam Makeba** est invitée à témoigner devant un comité des Nations unies sur l'apartheid.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1963",
+            legende: "son témoignage devant les Nations unies",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle décrit devant les délégués les lois raciales, les déplacements forcés de population et les familles séparées par les laissez-passer. Elle demande un **embargo** contre Pretoria. La réponse du régime est immédiate : ses disques sont interdits en Afrique du Sud, et sa citoyenneté lui est retirée.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Elle témoigne devant l'**ONU** en 1963",
+              "Elle réclame un **embargo** contre le régime",
+              "Ses disques sont interdits, sa citoyenneté retirée",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-29-miriam-makeba-lesson-4",
         title: "Trente et un ans d'exil",
         blocks: [
-          { type: "paragraphe", text: "Le prix de cet engagement est lourd. En 1968, elle épouse Stokely Carmichael, figure du Black Power américain ; aux États-Unis, ses contrats sont annulés, ses concerts déprogrammés, ses disques boycottés. Elle quitte le pays et s'installe en Guinée, à Conakry, où le président Ahmed Sékou Touré l'accueille. Elle y vivra quinze ans. L'Afrique devient sa base : elle se produit dans presque tous les pays du continent, est nommée déléguée de la Guinée aux Nations unies, reçoit des passeports diplomatiques de plusieurs États, et se lie aux dirigeants des indépendances. Elle chante aux cérémonies d'indépendance, aux sommets de l'OUA, dans les camps de réfugiés. Son répertoire mêle des langues et des traditions de tout le continent — c'est ce qui lui vaut son surnom de « Mama Africa ». Elle traverse aussi des épreuves personnelles répétées, dont la mort de sa fille unique en 1985." },
+          {
+            type: "paragraphe",
+            text: "Son exil durera trente et un ans. Il la mène des États-Unis à la Guinée, en passant par une carrière brisée net.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "1966", valeur: "Grammy avec Harry Belafonte" },
+              { label: "1968", valeur: "Mariage avec Stokely Carmichael" },
+              { label: "1969", valeur: "Installation en Guinée, sur invitation" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Son mariage avec le militant **Stokely Carmichael** lui coûte ses contrats américains du jour au lendemain. **Sékou Touré** l'accueille en Guinée, d'où elle continue de chanter et représente le pays à l'ONU pendant des années.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Trente et un ans** d'exil, loin d'Afrique du Sud",
+              "Ses contrats américains sautent après son mariage",
+              "La **Guinée** l'accueille et en fait sa déléguée à l'ONU",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-29-miriam-makeba-lesson-5",
         title: "Le retour et la voix comme arme",
         blocks: [
-          { type: "paragraphe", text: "En 1990, Nelson Mandela est libéré. Il demande personnellement à Miriam Makeba de rentrer. Elle revient en Afrique du Sud la même année, après trente et un ans d'exil, munie d'un passeport français. Elle assiste à l'investiture de Mandela en 1994, chante dans le pays qui l'avait bannie, et se consacre ensuite à des causes sociales : elle fonde un centre pour jeunes filles vulnérables et devient ambassadrice de bonne volonté de la FAO. Elle meurt le 9 novembre 2008 en Italie, terrassée par une crise cardiaque à la fin d'un concert donné en soutien à Roberto Saviano, l'écrivain menacé par la Camorra. Elle avait soixante-seize ans. L'UNESCO l'a intégrée à son projet Femmes dans l'histoire de l'Afrique. Sa trajectoire montre une chose que les États comprennent mal : une chanteuse privée de son pays peut peser sur la politique internationale davantage que bien des ambassades." },
+          {
+            type: "paragraphe",
+            text: "En 1990, à l'invitation de **Nelson Mandela** tout juste libéré, Miriam Makeba rentre enfin en Afrique du Sud.",
+          },
+          {
+            type: "citation",
+            texte: "Nous n'écrivons pas notre histoire. Elle nous a toujours été transmise oralement, par nos anciens.",
+            auteur: "Miriam Makeba",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle meurt en 2008 en Italie, sur scène, lors d'un concert donné en soutien à un écrivain menacé. On l'appelait **Mama Africa** : elle avait fait de sa voix un passeport quand on lui avait pris le sien.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Retour en **1990**, sur invitation de Mandela",
+              "Morte en 2008 **sur scène**, lors d'un concert engagé",
+              "Sa voix a servi de passeport quand on lui a pris le sien",
+            ],
+          },
         ],
       },
     ],
@@ -5058,35 +5629,148 @@ export const PERSONNALITES_COURSES: Course[] = [
         id: "course-perso-30-wangari-maathai-lesson-1",
         title: "Première femme d'Afrique de l'Est docteure en sciences",
         blocks: [
-          { type: "paragraphe", text: "Wangari Muta Maathai naît en 1940 à Ihithe, dans les hautes terres du centre du Kenya, dans une famille de paysans kikuyu. Elle grandit au milieu de forêts, de sources et de champs qu'elle verra disparaître au cours de sa vie. Scolarisée dans les écoles des missions, elle est sélectionnée en 1960 pour un programme de bourses destiné à former les cadres des futurs États africains indépendants et part étudier la biologie aux États-Unis, où elle obtient une licence puis une maîtrise. Elle poursuit en Allemagne, puis soutient en 1971 à l'université de Nairobi un doctorat en anatomie vétérinaire : elle devient la première femme d'Afrique de l'Est ou centrale à obtenir un doctorat. Elle est ensuite la première femme nommée professeure et cheffe de département dans cette université. Chacune de ces étapes lui vaut des obstacles administratifs qu'aucun homme n'aurait rencontrés, et elle en tire une conclusion durable : les droits des femmes et les autres combats ne se séparent pas." },
+          {
+            type: "paragraphe",
+            text: "**Wangari Maathai** naît en 1940 à Nyeri, au Kenya. Elle sera la première femme d'Afrique de l'Est docteure en sciences.",
+          },
+          {
+            type: "image",
+            alt: "Portrait de Wangari Maathai.",
+            legende: "Wangari Maathai en 2001",
+            credit: "Photo Kingkongphoto, CC BY-SA 2.0, via Wikimedia Commons",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1940", texte: "Naissance à Nyeri, au Kenya" },
+              { date: "1971", texte: "Doctorat en biologie à Nairobi" },
+              { date: "1977", texte: "Fondation du Green Belt Movement" },
+              { date: "2004", texte: "Prix Nobel de la paix" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Envoyée aux États-Unis par un programme de bourses, elle rentre au pays et soutient en 1971 un doctorat en **biologie** — une première dans toute la région.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Née en **1940** au Kenya",
+              "Première femme d'Afrique de l'Est **docteure** en sciences",
+              "Formée aux États-Unis, doctorat soutenu à Nairobi",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-30-wangari-maathai-lesson-2",
         title: "La naissance du Green Belt Movement",
         blocks: [
-          { type: "paragraphe", text: "Engagée dans le Conseil national des femmes du Kenya, elle écoute les femmes rurales décrire leurs difficultés : elles marchent toujours plus loin pour trouver du bois de chauffe, les ruisseaux tarissent, les sols s'épuisent, la nourriture manque. Elle établit le lien que personne ne faisait alors : ces problèmes n'ont pas des causes séparées, ils découlent tous de la déforestation et de l'agriculture d'exportation qui a remplacé les forêts et les cultures vivrières. Sa réponse est d'une simplicité désarmante. En 1977, elle lance le Green Belt Movement : payer les femmes des villages pour qu'elles fassent pousser des semis d'arbres locaux dans des pépinières, puis les plantent. Le dispositif règle plusieurs problèmes à la fois — reboisement, revenu monétaire pour les femmes, sécurité alimentaire, restauration des sources. Il essaime au Kenya, puis dans d'autres pays africains. Au total, le mouvement revendique la plantation de plus de cinquante millions d'arbres." },
+          {
+            type: "paragraphe",
+            text: "En travaillant avec des paysannes du Kenya rural, **Maathai** entend toujours les mêmes plaintes : plus de bois, plus d'eau propre, moins de récoltes.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1977",
+            legende: "fondation du Green Belt Movement",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle fait le lien : la **déforestation** assèche les sources et épuise les sols. Sa réponse tient en un geste que n'importe qui peut faire — planter des arbres. Le **Green Belt Movement** paie les femmes rurales pour créer des pépinières.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **déforestation** assèche sources et sols",
+              "Le **Green Belt Movement** naît en 1977",
+              "Les femmes rurales sont payées pour planter",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-30-wangari-maathai-lesson-3",
         title: "Planter des arbres, affronter un régime",
         blocks: [
-          { type: "paragraphe", text: "Ce qui pouvait passer pour un programme environnemental devient rapidement une affaire politique. Sous la présidence de Daniel arap Moi, les terres publiques et les forêts sont distribuées à des proches du pouvoir. En 1989, Wangari Maathai s'oppose publiquement à la construction d'une tour de soixante étages dans le parc Uhuru, principal espace vert de Nairobi. Elle écrit, alerte les bailleurs internationaux, organise la contestation — et le projet est abandonné. En 1992, elle mène une grève de la faim avec les mères de prisonniers politiques dans ce même parc ; la police les disperse violemment et elle est frappée jusqu'à perdre connaissance. Elle sera arrêtée à plusieurs reprises, qualifiée de folle et de divorcée indigne par le pouvoir — son divorce fut effectivement utilisé contre elle, un juge estimant qu'elle était « trop instruite » pour être maîtrisée par son mari. Elle ne recule pas. En 1998, elle s'oppose de la même manière à la privatisation de la forêt de Karura." },
+          {
+            type: "paragraphe",
+            text: "Planter des arbres paraît inoffensif. Au Kenya de **Daniel arap Moi**, cela revient à contester qui possède la terre.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "1989", valeur: "Elle bloque une tour dans le parc Uhuru" },
+              { label: "1992", valeur: "Grève de la faim pour les prisonniers politiques" },
+              { label: "Répression", valeur: "Arrestations, coups, campagnes de presse" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Elle empêche la construction d'une tour dans le principal parc de Nairobi, puis mène une grève de la faim pour la libération de prisonniers politiques. Elle est arrêtée à plusieurs reprises, **frappée**, traitée de folle par la presse aux ordres du régime.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Elle bloque un projet immobilier dans un parc public",
+              "**Grève de la faim** pour les prisonniers politiques",
+              "Arrestations et violences en retour",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-30-wangari-maathai-lesson-4",
         title: "Le Nobel de 2004",
         blocks: [
-          { type: "paragraphe", text: "Le régime de Moi cède en 2002 ; Wangari Maathai est élue députée avec 98 % des voix dans sa circonscription et devient vice-ministre de l'Environnement. En octobre 2004, le comité norvégien lui décerne le prix Nobel de la paix. Elle est la première femme africaine à le recevoir, et la première écologiste. Le choix surprend et suscite un débat : quel rapport entre les arbres et la paix ? La motivation du comité répond précisément à cette objection — la paix durable suppose une gestion équitable des ressources naturelles et un environnement viable, car la raréfaction des terres, de l'eau et du bois nourrit les conflits. Wangari Maathai formule la même idée à sa manière : on ne peut pas parler de démocratie sans parler de qui contrôle la terre. Elle utilise ensuite sa notoriété pour porter les enjeux environnementaux africains dans les négociations internationales, et lance notamment une campagne mondiale de plantation d'un milliard d'arbres." },
+          {
+            type: "paragraphe",
+            text: "En 2004, le comité Nobel lui décerne le prix de la **paix**. Le choix surprend : jusque-là, l'écologie n'y avait pas sa place.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2004",
+            legende: "prix Nobel de la paix, une première",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle est la première femme africaine à recevoir cette distinction, toutes catégories confondues. Le comité justifie son choix en liant **environnement**, démocratie et paix : bien gérer les ressources d'un pays, c'est prévenir les conflits qui naissent de leur épuisement.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Prix Nobel** de la paix en 2004",
+              "Première femme **africaine** à le recevoir",
+              "Le comité lie environnement, démocratie et paix",
+            ],
+          },
         ],
       },
       {
         id: "course-perso-30-wangari-maathai-lesson-5",
         title: "Écologie, démocratie et Agenda 2063",
         blocks: [
-          { type: "paragraphe", text: "Wangari Maathai meurt d'un cancer à Nairobi le 25 septembre 2011. Elle est enterrée dans un cercueil de jacinthe d'eau et de bambou, ayant demandé qu'aucun arbre ne soit abattu pour ses obsèques. Son héritage est directement inscrit dans les priorités africaines actuelles. L'Agenda 2063 de l'Union africaine — le plan de développement du continent à cinquante ans — fait de l'environnement durable, de la résilience climatique et de l'autonomisation des femmes des objectifs centraux ; la Grande Muraille verte, initiative africaine de reboisement à travers le Sahel, procède de la même intuition que le Green Belt Movement. Le volume XI de l'Histoire générale de l'Afrique, consacré aux défis contemporains, traite précisément de la justice environnementale et de l'égalité de genre comme des enjeux liés. Wangari Maathai clôt ce parcours de trente figures sur une idée qui les relie toutes : reprendre en main son histoire commence toujours par un geste concret, à portée de main — ici, un arbre." },
+          {
+            type: "paragraphe",
+            text: "Le Green Belt Movement revendique des dizaines de millions d'arbres plantés au Kenya depuis 1977.",
+          },
+          {
+            type: "citation",
+            texte: "Tant que vous n'avez pas creusé un trou, planté un arbre et veillé à ce qu'il survive, vous n'avez rien fait.",
+            auteur: "Wangari Maathai, discours des Goldman Awards, 2006",
+          },
+          {
+            type: "paragraphe",
+            text: "**Maathai** meurt en 2011. Son intuition — que l'écologie est une question politique — irrigue aujourd'hui l'**Agenda 2063** de l'Union africaine et la Grande Muraille verte du Sahel.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Des dizaines de millions d'arbres plantés depuis 1977",
+              "L'écologie posée comme une question **politique**",
+              "Morte en **2011**, son héritage court jusqu'à l'Agenda 2063",
+            ],
+          },
         ],
       },
     ],
