@@ -11,7 +11,7 @@ Le nom *Sankofa* vient du concept akan « retourner chercher le savoir du passé
 L'app a 4 onglets (bottom nav) :
 - **Home** : fil de cartes à swiper ✗ (passer) / ✓ (apprendre), une carte = un sujet culturel.
 - **Biblio** : bibliothèque de cours par matière (À la une, groupés par catégorie).
-- **Collections** : parcours guidés reliant plusieurs cours, avec progression et XP.
+- **Jeu** : module Quiz — carte de conquête de l'Afrique, modes Blitz et Survie par territoire, Défi du jour, révision espacée, et les parcours guidés en « Quêtes ». (A remplacé l'onglet Collections en Phase 9.)
 - **Profil** : niveau/rang, streak hebdomadaire 🔥, statistiques, radar de maîtrise par matière.
 
 ## Conventions du projet
@@ -132,7 +132,8 @@ L'app a 4 onglets (bottom nav) :
 | v4 | `completedLessonIds`, `featuredLessonKey` | — | Phase 6 |
 | v5 | `favoriteCourseIds` (nouveau, `[]`) | `favoriteIds` → `favoriteCardIds` | Phase 7.chantier Favoris |
 | v6 | `completedParcoursIds` | Rattrapage rétroactif de l'XP des parcours déjà complets | Phase 7.2 |
-| v7 (actuelle) | — | `masteryByCategory` et `seenCardIds` supprimés ; `level`/`rank` recalculés | Phase 7.3 |
+| v7 | — | `masteryByCategory` et `seenCardIds` supprimés ; `level`/`rank` recalculés | Phase 7.3 |
+| v8 (actuelle) | `quizGame` (cauris, révision par question, records par territoire, parties jouées) | — | Phase 9.1 |
 
 ## Livraison (Phase 7, chantier 7.5 — Passage à l'échelle et performance)
 
@@ -289,12 +290,18 @@ décision assumée.
   `chiffreCle`, `image`…), rendus par `src/components/features/LessonBlocks.tsx` et contrôlés par
   les règles 11 à 18 du validateur. Activation **progressive** par matière via `CHARTE_APPLIQUEE`
   (`scripts/validate-content.ts`), aujourd'hui `["histoire", "geo"]`.
-- **État de santé mesuré** : `npm test` 128 tests / 14 fichiers verts · `npm run typecheck`
-  propre · `npm run lint` propre · `npm run validate` **0 erreur**, 121 avertissements
-  (non bloquants : densité de gras, budget de mots, 4 cours sans illustration) ·
-  `npm run gen:index` sans diff (index à jour).
-- **CI en vigueur** : `npm ci` → `npm run lint` → `npm run validate` → `npm test` →
-  `npm run typecheck` → `npm run build`, bloquante à chaque étape.
+- **État de santé mesuré** (au 26/08/2026) : `npm test` **233 tests / 18 fichiers** verts ·
+  `npm run typecheck` propre · `npm run lint` propre · `npm run validate` **0 erreur**,
+  **130 avertissements** (non bloquants : densité de gras, budget de mots, 4 cours sans
+  illustration, 286 questions sans leçon rattachée) · `npm run gen:index` et `npm run gen:quiz`
+  sans diff (index à jour) · `npm run build` propre.
+  Note : les « 121 avertissements » cités précédemment étaient périmés — le chiffre réel sur
+  `HEAD` avant ce chantier était déjà 129.
+- **CI en vigueur** : `npm ci` → **vérification de fraîcheur des index générés** → `npm run lint`
+  → `npm run validate` → `npm test` → `npm run typecheck` → `npm run build`, bloquante à chaque
+  étape. Le garde-fou de fraîcheur existe parce que les tests et le typecheck tournent *avant* le
+  build, donc sur les index commités : sans lui, un catalogue modifié sans régénération serait
+  validé contre un index périmé.
 
 ## Livraison (Phase 8 — Fusion des matières résiduelles en « Découverte »)
 
@@ -411,12 +418,186 @@ de nommage, procédure d'ajout, registre des images et liste de ce qui ne peut p
 - **14 images en place** : 4 objets du Met en CC0, 10 fichiers Wikimedia Commons (CC0, CC BY,
   CC BY-SA ou domaine public). Registre complet dans `docs/IMAGES-LECONS.md`.
 
+## Livraison (Phase 9 — Module Quiz, lot 1 : socle de données)
+
+L'onglet Collections sera remplacé par un module Quiz conçu comme un jeu. **Ce lot ne livre aucune
+interface** : il pose les données, le contenu et la progression sur lesquels s'appuieront les lots
+suivants. Détail complet dans `docs/ARCHITECTURE.md` § Module Quiz.
+
+- **Pourquoi remplacer Collections** : 3 parcours de 2 cours, soit 6 cours sur 136 (4,4 % du
+  catalogue) pour un quart de la barre de navigation. Surtout, l'app savait faire lire mais **rien
+  ne faisait revenir sur ce qui avait été lu** — le module Quiz est d'abord la couche de rétention
+  manquante, sa forme de jeu est le moyen.
+- **Décisions de design arrêtées** : jeu **solo contre soi** (pas de back-end, donc pas de
+  multijoueur ni de classement — records personnels, Blitz chronométré et Survie à 3 vies) ;
+  **conquête = maîtrise + étoiles** (la maîtrise colore le territoire, les étoiles récompensent la
+  performance) ; **parcours absorbés** dans le meta-game plutôt que supprimés (le store,
+  `ParcoursCard` et l'écran « Collection avancée ! » restent utiles) ; **Défi du jour absorbé**,
+  la carte du Home devenant un raccourci vers le module.
+- **Territoires** (`src/lib/territories.ts`) : 5 régions (celles de `geographieRegions.ts`) plus
+  une zone transversale, **Le Baobab**, qui recueille le panafricain, la diaspora et Découverte.
+  Un territoire mélange les 4 matières — ce que les parcours promettaient sans le tenir.
+  Rattachement dérivé pour la Géographie, déclaré pour les 82 autres cours dans
+  `src/data/courseTerritories.ts` (tableau vide = transversal). Le Baobab compte **96 questions**,
+  pas les 52 de Découverte qu'on craignait.
+- **Index de questions** (`src/data/quizIndex.generated.ts`, `npm run gen:quiz`, **à régénérer
+  après toute modification des quiz**) : 676 questions chargées seules, sans le texte des
+  564 leçons que `courseContent.ts` aurait tiré à chaque ouverture de l'onglet.
+- **Tout le catalogue servi d'emblée, et l'échec comme porte d'entrée** : se tromper déplie la
+  leçon **sur place** dans la correction (jamais d'éjection vers `/cours/:id`, qui détruirait une
+  partie chronométrée), et l'écran de fin liste toutes les leçons des questions ratées. Le quiz
+  devient la porte d'entrée du catalogue.
+- **Rattachement question → leçon** : 78 cours sont alignés (autant de questions que de leçons) et
+  se dérivent par position ; les 58 autres — 54 fiches Géographie (3 leçons / 5 questions) et
+  4 cours hérités — se déclarent dans `src/data/quizLessonMap.ts`. **390/676 rattachées**, les 286
+  restantes dans un lot dédié ; sans rattachement le module renvoie vers le cours, jamais d'erreur.
+- **Révision espacée** (`src/lib/quizReview.ts`) : boîtes de Leitner, rappel à J+1 / J+3 / J+7 puis
+  acquise, retour au palier 0 à chaque échec. **Jamais nommée « révision » dans l'interface.**
+- **Économie** : `XP_PER_QUESTION_LEARNED = 5` créditée à la **deuxième** réussite d'une question —
+  pas la première, qui sur 4 options tombe une fois sur quatre par hasard et rendrait le stock
+  farmable à l'aveugle. Les **cauris** sont la monnaie de jeu, sans effet sur le niveau ni le rang.
+- **Store v8** : `UserProgress.quizGame` ajouté, backfillé champ par champ (`normalizeQuizGame`)
+  pour qu'un blob partiel conserve ce qui est lisible. Actions `recordQuizAnswer` et
+  `finishQuizGame`. Couverture de migration v7→v8 et v8→v8 ajoutée.
+- **Validateur** : règles **20** (unicité globale des id de question — la règle 3 ne la garantissait
+  que par quiz), **21** (rattachement territorial) et **22** (rattachement question → leçon).
+- **CI** : garde-fou de fraîcheur des index générés, ajouté parce que `npm test` et
+  `npm run typecheck` tournent avant `npm run build` et lisent donc les index commités.
+
+## Livraison (Phase 9 — Module Quiz, lot 2 : moteur de partie)
+
+Le module devient jouable, **toujours hors navigation** : routes `/jeu` (choix du territoire) et
+`/jeu/:territoryId/:mode` (une partie). `/quiz` restant l'historique de quiz du Profil, le module
+vit sur `/jeu`. Détail complet dans `docs/ARCHITECTURE.md` § Module Quiz (lot 2).
+
+- **Deux modes** (`src/lib/quizGame.ts`, pur et testé) : **Blitz** (60 s, bonus de vitesse) et
+  **Survie** (3 vies, bonus de vies restantes). Score = bonnes réponses dans les deux cas, donc
+  comparable.
+- **Le chronomètre du Blitz se met en pause pendant la correction.** Sans ça, lire la leçon d'une
+  question ratée coûterait du temps de jeu et les joueurs apprendraient à ignorer les leçons —
+  exactement l'inverse du but du module.
+- **Aucune question n'est jamais exclue** : `buildGameQuestions` ne change que l'**ordre**. Blitz
+  ouvre sur les questions dues puis part en découverte ; Survie monte en difficulté (acquis, puis
+  dues, puis découverte).
+- **`LessonReveal`** déplie la leçon sur place, charge le contenu **au clic seulement** et ne tire
+  que le chunk de sa matière. Repli sur un lien vers le cours pour les 286 questions pas encore
+  rattachées.
+- **`QuizOptions` extrait de `QuizPlayer`** et partagé avec le moteur de partie : les règles
+  d'accessibilité et le code couleur des réponses ne sont plus entretenus qu'à un seul endroit.
+- **Poids maîtrisé** : l'écran de sélection n'importait l'index complet que pour afficher six
+  compteurs (82 Ko gzip). Le générateur émet désormais `src/data/quizKeys.generated.ts` (clés par
+  territoire) — sélection **5,6 Ko gzip**, partie 84,8 Ko, chunk d'entrée inchangé.
+- **Vérifié en navigateur** (Playwright piloté manuellement, installé hors du dépôt — aucune
+  dépendance ajoutée) : les deux modes de bout en bout, pause du chronomètre, chargement de la
+  leçon sans quitter la partie, vies 3 → 2 → 1 → 0, écran de fin, persistance v8 (cauris, record,
+  échéances de révision), et absence de fuite de la bonne réponse dans les `aria-label`. Zéro
+  erreur console.
+- **Défaut corrigé en cours de route** : la meilleure série était calculée par un `setBestStreak`
+  appelé depuis l'updater de `setStreak` — un effet de bord que React peut rejouer en StrictMode,
+  ce qui aurait faussé le bonus de cauris.
+- **Jouer met à jour la série** (`updateStreak`) ; le reste du suivi quotidien sera branché au
+  lot 3 avec l'absorption du Défi du jour.
+
+## Livraison (Phase 9 — Module Quiz, lot 3 : révision et absorption du Défi du jour)
+
+Le module devient le seul endroit où l'on répond à un quiz hors d'un cours. Toujours hors
+navigation (lot 4). Détail complet dans `docs/ARCHITECTURE.md` § Module Quiz (lot 3).
+
+- **Défi du jour absorbé** : `DailyChallengeScreen` supprimé, le défi devient `/jeu/defi`, une
+  partie du module. **5 questions** au lieu de 3, **les questions dues en priorité** complétées par
+  un tirage déterministe du jour — l'ancien défi ignorait totalement ce que l'utilisateur avait
+  raté. Stable sur la journée mais personnalisé : deux utilisateurs n'ont pas les mêmes dues.
+- **`/defi` reste en redirection** vers `/jeu/defi` (favori, PWA installée). La carte du Home
+  devient un raccourci : le Home garde son point d'entrée quotidien, le quiz ne vit plus qu'à un
+  seul endroit.
+- **Gain de chargement** : l'ancien écran tirait le contenu complet des quatre matières (le texte
+  de 564 leçons) uniquement pour atteindre leurs quiz. Le nouveau n'a besoin que de l'index.
+- **`QuizPlayMode = QuizGameMode | "defi"`** : le défi ne se joue sur aucun territoire, il ne doit
+  donc pas ouvrir une case de record. `finishQuizGame` prend désormais un champ `record` nullable
+  (`{ territoryId, mode, score } | null`) plutôt que trois paramètres qu'un appelant devrait
+  inventer. Côté cauris, `defi` n'a ni bonus de vitesse ni bonus de vies — il n'a ni chrono ni vies.
+- **Suivi quotidien** : l'XP gagnée en jouant alimente `daily.xpEarned`, traité **dans**
+  `recordQuizAnswer` parce que seul le store sait si une réponse a crédité de l'XP (deuxième
+  réussite). Le compteur de cartes du jour n'est pas touché : une question de quiz n'est pas une
+  carte apprise, et gonfler l'objectif du Home en jouant le viderait de son sens.
+- **Vérifié en navigateur** sur un `localStorage` semé (une question due, une acquise) : la
+  question due remonte en tête du Défi **et** du Blitz de son territoire, s'affiche dans les
+  compteurs « à revoir », tandis que la **Survie amorce bien sur la question acquise** — la montée
+  en difficulté du mode est effective. Redirection `/defi`, tirage stable au rechargement, écran
+  « Défi relevé ! » (＋30 XP, cauris, pas de « Rejouer »), refus d'un second passage le même jour,
+  persistance complète. Zéro erreur console.
+
+## Livraison (Phase 9 — Module Quiz, lot 4 : carte de conquête, Collections remplacé)
+
+Le module prend la place de Collections dans la navigation (`BottomNav`, `Sidebar`, icône
+`Swords`). Détail complet dans `docs/ARCHITECTURE.md` § Module Quiz (lot 4).
+
+- **Vraie carte de l'Afrique** générée depuis **Natural Earth** (domaine public) par
+  `scripts/generate-africa-map.mjs` → `npm run gen:map` → `src/data/africaMap.generated.ts`
+  (53 pays, 39 Ko de chemins SVG). Le script télécharge la source lui-même : aucune dépendance
+  ajoutée, aucun fichier de 3 Mo commité. **Hors du `build` et de la CI** — la géographie de
+  l'Afrique ne change pas à chaque commit.
+- **Projection azimutale équivalente de Lambert**, pas Mercator. Décision éditoriale : Mercator
+  étire l'Afrique d'environ 30 % et minore sa taille réelle — la distorsion que la critique
+  panafricaine dénonce de longue date. Une application qui enseigne l'histoire africaine ne peut
+  pas la dessiner dans la projection qui la déforme.
+- **Cadrage** : les dépendances lointaines sont écartées du tracé (`MAP_BOUNDS`) — Natural Earth
+  rattache à l'Afrique du Sud les îles du Prince-Édouard, à 46° S, ce qui laissait un grand vide
+  sous la carte. Cadre passé de 800 × 998 à 800 × 856, le rapport réel du continent. Cap-Vert,
+  Maurice et Seychelles ne sont pas dessinés (trop au large) mais restent dans leur territoire.
+- **Teintes de la palette existante** (or, terre, vert savane, indigo, flamme) : la teinte dit le
+  territoire, l'opacité dit la maîtrise. **Aucun token ajouté.** Plancher d'opacité volontairement
+  haut (0,32) : en dessous, les cinq teintes se ressemblent et la carte ne dit plus *quel*
+  territoire on regarde.
+- **Conquête à deux axes** (`src/lib/conquest.ts`, pur) : la **maîtrise** (questions acquises /
+  total) colore le territoire ; **trois étoiles indépendantes** (entamé · record de 12 · 80 % de
+  maîtrise) récompensent l'engagement et la performance. Une seule note aurait forcé à choisir
+  entre récompenser le savoir et récompenser l'adresse.
+- **Parcours absorbés** : `CollectionsScreen` supprimé, `/collections` en redirection vers `/jeu`,
+  et les 3 parcours deviennent la section **« Quêtes »** de l'écran du module, rendue par le même
+  `ParcoursCard`. `completedParcoursIds` et l'écran « Collection avancée ! » de la fin de cours
+  fonctionnent sans modification — c'est pourquoi l'absorption avait été préférée à la suppression.
+- **Poids** : `JeuScreen` passe de 6,1 à 22,9 Ko gzip (la carte pèse ~12 Ko gzip), chunk d'entrée
+  inchangé à 84,6 Ko gzip.
+- **Vérifié en navigateur**, desktop et mobile, captures relues à chaque itération du tracé — c'est
+  ainsi que le vide sous la carte et la confusion des teintes ont été trouvés. Sur un état semé
+  (tout le Nord acquis, record de 14), le Nord affiche 3 étoiles et 100 % de maîtrise, l'Ouest 1
+  étoile : une question rattachée à deux territoires compte dans les deux, conséquence assumée du
+  multi-territoire.
+
+## Livraison (Phase 9 — Module Quiz, lot 5 : soin visuel)
+
+Dernier lot du module. Détail complet dans `docs/ARCHITECTURE.md` § Module Quiz (lot 5).
+
+- **Six animations** ajoutées au design system (`src/styles/index.css`), toutes préfixées
+  `sankofa-` dans la continuité de `sankofa-pop` : secousse sur mauvaise réponse, respiration sur
+  bonne réponse, alerte du chronomètre dans les 10 dernières secondes, cœur de la vie perdue,
+  entrée en cascade de l'écran de fin, pop des compteurs en partie.
+- **Un filet de sécurité unique** : un seul bloc `@media (prefers-reduced-motion: reduce)`
+  neutralise toutes les animations `sankofa-*`, **y compris `sankofa-pop`**, qui n'était jusqu'ici
+  protégé que par les composants qui pensaient à l'utiliser.
+- **`src/hooks/useCountUp.ts`** : compteur qui monte avec sortie amortie, utilisé pour le score
+  puis les cauris de fin de partie **en deux temps** (300 ms puis 950 ms) — l'œil lit d'abord le
+  résultat, la récompense tombe ensuite. Valeur finale immédiate sous `prefers-reduced-motion`.
+- **La carte se colore au montage** : les territoires se remplissent du vide vers leur maîtrise
+  réelle, en cascade (110 ms par territoire). Deux `requestAnimationFrame` d'attente avant de
+  basculer l'état, sans quoi le navigateur peint directement l'état final — même précaution que
+  celle déjà prise dans `ProgressBar`.
+- **Le retour de réponse n'utilise ni `key` ni remontage** : la classe n'est posée que pendant que
+  la réponse est verrouillée et disparaît à la question suivante ; ce cycle suffit à relancer
+  l'animation sans faire clignoter le sous-arbre.
+- **Vérifié en navigateur dans les deux modes** (Playwright, passe `no-preference` et passe
+  `reduce`) : transition posée et opacité atteignant 0,95 sur un territoire acquis d'un côté ;
+  **aucune** transition, `animationName: none` et score affiché d'emblée de l'autre. Zéro erreur
+  console dans l'une comme dans l'autre.
+
 ## Ce qui N'est PAS encore fait
 
-- Animations avancées au-delà du geste de swipe (transitions d'écran, micro-interactions).
+- Animations avancées hors du module Quiz : le geste de swipe et le module Quiz sont animés, mais les transitions d'écran globales et les micro-interactions du Home, de la Biblio et du Profil restent à faire.
 - Authentification / comptes utilisateurs / back-end / synchronisation multi-appareil.
 - Reformatage global du dépôt par Prettier (outillage en place, non appliqué — voir chantier 7.4 ci-dessus).
 - Tests de rendu de composants et tests end-to-end (hors périmètre du chantier 7.4, volontairement).
+- Module Quiz : **terminé** (lots 1 à 5). Le module a remplacé l'onglet Collections et vit sur `/jeu`.
 - Équilibrage éditorial du catalogue : **en cours**. Personnalités est passée de 1 à 31 cours, et les 3 matières restantes ont été fusionnées en « Découverte » (3 cours). L'objectif retenu est de porter Découverte à **30 cours**, par lots de 8, sur le modèle des chantiers Histoire et Géographie.
 - Charte des leçons non activée sur Personnalités : `CHARTE_APPLIQUEE` (`scripts/validate-content.ts`) contient `histoire`, `geo` et `decouverte` — les 31 cours Personnalités restent hors du contrôle des règles 11 à 18.
 - Illustrations manquantes : les 4 cours signalés par le validateur (3 dans Découverte, 1 dans Personnalités).
@@ -424,8 +605,11 @@ de nommage, procédure d'ajout, registre des images et liste de ce qui ne peut p
 
 ## Prochaines étapes suggérées
 
-1. Poursuite de la Phase 8 : **lots 2 à 4 de Découverte** (11 → 30 cours). Lot 2 « Sociétés, croyances, quotidien », lot 3 « Savoirs & sciences », lot 4 à composer. Régénérer l'index (`npm run gen:index`) après chaque lot.
-2. **Recalibrer `LEVEL_TIERS` en fin de chantier Découverte** — actuellement calibré sur 13 040 XP alors que le catalogue en est à 13 680, et montera vers ~15 200.
-3. Passer les 31 cours Personnalités sous la charte, puis ajouter `"perso"` à `CHARTE_APPLIQUEE`.
-4. Résorber les avertissements du validateur (densité de gras, budget de mots) et fournir les 4 illustrations manquantes.
-5. Éventuellement : reformatage global Prettier (commit dédié), tests de rendu/E2E, authentification si un compte utilisateur devient nécessaire, poursuite de l'optimisation Performance (chantier 7.5) si le score < 90 devient bloquant.
+1. **Rattacher les 286 questions restantes à leur leçon** (`src/data/quizLessonMap.ts`) : 54 fiches
+   Géographie et 4 cours hérités. Sans ça, une erreur sur ces questions renvoie vers le cours au lieu
+   de la leçon. Suivi par la règle 22 de `npm run validate`.
+2. Poursuite de la Phase 8 : **lots 2 à 4 de Découverte** (11 → 30 cours). Lot 2 « Sociétés, croyances, quotidien », lot 3 « Savoirs & sciences », lot 4 à composer. Régénérer les index (`npm run gen:index`, `npm run gen:quiz`) après chaque lot.
+3. **Recalibrer `LEVEL_TIERS` en fin de chantier Découverte** — actuellement calibré sur 13 040 XP alors que le catalogue en est à 13 680, montera vers ~15 200, **et doit désormais intégrer l'XP du module Quiz** (676 × 5 = 3 380 XP au plafond actuel).
+4. Passer les 31 cours Personnalités sous la charte, puis ajouter `"perso"` à `CHARTE_APPLIQUEE`.
+5. Résorber les avertissements du validateur (densité de gras, budget de mots) et fournir les 4 illustrations manquantes.
+6. Éventuellement : reformatage global Prettier (commit dédié), tests de rendu/E2E, authentification si un compte utilisateur devient nécessaire, poursuite de l'optimisation Performance (chantier 7.5) si le score < 90 devient bloquant.

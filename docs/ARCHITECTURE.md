@@ -593,6 +593,504 @@ fichiers stables (sans hash) pour les polices, seul moyen de les précharger par
 - **`src/lib/subjectStyles.ts`** : lookup partagé `SubjectColor → classe Tailwind` (dégradé de bannière, couleur pastel pleine), utilisé par les cartes swipe, les cartes de cours, `Tag` et l'écran de détail de cours, pour éviter de dupliquer ces mappings.
 - **Pas de back-end** : tout le contenu est statique et versionné avec le code ; seule la progression utilisateur est en `localStorage`. Ce choix simplifie radicalement le déploiement pour cette phase (site statique) et pourra évoluer si un compte utilisateur / une synchronisation multi-appareil est ajoutée plus tard.
 
+## Module Quiz (Phase 9, lot 1 — socle de données)
+
+Le module Quiz remplace l'onglet Collections. Ce lot ne livre **aucune interface** : il pose le
+socle de données, de contenu et de progression sur lequel les lots suivants (moteur de partie,
+révision, carte de conquête, soin visuel) viendront s'appuyer.
+
+### Pourquoi remplacer Collections
+
+L'onglet Collections affichait 3 parcours de 2 cours chacun, soit 6 cours sur 136 — 4,4 % du
+catalogue pour un quart de la barre de navigation. Surtout, l'application savait faire lire (Home,
+Biblio) mais **rien ne faisait revenir sur ce qui avait été lu** : un cours terminé, un quiz passé
+une fois, et le savoir s'évapore. Le module Quiz est d'abord la **couche de rétention manquante** ;
+sa forme de jeu est le moyen, pas la fin.
+
+### Territoires (`src/lib/territories.ts`)
+
+Le catalogue est redécoupé pour le jeu en **6 territoires** : les 5 régions déjà utilisées par la
+Biblio (`geographieRegions.ts`) plus une zone transversale, **Le Baobab**.
+
+Un territoire mélange les quatre matières — l'Afrique de l'Ouest sert une question sur le Sénégal,
+une sur l'empire du Ghana et une sur Cheikh Anta Diop dans la même partie. C'est ce que les
+parcours promettaient sans jamais le tenir au-delà de 6 cours.
+
+Le rattachement suit deux régimes :
+
+- **Géographie** : dérivé du numéro d'ordre de la fiche (`getGeographieRegion`), rien à maintenir.
+- **Autres matières** : déclaré explicitement dans `src/data/courseTerritories.ts`, une table unique
+  de 82 entrées — plus facile à relire d'un bloc qu'un champ dispersé sur 82 fichiers de contenu.
+  Un tableau vide y signifie « transversal » et verse le cours dans Le Baobab.
+
+Le multi-territoire est réservé aux sujets qui chevauchent réellement deux régions (le Kanem-Bornou
+autour du lac Tchad, le commerce transsaharien entre Maghreb et Sahel), jamais comme échappatoire
+pour éviter de trancher.
+
+**Le Baobab n'est pas une zone de reliquat.** Il recueille les sujets panafricains (indépendances,
+panafricanisme, conférence de Berlin), la diaspora (Toussaint Louverture, Nanny, Sojourner Truth)
+et toute la matière Découverte. On craignait qu'il soit famélique avec les seules 52 questions de
+Découverte : il en compte **96**, parce que l'histoire panafricaine et la diaspora l'alimentent.
+
+Répartition mesurée des 676 questions (les cours multi-territoires comptent dans chacun) :
+
+| Territoire | Questions |
+|---|---|
+| Afrique de l'Ouest | 235 |
+| Afrique de l'Est | 115 |
+| Le Baobab | 96 |
+| Afrique du Nord | 90 |
+| Afrique centrale | 80 |
+| Afrique australe | 75 |
+
+### Index des questions (`src/data/quizIndex.generated.ts`)
+
+Généré au build par `scripts/generate-quiz-index.ts` (`npm run gen:quiz`, intégré à `npm run build`),
+**à régénérer après toute modification des quiz du catalogue**.
+
+Pourquoi un index distinct de `coursesIndex.generated.ts` : le module a besoin des questions de
+**toutes** les matières à chaque partie. Les charger via `courseContent.ts` reviendrait à tirer les
+quatre chunks de matière — donc le texte intégral de 564 leçons — à chaque ouverture de l'onglet.
+C'est le compromis que `DailyChallengeScreen` accepte aujourd'hui pour un écran visité une fois par
+jour ; il n'est pas tenable pour un onglet principal. Cet index ne porte que les questions,
+augmentées de leur origine (cours, matière, leçon) et de leurs territoires.
+
+Chaque entrée porte sa clé stable `` `${courseId}:${questionId}` ``, même convention que
+`completedLessonIds` — un id de question n'est unique que par quiz au sens de la règle 3, la clé
+composite l'est par construction.
+
+### Révision espacée (`src/lib/quizReview.ts`)
+
+Système de boîtes (Leitner simplifié), module pur avec date injectable :
+
+| Palier | Signification | Prochain rappel |
+|---|---|---|
+| 0 | ratée, ou jamais réussie | J+1 |
+| 1 | réussie une fois | J+3 |
+| 2 | réussie deux fois d'affilée | J+7 |
+| 3 | acquise | plus aucun rappel |
+
+Une réussite monte d'un palier, un échec ramène à 0 — y compris depuis « acquise », qui redevient
+donc rappelable. Une question jamais rencontrée n'est ni due ni acquise : c'est le vivier de
+« découverte » dans lequel les parties puiseront leur minorité de questions inconnues.
+
+**Ce système n'est jamais nommé « révision » dans l'interface** : l'utilisateur voit un jeu, et les
+questions qu'il a ratées reviennent simplement plus souvent.
+
+### Tout le catalogue, et l'échec comme porte d'entrée
+
+Le module sert **les 676 questions dès la première partie**, sans filtrage par cours terminé. Une
+première version du design réservait le jeu aux cours déjà lus pour ne pas « griller » le quiz de
+fin de cours ; cette objection tombe ici, parce que se tromper sur un sujet non lu **est le
+mécanisme** :
+
+- **Pendant la partie**, le panneau de correction nomme la leçon qui donne la réponse et la déplie
+  sur place — même pattern que le « En savoir plus » des cartes du Home et que la vedette « À la
+  une » de la Biblio. On ne quitte jamais la partie : un renvoi qui éjecte vers `/cours/:id`
+  détruirait un Blitz chronométré ou une série de Survie, et se ressentirait comme une sanction.
+- **À la fin de la partie**, un écran liste toutes les leçons des questions ratées. Le même
+  aiguillage, en lot — trois ou quatre leçons à explorer d'un coup, plus fort qu'une interruption
+  isolée.
+
+Le quiz devient ainsi la porte d'entrée du catalogue : on découvre 136 cours par curiosité, au lieu
+de les parcourir en liste.
+
+### Rattachement question → leçon (`src/data/quizLessonMap.ts`)
+
+Ce renvoi suppose qu'une question sache de quelle leçon elle vient — ce que les données ne disaient
+pas. Deux régimes cohabitent :
+
+| | Cours | Rattachement |
+|---|---|---|
+| **Alignés** (autant de questions que de leçons) | 78 | Dérivé par position dans le générateur |
+| **Non alignés** | 58 | Déclaré à la main dans `QUIZ_LESSON_MAP` |
+
+Les 78 alignés sont les 40 cours d'Histoire, 30 Personnalités et 8 Découverte, tous à 5 leçons /
+5 questions dans l'ordre. Les 58 autres sont les **54 fiches Géographie** (3 leçons pour
+5 questions — aucune correspondance mécanique, le regroupement des 7 rubriques d'origine en
+3 leçons doit être relu dans le contenu) et 4 cours hérités (3 leçons / 4 questions).
+
+État actuel : **390 questions sur 676 rattachées**, 286 restantes traitées dans un lot dédié. Une
+question sans leçon n'est jamais bloquante — le module renvoie alors vers le **cours**, dégradation
+propre. La règle 22 du validateur vérifie l'intégrité des rattachements déclarés et tient le compte
+de ce qui reste à faire.
+
+### Économie : XP bornée, cauris libres
+
+Le module est illimité — pas de compteur d'énergie ni de vies rechargeables. Sans back-end un
+`localStorage.clear()` les contournerait de toute façon, et c'est un ressort qui n'a pas sa place
+dans une application de savoir. La rareté vient du stock de questions dues, pas d'un verrou.
+
+Ce qui protège la progression, c'est la séparation des deux monnaies :
+
+- **XP** (`XP_PER_QUESTION_LEARNED = 5`) créditée à la **deuxième** réussite d'une question, jamais
+  avant ni après. Pas la première : puisque tout le catalogue est servi d'emblée, une bonne réponse
+  sur quatre tombe par hasard, et payer la première rendrait le stock entier farmable à l'aveugle.
+  Une question réussie deux fois à plusieurs jours d'intervalle (la révision espacée écarte les
+  rappels) ne relève plus de la chance. Le module ne peut donc injecter qu'un total borné par le
+  nombre de questions du catalogue, et `LEVEL_TIERS` reste calibré sur le contenu.
+- **Cauris**, monnaie de jeu sensible à la vitesse et aux séries, sans aucun effet sur le niveau ni
+  sur le rang. C'est ce qu'on farme en jouant.
+
+> ⚠️ Ce plafond (676 × 5 = 3 380 XP aujourd'hui) **s'ajoute au total du catalogue** et doit être
+> intégré au prochain recalibrage de `LEVEL_TIERS`, déjà prévu en fin de chantier Découverte.
+
+Les **records personnels** par territoire et par mode sont le seul classement possible sans
+back-end, et le plus honnête.
+
+### Store — version de persistance 8
+
+`UserProgress` gagne un unique champ `quizGame` (`QuizGameState`) : `cauris`, `questions`
+(statistiques de révision par clé), `records` (meilleur score par territoire et par mode),
+`gamesPlayed`.
+
+La migration reste la fonction unique et indifférente à la version d'origine décrite plus haut ;
+elle backfille `quizGame` via `normalizeQuizGame`, écrit **champ par champ** plutôt qu'avec un
+`?? initialProgress.quizGame` global : un blob v8 partiellement écrit doit conserver ce qui est
+lisible — perdre les cauris d'un joueur parce que `records` manque serait pire que le trou lui-même.
+
+Deux actions : `recordQuizAnswer(questionKey, isCorrect)` (reprogramme la révision, crédite l'XP à
+la première réussite seulement) et `finishQuizGame({ territoryId, mode, score, cauris })` (crédite
+les cauris, met à jour le record si le score le bat strictement).
+
+### Validation
+
+Trois règles ajoutées à `npm run validate` :
+
+- **20. Unicité globale des id de question.** La règle 3 ne garantissait l'unicité qu'à l'intérieur
+  d'un même quiz, ce qui suffisait tant que les questions n'étaient lues que dans le contexte de leur
+  cours. Les 676 ids sont uniques dans les faits, mais rien ne l'imposait.
+- **21. Rattachement territorial.** Tout cours hors Géographie doit figurer dans
+  `COURSE_TERRITORIES` ; une fiche Géographie ne doit **pas** y figurer (son territoire est dérivé) ;
+  les territoires déclarés doivent exister et ne pas se répéter ; une entrée ne correspondant à aucun
+  cours est une erreur.
+- **22. Rattachement question → leçon.** Vérifie que chaque entrée de `QUIZ_LESSON_MAP` désigne un
+  cours, une question et une leçon qui existent réellement, et compte en avertissement les questions
+  des cours non alignés qui n'ont pas encore de leçon déclarée.
+
+La CI gagne par ailleurs un garde-fou de fraîcheur des index générés : `npm test` et
+`npm run typecheck` tournent **avant** `npm run build`, donc sur les index commités — sans ce
+contrôle, un catalogue modifié sans régénération serait validé contre un index périmé.
+
+### Ce que ce lot ne fait pas
+
+Aucun écran, aucune route, aucune modification de la navigation : l'onglet Collections est encore
+en place et le module Quiz n'est accessible nulle part. `DailyChallengeScreen` est intact — son
+absorption appartient au lot 3.
+
+## Module Quiz (Phase 9, lot 2 — moteur de partie)
+
+Le module devient jouable : deux modes, la correction qui déplie la leçon, l'écran de fin qui
+aiguille vers le contenu. Toujours **hors navigation** — l'onglet Collections reste en place, le
+remplacement appartient au lot 4. Le module s'atteint par `/jeu`.
+
+`/quiz` étant déjà pris par l'historique de quiz du Profil, les routes du module sont **`/jeu`**
+(choix du territoire) et **`/jeu/:territoryId/:mode`** (une partie).
+
+### Deux modes (`src/lib/quizGame.ts`)
+
+| | Blitz | Survie |
+|---|---|---|
+| Contrainte | 60 secondes | 3 vies |
+| Score | bonnes réponses | bonnes réponses |
+| Bonus de cauris | vitesse (réponse < 4 s) | vies restantes |
+
+**Le chronomètre du Blitz se met en pause pendant la correction.** Sans cette pause, lire la leçon
+d'une question ratée coûterait du temps de jeu : le geste que tout le module cherche à encourager
+deviendrait un piège, et les joueurs apprendraient à ignorer les leçons pour préserver leur score.
+Les 60 secondes mesurent donc le temps passé à *répondre*, pas le temps au mur.
+
+### L'ordre des questions, pas leur sélection
+
+`buildGameQuestions` ne retire **jamais** de question du vivier d'un territoire : tout le catalogue
+est servi, y compris ce qui n'a jamais été lu. Ce qui change d'un mode à l'autre, c'est l'ordre :
+
+- **Blitz** ouvre sur les questions dues à révision, puis part en découverte — soixante secondes
+  servent d'abord à consolider.
+- **Survie** monte en difficulté : acquis et déjà-vu d'abord, questions dues ensuite, découverte en
+  dernier. Perdre ses trois vies sur la première question serait absurde.
+
+À l'intérieur de chaque groupe, l'ordre est aléatoire (hasard injectable pour les tests) : deux
+parties consécutives ne se ressemblent pas.
+
+### Cauris
+
+`base = bonnes réponses × 5`, plus `5` par palier de série de 3 atteint, plus le bonus de mode
+(vitesse ou vies restantes). Monnaie de jeu pure : elle ne touche jamais l'XP ni le rang, ce qui
+permet de la rendre généreuse sans déséquilibrer la progression.
+
+### Composants
+
+- **`QuizOptions`** — liste de réponses extraite de `QuizPlayer` et désormais partagée avec le
+  moteur de partie. Deux flux très différents (l'un paginé et sans contrainte de temps, l'autre
+  chronométré et à vies), exactement le même geste de réponse : les règles d'accessibilité
+  (`radiogroup`/`radio`, état annoncé) et le code couleur ne sont entretenus qu'une fois.
+- **`LessonReveal`** — déplie la leçon sur place, charge le contenu **au clic seulement** (une
+  partie sans erreur ne télécharge rien) et ne tire que le chunk de la matière concernée. Repli sur
+  un lien vers le cours quand la question n'a pas encore de leçon rattachée.
+- **`QuizGamePlayer`** — le moteur : chronomètre, vies, série, réponses rapides, questions ratées.
+- **`QuizGameOutcome`** — l'écran de fin, avec la section « Ce que tu peux aller voir ».
+
+### Poids réel
+
+L'écran de sélection n'a besoin que de compteurs, pas des 676 questions. Lui faire importer l'index
+complet coûtait **82 Ko gzip pour afficher six chiffres**, avant même qu'une partie commence. Le
+générateur émet donc un second fichier, `src/data/quizKeys.generated.ts` (les clés de questions par
+territoire), qui suffit à compter les questions d'un territoire et celles dues à révision.
+
+| Chunk | gzip |
+|---|---|
+| `JeuScreen` (sélection) | **5,6 Ko** |
+| `JeuPartieScreen` (partie, porte l'index complet) | 84,8 Ko |
+
+Le chunk d'entrée est inchangé : rien de tout cela n'est chargé tant qu'on n'ouvre pas `/jeu`.
+Découper l'index par territoire ferait encore baisser le second chiffre — piste ouverte, non
+nécessaire tant que le module est précaché par le service worker.
+
+### Vérifié en navigateur
+
+Playwright piloté manuellement (aucune dépendance ajoutée au dépôt — Playwright installé hors du
+projet), sur les deux modes : 6 territoires listés, chronomètre qui décompte puis **se fige
+pendant la correction**, leçon chargée et affichée sur place sans quitter la partie, vies
+décrémentées 3 → 2 → 1 → 0, arrêt à la troisième erreur, écran de fin avec cauris et section
+d'aiguillage, persistance en `localStorage` (version 8, cauris, record du territoire, échéances de
+révision écrites). Vérifié aussi qu'aucun `aria-label` ne trahit la bonne réponse avant qu'on ait
+répondu. Aucune erreur console.
+
+### Ce que ce lot ne fait pas
+
+Pas de carte de conquête, pas de maîtrise ni d'étoiles, pas de remplacement de l'onglet Collections
+(lot 4). Le Défi du jour est intact et fait toujours doublon (lot 3). Jouer met à jour la série
+(`updateStreak`) — c'est une activité du jour comme lire une leçon — mais le reste du suivi
+quotidien (objectif, défi) sera branché avec l'absorption du Défi du jour.
+
+## Module Quiz (Phase 9, lot 3 — révision et absorption du Défi du jour)
+
+Le module devient le seul endroit où l'on répond à un quiz hors d'un cours. Toujours hors
+navigation : le remplacement de l'onglet Collections appartient au lot 4.
+
+### Le Défi du jour absorbé
+
+L'ancien `/defi` (`DailyChallengeScreen`) faisait déjà un mini-quiz au Home : trois questions
+tirées au hasard dans tout le catalogue, stables sur la journée, ＋30 XP, validation de la série.
+Deux systèmes de quiz cohabitaient donc, avec deux endroits où corriger le même bug.
+
+Le défi est maintenant **`/jeu/defi`**, une partie du module :
+
+- **5 questions** au lieu de 3 — il porte désormais aussi la révision, il lui faut de quoi
+  ramener plusieurs questions dues.
+- **Les questions dues d'abord**, complétées par un tirage déterministe du jour. L'ancien défi
+  ignorait totalement ce que l'utilisateur avait raté ; c'était un tirage au sort, pas un défi.
+- **Stable sur la journée** (`pickDailyQuestions` est seedé par le jour de l'année) mais
+  **personnalisé** : deux utilisateurs n'ont pas les mêmes dues, donc pas le même défi.
+- Ni chronomètre ni vies : sa tension vient de l'unicité de la tentative quotidienne.
+
+`DailyChallengeScreen` est supprimé. `/defi` **reste en redirection** vers `/jeu/defi` : la route a
+pu être mise en favori ou ouverte depuis une PWA installée. La carte du Home
+(`DailyChallengeCard`) devient un simple raccourci — le Home garde son point d'entrée quotidien,
+le quiz ne vit plus qu'à un seul endroit.
+
+**Gain secondaire notable** : l'ancien écran chargeait le contenu complet des quatre matières (le
+texte de 564 leçons) pour n'en tirer que des quiz. Le nouveau n'a besoin que de l'index des
+questions.
+
+### `QuizPlayMode` — pourquoi le défi n'est pas un `QuizGameMode`
+
+`QuizGameMode` (`blitz | survie`) est la clé des records par territoire : y ajouter `defi`
+ouvrirait une case de record pour une partie qui ne se joue sur aucun territoire. Le moteur
+travaille donc sur `QuizPlayMode = QuizGameMode | "defi"`, et `finishQuizGame` prend un champ
+`record` nullable :
+
+```ts
+finishQuizGame({ cauris, record: { territoryId, mode, score } })  // partie sur un territoire
+finishQuizGame({ cauris, record: null })                          // Défi du jour
+```
+
+Un seul champ nullable plutôt que trois paramètres à ignorer : il n'y a pas d'état intermédiaire à
+représenter, et aucun appelant n'a besoin d'inventer un mode bidon. Le Défi du jour rapporte des
+cauris et compte comme une partie, mais ne touche aucun record.
+
+Côté cauris, `defi` n'a ni bonus de vitesse ni bonus de vies — il n'a ni chronomètre ni vies. Le
+bonus de série, lui, s'applique partout.
+
+### Suivi quotidien
+
+L'XP gagnée en jouant alimente `daily.xpEarned`, comme celle d'une leçon lue. C'est traité
+**dans `recordQuizAnswer`** plutôt que par un appel séparé à `addDailyProgress` depuis l'écran :
+seul le store sait si une réponse a effectivement crédité de l'XP (deuxième réussite d'une
+question), l'écran l'ignore. Divergence assumée avec `completeLesson`, qui laisse ce soin à son
+appelant parce que le Home y compte aussi des cartes.
+
+Le compteur de cartes du jour (`daily.cardsLearned`, l'objectif du Home) n'est pas touché : une
+question de quiz n'est pas une carte apprise, et gonfler l'objectif quotidien en jouant le viderait
+de son sens.
+
+### Vérifié en navigateur
+
+Playwright piloté manuellement, sur un `localStorage` semé avec une question ratée le 5 janvier
+(donc due) et une question acquise dans le même territoire :
+
+- La question due remonte partout où elle doit : compteur « 1 question à revoir » sur l'écran du
+  module, « 1 à revoir » sur son territoire, **première question du Défi du jour**, **première
+  question du Blitz** de son territoire.
+- La **Survie amorce sur la question acquise**, pas sur la question due — la montée en difficulté
+  du mode est donc bien effective.
+- `/defi` redirige vers `/jeu/defi` ; la carte du Home y mène ; le tirage est stable au
+  rechargement ; l'écran de fin affiche « Défi relevé ! », ＋30 XP et les cauris, sans bouton
+  « Rejouer » ; un second passage le même jour est refusé ; `challengeDone`, `daily.xpEarned`, la
+  série et l'historique de quiz sont bien persistés.
+
+Aucune erreur console.
+
+### Ce que ce lot ne fait pas
+
+Pas de carte de conquête, pas de maîtrise ni d'étoiles, pas de remplacement de l'onglet
+Collections (lot 4). Aucun soin d'animation (lot 5).
+
+## Module Quiz (Phase 9, lot 4 — carte de conquête et remplacement de Collections)
+
+Le module prend la place de Collections dans la navigation. C'est le lot qui lui donne son écran
+d'accueil : une vraie carte de l'Afrique.
+
+### La carte : vraies données, projection équivalente
+
+Une première version dessinait cinq polygones à la main. Résultat : moche, et surtout faux. La
+carte est désormais générée depuis **Natural Earth** (`ne_50m_admin_0_countries`, **domaine
+public**) par `scripts/generate-africa-map.mjs` → `npm run gen:map` →
+`src/data/africaMap.generated.ts`. Le script télécharge la source lui-même : aucune dépendance
+ajoutée au projet, aucun fichier de 3 Mo commité, seulement 39 Ko de chemins SVG. Il est
+volontairement **hors du `build` et de la CI** — la géographie de l'Afrique ne change pas à chaque
+commit.
+
+**La projection est une décision éditoriale, pas technique.** La première version utilisait
+Mercator : elle étirait l'Afrique d'environ 30 % en hauteur et minorait sa taille réelle — la
+distorsion que la critique panafricaine dénonce de longue date. Une application qui enseigne
+l'histoire africaine ne peut pas dessiner l'Afrique dans la projection qui la déforme. La carte
+utilise donc une **projection azimutale équivalente de Lambert** centrée sur le continent
+(17° E, 3° N) : les aires y sont exactes.
+
+Deux choix de cadrage, tous deux dictés par le rendu :
+
+- **Les dépendances lointaines sont écartées du tracé** (`MAP_BOUNDS`). Natural Earth rattache à
+  l'Afrique du Sud les îles du Prince-Édouard, à 46° S : un point invisible qui étirait la boîte
+  englobante et laissait un grand vide sous la carte. Le cadre est passé de 800 × 998 à
+  **800 × 856**, soit le rapport réel du continent.
+- **Cap-Vert, Maurice et Seychelles ne sont pas dessinés** — trop au large pour un cadrage lisible.
+  Ils restent pleinement dans leur territoire côté jeu.
+
+Les **frontières nationales restent visibles**. Dans une application qui consacre 54 fiches aux
+pays africains, pouvoir les distinguer est une qualité, pas du bruit.
+
+Les cinq teintes viennent de la palette existante — or (Nord), terre (Ouest), vert savane
+(Centrale), indigo (Est), flamme (Australe). **Aucun token n'a été ajouté** : la teinte dit le
+territoire, l'opacité dit la maîtrise. Le plancher d'opacité est volontairement haut (0,32) : en
+dessous, les cinq teintes se ressemblent et la carte cesse de dire *quel* territoire on regarde —
+son premier travail. La progression, elle, est aussi portée par les étoiles et les barres.
+
+**Accessibilité** : la carte est décorative (`aria-hidden`), cliquable au pointeur par commodité
+(un clic fait défiler vers la carte du territoire). La liste de territoires qui la suit est le
+contrôle réel, accessible au clavier et aux lecteurs d'écran. On évite ainsi de dupliquer les
+tabulations et de bricoler une sémantique de bouton dans du SVG.
+
+### Conquête : deux axes, pas une note
+
+`src/lib/conquest.ts`, module pur travaillant sur les **clés** de questions (fichier léger), jamais
+sur l'index complet.
+
+- **Maîtrise** = questions montées au dernier palier de révision / questions du territoire. Elle
+  colore le territoire sur la carte et remplit la barre de sa fiche.
+- **Trois étoiles**, indépendantes : territoire entamé · record de 12 bonnes réponses en une partie
+  · 80 % des questions acquises. Elles sont comptées séparément — on peut décrocher la troisième
+  sans la deuxième (tout apprendre sans jamais faire un gros score), et bloquer une progression
+  légitime derrière une autre n'aurait servi à rien.
+
+Une seule note aurait forcé à choisir entre récompenser le savoir et récompenser l'adresse.
+
+Effet de bord assumé et vérifié : une question rattachée à **deux** territoires (le commerce
+transsaharien est Nord *et* Ouest) compte dans les deux. Maîtriser entièrement le Nord entame donc
+l'Ouest, qui décroche son étoile « territoire entamé ». C'est la conséquence directe du
+multi-territoire, pas un défaut.
+
+### Collections remplacé, parcours absorbés
+
+`CollectionsScreen` est supprimé ; `/collections` **reste en redirection** vers `/jeu`.
+`BottomNav` et `Sidebar` remplacent l'onglet Collections par **Jeu** (icône `Swords`).
+
+Les 3 parcours ne sont pas perdus : ils deviennent la section **« Quêtes »** de l'écran du module,
+rendue par le même `ParcoursCard`. `completedParcoursIds`, `getNewlyCompletedParcours` et l'écran
+« Collection avancée ! » de la séquence de fin de cours continuent de fonctionner sans modification
+— c'est précisément pourquoi l'absorption avait été préférée à la suppression.
+
+### Poids
+
+`JeuScreen` passe de 6,1 à **22,9 Ko gzip** : la carte pèse ~12 Ko gzip. C'est le prix d'une vraie
+carte de l'Afrique sur l'écran d'accueil du module, et il est payé une fois (chunk paresseux,
+précaché par le service worker). Le chunk d'entrée est inchangé (84,6 Ko gzip).
+
+### Vérifié en navigateur
+
+Playwright piloté manuellement, desktop et mobile : l'onglet Jeu remplace Collections,
+`/collections` redirige, les 53 pays sont tracés et nommés, cliquer un pays fait défiler vers la
+fiche de son territoire, les six territoires et les trois quêtes sont listés, et sur un état semé
+(tout le Nord acquis + record de 14) le Nord affiche bien 3 étoiles et 100 % de maîtrise tandis que
+l'Ouest en affiche 1. Aucune erreur console. Captures relues à chaque itération du tracé — c'est
+ainsi que le vide sous la carte et la confusion des teintes ont été trouvés.
+
+## Module Quiz (Phase 9, lot 5 — soin visuel)
+
+Dernier lot du module : les animations et micro-interactions qui font la différence entre un
+écran qui *affiche* un résultat et un écran qui le *célèbre*.
+
+### Une convention, un filet de sécurité
+
+Toutes les animations sont des `@keyframes sankofa-*` déclarées dans `src/styles/index.css`, dans
+la continuité de `sankofa-pop` qui existait déjà. Un unique bloc
+`@media (prefers-reduced-motion: reduce)` les neutralise toutes — **y compris `sankofa-pop`**, qui
+n'était jusqu'ici protégé que par les composants qui pensaient à l'utiliser. Les animations
+pilotées en JavaScript (compteurs, remplissage de la carte) passent en plus par le hook
+`useReducedMotion` existant.
+
+| Animation | Où | Ce qu'elle dit |
+|---|---|---|
+| `sankofa-shake` | carte de question | mauvaise réponse — une secousse, un seul aller-retour |
+| `sankofa-breathe` | carte de question | bonne réponse — la carte respire une fois |
+| `sankofa-urgent` | chronomètre Blitz | les 10 dernières secondes |
+| `sankofa-life-lost` | cœurs de Survie | la vie qu'on vient de perdre |
+| `sankofa-rise` | écran de fin | entrée en cascade des blocs |
+| `sankofa-pop` | compteurs en partie | le score et la série qui changent |
+
+Le retour de réponse n'utilise **ni `key` ni remontage** : la classe n'est posée que pendant que la
+réponse est verrouillée, et disparaît au passage à la question suivante. Ce cycle suffit à relancer
+l'animation, sans faire clignoter le sous-arbre.
+
+### `useCountUp`
+
+`src/hooks/useCountUp.ts` fait monter un nombre de 0 vers sa valeur, avec une sortie amortie (la
+montée ralentit en approchant du résultat plutôt que de s'arrêter net). Utilisé pour le score puis
+les cauris de l'écran de fin, **en deux temps** (300 ms puis 950 ms) : l'œil lit d'abord le
+résultat, la récompense tombe ensuite. Sous `prefers-reduced-motion`, la valeur finale s'affiche
+immédiatement.
+
+### La carte se colore
+
+Au montage, les territoires se remplissent du vide vers leur maîtrise réelle, en cascade
+(110 ms d'écart par territoire). Deux `requestAnimationFrame` d'attente avant de basculer l'état :
+sans cela le navigateur peint directement l'état final et la transition ne se voit pas — même
+précaution que celle déjà prise dans `ProgressBar`.
+
+### Vérifié en navigateur, dans les deux modes
+
+Playwright piloté manuellement, une passe `no-preference` et une passe `reduce` :
+
+- Animations actives : transition `fill-opacity 850ms ease-out 220ms` posée sur les pays, opacité
+  qui atteint 0,95 sur un territoire entièrement acquis, classe `sankofa-breathe`/`sankofa-shake`
+  posée selon la réponse, `animationName` non nul, score qui monte.
+- `prefers-reduced-motion: reduce` : **aucune** transition sur la carte, `animationName: none` sur
+  la carte de question, score affiché d'emblée. La classe reste posée — c'est le CSS qui neutralise,
+  pas le composant qui devine.
+
+Aucune erreur console dans l'une ou l'autre passe.
+
 ## Prochaines étapes (hors périmètre de cette phase)
 
 Voir [CLAUDE.md](../CLAUDE.md) pour la feuille de route détaillée : contenu éditorial complet, système de quiz interactif, animations de swipe avancées, authentification, etc.
