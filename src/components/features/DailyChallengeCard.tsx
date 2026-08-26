@@ -9,7 +9,11 @@ interface DailyChallengeCardProps {
   onStart: () => void;
 }
 
-/** Carte d'accroche pour le quiz éclair du jour, jouable une seule fois par jour */
+/**
+ * Carte d'accroche du Défi du jour sur le Home. Depuis l'absorption du défi par le module Quiz,
+ * elle est un **raccourci** vers `/jeu/defi` : le Home garde son point d'entrée quotidien, mais le
+ * quiz ne vit plus qu'à un seul endroit.
+ */
 export function DailyChallengeCard({ done, onStart }: DailyChallengeCardProps) {
   return (
     <Card className="overflow-hidden">
@@ -20,7 +24,9 @@ export function DailyChallengeCard({ done, onStart }: DailyChallengeCardProps) {
           </div>
           <div>
             <h3 className="text-lg font-extrabold">Défi du jour — Quiz éclair</h3>
-            <p className="text-sm font-medium text-white/85">3 questions, stables toute la journée.</p>
+            <p className="text-sm font-medium text-white/85">
+              5 questions, dont celles que tu as ratées. Une seule tentative par jour.
+            </p>
           </div>
         </div>
 

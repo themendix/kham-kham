@@ -125,7 +125,7 @@ export function HomeScreen() {
         )}
       </section>
 
-      <DailyChallengeCard done={progress.daily.challengeDone} onStart={() => navigate("/defi")} />
+      <DailyChallengeCard done={progress.daily.challengeDone} onStart={() => navigate("/jeu/defi")} />
 
       <ContinueLearningCard course={targetCourse ?? null} category={targetCategory} resumed={resumedCourse} />
 

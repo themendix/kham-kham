@@ -140,3 +140,107 @@ h4 {
 .sankofa-pop {
   animation: sankofa-pop 420ms ease-out;
 }
+
+/* ─── Animations du module Quiz ──────────────────────────────────────────────
+ * Toutes préfixées `sankofa-`, toutes neutralisées d'un bloc plus bas quand
+ * l'utilisateur demande de réduire les animations. Les animations pilotées en
+ * JavaScript (compteurs qui montent, remplissage de la carte) utilisent en plus
+ * le hook `useReducedMotion`.
+ */
+
+/* Mauvaise réponse : secousse courte et sèche, jamais plus d'un aller-retour */
+@keyframes sankofa-shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  20% {
+    transform: translateX(-6px);
+  }
+  45% {
+    transform: translateX(5px);
+  }
+  70% {
+    transform: translateX(-3px);
+  }
+}
+.sankofa-shake {
+  animation: sankofa-shake 340ms ease-out;
+}
+
+/* Bonne réponse : la carte respire une fois */
+@keyframes sankofa-breathe {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.015);
+  }
+}
+.sankofa-breathe {
+  animation: sankofa-breathe 420ms ease-out;
+}
+
+/* Entrée en cascade des blocs de l'écran de fin */
+@keyframes sankofa-rise {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.sankofa-rise {
+  animation: sankofa-rise 460ms ease-out both;
+}
+
+/* Chronomètre dans les dernières secondes */
+@keyframes sankofa-urgent {
+  0%,
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.12);
+    opacity: 0.72;
+  }
+}
+.sankofa-urgent {
+  animation: sankofa-urgent 900ms ease-in-out infinite;
+}
+
+/* Vie perdue : le cœur se gonfle puis s'éteint */
+@keyframes sankofa-life-lost {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.45);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+.sankofa-life-lost {
+  animation: sankofa-life-lost 480ms ease-out;
+}
+
+/*
+ * Filet de sécurité unique : aucune animation `sankofa-*` ne se joue si
+ * l'utilisateur a demandé de les réduire. Couvre aussi `sankofa-pop`, plus
+ * ancien, qui n'était protégé que par les composants qui l'utilisaient.
+ */
+@media (prefers-reduced-motion: reduce) {
+  .sankofa-pop,
+  .sankofa-shake,
+  .sankofa-breathe,
+  .sankofa-rise,
+  .sankofa-urgent,
+  .sankofa-life-lost {
+    animation: none;
+  }
+}
