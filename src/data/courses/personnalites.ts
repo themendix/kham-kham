@@ -3101,9 +3101,9 @@ export const PERSONNALITES_COURSES: Course[] = [
           },
           {
             type: "image",
-            alt: "Cheikh Anta Diop jeune, au Sénégal.",
-            legende: "Cheikh Anta Diop dans sa jeunesse",
-            credit: "Domaine public, via Wikimedia Commons",
+            alt: "Cheikh Anta Diop de profil, lunettes et moustache, chemise claire.",
+            legende: "Cheikh Anta Diop",
+            credit: "Droits détenus par l'éditeur",
           },
           {
             type: "frise",

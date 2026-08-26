@@ -29,6 +29,17 @@ deux en CC0 ou dans le domaine public.
 
 ---
 
+## 0 bis. Images fournies par l'éditeur
+
+Une image peut aussi venir de l'éditeur du projet, hors des sources libres. Elle échappe alors
+au § 1 : c'est **lui qui détient les droits** et qui en répond. Le registre la marque
+« Fournie par l'éditeur », et le champ `credit` affiche « Droits détenus par l'éditeur ».
+
+Procédure : déposer le fichier à la racine du dépôt, le convertir au nom de la leçon, puis
+**retirer la source de la racine** — seul le `.webp` de `src/assets/lecons/` fait foi.
+
+---
+
 ## 1. Règle de licence
 
 **Une photo d'objet ou de bâtiment est elle-même une œuvre protégée**, même quand le sujet a
@@ -182,7 +193,7 @@ Quarante et une images. `MET` = The Metropolitan Museum of Art, domaine public (
 | `course-perso-30-wangari-maathai-lesson-1` | Wangari Maathai en 2001 | [Commons](https://commons.wikimedia.org/wiki/File:Wangari_Maathai_in_2001.jpg) | CC BY-SA 2.0 | Kingkongphoto | 466×751 |
 | `course-perso-12-samori-toure-lesson-1` | Portrait de Samori Touré | [Commons](https://commons.wikimedia.org/wiki/File:Almamy_Samory_Tour%C3%A9.jpg) | Domaine public | auteur inconnu | 346×457 |
 | `course-perso-14-yaa-asantewaa-lesson-5` | Statue de Yaa Asantewaa, musée d'Ejisu | [Commons](https://commons.wikimedia.org/wiki/File:Yaa_Asantewaa_Museum_(4).jpg) | CC BY-SA 4.0 | Noahalorwu | 6000×3376 → 1200×675 |
-| `course-perso-17-cheikh-anta-diop-lesson-1` | Cheikh Anta Diop dans sa jeunesse | [Commons](https://commons.wikimedia.org/wiki/File:Young_Cheikh_Anta_Diop_01.jpg) | Domaine public | auteur inconnu | 386×513 |
+| `course-perso-17-cheikh-anta-diop-lesson-1` | Portrait de Cheikh Anta Diop | Fournie par l'éditeur | Droits détenus par l'éditeur | — | 326×491 |
 
 Crédits affichés dans l'application : `The Metropolitan Museum of Art, domaine public (CC0)` pour
 les objets du Met, et `Photo <auteur>, <licence>, via Wikimedia Commons` pour les autres.
