@@ -6,7 +6,7 @@ import { useAppStore } from "@/store/useAppStore";
 import { QUIZ_KEYS_BY_TERRITORY } from "@/data/quizKeys.generated";
 import { PARCOURS } from "@/data/parcours";
 import { getCourseMetaOrWarn } from "@/data/courseMeta";
-import { TERRITORIES, TRANSVERSAL_TERRITORY_ID, type TerritoryId } from "@/lib/territories";
+import { TERRITORIES, type TerritoryId } from "@/lib/territories";
 import { CONQUEST_STARS, CONQUEST_STAR_LABELS, getTerritoryConquest } from "@/lib/conquest";
 import type { TerritoryConquest } from "@/lib/conquest";
 import { DAILY_CHALLENGE_XP_BONUS } from "@/lib/gamification";
@@ -104,10 +104,6 @@ export function QuizScreen() {
         <div className="mt-4 flex w-full justify-center">
           <ConquestMap conquests={conquests} onSelect={scrollToTerritory} />
         </div>
-        <p className="mt-3 self-start text-sm font-medium leading-snug text-ink-faint">
-          🌍 Le Baobab n'est pas sur la carte : il rassemble ce qui traverse tout le continent, et
-          n'a donc pas de géographie. Il t'attend juste en dessous.
-        </p>
       </Card>
 
       <div className="grid gap-5 md:grid-cols-2">
@@ -161,13 +157,6 @@ export function QuizScreen() {
                   <p className="mt-1.5 inline-flex items-center gap-1.5 text-sm font-medium text-ink-muted">
                     <Trophy className="h-4 w-4 text-gold" aria-hidden />
                     Records : {records.blitz} en Blitz, {records.survie} en Survie
-                  </p>
-                )}
-
-                {territory.id === TRANSVERSAL_TERRITORY_ID && (
-                  <p className="mt-2 text-sm font-medium leading-snug text-ink-faint">
-                    Hors carte : le Baobab rassemble ce qui traverse le continent — panafricanisme,
-                    diaspora, arts et création.
                   </p>
                 )}
 
