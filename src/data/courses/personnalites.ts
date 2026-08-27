@@ -5837,27 +5837,155 @@ export const PERSONNALITES_COURSES: Course[] = [
     title: "Voix et plumes d'Afrique",
     description:
       "Des pionniers du Nobel aux voix contemporaines : cinq écrivains qui ont porté la littérature africaine sur la scène mondiale.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "lesson-perso-pionniers-nobel",
-        title: "Les pionniers du Nobel",
+        title: "Wole Soyinka, premier Nobel africain",
         blocks: [
-          { type: "paragraphe", text: "Wole Soyinka, dramaturge et écrivain nigérian, devient en 1986 le premier Africain à recevoir le prix Nobel de littérature, notamment pour son théâtre engagé. Deux ans plus tard, en 1988, l'Égyptien Naguib Mahfouz, auteur de la Trilogie du Caire, devient le premier écrivain de langue arabe distingué par ce prix." },
+          {
+            type: "paragraphe",
+            text: "En 1986, l'académie suédoise récompense pour la première fois un écrivain africain. **Wole Soyinka**, dramaturge nigérian, écrit en anglais un théâtre nourri de la mythologie yoruba.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1986",
+            legende: "premier prix Nobel de littérature décerné à un Africain",
+          },
+          {
+            type: "paragraphe",
+            text: "Sa pièce la plus connue, **La Mort et l'Écuyer du roi**, part d'un fait réel de l'époque coloniale. Soyinka a payé cher son franc-parler : arrêté pendant la guerre du Biafra, il a passé vingt-deux mois en détention, dont l'essentiel à l'isolement.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Wole Soyinka**, nigérian, Nobel de littérature en 1986",
+              "Premier écrivain africain distingué par ce prix",
+              "Un théâtre en anglais, nourri de la mythologie yoruba",
+            ],
+          },
+        ],
+      },
+      {
+        id: "lesson-perso-senghor-negritude",
+        title: "Senghor et la Négritude",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Dans le Paris des années 1930, trois étudiants — le Sénégalais **Léopold Sédar Senghor**, le Martiniquais Aimé Césaire et le Guyanais Léon-Gontran Damas — forgent un mot pour retourner une insulte : la Négritude.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1935", texte: "La revue L'Étudiant noir paraît à Paris" },
+              { date: "1960", texte: "Senghor devient le premier président du Sénégal" },
+              { date: "1983", texte: "Il entre à l'Académie française" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "La **Négritude** affirme une culture noire digne d'être revendiquée, contre un discours colonial qui la niait. Senghor l'a portée en poèmes, puis à la tête d'un État pendant vingt ans.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **Négritude** naît à Paris dans les années 1930",
+              "Senghor la cofonde avec Césaire et Damas",
+              "Premier Africain élu à l'**Académie française**, en 1983",
+            ],
+          },
         ],
       },
       {
         id: "lesson-perso-peres-fondateurs",
-        title: "Pères fondateurs de la littérature africaine moderne",
+        title: "Chinua Achebe et « Le monde s'effondre »",
         blocks: [
-          { type: "paragraphe", text: "Le Nigérian Chinua Achebe publie en 1958 « Le monde s'effondre », roman fondateur de la littérature africaine moderne en langue anglaise. Au Sénégal, Léopold Sédar Senghor, poète et premier président du pays, cofonde le mouvement de la Négritude et devient en 1983 le premier Africain élu à l'Académie française." },
+          {
+            type: "paragraphe",
+            text: "En 1958, **Chinua Achebe** publie un roman qui raconte l'arrivée des missionnaires dans un village igbo — vue depuis le village, et non depuis le bateau.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1958",
+            legende: "parution de « Le monde s'effondre »",
+          },
+          {
+            type: "paragraphe",
+            text: "**Le monde s'effondre** suit Okonkwo, un homme que sa force même finit par perdre. Le livre a ouvert la voie à toute une génération d'écrivains africains de langue anglaise, et se lit aujourd'hui dans les écoles du monde entier.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Chinua Achebe** publie « Le monde s'effondre » en 1958",
+              "La colonisation y est racontée depuis le village igbo",
+              "Un roman fondateur de la littérature africaine anglophone",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "Le titre anglais, Things Fall Apart, est emprunté à un poème de l'Irlandais W. B. Yeats — un écrivain colonisé reprenant les mots d'un autre.",
+          },
+        ],
+      },
+      {
+        id: "lesson-perso-mahfouz",
+        title: "Naguib Mahfouz, Le Caire en romans",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "**Naguib Mahfouz** a passé sa vie dans le même quartier du Caire, et y a installé la plupart de ses romans. En 1988, il devient le premier écrivain de langue arabe à recevoir le Nobel de littérature.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "1988",
+            legende: "premier Nobel de littérature de langue arabe",
+          },
+          {
+            type: "paragraphe",
+            text: "Sa **Trilogie du Caire** suit trois générations d'une même famille à travers les bouleversements de l'Égypte du XXᵉ siècle. Mahfouz écrivait des fonctionnaires, des commerçants et des ruelles, jamais des héros.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Naguib Mahfouz**, égyptien, Nobel de littérature en 1988",
+              "Premier lauréat écrivant en **arabe**",
+              "Sa Trilogie du Caire suit trois générations d'une famille",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "En 1994, à 82 ans, Mahfouz est poignardé au cou devant chez lui par des extrémistes. Il survit, mais sa main d'écrivain ne retrouvera jamais son aisance.",
+          },
         ],
       },
       {
         id: "lesson-perso-nouvelle-generation",
-        title: "Une nouvelle génération de voix",
+        title: "Chimamanda Ngozi Adichie et l'histoire unique",
         blocks: [
-          { type: "paragraphe", text: "Chimamanda Ngozi Adichie, romancière nigériane, s'impose avec des œuvres comme « Americanah » et « L'autre moitié du soleil ». Sa conférence TED « Le danger de l'histoire unique » a marqué durablement les discussions sur la représentation de l'Afrique dans le monde." },
+          {
+            type: "paragraphe",
+            text: "**Chimamanda Ngozi Adichie** écrit sur le Nigeria, la guerre du Biafra et l'exil, depuis Lagos comme depuis les États-Unis. Ses romans se lisent partout, ses conférences aussi.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "2006", valeur: "L'autre moitié du soleil" },
+              { label: "2009", valeur: "Le danger de l'histoire unique" },
+              { label: "2013", valeur: "Americanah" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Dans **Le danger de l'histoire unique**, elle décrit ce qui se passe quand un peuple n'est raconté que d'une seule façon : on ne le rend pas faux, on le rend incomplet. La formule a dépassé le monde littéraire.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Adichie** écrit sur le Nigeria, le Biafra et l'exil",
+              "« L'autre moitié du soleil » et « Americanah » l'ont fait connaître",
+              "Sa conférence sur l'**histoire unique** a marqué bien au-delà des livres",
+            ],
+          },
         ],
       },
     ],
@@ -5892,6 +6020,19 @@ export const PERSONNALITES_COURSES: Course[] = [
         correctIndex: 1,
         explanation:
           "Naguib Mahfouz, auteur égyptien de la Trilogie du Caire, fut le premier écrivain de langue arabe à recevoir le Nobel de littérature.",
+      },
+      {
+        id: "quiz-perso-5",
+        question: "Quelle conférence de Chimamanda Ngozi Adichie a marqué les débats sur la représentation de l'Afrique ?",
+        options: [
+          "« Le danger de l'histoire unique »",
+          "« Nous devrions tous être féministes »",
+          "« L'autre moitié du soleil »",
+          "« Americanah »",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Dans « Le danger de l'histoire unique » (2009), Adichie montre qu'un récit répété en un seul exemplaire ne rend pas un peuple faux, mais incomplet. « Americanah » et « L'autre moitié du soleil » sont des romans.",
       },
     ],
   },

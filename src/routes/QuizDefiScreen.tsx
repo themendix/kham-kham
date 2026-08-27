@@ -20,7 +20,7 @@ interface FinishedState {
 }
 
 /**
- * Défi du jour, désormais dans le module Quiz (`/jeu/defi`).
+ * Défi du jour, désormais dans le module Quiz (`/quiz/defi`).
  *
  * Remplace l'ancien écran `/defi`, qui vivait à côté du module et tirait trois questions au hasard
  * dans tout le catalogue sans jamais tenir compte de ce que l'utilisateur avait raté. Le défi est
@@ -30,7 +30,7 @@ interface FinishedState {
  * Il n'a besoin que de l'index des questions — l'ancien écran chargeait le contenu complet des
  * quatre matières (le texte de 564 leçons) uniquement pour atteindre leurs quiz.
  */
-export function JeuDefiScreen() {
+export function QuizDefiScreen() {
   const navigate = useNavigate();
   const challengeDone = useAppStore((s) => s.progress.daily.challengeDone);
   const checkDailyReset = useAppStore((s) => s.checkDailyReset);
@@ -38,7 +38,7 @@ export function JeuDefiScreen() {
   const finishQuizGame = useAppStore((s) => s.finishQuizGame);
   const recordQuizResult = useAppStore((s) => s.recordQuizResult);
   const addXp = useAppStore((s) => s.addXp);
-  const addDailyProgress = useAppStore((s) => s.addDailyProgress);
+  const addDailyXp = useAppStore((s) => s.addDailyXp);
   const markChallengeDone = useAppStore((s) => s.markChallengeDone);
   const updateStreak = useAppStore((s) => s.updateStreak);
 
@@ -69,7 +69,7 @@ export function JeuDefiScreen() {
         date: new Date().toISOString(),
       });
       addXp(DAILY_CHALLENGE_XP_BONUS);
-      addDailyProgress({ xp: DAILY_CHALLENGE_XP_BONUS });
+      addDailyXp(DAILY_CHALLENGE_XP_BONUS);
       finishQuizGame({ cauris, record: null });
       markChallengeDone();
       updateStreak();
@@ -79,7 +79,7 @@ export function JeuDefiScreen() {
       questions.length,
       recordQuizResult,
       addXp,
-      addDailyProgress,
+      addDailyXp,
       finishQuizGame,
       markChallengeDone,
       updateStreak,
@@ -94,7 +94,7 @@ export function JeuDefiScreen() {
         <p className="mt-2 font-medium text-ink-muted">
           Reviens demain pour le prochain — en attendant, les territoires restent ouverts.
         </p>
-        <Link to="/jeu">
+        <Link to="/quiz">
           <Button className="mt-5">Jouer sur un territoire</Button>
         </Link>
       </Card>
@@ -105,7 +105,7 @@ export function JeuDefiScreen() {
     return (
       <Card className="mx-auto max-w-md p-8 text-center">
         <h1 className="text-xl font-extrabold">Aucune question disponible</h1>
-        <Link to="/jeu">
+        <Link to="/quiz">
           <Button className="mt-5">Retour au jeu</Button>
         </Link>
       </Card>
@@ -116,7 +116,7 @@ export function JeuDefiScreen() {
     <div className="mx-auto max-w-2xl">
       <h1 className="sr-only">Défi du jour</h1>
       <button
-        onClick={() => navigate("/jeu")}
+        onClick={() => navigate("/quiz")}
         className="mb-3 inline-flex items-center gap-1.5 font-heading text-sm font-bold text-ink-faint"
       >
         <ArrowLeft className="h-4 w-4" aria-hidden /> Retour

@@ -11,7 +11,7 @@ Le nom *Sankofa* vient du concept akan « retourner chercher le savoir du passé
 L'app a 4 onglets (bottom nav) :
 - **Home** : fil de cartes à swiper ✗ (passer) / ✓ (apprendre), une carte = un sujet culturel.
 - **Biblio** : bibliothèque de cours par matière (À la une, groupés par catégorie).
-- **Jeu** : module Quiz — carte de conquête de l'Afrique, modes Blitz et Survie par territoire, Défi du jour, révision espacée, et les parcours guidés en « Quêtes ». (A remplacé l'onglet Collections en Phase 9.)
+- **Quiz** : carte de conquête de l'Afrique, modes Blitz et Survie par territoire, Défi du jour, révision espacée, et les parcours guidés en « Quêtes ». (A remplacé l'onglet Collections en Phase 9 ; s'est d'abord appelé « Jeu », renommé depuis — les chemins `/jeu…` cités dans les livraisons antérieures sont d'époque.)
 - **Profil** : niveau/rang, streak hebdomadaire 🔥, statistiques, radar de maîtrise par matière.
 
 ## Conventions du projet
@@ -263,14 +263,15 @@ contenu.
 | Découverte | 11 |
 | **Total** | **136** |
 
-**564 leçons**, **676 questions de quiz**. **17 960 XP disponibles au total** : 8 360 de
-complétion de cours + 5 640 de leçons (`XP_PER_LESSON = 10`) + 3 380 du module Quiz
-(`XP_PER_QUESTION_LEARNED = 5`, à la 2ᵉ réussite) + 400 de parcours + 180 de cartes éditoriales.
-C'est ce total qui calibre `LEVEL_TIERS`.
+**572 leçons**, **680 questions de quiz**. **17 960 XP disponibles au total** : 8 520 de
+complétion de cours + 5 720 de leçons (`XP_PER_LESSON = 10`) + 3 400 du module Quiz
+(`XP_PER_QUESTION_LEARNED = 5`, à la 2ᵉ réussite) + 400 de parcours. C'est ce total qui calibre
+`LEVEL_TIERS` — inchangé depuis le retrait des cartes éditoriales, dont la perte a été compensée
+exactement par l'enrichissement des 4 cours hérités.
 
-Découverte compte 11 cours : les 8 du lot 1 à **5 leçons** (`xp: 70`) et les 3 cours hérités
-laissés à **3 leçons** (`xp: 50`) — deux formats coexistent donc dans la matière, c'est une
-décision assumée.
+Découverte compte 11 cours, tous à **5 leçons** (`xp: 70`) : les 3 cours hérités ont rejoint ce
+format en Phase 9. Seules les 54 fiches Géographie s'en écartent (3 leçons, 5 questions), ce qui
+est leur format voulu.
 
 > `LEVEL_TIERS` a été recalibré en Phase 9 sur 17 960 XP (module Quiz compris). À revoir
 > consciemment à chaque ajout notable de contenu — les lots 2 à 4 de Découverte le nécessiteront.
@@ -647,6 +648,86 @@ Sans recalibrage, « Gardien du savoir » serait tombé à **72,6 %** du catalog
 - **Les tests ne codent plus les seuils en dur** : `gamification.test.ts` dérive ses échantillons
   de `LEVEL_TIERS` et de `OPEN_LEVEL_STEP` (désormais exporté). Ils vérifient la frontière, pas une
   valeur d'époque, et survivront au prochain recalibrage.
+
+## Livraison (Phase 9 — Retrait du contenu d'amorçage et alignement des cours hérités)
+
+Deux lots liés : le fil du Home change de nature, et les 4 derniers cours au format d'origine
+passent au format du catalogue.
+
+### Lot 1 — Le fil du Home devient un fil de découverte de cours
+
+`src/data/cards.ts` (18 cartes éditoriales de la Phase 1) est **supprimé**, ainsi que le
+pseudo-cours `EDITORIAL_COURSE_ID`. Le fil ne sert plus des leçons à lire mais des **cours à
+trier** : illustration du cours, matière, titre, description, puis ✗ « pas intéressé » /
+✓ « intéressé ».
+
+- **✓ met le cours en favori**, ✗ l'écarte **définitivement** (`dismissedCourseIds`, nouveau champ).
+  Sans cette mémoire, le fil resservirait indéfiniment ce qu'on vient de refuser.
+- **Swiper ne rapporte plus d'XP** : c'est du tri, pas de l'apprentissage. L'objectif du jour
+  compte désormais les **leçons lues** (`daily.lessonsLearned`), où qu'elles l'aient été.
+- **Le suivi quotidien est tenu par `completeLesson`**, et nulle part ailleurs : c'est le seul
+  point du code qui sait qu'une leçon vient réellement d'être lue. Auparavant chaque écran appelait
+  `addDailyProgress` de son côté, ce qui obligeait chaque nouvel appelant à y penser.
+- **Gain technique** : une carte n'a besoin que de `COURSE_INDEX`. Le fil est complet dès le
+  premier rendu, sans attendre le chargement du texte des leçons.
+- **Un bug corrigé au passage** : depuis que le fil servait des leçons du catalogue, mettre une
+  carte en favori écrivait un id de leçon nu dans `favoriteCardIds`, que l'écran Favoris résolvait
+  uniquement contre `CARDS` — le favori disparaissait donc silencieusement. Il n'y a plus qu'une
+  sorte de favori, le cours.
+- **Migration v9** : `favoriteIds`/`favoriteCardIds`/`favoriteLessonKeys` sont résolus contre le
+  catalogue et remontés vers `favoriteCourseIds` (un id de leçon remonte à son cours, l'intention
+  est préservée) ; les id de cartes supprimées sont abandonnés ; les entrées `editorial:*` de
+  `completedLessonIds` sont nettoyées ; `cardsLearned`/`totalCardsLearned` sont renommés.
+  **L'XP acquise n'est jamais recalculée.**
+
+### Lot 2 — Les 4 cours hérités passés à 5 leçons
+
+Les derniers cours au format de la Phase 1 (3 leçons / 4 questions) rejoignent le format du
+catalogue : **5 leçons, 5 questions, `xp: 70`**. Les id de cours, de leçons existantes et de
+questions sont **inchangés** — ce sont des clés de `localStorage`.
+
+| Cours | Leçons ajoutées |
+|---|---|
+| Rythmes du continent | Le soukous et la rumba congolaise · Le raï, la voix d'Oran |
+| Griots et sagesses | La kora · L'arbre à palabres |
+| L'Afrique qui innove | La ZLECAf · Les hubs technologiques (Yaba, Nairobi, Kigali) |
+| Voix et plumes d'Afrique | Senghor et la Négritude · Naguib Mahfouz |
+
+- **« Voix et plumes » a été entièrement réécrit** : ses leçons étaient encore des paragraphes
+  uniques, hors charte. Il annonçait « cinq écrivains » et n'en traitait que trois ; il en traite
+  désormais cinq, un par leçon.
+- **Une erreur de fait corrigée** : le cours annonçait la ZLECAf « entrée en vigueur en 2021 »,
+  jusque dans l'intitulé du quiz. Elle est entrée en vigueur le **30 mai 2019** ; seul le
+  démantèlement tarifaire a démarré le 1ᵉʳ janvier 2021.
+- **Effet mécanique** : les 4 cours deviennent *alignés*, donc leur rattachement question → leçon
+  se dérive par position et leurs entrées disparaissent de `quizLessonMap`. Seules les 54 fiches
+  Géographie restent non alignées, ce qui est le format voulu.
+- **Aucun recalibrage de `LEVEL_TIERS`** : le retrait des cartes (−180 XP) et l'enrichissement des
+  4 cours (+80 de complétion, +80 de leçons, +20 de questions) s'annulent exactement. Le total
+  reste **17 960 XP**, la valeur sur laquelle le barème est calé.
+- **Contenu sourcé** : rumba congolaise inscrite à l'UNESCO en 2021 et raï en 2022 (vérifiés),
+  entrée de l'Union africaine au G20 le 9 septembre 2023 comme deuxième bloc régional après l'UE.
+
+## Livraison (Phase 9 — L'onglet Jeu renommé Quiz)
+
+L'onglet **Jeu** devient **Quiz**. Le mot « Jeu » promettait du divertissement au-dessus d'un
+moteur de révision, alors que tout le code du module disait déjà « quiz » (`QuizGamePlayer`,
+`quizGame`, `QUIZ_INDEX`…). Détail complet dans `docs/ARCHITECTURE.md` § Renommage de l'onglet Jeu
+en Quiz.
+
+- **Routes migrées** : `/quiz`, `/quiz/defi`, `/quiz/:territoryId/:mode`. Les anciennes (`/jeu…`,
+  `/defi`, `/collections`) restent en redirection.
+- **`/quiz` était déjà pris** par l'historique des tentatives : il vit désormais sous
+  **`/profil/quiz`**, d'où il est de toute façon ouvert. Contrepartie assumée : un favori sur
+  l'ancien `/quiz` tombe maintenant sur l'onglet, une adresse ne pouvant rediriger vers deux
+  endroits.
+- **`JeuRedirect`** (`App.tsx`) : `<Navigate>` ne sait pas reporter les paramètres d'URL, sa cible
+  étant une chaîne figée. Ce petit composant relit `useParams()` pour rediriger
+  `/jeu/:territoire/:mode` sans perdre le territoire ni le mode.
+- **Fichiers renommés** : `JeuScreen`/`JeuPartieScreen`/`JeuDefiScreen` →
+  `QuizScreen`/`QuizPartieScreen`/`QuizDefiScreen` (via `git mv`, l'historique est conservé).
+- **Icône** : les épées croisées (`Swords`) cèdent la place à une cible (`Target`).
+- **Aucune migration du store** : rien dans la progression ne stocke de chemin.
 
 ## Ce qui N'est PAS encore fait
 

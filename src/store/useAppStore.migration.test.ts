@@ -32,7 +32,8 @@ function assertCoherentLevelAndRank(progress: UserProgress) {
 function assertNoOrphanArrays(progress: UserProgress) {
   expect(Array.isArray(progress.completedCourseIds)).toBe(true);
   expect(Array.isArray(progress.completedParcoursIds)).toBe(true);
-  expect(Array.isArray(progress.favoriteCardIds)).toBe(true);
+  expect(Array.isArray(progress.favoriteCourseIds)).toBe(true);
+  expect(Array.isArray(progress.dismissedCourseIds)).toBe(true);
   expect(Array.isArray(progress.favoriteCourseIds)).toBe(true);
   expect(Array.isArray(progress.quizResults)).toBe(true);
   expect(Array.isArray(progress.startedCourseIds)).toBe(true);
@@ -69,10 +70,12 @@ describe("migrate — blob v1 (Fondations)", () => {
     expect(progress.quizResults).toEqual(v1Blob().progress.quizResults);
   });
 
-  it("transforme favoriteIds en favoriteCardIds et démarre favoriteCourseIds à vide", () => {
+  it("remonte les anciens favoris vers des cours et abandonne les cartes supprimées", () => {
+    // v1 mélangeait cours et cartes dans `favoriteIds` ; la v5 avait tout déversé dans
+    // `favoriteCardIds` sans trier, laissant les cours favoris invisibles. La v9 les récupère,
+    // et laisse tomber les id de cartes éditoriales, qui ne désignent plus rien.
     const { progress } = migrate(v1Blob());
-    expect(progress.favoriteCardIds).toEqual([PARCOURS_COURSE_A, "card-savane-1"]);
-    expect(progress.favoriteCourseIds).toEqual([]);
+    expect(progress.favoriteCourseIds).toEqual([PARCOURS_COURSE_A]);
   });
 
   it("retire masteryByCategory et seenCardIds", () => {
@@ -83,9 +86,9 @@ describe("migrate — blob v1 (Fondations)", () => {
 
   it("backfille les champs ajoutés depuis (v2→v6) avec les bons défauts", () => {
     const { progress } = migrate(v1Blob());
-    expect(progress.daily).toEqual({ date: null, cardsLearned: 0, xpEarned: 0, challengeDone: false });
+    expect(progress.daily).toEqual({ date: null, lessonsLearned: 0, xpEarned: 0, challengeDone: false });
     expect(progress.lastCourseId).toBeNull();
-    expect(progress.totalCardsLearned).toBe(0);
+    expect(progress.totalLessonsLearned).toBe(0);
     expect(progress.startedCourseIds).toEqual([]);
     expect(progress.completedLessonIds).toEqual([]);
     expect(progress.featuredLessonKey).toBeNull();
@@ -116,18 +119,18 @@ describe("migrate — blob v2 (Home tableau de bord : daily, lastCourseId, total
         seenCardIds: ["card-savane-1"],
         masteryByCategory: { histoire: 60 },
         quizResults: [],
-        daily: { date: "2026-03-05", cardsLearned: 3, xpEarned: 30, challengeDone: true },
+        daily: { date: "2026-03-05", lessonsLearned: 3, xpEarned: 30, challengeDone: true },
         lastCourseId: PARCOURS_COURSE_A,
-        totalCardsLearned: 12,
+        totalLessonsLearned: 12,
       },
     };
   }
 
   it("préserve daily, lastCourseId et totalCardsLearned tels quels", () => {
     const { progress } = migrate(v2Blob());
-    expect(progress.daily).toEqual({ date: "2026-03-05", cardsLearned: 3, xpEarned: 30, challengeDone: true });
+    expect(progress.daily).toEqual({ date: "2026-03-05", lessonsLearned: 3, xpEarned: 30, challengeDone: true });
     expect(progress.lastCourseId).toBe(PARCOURS_COURSE_A);
-    expect(progress.totalCardsLearned).toBe(12);
+    expect(progress.totalLessonsLearned).toBe(12);
   });
 
   it("backfille les champs ajoutés depuis (v3→v6)", () => {
@@ -158,9 +161,9 @@ describe("migrate — blob v3 (Tableau de bord de matière : startedCourseIds)",
         seenCardIds: [],
         masteryByCategory: {},
         quizResults: [],
-        daily: { date: "2026-03-06", cardsLearned: 1, xpEarned: 10, challengeDone: false },
+        daily: { date: "2026-03-06", lessonsLearned: 1, xpEarned: 10, challengeDone: false },
         lastCourseId: PARCOURS_COURSE_A,
-        totalCardsLearned: 13,
+        totalLessonsLearned: 13,
         startedCourseIds: ["course-geographie-01-algerie"],
       },
     };
@@ -192,9 +195,9 @@ describe("migrate — blob v4 (À la une : completedLessonIds, featuredLessonKey
         seenCardIds: [],
         masteryByCategory: {},
         quizResults: [],
-        daily: { date: "2026-03-07", cardsLearned: 0, xpEarned: 0, challengeDone: false },
+        daily: { date: "2026-03-07", lessonsLearned: 0, xpEarned: 0, challengeDone: false },
         lastCourseId: PARCOURS_COURSE_A,
-        totalCardsLearned: 13,
+        totalLessonsLearned: 13,
         startedCourseIds: ["course-geographie-01-algerie"],
         completedLessonIds: ["course-geographie-01-algerie:course-geographie-01-algerie-lesson-1"],
         featuredLessonKey: "course-geographie-01-algerie:course-geographie-01-algerie-lesson-1",
@@ -227,9 +230,9 @@ describe("migrate — blob v5 (Favoris scindés : favoriteCardIds / favoriteCour
         seenCardIds: [],
         masteryByCategory: {},
         quizResults: [],
-        daily: { date: "2026-03-08", cardsLearned: 0, xpEarned: 0, challengeDone: false },
+        daily: { date: "2026-03-08", lessonsLearned: 0, xpEarned: 0, challengeDone: false },
         lastCourseId: PARCOURS_COURSE_A,
-        totalCardsLearned: 13,
+        totalLessonsLearned: 13,
         startedCourseIds: ["course-geographie-01-algerie"],
         completedLessonIds: [],
         featuredLessonKey: null,
@@ -237,9 +240,8 @@ describe("migrate — blob v5 (Favoris scindés : favoriteCardIds / favoriteCour
     };
   }
 
-  it("ne fusionne pas et ne perd pas favoriteCardIds/favoriteCourseIds déjà scindés (pas de favoriteIds résiduel)", () => {
+  it("conserve les cours favoris et laisse tomber la carte éditoriale supprimée", () => {
     const { progress } = migrate(v5Blob());
-    expect(progress.favoriteCardIds).toEqual(["card-savane-1"]);
     expect(progress.favoriteCourseIds).toEqual([PARCOURS_COURSE_A]);
   });
 
@@ -266,9 +268,9 @@ describe("migrate — blob v6 (completedParcoursIds déjà présent)", () => {
         quizResults: [
           { courseId: PARCOURS_COURSE_B, score: 5, total: 5, date: "2026-03-10T09:00:00.000Z" },
         ],
-        daily: { date: "2026-03-10", cardsLearned: 2, xpEarned: 20, challengeDone: true },
+        daily: { date: "2026-03-10", lessonsLearned: 2, xpEarned: 20, challengeDone: true },
         lastCourseId: PARCOURS_COURSE_B,
-        totalCardsLearned: 15,
+        totalLessonsLearned: 15,
         startedCourseIds: ["course-geographie-01-algerie"],
         completedLessonIds: ["course-geographie-01-algerie:course-geographie-01-algerie-lesson-1"],
         featuredLessonKey: "course-geographie-01-algerie:course-geographie-01-algerie-lesson-1",
@@ -312,9 +314,9 @@ describe("migrate — blob v7 (dernière version avant le module Quiz)", () => {
         quizResults: [
           { courseId: PARCOURS_COURSE_B, score: 5, total: 5, date: "2026-03-10T09:00:00.000Z" },
         ],
-        daily: { date: "2026-03-10", cardsLearned: 2, xpEarned: 20, challengeDone: true },
+        daily: { date: "2026-03-10", lessonsLearned: 2, xpEarned: 20, challengeDone: true },
         lastCourseId: PARCOURS_COURSE_B,
-        totalCardsLearned: 15,
+        totalLessonsLearned: 15,
         startedCourseIds: ["course-geographie-01-algerie"],
         completedLessonIds: ["course-geographie-01-algerie:course-geographie-01-algerie-lesson-1"],
         featuredLessonKey: "course-geographie-01-algerie:course-geographie-01-algerie-lesson-1",
@@ -357,9 +359,9 @@ describe("migrate — blob v8 (module Quiz déjà joué)", () => {
         favoriteCardIds: [],
         favoriteCourseIds: [],
         quizResults: [],
-        daily: { date: "2026-03-10", cardsLearned: 0, xpEarned: 0, challengeDone: false },
+        daily: { date: "2026-03-10", lessonsLearned: 0, xpEarned: 0, challengeDone: false },
         lastCourseId: null,
-        totalCardsLearned: 0,
+        totalLessonsLearned: 0,
         startedCourseIds: [],
         completedLessonIds: [],
         featuredLessonKey: null,
@@ -462,9 +464,9 @@ describe("migrate — cas dégradés", () => {
         startedCourseIds: [],
         completedLessonIds: [],
         featuredLessonKey: null,
-        daily: { date: null, cardsLearned: 0, xpEarned: 0, challengeDone: false },
+        daily: { date: null, lessonsLearned: 0, xpEarned: 0, challengeDone: false },
         lastCourseId: null,
-        totalCardsLearned: 0,
+        totalLessonsLearned: 0,
         streak: { count: 0, lastActiveDate: null, weekDays: Array(7).fill(false) },
         unknownFutureField: { some: "shape from a version that does not exist yet" },
       },

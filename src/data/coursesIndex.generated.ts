@@ -2912,19 +2912,25 @@ export const COURSE_INDEX: CourseMeta[] = [
     "title": "Voix et plumes d'Afrique",
     "description": "Des pionniers du Nobel aux voix contemporaines : cinq écrivains qui ont porté la littérature africaine sur la scène mondiale.",
     "emoji": "✍️",
-    "xp": 50,
+    "xp": 70,
     "lessons": [
       {
         "id": "lesson-perso-pionniers-nobel"
       },
       {
+        "id": "lesson-perso-senghor-negritude"
+      },
+      {
         "id": "lesson-perso-peres-fondateurs"
+      },
+      {
+        "id": "lesson-perso-mahfouz"
       },
       {
         "id": "lesson-perso-nouvelle-generation"
       }
     ],
-    "quizCount": 4
+    "quizCount": 5
   },
   {
     "id": "course-arts-rythmes-continent",
@@ -2932,7 +2938,7 @@ export const COURSE_INDEX: CourseMeta[] = [
     "title": "Rythmes du continent",
     "description": "De l'Afrobeat à l'Amapiano : un voyage à travers les grands courants musicaux qui ont façonné le son de l'Afrique.",
     "emoji": "🎶",
-    "xp": 50,
+    "xp": 70,
     "lessons": [
       {
         "id": "lesson-arts-afrobeat"
@@ -2941,10 +2947,16 @@ export const COURSE_INDEX: CourseMeta[] = [
         "id": "lesson-arts-mbalax-soukous"
       },
       {
+        "id": "lesson-arts-soukous"
+      },
+      {
         "id": "lesson-arts-amapiano"
+      },
+      {
+        "id": "lesson-arts-rai"
       }
     ],
-    "quizCount": 4
+    "quizCount": 5
   },
   {
     "id": "course-trad-griots-sagesses",
@@ -2952,19 +2964,25 @@ export const COURSE_INDEX: CourseMeta[] = [
     "title": "Griots et sagesses ancestrales",
     "description": "Griots, rites de passage, philosophie Ubuntu : voyage au cœur des traditions qui structurent encore les sociétés africaines aujourd'hui.",
     "emoji": "🪘",
-    "xp": 50,
+    "xp": 70,
     "lessons": [
       {
         "id": "lesson-trad-griots"
+      },
+      {
+        "id": "lesson-trad-kora"
       },
       {
         "id": "lesson-trad-rites-passage"
       },
       {
         "id": "lesson-trad-ubuntu"
+      },
+      {
+        "id": "lesson-trad-arbre-a-palabres"
       }
     ],
-    "quizCount": 4
+    "quizCount": 5
   },
   {
     "id": "course-actu-afrique-qui-innove",
@@ -2972,19 +2990,25 @@ export const COURSE_INDEX: CourseMeta[] = [
     "title": "L'Afrique qui innove",
     "description": "Mobile money, intégration continentale, cinéma : trois visages d'une Afrique contemporaine en pleine transformation.",
     "emoji": "🌍",
-    "xp": 50,
+    "xp": 70,
     "lessons": [
       {
         "id": "lesson-actu-mobile-money"
+      },
+      {
+        "id": "lesson-actu-zlecaf"
       },
       {
         "id": "lesson-actu-union-africaine"
       },
       {
         "id": "lesson-actu-nollywood"
+      },
+      {
+        "id": "lesson-actu-tech-hubs"
       }
     ],
-    "quizCount": 4
+    "quizCount": 5
   },
   {
     "id": "course-decouverte-01-masques-sculptures",

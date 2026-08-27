@@ -19,7 +19,6 @@ import { fileURLToPath } from "node:url";
 import { COURSES } from "../src/data/courses";
 import { PARCOURS } from "../src/data/parcours";
 import { CATEGORIES } from "../src/data/categories";
-import { CARDS } from "../src/data/cards";
 import { COURSE_TERRITORIES } from "../src/data/courseTerritories";
 import { QUIZ_LESSON_MAP } from "../src/data/quizLessonMap";
 import { TERRITORY_IDS } from "../src/lib/territories";
@@ -105,14 +104,6 @@ for (const course of COURSES) {
     error(
       "5. Références de catégorie résolvables",
       `Le cours "${course.id}" référence la catégorie "${course.categoryId}", introuvable dans CATEGORIES`,
-    );
-  }
-}
-for (const card of CARDS) {
-  if (!categoryIds.has(card.categoryId)) {
-    error(
-      "5. Références de catégorie résolvables",
-      `La carte "${card.id}" référence la catégorie "${card.categoryId}", introuvable dans CATEGORIES`,
     );
   }
 }
@@ -216,9 +207,6 @@ for (const course of COURSES) {
   for (const lesson of course.lessons) {
     checkBlocksWellFormed(`${course.id} / ${lesson.id}`, lesson.blocks);
   }
-}
-for (const card of CARDS) {
-  checkBlocksWellFormed(`carte ${card.id}`, card.blocks);
 }
 
 // 11 à 18 — uniquement sur les matières listées dans CHARTE_APPLIQUEE.

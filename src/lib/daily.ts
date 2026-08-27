@@ -5,7 +5,7 @@ import { toISODate } from "@/lib/gamification";
 export function resetDailyIfNeeded(daily: DailyState, now: Date = new Date()): DailyState {
   const today = toISODate(now);
   if (daily.date === today) return daily;
-  return { date: today, cardsLearned: 0, xpEarned: 0, challengeDone: false };
+  return { date: today, lessonsLearned: 0, xpEarned: 0, challengeDone: false };
 }
 
 /** Jour de l'année (1-366), utilisé pour dériver un contenu stable sur une journée */

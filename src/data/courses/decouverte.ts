@@ -20,7 +20,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "Rythmes du continent",
     description:
       "De l'Afrobeat à l'Amapiano : un voyage à travers les grands courants musicaux qui ont façonné le son de l'Afrique.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "lesson-arts-afrobeat",
@@ -55,31 +55,62 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "lesson-arts-mbalax-soukous",
-        title: "Mbalax et soukous, deux courants majeurs",
+        title: "Le mbalax, le Sénégal en rythme",
         blocks: [
           {
             type: "paragraphe",
-            text: "Deux styles, deux fleuves, deux façons de faire danser un continent entier — et deux histoires qui se répondent.",
+            text: "À Dakar, le tambour sabar ne suit pas la musique : il la conduit. De sa rencontre avec les guitares électriques et les claviers est né le **mbalax**, dans les années 1970.",
           },
           {
             type: "reperes",
             items: [
-              { label: "Mbalax", valeur: "Sénégal, percussions sabar" },
-              { label: "Soukous", valeur: "Bassin du Congo, guitares entrelacées" },
-              { label: "Racine commune", valeur: "Rumba congolaise et highlife" },
+              { label: "Pays", valeur: "Sénégal" },
+              { label: "Percussion", valeur: "Le tambour sabar" },
+              { label: "Voix majeure", valeur: "Youssou N'Dour" },
             ],
           },
           {
             type: "paragraphe",
-            text: "Au Sénégal, le **mbalax** marie les percussions sabar aux claviers et au jazz ; Youssou N'Dour l'a porté sur les scènes du monde entier. Le **soukous** descend de la rumba congolaise et se reconnaît à ses guitares entrelacées.",
+            text: "**Youssou N'Dour** a porté ce style sur les scènes du monde entier sans en changer la langue : il chante en **wolof**. Son groupe, le Super Étoile de Dakar, joue toujours dans le club qu'il a ouvert chez lui.",
           },
           {
             type: "aRetenir",
             points: [
-              "Le **mbalax** sénégalais repose sur les percussions sabar",
-              "Le **soukous** congolais est hérité de la rumba",
-              "Deux styles exportés bien au-delà de leurs frontières",
+              "Le **mbalax** naît au Sénégal dans les années 1970",
+              "Il repose sur le **sabar**, joué à la main et au bâton",
+              "**Youssou N'Dour** l'a fait connaître au monde, en wolof",
             ],
+          },
+        ],
+      },
+      {
+        id: "lesson-arts-soukous",
+        title: "Le soukous et la rumba congolaise",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Sur les deux rives du fleuve Congo, une danse ancienne appelée nkumba — « les hanches » en kikongo — a donné son nom à la **rumba congolaise**.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "2021",
+            legende: "la rumba congolaise entre au patrimoine de l'UNESCO",
+          },
+          {
+            type: "paragraphe",
+            text: "De cette rumba est sorti le **soukous**, plus rapide, reconnaissable à ses guitares entrelacées et à ses longues séquences dansées. Franco Luambo et son TPOK Jazz l'ont diffusé dans toute l'Afrique.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **soukous** descend directement de la rumba congolaise",
+              "La rumba tient son nom du nkumba, une danse kongo",
+              "L'UNESCO l'a inscrite au patrimoine immatériel en 2021",
+            ],
+          },
+          {
+            type: "leSavaisTu",
+            text: "La rumba a traversé l'Atlantique deux fois : partie d'Afrique centrale avec la traite, elle est revenue de Cuba par les disques que les marins débarquaient à Kinshasa.",
           },
         ],
       },
@@ -106,6 +137,36 @@ export const DECOUVERTE_COURSES: Course[] = [
               "L'amapiano naît dans les townships près de **Pretoria**",
               "Sa signature est le **log drum**, une basse percussive",
               "L'un des sons africains les plus exportés aujourd'hui",
+            ],
+          },
+        ],
+      },
+      {
+        id: "lesson-arts-rai",
+        title: "Le raï, la voix d'Oran",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "À Oran, dans les années 1920, des chanteuses de cabaret appelées cheikhates chantaient l'amour et le manque sans rien adoucir. Ce répertoire portait déjà son nom : le **raï**, « l'opinion » en arabe algérien.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "1920", texte: "Le raï se forme à Oran et Sidi Bel Abbès" },
+              { date: "1980", texte: "Guitares et synthétiseurs : le raï devient pop" },
+              { date: "2022", texte: "Inscription au patrimoine immatériel de l'UNESCO" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "**Cheb Khaled**, Cheb Mami et Rachid Taha l'ont porté hors d'Algérie. Chanté en arabe algérien, le raï a longtemps dérangé chez lui, et plusieurs de ses artistes ont dû quitter le pays.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "Le **raï** naît à Oran et Sidi Bel Abbès dans les années 1920",
+              "Il devient un phénomène pop dans les **années 1980**",
+              "L'UNESCO l'inscrit au patrimoine immatériel en **2022**",
             ],
           },
         ],
@@ -149,6 +210,14 @@ export const DECOUVERTE_COURSES: Course[] = [
         explanation:
           "L'Amapiano est apparu au milieu des années 2010 dans les townships autour de Pretoria, en Afrique du Sud.",
       },
+      {
+        id: "quiz-arts-5",
+        question: "Dans quelle ville algérienne le raï s'est-il formé ?",
+        options: ["Alger", "Constantine", "Oran", "Annaba"],
+        correctIndex: 2,
+        explanation:
+          "Le raï se forme à Oran et Sidi Bel Abbès dès les années 1920, avant de devenir un phénomène mondial dans les années 1980. L'UNESCO l'a inscrit à son patrimoine immatériel en 2022.",
+      },
     ],
   },
   {
@@ -158,7 +227,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "Griots et sagesses ancestrales",
     description:
       "Griots, rites de passage, philosophie Ubuntu : voyage au cœur des traditions qui structurent encore les sociétés africaines aujourd'hui.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "lesson-trad-griots",
@@ -169,20 +238,47 @@ export const DECOUVERTE_COURSES: Course[] = [
             text: "Avant les archives et les registres, une famille entière confiait son histoire à la mémoire d'un seul homme.",
           },
           {
-            type: "chiffreCle",
-            valeur: "21 cordes",
-            legende: "la kora, harpe-luth emblématique des griots",
+            type: "citation",
+            texte: "Nous sommes les sacs à paroles, nous sommes les sacs qui renferment des secrets plusieurs fois séculaires.",
+            auteur: "Djeli Mamoudou Kouyaté",
           },
           {
             type: "paragraphe",
-            text: "Le griot — **djeli** en mandingue — conserve la généalogie, l'histoire et les alliances de la famille à laquelle il est attaché, et les récite quand il le faut. Sa parole loue, mais peut aussi rappeler ce qu'on préférerait oublier. La **kora** l'accompagne.",
+            text: "Le griot — **djeli** en mandingue — conserve la **généalogie**, l'histoire et les alliances de la famille à laquelle il est attaché, et les récite quand il le faut. Sa parole loue, mais peut aussi rappeler ce qu'on préférerait oublier.",
           },
           {
             type: "aRetenir",
             points: [
               "Le griot, ou **djeli**, conserve la mémoire d'une famille",
               "Il transmet oralement généalogies, histoire et alliances",
-              "La **kora** est son instrument emblématique",
+              "Sa parole peut louer comme elle peut **rappeler**",
+            ],
+          },
+        ],
+      },
+      {
+        id: "lesson-trad-kora",
+        title: "La kora, la harpe à vingt et une cordes",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Une demi-calebasse tendue de peau, un long manche, et deux rangées de cordes que les pouces et les index font sonner : la **kora** ne ressemble à aucun autre instrument.",
+          },
+          {
+            type: "chiffreCle",
+            valeur: "21 cordes",
+            legende: "réparties en deux rangées, de part et d'autre du manche",
+          },
+          {
+            type: "paragraphe",
+            text: "Elle appartient aux familles de griots mandingues — Kouyaté, Diabaté, Cissokho — qui se la transmettent de père en fils. **Toumani Diabaté** l'a fait entrer dans le jazz et la musique classique sans lui retirer son répertoire d'origine.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **kora** compte 21 cordes sur une caisse en calebasse",
+              "Elle se transmet dans les familles de griots mandingues",
+              "Jouée aux pouces et aux index, jamais avec un archet",
             ],
           },
         ],
@@ -244,6 +340,36 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+      {
+        id: "lesson-trad-arbre-a-palabres",
+        title: "L'arbre à palabres, un tribunal sans murs",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Dans beaucoup de villages d'Afrique de l'Ouest, un grand arbre tient lieu de salle commune. Sous son ombre, on règle les **litiges**, on annonce les décisions et on marie.",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Essence fréquente", valeur: "Le baobab ou le fromager" },
+              { label: "Rôle", valeur: "Justice, annonces, délibération" },
+              { label: "Principe", valeur: "Parler jusqu'à l'accord" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "La **palabre** n'a pas de durée fixe : on discute jusqu'à ce qu'un accord tienne, parce qu'il faudra continuer à vivre ensemble après. Les anciens tranchent en dernier, une fois que chacun a parlé.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "L'**arbre à palabres** sert de lieu de justice et d'annonce",
+              "Souvent un baobab ou un fromager, au centre du village",
+              "On délibère jusqu'à l'accord, pas jusqu'au vote",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
@@ -292,6 +418,19 @@ export const DECOUVERTE_COURSES: Course[] = [
         explanation:
           "Ubuntu affirme que l'humanité d'une personne se réalise à travers ses liens avec les autres — popularisée par Desmond Tutu et Nelson Mandela.",
       },
+      {
+        id: "quiz-trad-5",
+        question: "À quoi sert traditionnellement l'arbre à palabres ?",
+        options: [
+          "À délimiter la frontière entre deux villages",
+          "À régler les litiges et prendre les décisions collectives",
+          "À marquer l'emplacement d'un ancien marché",
+          "À abriter les récoltes pendant la saison sèche",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Sous l'arbre à palabres, souvent un baobab ou un fromager, on règle les différends et on annonce les décisions. On y délibère jusqu'à l'accord, parce que les parties devront continuer à vivre ensemble.",
+      },
     ],
   },
   {
@@ -301,7 +440,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     title: "L'Afrique qui innove",
     description:
       "Mobile money, intégration continentale, cinéma : trois visages d'une Afrique contemporaine en pleine transformation.",
-    xp: 50,
+    xp: 70,
     lessons: [
       {
         id: "lesson-actu-mobile-money",
@@ -331,31 +470,61 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
       },
       {
-        id: "lesson-actu-union-africaine",
-        title: "L'Union africaine et l'intégration continentale",
+        id: "lesson-actu-zlecaf",
+        title: "La ZLECAf, un marché d'un milliard de personnes",
         blocks: [
           {
             type: "paragraphe",
-            text: "Un marché unique d'un milliard de personnes existe sur le papier depuis 2021. Le faire exister vraiment est le chantier du siècle.",
+            text: "Signé à Kigali en 2018, l'accord créant la **ZLECAf** — Zone de libre-échange continentale africaine — engage presque tous les États du continent à baisser leurs droits de douane entre eux.",
+          },
+          {
+            type: "frise",
+            evenements: [
+              { date: "2018", texte: "Signature de l'accord à Kigali" },
+              { date: "2019", texte: "Entrée en vigueur, le 30 mai" },
+              { date: "2021", texte: "Début effectif des échanges, le 1er janvier" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Le commerce entre pays africains reste faible : la plupart exportent surtout des matières premières vers d'autres continents. La ZLECAf vise à changer cela, mais les **routes** et les postes-frontières manquent autant que les accords.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "La **ZLECAf** est entrée en vigueur le 30 mai 2019",
+              "Les échanges n'ont réellement démarré qu'en janvier 2021",
+              "Objectif : faire commercer les pays africains entre eux",
+            ],
+          },
+        ],
+      },
+      {
+        id: "lesson-actu-union-africaine",
+        title: "L'Union africaine, du rêve panafricain aux institutions",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "En 1963, trente-deux États fraîchement indépendants fondent à Addis-Abeba l'Organisation de l'unité africaine. Le rêve d'un continent uni y rencontre pour la première fois des statuts et un budget.",
           },
           {
             type: "frise",
             evenements: [
               { date: "1963", texte: "Création de l'Organisation de l'unité africaine" },
               { date: "2002", texte: "L'Union africaine lui succède" },
-              { date: "2021", texte: "Entrée en vigueur de la ZLECAf" },
+              { date: "2023", texte: "L'UA entre au G20 comme membre permanent" },
             ],
           },
           {
             type: "paragraphe",
-            text: "Fondée en 2002 à **Addis-Abeba**, l'Union africaine succède à l'OUA née en 1963 et réunit tous les États du continent. La **ZLECAf** vise à créer entre eux une zone de libre-échange continentale.",
+            text: "Fondée en 2002 à **Addis-Abeba**, l'**Union africaine** succède à l'OUA et réunit tous les États du continent. Elle déploie des missions de paix, mais ses décisions dépendent du bon vouloir de ses membres.",
           },
           {
             type: "aRetenir",
             points: [
-              "L'Union africaine naît en 2002, après l'OUA de 1963",
+              "L'**Union africaine** naît en 2002, après l'OUA de 1963",
               "Son siège est à **Addis-Abeba**, en Éthiopie",
-              "La **ZLECAf** vise un marché continental unique",
+              "Elle siège au G20 depuis 2023",
             ],
           },
         ],
@@ -387,6 +556,36 @@ export const DECOUVERTE_COURSES: Course[] = [
           },
         ],
       },
+      {
+        id: "lesson-actu-tech-hubs",
+        title: "Yaba, Nairobi, Kigali : où se fabrique la tech africaine",
+        blocks: [
+          {
+            type: "paragraphe",
+            text: "Le quartier de **Yaba**, à Lagos, tient sur quelques rues : incubateurs, écoles de code et sièges de start-up y sont voisins. On l'a surnommé la « Yabacon Valley ».",
+          },
+          {
+            type: "reperes",
+            items: [
+              { label: "Lagos", valeur: "Yaba, la Yabacon Valley" },
+              { label: "Nairobi", valeur: "La Silicon Savannah" },
+              { label: "Kigali", valeur: "Kigali Innovation City" },
+            ],
+          },
+          {
+            type: "paragraphe",
+            text: "Nairobi doit son surnom au succès de **M-Pesa** : là où l'argent circule déjà par téléphone, les services qui s'y greffent trouvent aussitôt des utilisateurs. Les capitaux, eux, restent concentrés sur une poignée de pays.",
+          },
+          {
+            type: "aRetenir",
+            points: [
+              "**Yaba**, à Lagos, concentre incubateurs et start-up nigérianes",
+              "Nairobi est surnommée la « Silicon Savannah »",
+              "Le financement reste concentré sur quelques pays",
+            ],
+          },
+        ],
+      },
     ],
     quiz: [
       {
@@ -398,7 +597,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "quiz-actu-2",
-        question: "Que désigne la ZLECAf, entrée en vigueur en 2021 ?",
+        question: "Que désigne la ZLECAf, entrée en vigueur en 2019 ?",
         options: [
           "La Zone de libre-échange continentale africaine",
           "La Zone de législation commerciale africaine",
@@ -407,7 +606,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 0,
         explanation:
-          "La ZLECAf vise à créer un marché unique pour les biens et services entre les pays africains.",
+          "La Zone de libre-échange continentale africaine, signée à Kigali en 2018, est entrée en vigueur le 30 mai 2019. Les échanges à droits réduits n'ont réellement démarré que le 1er janvier 2021.",
       },
       {
         id: "quiz-actu-3",
@@ -424,6 +623,19 @@ export const DECOUVERTE_COURSES: Course[] = [
         correctIndex: 2,
         explanation:
           "Nollywood est le surnom de l'industrie cinématographique nigériane, l'une des plus prolifiques au monde.",
+      },
+      {
+        id: "quiz-actu-5",
+        question: "Quel surnom donne-t-on à l'écosystème technologique de Nairobi ?",
+        options: [
+          "La Yabacon Valley",
+          "La Silicon Savannah",
+          "La Rift Valley numérique",
+          "La Sahel Tech",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Nairobi est surnommée la « Silicon Savannah », un élan largement né du succès de M-Pesa. Lagos a de son côté sa « Yabacon Valley », dans le quartier de Yaba.",
       },
     ],
   },

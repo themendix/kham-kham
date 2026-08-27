@@ -20,16 +20,6 @@ export interface Category {
   color: SubjectColor;
 }
 
-/** Fiche du fil Home, swipée par l'utilisateur (✗ passer / ✓ apprendre) */
-export interface SwipeCard {
-  id: string;
-  categoryId: string;
-  title: string;
-  teaser: string;
-  blocks: LessonBlock[];
-  emoji: string;
-}
-
 export interface Lesson {
   id: string;
   title: string;
@@ -111,7 +101,8 @@ export interface Proverb {
 export interface DailyState {
   /** Date ISO (YYYY-MM-DD) du dernier reset ; null avant toute activité */
   date: string | null;
-  cardsLearned: number;
+  /** Leçons lues aujourd'hui, où qu'elles l'aient été (vue cours, « À la une ») */
+  lessonsLearned: number;
   xpEarned: number;
   challengeDone: boolean;
 }
@@ -184,24 +175,28 @@ export interface UserProgress {
   completedCourseIds: string[];
   /** Parcours dont tous les cours sont terminés et dont l'XP (`xpReward`) a déjà été créditée (une seule fois) */
   completedParcoursIds: string[];
-  favoriteCardIds: string[];
+  /** Cours mis de côté depuis le fil de découverte (✓ intéressé) ou depuis la Biblio */
   favoriteCourseIds: string[];
+  /**
+   * Cours écartés depuis le fil de découverte (✗ pas intéressé). Ils n'y sont plus jamais
+   * reproposés : sans cette mémoire, le fil resservirait indéfiniment ce qu'on vient de refuser.
+   */
+  dismissedCourseIds: string[];
   /** Historique des tentatives de quiz, 10 plus récentes maximum, alimente le Profil */
   quizResults: QuizResult[];
   /** Activité du jour (objectif Home, défi quotidien) */
   daily: DailyState;
   /** Dernier cours ouvert dans CourseDetailScreen, alimente « Continue ton apprentissage » */
   lastCourseId: string | null;
-  /** Nombre total de cartes apprises (✓) depuis toujours, ne se remet jamais à zéro */
-  totalCardsLearned: number;
+  /** Nombre total de leçons lues depuis toujours, ne se remet jamais à zéro */
+  totalLessonsLearned: number;
   /** Cours dont au moins une leçon a été lue (au-delà de la 1ʳᵉ), alimente l'état « En cours » du tableau de bord de matière */
   startedCourseIds: string[];
   /** Leçons lues, clés `${courseId}:${lessonId}` (lessonId n'est pas unique globalement) — partagé
-   * entre la vue cours, « À la une » et le fil Home (les 18 cartes éditoriales de `CARDS` sont
-   * comptées sous le pseudo-cours réservé `EDITORIAL_COURSE_ID`, voir `src/lib/homeFeed.ts`) */
+   * entre la vue cours, « À la une » et le fil Home */
   completedLessonIds: string[];
   /** Leçon actuellement mise en avant dans « À la une » (Biblio), clé `${courseId}:${lessonId}`, null si tout est lu */
   featuredLessonKey: string | null;
-  /** État du module Quiz (onglet Jeu) : cauris, révision espacée, records par territoire */
+  /** État du module Quiz (onglet Quiz) : cauris, révision espacée, records par territoire */
   quizGame: QuizGameState;
 }

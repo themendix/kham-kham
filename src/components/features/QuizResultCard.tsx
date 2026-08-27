@@ -8,15 +8,22 @@ interface QuizResultCardProps {
   result: QuizResult;
 }
 
+/** Pseudo-cours sous lequel le Défi du jour enregistre ses résultats (voir QuizDefiScreen). */
+const DAILY_CHALLENGE_COURSE_ID = "defi-quotidien";
+
 /** Résultat d'une tentative de quiz : titre du cours, notation en étoiles, bouton de reprise */
 export function QuizResultCard({ result }: QuizResultCardProps) {
-  const course =
-    result.courseId === "defi-quotidien" ? undefined : getCourseMetaOrWarn(result.courseId, "quizResults");
+  const isDailyChallenge = result.courseId === DAILY_CHALLENGE_COURSE_ID;
+  const course = isDailyChallenge ? undefined : getCourseMetaOrWarn(result.courseId, "quizResults");
+
+  // Le Défi du jour n'est pas un cours : il n'a pas de titre à résoudre, et il ne se refait pas
+  // (une tentative par jour). Sans ce libellé, il s'affichait ici comme « Cours supprimé ».
+  const title = isDailyChallenge ? "Défi du jour" : (course?.title ?? "Cours supprimé");
 
   return (
     <Card shadow="sm" className="p-4">
       <div className="flex items-start justify-between gap-3">
-        <h3 className="text-lg font-extrabold leading-tight">{course?.title ?? "Cours supprimé"}</h3>
+        <h3 className="text-lg font-extrabold leading-tight">{title}</h3>
         {course && (
           <Link
             to={`/cours/${course.id}`}

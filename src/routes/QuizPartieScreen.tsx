@@ -28,8 +28,8 @@ interface FinishedState {
   previousRecord: number;
 }
 
-/** Une partie du module Quiz : `/jeu/:territoryId/:mode`. */
-export function JeuPartieScreen() {
+/** Une partie du module Quiz : `/quiz/:territoryId/:mode`. */
+export function QuizPartieScreen() {
   const navigate = useNavigate();
   const { territoryId, mode } = useParams();
 
@@ -86,7 +86,7 @@ export function JeuPartieScreen() {
         <p className="mt-2 font-medium text-ink-muted">
           Le territoire ou le mode demandé est inconnu.
         </p>
-        <Link to="/jeu">
+        <Link to="/quiz">
           <Button className="mt-5">Retour au jeu</Button>
         </Link>
       </Card>
@@ -102,7 +102,7 @@ export function JeuPartieScreen() {
         <p className="mt-2 font-medium text-ink-muted">
           {territory.emoji} {territory.name} n'a aucune question pour l'instant.
         </p>
-        <Link to="/jeu">
+        <Link to="/quiz">
           <Button className="mt-5">Choisir un autre territoire</Button>
         </Link>
       </Card>
@@ -115,7 +115,7 @@ export function JeuPartieScreen() {
         {territory.name} — {mode === "blitz" ? "Blitz" : "Survie"}
       </h1>
       <button
-        onClick={() => navigate("/jeu")}
+        onClick={() => navigate("/quiz")}
         className="mb-3 inline-flex items-center gap-1.5 font-heading text-sm font-bold text-ink-faint"
       >
         <ArrowLeft className="h-4 w-4" aria-hidden /> Retour

@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
-import { Home, BookOpen, Swords, User } from "lucide-react";
+import { Home, BookOpen, Target, User } from "lucide-react";
 
 const TABS = [
   { to: "/", label: "Home", icon: Home, end: true },
   { to: "/biblio", label: "Biblio", icon: BookOpen, end: false },
-  { to: "/jeu", label: "Jeu", icon: Swords, end: false },
+  { to: "/quiz", label: "Quiz", icon: Target, end: false },
   { to: "/profil", label: "Profil", icon: User, end: false },
 ];
 

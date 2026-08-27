@@ -3,7 +3,6 @@ import { CheckCircle2, Target, Layers } from "lucide-react";
 import { useAppStore } from "@/store/useAppStore";
 import { getLevelInfo } from "@/lib/gamification";
 import { getMasteryByCategory } from "@/lib/subjectProgress";
-import { CARDS } from "@/data/cards";
 import { COURSE_INDEX } from "@/data/coursesIndex.generated";
 import { CATEGORIES } from "@/data/categories";
 import { ProgressBar } from "@/components/ui/ProgressBar";
@@ -21,9 +20,8 @@ export function ProfilScreen() {
   const masteryByCategory = getMasteryByCategory(progress, COURSE_INDEX, CATEGORIES);
 
   // Leçons apprises (convergence fil Home / « À la une » / vue cours, Phase 7 lot 3) : une
-  // seule source de vérité, `completedLessonIds`, sur le total réel de leçons disponibles
-  // (18 cartes éditoriales + toutes les leçons du catalogue).
-  const totalLessons = CARDS.length + COURSE_INDEX.reduce((sum, c) => sum + c.lessons.length, 0);
+  // seule source de vérité, `completedLessonIds`, sur le total réel de leçons du catalogue.
+  const totalLessons = COURSE_INDEX.reduce((sum, c) => sum + c.lessons.length, 0);
   const lessonsLearnedCount = progress.completedLessonIds.length;
   const lessonsPercent = Math.round((lessonsLearnedCount / totalLessons) * 100);
 
@@ -93,7 +91,6 @@ export function ProfilScreen() {
 
           <FavoritesSummaryCard
             courseCount={progress.favoriteCourseIds.length}
-            cardCount={progress.favoriteCardIds.length}
           />
         </div>
       </div>
@@ -104,7 +101,7 @@ export function ProfilScreen() {
             Mes quiz récents
           </span>
           {latestQuiz && (
-            <Link to="/quiz" className="font-heading text-lg font-extrabold text-ink">
+            <Link to="/profil/quiz" className="font-heading text-lg font-extrabold text-ink">
               Voir plus →
             </Link>
           )}

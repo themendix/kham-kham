@@ -98,9 +98,9 @@ export function QuizGameOutcome({
               <RotateCcw className="h-4 w-4" aria-hidden /> Rejouer
             </Button>
           )}
-          <Link to="/jeu" className="w-full">
+          <Link to="/quiz" className="w-full">
             <Button size="lg" variant={onReplay ? "secondary" : "primary"}>
-              {territory ? "Changer de territoire" : "Aller au jeu"}
+              {territory ? "Changer de territoire" : "Aller au quiz"}
             </Button>
           </Link>
         </div>

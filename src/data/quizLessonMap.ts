@@ -397,27 +397,7 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-54-zimbabwe:course-geographie-54-zimbabwe-quiz-3": "course-geographie-54-zimbabwe-lesson-1",
   "course-geographie-54-zimbabwe:course-geographie-54-zimbabwe-quiz-4": "course-geographie-54-zimbabwe-lesson-3",
 
-  // course-perso-voix-plumes-afrique
-  "course-perso-voix-plumes-afrique:quiz-perso-1": "lesson-perso-pionniers-nobel",
-  "course-perso-voix-plumes-afrique:quiz-perso-2": "lesson-perso-peres-fondateurs",
-  "course-perso-voix-plumes-afrique:quiz-perso-3": "lesson-perso-peres-fondateurs",
-  "course-perso-voix-plumes-afrique:quiz-perso-4": "lesson-perso-pionniers-nobel",
 
-  // course-arts-rythmes-continent
-  "course-arts-rythmes-continent:quiz-arts-1": "lesson-arts-afrobeat",
-  "course-arts-rythmes-continent:quiz-arts-2": "lesson-arts-mbalax-soukous",
-  "course-arts-rythmes-continent:quiz-arts-3": "lesson-arts-mbalax-soukous",
-  "course-arts-rythmes-continent:quiz-arts-4": "lesson-arts-amapiano",
 
-  // course-trad-griots-sagesses
-  "course-trad-griots-sagesses:quiz-trad-1": "lesson-trad-griots",
-  "course-trad-griots-sagesses:quiz-trad-2": "lesson-trad-griots",
-  "course-trad-griots-sagesses:quiz-trad-3": "lesson-trad-rites-passage",
-  "course-trad-griots-sagesses:quiz-trad-4": "lesson-trad-ubuntu",
 
-  // course-actu-afrique-qui-innove
-  "course-actu-afrique-qui-innove:quiz-actu-1": "lesson-actu-mobile-money",
-  "course-actu-afrique-qui-innove:quiz-actu-2": "lesson-actu-union-africaine",
-  "course-actu-afrique-qui-innove:quiz-actu-3": "lesson-actu-union-africaine",
-  "course-actu-afrique-qui-innove:quiz-actu-4": "lesson-actu-nollywood",
 };

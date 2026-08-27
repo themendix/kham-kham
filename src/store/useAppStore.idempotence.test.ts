@@ -87,12 +87,18 @@ describe("markCourseStarted — idempotence", () => {
   });
 });
 
-describe("toggleFavoriteCard / toggleFavoriteCourse — toggle propre", () => {
-  it("toggleFavoriteCard appelé deux fois revient à l'état initial, sans doublon intermédiaire", () => {
-    useAppStore.getState().toggleFavoriteCard("card-1");
-    expect(useAppStore.getState().progress.favoriteCardIds).toEqual(["card-1"]);
-    useAppStore.getState().toggleFavoriteCard("card-1");
-    expect(useAppStore.getState().progress.favoriteCardIds).toEqual([]);
+describe("dismissCourse / toggleFavoriteCourse", () => {
+  it("dismissCourse est idempotent : deux appels n'ajoutent qu'une entrée", () => {
+    useAppStore.getState().dismissCourse("cours-1");
+    useAppStore.getState().dismissCourse("cours-1");
+    expect(useAppStore.getState().progress.dismissedCourseIds).toEqual(["cours-1"]);
+  });
+
+  it("écarter un cours ne le met pas en favori, et n'accorde aucune XP", () => {
+    useAppStore.getState().dismissCourse("cours-1");
+    const { progress } = useAppStore.getState();
+    expect(progress.favoriteCourseIds).toEqual([]);
+    expect(progress.xp).toBe(0);
   });
 
   it("toggleFavoriteCourse appelé deux fois revient à l'état initial, sans doublon intermédiaire", () => {

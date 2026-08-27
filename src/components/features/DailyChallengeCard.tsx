@@ -11,7 +11,7 @@ interface DailyChallengeCardProps {
 
 /**
  * Carte d'accroche du Défi du jour sur le Home. Depuis l'absorption du défi par le module Quiz,
- * elle est un **raccourci** vers `/jeu/defi` : le Home garde son point d'entrée quotidien, mais le
+ * elle est un **raccourci** vers `/quiz/defi` : le Home garde son point d'entrée quotidien, mais le
  * quiz ne vit plus qu'à un seul endroit.
  */
 export function DailyChallengeCard({ done, onStart }: DailyChallengeCardProps) {

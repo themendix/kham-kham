@@ -595,6 +595,9 @@ fichiers stables (sans hash) pour les polices, seul moyen de les précharger par
 
 ## Module Quiz (Phase 9, lot 1 — socle de données)
 
+> ⚠️ **Les chemins `/jeu…` cités dans les cinq sections qui suivent sont d'époque.** L'onglet a
+> été renommé « Quiz » depuis, et ses routes avec lui — voir § Renommage de l'onglet Jeu en Quiz.
+
 Le module Quiz remplace l'onglet Collections. Ce lot ne livre **aucune interface** : il pose le
 socle de données, de contenu et de progression sur lequel les lots suivants (moteur de partie,
 révision, carte de conquête, soin visuel) viendront s'appuyer.
@@ -1172,6 +1175,104 @@ Cette faille est antérieure au recalibrage ; elle n'était simplement écrite n
 **Les tests ne codent plus les seuils en dur.** `gamification.test.ts` dérive ses échantillons de
 `LEVEL_TIERS` et de `OPEN_LEVEL_STEP` (désormais exporté) : ils vérifient la frontière, pas une
 valeur d'époque, et survivront au prochain recalibrage sans intervention.
+
+## Retrait du contenu d'amorçage et fil de découverte (Phase 9)
+
+### Pourquoi le fil du Home a changé deux fois
+
+Le fil a porté trois choses successives, et c'est instructif :
+
+1. **18 cartes éditoriales** (`src/data/cards.ts`), écrites en Phase 1 quand le catalogue était
+   vide. Un tiers d'entre elles répétait un cours écrit depuis ; le reste vivait hors matière, hors
+   charte des leçons et hors du module Quiz.
+2. **Des leçons du catalogue**, une fois les cartes retirées. Cohérent, mais deux défauts :
+   le fil restait vide tant que le texte des leçons n'était pas chargé, et surtout **lire une leçon
+   au milieu d'un fil de tri n'a pas de sens** — on swipe pour trier, pas pour apprendre.
+3. **Des cours à découvrir**, la forme actuelle : illustration, matière, titre, description, et
+   deux gestes — ✓ « intéressé » (le cours rejoint les favoris) et ✗ « pas intéressé » (il est
+   écarté définitivement).
+
+La troisième forme est la seule où le geste et le contenu s'accordent. Elle a aussi le mérite de
+n'avoir besoin que de `COURSE_INDEX` : le fil est complet dès le premier rendu.
+
+### Ce que le changement a imposé ailleurs
+
+- **`dismissedCourseIds`** : sans mémoire des refus, le fil resservirait indéfiniment ce qu'on
+  vient d'écarter.
+- **Plus d'XP au swipe.** Trier n'est pas apprendre ; en donner récompenserait un balayage.
+- **L'objectif du jour compte les leçons lues**, et ce comptage est tenu **dans `completeLesson`**
+  — le seul point du code qui sait qu'une leçon vient réellement d'être lue, et qui est déjà
+  idempotent. Auparavant chaque écran appelait `addDailyProgress` de son côté.
+- **Un bug corrigé** : depuis que le fil servait des leçons, mettre une carte en favori écrivait un
+  id de leçon nu dans `favoriteCardIds`, résolu par l'écran Favoris contre les seules `CARDS` —
+  le favori disparaissait sans bruit. Il n'y a plus qu'une sorte de favori, le cours.
+
+### Migration v9
+
+`favoriteIds` (v1), `favoriteCardIds` (v5) et `favoriteLessonKeys` (transitoire) sont résolus
+contre le catalogue et remontés vers `favoriteCourseIds` : un id de cours est gardé, un id de leçon
+remonte à son cours — l'intention « ce sujet m'intéresse » est préservée — et ce qui ne résout rien
+est abandonné, c'est une carte supprimée. Les entrées `editorial:*` de `completedLessonIds` sont
+nettoyées, `cardsLearned` devient `lessonsLearned` et `totalCardsLearned` devient
+`totalLessonsLearned`. **L'XP acquise n'est jamais recalculée.**
+
+### Les 4 cours hérités alignés
+
+Les derniers cours au format de la Phase 1 (3 leçons / 4 questions) passent à 5 leçons /
+5 questions / `xp: 70`. Les id de cours, de leçons existantes et de questions sont **inchangés** :
+ce sont des clés de `localStorage`. Les leçons conservées ont pu être retitrées et réécrites — ce
+que le lot 1 de Découverte avait déjà fait.
+
+Deux effets qui dépassent le simple format :
+
+- **Le rattachement question → leçon se dérive désormais par position** pour ces 4 cours, dont les
+  entrées disparaissent de `quizLessonMap`. Il ne reste que les 54 fiches Géographie non alignées.
+- **Le barème n'a pas bougé.** Le retrait des 18 cartes (−180 XP) et l'enrichissement des 4 cours
+  (+80 de complétion, +80 de leçons, +20 de questions) s'annulent : le total reste très exactement
+  **17 960 XP**, la valeur sur laquelle `LEVEL_TIERS` est calé.
+
+Une erreur de fait a été corrigée en passant : le cours annonçait la ZLECAf « entrée en vigueur en
+2021 », jusque dans l'intitulé de sa question de quiz. Elle est entrée en vigueur le **30 mai
+2019** ; seul le démantèlement tarifaire a démarré le 1ᵉʳ janvier 2021.
+
+## Renommage de l'onglet Jeu en Quiz (Phase 9)
+
+L'onglet s'appelait **Jeu**. Le mot promettait du divertissement au-dessus d'un moteur de révision,
+et travaillait contre la mission de l'application : quelqu'un qui vient chercher de l'histoire
+africaine ne clique pas spontanément sur « Jeu ».
+
+Le code, lui, disait déjà « quiz » partout — `QuizGamePlayer`, `QuizGameOutcome`, `quizGame` dans
+la progression, `QUIZ_INDEX`, `quizLessonMap`. Seule l'étiquette visible disait autre chose. Le
+renommage réconcilie l'interface avec ce qu'elle recouvre, et remet l'onglet dans le registre des
+trois autres : Home, Biblio, **Quiz**, Profil — des mots courts et fonctionnels.
+
+### Ce qu'il a fallu déplacer
+
+`/quiz` était **déjà pris** par l'historique des tentatives, ouvert depuis le Profil. Il vit
+désormais sous **`/profil/quiz`**, là où il est de toute façon atteint.
+
+| Nouvelle route | Ancienne, conservée en redirection |
+|---|---|
+| `/quiz` | `/jeu`, et `/collections` |
+| `/quiz/defi` | `/jeu/defi`, et `/defi` |
+| `/quiz/:territoryId/:mode` | `/jeu/:territoryId/:mode` |
+
+La dernière redirection ne pouvait pas être un simple `<Navigate>` : sa cible est une chaîne figée,
+incapable de reporter les paramètres d'URL. D'où le petit composant `JeuRedirect` dans `App.tsx`,
+qui relit `useParams()` et reconstruit l'adresse. `/collections` pointe directement sur `/quiz`
+plutôt que d'enchaîner deux redirections.
+
+`JeuScreen`, `JeuPartieScreen` et `JeuDefiScreen` deviennent `QuizScreen`, `QuizPartieScreen` et
+`QuizDefiScreen` ; `QuizHistoryScreen` garde son nom. L'icône passe des épées croisées (`Swords`,
+franchement « jeu vidéo ») à une cible (`Target`).
+
+### Une perte assumée
+
+Un favori pointant sur l'ancien `/quiz` — l'historique — tombe maintenant sur l'onglet : une même
+adresse ne peut pas rediriger vers deux endroits. L'historique reste à un clic depuis le Profil.
+
+**Aucune migration du store** : rien dans la progression ne stocke de chemin, et le champ interne
+s'appelait déjà `quizGame`.
 
 ## Prochaines étapes (hors périmètre de cette phase)
 

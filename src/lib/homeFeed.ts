@@ -1,89 +1,74 @@
-import type { Category, Course, Lesson, SwipeCard as SwipeCardData } from "@/types";
-import { CARDS } from "@/data/cards";
-import { lessonKey, getLessonRef, pickNextFeaturedLesson } from "@/lib/featured";
-
-/**
- * Identifiant de cours réservé aux 18 cartes éditoriales du fil Home (`src/data/cards.ts`).
- * Elles ne correspondent à aucun `Course` réel du catalogue, mais doivent compter comme des
- * leçons lues au même titre que les autres (convergence `seenCardIds`/`completedLessonIds`,
- * Phase 7 lot 3) : apprendre une carte appelle `completeLesson(EDITORIAL_COURSE_ID, card.id)`,
- * exactement comme une vraie leçon de cours.
- */
-export const EDITORIAL_COURSE_ID = "editorial";
+import type { Category, CourseMeta } from "@/types";
 
 export interface FeedCard {
-  /** Identifiants à passer tels quels à `completeLesson(courseId, lessonId)` */
-  courseId: string;
-  lessonId: string;
-  /** Vue à afficher, compatible avec le composant `SwipeCard` existant */
-  card: SwipeCardData;
+  course: CourseMeta;
+  category: Category;
 }
 
-function editorialFeedCard(card: SwipeCardData): FeedCard {
-  return { courseId: EDITORIAL_COURSE_ID, lessonId: card.id, card };
-}
-
-/** Adapte une leçon de cours en carte swipable : le teaser reprend la description du cours
- * (courte et déjà rédigée), le contenu déplié reste celui, complet, de la leçon. */
-function catalogFeedCard(course: Course, lesson: Lesson): FeedCard {
-  return {
-    courseId: course.id,
-    lessonId: lesson.id,
-    card: {
-      id: lesson.id,
-      categoryId: course.categoryId,
-      title: lesson.title,
-      teaser: course.description,
-      blocks: lesson.blocks,
-      emoji: course.emoji,
-    },
-  };
+export interface BuildHomeFeedParams {
+  /** Cours déjà terminés : inutile de les proposer à la découverte */
+  completedCourseIds: string[];
+  /** Cours déjà mis de côté (« intéressé ») */
+  favoriteCourseIds: string[];
+  /** Cours écartés (« pas intéressé »), définitivement retirés du fil */
+  dismissedCourseIds: string[];
+  allCourses: CourseMeta[];
+  allCategories: Category[];
 }
 
 /**
- * Construit la file de cartes du fil Home pour une session : d'abord les cartes éditoriales
- * de `CARDS` non lues (sélection prioritaire), puis les leçons du catalogue non lues, en
- * rotation de matière — même logique que « À la une », mutualisée via `pickNextFeaturedLesson`
- * plutôt que dupliquée. `excludeKey` (la vedette Biblio courante) garantit que le fil Home et
- * « À la une » ne proposent jamais la même leçon en même temps.
+ * Construit le fil de découverte du Home : des **cours** à trier, pas des leçons.
  *
- * Construite une seule fois par montage du Home (pas un flux réactif) : un ordre de lecture
- * figé pour la durée de la visite, qui s'épuise seulement après avoir parcouru l'intégralité
- * du contenu non lu — largement inépuisable en une session vu la taille du catalogue.
+ * Le fil ne sert plus à apprendre mais à **faire découvrir le catalogue**. Une carte montre un
+ * cours tel quel — son illustration, son titre, sa description — et l'utilisateur le met de côté
+ * (✓ intéressé) ou l'écarte (✗). Rien n'est lu ni validé ici : c'est du tri, et c'est pour ça que
+ * le geste ne rapporte aucune XP.
+ *
+ * Le fil portait auparavant des leçons (dépliables, validées par « j'ai appris »), et avant elles
+ * 18 cartes éditoriales tenues dans un fichier à part (`src/data/cards.ts`) — le contenu
+ * d'amorçage de la Phase 1, retiré une fois le catalogue à 136 cours.
+ *
+ * Conséquence technique agréable : une carte n'a besoin que des **métadonnées** d'un cours, donc
+ * de `COURSE_INDEX` seul. Le fil est complet dès le premier rendu, sans attendre le chargement du
+ * texte des leçons — ce que la version « leçons » ne savait pas faire.
+ *
+ * Ordre : tourniquet entre matières (une carte par matière à tour de rôle) plutôt que le catalogue
+ * dans l'ordre, sinon on servirait 54 fiches Géographie d'affilée. Déterministe : deux appels avec
+ * la même progression donnent le même fil.
+ *
  * Fonction pure : ne mute rien, ne lit aucun state externe au-delà de ses paramètres.
  */
-export function buildHomeFeed(params: {
-  completedLessonIds: string[];
-  excludeKey?: string | null;
-  allCourses: Course[];
-  allCategories: Category[];
-}): FeedCard[] {
-  const { completedLessonIds, excludeKey, allCourses, allCategories } = params;
-  const completed = new Set(completedLessonIds);
+export function buildHomeFeed({
+  completedCourseIds,
+  favoriteCourseIds,
+  dismissedCourseIds,
+  allCourses,
+  allCategories,
+}: BuildHomeFeedParams): FeedCard[] {
+  const seen = new Set([...completedCourseIds, ...favoriteCourseIds, ...dismissedCourseIds]);
+  const categoryById = new Map(allCategories.map((c) => [c.id, c]));
 
-  const editorialCards = CARDS.filter((c) => !completed.has(lessonKey(EDITORIAL_COURSE_ID, c.id))).map(
-    editorialFeedCard,
+  // File par matière, dans l'ordre du catalogue.
+  const queues = allCategories.map((category) =>
+    allCourses.filter((course) => course.categoryId === category.id && !seen.has(course.id)),
   );
 
-  const simulated = new Set(completed);
-  if (excludeKey) simulated.add(excludeKey);
-  const catalogCards: FeedCard[] = [];
-  let previousCategoryId: string | undefined;
-  const maxLessons = allCourses.reduce((n, c) => n + c.lessons.length, 0);
-  for (let i = 0; i < maxLessons; i++) {
-    const nextKey = pickNextFeaturedLesson({
-      completedLessonIds: [...simulated],
-      previousCategoryId,
-      allCourses,
-      allCategories,
-    });
-    if (nextKey === null) break;
-    const ref = getLessonRef(nextKey, allCourses);
-    if (!ref) break;
-    catalogCards.push(catalogFeedCard(ref.course, ref.lesson));
-    simulated.add(nextKey);
-    previousCategoryId = ref.course.categoryId;
+  const feed: FeedCard[] = [];
+  const total = queues.reduce((n, q) => n + q.length, 0);
+  let cursor = 0;
+
+  while (feed.length < total) {
+    for (const queue of queues) {
+      const course = queue[cursor];
+      if (!course) continue;
+      const category = categoryById.get(course.categoryId);
+      if (category) feed.push({ course, category });
+    }
+    cursor += 1;
+    // Garde-fou : `cursor` dépasse forcément la plus longue file, mais on ne veut pas d'une
+    // boucle infinie si une catégorie disparaissait du référentiel entre deux versions.
+    if (cursor > allCourses.length) break;
   }
 
-  return [...editorialCards, ...catalogCards];
+  return feed;
 }

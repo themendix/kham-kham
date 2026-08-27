@@ -12,6 +12,8 @@ import { searchCourses } from "@/lib/search";
 import { toCourseMeta } from "@/lib/courseMeta";
 import { XP_PER_LESSON } from "@/lib/gamification";
 import { isSubjectEmerging } from "@/lib/subjectProgress";
+import { getCourseImage, getCourseImagePosition, OBJECT_POSITION } from "@/lib/courseImages";
+import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
 import { Card } from "@/components/ui/Card";
 import { Tag } from "@/components/ui/Tag";
 import { Badge } from "@/components/ui/Badge";
@@ -227,6 +229,11 @@ function SectionTitle({ emoji, label }: { emoji: string; label: string }) {
  * Carte « À la une » : une leçon repliée (titre + « Lire la leçon ») qui se déplie
  * en ligne pour révéler son contenu, puis « J'ai terminé » fait avancer la vedette.
  * Keyée par `featuredLessonKey` dans le parent pour repartir repliée à chaque leçon.
+ *
+ * La bannière porte l'**illustration du cours** dont la leçon est tirée, comme les cartes de
+ * cours et le fil du Home. À défaut d'illustration (12 cours sur 136 n'en ont pas), elle retombe
+ * sur le dégradé de la matière et l'emoji du cours — le dégradé était auparavant codé en dur aux
+ * couleurs de l'Histoire, quelle que soit la matière de la leçon mise en avant.
  */
 function FeaturedLessonCard({
   course,
@@ -240,11 +247,25 @@ function FeaturedLessonCard({
   onComplete: () => void;
 }) {
   const [expanded, setExpanded] = useState(false);
+  const image = getCourseImage(course.id);
 
   return (
     <Card className="mt-2.5 overflow-hidden md:max-w-2xl">
-      <div className="flex h-[120px] items-center justify-center border-b-[3px] border-ink bg-gradient-to-br from-[#F3D9A4] to-[#E9B871] text-[60px] md:h-[150px]">
-        {course.emoji}
+      <div
+        className={`relative flex h-[120px] items-center justify-center overflow-hidden border-b-[3px] border-ink bg-gradient-to-br text-[60px] md:h-[150px] ${SUBJECT_GRADIENT[category.color]}`}
+      >
+        {image ? (
+          <img
+            src={image.src}
+            srcSet={image.srcSet}
+            sizes="(min-width: 768px) 672px, 100vw"
+            alt=""
+            loading="lazy"
+            className={`absolute inset-0 h-full w-full object-cover ${OBJECT_POSITION[getCourseImagePosition(course.id)]}`}
+          />
+        ) : (
+          course.emoji
+        )}
       </div>
       <div className="px-[18px] pb-[18px] pt-4">
         <Tag label={category.name} emoji={category.emoji} variant="dark" />

@@ -1,5 +1,5 @@
 import { lazy, Suspense } from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, useParams } from "react-router-dom";
 import { AppShell } from "@/components/layout/AppShell";
 
 // Chaque route est chargée à la demande (`React.lazy`) : la navigation vers un onglet ne
@@ -16,12 +16,12 @@ const FavorisScreen = lazy(() => import("@/routes/FavorisScreen").then((m) => ({
 const QuizHistoryScreen = lazy(() =>
   import("@/routes/QuizHistoryScreen").then((m) => ({ default: m.QuizHistoryScreen })),
 );
-const JeuScreen = lazy(() => import("@/routes/JeuScreen").then((m) => ({ default: m.JeuScreen })));
-const JeuPartieScreen = lazy(() =>
-  import("@/routes/JeuPartieScreen").then((m) => ({ default: m.JeuPartieScreen })),
+const QuizScreen = lazy(() => import("@/routes/QuizScreen").then((m) => ({ default: m.QuizScreen })));
+const QuizPartieScreen = lazy(() =>
+  import("@/routes/QuizPartieScreen").then((m) => ({ default: m.QuizPartieScreen })),
 );
-const JeuDefiScreen = lazy(() =>
-  import("@/routes/JeuDefiScreen").then((m) => ({ default: m.JeuDefiScreen })),
+const QuizDefiScreen = lazy(() =>
+  import("@/routes/QuizDefiScreen").then((m) => ({ default: m.QuizDefiScreen })),
 );
 
 function RouteLoadingFallback() {
@@ -30,6 +30,15 @@ function RouteLoadingFallback() {
       <p className="font-medium text-ink-faint">Chargement…</p>
     </div>
   );
+}
+
+/**
+ * Reporte les paramètres de l'ancienne adresse `/jeu/:territoryId/:mode` vers `/quiz/...`.
+ * `<Navigate>` ne sait pas le faire seul : sa cible est une chaîne figée.
+ */
+function JeuRedirect() {
+  const { territoryId, mode } = useParams();
+  return <Navigate to={`/quiz/${territoryId}/${mode}`} replace />;
 }
 
 export default function App() {
@@ -42,17 +51,27 @@ export default function App() {
           <Route path="/biblio/:categoryId" element={<CategoryScreen />} />
           {/* Collections a été remplacé par le module Quiz : ses 3 parcours y vivent
               désormais comme « quêtes ». L'ancienne route reste en redirection. */}
-          <Route path="/collections" element={<Navigate to="/jeu" replace />} />
+          <Route path="/collections" element={<Navigate to="/quiz" replace />} />
           <Route path="/profil" element={<ProfilScreen />} />
           <Route path="/cours/:courseId" element={<CourseDetailScreen />} />
           {/* Le Défi du jour a été absorbé par le module Quiz. L'ancienne route reste en
               redirection : elle a pu être mise en favori ou ouverte depuis une PWA installée. */}
-          <Route path="/defi" element={<Navigate to="/jeu/defi" replace />} />
+          <Route path="/defi" element={<Navigate to="/quiz/defi" replace />} />
           <Route path="/favoris" element={<FavorisScreen />} />
-          <Route path="/quiz" element={<QuizHistoryScreen />} />
-          <Route path="/jeu" element={<JeuScreen />} />
-          <Route path="/jeu/defi" element={<JeuDefiScreen />} />
-          <Route path="/jeu/:territoryId/:mode" element={<JeuPartieScreen />} />
+          {/* L'historique des tentatives a libéré /quiz pour l'onglet lui-même ; il vit
+              désormais sous le Profil, d'où il est ouvert. */}
+          <Route path="/profil/quiz" element={<QuizHistoryScreen />} />
+
+          <Route path="/quiz" element={<QuizScreen />} />
+          <Route path="/quiz/defi" element={<QuizDefiScreen />} />
+          <Route path="/quiz/:territoryId/:mode" element={<QuizPartieScreen />} />
+
+          {/* L'onglet s'appelait « Jeu » avant d'être renommé : le mot promettait du
+              divertissement au-dessus d'un moteur de révision. Les anciennes adresses restent
+              en redirection (favori, PWA installée). */}
+          <Route path="/jeu" element={<Navigate to="/quiz" replace />} />
+          <Route path="/jeu/defi" element={<Navigate to="/quiz/defi" replace />} />
+          <Route path="/jeu/:territoryId/:mode" element={<JeuRedirect />} />
         </Routes>
       </Suspense>
     </AppShell>

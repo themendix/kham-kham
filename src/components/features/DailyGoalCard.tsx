@@ -3,7 +3,7 @@ import { Card } from "@/components/ui/Card";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 
 interface DailyGoalCardProps {
-  cardsLearnedToday: number;
+  lessonsLearnedToday: number;
   goal: number;
   streakCount: number;
 }
@@ -15,9 +15,9 @@ function greeting(hour: number): { title: string; subtitle: string } {
 }
 
 /** Salutation contextuelle + objectif quotidien de cartes apprises, en tête du Home */
-export function DailyGoalCard({ cardsLearnedToday, goal, streakCount }: DailyGoalCardProps) {
+export function DailyGoalCard({ lessonsLearnedToday, goal, streakCount }: DailyGoalCardProps) {
   const { title, subtitle } = greeting(new Date().getHours());
-  const goalReached = cardsLearnedToday >= goal;
+  const goalReached = lessonsLearnedToday >= goal;
 
   return (
     <Card className="p-5 md:p-6">
@@ -41,10 +41,10 @@ export function DailyGoalCard({ cardsLearnedToday, goal, streakCount }: DailyGoa
           <div className="mt-4 flex items-center justify-between font-heading text-sm font-bold text-ink-muted">
             <span>Objectif du jour</span>
             <span>
-              {cardsLearnedToday} / {goal} cartes
+              {lessonsLearnedToday} / {goal} leçons
             </span>
           </div>
-          <ProgressBar percent={(cardsLearnedToday / goal) * 100} />
+          <ProgressBar percent={(lessonsLearnedToday / goal) * 100} />
         </>
       )}
     </Card>

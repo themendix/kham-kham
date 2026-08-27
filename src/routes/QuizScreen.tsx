@@ -17,7 +17,7 @@ import { ConquestMap } from "@/components/features/ConquestMap";
 import { ParcoursCard } from "@/components/features/ParcoursCard";
 
 /** Écran d'accueil du module Quiz : carte de conquête, territoires, Défi du jour et quêtes. */
-export function JeuScreen() {
+export function QuizScreen() {
   const quizGame = useAppStore((s) => s.progress.quizGame);
   const challengeDone = useAppStore((s) => s.progress.daily.challengeDone);
   const completedCourseIds = useAppStore((s) => s.progress.completedCourseIds);
@@ -54,7 +54,7 @@ export function JeuScreen() {
 
   return (
     <div className="pt-1">
-      <h1 className="mt-1.5 text-[30px] font-extrabold">Jeu</h1>
+      <h1 className="mt-1.5 text-[30px] font-extrabold">Quiz</h1>
       <p className="mb-3.5 mt-0.5 font-medium text-ink-muted">
         Six territoires, toutes les matières mélangées. Se tromper ouvre la leçon qui répond.
       </p>
@@ -71,7 +71,7 @@ export function JeuScreen() {
         )}
       </div>
 
-      <Link to="/jeu/defi" className="mb-5 block">
+      <Link to="/quiz/defi" className="mb-5 block">
         <Card className="overflow-hidden">
           <div className="flex flex-col gap-4 bg-gradient-to-br from-indigo to-[#5c4b9e] p-5 text-white md:flex-row md:items-center md:justify-between md:p-6">
             <div className="flex items-center gap-3.5">
@@ -173,13 +173,13 @@ export function JeuScreen() {
 
                 <div className="mt-4 flex flex-wrap gap-3">
                   <Link
-                    to={`/jeu/${territory.id}/blitz`}
+                    to={`/quiz/${territory.id}/blitz`}
                     className="inline-flex items-center justify-center gap-2 rounded-full border-[3px] border-ink bg-primary px-5 py-2.5 font-heading text-sm font-bold text-white shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
                   >
                     <Timer className="h-4 w-4" aria-hidden /> Blitz 60 s
                   </Link>
                   <Link
-                    to={`/jeu/${territory.id}/survie`}
+                    to={`/quiz/${territory.id}/survie`}
                     className="inline-flex items-center justify-center gap-2 rounded-full border-[3px] border-ink bg-card px-5 py-2.5 font-heading text-sm font-bold shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
                   >
                     <Heart className="h-4 w-4" aria-hidden /> Survie

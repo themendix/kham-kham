@@ -1,75 +1,114 @@
 import { describe, expect, it } from "vitest";
-import { buildHomeFeed, EDITORIAL_COURSE_ID } from "@/lib/homeFeed";
-import { lessonKey } from "@/lib/featured";
-import { CARDS } from "@/data/cards";
-import type { Category, Course } from "@/types";
+import type { Category, CourseMeta } from "@/types";
+import { buildHomeFeed } from "@/lib/homeFeed";
 
 const CATEGORIES: Category[] = [
-  { id: "a", name: "Matière A", emoji: "🅰️", color: "histoire" },
-  { id: "b", name: "Matière B", emoji: "🅱️", color: "geo" },
+  { id: "histoire", name: "Histoire", emoji: "🏛️", color: "histoire" },
+  { id: "geo", name: "Géographie", emoji: "🌍", color: "geo" },
+  { id: "perso", name: "Personnalités", emoji: "👤", color: "perso" },
 ];
 
-function course(id: string, categoryId: string, lessonIds: string[]): Course {
+function course(id: string, categoryId: string): CourseMeta {
   return {
     id,
     categoryId,
-    title: id,
-    description: `description ${id}`,
+    title: `Cours ${id}`,
+    description: `Description de ${id}`,
     emoji: "📘",
-    xp: 30,
-    lessons: lessonIds.map((lid) => ({ id: lid, title: lid, blocks: [{ type: "paragraphe" as const, text: lid }] })),
-    quiz: [],
+    xp: 70,
+    lessons: [{ id: `${id}-lesson-1` }],
+    quizCount: 5,
   };
 }
 
-const CATALOG_COURSES: Course[] = [
-  course("course-a1", "a", ["a1-l1", "a1-l2"]),
-  course("course-b1", "b", ["b1-l1", "b1-l2"]),
+// Géographie volontairement surreprésentée : c'est le cas réel du catalogue (54 fiches),
+// et c'est ce qui rend le tourniquet nécessaire.
+const COURSES: CourseMeta[] = [
+  course("h1", "histoire"),
+  course("h2", "histoire"),
+  course("g1", "geo"),
+  course("g2", "geo"),
+  course("g3", "geo"),
+  course("g4", "geo"),
+  course("p1", "perso"),
 ];
 
-const allCatalogKeys = CATALOG_COURSES.flatMap((c) => c.lessons.map((l) => lessonKey(c.id, l.id)));
-const allCardKeys = CARDS.map((c) => lessonKey(EDITORIAL_COURSE_ID, c.id));
+function build(overrides: Partial<Parameters<typeof buildHomeFeed>[0]> = {}) {
+  return buildHomeFeed({
+    completedCourseIds: [],
+    favoriteCourseIds: [],
+    dismissedCourseIds: [],
+    allCourses: COURSES,
+    allCategories: CATEGORIES,
+    ...overrides,
+  });
+}
 
-describe("buildHomeFeed", () => {
-  it("ne propose jamais une leçon déjà lue ailleurs (cartes éditoriales et catalogue)", () => {
-    // Une carte éditoriale et une leçon de catalogue déjà lues.
-    const completedLessonIds = [allCardKeys[0], allCatalogKeys[0]];
-    const feed = buildHomeFeed({ completedLessonIds, allCourses: CATALOG_COURSES, allCategories: CATEGORIES });
-    const feedKeys = feed.map((f) => lessonKey(f.courseId, f.lessonId));
-    expect(feedKeys).not.toContain(allCardKeys[0]);
-    expect(feedKeys).not.toContain(allCatalogKeys[0]);
+describe("buildHomeFeed — composition", () => {
+  it("sert tous les cours disponibles", () => {
+    expect(build()).toHaveLength(COURSES.length);
   });
 
-  it("ne propose jamais deux fois la vedette Biblio courante (excludeKey)", () => {
-    const excludeKey = allCatalogKeys[0];
-    const feed = buildHomeFeed({
-      completedLessonIds: [],
-      excludeKey,
-      allCourses: CATALOG_COURSES,
-      allCategories: CATEGORIES,
-    });
-    const feedKeys = feed.map((f) => lessonKey(f.courseId, f.lessonId));
-    expect(feedKeys).not.toContain(excludeKey);
+  it("attache à chaque cours sa catégorie", () => {
+    for (const entry of build()) {
+      expect(entry.category.id).toBe(entry.course.categoryId);
+    }
   });
 
-  it("ne s'épuise pas tant qu'il reste des leçons non lues dans le catalogue", () => {
-    // Toutes les cartes éditoriales et toutes les leçons du catalogue sauf une sont lues.
-    const completedLessonIds = [...allCardKeys, ...allCatalogKeys.slice(0, -1)];
-    const feed = buildHomeFeed({ completedLessonIds, allCourses: CATALOG_COURSES, allCategories: CATEGORIES });
-    const feedKeys = feed.map((f) => lessonKey(f.courseId, f.lessonId));
-    expect(feedKeys).toEqual([allCatalogKeys[allCatalogKeys.length - 1]]);
+  it("ne produit jamais de doublon", () => {
+    const ids = build().map((f) => f.course.id);
+    expect(new Set(ids).size).toBe(ids.length);
   });
 
-  it("sert d'abord les cartes éditoriales non lues avant les leçons du catalogue", () => {
-    const feed = buildHomeFeed({ completedLessonIds: [], allCourses: CATALOG_COURSES, allCategories: CATEGORIES });
-    const firstCatalogIndex = feed.findIndex((f) => f.courseId !== EDITORIAL_COURSE_ID);
-    const lastCardIndex = feed.map((f) => f.courseId).lastIndexOf(EDITORIAL_COURSE_ID);
-    expect(lastCardIndex).toBeLessThan(firstCatalogIndex);
+  it("ignore un cours dont la catégorie est inconnue plutôt que de planter", () => {
+    const feed = build({ allCourses: [...COURSES, course("x1", "matiere-disparue")] });
+    expect(feed.map((f) => f.course.id)).not.toContain("x1");
+    expect(feed).toHaveLength(COURSES.length);
+  });
+});
+
+describe("buildHomeFeed — exclusions", () => {
+  it("écarte les cours déjà terminés", () => {
+    const ids = build({ completedCourseIds: ["h1", "g1"] }).map((f) => f.course.id);
+    expect(ids).not.toContain("h1");
+    expect(ids).not.toContain("g1");
+    expect(ids).toHaveLength(COURSES.length - 2);
   });
 
-  it("est vide si tout (cartes + catalogue) est déjà lu", () => {
-    const completedLessonIds = [...allCardKeys, ...allCatalogKeys];
-    const feed = buildHomeFeed({ completedLessonIds, allCourses: CATALOG_COURSES, allCategories: CATEGORIES });
-    expect(feed).toEqual([]);
+  it("écarte les cours déjà mis de côté", () => {
+    expect(build({ favoriteCourseIds: ["p1"] }).map((f) => f.course.id)).not.toContain("p1");
+  });
+
+  it("écarte définitivement les cours refusés", () => {
+    expect(build({ dismissedCourseIds: ["g2"] }).map((f) => f.course.id)).not.toContain("g2");
+  });
+
+  it("rend un fil vide quand tout a été trié", () => {
+    expect(build({ dismissedCourseIds: COURSES.map((c) => c.id) })).toEqual([]);
+  });
+});
+
+describe("buildHomeFeed — tourniquet entre matières", () => {
+  it("alterne les matières au lieu de vider le catalogue matière par matière", () => {
+    const cats = build().map((f) => f.course.categoryId);
+    // Les trois premières cartes couvrent les trois matières : sans tourniquet, on aurait
+    // servi h1, h2 puis quatre fiches de géographie d'affilée.
+    expect(new Set(cats.slice(0, 3)).size).toBe(3);
+  });
+
+  it("continue avec les matières restantes une fois les plus courtes épuisées", () => {
+    const cats = build().map((f) => f.course.categoryId);
+    // Personnalités n'a qu'un cours : la fin du fil ne peut être que de la géographie.
+    expect(cats[cats.length - 1]).toBe("geo");
+  });
+
+  it("est déterministe : deux appels identiques donnent le même fil", () => {
+    expect(build().map((f) => f.course.id)).toEqual(build().map((f) => f.course.id));
+  });
+
+  it("ne mute pas les tableaux reçus", () => {
+    const snapshot = [...COURSES];
+    build();
+    expect(COURSES).toEqual(snapshot);
   });
 });

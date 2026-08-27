@@ -4,19 +4,19 @@ import type { DailyState } from "@/types";
 
 describe("resetDailyIfNeeded", () => {
   it("laisse l'état inchangé si on est déjà le jour du dernier reset", () => {
-    const daily: DailyState = { date: "2026-03-04", cardsLearned: 3, xpEarned: 30, challengeDone: true };
+    const daily: DailyState = { date: "2026-03-04", lessonsLearned: 3, xpEarned: 30, challengeDone: true };
     const result = resetDailyIfNeeded(daily, new Date("2026-03-04T20:00:00"));
     expect(result).toEqual(daily);
   });
 
   it("remet à zéro dès que la date a changé", () => {
-    const daily: DailyState = { date: "2026-03-04", cardsLearned: 3, xpEarned: 30, challengeDone: true };
+    const daily: DailyState = { date: "2026-03-04", lessonsLearned: 3, xpEarned: 30, challengeDone: true };
     const result = resetDailyIfNeeded(daily, new Date("2026-03-05T00:05:00"));
-    expect(result).toEqual({ date: "2026-03-05", cardsLearned: 0, xpEarned: 0, challengeDone: false });
+    expect(result).toEqual({ date: "2026-03-05", lessonsLearned: 0, xpEarned: 0, challengeDone: false });
   });
 
   it("initialise depuis date: null (première activité) comme un changement de jour", () => {
-    const daily: DailyState = { date: null, cardsLearned: 0, xpEarned: 0, challengeDone: false };
+    const daily: DailyState = { date: null, lessonsLearned: 0, xpEarned: 0, challengeDone: false };
     const result = resetDailyIfNeeded(daily, new Date("2026-03-04T09:00:00"));
     expect(result.date).toBe("2026-03-04");
   });

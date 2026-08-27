@@ -1,6 +1,6 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import type { QuizGameMode, QuizGameState, QuizResult, UserProgress } from "@/types";
+import type { DailyState, QuizGameMode, QuizGameState, QuizResult, UserProgress } from "@/types";
 import {
   getLevelInfo,
   updateStreak as computeStreak,
@@ -11,7 +11,6 @@ import { applyAnswer, earnsXpOnCorrect } from "@/lib/quizReview";
 import type { TerritoryId } from "@/lib/territories";
 import { resetDailyIfNeeded } from "@/lib/daily";
 import { getLessonRef, lessonKey, pickNextFeaturedLesson } from "@/lib/featured";
-import { EDITORIAL_COURSE_ID } from "@/lib/homeFeed";
 import { getNewlyCompletedParcours } from "@/lib/parcoursProgress";
 import { COURSE_INDEX } from "@/data/coursesIndex.generated";
 import { CATEGORIES } from "@/data/categories";
@@ -19,7 +18,8 @@ import { PARCOURS } from "@/data/parcours";
 
 interface AppState {
   progress: UserProgress;
-  toggleFavoriteCard: (cardId: string) => void;
+  /** Écarte définitivement un cours du fil de découverte (✗ pas intéressé). Idempotent. */
+  dismissCourse: (courseId: string) => void;
   toggleFavoriteCourse: (courseId: string) => void;
   completeCourse: (courseId: string, xpReward: number) => void;
   addXp: (amount: number) => void;
@@ -28,8 +28,8 @@ interface AppState {
   recordQuizResult: (result: QuizResult) => void;
   /** Remet le suivi quotidien à zéro si la date a changé depuis le dernier reset (appelé au montage du Home) */
   checkDailyReset: () => void;
-  /** Ajoute des cartes/XP au suivi du jour (et au total cumulé de cartes apprises), avec reset automatique si besoin */
-  addDailyProgress: (delta: { cards?: number; xp?: number }) => void;
+  /** Ajoute de l'XP au suivi du jour, avec reset automatique si besoin (Défi du jour) */
+  addDailyXp: (xp: number) => void;
   /** Marque le Défi du jour comme relevé pour aujourd'hui */
   markChallengeDone: () => void;
   /** Mémorise le dernier cours ouvert, pour « Continue ton apprentissage » */
@@ -61,17 +61,72 @@ const initialProgress: UserProgress = {
   streak: { count: 0, lastActiveDate: null, weekDays: Array(7).fill(false) },
   completedCourseIds: [],
   completedParcoursIds: [],
-  favoriteCardIds: [],
   favoriteCourseIds: [],
+  dismissedCourseIds: [],
   quizResults: [],
-  daily: { date: null, cardsLearned: 0, xpEarned: 0, challengeDone: false },
+  daily: { date: null, lessonsLearned: 0, xpEarned: 0, challengeDone: false },
   lastCourseId: null,
-  totalCardsLearned: 0,
+  totalLessonsLearned: 0,
   startedCourseIds: [],
   completedLessonIds: [],
   featuredLessonKey: null,
   quizGame: { cauris: 0, questions: {}, records: {}, gamesPlayed: 0 },
 };
+
+/**
+ * Préfixe des entrées du pseudo-cours réservé aux anciennes cartes éditoriales du fil Home.
+ * Ces cartes ont été retirées avec `src/data/cards.ts` ; leurs traces dans `completedLessonIds`
+ * ne désignent plus rien et sont nettoyées en v9. **L'XP qu'elles ont rapportée n'est pas
+ * reprise** : on ne recalcule jamais l'XP acquise, ici pas plus qu'aux migrations précédentes.
+ */
+const LEGACY_EDITORIAL_PREFIX = "editorial:";
+
+/**
+ * Répartit les anciens favoris entre cours favoris et rien.
+ *
+ * Trois formes historiques coexistent dans les blobs existants :
+ * - `favoriteIds` (v1→v4), qui mélangeait cartes **et** cours ;
+ * - `favoriteCardIds` (v5→v8), où la v5 a déversé le tout sans trier — les cours favoris de la v1
+ *   y sont donc restés coincés, invisibles de l'écran Favoris ;
+ * - des **id de leçon nus**, écrits quand le fil Home servait des leçons du catalogue ; eux non
+ *   plus n'étaient jamais réaffichés, faute de savoir à quel cours les rattacher.
+ *
+ * Depuis la v9, une carte du fil est un **cours** : il n'y a donc plus qu'une sorte de favori.
+ * On résout donc chaque ancienne entrée contre le catalogue — un id de cours est gardé tel quel,
+ * un id de leçon est remonté à son cours (l'intention « ce sujet m'intéresse » est préservée), et
+ * ce qui ne résout rien est abandonné : c'est une carte éditoriale supprimée.
+ */
+function migrateFavoriteCourses(raw: {
+  favoriteCourseIds?: string[];
+  favoriteLessonKeys?: string[];
+  favoriteCardIds?: string[];
+  favoriteIds?: string[];
+}): string[] {
+  const courseIds = new Set(raw.favoriteCourseIds ?? []);
+
+  const legacy = [...(raw.favoriteLessonKeys ?? []), ...(raw.favoriteCardIds ?? raw.favoriteIds ?? [])];
+  for (const entry of legacy) {
+    const id = entry.includes(":") ? entry.slice(0, entry.lastIndexOf(":")) : entry;
+    if (COURSE_INDEX.some((c) => c.id === id)) {
+      courseIds.add(id);
+      continue;
+    }
+    const course = COURSE_INDEX.find((c) => c.lessons.some((l) => l.id === id));
+    if (course) courseIds.add(course.id);
+  }
+
+  return [...courseIds];
+}
+
+/** Renomme `cardsLearned` en `lessonsLearned` (v9) sans perdre le compteur du jour en cours. */
+function migrateDaily(raw: (Partial<DailyState> & { cardsLearned?: number }) | undefined): DailyState {
+  return {
+    date: raw?.date ?? null,
+    lessonsLearned: raw?.lessonsLearned ?? raw?.cardsLearned ?? 0,
+    xpEarned: raw?.xpEarned ?? 0,
+    challengeDone: raw?.challengeDone ?? false,
+  };
+}
 
 /**
  * Ramène le sous-état du module Quiz à une forme complète. Écrit champ par champ plutôt qu'avec
@@ -88,19 +143,30 @@ function normalizeQuizGame(raw: Partial<QuizGameState> | undefined): QuizGameSta
 }
 
 /**
- * Migration douce unique : chaque version historique (v1→v7) n'a fait qu'ajouter des champs à
- * défaut sûr (sauf le renommage `favoriteIds` en v5 et les suppressions en v7), donc une seule
- * fonction, indifférente à la version d'origine, suffit à ramener n'importe quel blob v1→v7 à la
- * forme v8. La v8 ajoute `quizGame` (module Quiz), backfillé par `normalizeQuizGame`. Exportée
- * (plutôt qu'inline dans `persist(...)`) pour être testable sans passer par `localStorage`/la
- * réhydratation Zustand.
+ * Migration douce unique : une seule fonction, indifférente à la version d'origine, ramène
+ * n'importe quel blob v1→v8 à la forme v9. La plupart des versions n'ont fait qu'ajouter des
+ * champs à défaut sûr ; les exceptions sont le renommage `favoriteIds` (v5), les suppressions de
+ * `masteryByCategory`/`seenCardIds` (v7), l'ajout de `quizGame` (v8), et en v9 le retrait des
+ * cartes éditoriales du fil Home — voir `migrateFavorites` et `LEGACY_EDITORIAL_PREFIX`.
+ * Exportée (plutôt qu'inline dans `persist(...)`) pour être testable sans passer par
+ * `localStorage`/la réhydratation Zustand.
  */
 export function migrate(persistedState: unknown): { progress: UserProgress } {
   const state = persistedState as
-    | { progress?: Partial<UserProgress> & { favoriteIds?: string[] } }
+    | { progress?: Partial<UserProgress> & {
+        favoriteIds?: string[];
+        favoriteCardIds?: string[];
+        favoriteLessonKeys?: string[];
+      } }
     | undefined;
   if (!state?.progress) return { progress: initialProgress };
-  const { favoriteIds, ...rest } = state.progress;
+  const { favoriteIds, favoriteCardIds, favoriteLessonKeys, ...rest } = state.progress;
+  const favoriteCourseIds = migrateFavoriteCourses({
+    ...state.progress,
+    favoriteIds,
+    favoriteCardIds,
+    favoriteLessonKeys,
+  });
   // masteryByCategory (accumulation manuelle) et seenCardIds (jamais lu par l'app) sont
   // abandonnés en v7 : la maîtrise est désormais dérivée à la lecture (getMasteryByCategory)
   // et les cartes convergent dans completedLessonIds. On les retire explicitement du blob
@@ -132,14 +198,20 @@ export function migrate(persistedState: unknown): { progress: UserProgress } {
         ...completedParcoursIdsBefore,
         ...newlyCompletedParcours.map((p) => p.id),
       ],
-      favoriteCardIds: rest.favoriteCardIds ?? favoriteIds ?? [],
-      favoriteCourseIds: state.progress.favoriteCourseIds ?? [],
+      favoriteCourseIds,
+      dismissedCourseIds: rest.dismissedCourseIds ?? [],
       quizResults: state.progress.quizResults ?? [],
-      daily: state.progress.daily ?? initialProgress.daily,
+      daily: migrateDaily(state.progress.daily),
       lastCourseId: state.progress.lastCourseId ?? null,
-      totalCardsLearned: state.progress.totalCardsLearned ?? 0,
+      // Renommés en v9 : le fil Home ne compte plus des cartes swipées mais des leçons lues.
+      totalLessonsLearned:
+        rest.totalLessonsLearned ??
+        (state.progress as { totalCardsLearned?: number }).totalCardsLearned ??
+        0,
       startedCourseIds: state.progress.startedCourseIds ?? [],
-      completedLessonIds: state.progress.completedLessonIds ?? [],
+      completedLessonIds: (state.progress.completedLessonIds ?? []).filter(
+        (key) => !key.startsWith(LEGACY_EDITORIAL_PREFIX),
+      ),
       featuredLessonKey: state.progress.featuredLessonKey ?? null,
       quizGame: normalizeQuizGame(state.progress.quizGame),
     },
@@ -151,18 +223,15 @@ export const useAppStore = create<AppState>()(
     (set) => ({
       progress: initialProgress,
 
-      toggleFavoriteCard: (cardId) =>
-        set((state) => {
-          const isFav = state.progress.favoriteCardIds.includes(cardId);
-          return {
-            progress: {
-              ...state.progress,
-              favoriteCardIds: isFav
-                ? state.progress.favoriteCardIds.filter((id) => id !== cardId)
-                : [...state.progress.favoriteCardIds, cardId],
-            },
-          };
-        }),
+      dismissCourse: (courseId) =>
+        set((state) => ({
+          progress: {
+            ...state.progress,
+            dismissedCourseIds: state.progress.dismissedCourseIds.includes(courseId)
+              ? state.progress.dismissedCourseIds
+              : [...state.progress.dismissedCourseIds, courseId],
+          },
+        })),
 
       toggleFavoriteCourse: (courseId) =>
         set((state) => {
@@ -233,18 +302,13 @@ export const useAppStore = create<AppState>()(
           progress: { ...state.progress, daily: resetDailyIfNeeded(state.progress.daily) },
         })),
 
-      addDailyProgress: ({ cards = 0, xp = 0 }) =>
+      addDailyXp: (xp) =>
         set((state) => {
           const daily = resetDailyIfNeeded(state.progress.daily);
           return {
             progress: {
               ...state.progress,
-              daily: {
-                ...daily,
-                cardsLearned: daily.cardsLearned + cards,
-                xpEarned: daily.xpEarned + xp,
-              },
-              totalCardsLearned: state.progress.totalCardsLearned + cards,
+              daily: { ...daily, xpEarned: daily.xpEarned + xp },
             },
           };
         }),
@@ -278,10 +342,7 @@ export const useAppStore = create<AppState>()(
           const completedLessonIds = [...state.progress.completedLessonIds, key];
           const xp = state.progress.xp + XP_PER_LESSON;
           const { level, rank } = getLevelInfo(xp);
-          // Le pseudo-cours des cartes éditoriales du fil Home (`EDITORIAL_COURSE_ID`) ne
-          // correspond à aucun vrai Course : il ne doit jamais polluer startedCourseIds.
           const startedCourseIds =
-            courseId === EDITORIAL_COURSE_ID ||
             state.progress.completedCourseIds.includes(courseId) ||
             state.progress.startedCourseIds.includes(courseId)
               ? state.progress.startedCourseIds
@@ -297,6 +358,12 @@ export const useAppStore = create<AppState>()(
             });
           }
 
+          // Le suivi du jour est tenu ici, et nulle part ailleurs : c'est le seul point du code
+          // qui sait qu'une leçon vient réellement d'être lue (l'action est idempotente, une
+          // relecture ne compte pas deux fois). Auparavant chaque écran appelait `addDailyProgress`
+          // de son côté, ce qui obligeait chaque nouvel appelant à y penser.
+          const daily = resetDailyIfNeeded(state.progress.daily);
+
           return {
             progress: {
               ...state.progress,
@@ -306,6 +373,12 @@ export const useAppStore = create<AppState>()(
               completedLessonIds,
               startedCourseIds,
               featuredLessonKey,
+              daily: {
+                ...daily,
+                lessonsLearned: daily.lessonsLearned + 1,
+                xpEarned: daily.xpEarned + XP_PER_LESSON,
+              },
+              totalLessonsLearned: state.progress.totalLessonsLearned + 1,
             },
           };
         }),
@@ -392,7 +465,7 @@ export const useAppStore = create<AppState>()(
     }),
     {
       name: "sankofa-progress",
-      version: 8,
+      version: 9,
       partialize: (state) => ({ progress: state.progress }),
       migrate,
     },

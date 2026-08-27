@@ -1,7 +1,7 @@
 /**
  * Fichier généré — ne pas éditer à la main.
  * Régénérer via `npm run gen:quiz` après toute modification des quiz du catalogue.
- * 676 questions issues de 136 cours — voir docs/ARCHITECTURE.md § Module Quiz.
+ * 680 questions issues de 136 cours — voir docs/ARCHITECTURE.md § Module Quiz.
  */
 import type { QuizEntry } from "@/types";
 
@@ -11203,7 +11203,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-voix-plumes-afrique:quiz-perso-2",
     "courseId": "course-perso-voix-plumes-afrique",
     "categoryId": "perso",
-    "lessonId": "lesson-perso-peres-fondateurs",
+    "lessonId": "lesson-perso-senghor-negritude",
     "territories": [
       "baobab"
     ],
@@ -11239,7 +11239,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-voix-plumes-afrique:quiz-perso-4",
     "courseId": "course-perso-voix-plumes-afrique",
     "categoryId": "perso",
-    "lessonId": "lesson-perso-pionniers-nobel",
+    "lessonId": "lesson-perso-mahfouz",
     "territories": [
       "baobab"
     ],
@@ -11252,6 +11252,24 @@ export const QUIZ_INDEX: QuizEntry[] = [
     ],
     "correctIndex": 1,
     "explanation": "Naguib Mahfouz, auteur égyptien de la Trilogie du Caire, fut le premier écrivain de langue arabe à recevoir le Nobel de littérature."
+  },
+  {
+    "key": "course-perso-voix-plumes-afrique:quiz-perso-5",
+    "courseId": "course-perso-voix-plumes-afrique",
+    "categoryId": "perso",
+    "lessonId": "lesson-perso-nouvelle-generation",
+    "territories": [
+      "baobab"
+    ],
+    "question": "Quelle conférence de Chimamanda Ngozi Adichie a marqué les débats sur la représentation de l'Afrique ?",
+    "options": [
+      "« Le danger de l'histoire unique »",
+      "« Nous devrions tous être féministes »",
+      "« L'autre moitié du soleil »",
+      "« Americanah »"
+    ],
+    "correctIndex": 0,
+    "explanation": "Dans « Le danger de l'histoire unique » (2009), Adichie montre qu'un récit répété en un seul exemplaire ne rend pas un peuple faux, mais incomplet. « Americanah » et « L'autre moitié du soleil » sont des romans."
   },
   {
     "key": "course-arts-rythmes-continent:quiz-arts-1",
@@ -11293,7 +11311,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-arts-rythmes-continent:quiz-arts-3",
     "courseId": "course-arts-rythmes-continent",
     "categoryId": "decouverte",
-    "lessonId": "lesson-arts-mbalax-soukous",
+    "lessonId": "lesson-arts-soukous",
     "territories": [
       "baobab"
     ],
@@ -11326,6 +11344,24 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "explanation": "L'Amapiano est apparu au milieu des années 2010 dans les townships autour de Pretoria, en Afrique du Sud."
   },
   {
+    "key": "course-arts-rythmes-continent:quiz-arts-5",
+    "courseId": "course-arts-rythmes-continent",
+    "categoryId": "decouverte",
+    "lessonId": "lesson-arts-rai",
+    "territories": [
+      "baobab"
+    ],
+    "question": "Dans quelle ville algérienne le raï s'est-il formé ?",
+    "options": [
+      "Alger",
+      "Constantine",
+      "Oran",
+      "Annaba"
+    ],
+    "correctIndex": 2,
+    "explanation": "Le raï se forme à Oran et Sidi Bel Abbès dès les années 1920, avant de devenir un phénomène mondial dans les années 1980. L'UNESCO l'a inscrit à son patrimoine immatériel en 2022."
+  },
+  {
     "key": "course-trad-griots-sagesses:quiz-trad-1",
     "courseId": "course-trad-griots-sagesses",
     "categoryId": "decouverte",
@@ -11347,7 +11383,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-trad-griots-sagesses:quiz-trad-2",
     "courseId": "course-trad-griots-sagesses",
     "categoryId": "decouverte",
-    "lessonId": "lesson-trad-griots",
+    "lessonId": "lesson-trad-kora",
     "territories": [
       "baobab"
     ],
@@ -11398,6 +11434,24 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "explanation": "Ubuntu affirme que l'humanité d'une personne se réalise à travers ses liens avec les autres — popularisée par Desmond Tutu et Nelson Mandela."
   },
   {
+    "key": "course-trad-griots-sagesses:quiz-trad-5",
+    "courseId": "course-trad-griots-sagesses",
+    "categoryId": "decouverte",
+    "lessonId": "lesson-trad-arbre-a-palabres",
+    "territories": [
+      "baobab"
+    ],
+    "question": "À quoi sert traditionnellement l'arbre à palabres ?",
+    "options": [
+      "À délimiter la frontière entre deux villages",
+      "À régler les litiges et prendre les décisions collectives",
+      "À marquer l'emplacement d'un ancien marché",
+      "À abriter les récoltes pendant la saison sèche"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sous l'arbre à palabres, souvent un baobab ou un fromager, on règle les différends et on annonce les décisions. On y délibère jusqu'à l'accord, parce que les parties devront continuer à vivre ensemble."
+  },
+  {
     "key": "course-actu-afrique-qui-innove:quiz-actu-1",
     "courseId": "course-actu-afrique-qui-innove",
     "categoryId": "decouverte",
@@ -11419,11 +11473,11 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-actu-afrique-qui-innove:quiz-actu-2",
     "courseId": "course-actu-afrique-qui-innove",
     "categoryId": "decouverte",
-    "lessonId": "lesson-actu-union-africaine",
+    "lessonId": "lesson-actu-zlecaf",
     "territories": [
       "baobab"
     ],
-    "question": "Que désigne la ZLECAf, entrée en vigueur en 2021 ?",
+    "question": "Que désigne la ZLECAf, entrée en vigueur en 2019 ?",
     "options": [
       "La Zone de libre-échange continentale africaine",
       "La Zone de législation commerciale africaine",
@@ -11431,7 +11485,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
       "La Zone de lutte contre l'exclusion financière"
     ],
     "correctIndex": 0,
-    "explanation": "La ZLECAf vise à créer un marché unique pour les biens et services entre les pays africains."
+    "explanation": "La Zone de libre-échange continentale africaine, signée à Kigali en 2018, est entrée en vigueur le 30 mai 2019. Les échanges à droits réduits n'ont réellement démarré que le 1er janvier 2021."
   },
   {
     "key": "course-actu-afrique-qui-innove:quiz-actu-3",
@@ -11468,6 +11522,24 @@ export const QUIZ_INDEX: QuizEntry[] = [
     ],
     "correctIndex": 2,
     "explanation": "Nollywood est le surnom de l'industrie cinématographique nigériane, l'une des plus prolifiques au monde."
+  },
+  {
+    "key": "course-actu-afrique-qui-innove:quiz-actu-5",
+    "courseId": "course-actu-afrique-qui-innove",
+    "categoryId": "decouverte",
+    "lessonId": "lesson-actu-tech-hubs",
+    "territories": [
+      "baobab"
+    ],
+    "question": "Quel surnom donne-t-on à l'écosystème technologique de Nairobi ?",
+    "options": [
+      "La Yabacon Valley",
+      "La Silicon Savannah",
+      "La Rift Valley numérique",
+      "La Sahel Tech"
+    ],
+    "correctIndex": 1,
+    "explanation": "Nairobi est surnommée la « Silicon Savannah », un élan largement né du succès de M-Pesa. Lagos a de son côté sa « Yabacon Valley », dans le quartier de Yaba."
   },
   {
     "key": "course-decouverte-01-masques-sculptures:quiz-decouverte-01-1",
