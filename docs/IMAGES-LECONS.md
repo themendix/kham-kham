@@ -214,14 +214,20 @@ dancers, Sangha, 1994 » : il montre une représentation touristique, pas une le
 L'illustrer avec cette image aurait menti sur le sujet de la leçon. Elle attendra une photo juste.
 
 **Bandiagara a demandé trois essais.** Le premier choix (village de Teli, 2592×3872) donnait,
-avec la règle « jamais de recadrage », une bande étroite au milieu du cadre. Le deuxième corrigeait
+avec la règle « jamais de recadrage » alors en vigueur, une bande étroite au milieu du cadre. Le deuxième corrigeait
 le format mais montrait surtout un paysage. Le troisième, un village dogon en panoramique
 (2000×816), montre le bâti de terre et remplit toute la largeur du cadre.
 
-Deux règles en sortent : **privilégier des sources entre 2,5:1 et 3:4** — au-delà en hauteur,
-l'image se réduit à un filet ; et **vérifier que la photo montre le sujet de la leçon, pas
-seulement le lieu**. Les photos d'objets de musée (masque, statue, plaque) restent verticales sans
-gêne : le format y est attendu, et le fond crème les présente comme sur un socle.
+Deux règles en sortent : **privilégier des sources entre 2,5:1 et 4:3** ; et **vérifier que la
+photo montre le sujet de la leçon, pas seulement le lieu**.
+
+> **Le rendu a changé depuis.** L'image remplit désormais tout le cadre (`object-cover`), sans
+> aucune bande visible : c'est ce que demandait le rendu voulu, une image qui « rentre
+> parfaitement ». La contrepartie est qu'une source nettement verticale est **recadrée** au lieu
+> d'être présentée entière sur un fond crème — le rognage se fait par le bas (`object-top`).
+> Le conseil de format ci-dessus devient donc plus important qu'avant, et pour une raison
+> inversée : une source trop verticale ne se réduit plus à un filet, elle perd sa partie basse.
+> Choisir de préférence une photo dont le sujet tient dans le haut du cadre.
 
 **Le kente du Met (objet 85576) était en CC0 mais ne faisait que 298 px de large** — trop petit
 pour la variante 800w, donc flou à l'affichage. Remplacé par une photo Commons de bandes de kente,

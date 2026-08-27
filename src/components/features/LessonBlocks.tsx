@@ -151,8 +151,11 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
                 key={i}
                 className="overflow-hidden rounded-card border-[2.5px] border-ink bg-card shadow-sm"
               >
-                {/* Ratio naturel plafonné et jamais recadré (`object-contain`) : une statue
-                    verticale se centre sur le fond, une vue large remplit la largeur. */}
+                {/* L'image remplit tout le cadre, sans bande visible (`object-cover`). La
+                    hauteur reste plafonnée : au-delà, l'image est recadrée plutôt que
+                    lettreboxée. Le plafond est calé pour qu'un format paysage courant (jusqu'au
+                    4:3) passe entier — seuls les portraits nettement verticaux sont rognés, par
+                    le bas (`object-top`), là où se trouve le moins souvent le sujet. */}
                 {image ? (
                   <img
                     src={image.src}
@@ -161,7 +164,7 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
                     alt={block.alt}
                     loading="lazy"
                     decoding="async"
-                    className={`w-full bg-cream object-contain ${compact ? "max-h-[220px]" : "max-h-[380px]"}`}
+                    className={`w-full object-cover object-top ${compact ? "max-h-[280px]" : "max-h-[480px]"}`}
                   />
                 ) : (
                   <div className={`w-full bg-cream ${compact ? "aspect-[16/9]" : "aspect-[4/3]"}`} />

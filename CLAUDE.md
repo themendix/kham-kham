@@ -402,9 +402,12 @@ de nommage, procédure d'ajout, registre des images et liste de ce qui ne peut p
 
 - Le bloc `image` existait dans le type depuis la charte mais n'était **ni utilisé ni rendu**
   (un rectangle vide). Le rendu réel est en place : `<img>` avec `srcset` 400w/800w, `alt`,
-  chargement paresseux, **ratio naturel jamais recadré** (`object-contain`, hauteur plafonnée)
-  et bande de légende/crédit **à l'intérieur du cadre**, séparée par une bordure — même famille
-  visuelle que les autres blocs.
+  chargement paresseux, **remplissage intégral du cadre** (`object-cover object-top`, hauteur
+  plafonnée à 480 px / 280 px en densité compacte) et bande de légende/crédit **à l'intérieur du
+  cadre**, séparée par une bordure — même famille visuelle que les autres blocs. Le rendu
+  d'origine était `object-contain` (ratio naturel jamais recadré) : il laissait des bandes crème
+  autour des sources verticales, jugées trop visibles. Le plafond est calé pour qu'un paysage
+  jusqu'au 4:3 passe entier ; au-delà en hauteur, l'image est rognée par le bas.
 - Résolution **par convention de nommage** (`src/lib/lessonImages.ts`, calqué sur
   `courseImages.ts`) : `src/assets/lecons/<id de leçon>.webp`. Le fichier n'est jamais
   référencé dans les données. Repli propre sur le cadre vide si le fichier manque.
