@@ -4,6 +4,7 @@ import { Sidebar } from "@/components/layout/Sidebar";
 import { BottomNav } from "@/components/layout/BottomNav";
 import { PwaUpdateToast } from "@/components/features/PwaUpdateToast";
 import { preloadAllSubjectContent } from "@/data/courseContent";
+import { useScrollRestoration } from "@/hooks/useScrollRestoration";
 
 interface AppShellProps {
   children: ReactNode;
@@ -42,6 +43,10 @@ function whenIdleAfterLoad(callback: () => void): void {
  * cadre de type téléphone — l'app se comporte comme un vrai site web.
  */
 export function AppShell({ children }: AppShellProps) {
+  // Rend le retour arrière à sa position de lecture, et remonte en haut sur une navigation
+  // normale. Monté ici, au-dessus des routes, pour n'exister qu'en un seul exemplaire.
+  useScrollRestoration();
+
   // Précharge en tâche de fond, une seule fois pour toute l'application, le contenu complet du
   // catalogue (Histoire + Géographie) : le rend disponible en mémoire (`useCatalogContent`) pour
   // la recherche en texte intégral, le Défi du jour et le fil Home, sans jamais bloquer le

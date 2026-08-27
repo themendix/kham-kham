@@ -93,7 +93,9 @@ export function LearningDoneCard({
       onSecondary={onSecondary}
     >
       <div className="relative mx-auto h-28 w-28 sm:h-[180px] sm:w-[180px]">
-        <div className="h-full w-full overflow-hidden rounded-2xl border-[3px] border-ink shadow-card sm:rounded-[28px]">
+        <div
+          className={`h-full w-full overflow-hidden rounded-2xl border-[3px] border-ink bg-gradient-to-br shadow-card sm:rounded-[28px] ${SUBJECT_GRADIENT[category.color]}`}
+        >
           {image ? (
             <img
               src={image.src}

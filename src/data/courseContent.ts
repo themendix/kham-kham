@@ -56,6 +56,20 @@ export function getFullCourse(courseId: string): Promise<Course | undefined> {
   return getSubjectContent(meta.categoryId).then((courses) => courses.find((c) => c.id === courseId));
 }
 
+/**
+ * Cours complet **déjà présent en mémoire**, lu de façon synchrone — `undefined` si le chunk de
+ * sa matière n'a pas encore été chargé. Complète `getFullCourse` plutôt que de le remplacer :
+ * une promesse déjà résolue ne se dénoue qu'à la micro-tâche suivante, ce qui laisse React
+ * peindre un état « Chargement… » alors que le contenu est disponible immédiatement. Le
+ * catalogue étant préchargé en tâche de fond (`preloadAllSubjectContent`, AppShell), c'est le
+ * cas courant dès la première navigation.
+ */
+export function getCachedFullCourse(courseId: string): Course | undefined {
+  const meta = COURSE_INDEX.find((c) => c.id === courseId);
+  if (!meta) return undefined;
+  return subjectCache.get(meta.categoryId)?.find((c) => c.id === courseId);
+}
+
 /** Résout une clé de leçon (`courseId:lessonId`) en son cours et sa leçon complets, en ne chargeant que le chunk de la matière concernée. */
 export function getFullLessonRef(key: string): Promise<{ course: Course; lesson: Lesson } | null> {
   const sep = key.indexOf(":");

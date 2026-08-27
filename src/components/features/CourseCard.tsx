@@ -53,7 +53,10 @@ export function CourseCard({
         <div
           className={
             image
-              ? "relative h-[150px] border-b-[3px] border-ink"
+              ? // Le dégradé de la matière est peint SOUS l'illustration : celle-ci est en
+                // `loading="lazy"`, le cadre reste donc vide un instant à l'arrivée sur un écran
+                // ou au retour arrière. Sans fond, on voit un trou se remplir carte par carte.
+                `relative h-[150px] border-b-[3px] border-ink bg-gradient-to-br ${SUBJECT_GRADIENT[category.color]}`
               : `relative flex h-24 items-center justify-center border-b-[3px] border-ink bg-gradient-to-br text-[44px] ${SUBJECT_GRADIENT[category.color]}`
           }
         >

@@ -1,8 +1,8 @@
-import { useEffect, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useParams, useNavigate, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import type { Course } from "@/types";
-import { getFullCourse } from "@/data/courseContent";
+import { getCachedFullCourse, getFullCourse } from "@/data/courseContent";
 import { getCategory } from "@/data/categories";
 import { COURSE_INDEX } from "@/data/coursesIndex.generated";
 import { PARCOURS } from "@/data/parcours";
@@ -38,18 +38,28 @@ export function CourseDetailScreen() {
   const navigate = useNavigate();
 
   const existsInCatalog = COURSE_INDEX.some((c) => c.id === courseId);
-  const [course, setCourse] = useState<Course | undefined>(undefined);
+
+  // Le contenu déjà en mémoire est lu de façon synchrone, avant même le premier rendu : passer
+  // systématiquement par la promesse de `getFullCourse` faisait peindre « Chargement… » à chaque
+  // ouverture de cours et à chaque retour arrière, y compris quand le chunk de la matière était
+  // déjà chargé — un clignotement pour rien. On ne retombe sur le chargement asynchrone que
+  // lorsque la matière n'a réellement pas encore été chargée.
+  const cached = useMemo(() => (courseId ? getCachedFullCourse(courseId) : undefined), [courseId]);
+  const [loaded, setLoaded] = useState<Course | undefined>(undefined);
+  // `loaded` peut porter le cours précédent le temps qu'une nouvelle matière se charge : on ne
+  // le retient que s'il correspond bien à l'adresse courante.
+  const course = cached ?? (loaded?.id === courseId ? loaded : undefined);
 
   useEffect(() => {
-    if (!existsInCatalog || !courseId) return;
+    if (!existsInCatalog || !courseId || cached) return;
     let cancelled = false;
     getFullCourse(courseId).then((c) => {
-      if (!cancelled) setCourse(c);
+      if (!cancelled) setLoaded(c);
     });
     return () => {
       cancelled = true;
     };
-  }, [courseId, existsInCatalog]);
+  }, [courseId, existsInCatalog, cached]);
 
   if (!existsInCatalog) {
     return (
