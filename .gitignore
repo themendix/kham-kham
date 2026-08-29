@@ -25,3 +25,7 @@ dist-ssr
 docs/contenu histoire/photo/
 docs/contenu geographie/photo/
 docs/contenu personnalites/photo/
+
+# Artefacts d'outillage local (index Serena, graphe Graphify) — regenerables, hors du depot
+.serena/
+graphify-out/
