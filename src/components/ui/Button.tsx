@@ -1,12 +1,15 @@
 import type { ButtonHTMLAttributes, ReactNode } from "react";
 
 type Variant = "primary" | "secondary" | "ghost";
-type Size = "md" | "lg";
+type Size = "sm" | "md" | "lg";
 
 interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: ReactNode;
   variant?: Variant;
-  /** "lg" : pilule pleine largeur, plus haute, libellé plus grand — pied de page de la séquence de fin de cours */
+  /**
+   * "sm" : compact — bulle de la visite guidée.
+   * "lg" : pilule pleine largeur, plus haute, libellé plus grand — pied de page de la séquence de fin de cours.
+   */
   size?: Size;
 }
 
@@ -17,6 +20,7 @@ const VARIANT_CLASSES: Record<Variant, string> = {
 };
 
 const SIZE_CLASSES: Record<Size, string> = {
+  sm: "px-4 py-2 text-sm",
   md: "px-6 py-3 text-[15px]",
   lg: "w-full px-6 py-3.5 text-[15px] sm:py-4 sm:text-base",
 };

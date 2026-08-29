@@ -43,7 +43,7 @@ export function SwipeCard({ course, category, indexLabel, onDismiss, onKeep }: S
         {...handlers}
         className={`touch-pan-y select-none ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
       >
-        <Card className="relative overflow-hidden">
+        <Card data-guide="feed-card" className="relative overflow-hidden">
           <div
             aria-hidden
             className="pointer-events-none absolute left-4 top-4 z-10 -rotate-12 rounded-lg border-[3px] border-ink bg-card px-3 py-1 font-heading text-lg font-extrabold text-success"
@@ -107,6 +107,7 @@ export function SwipeCard({ course, category, indexLabel, onDismiss, onKeep }: S
       <div className="mt-2 flex justify-center gap-14">
         <button
           onClick={() => triggerCommit("left")}
+          data-guide="pass"
           aria-label="Pas intéressé"
           className="grid h-[74px] w-[74px] place-items-center rounded-full border-[3px] border-ink bg-[#F7B7A8] text-ink shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
         >
@@ -114,6 +115,7 @@ export function SwipeCard({ course, category, indexLabel, onDismiss, onKeep }: S
         </button>
         <button
           onClick={() => triggerCommit("right")}
+          data-guide="keep"
           aria-label="Intéressé"
           className="grid h-[74px] w-[74px] place-items-center rounded-full border-[3px] border-ink bg-[#A8E6BC] text-ink shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
         >

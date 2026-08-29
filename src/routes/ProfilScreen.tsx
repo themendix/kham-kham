@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
-import { CheckCircle2, Target, Layers } from "lucide-react";
+import { CheckCircle2, Target, Layers, Compass, ChevronRight } from "lucide-react";
 import { useAppStore } from "@/store/useAppStore";
 import { getLevelInfo } from "@/lib/gamification";
 import { getMasteryByCategory } from "@/lib/subjectProgress";
 import { COURSE_INDEX } from "@/data/coursesIndex.generated";
 import { CATEGORIES } from "@/data/categories";
+import { Card } from "@/components/ui/Card";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { Button } from "@/components/ui/Button";
 import { StreakTracker } from "@/components/features/StreakTracker";
@@ -92,6 +93,21 @@ export function ProfilScreen() {
           <FavoritesSummaryCard
             courseCount={progress.favoriteCourseIds.length}
           />
+
+          <Link to="/?guide=1">
+            <Card shadow="sm" className="flex items-center gap-4 p-4">
+              <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full border-[2.5px] border-ink bg-gold">
+                <Compass className="h-[22px] w-[22px]" />
+              </div>
+              <div className="min-w-0 flex-1">
+                <h3 className="font-extrabold">Revoir le guide</h3>
+                <p className="truncate text-sm font-medium text-ink-faint">
+                  La visite de l'app, écran par écran
+                </p>
+              </div>
+              <ChevronRight className="h-5 w-5 shrink-0 text-ink-faint" />
+            </Card>
+          </Link>
         </div>
       </div>
 

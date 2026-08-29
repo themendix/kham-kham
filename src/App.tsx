@@ -1,6 +1,8 @@
-import { lazy, Suspense } from "react";
-import { Routes, Route, Navigate, useParams } from "react-router-dom";
+import { lazy, Suspense, useEffect, useState } from "react";
+import { Routes, Route, Navigate, useParams, useSearchParams } from "react-router-dom";
 import { AppShell } from "@/components/layout/AppShell";
+import { useAppStore } from "@/store/useAppStore";
+import { shouldShowGuide } from "@/lib/guide";
 
 // Chaque route est chargée à la demande (`React.lazy`) : la navigation vers un onglet ne
 // paie que le code de cet onglet, pas celui des huit autres. Complète le découpage du
@@ -41,6 +43,34 @@ function JeuRedirect() {
   return <Navigate to={`/quiz/${territoryId}/${mode}`} replace />;
 }
 
+const GuideTour = lazy(() =>
+  import("@/components/features/GuideTour").then((m) => ({ default: m.GuideTour })),
+);
+
+/**
+ * Décide si la visite guidée doit tourner, et la monte au-dessus des routes : elle navigue
+ * elle-même d'un écran à l'autre et disparaîtrait si elle vivait à l'intérieur d'un écran.
+ */
+function GuideHost() {
+  const [searchParams] = useSearchParams();
+  // Verrouillé une fois pour toutes au montage (pas d'abonnement au store) : la visite change
+  // d'adresse en cours de route, et réévaluer la condition à chaque navigation la couperait en
+  // chemin — le `?guide=1` d'une relance depuis le Profil disparaît au premier changement d'écran.
+  const [active, setActive] = useState(() => shouldShowGuide(useAppStore.getState().progress));
+
+  const replay = searchParams.get("guide") === "1";
+  useEffect(() => {
+    if (replay) setActive(true);
+  }, [replay]);
+
+  if (!active) return null;
+  return (
+    <Suspense fallback={null}>
+      <GuideTour onClose={() => setActive(false)} />
+    </Suspense>
+  );
+}
+
 export default function App() {
   return (
     <AppShell>
@@ -74,6 +104,7 @@ export default function App() {
           <Route path="/jeu/:territoryId/:mode" element={<JeuRedirect />} />
         </Routes>
       </Suspense>
+      <GuideHost />
     </AppShell>
   );
 }

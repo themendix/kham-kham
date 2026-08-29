@@ -96,23 +96,30 @@ export function QuizScreen() {
         </Card>
       </Link>
 
-      <Card className="mb-5 flex flex-col items-center p-6">
+      <Card data-guide="carte-conquete" className="mb-5 flex flex-col items-center p-6">
         <h2 className="self-start text-lg font-extrabold">Carte de conquête</h2>
         <p className="mt-0.5 self-start text-sm font-medium text-ink-muted">
           Chaque territoire se remplit à mesure que tu acquiers ses questions.
         </p>
+        {quizGame.gamesPlayed === 0 && (
+          <p className="mt-2 self-start text-sm font-medium text-ink-faint">
+            Sa couleur monte avec les questions acquises, et les étoiles récompensent tes parties.
+          </p>
+        )}
         <div className="mt-4 flex w-full justify-center">
           <ConquestMap conquests={conquests} onSelect={scrollToTerritory} />
         </div>
       </Card>
 
       <div className="grid gap-5 md:grid-cols-2">
-        {TERRITORIES.map((territory) => {
+        {TERRITORIES.map((territory, index) => {
           const conquest = conquests[territory.id];
           const records = quizGame.records[territory.id] ?? { blitz: 0, survie: 0 };
           return (
             <div
               key={territory.id}
+              /* Le premier territoire sert d'exemple à la visite guidée (modes Blitz et Survie). */
+              data-guide={index === 0 ? "territoire" : undefined}
               ref={(el) => {
                 territoryRefs.current[territory.id] = el;
               }}
