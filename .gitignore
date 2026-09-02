@@ -29,3 +29,7 @@ docs/contenu personnalites/photo/
 # Artefacts d'outillage local (index Serena, graphe Graphify) — regenerables, hors du depot
 .serena/
 graphify-out/
+
+# Handoffs de design (prototypes HTML, archives) - materiel de travail local
+/design_handoff_*/
+*.zip
