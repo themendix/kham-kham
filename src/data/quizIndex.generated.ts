@@ -4637,7 +4637,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Autour de quel élément géographique le pays est-il entièrement organisé ?",
+    "question": "Autour de quel élément géographique la Gambie est-elle entièrement organisée ?",
     "options": [
       "Le fleuve Gambie",
       "Un grand lac",

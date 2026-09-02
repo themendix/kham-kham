@@ -1281,7 +1281,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
       },
       {
         id: "course-geographie-12-gambie-quiz-2",
-        question: "Autour de quel élément géographique le pays est-il entièrement organisé ?",
+        question: "Autour de quel élément géographique la Gambie est-elle entièrement organisée ?",
         options: ["Le fleuve Gambie", "Un grand lac", "Une chaîne de montagnes", "Un volcan"],
         correctIndex: 0,
         explanation: "La Gambie n'est presque rien d'autre qu'un long ruban de terre suivant le fleuve du même nom, navigable sur presque toute sa longueur.",
