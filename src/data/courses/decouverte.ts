@@ -1306,7 +1306,7 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "quiz-decouverte-03-3",
-        question: "Pourquoi ce patrimoine pose-t-il un problème de conservation particulier ?",
+        question: "Pourquoi l'architecture de terre pose-t-elle un problème de conservation particulier ?",
         options: [
           "Il est impossible à dater",
           "Il doit être refait régulièrement pour subsister",

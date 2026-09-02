@@ -1829,7 +1829,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-09-tombouctou-djenne-quiz-5",
-        question: "Quel savant réputé de Tombouctou est cité dans ce cours ?",
+        question: "Quel savant réputé de Tombouctou enseignait à l'université de Sankoré ?",
         options: ["Ibn Battuta", "Ahmed Baba", "Champollion", "Al-Bakri"],
         correctIndex: 1,
         explanation: "Ahmed Baba est l'un des grands savants de Tombouctou, auteur d'ouvrages diffusés dans le monde musulman depuis l'université de Sankoré.",
@@ -3756,7 +3756,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-19-royaumes-grands-lacs-quiz-5",
-        question: "Quel objet symbolisait le pouvoir royal dans ces royaumes ?",
+        question: "Quel objet symbolisait le pouvoir royal dans les royaumes des Grands Lacs ?",
         options: ["Les tambours royaux", "Les couronnes de diamant", "Les sceptres de verre", "Les navires"],
         correctIndex: 0,
         explanation: "Les tambours royaux étaient des symboles majeurs du pouvoir dans les royaumes des Grands Lacs.",
@@ -4116,7 +4116,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-21-commerce-transsaharien-quiz-2",
-        question: "Quelles étaient les deux marchandises principales de ce commerce ?",
+        question: "Quelles étaient les deux marchandises principales du commerce transsaharien ?",
         options: ["L'or et le sel", "Le thé et la soie", "Le café et le cacao", "Le fer et le bois"],
         correctIndex: 0,
         explanation: "L'or venu du sud (Bambouk, Bouré) et le sel venu du Sahara (Taghaza, Taoudenni) étaient au cœur du commerce transsaharien, parfois échangés à poids égal.",
@@ -5090,7 +5090,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-26-resistances-colonisation-quiz-5",
-        question: "Quel a été l'héritage de ces résistances ?",
+        question: "Quel a été l'héritage des résistances africaines à la colonisation ?",
         options: ["Elles ont nourri les futurs mouvements d'indépendance", "Elles ont été oubliées sans effet", "Elles ont renforcé la colonisation", "Elles n'ont jamais existé"],
         correctIndex: 0,
         explanation: "Bien que souvent vaincues militairement, ces résistances ont nourri le nationalisme et la marche vers l'indépendance.",

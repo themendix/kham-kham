@@ -806,7 +806,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Quel savant réputé de Tombouctou est cité dans ce cours ?",
+    "question": "Quel savant réputé de Tombouctou enseignait à l'université de Sankoré ?",
     "options": [
       "Ibn Battuta",
       "Ahmed Baba",
@@ -1711,7 +1711,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "est"
     ],
-    "question": "Quel objet symbolisait le pouvoir royal dans ces royaumes ?",
+    "question": "Quel objet symbolisait le pouvoir royal dans les royaumes des Grands Lacs ?",
     "options": [
       "Les tambours royaux",
       "Les couronnes de diamant",
@@ -1839,7 +1839,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
       "nord",
       "ouest"
     ],
-    "question": "Quelles étaient les deux marchandises principales de ce commerce ?",
+    "question": "Quelles étaient les deux marchandises principales du commerce transsaharien ?",
     "options": [
       "L'or et le sel",
       "Le thé et la soie",
@@ -2351,7 +2351,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Quel a été l'héritage de ces résistances ?",
+    "question": "Quel a été l'héritage des résistances africaines à la colonisation ?",
     "options": [
       "Elles ont nourri les futurs mouvements d'indépendance",
       "Elles ont été oubliées sans effet",
@@ -10667,7 +10667,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Quelle organisation est née de cette conférence ?",
+    "question": "Quelle organisation est née de la première Conférence des femmes africaines, en 1962 ?",
     "options": [
       "L'Organisation panafricaine des femmes (PAWO)",
       "La Commission de la condition de la femme de l'ONU",
@@ -11765,7 +11765,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Pourquoi ce patrimoine pose-t-il un problème de conservation particulier ?",
+    "question": "Pourquoi l'architecture de terre pose-t-elle un problème de conservation particulier ?",
     "options": [
       "Il est impossible à dater",
       "Il doit être refait régulièrement pour subsister",

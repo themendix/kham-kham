@@ -4824,7 +4824,7 @@ export const PERSONNALITES_COURSES: Course[] = [
       },
       {
         id: "course-perso-25-jeanne-martin-cisse-quiz-2",
-        question: "Quelle organisation est née de cette conférence ?",
+        question: "Quelle organisation est née de la première Conférence des femmes africaines, en 1962 ?",
         options: ["L'Organisation panafricaine des femmes (PAWO)", "La Commission de la condition de la femme de l'ONU", "L'Union des femmes de l'Ouest africain", "Le Conseil international des femmes"],
         correctIndex: 0,
         explanation: "La conférence créa l'Union des femmes africaines, renommée Organisation panafricaine des femmes (PAWO) en 1974. Elle est aujourd'hui présente dans les 55 États membres de l'Union africaine.",

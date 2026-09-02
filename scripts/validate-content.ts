@@ -583,13 +583,21 @@ if (unmappedQuestions > 0) {
 
 // 23. Question de quiz sans sujet nommé. Le module Quiz sert les questions hors contexte (Blitz,
 // Survie, Défi du jour, révision) : une question qui ne désigne son sujet que par un pronom
-// ("il", "sa mort"…) devient incompréhensible seule. Heuristique volontairement simple —
-// avertissement, pas erreur : elle ne comprend pas le français, elle repère un motif de surface
-// (pronom/possessif de 3e personne présent, aucun mot capitalisé au-delà du premier mot de la
-// phrase) et se trompera parfois (faux positifs sur une question déjà correcte, faux négatifs sur
-// une tournure qu'elle ne connaît pas). Le contenu se corrige à la main ; cette règle sert à ne
-// pas laisser le bug revenir silencieusement.
-const UNNAMED_SUBJECT_PATTERN = /\b(il|elle|ils|elles|lui|leur|leurs|sa|son|ses)\b|-t-(il|elle)\b/i;
+// ("il", "sa mort"…) ou un démonstratif ("ce commerce", "ces royaumes"…) sans jamais le nommer
+// devient incompréhensible seule. Heuristique volontairement simple — avertissement, pas erreur :
+// elle ne comprend pas le français, elle repère un motif de surface (pronom/possessif de 3e
+// personne ou démonstratif présent, aucun mot capitalisé au-delà du premier mot de la phrase) et
+// se trompera parfois (faux positifs sur une question déjà correcte, faux négatifs sur une
+// tournure qu'elle ne connaît pas). Le contenu se corrige à la main ; cette règle sert à ne pas
+// laisser le bug revenir silencieusement.
+const UNNAMED_SUBJECT_PATTERN =
+  /\b(il|elle|ils|elles|lui|leur|leurs|sa|son|ses)\b|-t-(il|elle)\b|\b(cette|cet|ces)\b|\bce\b(?!\s+(que|qui))/i;
+// "Qu'est-ce que/qui" est une tournure interrogative figée, pas un démonstratif anaphorique — on
+// la retire avant le test pour ne pas la confondre avec "ce" employé comme déterminant.
+const CE_IDIOM_PATTERN = /qu['’]est-ce|est-ce\s+(que|qui)/gi;
+// "Lequel/Laquelle de ces X" renvoie aux options affichées avec la question (toujours servies
+// ensemble) : le démonstratif y est légitime, pas anaphorique vers un contexte absent.
+const CE_OPTIONS_IDIOM_PATTERN = /^(lequel|laquelle|lesquels|lesquelles)\s+de\s+ces\b/i;
 // Pas de \b devant la majuscule : \b se fonde sur \w (ASCII), qui exclut les lettres accentuées —
 // "É" en tête de mot ("Égyptiens", "Éthiopie"…) ne formerait alors jamais de frontière détectée.
 const PROPER_NOUN_PATTERN = /(^|[^A-Za-zÀ-ÿ])[A-ZÀ-Ý][a-zà-ÿ'-]+/;
@@ -597,7 +605,9 @@ for (const course of COURSES) {
   for (const q of course.quiz) {
     const question = q.question.trim();
     if (!question) continue;
-    if (!UNNAMED_SUBJECT_PATTERN.test(question)) continue;
+    if (CE_OPTIONS_IDIOM_PATTERN.test(question)) continue;
+    const withoutIdioms = question.replace(CE_IDIOM_PATTERN, "");
+    if (!UNNAMED_SUBJECT_PATTERN.test(withoutIdioms)) continue;
     // Ignore le premier mot (souvent capitalisé par simple position en début de phrase).
     const rest = question.slice(question.indexOf(" ") + 1);
     if (PROPER_NOUN_PATTERN.test(rest)) continue;
