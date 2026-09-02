@@ -612,39 +612,74 @@ sa forme de jeu est le moyen, pas la fin.
 
 ### Territoires (`src/lib/territories.ts`)
 
-Le catalogue est redécoupé pour le jeu en **6 territoires** : les 5 régions déjà utilisées par la
-Biblio (`geographieRegions.ts`) plus une zone transversale, **Le Baobab**.
+Le catalogue est redécoupé pour le jeu en **5 territoires** : les 5 régions déjà utilisées par la
+Biblio (`geographieRegions.ts`).
 
 Un territoire mélange les quatre matières — l'Afrique de l'Ouest sert une question sur le Sénégal,
 une sur l'empire du Ghana et une sur Cheikh Anta Diop dans la même partie. C'est ce que les
 parcours promettaient sans jamais le tenir au-delà de 6 cours.
 
-Le rattachement suit deux régimes :
+Le rattachement suit trois régimes, du plus spécifique au plus général :
 
+- **Par question** : `src/data/questionTerritories.ts`. **Prime sur tout le reste.** Une entrée par
+  question, un seul territoire chacune.
 - **Géographie** : dérivé du numéro d'ordre de la fiche (`getGeographieRegion`), rien à maintenir.
-- **Autres matières** : déclaré explicitement dans `src/data/courseTerritories.ts`, une table unique
-  de 82 entrées — plus facile à relire d'un bloc qu'un champ dispersé sur 82 fichiers de contenu.
-  Un tableau vide y signifie « transversal » et verse le cours dans Le Baobab.
+- **Autres matières** : déclaré dans `src/data/courseTerritories.ts`, une table unique de 82 entrées
+  — plus facile à relire d'un bloc qu'un champ dispersé sur 82 fichiers de contenu. Un tableau vide
+  y signifie « rattaché question par question », et **oblige** alors à déclarer toutes les questions
+  du cours (règle 21 du validateur).
 
 Le multi-territoire est réservé aux sujets qui chevauchent réellement deux régions (le Kanem-Bornou
 autour du lac Tchad, le commerce transsaharien entre Maghreb et Sahel), jamais comme échappatoire
 pour éviter de trancher.
 
-**Le Baobab n'est pas une zone de reliquat.** Il recueille les sujets panafricains (indépendances,
-panafricanisme, conférence de Berlin), la diaspora (Toussaint Louverture, Nanny, Sojourner Truth)
-et toute la matière Découverte. On craignait qu'il soit famélique avec les seules 52 questions de
-Découverte : il en compte **96**, parce que l'histoire panafricaine et la diaspora l'alimentent.
+#### La dissolution du Baobab
 
-Répartition mesurée des 676 questions (les cours multi-territoires comptent dans chacun) :
+Un sixième territoire transversal, **Le Baobab**, a existé jusqu'à la refonte de l'écran d'accueil
+du module. Il recueillait les sujets panafricains, la diaspora et toute la matière Découverte —
+96 questions à l'époque, 100 à sa dissolution.
 
-| Territoire | Questions |
-|---|---|
-| Afrique de l'Ouest | 235 |
-| Afrique de l'Est | 115 |
-| Le Baobab | 96 |
-| Afrique du Nord | 90 |
-| Afrique centrale | 80 |
-| Afrique australe | 75 |
+Ce qui l'a condamné n'est pas son contenu mais **la carte**. Quand la carte de conquête est devenue
+le seul sélecteur de territoire, Le Baobab s'est retrouvé sans tracé, donc sans porte d'entrée :
+15 % du catalogue vivaient dans un territoire que personne ne pouvait taper. Une pastille de repli
+a été essayée sous la carte ; elle disait surtout que ce territoire n'en était pas un.
+
+Ses 100 questions ont été réparties **une par une** dans les cinq régions. Par question et non par
+cours, parce qu'un cours comme « Rythmes du continent » couvre l'afrobeat nigérian, le mbalax
+sénégalais, la rumba congolaise, l'amapiano sud-africain et le raï oranais : le rattacher entier
+égarerait quatre questions sur cinq. Et **sans multi-territoire**, parce qu'une question comptée
+dans trois territoires y gonfle les totaux et fait monter trois maîtrises d'un coup pour une seule
+bonne réponse.
+
+Trois règles d'arbitrage, dans l'ordre :
+
+1. le lieu que la question ou sa leçon **nomme** — tranche la grande majorité des cas ;
+2. pour la **diaspora** (Nanny, Toussaint Louverture, Sojourner Truth, Du Bois), la côte d'où
+   partaient les déportés dont parle la leçon : la Côte de l'Or pour la Jamaïque, l'Afrique centrale
+   pour Saint-Domingue et la Nouvelle-Néerlande. Rattachement éditorial et assumé — il dit d'où
+   vient l'histoire, pas où elle se déroule ;
+3. pour les questions réellement continentales (Berlin, les indépendances, le panafricanisme),
+   l'ancrage le plus concret disponible, arbitré vers les territoires les moins fournis.
+
+Répartition des 680 questions avant et après (les cours multi-territoires comptent dans chacun,
+d'où un total supérieur au nombre de questions) :
+
+| Territoire | Avant | Après |
+|---|---|---|
+| Afrique de l'Ouest | 235 | 278 |
+| Afrique de l'Est | 115 | 127 |
+| Afrique centrale | 80 | 104 |
+| Afrique du Nord | 90 | 98 |
+| Afrique australe | 75 | 88 |
+| Le Baobab | 100 | — |
+
+L'Ouest reste dominant : c'est une propriété du catalogue (les cours 31 à 40 d'Histoire sont tous
+sénégalais, et l'essentiel du contenu redistribuable est ouest-centré), pas du rattachement. Le
+gain principal est pour l'Afrique centrale, +30 %.
+
+**Aucune migration du store.** Le module stocke ses statistiques par question, jamais par
+territoire ; un `records.baobab` resté dans un `localStorage` existant n'est simplement plus relu.
+Le maximum d'étoiles passe en revanche de 18 à 15 (5 territoires × 3).
 
 ### Index des questions (`src/data/quizIndex.generated.ts`)
 

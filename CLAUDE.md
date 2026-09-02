@@ -732,6 +732,95 @@ en Quiz.
 - **Icône** : les épées croisées (`Swords`) cèdent la place à une cible (`Target`).
 - **Aucune migration du store** : rien dans la progression ne stocke de chemin.
 
+## Livraison (Refonte de l'écran Quiz — handoff design 2, et dissolution du Baobab)
+
+Refonte de l'accueil du module Quiz d'après un handoff de design, puis conséquence directe de
+cette refonte : la disparition du sixième territoire. Détail complet dans `docs/ARCHITECTURE.md`
+§ Module Quiz.
+
+### La carte devient le sélecteur de territoire
+
+- **Les six cartes de territoire empilées sous la carte sont supprimées.** Taper une région de la
+  carte la sélectionne (contour rouge 3,2 px, seul marqueur) et met à jour un **panneau de détail**
+  dans la même carte : emoji, nom, tagline, étoiles, barre de maîtrise, « x / y acquises », « n à
+  revoir », boutons Blitz et Survie. Taper ne lance aucune partie.
+- Le Défi du jour est réduit à une **bande fine** en haut d'écran, les cauris passent en pastille à
+  côté du titre. Les Quêtes remontent d'un écran et demi.
+- La carte n'est plus décorative : chaque territoire est un groupe focalisable au clavier
+  (`role="button"`, `aria-pressed`, nom + maîtrise annoncés). C'était la liste supprimée qui portait
+  l'accessibilité. Le territoire sélectionné est **peint en dernier**, sinon son contour rouge passe
+  sous le liseré d'encre des régions voisines.
+- Les médaillons emoji posés sur la carte ont disparu (absents du handoff), ainsi que la ligne
+  « Records » du panneau.
+
+### Correction d'une mauvaise réponse : extrait de cours sur place
+
+- Le panneau de correction porte un **filet vertical** (rouge sur erreur, vert sur bonne réponse) et,
+  **uniquement sur erreur**, une carte blanche : titre de la leçon en capitales, lien
+  « Cours complet → », et **2 à 3 phrases de la leçon** (`src/lib/lessonExcerpt.ts`, testé).
+- Le passage n'est pas pris au début de la leçon : on retient le paragraphe qui **cite la bonne
+  réponse**, accents et casse ignorés. Découpage en phrases protégé contre les abréviations
+  (« av. J.-C. », « M. Diop »).
+- `LessonReveal` (dépliage de la leçon entière) reste en place sur l'écran de fin de partie.
+
+### Fin de partie
+
+- **En-tête sans carte ni bandeau** : fond crème, médaille or de 76 px, score en **52 px rouge**.
+- **Bilan en grille 2×2** (`StatTile`) à la place du ruban de pastilles : cauris, série max, ancien
+  record, étoiles du territoire (tuile or). Quatre chiffres de même poids, au lieu d'une ligne qui
+  s'enroulait différemment à chaque partie. Le Défi du jour, sans territoire ni record, montre
+  cauris, série max et XP gagnés — la tuile impaire prend toute la largeur.
+- Les étoiles sont calculées **après** l'enregistrement de la partie (`QuizPartieScreen`, `getState()`
+  ponctuel) : c'est justement ce que la partie vient de changer.
+- **« À revoir » en carrousel** : une carte de 210 px par question ratée, et taper une carte déplie
+  la leçon **sous** le carrousel — même geste que la carte de conquête, on choisit en haut, le
+  détail s'affiche en dessous. Le mock ne prévoyait que les cartes ; déplier la leçon dans 210 px
+  était illisible, et supprimer l'accès à la leçon aurait vidé le module de son ressort. `LessonReveal`
+  gagne une prop `defaultOpen` pour que la carte s'ouvre en un seul geste.
+
+### Quêtes
+
+Carte de parcours au format compact du mock : bandeau de 96 px, pastille de pourcentage réduite,
+titre de 15 px, barre de progression et compte de cours sur une ligne, « Voir les cours ▾ » et
+badge XP en pied. La description du parcours est retirée — trois quêtes sous la carte de conquête
+doivent tenir dans un écran, et ce qu'elles contiennent reste à un geste.
+
+### Focus clavier sur la carte
+
+Un `<g>` SVG focalisable reçoit l'outline globale sur sa **boîte englobante** : cliquer un pays
+l'encadrait d'un carré au milieu du continent. La classe `sankofa-territoire`
+(`src/styles/index.css`) neutralise l'outline et porte le focus sur le **tracé** — le contour du
+pays passe à 4 px d'encre, ce qui suit sa forme réelle et reste distinct du rouge de la sélection.
+
+### Dissolution du Baobab
+
+Le sixième territoire, transversal et sans géographie, n'avait aucun tracé sur la carte — donc,
+une fois la carte devenue le seul sélecteur, **plus aucune porte d'entrée pour 15 % du catalogue**.
+Ses **100 questions ont été réparties une par une** dans les cinq régions.
+
+- **Nouvelle table `src/data/questionTerritories.ts`** : un territoire par question, qui **prime**
+  sur le rattachement de cours. Par question, parce qu'un cours comme « Rythmes du continent »
+  couvre cinq musiques dans quatre régions. **Sans multi-territoire**, parce qu'une question comptée
+  dans trois territoires y gonfle les totaux et fait monter trois maîtrises pour une seule réponse.
+- **Trois règles d'arbitrage** : le lieu nommé par la question ; pour la diaspora, la côte d'où
+  partaient les déportés dont parle la leçon (Côte de l'Or pour la Jamaïque, Afrique centrale pour
+  Saint-Domingue et la Nouvelle-Néerlande) ; pour les questions réellement continentales, l'ancrage
+  le plus concret, arbitré vers les territoires les moins fournis.
+- **Répartition** (680 questions, les cours multi-territoires comptant dans chacun) : Ouest 235 →
+  **278**, Est 115 → **127**, centrale 80 → **104**, Nord 90 → **98**, australe 75 → **88**. Le gain
+  principal est pour l'Afrique centrale (+30 %). L'Ouest reste dominant : c'est une propriété du
+  catalogue, pas du rattachement.
+- **`TerritoryId` perd `"baobab"`**, `TRANSVERSAL_TERRITORY_ID` disparaît, `Territory.region` n'est
+  plus nullable, le maximum d'étoiles passe de 18 à **15**. Un tableau vide dans
+  `courseTerritories.ts` ne signifie plus « transversal » mais « rattaché question par question ».
+- **Règle 21 du validateur étendue** : un cours au rattachement vide doit avoir *toutes* ses
+  questions déclarées, et une clé de `questionTerritories.ts` qui ne correspond à aucune question
+  est une erreur. Sans ça, une question pourrait n'être jouable sur aucun territoire.
+- **Aucune migration du store** (version toujours **9**) : les statistiques sont stockées par
+  question, jamais par territoire ; un `records.baobab` existant n'est simplement plus relu.
+- Vérifié en navigateur : 5 territoires cliquables, compteurs conformes au générateur (★ 0/15),
+  zéro erreur console.
+
 ## Ce qui N'est PAS encore fait
 
 - Animations avancées hors du module Quiz : le geste de swipe et le module Quiz sont animés, mais les transitions d'écran globales et les micro-interactions du Home, de la Biblio et du Profil restent à faire.
