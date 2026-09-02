@@ -1515,7 +1515,8 @@ export const DECOUVERTE_COURSES: Course[] = [
       },
       {
         id: "quiz-decouverte-04-2",
-        question: "Quand les galeries occidentales ont-elles redécouvert ces photographies ?",
+        question:
+          "Quand les galeries occidentales ont-elles redécouvert les portraits des studios de Bamako ?",
         options: [
           "Dans les années 1930",
           "Dans les années 1960",

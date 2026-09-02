@@ -1413,7 +1413,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-07-mansa-moussa-quiz-3",
-        question: "Que se passa-t-il lorsqu'il distribua son or au Caire ?",
+        question: "Que se passa-t-il lorsque Mansa Moussa distribua son or au Caire ?",
         options: ["Rien de particulier", "La valeur de l'or y chuta pour plusieurs années", "Il fut emprisonné", "Il fut couronné empereur d'Égypte"],
         correctIndex: 1,
         explanation: "Ses dépenses en or furent si massives qu'elles firent baisser la valeur du métal au Caire pendant des années, selon les chroniqueurs.",
@@ -2016,7 +2016,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-10-kanem-bornou-quiz-3",
-        question: "Sous quel souverain l'empire a-t-il atteint son apogée ?",
+        question: "Sous quel souverain l'empire du Kanem-Bornou a-t-il atteint son apogée ?",
         options: ["Sonni Ali Ber", "Idris Alooma", "Ezana", "Soundiata"],
         correctIndex: 1,
         explanation: "Le mai Idris Alooma, à la fin du XVIᵉ siècle, marqua l'apogée du Kanem-Bornou, y compris par ses relations diplomatiques avec l'Empire ottoman.",
@@ -4123,7 +4123,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-21-commerce-transsaharien-quiz-3",
-        question: "Comment les empires du Sahel s'enrichissaient-ils grâce à ce commerce ?",
+        question: "Comment les empires du Sahel s'enrichissaient-ils grâce au commerce transsaharien ?",
         options: ["En interdisant le commerce", "En taxant les marchandises qui traversaient leur territoire", "En fabriquant des chameaux", "En cultivant du blé"],
         correctIndex: 1,
         explanation: "Ghana, Mali et Songhaï taxaient les marchandises en transit, source majeure de leur richesse : contrôler les routes, c'était contrôler la richesse.",
@@ -7129,7 +7129,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-quiz-2",
-        question: "Contre quoi s'est-elle dressée pendant la Seconde Guerre mondiale ?",
+        question: "Contre quoi Aline Sitoé Diatta s'est-elle dressée pendant la Seconde Guerre mondiale ?",
         options: ["Les réquisitions coloniales et le travail forcé", "Le commerce de l'or", "La construction de pyramides", "L'islamisation"],
         correctIndex: 0,
         explanation: "Elle s'éleva contre les réquisitions (riz, bétail) et le travail forcé imposés par les Français, prêchant un retour aux traditions diola.",
@@ -7143,7 +7143,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-37-aline-sitoe-diatta-quiz-4",
-        question: "Où fut-elle déportée par les Français ?",
+        question: "Où Aline Sitoé Diatta fut-elle déportée par les Français ?",
         options: ["À Tombouctou (Mali)", "À Paris", "Au Gabon", "En Algérie"],
         correctIndex: 0,
         explanation: "Arrêtée en 1943, elle fut déportée à Tombouctou, où elle mourut en 1944, âgée d'environ vingt-quatre ans.",
@@ -7514,7 +7514,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-39-reine-nzinga-angola-quiz-3",
-        question: "Quelle anecdote célèbre illustre son sens de la diplomatie ?",
+        question: "Quelle anecdote célèbre illustre le sens de la diplomatie de Nzinga ?",
         options: ["Elle s'assit sur le dos d'un serviteur faute de siège", "Elle traversa les Alpes", "Elle brûla sa flotte", "Elle offrit de l'or au Caire"],
         correctIndex: 0,
         explanation: "Privée de siège lors d'une négociation à Luanda en 1622, elle fit s'agenouiller un serviteur pour s'asseoir, affirmant son égalité.",
@@ -7699,7 +7699,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-40-chaka-zoulou-quiz-3",
-        question: "Comment appelle-t-on la période de bouleversements liée à son expansion ?",
+        question: "Comment appelle-t-on la période de bouleversements liée à l'expansion du royaume zoulou de Chaka ?",
         options: ["Le Mfecane", "La Renaissance", "Le Grand Magal", "La Réforme"],
         correctIndex: 0,
         explanation: "Le Mfecane (« l'écrasement ») fut une période de guerres et de migrations en Afrique australe, au début du XIXᵉ siècle.",

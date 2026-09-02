@@ -8,7 +8,7 @@
  * s'appliquent qu'aux matières listées dans `CHARTE_APPLIQUEE` (§ 9.1 : activation progressive,
  * le contenu non encore réécrit ne respecte pas la charte éditoriale). Rules 8 et 9
  * (illustrations) et une partie de la règle 19 restent des avertissements.
- * Les règles 20 à 22 servent le module Quiz (voir src/lib/territories.ts).
+ * Les règles 20 à 23 servent le module Quiz (voir src/lib/territories.ts).
  *
  * Usage : npm run validate
  * Intégré au script `build` et au workflow CI — un contenu invalide bloque le build.
@@ -579,6 +579,33 @@ if (unmappedQuestions > 0) {
     "22. Rattachement question → leçon",
     `${unmappedQuestions} question(s) sur ${unmappedCourses.length} cours non alignés n'ont pas de leçon déclarée dans src/data/quizLessonMap.ts — le module Quiz renverra vers le cours au lieu de la leçon`,
   );
+}
+
+// 23. Question de quiz sans sujet nommé. Le module Quiz sert les questions hors contexte (Blitz,
+// Survie, Défi du jour, révision) : une question qui ne désigne son sujet que par un pronom
+// ("il", "sa mort"…) devient incompréhensible seule. Heuristique volontairement simple —
+// avertissement, pas erreur : elle ne comprend pas le français, elle repère un motif de surface
+// (pronom/possessif de 3e personne présent, aucun mot capitalisé au-delà du premier mot de la
+// phrase) et se trompera parfois (faux positifs sur une question déjà correcte, faux négatifs sur
+// une tournure qu'elle ne connaît pas). Le contenu se corrige à la main ; cette règle sert à ne
+// pas laisser le bug revenir silencieusement.
+const UNNAMED_SUBJECT_PATTERN = /\b(il|elle|ils|elles|lui|leur|leurs|sa|son|ses)\b|-t-(il|elle)\b/i;
+// Pas de \b devant la majuscule : \b se fonde sur \w (ASCII), qui exclut les lettres accentuées —
+// "É" en tête de mot ("Égyptiens", "Éthiopie"…) ne formerait alors jamais de frontière détectée.
+const PROPER_NOUN_PATTERN = /(^|[^A-Za-zÀ-ÿ])[A-ZÀ-Ý][a-zà-ÿ'-]+/;
+for (const course of COURSES) {
+  for (const q of course.quiz) {
+    const question = q.question.trim();
+    if (!question) continue;
+    if (!UNNAMED_SUBJECT_PATTERN.test(question)) continue;
+    // Ignore le premier mot (souvent capitalisé par simple position en début de phrase).
+    const rest = question.slice(question.indexOf(" ") + 1);
+    if (PROPER_NOUN_PATTERN.test(rest)) continue;
+    warn(
+      "23. Question de quiz sans sujet nommé",
+      `${course.id} / ${q.id} : "${q.question}"`,
+    );
+  }
 }
 
 // Rapport.

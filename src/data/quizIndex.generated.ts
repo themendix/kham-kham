@@ -590,7 +590,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Que se passa-t-il lorsqu'il distribua son or au Caire ?",
+    "question": "Que se passa-t-il lorsque Mansa Moussa distribua son or au Caire ?",
     "options": [
       "Rien de particulier",
       "La valeur de l'or y chuta pour plusieurs années",
@@ -863,7 +863,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
       "ouest",
       "centrale"
     ],
-    "question": "Sous quel souverain l'empire a-t-il atteint son apogée ?",
+    "question": "Sous quel souverain l'empire du Kanem-Bornou a-t-il atteint son apogée ?",
     "options": [
       "Sonni Ali Ber",
       "Idris Alooma",
@@ -1858,7 +1858,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
       "nord",
       "ouest"
     ],
-    "question": "Comment les empires du Sahel s'enrichissaient-ils grâce à ce commerce ?",
+    "question": "Comment les empires du Sahel s'enrichissaient-ils grâce au commerce transsaharien ?",
     "options": [
       "En interdisant le commerce",
       "En taxant les marchandises qui traversaient leur territoire",
@@ -3287,7 +3287,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Contre quoi s'est-elle dressée pendant la Seconde Guerre mondiale ?",
+    "question": "Contre quoi Aline Sitoé Diatta s'est-elle dressée pendant la Seconde Guerre mondiale ?",
     "options": [
       "Les réquisitions coloniales et le travail forcé",
       "Le commerce de l'or",
@@ -3323,7 +3323,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Où fut-elle déportée par les Français ?",
+    "question": "Où Aline Sitoé Diatta fut-elle déportée par les Français ?",
     "options": [
       "À Tombouctou (Mali)",
       "À Paris",
@@ -3485,7 +3485,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Quelle anecdote célèbre illustre son sens de la diplomatie ?",
+    "question": "Quelle anecdote célèbre illustre le sens de la diplomatie de Nzinga ?",
     "options": [
       "Elle s'assit sur le dos d'un serviteur faute de siège",
       "Elle traversa les Alpes",
@@ -3575,7 +3575,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "australe"
     ],
-    "question": "Comment appelle-t-on la période de bouleversements liée à son expansion ?",
+    "question": "Comment appelle-t-on la période de bouleversements liée à l'expansion du royaume zoulou de Chaka ?",
     "options": [
       "Le Mfecane",
       "La Renaissance",
@@ -8543,7 +8543,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Où se trouve le temple funéraire à terrasses construit sous son règne ?",
+    "question": "Où se trouve le temple funéraire à terrasses construit sous le règne d'Hatchepsout ?",
     "options": [
       "À Abou Simbel",
       "À Deir el-Bahari",
@@ -8561,7 +8561,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Que s'est-il passé après sa mort, concernant sa mémoire ?",
+    "question": "Que s'est-il passé après la mort d'Hatchepsout, concernant sa mémoire ?",
     "options": [
       "Elle fut proclamée déesse par ses successeurs",
       "Son règne fut aussitôt oublié, faute de monuments",
@@ -8867,7 +8867,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Comment s'appelle son œuvre la plus célèbre ?",
+    "question": "Comment s'appelle l'œuvre la plus célèbre d'Ibn Khaldoun ?",
     "options": [
       "La Muqaddima",
       "Le Kitab al-Aghani",
@@ -8903,7 +8903,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Selon son modèle cyclique, qu'est-ce qui affaiblit une dynastie installée au pouvoir ?",
+    "question": "Selon le modèle cyclique d'Ibn Khaldoun, qu'est-ce qui affaiblit une dynastie installée au pouvoir ?",
     "options": [
       "Les épidémies successives",
       "L'absence d'écriture administrative",
@@ -8957,7 +8957,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Quel événement de 1492 explique l'exil de sa famille ?",
+    "question": "Quel événement de 1492 explique l'exil de la famille de Sayyida al-Hurra ?",
     "options": [
       "La chute de Constantinople",
       "La prise de Grenade",
@@ -9011,7 +9011,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Qu'a-t-elle de remarquable dans son mariage de 1541 avec le sultan wattaside ?",
+    "question": "Qu'a de remarquable le mariage de Sayyida al-Hurra en 1541 avec le sultan wattaside ?",
     "options": [
       "Elle refusa de quitter Tétouan, obligeant le sultan à venir",
       "Elle abdiqua aussitôt en faveur de son époux",
@@ -9065,7 +9065,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Quel était le cœur de son message religieux ?",
+    "question": "Quel était le cœur du message religieux de Kimpa Vita ?",
     "options": [
       "Que le christianisme devait être abandonné",
       "Que le Christ et les saints étaient nés au Kongo",
@@ -9083,7 +9083,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Quelle action politique concrète son mouvement a-t-il accomplie ?",
+    "question": "Quelle action politique concrète le mouvement de Kimpa Vita a-t-il accomplie ?",
     "options": [
       "La réoccupation de la capitale São Salvador",
       "La signature d'un traité avec le Portugal",
@@ -9263,7 +9263,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Que proclamait la constitution qu'il fit adopter en 1801 ?",
+    "question": "Que proclamait la constitution que Toussaint Louverture fit adopter en 1801 ?",
     "options": [
       "L'indépendance immédiate de la colonie",
       "Le rattachement de la colonie à l'Espagne",
@@ -9317,7 +9317,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Quel était son nom de naissance ?",
+    "question": "Quel était le nom de naissance de Sojourner Truth ?",
     "options": [
       "Isabella Baumfree",
       "Harriet Jacobs",
@@ -9335,7 +9335,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Quelle démarche judiciaire remarquable a-t-elle menée en 1828 ?",
+    "question": "Quelle démarche judiciaire remarquable Sojourner Truth a-t-elle menée en 1828 ?",
     "options": [
       "Elle a fait annuler sa propre vente",
       "Elle a obtenu en justice le retour de son fils vendu illégalement",
@@ -9353,7 +9353,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Sous quel titre son discours de 1851 à Akron est-il connu ?",
+    "question": "Sous quel titre le discours de Sojourner Truth de 1851 à Akron est-il connu ?",
     "options": [
       "« I Have a Dream »",
       "« Let My People Go »",
@@ -9371,7 +9371,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Pourquoi son autobiographie a-t-elle été dictée plutôt qu'écrite ?",
+    "question": "Pourquoi l'autobiographie de Sojourner Truth a-t-elle été dictée plutôt qu'écrite ?",
     "options": [
       "Parce qu'elle ne savait ni lire ni écrire",
       "Parce qu'elle avait perdu la vue",
@@ -9425,7 +9425,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Comment appelait-on la capitale mobile de l'émir ?",
+    "question": "Comment appelait-on la capitale mobile de l'émir Abd el-Kader ?",
     "options": [
       "La casbah",
       "La zaouïa",
@@ -9443,7 +9443,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Que s'est-il passé après sa reddition de décembre 1847 ?",
+    "question": "Que s'est-il passé après la reddition d'Abd el-Kader en décembre 1847 ?",
     "options": [
       "Il fut conduit en Orient comme promis",
       "Il fut détenu cinq ans en France, contrairement à la promesse reçue",
@@ -9461,7 +9461,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Quel acte accompli à Damas en 1860 lui valut une renommée internationale ?",
+    "question": "Quel acte accompli à Damas en 1860 valut à Abd el-Kader une renommée internationale ?",
     "options": [
       "Il négocia un traité entre l'Empire ottoman et la France",
       "Il fonda une école de droit musulman",
@@ -9515,7 +9515,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Qu'est-ce qui distinguait son armement de celui des autres pouvoirs africains de l'époque ?",
+    "question": "Qu'est-ce qui distinguait l'armement de Samori Touré de celui des autres pouvoirs africains de l'époque ?",
     "options": [
       "Il possédait de l'artillerie lourde",
       "Il disposait d'ateliers capables de réparer et de fabriquer des fusils",
@@ -9533,7 +9533,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "En quoi consiste la manœuvre entreprise à partir de 1892 ?",
+    "question": "En quoi consiste la manœuvre entreprise par Samori Touré à partir de 1892 ?",
     "options": [
       "Le déplacement de l'empire entier vers l'est",
       "Une alliance militaire avec les Britanniques",
@@ -9551,7 +9551,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Combien de temps a duré sa résistance armée face à la France ?",
+    "question": "Combien de temps a duré la résistance armée de Samori Touré face à la France ?",
     "options": [
       "Environ trois ans",
       "Environ seize ans",
@@ -10001,7 +10001,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Quel équipement scientifique a-t-il fait créer à Dakar en 1966 ?",
+    "question": "Quel équipement scientifique Cheikh Anta Diop a-t-il fait créer à Dakar en 1966 ?",
     "options": [
       "Un observatoire astronomique",
       "Un laboratoire de radiocarbone",
@@ -10073,7 +10073,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Quelle fonction diplomatique a-t-il occupée en 1960 ?",
+    "question": "Quelle fonction diplomatique Frantz Fanon a-t-il occupée en 1960 ?",
     "options": [
       "Ambassadeur du Ghana en Algérie",
       "Ambassadeur du GPRA algérien au Ghana",
@@ -10091,7 +10091,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "De quoi met-il en garde les futurs États indépendants dans Les Damnés de la terre ?",
+    "question": "De quoi Frantz Fanon met-il en garde les futurs États indépendants dans Les Damnés de la terre ?",
     "options": [
       "Du risque d'une nouvelle invasion militaire européenne",
       "Du danger d'une industrialisation trop rapide",
@@ -10127,7 +10127,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "En quoi le recensement agricole a-t-il servi son action politique ?",
+    "question": "En quoi le recensement agricole a-t-il servi l'action politique d'Amílcar Cabral ?",
     "options": [
       "Il lui a permis d'obtenir un poste dans l'administration coloniale",
       "Il lui a donné une connaissance du pays que personne d'autre ne possédait",
@@ -10487,7 +10487,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "est"
     ],
-    "question": "Devant quelle organisation a-t-il prononcé son célèbre discours de 1936 ?",
+    "question": "Devant quelle organisation Haile Selassie a-t-il prononcé son célèbre discours de 1936 ?",
     "options": [
       "L'Organisation des Nations unies",
       "La Société des Nations",
@@ -10541,7 +10541,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "est"
     ],
-    "question": "Quel facteur intérieur a précipité sa chute en 1974 ?",
+    "question": "Quel facteur intérieur a précipité la chute de Haile Selassie en 1974 ?",
     "options": [
       "Une invasion de la Somalie",
       "Un référendum perdu",
@@ -10811,7 +10811,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Quel musicien nigérian était son fils ?",
+    "question": "Quel musicien nigérian était le fils de Funmilayo Ransome-Kuti ?",
     "options": [
       "King Sunny Adé",
       "Fela Anikulapo Kuti",
@@ -10847,7 +10847,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Quelle première historique réalise-t-elle en 1959 ?",
+    "question": "Quelle première historique Aoua Keïta réalise-t-elle en 1959 ?",
     "options": [
       "Elle devient la première femme ministre du Mali",
       "Elle devient la première femme médecin d'Afrique de l'Ouest",
@@ -10865,7 +10865,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Comment l'administration coloniale sanctionnait-elle son engagement ?",
+    "question": "Comment l'administration coloniale sanctionnait-elle l'engagement d'Aoua Keïta ?",
     "options": [
       "Par des mutations répétées",
       "Par la suspension de son diplôme",
@@ -10883,7 +10883,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "À quelle organisation continentale a-t-elle participé en 1962 ?",
+    "question": "À quelle organisation continentale Aoua Keïta a-t-elle participé en 1962 ?",
     "options": [
       "À l'Organisation de l'unité africaine",
       "À l'Organisation panafricaine des femmes",
@@ -10901,7 +10901,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Qu'est-ce qui rend son livre Femme d'Afrique (1975) précieux pour les historiens ?",
+    "question": "Qu'est-ce qui rend le livre d'Aoua Keïta, Femme d'Afrique (1975), précieux pour les historiens ?",
     "options": [
       "C'est le premier roman écrit en bambara",
       "C'est une autobiographie politique écrite à la première personne par une militante",
@@ -10937,7 +10937,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "australe"
     ],
-    "question": "Quelle particularité a marqué sa présence à la fondation de la Ligue de la jeunesse de l'ANC en 1944 ?",
+    "question": "Quelle particularité a marqué la présence d'Albertina Sisulu à la fondation de la Ligue de la jeunesse de l'ANC en 1944 ?",
     "options": [
       "Elle en fut élue présidente",
       "Elle était la seule femme présente",
@@ -10991,7 +10991,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "australe"
     ],
-    "question": "Quel rôle a-t-elle joué au Parlement en 1994 ?",
+    "question": "Quel rôle Albertina Sisulu a-t-elle joué au Parlement en 1994 ?",
     "options": [
       "Elle a été élue présidente de l'Assemblée",
       "Elle a proposé officiellement la candidature de Nelson Mandela à la présidence",
@@ -11027,7 +11027,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "australe"
     ],
-    "question": "Que découvre-t-elle en 1960, en voulant rentrer pour les funérailles de sa mère ?",
+    "question": "Que découvre Miriam Makeba en 1960, en voulant rentrer pour les funérailles de sa mère ?",
     "options": [
       "Que son passeport a été annulé",
       "Que sa maison a été détruite",
@@ -11045,7 +11045,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "australe"
     ],
-    "question": "Que demande-t-elle en témoignant devant les Nations unies en 1963 ?",
+    "question": "Que demande Miriam Makeba en témoignant devant les Nations unies en 1963 ?",
     "options": [
       "La création d'un fonds culturel africain",
       "Un embargo et des sanctions internationales contre le régime d'apartheid",
@@ -11063,7 +11063,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "australe"
     ],
-    "question": "Dans quel pays africain s'est-elle installée après avoir quitté les États-Unis ?",
+    "question": "Dans quel pays africain Miriam Makeba s'est-elle installée après avoir quitté les États-Unis ?",
     "options": [
       "Au Ghana",
       "En Tanzanie",
@@ -11081,7 +11081,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "australe"
     ],
-    "question": "Combien de temps a duré son exil hors d'Afrique du Sud ?",
+    "question": "Combien de temps a duré l'exil de Miriam Makeba hors d'Afrique du Sud ?",
     "options": [
       "Environ dix ans",
       "Environ vingt ans",
@@ -11135,7 +11135,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "est"
     ],
-    "question": "Quel projet a-t-elle fait échouer à Nairobi en 1989 ?",
+    "question": "Quel projet Wangari Maathai a-t-elle fait échouer à Nairobi en 1989 ?",
     "options": [
       "La construction d'un aéroport international",
       "L'installation d'une centrale thermique",
@@ -11171,7 +11171,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "est"
     ],
-    "question": "Quelle initiative continentale prolonge aujourd'hui son intuition ?",
+    "question": "Quelle initiative continentale prolonge aujourd'hui l'intuition de Wangari Maathai ?",
     "options": [
       "La Grande Muraille verte",
       "Le corridor de Nacala",
@@ -11837,7 +11837,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Quand les galeries occidentales ont-elles redécouvert ces photographies ?",
+    "question": "Quand les galeries occidentales ont-elles redécouvert les portraits des studios de Bamako ?",
     "options": [
       "Dans les années 1930",
       "Dans les années 1960",
