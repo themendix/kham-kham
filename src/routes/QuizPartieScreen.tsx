@@ -5,6 +5,8 @@ import type { QuizEntry, QuizGameMode } from "@/types";
 import { useAppStore } from "@/store/useAppStore";
 import { QUIZ_INDEX } from "@/data/quizIndex.generated";
 import { getTerritory, TERRITORY_IDS, type TerritoryId } from "@/lib/territories";
+import { getTerritoryConquest } from "@/lib/conquest";
+import { QUIZ_KEYS_BY_TERRITORY } from "@/data/quizKeys.generated";
 import { buildGameQuestions, computeCauris, type GameOutcome } from "@/lib/quizGame";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -26,6 +28,8 @@ interface FinishedState {
   cauris: number;
   missed: QuizEntry[];
   previousRecord: number;
+  /** Étoiles du territoire une fois cette partie enregistrée */
+  stars: number;
 }
 
 /** Une partie du module Quiz : `/quiz/:territoryId/:mode`. */
@@ -74,7 +78,16 @@ export function QuizPartieScreen() {
       // Jouer est une activité du jour comme lire une leçon. Le reste du suivi quotidien
       // (objectif, défi) est branché au lot suivant, avec l'absorption du Défi du jour.
       updateStreak();
-      setFinished({ outcome, cauris, missed, previousRecord });
+      // Les étoiles se lisent **après** l'enregistrement de la partie : c'est justement ce qu'elle
+      // vient de changer (record, questions acquises). D'où un `getState()` ponctuel plutôt qu'un
+      // abonnement, comme pour le tirage des questions.
+      const { stars } = getTerritoryConquest({
+        territoryId,
+        keys: QUIZ_KEYS_BY_TERRITORY[territoryId] ?? [],
+        stats: useAppStore.getState().progress.quizGame.questions,
+        records: useAppStore.getState().progress.quizGame.records[territoryId],
+      });
+      setFinished({ outcome, cauris, missed, previousRecord, stars });
     },
     [isValid, territoryId, mode, records, finishQuizGame, updateStreak],
   );
@@ -128,6 +141,7 @@ export function QuizPartieScreen() {
           missed={finished.missed}
           territory={territory}
           previousRecord={finished.previousRecord}
+          stars={finished.stars}
           onReplay={() => {
             setFinished(null);
             setRound((r) => r + 1);

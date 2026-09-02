@@ -18,14 +18,13 @@ import { writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { COURSES } from "../src/data/courses";
-import { getCourseTerritories } from "../src/lib/territories";
+import { getQuestionTerritories } from "../src/lib/territories";
 import { QUIZ_LESSON_MAP } from "../src/data/quizLessonMap";
 import type { QuizEntry } from "../src/types";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
 const index: QuizEntry[] = COURSES.flatMap((course) => {
-  const territories = getCourseTerritories(course.id, course.categoryId);
   // Un cours dont le quiz compte autant de questions que de leçons suit l'ordre des leçons, une
   // question par leçon : le rattachement se dérive par position. Sinon, seule la table explicite
   // fait foi, et une question non déclarée reste sans leçon (le module renvoie vers le cours).
@@ -33,12 +32,14 @@ const index: QuizEntry[] = COURSES.flatMap((course) => {
   return course.quiz.map((q, i) => {
     const key = `${course.id}:${q.id}`;
     const lessonId = QUIZ_LESSON_MAP[key] ?? (isAligned ? course.lessons[i].id : null);
+    // Le territoire se décide question par question : un cours qui traverse plusieurs régions
+    // répartit ses questions (voir `src/data/questionTerritories.ts`).
     return {
       key,
       courseId: course.id,
       categoryId: course.categoryId,
       lessonId,
-      territories,
+      territories: getQuestionTerritories(key, course.id, course.categoryId),
       question: q.question,
       options: q.options,
       correctIndex: q.correctIndex,

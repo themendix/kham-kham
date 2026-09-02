@@ -1,7 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { Heart, Timer } from "lucide-react";
-import type { QuizEntry, QuizPlayMode, SubjectColor } from "@/types";
-import { CATEGORIES } from "@/data/categories";
+import type { QuizEntry, QuizPlayMode } from "@/types";
 import { COURSE_INDEX } from "@/data/coursesIndex.generated";
 import { BLITZ_DURATION_SECONDS, FAST_ANSWER_MS, SURVIE_LIVES } from "@/lib/quizGame";
 import type { GameOutcome } from "@/lib/quizGame";
@@ -9,10 +8,9 @@ import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { ProgressBar } from "@/components/ui/ProgressBar";
 import { QuizOptions } from "@/components/features/QuizOptions";
-import { LessonReveal } from "@/components/features/LessonReveal";
+import { LessonExcerptCard } from "@/components/features/LessonExcerptCard";
 
 const COURSE_TITLES = new Map(COURSE_INDEX.map((c) => [c.id, c.title]));
-const CATEGORY_COLORS = new Map(CATEGORIES.map((c) => [c.id, c.color]));
 
 /** Secondes restantes en dessous desquelles le chronomètre passe en alerte. */
 const URGENT_SECONDS = 10;
@@ -120,7 +118,6 @@ export function QuizGamePlayer({ questions, mode, onAnswer, onFinish }: QuizGame
   if (!question) return null;
 
   const courseTitle = COURSE_TITLES.get(question.courseId) ?? "ce cours";
-  const accent: SubjectColor = CATEGORY_COLORS.get(question.categoryId) ?? "decouverte";
   const isCorrect = selected === question.correctIndex;
   const questionHeadingId = `jeu-question-${index}`;
   const isGameEndingNext = (mode === "survie" && lives <= 0) || index + 1 >= questions.length;
@@ -204,16 +201,28 @@ export function QuizGamePlayer({ questions, mode, onAnswer, onFinish }: QuizGame
         <div
           role="status"
           aria-live="polite"
-          className="mt-4 rounded-2xl border-[2.5px] border-ink bg-cream p-4 text-sm font-medium leading-relaxed text-ink-muted"
+          className="relative mt-4 rounded-2xl border-[2.5px] border-ink bg-cream py-3.5 pl-4 pr-3.5"
         >
-          {isCorrect ? "Bonne réponse. " : "Réponse incorrecte. "}
-          {question.explanation}
+          {/* Filet vertical : vert pour une bonne réponse, rouge pour une erreur — la couleur du
+              verdict est portée par l'accent, pas par le fond, qui reste crème dans les deux cas. */}
+          <span
+            aria-hidden
+            className={`absolute inset-y-3.5 left-0 w-1 rounded ${
+              isCorrect ? "bg-success" : "bg-danger"
+            }`}
+          />
+          <p className="text-[13px] font-medium leading-[1.5] text-ink-muted">
+            {isCorrect ? "Bonne réponse. " : "Réponse incorrecte. "}
+            {question.explanation}
+          </p>
+          {/* L'extrait de cours n'accompagne que les erreurs : une bonne réponse n'a rien à
+              rattraper, et la carte alourdirait la confirmation pour rien. */}
           {!isCorrect && (
-            <LessonReveal
+            <LessonExcerptCard
               courseId={question.courseId}
               lessonId={question.lessonId}
               courseTitle={courseTitle}
-              accent={accent}
+              answer={question.options[question.correctIndex]}
             />
           )}
         </div>

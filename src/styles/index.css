@@ -117,6 +117,22 @@ h4 {
   outline-offset: 2px;
 }
 
+/*
+ * Territoires de la carte de conquête : le focus ne doit jamais dessiner de rectangle.
+ * Un `<g>` SVG focalisable reçoit l'outline globale sur sa **boîte englobante**, ce qui encadrait
+ * un pays d'un carré au milieu du continent — au clic sur certains navigateurs, au clavier sur
+ * tous. On la neutralise et on porte le focus sur le tracé lui-même : le contour du pays épaissit,
+ * ce qui suit sa forme réelle et reste distinct du rouge de la sélection.
+ */
+.sankofa-territoire:focus,
+.sankofa-territoire:focus-visible {
+  outline: none;
+}
+.sankofa-territoire:focus-visible path {
+  stroke: var(--color-ink);
+  stroke-width: 4;
+}
+
 /* Scrollbars discrètes pour les rangs de cartes en scroll horizontal */
 .scrollbar-none {
   scrollbar-width: none;

@@ -1,12 +1,13 @@
 import { describe, expect, it } from "vitest";
 import { COURSES } from "@/data/courses";
 import { COURSE_TERRITORIES } from "@/data/courseTerritories";
+import { QUESTION_TERRITORIES } from "@/data/questionTerritories";
 import {
   getCourseTerritories,
+  getQuestionTerritories,
   getTerritory,
   TERRITORIES,
   TERRITORY_IDS,
-  TRANSVERSAL_TERRITORY_ID,
 } from "@/lib/territories";
 
 // Contrairement aux autres tests de `src/lib/` (catalogues synthétiques), ceux-ci s'appuient sur
@@ -15,12 +16,10 @@ import {
 // migration, qui dépendent de PARCOURS et COURSES.
 
 describe("définition des territoires", () => {
-  it("expose 5 territoires régionaux plus la zone transversale", () => {
-    expect(TERRITORIES).toHaveLength(6);
-    expect(TERRITORIES.filter((t) => t.region !== null)).toHaveLength(5);
-    expect(TERRITORIES.filter((t) => t.region === null).map((t) => t.id)).toEqual([
-      TRANSVERSAL_TERRITORY_ID,
-    ]);
+  it("expose 5 territoires régionaux, et aucune zone transversale", () => {
+    expect(TERRITORIES).toHaveLength(5);
+    // Depuis la dissolution du Baobab, tout territoire a une région : plus aucun n'est hors-carte.
+    expect(TERRITORIES.every((t) => t.region !== null)).toBe(true);
   });
 
   it("n'a ni id ni région en double", () => {
@@ -45,10 +44,8 @@ describe("getCourseTerritories — Géographie (dérivée, non déclarée)", () 
     expect(getCourseTerritories("course-geographie-46-afrique-du-sud", "geo")).toEqual(["australe"]);
   });
 
-  it("verse dans la zone transversale une fiche dont la région n'est pas dérivable", () => {
-    expect(getCourseTerritories("course-geographie-sans-numero", "geo")).toEqual([
-      TRANSVERSAL_TERRITORY_ID,
-    ]);
+  it("ne rattache nulle part une fiche dont la région n'est pas dérivable", () => {
+    expect(getCourseTerritories("course-geographie-sans-numero", "geo")).toEqual([]);
   });
 });
 
@@ -69,29 +66,52 @@ describe("getCourseTerritories — matières déclarées", () => {
     ]);
   });
 
-  it("traduit un rattachement vide en zone transversale", () => {
-    expect(getCourseTerritories("course-histoire-28-independances-africaines", "histoire")).toEqual([
-      TRANSVERSAL_TERRITORY_ID,
-    ]);
-    expect(getCourseTerritories("course-perso-09-toussaint-louverture", "perso")).toEqual([
-      TRANSVERSAL_TERRITORY_ID,
-    ]);
-    expect(getCourseTerritories("course-decouverte-05-cinema-auteur", "decouverte")).toEqual([
-      TRANSVERSAL_TERRITORY_ID,
+  it("rend un tableau vide pour un cours rattaché question par question", () => {
+    // Ces trois cours traversent plusieurs régions : c'est QUESTION_TERRITORIES qui tranche.
+    expect(getCourseTerritories("course-histoire-28-independances-africaines", "histoire")).toEqual(
+      [],
+    );
+    expect(getCourseTerritories("course-perso-09-toussaint-louverture", "perso")).toEqual([]);
+    expect(getCourseTerritories("course-decouverte-05-cinema-auteur", "decouverte")).toEqual([]);
+  });
+
+  it("ne rattache nulle part un cours non déclaré, sans lever d'exception", () => {
+    expect(getCourseTerritories("course-inexistant", "histoire")).toEqual([]);
+  });
+});
+
+describe("getQuestionTerritories — la question prime sur le cours", () => {
+  it("rend le territoire déclaré pour la question", () => {
+    const key = "course-arts-rythmes-continent:quiz-arts-3";
+    expect(getQuestionTerritories(key, "course-arts-rythmes-continent", "decouverte")).toEqual([
+      "centrale",
     ]);
   });
 
-  it("verse dans la zone transversale un cours non déclaré, sans lever d'exception", () => {
-    expect(getCourseTerritories("course-inexistant", "histoire")).toEqual([
-      TRANSVERSAL_TERRITORY_ID,
-    ]);
+  it("répartit les questions d'un même cours entre plusieurs territoires", () => {
+    const courseId = "course-arts-rythmes-continent";
+    const territories = ["quiz-arts-1", "quiz-arts-3", "quiz-arts-4", "quiz-arts-5"].map(
+      (id) => getQuestionTerritories(`${courseId}:${id}`, courseId, "decouverte")[0],
+    );
+    expect(new Set(territories).size).toBe(4);
+  });
+
+  it("retombe sur le rattachement du cours quand la question n'est pas déclarée", () => {
+    const courseId = "course-histoire-05-empire-du-ghana";
+    expect(getQuestionTerritories(`${courseId}:inconnue`, courseId, "histoire")).toEqual(["ouest"]);
   });
 });
 
 describe("couverture du catalogue réel", () => {
-  it("attribue au moins un territoire à chacun des cours du catalogue", () => {
+  it("rattache chaque cours, soit par cours soit question par question", () => {
     for (const course of COURSES) {
-      expect(getCourseTerritories(course.id, course.categoryId).length).toBeGreaterThan(0);
+      const byCourse = getCourseTerritories(course.id, course.categoryId).length > 0;
+      const byQuestion = course.quiz.every(
+        (q) => `${course.id}:${q.id}` in QUESTION_TERRITORIES,
+      );
+      expect(byCourse || byQuestion, `${course.id} n'est rattaché ni par cours ni par question`).toBe(
+        true,
+      );
     }
   });
 
@@ -102,11 +122,37 @@ describe("couverture du catalogue réel", () => {
     }
   });
 
+  it("rattache chaque question du catalogue à au moins un territoire", () => {
+    for (const course of COURSES) {
+      for (const question of course.quiz) {
+        const key = `${course.id}:${question.id}`;
+        expect(
+          getQuestionTerritories(key, course.id, course.categoryId).length,
+          `${key} n'est rattachée à aucun territoire`,
+        ).toBeGreaterThan(0);
+      }
+    }
+  });
+
+  it("ne déclare, par question, que des territoires connus et des clés existantes", () => {
+    const known = new Set<string>(TERRITORY_IDS);
+    const questionKeys = new Set(
+      COURSES.flatMap((c) => c.quiz.map((q) => `${c.id}:${q.id}`)),
+    );
+    for (const [key, territoryId] of Object.entries(QUESTION_TERRITORIES)) {
+      expect(known.has(territoryId), `territoire inconnu pour ${key}`).toBe(true);
+      expect(questionKeys.has(key), `question inconnue : ${key}`).toBe(true);
+    }
+  });
+
   it("remplit chaque territoire — aucune zone vide sur le catalogue actuel", () => {
     const counts = new Map<string, number>(TERRITORY_IDS.map((id) => [id, 0]));
     for (const course of COURSES) {
-      for (const id of getCourseTerritories(course.id, course.categoryId)) {
-        counts.set(id, (counts.get(id) ?? 0) + course.quiz.length);
+      for (const question of course.quiz) {
+        const key = `${course.id}:${question.id}`;
+        for (const id of getQuestionTerritories(key, course.id, course.categoryId)) {
+          counts.set(id, (counts.get(id) ?? 0) + 1);
+        }
       }
     }
     for (const [id, count] of counts) {

@@ -1,11 +1,14 @@
 /**
  * Territoires du module Quiz : le découpage de jeu du catalogue.
  *
- * Cinq territoires géographiques (les régions déjà utilisées par la Biblio, voir
- * `geographieRegions.ts`) plus une zone transversale, **Le Baobab**, qui recueille tout ce qui
- * ne se rattache à aucune région : les sujets panafricains (indépendances, panafricanisme,
- * conférence de Berlin), la diaspora (Toussaint Louverture, Sojourner Truth) et l'ensemble de la
- * matière Découverte, fourre-tout revendiqué qui n'a volontairement pas de géographie.
+ * Cinq territoires géographiques, et cinq seulement : les régions déjà utilisées par la Biblio
+ * (voir `geographieRegions.ts`).
+ *
+ * Une sixième zone transversale, **Le Baobab**, a existé jusqu'à ce que la carte de conquête
+ * devienne le seul sélecteur de territoire. Sans géographie, elle n'avait aucun tracé sur la
+ * carte, donc plus aucune porte d'entrée : 100 questions (15 % du catalogue) vivaient dans un
+ * territoire que personne ne pouvait taper. Ses questions ont été réparties une par une dans les
+ * cinq régions — voir `src/data/questionTerritories.ts` pour la méthode et les arbitrages.
  *
  * Un territoire mélange les quatre matières : l'Afrique de l'Ouest sert aussi bien une question
  * de géographie sur le Sénégal qu'une question d'histoire sur l'empire du Ghana ou une question
@@ -17,8 +20,9 @@
 import type { GeographieRegion } from "@/lib/geographieRegions";
 import { getGeographieRegion } from "@/lib/geographieRegions";
 import { COURSE_TERRITORIES } from "@/data/courseTerritories";
+import { QUESTION_TERRITORIES } from "@/data/questionTerritories";
 
-export type TerritoryId = "nord" | "ouest" | "centrale" | "est" | "australe" | "baobab";
+export type TerritoryId = "nord" | "ouest" | "centrale" | "est" | "australe";
 
 export interface Territory {
   id: TerritoryId;
@@ -26,12 +30,9 @@ export interface Territory {
   emoji: string;
   /** Phrase d'accroche affichée sur la carte de conquête */
   tagline: string;
-  /** Région Géographie correspondante, `null` pour la zone transversale */
-  region: GeographieRegion | null;
+  /** Région Géographie correspondante — chaque territoire en a une depuis la dissolution du Baobab */
+  region: GeographieRegion;
 }
-
-/** Zone transversale : sujets panafricains, diaspora et matière Découverte */
-export const TRANSVERSAL_TERRITORY_ID: TerritoryId = "baobab";
 
 export const TERRITORIES: Territory[] = [
   {
@@ -69,21 +70,12 @@ export const TERRITORIES: Territory[] = [
     tagline: "Des ruines du Grand Zimbabwe au cap de Bonne-Espérance.",
     region: "Afrique australe",
   },
-  {
-    id: "baobab",
-    name: "Le Baobab",
-    emoji: "🌍",
-    tagline: "L'arbre à palabres : les savoirs qui traversent tout le continent.",
-    region: null,
-  },
 ];
 
 export const TERRITORY_IDS: TerritoryId[] = TERRITORIES.map((t) => t.id);
 
 const TERRITORY_BY_REGION = new Map<GeographieRegion, TerritoryId>(
-  TERRITORIES.filter((t): t is Territory & { region: GeographieRegion } => t.region !== null).map(
-    (t) => [t.region, t.id],
-  ),
+  TERRITORIES.map((t) => [t.region, t.id]),
 );
 
 export function getTerritory(id: TerritoryId): Territory | undefined {
@@ -91,14 +83,17 @@ export function getTerritory(id: TerritoryId): Territory | undefined {
 }
 
 /**
- * Territoires auxquels un cours appartient — toujours au moins un.
+ * Territoires auxquels un cours appartient — normalement au moins un.
  *
  * Les fiches Géographie dérivent leur territoire de leur numéro d'ordre (aucun tag à maintenir) ;
- * les autres matières sont rattachées explicitement par `COURSE_TERRITORIES`, où un tableau vide
- * signifie « transversal » et renvoie donc sur Le Baobab. Un cours absent de la table est une
- * erreur de contenu, attrapée par la règle 21 du validateur (`npm run validate`) : à l'exécution
- * on le verse dans Le Baobab plutôt que de le rendre injouable, avec un avertissement console —
- * même parti pris que `getCourseOrWarn`.
+ * les autres matières sont rattachées explicitement par `COURSE_TERRITORIES`. Un **tableau vide**
+ * y signifie désormais « rattaché question par question » (`QUESTION_TERRITORIES`) et non plus
+ * « transversal » : la zone transversale n'existe plus.
+ *
+ * Rend donc `[]` pour ces cours-là — c'est `getQuestionTerritories` qui tranche, question par
+ * question. Un cours absent de la table est une erreur de contenu, attrapée par la règle 21 du
+ * validateur (`npm run validate`) ; à l'exécution on avertit en console sans lever, même parti
+ * pris que `getCourseOrWarn`.
  */
 export function getCourseTerritories(courseId: string, categoryId: string): TerritoryId[] {
   if (categoryId === "geo") {
@@ -106,13 +101,34 @@ export function getCourseTerritories(courseId: string, categoryId: string): Terr
     const territoryId = region ? TERRITORY_BY_REGION.get(region) : undefined;
     if (territoryId) return [territoryId];
     console.warn(`[territoires] Fiche Géographie sans région dérivable : ${courseId}`);
-    return [TRANSVERSAL_TERRITORY_ID];
+    return [];
   }
 
   const tagged = COURSE_TERRITORIES[courseId];
   if (tagged === undefined) {
     console.warn(`[territoires] Cours non rattaché à un territoire : ${courseId}`);
-    return [TRANSVERSAL_TERRITORY_ID];
+    return [];
   }
-  return tagged.length > 0 ? tagged : [TRANSVERSAL_TERRITORY_ID];
+  return tagged;
+}
+
+/**
+ * Territoires d'une **question**, seule granularité qui fasse foi pour le module Quiz.
+ *
+ * Le rattachement de la question prime sur celui de son cours : un cours qui traverse plusieurs
+ * régions (les cinq musiques de « Rythmes du continent », les quatre étoffes de « Tissus et
+ * parures ») répartit ses questions au lieu de les entasser au même endroit — ou pire, de se
+ * taguer en multi-territoire, ce qui ferait compter une même question dans plusieurs territoires.
+ *
+ * `key` suit la convention `${courseId}:${questionId}`, la même que `completedLessonIds` et
+ * `QUIZ_LESSON_MAP`.
+ */
+export function getQuestionTerritories(
+  key: string,
+  courseId: string,
+  categoryId: string,
+): TerritoryId[] {
+  const declared = QUESTION_TERRITORIES[key];
+  if (declared) return [declared];
+  return getCourseTerritories(courseId, categoryId);
 }

@@ -12,6 +12,8 @@ interface LessonRevealProps {
   lessonId: string | null;
   courseTitle: string;
   accent: SubjectColor;
+  /** Déplie la leçon dès le montage : l'appelant a déjà porté le geste d'ouverture (carrousel « À revoir ») */
+  defaultOpen?: boolean;
 }
 
 /**
@@ -26,8 +28,14 @@ interface LessonRevealProps {
  * Repli propre quand la question n'a pas encore de leçon rattachée (voir
  * `src/data/quizLessonMap.ts`) : on propose le cours, faute de mieux.
  */
-export function LessonReveal({ courseId, lessonId, courseTitle, accent }: LessonRevealProps) {
-  const [isOpen, setIsOpen] = useState(false);
+export function LessonReveal({
+  courseId,
+  lessonId,
+  courseTitle,
+  accent,
+  defaultOpen = false,
+}: LessonRevealProps) {
+  const [isOpen, setIsOpen] = useState(defaultOpen);
   const [lesson, setLesson] = useState<Lesson | null>(null);
   const [hasFailed, setHasFailed] = useState(false);
 

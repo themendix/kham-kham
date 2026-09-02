@@ -2187,7 +2187,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-25-conference-berlin-lesson-1",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Comment appelle-t-on la ruée européenne sur l'Afrique à la fin du XIXᵉ siècle ?",
     "options": [
@@ -2205,7 +2205,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-25-conference-berlin-lesson-2",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Qui participait à la conférence de Berlin de 1884-1885 ?",
     "options": [
@@ -2223,7 +2223,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-25-conference-berlin-lesson-3",
     "territories": [
-      "baobab"
+      "nord"
     ],
     "question": "Comment les frontières coloniales ont-elles été tracées ?",
     "options": [
@@ -2241,7 +2241,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-25-conference-berlin-lesson-4",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Quels pays africains restaient à peu près indépendants vers 1914 ?",
     "options": [
@@ -2259,7 +2259,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-25-conference-berlin-lesson-5",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "À qui le bassin du Congo fut-il attribué à titre personnel ?",
     "options": [
@@ -2277,7 +2277,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-26-resistances-colonisation-lesson-1",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "La colonisation de l'Afrique s'est-elle faite sans résistance ?",
     "options": [
@@ -2295,7 +2295,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-26-resistances-colonisation-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Combien de temps Samory Touré a-t-il résisté aux Français ?",
     "options": [
@@ -2313,7 +2313,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-26-resistances-colonisation-lesson-3",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel roi du Dahomey a résisté aux Français ?",
     "options": [
@@ -2331,7 +2331,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-26-resistances-colonisation-lesson-4",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Quelle grande révolte souleva des peuples contre les Allemands en Afrique de l'Est ?",
     "options": [
@@ -2349,7 +2349,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-26-resistances-colonisation-lesson-5",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Quel a été l'héritage de ces résistances ?",
     "options": [
@@ -2457,7 +2457,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-28-independances-africaines-lesson-1",
     "territories": [
-      "baobab"
+      "nord"
     ],
     "question": "Qu'est-ce qui a favorisé la montée du nationalisme africain ?",
     "options": [
@@ -2475,7 +2475,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-28-independances-africaines-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel fut le premier pays d'Afrique subsaharienne à devenir indépendant, en 1957 ?",
     "options": [
@@ -2493,7 +2493,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-28-independances-africaines-lesson-3",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Pourquoi 1960 est-elle appelée « l'année de l'Afrique » ?",
     "options": [
@@ -2511,7 +2511,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-28-independances-africaines-lesson-4",
     "territories": [
-      "baobab"
+      "nord"
     ],
     "question": "Quelle indépendance fut obtenue au terme d'une longue guerre ?",
     "options": [
@@ -2529,7 +2529,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-28-independances-africaines-lesson-5",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Quel défi les nouveaux États indépendants ont-ils rencontré ?",
     "options": [
@@ -2547,7 +2547,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-29-panafricanisme-union-africaine-lesson-1",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Qu'est-ce que le panafricanisme ?",
     "options": [
@@ -2565,7 +2565,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-29-panafricanisme-union-africaine-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel dirigeant prônait les « États-Unis d'Afrique » ?",
     "options": [
@@ -2583,7 +2583,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-29-panafricanisme-union-africaine-lesson-3",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "En quelle année l'OUA a-t-elle été fondée ?",
     "options": [
@@ -2601,7 +2601,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-29-panafricanisme-union-africaine-lesson-4",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Par quelle organisation l'OUA a-t-elle été remplacée en 2002 ?",
     "options": [
@@ -2619,7 +2619,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "histoire",
     "lessonId": "course-histoire-29-panafricanisme-union-africaine-lesson-5",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Comment s'appelle la vision de long terme de l'Union africaine ?",
     "options": [
@@ -9117,7 +9117,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-08-nanny-marrons-lesson-1",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Comment appelle-t-on la fuite organisée hors des plantations esclavagistes ?",
     "options": [
@@ -9135,7 +9135,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-08-nanny-marrons-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "De quelle région d'Afrique venait une grande partie des déportés vers la Jamaïque ?",
     "options": [
@@ -9153,7 +9153,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-08-nanny-marrons-lesson-3",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel instrument les Marrons utilisaient-ils pour transmettre des messages à distance ?",
     "options": [
@@ -9171,7 +9171,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-08-nanny-marrons-lesson-4",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Que prévoyaient les traités signés en 1739 avec les Britanniques ?",
     "options": [
@@ -9189,7 +9189,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-08-nanny-marrons-lesson-5",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quelle distinction la Jamaïque a-t-elle accordée à Nanny en 1975 ?",
     "options": [
@@ -9207,7 +9207,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-09-toussaint-louverture-lesson-1",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Quel était l'ancien nom colonial de Haïti ?",
     "options": [
@@ -9225,7 +9225,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-09-toussaint-louverture-lesson-2",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "En quelle année débute l'insurrection générale de la plaine du Nord ?",
     "options": [
@@ -9243,7 +9243,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-09-toussaint-louverture-lesson-3",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Pourquoi Toussaint se rallie-t-il à la France en 1794 ?",
     "options": [
@@ -9261,7 +9261,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-09-toussaint-louverture-lesson-4",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Que proclamait la constitution qu'il fit adopter en 1801 ?",
     "options": [
@@ -9279,7 +9279,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-09-toussaint-louverture-lesson-5",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Qu'est-ce qui rend l'indépendance de Haïti, en 1804, unique dans l'histoire ?",
     "options": [
@@ -9297,7 +9297,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-10-sojourner-truth-lesson-1",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Dans quel État des États-Unis Sojourner Truth est-elle née esclave ?",
     "options": [
@@ -9315,7 +9315,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-10-sojourner-truth-lesson-2",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Quel était son nom de naissance ?",
     "options": [
@@ -9333,7 +9333,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-10-sojourner-truth-lesson-3",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Quelle démarche judiciaire remarquable a-t-elle menée en 1828 ?",
     "options": [
@@ -9351,7 +9351,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-10-sojourner-truth-lesson-4",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Sous quel titre son discours de 1851 à Akron est-il connu ?",
     "options": [
@@ -9369,7 +9369,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-10-sojourner-truth-lesson-5",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Pourquoi son autobiographie a-t-elle été dictée plutôt qu'écrite ?",
     "options": [
@@ -9837,7 +9837,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-16-du-bois-lesson-1",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quelle distinction universitaire Du Bois obtient-il en 1895 ?",
     "options": [
@@ -9855,7 +9855,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-16-du-bois-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Que désigne le concept de « double conscience » ?",
     "options": [
@@ -9873,7 +9873,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-16-du-bois-lesson-3",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Quel congrès panafricain marque le passage de la revendication de réformes à l'exigence d'indépendance ?",
     "options": [
@@ -9891,7 +9891,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-16-du-bois-lesson-4",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Dans quel pays Du Bois s'est-il installé à la fin de sa vie, et à l'invitation de qui ?",
     "options": [
@@ -9909,7 +9909,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "course-perso-16-du-bois-lesson-5",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Comment l'Union africaine désigne-t-elle aujourd'hui la diaspora africaine ?",
     "options": [
@@ -11187,7 +11187,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "lesson-perso-pionniers-nobel",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Qui fut le premier Africain à recevoir le prix Nobel de littérature, en 1986 ?",
     "options": [
@@ -11205,7 +11205,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "lesson-perso-senghor-negritude",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel mouvement littéraire et culturel Léopold Sédar Senghor a-t-il cofondé ?",
     "options": [
@@ -11223,7 +11223,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "lesson-perso-peres-fondateurs",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel roman fondateur a été écrit par Chinua Achebe ?",
     "options": [
@@ -11241,7 +11241,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "lesson-perso-mahfouz",
     "territories": [
-      "baobab"
+      "nord"
     ],
     "question": "De quel pays est originaire Naguib Mahfouz, Nobel de littérature 1988 ?",
     "options": [
@@ -11259,7 +11259,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "perso",
     "lessonId": "lesson-perso-nouvelle-generation",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quelle conférence de Chimamanda Ngozi Adichie a marqué les débats sur la représentation de l'Afrique ?",
     "options": [
@@ -11277,7 +11277,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-arts-afrobeat",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Qui est le créateur de l'Afrobeat ?",
     "options": [
@@ -11295,7 +11295,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-arts-mbalax-soukous",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "De quel pays est originaire le Mbalax ?",
     "options": [
@@ -11313,7 +11313,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-arts-soukous",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "De quel style musical le Soukous est-il directement issu ?",
     "options": [
@@ -11331,7 +11331,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-arts-amapiano",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Où est né l'Amapiano ?",
     "options": [
@@ -11349,7 +11349,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-arts-rai",
     "territories": [
-      "baobab"
+      "nord"
     ],
     "question": "Dans quelle ville algérienne le raï s'est-il formé ?",
     "options": [
@@ -11367,7 +11367,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-trad-griots",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel est le rôle traditionnel du griot en Afrique de l'Ouest ?",
     "options": [
@@ -11385,7 +11385,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-trad-kora",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel instrument à cordes, harpe-luth à 21 cordes, est emblématique des griots mandingues ?",
     "options": [
@@ -11403,7 +11403,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-trad-rites-passage",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Que désignent les sociétés Poro et Sandé en Afrique de l'Ouest ?",
     "options": [
@@ -11421,7 +11421,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-trad-ubuntu",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Que signifie approximativement la philosophie Ubuntu, originaire d'Afrique australe ?",
     "options": [
@@ -11439,7 +11439,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-trad-arbre-a-palabres",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "À quoi sert traditionnellement l'arbre à palabres ?",
     "options": [
@@ -11457,7 +11457,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-actu-mobile-money",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Dans quel pays le service de mobile money M-Pesa a-t-il été lancé en 2007 ?",
     "options": [
@@ -11475,7 +11475,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-actu-zlecaf",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Que désigne la ZLECAf, entrée en vigueur en 2019 ?",
     "options": [
@@ -11493,7 +11493,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-actu-union-africaine",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "En quelle année l'Union africaine a-t-elle été fondée, succédant à l'OUA ?",
     "options": [
@@ -11511,7 +11511,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-actu-nollywood",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Nollywood désigne l'industrie cinématographique de quel pays ?",
     "options": [
@@ -11529,7 +11529,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "lesson-actu-tech-hubs",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Quel surnom donne-t-on à l'écosystème technologique de Nairobi ?",
     "options": [
@@ -11547,7 +11547,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-01-masques-sculptures-lesson-1",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Qu'est-ce qui distingue un masque africain d'un objet de musée ?",
     "options": [
@@ -11565,7 +11565,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-01-masques-sculptures-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quelle technique était utilisée pour couler les bronzes du Bénin ?",
     "options": [
@@ -11583,7 +11583,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-01-masques-sculptures-lesson-3",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Que dit-on aujourd'hui de l'influence des sculptures africaines sur Picasso ?",
     "options": [
@@ -11601,7 +11601,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-01-masques-sculptures-lesson-4",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Qu'est-ce que le byeri, chez les Fang du Gabon ?",
     "options": [
@@ -11619,7 +11619,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-01-masques-sculptures-lesson-5",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Sur combien de bronzes l'Allemagne s'est-elle engagée envers le Nigeria ?",
     "options": [
@@ -11637,7 +11637,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-02-tissus-parures-lesson-1",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "De quel peuple le kente est-il originaire ?",
     "options": [
@@ -11655,7 +11655,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-02-tissus-parures-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "À quoi le bogolan malien doit-il son nom ?",
     "options": [
@@ -11673,7 +11673,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-02-tissus-parures-lesson-3",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Quelle est l'origine réelle du tissu wax ?",
     "options": [
@@ -11691,7 +11691,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-02-tissus-parures-lesson-4",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Comment les Akan pesaient-ils la poudre d'or ?",
     "options": [
@@ -11709,7 +11709,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-02-tissus-parures-lesson-5",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "De quelle matière sont faits les tissus kuba du Kasaï ?",
     "options": [
@@ -11727,7 +11727,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-03-architectures-terre-lesson-1",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Où se trouve le plus vaste édifice en terre crue du monde ?",
     "options": [
@@ -11745,7 +11745,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-03-architectures-terre-lesson-2",
     "territories": [
-      "baobab"
+      "nord"
     ],
     "question": "Quelle propriété rend la terre efficace face à la chaleur ?",
     "options": [
@@ -11763,7 +11763,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-03-architectures-terre-lesson-3",
     "territories": [
-      "baobab"
+      "nord"
     ],
     "question": "Pourquoi ce patrimoine pose-t-il un problème de conservation particulier ?",
     "options": [
@@ -11781,7 +11781,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-03-architectures-terre-lesson-4",
     "territories": [
-      "baobab"
+      "nord"
     ],
     "question": "Qui a conçu le village de New Gourna, en Égypte ?",
     "options": [
@@ -11799,7 +11799,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-03-architectures-terre-lesson-5",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quelle distinction Francis Kéré a-t-il reçue en 2022 ?",
     "options": [
@@ -11817,7 +11817,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-04-photographie-africaine-lesson-1",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quelle ville est associée aux grands studios photo ouest-africains ?",
     "options": [
@@ -11835,7 +11835,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-04-photographie-africaine-lesson-2",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Quand les galeries occidentales ont-elles redécouvert ces photographies ?",
     "options": [
@@ -11853,7 +11853,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-04-photographie-africaine-lesson-3",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Qu'est-ce qui distingue le portrait de studio de l'image coloniale ?",
     "options": [
@@ -11871,7 +11871,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-04-photographie-africaine-lesson-4",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "En quelle année les Rencontres de Bamako ont-elles été créées ?",
     "options": [
@@ -11889,7 +11889,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-04-photographie-africaine-lesson-5",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Que contient la série Somnyama Ngonyama de Zanele Muholi ?",
     "options": [
@@ -11907,7 +11907,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-05-cinema-auteur-lesson-1",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Pourquoi Ousmane Sembène tournait-il en wolof ?",
     "options": [
@@ -11925,7 +11925,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-05-cinema-auteur-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Dans quelle ville se tient le FESPACO ?",
     "options": [
@@ -11943,7 +11943,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-05-cinema-auteur-lesson-3",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel film de Djibril Diop Mambéty, tourné en 1973, est devenu un classique ?",
     "options": [
@@ -11961,7 +11961,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-05-cinema-auteur-lesson-4",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Qui est la première Africaine à avoir réalisé un long métrage distribué en salles ?",
     "options": [
@@ -11979,7 +11979,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-05-cinema-auteur-lesson-5",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Quel effet les plateformes de streaming ont-elles sur le cinéma africain ?",
     "options": [
@@ -11997,7 +11997,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-06-litteratures-africaines-lesson-1",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Pourquoi Ngugi wa Thiong'o a-t-il cessé d'écrire en anglais ?",
     "options": [
@@ -12015,7 +12015,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-06-litteratures-africaines-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quelle est la particularité du roman Things Fall Apart, de Chinua Achebe ?",
     "options": [
@@ -12033,7 +12033,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-06-litteratures-africaines-lesson-3",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Qui fut le premier écrivain africain à recevoir le prix Nobel de littérature ?",
     "options": [
@@ -12051,7 +12051,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-06-litteratures-africaines-lesson-4",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Qui a publié en 1960 une version écrite de l'épopée de Soundiata ?",
     "options": [
@@ -12069,7 +12069,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-06-litteratures-africaines-lesson-5",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quel prix a reçu « Une si longue lettre », de Mariama Bâ ?",
     "options": [
@@ -12087,7 +12087,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-07-danses-lesson-1",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Qu'est-ce que le sabar ?",
     "options": [
@@ -12105,7 +12105,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-07-danses-lesson-2",
     "territories": [
-      "baobab"
+      "centrale"
     ],
     "question": "Qu'est-ce que la traite a transmis malgré la déportation ?",
     "options": [
@@ -12123,7 +12123,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-07-danses-lesson-3",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Quel genre sud-africain s'est diffusé mondialement par la danse ?",
     "options": [
@@ -12141,7 +12141,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-07-danses-lesson-4",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Qu'est-ce que l'École des Sables, au Sénégal ?",
     "options": [
@@ -12159,7 +12159,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-07-danses-lesson-5",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Que marque le dama, chez les Dogon ?",
     "options": [
@@ -12177,7 +12177,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-08-mode-creation-lesson-1",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Qu'est-ce qui est imprimé dans la bordure d'un kanga est-africain ?",
     "options": [
@@ -12195,7 +12195,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-08-mode-creation-lesson-2",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Qu'a fait le créateur malien Chris Seydou avec le bogolan ?",
     "options": [
@@ -12213,7 +12213,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-08-mode-creation-lesson-3",
     "territories": [
-      "baobab"
+      "est"
     ],
     "question": "Quel est l'effet ambigu de la friperie importée en Afrique ?",
     "options": [
@@ -12231,7 +12231,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-08-mode-creation-lesson-4",
     "territories": [
-      "baobab"
+      "ouest"
     ],
     "question": "Quand la Lagos Fashion Week a-t-elle été fondée ?",
     "options": [
@@ -12249,7 +12249,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "categoryId": "decouverte",
     "lessonId": "course-decouverte-08-mode-creation-lesson-5",
     "territories": [
-      "baobab"
+      "australe"
     ],
     "question": "Qu'a publié l'UNESCO en 2023 au sujet de la mode africaine ?",
     "options": [

@@ -227,10 +227,10 @@ describe("finishQuizGame — cauris et records", () => {
 
   it("garde les records de territoires différents séparés", () => {
     useAppStore.getState().finishQuizGame({ cauris: 0, record: { territoryId: "nord", mode: "blitz", score: 14 } });
-    useAppStore.getState().finishQuizGame({ cauris: 0, record: { territoryId: "baobab", mode: "blitz", score: 6 } });
+    useAppStore.getState().finishQuizGame({ cauris: 0, record: { territoryId: "centrale", mode: "blitz", score: 6 } });
     const { records } = useAppStore.getState().progress.quizGame;
     expect(records.nord.blitz).toBe(14);
-    expect(records.baobab.blitz).toBe(6);
+    expect(records.centrale.blitz).toBe(6);
   });
 
   it("crédite les cauris sans toucher aux records quand la partie n'a pas de territoire", () => {

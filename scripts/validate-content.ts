@@ -21,6 +21,7 @@ import { PARCOURS } from "../src/data/parcours";
 import { CATEGORIES } from "../src/data/categories";
 import { COURSE_TERRITORIES } from "../src/data/courseTerritories";
 import { QUIZ_LESSON_MAP } from "../src/data/quizLessonMap";
+import { QUESTION_TERRITORIES } from "../src/data/questionTerritories";
 import { TERRITORY_IDS } from "../src/lib/territories";
 import { lessonPlainText, lessonWordCount, parseInline, type LessonBlock } from "../src/lib/lessonBlocks";
 import type { Course } from "../src/types";
@@ -464,9 +465,11 @@ checkUnique(
   (id, count) => `"${id}" apparaît ${count} fois dans l'ensemble des quiz du catalogue`,
 );
 
-// 21. Rattachement territorial : tout cours hors Géographie doit figurer dans COURSE_TERRITORIES
-// (un tableau vide y signifie « transversal », et est une réponse valide). Les fiches Géographie
-// dérivent leur territoire de leur numéro d'ordre et n'ont rien à déclarer.
+// 21. Rattachement territorial. Tout cours hors Géographie doit figurer dans COURSE_TERRITORIES ;
+// les fiches Géographie dérivent leur territoire de leur numéro d'ordre et n'ont rien à déclarer.
+// Depuis la dissolution du Baobab (la zone transversale), un tableau vide ne veut plus dire
+// « transversal » mais « rattaché question par question » : le cours doit alors déclarer **toutes**
+// ses questions dans QUESTION_TERRITORIES, faute de quoi elles ne seraient jouables nulle part.
 const KNOWN_TERRITORIES = new Set<string>(TERRITORY_IDS);
 for (const course of COURSES) {
   if (course.categoryId === "geo") {
@@ -493,6 +496,30 @@ for (const course of COURSES) {
   }
   if (new Set(territories).size !== territories.length) {
     error("21. Rattachement territorial", `${course.id} : territoire répété`);
+  }
+  if (territories.length === 0) {
+    const orphelines = course.quiz.filter((q) => !(`${course.id}:${q.id}` in QUESTION_TERRITORIES));
+    if (orphelines.length > 0) {
+      error(
+        "21. Rattachement territorial",
+        `${course.id} a un rattachement vide mais ${orphelines.length} de ses questions ne sont pas déclarées dans src/data/questionTerritories.ts (${orphelines[0].id}…) — elles ne seraient jouables sur aucun territoire`,
+      );
+    }
+  }
+}
+
+// Entrées de QUESTION_TERRITORIES qui ne correspondent à aucune question, ou visant un territoire
+// inconnu. Le rattachement par question prime sur celui du cours : une clé périmée y serait muette.
+const allQuestionKeys = new Set(COURSES.flatMap((c) => c.quiz.map((q) => `${c.id}:${q.id}`)));
+for (const [key, territoryId] of Object.entries(QUESTION_TERRITORIES)) {
+  if (!allQuestionKeys.has(key)) {
+    error(
+      "21. Rattachement territorial",
+      `"${key}" est rattachée à un territoire mais ne correspond à aucune question du catalogue`,
+    );
+  }
+  if (!KNOWN_TERRITORIES.has(territoryId)) {
+    error("21. Rattachement territorial", `"${key}" : territoire inconnu "${territoryId}"`);
   }
 }
 
