@@ -295,13 +295,19 @@ export function CategoryScreen() {
         </h1>
 
         <div className="mt-2.5 flex flex-wrap items-center gap-2">
-          <span className="inline-flex items-center rounded-full border-[2.5px] border-ink bg-ink px-3 py-1 font-heading text-xs font-bold uppercase tracking-wide text-white">
+          <span
+            className="inline-flex items-center rounded-full border-[2.5px] border-ink px-3 py-1 font-heading text-xs font-bold uppercase tracking-wide text-ink"
+            style={{ background: deep }}
+          >
             Niveau {subjectProgress.level}
           </span>
           {isSubjectEmerging(category.id, COURSE_INDEX) && <Badge tone="neutral">🚧 En construction</Badge>}
         </div>
 
-        <div className="mt-3.5 flex items-center gap-3 rounded-card border-[3px] border-ink bg-card px-3.5 py-3 shadow-sm md:max-w-md">
+        <div
+          className="mt-3.5 flex items-center gap-3 rounded-card border-[3px] bg-card px-3.5 py-3 shadow-sm md:max-w-md"
+          style={{ borderColor: deep, boxShadow: `3px 3px 0 0 ${deep}` }}
+        >
           <div className="min-w-0 flex-1">
             <p className="font-heading text-[11px] font-bold uppercase tracking-[0.06em] text-ink-faint">
               Ta progression
@@ -331,8 +337,9 @@ export function CategoryScreen() {
               key={key}
               onClick={() => setFilter(key)}
               className={`rounded-full border-[2.5px] border-ink px-4 py-1.5 font-heading text-xs font-bold uppercase tracking-wide transition-colors ${
-                filter === key ? "bg-ink text-white" : "bg-card text-ink"
+                filter === key ? "text-ink" : "bg-card text-ink"
               }`}
+              style={filter === key ? { background: deep } : undefined}
             >
               {label} · {filterCounts[key]}
             </button>
@@ -344,16 +351,18 @@ export function CategoryScreen() {
             <button
               onClick={() => setGeoView("region")}
               className={`rounded-full border-[2.5px] border-ink px-3 py-1.5 font-heading text-xs font-bold uppercase tracking-wide transition-colors ${
-                geoView === "region" ? "bg-ink text-white" : "bg-card text-ink"
+                geoView === "region" ? "text-ink" : "bg-card text-ink"
               }`}
+              style={geoView === "region" ? { background: deep } : undefined}
             >
               🗺️ Par région
             </button>
             <button
               onClick={() => setGeoView("index")}
               className={`rounded-full border-[2.5px] border-ink px-3 py-1.5 font-heading text-xs font-bold uppercase tracking-wide transition-colors ${
-                geoView === "index" ? "bg-ink text-white" : "bg-card text-ink"
+                geoView === "index" ? "text-ink" : "bg-card text-ink"
               }`}
+              style={geoView === "index" ? { background: deep } : undefined}
             >
               🔤 Index A-Z
             </button>

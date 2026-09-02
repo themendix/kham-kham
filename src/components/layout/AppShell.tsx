@@ -1,4 +1,5 @@
 import { useEffect, type ReactNode } from "react";
+import { useLocation } from "react-router-dom";
 import { TopBar } from "@/components/layout/TopBar";
 import { Sidebar } from "@/components/layout/Sidebar";
 import { BottomNav } from "@/components/layout/BottomNav";
@@ -47,6 +48,13 @@ export function AppShell({ children }: AppShellProps) {
   // normale. Monté ici, au-dessus des routes, pour n'exister qu'en un seul exemplaire.
   useScrollRestoration();
 
+  // Le bandeau ne s'affiche que sur les écrans d'interface de premier niveau (accueil des
+  // onglets) — dès qu'on entre dans un cours/une leçon ou une partie de quiz, il disparaît :
+  // ces écrans ont leur propre en-tête, le bandeau Sankofa/streak y est redondant.
+  const { pathname } = useLocation();
+  const TOP_LEVEL_SCREENS = ["/", "/biblio", "/quiz", "/profil", "/profil/quiz", "/favoris"];
+  const showTopBar = TOP_LEVEL_SCREENS.includes(pathname);
+
   // Précharge en tâche de fond, une seule fois pour toute l'application, le contenu complet du
   // catalogue (Histoire + Géographie) : le rend disponible en mémoire (`useCatalogContent`) pour
   // la recherche en texte intégral, le Défi du jour et le fil Home, sans jamais bloquer le
@@ -59,7 +67,7 @@ export function AppShell({ children }: AppShellProps) {
 
   return (
     <div className="min-h-screen bg-cream">
-      <TopBar />
+      {showTopBar && <TopBar />}
       <div className="mx-auto flex w-full max-w-6xl gap-8 px-4 pb-28 pt-4 sm:px-6 md:gap-10 md:pb-12 md:pt-8 lg:px-8">
         <Sidebar />
         <main className="min-w-0 flex-1">{children}</main>

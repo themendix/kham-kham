@@ -272,6 +272,7 @@ function CourseDetailBody({ course }: { course: Course }) {
           onPrev={goPrevLesson}
           onNext={goNextLesson}
           nextLabel={lessonIndex < course.lessons.length - 1 ? "Suivant →" : "J'ai terminé ✓"}
+          isLastLesson={lessonIndex === course.lessons.length - 1}
         />
       )}
 
