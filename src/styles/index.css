@@ -245,6 +245,39 @@ h4 {
   animation: sankofa-life-lost 480ms ease-out;
 }
 
+/* ─── Piste de progression de l'écran matière ────────────────────────────────
+ * Deux boucles lentes, volontairement discrètes : elles tournent en permanence
+ * à l'écran, contrairement aux animations du module Quiz qui sont ponctuelles.
+ */
+
+/* Jalon du cours en cours : respire pour se distinguer des jalons voisins */
+@keyframes sankofa-node-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  40% {
+    transform: scale(1.08);
+  }
+}
+.sankofa-node-pulse {
+  animation: sankofa-node-pulse 1.8s ease-in-out infinite;
+}
+
+/* Coffre d'étape en bas de piste : flottement vertical */
+@keyframes sankofa-bob {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+}
+.sankofa-bob {
+  animation: sankofa-bob 2.6s ease-in-out infinite;
+}
+
 /*
  * Filet de sécurité unique : aucune animation `sankofa-*` ne se joue si
  * l'utilisateur a demandé de les réduire. Couvre aussi `sankofa-pop`, plus
@@ -256,7 +289,9 @@ h4 {
   .sankofa-breathe,
   .sankofa-rise,
   .sankofa-urgent,
-  .sankofa-life-lost {
+  .sankofa-life-lost,
+  .sankofa-node-pulse,
+  .sankofa-bob {
     animation: none;
   }
 }
