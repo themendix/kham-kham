@@ -38,7 +38,7 @@ export function MasteryRadar({ masteryByCategory }: MasteryRadarProps) {
   }).join(" ");
 
   return (
-    <svg viewBox="0 0 220 210" width="220" height="210" className="mx-auto">
+    <svg viewBox="0 0 220 210" width="220" height="210" className="mx-auto h-auto max-w-full">
       {gridPolygons.map((points, i) => (
         <polygon key={i} points={points} fill="none" stroke="#c9bfa8" strokeWidth={1.5} />
       ))}

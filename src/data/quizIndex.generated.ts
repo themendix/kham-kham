@@ -4741,7 +4741,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-13-ghana:course-geographie-13-ghana-quiz-3",
     "courseId": "course-geographie-13-ghana",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-13-ghana-lesson-2",
     "territories": [
       "ouest"
     ],
@@ -4957,7 +4957,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-15-guinee-bissau:course-geographie-15-guinee-bissau-quiz-5",
     "courseId": "course-geographie-15-guinee-bissau",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-15-guinee-bissau-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5011,7 +5011,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-16-liberia:course-geographie-16-liberia-quiz-3",
     "courseId": "course-geographie-16-liberia",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-16-liberia-lesson-2",
     "territories": [
       "ouest"
     ],
@@ -5137,7 +5137,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-17-mali:course-geographie-17-mali-quiz-5",
     "courseId": "course-geographie-17-mali",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-17-mali-lesson-3",
     "territories": [
       "ouest"
     ],
@@ -5227,7 +5227,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-18-niger:course-geographie-18-niger-quiz-5",
     "courseId": "course-geographie-18-niger",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-18-niger-lesson-3",
     "territories": [
       "ouest"
     ],
@@ -5677,7 +5677,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-23-angola:course-geographie-23-angola-quiz-5",
     "courseId": "course-geographie-23-angola",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-23-angola-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -5767,7 +5767,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-24-cameroun:course-geographie-24-cameroun-quiz-5",
     "courseId": "course-geographie-24-cameroun",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-24-cameroun-lesson-3",
     "territories": [
       "centrale"
     ],
@@ -6109,7 +6109,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-28-gabon:course-geographie-28-gabon-quiz-4",
     "courseId": "course-geographie-28-gabon",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-28-gabon-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -6325,7 +6325,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-31-tchad:course-geographie-31-tchad-quiz-1",
     "courseId": "course-geographie-31-tchad",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-31-tchad-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -6487,7 +6487,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-32-burundi:course-geographie-32-burundi-quiz-5",
     "courseId": "course-geographie-32-burundi",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-32-burundi-lesson-1",
     "territories": [
       "est"
     ],
@@ -6847,7 +6847,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-36-ethiopie:course-geographie-36-ethiopie-quiz-5",
     "courseId": "course-geographie-36-ethiopie",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-36-ethiopie-lesson-1",
     "territories": [
       "est"
     ],
@@ -6937,7 +6937,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-37-kenya:course-geographie-37-kenya-quiz-5",
     "courseId": "course-geographie-37-kenya",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-37-kenya-lesson-2",
     "territories": [
       "est"
     ],
@@ -7027,7 +7027,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-38-madagascar:course-geographie-38-madagascar-quiz-5",
     "courseId": "course-geographie-38-madagascar",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-38-madagascar-lesson-1",
     "territories": [
       "est"
     ],
@@ -7297,7 +7297,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-41-rwanda:course-geographie-41-rwanda-quiz-5",
     "courseId": "course-geographie-41-rwanda",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-41-rwanda-lesson-1",
     "territories": [
       "est"
     ],
@@ -7819,7 +7819,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-47-botswana:course-geographie-47-botswana-quiz-4",
     "courseId": "course-geographie-47-botswana",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-47-botswana-lesson-3",
     "territories": [
       "australe"
     ],
@@ -7927,7 +7927,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-48-eswatini:course-geographie-48-eswatini-quiz-5",
     "courseId": "course-geographie-48-eswatini",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-48-eswatini-lesson-1",
     "territories": [
       "australe"
     ],
@@ -8107,7 +8107,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-50-malawi:course-geographie-50-malawi-quiz-5",
     "courseId": "course-geographie-50-malawi",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-50-malawi-lesson-1",
     "territories": [
       "australe"
     ],
@@ -8377,7 +8377,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-53-zambie:course-geographie-53-zambie-quiz-5",
     "courseId": "course-geographie-53-zambie",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-53-zambie-lesson-1",
     "territories": [
       "australe"
     ],
@@ -8467,7 +8467,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-54-zimbabwe:course-geographie-54-zimbabwe-quiz-5",
     "courseId": "course-geographie-54-zimbabwe",
     "categoryId": "geo",
-    "lessonId": null,
+    "lessonId": "course-geographie-54-zimbabwe-lesson-1",
     "territories": [
       "australe"
     ],

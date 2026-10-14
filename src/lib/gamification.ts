@@ -177,3 +177,28 @@ export function updateStreak(streak: StreakState, now: Date = new Date()): Strea
     weekDays,
   };
 }
+
+export interface StreakBreak {
+  /** Jours écoulés depuis la dernière activité (≥ 2 : au moins un jour entier sauté) */
+  daysAway: number;
+  /** Série telle qu'elle était avant que cette visite ne la remette à 1 via `updateStreak` */
+  previousCount: number;
+}
+
+/**
+ * Détecte un retour après une série cassée, à appeler **avant** `updateStreak` (qui remet
+ * silencieusement la série à 1 sans jamais signaler la coupure). Un écart d'un seul jour
+ * (`lastActiveDate` = hier) est une continuation normale, pas une coupure.
+ */
+export function getStreakBreak(streak: StreakState, now: Date = new Date()): StreakBreak | null {
+  if (streak.lastActiveDate === null) return null;
+  const today = toISODate(now);
+  if (streak.lastActiveDate === today) return null;
+
+  const daysAway = Math.round(
+    (Date.parse(today) - Date.parse(streak.lastActiveDate)) / 86_400_000,
+  );
+  if (daysAway < 2) return null;
+
+  return { daysAway, previousCount: streak.count };
+}

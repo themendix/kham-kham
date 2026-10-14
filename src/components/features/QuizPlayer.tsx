@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { QuizQuestion, SubjectColor } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -9,7 +9,7 @@ import { QuizOptions } from "@/components/features/QuizOptions";
 interface QuizPlayerProps {
   questions: QuizQuestion[];
   accentColor: SubjectColor;
-  onFinish: (score: number, total: number) => void;
+  onFinish: (score: number, total: number) => void | Promise<unknown>;
 }
 
 /** Quiz interactif : une question à la fois, verrouillage au clic, correction et explication */
@@ -17,6 +17,10 @@ export function QuizPlayer({ questions, accentColor, onFinish }: QuizPlayerProps
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [score, setScore] = useState(0);
+  const [pending, setPending] = useState(false);
+  const [error, setError] = useState(false);
+  const pendingRef = useRef(false);
+  const finishedRef = useRef(false);
 
   const question = questions[index];
   const locked = selected !== null;
@@ -28,9 +32,15 @@ export function QuizPlayer({ questions, accentColor, onFinish }: QuizPlayerProps
     if (optionIndex === question.correctIndex) setScore((s) => s + 1);
   }
 
-  function handleNext() {
+  async function handleNext() {
+    if (pendingRef.current || finishedRef.current) return;
     if (isLast) {
-      onFinish(score, questions.length);
+      pendingRef.current = true;
+      setPending(true);
+      setError(false);
+      try { await onFinish(score, questions.length); finishedRef.current = true; }
+      catch { setError(true); }
+      finally { pendingRef.current = false; setPending(false); }
       return;
     }
     setIndex((i) => i + 1);
@@ -70,8 +80,8 @@ export function QuizPlayer({ questions, accentColor, onFinish }: QuizPlayerProps
       )}
 
       <div className="mt-6 flex justify-end">
-        <Button variant="primary" onClick={handleNext} disabled={!locked}>
-          {isLast ? "Voir mon résultat" : "Question suivante →"}
+        <Button variant="primary" onClick={handleNext} disabled={!locked || pending}>
+          {error ? "Réessayer" : isLast ? "Voir mon résultat" : "Question suivante →"}
         </Button>
       </div>
     </Card>

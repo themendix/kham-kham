@@ -1,3 +1,4 @@
+import { useLayoutEffect, useRef } from "react";
 import type { Lesson, SubjectColor } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -6,6 +7,8 @@ import { LessonProgressPips } from "@/components/features/LessonProgressPips";
 
 interface LessonViewerProps {
   lesson: Lesson;
+  courseId: string;
+  preserveInitialScroll?: boolean;
   lessonIndex: number;
   totalLessons: number;
   accentColor: SubjectColor;
@@ -18,6 +21,8 @@ interface LessonViewerProps {
 /** Affiche une leçon à la fois, avec pagination et progression dans le cours */
 export function LessonViewer({
   lesson,
+  courseId,
+  preserveInitialScroll = false,
   lessonIndex,
   totalLessons,
   accentColor,
@@ -26,6 +31,20 @@ export function LessonViewer({
   nextLabel,
   isLastLesson = false,
 }: LessonViewerProps) {
+  const titleRef = useRef<HTMLHeadingElement>(null);
+  const lastReadingRef = useRef<string | null>(null);
+  const readingKey = `${courseId}:${lesson.id}:${lessonIndex}`;
+
+  useLayoutEffect(() => {
+    if (lastReadingRef.current === readingKey) return;
+    const initialReading = lastReadingRef.current === null;
+    lastReadingRef.current = readingKey;
+    // AppShell conserve la position de l'entrée d'historique au retour arrière.
+    if (initialReading && preserveInitialScroll) return;
+    titleRef.current?.focus({ preventScroll: true });
+    titleRef.current?.scrollIntoView({ block: "start", behavior: "instant" });
+  }, [readingKey, preserveInitialScroll]);
+
   return (
     <Card className="p-6 md:p-8">
       <div className="font-heading text-xs font-bold uppercase tracking-wide text-ink-faint">
@@ -33,7 +52,7 @@ export function LessonViewer({
       </div>
       <LessonProgressPips currentIndex={lessonIndex} totalLessons={totalLessons} accentColor={accentColor} />
 
-      <h2 className="mt-5 text-xl font-extrabold leading-tight">{lesson.title}</h2>
+      <h2 ref={titleRef} tabIndex={-1} className="mt-5 scroll-mt-6 text-xl font-extrabold leading-tight">{lesson.title}</h2>
       <div className="mt-3.5">
         <LessonBlocks blocks={lesson.blocks} accent={accentColor} density="full" imageKey={lesson.id} />
       </div>

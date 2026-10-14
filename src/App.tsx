@@ -2,7 +2,7 @@ import { lazy, Suspense, useEffect, useState } from "react";
 import { Routes, Route, Navigate, useParams, useSearchParams } from "react-router-dom";
 import { AppShell } from "@/components/layout/AppShell";
 import { useAppStore } from "@/store/useAppStore";
-import { shouldShowGuide } from "@/lib/guide";
+import { shouldShowOnboarding } from "@/lib/onboarding";
 
 // Chaque route est chargée à la demande (`React.lazy`) : la navigation vers un onglet ne
 // paie que le code de cet onglet, pas celui des huit autres. Complète le découpage du
@@ -43,22 +43,23 @@ function JeuRedirect() {
   return <Navigate to={`/quiz/${territoryId}/${mode}`} replace />;
 }
 
-const GuideTour = lazy(() =>
-  import("@/components/features/GuideTour").then((m) => ({ default: m.GuideTour })),
+const Onboarding = lazy(() =>
+  import("@/components/features/Onboarding").then((m) => ({ default: m.Onboarding })),
 );
 
 /**
- * Décide si la visite guidée doit tourner, et la monte au-dessus des routes : elle navigue
- * elle-même d'un écran à l'autre et disparaîtrait si elle vivait à l'intérieur d'un écran.
+ * Décide si l'onboarding doit s'afficher, et le monte au-dessus des routes : contrairement à
+ * l'ancienne visite guidée, il ne navigue plus d'écran en écran (3 étapes statiques), mais reste
+ * monté ici pour garder le même point d'entrée (`?onboarding=1` depuis le Profil).
  */
-function GuideHost() {
+function OnboardingHost() {
   const [searchParams] = useSearchParams();
-  // Verrouillé une fois pour toutes au montage (pas d'abonnement au store) : la visite change
-  // d'adresse en cours de route, et réévaluer la condition à chaque navigation la couperait en
-  // chemin — le `?guide=1` d'une relance depuis le Profil disparaît au premier changement d'écran.
-  const [active, setActive] = useState(() => shouldShowGuide(useAppStore.getState().progress));
+  // Verrouillé une fois pour toutes au montage (pas d'abonnement au store) : réévaluer la
+  // condition à chaque navigation ferait réapparaître l'onboarding dès qu'un champ qu'il écrit
+  // (`preferredCategoryIds`) change l'état qui a servi à le déclencher.
+  const [active, setActive] = useState(() => shouldShowOnboarding(useAppStore.getState().progress));
 
-  const replay = searchParams.get("guide") === "1";
+  const replay = searchParams.get("onboarding") === "1";
   useEffect(() => {
     if (replay) setActive(true);
   }, [replay]);
@@ -66,14 +67,30 @@ function GuideHost() {
   if (!active) return null;
   return (
     <Suspense fallback={null}>
-      <GuideTour onClose={() => setActive(false)} />
+      <Onboarding onClose={() => setActive(false)} />
     </Suspense>
   );
 }
 
 export default function App() {
+  const hydrated = useAppStore((s) => s.hydrated);
+  const saving = useAppStore((s) => s.saving);
+  const error = useAppStore((s) => s.persistenceError);
+  const readonly = useAppStore((s) => s.persistenceReadonly);
+  const retry = useAppStore((s) => s.retryPersistence);
+  useEffect(() => { void retry().catch(() => {}); }, [retry]);
+  const notice = error && (
+    <div role="alert" className="mb-4 rounded-card border-[3px] border-ink bg-cream p-4">
+      <p className="font-medium">{error}</p>
+      <button className="mt-2 font-bold underline" disabled={saving > 0} onClick={() => { void retry().catch(() => {}); }}>Réessayer la sauvegarde</button>
+    </div>
+  );
+  if (!hydrated) return <AppShell>{notice}<RouteLoadingFallback /></AppShell>;
   return (
     <AppShell>
+      {notice}
+      {saving > 0 && <p role="status" className="mb-2 text-sm font-medium text-ink-muted">Sauvegarde…</p>}
+      <fieldset disabled={saving > 0 || readonly} className="m-0 min-w-0 border-0 p-0">
       <Suspense fallback={<RouteLoadingFallback />}>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
@@ -104,7 +121,8 @@ export default function App() {
           <Route path="/jeu/:territoryId/:mode" element={<JeuRedirect />} />
         </Routes>
       </Suspense>
-      <GuideHost />
+      {!readonly && <OnboardingHost />}
+      </fieldset>
     </AppShell>
   );
 }

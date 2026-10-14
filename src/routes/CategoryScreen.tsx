@@ -402,7 +402,7 @@ export function CategoryScreen() {
                         isCompleted={progress.completedCourseIds.includes(course.id)}
                         isStarted={progress.startedCourseIds.includes(course.id)}
                         isFavorite={progress.favoriteCourseIds.includes(course.id)}
-                        onToggleFavorite={() => toggleFavoriteCourse(course.id)}
+                        onToggleFavorite={() => { void toggleFavoriteCourse(course.id).catch(() => {}); }}
                         fluid
                       />
                     ))}

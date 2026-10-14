@@ -44,6 +44,7 @@ function progress(overrides: Partial<UserProgress> = {}): UserProgress {
     completedLessonIds: [],
     featuredLessonKey: null,
     quizGame: { cauris: 0, questions: {}, records: {}, gamesPlayed: 0 },
+    preferredCategoryIds: [],
     ...overrides,
   };
 }

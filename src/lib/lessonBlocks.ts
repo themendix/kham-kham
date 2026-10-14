@@ -66,6 +66,11 @@ export interface ImageBlock {
   legende?: string;
   /** Attribution. Obligatoire pour toute image non produite pour le projet. */
   credit?: string;
+  /** Documents et cartes : préserver toute l'image dans le cadre existant. */
+  fit?: "contain";
+  /** Notice documentaire et licence vérifiées, affichées dans le crédit. */
+  sourceUrl?: string;
+  licenseUrl?: string;
 }
 
 /** Bloc élémentaire d'une leçon. Union discriminée sur `type`. Catalogue fermé à 8 membres. */
@@ -144,10 +149,7 @@ export function lessonPlainText(blocks: LessonBlock[]): string {
         break;
     }
   }
-  return parts
-    .join(" ")
-    .replace(/\s+/g, " ")
-    .trim();
+  return parts.join(" ").replace(/\s+/g, " ").trim();
 }
 
 /** Nombre de mots visibles d'une leçon. Base de la règle 11 du validateur (budget de mots). */

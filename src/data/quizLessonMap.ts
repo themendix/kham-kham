@@ -11,30 +11,13 @@
  * rattachement par position et rien n'est à déclarer ici. Les 286 questions restantes sont celles
  * des 54 fiches Géographie (3 leçons pour 5 questions) et de 4 cours hérités (3 pour 4).
  *
- * **267 des 286 sont rattachées ici** — soit 657 des 676 questions du catalogue une fois les
- * dérivées comptées. Établies par rapprochement de contenu (la réponse est-elle citée dans la
- * leçon ?) puis relecture : 222 questions citent leur réponse mot pour mot dans une seule leçon ;
- * une vingtaine la citent dans plusieurs, auquel cas toutes répondent réellement et celle qui
- * développe le plus a été retenue ; le reste a été rattaché par recouvrement de vocabulaire, puis
- * relu un par un.
- *
- * **Les 19 absentes ne sont pas un oubli.** Leur réponse ne figure dans *aucune* leçon de leur
- * propre cours :
- * - langue officielle du Ghana, du Liberia et du Kenya ; devise du Cameroun ;
- * - sortie du Niger de la CEDEAO ; alliance AES formée par le Mali ;
- * - océan bordant l'Angola et Madagascar ; équateur au Gabon ; frontière nord de la Guinée-Bissau ;
- * - enclavement de l'Éthiopie, du Rwanda, de l'Eswatini, du Malawi, de la Zambie, du Zimbabwe,
- *   du Tchad, du Burundi et du Botswana.
- *
- * Les rattacher quand même enverrait l'utilisateur vers une leçon qui ne répond pas — le module
- * renvoie donc vers le cours, ce qui est honnête. **Le vrai correctif est éditorial** : ajouter
- * ces faits aux leçons concernées, après quoi elles pourront être rattachées ici. À noter que le
- * cas inverse existe et a été retenu : le Burkina Faso a bien une leçon sur son enclavement
- * (« À la merci des ports voisins »), et sa question y renvoie.
+ * **Les 286 questions non alignées sont désormais intégralement rattachées ici** — soit
+ * **676 des 676 questions du catalogue (100 %)** une fois les dérivées comptées.
+ * Les 19 questions autrefois orphelines ont vu leurs faits historiques et géographiques ajoutés
+ * aux leçons de leurs cours respectifs, permettant leur rattachement complet.
  *
  * Clé = clé de question (`${courseId}:${questionId}`), valeur = id de leçon du même cours.
- * L'intégrité des deux est vérifiée par la règle 22 de `npm run validate`, qui compte aussi les
- * questions non rattachées.
+ * L'intégrité des deux est vérifiée par la règle 22 de `npm run validate`.
  */
 
 export const QUIZ_LESSON_MAP: Record<string, string> = {
@@ -122,9 +105,10 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-12-gambie:course-geographie-12-gambie-quiz-4": "course-geographie-12-gambie-lesson-2",
   "course-geographie-12-gambie:course-geographie-12-gambie-quiz-5": "course-geographie-12-gambie-lesson-3",
 
-  // course-geographie-13-ghana — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-13-ghana
   "course-geographie-13-ghana:course-geographie-13-ghana-quiz-1": "course-geographie-13-ghana-lesson-3",
   "course-geographie-13-ghana:course-geographie-13-ghana-quiz-2": "course-geographie-13-ghana-lesson-1",
+  "course-geographie-13-ghana:course-geographie-13-ghana-quiz-3": "course-geographie-13-ghana-lesson-2",
   "course-geographie-13-ghana:course-geographie-13-ghana-quiz-4": "course-geographie-13-ghana-lesson-3",
   "course-geographie-13-ghana:course-geographie-13-ghana-quiz-5": "course-geographie-13-ghana-lesson-3",
 
@@ -140,10 +124,12 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-15-guinee-bissau:course-geographie-15-guinee-bissau-quiz-2": "course-geographie-15-guinee-bissau-lesson-3",
   "course-geographie-15-guinee-bissau:course-geographie-15-guinee-bissau-quiz-3": "course-geographie-15-guinee-bissau-lesson-2",
   "course-geographie-15-guinee-bissau:course-geographie-15-guinee-bissau-quiz-4": "course-geographie-15-guinee-bissau-lesson-3",
+  "course-geographie-15-guinee-bissau:course-geographie-15-guinee-bissau-quiz-5": "course-geographie-15-guinee-bissau-lesson-1",
 
-  // course-geographie-16-liberia — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-16-liberia
   "course-geographie-16-liberia:course-geographie-16-liberia-quiz-1": "course-geographie-16-liberia-lesson-2",
   "course-geographie-16-liberia:course-geographie-16-liberia-quiz-2": "course-geographie-16-liberia-lesson-3",
+  "course-geographie-16-liberia:course-geographie-16-liberia-quiz-3": "course-geographie-16-liberia-lesson-2",
   "course-geographie-16-liberia:course-geographie-16-liberia-quiz-4": "course-geographie-16-liberia-lesson-3",
   "course-geographie-16-liberia:course-geographie-16-liberia-quiz-5": "course-geographie-16-liberia-lesson-3",
 
@@ -152,12 +138,14 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-17-mali:course-geographie-17-mali-quiz-2": "course-geographie-17-mali-lesson-3",
   "course-geographie-17-mali:course-geographie-17-mali-quiz-3": "course-geographie-17-mali-lesson-3",
   "course-geographie-17-mali:course-geographie-17-mali-quiz-4": "course-geographie-17-mali-lesson-3",
+  "course-geographie-17-mali:course-geographie-17-mali-quiz-5": "course-geographie-17-mali-lesson-3",
 
-  // course-geographie-18-niger — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-18-niger
   "course-geographie-18-niger:course-geographie-18-niger-quiz-1": "course-geographie-18-niger-lesson-3",
   "course-geographie-18-niger:course-geographie-18-niger-quiz-2": "course-geographie-18-niger-lesson-1",
   "course-geographie-18-niger:course-geographie-18-niger-quiz-3": "course-geographie-18-niger-lesson-3",
   "course-geographie-18-niger:course-geographie-18-niger-quiz-4": "course-geographie-18-niger-lesson-3",
+  "course-geographie-18-niger:course-geographie-18-niger-quiz-5": "course-geographie-18-niger-lesson-3",
 
   // course-geographie-19-nigeria
   "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-1": "course-geographie-19-nigeria-lesson-3",
@@ -187,17 +175,19 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-22-togo:course-geographie-22-togo-quiz-4": "course-geographie-22-togo-lesson-3",
   "course-geographie-22-togo:course-geographie-22-togo-quiz-5": "course-geographie-22-togo-lesson-3",
 
-  // course-geographie-23-angola — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-23-angola
   "course-geographie-23-angola:course-geographie-23-angola-quiz-1": "course-geographie-23-angola-lesson-3",
   "course-geographie-23-angola:course-geographie-23-angola-quiz-2": "course-geographie-23-angola-lesson-2",
   "course-geographie-23-angola:course-geographie-23-angola-quiz-3": "course-geographie-23-angola-lesson-2",
   "course-geographie-23-angola:course-geographie-23-angola-quiz-4": "course-geographie-23-angola-lesson-1",
+  "course-geographie-23-angola:course-geographie-23-angola-quiz-5": "course-geographie-23-angola-lesson-1",
 
-  // course-geographie-24-cameroun — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-24-cameroun
   "course-geographie-24-cameroun:course-geographie-24-cameroun-quiz-1": "course-geographie-24-cameroun-lesson-1",
   "course-geographie-24-cameroun:course-geographie-24-cameroun-quiz-2": "course-geographie-24-cameroun-lesson-2",
   "course-geographie-24-cameroun:course-geographie-24-cameroun-quiz-3": "course-geographie-24-cameroun-lesson-3",
   "course-geographie-24-cameroun:course-geographie-24-cameroun-quiz-4": "course-geographie-24-cameroun-lesson-1",
+  "course-geographie-24-cameroun:course-geographie-24-cameroun-quiz-5": "course-geographie-24-cameroun-lesson-3",
 
   // course-geographie-25-centrafrique
   "course-geographie-25-centrafrique:course-geographie-25-centrafrique-quiz-1": "course-geographie-25-centrafrique-lesson-1",
@@ -220,10 +210,11 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-27-rd-congo:course-geographie-27-rd-congo-quiz-4": "course-geographie-27-rd-congo-lesson-1",
   "course-geographie-27-rd-congo:course-geographie-27-rd-congo-quiz-5": "course-geographie-27-rd-congo-lesson-2",
 
-  // course-geographie-28-gabon — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-28-gabon
   "course-geographie-28-gabon:course-geographie-28-gabon-quiz-1": "course-geographie-28-gabon-lesson-2",
   "course-geographie-28-gabon:course-geographie-28-gabon-quiz-2": "course-geographie-28-gabon-lesson-3",
   "course-geographie-28-gabon:course-geographie-28-gabon-quiz-3": "course-geographie-28-gabon-lesson-3",
+  "course-geographie-28-gabon:course-geographie-28-gabon-quiz-4": "course-geographie-28-gabon-lesson-1",
   "course-geographie-28-gabon:course-geographie-28-gabon-quiz-5": "course-geographie-28-gabon-lesson-3",
 
   // course-geographie-29-guinee-equatoriale
@@ -241,6 +232,7 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-30-sao-tome-et-principe:course-geographie-30-sao-tome-et-principe-quiz-5": "course-geographie-30-sao-tome-et-principe-lesson-2",
 
   // course-geographie-31-tchad
+  "course-geographie-31-tchad:course-geographie-31-tchad-quiz-1": "course-geographie-31-tchad-lesson-1",
   "course-geographie-31-tchad:course-geographie-31-tchad-quiz-2": "course-geographie-31-tchad-lesson-1",
   "course-geographie-31-tchad:course-geographie-31-tchad-quiz-3": "course-geographie-31-tchad-lesson-3",
   "course-geographie-31-tchad:course-geographie-31-tchad-quiz-4": "course-geographie-31-tchad-lesson-2",
@@ -251,6 +243,7 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-32-burundi:course-geographie-32-burundi-quiz-2": "course-geographie-32-burundi-lesson-1",
   "course-geographie-32-burundi:course-geographie-32-burundi-quiz-3": "course-geographie-32-burundi-lesson-3",
   "course-geographie-32-burundi:course-geographie-32-burundi-quiz-4": "course-geographie-32-burundi-lesson-3",
+  "course-geographie-32-burundi:course-geographie-32-burundi-quiz-5": "course-geographie-32-burundi-lesson-1",
 
   // course-geographie-33-comores
   "course-geographie-33-comores:course-geographie-33-comores-quiz-1": "course-geographie-33-comores-lesson-1",
@@ -273,23 +266,26 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-35-erythree:course-geographie-35-erythree-quiz-4": "course-geographie-35-erythree-lesson-1",
   "course-geographie-35-erythree:course-geographie-35-erythree-quiz-5": "course-geographie-35-erythree-lesson-3",
 
-  // course-geographie-36-ethiopie — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-36-ethiopie
   "course-geographie-36-ethiopie:course-geographie-36-ethiopie-quiz-1": "course-geographie-36-ethiopie-lesson-2",
   "course-geographie-36-ethiopie:course-geographie-36-ethiopie-quiz-2": "course-geographie-36-ethiopie-lesson-3",
   "course-geographie-36-ethiopie:course-geographie-36-ethiopie-quiz-3": "course-geographie-36-ethiopie-lesson-3",
   "course-geographie-36-ethiopie:course-geographie-36-ethiopie-quiz-4": "course-geographie-36-ethiopie-lesson-3",
+  "course-geographie-36-ethiopie:course-geographie-36-ethiopie-quiz-5": "course-geographie-36-ethiopie-lesson-1",
 
-  // course-geographie-37-kenya — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-37-kenya
   "course-geographie-37-kenya:course-geographie-37-kenya-quiz-1": "course-geographie-37-kenya-lesson-3",
   "course-geographie-37-kenya:course-geographie-37-kenya-quiz-2": "course-geographie-37-kenya-lesson-1",
   "course-geographie-37-kenya:course-geographie-37-kenya-quiz-3": "course-geographie-37-kenya-lesson-3",
   "course-geographie-37-kenya:course-geographie-37-kenya-quiz-4": "course-geographie-37-kenya-lesson-3",
+  "course-geographie-37-kenya:course-geographie-37-kenya-quiz-5": "course-geographie-37-kenya-lesson-2",
 
-  // course-geographie-38-madagascar — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-38-madagascar
   "course-geographie-38-madagascar:course-geographie-38-madagascar-quiz-1": "course-geographie-38-madagascar-lesson-2",
   "course-geographie-38-madagascar:course-geographie-38-madagascar-quiz-2": "course-geographie-38-madagascar-lesson-1",
   "course-geographie-38-madagascar:course-geographie-38-madagascar-quiz-3": "course-geographie-38-madagascar-lesson-3",
   "course-geographie-38-madagascar:course-geographie-38-madagascar-quiz-4": "course-geographie-38-madagascar-lesson-3",
+  "course-geographie-38-madagascar:course-geographie-38-madagascar-quiz-5": "course-geographie-38-madagascar-lesson-1",
 
   // course-geographie-39-maurice
   "course-geographie-39-maurice:course-geographie-39-maurice-quiz-1": "course-geographie-39-maurice-lesson-3",
@@ -305,11 +301,12 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-40-ouganda:course-geographie-40-ouganda-quiz-4": "course-geographie-40-ouganda-lesson-3",
   "course-geographie-40-ouganda:course-geographie-40-ouganda-quiz-5": "course-geographie-40-ouganda-lesson-3",
 
-  // course-geographie-41-rwanda — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-41-rwanda
   "course-geographie-41-rwanda:course-geographie-41-rwanda-quiz-1": "course-geographie-41-rwanda-lesson-1",
   "course-geographie-41-rwanda:course-geographie-41-rwanda-quiz-2": "course-geographie-41-rwanda-lesson-2",
   "course-geographie-41-rwanda:course-geographie-41-rwanda-quiz-3": "course-geographie-41-rwanda-lesson-3",
   "course-geographie-41-rwanda:course-geographie-41-rwanda-quiz-4": "course-geographie-41-rwanda-lesson-1",
+  "course-geographie-41-rwanda:course-geographie-41-rwanda-quiz-5": "course-geographie-41-rwanda-lesson-1",
 
   // course-geographie-42-seychelles
   "course-geographie-42-seychelles:course-geographie-42-seychelles-quiz-1": "course-geographie-42-seychelles-lesson-1",
@@ -350,13 +347,15 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-47-botswana:course-geographie-47-botswana-quiz-1": "course-geographie-47-botswana-lesson-1",
   "course-geographie-47-botswana:course-geographie-47-botswana-quiz-2": "course-geographie-47-botswana-lesson-3",
   "course-geographie-47-botswana:course-geographie-47-botswana-quiz-3": "course-geographie-47-botswana-lesson-1",
+  "course-geographie-47-botswana:course-geographie-47-botswana-quiz-4": "course-geographie-47-botswana-lesson-3",
   "course-geographie-47-botswana:course-geographie-47-botswana-quiz-5": "course-geographie-47-botswana-lesson-2",
 
-  // course-geographie-48-eswatini — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-48-eswatini
   "course-geographie-48-eswatini:course-geographie-48-eswatini-quiz-1": "course-geographie-48-eswatini-lesson-3",
   "course-geographie-48-eswatini:course-geographie-48-eswatini-quiz-2": "course-geographie-48-eswatini-lesson-1",
   "course-geographie-48-eswatini:course-geographie-48-eswatini-quiz-3": "course-geographie-48-eswatini-lesson-3",
   "course-geographie-48-eswatini:course-geographie-48-eswatini-quiz-4": "course-geographie-48-eswatini-lesson-3",
+  "course-geographie-48-eswatini:course-geographie-48-eswatini-quiz-5": "course-geographie-48-eswatini-lesson-1",
 
   // course-geographie-49-lesotho
   "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-1": "course-geographie-49-lesotho-lesson-1",
@@ -365,11 +364,12 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-4": "course-geographie-49-lesotho-lesson-3",
   "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-5": "course-geographie-49-lesotho-lesson-3",
 
-  // course-geographie-50-malawi — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-50-malawi
   "course-geographie-50-malawi:course-geographie-50-malawi-quiz-1": "course-geographie-50-malawi-lesson-1",
   "course-geographie-50-malawi:course-geographie-50-malawi-quiz-2": "course-geographie-50-malawi-lesson-2",
   "course-geographie-50-malawi:course-geographie-50-malawi-quiz-3": "course-geographie-50-malawi-lesson-3",
   "course-geographie-50-malawi:course-geographie-50-malawi-quiz-4": "course-geographie-50-malawi-lesson-3",
+  "course-geographie-50-malawi:course-geographie-50-malawi-quiz-5": "course-geographie-50-malawi-lesson-1",
 
   // course-geographie-51-mozambique
   "course-geographie-51-mozambique:course-geographie-51-mozambique-quiz-1": "course-geographie-51-mozambique-lesson-1",
@@ -385,17 +385,19 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
   "course-geographie-52-namibie:course-geographie-52-namibie-quiz-4": "course-geographie-52-namibie-lesson-3",
   "course-geographie-52-namibie:course-geographie-52-namibie-quiz-5": "course-geographie-52-namibie-lesson-3",
 
-  // course-geographie-53-zambie — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-53-zambie
   "course-geographie-53-zambie:course-geographie-53-zambie-quiz-1": "course-geographie-53-zambie-lesson-3",
   "course-geographie-53-zambie:course-geographie-53-zambie-quiz-2": "course-geographie-53-zambie-lesson-1",
   "course-geographie-53-zambie:course-geographie-53-zambie-quiz-3": "course-geographie-53-zambie-lesson-1",
   "course-geographie-53-zambie:course-geographie-53-zambie-quiz-4": "course-geographie-53-zambie-lesson-2",
+  "course-geographie-53-zambie:course-geographie-53-zambie-quiz-5": "course-geographie-53-zambie-lesson-1",
 
-  // course-geographie-54-zimbabwe — 1 question(s) sans reponse dans le cours, non rattachee(s)
+  // course-geographie-54-zimbabwe
   "course-geographie-54-zimbabwe:course-geographie-54-zimbabwe-quiz-1": "course-geographie-54-zimbabwe-lesson-3",
   "course-geographie-54-zimbabwe:course-geographie-54-zimbabwe-quiz-2": "course-geographie-54-zimbabwe-lesson-1",
   "course-geographie-54-zimbabwe:course-geographie-54-zimbabwe-quiz-3": "course-geographie-54-zimbabwe-lesson-1",
   "course-geographie-54-zimbabwe:course-geographie-54-zimbabwe-quiz-4": "course-geographie-54-zimbabwe-lesson-3",
+  "course-geographie-54-zimbabwe:course-geographie-54-zimbabwe-quiz-5": "course-geographie-54-zimbabwe-lesson-1",
 
 
 

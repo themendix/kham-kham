@@ -96,7 +96,9 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
                     <Lightbulb className="h-3.5 w-3.5" />
                   </div>
                   <div>
-                    <div className="font-heading text-xs uppercase tracking-wide text-ink">Le savais-tu ?</div>
+                    <div className="font-heading text-xs uppercase tracking-wide text-ink">
+                      Le savais-tu ?
+                    </div>
                     <p className="mt-1 text-[13.5px] font-medium leading-relaxed text-ink">
                       <Inline text={block.text} />
                     </p>
@@ -107,11 +109,15 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
             case "chiffreCle":
               return (
                 <ThreadDot key={i}>
-                  <div className={`rounded-[18px] border-[2.5px] border-ink p-[13px_16px] shadow-sm ${SUBJECT_DEEP_BG[accent]}`}>
+                  <div
+                    className={`rounded-[18px] border-[2.5px] border-ink p-[13px_16px] shadow-sm ${SUBJECT_DEEP_BG[accent]}`}
+                  >
                     <div className="font-heading text-[34px] font-extrabold leading-none text-ink">
                       {block.valeur}
                     </div>
-                    <div className="mt-1.5 text-[13.5px] font-semibold text-ink">{block.legende}</div>
+                    <div className="mt-1.5 text-[13.5px] font-semibold text-ink">
+                      {block.legende}
+                    </div>
                   </div>
                 </ThreadDot>
               );
@@ -121,7 +127,9 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
                 <ThreadDot key={i}>
                   <blockquote className="border-l-[5px] border-ink pl-4">
                     <p className="text-[15.5px] italic text-ink">{block.texte}</p>
-                    <div className="mt-1.5 font-heading text-[13px] font-bold text-ink">{block.auteur}</div>
+                    <div className="mt-1.5 font-heading text-[13px] font-bold text-ink">
+                      {block.auteur}
+                    </div>
                     {block.date && <div className="text-[12px] text-ink-faint">{block.date}</div>}
                   </blockquote>
                 </ThreadDot>
@@ -138,10 +146,14 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
                         >
                           {evenement.date}
                         </span>
-                        <span className="pt-0.5 text-[14px] font-medium text-ink-muted">{evenement.texte}</span>
+                        <span className="pt-0.5 text-[14px] font-medium text-ink-muted">
+                          {evenement.texte}
+                        </span>
                       </div>
                     ))}
-                    {block.unite && <div className="text-[11px] font-semibold text-ink-faint">{block.unite}</div>}
+                    {block.unite && (
+                      <div className="text-[11px] font-semibold text-ink-faint">{block.unite}</div>
+                    )}
                   </div>
                 </ThreadDot>
               );
@@ -168,23 +180,26 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
               return (
                 <ThreadDot key={i}>
                   <figure className="overflow-hidden rounded-card border-[2.5px] border-ink bg-card shadow-sm">
-                    {/* L'image remplit tout le cadre, sans bande visible (`object-cover`). La
-                        hauteur reste plafonnée : au-delà, l'image est recadrée plutôt que
-                        lettreboxée. Le plafond est calé pour qu'un format paysage courant (jusqu'au
-                        4:3) passe entier — seuls les portraits nettement verticaux sont rognés, par
-                        le bas (`object-top`), là où se trouve le moins souvent le sujet. */}
+                    {/* Même cadre et mêmes plafonds dans les deux densités. `contain` préserve
+                        les cartes et documents entiers ; les photos gardent leur cadrage habituel. */}
                     {image ? (
                       <img
                         src={image.src}
                         srcSet={image.srcSet}
-                        sizes={compact ? "(min-width: 768px) 420px, 100vw" : "(min-width: 768px) 620px, 100vw"}
+                        sizes={
+                          compact
+                            ? "(min-width: 768px) 420px, 100vw"
+                            : "(min-width: 768px) 620px, 100vw"
+                        }
                         alt={block.alt}
                         loading="lazy"
                         decoding="async"
-                        className={`w-full object-cover object-top ${compact ? "max-h-[280px]" : "max-h-[480px]"}`}
+                        className={`w-full ${block.fit === "contain" ? "object-contain" : "object-cover object-top"} ${compact ? "max-h-[280px]" : "max-h-[480px]"}`}
                       />
                     ) : (
-                      <div className={`w-full bg-cream ${compact ? "aspect-[16/9]" : "aspect-[4/3]"}`} />
+                      <div
+                        className={`w-full bg-cream ${compact ? "aspect-[16/9]" : "aspect-[4/3]"}`}
+                      />
                     )}
                     {(block.legende || block.credit) && (
                       <figcaption
@@ -198,7 +213,34 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
                           </div>
                         )}
                         {block.credit && (
-                          <div className="mt-0.5 text-[11px] leading-snug text-ink-faint">{block.credit}</div>
+                          <div className="mt-0.5 text-[11px] leading-snug text-ink-faint">
+                            {block.sourceUrl ? (
+                              <a
+                                href={block.sourceUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="underline underline-offset-2"
+                              >
+                                {block.credit}
+                              </a>
+                            ) : (
+                              block.credit
+                            )}
+                            {block.licenseUrl && (
+                              <>
+                                {" "}
+                                ·{" "}
+                                <a
+                                  href={block.licenseUrl}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="underline underline-offset-2"
+                                >
+                                  Licence
+                                </a>
+                              </>
+                            )}
+                          </div>
                         )}
                       </figcaption>
                     )}
@@ -211,7 +253,9 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
       </div>
 
       {aRetenir && (
-        <div className={`rounded-card border-[2.5px] border-ink bg-ink shadow-sm ${compact ? "p-3" : "p-3.5"}`}>
+        <div
+          className={`rounded-card border-[2.5px] border-ink bg-ink shadow-sm ${compact ? "p-3" : "p-3.5"}`}
+        >
           <div className="flex items-center gap-2">
             <span
               className="grid h-6 w-6 shrink-0 place-items-center rounded-full border-2 border-cream/30"
@@ -224,13 +268,22 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
               <div className="font-heading text-[10px] font-bold uppercase tracking-wide text-cream/60">
                 Maintenant que tu sais pourquoi
               </div>
-              <div className="font-heading text-[13.5px] font-extrabold text-cream">Ce que tu retiens</div>
+              <div className="font-heading text-[13.5px] font-extrabold text-cream">
+                Ce que tu retiens
+              </div>
             </div>
           </div>
           <ul className="mt-2.5 flex flex-col gap-1.5">
             {aRetenir.points.map((point, j) => (
-              <li key={j} className="flex items-start gap-2 text-[13.5px] font-medium leading-snug text-cream">
-                <span className="mt-[6px] h-[7px] w-[7px] shrink-0" style={{ background: deep }} aria-hidden />
+              <li
+                key={j}
+                className="flex items-start gap-2 text-[13.5px] font-medium leading-snug text-cream"
+              >
+                <span
+                  className="mt-[6px] h-[7px] w-[7px] shrink-0"
+                  style={{ background: deep }}
+                  aria-hidden
+                />
                 <span>
                   <Inline text={point} boldClassName="text-cream" />
                 </span>

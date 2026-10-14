@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, it } from "vitest";
-import { hasSeenGuide, isNewUser, markGuideSeen, shouldShowGuide } from "@/lib/guide";
+import { hasSeenOnboarding, isNewUser, markOnboardingSeen, shouldShowOnboarding } from "@/lib/onboarding";
 import type { UserProgress } from "@/types";
 
 /** Progression synthétique par défaut, un nouvel utilisateur qui n'a encore rien fait */
@@ -21,6 +21,7 @@ function newProgress(overrides: Partial<UserProgress> = {}): UserProgress {
     completedLessonIds: [],
     featuredLessonKey: null,
     quizGame: { cauris: 0, questions: {}, records: {}, gamesPlayed: 0 },
+    preferredCategoryIds: [],
     ...overrides,
   };
 }
@@ -51,18 +52,18 @@ describe("isNewUser", () => {
   });
 });
 
-describe("shouldShowGuide", () => {
+describe("shouldShowOnboarding", () => {
   it("est vrai pour un nouvel utilisateur sans clé localStorage", () => {
-    expect(shouldShowGuide(newProgress())).toBe(true);
+    expect(shouldShowOnboarding(newProgress())).toBe(true);
   });
 
-  it("est faux une fois le guide marqué comme vu", () => {
-    markGuideSeen();
-    expect(hasSeenGuide()).toBe(true);
-    expect(shouldShowGuide(newProgress())).toBe(false);
+  it("est faux une fois l'onboarding marqué comme vu", () => {
+    markOnboardingSeen();
+    expect(hasSeenOnboarding()).toBe(true);
+    expect(shouldShowOnboarding(newProgress())).toBe(false);
   });
 
   it("est faux pour un utilisateur existant même sans clé localStorage", () => {
-    expect(shouldShowGuide(newProgress({ xp: 50 }))).toBe(false);
+    expect(shouldShowOnboarding(newProgress({ xp: 50 }))).toBe(false);
   });
 });

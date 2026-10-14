@@ -35,14 +35,14 @@ export function ProfilScreen() {
     <div className="pt-1">
       <h1 className="mb-4 mt-1.5 text-[30px] font-extrabold">Profil</h1>
 
-      <div className="grid gap-4 md:grid-cols-2 md:items-start md:gap-6">
-        <div>
+      <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:items-start md:gap-6">
+        <div className="min-w-0">
           <div className="mb-4 rounded-[22px] border-[3px] border-ink bg-card p-4 shadow-sm">
             <div className="flex items-center gap-4">
-              <div className="grid h-[66px] w-[66px] place-items-center rounded-full border-[3px] border-ink bg-perso text-3xl">
+              <div className="grid h-[66px] w-[66px] shrink-0 place-items-center rounded-full border-[3px] border-ink bg-perso text-3xl">
                 ✨
               </div>
-              <div>
+              <div className="min-w-0 flex-1 break-words">
                 <span className="inline-block rounded-full bg-ink px-2.5 py-1 font-heading text-[11px] font-bold tracking-wide text-white">
                   NIV. {levelInfo.level}
                 </span>{" "}
@@ -71,7 +71,7 @@ export function ProfilScreen() {
           </div>
         </div>
 
-        <div>
+        <div className="min-w-0">
           <div className="mb-4 rounded-[22px] border-[3px] border-ink bg-card p-4 shadow-sm">
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-2.5 font-extrabold">
@@ -94,15 +94,15 @@ export function ProfilScreen() {
             courseCount={progress.favoriteCourseIds.length}
           />
 
-          <Link to="/?guide=1">
+          <Link to="/?onboarding=1">
             <Card shadow="sm" className="flex items-center gap-4 p-4">
               <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full border-[2.5px] border-ink bg-gold">
                 <Compass className="h-[22px] w-[22px]" />
               </div>
               <div className="min-w-0 flex-1">
-                <h3 className="font-extrabold">Revoir le guide</h3>
+                <h3 className="break-words font-extrabold">Revoir l'introduction</h3>
                 <p className="truncate text-sm font-medium text-ink-faint">
-                  La visite de l'app, écran par écran
+                  Sankofa, le fonctionnement de l'app, tes matières préférées
                 </p>
               </div>
               <ChevronRight className="h-5 w-5 shrink-0 text-ink-faint" />

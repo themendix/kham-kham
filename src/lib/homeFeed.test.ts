@@ -40,6 +40,7 @@ function build(overrides: Partial<Parameters<typeof buildHomeFeed>[0]> = {}) {
     dismissedCourseIds: [],
     allCourses: COURSES,
     allCategories: CATEGORIES,
+    preferredCategoryIds: [],
     ...overrides,
   });
 }
@@ -110,5 +111,42 @@ describe("buildHomeFeed — tourniquet entre matières", () => {
     const snapshot = [...COURSES];
     build();
     expect(COURSES).toEqual(snapshot);
+  });
+});
+
+describe("buildHomeFeed — matières préférées (onboarding)", () => {
+  it("place jusqu'à 5 cours de la matière choisie en tête, sans rien perdre du reste", () => {
+    const feed = build({ preferredCategoryIds: ["histoire"] });
+    // Le catalogue de test n'a que 2 cours d'Histoire (h1, h2) : les 5 premières places ne
+    // peuvent pas être toutes remplies, le reste du fil suit derrière sans trou.
+    expect(feed.slice(0, 2).map((f) => f.course.categoryId)).toEqual(["histoire", "histoire"]);
+    expect(feed).toHaveLength(COURSES.length);
+    expect(new Set(feed.map((f) => f.course.id)).size).toBe(COURSES.length);
+  });
+
+  it("plafonne le nombre de cartes de tête à 5 même avec plus de cours disponibles", () => {
+    const manyHistoire: CourseMeta[] = [
+      ...COURSES,
+      course("h3", "histoire"),
+      course("h4", "histoire"),
+      course("h5", "histoire"),
+      course("h6", "histoire"),
+    ];
+    const feed = buildHomeFeed({
+      completedCourseIds: [],
+      favoriteCourseIds: [],
+      dismissedCourseIds: [],
+      allCourses: manyHistoire,
+      allCategories: CATEGORIES,
+      preferredCategoryIds: ["histoire"],
+    });
+    expect(feed.slice(0, 5).every((f) => f.course.categoryId === "histoire")).toBe(true);
+    expect(feed[5].course.categoryId).not.toBe("histoire");
+  });
+
+  it("sans préférence, l'ordre reste le tourniquet habituel", () => {
+    expect(build({ preferredCategoryIds: [] }).map((f) => f.course.id)).toEqual(
+      build().map((f) => f.course.id),
+    );
   });
 });

@@ -34,7 +34,7 @@ export function BiblioScreen() {
   const completeLesson = useAppStore((s) => s.completeLesson);
 
   useEffect(() => {
-    ensureFeaturedLesson();
+    void ensureFeaturedLesson().catch(() => {});
   }, [ensureFeaturedLesson]);
 
   // Le contenu complet de la leçon vedette (titre + texte) n'est chargé qu'à la demande, en ne
@@ -121,7 +121,7 @@ export function BiblioScreen() {
                     category={getCategory(course.categoryId)!}
                     isCompleted={completedCourseIds.includes(course.id)}
                     isFavorite={favoriteCourseIds.includes(course.id)}
-                    onToggleFavorite={() => toggleFavoriteCourse(course.id)}
+                    onToggleFavorite={() => { void toggleFavoriteCourse(course.id).catch(() => {}); }}
                     fluid
                   />
                   {matchLocation !== "titre" && (
@@ -151,7 +151,7 @@ export function BiblioScreen() {
                 course={featuredRef.course}
                 lesson={featuredRef.lesson}
                 category={featuredCategory}
-                onComplete={() => completeLesson(featuredRef.course.id, featuredRef.lesson.id)}
+                onComplete={() => { void completeLesson(featuredRef.course.id, featuredRef.lesson.id).catch(() => {}); }}
               />
             ) : (
               <Card className="mt-2.5 p-8 text-center md:max-w-2xl">

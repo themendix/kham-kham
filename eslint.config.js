@@ -6,7 +6,17 @@ import prettierConfig from "eslint-config-prettier";
 
 export default tseslint.config(
   // `design_handoff_*` : TSX de reference fourni par le design, jamais compile ni livre.
-  { ignores: ["dist", "node_modules", "design_handoff_*"] },
+  {
+    ignores: [
+      "dist",
+      "node_modules",
+      "design_handoff_*",
+      ".claude/**",
+      ".codex/**",
+      ".agents/**",
+      ".vibeflow-local/**",
+    ],
+  },
   {
     files: ["**/*.{ts,tsx}"],
     extends: [js.configs.recommended, ...tseslint.configs.recommended, reactRefresh.configs.vite],

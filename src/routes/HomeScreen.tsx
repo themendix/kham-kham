@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Sparkles } from "lucide-react";
 import { getCategory, CATEGORIES } from "@/data/categories";
@@ -13,7 +13,8 @@ import { ContinueLearningCard } from "@/components/features/ContinueLearningCard
 import { ThemeExplorer } from "@/components/features/ThemeExplorer";
 import { ProverbCard } from "@/components/features/ProverbCard";
 import { ProgressGlance } from "@/components/features/ProgressGlance";
-import { DAILY_GOAL } from "@/lib/gamification";
+import { WelcomeBackCard } from "@/components/features/WelcomeBackCard";
+import { DAILY_GOAL, getStreakBreak } from "@/lib/gamification";
 import { pickDailyIndex } from "@/lib/daily";
 import { buildHomeFeed, type FeedCard } from "@/lib/homeFeed";
 
@@ -23,14 +24,19 @@ export function HomeScreen() {
   const [position, setPosition] = useState(0);
 
   const progress = useAppStore((s) => s.progress);
-  const toggleFavoriteCourse = useAppStore((s) => s.toggleFavoriteCourse);
+  const setFavoriteCourse = useAppStore((s) => s.setFavoriteCourse);
   const dismissCourse = useAppStore((s) => s.dismissCourse);
   const updateStreak = useAppStore((s) => s.updateStreak);
   const checkDailyReset = useAppStore((s) => s.checkDailyReset);
 
+  // Capturé une seule fois, avant que l'effet ci-dessous n'appelle `updateStreak` : cette action
+  // remet la série à 1 en silence dès ce montage, donc c'est ici ou jamais qu'on peut encore voir
+  // l'état d'avant la coupure pour l'annoncer (voir `WelcomeBackCard`).
+  const [streakBreak] = useState(() => getStreakBreak(progress.streak));
+
   useEffect(() => {
-    updateStreak();
-    checkDailyReset();
+    void updateStreak().catch(() => {});
+    void checkDailyReset().catch(() => {});
   }, [updateStreak, checkDailyReset]);
 
   // Fil de découverte : des cours à trier, en tourniquet entre matières. Figé pour la durée de la
@@ -40,15 +46,36 @@ export function HomeScreen() {
   // titre et une description, jamais le texte d'une leçon. Le fil est donc complet dès le premier
   // rendu, sans attendre le chargement du catalogue — ce que les versions précédentes du fil
   // (cartes éditoriales, puis leçons) ne savaient pas faire.
-  const [feed] = useState<FeedCard[]>(() =>
+  const [feed, setFeed] = useState<FeedCard[]>(() =>
     buildHomeFeed({
       completedCourseIds: progress.completedCourseIds,
       favoriteCourseIds: progress.favoriteCourseIds,
       dismissedCourseIds: progress.dismissedCourseIds,
       allCourses: COURSE_INDEX,
       allCategories: CATEGORIES,
+      preferredCategoryIds: progress.preferredCategoryIds,
     }),
   );
+
+  // Rattrapage pour l'onboarding : il s'affiche par-dessus un Home déjà monté (pas de navigation
+  // séparée), donc le fil ci-dessus a pu se figer avant que `preferredCategoryIds` ne soit écrit.
+  // On ne reconstruit qu'une fois, à la première apparition d'une préférence — jamais ensuite, sinon
+  // rouvrir l'onboarding depuis le Profil rebattrait le fil sous les cartes déjà en cours de tri.
+  const appliedPreference = useRef(progress.preferredCategoryIds.length > 0);
+  useEffect(() => {
+    if (appliedPreference.current || progress.preferredCategoryIds.length === 0) return;
+    appliedPreference.current = true;
+    setFeed(
+      buildHomeFeed({
+        completedCourseIds: progress.completedCourseIds,
+        favoriteCourseIds: progress.favoriteCourseIds,
+        dismissedCourseIds: progress.dismissedCourseIds,
+        allCourses: COURSE_INDEX,
+        allCategories: CATEGORIES,
+        preferredCategoryIds: progress.preferredCategoryIds,
+      }),
+    );
+  }, [progress.preferredCategoryIds, progress.completedCourseIds, progress.favoriteCourseIds, progress.dismissedCourseIds]);
 
   // Un cours a pu être terminé ou mis de côté ailleurs pendant la session : on saute les entrées
   // devenues obsolètes plutôt que de les reproposer.
@@ -62,15 +89,20 @@ export function HomeScreen() {
     index += 1;
   }
 
-  function keep() {
-    toggleFavoriteCourse(feed[index].course.id);
-    setPosition(index + 1);
+  const [cardRetry, setCardRetry] = useState(0);
+  const swipePending = useRef(false);
+  async function swipe(favorite: boolean) {
+    if (swipePending.current) return;
+    swipePending.current = true;
+    try {
+      if (favorite) await setFavoriteCourse(feed[index].course.id, true);
+      else await dismissCourse(feed[index].course.id);
+      setPosition(index + 1);
+    } catch { setCardRetry((n) => n + 1); }
+    finally { swipePending.current = false; }
   }
-
-  function dismiss() {
-    dismissCourse(feed[index].course.id);
-    setPosition(index + 1);
-  }
+  function keep() { void swipe(true); }
+  function dismiss() { void swipe(false); }
 
   const lastCourse = progress.lastCourseId
     ? getCourseMetaOrWarn(progress.lastCourseId, "progress.lastCourseId")
@@ -87,6 +119,9 @@ export function HomeScreen() {
   return (
     <div className="mx-auto flex max-w-2xl flex-col gap-6">
       <h1 className="sr-only">Accueil</h1>
+      {streakBreak && (
+        <WelcomeBackCard daysAway={streakBreak.daysAway} previousCount={streakBreak.previousCount} />
+      )}
       <DailyGoalCard
         lessonsLearnedToday={progress.daily.lessonsLearned}
         goal={DAILY_GOAL}
@@ -107,7 +142,7 @@ export function HomeScreen() {
           </div>
         ) : (
           <SwipeCard
-            key={feed[index].course.id}
+            key={`${feed[index].course.id}:${cardRetry}`}
             course={feed[index].course}
             category={feed[index].category}
             indexLabel={`COURS ${index + 1} / ${feed.length}`}

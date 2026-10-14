@@ -16,12 +16,13 @@ const COURSE_TITLES = new Map(COURSE_INDEX.map((c) => [c.id, c.title]));
 const URGENT_SECONDS = 10;
 
 interface QuizGamePlayerProps {
+  gameId: string;
   questions: QuizEntry[];
   mode: QuizPlayMode;
   /** Appelé à chaque réponse, avant la fin de partie : alimente la révision espacée et l'XP */
-  onAnswer: (questionKey: string, isCorrect: boolean) => void;
+  onAnswer: (questionKey: string, isCorrect: boolean, eventId: string) => Promise<unknown>;
   /** Appelé une seule fois, en fin de partie, avec le bilan et les questions ratées */
-  onFinish: (outcome: GameOutcome, missed: QuizEntry[]) => void;
+  onFinish: (outcome: GameOutcome, missed: QuizEntry[]) => Promise<unknown>;
 }
 
 /**
@@ -40,7 +41,12 @@ interface QuizGamePlayerProps {
  * Dans les deux cas, une mauvaise réponse ouvre la leçon sur place (`LessonReveal`) et la question
  * est mémorisée pour l'écran de fin.
  */
-export function QuizGamePlayer({ questions, mode, onAnswer, onFinish }: QuizGamePlayerProps) {
+export function QuizGamePlayer({ gameId, questions, mode, onAnswer, onFinish }: QuizGamePlayerProps) {
+  const [pending, setPending] = useState(false);
+  const [answerSaved, setAnswerSaved] = useState(false);
+  const [error, setError] = useState<"answer" | "finish" | null>(null);
+  const pendingRef = useRef(false);
+  const answerElapsedRef = useRef(0);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [correctCount, setCorrectCount] = useState(0);
@@ -58,36 +64,40 @@ export function QuizGamePlayer({ questions, mode, onAnswer, onFinish }: QuizGame
   const locked = selected !== null;
 
   const finish = useCallback(
-    (finalMissed: QuizEntry[]) => {
-      if (hasFinishedRef.current) return;
-      hasFinishedRef.current = true;
-      onFinish(
-        { mode, correctCount, bestStreak, fastAnswers, remainingLives: lives },
-        finalMissed,
-      );
+    async (finalMissed: QuizEntry[]) => {
+      if (hasFinishedRef.current || pendingRef.current) return;
+      pendingRef.current = true;
+      setPending(true);
+      setError(null);
+      try {
+        await onFinish({ mode, correctCount, bestStreak, fastAnswers, remainingLives: lives }, finalMissed);
+        hasFinishedRef.current = true;
+      } catch { setError("finish"); }
+      finally { pendingRef.current = false; setPending(false); }
     },
     [mode, correctCount, bestStreak, fastAnswers, lives, onFinish],
   );
 
   // Chronomètre du Blitz : suspendu dès qu'une réponse est verrouillée (voir la docstring).
   useEffect(() => {
-    if (mode !== "blitz" || locked || hasFinishedRef.current) return;
+    if (mode !== "blitz" || locked || pending || error || hasFinishedRef.current) return;
     const id = setInterval(() => setSecondsLeft((s) => Math.max(0, s - 1)), 1000);
     return () => clearInterval(id);
-  }, [mode, locked]);
+  }, [mode, locked, pending, error]);
 
   useEffect(() => {
-    if (mode === "blitz" && secondsLeft === 0) finish(missed);
-  }, [mode, secondsLeft, finish, missed]);
+    if (mode === "blitz" && secondsLeft === 0 && !pending && !error) void finish(missed);
+  }, [mode, secondsLeft, finish, missed, pending, error]);
 
-  function handleSelect(optionIndex: number) {
-    if (locked || !question) return;
-    const elapsed = Date.now() - shownAtRef.current;
+  async function saveAnswer(optionIndex: number) {
+    if (pendingRef.current || !question || answerSaved) return;
+    pendingRef.current = true;
+    setPending(true);
+    setError(null);
     const isCorrect = optionIndex === question.correctIndex;
-
-    setSelected(optionIndex);
-    onAnswer(question.key, isCorrect);
-
+    try {
+      await onAnswer(question.key, isCorrect, `${gameId}:${index}`);
+      setAnswerSaved(true);
     if (isCorrect) {
       // La série se calcule ici, pas dans l'updater de setStreak : appeler un setState depuis
       // l'updater d'un autre est un effet de bord que React peut rejouer (StrictMode), ce qui
@@ -96,22 +106,33 @@ export function QuizGamePlayer({ questions, mode, onAnswer, onFinish }: QuizGame
       setCorrectCount((n) => n + 1);
       setStreak(nextStreak);
       setBestStreak((best) => Math.max(best, nextStreak));
-      if (elapsed < FAST_ANSWER_MS) setFastAnswers((n) => n + 1);
+      if (answerElapsedRef.current < FAST_ANSWER_MS) setFastAnswers((n) => n + 1);
     } else {
       setStreak(0);
       setMissed((m) => [...m, question]);
       if (mode === "survie") setLives((l) => l - 1);
     }
+    } catch { setError("answer"); }
+    finally { pendingRef.current = false; setPending(false); }
+  }
+
+  function handleSelect(optionIndex: number) {
+    if (locked || pendingRef.current || !question) return;
+    answerElapsedRef.current = Date.now() - shownAtRef.current;
+    setSelected(optionIndex);
+    void saveAnswer(optionIndex);
   }
 
   function handleNext() {
+    if (!answerSaved || pendingRef.current) return;
     const isLastQuestion = index + 1 >= questions.length;
     if ((mode === "survie" && lives <= 0) || isLastQuestion) {
-      finish(missed);
+      void finish(missed);
       return;
     }
     setIndex((i) => i + 1);
     setSelected(null);
+    setAnswerSaved(false);
     shownAtRef.current = Date.now();
   }
 
@@ -229,7 +250,8 @@ export function QuizGamePlayer({ questions, mode, onAnswer, onFinish }: QuizGame
       )}
 
       <div className="mt-6 flex justify-end">
-        <Button variant="primary" onClick={handleNext} disabled={!locked}>
+        {error && <Button onClick={() => { if (error === "answer" && selected !== null) void saveAnswer(selected); else void finish(missed); }} disabled={pending}>Réessayer</Button>}
+        <Button variant="primary" onClick={handleNext} disabled={!locked || !answerSaved || pending}>
           {isGameEndingNext ? "Voir mon résultat" : "Question suivante →"}
         </Button>
       </div>

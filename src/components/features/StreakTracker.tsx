@@ -15,7 +15,7 @@ export function StreakTracker({ streak }: StreakTrackerProps) {
         {streak.count} {streak.count > 1 ? "JOURS" : "JOUR"}
       </div>
       <div className="mt-3.5">
-        <WeekDayRow weekDays={streak.weekDays} />
+        <WeekDayRow weekDays={streak.weekDays} compact />
       </div>
     </div>
   );

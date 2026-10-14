@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { getLevelInfo, updateStreak, LEVEL_TIERS, OPEN_LEVEL_STEP } from "@/lib/gamification";
+import { getLevelInfo, getStreakBreak, updateStreak, LEVEL_TIERS, OPEN_LEVEL_STEP } from "@/lib/gamification";
 import type { StreakState } from "@/types";
 
 describe("getLevelInfo — paliers nommés", () => {
@@ -111,5 +111,41 @@ describe("updateStreak", () => {
     const result = updateStreak(streak, new Date("2026-01-01T08:00:00"));
     expect(result.count).toBe(streak.count + 1);
     expect(result.lastActiveDate).toBe("2026-01-01");
+  });
+});
+
+describe("getStreakBreak", () => {
+  const baseStreak = (overrides: Partial<StreakState> = {}): StreakState => ({
+    count: 3,
+    lastActiveDate: "2026-03-04", // un mercredi
+    weekDays: [true, true, true, false, false, false, false],
+    ...overrides,
+  });
+
+  it("aucune activité connue : pas de coupure à signaler", () => {
+    const streak = baseStreak({ lastActiveDate: null, count: 0 });
+    expect(getStreakBreak(streak, new Date("2026-03-08T08:00:00"))).toBeNull();
+  });
+
+  it("même jour : pas de coupure", () => {
+    const streak = baseStreak();
+    expect(getStreakBreak(streak, new Date("2026-03-04T18:00:00"))).toBeNull();
+  });
+
+  it("hier : continuation normale, pas une coupure", () => {
+    const streak = baseStreak();
+    expect(getStreakBreak(streak, new Date("2026-03-05T08:00:00"))).toBeNull();
+  });
+
+  it("un jour entier sauté : coupure détectée avec le compte exact de jours et l'ancienne série", () => {
+    const streak = baseStreak();
+    const result = getStreakBreak(streak, new Date("2026-03-08T08:00:00")); // dimanche, 4 jours plus tard
+    expect(result).toEqual({ daysAway: 4, previousCount: 3 });
+  });
+
+  it("passage d'année : le compte de jours reste correct malgré le changement d'année", () => {
+    const streak = baseStreak({ lastActiveDate: "2025-12-30" });
+    const result = getStreakBreak(streak, new Date("2026-01-02T08:00:00"));
+    expect(result?.daysAway).toBe(3);
   });
 });

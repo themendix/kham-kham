@@ -37,10 +37,9 @@ export function QuizPartieScreen() {
   const navigate = useNavigate();
   const { territoryId, mode } = useParams();
 
-  const records = useAppStore((s) => s.progress.quizGame.records);
   const recordQuizAnswer = useAppStore((s) => s.recordQuizAnswer);
   const finishQuizGame = useAppStore((s) => s.finishQuizGame);
-  const updateStreak = useAppStore((s) => s.updateStreak);
+  const [gameId, setGameId] = useState(() => crypto.randomUUID());
 
   // Incrémenté par « Rejouer » : c'est ce qui redéclenche un tirage de questions. Les
   // statistiques de révision ayant changé entre-temps, la nouvelle partie n'est pas la même.
@@ -67,29 +66,28 @@ export function QuizPartieScreen() {
   );
 
   const handleFinish = useCallback(
-    (outcome: GameOutcome, missed: QuizEntry[]) => {
+    async (outcome: GameOutcome, missed: QuizEntry[]) => {
       if (!isValid) return;
       const cauris = computeCauris(outcome);
-      const previousRecord = records[territoryId]?.[mode] ?? 0;
-      finishQuizGame({
+      const result = await finishQuizGame({
+        gameId, activity: true,
         cauris,
         record: { territoryId, mode, score: outcome.correctCount },
       });
       // Jouer est une activité du jour comme lire une leçon. Le reste du suivi quotidien
       // (objectif, défi) est branché au lot suivant, avec l'absorption du Défi du jour.
-      updateStreak();
-      // Les étoiles se lisent **après** l'enregistrement de la partie : c'est justement ce qu'elle
-      // vient de changer (record, questions acquises). D'où un `getState()` ponctuel plutôt qu'un
-      // abonnement, comme pour le tirage des questions.
+      const previousRecord = result.before.quizGame.records[territoryId]?.[mode] ?? 0;
+      // La récompense décrit ce commit confirmé, même si un autre onglet a déjà publié
+      // une progression plus récente pendant l'attente.
       const { stars } = getTerritoryConquest({
         territoryId,
         keys: QUIZ_KEYS_BY_TERRITORY[territoryId] ?? [],
-        stats: useAppStore.getState().progress.quizGame.questions,
-        records: useAppStore.getState().progress.quizGame.records[territoryId],
+        stats: result.progress.quizGame.questions,
+        records: result.progress.quizGame.records[territoryId],
       });
       setFinished({ outcome, cauris, missed, previousRecord, stars });
     },
-    [isValid, territoryId, mode, records, finishQuizGame, updateStreak],
+    [isValid, territoryId, mode, gameId, finishQuizGame],
   );
 
   if (!isValid) {
@@ -143,12 +141,14 @@ export function QuizPartieScreen() {
           previousRecord={finished.previousRecord}
           stars={finished.stars}
           onReplay={() => {
+            setGameId(crypto.randomUUID());
             setFinished(null);
             setRound((r) => r + 1);
           }}
         />
       ) : (
         <QuizGamePlayer
+          gameId={gameId}
           key={round}
           questions={questions}
           mode={mode}

@@ -76,7 +76,7 @@ export function FavorisScreen() {
                           </div>
                         </Link>
                         <button
-                          onClick={() => toggleFavoriteCourse(course.id)}
+                          onClick={() => { void toggleFavoriteCourse(course.id).catch(() => {}); }}
                           aria-label="Retirer des favoris"
                           className="grid h-8 w-8 shrink-0 place-items-center rounded-full border-2 border-ink"
                         >

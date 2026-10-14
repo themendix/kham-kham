@@ -8,12 +8,14 @@ export interface Recommendation<C> {
 
 const LAST_CATEGORY_BONUS = 60;
 const DISCOVERY_BONUS = 15;
+/** Sous le bonus de matière du dernier cours ouvert (un choix récent en dit plus qu'une préférence de départ), mais au-dessus de la découverte : c'est ce qui biaise les tout premiers jours, avant que `lastCourseId` existe. */
+const PREFERRED_CATEGORY_BONUS = 30;
 
 /**
  * Score d'affinité d'un cours candidat pour un utilisateur donné, et la raison
  * de recommandation associée à la règle la plus significative qui s'applique
- * (dans l'ordre : matière du dernier cours ouvert, maîtrise déjà acquise,
- * découverte d'une matière jamais touchée).
+ * (dans l'ordre : matière du dernier cours ouvert, matière choisie à l'onboarding,
+ * maîtrise déjà acquise, découverte d'une matière jamais touchée).
  *
  * `masteryByCategory` est la maîtrise dérivée (E2, `getMasteryByCategory`), pas un compteur
  * stocké. `emergingCategoryIds` neutralise le bonus découverte pour les matières encore à un
@@ -25,17 +27,24 @@ const DISCOVERY_BONUS = 15;
 function scoreCourse<C extends CourseForProgress>(
   course: C,
   lastCategoryId: string | null,
+  preferredCategoryIds: string[],
   masteryByCategory: Record<string, number>,
   emergingCategoryIds: Set<string>,
 ): { score: number; reason: string } {
   const mastery = masteryByCategory[course.categoryId] ?? 0;
   const isLastCategory = lastCategoryId !== null && course.categoryId === lastCategoryId;
+  const isPreferred = !isLastCategory && preferredCategoryIds.includes(course.categoryId);
   const isEmerging = emergingCategoryIds.has(course.categoryId);
-  const isDiscovery = mastery === 0 && !isLastCategory && !isEmerging;
+  const isDiscovery = mastery === 0 && !isLastCategory && !isPreferred && !isEmerging;
 
-  const score = (isLastCategory ? LAST_CATEGORY_BONUS : 0) + mastery + (isDiscovery ? DISCOVERY_BONUS : 0);
+  const score =
+    (isLastCategory ? LAST_CATEGORY_BONUS : 0) +
+    (isPreferred ? PREFERRED_CATEGORY_BONUS : 0) +
+    mastery +
+    (isDiscovery ? DISCOVERY_BONUS : 0);
 
   if (isLastCategory) return { score, reason: "Pour continuer sur ta lancée" };
+  if (isPreferred) return { score, reason: "Une matière que tu as choisie" };
   if (mastery > 0) return { score, reason: "Dans une matière que tu explores" };
   if (isDiscovery) return { score, reason: "Une nouvelle matière à découvrir" };
   if (isEmerging) return { score, reason: "Une matière en cours de constitution" };
@@ -83,7 +92,13 @@ export function recommendCourses<C extends CourseForProgress>(
     .map((course, index) => ({
       course,
       index,
-      ...scoreCourse(course, lastCategoryId, masteryByCategory, emergingCategoryIds),
+      ...scoreCourse(
+        course,
+        lastCategoryId,
+        progress.preferredCategoryIds,
+        masteryByCategory,
+        emergingCategoryIds,
+      ),
     }))
     .filter(({ course }) => !progress.completedCourseIds.includes(course.id))
     .sort((a, b) => b.score - a.score || a.index - b.index)

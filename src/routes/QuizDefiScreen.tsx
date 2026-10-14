@@ -1,10 +1,9 @@
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ArrowLeft, Zap } from "lucide-react";
 import type { QuizEntry } from "@/types";
 import { useAppStore } from "@/store/useAppStore";
 import { QUIZ_INDEX } from "@/data/quizIndex.generated";
-import { DAILY_CHALLENGE_XP_BONUS } from "@/lib/gamification";
 import { buildDailyChallengeQuestions, computeCauris, type GameOutcome } from "@/lib/quizGame";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
@@ -17,6 +16,7 @@ interface FinishedState {
   outcome: GameOutcome;
   cauris: number;
   missed: QuizEntry[];
+  xpBonus: number;
 }
 
 /**
@@ -35,17 +35,15 @@ export function QuizDefiScreen() {
   const challengeDone = useAppStore((s) => s.progress.daily.challengeDone);
   const checkDailyReset = useAppStore((s) => s.checkDailyReset);
   const recordQuizAnswer = useAppStore((s) => s.recordQuizAnswer);
-  const finishQuizGame = useAppStore((s) => s.finishQuizGame);
-  const recordQuizResult = useAppStore((s) => s.recordQuizResult);
-  const addXp = useAppStore((s) => s.addXp);
-  const addDailyXp = useAppStore((s) => s.addDailyXp);
-  const markChallengeDone = useAppStore((s) => s.markChallengeDone);
-  const updateStreak = useAppStore((s) => s.updateStreak);
+  const finishDailyChallenge = useAppStore((s) => s.finishDailyChallenge);
+  const [gameId] = useState(() => crypto.randomUUID());
 
   const [finished, setFinished] = useState<FinishedState | null>(null);
+  const activeGame = useRef(false);
+  useEffect(() => { if (!challengeDone) activeGame.current = true; }, [challengeDone]);
 
   useEffect(() => {
-    checkDailyReset();
+    void checkDailyReset().catch(() => {});
   }, [checkDailyReset]);
 
   // Tirage figé à l'ouverture : répondre modifie les échéances de révision, et le défi ne doit pas
@@ -60,33 +58,16 @@ export function QuizDefiScreen() {
   );
 
   const handleFinish = useCallback(
-    (outcome: GameOutcome, missed: QuizEntry[]) => {
-      const cauris = computeCauris(outcome);
-      recordQuizResult({
-        courseId: DAILY_CHALLENGE_COURSE_ID,
-        score: outcome.correctCount,
-        total: questions.length,
-        date: new Date().toISOString(),
-      });
-      addXp(DAILY_CHALLENGE_XP_BONUS);
-      addDailyXp(DAILY_CHALLENGE_XP_BONUS);
-      finishQuizGame({ cauris, record: null });
-      markChallengeDone();
-      updateStreak();
-      setFinished({ outcome, cauris, missed });
-    },
-    [
-      questions.length,
-      recordQuizResult,
-      addXp,
-      addDailyXp,
-      finishQuizGame,
-      markChallengeDone,
-      updateStreak,
-    ],
+    async (outcome: GameOutcome, missed: QuizEntry[]) => {
+      const result = await finishDailyChallenge(gameId, {
+        courseId: DAILY_CHALLENGE_COURSE_ID, score: outcome.correctCount,
+        total: questions.length, date: new Date().toISOString(),
+      }, computeCauris(outcome));
+      setFinished({ outcome, cauris: result.caurisCredited, missed, xpBonus: result.xpCredited });
+    }, [questions.length, gameId, finishDailyChallenge],
   );
 
-  if (challengeDone && !finished) {
+  if (challengeDone && !finished && !activeGame.current) {
     return (
       <Card className="mx-auto max-w-md p-8 text-center">
         <Zap className="mx-auto h-12 w-12 text-gold" fill="currentColor" aria-hidden />
@@ -129,10 +110,11 @@ export function QuizDefiScreen() {
           missed={finished.missed}
           territory={null}
           previousRecord={0}
-          xpBonus={DAILY_CHALLENGE_XP_BONUS}
+          xpBonus={finished.xpBonus}
         />
       ) : (
         <QuizGamePlayer
+          gameId={gameId}
           questions={questions}
           mode="defi"
           onAnswer={recordQuizAnswer}

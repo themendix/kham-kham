@@ -52,7 +52,7 @@ export function QuizScreen() {
   const [expandedParcoursId, setExpandedParcoursId] = useState<string | null>(null);
 
   useEffect(() => {
-    checkDailyReset();
+    void checkDailyReset().catch(() => {});
   }, [checkDailyReset]);
 
   const conquests = useMemo(() => {
@@ -112,7 +112,7 @@ export function QuizScreen() {
         </span>
       </Link>
 
-      <Card data-guide="carte-conquete" className="mt-3.5 p-4">
+      <Card className="mt-3.5 p-4">
         <div className="flex items-baseline justify-between gap-3">
           <h2 className="text-base font-extrabold">Carte de conquête</h2>
           <span className="font-heading text-xs font-extrabold text-ink-faint">
@@ -129,10 +129,7 @@ export function QuizScreen() {
           Appuie sur un territoire pour lancer son quiz
         </p>
 
-        <div
-          data-guide="territoire"
-          className="mt-4 border-t-[2.5px] border-dashed border-ink/20 pt-3.5"
-        >
+        <div className="mt-4 border-t-[2.5px] border-dashed border-ink/20 pt-3.5">
           <div className="flex items-start gap-2.5">
             <span className="text-[28px] leading-none" aria-hidden>
               {selected.emoji}

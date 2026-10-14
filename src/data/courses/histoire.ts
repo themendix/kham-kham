@@ -16,28 +16,36 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Chaque été, le Nil débordait et recouvrait ses rives d'un limon noir. Les Égyptiens n'appelaient pas leur pays « Égypte » : ils l'appelaient **Kemet**, « la terre noire ».",
+            text: "La crue annuelle du Nil déposait un limon fertile. Les Égyptiens nommaient leur pays **Kemet**, « la terre noire ».",
           },
           {
             type: "chiffreCle",
             valeur: "3100 av. J.-C.",
-            legende: "l'unification qui ouvre 3 000 ans d'histoire pharaonique",
+            legende: "l'unification de l'Égypte",
           },
           {
             type: "paragraphe",
-            text: "Sans cette crue, rien n'aurait poussé dans une région aride. Deux royaumes — la Haute-Égypte au sud, la Basse-Égypte au nord — sont alors unifiés, un geste attribué au roi **Narmer**. L'UNESCO replace cette civilisation au cœur de l'Afrique, dans ce qu'elle nomme le « corridor du Nil ».",
+            text: "L'unification de la Haute-Égypte au sud et de la Basse-Égypte au nord est attribuée à **Narmer**. Sur sa palette, observe les couronnes : blanche à gauche, rouge à droite, chacune associée à une région.",
+          },
+          {
+            type: "image",
+            alt: "Narmer coiffé différemment sur chaque face sculptée.",
+            legende: "Palette de Narmer, deux faces, vers 3100 av. J.-C.",
+            credit: "Wikimedia Commons, domaine public",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Narmer_Palette.jpg",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Kemet, « la terre noire », doit tout à la crue du Nil",
-              "Unification vers **3100 av. J.-C.**, attribuée au roi Narmer",
-              "Une civilisation africaine, en dialogue avec le continent",
+              "Le limon du Nil rend l'agriculture possible",
+              "**Narmer** : unification vers 3100 av. J.-C.",
+              "Une civilisation **africaine**",
             ],
           },
           {
             type: "leSavaisTu",
-            text: "Le désert qui entourait Kemet, les Égyptiens l'appelaient **Deshret** — « la terre rouge ». Deux mondes que tout opposait, séparés par une berge.",
+            text: "Le désert autour de Kemet s'appelait **Deshret**, « la terre rouge ».",
           },
         ],
       },
@@ -47,7 +55,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le pharaon n'est pas un roi. C'est un dieu vivant, chargé de maintenir la **Maât** — l'ordre juste du monde. Tout l'État égyptien tient sur cette idée.",
+            text: "Le pharaon garantit la **Maât**, l'ordre juste du monde. Son pouvoir est aussi religieux.",
           },
           {
             type: "frise",
@@ -60,20 +68,25 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Sous lui, une administration redoutable : vizirs, gouverneurs, prêtres, et surtout des **scribes** qui comptent, taxent et enregistrent tout. Mobiliser des milliers d'ouvriers pendant vingt ans pour une pyramide suppose un État d'une organisation exceptionnelle.",
+            text: "Les **scribes** comptent, taxent et enregistrent. Avec les vizirs et gouverneurs, ils rendent possibles les grands chantiers.",
+          },
+          {
+            type: "image",
+            alt: "Ramsès III présente Maât au dieu Osiris.",
+            legende: "Ramsès III offrant Maât à Osiris, tombe KV11.",
+            credit: "Wikimedia Commons, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Rameses_III_offering_Maat_to_Osiris_(KV11).jpg",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Le pharaon est un dieu vivant, garant de la **Maât**",
-              "Trois grands Empires sur près de 3 000 ans",
-              "Les scribes sont le vrai moteur de l'État",
+              "Le pharaon garantit la **Maât**",
+              "Trois grands Empires sur 3 000 ans",
+              "Les **scribes** administrent l'État",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "Un texte scolaire égyptien vante le métier de scribe : le seul, dit-il, où l'on ne se salit jamais les mains.",
-          },
+          { type: "leSavaisTu", text: "Un texte scolaire vante le scribe : il ne se salit jamais les mains." },
         ],
       },
       {
@@ -82,29 +95,31 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pendant plus de mille quatre cents ans, personne au monde ne savait lire les hiéroglyphes égyptiens. Il a fallu une pierre gravée trois fois pour qu'un jeune Français en perce enfin le secret.",
+            text: "Les hiéroglyphes sont restés illisibles pendant plus de quatorze siècles. Une pierre fournit la clé.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "1822",
-            legende: "Champollion déchiffre les hiéroglyphes",
-          },
+          { type: "chiffreCle", valeur: "1822", legende: "Champollion déchiffre les hiéroglyphes" },
           {
             type: "paragraphe",
-            text: "Le déchiffreur s'appelle **Jean-François Champollion**. Sa clé fut la **pierre de Rosette**, où un même texte est gravé en hiéroglyphes, en démotique et en grec. Seuls les scribes, une élite respectée, savaient tracer ces signes sur la pierre ou le papyrus.",
+            text: "En **1822**, **Champollion** utilise la pierre de Rosette : un même texte en hiéroglyphes, démotique et grec.",
+          },
+          {
+            type: "image",
+            alt: "Pierre gravée en trois zones d'écritures différentes.",
+            legende: "La pierre de Rosette et ses trois écritures.",
+            credit: "Hans Hillewaert, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**1822** : Champollion déchiffre les hiéroglyphes grâce à la pierre de Rosette",
-              "Seuls les scribes, une élite respectée, savaient écrire",
-              "Médecine, mathématiques, astronomie : des savoirs égyptiens avancés",
+              "**Champollion** déchiffre les hiéroglyphes en 1822",
+              "Les scribes maîtrisaient l'écriture",
+              "Médecine, mathématiques et astronomie étaient développées",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "Le calendrier égyptien comptait déjà **365 jours** : il suivait le retour de la crue et le lever, à l'aube, de l'étoile **Sirius**.",
-          },
+          { type: "leSavaisTu", text: "Le calendrier de **365 jours** suivait la crue et le lever de Sirius." },
         ],
       },
       {
@@ -113,7 +128,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pour les Égyptiens, la mort n'était pas une fin brutale, mais un passage. C'était un examen que chacun devait réussir pour espérer vivre éternellement.",
+            text: "Pour les Égyptiens, mourir ouvre un passage vers l'éternité. Le défunt doit réussir un jugement.",
           },
           {
             type: "citation",
@@ -122,20 +137,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les Égyptiens vénéraient de nombreux dieux : **Rê**, le soleil ; **Osiris**, maître des morts ; Isis, Horus et **Anubis**, le gardien à tête de chacal. Pour préserver le corps, ils pratiquaient la momification, jugée nécessaire à la survie de l'âme.",
+            text: "**Osiris** règne sur les morts ; **Anubis** veille à la pesée du cœur. La momification préserve le corps.",
+          },
+          {
+            type: "image",
+            alt: "Anubis surveille une balance pesant le cœur d'Ani.",
+            legende: "La pesée du cœur d'Ani, fac-similé publié en 1902.",
+            credit: "TIMEA / Rice University, CC BY-SA 2.5, WebP",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:The_Heart_of_Ani_Being_Weighed_in_the_Balance._(1902)_-_TIMEA.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/2.5",
+            fit: "contain",
           },
           {
             type: "aRetenir",
-            points: [
-              "Un monde peuplé de dieux, dont **Osiris**, maître des morts",
-              "La momification préservait le corps pour l'éternité",
-              "Le cœur du défunt était jugé après la mort",
-            ],
+            points: ["**Osiris**, maître des morts", "La momification préserve le corps", "Le cœur est jugé après la mort"],
           },
-          {
-            type: "leSavaisTu",
-            text: "Le cœur du défunt était pesé face à la plume de la **Maât**. Trop lourd, il était dévoré par un monstre ; sinon, le mort accédait à la vie éternelle.",
-          },
+          { type: "leSavaisTu", text: "Face à la plume de **Maât**, un cœur trop lourd est dévoré." },
         ],
       },
       {
@@ -144,7 +162,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Au sud de l'Égypte coulait le même fleuve, et vivait un partenaire constant : la Nubie. Alliée ou rivale selon les siècles, elle a même fini par régner sur l'Égypte.",
+            text: "Au sud, la **Nubie** partage le Nil avec l'Égypte : partenaire, rivale, puis puissance conquérante.",
           },
           {
             type: "frise",
@@ -157,14 +175,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Au VIIIᵉ siècle av. J.-C., des rois nubiens conquirent l'Égypte et fondèrent la **XXVᵉ dynastie**, régnant depuis Napata près d'un siècle. Cette Égypte n'est pas isolée : c'est une civilisation africaine, en dialogue avec le royaume de **Koush**, que nous retrouverons dans le prochain cours.",
+            text: "Au VIIIᵉ siècle av. J.-C., ses rois fondent la **XXVᵉ dynastie**. Le royaume de Koush gouverne l'Égypte depuis Napata.",
+          },
+          {
+            type: "image",
+            alt: "Sphinx à visage royal du souverain nubien Taharqa.",
+            legende: "Sphinx de Taharqa, roi nubien devenu pharaon, VIIᵉ siècle av. J.-C.",
+            credit: "Prioryman, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Sphinx_of_Taharqo.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Nubie et Égypte : échanges constants d'or et d'ivoire",
-              "**VIIIᵉ siècle av. J.-C.** : des rois nubiens règnent sur l'Égypte",
-              "Une civilisation pleinement africaine",
+              "Échanges d'or et d'ivoire avec la Nubie",
+              "Des rois nubiens gouvernent l'Égypte",
+              "Une civilisation pleinement **africaine**",
             ],
           },
         ],
@@ -222,29 +249,31 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Les Égyptiens redoutaient tant les archers du sud qu'ils avaient surnommé leur voisin « **Ta-Séti** », le pays de l'arc. Ce voisin puissant, c'était la Nubie.",
+            text: "Les Égyptiens nommaient la Nubie **Ta-Séti**, « pays de l'arc », tant ses archers étaient redoutés.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "2500 av. J.-C.",
-            legende: "Kerma, première grande capitale du royaume de Koush",
-          },
+          { type: "chiffreCle", valeur: "2500 av. J.-C.", legende: "Kerma, première grande capitale du royaume de Koush" },
           {
             type: "paragraphe",
-            text: "Riche en or, en ivoire et en ébène, la Nubie attirait les marchands autant qu'elle inquiétait les pharaons. Voisine et rivale de l'**Égypte**, elle développe très tôt sa propre civilisation, profondément africaine, sans jamais cesser de dialoguer avec elle.",
+            text: "Autour de **Kerma**, Koush développe sa civilisation. Or, ivoire et ébène attirent les marchands de son voisin égyptien.",
+          },
+          {
+            type: "image",
+            alt: "Figurines de soldats nubiens armés d'arcs.",
+            legende: "Archers nubiens : réplique du modèle funéraire de Mesehti.",
+            credit: "Marsupium, CC BY 4.0, WebP",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:Replica_of_the_Nubian_Archers_from_the_Tomb_of_Mesehti_-_Nubian_Museum_04.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by/4.0",
           },
           {
             type: "aRetenir",
             points: [
-              "Ta-Séti, « le pays de l'arc », nom donné par les Égyptiens",
-              "**Kerma** : première capitale, dès le IIIᵉ millénaire av. J.-C.",
-              "Une terre riche en or, en ivoire et en ébène",
+              "**Ta-Séti** signifie « pays de l'arc »",
+              "Kerma, capitale dès le IIIᵉ millénaire av. J.-C.",
+              "Or, ivoire et ébène nourrissent les échanges",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "Les archers nubiens étaient si redoutés que l'Égypte les recrutait souvent comme mercenaires dans sa propre armée.",
-          },
+          { type: "leSavaisTu", text: "L'Égypte recrutait aussi des archers nubiens comme mercenaires." },
         ],
       },
       {
@@ -253,29 +282,31 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pendant des siècles, l'Égypte avait dominé la Nubie. Un jour, les rôles s'inversent : un roi nubien devient lui-même pharaon d'Égypte.",
+            text: "Depuis **Napata**, les rois de Koush conquièrent l'Égypte et fondent la XXVᵉ dynastie.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "747 av. J.-C.",
-            legende: "le roi Piânkhy conquiert l'Égypte",
-          },
+          { type: "chiffreCle", valeur: "747 av. J.-C.", legende: "le roi Piânkhy conquiert l'Égypte" },
           {
             type: "paragraphe",
-            text: "Depuis leur capitale de **Napata**, les rois de Koush conquièrent l'Égypte et fondent la XXVᵉ dynastie, celle des « pharaons noirs ». Le plus célèbre, **Taharqa**, bâtit des temples des deux côtés de la frontière — jusqu'à ce que les Assyriens, mieux armés en fer, repoussent Koush vers le sud.",
+            text: "**Taharqa** bâtit des temples en Égypte et en Nubie. Les Assyriens finissent par repousser Koush vers le sud.",
+          },
+          {
+            type: "image",
+            alt: "Petit Taharqa protégé entre les pattes du bélier d'Amon.",
+            legende: "Taharqa sous la protection d'Amon, VIIᵉ siècle av. J.-C.",
+            credit: "M0tty, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Granite_ram_of_Amun_with_King_Taharqa_-_British_Museum.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**747 av. J.-C.** : Piânkhy conquiert l'Égypte, XXVᵉ dynastie",
-              "Taharqa, souverain bâtisseur, l'un des plus célèbres pharaons noirs",
-              "Les Assyriens, mieux armés en fer, repoussent Koush vers le sud",
+              "**Piânkhy** conquiert l'Égypte : XXVᵉ dynastie",
+              "**Taharqa**, souverain bâtisseur",
+              "Les Assyriens repoussent Koush vers le sud",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "On appelle aujourd'hui ces souverains les « pharaons noirs » : des rois nubiens qui ont régné sur l'Égypte pendant près d'un siècle.",
-          },
+          { type: "leSavaisTu", text: "Ces souverains nubiens sont aujourd'hui surnommés les « pharaons noirs »." },
         ],
       },
       {
@@ -318,29 +349,31 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Comment une civilisation africaine invente-t-elle sa propre écriture, ses propres dieux — et se fait-elle gouverner par des reines ? Bienvenue à Méroé.",
+            text: "À Méroé, les **Candaces** gouvernent en leur nom propre : le pouvoir royal appartient aussi aux femmes.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "200+",
-            legende: "pyramides bâties à Méroé, plus qu'en Égypte",
-          },
+          { type: "chiffreCle", valeur: "200+", legende: "pyramides bâties à Méroé, plus qu'en Égypte" },
           {
             type: "paragraphe",
-            text: "Les Koushites créent leur propre écriture, le **méroïtique**, encore partiellement indéchiffrée aujourd'hui. Ils honorent leurs propres dieux, comme **Apédémak**, le dieu-lion guerrier, aux côtés d'Amon. Fait remarquable : des reines règnent en leur nom propre, les **Candaces** (Kandakè).",
+            text: "Koush crée l'écriture **méroïtique** et honore **Apédémak**, dieu-lion guerrier, aux côtés d'Amon.",
+          },
+          {
+            type: "image",
+            alt: "La reine Amanishakhéto entourée de deux divinités sur une stèle.",
+            legende: "Amanishakhéto avec Amésémi et Apédémak, Ier siècle av. J.-C.",
+            credit: "Khruner, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Relief_Amanishakheto_Munich.JPG",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Le méroïtique : une écriture propre, encore mal déchiffrée",
-              "**Apédémak**, le dieu-lion guerrier, honoré aux côtés d'Amon",
-              "Les Candaces : des reines qui régnaient en leur nom propre",
+              "Le méroïtique reste partiellement indéchiffré",
+              "**Apédémak**, dieu-lion guerrier",
+              "Les Candaces règnent en leur nom propre",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "Le méroïtique se lit en partie aujourd'hui — on en connaît les sons — mais personne ne comprend encore vraiment ce qu'il dit.",
-          },
+          { type: "leSavaisTu", text: "On connaît les sons du méroïtique, mais sa langue reste mal comprise." },
         ],
       },
       {
@@ -349,7 +382,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Vers le **IVᵉ siècle**, les forges de Méroé s'éteignent peu à peu. Un nouveau rival, venu des hauts plateaux éthiopiens, prend le relais du commerce de la mer Rouge.",
+            text: "Au **IVᵉ siècle**, Méroé décline tandis qu'**Aksoum** prend une place croissante dans le commerce.",
           },
           {
             type: "frise",
@@ -361,19 +394,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Koush prouve qu'une civilisation africaine a maîtrisé, seule, le fer, l'écriture, la monarchie et l'architecture monumentale. Les sites de Méroé sont aujourd'hui classés au patrimoine mondial de l'UNESCO. C'est vers ce rival montant, le royaume d'**Aksoum**, que nous nous tournerons dans le prochain cours.",
+            text: "Fer, écriture et monuments témoignent du savoir-faire de Koush. Ses sites sont aujourd'hui classés par l'UNESCO.",
           },
           {
-            type: "citation",
-            texte: "Celui qui a bu l'eau du Nil y reviendra toujours.",
-            auteur: "Proverbe nubien",
+            type: "image",
+            alt: "Pyramides nubiennes aux pentes abruptes dans le désert.",
+            legende: "Les pyramides de Méroé, patrimoine du royaume de Koush.",
+            credit: "Ola.m tbe, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:A_wonderful_picture_of_the_pyramids_of_Meroe_in_Sudan.png",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
           },
+          { type: "citation", texte: "Celui qui a bu l'eau du Nil y reviendra toujours.", auteur: "Proverbe nubien" },
           {
             type: "aRetenir",
             points: [
-              "Koush a maîtrisé seul le fer, l'écriture et la monarchie",
-              "Méroé décline au **IVᵉ siècle**, face à la montée d'Aksoum",
-              "Les sites de Méroé, aujourd'hui classés par l'UNESCO",
+              "Koush maîtrisait fer, écriture et architecture",
+              "Méroé décline face à **Aksoum**",
+              "Ses sites sont classés par l'UNESCO",
             ],
           },
         ],
@@ -431,7 +468,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Rome, la Perse, la Chine — et un royaume africain. Au IIIᵉ siècle, un prophète perse plaçait **Aksoum** parmi les quatre plus grandes puissances du monde.",
+            text: "Au IIIᵉ siècle, Mani compte **Aksoum** parmi quatre grandes puissances : Rome, Perse, Chine et ce royaume africain.",
           },
           {
             type: "frise",
@@ -443,19 +480,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Sa puissance reposait sur le commerce : par le port d'**Adoulis**, sur la mer Rouge, Aksoum échangeait ivoire, or et encens avec Rome, l'Égypte, l'Arabie et jusqu'à l'Inde. Sa position en faisait un pont entre l'Afrique et le monde méditerranéen et oriental.",
+            text: "Par **Adoulis**, Aksoum échange ivoire, or et encens avec la Méditerranée, l'Arabie et l'Inde.",
+          },
+          {
+            type: "image",
+            alt: "Fondations de pierre du port antique d'Adoulis.",
+            legende: "Vestiges d'Adoulis, port d'Aksoum sur la mer Rouge.",
+            credit: "David Stanley, CC BY 2.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Adulis_(8529061940).jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by/2.0",
           },
           {
             type: "aRetenir",
             points: [
-              "Aksoum domine les hauts plateaux d'Éthiopie et d'Érythrée",
-              "Le port d'**Adoulis** relie Aksoum à Rome, l'Arabie, l'Inde",
-              "Comptée parmi les 4 plus grandes puissances du monde antique",
+              "Hauts plateaux d'Éthiopie et d'Érythrée",
+              "**Adoulis**, port sur la mer Rouge",
+              "Un pont commercial entre trois mondes",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Le prophète perse Mani rangeait Aksoum aux côtés de Rome, de la Perse et de la Chine — un honneur rare pour un royaume africain.",
           },
         ],
       },
@@ -465,29 +506,31 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Très peu de royaumes africains de l'Antiquité ont frappé leur propre monnaie. **Aksoum**, lui, en frappait trois : en or, en argent et en bronze.",
+            text: "**Aksoum** frappe des monnaies en or, argent et bronze : un signe de puissance économique.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "350",
-            legende: "Aksoum conquiert son rival, le royaume de Méroé",
-          },
+          { type: "chiffreCle", valeur: "350", legende: "Aksoum conquiert son rival, le royaume de Méroé" },
           {
             type: "paragraphe",
-            text: "Sous le roi **Ezana**, au IVᵉ siècle, le royaume atteint son apogée : il contrôle les routes commerciales et étend son influence jusqu'en Arabie. Cette monnaie, gravée du nom des souverains, sert aussi de puissant outil de propagande dans tout le bassin de la mer Rouge.",
+            text: "Sous **Ezana**, au IVᵉ siècle, le royaume contrôle le commerce. Nom et portrait royaux voyagent sur chaque pièce.",
+          },
+          {
+            type: "image",
+            alt: "Deux faces d'une monnaie portant le portrait du roi Ezana.",
+            legende: "Monnaie d'Ezana, IVᵉ siècle : portrait royal et symboles.",
+            credit: "CNG Coins, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:AXUM._Ezanas._Circa_330-360.jpg",
+            licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Aksoum frappe sa propre monnaie : or, argent, bronze",
-              "**Ezana** (IVᵉ siècle) : apogée du royaume, influence jusqu'en Arabie",
-              "**350** : Aksoum conquiert son rival, le royaume de Méroé",
+              "Monnaies d'or, d'argent et de bronze",
+              "**Ezana** mène Aksoum à son apogée",
+              "Vers 350, Aksoum conquiert Méroé",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "Chaque pièce aksoumite portait le nom et le portrait du roi — une signature qui voyageait plus loin que ses armées.",
-          },
+          { type: "leSavaisTu", text: "La monnaie diffuse le nom du roi au-delà de ses frontières." },
         ],
       },
       {
@@ -496,28 +539,29 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Au **IVᵉ siècle**, Aksoum se convertit au christianisme presque en même temps que Rome. Un royaume africain devient l'un des tout premiers États chrétiens du monde.",
+            text: "Au **IVᵉ siècle**, le roi **Ezana** adopte le christianisme : Aksoum devient un des premiers États chrétiens.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "IVᵉ siècle",
-            legende: "le roi Ezana convertit Aksoum au christianisme",
-          },
+          { type: "chiffreCle", valeur: "IVᵉ siècle", legende: "le roi Ezana convertit Aksoum au christianisme" },
           {
             type: "paragraphe",
-            text: "Cette conversion donne naissance à l'Église orthodoxe éthiopienne, l'une des plus anciennes de la chrétienté, encore très vivante aujourd'hui. La religion s'exprime dans la langue liturgique locale, le **guèze**, qui laisse un riche patrimoine de manuscrits.",
+            text: "Cet héritage perdure dans l'Église orthodoxe éthiopienne. Le **guèze**, langue liturgique, porte une riche tradition de manuscrits.",
+          },
+          {
+            type: "image",
+            alt: "Saint Luc peint sur une page d'évangile éthiopien.",
+            legende: "Évangile éthiopien du XVe siècle : l'héritage chrétien d'Aksoum.",
+            credit: "Cleveland Museum of Art, CC0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Clevelandart_1999.212.jpg",
+            licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**Ezana** convertit Aksoum au christianisme au IVᵉ siècle",
-              "Naissance de l'Église orthodoxe éthiopienne, toujours vivante",
-              "Le **guèze** : langue liturgique et patrimoine de manuscrits",
+              "**Ezana** adopte le christianisme au IVᵉ siècle",
+              "L'Église éthiopienne reste vivante",
+              "Le **guèze** porte le patrimoine écrit",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "L'Église éthiopienne compte parmi les toutes premières du monde à avoir adopté le christianisme comme religion d'État — presque aussi tôt que Rome.",
           },
         ],
       },
@@ -527,28 +571,28 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un seul bloc de granit, taillé, transporté puis dressé à la verticale — sans grue, sans moteur. Certaines stèles d'**Aksoum** dépassent **30 mètres** de haut.",
+            text: "Taillées d'un seul bloc, certaines stèles d'**Aksoum** dépassent **30 mètres** : un défi sans machines modernes.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "30 m",
-            legende: "hauteur des plus grandes stèles d'Aksoum",
-          },
+          { type: "chiffreCle", valeur: "30 m", legende: "hauteur des plus grandes stèles d'Aksoum" },
           {
             type: "paragraphe",
-            text: "Ces obélisques monumentaux servaient de monuments funéraires au-dessus des tombes royales, sculptés pour imiter des tours à plusieurs étages. Leur taille et leur transport témoignent d'une maîtrise technique remarquable pour l'époque.",
+            text: "Dressées au-dessus des tombes royales, elles imitent des tours. Observe leurs fausses portes et fenêtres.",
+          },
+          {
+            type: "image",
+            alt: "Grandes stèles sculptées et blocs renversés dans le site d'Aksoum.",
+            legende: "Les stèles royales d'Aksoum, sculptées comme des tours.",
+            credit: "Rod Waddington, CC BY-SA 2.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Stelae,_Aksum_(8140296506).jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",
           },
           {
             type: "aRetenir",
             points: [
-              "Des stèles de granit, dressées au-dessus des tombes royales",
-              "Certaines dépassent **30 mètres** de haut, taillées d'un seul bloc",
-              "Classées aujourd'hui au patrimoine mondial de l'UNESCO",
+              "Des monuments funéraires royaux en granit",
+              "Certaines dépassent **30 mètres**",
+              "Le site est classé par l'UNESCO",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Sculptées pour imiter des tours à plusieurs étages, ces stèles simulaient même de fausses portes et fenêtres — de véritables gratte-ciel de pierre.",
           },
         ],
       },
@@ -558,7 +602,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "À partir du **VIIᵉ siècle**, l'essor de l'islam déplace le commerce de la mer Rouge. Peu à peu, Aksoum se retrouve isolée du monde qui avait fait sa fortune.",
+            text: "Dès le **VIIᵉ siècle**, les échanges de la mer Rouge se déplacent. Aksoum perd sa puissance commerciale.",
           },
           {
             type: "frise",
@@ -570,7 +614,16 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Son héritage fonde la civilisation éthiopienne : l'écriture guèze, le christianisme orthodoxe et une tradition impériale durable. La légende relie Aksoum à la reine de **Saba** ; cette Éthiopie chrétienne, aux églises taillées dans le roc, nous la retrouverons plus loin dans le programme.",
+            text: "L'écriture **guèze**, le christianisme et la tradition impériale perdurent. La légende de Saba nourrit aussi cet héritage.",
+          },
+          {
+            type: "image",
+            alt: "Inscription gravée sur la pierre du roi Ezana.",
+            legende: "La pierre d'Ezana, IVᵉ siècle : un témoignage écrit d'Aksoum.",
+            credit: "Rod Waddington, CC BY-SA 2.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Ezana_Stone,_Aksum_(6183743976).jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",
+            fit: "contain",
           },
           {
             type: "citation",
@@ -580,9 +633,9 @@ export const HISTOIRE_COURSES: Course[] = [
           {
             type: "aRetenir",
             points: [
-              "L'islam déplace le commerce, Aksoum décline dès le **VIIᵉ siècle**",
-              "Héritage : écriture guèze, christianisme orthodoxe, tradition impériale",
-              "La légende de la reine de Saba, encore vivante aujourd'hui",
+              "Déclin commercial dès le **VIIᵉ siècle**",
+              "Héritage écrit, chrétien et impérial",
+              "La reine de **Saba**, figure légendaire",
             ],
           },
         ],
@@ -638,30 +691,28 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-04-carthage-afrique-du-nord-lesson-1",
         title: "Une fondation venue d'Orient",
         blocks: [
+          { type: "paragraphe", text: "La légende raconte l'exil de **Didon**, fondatrice de Carthage, aussi appelée Élissa." },
+          { type: "chiffreCle", valeur: "814 av. J.-C.", legende: "fondation de Carthage par des marchands phéniciens" },
           {
             type: "paragraphe",
-            text: "Une reine en fuite, venue d'Orient, aurait fondé la plus grande rivale de Rome. La légende de **Didon** commence par un exil.",
+            text: "Des marchands de **Tyr**, au Liban actuel, s'établissent sur la côte tunisienne. Ce comptoir méditerranéen devient une métropole indépendante.",
           },
           {
-            type: "chiffreCle",
-            valeur: "814 av. J.-C.",
-            legende: "fondation de Carthage par des marchands phéniciens",
-          },
-          {
-            type: "paragraphe",
-            text: "Venus de **Tyr** (actuel Liban), ces marchands s'installent sur la côte de l'actuelle Tunisie. Grâce à sa position idéale au centre de la Méditerranée, la cité prospère vite et devient indépendante, passant en quelques siècles du simple comptoir à la métropole.",
+            type: "image",
+            alt: "Comptoirs phéniciens répartis autour de la Méditerranée.",
+            legende: "Tyr et Carthage dans le réseau des comptoirs phéniciens.",
+            credit: "Bourrichon, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Routes_commerciales_des_Ph%C3%A9niciens-fr.svg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**814 av. J.-C.** : des marchands phéniciens de Tyr fondent Carthage",
-              "La légende attribue sa fondation à la reine Didon",
-              "D'un comptoir commercial à une véritable métropole",
+              "Fondation phénicienne vers **814 av. J.-C.**",
+              "Des marchands viennent de **Tyr**",
+              "Didon, fondatrice dans la légende",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Le nom légendaire de la fondatrice de Carthage, Didon, est aussi connu sous son nom phénicien : **Élissa**.",
           },
         ],
       },
@@ -671,23 +722,28 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "De l'Espagne à la Sicile, la flotte carthaginoise sillonnait toute la **Méditerranée**. Aucune autre puissance de son temps ne maîtrisait autant la mer.",
+            text: "Les navires de **Carthage** relient l'Espagne à la Sicile. Les ports soutiennent sa puissance commerciale.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "~670 ans",
-            legende: "de sa fondation à sa chute face à Rome",
-          },
+          { type: "chiffreCle", valeur: "~670 ans", legende: "de sa fondation à sa chute face à Rome" },
           {
             type: "paragraphe",
-            text: "Carthage bâtit sa puissance sur le commerce et la mer : métaux, produits agricoles, artisanat. Son arrière-pays africain, très fertile, fournit d'abondantes récoltes. Cette domination finit par la mettre en concurrence directe avec une autre puissance montante : **Rome**.",
+            text: "Métaux, artisanat et récoltes africaines alimentent les échanges. Cette domination maritime entraîne une rivalité croissante avec **Rome**.",
+          },
+          {
+            type: "image",
+            alt: "Bassin circulaire des anciens ports puniques de Carthage.",
+            legende: "Les ports puniques de Carthage, photographiés en 2024.",
+            credit: "Sharon Hahn Darlin, CC BY 2.0, WebP",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:Punic_Ports_(Ports_Puniques)_of_Carthage,_Tunisia_January_2024_-_2.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by/2.0",
           },
           {
             type: "aRetenir",
             points: [
-              "Une flotte redoutée, de l'Espagne à la Sicile",
-              "Un arrière-pays africain fertile, source de richesse",
-              "La rivale montante : **Rome**",
+              "Une flotte active en **Méditerranée**",
+              "Un arrière-pays africain fertile",
+              "**Rome** devient sa grande rivale",
             ],
           },
         ],
@@ -698,29 +754,31 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pendant plus de cent ans, deux superpuissances s'affrontent pour dominer la Méditerranée. Un seul homme, avec des éléphants, a failli changer le cours de l'histoire.",
+            text: "En **218 av. J.-C.**, Hannibal traverse les Alpes avec ses éléphants pour attaquer Rome en Italie.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "218 av. J.-C.",
-            legende: "Hannibal franchit les Alpes avec ses éléphants",
-          },
+          { type: "chiffreCle", valeur: "218 av. J.-C.", legende: "Hannibal franchit les Alpes avec ses éléphants" },
           {
             type: "paragraphe",
-            text: "Entre **264-146 av. J.-C.**, Carthage et Rome se livrent trois guerres puniques. Le général **Hannibal** inflige de lourdes défaites aux Romains sur leur propre sol. Mais Rome finit par l'emporter : en 146 av. J.-C., elle rase Carthage.",
+            text: "Trois guerres puniques opposent **Carthage** à Rome. Malgré les victoires d'Hannibal, Rome détruit Carthage en 146 av. J.-C.",
+          },
+          {
+            type: "image",
+            alt: "Itinéraire d'Hannibal depuis l'Espagne, à travers les Alpes, vers l'Italie.",
+            legende: "Le trajet d'Hannibal vers l'Italie en 218 av. J.-C.",
+            credit: "Pinpin, CC BY-SA 3.0, adaptation française, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Hannibal_route_of_invasion-en.svg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Trois guerres puniques opposent Carthage à Rome (**264-146 av. J.-C.**)",
-              "**Hannibal** franchit les Alpes avec des éléphants en 218 av. J.-C.",
-              "Rome l'emporte et rase Carthage en 146 av. J.-C.",
+              "Trois guerres : **264–146 av. J.-C.**",
+              "**Hannibal** franchit les Alpes en 218",
+              "Carthage est détruite en 146",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "Pour franchir les Alpes, Hannibal perd la majeure partie de ses éléphants de guerre — mais jamais sa détermination à atteindre Rome.",
-          },
+          { type: "leSavaisTu", text: "Hannibal perd la majeure partie de ses éléphants pendant la traversée." },
         ],
       },
       {
@@ -729,28 +787,29 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Carthage n'était pas seule en Afrique du Nord. À ses côtés, un royaume berbère s'alliait, résistait, puis résistait encore — face à Rome comme face à Carthage.",
+            text: "L'Afrique du Nord antique comprend aussi des États amazighs, dont la **Numidie**, voisine de Carthage.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "IIe av. J.-C.",
-            legende: "Massinissa unifie le royaume de Numidie",
-          },
+          { type: "chiffreCle", valeur: "IIe av. J.-C.", legende: "Massinissa unifie le royaume de Numidie" },
           {
             type: "paragraphe",
-            text: "Le roi **Massinissa** unifie la Numidie et en fait un État prospère, tour à tour allié et rival de Rome et de Carthage. Plus tard, le roi **Jugurtha** résiste longuement à la conquête romaine.",
+            text: "**Massinissa** l'unifie et bâtit un royaume prospère. Plus tard, **Jugurtha** résiste à la conquête romaine.",
+          },
+          {
+            type: "image",
+            alt: "Profil royal frappé sur une monnaie numide.",
+            legende: "Monnaie attribuée à Massinissa, souverain de Numidie.",
+            credit: "Michel-georges bernard, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Massinissa_monnaie.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "La Numidie : un puissant royaume berbère (amazigh)",
-              "**Massinissa** unifie la Numidie au IIᵉ siècle av. J.-C.",
-              "**Jugurtha** résiste longuement à la conquête romaine",
+              "La Numidie est un royaume **amazigh**",
+              "**Massinissa** l'unifie au IIᵉ siècle av. J.-C.",
+              "**Jugurtha** résiste à Rome",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Ces royaumes rappellent que l'Afrique du Nord antique, ce n'était pas que Carthage : des peuples autochtones y bâtissaient depuis longtemps leurs propres États.",
           },
         ],
       },
@@ -758,10 +817,7 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-04-carthage-afrique-du-nord-lesson-5",
         title: "L'Afrique romaine et l'héritage",
         blocks: [
-          {
-            type: "paragraphe",
-            text: "Après la chute de Carthage, l'Afrique du Nord ne disparaît pas : elle devient l'une des provinces les plus riches de tout l'**Empire romain**.",
-          },
+          { type: "paragraphe", text: "Après Carthage, l'Afrique du Nord devient une riche région de l'**Empire romain**." },
           {
             type: "frise",
             evenements: [
@@ -772,7 +828,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Surnommée le « grenier de Rome » pour son blé et son huile d'olive, la région voit se développer des villes brillantes, comme **Timgad**. Sous ces couches successives, le fond amazigh (berbère) de l'Afrique du Nord n'a jamais disparu et perdure aujourd'hui.",
+            text: "Blé et huile en font un « grenier de Rome ». **Timgad** illustre ses villes ; l'héritage amazigh perdure.",
+          },
+          {
+            type: "image",
+            alt: "Rues et vestiges de la cité romaine de Timgad.",
+            legende: "Ruines de Timgad, cité romaine fondée en 100, en Algérie.",
+            credit: "Yelles, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Timgad_Ruins_Panorama.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
           },
           {
             type: "citation",
@@ -782,9 +846,9 @@ export const HISTOIRE_COURSES: Course[] = [
           {
             type: "aRetenir",
             points: [
-              "L'Afrique du Nord devient le « grenier de Rome »",
-              "**Augustin d'Hippone**, grand penseur né dans l'Afrique romaine",
-              "Le fond amazigh (berbère) n'a jamais disparu",
+              "L'Afrique du Nord nourrit **Rome**",
+              "**Augustin d'Hippone**, penseur de l'Afrique romaine",
+              "Le fond amazigh reste vivant",
             ],
           },
         ],
@@ -842,60 +906,60 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le premier grand empire d'Afrique de l'Ouest ne se trouvait pas dans le pays qui porte aujourd'hui son nom. Ses fondateurs l'appelaient **Wagadou**.",
+            text: "L'empire du Ghana ne correspond pas au pays actuel. Les **Soninké** le nommaient **Wagadou**.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "IVe-XIIIe s.",
-            legende: "l'empire du Ghana domine le Sahel ouest-africain",
-          },
+          { type: "chiffreCle", valeur: "IVe-XIIIe s.", legende: "l'empire du Ghana domine le Sahel ouest-africain" },
           {
             type: "paragraphe",
-            text: "Fondé par le peuple **soninké**, l'empire s'étend sur le sud de la Mauritanie et l'ouest du Mali actuels, avec pour capitale **Koumbi Saleh**. « Ghana » désignait à l'origine le titre du roi, « chef de guerre ».",
+            text: "Il s'étendait entre Mauritanie et Mali, autour de **Koumbi Saleh**. « Ghana » était d'abord un titre royal : « chef de guerre ».",
+          },
+          {
+            type: "image",
+            alt: "Carte situant l'ancien Ghana autour de Koumbi Saleh.",
+            legende: "Le Ghana médiéval : territoire indicatif entre Mauritanie et Mali.",
+            credit: "Barada-nikto, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Ghana_empire_map-fr.png",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**Wagadou** : le nom donné par les Soninké à leur empire",
-              "Capitale à **Koumbi Saleh**, entre Mauritanie et Mali actuels",
-              "« Ghana » : d'abord un titre royal, pas un lieu",
+              "**Wagadou**, empire fondé par les Soninké",
+              "**Koumbi Saleh**, entre Mauritanie et Mali",
+              "Ghana désignait d'abord le souverain",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "Le pays qui porte aujourd'hui le nom Ghana n'a, historiquement, aucun territoire commun avec cet empire médiéval : le nom a simplement été repris par fierté.",
-          },
+          { type: "leSavaisTu", text: "Le Ghana actuel a repris ce nom sans partager le territoire médiéval." },
         ],
       },
       {
         id: "course-histoire-05-empire-du-ghana-lesson-2",
         title: "L'or et le sel",
         blocks: [
+          { type: "paragraphe", text: "Sur les routes du **Sahara**, l'or du sud rencontre le sel des mines du nord." },
+          { type: "chiffreCle", valeur: "XIe siècle", legende: "al-Bakri décrit la richesse de la cour du Ghana" },
           {
             type: "paragraphe",
-            text: "Le sel valait presque son pesant d'or. Sur les routes du **Sahara**, deux richesses se croisaient sans jamais venir du même endroit.",
+            text: "Le roi taxe les marchandises qui entrent et sortent. **Al-Bakri** décrit au XIᵉ siècle la richesse de sa cour.",
           },
           {
-            type: "chiffreCle",
-            valeur: "XIe siècle",
-            legende: "al-Bakri décrit la richesse de la cour du Ghana",
-          },
-          {
-            type: "paragraphe",
-            text: "L'or vient des régions du sud, le sel des mines du Sahara. Le roi prélève une taxe sur tout ce qui entre et sort du royaume — la vraie source de sa fortune. Le géographe arabe **al-Bakri** a décrit cette richesse fabuleuse.",
+            type: "image",
+            alt: "Plaques de sel saharien empilées pour le commerce.",
+            legende: "Plaques de sel saharien à Mopti, photographie contemporaine.",
+            credit: "Taguelmoust at French Wikipedia, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Mopti_sel.jpg",
+            licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
           },
           {
             type: "aRetenir",
             points: [
-              "L'or du sud contre le sel du Sahara : deux flux inverses",
-              "Une taxe sur tout le commerce : la vraie richesse du roi",
-              "**Al-Bakri** (XIᵉ siècle) décrit la cour fabuleuse du Ghana",
+              "Or du sud, sel du **Sahara**",
+              "Les taxes enrichissent le souverain",
+              "**Al-Bakri** décrit la cour du Ghana",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "Le sel était parfois si rare au sud qu'il s'échangeait presque à poids égal contre l'or qui remontait vers le nord.",
-          },
+          { type: "leSavaisTu", text: "Au sud, le sel pouvait s'échanger presque à poids égal contre l'or." },
         ],
       },
       {
@@ -904,7 +968,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Deux villes, un seul royaume : d'un côté le pouvoir et les religions traditionnelles, de l'autre les marchands venus du nord.",
+            text: "**Al-Bakri** décrit deux villes à **Koumbi Saleh** : l'une royale, l'autre marchande et musulmane.",
           },
           {
             type: "citation",
@@ -913,14 +977,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La capitale, **Koumbi Saleh**, comprend deux villes reliées entre elles : l'une royale, l'autre habitée par les marchands musulmans. Le roi rend lui-même la justice, entouré d'une cour fastueuse.",
+            text: "Le roi rend la justice au milieu d'une cour fastueuse. Le plan montre les vestiges étudiés par les archéologues.",
+          },
+          {
+            type: "image",
+            alt: "Plan des quartiers et vestiges archéologiques de Koumbi Saleh.",
+            legende: "Koumbi Saleh : plan archéologique établi d'après les relevés de 2007.",
+            credit: "Chloé Capel, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Archaeological_site_of_Koumbi_Saleh.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Deux villes reliées : la cité royale et la cité marchande",
-              "Le roi rendait lui-même la justice",
-              "Une cour fastueuse, décrite par les récits arabes",
+              "Une cité royale et une cité marchande",
+              "Le roi rend lui-même la **justice**",
+              "Une cour décrite par **al-Bakri**",
             ],
           },
         ],
@@ -931,7 +1004,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Les marchands du Sahara n'apportent pas que de l'or et du sel : ils apportent aussi une religion nouvelle.",
+            text: "Les marchands traversant le Sahara apportent aussi l'**islam** et des savoirs administratifs.",
           },
           {
             type: "frise",
@@ -943,14 +1016,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les rois du **Ghana** conservent longtemps leur religion traditionnelle, mais s'appuient sur des lettrés et administrateurs musulmans pour gérer le commerce et la diplomatie. Cette coexistence est caractéristique des grands États sahéliens.",
+            text: "Les rois du **Ghana** gardent longtemps leur religion, tout en employant des lettrés musulmans pour le commerce et la diplomatie.",
+          },
+          {
+            type: "image",
+            alt: "Routes commerciales reliant le royaume du Ghana au nord du Sahara.",
+            legende: "Routes transsahariennes, XIe–XVe siècles : échanges et diffusion de l’islam.",
+            credit: "Siyajkak, CC0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+            licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "L'islam arrive par les marchands du nord",
-              "Les rois gardent leur religion, mais emploient des lettrés musulmans",
-              "Une coexistence caractéristique des grands États sahéliens",
+              "L'**islam** circule avec les marchands",
+              "Des lettrés musulmans administrent le royaume",
+              "Les religions coexistent dans le Sahel",
             ],
           },
         ],
@@ -961,7 +1043,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un empire ne meurt jamais tout à fait. Six siècles après la chute du **Ghana**, son nom renaît — à des centaines de kilomètres de distance.",
+            text: "Affaibli par les rivalités et le déplacement du commerce, le **Ghana** laisse place au **Mali**.",
           },
           {
             type: "frise",
@@ -973,19 +1055,24 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Affaibli par les rivalités internes et le déplacement des routes commerciales, le Ghana laisse place à un empire plus vaste : le **Mali**, fondé par un prince en exil que nous découvrons dans le prochain cours.",
+            text: "En 1957, le Ghana moderne reprend le nom de l'empire : un choix de mémoire et de fierté.",
+          },
+          {
+            type: "image",
+            alt: "Timbre commémorant l'indépendance avec le portrait de Kwame Nkrumah.",
+            legende: "Timbre commémorant l'indépendance du Ghana, le 6 mars 1957.",
+            credit: "Paasikivi, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:KwameNkrumahOnGhanianIndependenceDay6March1957PostageStamp.JPG",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Déclin aux **XIᵉ-XIIIᵉ siècles**, face aux rivalités et au Mali montant",
-              "Un modèle : l'empire sahélien fondé sur l'or et le commerce",
-              "**1957** : le Ghana moderne reprend le nom de l'empire",
+              "Déclin médiéval, essor du **Mali**",
+              "Un modèle d'empire fondé sur le commerce",
+              "**1957** : le nom Ghana renaît",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "En 1957, le Ghana devient le premier pays d'Afrique subsaharienne indépendant — et choisit, par fierté, le nom de cet empire disparu six siècles plus tôt.",
           },
         ],
       },
@@ -1042,7 +1129,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Après la chute du Ghana, un roi redouté domine l'Afrique de l'Ouest : **Soumaoro Kanté**, du royaume du Sosso, que l'on dit invincible.",
+            text: "Après le Ghana, des royaumes rivaux se partagent la région. **Soumaoro Kanté**, roi du Sosso, devient redouté.",
           },
           {
             type: "frise",
@@ -1054,19 +1141,24 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les Mandingues (Malinké), installés autour du royaume de **Kangaba**, sur le haut Niger, vivent alors sous la menace de Soumaoro. C'est dans ce contexte d'oppression qu'émerge une figure fondatrice de l'histoire africaine : **Soundiata Keïta**.",
+            text: "Autour de **Kangaba**, sur le haut Niger, les Mandingues vivent sous sa menace. **Soundiata Keïta** émerge dans ce contexte.",
+          },
+          {
+            type: "image",
+            alt: "Carte des royaumes issus du morcellement de l'ancien Ghana.",
+            legende: "Après le Ghana : royaumes rivaux vers 1200, territoires indicatifs.",
+            credit: "T L Miles, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Ghana_successor_map_1200.png",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Après le Ghana, l'Afrique de l'Ouest se morcelle en royaumes rivaux",
-              "**Soumaoro Kanté**, roi du Sosso, domine et opprime la région",
-              "Les Mandingues vivent autour de Kangaba, sur le haut Niger",
+              "Morcellement après le **Ghana**",
+              "**Soumaoro** domine le Sosso",
+              "Les Mandingues vivent autour de **Kangaba**",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Soumaoro Kanté, roi du Sosso, était réputé si cruel et si puissant qu'on le disait invincible — jusqu'à sa rencontre avec Soundiata.",
           },
         ],
       },
@@ -1076,29 +1168,31 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "On le disait incapable de marcher, enfant. Ce même enfant allait devenir le fondateur d'un empire.",
+            text: "Selon l'épopée, **Soundiata** ne marche pas enfant. Il se relève par un effort devenu légendaire.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "~800 ans",
-            legende: "l'épopée transmise oralement par les griots",
-          },
+          { type: "chiffreCle", valeur: "~800 ans", legende: "l'épopée transmise oralement par les griots" },
           {
             type: "paragraphe",
-            text: "Selon l'épopée, **Soundiata** se relève par un effort de volonté devenu légendaire. Contraint à l'exil pour échapper aux rivalités de cour, il grandit loin de son pays, se forme auprès d'autres souverains, puis revient pour libérer son peuple.",
+            text: "Exilé face aux rivalités de cour, il se forme puis revient libérer son peuple. Les **griots** transmettent cette histoire.",
+          },
+          {
+            type: "image",
+            alt: "Ali Boulo Santo joue de la kora.",
+            legende: "Ali Boulo Santo, griot mandingue, photo contemporaine.",
+            credit: "Dany barthelemy, CC BY-SA 4.0, WebP",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:Ali_Boulo_Santo_Artiste_griot_mandingue_kora_maitre_kora_afrique_europe_wikipedia30042016.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
           },
           {
             type: "aRetenir",
             points: [
-              "Un enfant fragile, incapable de marcher dans sa jeunesse",
-              "Il se relève par un effort de volonté devenu légendaire",
-              "L'exil, la formation, puis le retour pour libérer son peuple",
+              "Une enfance fragile dans l'**épopée**",
+              "L'exil prépare son retour",
+              "Les **griots** transmettent oralement son histoire",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "L'histoire de Soundiata nous vient uniquement de la tradition orale des **griots** : aucun texte écrit de l'époque ne la raconte.",
-          },
+          { type: "leSavaisTu", text: "Aucun récit écrit de l'époque ne raconte cette épopée." },
         ],
       },
       {
@@ -1132,30 +1226,29 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-06-soundiata-mali-lesson-4",
         title: "La Charte du Manden",
         blocks: [
+          { type: "paragraphe", text: "Vers **1236**, une assemblée à **Kurukan Fuga** proclame la Charte du Manden." },
+          { type: "chiffreCle", valeur: "1236", legende: "proclamation de la Charte du Manden à Kurukan Fuga" },
           {
             type: "paragraphe",
-            text: "Vers 1236, une grande assemblée se réunit à Kurukan Fuga. Elle proclame l'une des plus anciennes chartes de droits connues en Afrique.",
+            text: "Elle organise les clans et énonce solidarité et respect de la vie. Les **griots** la transmettent ; l'UNESCO reconnaît ce patrimoine oral.",
           },
           {
-            type: "chiffreCle",
-            valeur: "1236",
-            legende: "proclamation de la Charte du Manden à Kurukan Fuga",
+            type: "image",
+            alt: "Assemblée de personnages représentée par une illustration contemporaine.",
+            legende: "Assemblée du Manden : illustration contemporaine, pas un document de 1236.",
+            credit: "Morganb73, CC BY-SA 3.0, WebP",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:Assembl%C3%A9e_constitutive_de_l%27empire_du_Mand%C3%A9_(les_chefs_de_guerre).jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+            fit: "contain",
           },
-          {
-            type: "paragraphe",
-            text: "Cette charte répartit les rôles entre clans, garantit des droits et énonce des principes de respect de la vie humaine et de solidarité. Transmise par les **griots**, elle est aujourd'hui inscrite au patrimoine immatériel de l'**UNESCO**.",
-          },
-          {
-            type: "citation",
-            texte: "Toute vie humaine est une vie.",
-            auteur: "Charte du Manden, Kurukan Fuga (1236)",
-          },
+          { type: "citation", texte: "Toute vie humaine est une vie.", auteur: "Charte du Manden, Kurukan Fuga (1236)" },
           {
             type: "aRetenir",
             points: [
-              "**1236** : proclamation de la Charte du Manden à Kurukan Fuga",
-              "Des droits, des rôles par clan, et un principe de solidarité",
-              "Une des plus anciennes « constitutions » d'Afrique, inscrite par l'UNESCO",
+              "**1236** : Charte du Manden",
+              "Des principes de vie et de solidarité",
+              "Un patrimoine oral reconnu par l'**UNESCO**",
             ],
           },
         ],
@@ -1166,7 +1259,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Soundiata ne fonde pas seulement un empire : il pose les bases d'une prospérité qui dépassera son propre règne.",
+            text: "**Soundiata** pose les bases d'un empire prospère, au-delà de ses seules victoires militaires.",
           },
           {
             type: "frise",
@@ -1178,14 +1271,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Sous **Soundiata**, le Mali contrôle les routes de l'or, développe l'agriculture dans la vallée du Niger et intègre de nombreux peuples. C'est sous l'un de ses successeurs, **Mansa Moussa**, que le Mali atteindra son apogée.",
+            text: "Le Mali contrôle l'or, cultive la vallée du **Niger** et rassemble des peuples. Son successeur Mansa Moussa mène l'empire à l'apogée.",
+          },
+          {
+            type: "image",
+            alt: "Carte du Mali reliant ses régions aux principaux axes commerciaux.",
+            legende: "L'empire du Mali après Soundiata, au début du XIVe siècle.",
+            credit: "HetmanTheResearcher, CC BY 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_of_the_Mali_Empire.png",
+            licenseUrl: "https://creativecommons.org/licenses/by/4.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Contrôle de l'or, agriculture du Niger, intégration des peuples",
-              "Soundiata, héros fondateur et symbole de bonne gouvernance",
-              "Son successeur **Mansa Moussa** mènera le Mali à son apogée",
+              "Or et agriculture soutiennent le **Mali**",
+              "Soundiata rassemble les peuples",
+              "**Mansa Moussa** poursuit cette prospérité",
             ],
           },
         ],
@@ -1243,29 +1345,30 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "On a longtemps présenté **Mansa Moussa** comme l'homme le plus riche de toute l'histoire. Il régnait sur l'un des plus vastes empires d'Afrique de l'Ouest.",
+            text: "**Mansa Moussa** règne sur un vaste empire ouest-africain et contrôle de riches régions aurifères.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "1312-1337",
-            legende: "le règne de Mansa Moussa sur l'empire du Mali",
-          },
+          { type: "chiffreCle", valeur: "1312-1337", legende: "le règne de Mansa Moussa sur l'empire du Mali" },
           {
             type: "paragraphe",
-            text: "Sous son règne, l'empire atteint sa plus grande étendue, de l'Atlantique aux confins du Niger. Le mot **mansa** signifie « roi des rois ». Maître des régions productrices d'or les plus riches de l'époque, il dispose de moyens colossaux.",
+            text: "Son titre, **mansa**, signifie « roi des rois ». L'or du Mali explique sa fortune et la réputation du souverain.",
+          },
+          {
+            type: "image",
+            alt: "Mansa Moussa représenté avec couronne, sceptre et or.",
+            legende: "Mansa Moussa dans l'Atlas catalan de 1375, détail.",
+            credit: "Abraham Cresques (attribué), domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**1312-1337** : le règne de Mansa Moussa (Kankou Moussa)",
-              "Mansa : « roi des rois », un empire de l'Atlantique au Niger",
-              "Maître des régions d'or les plus riches de son temps",
+              "**1312–1337** : règne de Mansa Moussa",
+              "Un vaste empire de l'Atlantique au Niger",
+              "L'**or** fonde sa puissance",
             ],
           },
-          {
-            type: "leSavaisTu",
-            text: "Mansa Moussa est aussi appelé Kankou Moussa, du nom de sa mère, **Kankou** — une pratique fréquente dans la tradition mandingue.",
-          },
+          { type: "leSavaisTu", text: "Il est aussi nommé Kankou Moussa, d'après sa mère Kankou." },
         ],
       },
       {
@@ -1274,33 +1377,30 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En **1324**, un souverain africain traverse le désert avec une caravane de milliers de personnes — et assez d'or pour changer, pour des années, l'économie d'une ville entière.",
+            text: "En **1324**, Mansa Moussa part à La Mecque avec une immense caravane et beaucoup d'or.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "1324",
-            legende: "le pèlerinage de Mansa Moussa à La Mecque",
-          },
+          { type: "chiffreCle", valeur: "1324", legende: "le pèlerinage de Mansa Moussa à La Mecque" },
           {
             type: "paragraphe",
-            text: "Accompagné d'une immense caravane, Mansa Moussa distribue et dépense tant d'or lors de son passage au **Caire** que sa valeur y reste déprimée pendant plusieurs années, selon les chroniqueurs.",
+            text: "Au **Caire**, ses dons et dépenses font baisser la valeur de l'or pendant des années, selon les chroniqueurs.",
           },
           {
-            type: "citation",
-            texte: "La main qui donne est au-dessus de la main qui reçoit.",
-            auteur: "Tradition islamique",
+            type: "image",
+            alt: "Un souverain et son escorte représentés en voyage.",
+            legende: "Le pèlerinage de Moussa, représentation tardive publiée en 1903.",
+            credit: "Artiste inconnu, domaine public, WebP",
+            sourceUrl:
+              "https://commons.wikimedia.org/wiki/File:Mansa-Musa-on-his-way-to-Mecca-Credit-Print-Collector-Getty-images-1536x790.jpg",
+            fit: "contain",
           },
+          { type: "citation", texte: "La main qui donne est au-dessus de la main qui reçoit.", auteur: "Tradition islamique" },
           {
             type: "aRetenir",
             points: [
-              "**1324** : le grand pèlerinage (hajj) de Mansa Moussa",
-              "Au Caire, ses dépenses en or font chuter sa valeur",
-              "Ce voyage révèle au monde la richesse du Mali",
+              "**1324** : pèlerinage à La Mecque",
+              "L'or distribué bouleverse le **Caire**",
+              "Le voyage révèle la richesse du Mali",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Selon les chroniqueurs, la valeur de l'or resta affaiblie au Caire pendant plusieurs années après le passage de Mansa Moussa.",
           },
         ],
       },
@@ -1308,25 +1408,26 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-07-mansa-moussa-lesson-3",
         title: "Une renommée mondiale",
         blocks: [
+          { type: "paragraphe", text: "L'**Atlas catalan** de **1375** représente Mansa Moussa couronné, tenant de l'or." },
+          { type: "chiffreCle", valeur: "1375", legende: "l'Atlas catalan représente Mansa Moussa" },
           {
             type: "paragraphe",
-            text: "En **1375**, une carte européenne représente pour la première fois un souverain d'Afrique de l'Ouest — assis sur son trône, une pépite d'or à la main.",
+            text: "Cette carte méditerranéenne donne une place visible au Mali. Le souverain y incarne la richesse de l'Afrique occidentale.",
           },
           {
-            type: "chiffreCle",
-            valeur: "1375",
-            legende: "l'Atlas catalan représente Mansa Moussa",
-          },
-          {
-            type: "paragraphe",
-            text: "L'**Atlas catalan**, célèbre carte européenne, désigne Mansa Moussa comme le souverain le plus riche de la région. Pour la première fois, un empire d'Afrique de l'Ouest figure en bonne place sur les cartes du monde méditerranéen.",
+            type: "image",
+            alt: "Mansa Moussa figure au milieu des toponymes d'une carte médiévale.",
+            legende: "L'Atlas catalan de 1375 situe Moussa dans l'Afrique occidentale.",
+            credit: "Abraham Cresques (attribué), domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**1375** : l'Atlas catalan représente Mansa Moussa sur son trône",
-              "Une pépite d'or à la main, souverain le plus riche",
-              "Le Mali apparaît enfin sur les cartes du monde méditerranéen",
+              "**1375** : l'Atlas catalan représente Moussa",
+              "Le souverain tient de l'**or**",
+              "Le Mali figure sur une carte méditerranéenne",
             ],
           },
         ],
@@ -1337,7 +1438,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "De retour chez lui, Mansa Moussa ne rapporte pas que des souvenirs de voyage : il ramène des savants, des architectes, et un projet de ville.",
+            text: "Après son pèlerinage, **Mansa Moussa** fait venir savants et architectes, dont **Es-Sahéli**.",
           },
           {
             type: "frise",
@@ -1349,19 +1450,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Il fait venir des savants, dont **Es-Sahéli**, et construit des mosquées comme la **Djinguereber**. Sous son impulsion, Tombouctou et Djenné deviennent de grands centres du savoir islamique, avec leurs bibliothèques et leurs milliers de manuscrits.",
+            text: "La mosquée **Djinguereber** participe au rayonnement de Tombouctou. Avec Djenné, la ville développe bibliothèques, enseignement et manuscrits.",
+          },
+          {
+            type: "image",
+            alt: "Façade de terre de la mosquée Djinguereber à Tombouctou.",
+            legende: "Djinguereber à Tombouctou, fondée au temps de Mansa Moussa.",
+            credit: "upyernoz, CC BY 2.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Djinguereber_Mosque,_Timbuktu.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by/2.0",
           },
           {
             type: "aRetenir",
             points: [
-              "**Es-Sahéli** conçoit la mosquée Djinguereber à Tombouctou",
-              "Tombouctou et Djenné deviennent de grands centres de savoir",
-              "Des bibliothèques et des milliers de manuscrits",
+              "**Djinguereber**, liée à Mansa Moussa",
+              "Tombouctou et Djenné deviennent des centres savants",
+              "Des bibliothèques conservent les manuscrits",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Ces mêmes villes de Tombouctou et de Djenné sont aujourd'hui classées au patrimoine mondial de l'UNESCO.",
           },
         ],
       },
@@ -1369,10 +1474,7 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-07-mansa-moussa-lesson-5",
         title: "Héritage",
         blocks: [
-          {
-            type: "paragraphe",
-            text: "**Mansa Moussa** est devenu, dans la mémoire mondiale, le symbole de la richesse, du savoir et de l'ouverture de l'Afrique médiévale.",
-          },
+          { type: "paragraphe", text: "**Mansa Moussa** symbolise la richesse et le savoir de l'Afrique médiévale." },
           {
             type: "frise",
             evenements: [
@@ -1383,14 +1485,22 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Son règne montre qu'un empire africain pouvait rivaliser avec les plus grandes puissances de son temps. Après lui, le Mali connaît un lent déclin, laissant la place à un nouvel empire venu de l'est : le **Songhaï**, dont nous parlerons ensuite.",
+            text: "Son Mali rivalise avec de grandes puissances. Après lui, le déclin ouvre la voie au **Songhaï**, tandis que le patrimoine savant perdure.",
+          },
+          {
+            type: "image",
+            alt: "Pages manuscrites de savoirs astronomiques et mathématiques.",
+            legende: "Manuscrits de Tombouctou : un héritage savant conservé.",
+            credit: "Elias Altmimi, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Timbuktu-manuscripts-astronomy-mathematics.jpg",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Symbole mondial de la richesse et du savoir africains",
-              "Un empire qui rivalisait avec les plus grandes puissances",
-              "Le déclin du Mali ouvre la voie au Songhaï",
+              "Richesse et savoir de l'**Afrique médiévale**",
+              "Un empire de rayonnement international",
+              "Le **Songhaï** succède au Mali dominant",
             ],
           },
         ],
@@ -1446,10 +1556,7 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-08-empire-songhai-lesson-1",
         title: "Gao et la montée du Songhaï",
         blocks: [
-          {
-            type: "paragraphe",
-            text: "Longtemps soumis au Mali, un peuple du fleuve profite de son déclin pour bâtir, à son tour, un empire.",
-          },
+          { type: "paragraphe", text: "Longtemps vassal du Mali, le **Songhaï** profite de son déclin pour s'émanciper." },
           {
             type: "frise",
             evenements: [
@@ -1460,14 +1567,22 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Installé le long de la boucle du **Niger**, autour de **Gao**, le peuple songhaï profite de sa position sur le fleuve — un axe de communication et de commerce — pour étendre son autorité sur les grandes cités marchandes, dont Tombouctou et Djenné.",
+            text: "Autour de **Gao**, le **Niger** soutient transports et commerce. Cette position permet de rayonner vers Tombouctou et Djenné.",
+          },
+          {
+            type: "image",
+            alt: "Pirogues sur le fleuve Niger à Gao.",
+            legende: "Le Niger à Gao, axe fluvial de l'ancien Songhaï.",
+            credit: "Ryszard Vorbrich, CC BY-SA 3.0 pl, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:%C5%81odzie_rybackie_na_rzece_Niger_-_Gao_-_001208s.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en",
           },
           {
             type: "aRetenir",
             points: [
-              "Le peuple songhaï s'installe autour de **Gao**, sur le Niger",
-              "Longtemps vassal du Mali, il s'émancipe à son déclin",
-              "Le fleuve Niger : un axe de commerce et de pouvoir",
+              "**Gao**, centre du royaume songhaï",
+              "Émancipation face au déclin du **Mali**",
+              "Le Niger relie les cités marchandes",
             ],
           },
         ],
@@ -1478,28 +1593,29 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Grand conquérant pour les uns, souverain redouté pour les autres : la mémoire de Sonni Ali Ber reste profondément partagée.",
+            text: "**Sonni Ali Ber** est un conquérant redouté, dont les lettrés gardent un souvenir sévère.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "1464-1492",
-            legende: "le règne de Sonni Ali Ber",
-          },
+          { type: "chiffreCle", valeur: "1464-1492", legende: "le règne de Sonni Ali Ber" },
           {
             type: "paragraphe",
-            text: "Chef de guerre redoutable, il s'appuie sur une puissante cavalerie et sur une flotte de guerre naviguant sur le **Niger** pour conquérir **Tombouctou** puis **Djenné**. Sous son règne, le Songhaï devient l'État dominant de l'Afrique de l'Ouest.",
+            text: "Sa cavalerie et sa flotte sur le **Niger** lui permettent de conquérir Tombouctou puis Djenné. Le Songhaï devient dominant.",
+          },
+          {
+            type: "image",
+            alt: "Gao, Tombouctou et Djenné sur une carte de l'empire Songhaï.",
+            legende: "Le Songhaï à son apogée : Gao, Tombouctou et Djenné.",
+            credit: "Roke / Astrokey44, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:SONGHAI_empire_map.PNG",
+            licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**1464-1492** : le règne de Sonni Ali Ber",
-              "Une cavalerie et une flotte fluviale, armes de conquête",
-              "Conquête de Tombouctou et Djenné ; le Songhaï domine",
+              "**1464–1492** : règne de Sonni Ali",
+              "Une cavalerie et une flotte fluviale",
+              "Conquête de **Tombouctou** et Djenné",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Les lettrés de Tombouctou gardent de Sonni Ali Ber un souvenir sévère — quand les chroniques militaires célèbrent avant tout le conquérant.",
           },
         ],
       },
@@ -1509,16 +1625,20 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Après le conquérant vient le bâtisseur. Askia Mohammed n'agrandit pas l'empire : il le réorganise, pièce par pièce.",
+            text: "Après Sonni Ali, **Askia Mohammed** réorganise l'empire et accomplit un pèlerinage à **La Mecque**.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "1493-1528",
-            legende: "le règne d'Askia Mohammed, « Askia le Grand »",
-          },
+          { type: "chiffreCle", valeur: "1493-1528", legende: "le règne d'Askia Mohammed, « Askia le Grand »" },
           {
             type: "paragraphe",
-            text: "Musulman fervent, il accomplit un pèlerinage à **La Mecque** et réorganise l'empire : provinces dirigées par des gouverneurs, administration centralisée, armée permanente, poids et mesures unifiés. Sous lui, le **Songhaï** atteint son apogée.",
+            text: "Gouverneurs, administration centralisée, armée permanente, poids et mesures unifiés : ces réformes soutiennent l'apogée du Songhaï.",
+          },
+          {
+            type: "image",
+            alt: "Monument pyramidal en terre du tombeau des Askia à Gao.",
+            legende: "Le tombeau des Askia à Gao, construit en 1495.",
+            credit: "Taguelmoust, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Askia.jpg",
+            licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
           },
           {
             type: "citation",
@@ -1528,9 +1648,9 @@ export const HISTOIRE_COURSES: Course[] = [
           {
             type: "aRetenir",
             points: [
-              "**1493-1528** : le règne d'Askia Mohammed, « Askia le Grand »",
-              "Provinces, gouverneurs, armée permanente : un empire réorganisé",
-              "Apogée politique et culturelle du Songhaï",
+              "**1493–1528** : règne d'Askia Mohammed",
+              "Provinces, gouverneurs et armée permanente",
+              "Apogée du **Songhaï**",
             ],
           },
         ],
@@ -1539,25 +1659,25 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-08-empire-songhai-lesson-4",
         title: "Un empire vaste et savant",
         blocks: [
+          { type: "paragraphe", text: "Le **Songhaï** devient le plus vaste empire de l'histoire de l'Afrique de l'Ouest." },
+          { type: "chiffreCle", valeur: "~35 ans", legende: "la durée de l'apogée politique et culturelle du Songhaï" },
           {
             type: "paragraphe",
-            text: "À son sommet, un seul empire domine tout le Sahel ouest-africain — plus vaste qu'aucun autre avant lui dans la région.",
+            text: "Administration, armée et commerce transsaharien soutiennent sa puissance. **Tombouctou** et Djenné rayonnent par leurs écoles et bibliothèques.",
           },
           {
-            type: "chiffreCle",
-            valeur: "~35 ans",
-            legende: "la durée de l'apogée politique et culturelle du Songhaï",
-          },
-          {
-            type: "paragraphe",
-            text: "Son administration structurée, son armée et son contrôle du commerce transsaharien en font une puissance de premier plan. **Tombouctou** et **Djenné** connaissent, sous sa protection, un remarquable rayonnement intellectuel, avec leurs écoles et leurs bibliothèques.",
+            type: "image",
+            alt: "Mosquée de Sankoré sur une ancienne carte postale.",
+            legende: "Sankoré à Tombouctou, photographie ancienne d'Edmond Fortier.",
+            credit: "Edmond Fortier, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Fortier_368_Timbuktu_Sankore_Mosque.jpg",
           },
           {
             type: "aRetenir",
             points: [
-              "Le plus vaste empire de l'histoire de l'Afrique de l'Ouest",
-              "Administration, armée, commerce transsaharien : une puissance de premier plan",
-              "Tombouctou et Djenné rayonnent sous la protection du Songhaï",
+              "Un très vaste empire **ouest-africain**",
+              "Administration et commerce soutiennent sa puissance",
+              "**Tombouctou** et Djenné diffusent le savoir",
             ],
           },
         ],
@@ -1568,7 +1688,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 1591, une armée équipée d'un tout nouvel outil de guerre met fin à des siècles de puissance sahélienne : les armes à feu.",
+            text: "En **1591**, l'armée marocaine bat le Songhaï à **Tondibi**, grâce notamment à ses armes à feu.",
           },
           {
             type: "frise",
@@ -1580,19 +1700,24 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Une armée venue du **Maroc**, équipée d'armes à feu encore inconnues dans la région, écrase l'armée songhaï à la bataille de **Tondibi**. Cette défaite marque la fin des grands empires sahéliens fondés sur l'or et le commerce transsaharien.",
+            text: "La défaite brise la puissance impériale. Les foyers savants de Tombouctou et Djenné continuent pourtant leur histoire.",
+          },
+          {
+            type: "image",
+            alt: "Schéma des positions des armées à Tondibi.",
+            legende: "Tondibi, 1591 : schéma moderne de la bataille.",
+            credit: "Monsieur Fou, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Bataille_de_tondibi.png",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**1591** : défaite de Tondibi face à une armée marocaine",
-              "Les armes à feu, inconnues dans la région, font la différence",
-              "La fin des grands empires sahéliens (Ghana, Mali, Songhaï)",
+              "**1591** : défaite de Tondibi",
+              "Les armes à feu font la différence",
+              "Fin de la puissance impériale **songhaï**",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "L'éclat intellectuel de Tombouctou et de Djenné, lui, survit à la chute politique du Songhaï — c'est leur histoire que nous racontons dans le prochain cours.",
           },
         ],
       },
@@ -1649,7 +1774,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "L'or et le sel ont fait la fortune de ces villes. Mais c'est un autre trésor qui allait les rendre immortelles : le savoir.",
+            text: "L'or et le sel enrichissent **Tombouctou** et **Djenné**, entre caravanes sahariennes et commerce fluvial.",
           },
           {
             type: "frise",
@@ -1661,14 +1786,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Situées aux carrefours du commerce transsaharien et fluvial, **Tombouctou** et **Djenné** s'enrichissent d'abord grâce aux caravanes d'or et de sel. Cette prospérité attire des marchands, mais aussi des lettrés et des étudiants venus de tout le monde musulman.",
+            text: "Cette prospérité attire marchands, lettrés et étudiants. Les villes deviennent aussi des carrefours de savoir.",
+          },
+          {
+            type: "image",
+            alt: "Routes vers Tombouctou et Djenné et régions aurifères.",
+            legende: "Routes transsahariennes, XIe–XVe siècles : villes, sel et régions aurifères.",
+            credit: "Aa77zz, CC0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+            licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Deux villes enrichies par le commerce de l'or et du sel",
-              "La prospérité attire aussi des lettrés et des étudiants",
-              "Le savoir devient une richesse aussi prisée que l'or",
+              "Deux carrefours commerciaux **sahéliens**",
+              "L'or et le sel fondent leur richesse",
+              "Le commerce favorise le **savoir**",
             ],
           },
         ],
@@ -1679,33 +1813,30 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Des milliers d'étudiants, venus de tout le monde musulman, étudient dans une seule mosquée-université au cœur du **Sahel**.",
+            text: "À **Sankoré**, des étudiants étudient droit, théologie, grammaire, astronomie, mathématiques et médecine.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "6",
-            legende: "disciplines enseignées à l'université de Sankoré",
-          },
+          { type: "chiffreCle", valeur: "6", legende: "disciplines enseignées à l'université de Sankoré" },
           {
             type: "paragraphe",
-            text: "On y enseigne le droit, la théologie, la grammaire, mais aussi l'astronomie, les mathématiques et la médecine. Des savants réputés, comme **Ahmed Baba**, y écrivent des ouvrages qui circulent dans tout le monde islamique.",
+            text: "Les ouvrages de savants comme **Ahmed Baba** circulent dans le monde islamique. Tombouctou devient une cité renommée du savoir.",
           },
           {
-            type: "citation",
-            texte: "Cherche le savoir du berceau jusqu'à la tombe.",
-            auteur: "Tradition islamique",
+            type: "image",
+            alt: "Minaret et façade en terre de la mosquée de Sankoré.",
+            legende: "Sankoré à Tombouctou, ancien foyer d'enseignement.",
+            credit: "Ondřej Havelka, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Sankore_Madrasah.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+            fit: "contain",
           },
+          { type: "citation", texte: "Cherche le savoir du berceau jusqu'à la tombe.", auteur: "Tradition islamique" },
           {
             type: "aRetenir",
             points: [
-              "**6** disciplines enseignées, du droit à l'astronomie",
-              "**Ahmed Baba**, savant réputé, diffusé dans le monde islamique",
-              "Tombouctou devient synonyme de savoir, cité mythique",
+              "**Six disciplines**, du droit à l'astronomie",
+              "**Ahmed Baba**, savant de Tombouctou",
+              "Un rayonnement dans le monde islamique",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Tombouctou est entrée dans l'imaginaire mondial comme une cité mythique du savoir — un nom utilisé encore aujourd'hui pour désigner un lieu lointain.",
           },
         ],
       },
@@ -1715,23 +1846,27 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Des centaines de milliers de pages, conservées de génération en génération, dans des bibliothèques familiales : les manuscrits de **Tombouctou**.",
+            text: "Des bibliothèques familiales conservent les manuscrits de **Tombouctou**, transmis de génération en génération.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "100 000+",
-            legende: "manuscrits conservés à Tombouctou",
-          },
+          { type: "chiffreCle", valeur: "100 000+", legende: "manuscrits conservés à Tombouctou" },
           {
             type: "paragraphe",
-            text: "Ces manuscrits traitent de religion, de droit, d'histoire, de sciences et d'astronomie, rassemblés dans des bibliothèques familiales transmises de génération en génération. Ils prouvent que l'**Afrique de l'Ouest** possédait une tradition écrite savante.",
+            text: "Religion, droit, histoire, sciences et **astronomie** : ces pages témoignent d'une tradition écrite savante en Afrique de l'Ouest.",
+          },
+          {
+            type: "image",
+            alt: "Tables de calcul astronomique dans un manuscrit de Tombouctou.",
+            legende: "Tables astronomiques conservées à Tombouctou, manuscrit de l'Institut Ahmed-Baba.",
+            credit: "Ahmed Baba Institute / Wikimedia Commons, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Timbuktu-manuscripts-astronomy-tables.jpg",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Des centaines de milliers de manuscrits, en bibliothèques familiales",
-              "Religion, droit, histoire, sciences, astronomie : tous les savoirs",
-              "La preuve d'une tradition écrite savante en Afrique de l'Ouest",
+              "Des bibliothèques **familiales**",
+              "Des textes dans de nombreuses disciplines",
+              "Une tradition écrite **ouest-africaine**",
             ],
           },
         ],
@@ -1740,30 +1875,27 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-09-tombouctou-djenne-lesson-4",
         title: "L'architecture de terre",
         blocks: [
+          { type: "paragraphe", text: "La Grande Mosquée de **Djenné** est un immense édifice en terre crue." },
+          { type: "chiffreCle", valeur: "N° 1 mondial", legende: "plus vaste édifice en terre crue du monde" },
           {
             type: "paragraphe",
-            text: "Le plus vaste édifice en terre crue du monde ne se trouve ni en Asie ni en Europe : il est à Djenné.",
+            text: "Les habitants renouvellent ensemble son enduit chaque année. À **Tombouctou**, Djinguereber témoigne du même savoir-faire architectural.",
           },
           {
-            type: "chiffreCle",
-            valeur: "N° 1 mondial",
-            legende: "plus vaste édifice en terre crue du monde",
-          },
-          {
-            type: "paragraphe",
-            text: "Chaque année, toute la population de **Djenné** participe à la réfection de sa Grande Mosquée, lors d'une grande fête communautaire. À **Tombouctou**, la mosquée Djinguereber témoigne du même génie de l'architecture de terre.",
+            type: "image",
+            alt: "Grande Mosquée de Djenné et ses poutres de bois saillantes.",
+            legende: "Grande Mosquée de Djenné, édifice actuel reconstruit en 1907.",
+            credit: "BluesyPete, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:MaliDjenn%C3%A9Mosqu%C3%A9e.JPG",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
           },
           {
             type: "aRetenir",
             points: [
-              "La Grande Mosquée de Djenné : le plus vaste édifice en terre crue",
-              "Une réfection collective chaque année, en fête communautaire",
-              "Djinguereber, à Tombouctou, le même génie architectural",
+              "La **terre crue**, matériau monumental",
+              "Une réfection annuelle collective",
+              "Djenné et **Djinguereber**, patrimoine de l'UNESCO",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Ces monuments de terre, entretenus depuis des siècles par les mêmes gestes collectifs, sont aujourd'hui classés au patrimoine mondial de l'UNESCO.",
           },
         ],
       },
@@ -1773,7 +1905,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Ce patrimoine reste fragile. En **2012**, des mausolées de Tombouctou furent détruits — et des habitants ont risqué leur vie pour sauver les manuscrits.",
+            text: "En **2012**, des mausolées sont détruits à Tombouctou. Des habitants mettent les manuscrits à l'abri.",
           },
           {
             type: "frise",
@@ -1785,14 +1917,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'**UNESCO** et les communautés locales œuvrent aujourd'hui à la protection et à la numérisation de ces trésors. Préserver ces manuscrits et ces monuments, c'est préserver la mémoire écrite de tout un continent.",
+            text: "Communautés locales et **UNESCO** soutiennent conservation et numérisation. Protéger ces documents préserve la mémoire écrite du continent.",
+          },
+          {
+            type: "image",
+            alt: "Manuscrits conservés par l'association SAVAMA-DCI à Tombouctou.",
+            legende: "Manuscrits conservés par SAVAMA-DCI, au Mali.",
+            credit: "Lazare Eloundou, CC BY-SA 3.0 igo, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Timbuktu-139078.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "**2012** : des mausolées détruits, des manuscrits sauvés par les habitants",
-              "UNESCO et communautés locales : protection et numérisation",
-              "Préserver ce patrimoine, c'est préserver la mémoire d'un continent",
+              "**2012** : destructions et sauvetage des manuscrits",
+              "Des habitants protègent leur patrimoine",
+              "Conservation et **numérisation** préservent la mémoire",
             ],
           },
         ],
@@ -1848,30 +1989,28 @@ export const HISTOIRE_COURSES: Course[] = [
         id: "course-histoire-10-kanem-bornou-lesson-1",
         title: "Mille ans d'une seule dynastie",
         blocks: [
+          { type: "paragraphe", text: "Le **Kanem** émerge vers le IXᵉ siècle, à l'est et au nord du lac Tchad." },
+          { type: "chiffreCle", valeur: "~1000 ans", legende: "le règne de la dynastie Sayfawa au Kanem" },
           {
             type: "paragraphe",
-            text: "Une seule famille a gouverné le même royaume pendant près de mille ans. Peu d'États, dans le monde entier, peuvent en dire autant.",
+            text: "Peuplé notamment de Kanouri, il est gouverné par les **Sayfawa**. Cette dynastie traverse près de mille ans d'histoire.",
           },
           {
-            type: "chiffreCle",
-            valeur: "~1000 ans",
-            legende: "le règne de la dynastie Sayfawa au Kanem",
-          },
-          {
-            type: "paragraphe",
-            text: "Vers le IXᵉ siècle, à l'est et au nord du lac **Tchad**, émerge le royaume du **Kanem**, peuplé notamment de Kanouri. Il est gouverné par la dynastie des **Sayfawa**, l'une des plus durables de toute l'histoire mondiale.",
+            type: "image",
+            alt: "Carte situant Kanem et Bornou autour du lac Tchad.",
+            legende: "Kanem et Bornou autour du lac Tchad, territoires indicatifs.",
+            credit: "ArnoldPlaton, CC0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Kanem-Bornu.svg",
+            licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Le royaume du Kanem émerge vers le **IXᵉ siècle**",
-              "La dynastie **Sayfawa** règne près de mille ans",
-              "Une stabilité politique rare à cette échelle de temps",
+              "Le **Kanem** naît vers le IXᵉ siècle",
+              "Les **Sayfawa**, une dynastie durable",
+              "Le lac Tchad est un repère central",
             ],
-          },
-          {
-            type: "leSavaisTu",
-            text: "Peu de dynasties dans l'histoire du monde — Europe ou Asie comprises — ont gouverné un même royaume aussi longtemps que les Sayfawa du Kanem.",
           },
         ],
       },
@@ -1881,23 +2020,27 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le sel, le cuivre, les tissus — et une religion nouvelle. Tout circule sur les mêmes routes qui traversent le Sahara vers le Kanem.",
+            text: "Le **Kanem** contrôle des routes transsahariennes reliant l'Afrique centrale au Maghreb et à l'Égypte.",
           },
-          {
-            type: "chiffreCle",
-            valeur: "XIe siècle",
-            legende: "les mai du Kanem adoptent l'islam",
-          },
+          { type: "chiffreCle", valeur: "XIe siècle", legende: "les mai du Kanem adoptent l'islam" },
           {
             type: "paragraphe",
-            text: "Le Kanem tire sa puissance du contrôle des routes transsahariennes reliant l'Afrique centrale au Maghreb et à l'Égypte. Vers le XIᵉ siècle, ses souverains, les **mai**, adoptent l'**islam**, qui renforce leurs liens commerciaux et diplomatiques avec le monde musulman.",
+            text: "Au XIᵉ siècle, ses souverains, les **mai**, adoptent l'islam. Commerce et diplomatie renforcent leurs liens avec le monde musulman.",
+          },
+          {
+            type: "image",
+            alt: "Routes sahariennes reliant notamment le lac Tchad à l'Afrique du Nord.",
+            legende: "Routes transsahariennes vers 1400, dont celles du Kanem-Bornou.",
+            credit: "T L Miles, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Niger_saharan_medieval_trade_routes.PNG",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Le Kanem contrôle les routes transsahariennes vers le Maghreb",
-              "**XIᵉ siècle** : les mai adoptent l'islam",
-              "Des liens commerciaux et diplomatiques avec le monde musulman",
+              "Routes vers le Maghreb et l'Égypte",
+              "Les **mai** adoptent l'islam au XIᵉ siècle",
+              "Commerce et religion renforcent les échanges",
             ],
           },
         ],
@@ -1908,7 +2051,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Après des crises internes, un royaume ne s'effondre pas forcément : il se déplace, se relève ailleurs, et prend un nouveau nom.",
+            text: "Après des crises, le pouvoir quitte le Kanem pour le **Bornou**, au sud-ouest du lac Tchad.",
           },
           {
             type: "frise",
@@ -1920,14 +2063,23 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le centre du pouvoir se déplace au sud-ouest du lac Tchad, vers la région du **Bornou**. Le royaume renaît sous le nom de **Kanem-Bornou**, avec une nouvelle capitale, **Ngazargamu** — loin de marquer un déclin, une nouvelle prospérité s'ouvre.",
+            text: "La nouvelle capitale, **Ngazargamu**, devient le centre du Kanem-Bornou. Ce déplacement ouvre une nouvelle période de prospérité.",
+          },
+          {
+            type: "image",
+            alt: "Le Bornou à l'ouest du lac Tchad sur une carte historique.",
+            legende: "Le Kanem-Bornou vers 1450, après le déplacement du pouvoir.",
+            credit: "Megartonius, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Kanem%E2%80%93Bornu,_1450.png",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Le pouvoir se déplace vers le Bornou, au sud-ouest",
-              "Nouvelle capitale : **Ngazargamu**",
-              "Un déplacement, pas un déclin : une nouvelle prospérité",
+              "Le pouvoir passe au **Bornou**",
+              "**Ngazargamu**, nouvelle capitale",
+              "Le royaume retrouve la prospérité",
             ],
           },
         ],
@@ -1974,7 +2126,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le **Kanem-Bornou** n'a pas seulement duré. Il a montré que les grands États africains ne s'arrêtaient pas au Sahel de l'Ouest.",
+            text: "Le **Kanem-Bornou** perdure jusqu'au XIXᵉ siècle : une longévité remarquable dans le Soudan central.",
           },
           {
             type: "frise",
@@ -1986,14 +2138,22 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Son histoire illustre le rôle des empires du **Soudan central** dans la diffusion de l'islam, le commerce à longue distance et la stabilité politique — la preuve que les grands États africains s'étendent bien au-delà du Sahel de l'Ouest.",
+            text: "Commerce, **islam** et stabilité politique montrent que les grands États africains dépassaient le seul Sahel de l'Ouest.",
+          },
+          {
+            type: "image",
+            alt: "Réception d'une mission devant le souverain du Bornou.",
+            legende: "La cour du Bornou, gravure publiée en 1826.",
+            credit: "Edward Francis Finden / Dixon Denham, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Council_of_the_Sultan_of_Bornou_1826.jpg",
+            fit: "contain",
           },
           {
             type: "aRetenir",
             points: [
-              "Le Kanem-Bornou perdure jusqu'au **XIXᵉ siècle**",
-              "Un des États les plus durables d'Afrique",
-              "Les grands États africains s'étendent bien au-delà du Sahel",
+              "Un État durable jusqu'au **XIXᵉ siècle**",
+              "Commerce et diffusion de l'**islam**",
+              "Une puissance du Soudan central",
             ],
           },
         ],

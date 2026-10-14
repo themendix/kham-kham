@@ -1341,7 +1341,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         blocks: [
           { type: "paragraphe", text: "Chez les Ashantis, le pouvoir royal repose sur un tabouret d'or sacré, jamais utilisé comme siège : le roi actuel, l'Asantehene, en est le gardien, dans une tradition qui traverse les siècles jusqu'à aujourd'hui." },
           { type: "chiffreCle", valeur: "34 M", legende: "dont une majorité de plus en plus urbaine" },
-          { type: "paragraphe", text: "Les peuples **akan** (Ashantis, Fantis) sont les plus nombreux, aux côtés des Ewe, Ga et Dagomba. Le christianisme domine au sud, l'islam au nord. Le pays est aussi connu pour son tissu traditionnel **kente**, tissé à l'origine par les Ashantis et les Ewe." },
+          { type: "paragraphe", text: "Les peuples **akan** (Ashantis, Fantis) dominent, aux côtés des Ewe et Ga. Si **l'anglais** est la langue officielle héritée de la colonisation, les langues locales restent très vivantes. Le pays est aussi réputé pour son tissu traditionnel **kente**." },
           {
             type: "aRetenir",
             points: [
@@ -1538,7 +1538,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-15-guinee-bissau-lesson-1",
         title: "Une mer qui grignote la terre",
         blocks: [
-          { type: "paragraphe", text: "Un mètre ou deux d'altitude à peine séparent une bonne partie de la Guinée-Bissau de l'océan. Estuaires, mangroves et une trentaine d'îles composent un pays parmi les plus exposés du monde à la montée des eaux." },
+          { type: "paragraphe", text: "Un mètre ou deux d'altitude à peine séparent une bonne partie de la Guinée-Bissau de l'océan. Bordée au nord par **le Sénégal** et au sud-est par la Guinée, cette contrée d'estuaires, de mangroves et d'îles compte parmi les plus exposées du monde à la montée des eaux." },
           { type: "chiffreCle", valeur: "36 100 km²", legende: "un des plus petits pays du continent" },
           { type: "paragraphe", text: "L'archipel des **Bijagós**, réserve de biosphère de l'UNESCO, abrite une faune remarquable, dont des **hippopotames marins**. Ses îles, difficiles d'accès, ont conservé des pratiques traditionnelles fortes et une riche biodiversité, tortues de mer et lamantins compris." },
           {
@@ -1667,7 +1667,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         blocks: [
           { type: "paragraphe", text: "En 1847, d'anciens esclaves affranchis venus des États-Unis fondent le Liberia et deviennent les « Américo-Libériens » — une minorité qui dominera la vie politique et économique du pays pendant plus d'un siècle après l'indépendance." },
           { type: "chiffreCle", valeur: "5,4 M", legende: "d'habitants, très urbanisés depuis les guerres" },
-          { type: "paragraphe", text: "La population mêle des peuples autochtones — **Kpelle**, Bassa, Gio — et les descendants des Américo-Libériens. Cette domination minoritaire a nourri des tensions profondes, comptant parmi les causes des **guerres civiles** des années 1990-2000." },
+          { type: "paragraphe", text: "La population mêle des peuples autochtones — **Kpelle**, Bassa, Gio — et les descendants des Américo-Libériens. La langue officielle est **l'anglais**, héritage direct des colons venus d'Amérique. Cette domination minoritaire a nourri des tensions profondes, menant aux **guerres civiles** des années 1990-2000." },
           {
             type: "aRetenir",
             points: [
@@ -1801,7 +1801,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               { label: "Indépendance", valeur: "22 septembre 1960" },
             ],
           },
-          { type: "paragraphe", text: "L'or est la grande ressource du pays, l'un des plus grands producteurs africains, devant le coton. Le Mali est l'héritier de puissants empires précoloniaux — celui du **Ghana**, du **Mali** de Mansa Moussa, et le Songhaï." },
+          { type: "paragraphe", text: "L'or est la première richesse du pays, devant le coton. Héritier des empires du **Ghana** et du **Mali**, le Mali a quitté la CEDEAO pour fonder avec ses voisins l'Alliance des États du Sahel (**AES**)." },
           {
             type: "aRetenir",
             points: [
@@ -1910,7 +1910,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               { label: "Indépendance", valeur: "3 août 1960" },
             ],
           },
-          { type: "paragraphe", text: "Le Niger est l'un des grands producteurs mondiaux d'**uranium**, aux côtés de l'or et du pétrole. Malgré ces richesses du sous-sol, c'est aussi l'un des **pays les plus pauvres** du monde, très vulnérable aux sécheresses." },
+          { type: "paragraphe", text: "Le Niger est l'un des grands producteurs mondiaux d'**uranium**, aux côtés de l'or et du pétrole. En 2025, le pays a acté son départ de **la CEDEAO** pour se tourner vers l'AES. Malgré ses richesses minières, c'est l'un des **pays les plus pauvres** du monde." },
           {
             type: "aRetenir",
             points: [
@@ -2408,7 +2408,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-23-angola-lesson-1",
         title: "Une enclave coupée du pays",
         blocks: [
-          { type: "paragraphe", text: "Cabinda, riche en pétrole, fait partie de l'Angola mais n'y touche pas : un couloir de RD Congo sépare cette enclave du reste du pays, une bizarrerie héritée du partage colonial." },
+          { type: "paragraphe", text: "Bordé à l'ouest par **l'océan Atlantique**, l'Angola possède une vaste façade maritime. Au nord, l'enclave pétrolière de Cabinda fait partie du pays sans y toucher, séparée par un couloir de RD Congo hérité du partage colonial." },
           { type: "chiffreCle", valeur: "1 couloir", legende: "de RD Congo sépare Cabinda du pays" },
           { type: "paragraphe", text: "Le plateau intérieur, plus tempéré grâce à l'altitude, occupe l'essentiel du territoire. Vers le sud, le pays s'assèche jusqu'aux confins du désert du **Namib**, tandis que les chutes de **Kalandula**, parmi les plus impressionnantes d'Afrique, témoignent de l'abondance des eaux du centre." },
           {
@@ -2563,7 +2563,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               { label: "Indépendance", valeur: "1er janvier 1960" },
             ],
           },
-          { type: "paragraphe", text: "L'économie, diversifiée, repose sur le **pétrole**, le cacao, le café, le coton et le **bois**. Le port de Douala dessert aussi les pays voisins enclavés. Sur le plan politique, le pays est dirigé par le même camp depuis plus de quatre décennies, l'un des plus longs mandats au monde." },
+          { type: "paragraphe", text: "L'économie repose sur le **pétrole**, le cacao et le bois. La devise nationale de la République est « **Paix, Travail, Patrie** ». Le port de **Douala** dessert toute la région, tandis que le pouvoir politique reste tenu par le même dirigeant depuis plus de quatre décennies." },
           {
             type: "aRetenir",
             points: [
@@ -2949,7 +2949,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-28-gabon-lesson-1",
         title: "Presque tout est forêt ici",
         blocks: [
-          { type: "paragraphe", text: "Près de 85 % du Gabon disparaît sous une forêt équatoriale continue, du littoral jusqu'aux confins du pays. Peu de nations sur Terre sont aussi entièrement recouvertes de vert que ce petit pays d'Afrique centrale." },
+          { type: "paragraphe", text: "Près de 85 % du Gabon disparaît sous une forêt dense, traversée en plein milieu par **l'équateur**. Peu de nations au monde sont aussi abondamment recouvertes de vert que ce pays d'Afrique centrale bordé par l'Atlantique." },
           { type: "chiffreCle", valeur: "85 %", legende: "du territoire couvert par la forêt équatoriale" },
           { type: "paragraphe", text: "Le fleuve **Ogooué** traverse cette forêt quasi continue d'ouest en est et a longtemps servi de voie de transport du bois. Créé dès 2002, un réseau de 13 parcs nationaux — dont **Lopé** et Ivindo — a valu au Gabon une réputation de pionnier africain de la conservation." },
           {
@@ -3271,7 +3271,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-31-tchad-lesson-1",
         title: "Des lacs éternels en plein désert",
         blocks: [
-          { type: "paragraphe", text: "En plein cœur du Sahara, dans le désert du Tibesti, des lacs d'eau douce existent depuis des millénaires sans jamais s'assécher — un miracle géologique au milieu de l'un des déserts les plus arides du monde." },
+          { type: "paragraphe", text: "Immense contrée sans accès à la mer, le Tchad est un **pays enclavé** au cœur du continent. Dans le désert du Tibesti au nord, des lacs d'eau douce existent depuis des millénaires sans jamais s'assécher — un miracle géologique en milieu aride." },
           { type: "chiffreCle", valeur: "3 415 m", legende: "l'Emi Koussi, plus haut sommet de tout le Sahara" },
           { type: "paragraphe", text: "Le massif du **Tibesti**, au nord, culmine à l'**Emi Koussi**. Les lacs d'**Ounianga**, permanents et classés à l'UNESCO, ponctuent ce désert. Plus au sud, le climat s'adoucit du sahélien à la savane." },
           {
@@ -3379,7 +3379,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-32-burundi-lesson-1",
         title: "Des collines cultivées jusqu'au sommet",
         blocks: [
-          { type: "paragraphe", text: "Au Burundi, les collines sont cultivées jusqu'à leur sommet : il ne reste presque plus un mètre carré de terre sauvage dans ce petit pays parmi les plus densément peuplés d'Afrique." },
+          { type: "paragraphe", text: "Niché dans la région des Grands Lacs, le Burundi n'a aucun accès à la mer : c'est un petit pays **enclavé** dont les collines sont cultivées jusqu'à leur sommet, parmi les plus densément peuplés du continent." },
           { type: "chiffreCle", valeur: "1 470 m", legende: "la profondeur du lac Tanganyika, un record mondial" },
           { type: "paragraphe", text: "La crête **Congo-Nil**, qui traverse le pays du nord au sud, sépare les bassins du Congo et du Nil. Le pays laisse peu de place aux espaces naturels préservés, à l'exception de quelques réserves autour du lac **Tanganyika**." },
           {
@@ -3808,7 +3808,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-36-ethiopie-lesson-1",
         title: "Le toit de l'Afrique",
         blocks: [
-          { type: "paragraphe", text: "Les hauts plateaux éthiopiens sont si vastes et si élevés qu'on les surnomme le « toit de l'Afrique » — un continent en soi, entaillé par la vallée du Rift et parsemé de lacs volcaniques." },
+          { type: "paragraphe", text: "Les hauts plateaux éthiopiens sont surnommés le « toit de l'Afrique ». Depuis l'indépendance de l'Érythrée en 1993, **l'Éthiopie est enclavée** et ne dispose plus d'aucun débouché maritime direct sur la mer Rouge." },
           { type: "chiffreCle", valeur: "Nil Bleu", legende: "prend sa source au lac Tana, sur les hauts plateaux" },
           { type: "paragraphe", text: "Le **Rift** éthiopien traverse le pays du nord-est au sud-ouest et sépare les hauts plateaux en deux blocs, ponctués de lacs volcaniques. Au lac **Tana**, le plus grand du pays, prend sa source le Nil Bleu, qui rejoindra le Nil à Khartoum." },
           {
@@ -3933,7 +3933,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         blocks: [
           { type: "paragraphe", text: "Le Kenya compte environ 55 millions d'habitants et une quarantaine de groupes ethniques. Les Massaï, minoritaires en nombre, sont pourtant l'un des peuples africains les plus connus dans le monde entier." },
           { type: "chiffreCle", valeur: "40+", legende: "groupes ethniques, dont Kikuyu, Luo et Massaï" },
-          { type: "paragraphe", text: "Les **Kikuyu**, plus nombreux et souvent influents en politique et en affaires, comptent parmi la quarantaine de groupes du pays, aux côtés des Luo, Luhya et Kalenjin. Les **Massaï** incarnent une culture pastorale traditionnelle encore vivace dans le sud." },
+          { type: "paragraphe", text: "Les **Kikuyu** comptent parmi la quarantaine de groupes du pays, aux côtés des Luo et des Massaï. Les deux langues officielles de la nation sont **le swahili et l'anglais**, favorisant l'unité au sein de cette riche mosaïque culturelle." },
           {
             type: "aRetenir",
             points: [
@@ -4020,7 +4020,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-38-madagascar-lesson-1",
         title: "Le huitième continent",
         blocks: [
-          { type: "paragraphe", text: "Séparée du continent africain depuis environ 90 millions d'années, Madagascar a évolué seule si longtemps que les naturalistes la surnomment le « huitième continent » : près de 90 % de ses espèces n'existent nulle part ailleurs." },
+          { type: "paragraphe", text: "Isolée au cœur de **l'océan Indien** et séparée du continent depuis 90 millions d'années, Madagascar a évolué à l'écart : les naturalistes la surnomment le « huitième continent », car près de 90 % de ses espèces sont endémiques." },
           { type: "chiffreCle", valeur: "90 %", legende: "des espèces malgaches n'existent nulle part ailleurs" },
           { type: "paragraphe", text: "Les **tsingy de Bemaraha**, dans l'ouest, forment un extraordinaire massif calcaire aux aiguilles rocheuses tranchantes, classé à l'UNESCO. L'allée des **baobabs**, près de Morondava, et les forêts humides de l'est complètent cette mosaïque de paysages uniques au monde." },
           {
@@ -4340,7 +4340,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-41-rwanda-lesson-1",
         title: "Le pays des mille collines",
         blocks: [
-          { type: "paragraphe", text: "Le Rwanda porte bien son surnom, « le pays des mille collines » : nulle part ailleurs en Afrique le relief n'est aussi dense de sommets, de volcans actifs et d'un grand lac aux eaux calmes, le Kivu." },
+          { type: "paragraphe", text: "Surnommé « le pays des mille collines », le Rwanda est un État d'Afrique centrale sans littoral : **il est enclavé** dans la région des Grands Lacs, entre volcans des Virunga et rives du lac Kivu." },
           { type: "chiffreCle", valeur: "4 500 m", legende: "les volcans des Virunga, encore actifs" },
           { type: "paragraphe", text: "Les volcans des **Virunga**, dont certains encore actifs, abritent avec la forêt environnante l'un des derniers refuges des **gorilles de montagne** au monde. Le lac Kivu, l'un des grands lacs du Rift, offre un climat plus doux sur ses rives." },
           {
@@ -5020,7 +5020,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               { label: "Indépendance", valeur: "30 septembre 1966" },
             ],
           },
-          { type: "paragraphe", text: "Le pays a connu en **2024** sa première alternance politique après des décennies de pouvoir d'un même parti, sans troubles ni contestation. Le tourisme, avec l'Okavango et les grandes concentrations d'éléphants du parc de **Chobe**, complète l'économie." },
+          { type: "paragraphe", text: "Depuis sa capitale **Gaborone**, le pays a connu en **2024** une alternance politique pacifique exemplaire. Le tourisme vers l'Okavango et les éléphants du parc de **Chobe** complète les revenus diamantaires." },
           {
             type: "aRetenir",
             points: [
@@ -5082,7 +5082,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-48-eswatini-lesson-1",
         title: "Presque avalé par son voisin",
         blocks: [
-          { type: "paragraphe", text: "En quelques dizaines de kilomètres à peine, l'Eswatini passe du Highveld frais et montagneux, à l'ouest, au Lowveld chaud et sec, à l'est — une diversité climatique rare pour l'un des plus petits pays du continent." },
+          { type: "paragraphe", text: "Coincé entre l'Afrique du Sud et le Mozambique, l'Eswatini n'a aucun accès à la mer : ce petit royaume d'Afrique australe **est enclavé** et passe en quelques dizaines de kilomètres du Highveld montagneux au Lowveld chaud et sec." },
           { type: "chiffreCle", valeur: "Highveld", legende: "frais et pluvieux, à l'ouest du pays" },
           { type: "paragraphe", text: "Le relief passe du **Highveld** montagneux et frais, à l'ouest, au **Lowveld** chaud et savanicole, à l'est, plus proche du climat du Mozambique voisin. Cette gradation crée une diversité climatique remarquable sur un territoire pourtant réduit." },
           {
@@ -5296,7 +5296,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-50-malawi-lesson-1",
         title: "Le lac aux mille poissons",
         blocks: [
-          { type: "paragraphe", text: "Le lac Malawi abrite plus d'espèces de poissons que n'importe quel autre lac au monde — des centaines de cichlidés aux couleurs éclatantes, uniques à ces eaux, qui en font un site d'étude mondial pour l'évolution." },
+          { type: "paragraphe", text: "Sans aucun littoral maritime, le Malawi est un pays **enclavé** d'Afrique australe : son immense lac lui tient lieu de mer intérieure et abrite plus d'espèces de poissons que tout autre lac au monde, dont des centaines de cichlidés uniques." },
           { type: "chiffreCle", valeur: "3 000 m", legende: "le mont Mulanje, isolé au milieu des plaines" },
           { type: "paragraphe", text: "La vallée du **Rift**, des plateaux et de hauts reliefs composent le paysage. Le lac Malawi, troisième plus grand lac d'Afrique, occupe une grande partie de la frontière est, tandis que le **mont Mulanje**, isolé au sud, culmine à plus de 3 000 m." },
           {
@@ -5614,7 +5614,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-53-zambie-lesson-1",
         title: "Un pays en forme de papillon",
         blocks: [
-          { type: "paragraphe", text: "Sur la carte, la Zambie dessine une forme de papillon aux ailes déployées — un territoire entouré de huit pays, au carrefour de presque toutes les routes commerciales d'Afrique australe, du Zambèze au Congo." },
+          { type: "paragraphe", text: "Sur la carte, la Zambie dessine une forme de papillon aux ailes déployées. Sans aucun littoral marin, **la Zambie est enclavée** au cœur de l'Afrique australe, entourée par huit pays voisins entre le Zambèze et le bassin du Congo." },
           { type: "chiffreCle", valeur: "8 voisins", legende: "un record de frontières pour l'Afrique australe" },
           { type: "paragraphe", text: "Le lac de **Kariba**, l'un des plus grands lacs artificiels du monde, est né d'un barrage construit sur le **Zambèze** dans les années 1950-1960, partagé avec le Zimbabwe. Le fleuve y forme aussi les chutes Victoria, plus en amont." },
           {
@@ -5720,7 +5720,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-54-zimbabwe-lesson-1",
         title: "Entre deux fleuves, un plateau",
         blocks: [
-          { type: "paragraphe", text: "Le Zimbabwe est encadré par deux grands fleuves, le Zambèze au nord et le Limpopo au sud, avec au centre un haut plateau frais, le Highveld, qui a longtemps fait sa richesse agricole." },
+          { type: "paragraphe", text: "Pays d'Afrique australe sans accès à la mer, le Zimbabwe est un **État enclavé** encadré par le Zambèze au nord et le Limpopo au sud, avec en son centre un haut plateau frais, le Highveld." },
           { type: "chiffreCle", valeur: "2 fleuves", legende: "le Zambèze au nord, le Limpopo au sud" },
           { type: "paragraphe", text: "Le **Highveld**, aux sols volcaniques fertiles, a longtemps été la principale région agricole du pays. Au nord-ouest, le Zambèze forme les chutes Victoria ; le parc de **Hwange** abrite l'une des plus importantes populations d'éléphants d'Afrique." },
           {

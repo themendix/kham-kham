@@ -199,4 +199,6 @@ export interface UserProgress {
   featuredLessonKey: string | null;
   /** État du module Quiz (onglet Quiz) : cauris, révision espacée, records par territoire */
   quizGame: QuizGameState;
+  /** Matières choisies lors de l'onboarding (biaise les recommandations dès le premier jour), vide si sauté */
+  preferredCategoryIds: string[];
 }

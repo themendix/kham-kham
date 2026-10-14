@@ -43,6 +43,7 @@ function progress(overrides: Partial<UserProgress> = {}): UserProgress {
     completedLessonIds: [],
     featuredLessonKey: null,
     quizGame: { cauris: 0, questions: {}, records: {}, gamesPlayed: 0 },
+    preferredCategoryIds: [],
     ...overrides,
   };
 }
@@ -79,5 +80,12 @@ describe("recommendCourses", () => {
     // Sans le garde-fou E4, "p1" (matière à 1 seul cours, jamais touchée) remonterait en tête
     // indéfiniment. Avec le garde-fou, histoire/geo (matières constituées) doivent rester devant.
     expect(result[0].course.categoryId).not.toBe("perso");
+  });
+
+  it("priorise une matière choisie à l'onboarding, sous le dernier cours ouvert", () => {
+    const p = progress({ preferredCategoryIds: ["geo"] });
+    const result = recommendCourses(ALL_COURSES, ALL_COURSES, CATEGORIES, p, 1);
+    expect(result[0].course.categoryId).toBe("geo");
+    expect(result[0].reason).toBe("Une matière que tu as choisie");
   });
 });

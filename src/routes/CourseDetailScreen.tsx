@@ -1,5 +1,5 @@
-import { useEffect, useMemo, useState } from "react";
-import { useParams, useNavigate, Link } from "react-router-dom";
+import { useEffect, useMemo, useRef, useState } from "react";
+import { useParams, useNavigate, useNavigationType, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import type { Course } from "@/types";
 import { getCachedFullCourse, getFullCourse } from "@/data/courseContent";
@@ -9,7 +9,6 @@ import { PARCOURS } from "@/data/parcours";
 import { useAppStore } from "@/store/useAppStore";
 import { getSubjectProgress, type SubjectProgress } from "@/lib/subjectProgress";
 import { lessonKey } from "@/lib/featured";
-import { toISODate } from "@/lib/gamification";
 import {
   buildCelebrationSegment,
   resolveOutroTail,
@@ -94,15 +93,17 @@ export function CourseDetailScreen() {
 /** Écran de détail d'un cours : leçons paginées, puis séquence de fin de cours (célébration, mini quiz optionnel, streak) */
 function CourseDetailBody({ course }: { course: Course }) {
   const navigate = useNavigate();
+  const navigationType = useNavigationType();
   const progress = useAppStore((s) => s.progress);
-  const completeCourse = useAppStore((s) => s.completeCourse);
+  const finishCourse = useAppStore((s) => s.finishLearning);
   const recordQuizResult = useAppStore((s) => s.recordQuizResult);
-  const updateStreak = useAppStore((s) => s.updateStreak);
   const setLastCourse = useAppStore((s) => s.setLastCourse);
-  const markCourseStarted = useAppStore((s) => s.markCourseStarted);
   const completeLesson = useAppStore((s) => s.completeLesson);
 
   const [stage, setStage] = useState<Stage>("lessons");
+  const [completionProgress, setCompletionProgress] = useState<typeof progress | null>(null);
+  const outcomeProgress = completionProgress ?? progress;
+  const previousStageRef = useRef(stage);
   // Reprise de lecture : reprend à la première leçon non lue, sauf cours déjà terminé
   // (relecture depuis le début, cohérent avec `isRevision` ci-dessous) ; repli sur 0.
   const [lessonIndex, setLessonIndex] = useState(() => {
@@ -134,13 +135,15 @@ function CourseDetailBody({ course }: { course: Course }) {
   );
 
   useEffect(() => {
-    setLastCourse(course.id);
+    void setLastCourse(course.id).catch(() => {});
   }, [course.id, setLastCourse]);
 
   // Chaque écran de la séquence démarre en haut de page : sans ça, le scroll résiduel d'une
   // leçon longue (ou d'un écran d'outro précédent) peut masquer le bouton "Retour", pourtant
   // censé rester visible pendant toute la séquence (voir docs/PROMPT-refonte-ecrans-fin-de-cours.md § 1.3).
   useEffect(() => {
+    if (previousStageRef.current === stage) return;
+    previousStageRef.current = stage;
     window.scrollTo({ top: 0 });
   }, [stage]);
 
@@ -151,38 +154,36 @@ function CourseDetailBody({ course }: { course: Course }) {
     setLessonIndex((i) => Math.max(0, i - 1));
   }
 
-  function goNextLesson() {
-    if (lessonIndex < course.lessons.length - 1) {
-      completeLesson(course.id, course.lessons[lessonIndex].id);
-      markCourseStarted(course.id);
-      setLessonIndex((i) => i + 1);
-    } else {
-      if (course.lessons.length === 1) markCourseStarted(course.id);
-      finishLearning();
-    }
+  const learningPending = useRef(false);
+  async function goNextLesson() {
+    if (learningPending.current) return;
+    learningPending.current = true;
+    try {
+      if (lessonIndex < course.lessons.length - 1) {
+        await completeLesson(course.id, course.lessons[lessonIndex].id);
+        setLessonIndex((i) => i + 1);
+      } else await finishLearning();
+    } catch { /* Stay on the current lesson for retry. */ }
+    finally { learningPending.current = false; }
   }
 
-  function finishLearning() {
-    const alreadyCompleted = progress.completedCourseIds.includes(course.id);
-    const rankBefore = progress.rank;
-    const levelBefore = progress.level;
-    const subjectBeforeCredit = getSubjectProgress(course.categoryId, progress, COURSE_INDEX);
-    const streakAlreadyToday = progress.streak.lastActiveDate === toISODate(new Date());
-    const parcoursAlreadyDone = !!parcours && progress.completedParcoursIds.includes(parcours.id);
-
-    completeLesson(course.id, course.lessons[lessonIndex].id);
-    completeCourse(course.id, course.xp);
-    updateStreak();
-
-    // completeCourse/updateStreak (set Zustand) sont synchrones : l'état est déjà à jour ici.
-    const stateAfter = useAppStore.getState().progress;
+  async function finishLearning() {
+    const result = await finishCourse(course.id, course.lessons[lessonIndex].id, course.xp);
+    const before = result.before;
+    const alreadyCompleted = before.completedCourseIds.includes(course.id);
+    const rankBefore = before.rank;
+    const levelBefore = before.level;
+    const subjectBeforeCredit = getSubjectProgress(course.categoryId, before, COURSE_INDEX);
+    const parcoursAlreadyDone = !!parcours && before.completedParcoursIds.includes(parcours.id);
+    const stateAfter = result.progress;
+    setCompletionProgress(stateAfter);
     const subjectAfterCredit = getSubjectProgress(course.categoryId, stateAfter, COURSE_INDEX);
 
     setRankAtStart(rankBefore);
     setLevelAtStart(levelBefore);
     setSubjectBefore(subjectBeforeCredit);
     setIsRevision(alreadyCompleted);
-    setStreakAdvanced(!streakAlreadyToday);
+    setStreakAdvanced(before.streak.lastActiveDate !== stateAfter.streak.lastActiveDate);
     setParcoursJustCompleted(
       !parcoursAlreadyDone && !!parcours && stateAfter.completedParcoursIds.includes(parcours.id),
     );
@@ -225,25 +226,27 @@ function CourseDetailBody({ course }: { course: Course }) {
     setStage(tailScreens[nextIndex]);
   }
 
-  function handleQuizFinish(score: number, total: number) {
-    recordQuizResult({ courseId: course.id, score, total, date: new Date().toISOString() });
+  const quizResultId = useRef(crypto.randomUUID());
+  async function handleQuizFinish(score: number, total: number) {
+    await recordQuizResult({ courseId: course.id, score, total, date: new Date().toISOString() }, "result:" + quizResultId.current);
     setQuizResultState({ score, total });
     advanceTail();
   }
 
   function retryQuiz() {
+    quizResultId.current = crypto.randomUUID();
     setQuizAttempt((a) => a + 1);
     setQuizResultState(null);
     setTailIndex(0);
     setStage("quiz");
   }
 
-  const rankedUp = rankAtStart !== null && progress.rank !== rankAtStart;
+  const rankedUp = rankAtStart !== null && outcomeProgress.rank !== rankAtStart;
   // Célébration de montée de niveau numérique global, distincte du changement de rang nommé —
   // elle prend le relais une fois "Gardien du savoir" atteint (A1), où `rankedUp` ne se
   // déclenchera plus jamais puisque `rank` reste figé. Sans lien avec l'écran 2 (niveau de
   // matière) : affichée en pastille sur l'écran 1 uniquement.
-  const levelUp = levelAtStart !== null && progress.level > levelAtStart && !rankedUp;
+  const levelUp = levelAtStart !== null && outcomeProgress.level > levelAtStart && !rankedUp;
 
   const isLastCelebration = celebrationIndex === celebrationSegment.length - 1;
   const celebrationPrimaryLabel = isLastCelebration ? "Passer au quiz →" : "Continuer →";
@@ -265,6 +268,8 @@ function CourseDetailBody({ course }: { course: Course }) {
 
       {stage === "lessons" && (
         <LessonViewer
+          courseId={course.id}
+          preserveInitialScroll={navigationType === "POP"}
           lesson={course.lessons[lessonIndex]}
           lessonIndex={lessonIndex}
           totalLessons={course.lessons.length}
@@ -280,13 +285,13 @@ function CourseDetailBody({ course }: { course: Course }) {
         <LearningDoneCard
           course={course}
           category={category}
-          subject={getSubjectProgress(course.categoryId, progress, COURSE_INDEX)}
+          subject={getSubjectProgress(course.categoryId, outcomeProgress, COURSE_INDEX)}
           subjectBefore={subjectBefore}
           isRevision={isRevision}
           rankedUp={rankedUp}
-          newRank={progress.rank}
+          newRank={outcomeProgress.rank}
           levelUp={levelUp}
-          newLevel={progress.level}
+          newLevel={outcomeProgress.level}
           primaryLabel={celebrationPrimaryLabel}
           onPrimary={celebrationOnPrimary}
           secondaryLabel={celebrationSecondaryLabel}
@@ -298,7 +303,7 @@ function CourseDetailBody({ course }: { course: Course }) {
         <LevelUpCard
           category={category}
           fromLevel={subjectBefore.level}
-          toLevel={getSubjectProgress(course.categoryId, progress, COURSE_INDEX).level}
+          toLevel={getSubjectProgress(course.categoryId, outcomeProgress, COURSE_INDEX).level}
           primaryLabel={celebrationPrimaryLabel}
           onPrimary={celebrationOnPrimary}
           secondaryLabel={celebrationSecondaryLabel}
@@ -309,7 +314,7 @@ function CourseDetailBody({ course }: { course: Course }) {
       {stage === "collection" && parcours && (
         <CollectionProgressCard
           parcours={parcours}
-          completedCourseIds={progress.completedCourseIds}
+          completedCourseIds={outcomeProgress.completedCourseIds}
           justCompleted={parcoursJustCompleted}
           primaryLabel={celebrationPrimaryLabel}
           onPrimary={celebrationOnPrimary}
@@ -340,7 +345,7 @@ function CourseDetailBody({ course }: { course: Course }) {
 
       {stage === "streak" && (
         <StreakCelebration
-          streak={progress.streak}
+          streak={outcomeProgress.streak}
           subjectName={category.name}
           onHome={() => navigate("/")}
         />

@@ -1,0 +1,1895 @@
+{
+  "scope": "Cours Histoire 01 à 10, 50 leçons, recherche du 6 octobre 2026",
+  "entries": [
+    {
+      "key": "01-1",
+      "existing": true,
+      "reason": "Les deux couronnes de Narmer rendent concrète l'unification ; pilote conservé."
+    },
+    {
+      "key": "01-2",
+      "research": [
+        "01-2b",
+        0
+      ],
+      "author": "Wikimedia Commons",
+      "alt": "Ramsès III présente Maât au dieu Osiris.",
+      "legende": "Ramsès III offrant Maât à Osiris, tombe KV11.",
+      "fit": "contain",
+      "reason": "Le pharaon et la figure de Maât matérialisent son rôle religieux.",
+      "source": {
+        "title": "File:Rameses III offering Maat to Osiris (KV11).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Rameses_III_offering_Maat_to_Osiris_%28KV11%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Rameses_III_offering_Maat_to_Osiris_(KV11).jpg",
+        "width": 499,
+        "height": 397,
+        "license": "Public domain",
+        "author": "Unknown authorUnknown author",
+        "description": "Rameses III offering Ma'at to Osiris. Scene from tomb of Ramses III. (KV11)",
+        "date": "New Kingdom, Dynasty 20, Rameses III"
+      },
+      "asset": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-2.webp",
+      "output": {
+        "width": 499,
+        "height": 397,
+        "bytes": 69986
+      },
+      "paragraphs": [
+        "Le pharaon garantit la **Maât**, l'ordre juste du monde. Son pouvoir est aussi religieux.",
+        "Les **scribes** comptent, taxent et enregistrent. Avec les vizirs et gouverneurs, ils rendent possibles les grands chantiers."
+      ],
+      "points": [
+        "Le pharaon garantit la **Maât**",
+        "Trois grands Empires sur 3 000 ans",
+        "Les **scribes** administrent l'État"
+      ],
+      "aside": "Un texte scolaire vante le scribe : il ne se salit jamais les mains.",
+      "wordCount": 103
+    },
+    {
+      "key": "01-3",
+      "research": [
+        "01-3",
+        0
+      ],
+      "author": "Hans Hillewaert",
+      "alt": "Pierre gravée en trois zones d'écritures différentes.",
+      "legende": "La pierre de Rosette et ses trois écritures.",
+      "fit": "contain",
+      "reason": "L'objet exact utilisé pour le déchiffrement ; conserver toute la surface inscrite.",
+      "source": {
+        "title": "File:Rosetta Stone.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/23/Rosetta_Stone.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG",
+        "width": 3665,
+        "height": 4288,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Hans Hillewaert",
+        "description": "The Rosetta Stone in the British Museum.",
+        "date": "21 November 2007"
+      },
+      "asset": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-3.webp",
+      "output": {
+        "width": 1200,
+        "height": 1404,
+        "bytes": 342078
+      },
+      "paragraphs": [
+        "Les hiéroglyphes sont restés illisibles pendant plus de quatorze siècles. Une pierre fournit la clé.",
+        "En **1822**, **Champollion** utilise la pierre de Rosette : un même texte en hiéroglyphes, démotique et grec."
+      ],
+      "points": [
+        "**Champollion** déchiffre les hiéroglyphes en 1822",
+        "Les scribes maîtrisaient l'écriture",
+        "Médecine, mathématiques et astronomie étaient développées"
+      ],
+      "aside": "Le calendrier de **365 jours** suivait la crue et le lever de Sirius.",
+      "wordCount": 87
+    },
+    {
+      "key": "01-4",
+      "research": [
+        "01-4",
+        0
+      ],
+      "author": "TIMEA / Rice University",
+      "alt": "Anubis surveille une balance pesant le cœur d'Ani.",
+      "legende": "La pesée du cœur d'Ani, fac-similé publié en 1902.",
+      "fit": "contain",
+      "reason": "La balance et Anubis expliquent directement le jugement du défunt ; fac-similé identifié.",
+      "source": {
+        "title": "File:The Heart of Ani Being Weighed in the Balance. (1902) - TIMEA.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/6b/The_Heart_of_Ani_Being_Weighed_in_the_Balance._%281902%29_-_TIMEA.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:The_Heart_of_Ani_Being_Weighed_in_the_Balance._(1902)_-_TIMEA.jpg",
+        "width": 1024,
+        "height": 513,
+        "license": "CC BY-SA 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+        "author": "Unknown author",
+        "description": "The god Anubis weighs the heart of Ani while others look on.",
+        "date": "1902"
+      },
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/The_Heart_of_Ani_Being_Weighed_in_the_Balance._%281902%29_-_TIMEA.jpg/960px-The_Heart_of_Ani_Being_Weighed_in_the_Balance._%281902%29_-_TIMEA.jpg",
+      "asset": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-4.webp",
+      "output": {
+        "width": 960,
+        "height": 481,
+        "bytes": 101058
+      },
+      "paragraphs": [
+        "Pour les Égyptiens, mourir ouvre un passage vers l'éternité. Le défunt doit réussir un jugement.",
+        "**Osiris** règne sur les morts ; **Anubis** veille à la pesée du cœur. La momification préserve le corps."
+      ],
+      "points": [
+        "**Osiris**, maître des morts",
+        "La momification préserve le corps",
+        "Le cœur est jugé après la mort"
+      ],
+      "aside": "Face à la plume de **Maât**, un cœur trop lourd est dévoré.",
+      "wordCount": 106
+    },
+    {
+      "key": "01-5",
+      "research": [
+        "01-5",
+        1
+      ],
+      "author": "Prioryman",
+      "alt": "Sphinx à visage royal du souverain nubien Taharqa.",
+      "legende": "Sphinx de Taharqa, roi nubien devenu pharaon, VIIᵉ siècle av. J.-C.",
+      "fit": "contain",
+      "reason": "Un objet de la XXVᵉ dynastie montre l'exercice nubien du pouvoir pharaonique.",
+      "source": {
+        "title": "File:Sphinx of Taharqo.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Sphinx_of_Taharqo.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sphinx_of_Taharqo.jpg",
+        "width": 1531,
+        "height": 2096,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Prioryman",
+        "description": "Sphinx of Taharqo, British Museum room 65",
+        "date": "2012-02-19"
+      },
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c0/Sphinx_of_Taharqo.jpg/1280px-Sphinx_of_Taharqo.jpg",
+      "asset": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-5.webp",
+      "output": {
+        "width": 1200,
+        "height": 1643,
+        "bytes": 598800
+      },
+      "paragraphs": [
+        "Au sud, la **Nubie** partage le Nil avec l'Égypte : partenaire, rivale, puis puissance conquérante.",
+        "Au VIIIᵉ siècle av. J.-C., ses rois fondent la **XXVᵉ dynastie**. Le royaume de Koush gouverne l'Égypte depuis Napata."
+      ],
+      "points": [
+        "Échanges d'or et d'ivoire avec la Nubie",
+        "Des rois nubiens gouvernent l'Égypte",
+        "Une civilisation pleinement **africaine**"
+      ],
+      "wordCount": 94
+    },
+    {
+      "key": "02-1",
+      "research": [
+        "02-1",
+        2
+      ],
+      "author": "Marsupium",
+      "alt": "Figurines de soldats nubiens armés d'arcs.",
+      "legende": "Archers nubiens : réplique du modèle funéraire de Mesehti.",
+      "reason": "Les arcs rendent visible le surnom Ta-Séti ; il s'agit d'une réplique de musée, indiquée.",
+      "source": {
+        "title": "File:Replica of the Nubian Archers from the Tomb of Mesehti - Nubian Museum 04.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/41/Replica_of_the_Nubian_Archers_from_the_Tomb_of_Mesehti_-_Nubian_Museum_04.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Replica_of_the_Nubian_Archers_from_the_Tomb_of_Mesehti_-_Nubian_Museum_04.jpg",
+        "width": 4032,
+        "height": 3024,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "author": "Marsupium",
+        "description": "Replica of the wooden model of Nubian Archers from the Tomb of Mesehti in Asyut, now on display in the Cairo Museum, 11th Dynasty, in the Nubian Museum in Aswan, Egypt",
+        "date": "2024-03-07 19:39:41"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/41/Replica_of_the_Nubian_Archers_from_the_Tomb_of_Mesehti_-_Nubian_Museum_04.jpg/1280px-Replica_of_the_Nubian_Archers_from_the_Tomb_of_Mesehti_-_Nubian_Museum_04.jpg",
+      "asset": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-1.webp",
+      "output": {
+        "width": 1200,
+        "height": 900,
+        "bytes": 166294
+      },
+      "paragraphs": [
+        "Les Égyptiens nommaient la Nubie **Ta-Séti**, « pays de l'arc », tant ses archers étaient redoutés.",
+        "Autour de **Kerma**, Koush développe sa civilisation. Or, ivoire et ébène attirent les marchands de son voisin égyptien."
+      ],
+      "points": [
+        "**Ta-Séti** signifie « pays de l'arc »",
+        "Kerma, capitale dès le IIIᵉ millénaire av. J.-C.",
+        "Or, ivoire et ébène nourrissent les échanges"
+      ],
+      "aside": "L'Égypte recrutait aussi des archers nubiens comme mercenaires.",
+      "wordCount": 95
+    },
+    {
+      "key": "02-2",
+      "research": [
+        "02-2",
+        0
+      ],
+      "author": "M0tty",
+      "alt": "Petit Taharqa protégé entre les pattes du bélier d'Amon.",
+      "legende": "Taharqa sous la protection d'Amon, VIIᵉ siècle av. J.-C.",
+      "fit": "contain",
+      "reason": "Taharqa apparaît sur une sculpture provenant de Kawa, liée à son activité de bâtisseur.",
+      "source": {
+        "title": "File:Granite ram of Amun with King Taharqa - British Museum.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Granite_ram_of_Amun_with_King_Taharqa_-_British_Museum.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Granite_ram_of_Amun_with_King_Taharqa_-_British_Museum.jpg",
+        "width": 2848,
+        "height": 4272,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "M0tty",
+        "description": "Granite ram of Amun with King Taharqa. Twenty-Fifth Dynasty, 690-664 BC, from Kawa in Nubia. (EA 1779) British Museum Native name British Museum Location London Coordinates 51° 31′ 10″ N, 0° 07′ 37″ W Established 1753 Website www.britishmuseum.org Authority file : Q6373 VIAF: 134857252 ISNI: 0000000123428817 ULAN: 500125180 LCCN: n79107735 NLA: 35022119 WorldCat institution QS:P195,Q6373",
+        "date": "2010-08-14 11:15:47"
+      },
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Granite_ram_of_Amun_with_King_Taharqa_-_British_Museum.jpg/1280px-Granite_ram_of_Amun_with_King_Taharqa_-_British_Museum.jpg",
+      "asset": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-2.webp",
+      "output": {
+        "width": 1200,
+        "height": 1800,
+        "bytes": 366354
+      },
+      "paragraphs": [
+        "Depuis **Napata**, les rois de Koush conquièrent l'Égypte et fondent la XXVᵉ dynastie.",
+        "**Taharqa** bâtit des temples en Égypte et en Nubie. Les Assyriens finissent par repousser Koush vers le sud."
+      ],
+      "points": [
+        "**Piânkhy** conquiert l'Égypte : XXVᵉ dynastie",
+        "**Taharqa**, souverain bâtisseur",
+        "Les Assyriens repoussent Koush vers le sud"
+      ],
+      "aside": "Ces souverains nubiens sont aujourd'hui surnommés les « pharaons noirs ».",
+      "wordCount": 89
+    },
+    {
+      "key": "02-3",
+      "missing": "Recherche de scories et de fours de Méroé : photographies scientifiques trouvées, mais licence de réutilisation de la figure non confirmée. Pas de pyramides génériques pour illustrer la métallurgie.",
+      "searchSources": [
+        "https://doi.org/10.1016/j.jas.2016.04.022",
+        "https://discovery.ucl.ac.uk/id/eprint/10043068/"
+      ]
+    },
+    {
+      "key": "02-4",
+      "research": [
+        "02-4",
+        0
+      ],
+      "author": "Khruner",
+      "alt": "La reine Amanishakhéto entourée de deux divinités sur une stèle.",
+      "legende": "Amanishakhéto avec Amésémi et Apédémak, Ier siècle av. J.-C.",
+      "fit": "contain",
+      "reason": "Une seule stèle rapproche Candace, dieu-lion et signes inscrits ; pas de substitution égyptienne.",
+      "source": {
+        "title": "File:Relief Amanishakheto Munich.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Relief_Amanishakheto_Munich.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:Relief_Amanishakheto_Munich.JPG",
+        "width": 1012,
+        "height": 1518,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Khruner",
+        "description": "Closeup of a stele depicting the Meroitic kandake Amanishakheto between the goddess Amesemi and the god Apedemak. Sandstone, from the the temple of Amun in Naqa, 1st century BCE. Munich, Staatliches Museum Ägyptischer Kunst (on loan from the Khartoum National Museum).",
+        "date": "2015-10-03 15:07:23"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5a/Relief_Amanishakheto_Munich.JPG/960px-Relief_Amanishakheto_Munich.JPG",
+      "asset": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-4.webp",
+      "output": {
+        "width": 960,
+        "height": 1440,
+        "bytes": 262478
+      },
+      "paragraphs": [
+        "À Méroé, les **Candaces** gouvernent en leur nom propre : le pouvoir royal appartient aussi aux femmes.",
+        "Koush crée l'écriture **méroïtique** et honore **Apédémak**, dieu-lion guerrier, aux côtés d'Amon."
+      ],
+      "points": [
+        "Le méroïtique reste partiellement indéchiffré",
+        "**Apédémak**, dieu-lion guerrier",
+        "Les Candaces règnent en leur nom propre"
+      ],
+      "aside": "On connaît les sons du méroïtique, mais sa langue reste mal comprise.",
+      "wordCount": 88
+    },
+    {
+      "key": "02-5",
+      "research": [
+        "02-5",
+        3
+      ],
+      "alt": "Pyramides nubiennes aux pentes abruptes dans le désert.",
+      "legende": "Les pyramides de Méroé, patrimoine du royaume de Koush.",
+      "reason": "L'héritage architectural conservé, sujet de la conclusion.",
+      "source": {
+        "title": "File:A wonderful picture of the pyramids of Meroe in Sudan.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/6/66/A_wonderful_picture_of_the_pyramids_of_Meroe_in_Sudan.png",
+        "page": "https://commons.wikimedia.org/wiki/File:A_wonderful_picture_of_the_pyramids_of_Meroe_in_Sudan.png",
+        "width": 847,
+        "height": 528,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Ola.m tbe",
+        "description": "The pyramids of Meroe are part of a larger group of Nubian pyramids, which were built in the time of the Kushite Kingdom over a period close to a millennium. Near Meroe, three royal tombs were built.",
+        "date": "2020-10-09"
+      },
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/A_wonderful_picture_of_the_pyramids_of_Meroe_in_Sudan.png/500px-A_wonderful_picture_of_the_pyramids_of_Meroe_in_Sudan.png",
+      "asset": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-5.webp",
+      "output": {
+        "width": 500,
+        "height": 312,
+        "bytes": 13994
+      },
+      "paragraphs": [
+        "Au **IVᵉ siècle**, Méroé décline tandis qu'**Aksoum** prend une place croissante dans le commerce.",
+        "Fer, écriture et monuments témoignent du savoir-faire de Koush. Ses sites sont aujourd'hui classés par l'UNESCO."
+      ],
+      "points": [
+        "Koush maîtrisait fer, écriture et architecture",
+        "Méroé décline face à **Aksoum**",
+        "Ses sites sont classés par l'UNESCO"
+      ],
+      "wordCount": 105
+    },
+    {
+      "key": "03-1",
+      "file": "File:Adulis.jpg",
+      "alt": "Fondations de pierre du port antique d'Adoulis.",
+      "legende": "Vestiges d'Adoulis, port d'Aksoum sur la mer Rouge.",
+      "reason": "Le port nommé dans la leçon est le point d'entrée du commerce international.",
+      "research": [
+        "03-1b",
+        0
+      ],
+      "author": "David Stanley",
+      "source": {
+        "title": "File:Adulis (8529061940).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4b/Adulis_%288529061940%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Adulis_(8529061940).jpg",
+        "width": 1024,
+        "height": 768,
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "author": "David Stanley from Nanaimo, Canada",
+        "description": "Archaeological excavations are currently underway at Adulis, 65 kilometers south of Massawa, Eritrea.",
+        "date": "2012-12-20 11:36"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4b/Adulis_%288529061940%29.jpg/960px-Adulis_%288529061940%29.jpg",
+      "asset": "src/assets/lecons/course-histoire-03-aksoum-lesson-1.webp",
+      "output": {
+        "width": 960,
+        "height": 720,
+        "bytes": 185400
+      },
+      "paragraphs": [
+        "Au IIIᵉ siècle, Mani compte **Aksoum** parmi quatre grandes puissances : Rome, Perse, Chine et ce royaume africain.",
+        "Par **Adoulis**, Aksoum échange ivoire, or et encens avec la Méditerranée, l'Arabie et l'Inde."
+      ],
+      "points": [
+        "Hauts plateaux d'Éthiopie et d'Érythrée",
+        "**Adoulis**, port sur la mer Rouge",
+        "Un pont commercial entre trois mondes"
+      ],
+      "aside": null,
+      "wordCount": 91
+    },
+    {
+      "key": "03-2",
+      "research": [
+        "03-2",
+        3
+      ],
+      "author": "CNG Coins",
+      "alt": "Deux faces d'une monnaie portant le portrait du roi Ezana.",
+      "legende": "Monnaie d'Ezana, IVᵉ siècle : portrait royal et symboles.",
+      "fit": "contain",
+      "reason": "Les deux faces permettent de voir la monnaie et le portrait du souverain évoqués.",
+      "source": {
+        "title": "File:AXUM. Ezanas. Circa 330-360.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/02/AXUM._Ezanas._Circa_330-360.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:AXUM._Ezanas._Circa_330-360.jpg",
+        "width": 1656,
+        "height": 852,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "CNG Coins",
+        "description": "AXUM. Ezanas. Circa 330-360",
+        "date": "2022-02-08"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/02/AXUM._Ezanas._Circa_330-360.jpg/1280px-AXUM._Ezanas._Circa_330-360.jpg",
+      "asset": "src/assets/lecons/course-histoire-03-aksoum-lesson-2.webp",
+      "output": {
+        "width": 1200,
+        "height": 618,
+        "bytes": 182870
+      },
+      "paragraphs": [
+        "**Aksoum** frappe des monnaies en or, argent et bronze : un signe de puissance économique.",
+        "Sous **Ezana**, au IVᵉ siècle, le royaume contrôle le commerce. Nom et portrait royaux voyagent sur chaque pièce."
+      ],
+      "points": [
+        "Monnaies d'or, d'argent et de bronze",
+        "**Ezana** mène Aksoum à son apogée",
+        "Vers 350, Aksoum conquiert Méroé"
+      ],
+      "aside": "La monnaie diffuse le nom du roi au-delà de ses frontières.",
+      "wordCount": 95
+    },
+    {
+      "key": "03-3",
+      "research": [
+        "03-3",
+        1
+      ],
+      "author": "Cleveland Museum of Art",
+      "alt": "Saint Luc peint sur une page d'évangile éthiopien.",
+      "legende": "Évangile éthiopien du XVe siècle : l'héritage chrétien d'Aksoum.",
+      "fit": "contain",
+      "reason": "Le manuscrit illustre l'héritage religieux ; sa date tardive est annoncée, sans le dater d'Ezana.",
+      "source": {
+        "title": "File:Clevelandart 1999.212.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/13/Clevelandart_1999.212.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Clevelandart_1999.212.jpg",
+        "width": 2423,
+        "height": 3400,
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "",
+        "description": "Christianity arrived in Ethiopia during the 4th century, well before reaching northern Europe. Typical of icon and manuscript painting in Ethiopia, this leaf is decorated with bright colors and a joyous interplay of geometric pattern. The full-page miniature depicts the evangelist Luke, with his symbol, the Ox, within the arch above. The short text is in geez (the ancient Ethiopic language), and consists of the opening lines of the gospel of Luke. All manuscript and icon painting in Ethiopia was confined to monasteries; the painting style of this leaf relates it to the Ewostathian monastic community of Central Ethiopia. The artists of this community rose to prominence under the scholar-emperor Zara Yaeqob (1434–1468), who commissioned many of them to produce books and icons for the court. This leaf draws its inspiration from the most important monastic painter, Fre Seyon, who was enormously influential between about 1450 and 1500.",
+        "date": "1440date QS:P571,+1440-00-00T00:00:00Z/9"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/13/Clevelandart_1999.212.jpg/1280px-Clevelandart_1999.212.jpg",
+      "asset": "src/assets/lecons/course-histoire-03-aksoum-lesson-3.webp",
+      "output": {
+        "width": 1200,
+        "height": 1684,
+        "bytes": 542768
+      },
+      "paragraphs": [
+        "Au **IVᵉ siècle**, le roi **Ezana** adopte le christianisme : Aksoum devient un des premiers États chrétiens.",
+        "Cet héritage perdure dans l'Église orthodoxe éthiopienne. Le **guèze**, langue liturgique, porte une riche tradition de manuscrits."
+      ],
+      "points": [
+        "**Ezana** adopte le christianisme au IVᵉ siècle",
+        "L'Église éthiopienne reste vivante",
+        "Le **guèze** porte le patrimoine écrit"
+      ],
+      "aside": null,
+      "wordCount": 83
+    },
+    {
+      "key": "03-4",
+      "research": [
+        "03-4",
+        0
+      ],
+      "author": "Rod Waddington",
+      "alt": "Grandes stèles sculptées et blocs renversés dans le site d'Aksoum.",
+      "legende": "Les stèles royales d'Aksoum, sculptées comme des tours.",
+      "reason": "Montrer les monuments exacts, y compris leur échelle et leurs fausses fenêtres.",
+      "source": {
+        "title": "File:Stelae, Aksum (8140296506).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Stelae%2C_Aksum_%288140296506%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Stelae,_Aksum_(8140296506).jpg",
+        "width": 888,
+        "height": 555,
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Rod Waddington from Kergunyah, Australia",
+        "description": "Ethiopia",
+        "date": "2012-10-31 12:42"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Stelae%2C_Aksum_%288140296506%29.jpg/500px-Stelae%2C_Aksum_%288140296506%29.jpg",
+      "asset": "src/assets/lecons/course-histoire-03-aksoum-lesson-4.webp",
+      "output": {
+        "width": 500,
+        "height": 312,
+        "bytes": 33262
+      },
+      "paragraphs": [
+        "Taillées d'un seul bloc, certaines stèles d'**Aksoum** dépassent **30 mètres** : un défi sans machines modernes.",
+        "Dressées au-dessus des tombes royales, elles imitent des tours. Observe leurs fausses portes et fenêtres."
+      ],
+      "points": [
+        "Des monuments funéraires royaux en granit",
+        "Certaines dépassent **30 mètres**",
+        "Le site est classé par l'UNESCO"
+      ],
+      "aside": null,
+      "wordCount": 79
+    },
+    {
+      "key": "03-5",
+      "research": [
+        "03-5",
+        2
+      ],
+      "author": "Rod Waddington",
+      "alt": "Inscription gravée sur la pierre du roi Ezana.",
+      "legende": "La pierre d'Ezana, IVᵉ siècle : un témoignage écrit d'Aksoum.",
+      "fit": "contain",
+      "reason": "La pierre trilingue ancre l'héritage de l'écriture ; elle n'illustre pas le déclin du VIIᵉ siècle.",
+      "source": {
+        "title": "File:Ezana Stone, Aksum (6183743976).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Ezana_Stone%2C_Aksum_%286183743976%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ezana_Stone,_Aksum_(6183743976).jpg",
+        "width": 2609,
+        "height": 4288,
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "author": "Rod Waddington from Kergunyah, Australia",
+        "description": "Found in a field by a farmer the Stone is written in Ancient Greek, Sabaen and Ge'ez, the holy language of Ethiopia (similar to the Rosetta Stone). It records trilingually the conversion of King Ezana to Christianity and his subjugation of other kingdoms. It sits in a simple stone hut surrounded by fields with a basic lock holding shut the tin door.",
+        "date": "2011-09-26 11:41"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Ezana_Stone%2C_Aksum_%286183743976%29.jpg/1280px-Ezana_Stone%2C_Aksum_%286183743976%29.jpg",
+      "asset": "src/assets/lecons/course-histoire-03-aksoum-lesson-5.webp",
+      "output": {
+        "width": 1200,
+        "height": 1973,
+        "bytes": 452730
+      },
+      "paragraphs": [
+        "Dès le **VIIᵉ siècle**, les échanges de la mer Rouge se déplacent. Aksoum perd sa puissance commerciale.",
+        "L'écriture **guèze**, le christianisme et la tradition impériale perdurent. La légende de Saba nourrit aussi cet héritage."
+      ],
+      "points": [
+        "Déclin commercial dès le **VIIᵉ siècle**",
+        "Héritage écrit, chrétien et impérial",
+        "La reine de **Saba**, figure légendaire"
+      ],
+      "wordCount": 110
+    },
+    {
+      "key": "04-1",
+      "file": "File:Routes commerciales des Phéniciens-fr.svg",
+      "alt": "Comptoirs phéniciens répartis autour de la Méditerranée.",
+      "legende": "Tyr et Carthage dans le réseau des comptoirs phéniciens.",
+      "fit": "contain",
+      "reason": "Situer le départ de Tyr et l'installation à Carthage ; réseau diachronique, pas frontières de 814.",
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/79/Routes_commerciales_des_Ph%C3%A9niciens-fr.svg/1280px-Routes_commerciales_des_Ph%C3%A9niciens-fr.svg.png",
+      "source": {
+        "title": "File:Routes commerciales des Phéniciens-fr.svg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/79/Routes_commerciales_des_Ph%C3%A9niciens-fr.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Routes_commerciales_des_Ph%C3%A9niciens-fr.svg",
+        "width": 2042,
+        "height": 917,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Bourrichon",
+        "description": "Trade routes of the Phoenicians.",
+        "date": "2009-03-22"
+      },
+      "asset": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-1.webp",
+      "output": {
+        "width": 1200,
+        "height": 539,
+        "bytes": 72804
+      },
+      "paragraphs": [
+        "La légende raconte l'exil de **Didon**, fondatrice de Carthage, aussi appelée Élissa.",
+        "Des marchands de **Tyr**, au Liban actuel, s'établissent sur la côte tunisienne. Ce comptoir méditerranéen devient une métropole indépendante."
+      ],
+      "points": [
+        "Fondation phénicienne vers **814 av. J.-C.**",
+        "Des marchands viennent de **Tyr**",
+        "Didon, fondatrice dans la légende"
+      ],
+      "aside": null,
+      "wordCount": 78
+    },
+    {
+      "key": "04-2",
+      "research": [
+        "04-2",
+        0
+      ],
+      "author": "Sharon Hahn Darlin",
+      "alt": "Bassin circulaire des anciens ports puniques de Carthage.",
+      "legende": "Les ports puniques de Carthage, photographiés en 2024.",
+      "reason": "Les installations portuaires expliquent la puissance maritime plutôt qu'un monument romain.",
+      "source": {
+        "title": "File:Punic Ports (Ports Puniques) of Carthage, Tunisia January 2024 - 2.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/70/Punic_Ports_%28Ports_Puniques%29_of_Carthage%2C_Tunisia_January_2024_-_2.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Punic_Ports_(Ports_Puniques)_of_Carthage,_Tunisia_January_2024_-_2.jpg",
+        "width": 3993,
+        "height": 2995,
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "author": "Sharon Hahn Darlin",
+        "description": "36.84616° N, 10.32457° E, Site Archéologique de Carthage",
+        "date": "2024-01-10 10:45:15"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/70/Punic_Ports_%28Ports_Puniques%29_of_Carthage%2C_Tunisia_January_2024_-_2.jpg/1280px-Punic_Ports_%28Ports_Puniques%29_of_Carthage%2C_Tunisia_January_2024_-_2.jpg",
+      "asset": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-2.webp",
+      "output": {
+        "width": 1200,
+        "height": 900,
+        "bytes": 213746
+      },
+      "paragraphs": [
+        "Les navires de **Carthage** relient l'Espagne à la Sicile. Les ports soutiennent sa puissance commerciale.",
+        "Métaux, artisanat et récoltes africaines alimentent les échanges. Cette domination maritime entraîne une rivalité croissante avec **Rome**."
+      ],
+      "points": [
+        "Une flotte active en **Méditerranée**",
+        "Un arrière-pays africain fertile",
+        "**Rome** devient sa grande rivale"
+      ],
+      "wordCount": 80
+    },
+    {
+      "key": "04-3",
+      "research": [
+        "04-3",
+        0
+      ],
+      "author": "Pinpin",
+      "alt": "Itinéraire d'Hannibal depuis l'Espagne, à travers les Alpes, vers l'Italie.",
+      "legende": "Le trajet d'Hannibal vers l'Italie en 218 av. J.-C.",
+      "fit": "contain",
+      "reason": "La carte explique le franchissement des Alpes ; traduction française des principaux labels prévue.",
+      "source": {
+        "title": "File:Hannibal route of invasion-en.svg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/48/Hannibal_route_of_invasion-en.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Hannibal_route_of_invasion-en.svg",
+        "width": 764,
+        "height": 479,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Pinpin",
+        "description": "Map in english of Hannibal's route of invasion",
+        "date": "2008-02-10"
+      },
+      "asset": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-3.webp",
+      "output": {
+        "width": 1200,
+        "height": 752,
+        "bytes": 92968
+      },
+      "adaptation": "Traduction des libellés en français ; tracé inchangé. Source SVG conservée dans docs/visuels-histoire/hannibal-fr.svg.",
+      "paragraphs": [
+        "En **218 av. J.-C.**, Hannibal traverse les Alpes avec ses éléphants pour attaquer Rome en Italie.",
+        "Trois guerres puniques opposent **Carthage** à Rome. Malgré les victoires d'Hannibal, Rome détruit Carthage en 146 av. J.-C."
+      ],
+      "points": [
+        "Trois guerres : **264–146 av. J.-C.**",
+        "**Hannibal** franchit les Alpes en 218",
+        "Carthage est détruite en 146"
+      ],
+      "aside": "Hannibal perd la majeure partie de ses éléphants pendant la traversée.",
+      "wordCount": 98
+    },
+    {
+      "key": "04-4",
+      "research": [
+        "04-4",
+        0
+      ],
+      "author": "Michel-georges bernard",
+      "alt": "Profil royal frappé sur une monnaie numide.",
+      "legende": "Monnaie attribuée à Massinissa, souverain de Numidie.",
+      "fit": "contain",
+      "reason": "Monnaie rattachée à Massinissa, pas un portrait inventé de Jugurtha.",
+      "source": {
+        "title": "File:Massinissa monnaie.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c2/Massinissa_monnaie.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Massinissa_monnaie.jpg",
+        "width": 657,
+        "height": 628,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Michel-georges bernard",
+        "description": "Monnaie représentant Massinissa, Algérie",
+        "date": "2010-04"
+      },
+      "asset": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-4.webp",
+      "output": {
+        "width": 657,
+        "height": 628,
+        "bytes": 24396
+      },
+      "paragraphs": [
+        "L'Afrique du Nord antique comprend aussi des États amazighs, dont la **Numidie**, voisine de Carthage.",
+        "**Massinissa** l'unifie et bâtit un royaume prospère. Plus tard, **Jugurtha** résiste à la conquête romaine."
+      ],
+      "points": [
+        "La Numidie est un royaume **amazigh**",
+        "**Massinissa** l'unifie au IIᵉ siècle av. J.-C.",
+        "**Jugurtha** résiste à Rome"
+      ],
+      "aside": null,
+      "wordCount": 76
+    },
+    {
+      "key": "04-5",
+      "research": [
+        "04-5",
+        1
+      ],
+      "author": "Yelles",
+      "alt": "Rues et vestiges de la cité romaine de Timgad.",
+      "legende": "Ruines de Timgad, cité romaine fondée en 100, en Algérie.",
+      "reason": "La ville nommée matérialise l'urbanisation de l'Afrique romaine.",
+      "source": {
+        "title": "File:Timgad Ruins Panorama.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Timgad_Ruins_Panorama.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Timgad_Ruins_Panorama.jpg",
+        "width": 2400,
+        "height": 786,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Hamza-sia",
+        "description": "Territoires et monuments de l'antique Thamugadi.,",
+        "date": "2014-09-04 18:42:24"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ab/Timgad_Ruins_Panorama.jpg/1280px-Timgad_Ruins_Panorama.jpg",
+      "asset": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-5.webp",
+      "output": {
+        "width": 1200,
+        "height": 393,
+        "bytes": 125164
+      },
+      "paragraphs": [
+        "Après Carthage, l'Afrique du Nord devient une riche région de l'**Empire romain**.",
+        "Blé et huile en font un « grenier de Rome ». **Timgad** illustre ses villes ; l'héritage amazigh perdure."
+      ],
+      "points": [
+        "L'Afrique du Nord nourrit **Rome**",
+        "**Augustin d'Hippone**, penseur de l'Afrique romaine",
+        "Le fond amazigh reste vivant"
+      ],
+      "wordCount": 108
+    },
+    {
+      "key": "05-1",
+      "research": [
+        "05-1",
+        1
+      ],
+      "author": "Barada-nikto",
+      "alt": "Carte situant l'ancien Ghana autour de Koumbi Saleh.",
+      "legende": "Le Ghana médiéval : territoire indicatif entre Mauritanie et Mali.",
+      "fit": "contain",
+      "reason": "Carte française pour dissocier Wagadou de l'État actuel, étendue indicative annoncée.",
+      "source": {
+        "title": "File:Ghana empire map-fr.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Ghana_empire_map-fr.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Ghana_empire_map-fr.png",
+        "width": 844,
+        "height": 864,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Barada-nikto",
+        "description": "Carte de l'empire du Ghana en français",
+        "date": "2014-10-31 14:51:58"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Ghana_empire_map-fr.png/500px-Ghana_empire_map-fr.png",
+      "asset": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-1.webp",
+      "output": {
+        "width": 500,
+        "height": 512,
+        "bytes": 16764
+      },
+      "paragraphs": [
+        "L'empire du Ghana ne correspond pas au pays actuel. Les **Soninké** le nommaient **Wagadou**.",
+        "Il s'étendait entre Mauritanie et Mali, autour de **Koumbi Saleh**. « Ghana » était d'abord un titre royal : « chef de guerre »."
+      ],
+      "points": [
+        "**Wagadou**, empire fondé par les Soninké",
+        "**Koumbi Saleh**, entre Mauritanie et Mali",
+        "Ghana désignait d'abord le souverain"
+      ],
+      "aside": "Le Ghana actuel a repris ce nom sans partager le territoire médiéval.",
+      "wordCount": 99
+    },
+    {
+      "key": "05-2",
+      "file": "File:Salt slabs in Timbuktu.jpg",
+      "alt": "Plaques de sel saharien empilées pour le commerce.",
+      "legende": "Plaques de sel saharien à Mopti, photographie contemporaine.",
+      "reason": "Le produit échangé est montré ; photographie récente, pas document du XIᵉ siècle.",
+      "research": [
+        "05-2b",
+        0
+      ],
+      "source": {
+        "title": "File:Mopti sel.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fb/Mopti_sel.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mopti_sel.jpg",
+        "width": 1280,
+        "height": 960,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "Taguelmoust at French Wikipedia",
+        "description": "Les plaques de sel de Taoudéni, venant d'être déchargées au port fluvial de Mopti (Mali).",
+        "date": "2005-05-23"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fb/Mopti_sel.jpg/1280px-Mopti_sel.jpg",
+      "asset": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-2.webp",
+      "output": {
+        "width": 1200,
+        "height": 900,
+        "bytes": 144944
+      },
+      "paragraphs": [
+        "Sur les routes du **Sahara**, l'or du sud rencontre le sel des mines du nord.",
+        "Le roi taxe les marchandises qui entrent et sortent. **Al-Bakri** décrit au XIᵉ siècle la richesse de sa cour."
+      ],
+      "points": [
+        "Or du sud, sel du **Sahara**",
+        "Les taxes enrichissent le souverain",
+        "**Al-Bakri** décrit la cour du Ghana"
+      ],
+      "aside": "Au sud, le sel pouvait s'échanger presque à poids égal contre l'or.",
+      "wordCount": 98
+    },
+    {
+      "key": "05-3",
+      "file": "File:Archaeological site of Koumbi Saleh.jpg",
+      "author": "Chloé Capel",
+      "alt": "Plan des quartiers et vestiges archéologiques de Koumbi Saleh.",
+      "legende": "Koumbi Saleh : plan archéologique établi d'après les relevés de 2007.",
+      "fit": "contain",
+      "reason": "Le plan montre le site étudié ; ne pas l'affirmer preuve des deux villes décrites par al-Bakri.",
+      "source": {
+        "title": "File:Archaeological site of Koumbi Saleh.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Archaeological_site_of_Koumbi_Saleh.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Archaeological_site_of_Koumbi_Saleh.jpg",
+        "width": 580,
+        "height": 460,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Chloé Capel",
+        "description": "Plan of the archaeological site of Koumbi Saleh, based on surveys carried out in January 2007",
+        "date": "2021"
+      },
+      "asset": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-3.webp",
+      "output": {
+        "width": 580,
+        "height": 460,
+        "bytes": 56838
+      },
+      "paragraphs": [
+        "**Al-Bakri** décrit deux villes à **Koumbi Saleh** : l'une royale, l'autre marchande et musulmane.",
+        "Le roi rend la justice au milieu d'une cour fastueuse. Le plan montre les vestiges étudiés par les archéologues."
+      ],
+      "points": [
+        "Une cité royale et une cité marchande",
+        "Le roi rend lui-même la **justice**",
+        "Une cour décrite par **al-Bakri**"
+      ],
+      "wordCount": 93
+    },
+    {
+      "key": "05-4",
+      "research": [
+        "09-1",
+        0
+      ],
+      "author": "Siyajkak",
+      "alt": "Routes commerciales reliant le royaume du Ghana au nord du Sahara.",
+      "legende": "Routes transsahariennes, XIe–XVe siècles : échanges et diffusion de l’islam.",
+      "fit": "contain",
+      "reason": "Carte centrée sur le XIᵉ siècle, période pertinente pour la circulation des marchands.",
+      "source": {
+        "title": "File:Trans-Saharan routes early.svg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Trans-Saharan_routes_early.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+        "width": 512,
+        "height": 597,
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Aa77zz",
+        "description": "Trade routes of the Western Sahara c. 1000-1500. Goldfields are indicated by light brown shading. Map Map data from: http://www.naturalearthdata.com/ 1:50m data Projection: Equirectangular - Lat/Long - plate carrée Map limits: N: 38N S: 3N E: 12E W: 18W Software: Grass GIS 6.4.1 Inkscape 0.48.1 Scaled x30 in Inkscape to give 30 pixels per degree. Routes The routes shown are based those given by Mauny 1961. Mauny gives maps for three periods: 8th-10th centuries on page 429, 11th-13th on page 430 and after the 14th century on page 434. The position of the goldfields is based on Mauny 1961 page 295. Levtzion has published a map of the trade routes both in Levtzion 1973 and in Levtzion &amp; Hopkins 1981. The map shows Tahert (modern Tiaret in Algeria) to the south of Tlemcen. In fact Tahert should be to the East and slightly to the North of Tlemcen. The map also shows Tamentit on the Draa River. In fact Tamentit is one of the oases of Tuat – and instead the town of Tamdoult (Tamdult) lay near Akka to the north of the Draa. A map showing trade routes (10th to 16th centuries) is given in Cuoq 1975 on page 11. This map repeats the error made by Levtzion 1973 in placing Tahert to the south of Tlemcen. Toponyms Assumptions: the capital of Ghana was at Koumbi Saleh Takedda was at Azelik Aoudaghost was at Tegdaoust The Malian capital has not been included - there is no consensus on the location. Orthography: Aoudaghost - Awdaghost - Awdaghust Araouane - Araouane - Arawan Ouadane - Ouadane - Wadan Oualata - Oualata - Walata Ouargla - Wargla - Wargala Sijilmasa - Sidjilmassa - Sijilmasa References Cuoq, Joseph M., translator and editor (1975) (in french) Recueil des sources arabes concernant l'Afrique occidentale du VIIIe au XVIe siècle (Bilād al-Sūdān), Paris: Éditions du Centre National de la Recherche Scientifique, p. 11 . Reprinted in 1985 with corrections and additional texts, ISBN 2222017181. Levtzion, Nehemia (1973) Ancient Ghana and Mali, London: Methuen, pp. 138−139 ISBN: 0841904316. . Reprinted 1980. (2000) Corpus of Early Arabic Sources for West Africa, Marcus Weiner, p. xxii ISBN: 1-55876-241-8. . First published in 1981 by Cambridge University Press, ISBN 0521224225. Mauny, Raymond (1961) (in french) Tableau géographique de l'ouest africain au moyen age, d’après les sources écrites, la tradition et l'archéologie, Institut français d'Afrique Noire, pp. 426−432 . Further reading Devisse, J. (1988) el Fasi, M., ed. General History of Africa Volume 3: Africa from the Seventh to the Eleventh Century, University of California Press, pp. 367−435 ISBN: 0520039149. . Includes a map of the Sahara showing isohytes and schematic diagrams of the trade routes with the number of stages specified by Ibn Hawkal, al-Bakri and al-Idrisi.",
+        "date": "2011-08-05"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Trans-Saharan_routes_early.svg/500px-Trans-Saharan_routes_early.svg.png",
+      "asset": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-4.webp",
+      "output": {
+        "width": 1200,
+        "height": 1402,
+        "bytes": 69648
+      },
+      "paragraphs": [
+        "Les marchands traversant le Sahara apportent aussi l'**islam** et des savoirs administratifs.",
+        "Les rois du **Ghana** gardent longtemps leur religion, tout en employant des lettrés musulmans pour le commerce et la diplomatie."
+      ],
+      "points": [
+        "L'**islam** circule avec les marchands",
+        "Des lettrés musulmans administrent le royaume",
+        "Les religions coexistent dans le Sahel"
+      ],
+      "wordCount": 98
+    },
+    {
+      "key": "05-5",
+      "research": [
+        "05-5",
+        0
+      ],
+      "author": "Paasikivi",
+      "alt": "Timbre commémorant l'indépendance avec le portrait de Kwame Nkrumah.",
+      "legende": "Timbre commémorant l'indépendance du Ghana, le 6 mars 1957.",
+      "fit": "contain",
+      "reason": "Document lié à 1957 pour la reprise du nom Ghana, sans le confondre avec l'empire.",
+      "source": {
+        "title": "File:KwameNkrumahOnGhanianIndependenceDay6March1957PostageStamp.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9f/KwameNkrumahOnGhanianIndependenceDay6March1957PostageStamp.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:KwameNkrumahOnGhanianIndependenceDay6March1957PostageStamp.JPG",
+        "width": 1724,
+        "height": 1370,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Paasikivi",
+        "description": "Kwame Nkrumah on Ghanian Independence Day Postage 6th March 1957",
+        "date": "2014-12-25 11:37:31"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9f/KwameNkrumahOnGhanianIndependenceDay6March1957PostageStamp.JPG/1280px-KwameNkrumahOnGhanianIndependenceDay6March1957PostageStamp.JPG",
+      "asset": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-5.webp",
+      "output": {
+        "width": 1200,
+        "height": 953,
+        "bytes": 286842
+      },
+      "paragraphs": [
+        "Affaibli par les rivalités et le déplacement du commerce, le **Ghana** laisse place au **Mali**.",
+        "En 1957, le Ghana moderne reprend le nom de l'empire : un choix de mémoire et de fierté."
+      ],
+      "points": [
+        "Déclin médiéval, essor du **Mali**",
+        "Un modèle d'empire fondé sur le commerce",
+        "**1957** : le nom Ghana renaît"
+      ],
+      "aside": null,
+      "wordCount": 100
+    },
+    {
+      "key": "06-1",
+      "file": "File:Ghana successor map 1200.png",
+      "alt": "Carte des royaumes issus du morcellement de l'ancien Ghana.",
+      "legende": "Après le Ghana : royaumes rivaux vers 1200, territoires indicatifs.",
+      "fit": "contain",
+      "reason": "La carte du morcellement est plus pertinente qu'un paysage moderne de Kangaba.",
+      "source": {
+        "title": "File:Ghana successor map 1200.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/57/Ghana_successor_map_1200.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Ghana_successor_map_1200.png",
+        "width": 431,
+        "height": 500,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "T L Miles (talk)",
+        "description": "Map of the successor states of the Ghana Empire, on the upper Niger river valley, West Africa, circa 1200 Common Era. These outlines are approximate, and should not suggest modern states with fixed borders. States in this era were centered around cities and strong places, with variations of influence radiating out from these points. C. 1200 on the eve of the rise of the Mali Empire, usually dated in the 1240s CE.",
+        "date": "2008-03-13"
+      },
+      "asset": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-1.webp",
+      "output": {
+        "width": 431,
+        "height": 500,
+        "bytes": 30078
+      },
+      "paragraphs": [
+        "Après le Ghana, des royaumes rivaux se partagent la région. **Soumaoro Kanté**, roi du Sosso, devient redouté.",
+        "Autour de **Kangaba**, sur le haut Niger, les Mandingues vivent sous sa menace. **Soundiata Keïta** émerge dans ce contexte."
+      ],
+      "points": [
+        "Morcellement après le **Ghana**",
+        "**Soumaoro** domine le Sosso",
+        "Les Mandingues vivent autour de **Kangaba**"
+      ],
+      "aside": null,
+      "wordCount": 96
+    },
+    {
+      "key": "06-2",
+      "file": "File:GriotGuinea.jpg",
+      "alt": "Ali Boulo Santo joue de la kora.",
+      "legende": "Ali Boulo Santo, griot mandingue, photo contemporaine.",
+      "reason": "Montrer les transmetteurs de l'épopée, sans inventer le visage de Soundiata.",
+      "research": [
+        "06-2b",
+        0
+      ],
+      "source": {
+        "title": "File:Ali Boulo Santo Artiste griot mandingue kora maitre kora afrique europe wikipedia30042016.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/98/Ali_Boulo_Santo_Artiste_griot_mandingue_kora_maitre_kora_afrique_europe_wikipedia30042016.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Ali_Boulo_Santo_Artiste_griot_mandingue_kora_maitre_kora_afrique_europe_wikipedia30042016.jpg",
+        "width": 1244,
+        "height": 1148,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Dany barthelemy",
+        "description": "Ali Boulo Santo Maître de Kora, Griot et Artiste musicien",
+        "date": "2014-06-15 10:33:41"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/98/Ali_Boulo_Santo_Artiste_griot_mandingue_kora_maitre_kora_afrique_europe_wikipedia30042016.jpg/960px-Ali_Boulo_Santo_Artiste_griot_mandingue_kora_maitre_kora_afrique_europe_wikipedia30042016.jpg",
+      "asset": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-2.webp",
+      "output": {
+        "width": 960,
+        "height": 886,
+        "bytes": 93858
+      },
+      "paragraphs": [
+        "Selon l'épopée, **Soundiata** ne marche pas enfant. Il se relève par un effort devenu légendaire.",
+        "Exilé face aux rivalités de cour, il se forme puis revient libérer son peuple. Les **griots** transmettent cette histoire."
+      ],
+      "points": [
+        "Une enfance fragile dans l'**épopée**",
+        "L'exil prépare son retour",
+        "Les **griots** transmettent oralement son histoire"
+      ],
+      "aside": "Aucun récit écrit de l'époque ne raconte cette épopée.",
+      "wordCount": 86
+    },
+    {
+      "key": "06-3",
+      "missing": "Recherche de la bataille de Kirina, de ses représentations et cartes. Aucun visuel libre suffisamment documenté trouvé ; une carte du Mali de 1350 ne montrerait pas la bataille de 1235.",
+      "searchSources": [
+        "https://commons.wikimedia.org/wiki/Category:Soundiata_Keita",
+        "https://commons.wikimedia.org/wiki/Category:Mali_Empire"
+      ]
+    },
+    {
+      "key": "06-4",
+      "file": "File:Assemblée constitutive de l'empire du Mandé.jpg",
+      "alt": "Assemblée de personnages représentée par une illustration contemporaine.",
+      "legende": "Assemblée du Manden : illustration contemporaine, pas un document de 1236.",
+      "fit": "contain",
+      "reason": "Représentation de l'assemblée, explicitement identifiée comme illustration moderne ; vérifier son sujet et sa licence.",
+      "research": [
+        "06-4b",
+        0
+      ],
+      "source": {
+        "title": "File:Assemblée constitutive de l'empire du Mandé (les chefs de guerre).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/be/Assembl%C3%A9e_constitutive_de_l%27empire_du_Mand%C3%A9_%28les_chefs_de_guerre%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Assembl%C3%A9e_constitutive_de_l%27empire_du_Mand%C3%A9_(les_chefs_de_guerre).jpg",
+        "width": 1200,
+        "height": 1600,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Morganb73",
+        "description": "les chefs de guerre",
+        "date": "2010-01-07"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/be/Assembl%C3%A9e_constitutive_de_l%27empire_du_Mand%C3%A9_%28les_chefs_de_guerre%29.jpg/960px-Assembl%C3%A9e_constitutive_de_l%27empire_du_Mand%C3%A9_%28les_chefs_de_guerre%29.jpg",
+      "asset": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-4.webp",
+      "output": {
+        "width": 960,
+        "height": 1280,
+        "bytes": 184590
+      },
+      "paragraphs": [
+        "Vers **1236**, une assemblée à **Kurukan Fuga** proclame la Charte du Manden.",
+        "Elle organise les clans et énonce solidarité et respect de la vie. Les **griots** la transmettent ; l'UNESCO reconnaît ce patrimoine oral."
+      ],
+      "points": [
+        "**1236** : Charte du Manden",
+        "Des principes de vie et de solidarité",
+        "Un patrimoine oral reconnu par l'**UNESCO**"
+      ],
+      "wordCount": 98
+    },
+    {
+      "key": "06-5",
+      "research": [
+        "06-5",
+        3
+      ],
+      "author": "HetmanTheResearcher",
+      "alt": "Carte du Mali reliant ses régions aux principaux axes commerciaux.",
+      "legende": "L'empire du Mali après Soundiata, au début du XIVe siècle.",
+      "fit": "contain",
+      "reason": "Carte postérieure annoncée pour montrer la prospérité des successeurs, pas les frontières de 1235.",
+      "source": {
+        "title": "File:Map of the Mali Empire.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/47/Map_of_the_Mali_Empire.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Map_of_the_Mali_Empire.png",
+        "width": 2030,
+        "height": 1431,
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "author": "HetmanTheResearcher",
+        "description": "Own work, based off of Gomez, M. (2018). African Dominion: A New History of Empire in Early and Medieval West Africa (1st ed.). Princeton University Press. P.95 https://doi.org/10.1515/9781400888160",
+        "date": "2024-01-09"
+      },
+      "asset": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-5.webp",
+      "output": {
+        "width": 1200,
+        "height": 846,
+        "bytes": 86108
+      },
+      "paragraphs": [
+        "**Soundiata** pose les bases d'un empire prospère, au-delà de ses seules victoires militaires.",
+        "Le Mali contrôle l'or, cultive la vallée du **Niger** et rassemble des peuples. Son successeur Mansa Moussa mène l'empire à l'apogée."
+      ],
+      "points": [
+        "Or et agriculture soutiennent le **Mali**",
+        "Soundiata rassemble les peuples",
+        "**Mansa Moussa** poursuit cette prospérité"
+      ],
+      "wordCount": 97
+    },
+    {
+      "key": "07-1",
+      "research": [
+        "07-1",
+        3
+      ],
+      "author": "Abraham Cresques (attribué)",
+      "alt": "Mansa Moussa représenté avec couronne, sceptre et or.",
+      "legende": "Mansa Moussa dans l'Atlas catalan de 1375, détail.",
+      "fit": "contain",
+      "reason": "Représentation médiévale de la richesse royale ; pas le fac-similé moderne du fichier Mansa Musa.jpg.",
+      "source": {
+        "title": "File:Catalan Atlas BNF Sheet 6 Mansa Musa (cropped).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/46/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg",
+        "width": 1856,
+        "height": 2118,
+        "license": "Public domain",
+        "author": "attributed to Abraham Cresques",
+        "description": "Sheet 6 out of 12. Detail showing Mansa Musa sitting on a throne and holding a gold coin",
+        "date": "1375date QS:P571,+1375-00-00T00:00:00Z/9"
+      },
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg/1280px-Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_%28cropped%29.jpg",
+      "asset": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-1.webp",
+      "output": {
+        "width": 1200,
+        "height": 1370,
+        "bytes": 395784
+      },
+      "paragraphs": [
+        "**Mansa Moussa** règne sur un vaste empire ouest-africain et contrôle de riches régions aurifères.",
+        "Son titre, **mansa**, signifie « roi des rois ». L'or du Mali explique sa fortune et la réputation du souverain."
+      ],
+      "points": [
+        "**1312–1337** : règne de Mansa Moussa",
+        "Un vaste empire de l'Atlantique au Niger",
+        "L'**or** fonde sa puissance"
+      ],
+      "aside": "Il est aussi nommé Kankou Moussa, d'après sa mère Kankou.",
+      "wordCount": 93
+    },
+    {
+      "key": "07-2",
+      "file": "File:Mansa-Musa-on-his-way-to-Mecca-Credit-Print-Collector-Getty-images-1536x790.jpg",
+      "author": "Artiste inconnu",
+      "alt": "Un souverain et son escorte représentés en voyage.",
+      "legende": "Le pèlerinage de Moussa, représentation tardive publiée en 1903.",
+      "fit": "contain",
+      "reason": "Représentation ultérieure de la caravane, clairement datée ; ne pas la présenter comme témoin de 1324.",
+      "source": {
+        "title": "File:Mansa-Musa-on-his-way-to-Mecca-Credit-Print-Collector-Getty-images-1536x790.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Mansa-Musa-on-his-way-to-Mecca-Credit-Print-Collector-Getty-images-1536x790.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Mansa-Musa-on-his-way-to-Mecca-Credit-Print-Collector-Getty-images-1536x790.jpg",
+        "width": 998,
+        "height": 729,
+        "license": "Public domain",
+        "author": "Unknown authorUnknown author",
+        "description": "Mansa Musa on His Way to Mecca, circa 1670, (1903). Mansa Musa (circa 1280-circa 1337) Emperor of Mali, went on a pilgrimage to Mecca in 1324. He is said to have traveled with an entourage of 60,000. From The Worlds History, Volume III, by Dr. H. F. Helmolt [William Heinemann, London, 1903] Artist: Unknown. (Photo by Print Collector/Getty Images)",
+        "date": "1670"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c9/Mansa-Musa-on-his-way-to-Mecca-Credit-Print-Collector-Getty-images-1536x790.jpg/960px-Mansa-Musa-on-his-way-to-Mecca-Credit-Print-Collector-Getty-images-1536x790.jpg",
+      "asset": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-2.webp",
+      "output": {
+        "width": 960,
+        "height": 701,
+        "bytes": 195268
+      },
+      "paragraphs": [
+        "En **1324**, Mansa Moussa part à La Mecque avec une immense caravane et beaucoup d'or.",
+        "Au **Caire**, ses dons et dépenses font baisser la valeur de l'or pendant des années, selon les chroniqueurs."
+      ],
+      "points": [
+        "**1324** : pèlerinage à La Mecque",
+        "L'or distribué bouleverse le **Caire**",
+        "Le voyage révèle la richesse du Mali"
+      ],
+      "aside": null,
+      "wordCount": 95
+    },
+    {
+      "key": "07-3",
+      "research": [
+        "07-3",
+        2
+      ],
+      "author": "Abraham Cresques (attribué)",
+      "alt": "Mansa Moussa figure au milieu des toponymes d'une carte médiévale.",
+      "legende": "L'Atlas catalan de 1375 situe Moussa dans l'Afrique occidentale.",
+      "fit": "contain",
+      "reason": "Cadrage plus large que la leçon 1 pour montrer la carte et la renommée internationale.",
+      "source": {
+        "title": "File:Catalan Atlas BNF Sheet 6 Mansa Musa.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+        "width": 3712,
+        "height": 2647,
+        "license": "Public domain",
+        "author": "attributed to Abraham Cresques",
+        "description": "Sheet 6 out of 12. Detail showing Mansa Musa sitting on a throne and holding a gold coin",
+        "date": "1375 AD"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ea/Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg/1280px-Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+      "asset": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-3.webp",
+      "output": {
+        "width": 1200,
+        "height": 856,
+        "bytes": 254556
+      },
+      "paragraphs": [
+        "L'**Atlas catalan** de **1375** représente Mansa Moussa couronné, tenant de l'or.",
+        "Cette carte méditerranéenne donne une place visible au Mali. Le souverain y incarne la richesse de l'Afrique occidentale."
+      ],
+      "points": [
+        "**1375** : l'Atlas catalan représente Moussa",
+        "Le souverain tient de l'**or**",
+        "Le Mali figure sur une carte méditerranéenne"
+      ],
+      "wordCount": 78
+    },
+    {
+      "key": "07-4",
+      "research": [
+        "07-4",
+        1
+      ],
+      "author": "upyernoz",
+      "alt": "Façade de terre de la mosquée Djinguereber à Tombouctou.",
+      "legende": "Djinguereber à Tombouctou, fondée au temps de Mansa Moussa.",
+      "reason": "Le monument exact évoqué, pas une mosquée de Djenné substituée.",
+      "source": {
+        "title": "File:Djinguereber Mosque, Timbuktu.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/14/Djinguereber_Mosque%2C_Timbuktu.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Djinguereber_Mosque,_Timbuktu.jpg",
+        "width": 2796,
+        "height": 1804,
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "author": "upyernoz",
+        "description": "Djinguereber Mosque, Timbuktu, the oldest mosque in the city. timbuktu gets so little rain, the mud-mosques don't melt here. so they can age, without being rebuilt every year, unlike most of the rest of mali",
+        "date": "2005-03-20 10:45:40"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/14/Djinguereber_Mosque%2C_Timbuktu.jpg/1280px-Djinguereber_Mosque%2C_Timbuktu.jpg",
+      "asset": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-4.webp",
+      "output": {
+        "width": 1200,
+        "height": 774,
+        "bytes": 93268
+      },
+      "paragraphs": [
+        "Après son pèlerinage, **Mansa Moussa** fait venir savants et architectes, dont **Es-Sahéli**.",
+        "La mosquée **Djinguereber** participe au rayonnement de Tombouctou. Avec Djenné, la ville développe bibliothèques, enseignement et manuscrits."
+      ],
+      "points": [
+        "**Djinguereber**, liée à Mansa Moussa",
+        "Tombouctou et Djenné deviennent des centres savants",
+        "Des bibliothèques conservent les manuscrits"
+      ],
+      "aside": null,
+      "wordCount": 91
+    },
+    {
+      "key": "07-5",
+      "research": [
+        "07-5",
+        0
+      ],
+      "author": "Elias Altmimi",
+      "alt": "Pages manuscrites de savoirs astronomiques et mathématiques.",
+      "legende": "Manuscrits de Tombouctou : un héritage savant conservé.",
+      "fit": "contain",
+      "reason": "Le patrimoine écrit témoigne de l'héritage culturel ; ne pas dater ce manuscrit du règne de Moussa.",
+      "source": {
+        "title": "File:Timbuktu-manuscripts-astronomy-mathematics.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Timbuktu-manuscripts-astronomy-mathematics.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Timbuktu-manuscripts-astronomy-mathematics.jpg",
+        "width": 1024,
+        "height": 683,
+        "license": "Public domain",
+        "author": "Elias Altmimi",
+        "description": "Image of Timbuktu manuscripts.",
+        "date": "Taken on 11 November 2007"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Timbuktu-manuscripts-astronomy-mathematics.jpg/960px-Timbuktu-manuscripts-astronomy-mathematics.jpg",
+      "asset": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-5.webp",
+      "output": {
+        "width": 960,
+        "height": 640,
+        "bytes": 138400
+      },
+      "paragraphs": [
+        "**Mansa Moussa** symbolise la richesse et le savoir de l'Afrique médiévale.",
+        "Son Mali rivalise avec de grandes puissances. Après lui, le déclin ouvre la voie au **Songhaï**, tandis que le patrimoine savant perdure."
+      ],
+      "points": [
+        "Richesse et savoir de l'**Afrique médiévale**",
+        "Un empire de rayonnement international",
+        "Le **Songhaï** succède au Mali dominant"
+      ],
+      "wordCount": 90
+    },
+    {
+      "key": "08-1",
+      "research": [
+        "08-1",
+        0
+      ],
+      "author": "Ryszard Vorbrich",
+      "alt": "Pirogues sur le fleuve Niger à Gao.",
+      "legende": "Le Niger à Gao, axe fluvial de l'ancien Songhaï.",
+      "reason": "Photo du lieu exact et des embarcations, annoncée comme vue du fleuve aujourd'hui.",
+      "source": {
+        "title": "File:Łodzie rybackie na rzece Niger - Gao - 001208s.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/07/%C5%81odzie_rybackie_na_rzece_Niger_-_Gao_-_001208s.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:%C5%81odzie_rybackie_na_rzece_Niger_-_Gao_-_001208s.jpg",
+        "width": 1920,
+        "height": 1294,
+        "license": "CC BY-SA 3.0 pl",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en",
+        "author": "Ryszard Vorbrich",
+        "description": "",
+        "date": "1976date QS:P571,+1976-00-00T00:00:00Z/9"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/07/%C5%81odzie_rybackie_na_rzece_Niger_-_Gao_-_001208s.jpg/1280px-%C5%81odzie_rybackie_na_rzece_Niger_-_Gao_-_001208s.jpg",
+      "asset": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-1.webp",
+      "output": {
+        "width": 1200,
+        "height": 809,
+        "bytes": 167834
+      },
+      "paragraphs": [
+        "Longtemps vassal du Mali, le **Songhaï** profite de son déclin pour s'émanciper.",
+        "Autour de **Gao**, le **Niger** soutient transports et commerce. Cette position permet de rayonner vers Tombouctou et Djenné."
+      ],
+      "points": [
+        "**Gao**, centre du royaume songhaï",
+        "Émancipation face au déclin du **Mali**",
+        "Le Niger relie les cités marchandes"
+      ],
+      "wordCount": 93
+    },
+    {
+      "key": "08-2",
+      "research": [
+        "08-2",
+        1
+      ],
+      "author": "Roke / Astrokey44",
+      "alt": "Gao, Tombouctou et Djenné sur une carte de l'empire Songhaï.",
+      "legende": "Le Songhaï à son apogée : Gao, Tombouctou et Djenné.",
+      "fit": "contain",
+      "reason": "Situer les villes conquises ; carte d'apogée, sans assimiler tout le territoire au seul règne de Sonni Ali.",
+      "source": {
+        "title": "File:SONGHAI empire map.PNG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/SONGHAI_empire_map.PNG",
+        "page": "https://commons.wikimedia.org/wiki/File:SONGHAI_empire_map.PNG",
+        "width": 1580,
+        "height": 988,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "No machine-readable author provided. Roke~commonswiki assumed (based on copyright claims).",
+        "description": "Map of the w:'''Songhai Empire'''",
+        "date": "4 February 2008 (original upload date)"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/SONGHAI_empire_map.PNG/1280px-SONGHAI_empire_map.PNG",
+      "asset": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-2.webp",
+      "output": {
+        "width": 1200,
+        "height": 750,
+        "bytes": 36586
+      },
+      "paragraphs": [
+        "**Sonni Ali Ber** est un conquérant redouté, dont les lettrés gardent un souvenir sévère.",
+        "Sa cavalerie et sa flotte sur le **Niger** lui permettent de conquérir Tombouctou puis Djenné. Le Songhaï devient dominant."
+      ],
+      "points": [
+        "**1464–1492** : règne de Sonni Ali",
+        "Une cavalerie et une flotte fluviale",
+        "Conquête de **Tombouctou** et Djenné"
+      ],
+      "aside": null,
+      "wordCount": 84
+    },
+    {
+      "key": "08-3",
+      "research": [
+        "08-3",
+        0
+      ],
+      "author": "Taguelmoust",
+      "alt": "Monument pyramidal en terre du tombeau des Askia à Gao.",
+      "legende": "Le tombeau des Askia à Gao, construit en 1495.",
+      "reason": "Monument lié à Askia et au pèlerinage ; aucun portrait imaginaire du souverain.",
+      "source": {
+        "title": "File:Askia.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Askia.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Askia.jpg",
+        "width": 530,
+        "height": 398,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "author": "Taguelmoust",
+        "description": "Tomb of Askia — mud building in Mali",
+        "date": ""
+      },
+      "downloadUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Askia.jpg/500px-Askia.jpg",
+      "asset": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-3.webp",
+      "output": {
+        "width": 500,
+        "height": 375,
+        "bytes": 37658
+      },
+      "paragraphs": [
+        "Après Sonni Ali, **Askia Mohammed** réorganise l'empire et accomplit un pèlerinage à **La Mecque**.",
+        "Gouverneurs, administration centralisée, armée permanente, poids et mesures unifiés : ces réformes soutiennent l'apogée du Songhaï."
+      ],
+      "points": [
+        "**1493–1528** : règne d'Askia Mohammed",
+        "Provinces, gouverneurs et armée permanente",
+        "Apogée du **Songhaï**"
+      ],
+      "wordCount": 93
+    },
+    {
+      "key": "08-4",
+      "research": [
+        "08-4",
+        2
+      ],
+      "author": "Edmond Fortier",
+      "alt": "Mosquée de Sankoré sur une ancienne carte postale.",
+      "legende": "Sankoré à Tombouctou, photographie ancienne d'Edmond Fortier.",
+      "reason": "Vue historique du centre du savoir mentionné, pas une scène prétendument médiévale.",
+      "source": {
+        "title": "File:Fortier 368 Timbuktu Sankore Mosque.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/17/Fortier_368_Timbuktu_Sankore_Mosque.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Fortier_368_Timbuktu_Sankore_Mosque.jpg",
+        "width": 1000,
+        "height": 635,
+        "license": "Public domain",
+        "author": "Edmond Fortier (1862-1928)",
+        "description": "Postcard 368 by Edmond Fortier. View of the Sankoré Mosque in Timbuktu, Mali.",
+        "date": "between 1905 and 1906date QS:P,+1905-00-00T00:00:00Z/8,P1319,+1905-00-00T00:00:00Z/9,P1326,+1906-00-00T00:00:00Z/9"
+      },
+      "asset": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-4.webp",
+      "output": {
+        "width": 1000,
+        "height": 635,
+        "bytes": 148098
+      },
+      "paragraphs": [
+        "Le **Songhaï** devient le plus vaste empire de l'histoire de l'Afrique de l'Ouest.",
+        "Administration, armée et commerce transsaharien soutiennent sa puissance. **Tombouctou** et Djenné rayonnent par leurs écoles et bibliothèques."
+      ],
+      "points": [
+        "Un très vaste empire **ouest-africain**",
+        "Administration et commerce soutiennent sa puissance",
+        "**Tombouctou** et Djenné diffusent le savoir"
+      ],
+      "wordCount": 78
+    },
+    {
+      "key": "08-5",
+      "file": "File:Bataille de tondibi.png",
+      "alt": "Schéma des positions des armées à Tondibi.",
+      "legende": "Tondibi, 1591 : schéma moderne de la bataille.",
+      "fit": "contain",
+      "reason": "Schéma moderne explicite, utile si les positions et la source sont documentées.",
+      "research": [
+        "08-5b",
+        1
+      ],
+      "source": {
+        "title": "File:Bataille de tondibi.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/11/Bataille_de_tondibi.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Bataille_de_tondibi.png",
+        "width": 1400,
+        "height": 800,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "Monsieur Fou",
+        "description": "Déroulement de la bataille de Tondibi",
+        "date": "2011-09-03"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Bataille_de_tondibi.png/1280px-Bataille_de_tondibi.png",
+      "asset": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-5.webp",
+      "output": {
+        "width": 1200,
+        "height": 685,
+        "bytes": 56064
+      },
+      "paragraphs": [
+        "En **1591**, l'armée marocaine bat le Songhaï à **Tondibi**, grâce notamment à ses armes à feu.",
+        "La défaite brise la puissance impériale. Les foyers savants de Tombouctou et Djenné continuent pourtant leur histoire."
+      ],
+      "points": [
+        "**1591** : défaite de Tondibi",
+        "Les armes à feu font la différence",
+        "Fin de la puissance impériale **songhaï**"
+      ],
+      "aside": null,
+      "wordCount": 96
+    },
+    {
+      "key": "09-1",
+      "research": [
+        "09-1",
+        0
+      ],
+      "author": "Aa77zz",
+      "alt": "Routes vers Tombouctou et Djenné et régions aurifères.",
+      "legende": "Routes transsahariennes, XIe–XVe siècles : villes, sel et régions aurifères.",
+      "fit": "contain",
+      "reason": "Carte des flux commerciaux ; adaptation française des labels pour la lecture.",
+      "source": {
+        "title": "File:Trans-Saharan routes early.svg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/ff/Trans-Saharan_routes_early.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+        "width": 512,
+        "height": 597,
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "Aa77zz",
+        "description": "Trade routes of the Western Sahara c. 1000-1500. Goldfields are indicated by light brown shading. Map Map data from: http://www.naturalearthdata.com/ 1:50m data Projection: Equirectangular - Lat/Long - plate carrée Map limits: N: 38N S: 3N E: 12E W: 18W Software: Grass GIS 6.4.1 Inkscape 0.48.1 Scaled x30 in Inkscape to give 30 pixels per degree. Routes The routes shown are based those given by Mauny 1961. Mauny gives maps for three periods: 8th-10th centuries on page 429, 11th-13th on page 430 and after the 14th century on page 434. The position of the goldfields is based on Mauny 1961 page 295. Levtzion has published a map of the trade routes both in Levtzion 1973 and in Levtzion &amp; Hopkins 1981. The map shows Tahert (modern Tiaret in Algeria) to the south of Tlemcen. In fact Tahert should be to the East and slightly to the North of Tlemcen. The map also shows Tamentit on the Draa River. In fact Tamentit is one of the oases of Tuat – and instead the town of Tamdoult (Tamdult) lay near Akka to the north of the Draa. A map showing trade routes (10th to 16th centuries) is given in Cuoq 1975 on page 11. This map repeats the error made by Levtzion 1973 in placing Tahert to the south of Tlemcen. Toponyms Assumptions: the capital of Ghana was at Koumbi Saleh Takedda was at Azelik Aoudaghost was at Tegdaoust The Malian capital has not been included - there is no consensus on the location. Orthography: Aoudaghost - Awdaghost - Awdaghust Araouane - Araouane - Arawan Ouadane - Ouadane - Wadan Oualata - Oualata - Walata Ouargla - Wargla - Wargala Sijilmasa - Sidjilmassa - Sijilmasa References Cuoq, Joseph M., translator and editor (1975) (in french) Recueil des sources arabes concernant l'Afrique occidentale du VIIIe au XVIe siècle (Bilād al-Sūdān), Paris: Éditions du Centre National de la Recherche Scientifique, p. 11 . Reprinted in 1985 with corrections and additional texts, ISBN 2222017181. Levtzion, Nehemia (1973) Ancient Ghana and Mali, London: Methuen, pp. 138−139 ISBN: 0841904316. . Reprinted 1980. (2000) Corpus of Early Arabic Sources for West Africa, Marcus Weiner, p. xxii ISBN: 1-55876-241-8. . First published in 1981 by Cambridge University Press, ISBN 0521224225. Mauny, Raymond (1961) (in french) Tableau géographique de l'ouest africain au moyen age, d’après les sources écrites, la tradition et l'archéologie, Institut français d'Afrique Noire, pp. 426−432 . Further reading Devisse, J. (1988) el Fasi, M., ed. General History of Africa Volume 3: Africa from the Seventh to the Eleventh Century, University of California Press, pp. 367−435 ISBN: 0520039149. . Includes a map of the Sahara showing isohytes and schematic diagrams of the trade routes with the number of stages specified by Ibn Hawkal, al-Bakri and al-Idrisi.",
+        "date": "2011-08-05"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/ff/Trans-Saharan_routes_early.svg/500px-Trans-Saharan_routes_early.svg.png",
+      "asset": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-1.webp",
+      "output": {
+        "width": 1200,
+        "height": 1402,
+        "bytes": 69648
+      },
+      "paragraphs": [
+        "L'or et le sel enrichissent **Tombouctou** et **Djenné**, entre caravanes sahariennes et commerce fluvial.",
+        "Cette prospérité attire marchands, lettrés et étudiants. Les villes deviennent aussi des carrefours de savoir."
+      ],
+      "points": [
+        "Deux carrefours commerciaux **sahéliens**",
+        "L'or et le sel fondent leur richesse",
+        "Le commerce favorise le **savoir**"
+      ],
+      "wordCount": 86
+    },
+    {
+      "key": "09-2",
+      "research": [
+        "09-2",
+        3
+      ],
+      "author": "Ondřej Havelka",
+      "alt": "Minaret et façade en terre de la mosquée de Sankoré.",
+      "legende": "Sankoré à Tombouctou, ancien foyer d'enseignement.",
+      "fit": "contain",
+      "reason": "Monument exact, vu récemment ; ne pas réduire toute l'activité savante à un bâtiment.",
+      "source": {
+        "title": "File:Sankore Madrasah.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/3f/Sankore_Madrasah.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Sankore_Madrasah.jpg",
+        "width": 1899,
+        "height": 2529,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Dr. Ondřej Havelka (cestovatel)",
+        "description": "Sankore Madrasah is one of three ancient centers of learning located in Timbuktu, Mali, Africa. It is part of the ancient University of Timbuktu.",
+        "date": "2021-04-21 16:05:19"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/3f/Sankore_Madrasah.jpg/1280px-Sankore_Madrasah.jpg",
+      "asset": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-2.webp",
+      "output": {
+        "width": 1200,
+        "height": 1598,
+        "bytes": 155796
+      },
+      "paragraphs": [
+        "À **Sankoré**, des étudiants étudient droit, théologie, grammaire, astronomie, mathématiques et médecine.",
+        "Les ouvrages de savants comme **Ahmed Baba** circulent dans le monde islamique. Tombouctou devient une cité renommée du savoir."
+      ],
+      "points": [
+        "**Six disciplines**, du droit à l'astronomie",
+        "**Ahmed Baba**, savant de Tombouctou",
+        "Un rayonnement dans le monde islamique"
+      ],
+      "aside": null,
+      "wordCount": 87
+    },
+    {
+      "key": "09-3",
+      "research": [
+        "07-5",
+        1
+      ],
+      "author": "Ahmed Baba Institute / Wikimedia Commons",
+      "alt": "Tables de calcul astronomique dans un manuscrit de Tombouctou.",
+      "legende": "Tables astronomiques conservées à Tombouctou, manuscrit de l'Institut Ahmed-Baba.",
+      "fit": "contain",
+      "reason": "Le document montre un contenu scientifique concret, plutôt qu'une simple pile de livres.",
+      "source": {
+        "title": "File:Timbuktu-manuscripts-astronomy-tables.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/39/Timbuktu-manuscripts-astronomy-tables.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Timbuktu-manuscripts-astronomy-tables.jpg",
+        "width": 1024,
+        "height": 683,
+        "license": "Public domain",
+        "author": "Unknown authorUnknown author",
+        "description": "Image of Timbuktu manuscripts. Manuscript 2163 (Ahmed Baba Institute). The author is the Arab Egyptian astronomer Ibn Yunus (c. 950 – 1009 AD).[1][2][3]",
+        "date": "2007-11"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/39/Timbuktu-manuscripts-astronomy-tables.jpg/960px-Timbuktu-manuscripts-astronomy-tables.jpg",
+      "asset": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-3.webp",
+      "output": {
+        "width": 960,
+        "height": 640,
+        "bytes": 150958
+      },
+      "paragraphs": [
+        "Des bibliothèques familiales conservent les manuscrits de **Tombouctou**, transmis de génération en génération.",
+        "Religion, droit, histoire, sciences et **astronomie** : ces pages témoignent d'une tradition écrite savante en Afrique de l'Ouest."
+      ],
+      "points": [
+        "Des bibliothèques **familiales**",
+        "Des textes dans de nombreuses disciplines",
+        "Une tradition écrite **ouest-africaine**"
+      ],
+      "wordCount": 77
+    },
+    {
+      "key": "09-4",
+      "file": "File:MaliDjennéMosquée.JPG",
+      "author": "BluesyPete",
+      "alt": "Grande Mosquée de Djenné et ses poutres de bois saillantes.",
+      "legende": "Grande Mosquée de Djenné, édifice actuel reconstruit en 1907.",
+      "reason": "L'édifice et les torons expliquent l'architecture et l'entretien ; reconstruction récente datée.",
+      "source": {
+        "title": "File:MaliDjennéMosquée.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/f1/MaliDjenn%C3%A9Mosqu%C3%A9e.JPG",
+        "page": "https://commons.wikimedia.org/wiki/File:MaliDjenn%C3%A9Mosqu%C3%A9e.JPG",
+        "width": 4521,
+        "height": 2094,
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "author": "BluesyPete",
+        "description": "Great Mosque of Djenné, en:Djenné, Mali",
+        "date": "2007-11-26 13:24:38"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f1/MaliDjenn%C3%A9Mosqu%C3%A9e.JPG/1280px-MaliDjenn%C3%A9Mosqu%C3%A9e.JPG",
+      "asset": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-4.webp",
+      "output": {
+        "width": 1200,
+        "height": 556,
+        "bytes": 153000
+      },
+      "paragraphs": [
+        "La Grande Mosquée de **Djenné** est un immense édifice en terre crue.",
+        "Les habitants renouvellent ensemble son enduit chaque année. À **Tombouctou**, Djinguereber témoigne du même savoir-faire architectural."
+      ],
+      "points": [
+        "La **terre crue**, matériau monumental",
+        "Une réfection annuelle collective",
+        "Djenné et **Djinguereber**, patrimoine de l'UNESCO"
+      ],
+      "aside": null,
+      "wordCount": 78
+    },
+    {
+      "key": "09-5",
+      "research": [
+        "09-5",
+        1
+      ],
+      "author": "Lazare Eloundou",
+      "alt": "Manuscrits conservés par l'association SAVAMA-DCI à Tombouctou.",
+      "legende": "Manuscrits conservés par SAVAMA-DCI, au Mali.",
+      "fit": "contain",
+      "reason": "Photo de conservation, directement liée aux habitants qui préservent les documents.",
+      "source": {
+        "title": "File:Timbuktu-139078.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/44/Timbuktu-139078.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Timbuktu-139078.jpg",
+        "width": 3264,
+        "height": 2448,
+        "license": "CC BY-SA 3.0 igo",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+        "author": "Lazare Eloundou",
+        "description": "Manuscripts conserved at the SAVAMA DCI, Timbuktu",
+        "date": "2014-07-19"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/44/Timbuktu-139078.jpg/1280px-Timbuktu-139078.jpg",
+      "asset": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-5.webp",
+      "output": {
+        "width": 1200,
+        "height": 900,
+        "bytes": 286794
+      },
+      "paragraphs": [
+        "En **2012**, des mausolées sont détruits à Tombouctou. Des habitants mettent les manuscrits à l'abri.",
+        "Communautés locales et **UNESCO** soutiennent conservation et numérisation. Protéger ces documents préserve la mémoire écrite du continent."
+      ],
+      "points": [
+        "**2012** : destructions et sauvetage des manuscrits",
+        "Des habitants protègent leur patrimoine",
+        "Conservation et **numérisation** préservent la mémoire"
+      ],
+      "wordCount": 94
+    },
+    {
+      "key": "10-1",
+      "file": "File:Kanem-Bornu.svg",
+      "alt": "Carte situant Kanem et Bornou autour du lac Tchad.",
+      "legende": "Kanem et Bornou autour du lac Tchad, territoires indicatifs.",
+      "fit": "contain",
+      "reason": "Localiser le royaume et le lac plutôt qu'un drapeau ou une carte administrative actuelle.",
+      "source": {
+        "title": "File:Kanem-Bornu.svg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Kanem-Bornu.svg",
+        "page": "https://commons.wikimedia.org/wiki/File:Kanem-Bornu.svg",
+        "width": 1000,
+        "height": 1000,
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "author": "ArnoldPlaton",
+        "description": "Map of the Kanem-Bornu Empire",
+        "date": "2012-04-06"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Kanem-Bornu.svg/960px-Kanem-Bornu.svg.png",
+      "asset": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-1.webp",
+      "output": {
+        "width": 1200,
+        "height": 1200,
+        "bytes": 62722
+      },
+      "paragraphs": [
+        "Le **Kanem** émerge vers le IXᵉ siècle, à l'est et au nord du lac Tchad.",
+        "Peuplé notamment de Kanouri, il est gouverné par les **Sayfawa**. Cette dynastie traverse près de mille ans d'histoire."
+      ],
+      "points": [
+        "Le **Kanem** naît vers le IXᵉ siècle",
+        "Les **Sayfawa**, une dynastie durable",
+        "Le lac Tchad est un repère central"
+      ],
+      "aside": null,
+      "wordCount": 83
+    },
+    {
+      "key": "10-2",
+      "research": [
+        "05-4",
+        0
+      ],
+      "author": "T L Miles",
+      "alt": "Routes sahariennes reliant notamment le lac Tchad à l'Afrique du Nord.",
+      "legende": "Routes transsahariennes vers 1400, dont celles du Kanem-Bornou.",
+      "fit": "contain",
+      "reason": "Carte du réseau postérieure à l'islamisation, datée et utilisée seulement pour situer les routes.",
+      "source": {
+        "title": "File:Niger saharan medieval trade routes.PNG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Niger_saharan_medieval_trade_routes.PNG",
+        "page": "https://commons.wikimedia.org/wiki/File:Niger_saharan_medieval_trade_routes.PNG",
+        "width": 817,
+        "height": 326,
+        "license": "Public domain",
+        "author": "T L Miles",
+        "description": "Map showing the main trans-Saharan caravan routes circa 1400. Also shown are the Ghana Empire (until the 13th century) and 13th – 15th century Mali Empire. Note the western route running from Djenné via Timbuktu to Sijilmassa. Present day Niger in yellow.",
+        "date": "2008-01-18"
+      },
+      "asset": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-2.webp",
+      "output": {
+        "width": 817,
+        "height": 326,
+        "bytes": 41368
+      },
+      "paragraphs": [
+        "Le **Kanem** contrôle des routes transsahariennes reliant l'Afrique centrale au Maghreb et à l'Égypte.",
+        "Au XIᵉ siècle, ses souverains, les **mai**, adoptent l'islam. Commerce et diplomatie renforcent leurs liens avec le monde musulman."
+      ],
+      "points": [
+        "Routes vers le Maghreb et l'Égypte",
+        "Les **mai** adoptent l'islam au XIᵉ siècle",
+        "Commerce et religion renforcent les échanges"
+      ],
+      "wordCount": 85
+    },
+    {
+      "key": "10-3",
+      "research": [
+        "10-1",
+        3
+      ],
+      "author": "Megartonius",
+      "alt": "Le Bornou à l'ouest du lac Tchad sur une carte historique.",
+      "legende": "Le Kanem-Bornou vers 1450, après le déplacement du pouvoir.",
+      "fit": "contain",
+      "reason": "Carte datée du XVe siècle, adaptée à la renaissance du Bornou.",
+      "source": {
+        "title": "File:Kanem–Bornu, 1450.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Kanem%E2%80%93Bornu%2C_1450.png",
+        "page": "https://commons.wikimedia.org/wiki/File:Kanem%E2%80%93Bornu,_1450.png",
+        "width": 1923,
+        "height": 1730,
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "author": "Megartonius",
+        "description": "Map of the Kanem–Bornu Empire in 1450. The borders follow Cohen (1966) (p. 71). The base map used is Africa map blank.svg.",
+        "date": "2025-11-10"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Kanem%E2%80%93Bornu%2C_1450.png/1280px-Kanem%E2%80%93Bornu%2C_1450.png",
+      "asset": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-3.webp",
+      "output": {
+        "width": 1200,
+        "height": 1080,
+        "bytes": 50508
+      },
+      "paragraphs": [
+        "Après des crises, le pouvoir quitte le Kanem pour le **Bornou**, au sud-ouest du lac Tchad.",
+        "La nouvelle capitale, **Ngazargamu**, devient le centre du Kanem-Bornou. Ce déplacement ouvre une nouvelle période de prospérité."
+      ],
+      "points": [
+        "Le pouvoir passe au **Bornou**",
+        "**Ngazargamu**, nouvelle capitale",
+        "Le royaume retrouve la prospérité"
+      ],
+      "wordCount": 92
+    },
+    {
+      "key": "10-4",
+      "missing": "Recherche d'un portrait documenté d'Idris Alooma et d'une arme ottomane du XVIᵉ siècle liée à son armée. Résultats modernes homonymes écartés ; pas de portrait fictif ni de mousquet du XIXᵉ siècle.",
+      "searchSources": [
+        "https://commons.wikimedia.org/wiki/Category:Kanem-Bornu_Empire",
+        "https://www.metmuseum.org/art/collection"
+      ]
+    },
+    {
+      "key": "10-5",
+      "research": [
+        "10-5",
+        2
+      ],
+      "author": "Edward Francis Finden / Dixon Denham",
+      "alt": "Réception d'une mission devant le souverain du Bornou.",
+      "legende": "La cour du Bornou, gravure publiée en 1826.",
+      "fit": "contain",
+      "reason": "Document du XIXᵉ siècle, période terminale évoquée ; pas image de la cour d'Alooma.",
+      "source": {
+        "title": "File:Council of the Sultan of Bornou 1826.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Council_of_the_Sultan_of_Bornou_1826.jpg",
+        "page": "https://commons.wikimedia.org/wiki/File:Council_of_the_Sultan_of_Bornou_1826.jpg",
+        "width": 1134,
+        "height": 1446,
+        "license": "Public domain",
+        "author": "Finden, Edward Francis, 1791-1857 -- Engraver",
+        "description": "Reception of the Mission. By the Sultan of Bornou. Creator Finden, Edward Francis, 1791-1857 -- Engraver Additional Name(s) Denham, Dixon, 1786-1828 -- Author Specific Material Type Printed text Item/Page/Plate opp. Pg. 79 Source Narrative of travels and discoveries in Northern and Central Africa, in the years 1822, 1823, and 1824. Vol I &amp; II. Location Schomburg Center for Research in Black Culture / Manuscripts, Archives and Rare Books Division Catalog Call Number Sc Rare 916.7-D (Denham, D. Narrative of travels and discoveries in Northern and Central Africa) Digital ID 1245771 Record ID 210234 Digital Item Published 7-18-2005; updated 10-3-2007 http://digitalgallery.nypl.org/nypldigital/dgkeysearchdetail.cfm?trg=1&amp;strucID=210234&amp;imageID=1245771&amp;total=4&amp;num=0&amp;word=Bornou&amp;s=3&amp;notword=&amp;d=&amp;c=&amp;f=2&amp;k=0&amp;lWord=&amp;lField=&amp;sScope=&amp;sLevel=&amp;sLabel=&amp;imgs=20&amp;pos=1&amp;e=w#_seemore",
+        "date": "1826"
+      },
+      "downloadUrl": "https://thumb.wikimedia.org/wikipedia/commons/thumb/c/c1/Council_of_the_Sultan_of_Bornou_1826.jpg/960px-Council_of_the_Sultan_of_Bornou_1826.jpg",
+      "asset": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-5.webp",
+      "output": {
+        "width": 960,
+        "height": 1224,
+        "bytes": 559576
+      },
+      "paragraphs": [
+        "Le **Kanem-Bornou** perdure jusqu'au XIXᵉ siècle : une longévité remarquable dans le Soudan central.",
+        "Commerce, **islam** et stabilité politique montrent que les grands États africains dépassaient le seul Sahel de l'Ouest."
+      ],
+      "points": [
+        "Un État durable jusqu'au **XIXᵉ siècle**",
+        "Commerce et diffusion de l'**islam**",
+        "Une puissance du Soudan central"
+      ],
+      "wordCount": 96
+    }
+  ]
+}
