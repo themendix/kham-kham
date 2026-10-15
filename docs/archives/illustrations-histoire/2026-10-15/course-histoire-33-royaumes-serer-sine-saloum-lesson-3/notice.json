@@ -1,0 +1,58 @@
+{
+  "date": "2026-10-15",
+  "id": "course-histoire-33-royaumes-serer-sine-saloum-lesson-3",
+  "reason": "La vue montre Wassu en Gambie ; une vue de Sine Ngayène relie directement l’image aux sites sénégalais étudiés.",
+  "originalLesson": {
+    "id": "course-histoire-33-royaumes-serer-sine-saloum-lesson-3",
+    "title": "Les cercles mégalithiques",
+    "blocks": [
+      {
+        "type": "paragraphe",
+        "text": "Des milliers de pierres dressées jalonnent la **Sénégambie**."
+      },
+      {
+        "type": "chiffreCle",
+        "valeur": "2",
+        "legende": "sites sénégalais de l’ensemble classé par l’UNESCO"
+      },
+      {
+        "type": "paragraphe",
+        "text": "Au Sénégal, **Sine Ngayène** et Wanar présentent cercles et tumulus funéraires. En Gambie, Wassu appartient au même ensemble sénégambien. Ces mégalithes témoignent d'une organisation sociale élaborée."
+      },
+      {
+        "type": "image",
+        "alt": "Pierres dressées des cercles de Wassu, en Gambie.",
+        "legende": "Wassu, en Gambie : cercles mégalithiques photographiés en 2008.",
+        "credit": "Ikiwaner, CC BY-SA 3.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wassu_stone_circle.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      {
+        "type": "aRetenir",
+        "points": [
+          "**Sine Ngayène** et Wanar, cercles mégalithiques classés par l'UNESCO",
+          "Des milliers de pierres dressées et de tumulus",
+          "Une des plus grandes concentrations de mégalithes au monde"
+        ]
+      },
+      {
+        "type": "leSavaisTu",
+        "text": "La construction de ces monuments funéraires nécessitait des chantiers collectifs."
+      }
+    ]
+  },
+  "files": [
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-33-royaumes-serer-sine-saloum-lesson-3/course-histoire-33-royaumes-serer-sine-saloum-lesson-3.webp",
+      "sha256": "1384811703bb1b874dd1a05d26196cc23696ecedd02a422d6e76fd53b4445c5c"
+    },
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-33-royaumes-serer-sine-saloum-lesson-3/course-histoire-33-royaumes-serer-sine-saloum-lesson-3-400w.webp",
+      "sha256": "308ea5f6f1a0c51366045d078705b2af6885a8c0403d240be4d0e4a44d51e79f"
+    },
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-33-royaumes-serer-sine-saloum-lesson-3/course-histoire-33-royaumes-serer-sine-saloum-lesson-3-800w.webp",
+      "sha256": "0e2f55c84bc4bea3b9063fd58ef7e7136920a8111944838a14d6213dd8c068e0"
+    }
+  ]
+}

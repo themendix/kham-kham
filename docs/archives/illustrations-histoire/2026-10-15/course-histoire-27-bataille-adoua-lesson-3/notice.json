@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-15",
+  "id": "course-histoire-27-bataille-adoua-lesson-3",
+  "reason": "Peintre, date et droits du tableau non documentés ; remplacé par un document de presse daté de 1896.",
+  "originalLesson": {
+    "id": "course-histoire-27-bataille-adoua-lesson-3",
+    "title": "La bataille d'Adoua",
+    "blocks": [
+      {
+        "type": "paragraphe",
+        "text": "Environ 100 000 soldats éthiopiens affrontent l'armée italienne venue les envahir. En une seule journée, le sort du continent bascule."
+      },
+      {
+        "type": "chiffreCle",
+        "valeur": "100 000",
+        "legende": "soldats éthiopiens engagés à la bataille d'Adoua"
+      },
+      {
+        "type": "paragraphe",
+        "text": "Le 1er mars **1896**, à **Adoua**, l'armée éthiopienne écrase les forces italiennes venues l'envahir. Ce fut une victoire éclatante et décisive, l'une des plus célèbres de l'histoire militaire africaine."
+      },
+      {
+        "type": "image",
+        "alt": "Peinture des armées d'Adoua, avec un saint cavalier.",
+        "legende": "Adoua représentée en peinture ; artiste et date inconnus.",
+        "credit": "Photo AralGuillaume, CC0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bataille_d%27Adoua_peinture_%C3%A9thiopienne.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      {
+        "type": "aRetenir",
+        "points": [
+          "**1er mars 1896** : bataille d'Adoua",
+          "**100 000** soldats éthiopiens engagés",
+          "Une victoire décisive, l'une des plus célèbres d'Afrique"
+        ]
+      }
+    ]
+  },
+  "files": [
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-27-bataille-adoua-lesson-3/course-histoire-27-bataille-adoua-lesson-3.webp",
+      "sha256": "a3202a8b4c29accf6da782338513466e74561bae9d3528e373902c74fcc303c1"
+    },
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-27-bataille-adoua-lesson-3/course-histoire-27-bataille-adoua-lesson-3-400w.webp",
+      "sha256": "944ed89806de24773009e949e86b868847715ac20e1ac7fce1bee4bb54bb8a04"
+    },
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-27-bataille-adoua-lesson-3/course-histoire-27-bataille-adoua-lesson-3-800w.webp",
+      "sha256": "42a7634978ab31e949d20e4060f90f64a68222bcc2d4e8969d6f1da07b709c53"
+    }
+  ]
+}

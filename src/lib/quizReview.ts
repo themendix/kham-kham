@@ -13,6 +13,7 @@
  */
 import type { QuestionStat } from "@/types";
 import { toISODate } from "@/lib/gamification";
+import { addDayKey } from "@/lib/calendar";
 
 /** Palier au-delà duquel une question est acquise et n'est plus programmée */
 export const MASTERED_BOX = 3;
@@ -24,12 +25,11 @@ export const MASTERED_BOX = 3;
 export const REVIEW_INTERVALS_DAYS: Record<number, number> = { 0: 1, 1: 3, 2: 7 };
 
 /** Statistique d'une question jamais rencontrée */
-export const NEW_QUESTION_STAT: QuestionStat = { correct: 0, wrong: 0, box: 0, dueDate: null };
+export const NEW_QUESTION_STAT: QuestionStat = { correct: 0, wrong: 0, box: 0, dueDate: null, successDayKeys: [], xpAwarded: false };
 
-function addDays(from: Date, days: number): Date {
-  const next = new Date(from);
-  next.setDate(next.getDate() + days);
-  return next;
+/** Aucun jour ancien n'est déduit d'un compteur : seul le paiement déjà acquis est conservé. */
+export function normalizeQuestionStat(stat: QuestionStat): QuestionStat {
+  return { ...stat, successDayKeys: [...(stat.successDayKeys ?? [])], xpAwarded: stat.xpAwarded ?? stat.correct >= 2 };
 }
 
 /**
@@ -41,23 +41,30 @@ export function applyAnswer(
   isCorrect: boolean,
   now: Date = new Date(),
 ): QuestionStat {
-  const current = stat ?? NEW_QUESTION_STAT;
+  const current = normalizeQuestionStat(stat ?? NEW_QUESTION_STAT);
+  const today = toISODate(now);
 
   if (!isCorrect) {
     return {
+      ...current,
       correct: current.correct,
       wrong: current.wrong + 1,
       box: 0,
-      dueDate: toISODate(addDays(now, REVIEW_INTERVALS_DAYS[0])),
+      dueDate: addDayKey(today, REVIEW_INTERVALS_DAYS[0]),
     };
   }
 
   const box = Math.min(current.box + 1, MASTERED_BOX);
+  const successDayKeys = [...current.successDayKeys!];
+  if (!successDayKeys.includes(today) && successDayKeys.length < 2) successDayKeys.push(today);
   return {
+    ...current,
     correct: current.correct + 1,
     wrong: current.wrong,
     box,
-    dueDate: box === MASTERED_BOX ? null : toISODate(addDays(now, REVIEW_INTERVALS_DAYS[box])),
+    dueDate: box === MASTERED_BOX ? null : addDayKey(today, REVIEW_INTERVALS_DAYS[box]),
+    successDayKeys,
+    xpAwarded: current.xpAwarded || successDayKeys.length === 2,
   };
 }
 
@@ -78,16 +85,17 @@ export function isMastered(stat: QuestionStat | undefined): boolean {
 }
 
 /**
- * Cette bonne réponse est-elle la **deuxième** réussite de la question — donc celle qui crédite
- * l'XP ? À n'appeler qu'avec la statistique *antérieure* à la réponse en cours.
+ * Cette bonne réponse ouvre-t-elle un deuxième jour local distinct de réussite, encore impayé ?
+ * À appeler avec la statistique antérieure à la réponse et le même instant qu'applyAnswer.
  *
  * Le module sert tout le catalogue, y compris des questions jamais lues : une première réussite
- * peut n'être qu'un tirage heureux sur quatre options. La deuxième, elle, tombe après que la
- * révision espacée a écarté le rappel de plusieurs jours — elle atteste vraiment quelque chose.
+ * peut n'être qu'un tirage heureux sur quatre options. Les jours sont suivis prospectivement,
+ * sans exiger qu'ils soient consécutifs. Le paiement reste indépendant de la boîte de révision.
  * Voir `XP_PER_QUESTION_LEARNED`.
  */
-export function earnsXpOnCorrect(stat: QuestionStat | undefined): boolean {
-  return (stat?.correct ?? 0) === 1;
+export function earnsXpOnCorrect(stat: QuestionStat | undefined, now: Date = new Date()): boolean {
+  const current = normalizeQuestionStat(stat ?? NEW_QUESTION_STAT);
+  return !current.xpAwarded && current.successDayKeys!.length === 1 && !current.successDayKeys!.includes(toISODate(now));
 }
 
 /** A-t-elle déjà été réussie au moins une fois ? */

@@ -62,12 +62,16 @@ mécaniquement par la refonte, mais il faut savoir qu'il existe.
 
 ### 1.3 Le diagnostic éditorial
 
+**Diagnostic historique, avant réécriture.** Au 15 octobre 2026, le catalogue compte
+136 cours et 572 leçons, dont 31 cours et **155 leçons de Personnalités**, déjà structurées
+en blocs. Les volumes et formats ci-dessous décrivent l'état initial de la charte.
+
 Deux formats coexistent, tous deux problématiques pour des raisons opposées :
 
 | Matière | Format actuel | Volume constaté | Problème |
 |---|---|---|---|
 | **Histoire** (40 cours, 200 leçons) | **un seul paragraphe monolithique**, aucune coupure | ≈ **170-180 mots** d'un bloc | Le pire cas de mur de texte : rien ne respire, aucun point d'accroche visuel |
-| **Personnalités** (31 cours, 153 leçons) | idem Histoire | ≈ **170-180 mots** d'un bloc | idem |
+| **Personnalités** (31 cours, 153 leçons au diagnostic initial ; 155 aujourd'hui) | idem Histoire | ≈ **170-180 mots** d'un bloc | idem |
 | **Géographie** (54 cours, 162 leçons) | 2-3 rubriques `####`, 4-5 paragraphes | ≈ **280-300 mots** | Volume double de la cible, plus le bug D2 qui casse la structure après la 1ʳᵉ phrase |
 | **Héritées** (3 cours, 9 leçons) | paragraphes libres | variable | Relèvent de la Phase 8 |
 
@@ -343,7 +347,7 @@ d'habitants » n'apprend rien à personne ; « 80 % du pays est un désert » es
 
 | | |
 |---|---|
-| **Rôle** | Faire entendre une voix. Indispensable en Histoire et en Personnalités. |
+| **Rôle** | Faire entendre une voix attestée. Requis par cours en Histoire ; alternatives explicites pour les portraits en Personnalités (§ 7.3). |
 | **Longueur** | 25 mots maximum. Une citation longue n'est plus une citation. |
 | **Fréquence** | Zéro ou une par leçon. |
 | **Balisage inline** | Non (le bloc est déjà une emphase). |
@@ -406,8 +410,8 @@ la rubrique *Institutions et politique* des fiches Géographie.
 | | |
 |---|---|
 | **Rôle** | Un portrait, un artefact, un lieu. La forme la plus directe de rupture du texte. |
-| **Fréquence** | Zéro ou une par leçon. |
-| **Statut** | **Déclaré, non utilisé.** Aucune image de leçon n'existe à ce jour. |
+| **Fréquence** | Zéro ou une par leçon. En Histoire : au minimum deux illustrations pertinentes par cours, sans obligation pour chaque leçon (décision du 15 octobre 2026). |
+| **Statut** | Utilisé ; sources, crédits et registres dans `docs/IMAGES-LECONS.md`. |
 | **Balisage inline** | Non. |
 
 **Rendu** — image en `4:3` ou `16:9`, `border: 2.5px solid #ink`, `border-radius: 16px`,
@@ -669,14 +673,37 @@ monnaie, régime et date d'indépendance sont stables : eux passent en `reperes`
 
 ### 7.3 Personnalités — le portrait
 
+**Décision utilisateur du 15 octobre 2026 :** conserver les blocs existants des 18 portraits
+sans citation finale ; ne pas fabriquer de paroles pour satisfaire un gabarit. Les règles
+communes sont désormais activées sur les **155 leçons** de Personnalités.
+
 | Leçon | Bloc visuel imposé |
 |---|---|
 | 1 — le contexte | `frise` (situer l'époque) |
 | 2 à 4 | libre |
-| 5 — la postérité | `citation` (de la personne, ou sur elle) |
+| 5 — la postérité | `citation` attestée (de la personne, ou sur elle), `frise` de vie ou alternative explicitement approuvée ci-dessous |
 
-**Au moins une `citation` par cours.** Si aucune parole attestée n'existe, la remplacer par une
-`frise` des dates clés de la vie — jamais par une citation apocryphe.
+**La citation n'est pas obligatoire dans chaque portrait.** Si aucune parole attestée n'est
+disponible, une `frise` de dates établies convient. Les 18 alternatives suivantes sont aussi
+admises en leçon 5, avec leurs blocs et images existants conservés :
+
+| Bloc de postérité conservé | Portraits concernés |
+|---|---|
+| `reperes` | Yennenga ; Sayyida al-Hurra ; Kimpa Vita ; Samori Touré ; Taytu Betul ; Yaa Asantewaa ; Sarraounia ; Cheikh Anta Diop ; Agostinho Neto ; Julius Nyerere ; Jeanne Martin Cissé ; Albertina Sisulu |
+| `chiffreCle` | Ibn Khaldoun ; Abd el-Kader ; Amílcar Cabral ; Funmilayo Ransome-Kuti ; Aoua Keïta |
+| `image` | Nanny des Marrons |
+
+Ces alternatives portent des faits et des repères de postérité, pas des paroles attribuées
+sans attestation. Leur liste technique explicite est
+`PORTRAIT_POSTERITY_ALTERNATIVES` dans `scripts/personality-template.ts`. Un nouveau portrait
+ne bénéficie pas automatiquement de cette dérogation : citation ou frise finale restent
+requises, sauf nouvelle décision éditoriale documentée. Les contraintes de longueur, gras,
+structure, crédits et licences s'appliquent à toutes les alternatives.
+
+**Exception thématique :** `course-perso-voix-plumes-afrique` est une anthologie de cinq
+auteurs, et non une biographie unique. Ses cinq leçons conservent leurs blocs ; sa conclusion
+contient des `reperes`. Ni frise de vie commune ni citation finale obligatoire ; toutes les
+règles communes restent applicables. Cette exception ne s'étend pas aux portraits.
 
 ### 7.4 Matières héritées
 
@@ -712,13 +739,14 @@ de questions.
 
 ## 9. Règles du validateur
 
-Le validateur (`scripts/validate-content.ts`, `npm run validate`) porte aujourd'hui **9 règles**,
-dont 7 bloquantes. La charte en ajoute **9**, numérotées 10 à 18.
+Le validateur (`scripts/validate-content.ts`, `npm run validate`) porte aujourd'hui
+**23 règles**. Les règles 10 à 18 appliquent notamment la charte ; les règles suivantes
+contrôlent les images et le module Quiz. Le code courant fait foi pour leur sévérité.
 
 ### 9.1 Le mécanisme d'activation progressive
 
-Les règles 11 à 18 ne peuvent pas être bloquantes dès le premier jour : les 519 leçons converties
-mécaniquement (§ 11, étape 1) ne respectent pas la charte, et la CI est bloquante.
+Les règles 11 à 18 ont été activées progressivement après la réécriture de chaque matière.
+Au 15 octobre 2026, les quatre matières actuelles sont incluses :
 
 **Solution retenue** — une liste d'inclusion explicite en tête du validateur :
 
@@ -728,7 +756,7 @@ mécaniquement (§ 11, étape 1) ne respectent pas la charte, et la CI est bloqu
  * Les règles 11 à 18 ne s'y appliquent qu'à ces matières. On étend cette liste à chaque
  * matière achevée — jamais avant.
  */
-const CHARTE_APPLIQUEE: readonly string[] = [];
+const CHARTE_APPLIQUEE: readonly string[] = ["histoire", "geo", "perso", "decouverte"];
 ```
 
 Pas de champ parasite dans les données, pas de format transitoire : une seule constante, explicite,
@@ -747,7 +775,7 @@ tout le catalogue.
 | **15** | **Ordre du squelette** — le 1ᵉʳ bloc est un `paragraphe` ; `aRetenir` est en avant-dernière ou dernière position ; `leSavaisTu`, s'il existe, est le dernier | `CHARTE_APPLIQUEE` | **bloquante** |
 | **16** | **Contraintes de longueur fines** — puces d'`aRetenir` ≤ 14 mots et 2 ≤ puces ≤ 3 ; `paragraphe` ≤ 50 mots ; `leSavaisTu` ≤ 35 mots ; `citation.texte` ≤ 25 mots ; `chiffreCle.legende` ≤ 10 mots ; 3 ≤ `frise.evenements` ≤ 5 ; 2 ≤ `reperes.items` ≤ 6 | `CHARTE_APPLIQUEE` | **bloquante** |
 | **17** | **Densité de gras** (§ 5.4) — 2 à 5 passages `**…**` dans les `paragraphe` d'une leçon ; ≤ 1 par puce d'`aRetenir` ; ≤ 2 dans `leSavaisTu` ; aucun passage > 4 mots ; aucun balisage dans un champ qui l'interdit (§ 5.3) | `CHARTE_APPLIQUEE` | avertissement pour la densité, **bloquante** pour le balisage interdit et les passages > 4 mots |
-| **18** | **Gabarit de matière** (§ 7) — bloc visuel imposé présent à la bonne leçon ; `reperes` en leçon 3 de Géographie ; ≥ 1 `citation` par cours de Personnalités et d'Histoire ; ≥ 1 `frise` par cours d'Histoire | `CHARTE_APPLIQUEE` | **bloquante** |
+| **18** | **Gabarit de matière** (§ 7) — bloc visuel imposé à la bonne leçon ; `reperes` en leçon 3 de Géographie ; ≥ 1 `citation` et ≥ 1 `frise` par cours d'Histoire ; Personnalités : frise initiale et conclusion par citation, frise ou alternative approuvée, avec exception thématique bornée (§ 7.3) | `CHARTE_APPLIQUEE` | **bloquante** |
 | **19** | **Blocs image** — `alt` non vide et différent de `legende` ; au plus un `image` par leçon ; le fichier `src/assets/lecons/<courseId>-<lessonId>-{400w,800w}.webp` existe ; aucune variante orpheline | tout le catalogue | **bloquante** pour `alt` et l'unicité, avertissement pour les fichiers (comme les règles 8 et 9) |
 
 **Non retenu** : la détection automatique des accroches plates (§ 6.4) par expression régulière
@@ -922,7 +950,7 @@ Ordre et justification :
 | Ordre | Matière | Volume | Pourquoi ce rang |
 |---|---|---|---|
 | 1 | **Histoire** | 40 cours, 200 leçons | Le pire cas (paragraphe monolithique de 175 mots) et la vitrine du produit. C'est aussi là que la charte est la plus difficile à tenir — autant s'y confronter tôt |
-| 2 | **Personnalités** | 31 cours, 153 leçons | Même format narratif que l'Histoire : réutilise directement une charte rodée |
+| 2 | **Personnalités** | 31 cours, 155 leçons aujourd'hui (153 dans l'estimation initiale) | Même format narratif que l'Histoire : réutilise directement une charte rodée |
 | 3 | **Géographie** | 54 cours, 162 leçons | Le plus volumineux mais le plus mécanique (gabarit très régulier une fois fixé), donc le plus rapide au mot près |
 | 4 | **Matières héritées** | 3 cours, 9 leçons | Relèvent de la Phase 8 (équilibrage éditorial), à traiter avec l'écriture des cours manquants |
 

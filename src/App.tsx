@@ -1,8 +1,10 @@
 import { lazy, Suspense, useEffect, useState } from "react";
-import { Routes, Route, Navigate, useParams, useSearchParams } from "react-router-dom";
+import { Routes, Route, Navigate, useParams, useSearchParams, useLocation } from "react-router-dom";
 import { AppShell } from "@/components/layout/AppShell";
 import { useAppStore } from "@/store/useAppStore";
 import { shouldShowOnboarding } from "@/lib/onboarding";
+import { NotFoundScreen } from "@/routes/NotFoundScreen";
+import { RouteErrorBoundary } from "@/components/layout/RouteErrorBoundary";
 
 // Chaque route est chargée à la demande (`React.lazy`) : la navigation vers un onglet ne
 // paie que le code de cet onglet, pas celui des huit autres. Complète le découpage du
@@ -73,6 +75,7 @@ function OnboardingHost() {
 }
 
 export default function App() {
+  const location = useLocation();
   const hydrated = useAppStore((s) => s.hydrated);
   const saving = useAppStore((s) => s.saving);
   const error = useAppStore((s) => s.persistenceError);
@@ -89,8 +92,9 @@ export default function App() {
   return (
     <AppShell>
       {notice}
-      {saving > 0 && <p role="status" className="mb-2 text-sm font-medium text-ink-muted">Sauvegarde…</p>}
+      {saving > 0 && <p role="status" className="pointer-events-none fixed bottom-24 right-4 z-40 rounded-full border-2 border-ink bg-card px-3 py-2 text-sm font-medium text-ink-muted shadow-sm md:bottom-4">Sauvegarde…</p>}
       <fieldset disabled={saving > 0 || readonly} className="m-0 min-w-0 border-0 p-0">
+      <RouteErrorBoundary key={location.pathname}>
       <Suspense fallback={<RouteLoadingFallback />}>
         <Routes>
           <Route path="/" element={<HomeScreen />} />
@@ -119,9 +123,11 @@ export default function App() {
           <Route path="/jeu" element={<Navigate to="/quiz" replace />} />
           <Route path="/jeu/defi" element={<Navigate to="/quiz/defi" replace />} />
           <Route path="/jeu/:territoryId/:mode" element={<JeuRedirect />} />
+          <Route path="*" element={<NotFoundScreen />} />
         </Routes>
       </Suspense>
       {!readonly && <OnboardingHost />}
+      </RouteErrorBoundary>
       </fieldset>
     </AppShell>
   );

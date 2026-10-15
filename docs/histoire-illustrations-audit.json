@@ -1,0 +1,3496 @@
+{
+  "date": "2026-10-15",
+  "rule": "Au moins deux illustrations pertinentes par cours Histoire ; zéro ou une par leçon, bannières exclues.",
+  "scope": {
+    "courses": 40,
+    "lessons": 200,
+    "previousImages": 74,
+    "activeImages": 108,
+    "archives": 4,
+    "moves": 2,
+    "additions": 38
+  },
+  "method": "Comparaison visuelle des 74 fichiers initiaux et des 38 compléments avec leurs leçons, légendes et notices. Les sources locales préexistantes ont été consultées ; recherche ciblée et vérification des notices pour les nouveaux visuels. Ce registre ne constitue pas une nouvelle expertise historique de chaque affirmation du catalogue.",
+  "coverage": [
+    {
+      "id": "course-histoire-01-egypte-antique",
+      "title": "L'Égypte antique",
+      "before": 5,
+      "after": 5,
+      "distinct": 5
+    },
+    {
+      "id": "course-histoire-02-koush-meroe",
+      "title": "Le royaume de Koush et Méroé",
+      "before": 5,
+      "after": 5,
+      "distinct": 5
+    },
+    {
+      "id": "course-histoire-03-aksoum",
+      "title": "Le royaume d'Aksoum",
+      "before": 5,
+      "after": 5,
+      "distinct": 5
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord",
+      "title": "Carthage et l'Afrique du Nord antique",
+      "before": 5,
+      "after": 5,
+      "distinct": 5
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana",
+      "title": "L'empire du Ghana (Wagadou)",
+      "before": 5,
+      "after": 5,
+      "distinct": 5
+    },
+    {
+      "id": "course-histoire-06-soundiata-mali",
+      "title": "Soundiata Keïta et la naissance de l'empire du Mali",
+      "before": 4,
+      "after": 4,
+      "distinct": 4
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa",
+      "title": "Mansa Moussa et l'apogée du Mali",
+      "before": 5,
+      "after": 5,
+      "distinct": 5
+    },
+    {
+      "id": "course-histoire-08-empire-songhai",
+      "title": "L'empire Songhaï et Askia Mohammed",
+      "before": 5,
+      "after": 5,
+      "distinct": 5
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne",
+      "title": "Tombouctou et Djenné, foyers du savoir",
+      "before": 5,
+      "after": 5,
+      "distinct": 5
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou",
+      "title": "L'empire du Kanem-Bornou",
+      "before": 5,
+      "after": 4,
+      "distinct": 4
+    },
+    {
+      "id": "course-histoire-11-cites-etats-haoussa",
+      "title": "Les cités-États haoussa",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-12-royaume-benin-bronzes",
+      "title": "Le royaume du Bénin (Edo) et ses bronzes",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-13-empire-oyo-yoruba",
+      "title": "L'empire Oyo et le monde yoruba",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-14-royaume-ashanti",
+      "title": "Le royaume ashanti",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-15-royaume-dahomey",
+      "title": "Le royaume du Dahomey",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-16-royaume-kongo",
+      "title": "Le royaume du Kongo",
+      "before": 0,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-17-grand-zimbabwe",
+      "title": "Le Grand Zimbabwe",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-18-monomotapa-mutapa",
+      "title": "Le royaume du Monomotapa (Mutapa)",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-19-royaumes-grands-lacs",
+      "title": "Les royaumes des Grands Lacs",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-20-ethiopie-medievale-lalibela",
+      "title": "L'Éthiopie médiévale et les églises de Lalibela",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-21-commerce-transsaharien",
+      "title": "Le commerce transsaharien",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-22-islamisation-afrique-ouest",
+      "title": "L'islamisation de l'Afrique de l'Ouest",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-23-cote-swahilie",
+      "title": "La côte swahilie et l'océan Indien",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-24-traite-negriere-transatlantique",
+      "title": "La traite négrière transatlantique",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-25-conference-berlin",
+      "title": "La conférence de Berlin et le partage de l'Afrique",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-26-resistances-colonisation",
+      "title": "Les grandes résistances à la colonisation",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-27-bataille-adoua",
+      "title": "La bataille d'Adoua (1896)",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-28-independances-africaines",
+      "title": "Les indépendances africaines",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-29-panafricanisme-union-africaine",
+      "title": "Le panafricanisme et l'Union africaine",
+      "before": 0,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-30-apartheid-mandela",
+      "title": "L'apartheid et Nelson Mandela",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-31-tekrour-islam",
+      "title": "Le Tekrour, berceau de l'islam au Sénégal",
+      "before": 0,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-32-djolof-royaumes-wolof",
+      "title": "L'empire du Djolof et les royaumes wolof",
+      "before": 0,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-33-royaumes-serer-sine-saloum",
+      "title": "Les royaumes sérères du Sine et du Saloum",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-34-goree-saint-louis",
+      "title": "Gorée et Saint-Louis : comptoirs et mémoire de la traite",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-35-lat-dior-cayor",
+      "title": "Lat Dior et la résistance du Cayor",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-36-cheikh-ahmadou-bamba-mouridisme",
+      "title": "Cheikh Ahmadou Bamba et le mouridisme",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-37-aline-sitoe-diatta",
+      "title": "Aline Sitoé Diatta, héroïne de la Casamance",
+      "before": 0,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-38-senghor-negritude-independance",
+      "title": "Senghor, la Négritude et l'indépendance",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-39-reine-nzinga-angola",
+      "title": "La reine Nzinga, résistante d'Angola",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    },
+    {
+      "id": "course-histoire-40-chaka-zoulou",
+      "title": "Chaka Zoulou et le royaume zoulou",
+      "before": 1,
+      "after": 2,
+      "distinct": 2
+    }
+  ],
+  "previous": [
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-1",
+      "title": "Une civilisation née sur le Nil",
+      "decision": "retained",
+      "reason": "Les deux couronnes de Narmer matérialisent l’unification citée.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Narmer coiffé différemment sur chaque face sculptée.",
+        "legende": "Palette de Narmer, deux faces, vers 3100 av. J.-C.",
+        "credit": "Wikimedia Commons, domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narmer_Palette.jpg",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-2",
+      "title": "Un dieu vivant à la tête de l'État",
+      "decision": "retained",
+      "reason": "L’offrande de Maât montre le rôle religieux du pharaon.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Ramsès III présente Maât au dieu Osiris.",
+        "legende": "Ramsès III offrant Maât à Osiris, tombe KV11.",
+        "credit": "Wikimedia Commons, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rameses_III_offering_Maat_to_Osiris_(KV11).jpg",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-3",
+      "title": "Le secret des hiéroglyphes",
+      "decision": "retained",
+      "reason": "Le document porte les trois écritures utilisées pour le déchiffrement.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Pierre gravée en trois zones d'écritures différentes.",
+        "legende": "La pierre de Rosette et ses trois écritures.",
+        "credit": "Hans Hillewaert, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-4",
+      "title": "Peser le cœur du défunt",
+      "decision": "retained",
+      "reason": "La balance d’Ani représente exactement le jugement funéraire expliqué.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Anubis surveille une balance pesant le cœur d'Ani.",
+        "legende": "La pesée du cœur d'Ani, fac-similé publié en 1902.",
+        "credit": "TIMEA / Rice University, CC BY-SA 2.5, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Heart_of_Ani_Being_Weighed_in_the_Balance._(1902)_-_TIMEA.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-5",
+      "title": "L'Égypte, en dialogue avec l'Afrique",
+      "decision": "retained",
+      "reason": "Le sphinx de Taharqa relie les souverains nubiens à la royauté égyptienne.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Sphinx à visage royal du souverain nubien Taharqa.",
+        "legende": "Sphinx de Taharqa, roi nubien devenu pharaon, VIIᵉ siècle av. J.-C.",
+        "credit": "Prioryman, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sphinx_of_Taharqo.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-1",
+      "title": "Le pays de l'arc",
+      "decision": "retained",
+      "reason": "Réplique explicitement identifiée d’un modèle d’archers nubiens, sujet de la leçon.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Figurines de soldats nubiens armés d'arcs.",
+        "legende": "Archers nubiens : réplique du modèle funéraire de Mesehti.",
+        "credit": "Marsupium, CC BY 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Replica_of_the_Nubian_Archers_from_the_Tomb_of_Mesehti_-_Nubian_Museum_04.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      }
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-2",
+      "title": "Les pharaons noirs de Napata",
+      "decision": "retained",
+      "reason": "Taharqa figure sous Amon : objet du règne et de sa légitimité religieuse.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Petit Taharqa protégé entre les pattes du bélier d'Amon.",
+        "legende": "Taharqa sous la protection d'Amon, VIIᵉ siècle av. J.-C.",
+        "credit": "M0tty, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Granite_ram_of_Amun_with_King_Taharqa_-_British_Museum.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-3",
+      "title": "Méroé, la cité du fer",
+      "decision": "retained",
+      "reason": "Le tas de scories H800 est situé à Hamadab, près de Méroé ; il documente la métallurgie régionale.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Amas de scories H800, Hamadab.",
+        "legende": "Hamadab, près de Méroé : scories de fer, tas H800.",
+        "credit": "Ullrich, Wolf et Kaufmann, CC BY 4.0",
+        "sourceUrl": "https://hmsjournal.org/index.php/home/article/view/86",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-4",
+      "title": "Une écriture, des dieux, des reines",
+      "decision": "retained",
+      "reason": "Le relief réunit Amanishakhéto et les divinités nommées, pas une photographie de la reine.",
+      "originalImage": {
+        "type": "image",
+        "alt": "La reine Amanishakhéto entourée de deux divinités sur une stèle.",
+        "legende": "Amanishakhéto avec Amésémi et Apédémak, Ier siècle av. J.-C.",
+        "credit": "Khruner, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relief_Amanishakheto_Munich.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-5",
+      "title": "Déclin et héritage",
+      "decision": "retained",
+      "reason": "Les pyramides montrent le patrimoine monumental de Koush cité en héritage.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Pyramides nubiennes aux pentes abruptes dans le désert.",
+        "legende": "Les pyramides de Méroé, patrimoine du royaume de Koush.",
+        "credit": "Ola.m tbe, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_wonderful_picture_of_the_pyramids_of_Meroe_in_Sudan.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-1",
+      "title": "Un pont entre trois mondes",
+      "decision": "retained",
+      "reason": "Vestiges du port d’Adoulis explicitement étudié pour les échanges.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Fondations de pierre du port antique d'Adoulis.",
+        "legende": "Vestiges d'Adoulis, port d'Aksoum sur la mer Rouge.",
+        "credit": "David Stanley, CC BY 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adulis_(8529061940).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-2",
+      "title": "Aksoum, royaume qui frappait monnaie",
+      "decision": "retained",
+      "reason": "Monnaie d’Ezana : objet économique du souverain et de la période cités.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Deux faces d'une monnaie portant le portrait du roi Ezana.",
+        "legende": "Monnaie d'Ezana, IVᵉ siècle : portrait royal et symboles.",
+        "credit": "CNG Coins, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:AXUM._Ezanas._Circa_330-360.jpg",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-3",
+      "title": "L'un des premiers États chrétiens",
+      "decision": "retained",
+      "reason": "Manuscrit chrétien du XVe siècle, légendé comme héritage plutôt que document du règne d’Ezana.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Saint Luc peint sur une page d'évangile éthiopien.",
+        "legende": "Évangile éthiopien du XVe siècle : l'héritage chrétien d'Aksoum.",
+        "credit": "Cleveland Museum of Art, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clevelandart_1999.212.jpg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-4",
+      "title": "Les stèles géantes d'Aksoum",
+      "decision": "retained",
+      "reason": "Les stèles montrent les fausses portes et fenêtres décrites.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Grandes stèles sculptées et blocs renversés dans le site d'Aksoum.",
+        "legende": "Les stèles royales d'Aksoum, sculptées comme des tours.",
+        "credit": "Rod Waddington, CC BY-SA 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stelae,_Aksum_(8140296506).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      }
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-5",
+      "title": "Déclin et héritage",
+      "decision": "retained",
+      "reason": "L’inscription d’Ezana documente l’héritage écrit ; sa date ne doit pas être confondue avec le déclin au VIIe siècle.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Inscription gravée sur la pierre du roi Ezana.",
+        "legende": "La pierre d'Ezana, IVᵉ siècle : un témoignage écrit d'Aksoum.",
+        "credit": "Rod Waddington, CC BY-SA 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ezana_Stone,_Aksum_(6183743976).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-1",
+      "title": "Une fondation venue d'Orient",
+      "decision": "retained",
+      "reason": "La carte relie Tyr et Carthage dans le réseau phénicien étudié.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Comptoirs phéniciens répartis autour de la Méditerranée.",
+        "legende": "Tyr et Carthage dans le réseau des comptoirs phéniciens.",
+        "credit": "Bourrichon, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Routes_commerciales_des_Ph%C3%A9niciens-fr.svg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-2",
+      "title": "Un empire commercial et maritime",
+      "decision": "retained",
+      "reason": "Les bassins actuels des ports puniques matérialisent la puissance maritime.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Bassin circulaire des anciens ports puniques de Carthage.",
+        "legende": "Les ports puniques de Carthage, photographiés en 2024.",
+        "credit": "Sharon Hahn Darlin, CC BY 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Punic_Ports_(Ports_Puniques)_of_Carthage,_Tunisia_January_2024_-_2.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-3",
+      "title": "Les guerres puniques contre Rome",
+      "decision": "retained",
+      "reason": "L’itinéraire correspond à la campagne d’Hannibal, sans prétendre établir le col alpin exact.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Itinéraire d'Hannibal depuis l'Espagne, à travers les Alpes, vers l'Italie.",
+        "legende": "Le trajet d'Hannibal vers l'Italie en 218 av. J.-C.",
+        "credit": "Pinpin, CC BY-SA 3.0, adaptation française, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hannibal_route_of_invasion-en.svg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-4",
+      "title": "Les royaumes berbères de Numidie",
+      "decision": "retained",
+      "reason": "La monnaie attribuée à Massinissa identifie la royauté numide ; attribution conservée comme telle.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Profil royal frappé sur une monnaie numide.",
+        "legende": "Monnaie attribuée à Massinissa, souverain de Numidie.",
+        "credit": "Michel-georges bernard, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Massinissa_monnaie.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-5",
+      "title": "L'Afrique romaine et l'héritage",
+      "decision": "retained",
+      "reason": "Timgad est l’exemple explicitement cité de ville de l’Afrique romaine.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Rues et vestiges de la cité romaine de Timgad.",
+        "legende": "Ruines de Timgad, cité romaine fondée en 100, en Algérie.",
+        "credit": "Yelles, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timgad_Ruins_Panorama.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-1",
+      "title": "Wagadou, pas le Ghana d'aujourd'hui",
+      "decision": "retained",
+      "reason": "La carte distingue bien Wagadou du Ghana contemporain, limites indiquées comme approximatives.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Carte situant l'ancien Ghana autour de Koumbi Saleh.",
+        "legende": "Le Ghana médiéval : territoire indicatif entre Mauritanie et Mali.",
+        "credit": "Barada-nikto, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghana_empire_map-fr.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-2",
+      "title": "L'or et le sel",
+      "decision": "retained",
+      "reason": "Le sel à Mopti montre la marchandise étudiée ; photographie actuelle, pas marché médiéval.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Plaques de sel saharien empilées pour le commerce.",
+        "legende": "Plaques de sel saharien à Mopti, photographie contemporaine.",
+        "credit": "Taguelmoust at French Wikipedia, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mopti_sel.jpg",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-3",
+      "title": "Deux villes pour un royaume",
+      "decision": "retained",
+      "reason": "Le plan archéologique est bien celui de Koumbi Saleh, pas une reconstitution assurée des deux villes d’Al-Bakri.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Plan des quartiers et vestiges archéologiques de Koumbi Saleh.",
+        "legende": "Koumbi Saleh : plan archéologique établi d'après les relevés de 2007.",
+        "credit": "Chloé Capel, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Archaeological_site_of_Koumbi_Saleh.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-4",
+      "title": "Islam et commerce",
+      "decision": "retained",
+      "reason": "Les routes médiévales expliquent les contacts commerciaux et religieux, pas une chronologie exacte des conversions.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Routes commerciales reliant le royaume du Ghana au nord du Sahara.",
+        "legende": "Routes transsahariennes, XIe–XVe siècles : échanges et diffusion de l’islam.",
+        "credit": "Siyajkak, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-5",
+      "title": "Déclin et héritage",
+      "decision": "retained",
+      "reason": "Le timbre de 1957 concerne explicitement l’héritage du nom Ghana dans cette leçon.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Timbre commémorant l'indépendance avec le portrait de Kwame Nkrumah.",
+        "legende": "Timbre commémorant l'indépendance du Ghana, le 6 mars 1957.",
+        "credit": "Paasikivi, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:KwameNkrumahOnGhanianIndependenceDay6March1957PostageStamp.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-06-soundiata-mali-lesson-1",
+      "title": "L'ombre du roi du Sosso",
+      "decision": "retained",
+      "reason": "La carte des États successeurs vers 1200 situe le morcellement politique précédant Soundiata.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Carte des royaumes issus du morcellement de l'ancien Ghana.",
+        "legende": "Après le Ghana : royaumes rivaux vers 1200, territoires indicatifs.",
+        "credit": "T L Miles, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghana_successor_map_1200.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-06-soundiata-mali-lesson-2",
+      "title": "Soundiata, l'enfant qui ne marchait pas",
+      "decision": "retained",
+      "reason": "Le griot contemporain montre le vecteur de transmission orale de l’épopée ; il n’est pas représenté comme Soundiata.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Ali Boulo Santo joue de la kora.",
+        "legende": "Ali Boulo Santo, griot mandingue, photo contemporaine.",
+        "credit": "Dany barthelemy, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ali_Boulo_Santo_Artiste_griot_mandingue_kora_maitre_kora_afrique_europe_wikipedia30042016.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      }
+    },
+    {
+      "id": "course-histoire-06-soundiata-mali-lesson-4",
+      "title": "La Charte du Manden",
+      "decision": "retained",
+      "reason": "Illustration contemporaine de l’assemblée, clairement distinguée d’un document de 1236.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Assemblée de personnages représentée par une illustration contemporaine.",
+        "legende": "Assemblée du Manden : illustration contemporaine, pas un document de 1236.",
+        "credit": "Morganb73, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Assembl%C3%A9e_constitutive_de_l%27empire_du_Mand%C3%A9_(les_chefs_de_guerre).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-06-soundiata-mali-lesson-5",
+      "title": "Les fondations d'un empire prospère",
+      "decision": "retained",
+      "reason": "Carte du Mali au XIVe siècle présentée comme l’empire après Soundiata, pas ses frontières personnelles.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Carte du Mali reliant ses régions aux principaux axes commerciaux.",
+        "legende": "L'empire du Mali après Soundiata, au début du XIVe siècle.",
+        "credit": "HetmanTheResearcher, CC BY 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_the_Mali_Empire.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-1",
+      "title": "Le plus riche souverain du monde",
+      "decision": "retained",
+      "reason": "Le détail de l’Atlas catalan montre la représentation de la richesse de Moussa.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Mansa Moussa représenté avec couronne, sceptre et or.",
+        "legende": "Mansa Moussa dans l'Atlas catalan de 1375, détail.",
+        "credit": "Abraham Cresques (attribué), domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-2",
+      "title": "Le pèlerinage à La Mecque",
+      "decision": "retained",
+      "reason": "Représentation tardive du pèlerinage publiée en 1903 ; ni photographie de 1324 ni portrait attesté du souverain.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Un souverain et son escorte représentés en voyage.",
+        "legende": "Le pèlerinage de Moussa, représentation tardive publiée en 1903.",
+        "credit": "Artiste inconnu, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mansa-Musa-on-his-way-to-Mecca-Credit-Print-Collector-Getty-images-1536x790.jpg",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-3",
+      "title": "Une renommée mondiale",
+      "decision": "retained",
+      "reason": "La vue élargie de l’Atlas montre le placement de Moussa dans la cartographie, plutôt que son seul portrait.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Mansa Moussa figure au milieu des toponymes d'une carte médiévale.",
+        "legende": "L'Atlas catalan de 1375 situe Moussa dans l'Afrique occidentale.",
+        "credit": "Abraham Cresques (attribué), domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-4",
+      "title": "Tombouctou, cité du savoir",
+      "decision": "retained",
+      "reason": "Djinguereber est la mosquée nommée en lien avec le mécénat de Moussa ; état photographié ultérieur.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Façade de terre de la mosquée Djinguereber à Tombouctou.",
+        "legende": "Djinguereber à Tombouctou, fondée au temps de Mansa Moussa.",
+        "credit": "upyernoz, CC BY 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Djinguereber_Mosque,_Timbuktu.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      }
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-5",
+      "title": "Héritage",
+      "decision": "retained",
+      "reason": "Manuscrits de Tombouctou, explicitement héritage savant et non autographes de Moussa.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Pages manuscrites de savoirs astronomiques et mathématiques.",
+        "legende": "Manuscrits de Tombouctou : un héritage savant conservé.",
+        "credit": "Elias Altmimi, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timbuktu-manuscripts-astronomy-mathematics.jpg",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-1",
+      "title": "Gao et la montée du Songhaï",
+      "decision": "retained",
+      "reason": "Le Niger à Gao illustre la géographie fluviale décrite, sans dater les embarcations du Moyen Âge.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Pirogues sur le fleuve Niger à Gao.",
+        "legende": "Le Niger à Gao, axe fluvial de l'ancien Songhaï.",
+        "credit": "Ryszard Vorbrich, CC BY-SA 3.0 pl, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C5%81odzie_rybackie_na_rzece_Niger_-_Gao_-_001208s.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en"
+      }
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-2",
+      "title": "Sonni Ali Ber, le conquérant",
+      "decision": "retained",
+      "reason": "Carte de l’empire à son apogée pour situer Gao, Tombouctou et Djenné ; pas portrait de Sonni Ali.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Gao, Tombouctou et Djenné sur une carte de l'empire Songhaï.",
+        "legende": "Le Songhaï à son apogée : Gao, Tombouctou et Djenné.",
+        "credit": "Roke / Astrokey44, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SONGHAI_empire_map.PNG",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-3",
+      "title": "Askia Mohammed, le réformateur",
+      "decision": "retained",
+      "reason": "Monument des Askia directement lié au souverain étudié ; la photo actuelle ne montre pas la construction.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Monument pyramidal en terre du tombeau des Askia à Gao.",
+        "legende": "Le tombeau des Askia à Gao, construit en 1495.",
+        "credit": "Taguelmoust, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Askia.jpg",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-4",
+      "title": "Un empire vaste et savant",
+      "decision": "retained",
+      "reason": "Carte postale de Sankoré illustrant le centre savant nommé, pas un cours de l’époque songhaï.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Mosquée de Sankoré sur une ancienne carte postale.",
+        "legende": "Sankoré à Tombouctou, photographie ancienne d'Edmond Fortier.",
+        "credit": "Edmond Fortier, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortier_368_Timbuktu_Sankore_Mosque.jpg"
+      }
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-5",
+      "title": "La chute de 1591",
+      "decision": "retained",
+      "reason": "Schéma moderne de Tondibi pertinent pour l’événement, simplification pédagogique et non relevé de terrain contemporain.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Schéma des positions des armées à Tondibi.",
+        "legende": "Tondibi, 1591 : schéma moderne de la bataille.",
+        "credit": "Monsieur Fou, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bataille_de_tondibi.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-1",
+      "title": "Du commerce au savoir",
+      "decision": "retained",
+      "reason": "Routes, villes et régions aurifères expliquent le passage du commerce au savoir.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Routes vers Tombouctou et Djenné et régions aurifères.",
+        "legende": "Routes transsahariennes, XIe–XVe siècles : villes, sel et régions aurifères.",
+        "credit": "Aa77zz, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-2",
+      "title": "L'université de Sankoré",
+      "decision": "retained",
+      "reason": "Sankoré, site nommé du réseau d’enseignement ; le bâtiment ne prouve pas à lui seul un effectif d’étudiants.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Minaret et façade en terre de la mosquée de Sankoré.",
+        "legende": "Sankoré à Tombouctou, ancien foyer d'enseignement.",
+        "credit": "Ondřej Havelka, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sankore_Madrasah.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-3",
+      "title": "Les manuscrits de Tombouctou",
+      "decision": "retained",
+      "reason": "Le manuscrit montre les tables astronomiques dont parle la leçon.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Tables de calcul astronomique dans un manuscrit de Tombouctou.",
+        "legende": "Tables astronomiques conservées à Tombouctou, manuscrit de l'Institut Ahmed-Baba.",
+        "credit": "Ahmed Baba Institute / Wikimedia Commons, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timbuktu-manuscripts-astronomy-tables.jpg",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-4",
+      "title": "L'architecture de terre",
+      "decision": "retained",
+      "reason": "L’état actuel de Djenné montre la construction en terre, avec reconstruction de 1907 indiquée.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Grande Mosquée de Djenné et ses poutres de bois saillantes.",
+        "legende": "Grande Mosquée de Djenné, édifice actuel reconstruit en 1907.",
+        "credit": "BluesyPete, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MaliDjenn%C3%A9Mosqu%C3%A9e.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      }
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-5",
+      "title": "Héritage et préservation",
+      "decision": "retained",
+      "reason": "Documents conservés par SAVAMA-DCI en lien direct avec la préservation décrite.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Manuscrits conservés par l'association SAVAMA-DCI à Tombouctou.",
+        "legende": "Manuscrits conservés par SAVAMA-DCI, au Mali.",
+        "credit": "Lazare Eloundou, CC BY-SA 3.0 igo, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timbuktu-139078.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-1",
+      "title": "Mille ans d'une seule dynastie",
+      "decision": "retained",
+      "reason": "Carte de situation du Kanem-Bornou autour du lac Tchad ; emprise indicative, pas frontière moderne.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Carte situant Kanem et Bornou autour du lac Tchad.",
+        "legende": "Kanem et Bornou autour du lac Tchad, territoires indicatifs.",
+        "credit": "ArnoldPlaton, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanem-Bornu.svg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-2",
+      "title": "L'essor du Kanem et l'islam",
+      "decision": "retained",
+      "reason": "Les routes sahariennes matérialisent les contacts commerciaux du Kanem.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Routes sahariennes reliant notamment le lac Tchad à l'Afrique du Nord.",
+        "legende": "Routes transsahariennes vers 1400, dont celles du Kanem-Bornou.",
+        "credit": "T L Miles, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Niger_saharan_medieval_trade_routes.PNG",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-3",
+      "title": "Le déplacement vers le Bornou",
+      "decision": "retained",
+      "reason": "La carte vers 1450 situe le Bornou à l’ouest du lac, après le déplacement politique.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Le Bornou à l'ouest du lac Tchad sur une carte historique.",
+        "legende": "Le Kanem-Bornou vers 1450, après le déplacement du pouvoir.",
+        "credit": "Megartonius, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanem%E2%80%93Bornu,_1450.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-4",
+      "title": "L'apogée sous Idris Alooma",
+      "decision": "archived",
+      "reason": "L’arme allemande est un exemple technique extérieur ; aucun lien documentaire avec le Bornou ou l’armée d’Idris Alooma.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Détail d'arquebuse à mèche : crosse et mécanisme.",
+        "legende": "Détail d'une arquebuse allemande du XVIe siècle, arme à mèche.",
+        "credit": "The Metropolitan Museum of Art, CC0",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/34811",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "archive": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-10-kanem-bornou-lesson-4/notice.json"
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-5",
+      "title": "Longévité et héritage",
+      "decision": "retained",
+      "reason": "La gravure de 1826 illustre la cour du Bornou dans la période finale étudiée, pas celle d’Idris Alooma.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Réception d'une mission devant le souverain du Bornou.",
+        "legende": "La cour du Bornou, gravure publiée en 1826.",
+        "credit": "Edward Francis Finden / Dixon Denham, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Council_of_the_Sultan_of_Bornou_1826.jpg",
+        "fit": "contain"
+      }
+    },
+    {
+      "id": "course-histoire-11-cites-etats-haoussa-lesson-2",
+      "title": "Le commerce et l'artisanat",
+      "decision": "retained",
+      "reason": "Les artisans de Kano battent réellement des textiles teints, en lien avec l’artisanat haoussa.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Artisans battant des tissus teints à Kano.",
+        "legende": "Artisans de Kano battant des tissus teints, photographie de 2018.",
+        "credit": "Solasly, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kofar_Mata_Dye_pit_workers_beating_dye_clothes.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    },
+    {
+      "id": "course-histoire-12-royaume-benin-bronzes-lesson-3",
+      "title": "Les bronzes du Bénin",
+      "decision": "retained",
+      "reason": "Plaque en laiton montrant chef guerrier et accompagnateurs : exemple exact des productions de cour, sans roi nommé.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Plaque en laiton montrant un chef guerrier et ses accompagnateurs.",
+        "legende": "Plaque en laiton du Bénin, chef guerrier et accompagnateurs, XVIᵉ siècle.",
+        "credit": "The Metropolitan Museum of Art, CC0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaque-_Warrior_and_Attendants_MET_DT1231.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-13-empire-oyo-yoruba-lesson-1",
+      "title": "Le pays yoruba",
+      "decision": "retained",
+      "reason": "La tête en terre cuite d’Ifè est une œuvre du milieu yoruba décrit ; ni bronze ni objet royal d’Oyo attesté.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Tête masculine d’Ifè en terre cuite, avec des lignes incisées sur le visage.",
+        "legende": "Tête d’Ifè en terre cuite, XIIᵉ–XIVᵉ siècles, photographiée au musée.",
+        "credit": "Jastrow, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg#Licensing"
+      }
+    },
+    {
+      "id": "course-histoire-14-royaume-ashanti-lesson-3",
+      "title": "L'or et le commerce",
+      "decision": "retained",
+      "reason": "L’ornement royal en or documente la culture de cour mentionnée ; ni poids monétaire ni simple bijou supposé.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Ornement royal ashanti en or, en forme de lion.",
+        "legende": "Lion en or, ornement royal ashanti du XIXᵉ siècle.",
+        "credit": "The Metropolitan Museum of Art, CC0, Commons",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/312428",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-15-royaume-dahomey-lesson-2",
+      "title": "Les « Amazones » du Dahomey",
+      "decision": "retained",
+      "reason": "Les vétéranes Agojie de 1908 sont distinguées de combattantes photographiées pendant une guerre.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Anciennes combattantes du Dahomey sur une carte postale.",
+        "legende": "Vétéranes du Dahomey à Abomey, carte postale colorisée, 1908.",
+        "credit": "François-Edmond Fortier, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_c%C3%A9l%C3%A9bration_at_Abomey(1908)._-_The_veteran_amazones(_AHOSI_)_of_the_Fon_king_B%C3%A9hanzin,_Son_of_Roi_G%C3%A9l%C3%A9.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-17-grand-zimbabwe-lesson-1",
+      "title": "Une cité de pierre",
+      "decision": "retained",
+      "reason": "La tour de la Grande Enceinte montre les pierres sèches, sans inventer sa fonction.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Tour conique du Grand Zimbabwe, bâtie en pierres sèches.",
+        "legende": "Tour du Grand Zimbabwe, photographie contemporaine des vestiges médiévaux.",
+        "credit": "Andrew Moore, CC BY-SA 2.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conical_Tower_-_Great_Enclosure_IV_(47561215932).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      }
+    },
+    {
+      "id": "course-histoire-18-monomotapa-mutapa-lesson-3",
+      "title": "Les Portugais et le mythe",
+      "decision": "retained",
+      "reason": "Carte européenne de Blaeu de 1635 : source de la représentation européenne du Monomotapa, sujet même de la leçon.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Carte ancienne situant le Monomotapa en Afrique australe.",
+        "legende": "Monomotapa sur une carte gravée européenne de Willem Blaeu, 1635.",
+        "credit": "Willem Blaeu, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monomotapa_Map.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-19-royaumes-grands-lacs-lesson-2",
+      "title": "Le royaume du Buganda",
+      "decision": "retained",
+      "reason": "Les tombeaux des Kabaka à Kasubi montrent le patrimoine royal du Buganda, avant l’incendie de 2010.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Bâtiment funéraire royal en chaume sur le site de Kasubi.",
+        "legende": "Tombeaux royaux de Kasubi, photographie de 2007 avant l’incendie de 2010.",
+        "credit": "UNESCO / Lazare Eloundou Assomo, CC BY-SA 3.0 IGO, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tombs_of_Buganda_Kings_at_Kasubi-114316.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/"
+      }
+    },
+    {
+      "id": "course-histoire-20-ethiopie-medievale-lalibela-lesson-2",
+      "title": "Les églises de Lalibela",
+      "decision": "retained",
+      "reason": "Bete Giyorgis montre l’église réellement taillée dans le rocher, sans l’assimiler aux onze édifices.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Toit cruciforme de Bete Giyorgis, taillé dans la roche.",
+        "legende": "Bete Giyorgis à Lalibela, photographiée en 2012.",
+        "credit": "Bernard Gagnon, CC BY-SA 3.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    },
+    {
+      "id": "course-histoire-21-commerce-transsaharien-lesson-1",
+      "title": "Traverser le désert",
+      "decision": "retained",
+      "reason": "La caravane de sel illustre directement le transport caravanier ; document du début du XXe siècle, pas photographie médiévale.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Caravane de dromadaires chargés de sel à Tombouctou.",
+        "legende": "Caravane de sel à Tombouctou, début du XXe siècle.",
+        "credit": "François-Edmond Fortier, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tombouctou-Arriv%C3%A9e_d%27une_caravane_de_sel_(AOF).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-22-islamisation-afrique-ouest-lesson-3",
+      "title": "Les grands foyers du savoir",
+      "decision": "retained",
+      "reason": "La mosquée est située à Tombouctou ; identification Sankoré maintenue comme probable, sans en faire un fait établi.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Façade en terre d'une mosquée à Tombouctou.",
+        "legende": "Mosquée de Tombouctou en 2007, probablement Sankoré.",
+        "credit": "Anne and David, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Sankore_Mosque_Timbuktu_01.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-23-cote-swahilie-lesson-4",
+      "title": "Kilwa et l'apogée",
+      "decision": "retained",
+      "reason": "Les arcades sont celles de la Grande Mosquée de Kilwa, bien citée ; pas le palais de Husuni Kubwa.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Arcades ruinées de la Grande Mosquée de Kilwa Kisiwani.",
+        "legende": "Ruines de la Grande Mosquée de Kilwa, photographiées en 2016.",
+        "credit": "Janetmpurdy, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    },
+    {
+      "id": "course-histoire-24-traite-negriere-transatlantique-lesson-1",
+      "title": "Un commerce triangulaire",
+      "decision": "retained",
+      "reason": "Le plan abolitionniste du Brookes documente les conditions de la traversée, l’un des segments étudiés du commerce triangulaire.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Plan du Brookes montrant les personnes captives entassées.",
+        "legende": "Le Brookes : plan abolitionniste d'un navire négrier du XVIIIe siècle.",
+        "credit": "James Phillips, British Library, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brookes_slave_ship,_British_Library_(cropped).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-25-conference-berlin-lesson-2",
+      "title": "La conférence de Berlin",
+      "decision": "retained",
+      "reason": "La gravure de la conférence de Berlin correspond à la réunion, sans prétendre être une photographie ni le tracé de toutes les frontières.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Gravure des délégués à Berlin devant une carte d'Afrique.",
+        "legende": "La conférence de Berlin, gravure de 1884.",
+        "credit": "Adalbert von Roessler, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-26-resistances-colonisation-lesson-3",
+      "title": "Béhanzin et les autres rois",
+      "decision": "archived",
+      "reason": "Scan filigrané Alamy, source de reproduction insuffisante ; remplacé par une gravure documentée de Lat Dior, également cité.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Béhanzin représenté assis sous un parasol.",
+        "legende": "Béhanzin, roi du Dahomey : gravure de 1891.",
+        "credit": "Chronicle / Commons, domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kingdom_of_Dahomey._King_Behanzin.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "archive": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-26-resistances-colonisation-lesson-3/notice.json"
+    },
+    {
+      "id": "course-histoire-27-bataille-adoua-lesson-3",
+      "title": "La bataille d'Adoua",
+      "decision": "archived",
+      "reason": "Peintre, date et droits du tableau non documentés ; remplacé par un document de presse daté de 1896.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Peinture des armées d'Adoua, avec un saint cavalier.",
+        "legende": "Adoua représentée en peinture ; artiste et date inconnus.",
+        "credit": "Photo AralGuillaume, CC0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bataille_d%27Adoua_peinture_%C3%A9thiopienne.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "archive": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-27-bataille-adoua-lesson-3/notice.json"
+    },
+    {
+      "id": "course-histoire-28-independances-africaines-lesson-2",
+      "title": "Le Ghana, pionnier",
+      "decision": "retained",
+      "reason": "La porte de l’Étoile noire commémore l’indépendance ; la légende de 2023 évite de la présenter comme proclamation de 1957.",
+      "originalImage": {
+        "type": "image",
+        "alt": "L'Arche de l'Indépendance à Accra, au Ghana.",
+        "legende": "Accra : la porte de l'Étoile noire, photographiée en 2023.",
+        "credit": "Kwameghana, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Star_Gate_in_Accra.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    },
+    {
+      "id": "course-histoire-30-apartheid-mandela-lesson-1",
+      "title": "Qu'est-ce que l'apartheid ?",
+      "decision": "retained",
+      "reason": "Le panneau ségrégationniste d’Atherston est un exemple matériel du dispositif décrit, photographié en 2021.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Ancienne inscription réservant une salle aux personnes blanches.",
+        "legende": "Atherston : ancien panneau ségrégationniste, photographié en 2021.",
+        "credit": "Wynlib40, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:General_Waiting_Room_Whites_Only_-_Atherston_Station,_Eastern_Cape,_South_Africa.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    },
+    {
+      "id": "course-histoire-33-royaumes-serer-sine-saloum-lesson-3",
+      "title": "Les cercles mégalithiques",
+      "decision": "archived",
+      "reason": "La vue montre Wassu en Gambie ; une vue de Sine Ngayène relie directement l’image aux sites sénégalais étudiés.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Pierres dressées des cercles de Wassu, en Gambie.",
+        "legende": "Wassu, en Gambie : cercles mégalithiques photographiés en 2008.",
+        "credit": "Ikiwaner, CC BY-SA 3.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wassu_stone_circle.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "archive": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-33-royaumes-serer-sine-saloum-lesson-3/notice.json"
+    },
+    {
+      "id": "course-histoire-34-goree-saint-louis-lesson-2",
+      "title": "Gorée, lieu de mémoire",
+      "decision": "retained",
+      "reason": "Intérieur de la Maison des Esclaves, lieu mémoriel nommé ; aucune fonction précise de pièce ni volume de traite déduits de l’image.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Pièce aux murs dégradés dans la Maison des Esclaves.",
+        "legende": "Gorée : intérieur de la Maison des Esclaves, photographié en 2024.",
+        "credit": "Fawaz.tairou, CC BY 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gor%C3%A9e_2024_-_Maison_des_esclaves_-_08.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      }
+    },
+    {
+      "id": "course-histoire-35-lat-dior-cayor-lesson-1",
+      "title": "Le Damel du Cayor",
+      "decision": "retained",
+      "reason": "Gravure de Lat Dior publiée de son vivant ; le crédit conserve la publication, sans résoudre arbitrairement le conflit d’attribution du graveur.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Portrait gravé de Lat Dior, vêtu de tissu clair.",
+        "legende": "Lat Dior, Damel du Cayor : gravure publiée en 1875.",
+        "credit": "Le Monde illustré, 1875, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-4",
+      "title": "Touba et le mouridisme",
+      "decision": "retained",
+      "reason": "L’intérieur de la Grande Mosquée de Touba documente le centre mouride ; édifice ultérieur au fondateur, pas contemporain de sa vie.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Colonnes et arches intérieures de la Grande Mosquée de Touba.",
+        "legende": "Touba : intérieur de la Grande Mosquée, photographié en 2006.",
+        "credit": "zivax, CC BY-SA 3.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Touba_(senegal)_2006.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    },
+    {
+      "id": "course-histoire-38-senghor-negritude-independance-lesson-1",
+      "title": "Un poète et un intellectuel",
+      "decision": "moved",
+      "reason": "La visite présidentielle de 1980 documente la présidence, pas la formation intellectuelle.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Senghor entouré de visiteurs lors de son accueil en 1980.",
+        "legende": "Senghor, au centre, accueilli aux États-Unis en 1980.",
+        "credit": "Archives militaires américaines, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%C3%A9opold_S%C3%A9dar_Senghor_in_1980.JPEG",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-US-Military"
+      },
+      "destination": "course-histoire-38-senghor-negritude-independance-lesson-4"
+    },
+    {
+      "id": "course-histoire-39-reine-nzinga-angola-lesson-1",
+      "title": "Une reine d'Afrique centrale",
+      "decision": "retained",
+      "reason": "Lithographie posthume explicitement légendée, représentation de Nzinga plutôt que témoignage fiable de son apparence.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Portrait coloré et posthume représentant Nzinga Mbande.",
+        "legende": "Nzinga : portrait posthume, lithographie coloriée des années 1830.",
+        "credit": "Achille Devéria / Le Villain, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ann_Zingha.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      }
+    },
+    {
+      "id": "course-histoire-40-chaka-zoulou-lesson-2",
+      "title": "Un génie militaire",
+      "decision": "moved",
+      "reason": "Le portrait historique sert l’identification du fondateur ; la longue lance ne documente pas l’iklwa courte.",
+      "originalImage": {
+        "type": "image",
+        "alt": "Dessin représentant Chaka avec lance et grand bouclier.",
+        "legende": "Chaka : gravure de 1836, dessin attribué à James King.",
+        "credit": "D'après James King, publication de 1836, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:KingShaka.jpg",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-Art"
+      },
+      "destination": "course-histoire-40-chaka-zoulou-lesson-1"
+    }
+  ],
+  "active": [
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-1",
+      "course": "course-histoire-01-egypte-antique",
+      "title": "Une civilisation née sur le Nil",
+      "decision": "retained",
+      "reason": "Les deux couronnes de Narmer matérialisent l’unification citée.",
+      "image": {
+        "type": "image",
+        "alt": "Narmer coiffé différemment sur chaque face sculptée.",
+        "legende": "Palette de Narmer, deux faces, vers 3100 av. J.-C.",
+        "credit": "Wikimedia Commons, domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narmer_Palette.jpg",
+        "fit": "contain"
+      },
+      "sha256": "42a40bd1405aa594bd20cdc525851be4c6611f4763e73218b13aa6b6bf61b1b0"
+    },
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-2",
+      "course": "course-histoire-01-egypte-antique",
+      "title": "Un dieu vivant à la tête de l'État",
+      "decision": "retained",
+      "reason": "L’offrande de Maât montre le rôle religieux du pharaon.",
+      "image": {
+        "type": "image",
+        "alt": "Ramsès III présente Maât au dieu Osiris.",
+        "legende": "Ramsès III offrant Maât à Osiris, tombe KV11.",
+        "credit": "Wikimedia Commons, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rameses_III_offering_Maat_to_Osiris_(KV11).jpg",
+        "fit": "contain"
+      },
+      "sha256": "31deab909fd8e260977da99fa8e6f898ffb9ef570179e476e95a7dc4194d6567"
+    },
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-3",
+      "course": "course-histoire-01-egypte-antique",
+      "title": "Le secret des hiéroglyphes",
+      "decision": "retained",
+      "reason": "Le document porte les trois écritures utilisées pour le déchiffrement.",
+      "image": {
+        "type": "image",
+        "alt": "Pierre gravée en trois zones d'écritures différentes.",
+        "legende": "La pierre de Rosette et ses trois écritures.",
+        "credit": "Hans Hillewaert, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosetta_Stone.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      },
+      "sha256": "6a8e994df50e8804359bcc7af243af4479e22587426307cf96f61c6e849f8016"
+    },
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-4",
+      "course": "course-histoire-01-egypte-antique",
+      "title": "Peser le cœur du défunt",
+      "decision": "retained",
+      "reason": "La balance d’Ani représente exactement le jugement funéraire expliqué.",
+      "image": {
+        "type": "image",
+        "alt": "Anubis surveille une balance pesant le cœur d'Ani.",
+        "legende": "La pesée du cœur d'Ani, fac-similé publié en 1902.",
+        "credit": "TIMEA / Rice University, CC BY-SA 2.5, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Heart_of_Ani_Being_Weighed_in_the_Balance._(1902)_-_TIMEA.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+        "fit": "contain"
+      },
+      "sha256": "4b2dc4098af28940f099bbbefcf5ad7076a95833a8ef5f67484a4d03f480b6c8"
+    },
+    {
+      "id": "course-histoire-01-egypte-antique-lesson-5",
+      "course": "course-histoire-01-egypte-antique",
+      "title": "L'Égypte, en dialogue avec l'Afrique",
+      "decision": "retained",
+      "reason": "Le sphinx de Taharqa relie les souverains nubiens à la royauté égyptienne.",
+      "image": {
+        "type": "image",
+        "alt": "Sphinx à visage royal du souverain nubien Taharqa.",
+        "legende": "Sphinx de Taharqa, roi nubien devenu pharaon, VIIᵉ siècle av. J.-C.",
+        "credit": "Prioryman, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sphinx_of_Taharqo.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      },
+      "sha256": "1afd4eae4f34a1a75e11a178a147ea9857e439ef613ff90062a46b9cee5a3e35"
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-1",
+      "course": "course-histoire-02-koush-meroe",
+      "title": "Le pays de l'arc",
+      "decision": "retained",
+      "reason": "Réplique explicitement identifiée d’un modèle d’archers nubiens, sujet de la leçon.",
+      "image": {
+        "type": "image",
+        "alt": "Figurines de soldats nubiens armés d'arcs.",
+        "legende": "Archers nubiens : réplique du modèle funéraire de Mesehti.",
+        "credit": "Marsupium, CC BY 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Replica_of_the_Nubian_Archers_from_the_Tomb_of_Mesehti_-_Nubian_Museum_04.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      },
+      "sha256": "b8a4dc038458221cd5002abff96c55842349a30755b4d9a3610ecc73ac89bdd8"
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-2",
+      "course": "course-histoire-02-koush-meroe",
+      "title": "Les pharaons noirs de Napata",
+      "decision": "retained",
+      "reason": "Taharqa figure sous Amon : objet du règne et de sa légitimité religieuse.",
+      "image": {
+        "type": "image",
+        "alt": "Petit Taharqa protégé entre les pattes du bélier d'Amon.",
+        "legende": "Taharqa sous la protection d'Amon, VIIᵉ siècle av. J.-C.",
+        "credit": "M0tty, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Granite_ram_of_Amun_with_King_Taharqa_-_British_Museum.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      },
+      "sha256": "67af9ce1b92a4d8e243b947ff24e81c30b906f2f913df8eea5b6b1760fca5484"
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-3",
+      "course": "course-histoire-02-koush-meroe",
+      "title": "Méroé, la cité du fer",
+      "decision": "retained",
+      "reason": "Le tas de scories H800 est situé à Hamadab, près de Méroé ; il documente la métallurgie régionale.",
+      "image": {
+        "type": "image",
+        "alt": "Amas de scories H800, Hamadab.",
+        "legende": "Hamadab, près de Méroé : scories de fer, tas H800.",
+        "credit": "Ullrich, Wolf et Kaufmann, CC BY 4.0",
+        "sourceUrl": "https://hmsjournal.org/index.php/home/article/view/86",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "sha256": "a26afb131ab3b5b8dba7bca54cc3ef91def807d1e6379a8e37ecb07b9c102abb"
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-4",
+      "course": "course-histoire-02-koush-meroe",
+      "title": "Une écriture, des dieux, des reines",
+      "decision": "retained",
+      "reason": "Le relief réunit Amanishakhéto et les divinités nommées, pas une photographie de la reine.",
+      "image": {
+        "type": "image",
+        "alt": "La reine Amanishakhéto entourée de deux divinités sur une stèle.",
+        "legende": "Amanishakhéto avec Amésémi et Apédémak, Ier siècle av. J.-C.",
+        "credit": "Khruner, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Relief_Amanishakheto_Munich.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      },
+      "sha256": "09f4a2c0d8c130066c232150ae321d1eb23dd443b06440992914043e106ea3a5"
+    },
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-5",
+      "course": "course-histoire-02-koush-meroe",
+      "title": "Déclin et héritage",
+      "decision": "retained",
+      "reason": "Les pyramides montrent le patrimoine monumental de Koush cité en héritage.",
+      "image": {
+        "type": "image",
+        "alt": "Pyramides nubiennes aux pentes abruptes dans le désert.",
+        "legende": "Les pyramides de Méroé, patrimoine du royaume de Koush.",
+        "credit": "Ola.m tbe, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_wonderful_picture_of_the_pyramids_of_Meroe_in_Sudan.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "sha256": "c26f98ccbd0f9cc791327b2c6dd45149ff6ec4946ccc9401023ea2a1aa7e140b"
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-1",
+      "course": "course-histoire-03-aksoum",
+      "title": "Un pont entre trois mondes",
+      "decision": "retained",
+      "reason": "Vestiges du port d’Adoulis explicitement étudié pour les échanges.",
+      "image": {
+        "type": "image",
+        "alt": "Fondations de pierre du port antique d'Adoulis.",
+        "legende": "Vestiges d'Adoulis, port d'Aksoum sur la mer Rouge.",
+        "credit": "David Stanley, CC BY 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adulis_(8529061940).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      },
+      "sha256": "97c526e46514a5df4487185b50ab18df08f1d9fd07d9cb1496ebeb3bd32ae1a2"
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-2",
+      "course": "course-histoire-03-aksoum",
+      "title": "Aksoum, royaume qui frappait monnaie",
+      "decision": "retained",
+      "reason": "Monnaie d’Ezana : objet économique du souverain et de la période cités.",
+      "image": {
+        "type": "image",
+        "alt": "Deux faces d'une monnaie portant le portrait du roi Ezana.",
+        "legende": "Monnaie d'Ezana, IVᵉ siècle : portrait royal et symboles.",
+        "credit": "CNG Coins, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:AXUM._Ezanas._Circa_330-360.jpg",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "contain"
+      },
+      "sha256": "7fbb7be98647f93dfe11a70f4de36c2eb096ccc85c1660aacc083c16a493df19"
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-3",
+      "course": "course-histoire-03-aksoum",
+      "title": "L'un des premiers États chrétiens",
+      "decision": "retained",
+      "reason": "Manuscrit chrétien du XVe siècle, légendé comme héritage plutôt que document du règne d’Ezana.",
+      "image": {
+        "type": "image",
+        "alt": "Saint Luc peint sur une page d'évangile éthiopien.",
+        "legende": "Évangile éthiopien du XVe siècle : l'héritage chrétien d'Aksoum.",
+        "credit": "Cleveland Museum of Art, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clevelandart_1999.212.jpg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      },
+      "sha256": "cbf965f43d8b1911c99b1decfabbd4f90f0afac06232283b7b64ac9655dab524"
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-4",
+      "course": "course-histoire-03-aksoum",
+      "title": "Les stèles géantes d'Aksoum",
+      "decision": "retained",
+      "reason": "Les stèles montrent les fausses portes et fenêtres décrites.",
+      "image": {
+        "type": "image",
+        "alt": "Grandes stèles sculptées et blocs renversés dans le site d'Aksoum.",
+        "legende": "Les stèles royales d'Aksoum, sculptées comme des tours.",
+        "credit": "Rod Waddington, CC BY-SA 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stelae,_Aksum_(8140296506).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "sha256": "6fc13e6117fe79c648f7c213713b2aabe8e51171e03370a352da7d2482eeafb0"
+    },
+    {
+      "id": "course-histoire-03-aksoum-lesson-5",
+      "course": "course-histoire-03-aksoum",
+      "title": "Déclin et héritage",
+      "decision": "retained",
+      "reason": "L’inscription d’Ezana documente l’héritage écrit ; sa date ne doit pas être confondue avec le déclin au VIIe siècle.",
+      "image": {
+        "type": "image",
+        "alt": "Inscription gravée sur la pierre du roi Ezana.",
+        "legende": "La pierre d'Ezana, IVᵉ siècle : un témoignage écrit d'Aksoum.",
+        "credit": "Rod Waddington, CC BY-SA 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ezana_Stone,_Aksum_(6183743976).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "fit": "contain"
+      },
+      "sha256": "55b189d598ba4f417c6d31acba95746c283de3e4bd370e5ec4c1169aae313b29"
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-1",
+      "course": "course-histoire-04-carthage-afrique-du-nord",
+      "title": "Une fondation venue d'Orient",
+      "decision": "retained",
+      "reason": "La carte relie Tyr et Carthage dans le réseau phénicien étudié.",
+      "image": {
+        "type": "image",
+        "alt": "Comptoirs phéniciens répartis autour de la Méditerranée.",
+        "legende": "Tyr et Carthage dans le réseau des comptoirs phéniciens.",
+        "credit": "Bourrichon, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Routes_commerciales_des_Ph%C3%A9niciens-fr.svg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      },
+      "sha256": "7765bd3bab796ebf519ebea1f665a6843f05c3bc63cd094251fbf864f281f799"
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-2",
+      "course": "course-histoire-04-carthage-afrique-du-nord",
+      "title": "Un empire commercial et maritime",
+      "decision": "retained",
+      "reason": "Les bassins actuels des ports puniques matérialisent la puissance maritime.",
+      "image": {
+        "type": "image",
+        "alt": "Bassin circulaire des anciens ports puniques de Carthage.",
+        "legende": "Les ports puniques de Carthage, photographiés en 2024.",
+        "credit": "Sharon Hahn Darlin, CC BY 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Punic_Ports_(Ports_Puniques)_of_Carthage,_Tunisia_January_2024_-_2.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      },
+      "sha256": "a1e313a90af604aff7391a1614aa1e1acd19beb272368feea279aaab2e2c6fe3"
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-3",
+      "course": "course-histoire-04-carthage-afrique-du-nord",
+      "title": "Les guerres puniques contre Rome",
+      "decision": "retained",
+      "reason": "L’itinéraire correspond à la campagne d’Hannibal, sans prétendre établir le col alpin exact.",
+      "image": {
+        "type": "image",
+        "alt": "Itinéraire d'Hannibal depuis l'Espagne, à travers les Alpes, vers l'Italie.",
+        "legende": "Le trajet d'Hannibal vers l'Italie en 218 av. J.-C.",
+        "credit": "Pinpin, CC BY-SA 3.0, adaptation française, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hannibal_route_of_invasion-en.svg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      },
+      "sha256": "b962e2370a06563477adab6759e2f60f7cbc011d6de5d388640fdabcd812d9d3"
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-4",
+      "course": "course-histoire-04-carthage-afrique-du-nord",
+      "title": "Les royaumes berbères de Numidie",
+      "decision": "retained",
+      "reason": "La monnaie attribuée à Massinissa identifie la royauté numide ; attribution conservée comme telle.",
+      "image": {
+        "type": "image",
+        "alt": "Profil royal frappé sur une monnaie numide.",
+        "legende": "Monnaie attribuée à Massinissa, souverain de Numidie.",
+        "credit": "Michel-georges bernard, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Massinissa_monnaie.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      },
+      "sha256": "42f8c30877e36458610ab500cce9680e9861a1d05a0959aed9f347f4f8197e0a"
+    },
+    {
+      "id": "course-histoire-04-carthage-afrique-du-nord-lesson-5",
+      "course": "course-histoire-04-carthage-afrique-du-nord",
+      "title": "L'Afrique romaine et l'héritage",
+      "decision": "retained",
+      "reason": "Timgad est l’exemple explicitement cité de ville de l’Afrique romaine.",
+      "image": {
+        "type": "image",
+        "alt": "Rues et vestiges de la cité romaine de Timgad.",
+        "legende": "Ruines de Timgad, cité romaine fondée en 100, en Algérie.",
+        "credit": "Yelles, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timgad_Ruins_Panorama.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "sha256": "2973feac09f74446fec02b75ffbfbbe53993d870cdf808e898b8c51c90d1d40e"
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-1",
+      "course": "course-histoire-05-empire-du-ghana",
+      "title": "Wagadou, pas le Ghana d'aujourd'hui",
+      "decision": "retained",
+      "reason": "La carte distingue bien Wagadou du Ghana contemporain, limites indiquées comme approximatives.",
+      "image": {
+        "type": "image",
+        "alt": "Carte situant l'ancien Ghana autour de Koumbi Saleh.",
+        "legende": "Le Ghana médiéval : territoire indicatif entre Mauritanie et Mali.",
+        "credit": "Barada-nikto, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghana_empire_map-fr.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      },
+      "sha256": "6d6a9eb0334070a05430a8f0cb2a0bbc483ad64484e237b72546b57b5c3f2c61"
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-2",
+      "course": "course-histoire-05-empire-du-ghana",
+      "title": "L'or et le sel",
+      "decision": "retained",
+      "reason": "Le sel à Mopti montre la marchandise étudiée ; photographie actuelle, pas marché médiéval.",
+      "image": {
+        "type": "image",
+        "alt": "Plaques de sel saharien empilées pour le commerce.",
+        "legende": "Plaques de sel saharien à Mopti, photographie contemporaine.",
+        "credit": "Taguelmoust at French Wikipedia, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mopti_sel.jpg",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "sha256": "08fa55b3d5afc0c6772eaf6bbaef44034597ce07cf2815df952e1fea4d082864"
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-3",
+      "course": "course-histoire-05-empire-du-ghana",
+      "title": "Deux villes pour un royaume",
+      "decision": "retained",
+      "reason": "Le plan archéologique est bien celui de Koumbi Saleh, pas une reconstitution assurée des deux villes d’Al-Bakri.",
+      "image": {
+        "type": "image",
+        "alt": "Plan des quartiers et vestiges archéologiques de Koumbi Saleh.",
+        "legende": "Koumbi Saleh : plan archéologique établi d'après les relevés de 2007.",
+        "credit": "Chloé Capel, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Archaeological_site_of_Koumbi_Saleh.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      },
+      "sha256": "6f31b2ce9819ca4087bbbce750920b0562fbf6680f5af51fcc050b72878110b0"
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-4",
+      "course": "course-histoire-05-empire-du-ghana",
+      "title": "Islam et commerce",
+      "decision": "retained",
+      "reason": "Les routes médiévales expliquent les contacts commerciaux et religieux, pas une chronologie exacte des conversions.",
+      "image": {
+        "type": "image",
+        "alt": "Routes commerciales reliant le royaume du Ghana au nord du Sahara.",
+        "legende": "Routes transsahariennes, XIe–XVe siècles : échanges et diffusion de l’islam.",
+        "credit": "Siyajkak, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      },
+      "sha256": "98fcc846d9ad6d7fe5eeaf5441073066cd4001bfc7634eb17af728cf8da4f132"
+    },
+    {
+      "id": "course-histoire-05-empire-du-ghana-lesson-5",
+      "course": "course-histoire-05-empire-du-ghana",
+      "title": "Déclin et héritage",
+      "decision": "retained",
+      "reason": "Le timbre de 1957 concerne explicitement l’héritage du nom Ghana dans cette leçon.",
+      "image": {
+        "type": "image",
+        "alt": "Timbre commémorant l'indépendance avec le portrait de Kwame Nkrumah.",
+        "legende": "Timbre commémorant l'indépendance du Ghana, le 6 mars 1957.",
+        "credit": "Paasikivi, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:KwameNkrumahOnGhanianIndependenceDay6March1957PostageStamp.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      },
+      "sha256": "9542437bd7ab851a8861c2225062878a3e53aa5c69f10e810f0c4e841f3be795"
+    },
+    {
+      "id": "course-histoire-06-soundiata-mali-lesson-1",
+      "course": "course-histoire-06-soundiata-mali",
+      "title": "L'ombre du roi du Sosso",
+      "decision": "retained",
+      "reason": "La carte des États successeurs vers 1200 situe le morcellement politique précédant Soundiata.",
+      "image": {
+        "type": "image",
+        "alt": "Carte des royaumes issus du morcellement de l'ancien Ghana.",
+        "legende": "Après le Ghana : royaumes rivaux vers 1200, territoires indicatifs.",
+        "credit": "T L Miles, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghana_successor_map_1200.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      },
+      "sha256": "468e3571b1e96c9795bc9a5029d13faf6cc37b0b5cd818e9af0cebef88d8235d"
+    },
+    {
+      "id": "course-histoire-06-soundiata-mali-lesson-2",
+      "course": "course-histoire-06-soundiata-mali",
+      "title": "Soundiata, l'enfant qui ne marchait pas",
+      "decision": "retained",
+      "reason": "Le griot contemporain montre le vecteur de transmission orale de l’épopée ; il n’est pas représenté comme Soundiata.",
+      "image": {
+        "type": "image",
+        "alt": "Ali Boulo Santo joue de la kora.",
+        "legende": "Ali Boulo Santo, griot mandingue, photo contemporaine.",
+        "credit": "Dany barthelemy, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ali_Boulo_Santo_Artiste_griot_mandingue_kora_maitre_kora_afrique_europe_wikipedia30042016.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "sha256": "494b4570982a41a739c54866cdc49b55d7f604b417bf631228673462d64c97a0"
+    },
+    {
+      "id": "course-histoire-06-soundiata-mali-lesson-4",
+      "course": "course-histoire-06-soundiata-mali",
+      "title": "La Charte du Manden",
+      "decision": "retained",
+      "reason": "Illustration contemporaine de l’assemblée, clairement distinguée d’un document de 1236.",
+      "image": {
+        "type": "image",
+        "alt": "Assemblée de personnages représentée par une illustration contemporaine.",
+        "legende": "Assemblée du Manden : illustration contemporaine, pas un document de 1236.",
+        "credit": "Morganb73, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Assembl%C3%A9e_constitutive_de_l%27empire_du_Mand%C3%A9_(les_chefs_de_guerre).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      },
+      "sha256": "81e86a329df29984d331f4ec51f368a4519a7e9830c4f3ebd1581627bf4073dc"
+    },
+    {
+      "id": "course-histoire-06-soundiata-mali-lesson-5",
+      "course": "course-histoire-06-soundiata-mali",
+      "title": "Les fondations d'un empire prospère",
+      "decision": "retained",
+      "reason": "Carte du Mali au XIVe siècle présentée comme l’empire après Soundiata, pas ses frontières personnelles.",
+      "image": {
+        "type": "image",
+        "alt": "Carte du Mali reliant ses régions aux principaux axes commerciaux.",
+        "legende": "L'empire du Mali après Soundiata, au début du XIVe siècle.",
+        "credit": "HetmanTheResearcher, CC BY 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_the_Mali_Empire.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "fit": "contain"
+      },
+      "sha256": "973164a51332f43ffc38b7650bb63b71b7b8bbe80876c5002a89624b21afffde"
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-1",
+      "course": "course-histoire-07-mansa-moussa",
+      "title": "Le plus riche souverain du monde",
+      "decision": "retained",
+      "reason": "Le détail de l’Atlas catalan montre la représentation de la richesse de Moussa.",
+      "image": {
+        "type": "image",
+        "alt": "Mansa Moussa représenté avec couronne, sceptre et or.",
+        "legende": "Mansa Moussa dans l'Atlas catalan de 1375, détail.",
+        "credit": "Abraham Cresques (attribué), domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa_(cropped).jpg",
+        "fit": "contain"
+      },
+      "sha256": "ea1e7c2a7363f614686c30ddabd96514d82e41c2fbb5e30964b37eae34ef5054"
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-2",
+      "course": "course-histoire-07-mansa-moussa",
+      "title": "Le pèlerinage à La Mecque",
+      "decision": "retained",
+      "reason": "Représentation tardive du pèlerinage publiée en 1903 ; ni photographie de 1324 ni portrait attesté du souverain.",
+      "image": {
+        "type": "image",
+        "alt": "Un souverain et son escorte représentés en voyage.",
+        "legende": "Le pèlerinage de Moussa, représentation tardive publiée en 1903.",
+        "credit": "Artiste inconnu, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mansa-Musa-on-his-way-to-Mecca-Credit-Print-Collector-Getty-images-1536x790.jpg",
+        "fit": "contain"
+      },
+      "sha256": "b56716f98f8895c0b62c74e54f6db717d8cf99a30f488554d0b444c5671f302c"
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-3",
+      "course": "course-histoire-07-mansa-moussa",
+      "title": "Une renommée mondiale",
+      "decision": "retained",
+      "reason": "La vue élargie de l’Atlas montre le placement de Moussa dans la cartographie, plutôt que son seul portrait.",
+      "image": {
+        "type": "image",
+        "alt": "Mansa Moussa figure au milieu des toponymes d'une carte médiévale.",
+        "legende": "L'Atlas catalan de 1375 situe Moussa dans l'Afrique occidentale.",
+        "credit": "Abraham Cresques (attribué), domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Catalan_Atlas_BNF_Sheet_6_Mansa_Musa.jpg",
+        "fit": "contain"
+      },
+      "sha256": "c49f0d248449c9b79a6cdb5256e81162669af9861e801b2534e3704e88581e91"
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-4",
+      "course": "course-histoire-07-mansa-moussa",
+      "title": "Tombouctou, cité du savoir",
+      "decision": "retained",
+      "reason": "Djinguereber est la mosquée nommée en lien avec le mécénat de Moussa ; état photographié ultérieur.",
+      "image": {
+        "type": "image",
+        "alt": "Façade de terre de la mosquée Djinguereber à Tombouctou.",
+        "legende": "Djinguereber à Tombouctou, fondée au temps de Mansa Moussa.",
+        "credit": "upyernoz, CC BY 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Djinguereber_Mosque,_Timbuktu.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      },
+      "sha256": "b1621922c0f072e3a3e63d300e5baeed3ed8057773e8c8bc778bd986259f3c15"
+    },
+    {
+      "id": "course-histoire-07-mansa-moussa-lesson-5",
+      "course": "course-histoire-07-mansa-moussa",
+      "title": "Héritage",
+      "decision": "retained",
+      "reason": "Manuscrits de Tombouctou, explicitement héritage savant et non autographes de Moussa.",
+      "image": {
+        "type": "image",
+        "alt": "Pages manuscrites de savoirs astronomiques et mathématiques.",
+        "legende": "Manuscrits de Tombouctou : un héritage savant conservé.",
+        "credit": "Elias Altmimi, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timbuktu-manuscripts-astronomy-mathematics.jpg",
+        "fit": "contain"
+      },
+      "sha256": "ac97c2b526214a762dd2033ba78276114e5e86a41fd20f6303a100174cf1b1c1"
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-1",
+      "course": "course-histoire-08-empire-songhai",
+      "title": "Gao et la montée du Songhaï",
+      "decision": "retained",
+      "reason": "Le Niger à Gao illustre la géographie fluviale décrite, sans dater les embarcations du Moyen Âge.",
+      "image": {
+        "type": "image",
+        "alt": "Pirogues sur le fleuve Niger à Gao.",
+        "legende": "Le Niger à Gao, axe fluvial de l'ancien Songhaï.",
+        "credit": "Ryszard Vorbrich, CC BY-SA 3.0 pl, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:%C5%81odzie_rybackie_na_rzece_Niger_-_Gao_-_001208s.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/pl/deed.en"
+      },
+      "sha256": "43facf2754f20493f28a6a468222820f904b0a86741c7ab69984f1c8904fc622"
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-2",
+      "course": "course-histoire-08-empire-songhai",
+      "title": "Sonni Ali Ber, le conquérant",
+      "decision": "retained",
+      "reason": "Carte de l’empire à son apogée pour situer Gao, Tombouctou et Djenné ; pas portrait de Sonni Ali.",
+      "image": {
+        "type": "image",
+        "alt": "Gao, Tombouctou et Djenné sur une carte de l'empire Songhaï.",
+        "legende": "Le Songhaï à son apogée : Gao, Tombouctou et Djenné.",
+        "credit": "Roke / Astrokey44, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:SONGHAI_empire_map.PNG",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+        "fit": "contain"
+      },
+      "sha256": "74008fb73eb82519e418c140fd74c24a51f2a28793222f808ad2904404ff467d"
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-3",
+      "course": "course-histoire-08-empire-songhai",
+      "title": "Askia Mohammed, le réformateur",
+      "decision": "retained",
+      "reason": "Monument des Askia directement lié au souverain étudié ; la photo actuelle ne montre pas la construction.",
+      "image": {
+        "type": "image",
+        "alt": "Monument pyramidal en terre du tombeau des Askia à Gao.",
+        "legende": "Le tombeau des Askia à Gao, construit en 1495.",
+        "credit": "Taguelmoust, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Askia.jpg",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "sha256": "83be4d4b5f099d75e391be8e3bd612e1ab0891bf34ae65a09daa3561a7775fa5"
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-4",
+      "course": "course-histoire-08-empire-songhai",
+      "title": "Un empire vaste et savant",
+      "decision": "retained",
+      "reason": "Carte postale de Sankoré illustrant le centre savant nommé, pas un cours de l’époque songhaï.",
+      "image": {
+        "type": "image",
+        "alt": "Mosquée de Sankoré sur une ancienne carte postale.",
+        "legende": "Sankoré à Tombouctou, photographie ancienne d'Edmond Fortier.",
+        "credit": "Edmond Fortier, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fortier_368_Timbuktu_Sankore_Mosque.jpg"
+      },
+      "sha256": "92ba088347932c74e3fdf2778614dd7fb49d6cbbbb69bdc5bda112e6b0e0f560"
+    },
+    {
+      "id": "course-histoire-08-empire-songhai-lesson-5",
+      "course": "course-histoire-08-empire-songhai",
+      "title": "La chute de 1591",
+      "decision": "retained",
+      "reason": "Schéma moderne de Tondibi pertinent pour l’événement, simplification pédagogique et non relevé de terrain contemporain.",
+      "image": {
+        "type": "image",
+        "alt": "Schéma des positions des armées à Tondibi.",
+        "legende": "Tondibi, 1591 : schéma moderne de la bataille.",
+        "credit": "Monsieur Fou, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bataille_de_tondibi.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      },
+      "sha256": "2d40ad478be5e617624b8425337ed7672a2efd8ff57098403b4ce1d7337c0f39"
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-1",
+      "course": "course-histoire-09-tombouctou-djenne",
+      "title": "Du commerce au savoir",
+      "decision": "retained",
+      "reason": "Routes, villes et régions aurifères expliquent le passage du commerce au savoir.",
+      "image": {
+        "type": "image",
+        "alt": "Routes vers Tombouctou et Djenné et régions aurifères.",
+        "legende": "Routes transsahariennes, XIe–XVe siècles : villes, sel et régions aurifères.",
+        "credit": "Aa77zz, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      },
+      "sha256": "98fcc846d9ad6d7fe5eeaf5441073066cd4001bfc7634eb17af728cf8da4f132"
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-2",
+      "course": "course-histoire-09-tombouctou-djenne",
+      "title": "L'université de Sankoré",
+      "decision": "retained",
+      "reason": "Sankoré, site nommé du réseau d’enseignement ; le bâtiment ne prouve pas à lui seul un effectif d’étudiants.",
+      "image": {
+        "type": "image",
+        "alt": "Minaret et façade en terre de la mosquée de Sankoré.",
+        "legende": "Sankoré à Tombouctou, ancien foyer d'enseignement.",
+        "credit": "Ondřej Havelka, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sankore_Madrasah.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      },
+      "sha256": "b59fe6c1f9ce3af699998106674a53ff7ded9c83e68c9f3f3b812ac9ef656c6f"
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-3",
+      "course": "course-histoire-09-tombouctou-djenne",
+      "title": "Les manuscrits de Tombouctou",
+      "decision": "retained",
+      "reason": "Le manuscrit montre les tables astronomiques dont parle la leçon.",
+      "image": {
+        "type": "image",
+        "alt": "Tables de calcul astronomique dans un manuscrit de Tombouctou.",
+        "legende": "Tables astronomiques conservées à Tombouctou, manuscrit de l'Institut Ahmed-Baba.",
+        "credit": "Ahmed Baba Institute / Wikimedia Commons, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timbuktu-manuscripts-astronomy-tables.jpg",
+        "fit": "contain"
+      },
+      "sha256": "d55b1fdbda482456b43de95f7f31ddd5532f8e21cc65684371589b8d9412fb34"
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-4",
+      "course": "course-histoire-09-tombouctou-djenne",
+      "title": "L'architecture de terre",
+      "decision": "retained",
+      "reason": "L’état actuel de Djenné montre la construction en terre, avec reconstruction de 1907 indiquée.",
+      "image": {
+        "type": "image",
+        "alt": "Grande Mosquée de Djenné et ses poutres de bois saillantes.",
+        "legende": "Grande Mosquée de Djenné, édifice actuel reconstruit en 1907.",
+        "credit": "BluesyPete, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:MaliDjenn%C3%A9Mosqu%C3%A9e.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "sha256": "71fb4081886dee797491c0177dbbcf2296c346f7e01099415e7a135539e62b77"
+    },
+    {
+      "id": "course-histoire-09-tombouctou-djenne-lesson-5",
+      "course": "course-histoire-09-tombouctou-djenne",
+      "title": "Héritage et préservation",
+      "decision": "retained",
+      "reason": "Documents conservés par SAVAMA-DCI en lien direct avec la préservation décrite.",
+      "image": {
+        "type": "image",
+        "alt": "Manuscrits conservés par l'association SAVAMA-DCI à Tombouctou.",
+        "legende": "Manuscrits conservés par SAVAMA-DCI, au Mali.",
+        "credit": "Lazare Eloundou, CC BY-SA 3.0 igo, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Timbuktu-139078.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+        "fit": "contain"
+      },
+      "sha256": "ec036cd16475b43361af5efc0bf690c38f45d8d41a04e678296c31f9fb6862e3"
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-1",
+      "course": "course-histoire-10-kanem-bornou",
+      "title": "Mille ans d'une seule dynastie",
+      "decision": "retained",
+      "reason": "Carte de situation du Kanem-Bornou autour du lac Tchad ; emprise indicative, pas frontière moderne.",
+      "image": {
+        "type": "image",
+        "alt": "Carte situant Kanem et Bornou autour du lac Tchad.",
+        "legende": "Kanem et Bornou autour du lac Tchad, territoires indicatifs.",
+        "credit": "ArnoldPlaton, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanem-Bornu.svg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      },
+      "sha256": "202c68c52b4f72e23e2ea50557005fa105afae2e07e8dd54a8dcd34b54f940ee"
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-2",
+      "course": "course-histoire-10-kanem-bornou",
+      "title": "L'essor du Kanem et l'islam",
+      "decision": "retained",
+      "reason": "Les routes sahariennes matérialisent les contacts commerciaux du Kanem.",
+      "image": {
+        "type": "image",
+        "alt": "Routes sahariennes reliant notamment le lac Tchad à l'Afrique du Nord.",
+        "legende": "Routes transsahariennes vers 1400, dont celles du Kanem-Bornou.",
+        "credit": "T L Miles, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Niger_saharan_medieval_trade_routes.PNG",
+        "fit": "contain"
+      },
+      "sha256": "294b960859b6472ff9b8b6eecfb7c3dc18518306280556e091cc68e006b38e2f"
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-3",
+      "course": "course-histoire-10-kanem-bornou",
+      "title": "Le déplacement vers le Bornou",
+      "decision": "retained",
+      "reason": "La carte vers 1450 situe le Bornou à l’ouest du lac, après le déplacement politique.",
+      "image": {
+        "type": "image",
+        "alt": "Le Bornou à l'ouest du lac Tchad sur une carte historique.",
+        "legende": "Le Kanem-Bornou vers 1450, après le déplacement du pouvoir.",
+        "credit": "Megartonius, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kanem%E2%80%93Bornu,_1450.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "fit": "contain"
+      },
+      "sha256": "4ad5073b6e5eff529e8c57a9a443baf9e27bd30a6341fbc5062f0a217aadc82e"
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-5",
+      "course": "course-histoire-10-kanem-bornou",
+      "title": "Longévité et héritage",
+      "decision": "retained",
+      "reason": "La gravure de 1826 illustre la cour du Bornou dans la période finale étudiée, pas celle d’Idris Alooma.",
+      "image": {
+        "type": "image",
+        "alt": "Réception d'une mission devant le souverain du Bornou.",
+        "legende": "La cour du Bornou, gravure publiée en 1826.",
+        "credit": "Edward Francis Finden / Dixon Denham, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Council_of_the_Sultan_of_Bornou_1826.jpg",
+        "fit": "contain"
+      },
+      "sha256": "067497580d437528a9cf0507b49b9a421dab9697085740ca683317ade9a576dd"
+    },
+    {
+      "id": "course-histoire-11-cites-etats-haoussa-lesson-1",
+      "course": "course-histoire-11-cites-etats-haoussa",
+      "title": "Sept cités, aucun empire",
+      "decision": "added",
+      "reason": "La porte documente les cités fortifiées haoussa, dont Kano, cité nommée dans la leçon.",
+      "image": {
+        "type": "image",
+        "alt": "Ancienne porte dans les fortifications de Kano.",
+        "legende": "Ancienne porte de Kano, photographie de 2008.",
+        "credit": "Eugene Kim, CC BY 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Kano_Gate_(2626710967).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      },
+      "sha256": "b66ab1ed2ff515c785fcc962e64cbb23129370c31d6cd8ba0805e8b916560b15",
+      "sourceMetadata": {
+        "title": "File:Old Kano Gate (2626710967).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Old_Kano_Gate_%282626710967%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4f/Old_Kano_Gate_%282626710967%29.jpg/960px-Old_Kano_Gate_%282626710967%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Old_Kano_Gate_(2626710967).jpg",
+        "width": 2592,
+        "height": 1944,
+        "author": "Eugene Kim from San Francisco, USA",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "description": "Old Kano Gate, Nigeria 2008.",
+        "date": "2008-06-23 05:36"
+      }
+    },
+    {
+      "id": "course-histoire-11-cites-etats-haoussa-lesson-2",
+      "course": "course-histoire-11-cites-etats-haoussa",
+      "title": "Le commerce et l'artisanat",
+      "decision": "retained",
+      "reason": "Les artisans de Kano battent réellement des textiles teints, en lien avec l’artisanat haoussa.",
+      "image": {
+        "type": "image",
+        "alt": "Artisans battant des tissus teints à Kano.",
+        "legende": "Artisans de Kano battant des tissus teints, photographie de 2018.",
+        "credit": "Solasly, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kofar_Mata_Dye_pit_workers_beating_dye_clothes.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "sha256": "e61914d27ddcc943e513478447adea3859ad02e97f6f2a3a0125cdb75f6487f6"
+    },
+    {
+      "id": "course-histoire-12-royaume-benin-bronzes-lesson-2",
+      "course": "course-histoire-12-royaume-benin-bronzes",
+      "title": "L'Oba et la cour",
+      "decision": "added",
+      "reason": "La figure royale à cheval illustre l’Oba et la représentation du pouvoir de cour, sans l’identifier comme Ewuare.",
+      "image": {
+        "type": "image",
+        "alt": "Plaque de bronze : l'oba à cheval, entouré de serviteurs.",
+        "legende": "Plaque du Bénin représentant l’Oba à cheval, XVIᵉ–XVIIᵉ siècles.",
+        "credit": "The Metropolitan Museum of Art, CC0, WebP",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/310752",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sha256": "f120755c92c7b40bfcc2e61b20ed644a78344d94a5fa92d8bdd7d6f012fa1a18",
+      "sourceMetadata": {}
+    },
+    {
+      "id": "course-histoire-12-royaume-benin-bronzes-lesson-3",
+      "course": "course-histoire-12-royaume-benin-bronzes",
+      "title": "Les bronzes du Bénin",
+      "decision": "retained",
+      "reason": "Plaque en laiton montrant chef guerrier et accompagnateurs : exemple exact des productions de cour, sans roi nommé.",
+      "image": {
+        "type": "image",
+        "alt": "Plaque en laiton montrant un chef guerrier et ses accompagnateurs.",
+        "legende": "Plaque en laiton du Bénin, chef guerrier et accompagnateurs, XVIᵉ siècle.",
+        "credit": "The Metropolitan Museum of Art, CC0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaque-_Warrior_and_Attendants_MET_DT1231.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sha256": "0f7e19ac6b409564a0317f1836f5e207b91df58716a4d68033fb25df9ea0eb3b"
+    },
+    {
+      "id": "course-histoire-13-empire-oyo-yoruba-lesson-1",
+      "course": "course-histoire-13-empire-oyo-yoruba",
+      "title": "Le pays yoruba",
+      "decision": "retained",
+      "reason": "La tête en terre cuite d’Ifè est une œuvre du milieu yoruba décrit ; ni bronze ni objet royal d’Oyo attesté.",
+      "image": {
+        "type": "image",
+        "alt": "Tête masculine d’Ifè en terre cuite, avec des lignes incisées sur le visage.",
+        "legende": "Tête d’Ifè en terre cuite, XIIᵉ–XIVᵉ siècles, photographiée au musée.",
+        "credit": "Jastrow, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg#Licensing"
+      },
+      "sha256": "1e694e641efe0d1b3336167613ddf4a9e2cb7cfc0cbc3a7c79bab7b46be6aafa"
+    },
+    {
+      "id": "course-histoire-13-empire-oyo-yoruba-lesson-2",
+      "course": "course-histoire-13-empire-oyo-yoruba",
+      "title": "La montée d'Oyo",
+      "decision": "added",
+      "reason": "Le plan localise la capitale et son secteur royal, sujets de la montée en puissance d’Oyo.",
+      "image": {
+        "type": "image",
+        "alt": "Plan situant Oyo-Ilé et le secteur royal de Bara.",
+        "legende": "Oyo-Ilé et Bara : plan archéologique du centre politique d’Oyo.",
+        "credit": "Akinwumi Ogundiran, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Map_of_the_metropolitan_area_of_the_Oyo_Empire_showing_Oyo-Ile_and_Old_Bara_(the_royal_suburb).png",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      },
+      "sha256": "0eb8b5c67e1ac81f7bf45807c9f2330834ecdeb75d6a15c64166635d54d1a9b9",
+      "sourceMetadata": {
+        "title": "File:Map of the metropolitan area of the Oyo Empire showing Oyo-Ile and Old Bara (the royal suburb).png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/77/Map_of_the_metropolitan_area_of_the_Oyo_Empire_showing_Oyo-Ile_and_Old_Bara_%28the_royal_suburb%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/77/Map_of_the_metropolitan_area_of_the_Oyo_Empire_showing_Oyo-Ile_and_Old_Bara_%28the_royal_suburb%29.png/960px-Map_of_the_metropolitan_area_of_the_Oyo_Empire_showing_Oyo-Ile_and_Old_Bara_%28the_royal_suburb%29.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Map_of_the_metropolitan_area_of_the_Oyo_Empire_showing_Oyo-Ile_and_Old_Bara_(the_royal_suburb).png",
+        "width": 1825,
+        "height": 1294,
+        "author": "Akinwumi Ogundiran",
+        "license": "CC0",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "description": "Map of the metropolitan area of the Oyo Empire showing Oyo-Ile and Old Bara (the royal suburb).",
+        "date": "2026-04-06"
+      }
+    },
+    {
+      "id": "course-histoire-14-royaume-ashanti-lesson-3",
+      "course": "course-histoire-14-royaume-ashanti",
+      "title": "L'or et le commerce",
+      "decision": "retained",
+      "reason": "L’ornement royal en or documente la culture de cour mentionnée ; ni poids monétaire ni simple bijou supposé.",
+      "image": {
+        "type": "image",
+        "alt": "Ornement royal ashanti en or, en forme de lion.",
+        "legende": "Lion en or, ornement royal ashanti du XIXᵉ siècle.",
+        "credit": "The Metropolitan Museum of Art, CC0, Commons",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/312428",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "sha256": "51b6447042576e0931a485e1b8dc439f03091940bab0bbbf57e07dd9343cc22a"
+    },
+    {
+      "id": "course-histoire-14-royaume-ashanti-lesson-4",
+      "course": "course-histoire-14-royaume-ashanti",
+      "title": "Les guerres anglo-ashanti",
+      "decision": "added",
+      "reason": "Document britannique de l’époque de la guerre de 1874 ; représentation du palais, pas photographie d’un combat.",
+      "image": {
+        "type": "image",
+        "alt": "Cour du palais du roi ashanti dessinée au XIXᵉ siècle.",
+        "legende": "Palais de Kumasi, dessin britannique publié en 1874.",
+        "credit": "Dessinateur inconnu, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:King_Koffee_Palace.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "cbfe42bcc5ab0132973c6ed7ebf7ed51e4663b52142e6aa3ed6c37d439c26b87",
+      "sourceMetadata": {
+        "title": "File:King Koffee Palace.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/97/King_Koffee_Palace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/9/97/King_Koffee_Palace.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "page": "https://commons.wikimedia.org/wiki/File:King_Koffee_Palace.jpg",
+        "width": 800,
+        "height": 589,
+        "author": "",
+        "license": "Public domain",
+        "description": "Picture drawn by British soldier of the main residence of the Asantehene or King Koffee of the Ashanti's.",
+        "date": "1874-01-01"
+      }
+    },
+    {
+      "id": "course-histoire-15-royaume-dahomey-lesson-2",
+      "course": "course-histoire-15-royaume-dahomey",
+      "title": "Les « Amazones » du Dahomey",
+      "decision": "retained",
+      "reason": "Les vétéranes Agojie de 1908 sont distinguées de combattantes photographiées pendant une guerre.",
+      "image": {
+        "type": "image",
+        "alt": "Anciennes combattantes du Dahomey sur une carte postale.",
+        "legende": "Vétéranes du Dahomey à Abomey, carte postale colorisée, 1908.",
+        "credit": "François-Edmond Fortier, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_c%C3%A9l%C3%A9bration_at_Abomey(1908)._-_The_veteran_amazones(_AHOSI_)_of_the_Fon_king_B%C3%A9hanzin,_Son_of_Roi_G%C3%A9l%C3%A9.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "ccc4f8fc0bb6c7bc44216d1d0f1ef7515cbd9ab19b146301dbe0e8d557a32bcd"
+    },
+    {
+      "id": "course-histoire-15-royaume-dahomey-lesson-3",
+      "course": "course-histoire-15-royaume-dahomey",
+      "title": "Le roi et le pouvoir",
+      "decision": "added",
+      "reason": "Les décors du palais rendent concrets les bas-reliefs utilisés comme archives des règnes.",
+      "image": {
+        "type": "image",
+        "alt": "Mur d’un palais royal d’Abomey avec décors en relief.",
+        "legende": "Mur d’un palais royal d’Abomey, photographie contemporaine.",
+        "credit": "Willem Heerbaart, CC BY 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abomey_royal_palace_wall.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0"
+      },
+      "sha256": "1a56209195bb294ab713a6972d6711e1d32df29096c38c8a79e60b87e4512865",
+      "sourceMetadata": {
+        "title": "File:Abomey royal palace wall.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Abomey_royal_palace_wall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/04/Abomey_royal_palace_wall.jpg/960px-Abomey_royal_palace_wall.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Abomey_royal_palace_wall.jpg",
+        "width": 2000,
+        "height": 901,
+        "author": "Willem Heerbaart",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+        "description": "One of the royal palaces of Abomey, Benin",
+        "date": "2009-03-24 18:21:30"
+      }
+    },
+    {
+      "id": "course-histoire-16-royaume-kongo-lesson-1",
+      "course": "course-histoire-16-royaume-kongo",
+      "title": "Un grand royaume d'Afrique centrale",
+      "decision": "added",
+      "reason": "Carte historique du royaume, distincte des frontières des États actuels ; version coloriée moderne.",
+      "image": {
+        "type": "image",
+        "alt": "Carte ancienne du royaume du Kongo et de ses provinces.",
+        "legende": "Le royaume du Kongo sur une carte de 1648.",
+        "credit": "Nerika, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lossy-page1-1171px-Kongo_1648_coloured.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "sha256": "9de430d30a8d72d23a5a0e6018350c4dd131f64a7829313d2074a9d9d75c928a",
+      "sourceMetadata": {
+        "title": "File:Lossy-page1-1171px-Kongo 1648 coloured.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Lossy-page1-1171px-Kongo_1648_coloured.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Lossy-page1-1171px-Kongo_1648_coloured.png/960px-Lossy-page1-1171px-Kongo_1648_coloured.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Lossy-page1-1171px-Kongo_1648_coloured.png",
+        "width": 1171,
+        "height": 1024,
+        "author": "Nerika",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "description": "Versión coloreada de File:Kongo 1648.tif,",
+        "date": "2013-03-30 00:46:17"
+      }
+    },
+    {
+      "id": "course-histoire-16-royaume-kongo-lesson-3",
+      "course": "course-histoire-16-royaume-kongo",
+      "title": "Afonso Iᵉʳ et le christianisme",
+      "decision": "added",
+      "reason": "Objet du christianisme kongo de l’époque moderne, sans attribution personnelle à Afonso Ier.",
+      "image": {
+        "type": "image",
+        "alt": "Crucifix en métal réalisé dans le royaume du Kongo.",
+        "legende": "Crucifix kongo, XVIᵉ–XVIIᵉ siècles, collection du Met.",
+        "credit": "The Metropolitan Museum of Art, CC0, WebP",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/318323",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en"
+      },
+      "sha256": "66184bf689d0f260cf7d3c56fa61217d0cfb714a5542d2d59c9fdfb6c3380c16",
+      "sourceMetadata": {
+        "title": "Crucifix, Met 1999.295.7",
+        "url": "https://images.metmuseum.org/CRDImages/ao/original/DP326205.jpg",
+        "thumbnail": "https://images.metmuseum.org/CRDImages/ao/web-large/DP326205.jpg",
+        "page": "https://www.metmuseum.org/art/collection/search/318323",
+        "author": "The Metropolitan Museum of Art",
+        "license": "CC0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "date": "16th–17th century"
+      }
+    },
+    {
+      "id": "course-histoire-17-grand-zimbabwe-lesson-1",
+      "course": "course-histoire-17-grand-zimbabwe",
+      "title": "Une cité de pierre",
+      "decision": "retained",
+      "reason": "La tour de la Grande Enceinte montre les pierres sèches, sans inventer sa fonction.",
+      "image": {
+        "type": "image",
+        "alt": "Tour conique du Grand Zimbabwe, bâtie en pierres sèches.",
+        "legende": "Tour du Grand Zimbabwe, photographie contemporaine des vestiges médiévaux.",
+        "credit": "Andrew Moore, CC BY-SA 2.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conical_Tower_-_Great_Enclosure_IV_(47561215932).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      },
+      "sha256": "3d237aa69a657aabc514e19f160f4e747df092240238344119b9401791aef5b9"
+    },
+    {
+      "id": "course-histoire-17-grand-zimbabwe-lesson-3",
+      "course": "course-histoire-17-grand-zimbabwe",
+      "title": "Une capitale organisée",
+      "decision": "added",
+      "reason": "Une vue de l’enceinte complète le détail de tour : elle montre l’organisation monumentale de la capitale.",
+      "image": {
+        "type": "image",
+        "alt": "Grande muraille de pierres sèches entourant le complexe du Grand Zimbabwe.",
+        "legende": "Mur oriental de la Grande Enceinte du Grand Zimbabwe.",
+        "credit": "Andrew Moore, CC BY-SA 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:East_Wall_Great_Enclosure_(47614139601).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "sha256": "8975f8e97ce8ec185b95d060a1fdd99482cfa09ea0bc4bfb5ad6fee84eb1473c",
+      "sourceMetadata": {
+        "title": "File:East Wall Great Enclosure (47614139601).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8e/East_Wall_Great_Enclosure_%2847614139601%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8e/East_Wall_Great_Enclosure_%2847614139601%29.jpg/960px-East_Wall_Great_Enclosure_%2847614139601%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:East_Wall_Great_Enclosure_(47614139601).jpg",
+        "width": 5472,
+        "height": 3648,
+        "author": "Andrew Moore from Johannesburg, South Africa",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "description": "East Wall Great Enclosure",
+        "date": "2019-03-26 17:15"
+      }
+    },
+    {
+      "id": "course-histoire-18-monomotapa-mutapa-lesson-2",
+      "course": "course-histoire-18-monomotapa-mutapa",
+      "title": "L'or et l'océan Indien",
+      "decision": "added",
+      "reason": "Le port de Sofala est explicitement le débouché commercial du Mutapa dans cette leçon ; document européen ancien, pas vue de sa capitale. La figure est extraite entière de la page ; le texte environnant est écarté.",
+      "image": {
+        "type": "image",
+        "alt": "Port de Sofala dans une gravure ancienne.",
+        "legende": "Vue de Sofala, détail d’une gravure de Coronelli.",
+        "credit": "Vincenzo Coronelli, domaine public, extrait WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Text_Page_to)_Isolario_del_P._Coronelli._(with)_Isola,_e_citta_di_Sofala._(to_accompany)_Isolario_descrittione_geografico-historica_(IA_dr_text-page-to-isolario-del-p-coronelli-with-isola-e-citta-di-sofala-11391099).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "ea5c957b899c38fb722ae1ed08e85e7666bce15c9ad96ea32196811ff2b7ef3a",
+      "sourceMetadata": {
+        "title": "File:(Text Page to) Isolario del P. Coronelli. (with) Isola, e citta di Sofala. (to accompany) Isolario descrittione geografico-historica (IA dr text-page-to-isolario-del-p-coronelli-with-isola-e-citta-di-sofala-11391099).jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/e/e6/%28Text_Page_to%29_Isolario_del_P._Coronelli._%28with%29_Isola%2C_e_citta_di_Sofala._%28to_accompany%29_Isolario_descrittione_geografico-historica_%28IA_dr_text-page-to-isolario-del-p-coronelli-with-isola-e-citta-di-sofala-11391099%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/e6/%28Text_Page_to%29_Isolario_del_P._Coronelli._%28with%29_Isola%2C_e_citta_di_Sofala._%28to_accompany%29_Isolario_descrittione_geografico-historica_%28IA_dr_text-page-to-isolario-del-p-coronelli-with-isola-e-citta-di-sofala-11391099%29.jpg/960px-thumbnail.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:(Text_Page_to)_Isolario_del_P._Coronelli._(with)_Isola,_e_citta_di_Sofala._(to_accompany)_Isolario_descrittione_geografico-historica_(IA_dr_text-page-to-isolario-del-p-coronelli-with-isola-e-citta-di-sofala-11391099).jpg",
+        "width": 8452,
+        "height": 11508,
+        "author": "Coronelli, Vincenzo (1650-1718) Accademia cosmografica degli Argonauti.",
+        "license": "Public domain",
+        "description": "Zoomable full resolution image available at davidrumsey.com.This image 11391.099 is a part of image group 11391.000.Text to Isolario del P. Coronelli. Parte II. With view view of Sofala island, Mozambique.Coronelli's Isolario Atlante Veneto, (1691-1692; 1696-98), in 2 volumes in 2 parts. This is the second part of volume 2. The first part of volume 2 covers the Mediterranean, Italy and the Adriatic; the second (this copy), covers Britain and Europe, Africa, Japan and Asia, and the West Indies. Each volume with engraved titles, half-titles, titles of Isolario, engraved architectural frontispieces, portraits, views, charts, text and 24 engraved maps, using the latest geographical information available. Many of the more important maps were engraved on two sheets, to allow greater detail. Coronelli's Isolario is considered to be one of the most decorative atlases of 17th century. Illustrated in Coronelli's unique style, it is a comprehensive survey of the islands of the world as known in his time, along with diagrams of various nautical weather conditions, instruments, fortresses and ship diagrams. Collation of Coronelli's atlases varies greatly; this copy is complete, but we have seen other copies with more maps and globe gores added. Coronelli, an Italian theologian, cartographer and geographer, was author or contributor to over 140 titles and produced several hundred maps, either printed separately or as parts of atlases. Subjects:",
+        "date": ""
+      }
+    },
+    {
+      "id": "course-histoire-18-monomotapa-mutapa-lesson-3",
+      "course": "course-histoire-18-monomotapa-mutapa",
+      "title": "Les Portugais et le mythe",
+      "decision": "retained",
+      "reason": "Carte européenne de Blaeu de 1635 : source de la représentation européenne du Monomotapa, sujet même de la leçon.",
+      "image": {
+        "type": "image",
+        "alt": "Carte ancienne situant le Monomotapa en Afrique australe.",
+        "legende": "Monomotapa sur une carte gravée européenne de Willem Blaeu, 1635.",
+        "credit": "Willem Blaeu, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monomotapa_Map.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "9f5d9ffe9943d22c695c3fc865607bee221b4cad6bc23ed25c3f054c6c66e81c"
+    },
+    {
+      "id": "course-histoire-19-royaumes-grands-lacs-lesson-2",
+      "course": "course-histoire-19-royaumes-grands-lacs",
+      "title": "Le royaume du Buganda",
+      "decision": "retained",
+      "reason": "Les tombeaux des Kabaka à Kasubi montrent le patrimoine royal du Buganda, avant l’incendie de 2010.",
+      "image": {
+        "type": "image",
+        "alt": "Bâtiment funéraire royal en chaume sur le site de Kasubi.",
+        "legende": "Tombeaux royaux de Kasubi, photographie de 2007 avant l’incendie de 2010.",
+        "credit": "UNESCO / Lazare Eloundou Assomo, CC BY-SA 3.0 IGO, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tombs_of_Buganda_Kings_at_Kasubi-114316.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/"
+      },
+      "sha256": "b02a9af101211a3d17315bfa6a67cb12ef031c87319699004893b5c5a156757a"
+    },
+    {
+      "id": "course-histoire-19-royaumes-grands-lacs-lesson-4",
+      "course": "course-histoire-19-royaumes-grands-lacs",
+      "title": "Économie et culture",
+      "decision": "added",
+      "reason": "Le Burundi appartient aux royaumes étudiés ; les tambours illustrent leur culture de cour encore transmise, pas une cérémonie précoloniale photographiée.",
+      "image": {
+        "type": "image",
+        "alt": "Tambourinaires autour de grands tambours au sanctuaire de Gishora.",
+        "legende": "Tambourinaires de Gishora, au Burundi, photographie de 2024.",
+        "credit": "NSENGIYUMVA Joseph, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Les_tambourinaires_de_Gitega.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "sha256": "c1cdcccfc88ab2c7197a49ba33b2c580b9502894bae897deb310af13d3457e18",
+      "sourceMetadata": {
+        "title": "File:Les tambourinaires de Gitega.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Les_tambourinaires_de_Gitega.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8c/Les_tambourinaires_de_Gitega.jpg/960px-Les_tambourinaires_de_Gitega.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Les_tambourinaires_de_Gitega.jpg",
+        "width": 1920,
+        "height": 1080,
+        "author": "NSENGIYUMVA Joseph",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "description": "Gishora est lieu touristique qui se trouve dans la province Gitega commune Rutegama",
+        "date": "2024-11-28"
+      }
+    },
+    {
+      "id": "course-histoire-20-ethiopie-medievale-lalibela-lesson-2",
+      "course": "course-histoire-20-ethiopie-medievale-lalibela",
+      "title": "Les églises de Lalibela",
+      "decision": "retained",
+      "reason": "Bete Giyorgis montre l’église réellement taillée dans le rocher, sans l’assimiler aux onze édifices.",
+      "image": {
+        "type": "image",
+        "alt": "Toit cruciforme de Bete Giyorgis, taillé dans la roche.",
+        "legende": "Bete Giyorgis à Lalibela, photographiée en 2012.",
+        "credit": "Bernard Gagnon, CC BY-SA 3.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "sha256": "4e21db7d33fb13a4387d8d97aa2f7c2821d3bc35295e23575b570b0a20b7bde6"
+    },
+    {
+      "id": "course-histoire-20-ethiopie-medievale-lalibela-lesson-3",
+      "course": "course-histoire-20-ethiopie-medievale-lalibela",
+      "title": "Un christianisme unique",
+      "decision": "added",
+      "reason": "Le manuscrit ancien montre directement la tradition chrétienne et les enluminures mentionnées dans la leçon.",
+      "image": {
+        "type": "image",
+        "alt": "Saint Luc peint sur une page d'évangile éthiopien.",
+        "legende": "Évangile éthiopien du XVe siècle : une tradition chrétienne enluminée.",
+        "credit": "Cleveland Museum of Art, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Clevelandart_1999.212.jpg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      },
+      "sha256": "05ddae54f0bfa5242e2d659eed695114a9904e00a61ae69183da0078a65999db",
+      "sourceMetadata": {
+        "page": "https://commons.wikimedia.org/wiki/File:Clevelandart_1999.212.jpg"
+      }
+    },
+    {
+      "id": "course-histoire-21-commerce-transsaharien-lesson-1",
+      "course": "course-histoire-21-commerce-transsaharien",
+      "title": "Traverser le désert",
+      "decision": "retained",
+      "reason": "La caravane de sel illustre directement le transport caravanier ; document du début du XXe siècle, pas photographie médiévale.",
+      "image": {
+        "type": "image",
+        "alt": "Caravane de dromadaires chargés de sel à Tombouctou.",
+        "legende": "Caravane de sel à Tombouctou, début du XXe siècle.",
+        "credit": "François-Edmond Fortier, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tombouctou-Arriv%C3%A9e_d%27une_caravane_de_sel_(AOF).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "c9ff8dd883fef621c93aac89a768bd4d6a97c564582b06d2140c37652bb3660b"
+    },
+    {
+      "id": "course-histoire-21-commerce-transsaharien-lesson-2",
+      "course": "course-histoire-21-commerce-transsaharien",
+      "title": "L'or contre le sel",
+      "decision": "added",
+      "reason": "Les plaques matérialisent la marchandise étudiée et complètent la caravane de la leçon 1.",
+      "image": {
+        "type": "image",
+        "alt": "Plaques de sel saharien empilées pour le commerce.",
+        "legende": "Plaques de sel saharien à Mopti, photographie contemporaine.",
+        "credit": "Taguelmoust at French Wikipedia, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mopti_sel.jpg",
+        "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "sha256": "d449182d195c0490ec1bf187cffadc934a3be5a7304bbaf4b671c5809524e1d3",
+      "sourceMetadata": {
+        "page": "https://commons.wikimedia.org/wiki/File:Mopti_sel.jpg"
+      }
+    },
+    {
+      "id": "course-histoire-22-islamisation-afrique-ouest-lesson-1",
+      "course": "course-histoire-22-islamisation-afrique-ouest",
+      "title": "Une religion venue par le commerce",
+      "decision": "added",
+      "reason": "La carte matérialise les axes par lesquels marchands et islam circulent, sans dessiner une conversion uniforme.",
+      "image": {
+        "type": "image",
+        "alt": "Routes commerciales reliant le royaume du Ghana au nord du Sahara.",
+        "legende": "Routes transsahariennes médiévales : axes de commerce et de diffusion religieuse.",
+        "credit": "Siyajkak, CC0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+        "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+        "fit": "contain"
+      },
+      "sha256": "bc595fa701d8f8c582f629244d045909a6b0712097b326282eb4bf541768a4bd",
+      "sourceMetadata": {
+        "page": "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg"
+      }
+    },
+    {
+      "id": "course-histoire-22-islamisation-afrique-ouest-lesson-3",
+      "course": "course-histoire-22-islamisation-afrique-ouest",
+      "title": "Les grands foyers du savoir",
+      "decision": "retained",
+      "reason": "La mosquée est située à Tombouctou ; identification Sankoré maintenue comme probable, sans en faire un fait établi.",
+      "image": {
+        "type": "image",
+        "alt": "Façade en terre d'une mosquée à Tombouctou.",
+        "legende": "Mosquée de Tombouctou en 2007, probablement Sankoré.",
+        "credit": "Anne and David, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Sankore_Mosque_Timbuktu_01.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "06320d626c7b0fcf05f90f97373709662a56d8c61cfa48c67a1e0e4175d827ae"
+    },
+    {
+      "id": "course-histoire-23-cote-swahilie-lesson-1",
+      "course": "course-histoire-23-cote-swahilie",
+      "title": "Un chapelet de cités",
+      "decision": "added",
+      "reason": "Lamu est une cité du réseau swahili étudié ; vue contemporaine du patrimoine urbain, pas scène médiévale.",
+      "image": {
+        "type": "image",
+        "alt": "Rue bordée de maisons dans la vieille ville de Lamu.",
+        "legende": "Rue de Lamu, cité swahilie du littoral kényan.",
+        "credit": "Mzein04, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lamu_old_town_street.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "sha256": "08d92f330309b28c7343be40bfd547a621b9bea30d6ece6b01ab12ec4c6fe94c",
+      "sourceMetadata": {
+        "title": "File:Lamu old town street.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/80/Lamu_old_town_street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/80/Lamu_old_town_street.jpg/960px-Lamu_old_town_street.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Lamu_old_town_street.jpg",
+        "width": 6000,
+        "height": 4000,
+        "author": "Mzein04",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "description": "Lamu old town street is the business street in Lamu old town",
+        "date": "2021-02-23 11:40:26"
+      }
+    },
+    {
+      "id": "course-histoire-23-cote-swahilie-lesson-4",
+      "course": "course-histoire-23-cote-swahilie",
+      "title": "Kilwa et l'apogée",
+      "decision": "retained",
+      "reason": "Les arcades sont celles de la Grande Mosquée de Kilwa, bien citée ; pas le palais de Husuni Kubwa.",
+      "image": {
+        "type": "image",
+        "alt": "Arcades ruinées de la Grande Mosquée de Kilwa Kisiwani.",
+        "legende": "Ruines de la Grande Mosquée de Kilwa, photographiées en 2016.",
+        "credit": "Janetmpurdy, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "sha256": "33dbc004a62803c1f7dcb5fcdd67add4c8b9351e398897e7b0551757ce68844c"
+    },
+    {
+      "id": "course-histoire-24-traite-negriere-transatlantique-lesson-1",
+      "course": "course-histoire-24-traite-negriere-transatlantique",
+      "title": "Un commerce triangulaire",
+      "decision": "retained",
+      "reason": "Le plan abolitionniste du Brookes documente les conditions de la traversée, l’un des segments étudiés du commerce triangulaire.",
+      "image": {
+        "type": "image",
+        "alt": "Plan du Brookes montrant les personnes captives entassées.",
+        "legende": "Le Brookes : plan abolitionniste d'un navire négrier du XVIIIe siècle.",
+        "credit": "James Phillips, British Library, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brookes_slave_ship,_British_Library_(cropped).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "6eabc61a7a5ec1c839c72ee5608d55d4b27fee0534f6f5b51b60da1bb753575c"
+    },
+    {
+      "id": "course-histoire-24-traite-negriere-transatlantique-lesson-4",
+      "course": "course-histoire-24-traite-negriere-transatlantique",
+      "title": "Résistances et abolitions",
+      "decision": "added",
+      "reason": "Épisode de la révolution haïtienne : il illustre la résistance des personnes asservies, sans le confondre avec Vertières.",
+      "image": {
+        "type": "image",
+        "alt": "Combats autour du fort de la Crête-à-Pierrot.",
+        "legende": "La Crête-à-Pierrot, 1802 : gravure d’après Auguste Raffet.",
+        "credit": "Auguste Raffet / Ernst Hébert, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Combat_et_prise_de_la_Cr%C3%AAte-%C3%A0-Pierrot_-_Auguste_Raffet.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "9c471d276e95d56d0d41aa4fc55065ffe5c4d0e77f1ba68b079592fe33e6350a",
+      "sourceMetadata": {
+        "title": "File:Combat et prise de la Crête-à-Pierrot - Auguste Raffet.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/1c/Combat_et_prise_de_la_Cr%C3%AAte-%C3%A0-Pierrot_-_Auguste_Raffet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/1c/Combat_et_prise_de_la_Cr%C3%AAte-%C3%A0-Pierrot_-_Auguste_Raffet.jpg/960px-Combat_et_prise_de_la_Cr%C3%AAte-%C3%A0-Pierrot_-_Auguste_Raffet.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Combat_et_prise_de_la_Cr%C3%AAte-%C3%A0-Pierrot_-_Auguste_Raffet.jpg",
+        "width": 1395,
+        "height": 1032,
+        "author": "Auguste Raffet / Ernest Hébert",
+        "license": "Public domain",
+        "description": "Attack and take of the Crête-à-Pierrot (4 - 24 March 24, 1802). Original illustration by Auguste Raffet, engraving by Ernst Hébert.",
+        "date": "1839"
+      }
+    },
+    {
+      "id": "course-histoire-25-conference-berlin-lesson-2",
+      "course": "course-histoire-25-conference-berlin",
+      "title": "La conférence de Berlin",
+      "decision": "retained",
+      "reason": "La gravure de la conférence de Berlin correspond à la réunion, sans prétendre être une photographie ni le tracé de toutes les frontières.",
+      "image": {
+        "type": "image",
+        "alt": "Gravure des délégués à Berlin devant une carte d'Afrique.",
+        "legende": "La conférence de Berlin, gravure de 1884.",
+        "credit": "Adalbert von Roessler, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "b9077a537f0354b4ec4bb94835580dd4ddfbdcb033b315c2bd2855d1815f4393"
+    },
+    {
+      "id": "course-histoire-25-conference-berlin-lesson-3",
+      "course": "course-histoire-25-conference-berlin",
+      "title": "Des frontières artificielles",
+      "decision": "added",
+      "reason": "La carte montre le résultat ultérieur des conquêtes, pas les frontières qui auraient été fixées à Berlin en une séance.",
+      "image": {
+        "type": "image",
+        "alt": "Carte des possessions coloniales et des États indépendants en Afrique.",
+        "legende": "L’Afrique en 1914 : carte des dominations coloniales.",
+        "credit": "Hogweard, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Africa_map_1914.svg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "15ba4ef82f9ca45e8b2f8a2a2650cc2d0edbc61d1277e5d41995bf01a363a232",
+      "sourceMetadata": {
+        "title": "File:Africa map 1914.svg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/Africa_map_1914.svg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/Africa_map_1914.svg/960px-Africa_map_1914.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Africa_map_1914.svg",
+        "width": 1430,
+        "height": 1350,
+        "author": "Hogweard",
+        "license": "Public domain",
+        "description": "A map of Africa in 1914, with colours for the sovereign powers",
+        "date": "2023-12-10"
+      }
+    },
+    {
+      "id": "course-histoire-26-resistances-colonisation-lesson-2",
+      "course": "course-histoire-26-resistances-colonisation",
+      "title": "Samory Touré",
+      "decision": "added",
+      "reason": "Portrait du chef de résistance précisément étudié dans la leçon.",
+      "image": {
+        "type": "image",
+        "alt": "Portrait photographique de Samori Touré.",
+        "legende": "Samory Touré, portrait photographique ancien.",
+        "credit": "Photographe inconnu, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Almamy_Samory_Tour%C3%A9.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "926b1c8400ce2bad53bf3ff24eac77ecee72af5520b9a7177d80b75a951974fd",
+      "sourceMetadata": {}
+    },
+    {
+      "id": "course-histoire-26-resistances-colonisation-lesson-3",
+      "course": "course-histoire-26-resistances-colonisation",
+      "title": "Béhanzin et les autres rois",
+      "decision": "added",
+      "reason": "Lat Dior est l’un des souverains résistants explicitement cités ; remplace le scan de Béhanzin filigrané Alamy.",
+      "image": {
+        "type": "image",
+        "alt": "Portrait gravé de Lat Dior, vêtu de tissu clair.",
+        "legende": "Lat Dior, Damel du Cayor : gravure publiée en 1875.",
+        "credit": "Le Monde illustré, 1875, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "bb6edaa8088ab343c7e47338dfb846006cb88a798e867a8d8b748f0c9cd4e4eb",
+      "sourceMetadata": {
+        "page": "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg"
+      }
+    },
+    {
+      "id": "course-histoire-27-bataille-adoua-lesson-2",
+      "course": "course-histoire-27-bataille-adoua",
+      "title": "Ménélik II",
+      "decision": "added",
+      "reason": "Identifie le dirigeant dont la mobilisation et la diplomatie sont étudiées.",
+      "image": {
+        "type": "image",
+        "alt": "Portrait photographique de l’empereur Ménélik II.",
+        "legende": "Ménélik II, empereur d’Éthiopie, photographie ancienne.",
+        "credit": "Unknown, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_Menelik_II.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "sha256": "81e4e08d5c3b237042cc48cd9d2c5d0dc7cec936dc68a15b4480b744e0083be6",
+      "sourceMetadata": {
+        "title": "File:Portrait of Menelik II.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Portrait_of_Menelik_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/2/2d/Portrait_of_Menelik_II.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "page": "https://commons.wikimedia.org/wiki/File:Portrait_of_Menelik_II.jpg",
+        "width": 428,
+        "height": 644,
+        "author": "Unknown",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "description": "His Imperial Majesty, Menelik II, Emperor of Abyssinia and King of Shoa",
+        "date": "1889"
+      }
+    },
+    {
+      "id": "course-histoire-27-bataille-adoua-lesson-3",
+      "course": "course-histoire-27-bataille-adoua",
+      "title": "La bataille d'Adoua",
+      "decision": "added",
+      "reason": "Image de presse datée représentant la bataille ; point de vue britannique et reconstruction, pas photographie ni preuve des effectifs.",
+      "image": {
+        "type": "image",
+        "alt": "Soldats et officiers représentés dans une bataille.",
+        "legende": "Adoua : illustration britannique publiée le 11 avril 1896.",
+        "credit": "The Graphic, 1896, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adoua_1.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "9f7ded85cae2e6c6d4a227a357af08286db537355dad6107c780acce236097ad",
+      "sourceMetadata": {
+        "title": "File:Adoua 1.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/33/Adoua_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/33/Adoua_1.jpg/960px-Adoua_1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Adoua_1.jpg",
+        "width": 1400,
+        "height": 981,
+        "author": "The Graphic, from details supplied by survivors",
+        "license": "Public domain",
+        "description": "The Battle of Adowa, The Last Rally of General Dabormida. Illustration for The Graphic, 11 April 1896.",
+        "date": "11 April 1896date QS:P571,+1896-04-11T00:00:00Z/11"
+      }
+    },
+    {
+      "id": "course-histoire-28-independances-africaines-lesson-1",
+      "course": "course-histoire-28-independances-africaines",
+      "title": "La montée du nationalisme",
+      "decision": "added",
+      "reason": "Nkrumah donne un visage précis aux mouvements nationalistes qui précèdent les indépendances.",
+      "image": {
+        "type": "image",
+        "alt": "Portrait photographique de Kwame Nkrumah.",
+        "legende": "Kwame Nkrumah, dirigeant du nationalisme et de l’indépendance ghanéens.",
+        "credit": "The National Archives UK, OGL v1.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_-_The_National_Archives_UK_-_CO_1069-50-1-crop.jpg",
+        "licenseUrl": "http://NationalArchives.gov.uk/doc/open-government-licence/version/1/"
+      },
+      "sha256": "54794a5071c25cfdc17f61e915765bfa7aa422ac5aea9b32f2d04d5eabd535f3",
+      "sourceMetadata": {
+        "title": "File:Kwame Nkrumah - The National Archives UK - CO 1069-50-1-crop.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/2/21/Kwame_Nkrumah_-_The_National_Archives_UK_-_CO_1069-50-1-crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/2/21/Kwame_Nkrumah_-_The_National_Archives_UK_-_CO_1069-50-1-crop.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "page": "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_-_The_National_Archives_UK_-_CO_1069-50-1-crop.jpg",
+        "width": 941,
+        "height": 1254,
+        "author": "Unknown authorUnknown author",
+        "license": "OGL v1.0",
+        "licenseUrl": "http://NationalArchives.gov.uk/doc/open-government-licence/version/1/",
+        "description": "Portrait photograph of Kwame Nkrumah",
+        "date": "1950-1960年代"
+      }
+    },
+    {
+      "id": "course-histoire-28-independances-africaines-lesson-2",
+      "course": "course-histoire-28-independances-africaines",
+      "title": "Le Ghana, pionnier",
+      "decision": "retained",
+      "reason": "La porte de l’Étoile noire commémore l’indépendance ; la légende de 2023 évite de la présenter comme proclamation de 1957.",
+      "image": {
+        "type": "image",
+        "alt": "L'Arche de l'Indépendance à Accra, au Ghana.",
+        "legende": "Accra : la porte de l'Étoile noire, photographiée en 2023.",
+        "credit": "Kwameghana, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Star_Gate_in_Accra.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "sha256": "62e72baaf0ff318a5fa585f05b0d0bcfc769e800c4710ddd520121c2efb277ae"
+    },
+    {
+      "id": "course-histoire-29-panafricanisme-union-africaine-lesson-1",
+      "course": "course-histoire-29-panafricanisme-union-africaine",
+      "title": "L'idée panafricaine",
+      "decision": "added",
+      "reason": "Du Bois est une figure des origines diasporiques du panafricanisme, nommée dans la leçon.",
+      "image": {
+        "type": "image",
+        "alt": "Portrait photographique de W. E. B. Du Bois, en costume.",
+        "legende": "W. E. B. Du Bois, photographie de 1907.",
+        "credit": "James E. Purdy, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:W.E.B._Du_Bois_by_James_E._Purdy,_1907_(3x4).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "d0e524586b469c14606efa66a663423526762c1da3e6175b6a743ad6b8c16f6b",
+      "sourceMetadata": {}
+    },
+    {
+      "id": "course-histoire-29-panafricanisme-union-africaine-lesson-4",
+      "course": "course-histoire-29-panafricanisme-union-africaine",
+      "title": "De l'OUA à l'Union africaine",
+      "decision": "added",
+      "reason": "Montre l’institution et le lieu étudiés, sans présenter ce bâtiment récent comme celui de la fondation de l’OUA en 1963.",
+      "image": {
+        "type": "image",
+        "alt": "Tour et centre de conférences du siège de l’Union africaine.",
+        "legende": "Siège de l’Union africaine à Addis-Abeba, photographie contemporaine.",
+        "credit": "Andrew Moore, CC BY-SA 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_Union_Conference_Centre_building.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "sha256": "1e8cdf829efed72b9c29fcca9fd060f64f9941c7edb1dfcf30e5e1c7813b10d4",
+      "sourceMetadata": {
+        "title": "File:African Union Conference Centre building.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/84/African_Union_Conference_Centre_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/84/African_Union_Conference_Centre_building.jpg/960px-African_Union_Conference_Centre_building.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:African_Union_Conference_Centre_building.jpg",
+        "width": 3294,
+        "height": 4716,
+        "author": "Andrew Moore",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "description": "Addis Ababa is the host city for the African Union's headquarters. This new addition to the AU HQ is a huge conference centre and office tower (99.9m) built by the Chinese government for an estimated US$200 million and gifted to the region. Makes you wonder what the 'deal' was!",
+        "date": "2015-05-21 16:51:51"
+      }
+    },
+    {
+      "id": "course-histoire-30-apartheid-mandela-lesson-1",
+      "course": "course-histoire-30-apartheid-mandela",
+      "title": "Qu'est-ce que l'apartheid ?",
+      "decision": "retained",
+      "reason": "Le panneau ségrégationniste d’Atherston est un exemple matériel du dispositif décrit, photographié en 2021.",
+      "image": {
+        "type": "image",
+        "alt": "Ancienne inscription réservant une salle aux personnes blanches.",
+        "legende": "Atherston : ancien panneau ségrégationniste, photographié en 2021.",
+        "credit": "Wynlib40, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:General_Waiting_Room_Whites_Only_-_Atherston_Station,_Eastern_Cape,_South_Africa.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "sha256": "86e736cad714027bdd6293fd7eaba4c4fa68c516edc91a9363d3fa1c64f86e14"
+    },
+    {
+      "id": "course-histoire-30-apartheid-mandela-lesson-3",
+      "course": "course-histoire-30-apartheid-mandela",
+      "title": "Mandela emprisonné",
+      "decision": "added",
+      "reason": "Lieu précis de l’emprisonnement étudié ; l’image actuelle ne représente pas Mandela pendant sa détention.",
+      "image": {
+        "type": "image",
+        "alt": "Petite cellule avec couchage au sol et barreaux.",
+        "legende": "La cellule de Nelson Mandela à Robben Island, vue actuelle.",
+        "credit": "Paul Mannix, CC BY-SA 2.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela%27s_prison_cell,_Robben_Island,_South_Africa.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0"
+      },
+      "sha256": "e5a975b631b560baf3316e454c396686a8bad72090844dcd247982ca42610546",
+      "sourceMetadata": {
+        "title": "File:Nelson Mandela's prison cell, Robben Island, South Africa.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/a8/Nelson_Mandela%27s_prison_cell%2C_Robben_Island%2C_South_Africa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/a8/Nelson_Mandela%27s_prison_cell%2C_Robben_Island%2C_South_Africa.jpg/960px-Nelson_Mandela%27s_prison_cell%2C_Robben_Island%2C_South_Africa.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Nelson_Mandela%27s_prison_cell,_Robben_Island,_South_Africa.jpg",
+        "width": 3872,
+        "height": 2592,
+        "author": "Paul Mannix",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+        "description": "Nelson Mandela's prison cell on Robben Island",
+        "date": "2007-06-03 16:54:50"
+      }
+    },
+    {
+      "id": "course-histoire-31-tekrour-islam-lesson-1",
+      "course": "course-histoire-31-tekrour-islam",
+      "title": "Un royaume sur le fleuve",
+      "decision": "added",
+      "reason": "La carte nomme Takrur et situe le royaume dans les réseaux du Sénégal médiéval ; elle ne représente pas sa conversion vers 1040.",
+      "image": {
+        "type": "image",
+        "alt": "Carte des royaumes issus du morcellement de l'ancien Ghana.",
+        "legende": "Takrour dans la région sénégambienne vers 1200, carte indicative.",
+        "credit": "T L Miles, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ghana_successor_map_1200.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "fit": "contain"
+      },
+      "sha256": "abb5684b3c63cae59fe6a547362a0b33d4e0e103d0554f4b419cb4e41f1d9734",
+      "sourceMetadata": {
+        "page": "https://commons.wikimedia.org/wiki/File:Ghana_successor_map_1200.png"
+      }
+    },
+    {
+      "id": "course-histoire-31-tekrour-islam-lesson-4",
+      "course": "course-histoire-31-tekrour-islam",
+      "title": "Le Fouta Toro",
+      "decision": "added",
+      "reason": "La carte situe l’almamat dans la vallée du Sénégal à une période postérieure à sa fondation.",
+      "image": {
+        "type": "image",
+        "alt": "Carte des États de la vallée du Sénégal, dont le Fouta Toro.",
+        "legende": "Le Fouta Toro et ses voisins vers 1850, carte indicative.",
+        "credit": "T L Miles, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Senegalvalleystatesc1850.png",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "c5c29bdfda9b9812a9f33ffcb87e513fc0aed096c91877b1cedd651ec8d3ded3",
+      "sourceMetadata": {
+        "title": "File:Senegalvalleystatesc1850.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Senegalvalleystatesc1850.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/a/ad/Senegalvalleystatesc1850.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "page": "https://commons.wikimedia.org/wiki/File:Senegalvalleystatesc1850.png",
+        "width": 484,
+        "height": 352,
+        "author": "T L Miles",
+        "license": "Public domain",
+        "description": "The states of the lower Senegal River valley (roughly), circa 1850, before the rise of Umar Tall",
+        "date": "2009-01-07"
+      }
+    },
+    {
+      "id": "course-histoire-32-djolof-royaumes-wolof-lesson-4",
+      "course": "course-histoire-32-djolof-royaumes-wolof",
+      "title": "La fragmentation de 1549",
+      "decision": "added",
+      "reason": "Montre le Djolof séparé des royaumes côtiers ; pas une carte de la confédération médiévale à son apogée.",
+      "image": {
+        "type": "image",
+        "alt": "Carte du Djolof et des royaumes voisins de Sénégambie.",
+        "legende": "Djolof et royaumes voisins vers 1850, après la fragmentation.",
+        "credit": "HetmanTheResearcher, CC BY 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kingdom_of_Jolof_Map.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0"
+      },
+      "sha256": "ded195f11d8f553f7c10c9077d000766c70dc10ce69d5152f35dbe23903eeba5",
+      "sourceMetadata": {
+        "title": "File:Kingdom of Jolof Map.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Kingdom_of_Jolof_Map.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/Kingdom_of_Jolof_Map.png/960px-Kingdom_of_Jolof_Map.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Kingdom_of_Jolof_Map.png",
+        "width": 3158,
+        "height": 1895,
+        "author": "HetmanTheResearcher",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+        "description": "Map includes a scale, compass, subdivisions of Jolof, the Gambia River, neighboring states and an inset map of the Senegambia Region ca.1850. Sources for Jolof are as follows: For coastline and rivers, made with Natural Earth. For Senegalese kingdoms north of the Gambia: Atlas national du Sénégal. (1977). Institut géographique international. P.57. For Mauritania: Choplin, A., & Ould Bah, M. F. (2018). Foncier, droit et propriété : au cœur de la société mauritanienne. Centre Jacques-Berque. https://doi.org/10.4000/books.cjb.1277. Map.1. For other non-Mauritanian kingdoms, plus European forts: The West Coast of Africa. (n.d.). Www.davidrumsey.com. Retrieved January 13, 2024, from https://www.davidrumsey.com/luna/servlet/detail/RUMSEY~8~1~2768~270041:The-West-Coast-of-Africa-?sort=pub_list_no_initialsort%2Cpub_list_no_initialsort%2Cpub_date%2Cpub_date&qvq=w4s:/what%2FAtlas%2BMap Additional sources for the inset map are as follows: For Senegalese kingdoms south of the Gambia: Quinn, C. A. (1972). Mandingo Kingdoms of the Senegambia. P.IX-X For the Ceded Mile (Gambia): Hughes, A., & Perfect, D. (2008). Historical Dictionary of The Gambia. Scarecrow Press. P.XVIII & 33. For Buje (in Casamance): Roche, Christian. (1985). Histoire de la Casamance : conquête et résistance : 1850-1920. Karthala. P105.",
+        "date": "2024-01-16"
+      }
+    },
+    {
+      "id": "course-histoire-32-djolof-royaumes-wolof-lesson-5",
+      "course": "course-histoire-32-djolof-royaumes-wolof",
+      "title": "Héritage",
+      "decision": "added",
+      "reason": "Lat Dior, explicitement nommé dans cette leçon d’héritage, incarne l’un des royaumes wolof issus de la fragmentation.",
+      "image": {
+        "type": "image",
+        "alt": "Portrait gravé de Lat Dior, vêtu de tissu clair.",
+        "legende": "Lat Dior, souverain du Cayor, gravure de 1875.",
+        "credit": "Le Monde illustré, 1875, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "bb6edaa8088ab343c7e47338dfb846006cb88a798e867a8d8b748f0c9cd4e4eb",
+      "sourceMetadata": {
+        "page": "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg"
+      }
+    },
+    {
+      "id": "course-histoire-33-royaumes-serer-sine-saloum-lesson-3",
+      "course": "course-histoire-33-royaumes-serer-sine-saloum",
+      "title": "Les cercles mégalithiques",
+      "decision": "added",
+      "reason": "Remplace Wassu en Gambie par le site sénégalais nommé dans la leçon ; ne prouve pas l’identité ethnique des bâtisseurs.",
+      "image": {
+        "type": "image",
+        "alt": "Pierres mégalithiques dressées sur le site de Sine Ngayène.",
+        "legende": "Cercles mégalithiques de Sine Ngayène, au Sénégal.",
+        "credit": "Tobias 67, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Stone_circles_Sine_Ngay%C3%A8ne_TP03.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "sha256": "63de150e641ad3d601d9d4dc5a06a9757935ce71bb714b2ae248f4cfcb1e057e",
+      "sourceMetadata": {
+        "title": "File:Stone circles Sine Ngayène TP03.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Stone_circles_Sine_Ngay%C3%A8ne_TP03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/9d/Stone_circles_Sine_Ngay%C3%A8ne_TP03.jpg/960px-Stone_circles_Sine_Ngay%C3%A8ne_TP03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Stone_circles_Sine_Ngay%C3%A8ne_TP03.jpg",
+        "width": 2268,
+        "height": 1418,
+        "author": "Tobias 67",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "description": "Stone circles of Sine Ngayène, Senegal, Kaolack province.",
+        "date": "2019-04-13"
+      }
+    },
+    {
+      "id": "course-histoire-33-royaumes-serer-sine-saloum-lesson-5",
+      "course": "course-histoire-33-royaumes-serer-sine-saloum",
+      "title": "Héritage",
+      "decision": "added",
+      "reason": "Cette leçon nomme Senghor comme personnalité sérère ; le cliché identifie cette figure, sans représenter les royaumes anciens.",
+      "image": {
+        "type": "image",
+        "alt": "Senghor entouré de visiteurs lors de son accueil en 1980.",
+        "legende": "Léopold Sédar Senghor lors d’une visite présidentielle en 1980.",
+        "credit": "Archives militaires américaines, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%C3%A9opold_S%C3%A9dar_Senghor_in_1980.JPEG",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-US-Military"
+      },
+      "sha256": "7b03215852d538112006f6e3f60d2eb11fda2a3dca7c83dc75ed37611d3f5e91",
+      "sourceMetadata": {
+        "page": "https://commons.wikimedia.org/wiki/File:L%C3%A9opold_S%C3%A9dar_Senghor_in_1980.JPEG"
+      }
+    },
+    {
+      "id": "course-histoire-34-goree-saint-louis-lesson-2",
+      "course": "course-histoire-34-goree-saint-louis",
+      "title": "Gorée, lieu de mémoire",
+      "decision": "retained",
+      "reason": "Intérieur de la Maison des Esclaves, lieu mémoriel nommé ; aucune fonction précise de pièce ni volume de traite déduits de l’image.",
+      "image": {
+        "type": "image",
+        "alt": "Pièce aux murs dégradés dans la Maison des Esclaves.",
+        "legende": "Gorée : intérieur de la Maison des Esclaves, photographié en 2024.",
+        "credit": "Fawaz.tairou, CC BY 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gor%C3%A9e_2024_-_Maison_des_esclaves_-_08.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "sha256": "3748a38ea0ee17af40010848728f89e5020f1a393fcf9da3b25fbeb1a0b54666"
+    },
+    {
+      "id": "course-histoire-34-goree-saint-louis-lesson-3",
+      "course": "course-histoire-34-goree-saint-louis",
+      "title": "Saint-Louis, capitale coloniale",
+      "decision": "added",
+      "reason": "Le pont situe la ville insulaire et son patrimoine colonial, sujets de la leçon.",
+      "image": {
+        "type": "image",
+        "alt": "Pont métallique reliant l’île de Saint-Louis à la rive du fleuve.",
+        "legende": "Le pont Faidherbe à Saint-Louis, carte postale ancienne.",
+        "credit": "Photographe inconnu, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bridge_Pont_Faidherbe,_Saint-Louis,_Senegal.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "0e0ddb7b899da2ba874f501ddc2ab96c1b15e9cca6d85ec97480c608c6720735",
+      "sourceMetadata": {
+        "title": "File:Bridge Pont Faidherbe, Saint-Louis, Senegal.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bridge_Pont_Faidherbe%2C_Saint-Louis%2C_Senegal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Bridge_Pont_Faidherbe%2C_Saint-Louis%2C_Senegal.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "page": "https://commons.wikimedia.org/wiki/File:Bridge_Pont_Faidherbe,_Saint-Louis,_Senegal.jpg",
+        "width": 457,
+        "height": 293,
+        "author": "Unknown authorUnknown author",
+        "license": "Public domain",
+        "description": "Bridge Pont Faidherbe, Saint-Louis, Senegal.",
+        "date": "before 1920date QS:P,+1920-00-00T00:00:00Z/7,P1326,+1920-00-00T00:00:00Z/9"
+      }
+    },
+    {
+      "id": "course-histoire-35-lat-dior-cayor-lesson-1",
+      "course": "course-histoire-35-lat-dior-cayor",
+      "title": "Le Damel du Cayor",
+      "decision": "retained",
+      "reason": "Gravure de Lat Dior publiée de son vivant ; le crédit conserve la publication, sans résoudre arbitrairement le conflit d’attribution du graveur.",
+      "image": {
+        "type": "image",
+        "alt": "Portrait gravé de Lat Dior, vêtu de tissu clair.",
+        "legende": "Lat Dior, Damel du Cayor : gravure publiée en 1875.",
+        "credit": "Le Monde illustré, 1875, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "73a750c9f40099850a2a2eaf858bf81f8993ef0c8cc672fa9837e4a331153d78"
+    },
+    {
+      "id": "course-histoire-35-lat-dior-cayor-lesson-3",
+      "course": "course-histoire-35-lat-dior-cayor",
+      "title": "Le refus du chemin de fer",
+      "decision": "added",
+      "reason": "Terminus du chemin de fer Dakar–Saint-Louis auquel s’oppose Lat Dior ; photographie postérieure à sa mort, pas scène de son refus.",
+      "image": {
+        "type": "image",
+        "alt": "Ancienne gare de Saint-Louis avec rails et installations ferroviaires.",
+        "legende": "Gare de Saint-Louis, carte postale de Fortier vers 1902.",
+        "credit": "Fortier, Dakar, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:StLouis1.JPG",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "203b085d00e88d971b2393c276bea0f0e5a845ef39ea3ce0a04f9648d0c6708c",
+      "sourceMetadata": {
+        "title": "File:StLouis1.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/8/83/StLouis1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/83/StLouis1.JPG/960px-StLouis1.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:StLouis1.JPG",
+        "width": 1000,
+        "height": 626,
+        "author": "Fortier, Dakar",
+        "license": "Public domain",
+        "description": "La gare primitive de Saint Louis alors commune française ayant un député.",
+        "date": "circa 1902date QS:P,+1902-00-00T00:00:00Z/9,P1480,Q5727902"
+      }
+    },
+    {
+      "id": "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-1",
+      "course": "course-histoire-36-cheikh-ahmadou-bamba-mouridisme",
+      "title": "Un guide spirituel",
+      "decision": "added",
+      "reason": "Identifie le maître soufi et fondateur du mouridisme au début du cours.",
+      "image": {
+        "type": "image",
+        "alt": "Cheikh Ahmadou Bamba debout, vêtu d’une robe claire.",
+        "legende": "Cheikh Ahmadou Bamba, photographie ancienne.",
+        "credit": "Photographe inconnu, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:AhmaduBamba.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "5c9643029169ea043ff9d42f671778f5eb767322831ae1101634a993dafc1a72",
+      "sourceMetadata": {
+        "title": "File:AhmaduBamba.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/1/18/AhmaduBamba.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/18/AhmaduBamba.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "page": "https://commons.wikimedia.org/wiki/File:AhmaduBamba.jpg",
+        "width": 596,
+        "height": 944,
+        "author": "",
+        "license": "Public domain",
+        "description": "This is the single remaining photo of Ahmadu Bamba and was most likely photographed before 1923. Apparently, no one owns a copyright and it has come down to us through being reproduced in countless photo labs and by photocopying.",
+        "date": ""
+      }
+    },
+    {
+      "id": "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-4",
+      "course": "course-histoire-36-cheikh-ahmadou-bamba-mouridisme",
+      "title": "Touba et le mouridisme",
+      "decision": "retained",
+      "reason": "L’intérieur de la Grande Mosquée de Touba documente le centre mouride ; édifice ultérieur au fondateur, pas contemporain de sa vie.",
+      "image": {
+        "type": "image",
+        "alt": "Colonnes et arches intérieures de la Grande Mosquée de Touba.",
+        "legende": "Touba : intérieur de la Grande Mosquée, photographié en 2006.",
+        "credit": "zivax, CC BY-SA 3.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Touba_(senegal)_2006.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "sha256": "424f3afab3e079c30f2960d39a6b4f3e460d4b420698ee9432f6cd2efcfd4a0f"
+    },
+    {
+      "id": "course-histoire-37-aline-sitoe-diatta-lesson-2",
+      "course": "course-histoire-37-aline-sitoe-diatta",
+      "title": "Un appel à la résistance",
+      "decision": "added",
+      "reason": "Le riz, visé par les réquisitions dénoncées par Aline Sitoé Diatta, est montré dans un terroir diola proche ; pas son portrait ni une réquisition des années 1940.",
+      "image": {
+        "type": "image",
+        "alt": "Un adulte et un enfant travaillent une rizière avec des outils traditionnels.",
+        "legende": "Travail du riz à Boucotte, en Casamance, photographie contemporaine.",
+        "credit": "Olivier Epron Olivierkeita, CC BY 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Culture_riz_boucotte.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0"
+      },
+      "sha256": "9145d11b5d0d23b2d90c0d1b7a72977e0f52ccbc21ec796da4e21c99d2ce8b59",
+      "sourceMetadata": {
+        "title": "File:Culture riz boucotte.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Culture_riz_boucotte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/fc/Culture_riz_boucotte.jpg/960px-Culture_riz_boucotte.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Culture_riz_boucotte.jpg",
+        "width": 1417,
+        "height": 916,
+        "author": "Olivier Epron Olivierkeita",
+        "license": "CC BY 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+        "description": "A man and a child using traditional tools (the diola/Jola, and the kadiandou or kajendo/kajendu), to till the soil before the sowing of African rice (Sénégal). Photo taken at Boucotte (CR Diembéring).",
+        "date": "2008-07"
+      }
+    },
+    {
+      "id": "course-histoire-37-aline-sitoe-diatta-lesson-5",
+      "course": "course-histoire-37-aline-sitoe-diatta",
+      "title": "Héritage",
+      "decision": "added",
+      "reason": "Le nom du navire Dakar–Ziguinchor témoigne directement de la mémoire publique étudiée dans cette leçon ; aucun portrait supposé.",
+      "image": {
+        "type": "image",
+        "alt": "Bateau portant le nom d’Aline Sitoé Diatta.",
+        "legende": "Le bateau Aline Sitoé Diatta, hommage contemporain à la résistante.",
+        "credit": "rignese, CC BY-SA 2.5, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bateau_Aline_sito%C3%A9_diatta.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5"
+      },
+      "sha256": "8271eceec34a58720896895fa5e43602258d14b7cf4ad7e32c68569650d741f2",
+      "sourceMetadata": {
+        "title": "File:Bateau Aline sitoé diatta.JPG",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Bateau_Aline_sito%C3%A9_diatta.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/5e/Bateau_Aline_sito%C3%A9_diatta.JPG/960px-Bateau_Aline_sito%C3%A9_diatta.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Bateau_Aline_sito%C3%A9_diatta.JPG",
+        "width": 1728,
+        "height": 1152,
+        "author": "rignese",
+        "license": "CC BY-SA 2.5",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+        "description": "Le bateau Aline Sitoé Diatta assurant la liaison Dakar-Ziguinchor depuis 2008, en remplacement du Wilis IMO Number: 9383132 MMSI Number: 663036000 Callsign: 6WIX Length: 76 m Beam: 16 m",
+        "date": "2008"
+      }
+    },
+    {
+      "id": "course-histoire-38-senghor-negritude-independance-lesson-2",
+      "course": "course-histoire-38-senghor-negritude-independance",
+      "title": "La Négritude",
+      "decision": "added",
+      "reason": "Césaire est l’un des trois cofondateurs nommés ; photo tardive de cet auteur, pas photographie du groupe dans les années 1930.",
+      "image": {
+        "type": "image",
+        "alt": "Aimé Césaire penché sur un livre.",
+        "legende": "Aimé Césaire en 2003, cofondateur de la Négritude.",
+        "credit": "Jean Baptiste Devaux, CC BY-SA 4.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aime_Cesaire_2003.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0"
+      },
+      "sha256": "f70ace63c8723f5b30f301a58fa5ed63f1042253b61e6b2e37ca0857711e19a4",
+      "sourceMetadata": {
+        "title": "File:Aime Cesaire 2003.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/0/04/Aime_Cesaire_2003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/0/04/Aime_Cesaire_2003.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail_unscaled",
+        "page": "https://commons.wikimedia.org/wiki/File:Aime_Cesaire_2003.jpg",
+        "width": 454,
+        "height": 653,
+        "author": "Jean Baptiste Devaux",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+        "description": "Martinican poet and politician Aimé Césaire with Philippe Mouillon, artist",
+        "date": "2003-11-19 15:58:21"
+      }
+    },
+    {
+      "id": "course-histoire-38-senghor-negritude-independance-lesson-4",
+      "course": "course-histoire-38-senghor-negritude-independance",
+      "title": "Premier président du Sénégal",
+      "decision": "moved",
+      "reason": "La visite présidentielle de 1980 documente la présidence, pas la formation intellectuelle.",
+      "image": {
+        "type": "image",
+        "alt": "Senghor entouré de visiteurs lors de son accueil en 1980.",
+        "legende": "Senghor, au centre, accueilli aux États-Unis en 1980.",
+        "credit": "Archives militaires américaines, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%C3%A9opold_S%C3%A9dar_Senghor_in_1980.JPEG",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-US-Military"
+      },
+      "sha256": "889d0989b634154c27cbefbb4182a367186003cae7aac8115a58e7bd36d1cda7"
+    },
+    {
+      "id": "course-histoire-39-reine-nzinga-angola-lesson-1",
+      "course": "course-histoire-39-reine-nzinga-angola",
+      "title": "Une reine d'Afrique centrale",
+      "decision": "retained",
+      "reason": "Lithographie posthume explicitement légendée, représentation de Nzinga plutôt que témoignage fiable de son apparence.",
+      "image": {
+        "type": "image",
+        "alt": "Portrait coloré et posthume représentant Nzinga Mbande.",
+        "legende": "Nzinga : portrait posthume, lithographie coloriée des années 1830.",
+        "credit": "Achille Devéria / Le Villain, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ann_Zingha.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "62a7ab36f2737d81c60673afe6bb7dfd35c4ff184923d4954fb8a08fd2817c9f"
+    },
+    {
+      "id": "course-histoire-39-reine-nzinga-angola-lesson-2",
+      "course": "course-histoire-39-reine-nzinga-angola",
+      "title": "Une diplomate hors pair",
+      "decision": "added",
+      "reason": "Illustre le récit de l’audience de Luanda en 1622 expliqué dans cette leçon ; reconstruction pédagogique moderne, pas archive du XVIIe siècle.",
+      "image": {
+        "type": "image",
+        "alt": "Nzinga assise sur le dos d’un serviteur face au gouverneur.",
+        "legende": "Audience de Nzinga : illustration de Pat Masioni pour l’UNESCO, 2014.",
+        "credit": "Pat Masioni/UNESCO, CC BY-SA 3.0, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_SEQ_08_Ecran_4.png",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0"
+      },
+      "sha256": "85ab36f4fe45f0cb12e6f6c39eae1416f00bb8b1c0c2bbae3291cb5711ec18fd",
+      "sourceMetadata": {
+        "title": "File:Nzinga Mbandi Queen of Ndongo and Matamba SEQ 08 Ecran 4.png",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/d/d2/Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_SEQ_08_Ecran_4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d2/Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_SEQ_08_Ecran_4.png/960px-Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_SEQ_08_Ecran_4.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_SEQ_08_Ecran_4.png",
+        "width": 3502,
+        "height": 1892,
+        "author": "UNESCO",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+        "description": "Taken from Nzinga Mbandi: Queen of Ndongo and Matamba from the UNESCO series on women in African history. Illustrations by Pat Masioni",
+        "date": "2014-06-01"
+      }
+    },
+    {
+      "id": "course-histoire-40-chaka-zoulou-lesson-1",
+      "course": "course-histoire-40-chaka-zoulou",
+      "title": "La naissance d'un royaume",
+      "decision": "moved",
+      "reason": "Le portrait historique sert l’identification du fondateur ; la longue lance ne documente pas l’iklwa courte.",
+      "image": {
+        "type": "image",
+        "alt": "Dessin représentant Chaka avec lance et grand bouclier.",
+        "legende": "Chaka, représentation publiée en 1836, après sa mort.",
+        "credit": "D'après James King, publication de 1836, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:KingShaka.jpg",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-Art"
+      },
+      "sha256": "fb31027a34f13fcb8b186c2c4ff25c828f692a2baf8d9f296a1e0f5cf79440f5"
+    },
+    {
+      "id": "course-histoire-40-chaka-zoulou-lesson-5",
+      "course": "course-histoire-40-chaka-zoulou",
+      "title": "Mort et héritage",
+      "decision": "added",
+      "reason": "La leçon cite la victoire de 1879 comme héritage du royaume ; l’image est légendée après Chaka, sans l’attribuer à son règne.",
+      "image": {
+        "type": "image",
+        "alt": "Soldats zoulous et britanniques représentés à Isandlwana.",
+        "legende": "Isandlwana, 1879 : peinture de Charles Edwin Fripp, postérieure à Chaka.",
+        "credit": "Charles Edwin Fripp, domaine public, WebP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isandhlwana.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "sha256": "698f0a63ce7f1cbcd758322ecc59ee541abc83cee0da7d40b88a01f15827d729",
+      "sourceMetadata": {
+        "title": "File:Isandhlwana.jpg",
+        "url": "https://upload.wikimedia.org/wikipedia/commons/3/34/Isandhlwana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=original",
+        "thumbnail": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/34/Isandhlwana.jpg/960px-Isandhlwana.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+        "page": "https://commons.wikimedia.org/wiki/File:Isandhlwana.jpg",
+        "width": 1200,
+        "height": 748,
+        "author": "Charles Edwin Fripp",
+        "license": "Public domain",
+        "description": "Battle of Isandhlwana (1879) Natal, South Africa",
+        "date": "1885date QS:P571,+1885-00-00T00:00:00Z/9"
+      }
+    }
+  ]
+}

@@ -5,6 +5,7 @@ import type { ARetenirBlock } from "@/lib/lessonBlocks";
 import { parseInline } from "@/lib/lessonBlocks";
 import { SUBJECT_BG, SUBJECT_DEEP, SUBJECT_DEEP_BG } from "@/lib/subjectStyles";
 import { getLessonImage } from "@/lib/lessonImages";
+import { LessonFigure } from "./LessonFigure";
 
 /**
  * Rend un texte portant le balisage `**gras**` (§ 5 de la charte). `boldClassName` permet
@@ -179,72 +180,7 @@ export function LessonBlocks({ blocks, accent, density = "full", imageKey }: Les
               const image = getLessonImage(imageKey);
               return (
                 <ThreadDot key={i}>
-                  <figure className="overflow-hidden rounded-card border-[2.5px] border-ink bg-card shadow-sm">
-                    {/* Même cadre et mêmes plafonds dans les deux densités. `contain` préserve
-                        les cartes et documents entiers ; les photos gardent leur cadrage habituel. */}
-                    {image ? (
-                      <img
-                        src={image.src}
-                        srcSet={image.srcSet}
-                        sizes={
-                          compact
-                            ? "(min-width: 768px) 420px, 100vw"
-                            : "(min-width: 768px) 620px, 100vw"
-                        }
-                        alt={block.alt}
-                        loading="lazy"
-                        decoding="async"
-                        className={`w-full ${block.fit === "contain" ? "object-contain" : "object-cover object-top"} ${compact ? "max-h-[280px]" : "max-h-[480px]"}`}
-                      />
-                    ) : (
-                      <div
-                        className={`w-full bg-cream ${compact ? "aspect-[16/9]" : "aspect-[4/3]"}`}
-                      />
-                    )}
-                    {(block.legende || block.credit) && (
-                      <figcaption
-                        className={`border-t-[2.5px] border-ink bg-card ${compact ? "px-3 py-2" : "px-4 py-2.5"}`}
-                      >
-                        {block.legende && (
-                          <div
-                            className={`font-medium leading-snug text-ink ${compact ? "text-[12.5px]" : "text-[13.5px]"}`}
-                          >
-                            {block.legende}
-                          </div>
-                        )}
-                        {block.credit && (
-                          <div className="mt-0.5 text-[11px] leading-snug text-ink-faint">
-                            {block.sourceUrl ? (
-                              <a
-                                href={block.sourceUrl}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="underline underline-offset-2"
-                              >
-                                {block.credit}
-                              </a>
-                            ) : (
-                              block.credit
-                            )}
-                            {block.licenseUrl && (
-                              <>
-                                {" "}
-                                ·{" "}
-                                <a
-                                  href={block.licenseUrl}
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="underline underline-offset-2"
-                                >
-                                  Licence
-                                </a>
-                              </>
-                            )}
-                          </div>
-                        )}
-                      </figcaption>
-                    )}
-                  </figure>
+                  <LessonFigure key={imageKey} block={block} image={image} compact={compact} />
                 </ThreadDot>
               );
             }

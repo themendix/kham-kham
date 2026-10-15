@@ -14,7 +14,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-01-algerie-lesson-1",
         title: "Un désert avec une façade maritime",
         blocks: [
-          { type: "paragraphe", text: "Le plus grand pays d'Afrique tient presque tout entier dans une seule couleur : le sable. Pourtant, sa frange nord touche la Méditerranée, avec vignes et orangeraies à quelques heures du Sahara." },
+          { type: "paragraphe", text: "Le plus grand pays d'Afrique évoque d'abord une couleur : le sable. Pourtant, sa frange nord touche la Méditerranée, avec vignes et orangeraies à quelques heures du Sahara." },
           { type: "chiffreCle", valeur: "2,38 M km²", legende: "le plus vaste pays du continent africain" },
           { type: "paragraphe", text: "Deux chaînes de l'**Atlas** séparent la côte fertile du désert. Au cœur du Sahara, le massif du **Hoggar** culmine à 2 900 m. Plus au sud, les grands ergs de dunes cachent des oasis où l'eau souterraine fait vivre les palmeraies." },
           {
@@ -704,7 +704,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-07-tunisie-lesson-3",
         title: "Où a commencé le Printemps arabe",
         blocks: [
-          { type: "paragraphe", text: "C'est en Tunisie, fin 2010, qu'a démarré la vague de soulèvements appelée « Printemps arabe », qui a ensuite gagné l'Égypte, la Libye et bien d'autres pays. La Tunisie reste le seul à en avoir tiré une transition démocratique durable." },
+          { type: "paragraphe", text: "C'est en Tunisie, fin 2010, qu'a démarré la vague de soulèvements appelée « Printemps arabe », qui a ensuite gagné l'Égypte, la Libye et d'autres pays. La transition démocratique qui suit est remise en cause à partir de 2021." },
           {
             type: "reperes",
             items: [
@@ -886,7 +886,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-09-burkina-faso-lesson-1",
         title: "À la merci des ports voisins",
         blocks: [
-          { type: "paragraphe", text: "Le Burkina Faso n'a pas un seul mètre de côte : tout ce qu'il importe ou exporte doit transiter par les ports d'un pays voisin — Abidjan, Téma, Lomé ou Cotonou, à des centaines de kilomètres." },
+          { type: "paragraphe", text: "Le Burkina Faso n'a aucune côte : tout ce qu'il importe ou exporte doit transiter par les ports d'un pays voisin — Abidjan, Téma, Lomé ou Cotonou, à des centaines de kilomètres." },
           { type: "chiffreCle", valeur: "0 km", legende: "de côte — tout passe par des ports étrangers" },
           { type: "paragraphe", text: "Le relief est globalement plat, sans grand massif : un plateau **sahélien**, aride au nord, un peu plus arrosé au sud. Le pays reste exposé à la désertification et à l'**insécurité** liée au terrorisme." },
           {
@@ -1230,7 +1230,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-12-gambie-lesson-2",
         title: "La plus petite, la plus dense",
         blocks: [
-          { type: "paragraphe", text: "Malgré sa taille minuscule, la Gambie affiche l'une des densités de population les plus élevées de toute l'Afrique continentale : presque tout le monde vit autour de l'estuaire, entre Banjul et Serekunda, sa voisine bien plus peuplée." },
+          { type: "paragraphe", text: "Malgré sa taille minuscule, la Gambie affiche l'une des densités de population les plus élevées d'Afrique continentale : presque tout le monde vit autour de l'estuaire, entre Banjul et Serekunda, sa voisine plus peuplée." },
           { type: "chiffreCle", valeur: "2,7 M", legende: "sur un territoire minuscule, très densément peuplé" },
           { type: "paragraphe", text: "On y trouve les mêmes peuples que dans la région : Mandingues, Peuls, Wolofs, Diolas. L'**anglais** est langue officielle, contrairement au Sénégal francophone tout autour. Le pays est surnommé la « **Smiling Coast** », la côte souriante." },
           {
@@ -1538,7 +1538,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-15-guinee-bissau-lesson-1",
         title: "Une mer qui grignote la terre",
         blocks: [
-          { type: "paragraphe", text: "Un mètre ou deux d'altitude à peine séparent une bonne partie de la Guinée-Bissau de l'océan. Bordée au nord par **le Sénégal** et au sud-est par la Guinée, cette contrée d'estuaires, de mangroves et d'îles compte parmi les plus exposées du monde à la montée des eaux." },
+          { type: "paragraphe", text: "Une bonne partie de la Guinée-Bissau s'élève à peine au-dessus de l'océan. Bordée au nord par **le Sénégal** et au sud-est par la Guinée, ce pays d'estuaires, de mangroves et d'îles est très exposé à la montée des eaux." },
           { type: "chiffreCle", valeur: "36 100 km²", legende: "un des plus petits pays du continent" },
           { type: "paragraphe", text: "L'archipel des **Bijagós**, réserve de biosphère de l'UNESCO, abrite une faune remarquable, dont des **hippopotames marins**. Ses îles, difficiles d'accès, ont conservé des pratiques traditionnelles fortes et une riche biodiversité, tortues de mer et lamantins compris." },
           {
@@ -1665,7 +1665,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-16-liberia-lesson-2",
         title: "Des Américains devenus Africains",
         blocks: [
-          { type: "paragraphe", text: "En 1847, d'anciens esclaves affranchis venus des États-Unis fondent le Liberia et deviennent les « Américo-Libériens » — une minorité qui dominera la vie politique et économique du pays pendant plus d'un siècle après l'indépendance." },
+          { type: "paragraphe", text: "En 1847, d'anciens esclaves affranchis venus des États-Unis fondent le Liberia et deviennent les « Américo-Libériens » — une minorité qui dominera la vie politique et économique du pays pendant plus d'un siècle." },
           { type: "chiffreCle", valeur: "5,4 M", legende: "d'habitants, très urbanisés depuis les guerres" },
           { type: "paragraphe", text: "La population mêle des peuples autochtones — **Kpelle**, Bassa, Gio — et les descendants des Américo-Libériens. La langue officielle est **l'anglais**, héritage direct des colons venus d'Amérique. Cette domination minoritaire a nourri des tensions profondes, menant aux **guerres civiles** des années 1990-2000." },
           {
@@ -1864,7 +1864,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-18-niger-lesson-1",
         title: "Plus des trois quarts de désert",
         blocks: [
-          { type: "paragraphe", text: "Plus des trois quarts du Niger sont désertiques — Sahara, massif de l'Aïr, dunes du Ténéré — sur un territoire deux fois grand comme la France. La vie du pays tient sur une mince frange sahélienne au sud." },
+          { type: "paragraphe", text: "Plus des trois quarts du Niger sont désertiques — Sahara, massif de l'Aïr, dunes du Ténéré — sur un territoire deux fois grand comme la France. La population se concentre au sud sahélien." },
           { type: "chiffreCle", valeur: "75 %", legende: "du territoire couvert de désert et de dunes" },
           { type: "paragraphe", text: "Le massif volcanique de l'**Aïr**, îlot montagneux au cœur du Sahara, forme avec les dunes du **Ténéré** un ensemble classé à l'UNESCO — riche en gravures rupestres et en vestiges de dinosaures fossilisés." },
           {
@@ -1900,7 +1900,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-18-niger-lesson-3",
         title: "Les dernières girafes de la région",
         blocks: [
-          { type: "paragraphe", text: "À Kouré, à quelques kilomètres de Niamey, vivent les toutes dernières girafes sauvages d'Afrique de l'Ouest — disparues presque partout ailleurs dans la région, mais encore visibles ici en pleine nature." },
+          { type: "paragraphe", text: "À Kouré, à quelques kilomètres de Niamey, vivent les toutes dernières girafes sauvages d'Afrique de l'Ouest — disparues presque partout ailleurs dans la région, mais encore visibles ici." },
           {
             type: "reperes",
             items: [
@@ -2008,7 +2008,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-19-nigeria-lesson-3",
         title: "Plus de films que Hollywood",
         blocks: [
-          { type: "paragraphe", text: "Chaque année, Nollywood produit plus de films que Hollywood — seule l'industrie indienne de Bollywood fait mieux au monde. Le Nigeria exporte aussi ses rythmes afrobeats, écoutés bien au-delà du continent africain." },
+          { type: "paragraphe", text: "Chaque année, Nollywood produit plus de films que Hollywood — seule l'industrie indienne de Bollywood fait mieux au monde. Le Nigeria exporte aussi ses rythmes afrobeats, écoutés au-delà du continent africain." },
           {
             type: "reperes",
             items: [
@@ -2210,7 +2210,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         blocks: [
           { type: "paragraphe", text: "Freetown, la « ville libre », a été fondée à la fin du XVIIIe siècle comme refuge pour des esclaves affranchis venus de plusieurs continents. Leurs descendants, les Krios, ont longtemps dirigé le pays." },
           { type: "chiffreCle", valeur: "8,6 M", legende: "reconstruite après la guerre civile et Ebola" },
-          { type: "paragraphe", text: "Les **Temnés**, majoritaires au nord et au centre-ouest, et les Mendés, au sud et à l'est, forment les deux plus grands groupes du pays. Les **Krios**, installés à Freetown depuis la fondation de la colonie, ont longtemps joué un rôle administratif de premier plan." },
+          { type: "paragraphe", text: "Les **Temnés**, majoritaires au nord et au centre-ouest, et les Mendés, au sud et à l'est, forment les deux plus grands groupes du pays. Les **Krios**, installés à Freetown depuis la fondation de la colonie, ont longtemps joué un rôle administratif majeur." },
           {
             type: "aRetenir",
             points: [
@@ -2410,7 +2410,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         blocks: [
           { type: "paragraphe", text: "Bordé à l'ouest par **l'océan Atlantique**, l'Angola possède une vaste façade maritime. Au nord, l'enclave pétrolière de Cabinda fait partie du pays sans y toucher, séparée par un couloir de RD Congo hérité du partage colonial." },
           { type: "chiffreCle", valeur: "1 couloir", legende: "de RD Congo sépare Cabinda du pays" },
-          { type: "paragraphe", text: "Le plateau intérieur, plus tempéré grâce à l'altitude, occupe l'essentiel du territoire. Vers le sud, le pays s'assèche jusqu'aux confins du désert du **Namib**, tandis que les chutes de **Kalandula**, parmi les plus impressionnantes d'Afrique, témoignent de l'abondance des eaux du centre." },
+          { type: "paragraphe", text: "Le plateau intérieur, plus tempéré grâce à l'altitude, occupe l'essentiel du territoire. Vers le sud, le pays s'assèche jusqu'aux confins du désert du **Namib**, tandis que les chutes de **Kalandula**, spectaculaires, témoignent de l'abondance des eaux du centre." },
           {
             type: "aRetenir",
             points: [
@@ -2444,7 +2444,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-23-angola-lesson-3",
         title: "La ville la plus chère d'Afrique",
         blocks: [
-          { type: "paragraphe", text: "Luanda a longtemps figuré parmi les villes les plus chères du monde pour les expatriés — un paradoxe pour la capitale d'un pays où l'essentiel de la population reste pauvre, malgré les revenus du pétrole." },
+          { type: "paragraphe", text: "Luanda a longtemps figuré parmi les villes les plus chères du monde pour les expatriés — un paradoxe pour la capitale d'un pays où la population reste majoritairement pauvre, malgré les revenus du pétrole." },
           {
             type: "reperes",
             items: [
@@ -2517,7 +2517,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-24-cameroun-lesson-1",
         title: "L'Afrique en miniature",
         blocks: [
-          { type: "paragraphe", text: "Désert au nord, forêt équatoriale au sud, montagnes à l'ouest : le Cameroun réunit à lui seul presque tous les paysages du continent africain, ce qui lui vaut le surnom d'« Afrique en miniature »." },
+          { type: "paragraphe", text: "Désert au nord, forêt équatoriale au sud, montagnes à l'ouest : le Cameroun réunit presque tous les paysages africains, ce qui lui vaut le surnom d'« Afrique en miniature »." },
           { type: "chiffreCle", valeur: "4 040 m", legende: "le mont Cameroun, plus haut sommet d'Afrique de l'Ouest" },
           { type: "paragraphe", text: "Les hauts plateaux de l'Ouest, autour de Bamenda et Bafoussam, offrent un climat frais et de riches terres volcaniques propices au **café**. Ils tranchent avec le littoral chaud et humide, où le **mont Cameroun** reçoit certaines des précipitations les plus abondantes du continent." },
           {
@@ -2732,7 +2732,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-26-congo-brazzaville-lesson-1",
         title: "Face à face avec Kinshasa",
         blocks: [
-          { type: "paragraphe", text: "D'une rive à l'autre du fleuve Congo, deux capitales se regardent en permanence : Brazzaville et Kinshasa forment la paire de capitales les plus proches au monde, séparées par un simple aller de pirogue." },
+          { type: "paragraphe", text: "D'une rive à l'autre du fleuve Congo, deux capitales se regardent : Brazzaville et Kinshasa forment la paire de capitales les plus proches au monde, séparées par un simple aller de pirogue." },
           { type: "chiffreCle", valeur: "≈ 4 km", legende: "séparent Brazzaville de Kinshasa, un record mondial" },
           { type: "paragraphe", text: "Le pays est couvert par la grande forêt équatoriale du bassin du **Congo**, deuxième poumon vert de la planète. Entre Brazzaville et la côte s'étend le **Pool**, une région de savanes qui tranche avec la forêt dominante ailleurs." },
           {
@@ -2861,7 +2861,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         blocks: [
           { type: "paragraphe", text: "Avec environ 105 millions d'habitants, la RD Congo compte plus de monde que la France entière — l'un des pays les plus peuplés d'Afrique, malgré un territoire encore largement recouvert de forêt vide d'hommes." },
           { type: "chiffreCle", valeur: "105 M", legende: "plus que la population de la France entière" },
-          { type: "paragraphe", text: "Le pays réunit plus de **200 groupes ethniques**. Quatre grandes langues nationales — lingala, swahili, kikongo, tshiluba — s'ajoutent au français et structurent encore les identités régionales du pays." },
+          { type: "paragraphe", text: "Le pays réunit plus de **200 groupes ethniques**. Quatre grandes langues nationales — **lingala**, swahili, kikongo, tshiluba — s'ajoutent au français et structurent encore les identités régionales du pays." },
           {
             type: "aRetenir",
             points: [
@@ -3181,7 +3181,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-30-sao-tome-et-principe-lesson-2",
         title: "Le pays le moins peuplé d'Afrique",
         blocks: [
-          { type: "paragraphe", text: "Avec environ 230 000 habitants, São Tomé-et-Príncipe est le pays le plus discret d'Afrique — la quasi-totalité de sa population tient sur une seule des deux îles, São Tomé, la plus grande." },
+          { type: "paragraphe", text: "Avec environ 230 000 habitants, São Tomé-et-Príncipe est le pays le plus discret d'Afrique — presque toute sa population tient sur une seule des deux îles, São Tomé, la plus grande." },
           { type: "chiffreCle", valeur: "230 000", legende: "la plus faible population de tout le continent" },
           { type: "paragraphe", text: "L'île de **Príncipe**, beaucoup plus petite et isolée, ne compte que quelques milliers d'habitants. La société **créole**, née dès le XVe siècle du brassage entre colons portugais et esclaves africains, hérite des plantations de canne à sucre puis de cacao." },
           {
@@ -3271,7 +3271,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-31-tchad-lesson-1",
         title: "Des lacs éternels en plein désert",
         blocks: [
-          { type: "paragraphe", text: "Immense contrée sans accès à la mer, le Tchad est un **pays enclavé** au cœur du continent. Dans le désert du Tibesti au nord, des lacs d'eau douce existent depuis des millénaires sans jamais s'assécher — un miracle géologique en milieu aride." },
+          { type: "paragraphe", text: "Sans accès à la mer, le Tchad est un **pays enclavé** d’Afrique centrale. Dans le désert du Tibesti au nord, des lacs d'eau douce persistent depuis des millénaires — un miracle géologique en milieu aride." },
           { type: "chiffreCle", valeur: "3 415 m", legende: "l'Emi Koussi, plus haut sommet de tout le Sahara" },
           { type: "paragraphe", text: "Le massif du **Tibesti**, au nord, culmine à l'**Emi Koussi**. Les lacs d'**Ounianga**, permanents et classés à l'UNESCO, ponctuent ce désert. Plus au sud, le climat s'adoucit du sahélien à la savane." },
           {
@@ -3379,9 +3379,9 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-32-burundi-lesson-1",
         title: "Des collines cultivées jusqu'au sommet",
         blocks: [
-          { type: "paragraphe", text: "Niché dans la région des Grands Lacs, le Burundi n'a aucun accès à la mer : c'est un petit pays **enclavé** dont les collines sont cultivées jusqu'à leur sommet, parmi les plus densément peuplés du continent." },
+          { type: "paragraphe", text: "Niché dans la région des Grands Lacs, le Burundi n'a aucun accès à la mer : c'est un pays **enclavé** aux collines cultivées jusqu'au sommet, parmi les plus densément peuplés du continent." },
           { type: "chiffreCle", valeur: "1 470 m", legende: "la profondeur du lac Tanganyika, un record mondial" },
-          { type: "paragraphe", text: "La crête **Congo-Nil**, qui traverse le pays du nord au sud, sépare les bassins du Congo et du Nil. Le pays laisse peu de place aux espaces naturels préservés, à l'exception de quelques réserves autour du lac **Tanganyika**." },
+          { type: "paragraphe", text: "La crête **Congo-Nil**, qui traverse le pays du nord au sud, sépare les bassins du Congo et du Nil. Le pays laisse peu de place aux espaces naturels préservés, sauf des réserves autour du lac **Tanganyika**." },
           {
             type: "aRetenir",
             points: [
@@ -3487,7 +3487,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-33-comores-lesson-1",
         title: "Les îles de la Lune",
         blocks: [
-          { type: "paragraphe", text: "Les Comores tirent leur nom de l'arabe « Qamar », la Lune. Un archipel volcanique surgi de l'océan Indien, entre l'Afrique et Madagascar, que l'on surnomme depuis toujours « les îles de la Lune »." },
+          { type: "paragraphe", text: "Les Comores tirent leur nom de l'arabe « Qamar », la Lune. Un archipel volcanique surgi de l'océan Indien, entre l'Afrique et Madagascar, surnommé « les îles de la Lune »." },
           { type: "chiffreCle", valeur: "2 300 m", legende: "le Karthala, volcan encore actif sur la Grande Comore" },
           { type: "paragraphe", text: "Le **Karthala**, sur la Grande Comore, entre régulièrement en éruption et façonne les paysages de l'île la plus vaste de l'archipel. Le climat tropical, tempéré par les alizés, favorise la culture de plantes à parfum comme l'**ylang-ylang**, le girofle et la vanille." },
           {
@@ -3594,7 +3594,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-34-djibouti-lesson-1",
         title: "Le point le plus bas d'Afrique",
         blocks: [
-          { type: "paragraphe", text: "À Djibouti, le lac Assal se trouve à environ 155 mètres sous le niveau de la mer — le point le plus bas de tout le continent africain, au creux d'un désert de sel étincelant." },
+          { type: "paragraphe", text: "À Djibouti, le lac Assal se trouve à environ 155 mètres sous le niveau de la mer — le point le plus bas d'Afrique, au creux d'un désert de sel étincelant." },
           { type: "chiffreCle", valeur: "-155 m", legende: "le lac Assal, point le plus bas d'Afrique" },
           { type: "paragraphe", text: "Le pays se situe au point de rencontre de **trois plaques tectoniques** — africaine, arabique et somalienne —, ce qui en fait une zone volcanique active, à l'origine de paysages spectaculaires comme le **lac Abbé**, aux cheminées de calcaire fumantes." },
           {
@@ -4055,7 +4055,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-38-madagascar-lesson-3",
         title: "La vanille qui vient d'ici",
         blocks: [
-          { type: "paragraphe", text: "La vanille qui parfume tant de desserts dans le monde entier vient très probablement de Madagascar : le pays en est le premier producteur mondial, malgré une économie parmi les plus pauvres de la planète." },
+          { type: "paragraphe", text: "La **vanille** qui parfume tant de desserts dans le monde entier vient très probablement de Madagascar : le pays en est le premier producteur mondial, malgré une économie parmi les plus pauvres de la planète." },
           {
             type: "reperes",
             items: [
@@ -4172,7 +4172,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               { label: "Indépendance", valeur: "12 mars 1968" },
             ],
           },
-          { type: "paragraphe", text: "Le **Morne Brabant**, ancien refuge d'esclaves marrons, et l'Aapravasi Ghat, premier lieu d'accueil des travailleurs engagés venus d'Inde, sont classés à l'UNESCO. La canne à sucre couvre encore une grande partie de l'île." },
+          { type: "paragraphe", text: "Le **Morne Brabant**, ancien refuge d'esclaves marrons, et l'**Aapravasi Ghat**, premier lieu d'accueil des travailleurs engagés venus d'Inde, sont classés à l'UNESCO. La canne à sucre couvre encore une grande partie de l'île." },
           {
             type: "aRetenir",
             points: [
@@ -4234,7 +4234,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-40-ouganda-lesson-1",
         title: "De la neige sur l'équateur",
         blocks: [
-          { type: "paragraphe", text: "Sur l'équateur, en plein cœur de l'Afrique, les monts Rwenzori portent des neiges éternelles — un paradoxe géographique si rare qu'on les surnomme les « montagnes de la Lune », un nom vieux de plus de deux mille ans." },
+          { type: "paragraphe", text: "Sur l'équateur, en plein cœur de l'Afrique, les monts **Rwenzori** portent des neiges éternelles — un paradoxe géographique si rare qu'on les surnomme les « montagnes de la Lune », un nom vieux de plus de deux mille ans." },
           { type: "chiffreCle", valeur: "Jinja", legende: "où le Nil Blanc sort du lac Victoria" },
           { type: "paragraphe", text: "Le Nil Blanc sort du lac Victoria à **Jinja**, point de départ symbolique du plus long fleuve du monde. Cette abondance de lacs et de terres fertiles, tempérée par l'altitude malgré la position équatoriale, vaut au pays sa réputation de « perle de l'Afrique »." },
           {
@@ -4480,7 +4480,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-42-seychelles-lesson-3",
         title: "Le revenu le plus élevé d'Afrique",
         blocks: [
-          { type: "paragraphe", text: "Grâce au tourisme haut de gamme et à la pêche au thon, les Seychelles affichent le revenu par habitant le plus élevé de tout le continent africain — une réussite bâtie sur un territoire minuscule." },
+          { type: "paragraphe", text: "Grâce au tourisme haut de gamme et à la **pêche au thon**, les Seychelles affichent le revenu par habitant le plus élevé de tout le continent africain — une réussite bâtie sur un territoire minuscule." },
           {
             type: "reperes",
             items: [
@@ -4559,7 +4559,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
             type: "aRetenir",
             points: [
               "La plus longue côte d'Afrique continentale",
-              "Le **Jubba** et le **Shabelle**, seules rivières du pays",
+              "Le **Jubba** et le Shabelle, seules rivières du pays",
               "Liée dans l'Antiquité au commerce de l'encens, le « pays de Pount »",
             ],
           },
@@ -5409,7 +5409,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
             type: "aRetenir",
             points: [
               "Une des plus longues façades maritimes d'Afrique",
-              "Le **Zambèze** forme le lac de barrage de **Cahora Bassa**",
+              "Le **Zambèze** forme le lac de barrage de Cahora Bassa",
               "L'un des territoires les plus vulnérables aux cyclones",
             ],
           },

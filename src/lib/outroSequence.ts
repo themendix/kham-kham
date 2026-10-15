@@ -22,8 +22,8 @@ export function buildCelebrationSegment(input: {
 /**
  * Queue de la séquence, résolue au moment du clic sur le carrefour de décision (faire ou sauter
  * le quiz est un choix de l'utilisateur, inconnu au moment où le segment de célébration est
- * calculé). Une queue vide signifie que le bouton "Retour à l'accueil" du dernier écran de
- * célébration navigue directement vers "/".
+ * calculé). Une queue vide signifie que le bouton "Voir les autres cours…" du dernier écran de
+ * célébration navigue directement vers la matière du cours ("/biblio/:categoryId").
  */
 export function resolveOutroTail(input: {
   takeQuiz: boolean;

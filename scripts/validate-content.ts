@@ -25,13 +25,14 @@ import { QUESTION_TERRITORIES } from "../src/data/questionTerritories";
 import { TERRITORY_IDS } from "../src/lib/territories";
 import { lessonPlainText, lessonWordCount, parseInline, type LessonBlock } from "../src/lib/lessonBlocks";
 import type { Course } from "../src/types";
+import { personalityTemplateIssues } from "./personality-template";
 
 /**
  * Matières dont le contenu a subi la passe éditoriale de la charte (docs/CHARTE-LECONS.md).
  * Les règles 11 à 18 ne s'y appliquent qu'à ces matières. On étend cette liste à chaque
  * matière achevée — jamais avant.
  */
-const CHARTE_APPLIQUEE: readonly string[] = ["histoire", "geo", "decouverte"];
+const CHARTE_APPLIQUEE: readonly string[] = ["histoire", "geo", "perso", "decouverte"];
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 
@@ -408,16 +409,7 @@ function checkSubjectTemplate(course: Course) {
   }
 
   if (course.categoryId === "perso") {
-    if (course.lessons.length < 5) return;
-    if (!has(0, "frise")) {
-      error("18. Gabarit de matière", `${ref} : leçon 1 sans frise`);
-    }
-    if (!has(4, "citation")) {
-      error("18. Gabarit de matière", `${ref} : leçon 5 (la postérité) sans citation`);
-    }
-    if (!anyLessonHas("citation")) {
-      error("18. Gabarit de matière", `${ref} : aucune citation sur les 5 leçons`);
-    }
+    for (const message of personalityTemplateIssues(course)) error("18. Gabarit de matière", message);
   }
 }
 
@@ -450,6 +442,20 @@ for (const course of COURSES) {
 for (const id of illustrationIds) {
   if (!courseIds.has(id)) {
     warn("9. Illustrations orphelines", `${id}.webp ne correspond à aucun cours de COURSES`);
+  }
+}
+
+// Histoire : au moins deux illustrations intra-leçon par cours, réparties librement.
+// Compter les images réellement résolubles, sans imposer une image à chaque leçon.
+// La pertinence documentaire reste une vérification éditoriale humaine.
+const lessonImageFiles = new Set(readdirSync(join(ROOT, "src", "assets", "lecons")));
+for (const course of COURSES.filter((c) => c.categoryId === "histoire")) {
+  const illustrated = course.lessons.filter(
+    (lesson) => lesson.blocks.some((block) => block.type === "image")
+      && [400, 800].every((width) => lessonImageFiles.has(`${lesson.id}-${width}w.webp`)),
+  );
+  if (illustrated.length < 2) {
+    error("19. Images Histoire par cours", `${course.id} : ${illustrated.length} image(s) résoluble(s), minimum 2 par cours`);
   }
 }
 

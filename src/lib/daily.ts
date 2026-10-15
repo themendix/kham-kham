@@ -1,5 +1,6 @@
 import type { DailyState } from "@/types";
 import { toISODate } from "@/lib/gamification";
+import { civilDaysBetween } from "@/lib/calendar";
 
 /** Remet `daily` à zéro si la date du jour a changé depuis le dernier reset ; sinon renvoie l'état inchangé */
 export function resetDailyIfNeeded(daily: DailyState, now: Date = new Date()): DailyState {
@@ -10,9 +11,7 @@ export function resetDailyIfNeeded(daily: DailyState, now: Date = new Date()): D
 
 /** Jour de l'année (1-366), utilisé pour dériver un contenu stable sur une journée */
 export function dayOfYear(now: Date = new Date()): number {
-  const start = new Date(now.getFullYear(), 0, 0);
-  const diffMs = now.getTime() - start.getTime();
-  return Math.floor(diffMs / 86_400_000);
+  return civilDaysBetween(`${now.getFullYear()}-01-01`, toISODate(now)) + 1;
 }
 
 /** Index déterministe dans un tableau de longueur `length`, stable pour la journée */

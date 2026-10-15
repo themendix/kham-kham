@@ -26,7 +26,7 @@ describe("progression coordonnée — deux clients sans événement storage", ()
     await reload.getState().retryPersistence();
     expect(reload.getState().progress.favoriteCourseIds).toEqual([]);
     expect(reload.getState().progress.quizGame.questions[question].correct).toBe(2);
-    expect(reload.getState().progress.xp).toBe(5);
+    expect(reload.getState().progress.xp).toBe(0); // deux réponses le même jour
   });
   it("additionne les gains indépendants et conserve les autres champs sous concurrence", async () => {
     const { a, b } = pair();
@@ -48,7 +48,7 @@ describe("progression coordonnée — deux clients sans événement storage", ()
     await Promise.all([a.getState().recordQuizAnswer(question, true, "partie:0"), b.getState().recordQuizAnswer(question, true, "partie:0")]);
     await b.getState().recordQuizAnswer(question, true, "partie:1");
     expect(b.getState().progress.quizGame.questions[question].correct).toBe(2);
-    expect(b.getState().progress.xp).toBe(5);
+    expect(b.getState().progress.xp).toBe(0); // réponses distinctes, jour identique
   });
   it("fin quotidienne atomique : deux parties concurrentes, callback rejoué, paiement unique et réponses conservées", async () => {
     const { a, b, writes } = pair();
@@ -95,8 +95,9 @@ describe("import/hydration — aucune voie secondaire d’écriture", () => {
     const blob = legacy(progress);
     values.set(LEGACY_PROGRESS_KEY, blob);
     await Promise.all([a.getState().retryPersistence(), b.getState().retryPersistence()]);
-    expect(a.getState().progress).toEqual(progress);
-    expect(b.getState().progress).toEqual(progress);
+    const expected = { ...progress, calendar: { version: 1, legacyDailyDate: null, legacyLastActiveDate: null } };
+    expect(a.getState().progress).toEqual(expected);
+    expect(b.getState().progress).toEqual(expected);
     expect(writes).toEqual([PROGRESS_KEY]);
     expect(values.get(LEGACY_PROGRESS_KEY)).toBe(blob);
     await b.persist.rehydrate();
@@ -134,7 +135,7 @@ describe("import/hydration — aucune voie secondaire d’écriture", () => {
 describe("échecs conservateurs et reprise", () => {
   for (const [name, blob] of [
     ["JSON tronqué", "{"],
-    ["version future", JSON.stringify({ version: 11, state: { progress: migrate(undefined).progress } })],
+    ["version future", JSON.stringify({ version: 12, state: { progress: migrate(undefined).progress } })],
     ["champ numérique invalide", legacy({ ...migrate(undefined).progress, xp: -1 })],
     ["champ imbriqué invalide", legacy({ ...migrate(undefined).progress, quizGame: { cauris: 0, gamesPlayed: 0, records: {}, questions: { q: { correct: 1, wrong: 0, box: 4, dueDate: null } } } })],
   ]) it(`conserve sans écriture : ${name}`, async () => {

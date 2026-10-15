@@ -1,0 +1,847 @@
+{
+  "date": "2026-10-15",
+  "scope": "27 candidates Histoire intégrées, dont trois remplacements documentés ; originaux sauvegardés localement",
+  "records": [
+    {
+      "id": "course-histoire-02-koush-meroe-lesson-3",
+      "verdict": "coherent",
+      "sourceUrl": "https://hmsjournal.org/index.php/home/article/view/86",
+      "directImageUrl": "https://hmsjournal.org/index.php/home/article/download/86/84#page=4",
+      "localOriginal": "references-b-meroe/figure3-hamadab-H800-decoded.png",
+      "author": "Burkart Ullrich, Pawel Wolf et Georg Kaufmann (auteurs de l’article ; photographe non précisé)",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "alt": "Amas de scories H800, Hamadab.",
+      "legende": "Hamadab, près de Méroé : scories de fer, tas H800.",
+      "reason": "Figure 3, page 28, de Geophysical prospection of iron slag heaps at Hamadab, Northern Sudan, Historical Metallurgy 48 (2014, paru en 2015). Le tas H800 est identifié dans la légende originale ; Hamadab se trouve à trois kilomètres au sud de Méroé. Ces vestiges de métallurgie illustrent le travail du fer étudié dans la leçon.",
+      "historicalCaveat": "Photographie de prospection moderne à Hamadab, pas dans la cité de Méroé et pas une scène de forge antique. Date du cliché et photographe non précisés. Notice mise en ligne en 2021, volume daté 2014 publié en 2015. Figure extraite entière du PDF, palette originale respectée, puis conversion et redimensionnement WebP ; article sous CC BY 4.0.",
+      "evidenceUrls": [
+        "https://hmsjournal.org/index.php/home/article/view/86",
+        "https://hmsjournal.org/index.php/home/article/download/86/84#page=4"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": true,
+      "previousSource": {
+        "id": "course-histoire-02-koush-meroe-lesson-3",
+        "verdict": "incoherent",
+        "reason": "Le fichier montre des pyramides funéraires, pas les scories, fours ou outils traités par la leçon sur le fer. Le lot 01 avait explicitement écarté ce type de substitution.",
+        "evidenceUrls": [
+          "docs/HISTOIRE-VISUELS-LOT-01.md",
+          "docs/histoire-visuels-lot-01.json"
+        ],
+        "status": "decision utilisateur attendue"
+      },
+      "block": {
+        "type": "image",
+        "alt": "Amas de scories H800, Hamadab.",
+        "legende": "Hamadab, près de Méroé : scories de fer, tas H800.",
+        "credit": "Ullrich, Wolf et Kaufmann, CC BY 4.0",
+        "sourceUrl": "https://hmsjournal.org/index.php/home/article/view/86",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-10-kanem-bornou-lesson-4",
+      "verdict": "coherent",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/34811",
+      "directImageUrl": "https://images.metmuseum.org/CRDImages/aa/original/sfsb28.100.6_001.jpg",
+      "localOriginal": "idris-matchlock-original.jpg",
+      "author": "The Metropolitan Museum of Art (photographie de collection)",
+      "license": "CC0, photographie Open Access / domaine public",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "alt": "Détail d'arquebuse à mèche : crosse et mécanisme.",
+      "legende": "Détail d'une arquebuse allemande du XVIe siècle, arme à mèche.",
+      "reason": "Photographie d'un objet authentique du XVIe siècle (Met 28.100.6), illustrant concrètement la technologie des armes à feu citée dans la leçon. Sa provenance allemande est affichée : il s'agit d'un exemple technique de la même époque, pas d'une arme attribuée à Idris Alooma ou à son armée.",
+      "historicalCaveat": "Aucun objet personnel d'Idris Alooma n'est identifié. Les recherches d'armes ottomanes libres exactement du XVIe siècle n'ont pas fourni d'objet sûr ; les armes ottomanes du XVIIe-XIXe siècle et la gravure de 1732 ont été écartées. La photo représente un détail (crosse et mécanisme) et non l'arme entière. L'API du Met déclare isPublicDomain: true ; photographie musée, pas illustration générée.",
+      "evidenceUrls": [
+        "https://www.metmuseum.org/art/collection/search/34811",
+        "https://collectionapi.metmuseum.org/public/collection/v1/objects/34811",
+        "https://www.metmuseum.org/policies/image-resources"
+      ],
+      "status": "archived",
+      "requiresTextAdjustment": false,
+      "replacement": true,
+      "previousSource": {
+        "id": "course-histoire-10-kanem-bornou-lesson-4",
+        "verdict": "incoherent",
+        "reason": "Photographie tardive de cavaliers du Bornou, à ne pas présenter comme une armée du XVIe siècle sous Idris Alooma. Ni armes à feu ni source du règne illustrée.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jafi_salute_by_Bornu_horsemen.jpg",
+        "status": "decision utilisateur attendue"
+      },
+      "block": {
+        "type": "image",
+        "alt": "Détail d'arquebuse à mèche : crosse et mécanisme.",
+        "legende": "Détail d'une arquebuse allemande du XVIe siècle, arme à mèche.",
+        "credit": "The Metropolitan Museum of Art, CC0",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/34811",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "auditReason": "L’arme allemande est un exemple technique extérieur ; aucun lien documentaire avec le Bornou ou l’armée d’Idris Alooma.",
+      "archive": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-10-kanem-bornou-lesson-4/notice.json",
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-11-cites-etats-haoussa-lesson-2",
+      "verdict": "coherent",
+      "reason": "Le visuel exact montre deux artisans de Kofar Mata battant des tissus teints, avec mêmes vêtements, bonnet, billot et décor. Il illustre directement le paragraphe principal sur les textiles et l'indigo de Kano ; placement conseillé après ce paragraphe.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kofar_Mata_Dye_pit_workers_beating_dye_clothes.jpg",
+      "sourceFileTitle": "File:Kofar Mata Dye pit workers beating dye clothes.jpg",
+      "author": "Solasly",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "alt": "Deux artisans de Kano battent des tissus teints sur un billot.",
+      "legende": "Artisans de Kano battant des tissus teints, photographie de 2018.",
+      "historicalCaveat": "Photographie contemporaine du 22 décembre 2018, illustrant une pratique artisanale actuelle ; elle ne montre pas l'époque médiévale ni les fosses elles-mêmes. La version Commons de 2023 a été recadrée et son filigrane retiré.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Kofar_Mata_Dye_pit_workers_beating_dye_clothes.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/20/Kofar_Mata_Dye_pit_workers_beating_dye_clothes.jpg"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Artisans battant des tissus teints à Kano.",
+        "legende": "Artisans de Kano battant des tissus teints, photographie de 2018.",
+        "credit": "Solasly, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kofar_Mata_Dye_pit_workers_beating_dye_clothes.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-12-royaume-benin-bronzes-lesson-3",
+      "verdict": "coherent",
+      "reason": "Comparaison visuelle exacte avec MET DT 1231 : même plaque complète, sept figures, deux boucliers, disposition des trous et fond photographique gris/blanc. Illustre le paragraphe principal sur plaques en laiton et cour royale, à placer ensuite.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaque-_Warrior_and_Attendants_MET_DT1231.jpg",
+      "sourceFileTitle": "File:Plaque- Warrior and Attendants MET DT1231.jpg",
+      "author": "The Metropolitan Museum of Art ; œuvre de la corporation des fondeurs Ìgùn Ẹ́rọ̀nwwọ̀n ; don de M. et Mme Klaus G. Perls, 1990",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "alt": "Plaque en laiton du royaume du Bénin représentant un chef guerrier et ses accompagnateurs.",
+      "legende": "Plaque en laiton du Bénin, chef guerrier et accompagnateurs, XVIᵉ siècle.",
+      "historicalCaveat": "Photographie de musée d'un objet Edo ancien, MET 1990.332. Notice muséale actuelle : vers 1540–1570, datation plus précise que le XVIe–XVIIe indiqué dans l'ancienne notice Commons. Ne pas identifier le personnage principal comme un Oba nommé : le musée le décrit comme un chef guerrier.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Plaque-_Warrior_and_Attendants_MET_DT1231.jpg",
+        "https://www.metmuseum.org/art/collection/search/316393",
+        "https://www.metmuseum.org/policies/image-resources"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Plaque en laiton montrant un chef guerrier et ses accompagnateurs.",
+        "legende": "Plaque en laiton du Bénin, chef guerrier et accompagnateurs, XVIᵉ siècle.",
+        "credit": "The Metropolitan Museum of Art, CC0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaque-_Warrior_and_Attendants_MET_DT1231.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-13-empire-oyo-yoruba-lesson-1",
+      "verdict": "coherent",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg",
+      "sourceFileTitle": "File:Ife sculpture Inv.A96-1-4.jpg",
+      "directImageUrl": "https://upload.wikimedia.org/wikipedia/commons/8/82/Ife_sculpture_Inv.A96-1-4.jpg",
+      "author": "Jastrow",
+      "license": "Domaine public (PD-self)",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg#Licensing",
+      "alt": "Tête masculine d’Ifè en terre cuite, avec des lignes incisées sur le visage.",
+      "legende": "Tête d’Ifè en terre cuite, XIIᵉ–XIVᵉ siècles, photographiée au musée.",
+      "pertinence": "Objet précis Inv. A.96.1.4, tête masculine d’Ifè en terre cuite, XIIe–XIVe siècles, exposée au Pavillon des Sessions du Louvre lors du cliché de Jastrow en 2006. La photographie correspond à la miniature déjà examinée : tête ocre de face avec lignes verticales sur le front, coiffe arrondie, fond neutre. Elle illustre directement les têtes de terre cuite mentionnées dans Le pays yoruba, après le paragraphe principal sur Ilé-Ifè.",
+      "limites": "Photographie moderne, prise le 4 janvier 2006 selon EXIF, d’une sculpture ancienne ; aucune scène médiévale reconstituée. Auteur ancien inconnu. La notice dit probablement un serviteur du roi : cette interprétation reste hypothétique et n’est pas reprise dans la légende. Ne pas appeler cette tête bronze, ni portrait d’un souverain nommé, ni objet de l’empire d’Oyo. Le domaine public de la photographie résulte de la déclaration explicite du photographe dans la notice Commons, pas du seul âge de la sculpture.",
+      "width": 1340,
+      "height": 1780,
+      "material": "Terre cuite",
+      "objectReference": "Inv. A.96.1.4",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg"
+      ],
+      "reason": "Objet précis Inv. A.96.1.4, tête masculine d’Ifè en terre cuite, XIIe–XIVe siècles, exposée au Pavillon des Sessions du Louvre lors du cliché de Jastrow en 2006. La photographie correspond à la miniature déjà examinée : tête ocre de face avec lignes verticales sur le front, coiffe arrondie, fond neutre. Elle illustre directement les têtes de terre cuite mentionnées dans Le pays yoruba, après le paragraphe principal sur Ilé-Ifè.",
+      "historicalCaveat": "Photographie moderne, prise le 4 janvier 2006 selon EXIF, d’une sculpture ancienne ; aucune scène médiévale reconstituée. Auteur ancien inconnu. La notice dit probablement un serviteur du roi : cette interprétation reste hypothétique et n’est pas reprise dans la légende. Ne pas appeler cette tête bronze, ni portrait d’un souverain nommé, ni objet de l’empire d’Oyo. Le domaine public de la photographie résulte de la déclaration explicite du photographe dans la notice Commons, pas du seul âge de la sculpture.",
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": true,
+      "previousSource": {
+        "id": "course-histoire-13-empire-oyo-yoruba-lesson-1",
+        "verdict": "uncertain",
+        "reason": "Source exacte non retrouvée. La tête grise de face en vitrine, accompagnée d'une autre tête à gauche et d'un panneau photographique à droite, ne correspond à aucun des clichés Ife comparés. Les candidats de la fondation Arellano Alonso, du Louvre, du musée ethnologique de Berlin, du British Museum et les images principales des articles Ife/Oyo/art yoruba ont été éliminés. Ne pas intégrer une attribution ou une datation approchante.",
+        "sourceUrl": null,
+        "sourceFileTitle": null,
+        "author": null,
+        "license": null,
+        "licenseUrl": null,
+        "alt": "Tête sculptée présentée de face dans une vitrine de musée.",
+        "legende": "Tête sculptée exposée au musée, identification et source à confirmer.",
+        "historicalCaveat": "Photo moderne d'un objet présenté comme ancien ; matériau, datation et identification précise restent à établir. Aucune assimilation à l'empire d'Oyo sans notice.",
+        "evidenceUrls": [
+          "https://commons.wikimedia.org/wiki/Category:Art_of_Ife",
+          "https://commons.wikimedia.org/wiki/File:Cabezas._Cultura_If%C3%A9._Nigeria._Siglos_X_al_XV_d.C.jpg",
+          "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg",
+          "https://commons.wikimedia.org/wiki/File:Man%27s_head,_Nigeria,_Ife,_12th-15th_century_AD,_terracotta_-_Ethnological_Museum,_Berlin_-_DSC02222.JPG"
+        ]
+      },
+      "block": {
+        "type": "image",
+        "alt": "Tête masculine d’Ifè en terre cuite, avec des lignes incisées sur le visage.",
+        "legende": "Tête d’Ifè en terre cuite, XIIᵉ–XIVᵉ siècles, photographiée au musée.",
+        "credit": "Jastrow, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg#Licensing"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-14-royaume-ashanti-lesson-3",
+      "verdict": "coherent",
+      "reason": "Correspondance exacte avec le cliché MET DP-30079-001 du Lion Ornament 1979.206.228 : orientation vers la gauche, ouvertures triangulaires, queue et anneaux de la base identiques. Illustre l'or et la culture de cour mentionnés au paragraphe principal, à placer ensuite.",
+      "sourceUrl": "https://www.metmuseum.org/art/collection/search/312428",
+      "sourceFileTitle": "Lion Ornament — MET 1979.206.228 — DP-30079-001.jpg",
+      "author": "The Metropolitan Museum of Art ; artiste Asante-Akan ; The Michael C. Rockefeller Memorial Collection, legs Nelson A. Rockefeller, 1979",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "alt": "Ornement royal ashanti en or représentant un lion sur une base annulaire.",
+      "legende": "Lion en or, ornement royal ashanti du XIXᵉ siècle.",
+      "historicalCaveat": "La notice identifie un ornement royal du XIXe siècle, pas un poids à peser l'or ni un pendentif établi. Son support d'origine reste hypothétique : sandale, coiffure de porteur de sabre, siège de prestige ou autre élément de parure. Photographie moderne d'un objet ancien.",
+      "evidenceUrls": [
+        "https://www.metmuseum.org/art/collection/search/312428",
+        "https://images.metmuseum.org/CRDImages/ao/original/DP-30079-001.jpg",
+        "https://www.metmuseum.org/policies/image-resources"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": true,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Ornement royal ashanti en or, en forme de lion.",
+        "legende": "Lion en or, ornement royal ashanti du XIXᵉ siècle.",
+        "credit": "The Metropolitan Museum of Art, CC0, Commons",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/312428",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-15-royaume-dahomey-lesson-2",
+      "verdict": "coherent",
+      "reason": "Comparaison visuelle exacte de la carte postale colorisée : inscription 1518, Abomey, vétérantes des Amazones de Béhanzin ; même alignement, armes et vêtements. Convient après le paragraphe principal présentant les Agojie, avec légende explicitant le document tardif.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_c%C3%A9l%C3%A9bration_at_Abomey(1908)._-_The_veteran_amazones(_AHOSI_)_of_the_Fon_king_B%C3%A9hanzin,_Son_of_Roi_G%C3%A9l%C3%A9.jpg",
+      "sourceFileTitle": "File:The célébration at Abomey(1908). - The veteran amazones( AHOSI ) of the Fon king Béhanzin, Son of Roi Gélé.jpg",
+      "author": "François-Edmond Fortier (1862–1918)",
+      "license": "Domaine public",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "alt": "Carte postale colorisée montrant des vétéranes du Dahomey alignées avec leurs armes.",
+      "legende": "Vétéranes du Dahomey à Abomey, carte postale colorisée, 1908.",
+      "historicalCaveat": "Document photographique colonial colorisé daté de 1908 dans la notice Commons. Il montre des vétéranes après la conquête du Dahomey, pas des Agojie combattant durant une bataille. Le titre du document emploie le surnom européen Amazones.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:The_c%C3%A9l%C3%A9bration_at_Abomey(1908)._-_The_veteran_amazones(_AHOSI_)_of_the_Fon_king_B%C3%A9hanzin,_Son_of_Roi_G%C3%A9l%C3%A9.jpg"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Anciennes combattantes du Dahomey sur une carte postale.",
+        "legende": "Vétéranes du Dahomey à Abomey, carte postale colorisée, 1908.",
+        "credit": "François-Edmond Fortier, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_c%C3%A9l%C3%A9bration_at_Abomey(1908)._-_The_veteran_amazones(_AHOSI_)_of_the_Fon_king_B%C3%A9hanzin,_Son_of_Roi_G%C3%A9l%C3%A9.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-17-grand-zimbabwe-lesson-1",
+      "verdict": "coherent",
+      "reason": "Comparaison exacte avec Conical Tower – Great Enclosure IV : contre-plongée sur la tour à gauche, lumière dorée et branches mêmes positions ; le ratio 4615/3450 correspond à 800/598. Illustre la construction en pierres sèches au paragraphe principal, à placer ensuite.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conical_Tower_-_Great_Enclosure_IV_(47561215932).jpg",
+      "sourceFileTitle": "File:Conical Tower - Great Enclosure IV (47561215932).jpg",
+      "author": "Andrew Moore",
+      "license": "CC BY-SA 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+      "alt": "Tour conique du Grand Zimbabwe, en pierres sèches, photographiée en contre-plongée.",
+      "legende": "Tour du Grand Zimbabwe, photographie contemporaine des vestiges médiévaux.",
+      "historicalCaveat": "Photographie contemporaine du 26 mars 2019, pas une scène du Moyen Âge. Elle montre la tour conique : ne pas présenter les 11 mètres de certaines murailles comme une hauteur mesurée sur cette tour ni inventer sa fonction.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Conical_Tower_-_Great_Enclosure_IV_(47561215932).jpg",
+        "https://www.flickr.com/photos/andryn2006/47561215932/"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Tour conique du Grand Zimbabwe, bâtie en pierres sèches.",
+        "legende": "Tour du Grand Zimbabwe, photographie contemporaine des vestiges médiévaux.",
+        "credit": "Andrew Moore, CC BY-SA 2.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Conical_Tower_-_Great_Enclosure_IV_(47561215932).jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-18-monomotapa-mutapa-lesson-3",
+      "verdict": "coherent",
+      "reason": "Correspondance exacte avec Monomotapa Map : cartouche inférieur droit, navires et contours colorés identiques. Document cartographique européen pertinent après le paragraphe principal sur la fascination des Européens pour le Monomotapa, à condition de signaler sa date 1635.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monomotapa_Map.jpg",
+      "sourceFileTitle": "File:Monomotapa Map.jpg",
+      "author": "Willem Blaeu (1571–1638) ; exemplaire reproduit par Princeton University Library",
+      "license": "Domaine public",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "alt": "Carte gravée de 1635 de l'Afrique australe portant le nom Monomotapa.",
+      "legende": "Monomotapa sur une carte gravée européenne de Willem Blaeu, 1635.",
+      "historicalCaveat": "Gravure sur cuivre de l'Atlas Novus de 1635, document européen du XVIIe siècle, postérieur au XVIe évoqué dans la leçon. Ses contours et noms reflètent la cartographie européenne de son temps ; elle ne prouve ni les frontières exactes du Mutapa ni la localisation d'Ophir.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Monomotapa_Map.jpg",
+        "https://upload.wikimedia.org/wikipedia/commons/2/22/Monomotapa_Map.jpg",
+        "https://libweb5.princeton.edu/visual_materials/maps/websites/africa/maps-southern/southern.html"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Carte ancienne situant le Monomotapa en Afrique australe.",
+        "legende": "Monomotapa sur une carte gravée européenne de Willem Blaeu, 1635.",
+        "credit": "Willem Blaeu, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Monomotapa_Map.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-19-royaumes-grands-lacs-lesson-2",
+      "verdict": "coherent",
+      "reason": "Comparaison exacte avec le cliché UNESCO 114316 : même toit et même groupe de quatre visiteurs sur l'allée, personne orange au bord droit. Convient après le paragraphe principal présentant le Kabaka, en tant que témoignage du patrimoine royal.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tombs_of_Buganda_Kings_at_Kasubi-114316.jpg",
+      "sourceFileTitle": "File:Tombs of Buganda Kings at Kasubi-114316.jpg",
+      "author": "UNESCO / Lazare Eloundou Assomo",
+      "license": "CC BY-SA 3.0 IGO",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/",
+      "alt": "Visiteurs devant les tombeaux des rois du Buganda à Kasubi, au toit de chaume.",
+      "legende": "Tombeaux royaux de Kasubi, photographie de 2007 avant l’incendie de 2010.",
+      "historicalCaveat": "Photographie contemporaine datée du 25 mai 2007 dans les métadonnées, avant l'incendie du 16 mars 2010. Ancien palais de 1882 devenu monument funéraire des Kabaka ; elle ne représente ni la flotte ni l'administration du royaume au XVIIIe siècle. La licence particulière 3.0 IGO doit être conservée telle quelle.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Tombs_of_Buganda_Kings_at_Kasubi-114316.jpg",
+        "https://whc.unesco.org/en/documents/114316",
+        "https://whc.unesco.org/en/list/1022/",
+        "https://whc.unesco.org/en/news/1124/"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Bâtiment funéraire royal en chaume sur le site de Kasubi.",
+        "legende": "Tombeaux royaux de Kasubi, photographie de 2007 avant l’incendie de 2010.",
+        "credit": "UNESCO / Lazare Eloundou Assomo, CC BY-SA 3.0 IGO, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tombs_of_Buganda_Kings_at_Kasubi-114316.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/igo/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-20-ethiopie-medievale-lalibela-lesson-2",
+      "verdict": "coherent",
+      "reason": "Correspondance visuelle exacte avec Bete Giyorgis 01.jpg : toit cruciforme, excavation et arbres identiques. Le monument est bien l'une des églises rupestres de Lalibela citées dans la leçon ; la photographie illustre la technique de taille et l'état actuel du site.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg",
+      "sourceFileTitle": "File:Bete Giyorgis 01.jpg",
+      "author": "Bernard Gagnon",
+      "license": "CC BY-SA 3.0 (choisie parmi les licences proposées par l'auteur)",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "alt": "Vue plongeante sur le toit cruciforme de Bete Giyorgis, creusée dans la roche à Lalibela.",
+      "legende": "Bete Giyorgis à Lalibela, photographiée en 2012.",
+      "historicalCaveat": "Photographie du 8 novembre 2012 d'un édifice médiéval, pas un document photographique médiéval ni une vue des onze églises. L'UNESCO attribue leur réalisation au roi Lalibela ; l'image ne prouve pas à elle seule cette attribution ni l'affirmation absolue qu'aucune pierre n'a jamais été transportée sur le site.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg",
+        "https://whc.unesco.org/en/list/18/"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Toit cruciforme de Bete Giyorgis, taillé dans la roche.",
+        "legende": "Bete Giyorgis à Lalibela, photographiée en 2012.",
+        "credit": "Bernard Gagnon, CC BY-SA 3.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-21-commerce-transsaharien-lesson-1",
+      "verdict": "coherent",
+      "reason": "Correspondance visuelle exacte de la carte postale n°389 : inscription Tombouctou, même caravane, maisons et crédit Fortier. Elle montre précisément une caravane de sel utilisant des dromadaires, pertinente pour expliquer le commerce transsaharien.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tombouctou-Arriv%C3%A9e_d%27une_caravane_de_sel_(AOF).jpg",
+      "sourceFileTitle": "File:Tombouctou-Arrivée d'une caravane de sel (AOF).jpg",
+      "author": "François-Edmond Fortier (1862-1928)",
+      "license": "Domaine public (PD-old-70-expired ; Public Domain Mark)",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "alt": "Carte postale montrant une caravane de dromadaires chargés de sel à Tombouctou.",
+      "legende": "Caravane de sel à Tombouctou, début du XXe siècle.",
+      "historicalCaveat": "La notice date ce document du début du XXe siècle sans année certaine. Il illustre la persistance du commerce caravanier à l'époque coloniale, pas son apparition au Ier siècle ni une scène médiévale. Le sel est explicitement venu de Taoudenni d'après l'inscription ; l'image ne prouve pas que le chameau fut, seul, à l'origine de toutes les traversées du Sahara.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Tombouctou-Arriv%C3%A9e_d%27une_caravane_de_sel_(AOF).jpg"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Caravane de dromadaires chargés de sel à Tombouctou.",
+        "legende": "Caravane de sel à Tombouctou, début du XXe siècle.",
+        "credit": "François-Edmond Fortier, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tombouctou-Arriv%C3%A9e_d%27une_caravane_de_sel_(AOF).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-22-islamisation-afrique-ouest-lesson-3",
+      "verdict": "uncertain",
+      "reason": "Correspondance visuelle exacte avec 2007 Sankore Mosque Timbuktu 01.jpg : minaret, porte rouge, contreforts et fil dans l'angle supérieur droit identiques. Sujet pertinent pour les foyers du savoir à Tombouctou, mais la notice précise que le photographe n'a pas identifié la mosquée et propose seulement Sankoré. Les coordonnées et la catégorie vont dans ce sens, sans lever cette réserve primaire.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Sankore_Mosque_Timbuktu_01.jpg",
+      "sourceFileTitle": "File:2007 Sankore Mosque Timbuktu 01.jpg",
+      "author": "Anne and David (Flickr : Anne & David / annedavid2012)",
+      "license": "Domaine public déclaré par l'auteur sur Flickr, Public Domain Mark (PD-author-FlickrPDM)",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "alt": "Façade en terre et minaret d'une mosquée de Tombouctou, identifiée prudemment comme Sankoré.",
+      "legende": "Mosquée de Tombouctou en 2007, probablement Sankoré.",
+      "historicalCaveat": "Photographie datée du 2 septembre 2007, pas une vue des écoles ou des lettrés du Moyen Âge. La section Licensing retient une déclaration PDM de l'auteur contrôlée sur Flickr ; ne pas reprendre la mention CC BY-SA 4.0 contradictoire des seules données structurées. L'identification Sankoré reste qualifiée de possible dans la description primaire.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:2007_Sankore_Mosque_Timbuktu_01.jpg",
+        "https://www.flickr.com/photos/annedavid2012/1299279774/",
+        "https://whc.unesco.org/en/list/119/"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Façade en terre d'une mosquée à Tombouctou.",
+        "legende": "Mosquée de Tombouctou en 2007, probablement Sankoré.",
+        "credit": "Anne and David, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2007_Sankore_Mosque_Timbuktu_01.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-23-cote-swahilie-lesson-4",
+      "verdict": "coherent",
+      "reason": "Correspondance visuelle exacte avec la photographie de Janetmpurdy : mêmes arcades, voûtes ouvertes et maçonnerie. La notice identifie l'intérieur de la Grande Mosquée de Kilwa Kisiwani ; ce vestige illustre correctement la prospérité architecturale de Kilwa évoquée par la leçon.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg",
+      "sourceFileTitle": "File:Great Mosque Kilwa Kisiwani Tanzania.jpg",
+      "author": "Janetmpurdy",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "alt": "Arcades et voûtes ruinées de la Grande Mosquée de Kilwa Kisiwani, en Tanzanie.",
+      "legende": "Ruines de la Grande Mosquée de Kilwa, photographiées en 2016.",
+      "historicalCaveat": "Photographie du 16 juillet 2016 de vestiges médiévaux. Il s'agit de la Grande Mosquée, pas du palais de Husuni Kubwa mentionné dans le texte ; ne pas légender ces arcades comme le palais. L'UNESCO distingue explicitement les deux édifices et confirme la prospérité médiévale de Kilwa ainsi que la visite d'Ibn Battuta.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg",
+        "https://whc.unesco.org/en/list/144/"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": true,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Arcades ruinées de la Grande Mosquée de Kilwa Kisiwani.",
+        "legende": "Ruines de la Grande Mosquée de Kilwa, photographiées en 2016.",
+        "credit": "Janetmpurdy, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-24-traite-negriere-transatlantique-lesson-1",
+      "verdict": "coherent",
+      "reason": "Correspondance visuelle exacte avec le fichier recadré de la British Library : titre Description of a Slave Ship, mêmes coupes et plans du Brookes. Ce document représente l'entassement de personnes réduites en esclavage lors de la traversée atlantique, pertinente dans la leçon sur le commerce triangulaire.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brookes_slave_ship,_British_Library_(cropped).jpg",
+      "sourceFileTitle": "File:Brookes slave ship, British Library (cropped).jpg",
+      "author": "James Phillips (imprimeur indiqué par la notice) ; auteur du dessin non identifié",
+      "license": "Domaine public (PD-old-100-expired ; reproduction d'un imprimé ancien)",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "alt": "Plans et coupes du navire négrier Brookes montrant les personnes captives entassées dans les ponts.",
+      "legende": "Le Brookes : plan abolitionniste d'un navire négrier du XVIIIe siècle.",
+      "historicalCaveat": "Plan diffusé dans le contexte abolitionniste, pas une photographie ni une carte des trois routes commerciales. La notice du fichier British Library indique 1787 ; des exemplaires proches portent 1789 dans d'autres collections, qui ne doivent pas être substituées à la source exacte. Retenir XVIIIe siècle dans la légende tant que la datation de cette édition n'est pas clarifiée. Le fichier est un recadrage retirant le texte explicatif inférieur.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Brookes_slave_ship,_British_Library_(cropped).jpg",
+        "https://commons.wikimedia.org/wiki/File:Brookes_slave_ship,_British_Library.jpg",
+        "https://www.britishmuseum.org/collection/object/P_2000-0521-31"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Plan du Brookes montrant les personnes captives entassées.",
+        "legende": "Le Brookes : plan abolitionniste d'un navire négrier du XVIIIe siècle.",
+        "credit": "James Phillips, British Library, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brookes_slave_ship,_British_Library_(cropped).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-25-conference-berlin-lesson-2",
+      "verdict": "coherent",
+      "reason": "Correspondance visuelle exacte avec Kongokonferenz.jpg : même table, carte d'Afrique, Bismarck et noms des délégués sous l'image. Gravure contemporaine attribuée à Adalbert von Roessler, représentant bien la conférence de Berlin de 1884 évoquée dans la leçon.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
+      "sourceFileTitle": "File:Kongokonferenz.jpg",
+      "author": "Adalbert von Roessler (1853-1922)",
+      "license": "Domaine public (PD-old-100-expired ; publication ancienne)",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "alt": "Gravure de délégués réunis autour d'une table lors de la conférence de Berlin, avec une carte d'Afrique au mur.",
+      "legende": "La conférence de Berlin, gravure de 1884.",
+      "historicalCaveat": "Illustration de presse de 1884 publiée dans Über Land und Meer, pas une photographie de la réunion. La gravure montre aussi des représentants américains et ottomans. Elle illustre le cadre diplomatique et ne prouve pas une attribution littérale de tout le bassin du Congo à Léopold II pendant une séance ni le tracé de toutes les frontières africaines à cette table.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
+        "https://history.state.gov/historicaldocuments/frus1885/d228"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Gravure des délégués à Berlin devant une carte d'Afrique.",
+        "legende": "La conférence de Berlin, gravure de 1884.",
+        "credit": "Adalbert von Roessler, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-26-resistances-colonisation-lesson-3",
+      "verdict": "coherent",
+      "reason": "La gravure représente Béhanzin, roi du Dahomey cité dans la leçon, en 1891. Le scan exact est filigrané Alamy ; la notice Commons le désigne comme domaine public. Filigrane conservé et mentionné au registre.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kingdom_of_Dahomey._King_Behanzin.jpg",
+      "sourceFileTitle": "File:Kingdom of Dahomey. King Behanzin.jpg",
+      "author": "Chronicle (source du scan ; dessinateur non renseigné)",
+      "license": "Public domain",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "alt": "Béhanzin représenté assis sous un parasol.",
+      "legende": "Béhanzin, roi du Dahomey : gravure de 1891.",
+      "credit": "Gravure via Chronicle et Commons, domaine public",
+      "historicalCaveat": "Gravure, pas photographie ; scan filigrané conservé.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Kingdom_of_Dahomey._King_Behanzin.jpg"
+      ],
+      "status": "archived",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Béhanzin représenté assis sous un parasol.",
+        "legende": "Béhanzin, roi du Dahomey : gravure de 1891.",
+        "credit": "Chronicle / Commons, domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kingdom_of_Dahomey._King_Behanzin.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "auditReason": "Scan filigrané Alamy, source de reproduction insuffisante ; remplacé par une gravure documentée de Lat Dior, également cité.",
+      "archive": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-26-resistances-colonisation-lesson-3/notice.json",
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-27-bataille-adoua-lesson-3",
+      "verdict": "uncertain",
+      "reason": "Correspondance visuelle exacte avec Bataille d'Adoua peinture éthiopienne.jpg : mêmes soldats, saint cavalier central, personnages et bordure rouge. Le sujet correspond à la bataille, mais la notice donne seulement la date de photographie (2023), le photographe et la collection ; auteur et date du tableau inconnus. La déclaration CC0 du fichier ne documente pas séparément le statut des droits de la peinture.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bataille_d%27Adoua_peinture_%C3%A9thiopienne.jpg",
+      "sourceFileTitle": "File:Bataille d'Adoua peinture éthiopienne.jpg",
+      "author": "AralGuillaume (photographie) ; peintre inconnu dans la notice",
+      "license": "CC0 1.0 déclaré pour le fichier ; droits de la peinture non documentés",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "alt": "Peinture éthiopienne représentant les armées d'Adoua, avec un saint cavalier dans un cercle central.",
+      "legende": "Adoua représentée en peinture ; artiste et date de création inconnus.",
+      "historicalCaveat": "Huile sur toile de la collection Galerie Ferrero à Nice, photographiée le 27 décembre 2023. La galerie confirme son lien avec Guillaume Aral, mais ses pages consultées et les recherches ciblées ne donnent pas de notice datée pour ce tableau. Ni création en 1896 ni témoignage contemporain de la bataille établis. Ne pas transformer 1896 (date de l'événement) en date de l'œuvre. La scène symbolique ne permet pas de confirmer les effectifs militaires. Documenter la date, le peintre et le droit de reproduction du tableau avant de considérer les droits comme entièrement clarifiés.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Bataille_d%27Adoua_peinture_%C3%A9thiopienne.jpg",
+        "https://www.galerieferrero.com/fr/galerie-ferrero.cfm",
+        "https://www.galerieferrero.com/fr/artistes.cfm"
+      ],
+      "status": "archived",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Peinture des armées d'Adoua, avec un saint cavalier.",
+        "legende": "Adoua représentée en peinture ; artiste et date inconnus.",
+        "credit": "Photo AralGuillaume, CC0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bataille_d%27Adoua_peinture_%C3%A9thiopienne.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      "auditReason": "Peintre, date et droits du tableau non documentés ; remplacé par un document de presse daté de 1896.",
+      "archive": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-27-bataille-adoua-lesson-3/notice.json",
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-28-independances-africaines-lesson-2",
+      "verdict": "coherent",
+      "reason": "Correspondance visuelle exacte avec la miniature Commons : même lumière dorée, nuages, drapeau et arbres. Le monument commémore l'indépendance ; il ne représente pas la proclamation de 1957.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Star_Gate_in_Accra.jpg",
+      "sourceFileTitle": "File:Black Star Gate in Accra.jpg",
+      "author": "Kwameghana(Bright Kwame Ayisi)",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "alt": "La porte de l'Étoile noire à Accra, surmontée d'une étoile, photographiée sous un ciel nuageux doré.",
+      "legende": "Accra : la porte de l'Étoile noire, photographiée en 2023.",
+      "historicalCaveat": "Photographie du 8 octobre 2023, pas une archive de 1957. La leçon devrait distinguer première colonie d'Afrique subsaharienne indépendante et premiers États indépendants ; son chiffre clé sans le mot colonie simplifie trop.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Black_Star_Gate_in_Accra.jpg"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "L'Arche de l'Indépendance à Accra, au Ghana.",
+        "legende": "Accra : la porte de l'Étoile noire, photographiée en 2023.",
+        "credit": "Kwameghana, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Black_Star_Gate_in_Accra.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-30-apartheid-mandela-lesson-1",
+      "verdict": "coherent",
+      "reason": "Le panneau local affiche une salle d'attente réservée aux Blancs en Afrique du Sud. La notice identifie la gare d'Atherston, Eastern Cape. L'inscription est notamment en anglais et afrikaans, et non en cyrillique.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:General_Waiting_Room_Whites_Only_-_Atherston_Station,_Eastern_Cape,_South_Africa.jpg",
+      "sourceFileTitle": "File:General Waiting Room Whites Only - Atherston Station, Eastern Cape, South Africa.jpg",
+      "author": "Wynlib40",
+      "license": "CC BY-SA 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+      "alt": "Panneau délabré de la gare d'Atherston indiquant une salle d'attente réservée aux Blancs.",
+      "legende": "Atherston : ancien panneau ségrégationniste, photographié en 2021.",
+      "historicalCaveat": "Photographie du 22 août 2021 d'un vestige de la ségrégation, pas une photographie prise en 1948. La notice ne date pas la fabrication du panneau.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:General_Waiting_Room_Whites_Only_-_Atherston_Station,_Eastern_Cape,_South_Africa.jpg"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Ancienne inscription réservant une salle aux personnes blanches.",
+        "legende": "Atherston : ancien panneau ségrégationniste, photographié en 2021.",
+        "credit": "Wynlib40, CC BY-SA 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:General_Waiting_Room_Whites_Only_-_Atherston_Station,_Eastern_Cape,_South_Africa.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-33-royaumes-serer-sine-saloum-lesson-3",
+      "verdict": "coherent",
+      "reason": "Correspondance visuelle exacte avec Wassu stone circle.jpg : même arbre défeuillé à gauche, silhouettes des pierres et petits amas au sommet. La photo illustre les cercles sénégambiens, mais le site est Wassu en Gambie, et non Sine Ngayène ou Wanar cités dans la leçon.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wassu_stone_circle.jpg",
+      "sourceFileTitle": "File:Wassu stone circle.jpg",
+      "author": "Ikiwaner",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "alt": "Cercles de pierres de latérite du site de Wassu, en Gambie, dans un paysage sec avec un arbre défeuillé à gauche.",
+      "legende": "Wassu, en Gambie : cercles mégalithiques photographiés en 2008.",
+      "historicalCaveat": "Photographie du 1er mars 2008. L'UNESCO inscrit quatre groupes : Sine Ngayène et Wanar au Sénégal, Wassu et Kerbatch en Gambie. Le chiffre 2 n'est exact que pour les composantes sénégalaises. La légende doit nommer Wassu et la Gambie pour prévenir une attribution au Sine ; l'attribution historique aux Sérères ne découle pas automatiquement de la photo.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Wassu_stone_circle.jpg",
+        "https://whc.unesco.org/en/list/1226/"
+      ],
+      "status": "archived",
+      "requiresTextAdjustment": true,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Pierres dressées des cercles de Wassu, en Gambie.",
+        "legende": "Wassu, en Gambie : cercles mégalithiques photographiés en 2008.",
+        "credit": "Ikiwaner, CC BY-SA 3.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wassu_stone_circle.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "auditReason": "La vue montre Wassu en Gambie ; une vue de Sine Ngayène relie directement l’image aux sites sénégalais étudiés.",
+      "archive": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-33-royaumes-serer-sine-saloum-lesson-3/notice.json",
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-34-goree-saint-louis-lesson-2",
+      "verdict": "coherent",
+      "reason": "Correspondance visuelle exacte avec la vue 08, et non la vue voisine 09 : mêmes deux ouvertures, poutres, angle de mur droit, couleurs et cadrage. La Maison des Esclaves illustre directement le lieu de mémoire étudié.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gor%C3%A9e_2024_-_Maison_des_esclaves_-_08.jpg",
+      "sourceFileTitle": "File:Gorée 2024 - Maison des esclaves - 08.jpg",
+      "author": "Fawaz.tairou",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "alt": "Pièce vide de la Maison des Esclaves à Gorée, avec murs patinés, petites ouvertures et poutres apparentes.",
+      "legende": "Gorée : intérieur de la Maison des Esclaves, photographié en 2024.",
+      "historicalCaveat": "Photographie du 11 septembre 2024. La pièce ne montre pas la porte du voyage sans retour. Sa photographie n'établit ni le nombre des captifs ni la fonction historique exacte de cette pièce ; conserver la prudence historiographique de la leçon.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Gor%C3%A9e_2024_-_Maison_des_esclaves_-_08.jpg",
+        "https://whc.unesco.org/en/list/26/"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Pièce aux murs dégradés dans la Maison des Esclaves.",
+        "legende": "Gorée : intérieur de la Maison des Esclaves, photographié en 2024.",
+        "credit": "Fawaz.tairou, CC BY 4.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gor%C3%A9e_2024_-_Maison_des_esclaves_-_08.jpg",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-35-lat-dior-cayor-lesson-1",
+      "verdict": "coherent",
+      "reason": "La gravure locale porte la signature Tourfaut et correspond au fichier Commons de mêmes dimensions 696 × 1140. La notice et la publication du Monde illustré identifient Lat Dior, roi du Cayor.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+      "sourceFileTitle": "File:Lat Dior, king of Cayot (Le Monde illustré, 1875).jpg",
+      "author": "Léon Alexandre Tourfaut, d'après un dessin d'Albert de Sainte-Marie (légende Commons ; voir réserve d'attribution)",
+      "license": "Domaine public",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "alt": "Gravure de Lat Dior de profil, portant une coiffe et un vêtement drapé, publiée en 1875.",
+      "legende": "Lat Dior, Damel du Cayor : gravure publiée en 1875.",
+      "historicalCaveat": "Gravure de presse coloniale publiée le 8 mai 1875, pas une photographie. Commons présente une contradiction d'auteur : la légende cite Tourfaut d'après Albert S.-Marie tandis que le champ Author contient Alexandre Ferdinandus et Albert de Sainte-Marie. Conserver cette réserve et vérifier sur Gallica avant attribution définitive du graveur.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+        "https://gallica.bnf.fr/ark:/12148/bpt6k6375315w/f4.item"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Portrait gravé de Lat Dior, vêtu de tissu clair.",
+        "legende": "Lat Dior, Damel du Cayor : gravure publiée en 1875.",
+        "credit": "Le Monde illustré, 1875, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-4",
+      "verdict": "coherent",
+      "reason": "Correspondance exacte de la miniature : grandes fenêtres ajourées à droite, colonne centrale, arc au fond et personne assise à gauche. La notice décrit l'intérieur de la Grande Mosquée de Touba, centre mouride.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Touba_(senegal)_2006.JPG",
+      "sourceFileTitle": "File:Mosquée Touba (senegal) 2006.JPG",
+      "author": "zivax",
+      "license": "CC BY-SA 3.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+      "alt": "Intérieur de la Grande Mosquée de Touba, avec colonnes cannelées, arches et fenêtres à motifs géométriques.",
+      "legende": "Touba : intérieur de la Grande Mosquée, photographié en 2006.",
+      "historicalCaveat": "Photographie contemporaine de 2006. L'édifice actuel est inauguré en 1963, après la mort de Bamba ; cette vue n'est pas contemporaine du fondateur. La phrase de la leçon « une ville entière est née d'un exil » demande une vérification historique distincte.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Touba_(senegal)_2006.JPG",
+        "https://commons.wikimedia.org/wiki/Category:Grande_Mosqu%C3%A9e_de_Touba"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Colonnes et arches intérieures de la Grande Mosquée de Touba.",
+        "legende": "Touba : intérieur de la Grande Mosquée, photographié en 2006.",
+        "credit": "zivax, CC BY-SA 3.0, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Touba_(senegal)_2006.JPG",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-38-senghor-negritude-independance-lesson-1",
+      "verdict": "coherent",
+      "reason": "La notice identifie Senghor au centre lors de son arrivée aux États-Unis en 1980. Cette photographie convient pour identifier l'homme mais illustre sa présidence, et non l'agrégation ou ses années d'enseignement.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%C3%A9opold_S%C3%A9dar_Senghor_in_1980.JPEG",
+      "sourceFileTitle": "File:Léopold Sédar Senghor in 1980.JPEG",
+      "author": "Photographe non identifié, Department of Defense des États-Unis (VIRIN DF-SC-82-05415)",
+      "license": "Domaine public — œuvre officielle du gouvernement fédéral des États-Unis (PD-US-Military)",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-US-Military",
+      "alt": "Léopold Sédar Senghor, au centre en costume sombre, accueilli avec sa délégation à son arrivée aux États-Unis en 1980.",
+      "legende": "Senghor, au centre, accueilli aux États-Unis en 1980.",
+      "historicalCaveat": "Photographie officielle d'une visite présidentielle à Andrews Air Force Base, datée 1980 par la notice. Ne pas la légender comme un portrait de Senghor étudiant ou agrégé. Aucun nom de photographe confirmé ; High Contrast est l'importateur du fichier, pas l'auteur.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:L%C3%A9opold_S%C3%A9dar_Senghor_in_1980.JPEG"
+      ],
+      "status": "moved",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Senghor entouré de visiteurs lors de son accueil en 1980.",
+        "legende": "Senghor, au centre, accueilli aux États-Unis en 1980.",
+        "credit": "Archives militaires américaines, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%C3%A9opold_S%C3%A9dar_Senghor_in_1980.JPEG",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-US-Military"
+      },
+      "destination": "course-histoire-38-senghor-negritude-independance-lesson-4",
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-39-reine-nzinga-angola-lesson-1",
+      "verdict": "coherent",
+      "reason": "Le fichier local correspond à Ann Zingha.jpg, 602 × 800, conservé à la National Portrait Gallery. L'inscription et la notice identifient Nzinga, reine de Matamba.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ann_Zingha.jpg",
+      "sourceFileTitle": "File:Ann Zingha.jpg",
+      "author": "Achille Devéria, imprimé par François Le Villain, d'après un artiste inconnu ; coloriste inconnu",
+      "license": "Domaine public",
+      "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/",
+      "alt": "Portrait posthume colorié de Nzinga, portant une couronne et un manteau vert, lithographie des années 1830.",
+      "legende": "Nzinga : portrait posthume, lithographie coloriée des années 1830.",
+      "historicalCaveat": "Créé environ 170 ans après la mort de Nzinga : représentation posthume européenne, pas témoignage fiable de son apparence ou de sa tenue au XVIIe siècle. Commons classe la reproduction en domaine public ; les métadonnées importées conservent une ancienne revendication © National Portrait Gallery.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:Ann_Zingha.jpg",
+        "https://www.npg.org.uk/collections/search/portrait/mw150782/Ann-Zingha"
+      ],
+      "status": "integrated",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Portrait coloré et posthume représentant Nzinga Mbande.",
+        "legende": "Nzinga : portrait posthume, lithographie coloriée des années 1830.",
+        "credit": "Achille Devéria / Le Villain, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ann_Zingha.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    },
+    {
+      "id": "course-histoire-40-chaka-zoulou-lesson-2",
+      "verdict": "coherent",
+      "reason": "La gravure locale correspond à KingShaka.jpg, 740 × 1000. Commons identifie Chaka, d'après un dessin attribué à James King, paru dans le récit de Nathaniel Isaacs en 1836.",
+      "sourceUrl": "https://commons.wikimedia.org/wiki/File:KingShaka.jpg",
+      "sourceFileTitle": "File:KingShaka.jpg",
+      "author": "James King (dessin attribué), publié dans Nathaniel Isaacs, Travels and Adventures in Eastern Africa, 1836",
+      "license": "Domaine public — reproduction d'une œuvre ancienne (PD-Art)",
+      "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-Art",
+      "alt": "Chaka représenté debout avec un grand bouclier et une longue lance, gravure publiée en 1836 d'après James King.",
+      "legende": "Chaka : gravure publiée en 1836, d'après un dessin attribué.",
+      "historicalCaveat": "Le dessin est daté 1825 dans la notice, 1824 dans certaines métadonnées. La publication est de 1836, après la mort de Chaka. L'arme visible est longue : ne pas la désigner comme l'iklwa courte de la leçon. La vue ne documente ni les impis ni la formation en cornes de buffle.",
+      "evidenceUrls": [
+        "https://commons.wikimedia.org/wiki/File:KingShaka.jpg",
+        "https://books.google.com/books?id=M8VjAAAAMAAJ&printsec=frontcover&pg=PA57-IA2"
+      ],
+      "status": "moved",
+      "requiresTextAdjustment": false,
+      "replacement": false,
+      "block": {
+        "type": "image",
+        "alt": "Dessin représentant Chaka avec lance et grand bouclier.",
+        "legende": "Chaka : gravure de 1836, dessin attribué à James King.",
+        "credit": "D'après James King, publication de 1836, domaine public, Commons",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:KingShaka.jpg",
+        "licenseUrl": "https://commons.wikimedia.org/wiki/Template:PD-Art"
+      },
+      "destination": "course-histoire-40-chaka-zoulou-lesson-1",
+      "currentAudit": "docs/histoire-illustrations-audit.json"
+    }
+  ]
+}

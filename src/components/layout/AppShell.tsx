@@ -6,6 +6,8 @@ import { BottomNav } from "@/components/layout/BottomNav";
 import { PwaUpdateToast } from "@/components/features/PwaUpdateToast";
 import { preloadAllSubjectContent } from "@/data/courseContent";
 import { useScrollRestoration } from "@/hooks/useScrollRestoration";
+import { useCivilDay } from "@/hooks/useCivilDay";
+import { useAppStore } from "@/store/useAppStore";
 
 interface AppShellProps {
   children: ReactNode;
@@ -47,6 +49,12 @@ export function AppShell({ children }: AppShellProps) {
   // Rend le retour arrière à sa position de lecture, et remonte en haut sur une navigation
   // normale. Monté ici, au-dessus des routes, pour n'exister qu'en un seul exemplaire.
   useScrollRestoration();
+  const day = useCivilDay();
+  const hydrated = useAppStore((s) => s.hydrated);
+  const checkDailyReset = useAppStore((s) => s.checkDailyReset);
+  useEffect(() => {
+    if (hydrated) void checkDailyReset().catch(() => {});
+  }, [day, hydrated, checkDailyReset]);
 
   // Le bandeau ne s'affiche que sur les écrans d'interface de premier niveau (accueil des
   // onglets) — dès qu'on entre dans un cours/une leçon ou une partie de quiz, il disparaît :
@@ -61,7 +69,7 @@ export function AppShell({ children }: AppShellProps) {
   // premier rendu. Voir docs/ARCHITECTURE.md § Découpage du bundle.
   useEffect(() => {
     whenIdleAfterLoad(() => {
-      preloadAllSubjectContent();
+      void preloadAllSubjectContent().catch(() => {});
     });
   }, []);
 

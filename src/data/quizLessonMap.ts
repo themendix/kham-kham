@@ -5,22 +5,75 @@
  * concernée, et l'écran de fin de partie liste toutes les leçons des questions ratées. C'est ce
  * qui fait de l'échec une porte d'entrée dans le catalogue plutôt qu'une sanction.
  *
- * **Cette table ne contient que les exceptions.** Quand un cours a autant de questions que de
- * leçons (78 cours sur 136 : toute l'Histoire, 30 Personnalités, 8 Découverte — le quiz y suit
- * l'ordre des leçons, une question par leçon), `scripts/generate-quiz-index.ts` dérive le
- * rattachement par position et rien n'est à déclarer ici. Les 286 questions restantes sont celles
- * des 54 fiches Géographie (3 leçons pour 5 questions) et de 4 cours hérités (3 pour 4).
- *
- * **Les 286 questions non alignées sont désormais intégralement rattachées ici** — soit
- * **676 des 676 questions du catalogue (100 %)** une fois les dérivées comptées.
- * Les 19 questions autrefois orphelines ont vu leurs faits historiques et géographiques ajoutés
- * aux leçons de leurs cours respectifs, permettant leur rattachement complet.
+ * Cette table déclare les renvois explicites, y compris les corrections éditoriales.
+ * À défaut, un cours ayant autant de questions que de leçons dérive son renvoi par position.
+ * Les 680 questions actuelles ont une leçon associée ; intégrité vérifiée par la règle 22.
  *
  * Clé = clé de question (`${courseId}:${questionId}`), valeur = id de leçon du même cours.
  * L'intégrité des deux est vérifiée par la règle 22 de `npm run validate`.
  */
 
 export const QUIZ_LESSON_MAP: Record<string, string> = {
+  // Renvois éditoriaux vérifiés le 15 octobre 2026 (audit-editorial-v1/quiz.csv).
+  "course-histoire-01-egypte-antique:course-histoire-01-egypte-antique-quiz-2": "course-histoire-01-egypte-antique-lesson-1",
+  "course-histoire-02-koush-meroe:course-histoire-02-koush-meroe-quiz-1": "course-histoire-02-koush-meroe-lesson-3",
+  "course-histoire-03-aksoum:course-histoire-03-aksoum-quiz-5": "course-histoire-03-aksoum-lesson-1",
+  "course-histoire-04-carthage-afrique-du-nord:course-histoire-04-carthage-afrique-du-nord-quiz-2": "course-histoire-04-carthage-afrique-du-nord-lesson-3",
+  "course-histoire-05-empire-du-ghana:course-histoire-05-empire-du-ghana-quiz-4": "course-histoire-05-empire-du-ghana-lesson-3",
+  "course-histoire-06-soundiata-mali:course-histoire-06-soundiata-mali-quiz-2": "course-histoire-06-soundiata-mali-lesson-3",
+  "course-histoire-07-mansa-moussa:course-histoire-07-mansa-moussa-quiz-5": "course-histoire-07-mansa-moussa-lesson-1",
+  "course-histoire-08-empire-songhai:course-histoire-08-empire-songhai-quiz-4": "course-histoire-08-empire-songhai-lesson-5",
+  "course-histoire-09-tombouctou-djenne:course-histoire-09-tombouctou-djenne-quiz-1": "course-histoire-09-tombouctou-djenne-lesson-2",
+  "course-histoire-09-tombouctou-djenne:course-histoire-09-tombouctou-djenne-quiz-5": "course-histoire-09-tombouctou-djenne-lesson-2",
+  "course-histoire-10-kanem-bornou:course-histoire-10-kanem-bornou-quiz-3": "course-histoire-10-kanem-bornou-lesson-4",
+  "course-histoire-11-cites-etats-haoussa:course-histoire-11-cites-etats-haoussa-quiz-4": "course-histoire-11-cites-etats-haoussa-lesson-5",
+  "course-histoire-14-royaume-ashanti:course-histoire-14-royaume-ashanti-quiz-4": "course-histoire-14-royaume-ashanti-lesson-5",
+  "course-histoire-15-royaume-dahomey:course-histoire-15-royaume-dahomey-quiz-4": "course-histoire-15-royaume-dahomey-lesson-5",
+  "course-histoire-16-royaume-kongo:course-histoire-16-royaume-kongo-quiz-2": "course-histoire-16-royaume-kongo-lesson-3",
+  "course-histoire-17-grand-zimbabwe:course-histoire-17-grand-zimbabwe-quiz-2": "course-histoire-17-grand-zimbabwe-lesson-1",
+  "course-histoire-17-grand-zimbabwe:course-histoire-17-grand-zimbabwe-quiz-3": "course-histoire-17-grand-zimbabwe-lesson-2",
+  "course-histoire-17-grand-zimbabwe:course-histoire-17-grand-zimbabwe-quiz-4": "course-histoire-17-grand-zimbabwe-lesson-2",
+  "course-histoire-18-monomotapa-mutapa:course-histoire-18-monomotapa-mutapa-quiz-3": "course-histoire-18-monomotapa-mutapa-lesson-2",
+  "course-histoire-19-royaumes-grands-lacs:course-histoire-19-royaumes-grands-lacs-quiz-5": "course-histoire-19-royaumes-grands-lacs-lesson-4",
+  "course-histoire-27-bataille-adoua:course-histoire-27-bataille-adoua-quiz-2": "course-histoire-27-bataille-adoua-lesson-1",
+  "course-histoire-31-tekrour-islam:course-histoire-31-tekrour-islam-quiz-5": "course-histoire-31-tekrour-islam-lesson-4",
+  "course-histoire-32-djolof-royaumes-wolof:course-histoire-32-djolof-royaumes-wolof-quiz-3": "course-histoire-32-djolof-royaumes-wolof-lesson-2",
+  "course-histoire-32-djolof-royaumes-wolof:course-histoire-32-djolof-royaumes-wolof-quiz-5": "course-histoire-32-djolof-royaumes-wolof-lesson-3",
+  "course-histoire-35-lat-dior-cayor:course-histoire-35-lat-dior-cayor-quiz-2": "course-histoire-35-lat-dior-cayor-lesson-3",
+  "course-histoire-37-aline-sitoe-diatta:course-histoire-37-aline-sitoe-diatta-quiz-3": "course-histoire-37-aline-sitoe-diatta-lesson-5",
+  "course-histoire-39-reine-nzinga-angola:course-histoire-39-reine-nzinga-angola-quiz-4": "course-histoire-39-reine-nzinga-angola-lesson-3",
+  "course-histoire-40-chaka-zoulou:course-histoire-40-chaka-zoulou-quiz-3": "course-histoire-40-chaka-zoulou-lesson-4",
+  "course-perso-01-hatchepsout:course-perso-01-hatchepsout-quiz-3": "course-perso-01-hatchepsout-lesson-4",
+  "course-perso-02-taharqa:course-perso-02-taharqa-quiz-3": "course-perso-02-taharqa-lesson-4",
+  "course-perso-02-taharqa:course-perso-02-taharqa-quiz-4": "course-perso-02-taharqa-lesson-3",
+  "course-perso-03-dihya:course-perso-03-dihya-quiz-5": "course-perso-03-dihya-lesson-4",
+  "course-perso-07-kimpa-vita:course-perso-07-kimpa-vita-quiz-5": "course-perso-07-kimpa-vita-lesson-3",
+  "course-perso-10-sojourner-truth:course-perso-10-sojourner-truth-quiz-2": "course-perso-10-sojourner-truth-lesson-1",
+  "course-perso-11-abd-el-kader:course-perso-11-abd-el-kader-quiz-3": "course-perso-11-abd-el-kader-lesson-2",
+  "course-perso-14-yaa-asantewaa:course-perso-14-yaa-asantewaa-quiz-3": "course-perso-14-yaa-asantewaa-lesson-2",
+  "course-perso-24-patrice-lumumba:course-perso-24-patrice-lumumba-quiz-3": "course-perso-24-patrice-lumumba-lesson-4",
+  "course-perso-26-funmilayo-ransome-kuti:course-perso-26-funmilayo-ransome-kuti-quiz-4": "course-perso-26-funmilayo-ransome-kuti-lesson-3",
+  "course-histoire-05-empire-du-ghana:course-histoire-05-empire-du-ghana-quiz-3": "course-histoire-05-empire-du-ghana-lesson-1",
+  "course-histoire-06-soundiata-mali:course-histoire-06-soundiata-mali-quiz-3": "course-histoire-06-soundiata-mali-lesson-4",
+  "course-histoire-09-tombouctou-djenne:course-histoire-09-tombouctou-djenne-quiz-3": "course-histoire-09-tombouctou-djenne-lesson-4",
+  "course-histoire-10-kanem-bornou:course-histoire-10-kanem-bornou-quiz-2": "course-histoire-10-kanem-bornou-lesson-1",
+  "course-histoire-12-royaume-benin-bronzes:course-histoire-12-royaume-benin-bronzes-quiz-4": "course-histoire-12-royaume-benin-bronzes-lesson-5",
+  "course-histoire-13-empire-oyo-yoruba:course-histoire-13-empire-oyo-yoruba-quiz-4": "course-histoire-13-empire-oyo-yoruba-lesson-3",
+  "course-histoire-16-royaume-kongo:course-histoire-16-royaume-kongo-quiz-3": "course-histoire-16-royaume-kongo-lesson-1",
+  "course-histoire-17-grand-zimbabwe:course-histoire-17-grand-zimbabwe-quiz-5": "course-histoire-17-grand-zimbabwe-lesson-4",
+  "course-histoire-18-monomotapa-mutapa:course-histoire-18-monomotapa-mutapa-quiz-5": "course-histoire-18-monomotapa-mutapa-lesson-1",
+  "course-histoire-19-royaumes-grands-lacs:course-histoire-19-royaumes-grands-lacs-quiz-4": "course-histoire-19-royaumes-grands-lacs-lesson-5",
+  "course-histoire-31-tekrour-islam:course-histoire-31-tekrour-islam-quiz-3": "course-histoire-31-tekrour-islam-lesson-1",
+  "course-histoire-35-lat-dior-cayor:course-histoire-35-lat-dior-cayor-quiz-3": "course-histoire-35-lat-dior-cayor-lesson-4",
+  "course-histoire-38-senghor-negritude-independance:course-histoire-38-senghor-negritude-independance-quiz-5": "course-histoire-38-senghor-negritude-independance-lesson-4",
+  "course-histoire-40-chaka-zoulou:course-histoire-40-chaka-zoulou-quiz-4": "course-histoire-40-chaka-zoulou-lesson-5",
+  "course-perso-14-yaa-asantewaa:course-perso-14-yaa-asantewaa-quiz-2": "course-perso-14-yaa-asantewaa-lesson-1",
+  "course-perso-19-amilcar-cabral:course-perso-19-amilcar-cabral-quiz-5": "course-perso-19-amilcar-cabral-lesson-4",
+  "course-perso-20-agostinho-neto:course-perso-20-agostinho-neto-quiz-4": "course-perso-20-agostinho-neto-lesson-3",
+  "course-perso-22-julius-nyerere:course-perso-22-julius-nyerere-quiz-4": "course-perso-22-julius-nyerere-lesson-3",
+  "course-perso-23-haile-selassie:course-perso-23-haile-selassie-quiz-3": "course-perso-23-haile-selassie-lesson-4",
+  "course-perso-25-jeanne-martin-cisse:course-perso-25-jeanne-martin-cisse-quiz-5": "course-perso-25-jeanne-martin-cisse-lesson-1",
+
   // course-geographie-01-algerie
   "course-geographie-01-algerie:course-geographie-01-algerie-quiz-1": "course-geographie-01-algerie-lesson-3",
   "course-geographie-01-algerie:course-geographie-01-algerie-quiz-2": "course-geographie-01-algerie-lesson-1",
@@ -149,7 +202,7 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
 
   // course-geographie-19-nigeria
   "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-1": "course-geographie-19-nigeria-lesson-3",
-  "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-2": "course-geographie-19-nigeria-lesson-1",
+  "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-2": "course-geographie-19-nigeria-lesson-3",
   "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-3": "course-geographie-19-nigeria-lesson-3",
   "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-4": "course-geographie-19-nigeria-lesson-3",
   "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-5": "course-geographie-19-nigeria-lesson-3",
@@ -359,7 +412,7 @@ export const QUIZ_LESSON_MAP: Record<string, string> = {
 
   // course-geographie-49-lesotho
   "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-1": "course-geographie-49-lesotho-lesson-1",
-  "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-2": "course-geographie-49-lesotho-lesson-1",
+  "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-2": "course-geographie-49-lesotho-lesson-3",
   "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-3": "course-geographie-49-lesotho-lesson-3",
   "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-4": "course-geographie-49-lesotho-lesson-3",
   "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-5": "course-geographie-49-lesotho-lesson-3",

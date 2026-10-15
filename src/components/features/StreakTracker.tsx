@@ -1,6 +1,7 @@
 import { Flame } from "lucide-react";
 import type { StreakState } from "@/types";
 import { WeekDayRow } from "@/components/features/WeekDayRow";
+import { currentWeekDays } from "@/lib/gamification";
 
 interface StreakTrackerProps {
   streak: StreakState;
@@ -15,8 +16,11 @@ export function StreakTracker({ streak }: StreakTrackerProps) {
         {streak.count} {streak.count > 1 ? "JOURS" : "JOUR"}
       </div>
       <div className="mt-3.5">
-        <WeekDayRow weekDays={streak.weekDays} compact />
+        <WeekDayRow weekDays={currentWeekDays(streak)} compact />
       </div>
+      <p className="mt-3 text-sm font-medium text-ink-muted">
+        Termine une leçon ou un quiz pour entretenir ta série. Une relecture compte aussi.
+      </p>
     </div>
   );
 }

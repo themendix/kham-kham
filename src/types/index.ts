@@ -88,6 +88,10 @@ export interface StreakState {
   lastActiveDate: string | null;
   /** Jours de la semaine en cours actifs, index 0 = lundi ... 6 = dimanche */
   weekDays: boolean[];
+  /** Lundi de la semaine représentée par weekDays. Absent dans les anciennes sauvegardes. */
+  weekStartDate?: string;
+  /** Ancre transitoire de migration UTC→local ; ce n'est pas une activité reconstruite. */
+  calendarAnchorDate?: string;
 }
 
 /** Proverbe africain affiché dans le module « Proverbe du jour » du Home */
@@ -150,6 +154,10 @@ export interface QuestionStat {
   box: number;
   /** Date ISO (YYYY-MM-DD) d'échéance de révision ; null quand la question est acquise */
   dueDate: string | null;
+  /** Au plus deux jours locaux de réussite, suivis prospectivement depuis la v11. */
+  successDayKeys?: string[];
+  /** Paiement définitif, indépendant du compteur de réussites et des échecs ultérieurs. */
+  xpAwarded?: boolean;
 }
 
 /** Meilleur score par mode, pour un territoire */
@@ -168,6 +176,8 @@ export interface QuizGameState {
 }
 
 export interface UserProgress {
+  /** Marqueur v11 et anciennes dates UTC conservées sans heure historique inventée. */
+  calendar?: { version: 1; legacyDailyDate: string | null; legacyLastActiveDate: string | null };
   xp: number;
   level: number;
   rank: string;

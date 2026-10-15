@@ -52,7 +52,7 @@ export interface AppState {
   completeLesson: (courseId: string, lessonId: string) => Promise<CommitResult>;
   /** Vérifie que `featuredLessonKey` pointe vers une leçon valide et non lue, la recalcule sinon (appelé au montage de la Biblio) */
   ensureFeaturedLesson: () => Promise<CommitResult>;
-  /** Enregistre une réponse du module Quiz : reprogramme la révision de la question et crédite l'XP si c'est sa première réussite */
+  /** Révision et paiement unique après deux jours locaux distincts de réussite. */
   recordQuizAnswer: (questionKey: string, isCorrect: boolean, eventId?: string) => Promise<CommitResult>;
   /**
    * Clôt une partie du module Quiz : crédite les cauris et compte la partie. `record` porte le
@@ -238,7 +238,7 @@ export function migrate(persistedState: unknown): { progress: UserProgress } {
 }
 
 type ReduceSet = (reduce: (state: { progress: UserProgress }) => { progress: UserProgress }) => UserProgress;
-const actions = (set: ReduceSet) => ({
+const actions = (set: ReduceSet, now: Date) => ({
 
 
       dismissCourse: (courseId: string) =>
@@ -278,14 +278,17 @@ const actions = (set: ReduceSet) => ({
           );
           const parcoursXp = newlyCompletedParcours.reduce((sum, p) => sum + p.xpReward, 0);
 
-          const xp = state.progress.xp + xpReward + parcoursXp;
+          const xpGain = xpReward + parcoursXp;
+          const xp = state.progress.xp + xpGain;
           const { level, rank } = getLevelInfo(xp);
+          const daily = resetDailyIfNeeded(state.progress.daily, now);
           return {
             progress: {
               ...state.progress,
               xp,
               level,
               rank,
+              daily: { ...daily, xpEarned: daily.xpEarned + xpGain },
               completedCourseIds,
               completedParcoursIds: [
                 ...state.progress.completedParcoursIds,
@@ -304,25 +307,26 @@ const actions = (set: ReduceSet) => ({
 
       updateStreak: () =>
         set((state) => ({
-          progress: { ...state.progress, streak: computeStreak(state.progress.streak) },
+          progress: { ...state.progress, streak: computeStreak(state.progress.streak, now) },
         })),
 
       recordQuizResult: (result: QuizResult) =>
         set((state) => ({
           progress: {
             ...state.progress,
+            streak: computeStreak(state.progress.streak, now),
             quizResults: [...state.progress.quizResults, result].slice(-10),
           },
         })),
 
       checkDailyReset: () =>
         set((state) => ({
-          progress: { ...state.progress, daily: resetDailyIfNeeded(state.progress.daily) },
+          progress: { ...state.progress, daily: resetDailyIfNeeded(state.progress.daily, now) },
         })),
 
       addDailyXp: (xp: number) =>
         set((state) => {
-          const daily = resetDailyIfNeeded(state.progress.daily);
+          const daily = resetDailyIfNeeded(state.progress.daily, now);
           return {
             progress: {
               ...state.progress,
@@ -335,7 +339,7 @@ const actions = (set: ReduceSet) => ({
         set((state) => ({
           progress: {
             ...state.progress,
-            daily: { ...resetDailyIfNeeded(state.progress.daily), challengeDone: true },
+            daily: { ...resetDailyIfNeeded(state.progress.daily, now), challengeDone: true },
           },
         })),
 
@@ -354,8 +358,9 @@ const actions = (set: ReduceSet) => ({
 
       completeLesson: (courseId: string, lessonId: string) =>
         set((state) => {
+          const streak = computeStreak(state.progress.streak, now);
           const key = lessonKey(courseId, lessonId);
-          if (state.progress.completedLessonIds.includes(key)) return state;
+          if (state.progress.completedLessonIds.includes(key)) return { progress: { ...state.progress, streak } };
 
           const completedLessonIds = [...state.progress.completedLessonIds, key];
           const xp = state.progress.xp + XP_PER_LESSON;
@@ -380,7 +385,7 @@ const actions = (set: ReduceSet) => ({
           // qui sait qu'une leçon vient réellement d'être lue (l'action est idempotente, une
           // relecture ne compte pas deux fois). Auparavant chaque écran appelait `addDailyProgress`
           // de son côté, ce qui obligeait chaque nouvel appelant à y penser.
-          const daily = resetDailyIfNeeded(state.progress.daily);
+          const daily = resetDailyIfNeeded(state.progress.daily, now);
 
           return {
             progress: {
@@ -389,6 +394,7 @@ const actions = (set: ReduceSet) => ({
               level,
               rank,
               completedLessonIds,
+              streak,
               startedCourseIds,
               featuredLessonKey,
               daily: {
@@ -423,18 +429,16 @@ const actions = (set: ReduceSet) => ({
           const { quizGame } = state.progress;
           const previousStat = quizGame.questions[questionKey];
 
-          // L'XP n'est créditée qu'à la **deuxième** réussite de cette question : le module sert
-          // tout le catalogue, une première bonne réponse peut n'être qu'un tirage heureux sur
-          // quatre options (voir XP_PER_QUESTION_LEARNED).
-          const earnsXp = isCorrect && earnsXpOnCorrect(previousStat);
+          // Paiement unique au deuxième jour local distinct de réussite. Le suivi daté et le
+          // marqueur de paiement sont écrits avec le gain, dans la même transaction.
+          const earnsXp = isCorrect && earnsXpOnCorrect(previousStat, now);
           const xp = state.progress.xp + (earnsXp ? XP_PER_QUESTION_LEARNED : 0);
           const { level, rank } = getLevelInfo(xp);
 
           // L'XP gagnée en jouant compte dans le suivi du jour, comme celle d'une leçon lue.
           // Traité ici plutôt que par un appel séparé à `addDailyProgress` depuis l'écran :
-          // seul le store sait si cette réponse a effectivement crédité de l'XP (deuxième
-          // réussite), l'écran l'ignore.
-          const daily = resetDailyIfNeeded(state.progress.daily);
+          // seul le store sait si cette réponse ouvre le deuxième jour distinct encore impayé.
+          const daily = resetDailyIfNeeded(state.progress.daily, now);
 
           return {
             progress: {
@@ -447,7 +451,7 @@ const actions = (set: ReduceSet) => ({
                 ...quizGame,
                 questions: {
                   ...quizGame.questions,
-                  [questionKey]: applyAnswer(previousStat, isCorrect),
+                  [questionKey]: applyAnswer(previousStat, isCorrect, now),
                 },
               },
             },
@@ -489,15 +493,20 @@ export function createAppStore(environment: ProgressEnvironment = browserProgres
   const store = create<AppState>()(persist(() => ({
     progress: structuredClone(initialProgress), hydrated: false, saving: 0, persistenceError: null, persistenceReadonly: false,
   } as AppState), {
-    name: PROGRESS_KEY, version: 10, skipHydration: true,
+    name: PROGRESS_KEY, version: 11, skipHydration: true,
     partialize: (state) => ({ progress: state.progress }),
     storage: { getItem: () => null, setItem: () => {}, removeItem: () => { throw new ProgressError("unavailable"); } },
   }));
   const publish = store.setState.bind(store);
   const persistence = createProgressPersistence(environment, initialProgress, migrate, (progress) => publish({ progress, hydrated: true, persistenceError: null, persistenceReadonly: false }));
-  const commit = async (reduce?: (p: UserProgress, m: ProgressMetadata) => UserProgress, id?: string, importMissing = true) => {
+  const commit = async (reduce?: (p: UserProgress, m: ProgressMetadata, now: Date) => UserProgress, id?: string, importMissing = true) => {
     publish({ saving: store.getState().saving + 1 });
-    try { return await persistence.commit(reduce, id, importMissing); }
+    try { return await persistence.commit(reduce && ((p, m) => {
+      const now = new Date();
+      p.daily = resetDailyIfNeeded(p.daily, now);
+      if (m.paidDays.includes(toISODate(now))) p.daily.challengeDone = true;
+      return reduce(p, m, now);
+    }), id, importMissing); }
     catch (error) {
       if (error instanceof ProgressError && (error.reason === "unavailable" || (error.reason === "storage" && !store.getState().hydrated))) {
         try { publish({ progress: persistence.readonly(), hydrated: true, persistenceReadonly: true }); }
@@ -507,15 +516,15 @@ export function createAppStore(environment: ProgressEnvironment = browserProgres
     }
     finally { publish({ saving: store.getState().saving - 1 }); }
   };
-  const reduceActions = (progress: UserProgress) => {
+  const reduceActions = (progress: UserProgress, now: Date) => {
     let current = progress;
-    const reducers = actions((reduce) => { current = reduce({ progress: current }).progress; return current; });
+    const reducers = actions((reduce) => { current = reduce({ progress: current }).progress; return current; }, now);
     return { reducers, value: () => current };
   };
-  const wrap = <A extends unknown[]>(run: (p: UserProgress, args: A) => UserProgress, id?: (...args: A) => string | undefined) =>
-    (...args: A) => commit((p) => run(p, args), id?.(...args));
-  const simple = <K extends keyof ReturnType<typeof actions>>(name: K) => wrap((p, args: Parameters<ReturnType<typeof actions>[K]>) => {
-    const { reducers, value } = reduceActions(p);
+  const wrap = <A extends unknown[]>(run: (p: UserProgress, args: A, now: Date) => UserProgress, id?: (...args: A) => string | undefined) =>
+    (...args: A) => commit((p, _m, now) => run(p, args, now), id?.(...args));
+  const simple = <K extends keyof ReturnType<typeof actions>>(name: K) => wrap((p, args: Parameters<ReturnType<typeof actions>[K]>, now) => {
+    const { reducers, value } = reduceActions(p, now);
     (reducers[name] as (...a: typeof args) => UserProgress)(...args);
     return value();
   });
@@ -526,14 +535,14 @@ export function createAppStore(environment: ProgressEnvironment = browserProgres
     completeLesson: simple("completeLesson"), ensureFeaturedLesson: simple("ensureFeaturedLesson"), setPreferredCategories: simple("setPreferredCategories"),
     setFavoriteCourse: simple("setFavoriteCourse"),
     toggleFavoriteCourse: (courseId: string) => api.setFavoriteCourse(courseId, !store.getState().progress.favoriteCourseIds.includes(courseId)),
-    recordQuizAnswer: wrap((p, [key, correct]: Parameters<AppState["recordQuizAnswer"]>) => { const { reducers, value } = reduceActions(p); reducers.recordQuizAnswer(key, correct); return value(); }, (_key, _correct, id) => id),
-    recordQuizResult: wrap((p, [result]: Parameters<AppState["recordQuizResult"]>) => { const { reducers, value } = reduceActions(p); reducers.recordQuizResult(result); return value(); }, (_result, id) => id),
-    finishQuizGame: wrap((p, [result]: Parameters<AppState["finishQuizGame"]>) => { const { reducers, value } = reduceActions(p); reducers.finishQuizGame(result); if (result.activity) reducers.updateStreak(); return value(); }, (result) => result.gameId ? "finish:" + result.gameId : undefined),
-    finishLearning: (courseId: string, lessonId: string, xp: number) => commit((p) => { const { reducers, value } = reduceActions(p); reducers.completeLesson(courseId, lessonId); reducers.completeCourse(courseId, xp); reducers.updateStreak(); return value(); }),
-    finishDailyChallenge: (gameId: string, result: QuizResult, cauris: number) => commit((p, m) => {
-      const { reducers, value } = reduceActions(p);
+    recordQuizAnswer: wrap((p, [key, correct]: Parameters<AppState["recordQuizAnswer"]>, now) => { const { reducers, value } = reduceActions(p, now); reducers.recordQuizAnswer(key, correct); return value(); }, (_key, _correct, id) => id),
+    recordQuizResult: wrap((p, [result]: Parameters<AppState["recordQuizResult"]>, now) => { const { reducers, value } = reduceActions(p, now); reducers.recordQuizResult(result); return value(); }, (_result, id) => id),
+    finishQuizGame: wrap((p, [result]: Parameters<AppState["finishQuizGame"]>, now) => { const { reducers, value } = reduceActions(p, now); reducers.finishQuizGame(result); reducers.updateStreak(); return value(); }, (result) => result.gameId ? "finish:" + result.gameId : undefined),
+    finishLearning: (courseId: string, lessonId: string, xp: number) => commit((p, _m, now) => { const { reducers, value } = reduceActions(p, now); reducers.completeLesson(courseId, lessonId); reducers.completeCourse(courseId, xp); reducers.updateStreak(); return value(); }),
+    finishDailyChallenge: (gameId: string, result: QuizResult, cauris: number) => commit((p, m, now) => {
+      const { reducers, value } = reduceActions(p, now);
       reducers.checkDailyReset();
-      const day = toISODate(new Date());
+      const day = toISODate(now);
       if (value().daily.challengeDone || m.paidDays.includes(day)) return value();
       reducers.recordQuizResult(result); reducers.addXp(DAILY_CHALLENGE_XP_BONUS); reducers.addDailyXp(DAILY_CHALLENGE_XP_BONUS);
       reducers.finishQuizGame({ cauris, record: null }); reducers.markChallengeDone(); reducers.updateStreak(); m.paidDays.push(day);

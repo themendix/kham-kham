@@ -1,4 +1,5 @@
 import type { UserProgress } from "@/types";
+import { migrateCalendar } from "./calendarMigration";
 
 export const PROGRESS_KEY = "sankofa-progress-coordinated";
 export const LEGACY_PROGRESS_KEY = "sankofa-progress";
@@ -18,7 +19,7 @@ export interface ProgressMetadata {
 }
 
 interface Envelope {
-  version: 10;
+  version: 11;
   state: { progress: UserProgress };
   metadata: ProgressMetadata;
 }
@@ -49,7 +50,7 @@ const nullableString = (v: unknown) => v === null || typeof v === "string";
 const date = (v: unknown) => v === null || (typeof v === "string" && /^\d{4}-\d{2}-\d{2}$/.test(v));
 
 /** Validate supplied historical fields before filling defaults; malformed data is never reset. */
-export function validateProgress(value: unknown, partial = false): asserts value is UserProgress {
+export function validateProgress(value: unknown, partial = false, current = false): asserts value is UserProgress {
   if (!record(value)) throw new ProgressError("invalid");
   const check = (key: string, predicate: (v: unknown) => boolean) => {
     if ((!partial || key in value) && !predicate(value[key])) throw new ProgressError("invalid");
@@ -61,13 +62,16 @@ export function validateProgress(value: unknown, partial = false): asserts value
   }
   check("lastCourseId", nullableString);
   check("featuredLessonKey", nullableString);
-  check("streak", (v) => record(v) && count(v.count) && date(v.lastActiveDate) && Array.isArray(v.weekDays) && v.weekDays.length === 7 && v.weekDays.every((x) => typeof x === "boolean"));
+  check("streak", (v) => record(v) && count(v.count) && date(v.lastActiveDate) && Array.isArray(v.weekDays) && v.weekDays.length === 7 && v.weekDays.every((x) => typeof x === "boolean") && (!("weekStartDate" in v) || typeof v.weekStartDate === "string" && date(v.weekStartDate)) && (!("calendarAnchorDate" in v) || typeof v.calendarAnchorDate === "string" && date(v.calendarAnchorDate)));
+  if (current || "calendar" in value) check("calendar", (v) => record(v) && v.version === 1 && date(v.legacyDailyDate) && date(v.legacyLastActiveDate));
   check("daily", (v) => record(v) && (partial || "date" in v) && (!('date' in v) || date(v.date)) && (!('lessonsLearned' in v) ? partial : count(v.lessonsLearned)) && (!('cardsLearned' in v) || count(v.cardsLearned)) && (!('xpEarned' in v) ? partial : count(v.xpEarned)) && (!('challengeDone' in v) ? partial : typeof v.challengeDone === "boolean"));
   check("quizResults", (v) => Array.isArray(v) && v.every((r) => record(r) && typeof r.courseId === "string" && count(r.score) && count(r.total) && Number(r.score) <= Number(r.total) && typeof r.date === "string" && !Number.isNaN(Date.parse(r.date))));
   check("quizGame", (v) => {
     if (!record(v)) return false;
     for (const key of ["cauris", "gamesPlayed"]) if ((!partial || key in v) && !count(v[key])) return false;
-    if ((!partial || "questions" in v) && (!record(v.questions) || !Object.values(v.questions).every((q) => record(q) && count(q.correct) && count(q.wrong) && count(q.box) && Number(q.box) <= 3 && date(q.dueDate)))) return false;
+    if ((!partial || "questions" in v) && (!record(v.questions) || !Object.values(v.questions).every((q) => record(q) && count(q.correct) && count(q.wrong) && count(q.box) && Number(q.box) <= 3 && date(q.dueDate)
+      && (!(current || "xpAwarded" in q) || typeof q.xpAwarded === "boolean")
+      && (!(current || "successDayKeys" in q) || (Array.isArray(q.successDayKeys) && q.successDayKeys.length <= 2 && new Set(q.successDayKeys).size === q.successDayKeys.length && q.successDayKeys.every((d) => typeof d === "string" && date(d))))))) return false;
     return (partial && !("records" in v)) || (record(v.records) && Object.values(v.records).every((r) => record(r) && count(r.blitz) && count(r.survie)));
   });
 }
@@ -101,9 +105,11 @@ export function createProgressPersistence(
     const canonical = environment.storage.getItem(PROGRESS_KEY);
     if (canonical !== null) {
       const raw: unknown = JSON.parse(canonical);
-      if (!record(raw) || raw.version !== 10 || !record(raw.state)) throw new ProgressError("invalid");
-      validateProgress(raw.state.progress);
-      return { envelope: { version: 10, state: { progress: raw.state.progress }, metadata: metadata(raw.metadata) }, imported: false };
+      if (!record(raw) || (raw.version !== 10 && raw.version !== 11) || !record(raw.state)) throw new ProgressError("invalid");
+      validateProgress(raw.state.progress, false, raw.version === 11);
+      const meta = metadata(raw.metadata);
+      const progress = raw.version === 10 ? migrateCalendar(raw.state.progress, meta.paidDays) : raw.state.progress;
+      return { envelope: { version: 11, state: { progress }, metadata: meta }, imported: raw.version === 10 };
     }
     const legacy = environment.storage.getItem(LEGACY_PROGRESS_KEY);
     let progress = structuredClone(initial);
@@ -114,7 +120,9 @@ export function createProgressPersistence(
       progress = raw.version === 10 ? raw.state.progress as UserProgress : migrate(raw.state).progress;
       validateProgress(progress);
     }
-    return { envelope: { version: 10, state: { progress }, metadata: { protocol: 1, revision: 0, events: [], paidDays: progress.daily.challengeDone && progress.daily.date ? [progress.daily.date] : [] } }, imported: true };
+    const paidDays = progress.daily.challengeDone && progress.daily.date ? [progress.daily.date] : [];
+    progress = migrateCalendar(progress, paidDays);
+    return { envelope: { version: 11, state: { progress }, metadata: { protocol: 1, revision: 0, events: [], paidDays } }, imported: true };
   };
   return {
     /** Unlocked, read-only consultation when no transaction API is available. */
@@ -126,7 +134,7 @@ export function createProgressPersistence(
           const before = envelope.state.progress;
           const alreadyApplied = !!eventId && envelope.metadata.events.includes(eventId);
           const progress = reduce && !alreadyApplied ? reduce(structuredClone(before), envelope.metadata) : before;
-          validateProgress(progress);
+          validateProgress(progress, false, true);
           if (eventId && !alreadyApplied) envelope.metadata.events.push(eventId);
           if ((imported && importMissing) || (reduce && !alreadyApplied)) {
             envelope.metadata.revision += 1;

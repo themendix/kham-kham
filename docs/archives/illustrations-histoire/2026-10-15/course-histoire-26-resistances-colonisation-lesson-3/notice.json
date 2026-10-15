@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-15",
+  "id": "course-histoire-26-resistances-colonisation-lesson-3",
+  "reason": "Scan filigrané Alamy, source de reproduction insuffisante ; remplacé par une gravure documentée de Lat Dior, également cité.",
+  "originalLesson": {
+    "id": "course-histoire-26-resistances-colonisation-lesson-3",
+    "title": "Béhanzin et les autres rois",
+    "blocks": [
+      {
+        "type": "paragraphe",
+        "text": "Des rois et des peuples résistent aux conquêtes coloniales."
+      },
+      {
+        "type": "chiffreCle",
+        "valeur": "1904-1908",
+        "legende": "répression allemande des Herero et Nama, reconnue comme un génocide"
+      },
+      {
+        "type": "paragraphe",
+        "text": "**Béhanzin** combat les Français au Dahomey (1890-1894), les **Ashanti** les Britanniques, et **Lat Dior** la France au Sénégal. En Namibie, les Allemands répriment les **Herero** et les **Nama** : un génocide reconnu aujourd'hui."
+      },
+      {
+        "type": "image",
+        "alt": "Béhanzin représenté assis sous un parasol.",
+        "legende": "Béhanzin, roi du Dahomey : gravure de 1891.",
+        "credit": "Chronicle / Commons, domaine public",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kingdom_of_Dahomey._King_Behanzin.jpg",
+        "licenseUrl": "https://creativecommons.org/publicdomain/mark/1.0/"
+      },
+      {
+        "type": "aRetenir",
+        "points": [
+          "**Béhanzin**, les Ashanti, Lat Dior : des résistances à travers le continent",
+          "**1904-1908** : répression allemande des Herero et Nama en Namibie",
+          "Une répression reconnue aujourd'hui comme un génocide"
+        ]
+      }
+    ]
+  },
+  "files": [
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-26-resistances-colonisation-lesson-3/course-histoire-26-resistances-colonisation-lesson-3.webp",
+      "sha256": "032c48145fbf66f0b2189c16ef1fba467a640724112e18f44e398fd50076e18e"
+    },
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-26-resistances-colonisation-lesson-3/course-histoire-26-resistances-colonisation-lesson-3-400w.webp",
+      "sha256": "2c52c50d42b0ebacda7cbe7263cfed68435411321e0845c7e2847dba96e19fed"
+    },
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-26-resistances-colonisation-lesson-3/course-histoire-26-resistances-colonisation-lesson-3-800w.webp",
+      "sha256": "5fff276da7e5d1ee0a860243834c806a1bbc564985ca3380995c9a1825e1731b"
+    }
+  ]
+}

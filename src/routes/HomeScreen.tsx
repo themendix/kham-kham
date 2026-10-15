@@ -26,18 +26,14 @@ export function HomeScreen() {
   const progress = useAppStore((s) => s.progress);
   const setFavoriteCourse = useAppStore((s) => s.setFavoriteCourse);
   const dismissCourse = useAppStore((s) => s.dismissCourse);
-  const updateStreak = useAppStore((s) => s.updateStreak);
   const checkDailyReset = useAppStore((s) => s.checkDailyReset);
 
-  // Capturé une seule fois, avant que l'effet ci-dessous n'appelle `updateStreak` : cette action
-  // remet la série à 1 en silence dès ce montage, donc c'est ici ou jamais qu'on peut encore voir
-  // l'état d'avant la coupure pour l'annoncer (voir `WelcomeBackCard`).
+  // La visite ne compte pas comme activité ; la reprise est annoncée sans modifier la série.
   const [streakBreak] = useState(() => getStreakBreak(progress.streak));
 
   useEffect(() => {
-    void updateStreak().catch(() => {});
     void checkDailyReset().catch(() => {});
-  }, [updateStreak, checkDailyReset]);
+  }, [checkDailyReset]);
 
   // Fil de découverte : des cours à trier, en tourniquet entre matières. Figé pour la durée de la
   // visite via un état initial paresseux — sinon chaque ✓/✗ recomposerait la file sous les doigts.
@@ -154,7 +150,7 @@ export function HomeScreen() {
 
       <DailyChallengeCard done={progress.daily.challengeDone} onStart={() => navigate("/quiz/defi")} />
 
-      <ContinueLearningCard course={targetCourse ?? null} category={targetCategory} resumed={resumedCourse} />
+      <ContinueLearningCard course={targetCourse ?? null} category={targetCategory} resumed={resumedCourse} completedLessonIds={progress.completedLessonIds} />
 
       <section>
         <h2 className="mb-2.5 font-heading text-sm font-bold uppercase tracking-wide text-ink-faint">

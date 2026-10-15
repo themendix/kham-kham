@@ -28,7 +28,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-01-egypte-antique:course-histoire-01-egypte-antique-quiz-2",
     "courseId": "course-histoire-01-egypte-antique",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-01-egypte-antique-lesson-2",
+    "lessonId": "course-histoire-01-egypte-antique-lesson-1",
     "territories": [
       "nord"
     ],
@@ -100,7 +100,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-02-koush-meroe:course-histoire-02-koush-meroe-quiz-1",
     "courseId": "course-histoire-02-koush-meroe",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-02-koush-meroe-lesson-1",
+    "lessonId": "course-histoire-02-koush-meroe-lesson-3",
     "territories": [
       "nord"
     ],
@@ -262,7 +262,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-03-aksoum:course-histoire-03-aksoum-quiz-5",
     "courseId": "course-histoire-03-aksoum",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-03-aksoum-lesson-5",
+    "lessonId": "course-histoire-03-aksoum-lesson-1",
     "territories": [
       "est"
     ],
@@ -298,7 +298,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-04-carthage-afrique-du-nord:course-histoire-04-carthage-afrique-du-nord-quiz-2",
     "courseId": "course-histoire-04-carthage-afrique-du-nord",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-04-carthage-afrique-du-nord-lesson-2",
+    "lessonId": "course-histoire-04-carthage-afrique-du-nord-lesson-3",
     "territories": [
       "nord"
     ],
@@ -406,7 +406,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-05-empire-du-ghana:course-histoire-05-empire-du-ghana-quiz-3",
     "courseId": "course-histoire-05-empire-du-ghana",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-05-empire-du-ghana-lesson-3",
+    "lessonId": "course-histoire-05-empire-du-ghana-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -424,7 +424,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-05-empire-du-ghana:course-histoire-05-empire-du-ghana-quiz-4",
     "courseId": "course-histoire-05-empire-du-ghana",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-05-empire-du-ghana-lesson-4",
+    "lessonId": "course-histoire-05-empire-du-ghana-lesson-3",
     "territories": [
       "ouest"
     ],
@@ -478,7 +478,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-06-soundiata-mali:course-histoire-06-soundiata-mali-quiz-2",
     "courseId": "course-histoire-06-soundiata-mali",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-06-soundiata-mali-lesson-2",
+    "lessonId": "course-histoire-06-soundiata-mali-lesson-3",
     "territories": [
       "ouest"
     ],
@@ -496,7 +496,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-06-soundiata-mali:course-histoire-06-soundiata-mali-quiz-3",
     "courseId": "course-histoire-06-soundiata-mali",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-06-soundiata-mali-lesson-3",
+    "lessonId": "course-histoire-06-soundiata-mali-lesson-4",
     "territories": [
       "ouest"
     ],
@@ -622,7 +622,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-07-mansa-moussa:course-histoire-07-mansa-moussa-quiz-5",
     "courseId": "course-histoire-07-mansa-moussa",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-07-mansa-moussa-lesson-5",
+    "lessonId": "course-histoire-07-mansa-moussa-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -694,7 +694,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-08-empire-songhai:course-histoire-08-empire-songhai-quiz-4",
     "courseId": "course-histoire-08-empire-songhai",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-08-empire-songhai-lesson-4",
+    "lessonId": "course-histoire-08-empire-songhai-lesson-5",
     "territories": [
       "ouest"
     ],
@@ -730,7 +730,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-09-tombouctou-djenne:course-histoire-09-tombouctou-djenne-quiz-1",
     "courseId": "course-histoire-09-tombouctou-djenne",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-09-tombouctou-djenne-lesson-1",
+    "lessonId": "course-histoire-09-tombouctou-djenne-lesson-2",
     "territories": [
       "ouest"
     ],
@@ -766,7 +766,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-09-tombouctou-djenne:course-histoire-09-tombouctou-djenne-quiz-3",
     "courseId": "course-histoire-09-tombouctou-djenne",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-09-tombouctou-djenne-lesson-3",
+    "lessonId": "course-histoire-09-tombouctou-djenne-lesson-4",
     "territories": [
       "ouest"
     ],
@@ -802,7 +802,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-09-tombouctou-djenne:course-histoire-09-tombouctou-djenne-quiz-5",
     "courseId": "course-histoire-09-tombouctou-djenne",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-09-tombouctou-djenne-lesson-5",
+    "lessonId": "course-histoire-09-tombouctou-djenne-lesson-2",
     "territories": [
       "ouest"
     ],
@@ -839,7 +839,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-10-kanem-bornou:course-histoire-10-kanem-bornou-quiz-2",
     "courseId": "course-histoire-10-kanem-bornou",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-10-kanem-bornou-lesson-2",
+    "lessonId": "course-histoire-10-kanem-bornou-lesson-1",
     "territories": [
       "ouest",
       "centrale"
@@ -858,7 +858,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-10-kanem-bornou:course-histoire-10-kanem-bornou-quiz-3",
     "courseId": "course-histoire-10-kanem-bornou",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-10-kanem-bornou-lesson-3",
+    "lessonId": "course-histoire-10-kanem-bornou-lesson-4",
     "territories": [
       "ouest",
       "centrale"
@@ -969,7 +969,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-11-cites-etats-haoussa:course-histoire-11-cites-etats-haoussa-quiz-4",
     "courseId": "course-histoire-11-cites-etats-haoussa",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-11-cites-etats-haoussa-lesson-4",
+    "lessonId": "course-histoire-11-cites-etats-haoussa-lesson-5",
     "territories": [
       "ouest"
     ],
@@ -1059,7 +1059,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-12-royaume-benin-bronzes:course-histoire-12-royaume-benin-bronzes-quiz-4",
     "courseId": "course-histoire-12-royaume-benin-bronzes",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-12-royaume-benin-bronzes-lesson-4",
+    "lessonId": "course-histoire-12-royaume-benin-bronzes-lesson-5",
     "territories": [
       "ouest"
     ],
@@ -1149,7 +1149,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-13-empire-oyo-yoruba:course-histoire-13-empire-oyo-yoruba-quiz-4",
     "courseId": "course-histoire-13-empire-oyo-yoruba",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-13-empire-oyo-yoruba-lesson-4",
+    "lessonId": "course-histoire-13-empire-oyo-yoruba-lesson-3",
     "territories": [
       "ouest"
     ],
@@ -1239,7 +1239,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-14-royaume-ashanti:course-histoire-14-royaume-ashanti-quiz-4",
     "courseId": "course-histoire-14-royaume-ashanti",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-14-royaume-ashanti-lesson-4",
+    "lessonId": "course-histoire-14-royaume-ashanti-lesson-5",
     "territories": [
       "ouest"
     ],
@@ -1329,7 +1329,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-15-royaume-dahomey:course-histoire-15-royaume-dahomey-quiz-4",
     "courseId": "course-histoire-15-royaume-dahomey",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-15-royaume-dahomey-lesson-4",
+    "lessonId": "course-histoire-15-royaume-dahomey-lesson-5",
     "territories": [
       "ouest"
     ],
@@ -1383,7 +1383,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-16-royaume-kongo:course-histoire-16-royaume-kongo-quiz-2",
     "courseId": "course-histoire-16-royaume-kongo",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-16-royaume-kongo-lesson-2",
+    "lessonId": "course-histoire-16-royaume-kongo-lesson-3",
     "territories": [
       "centrale"
     ],
@@ -1401,7 +1401,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-16-royaume-kongo:course-histoire-16-royaume-kongo-quiz-3",
     "courseId": "course-histoire-16-royaume-kongo",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-16-royaume-kongo-lesson-3",
+    "lessonId": "course-histoire-16-royaume-kongo-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -1473,7 +1473,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-17-grand-zimbabwe:course-histoire-17-grand-zimbabwe-quiz-2",
     "courseId": "course-histoire-17-grand-zimbabwe",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-17-grand-zimbabwe-lesson-2",
+    "lessonId": "course-histoire-17-grand-zimbabwe-lesson-1",
     "territories": [
       "australe"
     ],
@@ -1491,7 +1491,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-17-grand-zimbabwe:course-histoire-17-grand-zimbabwe-quiz-3",
     "courseId": "course-histoire-17-grand-zimbabwe",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-17-grand-zimbabwe-lesson-3",
+    "lessonId": "course-histoire-17-grand-zimbabwe-lesson-2",
     "territories": [
       "australe"
     ],
@@ -1509,7 +1509,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-17-grand-zimbabwe:course-histoire-17-grand-zimbabwe-quiz-4",
     "courseId": "course-histoire-17-grand-zimbabwe",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-17-grand-zimbabwe-lesson-4",
+    "lessonId": "course-histoire-17-grand-zimbabwe-lesson-2",
     "territories": [
       "australe"
     ],
@@ -1527,7 +1527,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-17-grand-zimbabwe:course-histoire-17-grand-zimbabwe-quiz-5",
     "courseId": "course-histoire-17-grand-zimbabwe",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-17-grand-zimbabwe-lesson-5",
+    "lessonId": "course-histoire-17-grand-zimbabwe-lesson-4",
     "territories": [
       "australe"
     ],
@@ -1581,7 +1581,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-18-monomotapa-mutapa:course-histoire-18-monomotapa-mutapa-quiz-3",
     "courseId": "course-histoire-18-monomotapa-mutapa",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-18-monomotapa-mutapa-lesson-3",
+    "lessonId": "course-histoire-18-monomotapa-mutapa-lesson-2",
     "territories": [
       "australe"
     ],
@@ -1617,7 +1617,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-18-monomotapa-mutapa:course-histoire-18-monomotapa-mutapa-quiz-5",
     "courseId": "course-histoire-18-monomotapa-mutapa",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-18-monomotapa-mutapa-lesson-5",
+    "lessonId": "course-histoire-18-monomotapa-mutapa-lesson-1",
     "territories": [
       "australe"
     ],
@@ -1689,7 +1689,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-19-royaumes-grands-lacs:course-histoire-19-royaumes-grands-lacs-quiz-4",
     "courseId": "course-histoire-19-royaumes-grands-lacs",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-19-royaumes-grands-lacs-lesson-4",
+    "lessonId": "course-histoire-19-royaumes-grands-lacs-lesson-5",
     "territories": [
       "est"
     ],
@@ -1707,7 +1707,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-19-royaumes-grands-lacs:course-histoire-19-royaumes-grands-lacs-quiz-5",
     "courseId": "course-histoire-19-royaumes-grands-lacs",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-19-royaumes-grands-lacs-lesson-5",
+    "lessonId": "course-histoire-19-royaumes-grands-lacs-lesson-4",
     "territories": [
       "est"
     ],
@@ -2225,7 +2225,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "nord"
     ],
-    "question": "Comment les frontières coloniales ont-elles été tracées ?",
+    "question": "Comment les frontières coloniales ont-elles été tracées en Afrique ?",
     "options": [
       "Selon les peuples et royaumes existants",
       "À la règle sur des cartes, en ignorant les réalités locales",
@@ -2383,7 +2383,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-27-bataille-adoua:course-histoire-27-bataille-adoua-quiz-2",
     "courseId": "course-histoire-27-bataille-adoua",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-27-bataille-adoua-lesson-2",
+    "lessonId": "course-histoire-27-bataille-adoua-lesson-1",
     "territories": [
       "est"
     ],
@@ -2443,13 +2443,13 @@ export const QUIZ_INDEX: QuizEntry[] = [
     ],
     "question": "Pourquoi la bataille d'Adoua est-elle si importante ?",
     "options": [
-      "C'est la première grande défaite d'une puissance coloniale face à un État africain",
+      "Elle a permis à l'Éthiopie de préserver son indépendance",
       "C'est la première bataille de l'histoire",
       "Elle a marqué le début de la colonisation",
       "Elle n'a eu aucune conséquence"
     ],
     "correctIndex": 0,
-    "explanation": "Adoua fut la première grande victoire d'un État africain sur une puissance coloniale européenne, célébrée jusque dans la presse afro-américaine."
+    "explanation": "La victoire d'Adoua en 1896 préserve l'indépendance de l'Éthiopie, reconnue par l'Italie au traité d'Addis-Abeba. Elle devient un symbole de résistance anticoloniale."
   },
   {
     "key": "course-histoire-28-independances-africaines:course-histoire-28-independances-africaines-quiz-1",
@@ -2761,7 +2761,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-31-tekrour-islam:course-histoire-31-tekrour-islam-quiz-3",
     "courseId": "course-histoire-31-tekrour-islam",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-31-tekrour-islam-lesson-3",
+    "lessonId": "course-histoire-31-tekrour-islam-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -2797,7 +2797,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-31-tekrour-islam:course-histoire-31-tekrour-islam-quiz-5",
     "courseId": "course-histoire-31-tekrour-islam",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-31-tekrour-islam-lesson-5",
+    "lessonId": "course-histoire-31-tekrour-islam-lesson-4",
     "territories": [
       "ouest"
     ],
@@ -2851,7 +2851,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-32-djolof-royaumes-wolof:course-histoire-32-djolof-royaumes-wolof-quiz-3",
     "courseId": "course-histoire-32-djolof-royaumes-wolof",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-32-djolof-royaumes-wolof-lesson-3",
+    "lessonId": "course-histoire-32-djolof-royaumes-wolof-lesson-2",
     "territories": [
       "ouest"
     ],
@@ -2887,7 +2887,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-32-djolof-royaumes-wolof:course-histoire-32-djolof-royaumes-wolof-quiz-5",
     "courseId": "course-histoire-32-djolof-royaumes-wolof",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-32-djolof-royaumes-wolof-lesson-5",
+    "lessonId": "course-histoire-32-djolof-royaumes-wolof-lesson-3",
     "territories": [
       "ouest"
     ],
@@ -3103,7 +3103,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-35-lat-dior-cayor:course-histoire-35-lat-dior-cayor-quiz-2",
     "courseId": "course-histoire-35-lat-dior-cayor",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-35-lat-dior-cayor-lesson-2",
+    "lessonId": "course-histoire-35-lat-dior-cayor-lesson-3",
     "territories": [
       "ouest"
     ],
@@ -3121,7 +3121,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-35-lat-dior-cayor:course-histoire-35-lat-dior-cayor-quiz-3",
     "courseId": "course-histoire-35-lat-dior-cayor",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-35-lat-dior-cayor-lesson-3",
+    "lessonId": "course-histoire-35-lat-dior-cayor-lesson-4",
     "territories": [
       "ouest"
     ],
@@ -3301,7 +3301,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-37-aline-sitoe-diatta:course-histoire-37-aline-sitoe-diatta-quiz-3",
     "courseId": "course-histoire-37-aline-sitoe-diatta",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-37-aline-sitoe-diatta-lesson-3",
+    "lessonId": "course-histoire-37-aline-sitoe-diatta-lesson-5",
     "territories": [
       "ouest"
     ],
@@ -3427,7 +3427,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-38-senghor-negritude-independance:course-histoire-38-senghor-negritude-independance-quiz-5",
     "courseId": "course-histoire-38-senghor-negritude-independance",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-38-senghor-negritude-independance-lesson-5",
+    "lessonId": "course-histoire-38-senghor-negritude-independance-lesson-4",
     "territories": [
       "ouest"
     ],
@@ -3499,7 +3499,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-39-reine-nzinga-angola:course-histoire-39-reine-nzinga-angola-quiz-4",
     "courseId": "course-histoire-39-reine-nzinga-angola",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-39-reine-nzinga-angola-lesson-4",
+    "lessonId": "course-histoire-39-reine-nzinga-angola-lesson-3",
     "territories": [
       "centrale"
     ],
@@ -3571,7 +3571,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-40-chaka-zoulou:course-histoire-40-chaka-zoulou-quiz-3",
     "courseId": "course-histoire-40-chaka-zoulou",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-40-chaka-zoulou-lesson-3",
+    "lessonId": "course-histoire-40-chaka-zoulou-lesson-4",
     "territories": [
       "australe"
     ],
@@ -3589,7 +3589,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-histoire-40-chaka-zoulou:course-histoire-40-chaka-zoulou-quiz-4",
     "courseId": "course-histoire-40-chaka-zoulou",
     "categoryId": "histoire",
-    "lessonId": "course-histoire-40-chaka-zoulou-lesson-4",
+    "lessonId": "course-histoire-40-chaka-zoulou-lesson-5",
     "territories": [
       "australe"
     ],
@@ -5263,7 +5263,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-2",
     "courseId": "course-geographie-19-nigeria",
     "categoryId": "geo",
-    "lessonId": "course-geographie-19-nigeria-lesson-1",
+    "lessonId": "course-geographie-19-nigeria-lesson-3",
     "territories": [
       "ouest"
     ],
@@ -7963,7 +7963,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-2",
     "courseId": "course-geographie-49-lesotho",
     "categoryId": "geo",
-    "lessonId": "course-geographie-49-lesotho-lesson-1",
+    "lessonId": "course-geographie-49-lesotho-lesson-3",
     "territories": [
       "australe"
     ],
@@ -8521,7 +8521,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-01-hatchepsout:course-perso-01-hatchepsout-quiz-3",
     "courseId": "course-perso-01-hatchepsout",
     "categoryId": "perso",
-    "lessonId": "course-perso-01-hatchepsout-lesson-3",
+    "lessonId": "course-perso-01-hatchepsout-lesson-4",
     "territories": [
       "nord"
     ],
@@ -8611,7 +8611,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-02-taharqa:course-perso-02-taharqa-quiz-3",
     "courseId": "course-perso-02-taharqa",
     "categoryId": "perso",
-    "lessonId": "course-perso-02-taharqa-lesson-3",
+    "lessonId": "course-perso-02-taharqa-lesson-4",
     "territories": [
       "nord"
     ],
@@ -8629,7 +8629,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-02-taharqa:course-perso-02-taharqa-quiz-4",
     "courseId": "course-perso-02-taharqa",
     "categoryId": "perso",
-    "lessonId": "course-perso-02-taharqa-lesson-4",
+    "lessonId": "course-perso-02-taharqa-lesson-3",
     "territories": [
       "nord"
     ],
@@ -8737,7 +8737,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-03-dihya:course-perso-03-dihya-quiz-5",
     "courseId": "course-perso-03-dihya",
     "categoryId": "perso",
-    "lessonId": "course-perso-03-dihya-lesson-5",
+    "lessonId": "course-perso-03-dihya-lesson-4",
     "territories": [
       "nord"
     ],
@@ -9097,7 +9097,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-07-kimpa-vita:course-perso-07-kimpa-vita-quiz-5",
     "courseId": "course-perso-07-kimpa-vita",
     "categoryId": "perso",
-    "lessonId": "course-perso-07-kimpa-vita-lesson-5",
+    "lessonId": "course-perso-07-kimpa-vita-lesson-3",
     "territories": [
       "centrale"
     ],
@@ -9313,7 +9313,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-10-sojourner-truth:course-perso-10-sojourner-truth-quiz-2",
     "courseId": "course-perso-10-sojourner-truth",
     "categoryId": "perso",
-    "lessonId": "course-perso-10-sojourner-truth-lesson-2",
+    "lessonId": "course-perso-10-sojourner-truth-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -9421,7 +9421,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-11-abd-el-kader:course-perso-11-abd-el-kader-quiz-3",
     "courseId": "course-perso-11-abd-el-kader",
     "categoryId": "perso",
-    "lessonId": "course-perso-11-abd-el-kader-lesson-3",
+    "lessonId": "course-perso-11-abd-el-kader-lesson-2",
     "territories": [
       "nord"
     ],
@@ -9673,7 +9673,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-14-yaa-asantewaa:course-perso-14-yaa-asantewaa-quiz-2",
     "courseId": "course-perso-14-yaa-asantewaa",
     "categoryId": "perso",
-    "lessonId": "course-perso-14-yaa-asantewaa-lesson-2",
+    "lessonId": "course-perso-14-yaa-asantewaa-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -9691,7 +9691,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-14-yaa-asantewaa:course-perso-14-yaa-asantewaa-quiz-3",
     "courseId": "course-perso-14-yaa-asantewaa",
     "categoryId": "perso",
-    "lessonId": "course-perso-14-yaa-asantewaa-lesson-3",
+    "lessonId": "course-perso-14-yaa-asantewaa-lesson-2",
     "territories": [
       "ouest"
     ],
@@ -10177,7 +10177,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-19-amilcar-cabral:course-perso-19-amilcar-cabral-quiz-5",
     "courseId": "course-perso-19-amilcar-cabral",
     "categoryId": "perso",
-    "lessonId": "course-perso-19-amilcar-cabral-lesson-5",
+    "lessonId": "course-perso-19-amilcar-cabral-lesson-4",
     "territories": [
       "ouest"
     ],
@@ -10249,7 +10249,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-20-agostinho-neto:course-perso-20-agostinho-neto-quiz-4",
     "courseId": "course-perso-20-agostinho-neto",
     "categoryId": "perso",
-    "lessonId": "course-perso-20-agostinho-neto-lesson-4",
+    "lessonId": "course-perso-20-agostinho-neto-lesson-3",
     "territories": [
       "centrale"
     ],
@@ -10429,7 +10429,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-22-julius-nyerere:course-perso-22-julius-nyerere-quiz-4",
     "courseId": "course-perso-22-julius-nyerere",
     "categoryId": "perso",
-    "lessonId": "course-perso-22-julius-nyerere-lesson-4",
+    "lessonId": "course-perso-22-julius-nyerere-lesson-3",
     "territories": [
       "est"
     ],
@@ -10501,7 +10501,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-23-haile-selassie:course-perso-23-haile-selassie-quiz-3",
     "courseId": "course-perso-23-haile-selassie",
     "categoryId": "perso",
-    "lessonId": "course-perso-23-haile-selassie-lesson-3",
+    "lessonId": "course-perso-23-haile-selassie-lesson-4",
     "territories": [
       "est"
     ],
@@ -10591,7 +10591,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-24-patrice-lumumba:course-perso-24-patrice-lumumba-quiz-3",
     "courseId": "course-perso-24-patrice-lumumba",
     "categoryId": "perso",
-    "lessonId": "course-perso-24-patrice-lumumba-lesson-3",
+    "lessonId": "course-perso-24-patrice-lumumba-lesson-4",
     "territories": [
       "centrale"
     ],
@@ -10717,19 +10717,19 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-25-jeanne-martin-cisse:course-perso-25-jeanne-martin-cisse-quiz-5",
     "courseId": "course-perso-25-jeanne-martin-cisse",
     "categoryId": "perso",
-    "lessonId": "course-perso-25-jeanne-martin-cisse-lesson-5",
+    "lessonId": "course-perso-25-jeanne-martin-cisse-lesson-1",
     "territories": [
       "ouest"
     ],
-    "question": "Quel métier exerçaient beaucoup des mères fondatrices de la PAWO ?",
+    "question": "Quel métier Jeanne Martin Cissé exerçait-elle avant son entrée en politique ?",
     "options": [
-      "Journalistes",
-      "Institutrices, sages-femmes ou syndicalistes",
-      "Avocates",
-      "Commerçantes internationales"
+      "Journaliste",
+      "Institutrice",
+      "Avocate",
+      "Commerçante internationale"
     ],
     "correctIndex": 1,
-    "explanation": "Beaucoup étaient institutrices, sages-femmes ou syndicalistes — des métiers qui donnaient un accès direct aux populations et permettaient d'organiser la mobilisation."
+    "explanation": "Jeanne Martin Cissé a été formée comme institutrice à l'École normale de Rufisque, avant de s'engager en politique et dans l'organisation des femmes africaines."
   },
   {
     "key": "course-perso-26-funmilayo-ransome-kuti:course-perso-26-funmilayo-ransome-kuti-quiz-1",
@@ -10789,11 +10789,11 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-perso-26-funmilayo-ransome-kuti:course-perso-26-funmilayo-ransome-kuti-quiz-4",
     "courseId": "course-perso-26-funmilayo-ransome-kuti",
     "categoryId": "perso",
-    "lessonId": "course-perso-26-funmilayo-ransome-kuti-lesson-4",
+    "lessonId": "course-perso-26-funmilayo-ransome-kuti-lesson-3",
     "territories": [
       "ouest"
     ],
-    "question": "Quel résultat spectaculaire le mouvement a-t-il obtenu en 1949 ?",
+    "question": "Quel résultat le mouvement des femmes d'Abeokuta a-t-il obtenu en 1949 ?",
     "options": [
       "L'abdication de l'alake d'Abeokuta",
       "L'indépendance immédiate de la région",
@@ -11089,7 +11089,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
       "Quarante ans"
     ],
     "correctIndex": 2,
-    "explanation": "Exilée à partir de 1960, elle ne rentra qu'en 1990, à la demande personnelle de Nelson Mandela après sa libération — soit trente et un ans d'exil."
+    "explanation": "Partie d'Afrique du Sud en 1959, Miriam Makeba voit son passeport annulé en 1960. Elle revient en 1990 à l'invitation de Nelson Mandela, après trente et un ans d'exil."
   },
   {
     "key": "course-perso-30-wangari-maathai:course-perso-30-wangari-maathai-quiz-1",
@@ -11639,7 +11639,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "De quel peuple le kente est-il originaire ?",
+    "question": "À quel peuple du Ghana le kente est-il notamment associé ?",
     "options": [
       "Les Dogon du Mali",
       "Les Ashanti du Ghana",
@@ -11647,7 +11647,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
       "Les Kuba du Congo"
     ],
     "correctIndex": 1,
-    "explanation": "Le kente est tissé en pays ashanti, au Ghana, en bandes étroites ensuite assemblées."
+    "explanation": "Le kente est notamment associé aux Ashanti (Asante) du Ghana. Les Ewe possèdent aussi une tradition de ce tissage en bandes : son origine ne se résume pas à un seul peuple."
   },
   {
     "key": "course-decouverte-02-tissus-parures:quiz-decouverte-02-2",

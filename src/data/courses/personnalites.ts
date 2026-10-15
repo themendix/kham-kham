@@ -3611,7 +3611,7 @@ export const PERSONNALITES_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le 20 janvier 1973, **Amílcar Cabral** est assassiné à Conakry par des membres de son propre parti, manipulés par la police coloniale portugaise.",
+            text: "Le 20 janvier 1973, **Amílcar Cabral** est assassiné à Conakry par des membres de son propre parti. Le rôle éventuel des autorités portugaises reste débattu.",
           },
           {
             type: "chiffreCle",
@@ -4598,7 +4598,7 @@ export const PERSONNALITES_COURSES: Course[] = [
           },
           {
             type: "citation",
-            texte: "Nous qui avons souffert dans notre corps et dans notre cœur de l'oppression colonialiste, nous vous le disons : tout cela est fini.",
+            texte: "Nous allons montrer au monde ce que peut faire l'homme noir quand il travaille dans la liberté.",
             auteur: "Patrice Lumumba, discours du 30 juin 1960",
           },
           {
@@ -4845,10 +4845,10 @@ export const PERSONNALITES_COURSES: Course[] = [
       },
       {
         id: "course-perso-25-jeanne-martin-cisse-quiz-5",
-        question: "Quel métier exerçaient beaucoup des mères fondatrices de la PAWO ?",
-        options: ["Journalistes", "Institutrices, sages-femmes ou syndicalistes", "Avocates", "Commerçantes internationales"],
+        question: "Quel métier Jeanne Martin Cissé exerçait-elle avant son entrée en politique ?",
+        options: ["Journaliste", "Institutrice", "Avocate", "Commerçante internationale"],
         correctIndex: 1,
-        explanation: "Beaucoup étaient institutrices, sages-femmes ou syndicalistes — des métiers qui donnaient un accès direct aux populations et permettaient d'organiser la mobilisation.",
+        explanation: "Jeanne Martin Cissé a été formée comme institutrice à l'École normale de Rufisque, avant de s'engager en politique et dans l'organisation des femmes africaines.",
       },
     ],
   },
@@ -5033,7 +5033,7 @@ export const PERSONNALITES_COURSES: Course[] = [
       },
       {
         id: "course-perso-26-funmilayo-ransome-kuti-quiz-4",
-        question: "Quel résultat spectaculaire le mouvement a-t-il obtenu en 1949 ?",
+        question: "Quel résultat le mouvement des femmes d'Abeokuta a-t-il obtenu en 1949 ?",
         options: ["L'abdication de l'alake d'Abeokuta", "L'indépendance immédiate de la région", "La nomination d'une femme au poste de gouverneur", "La fermeture de l'administration coloniale d'Abeokuta"],
         correctIndex: 0,
         explanation: "L'impôt fut supprimé, quatre femmes entrèrent au conseil local, et l'alake Ademola II, contraint et discrédité, dut abdiquer en 1949 — sans qu'une seule arme ait été employée.",
@@ -5191,7 +5191,7 @@ export const PERSONNALITES_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le livre reçoit le Grand prix littéraire d'**Afrique noire** l'année suivante, une reconnaissance rare pour un texte de femme. Elle y raconte les accouchements de brousse, les mutations punitives, les réunions clandestines, et le prix payé dans sa vie privée. Écrire sa propre vie, pour elle, c'était refuser que d'autres l'écrivent à sa place.",
+            text: "Le livre reçoit le Grand prix littéraire d'**Afrique noire** en 1976, une reconnaissance littéraire importante. Elle y raconte les accouchements de brousse, les mutations punitives, les réunions clandestines et le prix payé dans sa vie privée. Écrire sa vie, pour elle, c'était refuser que d'autres l'écrivent à sa place.",
           },
           {
             type: "aRetenir",
@@ -5500,7 +5500,7 @@ export const PERSONNALITES_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Elle se rend à Venise pour la présentation du film, puis à Londres et à New York. Quand elle veut rentrer au pays pour l'enterrement de sa mère, elle découvre que son **passeport** a été annulé. Le régime vient de la transformer en exilée, à vingt-sept ans.",
+            text: "Elle se rend à Venise pour la présentation du film, puis à Londres et à New York. En 1960, quand elle veut rentrer en Afrique du Sud pour l'enterrement de sa mère, elle découvre que son **passeport** a été annulé. Le régime vient de la transformer en exilée.",
           },
           {
             type: "aRetenir",
@@ -5575,22 +5575,22 @@ export const PERSONNALITES_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 1990, à l'invitation de **Nelson Mandela** tout juste libéré, Miriam Makeba rentre enfin en Afrique du Sud.",
+            text: "Partie en 1959, **Miriam Makeba** rentre en Afrique du Sud en 1990, après **trente et un ans** d'exil, à l'invitation de Nelson Mandela.",
           },
           {
             type: "citation",
-            texte: "Nous n'écrivons pas notre histoire. Elle nous a toujours été transmise oralement, par nos anciens.",
-            auteur: "Miriam Makeba",
+            texte: "Je ne chante pas la politique, je chante simplement la vérité.",
+            auteur: "Miriam Makeba — traduction de l’anglais, Fondation Miriam Makeba",
           },
           {
             type: "paragraphe",
-            text: "Elle meurt en 2008 en Italie, sur scène, lors d'un concert donné en soutien à un écrivain menacé. On l'appelait **Mama Africa** : elle avait fait de sa voix un passeport quand on lui avait pris le sien.",
+            text: "Elle meurt en 2008 en Italie après un concert de soutien à l'écrivain Roberto Saviano. Surnommée **Mama Africa**, elle avait fait de sa voix un passeport quand on lui avait pris le sien.",
           },
           {
             type: "aRetenir",
             points: [
               "Retour en **1990**, sur invitation de Mandela",
-              "Morte en 2008 **sur scène**, lors d'un concert engagé",
+              "Morte en **2008**, après un concert de soutien à Roberto Saviano",
               "Sa voix a servi de passeport quand on lui a pris le sien",
             ],
           },
@@ -5631,7 +5631,7 @@ export const PERSONNALITES_COURSES: Course[] = [
         question: "Combien de temps a duré l'exil de Miriam Makeba hors d'Afrique du Sud ?",
         options: ["Environ dix ans", "Environ vingt ans", "Trente et un ans", "Quarante ans"],
         correctIndex: 2,
-        explanation: "Exilée à partir de 1960, elle ne rentra qu'en 1990, à la demande personnelle de Nelson Mandela après sa libération — soit trente et un ans d'exil.",
+        explanation: "Partie d'Afrique du Sud en 1959, Miriam Makeba voit son passeport annulé en 1960. Elle revient en 1990 à l'invitation de Nelson Mandela, après trente et un ans d'exil.",
       },
     ],
   },
@@ -5775,7 +5775,7 @@ export const PERSONNALITES_COURSES: Course[] = [
           {
             type: "citation",
             texte: "Tant que vous n'avez pas creusé un trou, planté un arbre et veillé à ce qu'il survive, vous n'avez rien fait.",
-            auteur: "Wangari Maathai, discours des Goldman Awards, 2006",
+            auteur: "Wangari Maathai — traduction de l’anglais, Green Belt Movement, 2018",
           },
           {
             type: "paragraphe",
@@ -5845,7 +5845,7 @@ export const PERSONNALITES_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 1986, l'académie suédoise récompense pour la première fois un écrivain africain. **Wole Soyinka**, dramaturge nigérian, écrit en anglais un théâtre nourri de la mythologie yoruba.",
+            text: "En **1986**, l'académie suédoise récompense pour la première fois un écrivain africain. **Wole Soyinka**, dramaturge nigérian, écrit en anglais un théâtre nourri de la mythologie yoruba.",
           },
           {
             type: "chiffreCle",
@@ -5854,7 +5854,7 @@ export const PERSONNALITES_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Sa pièce la plus connue, **La Mort et l'Écuyer du roi**, part d'un fait réel de l'époque coloniale. Soyinka a payé cher son franc-parler : arrêté pendant la guerre du Biafra, il a passé vingt-deux mois en détention, dont l'essentiel à l'isolement.",
+            text: "Sa pièce la plus connue, La Mort et l'Écuyer du roi, part d'un fait réel de l'époque coloniale. Soyinka a payé cher son franc-parler : arrêté pendant la guerre du Biafra, il a passé vingt-deux mois en détention, dont l'essentiel à l'isolement.",
           },
           {
             type: "aRetenir",
@@ -5976,7 +5976,7 @@ export const PERSONNALITES_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Dans **Le danger de l'histoire unique**, elle décrit ce qui se passe quand un peuple n'est raconté que d'une seule façon : on ne le rend pas faux, on le rend incomplet. La formule a dépassé le monde littéraire.",
+            text: "Dans Le danger de l'**histoire unique**, elle décrit ce qui se passe quand un peuple n'est raconté que d'une seule façon : on ne le rend pas faux, on le rend incomplet. La formule a dépassé le monde littéraire.",
           },
           {
             type: "aRetenir",

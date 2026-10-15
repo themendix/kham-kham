@@ -13,6 +13,7 @@ import {
 
 /** 15 mars 2026, date de référence injectée partout pour que les tests ne dépendent pas du jour réel. */
 const TODAY = new Date(2026, 2, 15);
+const NEXT_DAY = new Date(2026, 2, 16);
 
 function stat(overrides: Partial<QuestionStat> = {}): QuestionStat {
   return { ...NEW_QUESTION_STAT, ...overrides };
@@ -21,7 +22,7 @@ function stat(overrides: Partial<QuestionStat> = {}): QuestionStat {
 describe("applyAnswer — montée des paliers", () => {
   it("première réussite d'une question jamais vue : palier 1, rappel dans 3 jours", () => {
     const result = applyAnswer(undefined, true, TODAY);
-    expect(result).toEqual({ correct: 1, wrong: 0, box: 1, dueDate: "2026-03-18" });
+    expect(result).toEqual({ correct: 1, wrong: 0, box: 1, dueDate: "2026-03-18", successDayKeys: ["2026-03-15"], xpAwarded: false });
   });
 
   it("deuxième réussite : palier 2, rappel dans 7 jours", () => {
@@ -47,7 +48,7 @@ describe("applyAnswer — montée des paliers", () => {
 describe("applyAnswer — échec", () => {
   it("ramène au palier 0 et reprogramme la question pour demain", () => {
     const result = applyAnswer(stat({ correct: 2, box: 2 }), false, TODAY);
-    expect(result).toEqual({ correct: 2, wrong: 1, box: 0, dueDate: "2026-03-16" });
+    expect(result).toEqual({ correct: 2, wrong: 1, box: 0, dueDate: "2026-03-16", successDayKeys: [], xpAwarded: false });
   });
 
   it("fait retomber même une question acquise, qui redevient donc rappelable", () => {
@@ -122,14 +123,15 @@ describe("earnsXpOnCorrect — seuil de crédit de l'XP", () => {
     expect(earnsXpOnCorrect(NEW_QUESTION_STAT)).toBe(false);
   });
 
-  it("paie la deuxième réussite", () => {
+  it("paie seulement une réussite sur un deuxième jour distinct", () => {
     const afterFirst = applyAnswer(undefined, true, TODAY);
-    expect(earnsXpOnCorrect(afterFirst)).toBe(true);
+    expect(earnsXpOnCorrect(afterFirst, TODAY)).toBe(false);
+    expect(earnsXpOnCorrect(afterFirst, NEXT_DAY)).toBe(true);
   });
 
   it("ne paie plus au-delà", () => {
-    const afterSecond = applyAnswer(applyAnswer(undefined, true, TODAY), true, TODAY);
-    expect(earnsXpOnCorrect(afterSecond)).toBe(false);
+    const afterSecond = applyAnswer(applyAnswer(undefined, true, TODAY), true, NEXT_DAY);
+    expect(earnsXpOnCorrect(afterSecond, new Date(2026, 2, 17))).toBe(false);
   });
 
   it("ne paie pas une question seulement ratée, même plusieurs fois", () => {
@@ -141,11 +143,33 @@ describe("earnsXpOnCorrect — seuil de crédit de l'XP", () => {
     const first = applyAnswer(undefined, true, TODAY);
     const failed = applyAnswer(first, false, TODAY);
     // La 2e réussite est bien payée…
-    expect(earnsXpOnCorrect(failed)).toBe(true);
-    const second = applyAnswer(failed, true, TODAY);
+    expect(earnsXpOnCorrect(failed, NEXT_DAY)).toBe(true);
+    const second = applyAnswer(failed, true, NEXT_DAY);
     // …et jamais une troisième fois, quel que soit le parcours d'échecs.
     expect(earnsXpOnCorrect(second)).toBe(false);
     expect(earnsXpOnCorrect(applyAnswer(second, false, TODAY))).toBe(false);
+  });
+
+  it("plusieurs succès le même jour ne sont jamais deux jours et un échec conserve le paiement", () => {
+    let current = applyAnswer(undefined, true, TODAY);
+    current = applyAnswer(current, true, TODAY);
+    current = applyAnswer(current, false, TODAY);
+    expect(current.successDayKeys).toEqual(["2026-03-15"]);
+    expect(current.xpAwarded).toBe(false);
+    const paid = applyAnswer(current, true, new Date(2026, 3, 20));
+    expect(paid.successDayKeys).toEqual(["2026-03-15", "2026-04-20"]);
+    expect(applyAnswer(paid, false, new Date(2026, 3, 21)).xpAwarded).toBe(true);
+  });
+
+  it("un ancien correct=1 commence prospectivement ; correct>=2 reste payé", () => {
+    const legacy = { correct: 1, wrong: 0, box: 1, dueDate: null };
+    expect(earnsXpOnCorrect(legacy, TODAY)).toBe(false);
+    const first = applyAnswer(legacy, true, TODAY);
+    expect(first.successDayKeys).toEqual(["2026-03-15"]);
+    expect(first.xpAwarded).toBe(false);
+    expect(earnsXpOnCorrect(first, NEXT_DAY)).toBe(true);
+    expect(earnsXpOnCorrect({ ...legacy, correct: 2 }, NEXT_DAY)).toBe(false);
+    expect(applyAnswer({ ...legacy, correct: 3 }, false, TODAY).xpAwarded).toBe(true);
   });
 });
 

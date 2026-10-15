@@ -1,4 +1,5 @@
 import type { StreakState } from "@/types";
+import { addDayKey, civilDaysBetween, localDayKey, weekStartKey } from "@/lib/calendar";
 
 /** XP gagné à l'apprentissage d'une leçon — que ce soit une carte du fil Home (éditoriale
  * ou dérivée du catalogue), la vedette « À la une » ou une leçon lue dans un cours : un seul
@@ -6,11 +7,10 @@ import type { StreakState } from "@/types";
 export const XP_PER_LESSON = 10;
 /** Nombre de cartes apprises visé chaque jour, affiché dans DailyGoalCard */
 export const DAILY_GOAL = 5;
-/** Bonus d'XP attribué à la réussite du Défi du jour (quiz éclair) */
+/** Bonus de participation à un Défi du jour terminé, quel que soit le score. */
 export const DAILY_CHALLENGE_XP_BONUS = 30;
 /**
- * XP attribué à la **deuxième** réussite d'une question dans le module Quiz — jamais avant, jamais
- * après.
+ * XP attribué une seule fois après des réussites sur deux jours civils locaux distincts.
  *
  * Pourquoi pas la première : le module sert **tout** le catalogue dès la première partie, y compris
  * des questions dont le cours n'a pas été lu. Avec 4 options, une bonne réponse sur quatre tombe
@@ -22,7 +22,7 @@ export const DAILY_CHALLENGE_XP_BONUS = 30;
  * × nombre de questions du catalogue — qui l'empêche de faire exploser `LEVEL_TIERS`. Ce qu'on
  * farme en jouant, ce sont les cauris, qui ne touchent ni le niveau ni le rang.
  *
- * Ce plafond (676 × 5 = 3 380 XP) est intégré au calibrage de `LEVEL_TIERS` ci-dessous.
+ * Le catalogue courant compte 680 questions, soit 3 400 XP finies pour le module Quiz.
  */
 export const XP_PER_QUESTION_LEARNED = 5;
 
@@ -35,23 +35,19 @@ export const XP_PER_QUESTION_LEARNED = 5;
  *
  * | Source | XP |
  * |---|---|
- * | Complétion des 136 cours | 8 360 |
- * | 564 leçons × XP_PER_LESSON | 5 640 |
- * | Module Quiz : 676 questions × XP_PER_QUESTION_LEARNED | 3 380 |
+ * | Complétion des 136 cours | 8 440 |
+ * | 572 leçons × XP_PER_LESSON | 5 720 |
+ * | Module Quiz : 680 questions × XP_PER_QUESTION_LEARNED | 3 400 |
  * | 3 parcours (xpReward) | 400 |
- * | 18 cartes éditoriales du fil Home | 180 |
  *
  * Sans ce recalibrage, le dernier rang serait tombé à **72,6 %** du catalogue.
  *
- * Le dernier rang nommé (« Gardien du savoir ») est fixé exactement au total : il n'est atteint
- * qu'en terminant 100 % du contenu, jamais avant. Les proportions des rangs intermédiaires sont
- * conservées d'un recalibrage à l'autre (0 / 9,6 / 29,9 / 59,8 / 100 %), pour que le rythme de
- * progression ressenti ne change pas.
+ * Les seuils existants sont conservés. Le dernier rang est fixé au total fini du catalogue ;
+ * il reflète l'engagement cumulé, pas une attestation de complétion ou de maîtrise.
  *
  * ⚠️ **Une source échappe à ce calibrage** : le Défi du jour rapporte DAILY_CHALLENGE_XP_BONUS
  * chaque jour, indéfiniment — environ 11 000 XP par an sans apprendre quoi que ce soit de neuf.
- * La propriété « le dernier rang = 100 % du catalogue » ne vaut donc à la lettre que pour un
- * utilisateur récent. C'est une limite connue et antérieure à ce recalibrage, pas un oubli.
+ * Le rang peut donc être atteint avant la complétion du catalogue. Celle-ci est suivie séparément.
  */
 export interface LevelTier {
   minXp: number;
@@ -140,9 +136,9 @@ export function getLevelInfo(xp: number): LevelInfo {
   };
 }
 
-/** Date ISO (YYYY-MM-DD), réutilisée par lib/daily.ts pour le suivi quotidien */
+/** Clé civile locale YYYY-MM-DD. Les horodatages d'événements restent des instants ISO. */
 export function toISODate(date: Date): string {
-  return date.toISOString().slice(0, 10);
+  return localDayKey(date);
 }
 
 /** Index lundi=0 ... dimanche=6, aligné sur le calendrier français */
@@ -158,46 +154,61 @@ function isoWeekdayIndex(date: Date): number {
  */
 export function updateStreak(streak: StreakState, now: Date = new Date()): StreakState {
   const today = toISODate(now);
+  const lastDay = effectiveStreakDate(streak);
 
-  if (streak.lastActiveDate === today) {
+  // Un recul du calendrier ne rompt ni n'augmente la série.
+  if (lastDay !== null && today < lastDay) {
     return streak;
   }
+  if (streak.lastActiveDate === today) return streak;
 
   const dayIndex = isoWeekdayIndex(now);
   const isConsecutiveDay =
-    streak.lastActiveDate !== null &&
-    toISODate(new Date(now.getTime() - 86_400_000)) === streak.lastActiveDate;
+    lastDay !== null && addDayKey(today, -1) === lastDay;
 
-  const weekDays = dayIndex === 0 ? Array(7).fill(false) : [...streak.weekDays];
+  const weekStartDate = weekStartKey(today);
+  const previousWeek = streak.weekStartDate ?? (streak.lastActiveDate ? weekStartKey(streak.lastActiveDate) : null);
+  const weekDays = previousWeek === weekStartDate ? [...streak.weekDays] : Array(7).fill(false);
   weekDays[dayIndex] = true;
 
   return {
-    count: isConsecutiveDay ? streak.count + 1 : 1,
+    count: lastDay === today ? streak.count : isConsecutiveDay ? streak.count + 1 : 1,
     lastActiveDate: today,
     weekDays,
+    weekStartDate,
   };
+}
+
+function effectiveStreakDate(streak: StreakState): string | null {
+  const last = streak.lastActiveDate;
+  const anchor = streak.calendarAnchorDate;
+  return anchor && (!last || anchor > last) ? anchor : last;
+}
+
+/** Les pastilles d'une ancienne semaine ne sont jamais affichées comme celles de cette semaine. */
+export function currentWeekDays(streak: StreakState, now: Date = new Date()): boolean[] {
+  const week = streak.weekStartDate ?? (streak.lastActiveDate ? weekStartKey(streak.lastActiveDate) : null);
+  return week === weekStartKey(localDayKey(now)) ? streak.weekDays : Array(7).fill(false);
 }
 
 export interface StreakBreak {
   /** Jours écoulés depuis la dernière activité (≥ 2 : au moins un jour entier sauté) */
   daysAway: number;
-  /** Série telle qu'elle était avant que cette visite ne la remette à 1 via `updateStreak` */
+  /** Série acquise avant la prochaine activité ; une visite ne la modifie pas. */
   previousCount: number;
 }
 
 /**
- * Détecte un retour après une série cassée, à appeler **avant** `updateStreak` (qui remet
- * silencieusement la série à 1 sans jamais signaler la coupure). Un écart d'un seul jour
+ * Détecte un retour après une série cassée, sans enregistrer d'activité. Un écart d'un seul jour
  * (`lastActiveDate` = hier) est une continuation normale, pas une coupure.
  */
 export function getStreakBreak(streak: StreakState, now: Date = new Date()): StreakBreak | null {
-  if (streak.lastActiveDate === null) return null;
+  const lastDay = effectiveStreakDate(streak);
+  if (lastDay === null) return null;
   const today = toISODate(now);
   if (streak.lastActiveDate === today) return null;
 
-  const daysAway = Math.round(
-    (Date.parse(today) - Date.parse(streak.lastActiveDate)) / 86_400_000,
-  );
+  const daysAway = civilDaysBetween(lastDay, today);
   if (daysAway < 2) return null;
 
   return { daysAway, previousCount: streak.count };

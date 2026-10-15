@@ -315,7 +315,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "On a surnommé **Méroé** « la Birmingham de l'Afrique » : ses forges tournaient sans relâche, des siècles avant la révolution industrielle anglaise.",
+            text: "**Méroé**, la « Birmingham de l’Afrique », prospère grâce au **fer**.",
           },
           {
             type: "frise",
@@ -327,7 +327,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Ce grand centre de production du **fer** devient aussi un carrefour commercial reliant l'Afrique centrale, la mer Rouge, l'Inde et Rome. Sa richesse repose sur la métallurgie, l'agriculture irriguée par le Nil et le commerce à longue distance.",
+            text: "Agriculture et commerce complètent sa richesse. À Hamadab, les scories témoignent de cette métallurgie.",
+          },
+          {
+            type: "image",
+            alt: "Amas de scories H800, Hamadab.",
+            legende: "Hamadab, près de Méroé : scories de fer, tas H800.",
+            credit: "Ullrich, Wolf et Kaufmann, CC BY 4.0",
+            sourceUrl: "https://hmsjournal.org/index.php/home/article/view/86",
+            licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
           },
           {
             type: "aRetenir",
@@ -339,7 +347,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Les scories de fer s'accumulaient si haut autour de Méroé qu'on peut aujourd'hui encore en voir les collines depuis le site.",
+            text: "Les scories sont des résidus de métallurgie.",
           },
         ],
       },
@@ -2090,7 +2098,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un roi peut agrandir un empire par les armes. Idris Alooma, lui, le transforme aussi par les mousquets, la diplomatie et la loi.",
+            text: "Sous **Idris Alooma**, le Bornou connaît son apogée à la fin du XVIe siècle. Ce souverain associe réformes militaires, diplomatie et justice.",
           },
           {
             type: "chiffreCle",
@@ -2099,7 +2107,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Grand réformateur, il modernise l'armée en introduisant des mousquetaires et des armes à feu, noue des relations diplomatiques avec l'Empire **ottoman**, et renforce la justice fondée sur la loi islamique.",
+            text: "Il modernise l’armée avec des armes à feu et échange avec l’Empire **ottoman**. Ses réformes renforcent l’État et la justice islamique. Elles montrent un royaume connecté aux réseaux du monde musulman, capable de mobiliser les ressources du commerce et de développer ses relations extérieures.",
           },
           {
             type: "citation",
@@ -2116,7 +2124,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Le Kanem-Bornou d'Idris Alooma est l'un des rares États d'Afrique subsaharienne de son temps à nouer des relations directes avec Istanbul.",
+            text: "Ses échanges avec Istanbul témoignent de l'ouverture diplomatique du Bornou.",
           },
         ],
       },
@@ -2211,7 +2219,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pas de capitale unique, pas de souverain commun : les Haoussa ont bâti leur puissance sur des cités rivales et complémentaires.",
+            text: "Les **Haoussa** bâtissent des cités fortifiées, indépendantes et rivales.",
           },
           {
             type: "chiffreCle",
@@ -2220,7 +2228,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Dans le nord de l'actuel Nigeria et du Niger vivent les **Haoussa**. La tradition évoque les « sept vrais États haoussa », parmi lesquels **Kano**, **Katsina** et Zaria. Chaque cité, fortifiée, est gouvernée par un souverain, le sarki.",
+            text: "**Kano**, Katsina et Zaria appartiennent aux sept États traditionnels. Chaque cité possède son souverain, le sarki.",
+          },
+          {
+            type: "image",
+            alt: "Ancienne porte dans les fortifications de Kano.",
+            legende: "Ancienne porte de Kano, photographie de 2008.",
+            credit: "Eugene Kim, CC BY 2.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Old_Kano_Gate_(2626710967).jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by/2.0",
           },
           {
             type: "aRetenir",
@@ -2242,7 +2258,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "À Kano, des fosses de teinture creusées il y a des siècles servent encore aujourd'hui. Peu d'ateliers, dans le monde, ont une telle continuité.",
+            text: "À **Kano**, des fosses de teinture séculaires servent encore aujourd'hui.",
           },
           {
             type: "chiffreCle",
@@ -2251,7 +2267,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Situées à la charnière entre le Sahara et les régions forestières, les cités haoussa prospèrent grâce au commerce. **Kano**, la plus célèbre, est réputée pour ses textiles, son travail du cuir et sa teinture à l'indigo.",
+            text: "Entre le Sahara et les régions forestières, les cités haoussa prospèrent grâce au commerce. Kano est réputée pour ses textiles, son cuir et sa teinture à l'**indigo**.",
+          },
+          {
+            type: "image",
+            alt: "Artisans battant des tissus teints à Kano.",
+            legende: "Artisans de Kano battant des tissus teints, photographie de 2018.",
+            credit: "Solasly, CC BY-SA 4.0, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Kofar_Mata_Dye_pit_workers_beating_dye_clothes.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
           },
           {
             type: "aRetenir",
@@ -2278,7 +2302,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les cités deviennent des centres d'administration et de savoir islamique, avec leurs écoles et leurs lettrés. La religion nouvelle se mêle longtemps aux croyances traditionnelles, avant de s'imposer plus fortement.",
+            text: "Les cités deviennent des centres d'administration et de **savoir islamique**, avec leurs écoles et leurs lettrés. La religion nouvelle se mêle longtemps aux croyances traditionnelles, avant de s'imposer plus fortement.",
           },
           {
             type: "citation",
@@ -2301,7 +2325,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Souvent en rivalité, parfois dominées par des voisins plus puissants, les cités haoussa ont pourtant légué à l'Afrique de l'Ouest l'une de ses grandes langues de commerce.",
+            text: "Les cités haoussa rivalisent pour contrôler les échanges. Leur autonomie varie selon les rapports de force avec les empires voisins.",
           },
           {
             type: "frise",
@@ -2313,7 +2337,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Souvent en concurrence, parfois dominées par des voisins plus puissants comme le **Songhaï** ou le **Kanem-Bornou**, les cités haoussa conservent une grande vitalité culturelle. La langue haoussa devient une véritable langue de commerce, comprise sur de vastes territoires.",
+            text: "Le **Songhaï** et le **Kanem-Bornou** exercent leur influence sur ces villes. Au-delà des changements de domination, les réseaux marchands diffusent la langue haoussa, comprise sur de vastes territoires : cet héritage commercial relie durablement les populations de l'Afrique de l'Ouest.",
           },
           {
             type: "aRetenir",
@@ -2435,7 +2459,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un roi qui n'est pas qu'un roi : à la fois chef politique et figure sacrée, l'Oba incarnait l'État tout entier.",
+            text: "L’**Oba** est à la fois souverain politique et figure sacrée.",
           },
           {
             type: "chiffreCle",
@@ -2444,7 +2468,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le royaume est gouverné par l'**Oba**, un roi à la fois politique et sacré, entouré d'une cour raffinée et de puissantes corporations d'artisans. Le Bénin atteint son apogée notamment sous le règne de l'Oba **Ewuare le Grand**, réformateur et conquérant.",
+            text: "Sa cour rassemble des artisans organisés en corporations. Sous **Ewuare le Grand**, réformes et conquêtes renforcent le royaume.",
+          },
+          {
+            type: "image",
+            alt: "Plaque de bronze : l'oba à cheval, entouré de serviteurs.",
+            legende: "Plaque du Bénin représentant l’Oba à cheval, XVIᵉ–XVIIᵉ siècles.",
+            credit: "The Metropolitan Museum of Art, CC0, WebP",
+            sourceUrl: "https://www.metmuseum.org/art/collection/search/310752",
+            licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
           },
           {
             type: "aRetenir",
@@ -2462,7 +2494,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un métal en fusion, versé dans un moule de cire fondue : de ce geste répété pendant des siècles sont nées des œuvres admirées dans le monde entier.",
+            text: "La **cire perdue** permet de couler le **laiton**.",
           },
           {
             type: "chiffreCle",
@@ -2471,12 +2503,20 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Plaques et sculptures d'une extraordinaire finesse, réalisées selon la technique de la **cire perdue**, ornaient le palais royal, représentant les rois, la cour et l'histoire du royaume. Une corporation de fondeurs se transmettait ce savoir-faire de génération en génération.",
+            text: "Ces œuvres du palais représentaient rois et courtisans. Les fondeurs transmettaient leur savoir-faire.",
           },
           {
             type: "citation",
             texte: "Benvenuto Cellini lui-même n'aurait pu réaliser un meilleur moulage.",
             auteur: "Felix von Luschan, ethnologue allemand",
+          },
+          {
+            type: "image",
+            alt: "Plaque en laiton montrant un chef guerrier et ses accompagnateurs.",
+            legende: "Plaque en laiton du Bénin, chef guerrier et accompagnateurs, XVIᵉ siècle.",
+            credit: "The Metropolitan Museum of Art, CC0, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Plaque-_Warrior_and_Attendants_MET_DT1231.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
           },
           {
             type: "aRetenir",
@@ -2488,7 +2528,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Ces plaques et sculptures ne décoraient pas au hasard : elles servaient d'archives visuelles, racontant en images l'histoire même du royaume.",
+            text: "Ces œuvres servaient aussi d'archives visuelles du royaume.",
           },
         ],
       },
@@ -2498,7 +2538,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Dès la fin du XVᵉ siècle, des navires européens accostent sur les côtes du Bénin. Le royaume, lui, impose ses propres règles du jeu.",
+            text: "Dès la fin du **XVᵉ siècle**, des navires européens accostent sur les côtes du Bénin. Le royaume, lui, impose ses propres règles du jeu.",
           },
           {
             type: "chiffreCle",
@@ -2537,7 +2577,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Ce pillage est aujourd'hui au cœur d'un grand débat sur la restitution des œuvres d'art africaines : certaines pièces ont récemment été rendues. Les bronzes du Bénin restent un symbole du génie artistique africain et des injustices de la période coloniale.",
+            text: "Ce pillage est aujourd'hui au cœur d'un grand débat sur la **restitution** des œuvres d'art africaines : certaines pièces ont récemment été rendues. Les bronzes du Bénin restent un symbole du génie artistique africain et des injustices de la période coloniale.",
           },
           {
             type: "aRetenir",
@@ -2602,7 +2642,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Selon la tradition, c'est ici même que le monde a été créé. Ici, c'est Ilé-Ifè, cœur spirituel de tout le monde yoruba.",
+            text: "Selon la tradition, le monde yoruba serait né à **Ilé-Ifè**.",
           },
           {
             type: "chiffreCle",
@@ -2611,7 +2651,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les **Yoruba**, installés dans le sud-ouest de l'actuel Nigeria et l'est du Bénin, s'organisent en de nombreuses cités et royaumes. **Ilé-Ifè** en est le cœur spirituel : selon la tradition, c'est là que le monde yoruba fut créé.",
+            text: "Les **Yoruba**, au sud-ouest du Nigeria et à l'est du Bénin actuels, s'organisent en cités et royaumes. Ilé-Ifè en est le cœur spirituel, célèbre aussi pour ses têtes sculptées.",
+          },
+          {
+            type: "image",
+            alt: "Tête masculine d’Ifè en terre cuite, avec des lignes incisées sur le visage.",
+            legende: "Tête d’Ifè en terre cuite, XIIᵉ–XIVᵉ siècles, photographiée au musée.",
+            credit: "Jastrow, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg",
+            licenseUrl: "https://commons.wikimedia.org/wiki/File:Ife_sculpture_Inv.A96-1-4.jpg#Licensing",
           },
           {
             type: "aRetenir",
@@ -2629,7 +2677,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Entre le XVᵉ et le XVIIᵉ siècle, un empire s'impose sur les plaines de savane grâce à une arme que peu de ses voisins forestiers possédaient : le cheval.",
+            text: "Oyo s’impose grâce à sa **cavalerie**, entre les XVe et XVIIe siècles.",
           },
           {
             type: "chiffreCle",
@@ -2638,7 +2686,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Sa force repose sur une puissante **cavalerie** — les chevaux viennent du nord — qui lui permet de dominer les plaines de savane et de contrôler de vastes territoires. Sa capitale est **Oyo-Ilé**.",
+            text: "Les chevaux viennent du nord. Depuis **Oyo-Ilé**, l’empire domine les plaines de savane et contrôle des routes commerciales.",
+          },
+          {
+            type: "image",
+            alt: "Plan situant Oyo-Ilé et le secteur royal de Bara.",
+            legende: "Oyo-Ilé et Bara : plan archéologique du centre politique d’Oyo.",
+            credit: "Akinwumi Ogundiran, CC0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Map_of_the_metropolitan_area_of_the_Oyo_Empire_showing_Oyo-Ile_and_Old_Bara_(the_royal_suburb).png",
+            licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
           },
           {
             type: "aRetenir",
@@ -2695,7 +2751,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Grâce à son armée et à sa position, Oyo contrôle d'importantes routes commerciales et étend son influence jusqu'à la côte, faisant même du royaume voisin du **Dahomey** un tributaire à certaines périodes.",
+            text: "Grâce à son armée et à sa position, Oyo contrôle d'importantes **routes commerciales** et étend son influence jusqu'à la côte, faisant même du royaume voisin du **Dahomey** un tributaire à certaines périodes.",
           },
           {
             type: "aRetenir",
@@ -2725,7 +2781,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Au début du **XIXᵉ siècle**, Oyo décline, miné par des guerres civiles et la pression des jihads venus du nord. Mais la culture yoruba ne disparaît pas : elle rayonne dans le monde entier, notamment à travers la diaspora issue de la traite, jusqu'aux Amériques.",
+            text: "Au début du **XIXᵉ siècle**, Oyo décline, miné par des guerres civiles et la pression des jihads venus du nord. Mais la **culture yoruba** ne disparaît pas : elle rayonne dans le monde entier, notamment à travers la diaspora issue de la traite, jusqu'aux Amériques.",
           },
           {
             type: "aRetenir",
@@ -2848,7 +2904,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Les Européens ont donné à cette région un nom qui dit tout : la Côte de l'Or.",
+            text: "Les Européens nomment cette région la Côte de l'Or.",
           },
           {
             type: "chiffreCle",
@@ -2857,7 +2913,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les Ashanti commercent l'or, mais aussi, comme d'autres États côtiers, des captifs, avec les Européens installés sur le littoral. Le royaume, prospère, dispose d'une administration structurée, d'une armée et d'une riche culture de cour (étoffes **kente**, symboles **adinkra**).",
+            text: "Les Ashanti commercent l'or et des captifs avec les Européens du littoral. Leur royaume possède administration, armée et culture de cour : étoffes **kente**, symboles **adinkra** et objets en or.",
+          },
+          {
+            type: "image",
+            alt: "Ornement royal ashanti en or, en forme de lion.",
+            legende: "Lion en or, ornement royal ashanti du XIXᵉ siècle.",
+            credit: "The Metropolitan Museum of Art, CC0, Commons",
+            sourceUrl: "https://www.metmuseum.org/art/collection/search/312428",
+            licenseUrl: "https://creativecommons.org/publicdomain/zero/1.0/",
           },
           {
             type: "aRetenir",
@@ -2875,7 +2939,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pendant des décennies, un royaume africain a résisté, les armes à la main, à l'une des plus grandes puissances coloniales du monde.",
+            text: "Les **Ashanti** résistent longtemps aux ambitions coloniales britanniques.",
           },
           {
             type: "chiffreCle",
@@ -2884,7 +2948,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les **Ashanti** livrent une série de guerres contre les **Britanniques**, qui convoitent leur territoire. Pendant des décennies, ils résistent farouchement, infligeant parfois de lourdes pertes à l'envahisseur, avant que la supériorité militaire britannique ne finisse par l'emporter.",
+            text: "Les **Britanniques** convoitent leur territoire. Plusieurs guerres les opposent au royaume, qui inflige parfois de lourdes pertes à l’envahisseur avant de céder devant sa supériorité militaire.",
+          },
+          {
+            type: "image",
+            alt: "Cour du palais du roi ashanti dessinée au XIXᵉ siècle.",
+            legende: "Palais de Kumasi, dessin britannique publié en 1874.",
+            credit: "Dessinateur inconnu, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:King_Koffee_Palace.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -2902,7 +2974,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 1900, alors que les hommes hésitaient, une reine-mère a pris seule la tête d'un dernier soulèvement.",
+            text: "En **1900**, alors que les hommes hésitaient, une reine-mère a pris seule la tête d'un dernier soulèvement.",
           },
           {
             type: "frise",
@@ -3011,7 +3083,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un corps de femmes soldats d'élite, entraînées pour le combat : ce modèle est presque unique dans toute l'histoire militaire mondiale.",
+            text: "Le Dahomey dispose d'un corps de femmes soldats d'élite : les **Agojie**.",
           },
           {
             type: "chiffreCle",
@@ -3020,7 +3092,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le Dahomey est mondialement connu pour son corps de femmes soldats, les **Agojie**, que les Européens surnommèrent les « Amazones ». Ces guerrières d'élite, entraînées et redoutées, forment une part importante de l'armée royale.",
+            text: "Surnommées « Amazones » par les Européens, ces guerrières entraînées et redoutées forment une part importante de l'**armée royale**.",
+          },
+          {
+            type: "image",
+            alt: "Anciennes combattantes du Dahomey sur une carte postale.",
+            legende: "Vétéranes du Dahomey à Abomey, carte postale colorisée, 1908.",
+            credit: "François-Edmond Fortier, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:The_c%C3%A9l%C3%A9bration_at_Abomey(1908)._-_The_veteran_amazones(_AHOSI_)_of_the_Fon_king_B%C3%A9hanzin,_Son_of_Roi_G%C3%A9l%C3%A9.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -3032,7 +3112,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Redoutées au combat, les Agojie suivaient un entraînement aussi dur que celui des soldats hommes — un fait qui stupéfiait les observateurs européens de l'époque.",
+            text: "Leur entraînement exigeant stupéfiait les observateurs européens.",
           },
         ],
       },
@@ -3042,7 +3122,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Chaque année, la cour du Dahomey organisait de grandes cérémonies. Sur les murs du palais, l'histoire du royaume se lisait comme un livre.",
+            text: "À **Abomey**, les murs des palais racontent les règnes.",
           },
           {
             type: "frise",
@@ -3054,12 +3134,20 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le Dahomey est une monarchie absolue, dirigée par des rois puissants comme **Agaja**, **Ghézo**, Glèlè ou **Béhanzin**. Les bas-reliefs des palais d'Abomey servent d'archives, racontant en images les hauts faits de chaque règne.",
+            text: "Agaja, **Ghézo**, Glèlè et Béhanzin dirigent une monarchie puissante. Les bas-reliefs évoquent les hauts faits des souverains et servent d’archives visuelles.",
           },
           {
             type: "citation",
             texte: "Le roi voit avec les yeux du peuple.",
             auteur: "Proverbe fon",
+          },
+          {
+            type: "image",
+            alt: "Mur d’un palais royal d’Abomey avec décors en relief.",
+            legende: "Mur d’un palais royal d’Abomey, photographie contemporaine.",
+            credit: "Willem Heerbaart, CC BY 2.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Abomey_royal_palace_wall.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by/2.0",
           },
           {
             type: "aRetenir",
@@ -3116,7 +3204,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le roi **Béhanzin** résiste à la conquête française, mais est vaincu en 1894 et le Dahomey devient une colonie française. En 2021, la France restitue au Bénin des trésors royaux pillés durant la conquête. Nous retrouverons Béhanzin dans le cours sur les résistances à la colonisation.",
+            text: "Le roi **Béhanzin** résiste à la conquête française, mais est vaincu en 1894 et le Dahomey devient une colonie française. En **2021**, la France restitue au Bénin des trésors royaux pillés durant la conquête. Nous retrouverons Béhanzin dans le cours sur les résistances à la colonisation.",
           },
           {
             type: "aRetenir",
@@ -3181,7 +3269,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Bien avant l'arrivée des premiers navires européens, un État déjà vaste et organisé prospérait au bord du fleuve Congo.",
+            text: "Le **Kongo** est un État organisé avant l’arrivée des Européens.",
           },
           {
             type: "chiffreCle",
@@ -3190,7 +3278,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le royaume s'étend autour du bas cours du fleuve **Congo**, sur des territoires des actuels Angola, RD Congo et Congo. Sa capitale, **Mbanza-Kongo**, est aujourd'hui classée au patrimoine mondial de l'UNESCO — un État divisé en provinces, avec une monnaie de coquillages, les **nzimbu**.",
+            text: "Autour du bas **Congo**, il couvre des territoires des actuels Angola, Congo et RD Congo. Sa capitale est Mbanza-Kongo ; ses provinces utilisent notamment les coquillages nzimbu comme monnaie.",
+          },
+          {
+            type: "image",
+            alt: "Carte ancienne du royaume du Kongo et de ses provinces.",
+            legende: "Le royaume du Kongo sur une carte de 1648.",
+            credit: "Nerika, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Lossy-page1-1171px-Kongo_1648_coloured.png",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
           },
           {
             type: "aRetenir",
@@ -3235,7 +3331,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Il correspond avec le pape et le roi du Portugal, d'égal à égal. Ce souverain d'Afrique centrale ne demande la permission de personne.",
+            text: "Sous **Afonso Ier**, le christianisme prend une place centrale.",
           },
           {
             type: "chiffreCle",
@@ -3244,7 +3340,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Afonso Iᵉʳ** (Nzinga Mbemba) se convertit au christianisme et en fait la religion de l'État. Lettré, il correspond avec le roi du Portugal et le pape d'égal à égal, envoie des jeunes Kongo étudier en Europe et fait construire des églises.",
+            text: "Le roi échange avec le Portugal et Rome. Des artistes **kongo** adaptent les formes chrétiennes, comme ce crucifix.",
+          },
+          {
+            type: "image",
+            alt: "Crucifix en métal réalisé dans le royaume du Kongo.",
+            legende: "Crucifix kongo, XVIᵉ–XVIIᵉ siècles, collection du Met.",
+            credit: "The Metropolitan Museum of Art, CC0, WebP",
+            sourceUrl: "https://www.metmuseum.org/art/collection/search/318323",
+            licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
           },
           {
             type: "aRetenir",
@@ -3293,7 +3397,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le **Kongo** a montré qu'un État africain pouvait dialoguer d'égal à égal avec l'Europe — avant d'être emporté par la traite qu'il avait lui-même dénoncée.",
+            text: "Le **Kongo** a montré qu'un État africain pouvait dialoguer d'égal à égal avec l'Europe — avant d'être emporté par la **traite** qu'il avait lui-même dénoncée.",
           },
           {
             type: "frise",
@@ -3370,7 +3474,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Onze mètres de haut, en pierres sèches, sans une seule goutte de mortier. Certaines murailles du Grand Zimbabwe défient encore l'ingénierie moderne.",
+            text: "Certaines murailles du **Grand Zimbabwe** atteignent onze mètres, sans mortier.",
           },
           {
             type: "chiffreCle",
@@ -3379,7 +3483,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le Grand Zimbabwe, dans l'actuel Zimbabwe, connaît son apogée entre le XIᵉ et le XVᵉ siècle. Il est bâti par les ancêtres du peuple **Shona**. Son nom vient de l'expression *dzimba dza mabwe*, « les maisons de pierre ».",
+            text: "Bâtie par les ancêtres des **Shona**, cette cité connaît son apogée entre les XIᵉ et XVᵉ siècles. Son nom vient de dzimba dza mabwe, « les maisons de pierre ».",
+          },
+          {
+            type: "image",
+            alt: "Tour conique du Grand Zimbabwe, bâtie en pierres sèches.",
+            legende: "Tour du Grand Zimbabwe, photographie contemporaine des vestiges médiévaux.",
+            credit: "Andrew Moore, CC BY-SA 2.0, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Conical_Tower_-_Great_Enclosure_IV_(47561215932).jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0/",
           },
           {
             type: "aRetenir",
@@ -3391,7 +3503,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Ces murailles massives ont été édifiées sans aucun mortier : chaque pierre est taillée et assemblée avec une précision telle qu'elle tient seule, depuis près de mille ans.",
+            text: "Les pierres sont taillées et assemblées pour tenir sans mortier.",
           },
         ],
       },
@@ -3401,7 +3513,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "L'or extrait dans ces collines a voyagé jusqu'en Chine et en Perse — sans qu'aucun marchand du Grand Zimbabwe n'ait jamais quitté l'Afrique australe.",
+            text: "Des porcelaines chinoises retrouvées au Grand Zimbabwe révèlent des échanges à très longue distance. La cité est reliée aux réseaux marchands de l'océan Indien.",
           },
           {
             type: "chiffreCle",
@@ -3428,7 +3540,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "18 000 habitants, un centre royal, une Grande Enceinte : le Grand Zimbabwe n'était pas un village, c'était une capitale.",
+            text: "La **Grande Enceinte** structure cette capitale de pierre.",
           },
           {
             type: "chiffreCle",
@@ -3437,7 +3549,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La cité comprend un centre royal et religieux, avec la célèbre **Grande Enceinte** et le complexe de la colline. Les artisans y sculptent de remarquables oiseaux en stéatite, les « oiseaux du Zimbabwe », devenus aujourd'hui l'emblème national du pays.",
+            text: "Le complexe de la colline complète la cité. Ses oiseaux sculptés en **stéatite** sont devenus un emblème national.",
+          },
+          {
+            type: "image",
+            alt: "Grande muraille de pierres sèches entourant le complexe du Grand Zimbabwe.",
+            legende: "Mur oriental de la Grande Enceinte du Grand Zimbabwe.",
+            credit: "Andrew Moore, CC BY-SA 2.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:East_Wall_Great_Enclosure_(47614139601).jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",
           },
           {
             type: "aRetenir",
@@ -3459,7 +3579,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pendant plus d'un siècle, des colonisateurs ont refusé de croire que des Africains aient pu bâtir cette cité. L'archéologie leur a donné tort.",
+            text: "Pendant plus d'un siècle, des colonisateurs ont refusé de croire que des Africains aient pu bâtir cette cité. L'**archéologie** leur a donné tort.",
           },
           {
             type: "citation",
@@ -3590,7 +3710,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Comme son prédécesseur le Grand Zimbabwe, le Mutapa a compris une chose simple : l'or ne vaut rien tant qu'il ne voyage pas.",
+            text: "L’**or** du Mutapa rejoint les circuits de l’océan Indien.",
           },
           {
             type: "chiffreCle",
@@ -3599,7 +3719,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le Mutapa tire sa puissance du commerce de l'**or** et de l'ivoire, acheminés vers la côte swahilie et le port de **Sofala**. Les marchands arabes et swahilis viennent y échanger tissus, perles et porcelaines contre les richesses de l'intérieur.",
+            text: "Par **Sofala** et la côte swahilie circulent or et ivoire. Marchands arabes et swahilis apportent tissus, perles et porcelaines en échange des richesses de l’intérieur.",
+          },
+          {
+            type: "image",
+            alt: "Port de Sofala dans une gravure ancienne.",
+            legende: "Vue de Sofala, détail d’une gravure de Coronelli.",
+            credit: "Vincenzo Coronelli, domaine public, extrait WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:(Text_Page_to)_Isolario_del_P._Coronelli._(with)_Isola,_e_citta_di_Sofala._(to_accompany)_Isolario_descrittione_geografico-historica_(IA_dr_text-page-to-isolario-del-p-coronelli-with-isola-e-citta-di-sofala-11391099).jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -3617,7 +3745,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Certains Portugais crurent avoir retrouvé, au cœur de l'Afrique australe, un lieu mentionné dans la Bible.",
+            text: "Des Portugais croient trouver en Afrique australe le pays biblique d'**Ophir**.",
           },
           {
             type: "chiffreCle",
@@ -3626,7 +3754,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les Portugais sont fascinés par les récits des mines d'or du **Monomotapa**. Certains croient y reconnaître le mythique pays d'**Ophir** de la Bible. Avides de contrôler ce commerce, ils cherchent à s'immiscer dans les affaires du royaume.",
+            text: "Fascinés par l'or du **Monomotapa**, ils s'installent sur la côte au XVIᵉ siècle. Pour contrôler ce commerce, ils cherchent à intervenir dans les affaires du royaume.",
+          },
+          {
+            type: "image",
+            alt: "Carte ancienne situant le Monomotapa en Afrique australe.",
+            legende: "Monomotapa sur une carte gravée européenne de Willem Blaeu, 1635.",
+            credit: "Willem Blaeu, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Monomotapa_Map.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -3638,7 +3774,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Le mythique pays d'Ophir, source d'or du roi Salomon selon la Bible, n'a jamais été localisé avec certitude — mais des Portugais crurent l'avoir enfin trouvé, à tort, au Mutapa.",
+            text: "Ophir, source d'or du roi Salomon selon la Bible, n'a jamais été localisé avec certitude.",
           },
         ],
       },
@@ -3648,7 +3784,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Les Portugais rêvaient de richesses fabuleuses. Le Mutapa, lui, ne leur offrit jamais que des dettes et des rivalités.",
+            text: "Les **Portugais** rêvaient de richesses fabuleuses. Le Mutapa, lui, ne leur offrit jamais que des dettes et des rivalités.",
           },
           {
             type: "citation",
@@ -3687,7 +3823,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'histoire du Grand Zimbabwe puis du **Mutapa** montre la continuité d'une puissante civilisation d'Afrique australe, bâtie sur l'or, le bétail et le commerce à longue distance. Ces royaumes shona rappellent que la région fut, bien avant la colonisation, le siège d'États organisés et prospères.",
+            text: "L'histoire du **Grand Zimbabwe** puis du **Mutapa** montre la continuité d'une puissante civilisation d'Afrique australe, bâtie sur l'or, le bétail et le commerce à longue distance. Ces royaumes shona rappellent que la région fut, bien avant la colonisation, le siège d'États organisés et prospères.",
           },
           {
             type: "aRetenir",
@@ -3761,7 +3897,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La région des Grands Lacs, dans les actuels Ouganda, Rwanda, Burundi et Tanzanie, est une zone de hauts plateaux fertiles. Cette richesse agricole permet de fortes densités de population et l'émergence de royaumes centralisés : **Buganda**, Bunyoro, **Rwanda**, Burundi ou encore Ankole.",
+            text: "En Afrique de l’Est, la région des Grands Lacs, dans les actuels Ouganda, Rwanda, Burundi et Tanzanie, est une zone de hauts plateaux fertiles. Cette richesse agricole permet de fortes densités de population et l'émergence de royaumes centralisés : **Buganda**, Bunyoro, **Rwanda**, Burundi ou encore Ankole.",
           },
           {
             type: "aRetenir",
@@ -3779,7 +3915,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Une flotte de pirogues, une administration de chefs, des routes : le Buganda ressemblait, par bien des aspects, à un État moderne.",
+            text: "Routes, armée, flotte de pirogues : le **Buganda** est un État organisé.",
           },
           {
             type: "chiffreCle",
@@ -3788,7 +3924,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le **Buganda**, dans l'actuel Ouganda, est l'un des plus puissants. Dirigé par le **Kabaka** (roi), c'est un État très organisé, doté d'une administration de chefs, de routes, d'une armée solide et d'une flotte de pirogues sur le lac Victoria.",
+            text: "Dans l'actuel Ouganda, le **Kabaka** dirige ce puissant royaume, à son apogée aux XVIIIᵉ et XIXᵉ siècles. Une administration de chefs et une flotte sur le lac Victoria soutiennent son pouvoir.",
+          },
+          {
+            type: "image",
+            alt: "Bâtiment funéraire royal en chaume sur le site de Kasubi.",
+            legende: "Tombeaux royaux de Kasubi, photographie de 2007 avant l’incendie de 2010.",
+            credit: "UNESCO / Lazare Eloundou Assomo, CC BY-SA 3.0 IGO, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Tombs_of_Buganda_Kings_at_Kasubi-114316.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/igo/",
           },
           {
             type: "aRetenir",
@@ -3833,7 +3977,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Des tambours qui parlent le pouvoir, des récits qui traversent les siècles : ces royaumes n'ont jamais été « sans histoire ».",
+            text: "Les **tambours royaux** donnent une forme sonore au pouvoir.",
           },
           {
             type: "citation",
@@ -3842,7 +3986,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'économie de ces royaumes repose sur l'agriculture (notamment la **banane**) et l'élevage. Leurs cultures de cour sont riches : traditions orales, **tambours royaux** symboles du pouvoir, cérémonies et hiérarchies complexes.",
+            text: "Agriculture, notamment la **banane**, et élevage soutiennent ces royaumes. Traditions orales, cérémonies et cultures de cour se transmettent encore, comme au Burundi.",
+          },
+          {
+            type: "image",
+            alt: "Tambourinaires autour de grands tambours au sanctuaire de Gishora.",
+            legende: "Tambourinaires de Gishora, au Burundi, photographie de 2024.",
+            credit: "NSENGIYUMVA Joseph, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Les_tambourinaires_de_Gitega.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
           },
           {
             type: "aRetenir",
@@ -3872,7 +4024,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les colonisateurs rigidifient les identités sociales et exploitent les rivalités, préparant de futurs conflits. Malgré tout, l'héritage de ces royaumes — leurs cultures, leurs langues, leurs institutions — reste très vivant dans l'Afrique de l'Est d'aujourd'hui.",
+            text: "Les colonisateurs rigidifient les **identités sociales** et exploitent les rivalités, préparant de futurs conflits. Malgré tout, l'héritage de ces royaumes — leurs cultures, leurs langues, leurs institutions — reste très vivant dans l'Afrique de l'Est d'aujourd'hui.",
           },
           {
             type: "aRetenir",
@@ -3964,7 +4116,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Onze églises entières, creusées dans le sol puis sculptées vers le bas — sans qu'une seule pierre n'ait jamais été transportée jusqu'ici.",
+            text: "À **Lalibela**, onze églises sont taillées directement dans la roche.",
           },
           {
             type: "chiffreCle",
@@ -3973,7 +4125,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le roi **Lalibela** (dynastie Zagwé) fait tailler ces églises, vers les XIIᵉ-XIIIᵉ siècles, conçues comme une « Nouvelle Jérusalem ». Toujours en activité, elles sont classées au patrimoine mondial de l'**UNESCO** et restent un grand lieu de pèlerinage.",
+            text: "Le roi Lalibela, de la dynastie Zagwé, fait aménager cette « Nouvelle Jérusalem » vers les XIIᵉ-XIIIᵉ siècles. Toujours en activité, les églises sont classées par l'**UNESCO** et accueillent les pèlerins.",
+          },
+          {
+            type: "image",
+            alt: "Toit cruciforme de Bete Giyorgis, taillé dans la roche.",
+            legende: "Bete Giyorgis à Lalibela, photographiée en 2012.",
+            credit: "Bernard Gagnon, CC BY-SA 3.0, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
           },
           {
             type: "aRetenir",
@@ -3985,7 +4145,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Ces églises ne sont pas construites, mais creusées : les bâtisseurs ont taillé la roche vers le bas, sculptant l'édifice depuis l'extérieur jusqu'à en faire émerger les murs.",
+            text: "Les bâtisseurs taillent la roche vers le bas pour dégager murs et ouvertures.",
           },
         ],
       },
@@ -3995,7 +4155,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Une Église coupée du reste du monde chrétien pendant des siècles — et qui en a profité pour devenir profondément, radicalement elle-même.",
+            text: "Le christianisme éthiopien conserve ses propres traditions.",
           },
           {
             type: "chiffreCle",
@@ -4004,7 +4164,16 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'Église orthodoxe éthiopienne a conservé une langue liturgique propre, le **guèze**, son propre calendrier, de nombreux monastères et de superbes manuscrits enluminés. Isolée du reste de la chrétienté, elle a développé des traditions originales.",
+            text: "Le **guèze** sert à la liturgie. Monastères, calendrier propre et **manuscrits enluminés** témoignent d’une tradition religieuse ancienne et originale, dont cet évangile du XVe siècle.",
+          },
+          {
+            type: "image",
+            alt: "Saint Luc peint sur une page d'évangile éthiopien.",
+            legende: "Évangile éthiopien du XVe siècle : une tradition chrétienne enluminée.",
+            credit: "Cleveland Museum of Art, CC0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Clevelandart_1999.212.jpg",
+            licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            fit: "contain",
           },
           {
             type: "aRetenir",
@@ -4061,7 +4230,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'Éthiopie est unique en Afrique : elle n'a jamais été durablement colonisée, allant jusqu'à vaincre l'Italie à **Adoua** en 1896 (que nous découvrons dans un prochain cours). Lalibela, ses manuscrits et son Église orthodoxe témoignent de cette exceptionnelle profondeur historique.",
+            text: "L'Éthiopie est unique en Afrique : elle n'a jamais été durablement colonisée, allant jusqu'à vaincre l'Italie à **Adoua** en **1896** (que nous découvrons dans un prochain cours). Lalibela, ses manuscrits et son Église orthodoxe témoignent de cette exceptionnelle profondeur historique.",
           },
           {
             type: "aRetenir",
@@ -4126,7 +4295,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le Sahara n'était pas un mur. C'était une route — à condition de savoir la traverser.",
+            text: "Le **Sahara** devient une route commerciale grâce au chameau.",
           },
           {
             type: "chiffreCle",
@@ -4135,7 +4304,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Grâce au **chameau**, introduit dans les premiers siècles de notre ère, de longues caravanes — parfois des milliers de bêtes — traversent le désert d'oasis en oasis. Ces pistes relient les villes du Sahel aux ports et cités d'Afrique du Nord.",
+            text: "Introduit aux premiers siècles de notre ère, le **chameau** permet aux caravanes de traverser d'oasis en oasis. Certaines comptent des milliers de bêtes. Les pistes relient le Sahel aux cités d'Afrique du Nord.",
+          },
+          {
+            type: "image",
+            alt: "Caravane de dromadaires chargés de sel à Tombouctou.",
+            legende: "Caravane de sel à Tombouctou, début du XXe siècle.",
+            credit: "François-Edmond Fortier, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Tombouctou-Arriv%C3%A9e_d%27une_caravane_de_sel_(AOF).jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -4147,7 +4324,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Avant le chameau, traverser le Sahara relevait presque de l'exploit : c'est cet animal, seul, qui a ouvert le désert au grand commerce.",
+            text: "Le chameau permet le développement des grandes caravanes commerciales.",
           },
         ],
       },
@@ -4157,7 +4334,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Deux richesses filaient en sens inverse sur les mêmes pistes : l'or montait, le sel descendait — et parfois s'échangeaient à poids égal.",
+            text: "Sur les routes du Sahara, l’**or** s’échange contre le **sel**.",
           },
           {
             type: "chiffreCle",
@@ -4166,7 +4343,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'or, extrait dans les régions du sud (**Bambouk**, **Bouré**), monte vers le nord ; le sel, tiré des mines sahariennes (**Taghaza**, Taoudenni), descend vers le sud. Circulent aussi cuivre, tissus, chevaux, livres — et, tragiquement, des captifs.",
+            text: "Le sel des mines du nord rejoint le Sahel. Les caravanes transportent aussi tissus, cuivre et autres marchandises ; leurs échanges enrichissent royaumes et villes-carrefours.",
+          },
+          {
+            type: "image",
+            alt: "Plaques de sel saharien empilées pour le commerce.",
+            legende: "Plaques de sel saharien à Mopti, photographie contemporaine.",
+            credit: "Taguelmoust at French Wikipedia, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Mopti_sel.jpg",
+            licenseUrl: "http://creativecommons.org/licenses/by-sa/3.0/",
           },
           {
             type: "aRetenir",
@@ -4318,7 +4503,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "L'**islam** n'est pas arrivé en Afrique de l'Ouest par la conquête. Il est arrivé par les routes du commerce, sans une seule bataille.",
+            text: "Des marchands diffusent l’**islam** le long des routes transsahariennes.",
           },
           {
             type: "chiffreCle",
@@ -4327,7 +4512,16 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "En Afrique de l'Ouest, l'islam se diffuse pacifiquement et progressivement, grâce aux marchands qui traversent le **Sahara**. Les contacts commerciaux réguliers avec le monde musulman ouvrent la voie à la nouvelle religion, sans violence militaire.",
+            text: "La religion progresse par les échanges, les migrations et les réseaux de lettrés. Les contacts entre **Maghreb** et Sahel accompagnent cette diffusion, sans conversion immédiate de toutes les populations.",
+          },
+          {
+            type: "image",
+            alt: "Routes commerciales reliant le royaume du Ghana au nord du Sahara.",
+            legende: "Routes transsahariennes médiévales : axes de commerce et de diffusion religieuse.",
+            credit: "Siyajkak, CC0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Trans-Saharan_routes_early.svg",
+            licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+            fit: "contain",
           },
           {
             type: "aRetenir",
@@ -4354,7 +4548,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'islam est d'abord adopté par les marchands puis par les souverains et leurs cours : la religion facilite le commerce et la diplomatie. Mais une grande partie de la population conserve longtemps ses religions traditionnelles.",
+            text: "L'islam est d'abord adopté par les **marchands** puis par les **souverains** et leurs cours : la religion facilite le commerce et la diplomatie. Mais une grande partie de la population conserve longtemps ses religions traditionnelles.",
           },
           {
             type: "aRetenir",
@@ -4372,7 +4566,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Prier, apprendre, échanger : dans certaines villes, ces trois gestes se confondaient au même endroit, sous le même toit.",
+            text: "À **Tombouctou** et **Djenné**, mosquées, écoles et lettrés font circuler le savoir.",
           },
           {
             type: "chiffreCle",
@@ -4381,7 +4575,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Des villes comme **Tombouctou** et **Djenné** deviennent de brillants foyers de savoir islamique, avec leurs mosquées, leurs écoles coraniques et leurs lettrés. Le pèlerinage de Mansa Moussa à La Mecque, en 1324, illustre l'ancrage de l'islam au sommet de l'État malien.",
+            text: "Ces cités deviennent des foyers de savoir islamique. Le pèlerinage de Mansa Moussa à La Mecque, en 1324, illustre aussi l'ancrage de l'islam au sommet de l'État malien.",
+          },
+          {
+            type: "image",
+            alt: "Façade en terre d'une mosquée à Tombouctou.",
+            legende: "Mosquée de Tombouctou en 2007, probablement Sankoré.",
+            credit: "Anne and David, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:2007_Sankore_Mosque_Timbuktu_01.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -4506,7 +4708,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "À l'est de l'Afrique, face à l'océan Indien, un tout autre monde commercial s'est développé — tourné vers l'Arabie, la Perse et l'Inde.",
+            text: "Le littoral de l’Afrique orientale forme un réseau de cités.",
           },
           {
             type: "chiffreCle",
@@ -4515,7 +4717,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La côte est-africaine (actuels Kenya, Tanzanie, Mozambique) se couvre de cités-États marchandes tournées vers l'océan Indien : **Kilwa**, **Mombasa**, **Zanzibar**, Sofala, Lamu, Mogadiscio. Ces ports prospères vivent du commerce maritime.",
+            text: "**Lamu**, Mombasa, Zanzibar et **Kilwa** relient leur arrière-pays à l’océan Indien. Leurs habitants développent une culture urbaine swahilie, façonnée par des siècles d’échanges.",
+          },
+          {
+            type: "image",
+            alt: "Rue bordée de maisons dans la vieille ville de Lamu.",
+            legende: "Rue de Lamu, cité swahilie du littoral kényan.",
+            credit: "Mzein04, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Lamu_old_town_street.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
           },
           {
             type: "aRetenir",
@@ -4591,7 +4801,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un voyageur venu de loin y admira, au XIVᵉ siècle, une richesse qu'il ne s'attendait pas à trouver sur cette côte.",
+            text: "Au XIVᵉ siècle, **Ibn Battuta** admire la richesse de Kilwa.",
           },
           {
             type: "citation",
@@ -4600,7 +4810,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Kilwa Kisiwani** est la plus riche de ces cités. On y frappe monnaie et l'on y bâtit le palais de **Husuni Kubwa**. Le site de Kilwa est aujourd'hui classé au patrimoine mondial de l'UNESCO.",
+            text: "**Kilwa Kisiwani**, riche cité swahilie, frappe monnaie et possède le palais de Husuni Kubwa. Son site, dont la Grande Mosquée, est aujourd'hui classé par l'UNESCO.",
+          },
+          {
+            type: "image",
+            alt: "Arcades ruinées de la Grande Mosquée de Kilwa Kisiwani.",
+            legende: "Ruines de la Grande Mosquée de Kilwa, photographiées en 2016.",
+            credit: "Janetmpurdy, CC BY-SA 4.0, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Great_Mosque_Kilwa_Kisiwani_Tanzania.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
           },
           {
             type: "aRetenir",
@@ -4695,7 +4913,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Du XVIᵉ au XIXᵉ siècle, les puissances européennes organisent un commerce entre trois continents. Sur l'un de ses trois trajets : des femmes et des hommes réduits en esclavage.",
+            text: "Du XVIᵉ au XIXᵉ siècle, la **traite atlantique** relie trois continents.",
           },
           {
             type: "chiffreCle",
@@ -4704,7 +4922,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Des marchandises manufacturées partent d'Europe vers l'Afrique. Des Africains, déportés de force, traversent l'Atlantique vers les Amériques — la « **traversée du milieu** ». Les produits des plantations, sucre, coton, tabac, repartent ensuite vers l'Europe.",
+            text: "Des marchandises européennes arrivent en Afrique. Des personnes réduites en esclavage sont déportées vers les Amériques : la « **traversée du milieu** ». Sucre, coton et tabac des plantations repartent vers l'Europe.",
+          },
+          {
+            type: "image",
+            alt: "Plan du Brookes montrant les personnes captives entassées.",
+            legende: "Le Brookes : plan abolitionniste d'un navire négrier du XVIIIe siècle.",
+            credit: "James Phillips, British Library, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Brookes_slave_ship,_British_Library_(cropped).jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -4758,7 +4984,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Dépeuplement, guerres menées pour capturer des prisonniers, déstabilisation des sociétés et des États, distorsions économiques : les effets touchent tout le continent. Des royaumes côtiers sont eux-mêmes entraînés dans ce système.",
+            text: "**Dépeuplement**, **guerres** menées pour capturer des prisonniers, déstabilisation des sociétés et des États, distorsions économiques : les effets touchent tout le continent. Des royaumes côtiers sont eux-mêmes entraînés dans ce système.",
           },
           {
             type: "aRetenir",
@@ -4776,16 +5002,24 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Face à la traite et à l'esclavage, la résistance ne cesse jamais : révoltes, fuites, préservation des cultures.",
+            text: "Les personnes asservies résistent par les fuites et les révoltes.",
           },
           {
             type: "citation",
             texte: "Il repoussera par les racines, car elles sont profondes et nombreuses.",
-            auteur: "Toussaint Louverture",
+            auteur: "Paroles attribuées à Toussaint Louverture",
           },
           {
             type: "paragraphe",
-            text: "La révolution de Haïti (**1791-1804**) aboutit à la première république noire indépendante, née d'une révolte d'esclaves victorieuse. Sous la pression des mouvements abolitionnistes, la traite puis l'esclavage sont progressivement abolis au XIXᵉ siècle.",
+            text: "La **révolution haïtienne** aboutit à l’indépendance en **1804**.",
+          },
+          {
+            type: "image",
+            alt: "Combats autour du fort de la Crête-à-Pierrot.",
+            legende: "La Crête-à-Pierrot, 1802 : gravure d’après Auguste Raffet.",
+            credit: "Auguste Raffet / Ernst Hébert, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Combat_et_prise_de_la_Cr%C3%AAte-%C3%A0-Pierrot_-_Auguste_Raffet.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -4797,7 +5031,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Le marronnage — la fuite vers des zones reculées — a permis à des communautés entières de personnes libres de se maintenir, parfois pendant des générations.",
+            text: "Le marronnage — la fuite vers des zones reculées — a permis à des communautés de personnes libres de se maintenir, durant des générations.",
           },
         ],
       },
@@ -4820,7 +5054,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La diaspora africaine a profondément façonné les Amériques : musique, religion, cultures. Des lieux comme **Gorée**, Ouidah ou Elmina portent aujourd'hui cette mémoire.",
+            text: "La **diaspora africaine** a profondément façonné les Amériques : musique, religion, cultures. Des lieux comme **Gorée**, Ouidah ou Elmina portent aujourd'hui cette mémoire.",
           },
           {
             type: "aRetenir",
@@ -4889,7 +5123,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "À la fin du XIXᵉ siècle, les puissances européennes se lancent dans une compétition pour s'emparer de territoires africains.",
+            text: "À la fin du **XIXᵉ siècle**, les puissances européennes se lancent dans une compétition pour s'emparer de territoires africains.",
           },
           {
             type: "chiffreCle",
@@ -4898,7 +5132,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Chaque puissance veut s'emparer de territoires pour leurs ressources, leurs marchés et le prestige. Cette rivalité entre pays européens menace de dégénérer en conflits directs entre eux.",
+            text: "Chaque puissance veut s'emparer de territoires pour leurs **ressources**, leurs marchés et le prestige. Cette rivalité entre pays européens menace de dégénérer en conflits directs entre eux.",
           },
           {
             type: "aRetenir",
@@ -4916,7 +5150,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 1884 et 1885, des représentants de plusieurs pays européens se réunissent à Berlin pour décider du partage de l'Afrique. Aucun Africain n'est présent.",
+            text: "En **1884-1885**, des puissances se réunissent à Berlin. Aucun Africain n'y représente le continent.",
           },
           {
             type: "chiffreCle",
@@ -4925,7 +5159,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le chancelier allemand **Bismarck** convoque cette conférence, qui fixe les règles du partage du continent — notamment le principe d'« occupation effective ». L'immense bassin du Congo est même attribué à titre personnel au roi belge **Léopold II**.",
+            text: "**Bismarck** convoque la conférence, qui fixe notamment le principe d'« occupation effective ». Le bassin du Congo passe sous le contrôle personnel du roi belge Léopold II.",
+          },
+          {
+            type: "image",
+            alt: "Gravure des délégués à Berlin devant une carte d'Afrique.",
+            legende: "La conférence de Berlin, gravure de 1884.",
+            credit: "Adalbert von Roessler, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Kongokonferenz.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -4943,7 +5185,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Les frontières sont tracées à la règle, sur des cartes, par des hommes qui n'ont jamais mis les pieds sur les terres qu'ils divisent.",
+            text: "Les frontières coloniales traversent souvent des sociétés et des territoires anciens.",
           },
           {
             type: "frise",
@@ -4955,12 +5197,20 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les Européens tracent des frontières à la règle sur des cartes, ignorant les peuples, royaumes et réalités ethniques ou linguistiques existants. Des communautés sont séparées, des groupes rivaux réunis de force.",
+            text: "La carte de **1914** montre le résultat des conquêtes, bien après **Berlin**.",
           },
           {
             type: "citation",
             texte: "Quand les éléphants se battent, c'est l'herbe qui souffre.",
             auteur: "Proverbe swahili",
+          },
+          {
+            type: "image",
+            alt: "Carte des possessions coloniales et des États indépendants en Afrique.",
+            legende: "L’Afrique en 1914 : carte des dominations coloniales.",
+            credit: "Hogweard, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Africa_map_1914.svg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -5005,7 +5255,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Frontières artificielles, économies d'exploitation, sociétés bouleversées : les effets du partage de Berlin se font encore sentir aujourd'hui.",
+            text: "**Frontières artificielles**, économies d'exploitation, sociétés bouleversées : les effets du partage de Berlin se font encore sentir aujourd'hui.",
           },
           {
             type: "frise",
@@ -5017,7 +5267,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les effets du partage de Berlin se font encore sentir aujourd'hui : conflits frontaliers, peuples divisés. La conférence de Berlin reste le symbole d'une Afrique dont le sort fut décidé sans les Africains.",
+            text: "Les effets du partage de Berlin se font encore sentir aujourd'hui : **conflits frontaliers**, peuples divisés. La conférence de Berlin reste le symbole d'une Afrique dont le sort fut décidé sans les Africains.",
           },
           {
             type: "aRetenir",
@@ -5047,7 +5297,7 @@ export const HISTOIRE_COURSES: Course[] = [
       },
       {
         id: "course-histoire-25-conference-berlin-quiz-3",
-        question: "Comment les frontières coloniales ont-elles été tracées ?",
+        question: "Comment les frontières coloniales ont-elles été tracées en Afrique ?",
         options: ["Selon les peuples et royaumes existants", "À la règle sur des cartes, en ignorant les réalités locales", "Par des votes populaires", "Selon les fleuves uniquement"],
         correctIndex: 1,
         explanation: "Les frontières furent tracées arbitrairement, ignorant peuples, royaumes et réalités ethniques ou linguistiques.",
@@ -5082,7 +5332,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "La colonisation ne s'est pas faite sans résistance. Partout sur le continent, des peuples se sont opposés à la conquête.",
+            text: "La colonisation ne s'est pas faite sans **résistance**. Partout sur le continent, des peuples se sont opposés à la conquête.",
           },
           {
             type: "frise",
@@ -5094,7 +5344,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Partout, les Africains résistent, militairement, diplomatiquement et spirituellement. On distingue une résistance « primaire », contre la conquête elle-même, puis des révoltes une fois l'occupation installée. L'idée d'une Afrique passive face à l'Europe est un mythe.",
+            text: "Partout, les **Africains** résistent, militairement, diplomatiquement et spirituellement. On distingue une résistance « primaire », contre la conquête elle-même, puis des révoltes une fois l'occupation installée. L'idée d'une Afrique passive face à l'Europe est un mythe.",
           },
           {
             type: "aRetenir",
@@ -5112,7 +5362,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Samory Touré tient tête à l'armée française pendant près de dix-sept ans, en fabriquant lui-même une partie de ses armes.",
+            text: "**Samory Touré** construit un État puissant en Afrique de l’Ouest.",
           },
           {
             type: "chiffreCle",
@@ -5121,7 +5371,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Samory Touré**, fondateur de l'empire du **Wassoulou** en Afrique de l'Ouest, dispose d'une armée bien organisée, pratique une guerre de mouvement et fabrique lui-même des armes. Il n'est capturé qu'en 1898.",
+            text: "Il résiste longtemps à l’expansion française grâce à son armée, ses déplacements stratégiques et la diplomatie. Capturé en **1898**, il est déporté au Gabon.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique de Samori Touré.",
+            legende: "Samory Touré, portrait photographique ancien.",
+            credit: "Photographe inconnu, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Almamy_Samory_Tour%C3%A9.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -5139,7 +5397,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "D'un bout à l'autre du continent, des rois résistent aux colonisateurs. En Namibie, cette résistance se heurte à une répression d'une extrême violence.",
+            text: "Plusieurs souverains affrontent la conquête coloniale.",
           },
           {
             type: "chiffreCle",
@@ -5148,7 +5406,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le roi **Béhanzin** du Dahomey combat les Français (1890-1894) ; les **Ashanti** résistent aux Britanniques ; **Lat Dior** s'oppose à la pénétration française au Sénégal. En Namibie, les peuples **Herero** et **Nama** sont écrasés par les Allemands lors d'une répression reconnue comme un génocide.",
+            text: "**Béhanzin** résiste au Dahomey, les Ashanti aux Britanniques, et **Lat Dior** à la France. En Namibie, les Allemands répriment les Herero et Nama par un génocide.",
+          },
+          {
+            type: "image",
+            alt: "Portrait gravé de Lat Dior, vêtu de tissu clair.",
+            legende: "Lat Dior, Damel du Cayor : gravure publiée en 1875.",
+            credit: "Le Monde illustré, 1875, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -5175,7 +5441,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La révolte **Maji Maji** (Tanganyika, 1905-1907) soulève de nombreux peuples contre les Allemands. Ailleurs, la résistance passe par des prophètes, des mouvements religieux et le refus quotidien de l'ordre colonial.",
+            text: "La révolte **Maji Maji** (Tanganyika, **1905-1907**) soulève de nombreux peuples contre les Allemands. Ailleurs, la résistance passe par des prophètes, des mouvements religieux et le refus quotidien de l'ordre colonial.",
           },
           {
             type: "aRetenir",
@@ -5202,7 +5468,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Militairement, ces résistances sont le plus souvent vaincues, en raison de la supériorité des armes européennes. Mais elles prouvent que les Africains n'ont jamais été passifs, et elles nourrissent les futurs mouvements nationalistes et la marche vers l'indépendance.",
+            text: "Militairement, ces résistances sont le plus souvent vaincues, en raison de la supériorité des **armes européennes**. Mais elles prouvent que les Africains n'ont jamais été passifs, et elles nourrissent les futurs **mouvements nationalistes** et la marche vers l'indépendance.",
           },
           {
             type: "aRetenir",
@@ -5298,7 +5564,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un empereur qui achète des armes modernes, unit ses seigneurs régionaux, et prépare une guerre qu'il n'a pas cherchée.",
+            text: "**Ménélik II** prépare la défense de l’Éthiopie.",
           },
           {
             type: "citation",
@@ -5307,7 +5573,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'empereur **Ménélik II** sait unir les forces éthiopiennes et moderniser son armée : il achète des armes modernes et rallie les seigneurs régionaux. L'impératrice **Taytu** joue également un rôle de premier plan dans la résistance à l'Italie.",
+            text: "Il rassemble des forces, modernise l’armement et mobilise les chefs régionaux. Sa diplomatie sert l’indépendance face à l’**Italie**, dont les ambitions conduisent à la guerre.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique de l’empereur Ménélik II.",
+            legende: "Ménélik II, empereur d’Éthiopie, photographie ancienne.",
+            credit: "Unknown, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Portrait_of_Menelik_II.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
           },
           {
             type: "aRetenir",
@@ -5325,7 +5599,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Environ 100 000 soldats éthiopiens affrontent l'armée italienne venue les envahir. En une seule journée, le sort du continent bascule.",
+            text: "Le **1er mars 1896**, l’armée éthiopienne affronte les envahisseurs italiens.",
           },
           {
             type: "chiffreCle",
@@ -5334,7 +5608,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le 1er mars **1896**, à **Adoua**, l'armée éthiopienne écrase les forces italiennes venues l'envahir. Ce fut une victoire éclatante et décisive, l'une des plus célèbres de l'histoire militaire africaine.",
+            text: "À **Adoua**, les forces réunies par Ménélik II remportent une victoire décisive. Cette défaite italienne protège l’indépendance éthiopienne et retentit bien au-delà du pays.",
+          },
+          {
+            type: "image",
+            alt: "Soldats et officiers représentés dans une bataille.",
+            legende: "Adoua : illustration britannique publiée le 11 avril 1896.",
+            credit: "The Graphic, 1896, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Adoua_1.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -5352,12 +5634,12 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pour la première fois, une puissance coloniale européenne doit reconnaître, noir sur blanc, la pleine indépendance d'un État africain.",
+            text: "En **1896**, la victoire d'Adoua oblige l'Italie à reconnaître l'indépendance de l'Éthiopie. Son retentissement dépasse les frontières du pays.",
           },
           {
             type: "chiffreCle",
-            valeur: "1",
-            legende: "première grande défaite coloniale face à un État africain",
+            valeur: "1896",
+            legende: "reconnaissance de l'indépendance éthiopienne par l'Italie",
           },
           {
             type: "paragraphe",
@@ -5367,7 +5649,7 @@ export const HISTOIRE_COURSES: Course[] = [
             type: "aRetenir",
             points: [
               "L'Italie reconnaît la pleine indépendance de l'Éthiopie",
-              "La première grande défaite coloniale face à un État africain",
+              "**1896** : une victoire qui préserve l'indépendance éthiopienne",
               "Une nouvelle qui inspire les panafricanistes du monde entier",
             ],
           },
@@ -5440,9 +5722,9 @@ export const HISTOIRE_COURSES: Course[] = [
       {
         id: "course-histoire-27-bataille-adoua-quiz-5",
         question: "Pourquoi la bataille d'Adoua est-elle si importante ?",
-        options: ["C'est la première grande défaite d'une puissance coloniale face à un État africain", "C'est la première bataille de l'histoire", "Elle a marqué le début de la colonisation", "Elle n'a eu aucune conséquence"],
+        options: ["Elle a permis à l'Éthiopie de préserver son indépendance", "C'est la première bataille de l'histoire", "Elle a marqué le début de la colonisation", "Elle n'a eu aucune conséquence"],
         correctIndex: 0,
-        explanation: "Adoua fut la première grande victoire d'un État africain sur une puissance coloniale européenne, célébrée jusque dans la presse afro-américaine.",
+        explanation: "La victoire d'Adoua en 1896 préserve l'indépendance de l'Éthiopie, reconnue par l'Italie au traité d'Addis-Abeba. Elle devient un symbole de résistance anticoloniale.",
       },
     ],
   },
@@ -5460,7 +5742,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Après 1945, un mouvement traverse tout le continent : celui des peuples qui refusent, de plus en plus fort, de rester colonisés.",
+            text: "Le **nationalisme** africain remet l’ordre colonial en cause.",
           },
           {
             type: "chiffreCle",
@@ -5469,7 +5751,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Élites instruites, anciens combattants et mouvements urbains réclament d'abord des droits, puis l'indépendance. Ils s'inspirent du **panafricanisme**, du mouvement mondial de décolonisation et des principes de l'**ONU**. L'ordre colonial est désormais contesté de toutes parts.",
+            text: "Élites instruites, anciens combattants et mouvements urbains réclament des droits, puis l’indépendance. Le **panafricanisme** et les principes de l’ONU les inspirent ; Nkrumah porte ce combat au Ghana.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique de Kwame Nkrumah.",
+            legende: "Kwame Nkrumah, dirigeant du nationalisme et de l’indépendance ghanéens.",
+            credit: "The National Archives UK, OGL v1.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Kwame_Nkrumah_-_The_National_Archives_UK_-_CO_1069-50-1-crop.jpg",
+            licenseUrl: "http://NationalArchives.gov.uk/doc/open-government-licence/version/1/",
           },
           {
             type: "aRetenir",
@@ -5499,6 +5789,14 @@ export const HISTOIRE_COURSES: Course[] = [
             text: "Le **Ghana**, conduit par **Kwame Nkrumah**, devient la première colonie d'Afrique subsaharienne à accéder à l'indépendance. Au nord, plusieurs pays (Égypte, Libye, Soudan, Maroc, Tunisie) étaient déjà devenus indépendants dans les années 1950.",
           },
           {
+            type: "image",
+            alt: "L'Arche de l'Indépendance à Accra, au Ghana.",
+            legende: "Accra : la porte de l'Étoile noire, photographiée en 2023.",
+            credit: "Kwameghana, CC BY-SA 4.0, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Black_Star_Gate_in_Accra.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
+          },
+          {
             type: "aRetenir",
             points: [
               "**1957** : le Ghana, première indépendance subsaharienne",
@@ -5523,13 +5821,13 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'année 1960 est décisive : dix-sept pays africains accèdent à l'indépendance la même année, dont de nombreuses anciennes colonies françaises, le **Nigeria** et le **Congo**. On l'a surnommée « l'année de l'Afrique ».",
+            text: "L'année **1960** est décisive : dix-sept pays africains accèdent à l'indépendance la même année, dont de nombreuses anciennes colonies françaises, le **Nigeria** et le **Congo**. On l'a surnommée « l'année de l'Afrique ».",
           },
           {
             type: "aRetenir",
             points: [
               "**17** pays deviennent indépendants en 1960",
-              "Anciennes colonies françaises, le **Nigeria**, le **Congo**",
+              "Anciennes colonies françaises, le **Nigeria**, le Congo",
               "1960, surnommée « l'année de l'Afrique »",
             ],
           },
@@ -5584,7 +5882,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'indépendance apporte un immense espoir, mais aussi des défis : frontières héritées de la colonisation, économies fragiles, ingérences de la guerre froide, coups d'État. Le rêve d'une unité africaine reste à construire.",
+            text: "L'indépendance apporte un immense espoir, mais aussi des défis : frontières héritées de la colonisation, économies fragiles, ingérences de la **guerre froide**, coups d'État. Le rêve d'une **unité africaine** reste à construire.",
           },
           {
             type: "aRetenir",
@@ -5649,7 +5947,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Avant même que la plupart des pays africains ne soient indépendants, une idée circulait déjà : celle d'un destin commun à tous les peuples africains.",
+            text: "Le **panafricanisme** affirme la solidarité des Africains et de leur diaspora.",
           },
           {
             type: "chiffreCle",
@@ -5658,7 +5956,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le panafricanisme est l'idée de solidarité et d'unité entre les peuples africains et leur diaspora. Ses racines se trouvent d'abord dans la diaspora, avec des figures comme **Du Bois** ou **Marcus Garvey**, et les premiers Congrès panafricains.",
+            text: "Des intellectuels comme **Du Bois** et Marcus Garvey contribuent à diffuser cette idée. Les premiers congrès panafricains précèdent les indépendances et nourrissent le projet d’unité.",
+          },
+          {
+            type: "image",
+            alt: "Portrait photographique de W. E. B. Du Bois, en costume.",
+            legende: "W. E. B. Du Bois, photographie de 1907.",
+            credit: "James E. Purdy, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:W.E.B._Du_Bois_by_James_E._Purdy,_1907_(3x4).jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -5703,7 +6009,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 1963, une trentaine d'États encore jeunes décident de se donner, ensemble, une organisation commune.",
+            text: "En **1963**, une trentaine d'États encore jeunes décident de se donner, ensemble, une organisation commune.",
           },
           {
             type: "chiffreCle",
@@ -5730,7 +6036,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 2002, une organisation vieille de près de quarante ans cède la place à une nouvelle, inspirée d'un modèle venu d'un autre continent.",
+            text: "En **2002**, l’**Union africaine** succède à l’OUA.",
           },
           {
             type: "chiffreCle",
@@ -5739,7 +6045,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'**OUA** laisse place à l'**Union africaine** (UA), en partie inspirée du modèle de l'Union européenne : une Commission, un Parlement, des objectifs d'intégration, de paix et de développement. Son siège reste à **Addis-Abeba**.",
+            text: "À Addis-Abeba, son siège accueille les institutions d’un projet d’intégration, de paix et de développement. Commission et Parlement accompagnent cette nouvelle organisation, en partie inspirée de l’Union européenne.",
+          },
+          {
+            type: "image",
+            alt: "Tour et centre de conférences du siège de l’Union africaine.",
+            legende: "Siège de l’Union africaine à Addis-Abeba, photographie contemporaine.",
+            credit: "Andrew Moore, CC BY-SA 2.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:African_Union_Conference_Centre_building.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",
           },
           {
             type: "aRetenir",
@@ -5834,7 +6148,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "À partir de 1948, un système de lois sépare et classe les habitants d'Afrique du Sud selon leur « race ».",
+            text: "En **1948**, l'Afrique du Sud impose l'**apartheid**, « séparation » en afrikaans.",
           },
           {
             type: "chiffreCle",
@@ -5843,7 +6157,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "L'**apartheid** (« séparation » en afrikaans) est un système de ségrégation raciale institutionnalisée, imposé par le pouvoir de la minorité blanche. Des lois classent les habitants selon leur « race », séparent de force les populations et privent la majorité noire de droits, de terres et de liberté de circulation.",
+            text: "Le pouvoir de la minorité blanche classe les habitants selon leur « race » et sépare les populations. La majorité noire est privée de droits, de terres et de liberté de circulation.",
+          },
+          {
+            type: "image",
+            alt: "Ancienne inscription réservant une salle aux personnes blanches.",
+            legende: "Atherston : ancien panneau ségrégationniste, photographié en 2021.",
+            credit: "Wynlib40, CC BY-SA 4.0, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:General_Waiting_Room_Whites_Only_-_Atherston_Station,_Eastern_Cape,_South_Africa.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0/",
           },
           {
             type: "aRetenir",
@@ -5876,7 +6198,7 @@ export const HISTOIRE_COURSES: Course[] = [
             type: "aRetenir",
             points: [
               "L'**ANC** mène la résistance à l'apartheid",
-              "**Sharpeville** (1960), **Soweto** (1976) : des répressions marquantes",
+              "**Sharpeville** (1960), Soweto (1976) : des répressions marquantes",
               "**Mandela** se tourne vers la lutte armée après l'échec pacifique",
             ],
           },
@@ -5888,7 +6210,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Mandela passe vingt-sept ans en prison. Vingt-sept ans, en grande partie sur une île.",
+            text: "**Mandela** devient le symbole d’une résistance maintenue en prison.",
           },
           {
             type: "chiffreCle",
@@ -5897,7 +6219,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Arrêté, **Mandela** est condamné à la prison à vie et passe vingt-sept ans en détention, en grande partie sur l'île de **Robben Island**. Il devient le symbole mondial de la lutte contre l'apartheid. À l'étranger, sanctions et boycotts font pression sur le régime sud-africain.",
+            text: "Condamné à la perpétuité, il passe une grande partie de sa détention à **Robben Island**. Il y subit les conditions du régime tout en poursuivant son engagement politique.",
+          },
+          {
+            type: "image",
+            alt: "Petite cellule avec couchage au sol et barreaux.",
+            legende: "La cellule de Nelson Mandela à Robben Island, vue actuelle.",
+            credit: "Paul Mannix, CC BY-SA 2.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Nelson_Mandela%27s_prison_cell,_Robben_Island,_South_Africa.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/2.0",
           },
           {
             type: "aRetenir",
@@ -5945,7 +6275,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En 1994, Nelson Mandela devient le premier président noir d'Afrique du Sud, démocratiquement élu.",
+            text: "En **1994**, Nelson Mandela devient le premier président noir d'Afrique du Sud, démocratiquement élu.",
           },
           {
             type: "citation",
@@ -6019,7 +6349,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Bien avant que l'empire du Mali n'embrasse l'islam, un royaume plus discret, sur les rives du fleuve Sénégal, l'avait déjà fait.",
+            text: "Le **Tekrour** s’établit dans la vallée du fleuve Sénégal.",
           },
           {
             type: "chiffreCle",
@@ -6028,7 +6358,16 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le **Tekrour** (ou Takrour) se développe le long de la vallée du fleuve Sénégal, dans la région du **Fouta Toro**. Ses habitants sont les ancêtres des **Halpulaar** (Toucouleurs), un nom qui dériverait justement de « Tekrour ».",
+            text: "Situé dans la région du **Fouta Toro**, ce royaume précède la puissance du Mali. Il participe à l’histoire des populations halpulaar, aussi appelées Toucouleurs, et aux échanges sénégambiens.",
+          },
+          {
+            type: "image",
+            alt: "Carte des royaumes issus du morcellement de l'ancien Ghana.",
+            legende: "Takrour dans la région sénégambienne vers 1200, carte indicative.",
+            credit: "T L Miles, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Ghana_successor_map_1200.png",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
+            fit: "contain",
           },
           {
             type: "aRetenir",
@@ -6046,7 +6385,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Vers 1040, un roi se convertit — et son royaume devient, deux siècles avant le Mali, l'un des tout premiers musulmans d'Afrique de l'Ouest.",
+            text: "Vers **1040**, un roi se convertit — et son royaume devient, deux siècles avant le Mali, l'un des tout premiers musulmans d'Afrique de l'Ouest.",
           },
           {
             type: "chiffreCle",
@@ -6104,7 +6443,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Des siècles plus tard, cette même région donne naissance à un État dirigé non par un roi, mais par un chef religieux.",
+            text: "Le **Fouta Toro** devient un grand foyer de savoir islamique.",
           },
           {
             type: "chiffreCle",
@@ -6113,7 +6452,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "La région devient le **Fouta Toro**, grand foyer de savoir islamique. Une révolution menée par **Souleymane Baal** et les lettrés torodbe y fonde un État théocratique, l'**Almamat**, dirigé par un chef religieux, l'Almamy.",
+            text: "**Souleymane Baal** et les lettrés torodbe y conduisent une révolution. L’Almamat qui en résulte est dirigé par un chef religieux, l’Almamy. La carte montre la région au XIXe siècle.",
+          },
+          {
+            type: "image",
+            alt: "Carte des États de la vallée du Sénégal, dont le Fouta Toro.",
+            legende: "Le Fouta Toro et ses voisins vers 1850, carte indicative.",
+            credit: "T L Miles, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Senegalvalleystatesc1850.png",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -6289,7 +6636,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "En une seule bataille, un royaume vassal devient indépendant — et l'empire tout entier commence à se défaire.",
+            text: "En **1549**, la victoire du Cayor à Danki brise la domination du Djolof.",
           },
           {
             type: "chiffreCle",
@@ -6298,7 +6645,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "En 1549, le **Cayor**, sous **Amari Ngoné Sobel Fall**, remporte son indépendance à la bataille de **Danki**. L'empire se fragmente alors en royaumes côtiers rivaux. Le déplacement du commerce vers l'Atlantique renforce les royaumes de la côte au détriment du Djolof.",
+            text: "**Amari Ngoné Sobel Fall** mène cette émancipation. Les royaumes côtiers deviennent autonomes ; le commerce atlantique renforce leur poids. La carte montre leurs héritiers vers 1850.",
+          },
+          {
+            type: "image",
+            alt: "Carte du Djolof et des royaumes voisins de Sénégambie.",
+            legende: "Djolof et royaumes voisins vers 1850, après la fragmentation.",
+            credit: "HetmanTheResearcher, CC BY 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Kingdom_of_Jolof_Map.png",
+            licenseUrl: "https://creativecommons.org/licenses/by/4.0",
           },
           {
             type: "aRetenir",
@@ -6316,7 +6671,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Fragmentés depuis le XVIᵉ siècle, ces royaumes ont pourtant façonné, ensemble, l'identité d'un pays qui n'existait pas encore.",
+            text: "Les royaumes wolof façonnent durablement le Sénégal.",
           },
           {
             type: "frise",
@@ -6328,7 +6683,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les royaumes wolof — **Cayor**, Baol, Waalo, Djolof — structurent le Sénégal jusqu'à la colonisation, et voient naître des figures comme **Lat Dior**. La langue wolof et la culture qui en sont issues sont aujourd'hui au cœur de l'identité sénégalaise.",
+            text: "**Cayor**, Baol, Waalo et Djolof marquent ses institutions et sa culture. **Lat Dior**, souverain du Cayor, incarne leur résistance à la colonisation.",
+          },
+          {
+            type: "image",
+            alt: "Portrait gravé de Lat Dior, vêtu de tissu clair.",
+            legende: "Lat Dior, souverain du Cayor, gravure de 1875.",
+            credit: "Le Monde illustré, 1875, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -6447,16 +6810,24 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Des milliers de pierres dressées forment, dans cette région, l'une des plus grandes concentrations de mégalithes au monde.",
+            text: "Des milliers de pierres dressées jalonnent la **Sénégambie**.",
           },
           {
             type: "chiffreCle",
             valeur: "2",
-            legende: "sites mégalithiques classés par l'UNESCO",
+            legende: "sites sénégalais de l’ensemble classé par l’UNESCO",
           },
           {
             type: "paragraphe",
-            text: "La région abrite les cercles mégalithiques de Sénégambie (**Sine Ngayène**, **Wanar**) : des milliers de pierres dressées et de tumulus, monuments funéraires parmi les plus grandes concentrations de mégalithes au monde. Ils témoignent d'une organisation sociale ancienne et élaborée.",
+            text: "Au Sénégal, **Sine Ngayène** et Wanar présentent cercles et tumulus funéraires. Ces mégalithes témoignent d’une organisation sociale ancienne et élaborée, sans permettre d’attribuer automatiquement leurs bâtisseurs aux Sérères.",
+          },
+          {
+            type: "image",
+            alt: "Pierres mégalithiques dressées sur le site de Sine Ngayène.",
+            legende: "Cercles mégalithiques de Sine Ngayène, au Sénégal.",
+            credit: "Tobias 67, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Stone_circles_Sine_Ngay%C3%A8ne_TP03.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
           },
           {
             type: "aRetenir",
@@ -6468,7 +6839,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "leSavaisTu",
-            text: "Ces pierres dressées sont aussi des monuments funéraires : chaque cercle marquait autrefois une sépulture, preuve d'une société capable d'organiser, il y a des siècles, des chantiers considérables.",
+            text: "La construction de ces monuments funéraires nécessitait des chantiers collectifs.",
           },
         ],
       },
@@ -6487,7 +6858,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les Sérères sont réputés pour la **lutte traditionnelle**, leurs rituels agraires, leurs traditions orales et un fort sentiment d'identité. En résistant plus longtemps que leurs voisins à l'islamisation, ils ont maintenu vivantes des pratiques très anciennes.",
+            text: "Les Sérères sont réputés pour la **lutte traditionnelle**, leurs rituels agraires, leurs **traditions orales** et un fort sentiment d'identité. En résistant plus longtemps que leurs voisins à l'islamisation, ils ont maintenu vivantes des pratiques très anciennes.",
           },
           {
             type: "aRetenir",
@@ -6505,7 +6876,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un peuple resté fidèle à ses racines a fini par donner au Sénégal indépendant son tout premier président.",
+            text: "L’héritage sérère traverse l’histoire du Sénégal.",
           },
           {
             type: "frise",
@@ -6517,7 +6888,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le peuple sérère a donné au Sénégal moderne de grandes figures — le président **Léopold Sédar Senghor** était sérère. Leurs mégalithes, leur langue et leurs traditions constituent une part précieuse du patrimoine sénégalais.",
+            text: "**Léopold Sédar Senghor**, premier président du pays, est sérère. Langue, traditions et **patrimoine monumental** restent des éléments importants de cette mémoire culturelle.",
+          },
+          {
+            type: "image",
+            alt: "Senghor entouré de visiteurs lors de son accueil en 1980.",
+            legende: "Léopold Sédar Senghor lors d’une visite présidentielle en 1980.",
+            credit: "Archives militaires américaines, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:L%C3%A9opold_S%C3%A9dar_Senghor_in_1980.JPEG",
+            licenseUrl: "https://commons.wikimedia.org/wiki/Template:PD-US-Military",
           },
           {
             type: "aRetenir",
@@ -6609,7 +6988,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "L'île de Gorée est devenue, avec sa Maison des Esclaves, le symbole mondial de la mémoire de la traite négrière atlantique.",
+            text: "**Gorée** et sa Maison des Esclaves symbolisent la mémoire de la traite atlantique.",
           },
           {
             type: "chiffreCle",
@@ -6618,7 +6997,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les historiens débattent du nombre exact de captifs ayant transité par l'île elle-même, mais **Gorée** s'impose comme un puissant lieu de mémoire, classé au patrimoine mondial de l'**UNESCO**, pour l'ensemble de cette tragédie.",
+            text: "Les historiens débattent du nombre de captifs passés par l'île. Son rôle mémoriel dépasse ce chiffre : Gorée est un lieu de mémoire mondial, classé par l'**UNESCO**.",
+          },
+          {
+            type: "image",
+            alt: "Pièce aux murs dégradés dans la Maison des Esclaves.",
+            legende: "Gorée : intérieur de la Maison des Esclaves, photographié en 2024.",
+            credit: "Fawaz.tairou, CC BY 4.0, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Gor%C3%A9e_2024_-_Maison_des_esclaves_-_08.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
           },
           {
             type: "aRetenir",
@@ -6636,7 +7023,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Avant de devenir la capitale de toute l'Afrique-Occidentale française, cette ville fut d'abord un simple comptoir, posé entre un fleuve et la mer.",
+            text: "**Saint-Louis** est un comptoir installé entre fleuve et océan.",
           },
           {
             type: "chiffreCle",
@@ -6645,7 +7032,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Saint-Louis** fut le premier établissement français d'Afrique de l'Ouest. Elle devient la capitale du Sénégal, puis celle de l'**Afrique-Occidentale française** (AOF). Son architecture coloniale, entre le fleuve et la mer, est aujourd'hui classée au patrimoine mondial de l'UNESCO.",
+            text: "La ville devient capitale du Sénégal, puis de l’**AOF**. Son patrimoine colonial et son organisation insulaire, reliée au continent par le pont Faidherbe, sont aujourd’hui classés par l’UNESCO.",
+          },
+          {
+            type: "image",
+            alt: "Pont métallique reliant l’île de Saint-Louis à la rive du fleuve.",
+            legende: "Le pont Faidherbe à Saint-Louis, carte postale ancienne.",
+            credit: "Photographe inconnu, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Bridge_Pont_Faidherbe,_Saint-Louis,_Senegal.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -6663,7 +7058,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Ni tout à fait africaines, ni tout à fait européennes : ces femmes ont bâti, à Gorée et à Saint-Louis, un pouvoir économique bien à elles.",
+            text: "Ni tout à fait africaines, ni tout à fait européennes : ces femmes ont bâti, à **Gorée** et à Saint-Louis, un pouvoir économique bien à elles.",
           },
           {
             type: "chiffreCle",
@@ -6702,7 +7097,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Gorée** accueille aujourd'hui des commémorations et la visite de dirigeants du monde entier. Ces deux îles rappellent un devoir de mémoire essentiel, au cœur de l'histoire sénégalaise.",
+            text: "L'**UNESCO** inscrit **Gorée** au patrimoine mondial en 1978, puis Saint-Louis en 2000. Commémorations et préservation des lieux entretiennent cette mémoire au cœur de l'histoire sénégalaise.",
           },
           {
             type: "citation",
@@ -6772,7 +7167,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "À la fin du XIXᵉ siècle, un roi-guerrier règne sur l'un des plus puissants royaumes wolof — au moment précis où la France cherche à l'annexer.",
+            text: "À la fin du XIXᵉ siècle, la France cherche à annexer le **Cayor**.",
           },
           {
             type: "chiffreCle",
@@ -6781,7 +7176,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Lat Dior** Ngoné Latyr Diop est le Damel (roi) du **Cayor**, l'un des plus puissants royaumes wolof. Roi-guerrier, il règne à une époque où la France cherche à étendre son emprise sur le Sénégal.",
+            text: "**Lat Dior** Ngoné Latyr Diop en est le Damel, c'est-à-dire le roi. Ce roi-guerrier gouverne l'un des plus puissants royaumes wolof, soumis à la pression coloniale française.",
+          },
+          {
+            type: "image",
+            alt: "Portrait gravé de Lat Dior, vêtu de tissu clair.",
+            legende: "Lat Dior, Damel du Cayor : gravure publiée en 1875.",
+            credit: "Le Monde illustré, 1875, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -6799,7 +7202,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Converti à l'islam, allié aux mouvements religieux de son temps, Lat Dior n'a jamais choisi entre la guerre et la négociation : il a mené les deux.",
+            text: "Converti à l'islam, allié aux mouvements religieux de son temps, Lat Dior n'a jamais choisi entre la guerre et la **négociation** : il a mené les deux.",
           },
           {
             type: "citation",
@@ -6826,7 +7229,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Une simple voie ferrée. Pour Lat Dior, elle ne transportait pas que des marchandises : elle transportait la fin de son royaume.",
+            text: "**Lat Dior** refuse le chemin de fer Dakar–Saint-Louis.",
           },
           {
             type: "chiffreCle",
@@ -6835,7 +7238,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Les Français veulent construire la voie ferrée Dakar–Saint-Louis à travers le **Cayor**. **Lat Dior** s'y oppose fermement, comprenant que ce chemin de fer signerait la fin de l'indépendance de son royaume.",
+            text: "La voie traverse le **Cayor**. Il y voit un instrument de pénétration française qui menace l’indépendance de son royaume. La carte postale montre la gare après sa mort.",
+          },
+          {
+            type: "image",
+            alt: "Ancienne gare de Saint-Louis avec rails et installations ferroviaires.",
+            legende: "Gare de Saint-Louis, carte postale de Fortier vers 1902.",
+            credit: "Fortier, Dakar, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:StLouis1.JPG",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -6957,7 +7368,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Dans un Sénégal bouleversé par la conquête coloniale, un maître soufi propose une voie spirituelle nouvelle — et des centaines de milliers de personnes le suivent.",
+            text: "**Cheikh Ahmadou Bamba** fonde la confrérie **mouride** au Sénégal.",
           },
           {
             type: "chiffreCle",
@@ -6966,7 +7377,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Cheikh Ahmadou Bamba Mbacké** est un maître soufi sénégalais, fondateur de la confrérie **mouride** (la Mouridiyya). Dans un Sénégal bouleversé par la conquête coloniale, il propose une voie spirituelle nouvelle, qui rencontre un immense écho.",
+            text: "Dans un pays bouleversé par la conquête coloniale, ce maître soufi propose une voie spirituelle fondée sur la foi, l’éducation et le travail. Son enseignement rencontre un immense écho.",
+          },
+          {
+            type: "image",
+            alt: "Cheikh Ahmadou Bamba debout, vêtu d’une robe claire.",
+            legende: "Cheikh Ahmadou Bamba, photographie ancienne.",
+            credit: "Photographe inconnu, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:AhmaduBamba.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -7042,7 +7461,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Une ville entière est née d'un exil. Sa mosquée est aujourd'hui l'une des plus grandes de tout le continent.",
+            text: "**Bamba** fonde la ville sainte de **Touba**, centre du mouridisme.",
           },
           {
             type: "chiffreCle",
@@ -7051,7 +7470,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Bamba** fonde la ville sainte de **Touba**, dont la Grande Mosquée devient l'une des plus grandes d'Afrique. La confrérie mouride se développe en une puissante force sociale et économique, fondée sur le travail (notamment la culture de l'**arachide**), la solidarité et la discipline.",
+            text: "Sa Grande Mosquée devient l'une des plus grandes d'Afrique. La confrérie mouride est une force sociale et économique fondée sur le travail, notamment la culture de l'**arachide**, la solidarité et la discipline.",
+          },
+          {
+            type: "image",
+            alt: "Colonnes et arches intérieures de la Grande Mosquée de Touba.",
+            legende: "Touba : intérieur de la Grande Mosquée, photographié en 2006.",
+            credit: "zivax, CC BY-SA 3.0, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Mosqu%C3%A9e_Touba_(senegal)_2006.JPG",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0/",
           },
           {
             type: "aRetenir",
@@ -7173,7 +7600,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Pendant la Seconde Guerre mondiale, une seule voix s'élève en Casamance contre les réquisitions imposées par l'administration française.",
+            text: "Le **riz** est au cœur des réquisitions coloniales en Casamance.",
           },
           {
             type: "chiffreCle",
@@ -7182,7 +7609,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Elle s'élève contre les réquisitions coloniales (de riz, de bétail) et le travail forcé imposés par l'administration française. Elle appelle au retour aux traditions **diola** et à la résistance à l'autorité coloniale, et est perçue comme une prophétesse.",
+            text: "**Aline Sitoé Diatta** dénonce ces prélèvements, ceux de bétail et le travail forcé. Elle appelle aux traditions diola et à la résistance. La photographie montre une pratique agricole actuelle.",
+          },
+          {
+            type: "image",
+            alt: "Un adulte et un enfant travaillent une rizière avec des outils traditionnels.",
+            legende: "Travail du riz à Boucotte, en Casamance, photographie contemporaine.",
+            credit: "Olivier Epron Olivierkeita, CC BY 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Culture_riz_boucotte.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by/3.0",
           },
           {
             type: "aRetenir",
@@ -7200,7 +7635,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Son message se répand vite en Casamance. Un mot d'ordre simple : ne plus livrer le riz à l'effort de guerre français.",
+            text: "Son message se répand vite en Casamance. Un mot d'ordre simple : ne plus livrer le **riz** à l'effort de guerre français.",
           },
           {
             type: "citation",
@@ -7254,7 +7689,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Une vie brève, interrompue en exil. Mais un nom resté, depuis, gravé dans la mémoire du Sénégal.",
+            text: "Le nom d’**Aline Sitoé Diatta** demeure dans la mémoire sénégalaise.",
           },
           {
             type: "frise",
@@ -7266,7 +7701,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Surnommée « la **Jeanne d'Arc** de la Casamance », elle est devenue un symbole de la résistance et du rôle des femmes dans l'histoire du Sénégal. Le grand stade de Ziguinchor et une résidence universitaire de Dakar portent son nom.",
+            text: "Stade de Ziguinchor, résidence universitaire à Dakar et **bateau** Dakar–Ziguinchor lui rendent hommage. Ces lieux et objets rappellent la résistante et le rôle des femmes.",
+          },
+          {
+            type: "image",
+            alt: "Bateau portant le nom d’Aline Sitoé Diatta.",
+            legende: "Le bateau Aline Sitoé Diatta, hommage contemporain à la résistante.",
+            credit: "rignese, CC BY-SA 2.5, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Bateau_Aline_sito%C3%A9_diatta.JPG",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/2.5",
           },
           {
             type: "aRetenir",
@@ -7331,7 +7774,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Il fut l'un des tout premiers Africains à réussir l'un des concours les plus difficiles de France — avant même de devenir chef d'État.",
+            text: "**Senghor** est poète, penseur et enseignant avant d’entrer en politique. Sa formation intellectuelle marque ensuite son action publique.",
           },
           {
             type: "chiffreCle",
@@ -7340,7 +7783,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Léopold Sédar Senghor**, né à **Joal** dans une famille sérère, est un élève brillant devenu poète et penseur. Il est l'un des premiers Africains à obtenir l'**agrégation** en France, où il enseigne avant de s'engager en politique.",
+            text: "Né à **Joal** dans une famille sérère, Léopold Sédar Senghor est un élève brillant. Il poursuit ses études en France et figure parmi les premiers Africains à obtenir l’agrégation. Il enseigne avant son engagement politique et participe au mouvement qui affirme la valeur des cultures noires.",
           },
           {
             type: "aRetenir",
@@ -7358,7 +7801,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Trois hommes, trois continents, une même conviction : la culture noire n'a besoin de la permission de personne pour exister pleinement.",
+            text: "**Senghor**, **Césaire** et Damas affirment la valeur des cultures noires.",
           },
           {
             type: "chiffreCle",
@@ -7367,12 +7810,20 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Avec **Aimé Césaire** (Martinique) et **Léon-Gontran Damas** (Guyane), Senghor fonde dans les années 1930 le mouvement de la **Négritude** : une affirmation de la valeur, de la dignité et de la culture des peuples noirs, contre le mépris colonial.",
+            text: "Dans les années **1930**, la **Négritude** conteste le mépris colonial et nourrit une fierté partagée.",
+          },
+          {
+            type: "image",
+            alt: "Aimé Césaire penché sur un livre.",
+            legende: "Aimé Césaire en 2003, cofondateur de la Négritude.",
+            credit: "Jean Baptiste Devaux, CC BY-SA 4.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Aime_Cesaire_2003.jpg",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
           },
           {
             type: "aRetenir",
             points: [
-              "**3** fondateurs : Senghor, **Césaire**, Damas",
+              "**3** fondateurs : Senghor, Césaire, Damas",
               "La **Négritude** : dignité et culture noires affirmées",
               "Un courant littéraire et philosophique qui a marqué le XXᵉ siècle",
             ],
@@ -7419,7 +7870,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Vingt ans au pouvoir. Puis, fait rare en Afrique à l'époque, un départ volontaire — sans coup d'État, sans guerre civile.",
+            text: "**Senghor** devient le premier président du Sénégal indépendant et reste vingt ans au pouvoir.",
           },
           {
             type: "chiffreCle",
@@ -7428,7 +7879,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Senghor** devient le premier président du Sénégal indépendant. Il promeut la culture, l'éducation et le dialogue. Fait rare pour l'époque en Afrique, il quitte volontairement le pouvoir en 1980, assurant une transition pacifique.",
+            text: "Il promeut la culture, l’éducation et le dialogue. Sa visite officielle aux États-Unis en **1980** illustre cette fonction. La même année, il quitte volontairement le pouvoir et organise une transition pacifique.",
+          },
+          {
+            type: "image",
+            alt: "Senghor entouré de visiteurs lors de son accueil en 1980.",
+            legende: "Senghor, au centre, accueilli aux États-Unis en 1980.",
+            credit: "Archives militaires américaines, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:L%C3%A9opold_S%C3%A9dar_Senghor_in_1980.JPEG",
+            licenseUrl: "https://commons.wikimedia.org/wiki/Template:PD-US-Military",
           },
           {
             type: "aRetenir",
@@ -7520,7 +7979,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Une femme accède au pouvoir à un moment où deux mondes s'affrontent déjà en Angola : les royaumes africains, et les marchands d'esclaves portugais.",
+            text: "Au XVIIᵉ siècle, **Nzinga Mbande** gouverne deux royaumes d'Afrique centrale.",
           },
           {
             type: "chiffreCle",
@@ -7529,7 +7988,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Nzinga Mbande** est reine du **Ndongo** puis du **Matamba**, dans l'actuel Angola. Elle accède au pouvoir au début du XVIIᵉ siècle, à une époque où les Portugais étendent leur emprise et intensifient la traite des esclaves en Afrique centrale.",
+            text: "Reine du **Ndongo** puis du **Matamba**, dans l'Angola actuel, elle accède au pouvoir alors que les Portugais étendent leur emprise et intensifient la traite des esclaves.",
+          },
+          {
+            type: "image",
+            alt: "Portrait coloré et posthume représentant Nzinga Mbande.",
+            legende: "Nzinga : portrait posthume, lithographie coloriée des années 1830.",
+            credit: "Achille Devéria / Le Villain, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Ann_Zingha.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -7547,7 +8014,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Faute de siège, on voulait l'humilier. Nzinga a transformé l'affront en démonstration de pouvoir, sous les yeux mêmes de ceux qui l'avaient tendu.",
+            text: "**Nzinga** négocie à Luanda.",
           },
           {
             type: "chiffreCle",
@@ -7556,7 +8023,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Lors d'une négociation à **Luanda**, en 1622, le gouverneur portugais ne lui offre pas de siège pour l'humilier. **Nzinga** fait alors s'agenouiller un serviteur pour s'asseoir sur son dos, affirmant qu'elle traite en égale, de souveraine à souverain.",
+            text: "Selon le récit de **1622**, elle s’assied sur un serviteur pour traiter d’égale à égal avec le gouverneur.",
+          },
+          {
+            type: "image",
+            alt: "Nzinga assise sur le dos d’un serviteur face au gouverneur.",
+            legende: "Audience de Nzinga : illustration de Pat Masioni pour l’UNESCO, 2014.",
+            credit: "Pat Masioni/UNESCO, CC BY-SA 3.0, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Nzinga_Mbandi_Queen_of_Ndongo_and_Matamba_SEQ_08_Ecran_4.png",
+            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
           },
           {
             type: "aRetenir",
@@ -7709,7 +8184,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Un petit clan, presque invisible sur la carte. En quelques années à peine, un seul homme en a fait une grande puissance régionale.",
+            text: "Au début du XIXe siècle, **Chaka** transforme un petit clan en puissance régionale.",
           },
           {
             type: "chiffreCle",
@@ -7718,7 +8193,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Chaka** est le roi fondateur du royaume **zoulou**, en Afrique australe (actuelle Afrique du Sud). Au début du XIXᵉ siècle, il transforme un petit clan en une grande puissance régionale par son génie militaire et politique.",
+            text: "Fondateur du royaume **zoulou**, dans l’actuelle Afrique du Sud, il associe conquêtes, intégration des peuples voisins et organisation politique. La gravure de 1836 est une représentation publiée après sa mort.",
+          },
+          {
+            type: "image",
+            alt: "Dessin représentant Chaka avec lance et grand bouclier.",
+            legende: "Chaka, représentation publiée en 1836, après sa mort.",
+            credit: "D'après James King, publication de 1836, domaine public, Commons",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:KingShaka.jpg",
+            licenseUrl: "https://commons.wikimedia.org/wiki/Template:PD-Art",
           },
           {
             type: "aRetenir",
@@ -7736,7 +8219,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Une sagaie courte, des boucliers renforcés, une formation en cornes de buffle : Chaka a réinventé la guerre avant même de conquérir son premier territoire.",
+            text: "Sous **Chaka**, les armes et les formations militaires évoluent. L’organisation de l’armée soutient la puissance du royaume.",
           },
           {
             type: "chiffreCle",
@@ -7745,7 +8228,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Chaka** révolutionne l'art de la guerre : il introduit une courte sagaie d'estoc (l'**iklwa**), de meilleurs boucliers, des régiments disciplinés (les **impis**) et la célèbre formation en « cornes de buffle », destinée à encercler l'ennemi.",
+            text: "L’**iklwa**, courte sagaie d’estoc, et le bouclier équipent des régiments disciplinés, les impis. La formation dite en « cornes de buffle » vise à encercler l’ennemi : un centre engage l’adversaire tandis que les ailes tentent de l’envelopper. Entraînement et coordination jouent un rôle central dans cette manière de combattre.",
           },
           {
             type: "aRetenir",
@@ -7772,7 +8255,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Grâce à cette armée, **Chaka** étend rapidement son royaume par la conquête et l'intégration des peuples voisins, bâtissant un État centralisé et militarisé d'une efficacité remarquable.",
+            text: "Grâce à cette armée, **Chaka** étend rapidement son royaume par la conquête et l'intégration des peuples voisins, bâtissant un **État centralisé** et militarisé d'une efficacité remarquable.",
           },
           {
             type: "aRetenir",
@@ -7790,7 +8273,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Les conquêtes de Chaka ne se limitent pas à son propre royaume. Elles déclenchent, dans toute l'Afrique australe, une vague de bouleversements qui porte un nom : le Mfecane.",
+            text: "Les conquêtes de Chaka ne se limitent pas à son propre royaume. Elles déclenchent, dans toute l'**Afrique australe**, une vague de bouleversements qui porte un nom : le Mfecane.",
           },
           {
             type: "chiffreCle",
@@ -7817,7 +8300,7 @@ export const HISTOIRE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Chaka meurt assassiné par les siens. Le royaume qu'il a bâti, lui, continuera longtemps à résister — jusque contre les Britanniques.",
+            text: "**Chaka** meurt assassiné en **1828**.",
           },
           {
             type: "frise",
@@ -7829,7 +8312,15 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Chaka** est assassiné en 1828 par ses demi-frères. Le royaume qu'il avait bâti résiste plus tard farouchement aux Britanniques, remportant notamment la victoire d'**Isandlwana** (1879). Les Zoulous restent l'un des plus grands peuples d'Afrique du Sud.",
+            text: "Le royaume qu’il a bâti poursuit son histoire. En 1879, longtemps après sa mort, les Zoulous battent l’armée britannique à **Isandlwana**, avant de subir la conquête.",
+          },
+          {
+            type: "image",
+            alt: "Soldats zoulous et britanniques représentés à Isandlwana.",
+            legende: "Isandlwana, 1879 : peinture de Charles Edwin Fripp, postérieure à Chaka.",
+            credit: "Charles Edwin Fripp, domaine public, WebP",
+            sourceUrl: "https://commons.wikimedia.org/wiki/File:Isandhlwana.jpg",
+            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",

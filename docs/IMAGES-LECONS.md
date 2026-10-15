@@ -11,9 +11,13 @@ remplir sa ligne.
 
 ---
 
-## 0. Règle de travail — chercher une image pour chaque leçon
+## 0. Règle de travail
 
-**Pour toute leçon conçue ou réécrite, chercher systématiquement une image**, sans attendre qu'on
+**Histoire — décision utilisateur du 15 octobre 2026 : chaque cours doit contenir au minimum deux illustrations pertinentes, réparties dans ses leçons. Il n’est pas demandé d’illustrer chaque leçon.** Les bannières du catalogue ne comptent pas dans ce minimum. La pertinence du sujet prime sur le remplissage : archiver une image inadéquate avec ses sources, puis chercher un complément directement lié au cours. Le validateur contrôle le minimum de deux blocs image avec variantes disponibles ; le contrôle de pertinence reste éditorial.
+
+Le registre courant pour Histoire et les décisions d’archivage sont dans [HISTOIRE-ILLUSTRATIONS-AUDIT.md](HISTOIRE-ILLUSTRATIONS-AUDIT.md) et `histoire-illustrations-audit.json`. Les lignes historiques ci-dessous ne constituent pas à elles seules l’inventaire des images actuellement affichées.
+
+Pour les autres matières, **pour toute leçon conçue ou réécrite, chercher systématiquement une image**, sans attendre qu'on
 le demande.
 
 - Si une image libre existe **et sert la leçon**, l'ajouter — sans validation préalable.

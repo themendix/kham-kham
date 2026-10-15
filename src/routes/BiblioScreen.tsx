@@ -3,7 +3,7 @@ import { Link, useSearchParams } from "react-router-dom";
 import { Search, ChevronRight } from "lucide-react";
 import type { Category, Course, CourseMeta, Lesson } from "@/types";
 import { COURSE_INDEX } from "@/data/coursesIndex.generated";
-import { getFullLessonRef } from "@/data/courseContent";
+import { getCachedFullLessonRef, getFullLessonRef } from "@/data/courseContent";
 import { CATEGORIES, getCategory } from "@/data/categories";
 import { useAppStore } from "@/store/useAppStore";
 import { useCatalogContent } from "@/hooks/useCatalogContent";
@@ -20,6 +20,8 @@ import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { CourseCard } from "@/components/features/CourseCard";
 import { LessonBlocks } from "@/components/features/LessonBlocks";
+import { ContentLoadError } from "@/components/features/ContentLoadError";
+import { useContentResource } from "@/hooks/useContentResource";
 
 /** Nombre de cours mis en avant dans la mosaïque d'un bloc de matière (le reste est derrière « Voir les cours »). */
 const BIBLIO_PREVIEW_COUNT = 2;
@@ -39,20 +41,7 @@ export function BiblioScreen() {
 
   // Le contenu complet de la leçon vedette (titre + texte) n'est chargé qu'à la demande, en ne
   // récupérant que le chunk de sa matière — voir docs/ARCHITECTURE.md § Découpage du bundle.
-  const [featuredRef, setFeaturedRef] = useState<{ course: Course; lesson: Lesson } | null>(null);
-  useEffect(() => {
-    let cancelled = false;
-    if (!featuredLessonKey) {
-      setFeaturedRef(null);
-      return;
-    }
-    getFullLessonRef(featuredLessonKey).then((ref) => {
-      if (!cancelled) setFeaturedRef(ref);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [featuredLessonKey]);
+  const { value: featuredRef, status: featuredStatus, retry: retryFeatured } = useContentResource(featuredLessonKey, getCachedFullLessonRef, getFullLessonRef);
   const featuredCategory = featuredRef ? getCategory(featuredRef.course.categoryId) : null;
 
   const progress = useAppStore((s) => s.progress);
@@ -78,7 +67,7 @@ export function BiblioScreen() {
   // Recherche immédiate sur les métadonnées (titre + description, toujours en mémoire) ;
   // complétée par le contenu des leçons dès que le catalogue complet est chargé en tâche de
   // fond (`useCatalogContent`, déclenché au montage de `AppShell`) — voir § Découpage du bundle.
-  const catalogContent = useCatalogContent();
+  const { value: catalogContent, status: catalogStatus, retry: retryCatalog } = useCatalogContent();
   const metaResults = isSearching ? searchCourses(query, COURSE_INDEX) : [];
   const extraLessonResults = isSearching && catalogContent
     ? searchCourses(query, catalogContent)
@@ -110,6 +99,12 @@ export function BiblioScreen() {
       {isSearching ? (
         <div className="mt-5">
           <SectionTitle emoji="🔎" label={`${searchResults.length} résultat${searchResults.length > 1 ? "s" : ""}`} />
+          {catalogStatus === "error" && (
+            <div role="status" className="mt-3 rounded-card border-[2px] border-ink bg-card p-4 text-sm">
+              <p>La recherche dans le texte des leçons est indisponible. Les titres et descriptions restent accessibles.</p>
+              <button className="mt-2 font-bold underline underline-offset-2" onClick={retryCatalog}>Réessayer la recherche complète</button>
+            </div>
+          )}
           {searchResults.length === 0 ? (
             <p className="mt-4 font-medium text-ink-faint">Aucun cours ne correspond à « {query.trim()} ».</p>
           ) : (
@@ -145,6 +140,10 @@ export function BiblioScreen() {
                   Reviens plus tard pour de nouvelles leçons.
                 </p>
               </Card>
+            ) : featuredStatus === "error" ? (
+              <div className="mt-2.5 md:max-w-2xl"><ContentLoadError onRetry={retryFeatured} /></div>
+            ) : featuredStatus === "absent" ? (
+              <Card className="mt-2.5 p-5 md:max-w-2xl"><p>Cette leçon n’est plus disponible.</p><Link className="mt-2 inline-block font-bold underline" to="/biblio/histoire">Explorer les cours</Link></Card>
             ) : featuredRef && featuredCategory ? (
               <FeaturedLessonCard
                 key={featuredLessonKey}
@@ -288,9 +287,8 @@ function SubjectBlock({
 }
 
 /**
- * Grande tuile d'un bloc de matière : bannière illustrée, titre et avancement en leçons sur
- * fond de carte. C'est le cours qu'on reprend — d'où la barre de progression.
- * Sans illustration, la bannière retombe sur le dégradé de la matière et l'emoji du cours.
+ * Grande tuile d'un bloc de matière : illustration pleine carte, titre et avancement
+ * sur un dégradé sombre. Sans illustration, le dégradé de la matière et l'emoji prennent le relais.
  */
 function SubjectTile({
   course,
@@ -308,34 +306,40 @@ function SubjectTile({
   return (
     <Link
       to={`/cours/${course.id}`}
-      className="flex flex-col overflow-hidden rounded-[18px] border-[3px] border-ink bg-card shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
+      className={`relative flex min-h-[210px] min-w-0 flex-col justify-end overflow-hidden rounded-[18px] border-[3px] border-ink bg-gradient-to-br shadow-sm transition-transform active:translate-y-[3px] active:shadow-none md:min-h-[240px] ${SUBJECT_GRADIENT[category.color]}`}
     >
-      <div
-        className={`relative flex h-[116px] items-center justify-center border-b-[3px] border-ink bg-gradient-to-br text-[40px] ${SUBJECT_GRADIENT[category.color]}`}
-      >
-        {image ? (
-          <img
-            src={image.src}
-            srcSet={image.srcSet}
-            sizes="(min-width: 768px) 420px, 58vw"
-            alt=""
-            loading="lazy"
-            className={`absolute inset-0 h-full w-full object-cover ${OBJECT_POSITION[getCourseImagePosition(course.id)]}`}
-          />
-        ) : (
-          course.emoji
-        )}
-      </div>
-      <div className="flex flex-1 flex-col justify-between px-3 pb-3 pt-2.5">
-        <p className="font-heading text-sm font-extrabold leading-tight">{course.title}</p>
+      {image ? (
+        <img
+          src={image.src}
+          srcSet={image.srcSet}
+          sizes="(min-width: 768px) 420px, 58vw"
+          alt=""
+          loading="lazy"
+          className={`absolute inset-0 h-full w-full object-cover ${OBJECT_POSITION[getCourseImagePosition(course.id)]}`}
+        />
+      ) : (
+        <span aria-hidden="true" className="absolute inset-0 flex items-center justify-center text-[40px]">
+          {course.emoji}
+        </span>
+      )}
+      <div className="relative bg-gradient-to-t from-ink/95 via-ink/65 to-transparent px-3 pb-3 pt-12">
+        <p className="break-words font-heading text-sm font-extrabold leading-tight text-white">{course.title}</p>
         <div className="mt-2 flex items-center gap-2">
-          <div className="h-2.5 flex-1 overflow-hidden rounded-full border-2 border-ink bg-cream">
+          <div
+            role="progressbar"
+            aria-label={`Progression du cours ${course.title}`}
+            aria-valuemin={0}
+            aria-valuemax={100}
+            aria-valuenow={pct}
+            aria-valuetext={`${done} leçons terminées sur ${total}`}
+            className="h-2.5 min-w-0 flex-1 overflow-hidden rounded-full border-2 border-ink bg-cream"
+          >
             <div
               className={`h-full ${done === total ? "bg-success" : "bg-gold"}`}
               style={{ width: `${pct}%` }}
             />
           </div>
-          <span className="font-heading text-[11px] font-extrabold">
+          <span className="shrink-0 font-heading text-[11px] font-extrabold text-white">
             {done}/{total}
           </span>
         </div>
@@ -393,7 +397,7 @@ function SectionTitle({ emoji, label }: { emoji: string; label: string }) {
  * en ligne pour révéler son contenu, puis « J'ai terminé » fait avancer la vedette.
  * Keyée par `featuredLessonKey` dans le parent pour repartir repliée à chaque leçon.
  *
- * La bannière porte l'**illustration du cours** dont la leçon est tirée, comme les cartes de
+ * La couverture porte l'**illustration du cours** dont la leçon est tirée, comme les cartes de
  * cours et le fil du Home. À défaut d'illustration (12 cours sur 136 n'en ont pas), elle retombe
  * sur le dégradé de la matière et l'emoji du cours — le dégradé était auparavant codé en dur aux
  * couleurs de l'Histoire, quelle que soit la matière de la leçon mise en avant.
@@ -414,12 +418,10 @@ function FeaturedLessonCard({
 
   return (
     <Card className="mt-2.5 overflow-hidden md:max-w-2xl">
-      {/* Affiche : l'illustration tient toute la hauteur, le titre de la leçon est posé
-          dessus. C'est le premier bloc de l'onglet — il doit se lire comme une couverture,
-          pas comme une carte de plus. Le voile sombre est le seul garant du contraste du
-          texte blanc sur une illustration quelconque. */}
+      {/* Image pleine carte, titre et action sur le même dégradé sombre que la reprise.
+          Le contenu de lecture s'ajoute sous la couverture après ouverture. */}
       <div
-        className={`relative flex h-[230px] flex-col justify-end overflow-hidden border-b-[3px] border-ink bg-gradient-to-br md:h-[290px] ${SUBJECT_GRADIENT[category.color]}`}
+        className={`relative flex min-h-[280px] flex-col justify-end overflow-hidden bg-gradient-to-br md:min-h-[320px] ${expanded ? "border-b-[3px] border-ink" : ""} ${SUBJECT_GRADIENT[category.color]}`}
       >
         {image ? (
           <img
@@ -434,37 +436,36 @@ function FeaturedLessonCard({
             {course.emoji}
           </span>
         )}
-        <div className="relative bg-gradient-to-t from-ink/90 via-ink/65 to-transparent px-[18px] pb-4 pt-14">
+        <div className="relative bg-gradient-to-t from-ink/95 via-ink/65 to-transparent px-[18px] pb-[18px] pt-14">
           <p className="font-heading text-[10.5px] font-extrabold uppercase tracking-[0.1em] text-white/70">
             {category.emoji} {category.name} · {course.title}
           </p>
           <h3 className="mt-1.5 font-heading text-[27px] font-extrabold leading-[1.05] tracking-[-0.02em] text-white md:text-[33px]">
             {lesson.title}
           </h3>
+          {!expanded && (
+            <div className="mt-4 flex flex-wrap items-center gap-3">
+              <Button variant="primary" onClick={() => setExpanded(true)}>
+                Lire la leçon
+              </Button>
+              <Badge tone="gold">＋{XP_PER_LESSON} XP</Badge>
+            </div>
+          )}
         </div>
       </div>
-      <div className="px-[18px] pb-[18px] pt-4">
-        {expanded ? (
-          <>
-            <LessonBlocks blocks={lesson.blocks} accent={category.color} density="compact" imageKey={lesson.id} />
-            <div className="mt-4 flex flex-wrap items-center gap-3">
-              <Button variant="primary" onClick={onComplete}>
-                J'ai terminé
-              </Button>
-              <Link to={`/cours/${course.id}`} className="text-[13px] font-bold text-ink/75">
-                Voir le cours complet →
-              </Link>
-            </div>
-          </>
-        ) : (
-          <div className="flex flex-wrap items-center gap-3">
-            <Button variant="primary" onClick={() => setExpanded(true)}>
-              Lire la leçon
+      {expanded && (
+        <div className="px-[18px] pb-[18px] pt-4">
+          <LessonBlocks blocks={lesson.blocks} accent={category.color} density="compact" imageKey={lesson.id} />
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <Button variant="primary" onClick={onComplete}>
+              J'ai terminé
             </Button>
-            <Badge tone="gold">＋{XP_PER_LESSON} XP</Badge>
+            <Link to={`/cours/${course.id}`} className="text-[13px] font-bold text-ink/75">
+              Voir le cours complet →
+            </Link>
           </div>
-        )}
-      </div>
+        </div>
+      )}
     </Card>
   );
 }

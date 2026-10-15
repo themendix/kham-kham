@@ -9,10 +9,13 @@ import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { QuizGamePlayer } from "@/components/features/QuizGamePlayer";
 import { QuizGameOutcome } from "@/components/features/QuizGameOutcome";
+import { useCivilDay } from "@/hooks/useCivilDay";
+import { localDayKey } from "@/lib/calendar";
 
 const DAILY_CHALLENGE_COURSE_ID = "defi-quotidien";
 
 interface FinishedState {
+  day: string;
   outcome: GameOutcome;
   cauris: number;
   missed: QuizEntry[];
@@ -36,15 +39,27 @@ export function QuizDefiScreen() {
   const checkDailyReset = useAppStore((s) => s.checkDailyReset);
   const recordQuizAnswer = useAppStore((s) => s.recordQuizAnswer);
   const finishDailyChallenge = useAppStore((s) => s.finishDailyChallenge);
-  const [gameId] = useState(() => crypto.randomUUID());
+  const day = useCivilDay();
+  const [roundDay, setRoundDay] = useState(day);
+  const [gameId, setGameId] = useState(() => crypto.randomUUID());
 
   const [finished, setFinished] = useState<FinishedState | null>(null);
   const activeGame = useRef(false);
+  // Une partie active conserve tirage/identifiant après minuit. Un écran verrouillé ou un
+  // résultat d'hier repart sur un nouveau tirage ; un résultat obtenu aujourd'hui reste visible.
+  useEffect(() => {
+    if (day !== roundDay && (!activeGame.current || (finished && finished.day !== day))) {
+      activeGame.current = false;
+      setFinished(null);
+      setRoundDay(day);
+      setGameId(crypto.randomUUID());
+    }
+  }, [day, roundDay, finished]);
   useEffect(() => { if (!challengeDone) activeGame.current = true; }, [challengeDone]);
 
   useEffect(() => {
     void checkDailyReset().catch(() => {});
-  }, [checkDailyReset]);
+  }, [day, checkDailyReset]);
 
   // Tirage figé à l'ouverture : répondre modifie les échéances de révision, et le défi ne doit pas
   // se réécrire sous les doigts de l'utilisateur pendant qu'il le joue.
@@ -53,8 +68,10 @@ export function QuizDefiScreen() {
       buildDailyChallengeQuestions({
         allQuestions: QUIZ_INDEX,
         stats: useAppStore.getState().progress.quizGame.questions,
+        now: new Date(),
       }),
-    [],
+    // eslint-disable-next-line react-hooks/exhaustive-deps -- tirage renouvelé uniquement après une partie inactive d'un autre jour
+    [roundDay],
   );
 
   const handleFinish = useCallback(
@@ -63,7 +80,7 @@ export function QuizDefiScreen() {
         courseId: DAILY_CHALLENGE_COURSE_ID, score: outcome.correctCount,
         total: questions.length, date: new Date().toISOString(),
       }, computeCauris(outcome));
-      setFinished({ outcome, cauris: result.caurisCredited, missed, xpBonus: result.xpCredited });
+      setFinished({ day: result.progress.daily.date ?? localDayKey(), outcome, cauris: result.caurisCredited, missed, xpBonus: result.xpCredited });
     }, [questions.length, gameId, finishDailyChallenge],
   );
 

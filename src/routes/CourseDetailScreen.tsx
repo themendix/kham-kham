@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useParams, useNavigate, useNavigationType, Link } from "react-router-dom";
 import { ArrowLeft } from "lucide-react";
 import type { Course } from "@/types";
@@ -23,6 +23,8 @@ import { LevelUpCard } from "@/components/features/LevelUpCard";
 import { CollectionProgressCard } from "@/components/features/CollectionProgressCard";
 import { QuizOutcomeCard } from "@/components/features/QuizOutcomeCard";
 import { StreakCelebration } from "@/components/features/StreakCelebration";
+import { ContentLoadError } from "@/components/features/ContentLoadError";
+import { useContentResource } from "@/hooks/useContentResource";
 
 /** "lessons" (lecture des leçons) suivi de la séquence de fin de cours (voir src/lib/outroSequence.ts) */
 type Stage = "lessons" | OutroScreen;
@@ -34,33 +36,11 @@ type Stage = "lessons" | OutroScreen;
  */
 export function CourseDetailScreen() {
   const { courseId } = useParams<{ courseId: string }>();
-  const navigate = useNavigate();
 
   const existsInCatalog = COURSE_INDEX.some((c) => c.id === courseId);
+  const { value: course, status, retry } = useContentResource(existsInCatalog && courseId ? courseId : null, getCachedFullCourse, getFullCourse);
 
-  // Le contenu déjà en mémoire est lu de façon synchrone, avant même le premier rendu : passer
-  // systématiquement par la promesse de `getFullCourse` faisait peindre « Chargement… » à chaque
-  // ouverture de cours et à chaque retour arrière, y compris quand le chunk de la matière était
-  // déjà chargé — un clignotement pour rien. On ne retombe sur le chargement asynchrone que
-  // lorsque la matière n'a réellement pas encore été chargée.
-  const cached = useMemo(() => (courseId ? getCachedFullCourse(courseId) : undefined), [courseId]);
-  const [loaded, setLoaded] = useState<Course | undefined>(undefined);
-  // `loaded` peut porter le cours précédent le temps qu'une nouvelle matière se charge : on ne
-  // le retient que s'il correspond bien à l'adresse courante.
-  const course = cached ?? (loaded?.id === courseId ? loaded : undefined);
-
-  useEffect(() => {
-    if (!existsInCatalog || !courseId || cached) return;
-    let cancelled = false;
-    getFullCourse(courseId).then((c) => {
-      if (!cancelled) setLoaded(c);
-    });
-    return () => {
-      cancelled = true;
-    };
-  }, [courseId, existsInCatalog, cached]);
-
-  if (!existsInCatalog) {
+  if (!existsInCatalog || status === "absent") {
     return (
       <div className="mx-auto max-w-md rounded-card border-[3px] border-ink bg-card p-8 text-center shadow-card">
         <p className="font-bold">Ce cours est introuvable.</p>
@@ -71,15 +51,17 @@ export function CourseDetailScreen() {
     );
   }
 
+  if (status === "error") return <ContentLoadError onRetry={retry} />;
+
   if (!course) {
     return (
       <div className="mx-auto max-w-2xl">
-        <button
-          onClick={() => navigate(-1)}
+        <Link
+          to="/biblio"
           className="mb-3 inline-flex items-center gap-1.5 font-heading text-sm font-bold text-ink-faint"
         >
           <ArrowLeft className="h-4 w-4" /> Retour
-        </button>
+        </Link>
         <div className="rounded-card border-[3px] border-ink bg-card p-8 text-center shadow-card">
           <p className="font-medium text-ink-faint">Chargement…</p>
         </div>
@@ -148,6 +130,8 @@ function CourseDetailBody({ course }: { course: Course }) {
   }, [stage]);
 
   const category = getCategory(course.categoryId)!;
+  const categoryDestination = `/biblio/${category.id}`;
+  const otherCoursesLabel = `Voir les autres cours ${category.id === "histoire" ? "d'" : "de "}${category.name.toLocaleLowerCase("fr")}`;
   const parcours = PARCOURS.find((p) => p.courseIds.includes(course.id));
 
   function goPrevLesson() {
@@ -204,13 +188,17 @@ function CourseDetailBody({ course }: { course: Course }) {
     setStage(celebrationSegment[nextIndex]);
   }
 
+  const [outroDestination, setOutroDestination] = useState("/");
+
   /** Carrefour de décision porté par le dernier écran de célébration : faire ou sauter le quiz */
   function decideQuiz(takeQuiz: boolean) {
+    const destination = takeQuiz ? "/" : categoryDestination;
+    setOutroDestination(destination);
     const tail = resolveOutroTail({ takeQuiz, streakAdvanced });
     setTailScreens(tail);
     setTailIndex(0);
     if (tail.length === 0) {
-      navigate("/");
+      navigate(destination);
       return;
     }
     setStage(tail[0]);
@@ -251,7 +239,7 @@ function CourseDetailBody({ course }: { course: Course }) {
   const isLastCelebration = celebrationIndex === celebrationSegment.length - 1;
   const celebrationPrimaryLabel = isLastCelebration ? "Passer au quiz →" : "Continuer →";
   const celebrationOnPrimary = isLastCelebration ? () => decideQuiz(true) : advanceCelebration;
-  const celebrationSecondaryLabel = isLastCelebration ? "Retour à l'accueil" : undefined;
+  const celebrationSecondaryLabel = isLastCelebration ? otherCoursesLabel : undefined;
   const celebrationOnSecondary = isLastCelebration ? () => decideQuiz(false) : undefined;
 
   const streakFollows = tailIndex + 1 < tailScreens.length;
@@ -347,7 +335,8 @@ function CourseDetailBody({ course }: { course: Course }) {
         <StreakCelebration
           streak={outcomeProgress.streak}
           subjectName={category.name}
-          onHome={() => navigate("/")}
+          primaryLabel={outroDestination === categoryDestination ? otherCoursesLabel : undefined}
+          onHome={() => navigate(outroDestination)}
         />
       )}
     </div>

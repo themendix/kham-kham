@@ -1,20 +1,23 @@
 import { Link } from "react-router-dom";
-import { PartyPopper } from "lucide-react";
+import { ArrowRight, PartyPopper } from "lucide-react";
 import type { Category, CourseMeta } from "@/types";
 import { Card } from "@/components/ui/Card";
 import { Button } from "@/components/ui/Button";
 import { Tag } from "@/components/ui/Tag";
 import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
+import { getCourseImage, getCourseImagePosition, OBJECT_POSITION } from "@/lib/courseImages";
+import { lessonKey } from "@/lib/featured";
 
 interface ContinueLearningCardProps {
   course: CourseMeta | null;
   category: Category | null;
   /** true si ce cours est celui déjà entamé (lastCourseId), false si jamais ouvert */
   resumed: boolean;
+  completedLessonIds: string[];
 }
 
 /** Invite à reprendre (ou commencer) un cours ; état positif si tous les cours sont terminés */
-export function ContinueLearningCard({ course, category, resumed }: ContinueLearningCardProps) {
+export function ContinueLearningCard({ course, category, resumed, completedLessonIds }: ContinueLearningCardProps) {
   if (!course || !category) {
     return (
       <Card className="flex items-center gap-4 p-5">
@@ -29,6 +32,46 @@ export function ContinueLearningCard({ course, category, resumed }: ContinueLear
           <Button variant="secondary">Voir la Biblio</Button>
         </Link>
       </Card>
+    );
+  }
+
+  if (resumed) {
+    const image = getCourseImage(course.id);
+    const firstUnread = course.lessons.findIndex(
+      (lesson) => !completedLessonIds.includes(lessonKey(course.id, lesson.id)),
+    );
+    const lessonIndex = firstUnread === -1 ? 0 : firstUnread;
+
+    return (
+      <section>
+        <h2 className="mb-2.5 font-heading text-lg font-extrabold">Reprendre l’apprentissage</h2>
+        <Link
+          to={`/cours/${course.id}`}
+          className={`relative flex h-[280px] flex-col justify-end overflow-hidden rounded-[18px] border-[3px] border-ink bg-gradient-to-br shadow-sm transition-transform focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-ink active:translate-y-[3px] active:shadow-none ${SUBJECT_GRADIENT[category.color]}`}
+        >
+          {image ? (
+            <img
+              src={image.src}
+              srcSet={image.srcSet}
+              sizes="(min-width: 768px) 672px, calc(100vw - 40px)"
+              alt=""
+              loading="lazy"
+              className={`absolute inset-0 h-full w-full object-cover ${OBJECT_POSITION[getCourseImagePosition(course.id)]}`}
+            />
+          ) : (
+            <span aria-hidden="true" className="absolute inset-0 flex items-center justify-center text-[72px]">{course.emoji}</span>
+          )}
+          <div className="relative flex flex-col items-start bg-gradient-to-t from-ink/95 via-ink/65 to-transparent px-4 pb-4 pt-14">
+            <h3 className="font-heading text-[22px] font-extrabold leading-tight text-white drop-shadow-sm">{course.title}</h3>
+            <p className="mt-1.5 text-xs font-medium text-white">
+              {course.lessons.length > 0 && <>Leçon {lessonIndex + 1} / {course.lessons.length} · </>}{category.name}
+            </p>
+            <span className="mt-3 inline-flex min-h-11 items-center gap-2 rounded-[10px] border-2 border-ink bg-primary px-4 font-heading text-sm font-bold text-white shadow-sm">
+              Lire la leçon <ArrowRight className="h-4 w-4" aria-hidden="true" />
+            </span>
+          </div>
+        </Link>
+      </section>
     );
   }
 

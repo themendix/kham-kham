@@ -1,9 +1,11 @@
-import { beforeEach, describe, expect, it } from "vitest";
+import { afterEach, beforeEach, describe, expect, it, vi } from "vitest";
 import { createAppStore } from "@/store/useAppStore";
 import { getLevelInfo, XP_PER_LESSON, XP_PER_QUESTION_LEARNED } from "@/lib/gamification";
 import type { QuizResult } from "@/types";
 
 import { progressTestEnvironment } from "./progressTestEnvironment";
+import { LEGACY_PROGRESS_KEY } from "./progressPersistence";
+import { COURSE_INDEX } from "@/data/coursesIndex.generated";
 let useAppStore: ReturnType<typeof createAppStore>;
 
 const LESSON_COURSE_ID = "course-perso-voix-plumes-afrique";
@@ -15,9 +17,12 @@ const PARCOURS_ID = "parcours-racines-civilisations";
 const PARCOURS_XP_REWARD = 120;
 
 beforeEach(async () => {
+  vi.useFakeTimers();
+  vi.setSystemTime(new Date(2026, 9, 15, 12));
   useAppStore = createAppStore(progressTestEnvironment().environment);
   await useAppStore.getState().retryPersistence();
 });
+afterEach(() => vi.useRealTimers());
 
 describe("completeLesson — idempotence", () => {
   it("ne crédite l'XP qu'une seule fois pour deux appels sur la même leçon", async () => {
@@ -54,6 +59,7 @@ describe("completeCourse — idempotence", () => {
 
     expect(xpAfterFirst).toBe(50);
     expect(xpAfterSecond).toBe(50);
+    expect(useAppStore.getState().progress.daily.xpEarned).toBe(50);
   });
 
   it("n'ajoute qu'une seule entrée dans completedCourseIds", async () => {
@@ -74,6 +80,51 @@ describe("completeCourse — idempotence", () => {
     await useAppStore.getState().completeCourse(PARCOURS_COURSE_B, 50);
     expect(useAppStore.getState().progress.xp).toBe(xpAfterCompletion);
     expect(useAppStore.getState().progress.completedParcoursIds).toEqual([PARCOURS_ID]);
+    expect(useAppStore.getState().progress.daily.xpEarned).toBe(xpAfterCompletion);
+  });
+
+  it("comptabilise les cinq leçons et la récompense du Kanem-Bornou sans repayer une relecture", async () => {
+    const course = COURSE_INDEX.find((c) => c.id === "course-histoire-10-kanem-bornou")!;
+    for (const lesson of course.lessons.slice(0, -1)) {
+      await useAppStore.getState().completeLesson(course.id, lesson.id);
+    }
+    const lastLesson = course.lessons[course.lessons.length - 1];
+    const result = await useAppStore.getState().finishLearning(course.id, lastLesson.id, course.xp);
+    expect(result.xpCredited).toBe(XP_PER_LESSON + course.xp);
+    expect(result.progress.xp).toBe(120);
+    expect(result.progress.daily.xpEarned).toBe(120);
+    expect(result.progress.daily.lessonsLearned).toBe(5);
+
+    const replay = await useAppStore.getState().finishLearning(course.id, lastLesson.id, course.xp);
+    expect(replay.xpCredited).toBe(0);
+    expect(replay.progress.daily.xpEarned).toBe(120);
+    expect(replay.progress.daily.lessonsLearned).toBe(5);
+  });
+
+  it("conserve les acquis et crédite seulement le nouveau gain après un changement de jour et un rechargement", async () => {
+    const env = progressTestEnvironment();
+    env.values.set(LEGACY_PROGRESS_KEY, JSON.stringify({ version: 10, state: { progress: {
+      ...useAppStore.getState().progress,
+      xp: 200,
+      daily: { date: "2000-01-01", lessonsLearned: 3, xpEarned: 100, challengeDone: true },
+    } } }));
+    const resumed = createAppStore(env.environment);
+    await resumed.getState().retryPersistence();
+    expect(resumed.getState().progress.xp).toBe(200);
+    expect(resumed.getState().progress.daily.xpEarned).toBe(100);
+
+    const result = await resumed.getState().completeCourse(LESSON_COURSE_ID, 50);
+    expect(result.xpCredited).toBe(50);
+    expect(result.progress.xp).toBe(250);
+    expect(result.progress.daily).toMatchObject({ xpEarned: 50, lessonsLearned: 0, challengeDone: false });
+    expect(result.progress.daily.date).not.toBe("2000-01-01");
+
+    const reloaded = createAppStore(env.environment);
+    await reloaded.getState().retryPersistence();
+    expect(reloaded.getState().progress).toEqual(result.progress);
+    await reloaded.getState().completeCourse(LESSON_COURSE_ID, 50);
+    expect(reloaded.getState().progress.daily.xpEarned).toBe(50);
+    expect(reloaded.getState().progress.xp).toBe(250);
   });
 });
 
@@ -137,14 +188,20 @@ describe("recordQuizAnswer — XP bornée à la deuxième réussite", () => {
     expect(useAppStore.getState().progress.quizGame.questions[KEY].correct).toBe(1);
   });
 
-  it("crédite XP_PER_QUESTION_LEARNED à la deuxième réussite", async () => {
+  it("crédite XP_PER_QUESTION_LEARNED après deux jours distincts, jamais deux succès le même jour", async () => {
     await useAppStore.getState().recordQuizAnswer(KEY, true);
+    await useAppStore.getState().recordQuizAnswer(KEY, true);
+    expect(useAppStore.getState().progress.xp).toBe(0);
+    vi.setSystemTime(new Date(2026, 9, 16, 12));
     await useAppStore.getState().recordQuizAnswer(KEY, true);
     expect(useAppStore.getState().progress.xp).toBe(XP_PER_QUESTION_LEARNED);
   });
 
   it("ne recrédite rien aux réussites suivantes", async () => {
-    for (let i = 0; i < 5; i++) await useAppStore.getState().recordQuizAnswer(KEY, true);
+    for (let i = 0; i < 5; i++) {
+      vi.setSystemTime(new Date(2026, 9, 15 + i, 12));
+      await useAppStore.getState().recordQuizAnswer(KEY, true);
+    }
     expect(useAppStore.getState().progress.xp).toBe(XP_PER_QUESTION_LEARNED);
     expect(useAppStore.getState().progress.quizGame.questions[KEY].correct).toBe(5);
   });
@@ -153,6 +210,7 @@ describe("recordQuizAnswer — XP bornée à la deuxième réussite", () => {
     // 1re réussite (rien), échec, 2e réussite (créditée), 3e réussite (rien).
     await useAppStore.getState().recordQuizAnswer(KEY, true);
     await useAppStore.getState().recordQuizAnswer(KEY, false);
+    vi.setSystemTime(new Date(2026, 9, 16, 12));
     await useAppStore.getState().recordQuizAnswer(KEY, true);
     await useAppStore.getState().recordQuizAnswer(KEY, true);
     expect(useAppStore.getState().progress.xp).toBe(XP_PER_QUESTION_LEARNED);
@@ -167,8 +225,9 @@ describe("recordQuizAnswer — XP bornée à la deuxième réussite", () => {
 
   it("crédite chaque question distincte une fois", async () => {
     await useAppStore.getState().recordQuizAnswer(KEY, true);
-    await useAppStore.getState().recordQuizAnswer(KEY, true);
     await useAppStore.getState().recordQuizAnswer(OTHER_KEY, true);
+    vi.setSystemTime(new Date(2026, 9, 16, 12));
+    await useAppStore.getState().recordQuizAnswer(KEY, true);
     await useAppStore.getState().recordQuizAnswer(OTHER_KEY, true);
     expect(useAppStore.getState().progress.xp).toBe(XP_PER_QUESTION_LEARNED * 2);
   });

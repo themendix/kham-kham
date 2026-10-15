@@ -56,6 +56,9 @@ export function ProfilScreen() {
               </div>
             </div>
             <ProgressBar percent={levelInfo.progressPct} />
+            <p className="mt-3 text-xs font-medium text-ink-faint">
+              Ton rang reflète les XP cumulées. La complétion des cours et la maîtrise sont suivies séparément.
+            </p>
           </div>
 
           <StreakTracker streak={progress.streak} />

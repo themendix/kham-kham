@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { Compass, Library, Swords, User } from "lucide-react";
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
@@ -28,9 +28,12 @@ interface OnboardingProps {
  */
 export function Onboarding({ onClose }: OnboardingProps) {
   const setPreferredCategories = useAppStore((s) => s.setPreferredCategories);
+  const preferredCategoryIds = useAppStore((s) => s.progress.preferredCategoryIds);
   const [step, setStep] = useState(0);
-  const [selected, setSelected] = useState<string[]>([]);
+  const [selected, setSelected] = useState<string[]>(() => [...preferredCategoryIds]);
   const [saveError, setSaveError] = useState(false);
+  const [saving, setSaving] = useState(false);
+  const savePending = useRef(false);
 
   function toggle(categoryId: string) {
     setSelected((prev) =>
@@ -39,12 +42,25 @@ export function Onboarding({ onClose }: OnboardingProps) {
   }
 
   async function finish() {
+    if (savePending.current) return;
+    savePending.current = true;
+    setSaving(true);
     setSaveError(false);
     try {
       await setPreferredCategories(selected);
       markOnboardingSeen();
       onClose();
     } catch { setSaveError(true); }
+    finally {
+      savePending.current = false;
+      setSaving(false);
+    }
+  }
+
+  function skip() {
+    if (savePending.current) return;
+    markOnboardingSeen();
+    onClose();
   }
 
   const isFirst = step === 0;
@@ -59,7 +75,8 @@ export function Onboarding({ onClose }: OnboardingProps) {
       {saveError && <p role="alert" className="mb-3 font-bold text-danger">La sauvegarde a échoué. Réessaie pour conserver ton choix.</p>}
       <div className="flex justify-end">
         <button
-          onClick={finish}
+          onClick={skip}
+          disabled={saving}
           className="font-heading text-xs font-bold text-ink-faint underline underline-offset-2"
         >
           Passer
@@ -125,6 +142,7 @@ export function Onboarding({ onClose }: OnboardingProps) {
                   <button
                     key={cat.id}
                     onClick={() => toggle(cat.id)}
+                    disabled={saving}
                     aria-pressed={isSelected}
                     className={`flex items-center gap-2 rounded-full border-[3px] border-ink px-4 py-2.5 font-heading font-bold shadow-sm transition-transform active:translate-y-[3px] active:shadow-none ${
                       isSelected ? SUBJECT_DEEP_BG[cat.color] : "bg-card"
@@ -153,11 +171,11 @@ export function Onboarding({ onClose }: OnboardingProps) {
 
       <div className="mx-auto flex w-full max-w-sm gap-2.5 pb-2">
         {!isFirst && (
-          <Button size="md" variant="secondary" onClick={() => setStep(step - 1)}>
+          <Button size="md" variant="secondary" disabled={saving} onClick={() => setStep(step - 1)}>
             Précédent
           </Button>
         )}
-        <Button size="lg" className="flex-1" onClick={isLast ? finish : () => setStep(step + 1)}>
+        <Button size="lg" className="flex-1" disabled={saving} onClick={isLast ? finish : () => setStep(step + 1)}>
           {isLast ? "C'est parti !" : "Continuer"}
         </Button>
       </div>

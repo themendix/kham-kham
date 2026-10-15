@@ -886,7 +886,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         blocks: [
           {
             type: "paragraphe",
-            text: "Le kente est tissé au **Ghana**, en pays ashanti. Il est fait de bandes étroites, cousues ensemble une fois tissées.",
+            text: "Au **Ghana**, le kente appartient aux traditions asante (ashanti) et ewe. Ses bandes étroites sont tissées puis cousues ensemble.",
           },
           {
             type: "image",
@@ -897,20 +897,20 @@ export const DECOUVERTE_COURSES: Course[] = [
           {
             type: "reperes",
             items: [
-              { label: "Origine", valeur: "Pays ashanti, Ghana" },
+              { label: "Origine", valeur: "Traditions asante et ewe, Ghana" },
               { label: "Technique", valeur: "Tissage en bandes étroites" },
               { label: "Usage", valeur: "Cérémonies, fêtes, distinctions" },
             ],
           },
           {
             type: "paragraphe",
-            text: "Chaque motif a un nom, et à ce nom correspond un **proverbe**. Porter un kente, c'est afficher une phrase. Réservé autrefois à la cour, il est devenu un symbole panafricain.",
+            text: "Chaque motif porte un nom et peut évoquer un **proverbe**. Porter un kente transmet un message. Ses usages cérémoniels en font aussi un symbole panafricain.",
           },
           {
             type: "aRetenir",
             points: [
               "Le **kente** est tissé en bandes puis assemblé",
-              "Chaque motif porte un nom et un **proverbe**",
+              "Les motifs portent des noms et des messages",
               "D'un tissu de cour à un symbole panafricain",
             ],
           },
@@ -1054,7 +1054,7 @@ export const DECOUVERTE_COURSES: Course[] = [
     quiz: [
       {
         id: "quiz-decouverte-02-1",
-        question: "De quel peuple le kente est-il originaire ?",
+        question: "À quel peuple du Ghana le kente est-il notamment associé ?",
         options: [
           "Les Dogon du Mali",
           "Les Ashanti du Ghana",
@@ -1063,7 +1063,7 @@ export const DECOUVERTE_COURSES: Course[] = [
         ],
         correctIndex: 1,
         explanation:
-          "Le kente est tissé en pays ashanti, au Ghana, en bandes étroites ensuite assemblées.",
+          "Le kente est notamment associé aux Ashanti (Asante) du Ghana. Les Ewe possèdent aussi une tradition de ce tissage en bandes : son origine ne se résume pas à un seul peuple.",
       },
       {
         id: "quiz-decouverte-02-2",

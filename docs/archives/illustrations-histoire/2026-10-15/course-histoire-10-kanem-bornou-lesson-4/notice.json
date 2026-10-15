@@ -1,0 +1,63 @@
+{
+  "date": "2026-10-15",
+  "id": "course-histoire-10-kanem-bornou-lesson-4",
+  "reason": "L’arme allemande est un exemple technique extérieur ; aucun lien documentaire avec le Bornou ou l’armée d’Idris Alooma.",
+  "originalLesson": {
+    "id": "course-histoire-10-kanem-bornou-lesson-4",
+    "title": "L'apogée sous Idris Alooma",
+    "blocks": [
+      {
+        "type": "paragraphe",
+        "text": "Sous **Idris Alooma**, le Bornou se transforme à la fin du XVIe siècle."
+      },
+      {
+        "type": "chiffreCle",
+        "valeur": "fin XVIe s.",
+        "legende": "l'apogée du Kanem-Bornou sous Idris Alooma"
+      },
+      {
+        "type": "paragraphe",
+        "text": "Il modernise l'armée avec des armes à feu, échange avec l'Empire **ottoman** et renforce la justice islamique."
+      },
+      {
+        "type": "citation",
+        "texte": "Ô vous qui croyez, soyez fermes pour la justice.",
+        "auteur": "Coran, sourate 4"
+      },
+      {
+        "type": "image",
+        "alt": "Détail d'arquebuse à mèche : crosse et mécanisme.",
+        "legende": "Détail d'une arquebuse allemande du XVIe siècle, arme à mèche.",
+        "credit": "The Metropolitan Museum of Art, CC0",
+        "sourceUrl": "https://www.metmuseum.org/art/collection/search/34811",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      },
+      {
+        "type": "aRetenir",
+        "points": [
+          "**Idris Alooma** modernise l'armée avec des armes à feu",
+          "Relations diplomatiques avec l'Empire ottoman",
+          "Une justice renforcée, fondée sur la loi islamique"
+        ]
+      },
+      {
+        "type": "leSavaisTu",
+        "text": "Ses échanges avec Istanbul témoignent de l'ouverture diplomatique du Bornou."
+      }
+    ]
+  },
+  "files": [
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-10-kanem-bornou-lesson-4/course-histoire-10-kanem-bornou-lesson-4.webp",
+      "sha256": "9142ef5b62754de73f83dbe71bda7e6ae0d263c02b2234d0a31c8d16f0299f1d"
+    },
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-10-kanem-bornou-lesson-4/course-histoire-10-kanem-bornou-lesson-4-400w.webp",
+      "sha256": "dd263f9b3a549e002e017732b50bbc92522a141f554024c3765adf41a5a17a25"
+    },
+    {
+      "file": "docs/archives/illustrations-histoire/2026-10-15/course-histoire-10-kanem-bornou-lesson-4/course-histoire-10-kanem-bornou-lesson-4-800w.webp",
+      "sha256": "92361bc718dff54810585f2a38d885c77bd9c9d9548d96569518ea69c90763d9"
+    }
+  ]
+}

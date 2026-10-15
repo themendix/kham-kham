@@ -7,11 +7,9 @@ interface WelcomeBackCardProps {
 }
 
 /**
- * Accueil bienveillant après une absence : `updateStreak` remet la série à 1 en silence dès ce
- * rendu, sans jamais le dire à l'utilisateur. Cette carte capture l'ancien état juste avant (voir
- * `getStreakBreak`, appelé dans `HomeScreen` avant l'effet qui déclenche `updateStreak`) pour
- * l'annoncer une seule fois, sans reproche : `ContinueLearningCard`, juste en dessous, porte déjà
- * l'action de reprise.
+ * Accueil après une absence, sans modifier la série lors d'une simple visite.
+ * `getStreakBreak` fournit la durée d'absence ; seule une leçon ou un quiz terminé
+ * enregistre une nouvelle activité.
  */
 export function WelcomeBackCard({ daysAway, previousCount }: WelcomeBackCardProps) {
   return (

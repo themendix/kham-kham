@@ -82,6 +82,11 @@ export function QuizScreen() {
         <h1 className="text-[30px] font-extrabold">Quiz</h1>
         <Badge tone="gold">🐚 {quizGame.cauris}</Badge>
       </div>
+      <details className="mt-3 text-sm font-medium text-ink-muted">
+        <summary className="cursor-pointer font-bold">Comment gagner des XP ?</summary>
+        <p className="mt-2">Chaque question rapporte 5 XP une seule fois, après des réussites sur deux jours distincts, selon la date de ton appareil.</p>
+        <p className="mt-2">Le défi rapporte {DAILY_CHALLENGE_XP_BONUS} XP à sa première complétion du jour, quel que soit le score. Les cauris sont une récompense séparée.</p>
+      </details>
 
       {/* Le Défi du jour n'a besoin que d'un tap par jour : une bande fine suffit, et la carte de
           conquête reprend la place que sa grande carte occupait. */}
