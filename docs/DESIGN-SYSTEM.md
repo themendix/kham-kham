@@ -1,8 +1,18 @@
 # Design System — Sankofa
 
+> Depuis la migration Expo SDK 57, les tokens mobiles sont définis dans
+> [`tailwind.config.js`](../tailwind.config.js), avec les directives NativeWind dans
+> [`src/global.css`](../src/global.css). Les polices natives sont chargées dans
+> [`src/app/_layout.tsx`](../src/app/_layout.tsx).
+> Les descriptions CSS, DOM, responsive et `@font-face` ci-dessous concernent
+> l'ancienne application web ; son fichier de styles est désormais
+> [`web/src/styles/index.css`](../web/src/styles/index.css).
+> Le [prototype Biblio](design/biblio/README.md) conserve les choix visuels historiques.
+
 Style **néo-brutaliste** : contours noirs épais, ombres portées nettes (sans flou), coins arrondis, typographie ronde et grasse — porté par une **palette africaine** (terre, ocre, or, vert savane, indigo) sur fond crème.
 
-Tous les tokens sont déclarés dans un unique bloc `@theme` dans [`src/styles/index.css`](../src/styles/index.css), ce qui génère automatiquement les utilitaires Tailwind correspondants.
+Pour le web, les tokens sont déclarés dans un bloc `@theme` dans
+[`web/src/styles/index.css`](../web/src/styles/index.css), qui génère les utilitaires Tailwind.
 
 ## Couleurs de base
 

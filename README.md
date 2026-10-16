@@ -18,13 +18,19 @@ choisie ; `npm run web` est l’aperçu navigateur de l’application Expo.
 
 ## Organisation
 
+Pour reprendre le travail : [état et prochaines vérifications](docs/REPRISE.md),
+[décisions techniques](docs/DECISIONS-TECHNIQUES.md) et
+[consignes de contribution](CONTRIBUTING.md).
+Le [prototype historique de la Biblio](docs/design/biblio/README.md) est conservé
+comme référence visuelle.
+
 - `src/app/` : routes Expo Router.
 - `src/screens/`, `src/components/`, `src/native/` : interfaces et adaptations natives.
 - `src/data/`, `src/assets/` : cours, leçons, quiz, illustrations et polices.
 - `src/store/`, `src/platform/` : progression, migrations et persistance SQLite.
 - `web/` : ancienne application React 18 / Vite, conservée avec ses dépendances.
 - `reference/source-manifest.json` : empreintes des contenus web repris.
-- `docs/` : documentation historique ; les descriptions React/Vite concernent `web/`.
+- `docs/` : documentation de reprise et références ; les descriptions historiques React/Vite concernent `web/`.
 
 La base mobile déjà préparée a été reprise ici, avec ses écrans et contenus.
 La parité visuelle et fonctionnelle complète reste à vérifier sur téléphone.

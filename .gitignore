@@ -19,6 +19,20 @@ dist-ssr
 # Claude Code — état local de session (non partagé)
 .claude/
 
+# Outillage propriétaire et contexte de session propres à chaque poste.
+/.codex/
+/.agents/
+/.planning/
+/.vibeflow-local/
+/.worktreeinclude
+/AGENTS.md
+
+# Secrets locaux ; seuls les exemples sans identifiants peuvent être partagés.
+.env
+.env.*
+!.env.example
+!.env.*.example
+
 # Matériel de référence/travail local (pas du code ni du contenu de l'app)
 /picture/
 /photo modele/
@@ -33,6 +47,7 @@ graphify-out/
 # Handoffs de design (prototypes HTML, archives) - materiel de travail local
 /design_handoff_*/
 *.zip
+/backups/
 
 # Expo / React Native (local caches and generated native projects)
 .expo/

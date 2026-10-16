@@ -1,5 +1,12 @@
 # Architecture — Sankofa
 
+> Document historique de l'application React/Vite, désormais conservée dans `web/`.
+> Les chemins `src/` ci-dessous sont relatifs à `web/`, sauf indication contraire.
+> Pour l'application mobile Expo située à la racine, consulter les
+> [décisions techniques actuelles](DECISIONS-TECHNIQUES.md) et la
+> [fiche de reprise](REPRISE.md). Le stockage SQLite natif ne correspond pas au
+> stockage navigateur décrit ici.
+
 ## Vue d'ensemble
 
 Sankofa est une application 100 % front-end (aucun back-end). Elle est structurée en quatre couches :
