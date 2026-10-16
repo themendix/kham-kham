@@ -1,0 +1,40 @@
+{
+  "expo": {
+    "name": "Sankofa",
+    "slug": "sankofa",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/brand/icon-512.png",
+    "scheme": "sankofa",
+    "userInterfaceStyle": "automatic",
+    "ios": {},
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/brand/icon-maskable-512.png",
+        "backgroundColor": "#f6eedd"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/brand/favicon-32.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#f6eedd",
+          "image": "./assets/brand/icon-192.png",
+          "imageWidth": 96
+        }
+      ],
+      "expo-sqlite"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": false
+    }
+  }
+}

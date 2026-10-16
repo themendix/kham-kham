@@ -1,34 +1,6 @@
-import js from "@eslint/js";
-import tseslint from "typescript-eslint";
-import reactHooks from "eslint-plugin-react-hooks";
-import reactRefresh from "eslint-plugin-react-refresh";
-import prettierConfig from "eslint-config-prettier";
-
-export default tseslint.config(
-  // `design_handoff_*` : TSX de reference fourni par le design, jamais compile ni livre.
-  {
-    ignores: [
-      "dist",
-      "node_modules",
-      "design_handoff_*",
-      ".claude/**",
-      ".codex/**",
-      ".agents/**",
-      ".vibeflow-local/**",
-    ],
-  },
-  {
-    files: ["**/*.{ts,tsx}"],
-    extends: [js.configs.recommended, ...tseslint.configs.recommended, reactRefresh.configs.vite],
-    plugins: { "react-hooks": reactHooks },
-    rules: {
-      // Règles classiques des Hooks (rules-of-hooks, exhaustive-deps) plutôt que le préréglage
-      // "recommended" v7, taillé pour le React Compiler (set-state-in-effect, purity…) : ce
-      // projet est React 18 sans Compiler, ce préréglage signalerait des patterns intentionnels
-      // (animations pilotées par useEffect dans LearningDoneCard, ProgressBar) comme des erreurs.
-      "react-hooks/rules-of-hooks": "error",
-      "react-hooks/exhaustive-deps": "warn",
-    },
-  },
-  prettierConfig,
-);
+const { defineConfig } = require("eslint/config");
+const expoConfig = require("eslint-config-expo/flat");
+module.exports = defineConfig([
+  expoConfig,
+  { ignores: ["web/**", "dist/**", ".expo/**", "reference/**", "backups/**", "scripts/**", "docs/**", "design_handoff_*/**", ".claude/**", ".codex/**", ".agents/**", ".planning/**", ".vibeflow-local/**", "graphify-out/**", "src/native/imageAssets.ts", "tests/imageAssets.mock.ts"] },
+]);

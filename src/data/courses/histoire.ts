@@ -6,7 +6,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-01-egypte-antique",
     categoryId: "histoire",
     emoji: "🏺",
-    title: "L'Égypte antique",
+    title: "Égypte antique",
     description: "Au bord du Nil, l'une des plus anciennes civilisations du monde est née en Afrique. Pharaons, pyramides, hiéroglyphes : découvre l'Égypte antique et ses liens profonds avec le reste du continent.",
     xp: 70,
     lessons: [
@@ -239,7 +239,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-02-koush-meroe",
     categoryId: "histoire",
     emoji: "🏹",
-    title: "Le royaume de Koush et Méroé",
+    title: "Koush et Méroé",
     description: "Au sud de l'Égypte, le long du Nil, un puissant royaume africain a rivalisé avec les pharaons, régné sur l'Égypte, puis brillé par son fer et son écriture : le royaume de Koush.",
     xp: 70,
     lessons: [
@@ -328,14 +328,6 @@ export const HISTOIRE_COURSES: Course[] = [
           {
             type: "paragraphe",
             text: "Agriculture et commerce complètent sa richesse. À Hamadab, les scories témoignent de cette métallurgie.",
-          },
-          {
-            type: "image",
-            alt: "Amas de scories H800, Hamadab.",
-            legende: "Hamadab, près de Méroé : scories de fer, tas H800.",
-            credit: "Ullrich, Wolf et Kaufmann, CC BY 4.0",
-            sourceUrl: "https://hmsjournal.org/index.php/home/article/view/86",
-            licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
           },
           {
             type: "aRetenir",
@@ -466,7 +458,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-03-aksoum",
     categoryId: "histoire",
     emoji: "⛪",
-    title: "Le royaume d'Aksoum",
+    title: "Royaume d'Aksoum",
     description: "Sur les hauts plateaux d'Éthiopie et d'Érythrée, Aksoum fut l'une des grandes puissances du monde antique, carrefour entre l'Afrique, l'Arabie et Rome — et l'un des premiers États chrétiens de l'histoire.",
     xp: 70,
     lessons: [
@@ -691,7 +683,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-04-carthage-afrique-du-nord",
     categoryId: "histoire",
     emoji: "⚓",
-    title: "Carthage et l'Afrique du Nord antique",
+    title: "Carthage antique",
     description: "Fondée par des marchands venus d'Orient, Carthage devint une superpuissance méditerranéenne face à Rome. Autour d'elle, l'Afrique du Nord vit naître de puissants royaumes berbères.",
     xp: 70,
     lessons: [
@@ -904,7 +896,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-05-empire-du-ghana",
     categoryId: "histoire",
     emoji: "🥇",
-    title: "L'empire du Ghana (Wagadou)",
+    title: "Empire du Ghana",
     description: "Bien avant le pays qui porte aujourd'hui son nom, l'empire du Ghana dominait le Sahel ouest-africain grâce à l'or et au commerce transsaharien. Les Arabes l'appelaient « le pays de l'or ».",
     xp: 70,
     lessons: [
@@ -985,16 +977,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "Le roi rend la justice au milieu d'une cour fastueuse. Le plan montre les vestiges étudiés par les archéologues.",
-          },
-          {
-            type: "image",
-            alt: "Plan des quartiers et vestiges archéologiques de Koumbi Saleh.",
-            legende: "Koumbi Saleh : plan archéologique établi d'après les relevés de 2007.",
-            credit: "Chloé Capel, CC BY-SA 4.0, WebP",
-            sourceUrl: "https://commons.wikimedia.org/wiki/File:Archaeological_site_of_Koumbi_Saleh.jpg",
-            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
-            fit: "contain",
+            text: "Le roi rend la justice au milieu d'une cour fastueuse.",
           },
           {
             type: "aRetenir",
@@ -1127,7 +1110,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-06-soundiata-mali",
     categoryId: "histoire",
     emoji: "🦁",
-    title: "Soundiata Keïta et la naissance de l'empire du Mali",
+    title: "Soundiata et le Mali",
     description: "De prince exilé à fondateur d'empire, Soundiata Keïta a uni les Mandingues, bâti le Mali et donné à l'Afrique de l'Ouest l'une de ses plus anciennes chartes.",
     xp: 70,
     lessons: [
@@ -1182,15 +1165,6 @@ export const HISTOIRE_COURSES: Course[] = [
           {
             type: "paragraphe",
             text: "Exilé face aux rivalités de cour, il se forme puis revient libérer son peuple. Les **griots** transmettent cette histoire.",
-          },
-          {
-            type: "image",
-            alt: "Ali Boulo Santo joue de la kora.",
-            legende: "Ali Boulo Santo, griot mandingue, photo contemporaine.",
-            credit: "Dany barthelemy, CC BY-SA 4.0, WebP",
-            sourceUrl:
-              "https://commons.wikimedia.org/wiki/File:Ali_Boulo_Santo_Artiste_griot_mandingue_kora_maitre_kora_afrique_europe_wikipedia30042016.jpg",
-            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
           },
           {
             type: "aRetenir",
@@ -1343,7 +1317,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-07-mansa-moussa",
     categoryId: "histoire",
     emoji: "👑",
-    title: "Mansa Moussa et l'apogée du Mali",
+    title: "Mansa Moussa",
     description: "Souvent présenté comme l'homme le plus riche de l'histoire, Mansa Moussa a fait rayonner le Mali de Tombouctou jusqu'à La Mecque, et inscrit l'Afrique de l'Ouest sur les cartes du monde.",
     xp: 70,
     lessons: [
@@ -1556,7 +1530,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-08-empire-songhai",
     categoryId: "histoire",
     emoji: "🐟",
-    title: "L'empire Songhaï et Askia Mohammed",
+    title: "Empire songhaï",
     description: "Sur les rives du Niger, le Songhaï devint le plus vaste empire de l'histoire ouest-africaine, avec Gao pour capitale et de grands souverains réformateurs.",
     xp: 70,
     lessons: [
@@ -1711,15 +1685,6 @@ export const HISTOIRE_COURSES: Course[] = [
             text: "La défaite brise la puissance impériale. Les foyers savants de Tombouctou et Djenné continuent pourtant leur histoire.",
           },
           {
-            type: "image",
-            alt: "Schéma des positions des armées à Tondibi.",
-            legende: "Tondibi, 1591 : schéma moderne de la bataille.",
-            credit: "Monsieur Fou, CC BY-SA 3.0, WebP",
-            sourceUrl: "https://commons.wikimedia.org/wiki/File:Bataille_de_tondibi.png",
-            licenseUrl: "https://creativecommons.org/licenses/by-sa/3.0",
-            fit: "contain",
-          },
-          {
             type: "aRetenir",
             points: [
               "**1591** : défaite de Tondibi",
@@ -1772,7 +1737,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-09-tombouctou-djenne",
     categoryId: "histoire",
     emoji: "📚",
-    title: "Tombouctou et Djenné, foyers du savoir",
+    title: "Tombouctou et Djenné",
     description: "Deux villes de la boucle du Niger sont devenues des phares mondiaux de la connaissance, avec leurs universités, leurs bibliothèques de manuscrits et une architecture de terre unique au monde.",
     xp: 70,
     lessons: [
@@ -1989,7 +1954,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-10-kanem-bornou",
     categoryId: "histoire",
     emoji: "🐫",
-    title: "L'empire du Kanem-Bornou",
+    title: "Kanem-Bornou",
     description: "Autour du lac Tchad, un empire a duré près de mille ans, reliant l'Afrique centrale au monde méditerranéen par le commerce, la diplomatie et l'islam.",
     xp: 70,
     lessons: [
@@ -2002,15 +1967,6 @@ export const HISTOIRE_COURSES: Course[] = [
           {
             type: "paragraphe",
             text: "Peuplé notamment de Kanouri, il est gouverné par les **Sayfawa**. Cette dynastie traverse près de mille ans d'histoire.",
-          },
-          {
-            type: "image",
-            alt: "Carte situant Kanem et Bornou autour du lac Tchad.",
-            legende: "Kanem et Bornou autour du lac Tchad, territoires indicatifs.",
-            credit: "ArnoldPlaton, CC0, WebP",
-            sourceUrl: "https://commons.wikimedia.org/wiki/File:Kanem-Bornu.svg",
-            licenseUrl: "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
-            fit: "contain",
           },
           {
             type: "aRetenir",
@@ -2072,15 +2028,6 @@ export const HISTOIRE_COURSES: Course[] = [
           {
             type: "paragraphe",
             text: "La nouvelle capitale, **Ngazargamu**, devient le centre du Kanem-Bornou. Ce déplacement ouvre une nouvelle période de prospérité.",
-          },
-          {
-            type: "image",
-            alt: "Le Bornou à l'ouest du lac Tchad sur une carte historique.",
-            legende: "Le Kanem-Bornou vers 1450, après le déplacement du pouvoir.",
-            credit: "Megartonius, CC BY-SA 4.0, WebP",
-            sourceUrl: "https://commons.wikimedia.org/wiki/File:Kanem%E2%80%93Bornu,_1450.png",
-            licenseUrl: "https://creativecommons.org/licenses/by-sa/4.0",
-            fit: "contain",
           },
           {
             type: "aRetenir",
@@ -2209,7 +2156,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-11-cites-etats-haoussa",
     categoryId: "histoire",
     emoji: "🏙️",
-    title: "Les cités-États haoussa",
+    title: "Cités haoussa",
     description: "Dans le nord de l'actuel Nigeria, un réseau de cités marchandes prospères — Kano, Katsina, Zaria — a rayonné par le commerce, l'artisanat et le savoir, sans jamais former un empire unique.",
     xp: 70,
     lessons: [
@@ -2422,7 +2369,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-12-royaume-benin-bronzes",
     categoryId: "histoire",
     emoji: "🎭",
-    title: "Le royaume du Bénin (Edo) et ses bronzes",
+    title: "Royaume du Bénin",
     description: "Dans la forêt de l'actuel Nigeria, le royaume du Bénin a produit un art de cour d'une finesse exceptionnelle : les célèbres bronzes du Bénin, aujourd'hui au cœur d'un grand débat sur la restitution.",
     xp: 70,
     lessons: [
@@ -2632,7 +2579,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-13-empire-oyo-yoruba",
     categoryId: "histoire",
     emoji: "🐴",
-    title: "L'empire Oyo et le monde yoruba",
+    title: "Oyo et les Yoruba",
     description: "Puissance de cavalerie de l'Afrique de l'Ouest, l'empire Oyo domina le pays yoruba grâce à un système politique équilibré et à une culture d'une richesse mondiale.",
     xp: 70,
     lessons: [
@@ -2836,7 +2783,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-14-royaume-ashanti",
     categoryId: "histoire",
     emoji: "🪙",
-    title: "Le royaume ashanti",
+    title: "Royaume ashanti",
     description: "Au cœur de l'actuel Ghana, la confédération ashanti a bâti un puissant royaume de l'or, uni par un symbole sacré : le Tabouret d'or.",
     xp: 70,
     lessons: [
@@ -2951,14 +2898,6 @@ export const HISTOIRE_COURSES: Course[] = [
             text: "Les **Britanniques** convoitent leur territoire. Plusieurs guerres les opposent au royaume, qui inflige parfois de lourdes pertes à l’envahisseur avant de céder devant sa supériorité militaire.",
           },
           {
-            type: "image",
-            alt: "Cour du palais du roi ashanti dessinée au XIXᵉ siècle.",
-            legende: "Palais de Kumasi, dessin britannique publié en 1874.",
-            credit: "Dessinateur inconnu, domaine public, WebP",
-            sourceUrl: "https://commons.wikimedia.org/wiki/File:King_Koffee_Palace.jpg",
-            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
-          },
-          {
             type: "aRetenir",
             points: [
               "**XIXᵉ siècle** : une série de guerres anglo-ashanti",
@@ -3046,7 +2985,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-15-royaume-dahomey",
     categoryId: "histoire",
     emoji: "⚔️",
-    title: "Le royaume du Dahomey",
+    title: "Royaume du Dahomey",
     description: "État militaire redouté du golfe de Guinée, le royaume du Dahomey s'est distingué par son armée — dont un célèbre corps de femmes soldats.",
     xp: 70,
     lessons: [
@@ -3259,7 +3198,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-16-royaume-kongo",
     categoryId: "histoire",
     emoji: "✝️",
-    title: "Le royaume du Kongo",
+    title: "Royaume du Kongo",
     description: "Vaste et bien organisé, le royaume du Kongo fut l'un des premiers États africains à nouer des relations diplomatiques d'égal à égal avec l'Europe — avant d'être miné par la traite.",
     xp: 70,
     lessons: [
@@ -3464,7 +3403,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-17-grand-zimbabwe",
     categoryId: "histoire",
     emoji: "🪨",
-    title: "Le Grand Zimbabwe",
+    title: "Grand Zimbabwe",
     description: "En Afrique australe, une cité de pierre monumentale, bâtie sans mortier, témoigne d'un puissant royaume de l'or et du commerce — et dément les préjugés coloniaux.",
     xp: 70,
     lessons: [
@@ -3673,7 +3612,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-18-monomotapa-mutapa",
     categoryId: "histoire",
     emoji: "👑",
-    title: "Le royaume du Monomotapa (Mutapa)",
+    title: "Monomotapa",
     description: "Héritier du Grand Zimbabwe, l'empire du Mutapa domina l'Afrique australe et fascina les Portugais par la légende de ses mines d'or.",
     xp: 70,
     lessons: [
@@ -3878,7 +3817,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-19-royaumes-grands-lacs",
     categoryId: "histoire",
     emoji: "🌊",
-    title: "Les royaumes des Grands Lacs",
+    title: "Royaumes des Grands Lacs",
     description: "Autour des grands lacs d'Afrique de l'Est, des royaumes prospères — Buganda, Rwanda, Bunyoro — développèrent des États centralisés et des sociétés élaborées.",
     xp: 70,
     lessons: [
@@ -4079,7 +4018,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-20-ethiopie-medievale-lalibela",
     categoryId: "histoire",
     emoji: "⛪",
-    title: "L'Éthiopie médiévale et les églises de Lalibela",
+    title: "Éthiopie médiévale",
     description: "Héritière d'Aksoum, l'Éthiopie chrétienne médiévale a taillé dans le roc des églises extraordinaires et maintenu, en plein cœur de l'Afrique, une civilisation unique.",
     xp: 70,
     lessons: [
@@ -4285,7 +4224,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-21-commerce-transsaharien",
     categoryId: "histoire",
     emoji: "🐪",
-    title: "Le commerce transsaharien",
+    title: "Commerce transsaharien",
     description: "Pendant près de mille ans, des caravanes ont traversé le Sahara, reliant l'Afrique de l'Ouest au monde méditerranéen et faisant la fortune des grands empires du Sahel.",
     xp: 70,
     lessons: [
@@ -4493,7 +4432,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-22-islamisation-afrique-ouest",
     categoryId: "histoire",
     emoji: "☪️",
-    title: "L'islamisation de l'Afrique de l'Ouest",
+    title: "Islam en Afrique de l'Ouest",
     description: "Porté par le commerce plutôt que par la conquête, l'islam s'est diffusé progressivement en Afrique de l'Ouest, se mêlant aux cultures locales pour donner un islam profondément africain.",
     xp: 70,
     lessons: [
@@ -4576,14 +4515,6 @@ export const HISTOIRE_COURSES: Course[] = [
           {
             type: "paragraphe",
             text: "Ces cités deviennent des foyers de savoir islamique. Le pèlerinage de Mansa Moussa à La Mecque, en 1324, illustre aussi l'ancrage de l'islam au sommet de l'État malien.",
-          },
-          {
-            type: "image",
-            alt: "Façade en terre d'une mosquée à Tombouctou.",
-            legende: "Mosquée de Tombouctou en 2007, probablement Sankoré.",
-            credit: "Anne and David, domaine public, Commons",
-            sourceUrl: "https://commons.wikimedia.org/wiki/File:2007_Sankore_Mosque_Timbuktu_01.jpg",
-            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -4698,7 +4629,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-23-cote-swahilie",
     categoryId: "histoire",
     emoji: "⛵",
-    title: "La côte swahilie et l'océan Indien",
+    title: "Côte swahilie",
     description: "Le long de la côte est-africaine, des cités marchandes florissantes ont fait le lien entre l'Afrique, l'Arabie, la Perse, l'Inde et la Chine, donnant naissance à la civilisation swahilie.",
     xp: 70,
     lessons: [
@@ -4903,7 +4834,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-24-traite-negriere-transatlantique",
     categoryId: "histoire",
     emoji: "⛓️",
-    title: "La traite négrière transatlantique",
+    title: "Traite transatlantique",
     description: "Du XVIᵉ au XIXᵉ siècle, des millions d'Africains furent déportés vers les Amériques. C'est l'une des plus grandes tragédies de l'histoire humaine, reconnue comme un crime contre l'humanité.",
     xp: 70,
     lessons: [
@@ -5113,7 +5044,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-25-conference-berlin",
     categoryId: "histoire",
     emoji: "🗺️",
-    title: "La conférence de Berlin et le partage de l'Afrique",
+    title: "Conférence de Berlin",
     description: "En 1884-1885, les puissances européennes se réunirent à Berlin pour se partager l'Afrique — sans un seul Africain à la table. Ses conséquences pèsent encore aujourd'hui.",
     xp: 70,
     lessons: [
@@ -5322,7 +5253,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-26-resistances-colonisation",
     categoryId: "histoire",
     emoji: "✊",
-    title: "Les grandes résistances à la colonisation",
+    title: "Résister à la colonisation",
     description: "Partout, les Africains ont résisté à la conquête coloniale — par les armes, la diplomatie ou la révolte. Des figures d'héroïsme trop souvent oubliées.",
     xp: 70,
     lessons: [
@@ -5407,14 +5338,6 @@ export const HISTOIRE_COURSES: Course[] = [
           {
             type: "paragraphe",
             text: "**Béhanzin** résiste au Dahomey, les Ashanti aux Britanniques, et **Lat Dior** à la France. En Namibie, les Allemands répriment les Herero et Nama par un génocide.",
-          },
-          {
-            type: "image",
-            alt: "Portrait gravé de Lat Dior, vêtu de tissu clair.",
-            legende: "Lat Dior, Damel du Cayor : gravure publiée en 1875.",
-            credit: "Le Monde illustré, 1875, domaine public, Commons",
-            sourceUrl: "https://commons.wikimedia.org/wiki/File:Lat_Dior,_king_of_Cayot_(Le_Monde_illustr%C3%A9,_1875).jpg",
-            licenseUrl: "https://creativecommons.org/publicdomain/mark/1.0/",
           },
           {
             type: "aRetenir",
@@ -5527,7 +5450,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-27-bataille-adoua",
     categoryId: "histoire",
     emoji: "🦅",
-    title: "La bataille d'Adoua (1896)",
+    title: "Bataille d'Adoua",
     description: "En 1896, l'Éthiopie infligea à l'Italie une défaite retentissante — la plus grande victoire d'un État africain contre une puissance coloniale européenne.",
     xp: 70,
     lessons: [
@@ -5732,7 +5655,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-28-independances-africaines",
     categoryId: "histoire",
     emoji: "🎉",
-    title: "Les indépendances africaines",
+    title: "Indépendances africaines",
     description: "Au milieu du XXᵉ siècle, les peuples africains reconquièrent leur souveraineté. L'année 1960 restera « l'année de l'Afrique ».",
     xp: 70,
     lessons: [
@@ -5937,7 +5860,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-29-panafricanisme-union-africaine",
     categoryId: "histoire",
     emoji: "🌍",
-    title: "Le panafricanisme et l'Union africaine",
+    title: "Panafricanisme",
     description: "L'idée que les Africains partagent un destin commun a donné naissance à de puissants mouvements et à des institutions d'unité continentale, de l'OUA à l'Union africaine.",
     xp: 70,
     lessons: [
@@ -6138,7 +6061,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-30-apartheid-mandela",
     categoryId: "histoire",
     emoji: "🕊️",
-    title: "L'apartheid et Nelson Mandela",
+    title: "Mandela et l'apartheid",
     description: "En Afrique du Sud, un régime de ségrégation raciale a opprimé la majorité noire — jusqu'à la victoire d'une longue lutte pour la liberté, incarnée par Nelson Mandela.",
     xp: 70,
     lessons: [
@@ -6339,7 +6262,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-31-tekrour-islam",
     categoryId: "histoire",
     emoji: "🕌",
-    title: "Le Tekrour, berceau de l'islam au Sénégal",
+    title: "Royaume du Tekrour",
     description: "Sur les rives du fleuve Sénégal, le royaume du Tekrour fut l'un des tout premiers États d'Afrique de l'Ouest à embrasser l'islam, bien avant l'empire du Mali.",
     xp: 70,
     lessons: [
@@ -6545,7 +6468,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-32-djolof-royaumes-wolof",
     categoryId: "histoire",
     emoji: "👑",
-    title: "L'empire du Djolof et les royaumes wolof",
+    title: "Empire du Djolof",
     description: "Du XIVᵉ au XVIᵉ siècle, l'empire du Djolof rassembla les royaumes wolof et sérères du Sénégal, avant de se fragmenter en États rivaux qui structurèrent le pays jusqu'à la colonisation.",
     xp: 70,
     lessons: [
@@ -6645,15 +6568,7 @@ export const HISTOIRE_COURSES: Course[] = [
           },
           {
             type: "paragraphe",
-            text: "**Amari Ngoné Sobel Fall** mène cette émancipation. Les royaumes côtiers deviennent autonomes ; le commerce atlantique renforce leur poids. La carte montre leurs héritiers vers 1850.",
-          },
-          {
-            type: "image",
-            alt: "Carte du Djolof et des royaumes voisins de Sénégambie.",
-            legende: "Djolof et royaumes voisins vers 1850, après la fragmentation.",
-            credit: "HetmanTheResearcher, CC BY 4.0, WebP",
-            sourceUrl: "https://commons.wikimedia.org/wiki/File:Kingdom_of_Jolof_Map.png",
-            licenseUrl: "https://creativecommons.org/licenses/by/4.0",
+            text: "**Amari Ngoné Sobel Fall** mène cette émancipation. Les royaumes côtiers deviennent autonomes ; le commerce atlantique renforce leur poids.",
           },
           {
             type: "aRetenir",
@@ -6746,7 +6661,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-33-royaumes-serer-sine-saloum",
     categoryId: "histoire",
     emoji: "🪘",
-    title: "Les royaumes sérères du Sine et du Saloum",
+    title: "Sine et Saloum",
     description: "Au cœur du Sénégal, les royaumes sérères du Sine et du Saloum ont préservé une culture originale, une religion ancestrale et de mystérieux monuments de pierre.",
     xp: 70,
     lessons: [
@@ -6951,7 +6866,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-34-goree-saint-louis",
     categoryId: "histoire",
     emoji: "⚓",
-    title: "Gorée et Saint-Louis : comptoirs et mémoire de la traite",
+    title: "Gorée et Saint-Louis",
     description: "Deux sites du Sénégal, Gorée et Saint-Louis, furent des comptoirs européens majeurs — et sont aujourd'hui des lieux de mémoire classés au patrimoine mondial de l'UNESCO.",
     xp: 70,
     lessons: [
@@ -7157,7 +7072,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-35-lat-dior-cayor",
     categoryId: "histoire",
     emoji: "🐎",
-    title: "Lat Dior et la résistance du Cayor",
+    title: "Lat Dior et le Cayor",
     description: "Damel du Cayor, Lat Dior incarna la résistance sénégalaise à la colonisation française, s'opposant notamment à la construction du chemin de fer.",
     xp: 70,
     lessons: [
@@ -7358,7 +7273,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-36-cheikh-ahmadou-bamba-mouridisme",
     categoryId: "histoire",
     emoji: "☪️",
-    title: "Cheikh Ahmadou Bamba et le mouridisme",
+    title: "Cheikh Ahmadou Bamba",
     description: "Guide spirituel et fondateur du mouridisme, Cheikh Ahmadou Bamba mena une résistance pacifique à la colonisation et fonda la ville sainte de Touba.",
     xp: 70,
     lessons: [
@@ -7563,7 +7478,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-37-aline-sitoe-diatta",
     categoryId: "histoire",
     emoji: "✊",
-    title: "Aline Sitoé Diatta, héroïne de la Casamance",
+    title: "Aline Sitoé Diatta",
     description: "Jeune femme diola de Casamance, Aline Sitoé Diatta se dressa contre l'ordre colonial français — au point d'être surnommée « la Jeanne d'Arc de la Casamance ».",
     xp: 70,
     lessons: [
@@ -7764,7 +7679,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-38-senghor-negritude-independance",
     categoryId: "histoire",
     emoji: "📜",
-    title: "Senghor, la Négritude et l'indépendance",
+    title: "Senghor et la Négritude",
     description: "Poète, penseur et homme d'État, Léopold Sédar Senghor porta le mouvement de la Négritude et devint le premier président du Sénégal indépendant.",
     xp: 70,
     lessons: [
@@ -7969,7 +7884,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-39-reine-nzinga-angola",
     categoryId: "histoire",
     emoji: "👑",
-    title: "La reine Nzinga, résistante d'Angola",
+    title: "Reine Nzinga",
     description: "Reine du Ndongo et du Matamba, Nzinga fut une brillante diplomate et guerrière qui tint tête aux Portugais pendant près de quarante ans.",
     xp: 70,
     lessons: [
@@ -8174,7 +8089,7 @@ export const HISTOIRE_COURSES: Course[] = [
     id: "course-histoire-40-chaka-zoulou",
     categoryId: "histoire",
     emoji: "🛡️",
-    title: "Chaka Zoulou et le royaume zoulou",
+    title: "Chaka et les Zoulous",
     description: "Chef militaire de génie, Chaka transforma un petit clan en un puissant royaume zoulou et révolutionna l'art de la guerre en Afrique australe.",
     xp: 70,
     lessons: [

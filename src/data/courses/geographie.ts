@@ -15,14 +15,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un désert avec une façade maritime",
         blocks: [
           { type: "paragraphe", text: "Le plus grand pays d'Afrique évoque d'abord une couleur : le sable. Pourtant, sa frange nord touche la Méditerranée, avec vignes et orangeraies à quelques heures du Sahara." },
-          { type: "chiffreCle", valeur: "2,38 M km²", legende: "le plus vaste pays du continent africain" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Alger" },
+              { label: "Monnaie", valeur: "Dinar algérien (DZD)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "5 juillet 1962" },
+            ],
+          },
           { type: "paragraphe", text: "Deux chaînes de l'**Atlas** séparent la côte fertile du désert. Au cœur du Sahara, le massif du **Hoggar** culmine à 2 900 m. Plus au sud, les grands ergs de dunes cachent des oasis où l'eau souterraine fait vivre les palmeraies." },
           {
             type: "aRetenir",
             points: [
               "Le plus vaste pays d'Afrique : **2,38 millions** de km²",
               "80 % du territoire est couvert par le **Sahara**",
-              "L'**Atlas** sépare la côte fertile du désert intérieur",
             ],
           },
           { type: "leSavaisTu", text: "Il y a environ 10 000 ans, le Sahara algérien était vert. Les fresques du **Tassili n'Ajjer** montrent des girafes et des hippopotames peints là où il n'y a plus une goutte d'eau." },
@@ -51,15 +58,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "L'or noir, moteur de l'Algérie",
         blocks: [
           { type: "paragraphe", text: "Le sous-sol algérien fait vivre tout le pays : pétrole et surtout gaz naturel, exploités par la compagnie publique **Sonatrach**, représentent l'essentiel des exportations. Cette richesse reste une dépendance : sans elle, l'économie vacille." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Alger" },
-              { label: "Monnaie", valeur: "Dinar algérien (DZD)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "5 juillet 1962" },
-            ],
-          },
           { type: "paragraphe", text: "Après une guerre longue et meurtrière contre la France, l'Algérie devient indépendante en 1962. Elle pèse aujourd'hui dans les dossiers du Sahel et du Sahara occidental, et garde de superbes vestiges romains à **Timgad** et **Djémila**." },
           {
             type: "aRetenir",
@@ -124,14 +122,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un fleuve, un ruban de vie",
         blocks: [
           { type: "paragraphe", text: "Sur les quelque 110 millions d'Égyptiens, 95 % vivent sur à peine 5 % du territoire : une mince bande verte que le Nil trace au milieu d'un désert presque total." },
-          { type: "chiffreCle", valeur: "5 %", legende: "du territoire porte presque toute la population" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Le Caire" },
+              { label: "Monnaie", valeur: "Livre égyptienne (EGP)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "1922 (Royaume-Uni)" },
+            ],
+          },
           { type: "paragraphe", text: "Le **Nil** traverse le pays du sud au nord et concentre toute la vie : vallée et delta forment un long ruban vert au milieu des sables. Au sud, le barrage d'**Assouan** retient le lac Nasser et régule les crues." },
           {
             type: "aRetenir",
             points: [
               "95 % des Égyptiens vivent sur **5 %** du territoire",
               "Le **Nil** traverse le pays du sud au nord",
-              "Le barrage d'**Assouan** retient les eaux du lac Nasser",
             ],
           },
           { type: "leSavaisTu", text: "À **Assouan**, il suffit de lever les yeux au bout d'une rue pour voir les falaises du désert : la bande cultivée est parfois large de quelques centaines de mètres à peine." },
@@ -160,15 +165,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Suez, carrefour du commerce mondial",
         blocks: [
           { type: "paragraphe", text: "Un seul canal égyptien relie la Méditerranée à la mer Rouge et fait gagner des semaines de navigation à des milliers de navires chaque année — sans lui, il faudrait contourner toute l'Afrique." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Le Caire" },
-              { label: "Monnaie", valeur: "Livre égyptienne (EGP)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "1922 (Royaume-Uni)" },
-            ],
-          },
           { type: "paragraphe", text: "En **1952**, une révolution renverse la monarchie ; la république naît l'année suivante. L'Égypte a longtemps abrité le siège de la **Ligue arabe** au Caire et pèse depuis des décennies sur la diplomatie régionale." },
           {
             type: "aRetenir",
@@ -233,14 +229,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Trois pays dans un seul",
         blocks: [
           { type: "paragraphe", text: "La Libye n'a jamais vraiment formé un seul pays : trois régions historiques — la Tripolitaine à l'ouest, la Cyrénaïque à l'est, le Fezzan au sud — se partagent un immense territoire, aux neuf dixièmes désertique." },
-          { type: "chiffreCle", valeur: "3 régions", legende: "Tripolitaine, Cyrénaïque et Fezzan, jamais vraiment unies" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Tripoli" },
+              { label: "Monnaie", valeur: "Dinar libyen (LYD)" },
+              { label: "Régime", valeur: "Transition politique" },
+              { label: "Indépendance", valeur: "24 décembre 1951" },
+            ],
+          },
           { type: "paragraphe", text: "Pour boire, le pays puise dans des nappes fossiles profondes grâce à la « **Grande Rivière artificielle** », un réseau de canalisations qui traverse tout le Sahara libyen. Au sud, le massif du **Fezzan** cache quelques oasis, comme Ghadamès." },
           {
             type: "aRetenir",
             points: [
               "Trois régions historiques : **Tripolitaine**, Cyrénaïque, Fezzan",
               "Près de 90 % du territoire est **désertique**",
-              "L'eau vient de nappes fossiles, via la Grande Rivière artificielle",
             ],
           },
           { type: "leSavaisTu", text: "La « **Grande Rivière artificielle** » pompe une eau vieille de plus de 10 000 ans, tombée quand le Sahara était encore vert, pour irriguer les villes du littoral." },
@@ -269,15 +272,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un pouvoir toujours divisé en deux",
         blocks: [
           { type: "paragraphe", text: "L'économie libyenne tient presque entièrement au pétrole, dont le pays possède parmi les plus grandes réserves d'Afrique. Depuis la chute de Kadhafi en 2011, le pouvoir reste durablement partagé entre l'est et l'ouest du pays." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Tripoli" },
-              { label: "Monnaie", valeur: "Dinar libyen (LYD)" },
-              { label: "Régime", valeur: "Transition politique" },
-              { label: "Indépendance", valeur: "24 décembre 1951" },
-            ],
-          },
           { type: "paragraphe", text: "Royaume indépendant en 1951, le pays devient en 1977 la « **Jamahiriya** » sous Mouammar **Kadhafi**, qui dirige 42 ans durant. La révolution de 2011 ouvre une transition toujours inachevée, avec des élections nationales espérées." },
           {
             type: "aRetenir",
@@ -342,14 +336,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "À 14 kilomètres de l'Europe",
         blocks: [
           { type: "paragraphe", text: "Un simple détroit de 14 kilomètres sépare le Maroc de l'Espagne — par temps clair, on distingue les côtes espagnoles depuis Tanger. Aucun autre pays africain n'est aussi proche de l'Europe." },
-          { type: "chiffreCle", valeur: "14 km", legende: "le détroit de Gibraltar, vers l'Espagne" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Rabat" },
+              { label: "Monnaie", valeur: "Dirham marocain (MAD)" },
+              { label: "Régime", valeur: "Monarchie constitutionnelle" },
+              { label: "Indépendance", valeur: "2 mars 1956" },
+            ],
+          },
           { type: "paragraphe", text: "Le pays est structuré par l'**Atlas** : le Haut Atlas, avec le mont **Toubkal**, plus haut sommet d'Afrique du Nord à plus de 4 000 m, et le Rif au nord. Entre montagnes et océan s'étendent des plaines fertiles ; le Sahara commence au sud-est." },
           {
             type: "aRetenir",
             points: [
               "Seulement **14 km** séparent le Maroc de l'Espagne",
               "Le mont **Toubkal** est le plus haut sommet d'Afrique du Nord",
-              "Le Sahara commence au sud-est, après l'Anti-Atlas",
             ],
           },
           { type: "leSavaisTu", text: "La traversée en ferry entre Tanger et l'Espagne prend moins d'une heure : on rejoint l'Europe plus vite qu'on ne traverse le pays du nord au sud." },
@@ -378,15 +379,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La terre qui nourrit le monde",
         blocks: [
           { type: "paragraphe", text: "Sous le sol marocain dorment l'essentiel des réserves mondiales de phosphates, l'ingrédient de base de la plupart des engrais du monde. Le royaume en est aujourd'hui le premier exportateur mondial." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Rabat" },
-              { label: "Monnaie", valeur: "Dirham marocain (MAD)" },
-              { label: "Régime", valeur: "Monarchie constitutionnelle" },
-              { label: "Indépendance", valeur: "2 mars 1956" },
-            ],
-          },
           { type: "paragraphe", text: "Indépendant de la France et de l'Espagne depuis **1956**, le Maroc a réintégré l'**Union africaine** en 2017 après plus de trente ans d'absence. Son économie s'appuie aussi sur le tourisme, l'automobile et l'agriculture." },
           {
             type: "aRetenir",
@@ -451,14 +443,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Entre Maghreb et Afrique noire",
         blocks: [
           { type: "paragraphe", text: "La Mauritanie n'est ni tout à fait le Maghreb, ni tout à fait l'Afrique noire : ce grand pays saharien, aux trois quarts désertique, fait la jonction entre les deux, jusqu'à l'Atlantique." },
-          { type: "chiffreCle", valeur: "1,03 M km²", legende: "un désert presque aussi grand que l'Égypte" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Nouakchott" },
+              { label: "Monnaie", valeur: "Ouguiya (MRU)" },
+              { label: "Régime", valeur: "République islamique" },
+              { label: "Indépendance", valeur: "28 novembre 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Sa façade atlantique, au large du **banc d'Arguin**, compte parmi les eaux les plus poissonneuses du monde. Au sud, une mince frange sahélienne longe le **fleuve Sénégal**, seule zone vraiment cultivable du pays." },
           {
             type: "aRetenir",
             points: [
               "Un territoire presque aussi vaste que l'**Égypte**",
               "Le désert couvre les trois quarts du pays",
-              "Les eaux du **banc d'Arguin** sont parmi les plus poissonneuses au monde",
             ],
           },
           { type: "leSavaisTu", text: "Dans la ville sainte de **Chinguetti**, en plein désert, des bibliothèques familiales conservent depuis des siècles des milliers de manuscrits anciens, écrits et copiés à la main." },
@@ -487,15 +486,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le plus long train du désert",
         blocks: [
           { type: "paragraphe", text: "Chaque jour, un train de plus de 200 wagons et 2,5 kilomètres de long traverse le Sahara mauritanien, chargé de minerai de fer. C'est l'un des trains les plus longs du monde." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Nouakchott" },
-              { label: "Monnaie", valeur: "Ouguiya (MRU)" },
-              { label: "Régime", valeur: "République islamique" },
-              { label: "Indépendance", valeur: "28 novembre 1960" },
-            ],
-          },
           { type: "paragraphe", text: "Le minerai de fer, extrait par la **SNIM**, reste la première exportation du pays, devant l'or et le cuivre. Un nouveau champ de gaz offshore, **Grand Tortue Ahmeyim**, partagé avec le Sénégal, ouvre une autre source de revenus." },
           {
             type: "aRetenir",
@@ -560,14 +550,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Deux Nils, deux couleurs, un fleuve",
         blocks: [
           { type: "paragraphe", text: "À Khartoum, deux fleuves aux couleurs différentes se rencontrent : le Nil Bleu, plus sombre, et le Nil Blanc, plus clair, fusionnent pour former le Nil, qui poursuit sa route vers l'Égypte." },
-          { type: "chiffreCle", valeur: "1,88 M km²", legende: "le 3ᵉ plus grand pays d'Afrique, après la sécession" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Khartoum" },
+              { label: "Monnaie", valeur: "Livre soudanaise (SDG)" },
+              { label: "Régime", valeur: "Transition militaire" },
+              { label: "Indépendance", valeur: "1ᵉʳ janvier 1956" },
+            ],
+          },
           { type: "paragraphe", text: "Le nord est désertique, le sud une savane sahélienne. Au-delà du désert de **Nubie**, le Nil trace une étroite bande cultivable. À l'ouest, le massif volcanique du **Jebel Marra**, au Darfour, culmine à plus de 3 000 m." },
           {
             type: "aRetenir",
             points: [
               "Les deux Nils se rejoignent à **Khartoum**",
               "3ᵉ plus grand pays d'Afrique, depuis 2011",
-              "Le désert domine au nord, la savane au sud",
             ],
           },
           { type: "leSavaisTu", text: "Le **Jebel Marra**, au Darfour, cache dans son cratère deux lacs volcaniques d'altitude — un paysage inattendu au milieu d'une région marquée par la guerre et la sécheresse." },
@@ -596,15 +593,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Plus de pyramides qu'en Égypte",
         blocks: [
           { type: "paragraphe", text: "Le Soudan compte plus de pyramides que l'Égypte — près de 200, héritage du royaume nubien de Koush, autour de Méroé. Elles restent pourtant bien moins connues que celles de Gizeh, malgré leur nombre." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Khartoum" },
-              { label: "Monnaie", valeur: "Livre soudanaise (SDG)" },
-              { label: "Régime", valeur: "Transition militaire" },
-              { label: "Indépendance", valeur: "1ᵉʳ janvier 1956" },
-            ],
-          },
           { type: "paragraphe", text: "L'agriculture reste centrale, avec la **gomme arabique** : le Soudan en est le premier producteur mondial, devant le sésame et le coton. La guerre civile depuis **2023** a toutefois dévasté une bonne partie de cette économie." },
           {
             type: "aRetenir",
@@ -669,14 +657,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le nord de tout un continent",
         blocks: [
           { type: "paragraphe", text: "Le point le plus septentrional de tout le continent africain ne se trouve pas en Algérie ni au Maroc, mais en Tunisie, au cap Blanc. C'est pourtant le plus petit pays du Maghreb." },
-          { type: "chiffreCle", valeur: "164 000 km²", legende: "le plus petit pays d'Afrique du Nord" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Tunis" },
+              { label: "Monnaie", valeur: "Dinar tunisien (TND)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "20 mars 1956" },
+            ],
+          },
           { type: "paragraphe", text: "Le nord, prolongement de l'**Atlas** tellien, est montagneux et bien arrosé ; le Sahel côtier est couvert d'oliviers. Vers le sud, les **chotts**, immenses lacs salés, annoncent le Sahara autour des oasis de Tozeur et Nefta." },
           {
             type: "aRetenir",
             points: [
               "Le point le plus au nord de toute l'**Afrique**",
               "Le plus petit pays du Maghreb : 164 000 km²",
-              "Du nord montagneux aux chotts salés du sud",
             ],
           },
           { type: "leSavaisTu", text: "Les paysages désertiques autour de Tozeur ont servi de décor à la planète Tatooine dans **Star Wars** — le désert tunisien a ainsi voyagé jusqu'au cinéma du monde entier." },
@@ -705,15 +700,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Où a commencé le Printemps arabe",
         blocks: [
           { type: "paragraphe", text: "C'est en Tunisie, fin 2010, qu'a démarré la vague de soulèvements appelée « Printemps arabe », qui a ensuite gagné l'Égypte, la Libye et d'autres pays. La transition démocratique qui suit est remise en cause à partir de 2021." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Tunis" },
-              { label: "Monnaie", valeur: "Dinar tunisien (TND)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "20 mars 1956" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie s'appuie sur le tourisme, le textile et l'agriculture : la Tunisie est un grand producteur d'**huile d'olive** et de dattes. Le pays est aussi riche en sites antiques classés à l'UNESCO, de **Carthage** à l'amphithéâtre d'El Jem." },
           {
             type: "aRetenir",
@@ -778,14 +764,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une ville entière posée sur l'eau",
         blocks: [
           { type: "paragraphe", text: "À Ganvié, sur la lagune de Cotonou, des dizaines de milliers de personnes vivent dans des maisons sur pilotis, au milieu de l'eau — un village-refuge né de la fuite des chasseurs d'esclaves du Dahomey." },
-          { type: "chiffreCle", valeur: "700 km", legende: "du sud humide aux savanes sèches du nord" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Porto-Novo (officielle)" },
+              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "1er août 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Au nord-ouest, le parc de la **Pendjari** abrite éléphants et lions dans une grande réserve de biosphère. Plus loin, la chaîne de l'**Atacora** forme le relief le plus marqué du pays, à la frontière du Togo." },
           {
             type: "aRetenir",
             points: [
               "Ganvié, un village entier construit sur **pilotis**",
               "700 km du nord au sud, plusieurs climats",
-              "Le parc de la **Pendjari** abrite éléphants et lions",
             ],
           },
           { type: "leSavaisTu", text: "Le nom **Ganvié** signifierait « la communauté qui a survécu » : ses fondateurs, protégés par un tabou religieux interdisant aux chasseurs d'esclaves d'entrer dans l'eau, y ont échappé à la capture." },
@@ -814,15 +807,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Les palais qui racontent le Dahomey",
         blocks: [
           { type: "paragraphe", text: "À Abomey, les palais royaux du Dahomey, aujourd'hui classés à l'UNESCO, racontent trois siècles d'un royaume guerrier et commerçant. Le coton, devenu aujourd'hui la première exportation du Bénin, a remplacé l'ancien commerce d'esclaves." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Porto-Novo (officielle)" },
-              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "1er août 1960" },
-            ],
-          },
           { type: "paragraphe", text: "**Cotonou**, bien que non capitale officielle, concentre le gouvernement et l'économie du pays. Son port joue un grand rôle dans le commerce régional, notamment la réexportation de marchandises vers le **Nigeria** voisin." },
           {
             type: "aRetenir",
@@ -887,14 +871,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "À la merci des ports voisins",
         blocks: [
           { type: "paragraphe", text: "Le Burkina Faso n'a aucune côte : tout ce qu'il importe ou exporte doit transiter par les ports d'un pays voisin — Abidjan, Téma, Lomé ou Cotonou, à des centaines de kilomètres." },
-          { type: "chiffreCle", valeur: "0 km", legende: "de côte — tout passe par des ports étrangers" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Ouagadougou" },
+              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
+              { label: "Régime", valeur: "Transition militaire" },
+              { label: "Indépendance", valeur: "5 août 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Le relief est globalement plat, sans grand massif : un plateau **sahélien**, aride au nord, un peu plus arrosé au sud. Le pays reste exposé à la désertification et à l'**insécurité** liée au terrorisme." },
           {
             type: "aRetenir",
             points: [
               "Aucun accès à la mer : tout transite par les voisins",
               "Un vaste plateau **sahélien**, plat et aride au nord",
-              "L'**insécurité** au nord pousse à l'exode vers les villes",
             ],
           },
           { type: "leSavaisTu", text: "Le parc national du W doit son nom à la forme du fleuve Niger, qui y dessine un grand « W » — partagé entre le Burkina Faso, le Niger et le Bénin." },
@@ -923,15 +914,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La patrie des hommes intègres",
         blocks: [
           { type: "paragraphe", text: "« Burkina Faso » signifie « la patrie des hommes intègres » — un nom choisi en 1984 par Thomas Sankara, jeune capitaine devenu président révolutionnaire, avant d'être renversé et assassiné trois ans plus tard." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Ouagadougou" },
-              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
-              { label: "Régime", valeur: "Transition militaire" },
-              { label: "Indépendance", valeur: "5 août 1960" },
-            ],
-          },
           { type: "paragraphe", text: "L'or est devenu la première exportation du pays, devant le coton, surnommé « l'or blanc ». Le Burkina Faso a quitté la **CEDEAO** pour former, avec le Mali et le Niger, l'Alliance des **États du Sahel**." },
           {
             type: "aRetenir",
@@ -996,14 +978,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Dix îles, aucune frontière terrestre",
         blocks: [
           { type: "paragraphe", text: "Dix îles volcaniques flottent en plein océan Atlantique, à 570 km des côtes sénégalaises — le Cap-Vert n'a aucun voisin qu'on puisse rejoindre à pied ou en voiture, un cas presque unique en Afrique." },
-          { type: "chiffreCle", valeur: "570 km", legende: "au large du Sénégal, dans l'Atlantique" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Praia" },
+              { label: "Monnaie", valeur: "Escudo capverdien (CVE)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "5 juillet 1975" },
+            ],
+          },
           { type: "paragraphe", text: "Les îles sont volcaniques : le **Pico do Fogo**, encore actif, culmine à près de 2 829 m. L'**aridité chronique**, aggravée par des cycles de sécheresse, a longtemps rendu l'agriculture précaire et poussé une partie de la population à émigrer." },
           {
             type: "aRetenir",
             points: [
               "Dix îles volcaniques, aucune frontière terrestre",
               "Le **Pico do Fogo**, volcan actif, culmine à 2 829 m",
-              "L'aridité a longtemps poussé les Capverdiens à émigrer",
             ],
           },
           { type: "leSavaisTu", text: "Les deux groupes d'îles portent des noms de marins : Barlavento (« au vent ») au nord, Sotavento (« sous le vent ») au sud, selon leur position face aux alizés." },
@@ -1032,15 +1021,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une démocratie qui ne vacille pas",
         blocks: [
           { type: "paragraphe", text: "Dans une région d'Afrique de l'Ouest où les coups d'État se multiplient ces dernières années, le Cap-Vert fait figure d'exception : ses institutions démocratiques, stables depuis l'instauration du multipartisme en 1990, n'ont jamais vacillé." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Praia" },
-              { label: "Monnaie", valeur: "Escudo capverdien (CVE)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "5 juillet 1975" },
-            ],
-          },
           { type: "paragraphe", text: "Pauvre en ressources naturelles, l'archipel vit surtout du **tourisme**, des services et des transferts d'argent de sa diaspora. **Cidade Velha**, première ville coloniale européenne bâtie sous les tropiques, est classée à l'UNESCO." },
           {
             type: "aRetenir",
@@ -1105,14 +1085,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une forêt qui recule vite",
         blocks: [
           { type: "paragraphe", text: "La forêt qui couvrait tout le sud de la Côte d'Ivoire a rétréci vite, rongée par l'expansion des plantations de cacao et de café. Au nord, la savane domine, jusqu'aux frontières du Mali et du Burkina Faso." },
-          { type: "chiffreCle", valeur: "80 %", legende: "de la forêt disparue depuis les années 1960" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Yamoussoukro" },
+              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "7 août 1960" },
+            ],
+          },
           { type: "paragraphe", text: "À l'extrême ouest, les monts **Nimba** et Man portent une forêt montagnarde d'une grande richesse biologique. Les parcs de **Taï** et de la Comoé, classés à l'UNESCO, protègent ce qui reste de cette biodiversité." },
           {
             type: "aRetenir",
             points: [
               "Le sud était couvert de forêt, aujourd'hui très réduite",
               "Les monts **Nimba** et Man, à l'extrême ouest",
-              "Les parcs de **Taï** et de la Comoé, classés à l'UNESCO",
             ],
           },
           { type: "leSavaisTu", text: "Le cacaoyer n'est pas originaire d'Afrique : il vient d'Amérique du Sud. Introduit au XIXe siècle, il a pourtant fait de la Côte d'Ivoire le premier producteur mondial de cacao." },
@@ -1140,15 +1127,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La moitié du chocolat du monde",
         blocks: [
           { type: "paragraphe", text: "Près de la moitié du cacao mondial pousse en Côte d'Ivoire, premier producteur de la planète. Le port d'Abidjan et une économie diversifiée en font aussi la première puissance économique de l'UEMOA." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Yamoussoukro" },
-              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "7 août 1960" },
-            ],
-          },
           { type: "paragraphe", text: "Depuis 1983, **Yamoussoukro** est la capitale politique, où se dresse la basilique Notre-Dame-de-la-Paix, l'une des plus grandes églises du monde. **Abidjan**, bien plus peuplée, reste le poumon économique et la capitale de fait." },
           {
             type: "aRetenir",
@@ -1213,14 +1191,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un pays qui est un fleuve",
         blocks: [
           { type: "paragraphe", text: "La Gambie n'est presque rien d'autre qu'un fleuve : une étroite bande de terre qui suit ses deux rives, sur quelques kilomètres de large, enclavée dans le Sénégal de tous côtés sauf vers l'océan." },
-          { type: "chiffreCle", valeur: "11 300 km²", legende: "le plus petit pays d'Afrique continentale" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Banjul" },
+              { label: "Monnaie", valeur: "Dalasi (GMD)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "18 février 1965" },
+            ],
+          },
           { type: "paragraphe", text: "Cette forme singulière vient du tracé colonial britannique, calqué sur le cours du fleuve **Gambie**. Navigable sur presque toute sa longueur, il a longtemps servi de voie de pénétration commerciale, puis de la **traite négrière**." },
           {
             type: "aRetenir",
             points: [
               "Le plus petit pays d'Afrique continentale",
               "Une bande de terre qui suit le **fleuve Gambie**",
-              "Presque entièrement enclavée dans le **Sénégal**",
             ],
           },
           { type: "leSavaisTu", text: "Le long du fleuve, les mangroves basses abritent une faune abondante — oiseaux migrateurs et primates trouvent refuge dans plusieurs réserves protégées, à quelques kilomètres seulement de la capitale." },
@@ -1249,15 +1234,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "L'île qui a inspiré Racines",
         blocks: [
           { type: "paragraphe", text: "Sur une petite île du fleuve Gambie, l'ancienne prison de Kunta Kinteh a inspiré le roman Racines d'Alex Haley, best-seller mondial qui a fait connaître l'histoire de la traite négrière à des millions de lecteurs." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Banjul" },
-              { label: "Monnaie", valeur: "Dalasi (GMD)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "18 février 1965" },
-            ],
-          },
           { type: "paragraphe", text: "L'arachide reste la principale exportation agricole, aux côtés de la pêche et surtout du **tourisme balnéaire**, qui attire des Européens chaque hiver. Les **cercles mégalithiques de Sénégambie**, partagés avec le Sénégal, sont classés à l'UNESCO." },
           {
             type: "aRetenir",
@@ -1322,14 +1298,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Au centre du monde",
         blocks: [
           { type: "paragraphe", text: "Le Ghana aime se présenter comme situé « au centre du monde » : le méridien de Greenwich et l'équateur se croisent presque à sa porte, un privilège géographique que peu de pays peuvent revendiquer." },
-          { type: "chiffreCle", valeur: "0° / 0°", legende: "méridien de Greenwich et équateur, presque réunis" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Accra" },
+              { label: "Monnaie", valeur: "Cedi ghanéen (GHS)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "6 mars 1957" },
+            ],
+          },
           { type: "paragraphe", text: "Le pays abrite le lac **Volta**, l'un des plus grands lacs artificiels du monde, créé par le barrage d'**Akosombo**. Il fournit l'essentiel de l'électricité du pays et sert aussi de voie de transport intérieur." },
           {
             type: "aRetenir",
             points: [
               "Traversé par le méridien de **Greenwich** et l'équateur",
               "Le lac **Volta**, l'un des plus grands lacs artificiels du monde",
-              "Le barrage d'Akosombo fournit l'essentiel de l'électricité du pays",
             ],
           },
           { type: "leSavaisTu", text: "À Tema, près d'Accra, une borne marque l'endroit exact où passe le méridien de Greenwich — les visiteurs peuvent y poser un pied dans chaque hémisphère, est et ouest." },
@@ -1357,15 +1340,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Premier à devenir indépendant",
         blocks: [
           { type: "paragraphe", text: "En 1957, le Ghana devient le tout premier pays d'Afrique subsaharienne à accéder à l'indépendance, ouvrant la voie à une vague de décolonisations qui balaiera le continent dans les décennies suivantes." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Accra" },
-              { label: "Monnaie", valeur: "Cedi ghanéen (GHS)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "6 mars 1957" },
-            ],
-          },
           { type: "paragraphe", text: "Le Ghana est l'un des premiers producteurs d'**or** d'Afrique et le deuxième producteur mondial de **cacao**. Les forts et châteaux de la traite négrière — Cape Coast, Elmina — sont classés à l'UNESCO, témoins d'un lourd passé." },
           {
             type: "aRetenir",
@@ -1430,14 +1404,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "D'ici naissent trois grands fleuves",
         blocks: [
           { type: "paragraphe", text: "Trois des plus grands fleuves d'Afrique de l'Ouest naissent tous ici, dans le même massif : le Niger, le Sénégal et la Gambie prennent leur source dans le Fouta-Djalon, au cœur de la Guinée." },
-          { type: "chiffreCle", valeur: "3 fleuves", legende: "naissent tous dans le massif du Fouta-Djalon" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Conakry" },
+              { label: "Monnaie", valeur: "Franc guinéen (GNF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "2 octobre 1958" },
+            ],
+          },
           { type: "paragraphe", text: "Le pays se divise en quatre régions naturelles : la Basse-Guinée côtière, la Moyenne-Guinée du **Fouta-Djalon**, la Haute-Guinée de savane et la Guinée forestière. Le **mont Nimba**, à cheval sur trois pays, en est le sommet emblématique." },
           {
             type: "aRetenir",
             points: [
               "Le **Niger**, le Sénégal et la Gambie naissent en Guinée",
               "Quatre régions naturelles, du littoral à la forêt",
-              "Le **mont Nimba**, à cheval sur trois pays",
             ],
           },
           { type: "leSavaisTu", text: "Le Fouta-Djalon est surnommé le « château d'eau de l'Afrique de l'Ouest » : au-delà du Niger, du Sénégal et de la Gambie, une dizaine d'autres cours d'eau y prennent aussi leur source." },
@@ -1466,15 +1447,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le pays qui a dit non",
         blocks: [
           { type: "paragraphe", text: "En 1958, seule parmi toutes les colonies françaises d'Afrique, la Guinée vote « non » au référendum du général de Gaulle, sous l'impulsion de Sékou Touré — et obtient son indépendance immédiate, sans transition." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Conakry" },
-              { label: "Monnaie", valeur: "Franc guinéen (GNF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "2 octobre 1958" },
-            ],
-          },
           { type: "paragraphe", text: "La Guinée détient les plus grandes réserves mondiales de **bauxite**, le minerai de l'aluminium, et en est un premier exportateur. Elle possède aussi de l'or, du diamant et d'énormes gisements de fer au **mont Simandou**." },
           {
             type: "aRetenir",
@@ -1539,14 +1511,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une mer qui grignote la terre",
         blocks: [
           { type: "paragraphe", text: "Une bonne partie de la Guinée-Bissau s'élève à peine au-dessus de l'océan. Bordée au nord par **le Sénégal** et au sud-est par la Guinée, ce pays d'estuaires, de mangroves et d'îles est très exposé à la montée des eaux." },
-          { type: "chiffreCle", valeur: "36 100 km²", legende: "un des plus petits pays du continent" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Bissau" },
+              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
+              { label: "Régime", valeur: "Transition politique" },
+              { label: "Indépendance", valeur: "24 septembre 1973" },
+            ],
+          },
           { type: "paragraphe", text: "L'archipel des **Bijagós**, réserve de biosphère de l'UNESCO, abrite une faune remarquable, dont des **hippopotames marins**. Ses îles, difficiles d'accès, ont conservé des pratiques traditionnelles fortes et une riche biodiversité, tortues de mer et lamantins compris." },
           {
             type: "aRetenir",
             points: [
               "Un pays très bas, exposé à la montée des eaux",
               "L'archipel des **Bijagós**, réserve de biosphère de l'UNESCO",
-              "Des hippopotames marins vivent dans les eaux salées de l'archipel",
             ],
           },
           { type: "leSavaisTu", text: "Les hippopotames des Bijagós font partie des très rares hippopotames au monde à vivre dans l'eau salée, nageant entre les mangroves et les plages de l'archipel." },
@@ -1575,15 +1554,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une noix fait vivre le pays",
         blocks: [
           { type: "paragraphe", text: "Une seule culture, la noix de cajou, représente l'essentiel des exportations de la Guinée-Bissau — une dépendance risquée pour l'une des économies les plus pauvres et les plus instables d'Afrique de l'Ouest." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Bissau" },
-              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
-              { label: "Régime", valeur: "Transition politique" },
-              { label: "Indépendance", valeur: "24 septembre 1973" },
-            ],
-          },
           { type: "paragraphe", text: "L'indépendance a été obtenue au terme d'une **guerre de libération** menée par **Amílcar Cabral**, figure majeure de la pensée panafricaine, assassiné peu avant que son pays ne devienne enfin libre." },
           {
             type: "aRetenir",
@@ -1648,14 +1618,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La dernière grande forêt intacte",
         blocks: [
           { type: "paragraphe", text: "Le Liberia a été fondé en 1847 par d'anciens esclaves afro-américains, qui ont donné à leur nouvelle capitale le nom d'un président des États-Unis. Le pays conserve aujourd'hui l'une des dernières grandes forêts primaires intactes d'Afrique de l'Ouest." },
-          { type: "chiffreCle", valeur: "40 %", legende: "de la forêt guinéenne restante se trouve ici" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Monrovia" },
+              { label: "Monnaie", valeur: "Dollar libérien (LRD)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "26 juillet 1847" },
+            ],
+          },
           { type: "paragraphe", text: "Cette forêt abrite des espèces menacées comme le **chimpanzé** ou l'**hippopotame pygmée**. Protégée en partie, elle reste soumise à la pression de l'exploitation du bois et de l'agriculture, qui la grignote peu à peu." },
           {
             type: "aRetenir",
             points: [
               "L'une des dernières grandes forêts primaires d'Afrique de l'Ouest",
               "Refuge du **chimpanzé** et de l'hippopotame pygmée",
-              "La forêt recule sous la pression du bois et de l'agriculture",
             ],
           },
           { type: "leSavaisTu", text: "Les guerres civiles des années 1990-2000, en interrompant l'exploitation forestière industrielle, ont paradoxalement contribué à préserver une partie de cette forêt aujourd'hui exceptionnelle." },
@@ -1684,15 +1661,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un drapeau presque américain",
         blocks: [
           { type: "paragraphe", text: "Le drapeau du Liberia ressemble à s'y méprendre à celui des États-Unis, avec ses bandes et son étoile — un clin d'œil assumé à l'histoire du pays, fondé par des colons venus d'Amérique." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Monrovia" },
-              { label: "Monnaie", valeur: "Dollar libérien (LRD)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "26 juillet 1847" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie repose sur le **caoutchouc**, avec les plantations historiques de Firestone, le minerai de fer et le bois. Le Liberia possède aussi l'un des plus grands **pavillons de complaisance** du monde pour l'immatriculation de navires." },
           {
             type: "aRetenir",
@@ -1757,14 +1725,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un delta qui défie le désert",
         blocks: [
           { type: "paragraphe", text: "Au cœur du Sahel, là où tout devrait être sec, le fleuve Niger crée un immense delta intérieur qui nourrit pêche, riziculture et élevage pour des centaines de milliers de personnes." },
-          { type: "chiffreCle", valeur: "1,24 M km²", legende: "dont deux tiers sont sahariens" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Bamako" },
+              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
+              { label: "Régime", valeur: "Transition militaire" },
+              { label: "Indépendance", valeur: "22 septembre 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Plus au sud, la falaise de **Bandiagara**, en pays dogon, domine un plateau gréseux exceptionnel, à la fois pour son paysage et pour le patrimoine culturel qu'il abrite. Le nord souffre, lui, d'une forte **insécurité** depuis plusieurs années." },
           {
             type: "aRetenir",
             points: [
               "Le fleuve **Niger** crée un delta intérieur unique au Sahel",
               "Deux tiers du pays sont **sahariens**, au nord",
-              "La falaise de **Bandiagara** domine le pays dogon",
             ],
           },
           { type: "leSavaisTu", text: "Chaque année, des millions d'oiseaux migrateurs venus d'Europe font escale dans le delta intérieur du Niger, une oasis inattendue au beau milieu du Sahel." },
@@ -1792,15 +1767,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La ville aux mille manuscrits",
         blocks: [
           { type: "paragraphe", text: "À Tombouctou, des centaines de milliers de manuscrits anciens dorment encore dans des bibliothèques familiales, certains vieux de plusieurs siècles — un savoir écrit qui a longtemps fait la renommée de la ville dans tout le monde musulman." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Bamako" },
-              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
-              { label: "Régime", valeur: "Transition militaire" },
-              { label: "Indépendance", valeur: "22 septembre 1960" },
-            ],
-          },
           { type: "paragraphe", text: "L'or est la première richesse du pays, devant le coton. Héritier des empires du **Ghana** et du **Mali**, le Mali a quitté la CEDEAO pour fonder avec ses voisins l'Alliance des États du Sahel (**AES**)." },
           {
             type: "aRetenir",
@@ -1865,14 +1831,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Plus des trois quarts de désert",
         blocks: [
           { type: "paragraphe", text: "Plus des trois quarts du Niger sont désertiques — Sahara, massif de l'Aïr, dunes du Ténéré — sur un territoire deux fois grand comme la France. La population se concentre au sud sahélien." },
-          { type: "chiffreCle", valeur: "75 %", legende: "du territoire couvert de désert et de dunes" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Niamey" },
+              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
+              { label: "Régime", valeur: "Transition militaire" },
+              { label: "Indépendance", valeur: "3 août 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Le massif volcanique de l'**Aïr**, îlot montagneux au cœur du Sahara, forme avec les dunes du **Ténéré** un ensemble classé à l'UNESCO — riche en gravures rupestres et en vestiges de dinosaures fossilisés." },
           {
             type: "aRetenir",
             points: [
               "Plus des trois quarts du pays sont **désertiques**",
               "Le massif de l'**Aïr** et les dunes du Ténéré, à l'UNESCO",
-              "Des vestiges de dinosaures dorment sous le sable du Sahara",
             ],
           },
           { type: "leSavaisTu", text: "Le désert du Ténéré a livré les squelettes d'un dinosaure unique au monde, le **Nigersaurus**, dont la bouche, large comme un aspirateur, broyait les plantes basses du Sahara d'il y a 110 millions d'années." },
@@ -1901,15 +1874,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Les dernières girafes de la région",
         blocks: [
           { type: "paragraphe", text: "À Kouré, à quelques kilomètres de Niamey, vivent les toutes dernières girafes sauvages d'Afrique de l'Ouest — disparues presque partout ailleurs dans la région, mais encore visibles ici." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Niamey" },
-              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
-              { label: "Régime", valeur: "Transition militaire" },
-              { label: "Indépendance", valeur: "3 août 1960" },
-            ],
-          },
           { type: "paragraphe", text: "Le Niger est l'un des grands producteurs mondiaux d'**uranium**, aux côtés de l'or et du pétrole. En 2025, le pays a acté son départ de **la CEDEAO** pour se tourner vers l'AES. Malgré ses richesses minières, c'est l'un des **pays les plus pauvres** du monde." },
           {
             type: "aRetenir",
@@ -1974,14 +1938,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un delta, un lac qui s'assèche",
         blocks: [
           { type: "paragraphe", text: "Au nord-est du Nigeria, le lac Tchad a perdu l'essentiel de sa surface en quelques décennies — un désastre écologique en cours, pendant qu'au sud, un des plus vastes deltas du monde déborde de vie et de pétrole." },
-          { type: "chiffreCle", valeur: "-90 %", legende: "de la surface du lac Tchad perdue en 60 ans" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Abuja" },
+              { label: "Monnaie", valeur: "Naira (NGN)" },
+              { label: "Régime", valeur: "République fédérale" },
+              { label: "Indépendance", valeur: "1er octobre 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Le delta du Niger concentre à la fois une biodiversité de mangroves exceptionnelle et l'essentiel de la production **pétrolière** du pays — avec de lourdes conséquences environnementales. Au centre, le plateau de **Jos**, plus frais, tranche avec les basses terres environnantes." },
           {
             type: "aRetenir",
             points: [
               "Le delta du Niger, riche en mangroves et en **pétrole**",
               "Le lac Tchad a perdu 90 % de sa surface",
-              "Le plateau de **Jos**, plus frais, contraste avec les basses terres",
             ],
           },
         ],
@@ -2009,15 +1980,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Plus de films que Hollywood",
         blocks: [
           { type: "paragraphe", text: "Chaque année, Nollywood produit plus de films que Hollywood — seule l'industrie indienne de Bollywood fait mieux au monde. Le Nigeria exporte aussi ses rythmes afrobeats, écoutés au-delà du continent africain." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Abuja" },
-              { label: "Monnaie", valeur: "Naira (NGN)" },
-              { label: "Régime", valeur: "République fédérale" },
-              { label: "Indépendance", valeur: "1er octobre 1960" },
-            ],
-          },
           { type: "paragraphe", text: "Le **pétrole** du delta du Niger est le pilier de l'économie, l'une des deux plus grandes d'Afrique aux côtés de l'Afrique du Sud. Le Nigeria est l'héritier de grands royaumes précoloniaux — **Bénin**, Oyo, les cités-États haoussa." },
           {
             type: "aRetenir",
@@ -2079,45 +2041,12 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     lessons: [
       {
         id: "course-geographie-20-senegal-lesson-1",
-        title: "Le bout de l'Afrique, vers l'ouest",
+        title: "Découvrir le Sénégal",
         blocks: [
-          { type: "paragraphe", text: "À la pointe des Almadies, près de Dakar, se trouve l'endroit le plus à l'ouest de tout le continent africain — l'Amérique, de l'autre côté de l'Atlantique, est plus proche qu'on ne le croit." },
-          { type: "chiffreCle", valeur: "~3 000 km", legende: "jusqu'au Brésil, la traversée la plus courte" },
-          { type: "paragraphe", text: "Le pays entoure presque entièrement l'enclave de la **Gambie**, qui sépare la **Casamance**, au sud, du reste du territoire. Cette discontinuité a longtemps nourri des revendications autonomistes dans cette région du pays." },
-          {
-            type: "aRetenir",
-            points: [
-              "Le point le plus à l'ouest de tout le continent",
-              "L'enclave de la **Gambie** coupe le pays en deux",
-              "La **Casamance**, séparée du reste, a nourri des tensions",
-            ],
-          },
-          { type: "leSavaisTu", text: "Le parc national des oiseaux du Djoudj, dans le delta du fleuve Sénégal, accueille chaque hiver des millions d'oiseaux migrateurs venus d'Europe — l'un des plus importants sanctuaires ornithologiques d'Afrique de l'Ouest." },
-        ],
-      },
-      {
-        id: "course-geographie-20-senegal-lesson-2",
-        title: "Une confrérie qui bâtit une ville",
-        blocks: [
-          { type: "paragraphe", text: "À Touba, une confrérie religieuse a bâti depuis un siècle une ville entière autour de sa grande mosquée — aujourd'hui l'une des plus grandes villes du Sénégal, née presque entièrement de la foi." },
-          { type: "chiffreCle", valeur: "18 M", legende: "dont un quart vit dans l'agglomération de Dakar" },
-          { type: "paragraphe", text: "La **mouridiyya**, confrérie soufie fondée par **Cheikh Ahmadou Bamba**, joue un rôle social, économique et politique de premier plan dans la société sénégalaise, bien au-delà de la seule sphère religieuse." },
-          {
-            type: "aRetenir",
-            points: [
-              "Environ **18 millions** d'habitants, un quart à Dakar",
-              "La **mouridiyya**, confrérie soufie centrée sur Touba",
-              "La teranga (hospitalité) est une fierté nationale",
-            ],
-          },
-          { type: "leSavaisTu", text: "Chaque année, le Grand **Magal** de Touba rassemble plusieurs millions de pèlerins venus de tout le Sénégal et de la diaspora — l'un des plus grands rassemblements religieux d'Afrique." },
-        ],
-      },
-      {
-        id: "course-geographie-20-senegal-lesson-3",
-        title: "Un lac qui vire au rose",
-        blocks: [
-          { type: "paragraphe", text: "Le lac Retba, tout près de Dakar, prend une couleur rose surprenante à cause d'une algue microscopique qui prospère dans une eau presque aussi salée que la mer Morte, surtout en saison sèche." },
+          { type: "paragraphe", text: "Sur la façade atlantique de l'**Afrique de l'Ouest**, le Sénégal a pour capitale **Dakar**. Le français est la langue officielle, aux côtés de langues nationales comme le wolof et le pulaar." },
+          // Repères dès la première leçon : demande utilisateur pour le pilote Sénégal.
+          // Sources : https://www.presidence.sn/fr/presidence/lindependance-4-avril-1960/
+          // https://conseilconstitutionnel.sn/la-constitution/
           {
             type: "reperes",
             items: [
@@ -2127,16 +2056,54 @@ export const GEOGRAPHIE_COURSES: Course[] = [
               { label: "Indépendance", valeur: "20 août 1960" },
             ],
           },
-          { type: "paragraphe", text: "L'économie repose sur l'agriculture, la pêche, les phosphates et, depuis peu, le pétrole et le gaz offshore. L'île de **Gorée**, lieu de mémoire de la traite négrière, et la ville de **Saint-Louis** sont classées à l'UNESCO." },
+          { type: "paragraphe", text: "La **Gambie** s'étire à l'intérieur du territoire sénégalais, le long du fleuve du même nom. Au sud se trouve la **Casamance**, reliée au nord du pays par l'est, autour de la Gambie." },
           {
             type: "aRetenir",
             points: [
-              "Le lac **Rose**, coloré par une algue unique",
-              "L'île de **Gorée**, lieu de mémoire de la traite négrière",
-              "Saint-Louis, ancienne capitale coloniale, classée à l'UNESCO",
+              "Dakar est la capitale ; la monnaie est le **franc CFA**.",
+              "Le Sénégal est une république indépendante depuis **1960**.",
             ],
           },
-          { type: "leSavaisTu", text: "Pendant des décennies, le lac Rose fut la ligne d'arrivée légendaire du rallye Paris-Dakar, avant que la course ne quitte l'Afrique pour l'Amérique du Sud en 2009." },
+          { type: "leSavaisTu", text: "La devise nationale, « Un Peuple, Un But, Une Foi », exprime un idéal d'unité. Tu la retrouves sous les armoiries du Sénégal." },
+        ],
+      },
+      {
+        id: "course-geographie-20-senegal-lesson-2",
+        title: "Entre Sahel et Casamance",
+        blocks: [
+          // Climat : https://www.ansd.sn/Indicateur/sesnchapitre-habitat-et-environnement
+          { type: "paragraphe", text: "Au nord, les paysages secs du **Sahel** dominent. Au sud, la **Casamance**, plus arrosée, offre des paysages verdoyants. Entre les deux, la saison des pluies transforme les terres et rythme les cultures." },
+          { type: "chiffreCle", valeur: "2 saisons", legende: "une saison sèche et une saison des pluies" },
+          { type: "paragraphe", text: "L'**agriculture** fournit notamment arachide, mil et riz. Sur la côte, la **pêche** fait vivre de nombreuses familles. Ces activités relient directement la vie quotidienne aux pluies, aux sols et à l'océan Atlantique." },
+          {
+            type: "aRetenir",
+            points: [
+              "Un nord plus sec, un sud plus humide.",
+              "**Deux saisons** : sèche et pluvieuse.",
+              "Agriculture, pêche et hospitalité marquent la vie du pays.",
+            ],
+          },
+          { type: "leSavaisTu", text: "Au Sénégal, l'hospitalité porte un nom : la **teranga**. Accueillir un visiteur et partager un repas sont des gestes importants de la vie sociale." },
+        ],
+      },
+      {
+        id: "course-geographie-20-senegal-lesson-3",
+        title: "Du lac Rose à Gorée",
+        blocks: [
+          // Patrimoine : https://whc.unesco.org/fr/etatsparties/sn/
+          // Lac Rose : https://whc.unesco.org/fr/listesindicatives/2080/
+          { type: "paragraphe", text: "Près de Dakar, le **lac Retba**, appelé lac Rose, peut prendre une teinte rose grâce aux micro-organismes de son eau très salée. Sa couleur varie selon la salinité et les conditions naturelles." },
+          { type: "chiffreCle", valeur: "2 îles", legende: "Gorée et Saint-Louis, au patrimoine mondial" },
+          { type: "paragraphe", text: "Au large de Dakar, **Gorée** conserve la mémoire de la traite négrière. Plus au nord, l'île de **Saint-Louis**, à l'embouchure du fleuve Sénégal, témoigne de l'histoire coloniale. Toutes deux sont classées au patrimoine mondial." },
+          {
+            type: "aRetenir",
+            points: [
+              "Le lac Rose doit sa couleur à des micro-organismes.",
+              "**Gorée** : mémoire de la traite négrière.",
+              "**Saint-Louis** : une île historique sur le fleuve Sénégal.",
+            ],
+          },
+          { type: "leSavaisTu", text: "Le lac Rose fut longtemps l'arrivée du rallye Paris-Dakar. La course a quitté l'Afrique pour l'Amérique du Sud en 2009." },
         ],
       },
     ],
@@ -2146,11 +2113,11 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         question: "Quelle est la capitale du Sénégal ?",
         options: ["Dakar", "Thiès", "Saint-Louis", "Ziguinchor"],
         correctIndex: 0,
-        explanation: "Dakar, sur la presqu'île du Cap-Vert, est la capitale du Sénégal et le point le plus à l'ouest de tout le continent africain.",
+        explanation: "Dakar, sur la presqu'île du Cap-Vert, est la capitale du Sénégal. La pointe des Almadies, près de Dakar, est le point le plus occidental du continent africain.",
       },
       {
         id: "course-geographie-20-senegal-quiz-2",
-        question: "Quel petit pays forme une enclave à l'intérieur du Sénégal ?",
+        question: "Quel pays s'étire le long d'un fleuve au cœur du territoire sénégalais ?",
         options: ["La Guinée-Bissau", "La Gambie", "Le Mali", "Le Cap-Vert"],
         correctIndex: 1,
         explanation: "La Gambie, étirée le long de son fleuve, est presque entièrement enclavée dans le Sénégal, séparant la Casamance du reste du territoire.",
@@ -2191,14 +2158,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le nom donné depuis un bateau",
         blocks: [
           { type: "paragraphe", text: "Au XVe siècle, des navigateurs portugais aperçoivent depuis la mer les collines boisées qui dominent la baie de Freetown et les baptisent « Serra Leoa », les montagnes du lion. Le nom est resté." },
-          { type: "chiffreCle", valeur: "1 900 m", legende: "le mont Bintumani, point culminant du pays" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Freetown" },
+              { label: "Monnaie", valeur: "Leone (SLE)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "27 avril 1961" },
+            ],
+          },
           { type: "paragraphe", text: "La côte est faite de mangroves et de plaines ; l'intérieur, plus élevé, culmine au **mont Bintumani**. Le pays est l'un des plus arrosés d'Afrique de l'Ouest, couvert d'une dense **forêt tropicale**." },
           {
             type: "aRetenir",
             points: [
               "Le nom vient des « montagnes du lion » vues depuis la mer",
               "Le **mont Bintumani** culmine à plus de 1 900 m",
-              "L'un des pays les plus arrosés d'Afrique de l'Ouest",
             ],
           },
           { type: "leSavaisTu", text: "La baie de Freetown compte parmi les plus grands ports naturels du monde — assez vaste, dit-on, pour accueillir en même temps toute la flotte britannique de l'époque coloniale." },
@@ -2227,15 +2201,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Des diamants qui ont coûté cher",
         blocks: [
           { type: "paragraphe", text: "Les diamants de la Sierra Leone ont financé l'une des guerres civiles les plus brutales d'Afrique de l'Ouest, dans les années 1990. Le pays s'est depuis reconstruit, cité en exemple de sortie de crise réussie." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Freetown" },
-              { label: "Monnaie", valeur: "Leone (SLE)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "27 avril 1961" },
-            ],
-          },
           { type: "paragraphe", text: "Au-delà des diamants, le pays exploite aussi l'or, la bauxite et le **rutile** (titane). L'économie s'est reconstruite après la guerre civile et l'épidémie d'**Ebola** de 2014, deux crises qui ont marqué durablement le pays." },
           {
             type: "aRetenir",
@@ -2300,14 +2265,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un couloir de 600 kilomètres",
         blocks: [
           { type: "paragraphe", text: "Le Togo fait **600 km** du nord au sud et parfois moins de **100 km** de large. Un couloir étroit qui traverse, en une journée de route, presque tous les paysages de l'Afrique de l'Ouest." },
-          { type: "chiffreCle", valeur: "600 × 100 km", legende: "de la lagune au sud à la savane au nord" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Lomé" },
+              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
+              { label: "Régime", valeur: "Régime parlementaire" },
+              { label: "Indépendance", valeur: "27 avril 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Au sud, cocotiers et lagunes ; au centre, les monts du **Togo** couverts de forêt ; au nord, la savane sèche. La capitale, **Lomé**, est posée à l'extrême sud-ouest, contre la frontière ghanéenne." },
           {
             type: "aRetenir",
             points: [
               "Un ruban de **600 km** du nord au sud",
               "Trois milieux enchaînés : lagune, montagne, savane",
-              "Lomé, capitale posée sur la frontière ghanéenne",
             ],
           },
           { type: "leSavaisTu", text: "Depuis le centre de Lomé, on peut marcher jusqu'au Ghana. La frontière passe à quelques centaines de mètres du grand marché." },
@@ -2336,15 +2308,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le port qui nourrit la région",
         blocks: [
           { type: "paragraphe", text: "Le port en eau profonde de Lomé fait du Togo un carrefour commercial pour toute la sous-région, bien au-delà de ses frontières. Les phosphates et l'agriculture complètent une économie tournée vers le transit." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Lomé" },
-              { label: "Monnaie", valeur: "Franc CFA (XOF)" },
-              { label: "Régime", valeur: "Régime parlementaire" },
-              { label: "Indépendance", valeur: "27 avril 1960" },
-            ],
-          },
           { type: "paragraphe", text: "Ancienne colonie allemande, le « **Togoland** », le pays est indépendant depuis 1960. Il abrite le **Koutammakou**, le pays des Batammariba et de leurs maisons-tours de terre (takienta), classé à l'UNESCO." },
           {
             type: "aRetenir",
@@ -2409,14 +2372,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une enclave coupée du pays",
         blocks: [
           { type: "paragraphe", text: "Bordé à l'ouest par **l'océan Atlantique**, l'Angola possède une vaste façade maritime. Au nord, l'enclave pétrolière de Cabinda fait partie du pays sans y toucher, séparée par un couloir de RD Congo hérité du partage colonial." },
-          { type: "chiffreCle", valeur: "1 couloir", legende: "de RD Congo sépare Cabinda du pays" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Luanda" },
+              { label: "Monnaie", valeur: "Kwanza (AOA)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "11 novembre 1975" },
+            ],
+          },
           { type: "paragraphe", text: "Le plateau intérieur, plus tempéré grâce à l'altitude, occupe l'essentiel du territoire. Vers le sud, le pays s'assèche jusqu'aux confins du désert du **Namib**, tandis que les chutes de **Kalandula**, spectaculaires, témoignent de l'abondance des eaux du centre." },
           {
             type: "aRetenir",
             points: [
               "L'enclave de **Cabinda**, séparée par un couloir de RD Congo",
               "Le plateau intérieur occupe l'essentiel du pays",
-              "Les chutes de **Kalandula**, parmi les plus impressionnantes d'Afrique",
             ],
           },
           { type: "leSavaisTu", text: "Les chutes de Kalandula, hautes d'environ 105 mètres, dépassent largement celles du Niagara — mais restent, faute de routes, bien moins visitées que les cascades les plus célèbres du monde." },
@@ -2445,15 +2415,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La ville la plus chère d'Afrique",
         blocks: [
           { type: "paragraphe", text: "Luanda a longtemps figuré parmi les villes les plus chères du monde pour les expatriés — un paradoxe pour la capitale d'un pays où la population reste majoritairement pauvre, malgré les revenus du pétrole." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Luanda" },
-              { label: "Monnaie", valeur: "Kwanza (AOA)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "11 novembre 1975" },
-            ],
-          },
           { type: "paragraphe", text: "L'Angola est l'un des plus grands producteurs de **pétrole** d'Afrique subsaharienne, aux côtés des diamants. Le pays garde la mémoire de la lutte anticoloniale menée par le **MPLA** et Agostinho Neto, avant la longue guerre civile qui a suivi l'indépendance." },
           {
             type: "aRetenir",
@@ -2518,14 +2479,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "L'Afrique en miniature",
         blocks: [
           { type: "paragraphe", text: "Désert au nord, forêt équatoriale au sud, montagnes à l'ouest : le Cameroun réunit presque tous les paysages africains, ce qui lui vaut le surnom d'« Afrique en miniature »." },
-          { type: "chiffreCle", valeur: "4 040 m", legende: "le mont Cameroun, plus haut sommet d'Afrique de l'Ouest" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Yaoundé" },
+              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "1er janvier 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Les hauts plateaux de l'Ouest, autour de Bamenda et Bafoussam, offrent un climat frais et de riches terres volcaniques propices au **café**. Ils tranchent avec le littoral chaud et humide, où le **mont Cameroun** reçoit certaines des précipitations les plus abondantes du continent." },
           {
             type: "aRetenir",
             points: [
               "Surnommé « l'**Afrique en miniature** » pour ses paysages",
               "Le **mont Cameroun**, plus haut sommet d'Afrique de l'Ouest",
-              "Les hauts plateaux de l'Ouest, terres volcaniques à café",
             ],
           },
           { type: "leSavaisTu", text: "Le mont Cameroun est l'un des volcans les plus actifs d'Afrique : lors de certaines éruptions récentes, sa lave a coulé jusqu'à atteindre directement l'océan Atlantique." },
@@ -2554,15 +2522,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Les Lions qui rugissent au Mondial",
         blocks: [
           { type: "paragraphe", text: "En 1990, les Lions Indomptables du Cameroun deviennent la première équipe africaine à atteindre les quarts de finale d'une Coupe du monde de football — un exploit qui a fait connaître le pays bien au-delà du continent." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Yaoundé" },
-              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "1er janvier 1960" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie repose sur le **pétrole**, le cacao et le bois. La devise nationale de la République est « **Paix, Travail, Patrie** ». Le port de **Douala** dessert toute la région, tandis que le pouvoir politique reste tenu par le même dirigeant depuis plus de quatre décennies." },
           {
             type: "aRetenir",
@@ -2626,14 +2585,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Au centre exact du continent",
         blocks: [
           { type: "paragraphe", text: "La République centrafricaine porte bien son nom : elle occupe presque exactement le centre géographique du continent africain. Mais ce centre est aussi l'un des pays les plus enclavés et les plus isolés du monde." },
-          { type: "chiffreCle", valeur: "623 000 km²", legende: "presque aussi vaste que la France" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Bangui" },
+              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "13 août 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Le nord est fait de savane, le sud de forêt équatoriale, arrosée par l'**Oubangui**, affluent du Congo qui marque la frontière sud. Au sud-ouest, la réserve de **Dzanga-Sangha** abrite l'une des plus fortes concentrations de gorilles de plaine du continent." },
           {
             type: "aRetenir",
             points: [
               "Au centre géographique exact du continent africain",
               "L'**Oubangui** marque la frontière sud, vers le Congo",
-              "La réserve de **Dzanga-Sangha**, refuge de gorilles de plaine",
             ],
           },
           { type: "leSavaisTu", text: "Faute de routes praticables toute l'année, certaines régions de l'intérieur du pays restent accessibles seulement par petit avion ou par de longues pistes en saison sèche." },
@@ -2661,15 +2627,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "L'empereur d'un pays très pauvre",
         blocks: [
           { type: "paragraphe", text: "En 1977, le dictateur Bokassa se couronne empereur lors d'une cérémonie fastueuse qui engloutit une bonne part du budget national — dans l'un des pays les plus pauvres du monde. Son « empire » ne durera que deux ans." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Bangui" },
-              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "13 août 1960" },
-            ],
-          },
           { type: "paragraphe", text: "Le sous-sol est riche en **diamants**, or, bois et uranium, mais l'agriculture vivrière domine la vie de la plupart des habitants. Depuis 2013, une mission de maintien de la paix de l'**ONU** tente de stabiliser le pays." },
           {
             type: "aRetenir",
@@ -2733,14 +2690,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Face à face avec Kinshasa",
         blocks: [
           { type: "paragraphe", text: "D'une rive à l'autre du fleuve Congo, deux capitales se regardent : Brazzaville et Kinshasa forment la paire de capitales les plus proches au monde, séparées par un simple aller de pirogue." },
-          { type: "chiffreCle", valeur: "≈ 4 km", legende: "séparent Brazzaville de Kinshasa, un record mondial" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Brazzaville" },
+              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "15 août 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Le pays est couvert par la grande forêt équatoriale du bassin du **Congo**, deuxième poumon vert de la planète. Entre Brazzaville et la côte s'étend le **Pool**, une région de savanes qui tranche avec la forêt dominante ailleurs." },
           {
             type: "aRetenir",
             points: [
               "Brazzaville et **Kinshasa**, séparées par quelques kilomètres seulement",
               "Le pays est couvert par la forêt équatoriale du bassin du Congo",
-              "Le **Pool**, entre Brazzaville et la côte, est une région de savanes",
             ],
           },
           { type: "leSavaisTu", text: "Dans le parc national d'**Odzala-Kokoua**, au nord du pays, il est possible de croiser des gorilles de plaine directement depuis un ponton posé au cœur de la forêt." },
@@ -2769,15 +2733,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Sous la forêt, du pétrole",
         blocks: [
           { type: "paragraphe", text: "L'économie congolaise vit presque entièrement du pétrole offshore, extrait au large de Pointe-Noire, le grand port pétrolier du pays. La forêt qui couvre le reste du territoire produit surtout du bois." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Brazzaville" },
-              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "15 août 1960" },
-            ],
-          },
           { type: "paragraphe", text: "Le pays a connu plusieurs guerres civiles dans les **années 1990**, avant un retour à une stabilité relative. Membre de l'Union africaine et de la **CEMAC**, le Congo joue un rôle modeste mais actif dans la diplomatie régionale." },
           {
             type: "aRetenir",
@@ -2842,14 +2797,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Grand comme l'Europe de l'Ouest",
         blocks: [
           { type: "paragraphe", text: "La RD Congo est presque aussi vaste que toute l'Europe de l'Ouest réunie — un territoire si immense que l'État peine à y maintenir une présence uniforme, malgré un découpage en 26 provinces." },
-          { type: "chiffreCle", valeur: "2,34 M km²", legende: "le 2ᵉ plus grand pays d'Afrique, après l'Algérie" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Kinshasa" },
+              { label: "Monnaie", valeur: "Franc congolais (CDF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "30 juin 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Le fleuve **Congo**, deuxième du monde par son débit, structure tout le pays. À l'est, la chaîne des volcans des Virunga, dont le **Nyiragongo**, domine les lacs Kivu, Édouard et Albert dans une région au climat plus frais." },
           {
             type: "aRetenir",
             points: [
               "Le 2ᵉ plus grand pays d'Afrique, après l'**Algérie**",
               "Le fleuve **Congo**, deuxième du monde par son débit",
-              "Le **Nyiragongo**, volcan actif, domine les grands lacs de l'est",
             ],
           },
           { type: "leSavaisTu", text: "Le Nyiragongo abrite l'un des plus grands lacs de lave permanents du monde, à l'intérieur d'un cratère si profond qu'il faut parfois plusieurs heures de marche pour l'atteindre." },
@@ -2878,15 +2840,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le cobalt de nos téléphones",
         blocks: [
           { type: "paragraphe", text: "Le cobalt qui alimente la batterie de ton téléphone vient très probablement de RD Congo : le pays en est le premier producteur mondial, un minerai devenu indispensable à l'ère du numérique." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Kinshasa" },
-              { label: "Monnaie", valeur: "Franc congolais (CDF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "30 juin 1960" },
-            ],
-          },
           { type: "paragraphe", text: "On parle de « **scandale géologique** » tant le sous-sol est riche : cuivre, coltan, diamant, or, un énorme potentiel hydroélectrique. Pourtant la population reste pauvre, et le pays garde la mémoire douloureuse de l'assassinat de **Patrice Lumumba** en 1961." },
           {
             type: "aRetenir",
@@ -2950,14 +2903,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Presque tout est forêt ici",
         blocks: [
           { type: "paragraphe", text: "Près de 85 % du Gabon disparaît sous une forêt dense, traversée en plein milieu par **l'équateur**. Peu de nations au monde sont aussi abondamment recouvertes de vert que ce pays d'Afrique centrale bordé par l'Atlantique." },
-          { type: "chiffreCle", valeur: "85 %", legende: "du territoire couvert par la forêt équatoriale" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Libreville" },
+              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "17 août 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Le fleuve **Ogooué** traverse cette forêt quasi continue d'ouest en est et a longtemps servi de voie de transport du bois. Créé dès 2002, un réseau de 13 parcs nationaux — dont **Lopé** et Ivindo — a valu au Gabon une réputation de pionnier africain de la conservation." },
           {
             type: "aRetenir",
             points: [
               "**85 %** du pays est couvert de forêt équatoriale",
               "Le fleuve **Ogooué** traverse le pays d'ouest en est",
-              "13 parcs nationaux créés dès 2002, dont Lopé et Ivindo",
             ],
           },
         ],
@@ -2984,15 +2944,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un pionnier de la nature protégée",
         blocks: [
           { type: "paragraphe", text: "En 2002, le Gabon a classé d'un coup 13 parcs nationaux, sur près de 11 % de son territoire — un geste rare à l'échelle du continent, qui en a fait un pionnier africain de la conservation." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Libreville" },
-              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "17 août 1960" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie repose sur le **pétrole**, longtemps pilier du pays, le **manganèse** et le bois précieux (okoumé). Le revenu par habitant est parmi les plus élevés d'Afrique subsaharienne, mais les inégalités restent fortes. Une même famille a dirigé le pays pendant 56 ans, jusqu'en 2023." },
           {
             type: "aRetenir",
@@ -3055,18 +3006,26 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-29-guinee-equatoriale-lesson-1",
         title: "Un pays fait de deux morceaux",
         blocks: [
-          { type: "paragraphe", text: "La Guinée équatoriale n'est pas un seul territoire mais deux : une partie continentale, le Río Muni, et des îles volcaniques, dont Bioko, où siège la capitale — à des dizaines de kilomètres l'une de l'autre." },
-          { type: "chiffreCle", valeur: "3 000 m", legende: "le pic Basilé, volcan qui domine l'île de Bioko" },
+          { type: "paragraphe", text: "La Guinée équatoriale réunit une partie continentale, le **Río Muni**, et plusieurs îles, dont **Bioko**. Depuis janvier 2026, sa capitale est Ciudad de la Paz, sur le continent ; Malabo reste une ville majeure de Bioko." },
+          {
+            type: "reperes",
+            items: [
+              // Décret-loi 1/2026 : https://www.guineaecuatorialpress.com/noticias/decreto_ley_por_el_que_se_declara_la_ciudad_de_la_paz_djibloho_capital_de_la_republica_de_guinea_ecuatorial
+              { label: "Capitale", valeur: "Ciudad de la Paz" },
+              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "12 octobre 1968" },
+            ],
+          },
           { type: "paragraphe", text: "L'île de **Bioko**, dominée par le pic Basilé, bénéficie de pluies parmi les plus abondantes d'Afrique. Le **Río Muni** continental, lui, prolonge la grande forêt équatoriale partagée avec le Gabon et le Cameroun voisins." },
           {
             type: "aRetenir",
             points: [
               "Deux territoires : le continent (**Río Muni**) et les îles",
               "Le pic Basilé, sur **Bioko**, culmine à plus de 3 000 m",
-              "La forêt équatoriale couvre l'essentiel du Río Muni",
             ],
           },
-          { type: "leSavaisTu", text: "Bioko, où vit la capitale, est séparée du Río Muni continental par plus de 150 km d'océan — là où vit pourtant la majorité des Équato-Guinéens." },
+          { type: "leSavaisTu", text: "L'ancienne capitale, **Malabo**, se trouve sur Bioko. Cette île volcanique est séparée du Río Muni par plus de 150 km d'océan." },
         ],
       },
       {
@@ -3091,23 +3050,14 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         id: "course-geographie-29-guinee-equatoriale-lesson-3",
         title: "Une capitale neuve dans la jungle",
         blocks: [
-          { type: "paragraphe", text: "Sur le continent, en pleine forêt, la Guinée équatoriale construit depuis plusieurs années une toute nouvelle capitale, Ciudad de la Paz — pour quitter Malabo, isolée sur son île de Bioko." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Malabo" },
-              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "12 octobre 1968" },
-            ],
-          },
+          { type: "paragraphe", text: "Construite sur le continent, au cœur de la forêt, **Ciudad de la Paz** est devenue officiellement la capitale en janvier 2026. Le transfert des administrations depuis **Malabo**, sur l'île de Bioko, se fait progressivement." },
           { type: "paragraphe", text: "La découverte de **pétrole** et de gaz dans les années 1990 a fait bondir le PIB par habitant, l'un des plus élevés d'Afrique. Le même dirigeant est au pouvoir depuis **1979** — l'un des plus longs règnes du continent." },
           {
             type: "aRetenir",
             points: [
               "Le **pétrole** des années 1990 a transformé l'économie",
               "L'un des plus longs règnes politiques du continent, depuis **1979**",
-              "Une nouvelle capitale, Ciudad de la Paz, en construction",
+              "Ciudad de la Paz, capitale depuis **janvier 2026**",
             ],
           },
         ],
@@ -3116,7 +3066,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     quiz: [
       {
         id: "course-geographie-29-guinee-equatoriale-quiz-1",
-        question: "Quelle est la langue officielle de la Guinée équatoriale ?",
+        question: "Quelle langue héritée de la colonisation espagnole est officielle en Guinée équatoriale ?",
         options: ["Le français", "L'espagnol", "Le portugais", "L'anglais"],
         correctIndex: 1,
         explanation: "La Guinée équatoriale est le seul pays d'Afrique continentale à avoir l'espagnol pour langue officielle, un héritage unique de la colonisation espagnole.",
@@ -3130,7 +3080,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
       },
       {
         id: "course-geographie-29-guinee-equatoriale-quiz-3",
-        question: "Sur quelle île se trouve la capitale Malabo ?",
+        question: "Sur quelle île se trouve l'ancienne capitale Malabo ?",
         options: ["L'île de Bioko", "L'île de Zanzibar", "L'île de Gorée", "L'île de Madagascar"],
         correctIndex: 0,
         explanation: "Malabo est située sur l'île volcanique de Bioko, séparée de plus de 150 km du Río Muni continental, où vit pourtant la majorité de la population.",
@@ -3138,9 +3088,9 @@ export const GEOGRAPHIE_COURSES: Course[] = [
       {
         id: "course-geographie-29-guinee-equatoriale-quiz-4",
         question: "Quelle est la capitale de la Guinée équatoriale ?",
-        options: ["Malabo", "Bata", "Ebebiyín", "Mongomo"],
+        options: ["Ciudad de la Paz", "Bata", "Malabo", "Mongomo"],
         correctIndex: 0,
-        explanation: "Malabo, sur l'île de Bioko, est la capitale ; une nouvelle capitale, Ciudad de la Paz, se construit sur le continent.",
+        explanation: "Ciudad de la Paz est la capitale depuis le décret du 2 janvier 2026. Elle se situe sur le continent, tandis que l'ancienne capitale Malabo est sur l'île de Bioko.",
       },
       {
         id: "course-geographie-29-guinee-equatoriale-quiz-5",
@@ -3164,14 +3114,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une aiguille volcanique géante",
         blocks: [
           { type: "paragraphe", text: "Le Pico Cão Grande jaillit de la forêt comme une aiguille de pierre, vestige d'un ancien volcan. Ce petit archipel équatorial abrite une biodiversité comparable, pour sa taille, à celle des Galápagos." },
-          { type: "chiffreCle", valeur: "370 m", legende: "de roche verticale, un pic vertigineux" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "São Tomé" },
+              { label: "Monnaie", valeur: "Dobra (STN)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "12 juillet 1975" },
+            ],
+          },
           { type: "paragraphe", text: "Le point culminant de l'archipel, le **Pico de São Tomé**, dépasse 2 000 m et porte une **forêt de nuages** unique, riche en espèces d'oiseaux et de plantes qu'on ne trouve nulle part ailleurs." },
           {
             type: "aRetenir",
             points: [
               "Le **Pico Cão Grande**, aiguille volcanique spectaculaire",
               "Le point culminant dépasse 2 000 m, sous une forêt de nuages",
-              "Une biodiversité comparable, pour sa taille, aux Galápagos",
             ],
           },
           { type: "leSavaisTu", text: "Le Pico Cão Grande est l'une des aiguilles volcaniques les plus difficiles à escalader au monde — un défi qui attire chaque année une poignée de grimpeurs expérimentés venus du monde entier." },
@@ -3200,15 +3157,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Les îles chocolat, stables et discrètes",
         blocks: [
           { type: "paragraphe", text: "Longtemps surnommées les « îles chocolat » pour leurs plantations de cacao, ces deux petites îles comptent aussi parmi les démocraties les plus stables d'Afrique, avec des alternances pacifiques régulières depuis 1990." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "São Tomé" },
-              { label: "Monnaie", valeur: "Dobra (STN)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "12 juillet 1975" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie repose sur le **cacao**, culture historique, la pêche et un tourisme naissant ; un potentiel pétrolier offshore reste à l'étude. C'est l'une des plus petites économies d'Afrique, mais l'une des plus **stables** politiquement." },
           {
             type: "aRetenir",
@@ -3272,14 +3220,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Des lacs éternels en plein désert",
         blocks: [
           { type: "paragraphe", text: "Sans accès à la mer, le Tchad est un **pays enclavé** d’Afrique centrale. Dans le désert du Tibesti au nord, des lacs d'eau douce persistent depuis des millénaires — un miracle géologique en milieu aride." },
-          { type: "chiffreCle", valeur: "3 415 m", legende: "l'Emi Koussi, plus haut sommet de tout le Sahara" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "N'Djamena" },
+              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "11 août 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Le massif du **Tibesti**, au nord, culmine à l'**Emi Koussi**. Les lacs d'**Ounianga**, permanents et classés à l'UNESCO, ponctuent ce désert. Plus au sud, le climat s'adoucit du sahélien à la savane." },
           {
             type: "aRetenir",
             points: [
               "Les lacs d'**Ounianga**, permanents, classés à l'UNESCO",
               "L'**Emi Koussi**, à plus de 3 400 m, toit du Sahara",
-              "Du désert saharien au nord à la savane au sud",
             ],
           },
           { type: "leSavaisTu", text: "Les lacs d'Ounianga ne sont pas alimentés par la pluie, quasi inexistante ici, mais par une nappe souterraine fossile — et certains d'entre eux affichent des couleurs très différentes, du vert au rouge." },
@@ -3308,15 +3263,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Les nomades du toit du Sahara",
         blocks: [
           { type: "paragraphe", text: "Dans les hauteurs arides du Tibesti, au pied de l'Emi Koussi, les Toubous mènent depuis des siècles une vie nomade au sommet du Sahara — l'un des modes de vie les plus rudes du continent." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "N'Djamena" },
-              { label: "Monnaie", valeur: "Franc CFA d'Afrique centrale (XAF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "11 août 1960" },
-            ],
-          },
           { type: "paragraphe", text: "Le **pétrole**, exploité depuis les années 2000, est devenu la principale exportation, aux côtés du coton et de la **gomme arabique**. C'est pourtant l'un des pays les plus pauvres du monde, très vulnérable aux sécheresses." },
           {
             type: "aRetenir",
@@ -3380,14 +3326,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Des collines cultivées jusqu'au sommet",
         blocks: [
           { type: "paragraphe", text: "Niché dans la région des Grands Lacs, le Burundi n'a aucun accès à la mer : c'est un pays **enclavé** aux collines cultivées jusqu'au sommet, parmi les plus densément peuplés du continent." },
-          { type: "chiffreCle", valeur: "1 470 m", legende: "la profondeur du lac Tanganyika, un record mondial" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Gitega (politique)" },
+              { label: "Monnaie", valeur: "Franc burundais (BIF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "1er juillet 1962" },
+            ],
+          },
           { type: "paragraphe", text: "La crête **Congo-Nil**, qui traverse le pays du nord au sud, sépare les bassins du Congo et du Nil. Le pays laisse peu de place aux espaces naturels préservés, sauf des réserves autour du lac **Tanganyika**." },
           {
             type: "aRetenir",
             points: [
               "Les collines sont cultivées jusqu'à leur sommet",
               "La crête **Congo-Nil** sépare les bassins du Congo et du Nil",
-              "Le lac **Tanganyika**, l'un des plus profonds lacs du monde",
             ],
           },
           { type: "leSavaisTu", text: "Le lac Tanganyika contiendrait à lui seul environ 16 % de toute l'eau douce liquide disponible à la surface de la Terre — un volume presque impossible à imaginer pour un seul lac." },
@@ -3416,15 +3369,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Les tambours qui parlent aux ancêtres",
         blocks: [
           { type: "paragraphe", text: "Les tambours royaux du Burundi ne sont pas de simples instruments : ils étaient réservés aux cérémonies du pouvoir, jugés si sacrés que leur usage restait longtemps interdit aux femmes et aux non-initiés." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Gitega (politique)" },
-              { label: "Monnaie", valeur: "Franc burundais (BIF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "1er juillet 1962" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie repose sur une agriculture de subsistance et l'exportation de **café** et de thé. **Bujumbura**, sur les rives du lac Tanganyika, reste la capitale économique, tandis que Gitega porte le pouvoir politique depuis 2019." },
           {
             type: "aRetenir",
@@ -3488,14 +3432,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Les îles de la Lune",
         blocks: [
           { type: "paragraphe", text: "Les Comores tirent leur nom de l'arabe « Qamar », la Lune. Un archipel volcanique surgi de l'océan Indien, entre l'Afrique et Madagascar, surnommé « les îles de la Lune »." },
-          { type: "chiffreCle", valeur: "2 300 m", legende: "le Karthala, volcan encore actif sur la Grande Comore" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Moroni" },
+              { label: "Monnaie", valeur: "Franc comorien (KMF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "6 juillet 1975" },
+            ],
+          },
           { type: "paragraphe", text: "Le **Karthala**, sur la Grande Comore, entre régulièrement en éruption et façonne les paysages de l'île la plus vaste de l'archipel. Le climat tropical, tempéré par les alizés, favorise la culture de plantes à parfum comme l'**ylang-ylang**, le girofle et la vanille." },
           {
             type: "aRetenir",
             points: [
               "Surnommées « les îles de la Lune », depuis l'arabe Qamar",
               "Le **Karthala**, volcan actif, domine la Grande Comore",
-              "Terre de plantes à parfum : **ylang-ylang**, girofle, vanille",
             ],
           },
           { type: "leSavaisTu", text: "Le cratère du Karthala compte parmi les plus vastes calderas volcaniques du monde — plus de 3 km de diamètre, visible depuis l'espace lors de ses éruptions." },
@@ -3523,15 +3474,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "L'île qui a choisi de rester",
         blocks: [
           { type: "paragraphe", text: "En 1974, lors du référendum d'indépendance, les habitants de Mayotte ont voté pour rester français, tandis que les trois autres îles choisissaient l'indépendance — une séparation que les Comores n'ont jamais acceptée." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Moroni" },
-              { label: "Monnaie", valeur: "Franc comorien (KMF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "6 juillet 1975" },
-            ],
-          },
           { type: "paragraphe", text: "L'agriculture domine l'économie : les Comores sont un grand producteur mondial d'**ylang-ylang**, cette fleur utilisée en parfumerie. Le pays a connu depuis l'indépendance de nombreuses tentatives de coups d'État et de sécession, notamment sur l'île d'**Anjouan**." },
           {
             type: "aRetenir",
@@ -3595,14 +3537,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le point le plus bas d'Afrique",
         blocks: [
           { type: "paragraphe", text: "À Djibouti, le lac Assal se trouve à environ 155 mètres sous le niveau de la mer — le point le plus bas d'Afrique, au creux d'un désert de sel étincelant." },
-          { type: "chiffreCle", valeur: "-155 m", legende: "le lac Assal, point le plus bas d'Afrique" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Djibouti" },
+              { label: "Monnaie", valeur: "Franc djiboutien (DJF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "27 juin 1977" },
+            ],
+          },
           { type: "paragraphe", text: "Le pays se situe au point de rencontre de **trois plaques tectoniques** — africaine, arabique et somalienne —, ce qui en fait une zone volcanique active, à l'origine de paysages spectaculaires comme le **lac Abbé**, aux cheminées de calcaire fumantes." },
           {
             type: "aRetenir",
             points: [
               "Le lac **Assal**, point le plus bas d'Afrique, à -155 m",
               "Trois plaques tectoniques se rejoignent sous le pays",
-              "Le lac **Abbé**, aux cheminées de calcaire fumantes",
             ],
           },
           { type: "leSavaisTu", text: "L'eau du lac Assal est si salée qu'il est presque impossible d'y couler : comme dans la mer Morte, le corps y flotte tout seul, porté par la densité du sel." },
@@ -3630,15 +3579,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Louer sa position au monde entier",
         blocks: [
           { type: "paragraphe", text: "Djibouti n'a presque aucune ressource naturelle, mais loue sa position stratégique à plusieurs grandes puissances : la France, les États-Unis et la Chine y possèdent chacun une base militaire, à quelques kilomètres les unes des autres." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Djibouti" },
-              { label: "Monnaie", valeur: "Franc djiboutien (DJF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "27 juin 1977" },
-            ],
-          },
           { type: "paragraphe", text: "Le pays est un grand port de transit, débouché maritime de l'**Éthiopie** enclavée. Il se situe aussi près du détroit de **Bab-el-Mandeb**, l'un des passages maritimes les plus fréquentés du monde, entre la mer Rouge et l'océan Indien." },
           {
             type: "aRetenir",
@@ -3702,14 +3642,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Du frais plateau à la fournaise",
         blocks: [
           { type: "paragraphe", text: "L'Érythrée bascule d'un extrême à l'autre : Asmara, sur les hauts plateaux, culmine à plus de 2 300 m dans un climat tempéré, tandis que la dépression du Danakil, plus bas, compte parmi les endroits les plus chauds de la planète." },
-          { type: "chiffreCle", valeur: "2 300 m", legende: "Asmara, perchée sur les hauts plateaux frais" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Asmara" },
+              { label: "Monnaie", valeur: "Nakfa (ERN)" },
+              { label: "Régime", valeur: "Parti unique" },
+              { label: "Indépendance", valeur: "24 mai 1993" },
+            ],
+          },
           { type: "paragraphe", text: "L'archipel des **Dahlak**, dans la mer Rouge, ajoute une dimension maritime à cette diversité de milieux. La longue façade maritime, avec les ports de **Massaoua** et Assab, a longtemps été un enjeu stratégique lors de la guerre d'indépendance." },
           {
             type: "aRetenir",
             points: [
               "Asmara, sur les hauts plateaux, à plus de 2 300 m",
               "La dépression du **Danakil**, parmi les lieux les plus chauds au monde",
-              "L'archipel des **Dahlak**, dans la mer Rouge",
             ],
           },
         ],
@@ -3736,15 +3683,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une capitale Art déco oubliée",
         blocks: [
           { type: "paragraphe", text: "Asmara conserve l'un des plus beaux ensembles d'architecture Art déco italienne au monde, presque figé depuis les années 1930 — une capitale oubliée du reste du monde, dans l'un des pays les plus fermés de la planète." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Asmara" },
-              { label: "Monnaie", valeur: "Nakfa (ERN)" },
-              { label: "Régime", valeur: "Parti unique" },
-              { label: "Indépendance", valeur: "24 mai 1993" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie, très fermée, repose sur l'agriculture, l'élevage et les mines. L'indépendance, obtenue en 1991 après **trente ans de guerre** contre l'**Éthiopie**, n'a jamais été suivie d'élections nationales." },
           {
             type: "aRetenir",
@@ -3801,7 +3739,7 @@ export const GEOGRAPHIE_COURSES: Course[] = [
     categoryId: "geo",
     emoji: "🇪🇹",
     title: "Éthiopie",
-    description: "Un géant des hauts plateaux, berceau de l'humanité et seul pays africain jamais colonisé, deuxième le plus peuplé du continent. Découvre l'Éthiopie.",
+    description: "Un géant des hauts plateaux, berceau de l'humanité et terre de résistance à la conquête coloniale, deuxième pays le plus peuplé d'Afrique. Découvre l'Éthiopie.",
     xp: 50,
     lessons: [
       {
@@ -3809,14 +3747,22 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le toit de l'Afrique",
         blocks: [
           { type: "paragraphe", text: "Les hauts plateaux éthiopiens sont surnommés le « toit de l'Afrique ». Depuis l'indépendance de l'Érythrée en 1993, **l'Éthiopie est enclavée** et ne dispose plus d'aucun débouché maritime direct sur la mer Rouge." },
-          { type: "chiffreCle", valeur: "Nil Bleu", legende: "prend sa source au lac Tana, sur les hauts plateaux" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Addis-Abeba" },
+              { label: "Monnaie", valeur: "Birr (ETB)" },
+              { label: "Régime", valeur: "République fédérale" },
+              // Archives historiques : https://history.state.gov/historicaldocuments/frus1936v03/ch6
+              { label: "Indépendance", valeur: "État ancien ; occupation italienne (1936–1941)" },
+            ],
+          },
           { type: "paragraphe", text: "Le **Rift** éthiopien traverse le pays du nord-est au sud-ouest et sépare les hauts plateaux en deux blocs, ponctués de lacs volcaniques. Au lac **Tana**, le plus grand du pays, prend sa source le Nil Bleu, qui rejoindra le Nil à Khartoum." },
           {
             type: "aRetenir",
             points: [
               "Les hauts plateaux, surnommés le « **toit de l'Afrique** »",
               "Le **Nil Bleu** prend sa source au lac Tana",
-              "Le Rift traverse le pays du nord-est au sud-ouest",
             ],
           },
         ],
@@ -3843,22 +3789,13 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Sept ans de retard, ou d'avance ?",
         blocks: [
           { type: "paragraphe", text: "L'Éthiopie vit selon son propre calendrier, décalé d'environ sept ans par rapport au calendrier grégorien, et selon sa propre horloge, qui fait démarrer le jour au lever du soleil. Le pays a aussi son propre alphabet." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Addis-Abeba" },
-              { label: "Monnaie", valeur: "Birr (ETB)" },
-              { label: "Régime", valeur: "République fédérale" },
-              { label: "Indépendance", valeur: "Jamais colonisée (victoire d'Adoua, 1896)" },
-            ],
-          },
-          { type: "paragraphe", text: "L'Éthiopie est le berceau du **café** et possède le premier cheptel d'Afrique. Seul pays africain jamais colonisé, elle a vaincu l'Italie à **Adoua** en 1896. Le fossile de Lucy et les églises rupestres de Lalibela rappellent qu'elle est aussi un berceau de l'humanité." },
+          { type: "paragraphe", text: "L'Éthiopie est le berceau du **café**. Sa victoire d'**Adoua**, en 1896, freine la conquête italienne ; elle subit cependant une occupation de 1936 à 1941. Lucy et les églises de Lalibela témoignent de son riche patrimoine." },
           {
             type: "aRetenir",
             points: [
-              "Berceau du **café**, jamais colonisée par une puissance européenne",
+              "Berceau du **café**, puis occupée par l'Italie de 1936 à 1941",
               "Victoire d'**Adoua** contre l'Italie en 1896",
-              "Le fossile de Lucy et les églises de Lalibela, berceaux de l'humanité",
+              "Lucy et les églises de Lalibela, un patrimoine majeur",
             ],
           },
         ],
@@ -3888,10 +3825,10 @@ export const GEOGRAPHIE_COURSES: Course[] = [
       },
       {
         id: "course-geographie-36-ethiopie-quiz-4",
-        question: "Quelle particularité historique distingue l'Éthiopie sur le continent ?",
-        options: ["Elle n'a jamais été colonisée", "Elle fut la première république d'Afrique", "Elle est le plus petit pays d'Afrique", "Elle n'a pas de langue officielle"],
+        question: "Quelle victoire de 1896 symbolise la résistance éthiopienne à la conquête italienne ?",
+        options: ["La victoire d'Adoua", "La bataille d'Isandlwana", "La bataille d'Omdurman", "La bataille de Kirina"],
         correctIndex: 0,
-        explanation: "L'Éthiopie a conservé son indépendance, notamment grâce à la victoire d'Adoua contre l'Italie en 1896 — un cas unique sur le continent.",
+        explanation: "À Adoua, en 1896, l'Éthiopie bat l'armée italienne et préserve son indépendance. Elle subira toutefois une occupation italienne de 1936 à 1941.",
       },
       {
         id: "course-geographie-36-ethiopie-quiz-5",
@@ -3915,14 +3852,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "À cheval sur l'équateur",
         blocks: [
           { type: "paragraphe", text: "Le Kenya est coupé en deux par l'équateur, qui traverse le pays d'est en ouest. Entre l'océan Indien et le lac Victoria, il aligne côte tropicale, hauts plateaux, vallée du Rift et savanes à perte de vue." },
-          { type: "chiffreCle", valeur: "5 199 m", legende: "le mont Kenya, deuxième sommet d'Afrique" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Nairobi" },
+              { label: "Monnaie", valeur: "Shilling kenyan (KES)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "12 décembre 1963" },
+            ],
+          },
           { type: "paragraphe", text: "La vallée du **Rift**, qui traverse le pays du nord au sud, est ponctuée de lacs alcalins : le lac **Nakuru**, réputé pour ses flamants roses, et le lac Turkana, l'un des plus grands lacs désertiques du monde et un site majeur de fossiles humains." },
           {
             type: "aRetenir",
             points: [
               "L'équateur traverse le pays d'est en ouest",
               "Le mont **Kenya**, à plus de 5 000 m, 2ᵉ sommet d'Afrique",
-              "Le lac **Turkana**, immense lac désertique et site de fossiles",
             ],
           },
         ],
@@ -3949,15 +3893,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "L'argent mobile inventé ici",
         blocks: [
           { type: "paragraphe", text: "Bien avant que les paiements par téléphone ne se généralisent ailleurs, le Kenya a inventé M-Pesa, un système d'argent mobile devenu si populaire qu'il a transformé l'économie quotidienne de tout le pays." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Nairobi" },
-              { label: "Monnaie", valeur: "Shilling kenyan (KES)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "12 décembre 1963" },
-            ],
-          },
           { type: "paragraphe", text: "Le Kenya est un grand exportateur de **thé** et de café, ainsi que de fleurs. Le tourisme de safari et Nairobi, hub technologique surnommé « **Silicon Savannah** », font aussi sa force. Le pays est réputé pour ses grands marathoniens." },
           {
             type: "aRetenir",
@@ -4021,14 +3956,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le huitième continent",
         blocks: [
           { type: "paragraphe", text: "Isolée au cœur de **l'océan Indien** et séparée du continent depuis 90 millions d'années, Madagascar a évolué à l'écart : les naturalistes la surnomment le « huitième continent », car près de 90 % de ses espèces sont endémiques." },
-          { type: "chiffreCle", valeur: "90 %", legende: "des espèces malgaches n'existent nulle part ailleurs" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Antananarivo" },
+              { label: "Monnaie", valeur: "Ariary (MGA)" },
+              { label: "Régime", valeur: "Transition militaire" },
+              { label: "Indépendance", valeur: "26 juin 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Les **tsingy de Bemaraha**, dans l'ouest, forment un extraordinaire massif calcaire aux aiguilles rocheuses tranchantes, classé à l'UNESCO. L'allée des **baobabs**, près de Morondava, et les forêts humides de l'est complètent cette mosaïque de paysages uniques au monde." },
           {
             type: "aRetenir",
             points: [
               "Séparée de l'Afrique depuis environ 90 millions d'années",
               "**90 %** des espèces sont endémiques, uniques au monde",
-              "Les **tsingy de Bemaraha**, aiguilles calcaires classées à l'UNESCO",
             ],
           },
           { type: "leSavaisTu", text: "On connaît aujourd'hui plus d'une centaine d'espèces de lémuriens à Madagascar — et de nouvelles espèces continuent d'être découvertes dans les forêts encore mal explorées de l'île." },
@@ -4056,15 +3998,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La vanille qui vient d'ici",
         blocks: [
           { type: "paragraphe", text: "La **vanille** qui parfume tant de desserts dans le monde entier vient très probablement de Madagascar : le pays en est le premier producteur mondial, malgré une économie parmi les plus pauvres de la planète." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Antananarivo" },
-              { label: "Monnaie", valeur: "Ariary (MGA)" },
-              { label: "Régime", valeur: "Transition militaire" },
-              { label: "Indépendance", valeur: "26 juin 1960" },
-            ],
-          },
           { type: "paragraphe", text: "Le riz, le girofle, le nickel et le cobalt complètent les ressources, aux côtés d'un tourisme tourné vers la nature. Depuis l'indépendance, le pays a connu plusieurs **crises politiques** et transitions de pouvoir hors du cadre constitutionnel, la plus récente en 2025." },
           {
             type: "aRetenir",
@@ -4128,14 +4061,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "L'oiseau qui a disparu d'ici",
         blocks: [
           { type: "paragraphe", text: "Maurice fut la seule maison du dodo, cet oiseau incapable de voler, disparu en quelques décennies après l'arrivée des marins européens — un symbole devenu mondial de ce que l'humanité peut effacer." },
-          { type: "chiffreCle", valeur: "560 km", legende: "jusqu'à Rodrigues, sa petite île sœur" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Port-Louis" },
+              { label: "Monnaie", valeur: "Roupie mauricienne (MUR)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "12 mars 1968" },
+            ],
+          },
           { type: "paragraphe", text: "L'île, volcanique, associe un plateau central plus frais et des plaines côtières chaudes, entièrement ceinturées par une barrière de **corail** qui crée les **lagons** calmes et transparents faisant la réputation touristique de l'île." },
           {
             type: "aRetenir",
             points: [
               "Le **dodo**, oiseau disparu, symbole mondial des extinctions",
               "Une île volcanique ceinturée de récifs de **corail**",
-              "L'île de Rodrigues, à 560 km à l'est",
             ],
           },
           { type: "leSavaisTu", text: "Le dodo n'a côtoyé l'homme qu'une centaine d'années environ avant de disparaître à jamais — l'une des extinctions les plus rapides jamais provoquées par l'arrivée d'une espèce humaine sur une île." },
@@ -4163,15 +4103,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La réussite au milieu de l'océan",
         blocks: [
           { type: "paragraphe", text: "Sans pétrole ni minerais, Maurice est devenue l'une des économies les plus prospères et les plus stables d'Afrique, en misant sur le tourisme haut de gamme, la finance et les technologies." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Port-Louis" },
-              { label: "Monnaie", valeur: "Roupie mauricienne (MUR)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "12 mars 1968" },
-            ],
-          },
           { type: "paragraphe", text: "Le **Morne Brabant**, ancien refuge d'esclaves marrons, et l'**Aapravasi Ghat**, premier lieu d'accueil des travailleurs engagés venus d'Inde, sont classés à l'UNESCO. La canne à sucre couvre encore une grande partie de l'île." },
           {
             type: "aRetenir",
@@ -4235,14 +4166,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "De la neige sur l'équateur",
         blocks: [
           { type: "paragraphe", text: "Sur l'équateur, en plein cœur de l'Afrique, les monts **Rwenzori** portent des neiges éternelles — un paradoxe géographique si rare qu'on les surnomme les « montagnes de la Lune », un nom vieux de plus de deux mille ans." },
-          { type: "chiffreCle", valeur: "Jinja", legende: "où le Nil Blanc sort du lac Victoria" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Kampala" },
+              { label: "Monnaie", valeur: "Shilling ougandais (UGX)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "9 octobre 1962" },
+            ],
+          },
           { type: "paragraphe", text: "Le Nil Blanc sort du lac Victoria à **Jinja**, point de départ symbolique du plus long fleuve du monde. Cette abondance de lacs et de terres fertiles, tempérée par l'altitude malgré la position équatoriale, vaut au pays sa réputation de « perle de l'Afrique »." },
           {
             type: "aRetenir",
             points: [
               "Les monts **Rwenzori**, neiges éternelles sur l'équateur",
               "Le Nil Blanc sort du lac Victoria à **Jinja**",
-              "Surnommé la « perle de l'Afrique » pour sa verdure",
             ],
           },
         ],
@@ -4269,15 +4207,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La perle que Churchill a vue",
         blocks: [
           { type: "paragraphe", text: "En 1908, Winston Churchill traverse l'Ouganda et le surnomme « la perle de l'Afrique », séduit par la verdure de ses plateaux et la richesse de sa faune — un surnom resté célèbre depuis plus d'un siècle." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Kampala" },
-              { label: "Monnaie", valeur: "Shilling ougandais (UGX)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "9 octobre 1962" },
-            ],
-          },
           { type: "paragraphe", text: "Le **café**, principale exportation, et le thé portent l'économie, aux côtés d'un secteur pétrolier naissant. Les **gorilles de montagne** de la forêt de Bwindi attirent des touristes du monde entier. Le pays a connu la sanglante dictature d'Idi Amin Dada (1971-1979) avant de se stabiliser." },
           {
             type: "aRetenir",
@@ -4341,14 +4270,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le pays des mille collines",
         blocks: [
           { type: "paragraphe", text: "Surnommé « le pays des mille collines », le Rwanda est un État d'Afrique centrale sans littoral : **il est enclavé** dans la région des Grands Lacs, entre volcans des Virunga et rives du lac Kivu." },
-          { type: "chiffreCle", valeur: "4 500 m", legende: "les volcans des Virunga, encore actifs" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Kigali" },
+              { label: "Monnaie", valeur: "Franc rwandais (RWF)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "1er juillet 1962" },
+            ],
+          },
           { type: "paragraphe", text: "Les volcans des **Virunga**, dont certains encore actifs, abritent avec la forêt environnante l'un des derniers refuges des **gorilles de montagne** au monde. Le lac Kivu, l'un des grands lacs du Rift, offre un climat plus doux sur ses rives." },
           {
             type: "aRetenir",
             points: [
               "Surnommé le « pays des mille collines »",
               "Les volcans des **Virunga**, refuge des gorilles de montagne",
-              "Le lac **Kivu**, l'un des grands lacs du Rift",
             ],
           },
         ],
@@ -4375,15 +4311,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La capitale la plus propre d'Afrique",
         blocks: [
           { type: "paragraphe", text: "Kigali est régulièrement citée comme l'une des villes les plus propres et les plus sûres du continent — un symbole de la reconstruction rwandaise depuis le génocide de 1994, fondée sur la gouvernance et la technologie." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Kigali" },
-              { label: "Monnaie", valeur: "Franc rwandais (RWF)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "1er juillet 1962" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie repose sur le **café**, le thé et un tourisme haut de gamme autour des gorilles de montagne. Le pays s'est reconstruit en misant sur la **gouvernance et les technologies**, devenant un modèle de développement souvent cité en exemple, malgré des critiques sur les libertés politiques." },
           {
             type: "aRetenir",
@@ -4447,14 +4374,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Les seules vraies îles de granit",
         blocks: [
           { type: "paragraphe", text: "Contrairement à presque toutes les îles océaniques du monde, nées de volcans ou de coraux, les îles principales des Seychelles sont faites du même granit que les continents — un cas unique sur Terre." },
-          { type: "chiffreCle", valeur: "115", legende: "îles, le plus petit État d'Afrique par la superficie" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Victoria" },
+              { label: "Monnaie", valeur: "Roupie seychelloise (SCR)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "29 juin 1976" },
+            ],
+          },
           { type: "paragraphe", text: "La **vallée de Mai**, à Praslin, abrite des forêts primaires reliques où pousse le **coco de mer**, la plus grosse graine du règne végétal. L'atoll d'Aldabra, îles coralliennes éloignées, abrite pour sa part d'immenses tortues géantes." },
           {
             type: "aRetenir",
             points: [
               "Les îles granitiques, un cas géologique unique au monde",
               "Le **coco de mer**, la plus grosse graine du monde",
-              "L'atoll d'**Aldabra**, sanctuaire de tortues géantes",
             ],
           },
         ],
@@ -4481,15 +4415,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le revenu le plus élevé d'Afrique",
         blocks: [
           { type: "paragraphe", text: "Grâce au tourisme haut de gamme et à la **pêche au thon**, les Seychelles affichent le revenu par habitant le plus élevé de tout le continent africain — une réussite bâtie sur un territoire minuscule." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Victoria" },
-              { label: "Monnaie", valeur: "Roupie seychelloise (SCR)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "29 juin 1976" },
-            ],
-          },
           { type: "paragraphe", text: "**Victoria**, l'une des plus petites capitales du monde, abrite l'essentiel de la vie du pays. Les Seychelles ont fait de la préservation de leur environnement exceptionnel un pilier de leur stratégie économique et diplomatique, notamment sur la protection des océans." },
           {
             type: "aRetenir",
@@ -4553,14 +4478,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La plus longue côte du continent",
         blocks: [
           { type: "paragraphe", text: "La Somalie déploie la plus longue côte de toute l'Afrique continentale, entre le golfe d'Aden et l'océan Indien — un atout stratégique majeur, largement compromis ces dernières décennies par la piraterie et l'insécurité." },
-          { type: "chiffreCle", valeur: "Pays de Pount", legende: "lié dans l'Antiquité au commerce de l'encens" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Mogadiscio" },
+              { label: "Monnaie", valeur: "Shilling somalien (SOS)" },
+              { label: "Régime", valeur: "République fédérale (en reconstruction)" },
+              { label: "Indépendance", valeur: "1er juillet 1960" },
+            ],
+          },
           { type: "paragraphe", text: "Le pays est fait de plateaux semi-arides et de savanes sèches. Deux rivières, le **Jubba** et le **Shabelle**, arrosent le sud, seule région vraiment fertile d'un territoire par ailleurs aride et chaud." },
           {
             type: "aRetenir",
             points: [
               "La plus longue côte d'Afrique continentale",
               "Le **Jubba** et le Shabelle, seules rivières du pays",
-              "Liée dans l'Antiquité au commerce de l'encens, le « pays de Pount »",
             ],
           },
         ],
@@ -4587,15 +4519,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une région qui s'est déclarée libre",
         blocks: [
           { type: "paragraphe", text: "Depuis 1991, le Somaliland, au nord-ouest du pays, se gouverne comme un État indépendant de facto — avec son propre drapeau, sa propre monnaie et ses propres élections — sans être reconnu par aucun pays au monde." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Mogadiscio" },
-              { label: "Monnaie", valeur: "Shilling somalien (SOS)" },
-              { label: "Régime", valeur: "République fédérale (en reconstruction)" },
-              { label: "Indépendance", valeur: "1er juillet 1960" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie repose sur l'**élevage**, avec l'exportation de bétail vers la péninsule Arabique, la pêche et les transferts de la diaspora. Des décennies de guerre civile et l'insécurité liée au groupe Al-Shabaab ont profondément désorganisé le pays, qui tente depuis les années 2010 de reconstruire un **État fédéral**." },
           {
             type: "aRetenir",
@@ -4659,14 +4582,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le marais qui ralentit le Nil",
         blocks: [
           { type: "paragraphe", text: "Le Sudd, sur le Nil Blanc, est l'une des plus grandes zones humides du monde — si vaste et si dense qu'il **ralentit** sensiblement le débit du fleuve par simple évaporation." },
-          { type: "chiffreCle", valeur: "Le Sudd", legende: "ralentit le débit du Nil par évaporation" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Juba" },
+              { label: "Monnaie", valeur: "Livre sud-soudanaise (SSP)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "9 juillet 2011" },
+            ],
+          },
           { type: "paragraphe", text: "Sur environ 620 000 km², le Soudan du Sud est **enclavé** entre six pays — Soudan, Éthiopie, Kenya, Ouganda, RD Congo, Centrafrique — et découpé en dix États depuis 2011. Hors de Juba, le réseau routier reste quasi inexistant." },
           {
             type: "aRetenir",
             points: [
               "Le Sudd abrite l'une des dernières grandes **migrations** de mammifères d'Afrique.",
               "Le pays compte dix États depuis son indépendance en 2011.",
-              "L'accès au territoire reste très difficile hors de la capitale Juba.",
             ],
           },
         ],
@@ -4693,15 +4623,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le plus jeune pays du monde",
         blocks: [
           { type: "paragraphe", text: "Le Soudan du Sud est né le 9 juillet 2011 d'un référendum approuvé par la quasi-totalité du sud, devenant le plus jeune État reconnu par l'ONU." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Juba" },
-              { label: "Monnaie", valeur: "Livre sud-soudanaise (SSP)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "9 juillet 2011" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie dépend presque entièrement du **pétrole**, complété par l'élevage. C'est l'un des pays les plus pauvres du monde, ravagé par une **guerre civile** entre 2013 et 2018, dont les séquelles pèsent encore sur la reconstruction." },
           {
             type: "aRetenir",
@@ -4765,14 +4686,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le sommet et la grande migration",
         blocks: [
           { type: "paragraphe", text: "Le Kilimandjaro, à environ 5 895 m, domine des plaines où se joue chaque année la plus grande **migration** terrestre d'animaux sauvages de la planète, entre Serengeti et Masai Mara." },
-          { type: "chiffreCle", valeur: "5 895 m", legende: "le Kilimandjaro, plus haut sommet d'Afrique" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Dodoma (officielle)" },
+              { label: "Monnaie", valeur: "Shilling tanzanien (TZS)" },
+              { label: "Régime", valeur: "République unie" },
+              { label: "Indépendance", valeur: "9 décembre 1961 (Tanganyika)" },
+            ],
+          },
           { type: "paragraphe", text: "Sur environ 945 000 km², la Tanzanie borde huit pays, l'océan Indien et **trois grands lacs** — Victoria, Tanganyika, Malawi. Les gorges d'Olduvai, dans le Rift, comptent parmi les sites paléontologiques majeurs pour l'étude des origines de l'humanité." },
           {
             type: "aRetenir",
             points: [
               "Le Kilimandjaro est le plus haut sommet d'Afrique, à 5 895 m.",
               "Le Serengeti accueille la plus grande migration animale terrestre au monde.",
-              "Les gorges d'Olduvai sont un site clé sur les origines de l'humanité.",
             ],
           },
         ],
@@ -4799,15 +4727,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Deux pays fondus en un seul",
         blocks: [
           { type: "paragraphe", text: "En 1964, le Tanganyika continental et l'archipel de Zanzibar fusionnent pour former la Tanzanie — un nom né de la contraction de leurs deux noms d'origine." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Dodoma (officielle)" },
-              { label: "Monnaie", valeur: "Shilling tanzanien (TZS)" },
-              { label: "Régime", valeur: "République unie" },
-              { label: "Indépendance", valeur: "9 décembre 1961 (Tanganyika)" },
-            ],
-          },
           { type: "paragraphe", text: "**Zanzibar** conserve son propre gouvernement au sein de la République unie. Son cœur historique, **Stone Town**, classé à l'UNESCO, garde la mémoire du commerce des épices et de la route swahilie de l'océan Indien." },
           {
             type: "aRetenir",
@@ -4871,29 +4790,37 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un pays qui encercle un royaume",
         blocks: [
           { type: "paragraphe", text: "L'Afrique du Sud a une frontière presque parfaitement circulaire quelque part au milieu de son territoire : elle encercle entièrement le Lesotho, un royaume souverain, une configuration presque unique au monde." },
-          { type: "chiffreCle", valeur: "9 000+", legende: "espèces de fynbos, une flore unique au cap" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Pretoria (exécutif)" },
+              { label: "Monnaie", valeur: "Rand (ZAR)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "1910 (union), république en 1961" },
+            ],
+          },
           { type: "paragraphe", text: "Le **Drakensberg**, la plus haute chaîne d'Afrique australe, sépare le Highveld intérieur des plaines côtières. Au cap de Bonne-Espérance, la rencontre des courants froids et chauds de l'Atlantique et de l'Indien crée un écosystème marin unique, à l'origine du **fynbos**, une flore d'une richesse exceptionnelle." },
           {
             type: "aRetenir",
             points: [
               "Le pays entoure entièrement le royaume du **Lesotho**",
               "Le **Drakensberg**, plus haute chaîne d'Afrique australe",
-              "Le **fynbos** du Cap, une flore unique au monde",
             ],
           },
         ],
       },
       {
         id: "course-geographie-46-afrique-du-sud-lesson-2",
-        title: "Onze langues pour une nation",
+        title: "Douze langues pour une nation",
         blocks: [
-          { type: "paragraphe", text: "L'Afrique du Sud reconnaît onze langues officielles — un record mondial — pour représenter toutes les composantes de la « nation arc-en-ciel », née en 1994 de la fin de l'apartheid et de l'élection de Nelson Mandela." },
-          { type: "chiffreCle", valeur: "11", legende: "langues officielles, un record mondial" },
+          // Amendement constitutionnel de 2023 : https://www.gov.za/news/speeches/president-cyril-ramaphosa-signing-ceremony-south-african-sign-language-bill-19-jul
+          { type: "paragraphe", text: "L'Afrique du Sud reconnaît **douze langues officielles**, dont la langue des signes sud-africaine depuis 2023. Cette diversité reflète les composantes de la « nation arc-en-ciel », née en 1994 de la fin de l'apartheid et de l'élection de Nelson Mandela." },
+          { type: "chiffreCle", valeur: "12", legende: "langues officielles, dont la langue des signes" },
           { type: "paragraphe", text: "Les **townships**, quartiers créés par l'apartheid en périphérie des villes pour y reléguer la population noire, comme **Soweto** près de Johannesburg, restent des lieux de mémoire et symboles à la fois des inégalités persistantes et de la résistance." },
           {
             type: "aRetenir",
             points: [
-              "**Onze** langues officielles, un record mondial",
+              "**Douze** langues officielles, dont la langue des signes",
               "L'apartheid, aboli en **1994**, a marqué durablement le pays",
               "**Soweto** et les townships, lieux de mémoire majeurs",
             ],
@@ -4905,15 +4832,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Trois villes, une seule nation",
         blocks: [
           { type: "paragraphe", text: "L'Afrique du Sud est l'un des rares pays au monde à avoir trois capitales : Pretoria pour le gouvernement, Le Cap pour le Parlement, Bloemfontein pour la justice — un héritage direct des négociations d'union de 1910." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Pretoria (exécutif)" },
-              { label: "Monnaie", valeur: "Rand (ZAR)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "1910 (union), république en 1961" },
-            ],
-          },
           { type: "paragraphe", text: "C'est l'économie la plus industrialisée d'Afrique : mines d'or, de **platine** — premier producteur mondial —, de diamants et de charbon. Membre du G20 et des BRICS, le pays reste l'une des deux premières puissances économiques du continent depuis les élections de **1994**." },
           {
             type: "aRetenir",
@@ -4958,9 +4876,9 @@ export const GEOGRAPHIE_COURSES: Course[] = [
       {
         id: "course-geographie-46-afrique-du-sud-quiz-5",
         question: "Combien de langues officielles compte l'Afrique du Sud ?",
-        options: ["Onze", "Deux", "Cinq", "Une"],
+        options: ["Douze", "Deux", "Cinq", "Une"],
         correctIndex: 0,
-        explanation: "L'Afrique du Sud reconnaît onze langues officielles, un record mondial, symbole de sa diversité.",
+        explanation: "L'Afrique du Sud reconnaît douze langues officielles depuis l'ajout de la langue des signes sud-africaine en juillet 2023.",
       },
     ],
   },
@@ -4977,14 +4895,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un delta sans aucune mer",
         blocks: [
           { type: "paragraphe", text: "Au Botswana, le fleuve Okavango ne rejoint jamais l'océan : il se jette dans le désert du Kalahari et s'y évapore, créant chaque année un delta intérieur explosif de vie sauvage au milieu de l'aridité." },
-          { type: "chiffreCle", valeur: "Okavango", legende: "un delta qui se perd dans le sable du Kalahari" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Gaborone" },
+              { label: "Monnaie", valeur: "Pula (BWP)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "30 septembre 1966" },
+            ],
+          },
           { type: "paragraphe", text: "Près du Zambèze, le Botswana touche ses voisins en un point de rencontre unique avec **quatre pays**. Le delta de l'**Okavango**, classé à l'UNESCO, crée chaque saison des crues une explosion de vie sauvage malgré l'aridité environnante." },
           {
             type: "aRetenir",
             points: [
               "Le fleuve **Okavango** se perd dans le sable du Kalahari",
               "Un point de rencontre rare entre quatre pays, près du Zambèze",
-              "Le delta, classé à l'**UNESCO**, explose de vie à la saison des crues",
             ],
           },
         ],
@@ -5011,15 +4936,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Des diamants bien gérés, une rareté",
         blocks: [
           { type: "paragraphe", text: "Là où ailleurs les diamants ont souvent alimenté guerres et corruption, le Botswana en a fait un modèle rare de gestion transparente — l'un des meilleurs revenus par habitant d'Afrique, sans avoir sombré dans la malédiction des ressources." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Gaborone" },
-              { label: "Monnaie", valeur: "Pula (BWP)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "30 septembre 1966" },
-            ],
-          },
           { type: "paragraphe", text: "Depuis sa capitale **Gaborone**, le pays a connu en **2024** une alternance politique pacifique exemplaire. Le tourisme vers l'Okavango et les éléphants du parc de **Chobe** complète les revenus diamantaires." },
           {
             type: "aRetenir",
@@ -5083,14 +4999,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Presque avalé par son voisin",
         blocks: [
           { type: "paragraphe", text: "Coincé entre l'Afrique du Sud et le Mozambique, l'Eswatini n'a aucun accès à la mer : ce petit royaume d'Afrique australe **est enclavé** et passe en quelques dizaines de kilomètres du Highveld montagneux au Lowveld chaud et sec." },
-          { type: "chiffreCle", valeur: "Highveld", legende: "frais et pluvieux, à l'ouest du pays" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Mbabane (administrative)" },
+              { label: "Monnaie", valeur: "Lilangeni (SZL)" },
+              { label: "Régime", valeur: "Monarchie absolue" },
+              { label: "Indépendance", valeur: "6 septembre 1968" },
+            ],
+          },
           { type: "paragraphe", text: "Le relief passe du **Highveld** montagneux et frais, à l'ouest, au **Lowveld** chaud et savanicole, à l'est, plus proche du climat du Mozambique voisin. Cette gradation crée une diversité climatique remarquable sur un territoire pourtant réduit." },
           {
             type: "aRetenir",
             points: [
               "Presque entièrement entouré par l'**Afrique du Sud**",
               "Du **Highveld** frais à l'ouest au Lowveld chaud à l'est",
-              "L'un des plus petits pays du continent africain",
             ],
           },
         ],
@@ -5117,15 +5040,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le roi qui règne encore seul",
         blocks: [
           { type: "paragraphe", text: "L'Eswatini est l'une des toutes dernières monarchies absolues du monde : les partis politiques y restent interdits, et le roi gouverne sans partage, malgré des mouvements réguliers réclamant des réformes démocratiques." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Mbabane (administrative)" },
-              { label: "Monnaie", valeur: "Lilangeni (SZL)" },
-              { label: "Régime", valeur: "Monarchie absolue" },
-              { label: "Indépendance", valeur: "6 septembre 1968" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie repose sur le sucre, principale exportation, ainsi que le bois et le textile — très dépendante de l'**Afrique du Sud**, dont le rand fixe la valeur de sa monnaie. Le pays, longtemps appelé Swaziland, a été rebaptisé **Eswatini** en 2018." },
           {
             type: "aRetenir",
@@ -5189,14 +5103,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le royaume dans le ciel",
         blocks: [
           { type: "paragraphe", text: "Aucun point du Lesotho ne descend sous **1 400 mètres**. C'est le seul pays au monde dans ce cas — et il est entièrement encerclé par un unique voisin, l'Afrique du Sud." },
-          { type: "chiffreCle", valeur: "1 400 m", legende: "son point le plus bas — un record mondial" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Maseru" },
+              { label: "Monnaie", valeur: "Loti (LSL)" },
+              { label: "Régime", valeur: "Monarchie constitutionnelle" },
+              { label: "Indépendance", valeur: "4 octobre 1966" },
+            ],
+          },
           { type: "paragraphe", text: "Les monts **Maloti** structurent tout : le climat, les routes, la vie. Il y neige en hiver. Cette altitude, longtemps un handicap, est devenue une ressource — l'eau descend vers l'Afrique du Sud et se vend." },
           {
             type: "aRetenir",
             points: [
               "Enclavé dans un seul pays : l'**Afrique du Sud**",
               "Aucun point sous **1 400 m**, unique au monde",
-              "L'eau des montagnes est sa principale exportation",
             ],
           },
           { type: "leSavaisTu", text: "Le poney du Basotho est encore un vrai moyen de transport : dans les villages de montagne, il passe là où aucune route ne monte." },
@@ -5225,15 +5146,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Vendre son eau au voisin",
         blocks: [
           { type: "paragraphe", text: "Le Lesotho n'a presque aucune industrie, mais il vend à l'Afrique du Sud sa ressource la plus précieuse : l'eau de ses montagnes, captée et acheminée par un immense réseau de barrages et de tunnels." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Maseru" },
-              { label: "Monnaie", valeur: "Loti (LSL)" },
-              { label: "Régime", valeur: "Monarchie constitutionnelle" },
-              { label: "Indépendance", valeur: "4 octobre 1966" },
-            ],
-          },
           { type: "paragraphe", text: "Le **Lesotho Highlands Water Project** exporte l'eau des montagnes vers l'Afrique du Sud, aux côtés du textile, des diamants et des transferts des Basotho travaillant chez le voisin. Surnommé le « royaume dans le ciel », le pays est aussi le **château d'eau** de l'Afrique australe." },
           {
             type: "aRetenir",
@@ -5297,14 +5209,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le lac aux mille poissons",
         blocks: [
           { type: "paragraphe", text: "Sans aucun littoral maritime, le Malawi est un pays **enclavé** d'Afrique australe : son immense lac lui tient lieu de mer intérieure et abrite plus d'espèces de poissons que tout autre lac au monde, dont des centaines de cichlidés uniques." },
-          { type: "chiffreCle", valeur: "3 000 m", legende: "le mont Mulanje, isolé au milieu des plaines" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Lilongwe" },
+              { label: "Monnaie", valeur: "Kwacha malawite (MWK)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "6 juillet 1964" },
+            ],
+          },
           { type: "paragraphe", text: "La vallée du **Rift**, des plateaux et de hauts reliefs composent le paysage. Le lac Malawi, troisième plus grand lac d'Afrique, occupe une grande partie de la frontière est, tandis que le **mont Mulanje**, isolé au sud, culmine à plus de 3 000 m." },
           {
             type: "aRetenir",
             points: [
               "Le lac Malawi abrite plus d'espèces de poissons que tout autre lac",
               "Le **mont Mulanje**, isolé, culmine à plus de 3 000 m",
-              "Le lac Malawi, 3ᵉ plus grand lac d'Afrique",
             ],
           },
         ],
@@ -5331,15 +5250,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Une économie qui vit du tabac",
         blocks: [
           { type: "paragraphe", text: "Le tabac reste, de très loin, la première exportation du Malawi — une dépendance à une seule culture qui fragilise l'économie de l'un des pays les plus pauvres du monde, malgré une vie démocratique stable." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Lilongwe" },
-              { label: "Monnaie", valeur: "Kwacha malawite (MWK)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "6 juillet 1964" },
-            ],
-          },
           { type: "paragraphe", text: "Le thé, le sucre et le maïs, ainsi que la pêche dans le **lac Malawi**, complètent les ressources. Le pays, appelé **Nyassaland** jusqu'à l'indépendance, reste l'un des plus pauvres du monde malgré une vie démocratique relativement stable depuis les années 1990." },
           {
             type: "aRetenir",
@@ -5403,14 +5313,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un pays étiré face à l'océan",
         blocks: [
           { type: "paragraphe", text: "Le Mozambique s'étire sur des milliers de kilomètres le long de l'océan Indien — l'une des plus longues façades maritimes d'Afrique — mais cette même position l'expose de plein fouet aux cyclones tropicaux les plus dévastateurs du continent." },
-          { type: "chiffreCle", valeur: "2 500 km", legende: "de côte, l'une des plus longues d'Afrique" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Maputo" },
+              { label: "Monnaie", valeur: "Metical (MZN)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "25 juin 1975" },
+            ],
+          },
           { type: "paragraphe", text: "Le **Zambèze**, qui coupe le pays d'ouest en est, y forme le lac de retenue du barrage de **Cahora Bassa**, l'un des plus grands d'Afrique, avant de se jeter dans l'océan Indien par un vaste delta." },
           {
             type: "aRetenir",
             points: [
               "Une des plus longues façades maritimes d'Afrique",
               "Le **Zambèze** forme le lac de barrage de Cahora Bassa",
-              "L'un des territoires les plus vulnérables aux cyclones",
             ],
           },
         ],
@@ -5437,15 +5354,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le gaz qui change tout",
         blocks: [
           { type: "paragraphe", text: "Au large du Cabo Delgado, dans le nord du Mozambique, dorment d'immenses gisements de gaz naturel découverts récemment — une richesse promise à transformer l'un des pays les plus pauvres du monde." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Maputo" },
-              { label: "Monnaie", valeur: "Metical (MZN)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "25 juin 1975" },
-            ],
-          },
           { type: "paragraphe", text: "Le pays est indépendant depuis 1975, à l'issue d'une guerre de libération menée par le **FRELIMO**. Une longue guerre civile (1977-1992) a ensuite ravagé le pays, avant sa stabilisation puis la découverte des réserves de **gaz** au large de Cabo Delgado." },
           {
             type: "aRetenir",
@@ -5509,14 +5417,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le plus vieux désert du monde",
         blocks: [
           { type: "paragraphe", text: "Le désert du Namib serait le plus vieux désert du monde, aride depuis peut-être 55 millions d'années. Le long de sa côte brumeuse, des dizaines d'épaves de navires rouillent depuis des décennies, échouées sans jamais avoir pu repartir." },
-          { type: "chiffreCle", valeur: "55 M ans", legende: "l'âge estimé du désert du Namib" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Windhoek" },
+              { label: "Monnaie", valeur: "Dollar namibien (NAD)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "21 mars 1990" },
+            ],
+          },
           { type: "paragraphe", text: "Cette **côte des Squelettes** doit son climat particulier à la rencontre du désert brûlant et du courant froid de **Benguela**, remonté de l'Antarctique. Les dunes de Sossusvlei, parmi les plus hautes du monde, comptent parmi les paysages les plus photographiés d'Afrique." },
           {
             type: "aRetenir",
             points: [
               "Le **Namib**, sans doute le plus vieux désert du monde",
               "La côte des Squelettes, jonchée d'épaves de navires",
-              "Les dunes de **Sossusvlei**, parmi les plus hautes du monde",
             ],
           },
         ],
@@ -5543,15 +5458,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "La première présidente du pays",
         blocks: [
           { type: "paragraphe", text: "En 2025, la Namibie a élu la première femme à sa présidence — un tournant historique dans un pays où les inégalités héritées de la colonisation allemande puis sud-africaine restent parmi les plus fortes du monde." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Windhoek" },
-              { label: "Monnaie", valeur: "Dollar namibien (NAD)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "21 mars 1990" },
-            ],
-          },
           { type: "paragraphe", text: "L'économie repose sur les mines — diamants, **uranium**, dont la Namibie est un grand producteur — ainsi que sur le tourisme du désert et du parc d'**Etosha**. L'indépendance, obtenue en 1990, a suivi une longue lutte de libération menée par la SWAPO." },
           {
             type: "aRetenir",
@@ -5615,14 +5521,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Un pays en forme de papillon",
         blocks: [
           { type: "paragraphe", text: "Sur la carte, la Zambie dessine une forme de papillon aux ailes déployées. Sans aucun littoral marin, **la Zambie est enclavée** au cœur de l'Afrique australe, entourée par huit pays voisins entre le Zambèze et le bassin du Congo." },
-          { type: "chiffreCle", valeur: "8 voisins", legende: "un record de frontières pour l'Afrique australe" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Lusaka" },
+              { label: "Monnaie", valeur: "Kwacha zambien (ZMW)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "24 octobre 1964" },
+            ],
+          },
           { type: "paragraphe", text: "Le lac de **Kariba**, l'un des plus grands lacs artificiels du monde, est né d'un barrage construit sur le **Zambèze** dans les années 1950-1960, partagé avec le Zimbabwe. Le fleuve y forme aussi les chutes Victoria, plus en amont." },
           {
             type: "aRetenir",
             points: [
               "Une forme en papillon, entourée de **huit** pays",
               "Le lac de **Kariba**, l'un des plus grands lacs artificiels du monde",
-              "Les chutes Victoria, partagées avec le Zimbabwe",
             ],
           },
         ],
@@ -5649,15 +5562,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Le Copperbelt, cœur du pays",
         blocks: [
           { type: "paragraphe", text: "Le cuivre est la grande richesse de la Zambie, l'un des principaux producteurs africains, extrait dans la région minière du Copperbelt qui a façonné l'économie et l'histoire moderne du pays." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Lusaka" },
-              { label: "Monnaie", valeur: "Kwacha zambien (ZMW)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "24 octobre 1964" },
-            ],
-          },
           { type: "paragraphe", text: "Le cobalt, l'agriculture, le tourisme des **chutes Victoria** et l'hydroélectricité de **Kariba** complètent l'économie, très dépendante du cours du cuivre. La Zambie est régulièrement citée pour la stabilité de sa vie politique et ses alternances pacifiques." },
           {
             type: "aRetenir",
@@ -5721,14 +5625,21 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "Entre deux fleuves, un plateau",
         blocks: [
           { type: "paragraphe", text: "Pays d'Afrique australe sans accès à la mer, le Zimbabwe est un **État enclavé** encadré par le Zambèze au nord et le Limpopo au sud, avec en son centre un haut plateau frais, le Highveld." },
-          { type: "chiffreCle", valeur: "2 fleuves", legende: "le Zambèze au nord, le Limpopo au sud" },
+          {
+            type: "reperes",
+            items: [
+              { label: "Capitale", valeur: "Harare" },
+              { label: "Monnaie", valeur: "ZiG (Zimbabwe Gold)" },
+              { label: "Régime", valeur: "République" },
+              { label: "Indépendance", valeur: "18 avril 1980" },
+            ],
+          },
           { type: "paragraphe", text: "Le **Highveld**, aux sols volcaniques fertiles, a longtemps été la principale région agricole du pays. Au nord-ouest, le Zambèze forme les chutes Victoria ; le parc de **Hwange** abrite l'une des plus importantes populations d'éléphants d'Afrique." },
           {
             type: "aRetenir",
             points: [
               "Encadré par le **Zambèze** au nord et le Limpopo au sud",
               "Le **Highveld**, plateau fertile, cœur agricole du pays",
-              "Le parc de **Hwange**, immenses populations d'éléphants",
             ],
           },
         ],
@@ -5755,15 +5666,6 @@ export const GEOGRAPHIE_COURSES: Course[] = [
         title: "D'où vient le nom du pays",
         blocks: [
           { type: "paragraphe", text: "Le nom Zimbabwe vient d'une cité de pierre médiévale, le Grand Zimbabwe, dont les immenses murailles construites sans mortier laissent encore aujourd'hui les archéologues perplexes sur les techniques utilisées il y a plusieurs siècles." },
-          {
-            type: "reperes",
-            items: [
-              { label: "Capitale", valeur: "Harare" },
-              { label: "Monnaie", valeur: "ZiG (Zimbabwe Gold)" },
-              { label: "Régime", valeur: "République" },
-              { label: "Indépendance", valeur: "18 avril 1980" },
-            ],
-          },
           { type: "paragraphe", text: "Le sous-sol est riche en or, platine, chrome et **lithium**, mais l'économie a été fragilisée par des décennies de crise et une **hyperinflation** historique parmi les pires jamais enregistrées au monde. L'indépendance, en 1980, a suivi une longue guerre contre le régime blanc de Rhodésie." },
           {
             type: "aRetenir",

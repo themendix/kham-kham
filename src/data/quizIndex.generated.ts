@@ -3679,7 +3679,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-01-algerie:course-geographie-01-algerie-quiz-4",
     "courseId": "course-geographie-01-algerie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-01-algerie-lesson-3",
+    "lessonId": "course-geographie-01-algerie-lesson-1",
     "territories": [
       "nord"
     ],
@@ -3751,7 +3751,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-02-egypte:course-geographie-02-egypte-quiz-3",
     "courseId": "course-geographie-02-egypte",
     "categoryId": "geo",
-    "lessonId": "course-geographie-02-egypte-lesson-3",
+    "lessonId": "course-geographie-02-egypte-lesson-1",
     "territories": [
       "nord"
     ],
@@ -3913,7 +3913,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-04-maroc:course-geographie-04-maroc-quiz-2",
     "courseId": "course-geographie-04-maroc",
     "categoryId": "geo",
-    "lessonId": "course-geographie-04-maroc-lesson-3",
+    "lessonId": "course-geographie-04-maroc-lesson-1",
     "territories": [
       "nord"
     ],
@@ -3949,7 +3949,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-04-maroc:course-geographie-04-maroc-quiz-4",
     "courseId": "course-geographie-04-maroc",
     "categoryId": "geo",
-    "lessonId": "course-geographie-04-maroc-lesson-3",
+    "lessonId": "course-geographie-04-maroc-lesson-1",
     "territories": [
       "nord"
     ],
@@ -4021,7 +4021,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-05-mauritanie:course-geographie-05-mauritanie-quiz-3",
     "courseId": "course-geographie-05-mauritanie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-05-mauritanie-lesson-3",
+    "lessonId": "course-geographie-05-mauritanie-lesson-1",
     "territories": [
       "nord"
     ],
@@ -4039,7 +4039,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-05-mauritanie:course-geographie-05-mauritanie-quiz-4",
     "courseId": "course-geographie-05-mauritanie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-05-mauritanie-lesson-2",
+    "lessonId": "course-geographie-05-mauritanie-lesson-1",
     "territories": [
       "nord"
     ],
@@ -4111,7 +4111,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-06-soudan:course-geographie-06-soudan-quiz-3",
     "courseId": "course-geographie-06-soudan",
     "categoryId": "geo",
-    "lessonId": "course-geographie-06-soudan-lesson-2",
+    "lessonId": "course-geographie-06-soudan-lesson-1",
     "territories": [
       "nord"
     ],
@@ -4219,7 +4219,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-07-tunisie:course-geographie-07-tunisie-quiz-4",
     "courseId": "course-geographie-07-tunisie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-07-tunisie-lesson-3",
+    "lessonId": "course-geographie-07-tunisie-lesson-1",
     "territories": [
       "nord"
     ],
@@ -4291,7 +4291,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-08-benin:course-geographie-08-benin-quiz-3",
     "courseId": "course-geographie-08-benin",
     "categoryId": "geo",
-    "lessonId": "course-geographie-08-benin-lesson-3",
+    "lessonId": "course-geographie-08-benin-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4309,7 +4309,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-08-benin:course-geographie-08-benin-quiz-4",
     "courseId": "course-geographie-08-benin",
     "categoryId": "geo",
-    "lessonId": "course-geographie-08-benin-lesson-3",
+    "lessonId": "course-geographie-08-benin-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4381,7 +4381,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-09-burkina-faso:course-geographie-09-burkina-faso-quiz-3",
     "courseId": "course-geographie-09-burkina-faso",
     "categoryId": "geo",
-    "lessonId": "course-geographie-09-burkina-faso-lesson-2",
+    "lessonId": "course-geographie-09-burkina-faso-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4507,7 +4507,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-10-cap-vert:course-geographie-10-cap-vert-quiz-5",
     "courseId": "course-geographie-10-cap-vert",
     "categoryId": "geo",
-    "lessonId": "course-geographie-10-cap-vert-lesson-3",
+    "lessonId": "course-geographie-10-cap-vert-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4543,7 +4543,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-11-cote-divoire:course-geographie-11-cote-divoire-quiz-2",
     "courseId": "course-geographie-11-cote-divoire",
     "categoryId": "geo",
-    "lessonId": "course-geographie-11-cote-divoire-lesson-3",
+    "lessonId": "course-geographie-11-cote-divoire-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4579,7 +4579,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-11-cote-divoire:course-geographie-11-cote-divoire-quiz-4",
     "courseId": "course-geographie-11-cote-divoire",
     "categoryId": "geo",
-    "lessonId": "course-geographie-11-cote-divoire-lesson-3",
+    "lessonId": "course-geographie-11-cote-divoire-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4687,7 +4687,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-12-gambie:course-geographie-12-gambie-quiz-5",
     "courseId": "course-geographie-12-gambie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-12-gambie-lesson-3",
+    "lessonId": "course-geographie-12-gambie-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4759,7 +4759,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-13-ghana:course-geographie-13-ghana-quiz-4",
     "courseId": "course-geographie-13-ghana",
     "categoryId": "geo",
-    "lessonId": "course-geographie-13-ghana-lesson-3",
+    "lessonId": "course-geographie-13-ghana-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4849,7 +4849,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-14-guinee:course-geographie-14-guinee-quiz-4",
     "courseId": "course-geographie-14-guinee",
     "categoryId": "geo",
-    "lessonId": "course-geographie-14-guinee-lesson-3",
+    "lessonId": "course-geographie-14-guinee-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4867,7 +4867,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-14-guinee:course-geographie-14-guinee-quiz-5",
     "courseId": "course-geographie-14-guinee",
     "categoryId": "geo",
-    "lessonId": "course-geographie-14-guinee-lesson-3",
+    "lessonId": "course-geographie-14-guinee-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4939,7 +4939,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-15-guinee-bissau:course-geographie-15-guinee-bissau-quiz-4",
     "courseId": "course-geographie-15-guinee-bissau",
     "categoryId": "geo",
-    "lessonId": "course-geographie-15-guinee-bissau-lesson-3",
+    "lessonId": "course-geographie-15-guinee-bissau-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -4993,7 +4993,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-16-liberia:course-geographie-16-liberia-quiz-2",
     "courseId": "course-geographie-16-liberia",
     "categoryId": "geo",
-    "lessonId": "course-geographie-16-liberia-lesson-3",
+    "lessonId": "course-geographie-16-liberia-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5119,7 +5119,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-17-mali:course-geographie-17-mali-quiz-4",
     "courseId": "course-geographie-17-mali",
     "categoryId": "geo",
-    "lessonId": "course-geographie-17-mali-lesson-3",
+    "lessonId": "course-geographie-17-mali-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5191,7 +5191,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-18-niger:course-geographie-18-niger-quiz-3",
     "courseId": "course-geographie-18-niger",
     "categoryId": "geo",
-    "lessonId": "course-geographie-18-niger-lesson-3",
+    "lessonId": "course-geographie-18-niger-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5299,7 +5299,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-4",
     "courseId": "course-geographie-19-nigeria",
     "categoryId": "geo",
-    "lessonId": "course-geographie-19-nigeria-lesson-3",
+    "lessonId": "course-geographie-19-nigeria-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5317,7 +5317,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-19-nigeria:course-geographie-19-nigeria-quiz-5",
     "courseId": "course-geographie-19-nigeria",
     "categoryId": "geo",
-    "lessonId": "course-geographie-19-nigeria-lesson-3",
+    "lessonId": "course-geographie-19-nigeria-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5335,7 +5335,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-20-senegal:course-geographie-20-senegal-quiz-1",
     "courseId": "course-geographie-20-senegal",
     "categoryId": "geo",
-    "lessonId": "course-geographie-20-senegal-lesson-3",
+    "lessonId": "course-geographie-20-senegal-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5347,7 +5347,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
       "Ziguinchor"
     ],
     "correctIndex": 0,
-    "explanation": "Dakar, sur la presqu'île du Cap-Vert, est la capitale du Sénégal et le point le plus à l'ouest de tout le continent africain."
+    "explanation": "Dakar, sur la presqu'île du Cap-Vert, est la capitale du Sénégal. La pointe des Almadies, près de Dakar, est le point le plus occidental du continent africain."
   },
   {
     "key": "course-geographie-20-senegal:course-geographie-20-senegal-quiz-2",
@@ -5357,7 +5357,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "ouest"
     ],
-    "question": "Quel petit pays forme une enclave à l'intérieur du Sénégal ?",
+    "question": "Quel pays s'étire le long d'un fleuve au cœur du territoire sénégalais ?",
     "options": [
       "La Guinée-Bissau",
       "La Gambie",
@@ -5371,7 +5371,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-20-senegal:course-geographie-20-senegal-quiz-3",
     "courseId": "course-geographie-20-senegal",
     "categoryId": "geo",
-    "lessonId": "course-geographie-20-senegal-lesson-2",
+    "lessonId": "course-geographie-20-senegal-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5389,7 +5389,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-20-senegal:course-geographie-20-senegal-quiz-4",
     "courseId": "course-geographie-20-senegal",
     "categoryId": "geo",
-    "lessonId": "course-geographie-20-senegal-lesson-3",
+    "lessonId": "course-geographie-20-senegal-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5461,7 +5461,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-21-sierra-leone:course-geographie-21-sierra-leone-quiz-3",
     "courseId": "course-geographie-21-sierra-leone",
     "categoryId": "geo",
-    "lessonId": "course-geographie-21-sierra-leone-lesson-3",
+    "lessonId": "course-geographie-21-sierra-leone-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5587,7 +5587,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-22-togo:course-geographie-22-togo-quiz-5",
     "courseId": "course-geographie-22-togo",
     "categoryId": "geo",
-    "lessonId": "course-geographie-22-togo-lesson-3",
+    "lessonId": "course-geographie-22-togo-lesson-1",
     "territories": [
       "ouest"
     ],
@@ -5641,7 +5641,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-23-angola:course-geographie-23-angola-quiz-3",
     "courseId": "course-geographie-23-angola",
     "categoryId": "geo",
-    "lessonId": "course-geographie-23-angola-lesson-2",
+    "lessonId": "course-geographie-23-angola-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -5731,7 +5731,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-24-cameroun:course-geographie-24-cameroun-quiz-3",
     "courseId": "course-geographie-24-cameroun",
     "categoryId": "geo",
-    "lessonId": "course-geographie-24-cameroun-lesson-3",
+    "lessonId": "course-geographie-24-cameroun-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -5839,7 +5839,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-25-centrafrique:course-geographie-25-centrafrique-quiz-4",
     "courseId": "course-geographie-25-centrafrique",
     "categoryId": "geo",
-    "lessonId": "course-geographie-25-centrafrique-lesson-3",
+    "lessonId": "course-geographie-25-centrafrique-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -6001,7 +6001,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-27-rd-congo:course-geographie-27-rd-congo-quiz-3",
     "courseId": "course-geographie-27-rd-congo",
     "categoryId": "geo",
-    "lessonId": "course-geographie-27-rd-congo-lesson-2",
+    "lessonId": "course-geographie-27-rd-congo-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -6091,7 +6091,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-28-gabon:course-geographie-28-gabon-quiz-3",
     "courseId": "course-geographie-28-gabon",
     "categoryId": "geo",
-    "lessonId": "course-geographie-28-gabon-lesson-3",
+    "lessonId": "course-geographie-28-gabon-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -6127,7 +6127,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-28-gabon:course-geographie-28-gabon-quiz-5",
     "courseId": "course-geographie-28-gabon",
     "categoryId": "geo",
-    "lessonId": "course-geographie-28-gabon-lesson-3",
+    "lessonId": "course-geographie-28-gabon-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -6149,7 +6149,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Quelle est la langue officielle de la Guinée équatoriale ?",
+    "question": "Quelle langue héritée de la colonisation espagnole est officielle en Guinée équatoriale ?",
     "options": [
       "Le français",
       "L'espagnol",
@@ -6185,7 +6185,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "centrale"
     ],
-    "question": "Sur quelle île se trouve la capitale Malabo ?",
+    "question": "Sur quelle île se trouve l'ancienne capitale Malabo ?",
     "options": [
       "L'île de Bioko",
       "L'île de Zanzibar",
@@ -6199,25 +6199,25 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-29-guinee-equatoriale:course-geographie-29-guinee-equatoriale-quiz-4",
     "courseId": "course-geographie-29-guinee-equatoriale",
     "categoryId": "geo",
-    "lessonId": "course-geographie-29-guinee-equatoriale-lesson-3",
+    "lessonId": "course-geographie-29-guinee-equatoriale-lesson-1",
     "territories": [
       "centrale"
     ],
     "question": "Quelle est la capitale de la Guinée équatoriale ?",
     "options": [
-      "Malabo",
+      "Ciudad de la Paz",
       "Bata",
-      "Ebebiyín",
+      "Malabo",
       "Mongomo"
     ],
     "correctIndex": 0,
-    "explanation": "Malabo, sur l'île de Bioko, est la capitale ; une nouvelle capitale, Ciudad de la Paz, se construit sur le continent."
+    "explanation": "Ciudad de la Paz est la capitale depuis le décret du 2 janvier 2026. Elle se situe sur le continent, tandis que l'ancienne capitale Malabo est sur l'île de Bioko."
   },
   {
     "key": "course-geographie-29-guinee-equatoriale:course-geographie-29-guinee-equatoriale-quiz-5",
     "courseId": "course-geographie-29-guinee-equatoriale",
     "categoryId": "geo",
-    "lessonId": "course-geographie-29-guinee-equatoriale-lesson-3",
+    "lessonId": "course-geographie-29-guinee-equatoriale-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -6289,7 +6289,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-30-sao-tome-et-principe:course-geographie-30-sao-tome-et-principe-quiz-4",
     "courseId": "course-geographie-30-sao-tome-et-principe",
     "categoryId": "geo",
-    "lessonId": "course-geographie-30-sao-tome-et-principe-lesson-2",
+    "lessonId": "course-geographie-30-sao-tome-et-principe-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -6397,7 +6397,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-31-tchad:course-geographie-31-tchad-quiz-5",
     "courseId": "course-geographie-31-tchad",
     "categoryId": "geo",
-    "lessonId": "course-geographie-31-tchad-lesson-3",
+    "lessonId": "course-geographie-31-tchad-lesson-1",
     "territories": [
       "centrale"
     ],
@@ -6469,7 +6469,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-32-burundi:course-geographie-32-burundi-quiz-4",
     "courseId": "course-geographie-32-burundi",
     "categoryId": "geo",
-    "lessonId": "course-geographie-32-burundi-lesson-3",
+    "lessonId": "course-geographie-32-burundi-lesson-1",
     "territories": [
       "est"
     ],
@@ -6559,7 +6559,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-33-comores:course-geographie-33-comores-quiz-4",
     "courseId": "course-geographie-33-comores",
     "categoryId": "geo",
-    "lessonId": "course-geographie-33-comores-lesson-3",
+    "lessonId": "course-geographie-33-comores-lesson-1",
     "territories": [
       "est"
     ],
@@ -6649,7 +6649,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-34-djibouti:course-geographie-34-djibouti-quiz-4",
     "courseId": "course-geographie-34-djibouti",
     "categoryId": "geo",
-    "lessonId": "course-geographie-34-djibouti-lesson-3",
+    "lessonId": "course-geographie-34-djibouti-lesson-1",
     "territories": [
       "est"
     ],
@@ -6721,7 +6721,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-35-erythree:course-geographie-35-erythree-quiz-3",
     "courseId": "course-geographie-35-erythree",
     "categoryId": "geo",
-    "lessonId": "course-geographie-35-erythree-lesson-3",
+    "lessonId": "course-geographie-35-erythree-lesson-1",
     "territories": [
       "est"
     ],
@@ -6757,7 +6757,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-35-erythree:course-geographie-35-erythree-quiz-5",
     "courseId": "course-geographie-35-erythree",
     "categoryId": "geo",
-    "lessonId": "course-geographie-35-erythree-lesson-3",
+    "lessonId": "course-geographie-35-erythree-lesson-1",
     "territories": [
       "est"
     ],
@@ -6811,7 +6811,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-36-ethiopie:course-geographie-36-ethiopie-quiz-3",
     "courseId": "course-geographie-36-ethiopie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-36-ethiopie-lesson-3",
+    "lessonId": "course-geographie-36-ethiopie-lesson-1",
     "territories": [
       "est"
     ],
@@ -6833,15 +6833,15 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "territories": [
       "est"
     ],
-    "question": "Quelle particularité historique distingue l'Éthiopie sur le continent ?",
+    "question": "Quelle victoire de 1896 symbolise la résistance éthiopienne à la conquête italienne ?",
     "options": [
-      "Elle n'a jamais été colonisée",
-      "Elle fut la première république d'Afrique",
-      "Elle est le plus petit pays d'Afrique",
-      "Elle n'a pas de langue officielle"
+      "La victoire d'Adoua",
+      "La bataille d'Isandlwana",
+      "La bataille d'Omdurman",
+      "La bataille de Kirina"
     ],
     "correctIndex": 0,
-    "explanation": "L'Éthiopie a conservé son indépendance, notamment grâce à la victoire d'Adoua contre l'Italie en 1896 — un cas unique sur le continent."
+    "explanation": "À Adoua, en 1896, l'Éthiopie bat l'armée italienne et préserve son indépendance. Elle subira toutefois une occupation italienne de 1936 à 1941."
   },
   {
     "key": "course-geographie-36-ethiopie:course-geographie-36-ethiopie-quiz-5",
@@ -6901,7 +6901,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-37-kenya:course-geographie-37-kenya-quiz-3",
     "courseId": "course-geographie-37-kenya",
     "categoryId": "geo",
-    "lessonId": "course-geographie-37-kenya-lesson-3",
+    "lessonId": "course-geographie-37-kenya-lesson-1",
     "territories": [
       "est"
     ],
@@ -7009,7 +7009,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-38-madagascar:course-geographie-38-madagascar-quiz-4",
     "courseId": "course-geographie-38-madagascar",
     "categoryId": "geo",
-    "lessonId": "course-geographie-38-madagascar-lesson-3",
+    "lessonId": "course-geographie-38-madagascar-lesson-1",
     "territories": [
       "est"
     ],
@@ -7099,7 +7099,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-39-maurice:course-geographie-39-maurice-quiz-4",
     "courseId": "course-geographie-39-maurice",
     "categoryId": "geo",
-    "lessonId": "course-geographie-39-maurice-lesson-3",
+    "lessonId": "course-geographie-39-maurice-lesson-1",
     "territories": [
       "est"
     ],
@@ -7189,7 +7189,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-40-ouganda:course-geographie-40-ouganda-quiz-4",
     "courseId": "course-geographie-40-ouganda",
     "categoryId": "geo",
-    "lessonId": "course-geographie-40-ouganda-lesson-3",
+    "lessonId": "course-geographie-40-ouganda-lesson-1",
     "territories": [
       "est"
     ],
@@ -7261,7 +7261,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-41-rwanda:course-geographie-41-rwanda-quiz-3",
     "courseId": "course-geographie-41-rwanda",
     "categoryId": "geo",
-    "lessonId": "course-geographie-41-rwanda-lesson-3",
+    "lessonId": "course-geographie-41-rwanda-lesson-1",
     "territories": [
       "est"
     ],
@@ -7351,7 +7351,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-42-seychelles:course-geographie-42-seychelles-quiz-3",
     "courseId": "course-geographie-42-seychelles",
     "categoryId": "geo",
-    "lessonId": "course-geographie-42-seychelles-lesson-3",
+    "lessonId": "course-geographie-42-seychelles-lesson-1",
     "territories": [
       "est"
     ],
@@ -7459,7 +7459,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-43-somalie:course-geographie-43-somalie-quiz-4",
     "courseId": "course-geographie-43-somalie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-43-somalie-lesson-3",
+    "lessonId": "course-geographie-43-somalie-lesson-1",
     "territories": [
       "est"
     ],
@@ -7657,7 +7657,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-45-tanzanie:course-geographie-45-tanzanie-quiz-5",
     "courseId": "course-geographie-45-tanzanie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-45-tanzanie-lesson-3",
+    "lessonId": "course-geographie-45-tanzanie-lesson-1",
     "territories": [
       "est"
     ],
@@ -7729,7 +7729,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-46-afrique-du-sud:course-geographie-46-afrique-du-sud-quiz-4",
     "courseId": "course-geographie-46-afrique-du-sud",
     "categoryId": "geo",
-    "lessonId": "course-geographie-46-afrique-du-sud-lesson-3",
+    "lessonId": "course-geographie-46-afrique-du-sud-lesson-1",
     "territories": [
       "australe"
     ],
@@ -7753,13 +7753,13 @@ export const QUIZ_INDEX: QuizEntry[] = [
     ],
     "question": "Combien de langues officielles compte l'Afrique du Sud ?",
     "options": [
-      "Onze",
+      "Douze",
       "Deux",
       "Cinq",
       "Une"
     ],
     "correctIndex": 0,
-    "explanation": "L'Afrique du Sud reconnaît onze langues officielles, un record mondial, symbole de sa diversité."
+    "explanation": "L'Afrique du Sud reconnaît douze langues officielles depuis l'ajout de la langue des signes sud-africaine en juillet 2023."
   },
   {
     "key": "course-geographie-47-botswana:course-geographie-47-botswana-quiz-1",
@@ -7819,7 +7819,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-47-botswana:course-geographie-47-botswana-quiz-4",
     "courseId": "course-geographie-47-botswana",
     "categoryId": "geo",
-    "lessonId": "course-geographie-47-botswana-lesson-3",
+    "lessonId": "course-geographie-47-botswana-lesson-1",
     "territories": [
       "australe"
     ],
@@ -7855,7 +7855,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-48-eswatini:course-geographie-48-eswatini-quiz-1",
     "courseId": "course-geographie-48-eswatini",
     "categoryId": "geo",
-    "lessonId": "course-geographie-48-eswatini-lesson-3",
+    "lessonId": "course-geographie-48-eswatini-lesson-1",
     "territories": [
       "australe"
     ],
@@ -7999,7 +7999,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-4",
     "courseId": "course-geographie-49-lesotho",
     "categoryId": "geo",
-    "lessonId": "course-geographie-49-lesotho-lesson-3",
+    "lessonId": "course-geographie-49-lesotho-lesson-1",
     "territories": [
       "australe"
     ],
@@ -8017,7 +8017,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-49-lesotho:course-geographie-49-lesotho-quiz-5",
     "courseId": "course-geographie-49-lesotho",
     "categoryId": "geo",
-    "lessonId": "course-geographie-49-lesotho-lesson-3",
+    "lessonId": "course-geographie-49-lesotho-lesson-1",
     "territories": [
       "australe"
     ],
@@ -8089,7 +8089,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-50-malawi:course-geographie-50-malawi-quiz-4",
     "courseId": "course-geographie-50-malawi",
     "categoryId": "geo",
-    "lessonId": "course-geographie-50-malawi-lesson-3",
+    "lessonId": "course-geographie-50-malawi-lesson-1",
     "territories": [
       "australe"
     ],
@@ -8179,7 +8179,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-51-mozambique:course-geographie-51-mozambique-quiz-4",
     "courseId": "course-geographie-51-mozambique",
     "categoryId": "geo",
-    "lessonId": "course-geographie-51-mozambique-lesson-3",
+    "lessonId": "course-geographie-51-mozambique-lesson-1",
     "territories": [
       "australe"
     ],
@@ -8269,7 +8269,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-52-namibie:course-geographie-52-namibie-quiz-4",
     "courseId": "course-geographie-52-namibie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-52-namibie-lesson-3",
+    "lessonId": "course-geographie-52-namibie-lesson-1",
     "territories": [
       "australe"
     ],
@@ -8359,7 +8359,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-53-zambie:course-geographie-53-zambie-quiz-4",
     "courseId": "course-geographie-53-zambie",
     "categoryId": "geo",
-    "lessonId": "course-geographie-53-zambie-lesson-2",
+    "lessonId": "course-geographie-53-zambie-lesson-1",
     "territories": [
       "australe"
     ],
@@ -8449,7 +8449,7 @@ export const QUIZ_INDEX: QuizEntry[] = [
     "key": "course-geographie-54-zimbabwe:course-geographie-54-zimbabwe-quiz-4",
     "courseId": "course-geographie-54-zimbabwe",
     "categoryId": "geo",
-    "lessonId": "course-geographie-54-zimbabwe-lesson-3",
+    "lessonId": "course-geographie-54-zimbabwe-lesson-1",
     "territories": [
       "australe"
     ],

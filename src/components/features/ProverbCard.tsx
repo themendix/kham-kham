@@ -1,18 +1,13 @@
-import { Quote } from "lucide-react";
+import { Quote } from "lucide-react-native";
 import type { Proverb } from "@/types";
-import { Card } from "@/components/ui/Card";
+import { HomeCard, HomeText, homeColors } from "./HomeUi";
 
-interface ProverbCardProps {
-  proverb: Proverb;
-}
-
-/** Proverbe africain du jour, stable toute la journée */
-export function ProverbCard({ proverb }: ProverbCardProps) {
+export function ProverbCard({ proverb }: { proverb: Proverb }) {
   return (
-    <Card className="p-6 text-center">
-      <Quote className="mx-auto h-7 w-7 text-primary" fill="currentColor" />
-      <p className="mt-3 font-heading text-lg font-extrabold leading-snug">« {proverb.text} »</p>
-      <p className="mt-2.5 text-sm font-bold text-ink-faint">— {proverb.origin}</p>
-    </Card>
+    <HomeCard style={{ padding: 18, alignItems: "center" }}>
+      <Quote size={28} color={homeColors.primary} fill={homeColors.primary} />
+      <HomeText heading style={{ marginTop: 10, fontSize: 15, lineHeight: 23, textAlign: "center" }}>« {proverb.text} »</HomeText>
+      <HomeText style={{ marginTop: 8, fontSize: 12, fontWeight: "700", textAlign: "center", color: homeColors.faint }}>— {proverb.origin}</HomeText>
+    </HomeCard>
   );
 }

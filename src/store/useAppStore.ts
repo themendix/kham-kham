@@ -1,6 +1,8 @@
+import { cloneProgress } from "@/platform/cloneProgress";
+import { defaultProgressEnvironment } from "@/platform/progressEnvironment";
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
-import { browserProgressEnvironment, createProgressPersistence, PROGRESS_KEY, ProgressError, type CommitResult, type ProgressEnvironment, type ProgressMetadata } from "./progressPersistence";
+import { createProgressPersistence, PROGRESS_KEY, ProgressError, type CommitResult, type ProgressEnvironment, type ProgressMetadata } from "./progressPersistence";
 import type { DailyState, QuizGameMode, QuizGameState, QuizResult, UserProgress } from "@/types";
 import {
   getLevelInfo,
@@ -177,7 +179,7 @@ export function migrate(persistedState: unknown): { progress: UserProgress } {
         favoriteLessonKeys?: string[];
       } }
     | undefined;
-  if (!state?.progress) return { progress: structuredClone(initialProgress) };
+  if (!state?.progress) return { progress: cloneProgress(initialProgress) };
   const { favoriteIds, favoriteCardIds, favoriteLessonKeys, ...rest } = state.progress;
   const favoriteCourseIds = migrateFavoriteCourses({
     ...state.progress,
@@ -488,10 +490,10 @@ const actions = (set: ReduceSet, now: Date) => ({
       setPreferredCategories: (categoryIds: string[]) =>
         set((state) => ({ progress: { ...state.progress, preferredCategoryIds: categoryIds } })),
 });
-export function createAppStore(environment: ProgressEnvironment = browserProgressEnvironment()) {
+export function createAppStore(environment: ProgressEnvironment = defaultProgressEnvironment()) {
   // persist remains the Zustand integration, but never writes a snapshot itself.
   const store = create<AppState>()(persist(() => ({
-    progress: structuredClone(initialProgress), hydrated: false, saving: 0, persistenceError: null, persistenceReadonly: false,
+    progress: cloneProgress(initialProgress), hydrated: false, saving: 0, persistenceError: null, persistenceReadonly: false,
   } as AppState), {
     name: PROGRESS_KEY, version: 11, skipHydration: true,
     partialize: (state) => ({ progress: state.progress }),
@@ -566,7 +568,7 @@ export function createAppStore(environment: ProgressEnvironment = browserProgres
 export const useAppStore = createAppStore();
 
 // These callbacks only refresh confirmed memory; they never write a snapshot back.
-if (typeof window !== "undefined") {
+if (typeof window !== "undefined" && typeof window.addEventListener === "function" && typeof document !== "undefined") {
   const refresh = () => { void useAppStore.getState().refreshPersistence().catch(() => {}); };
   window.addEventListener("storage", (event) => { if (event.key === PROGRESS_KEY) refresh(); });
   document.addEventListener("visibilitychange", () => { if (document.visibilityState === "visible") refresh(); });

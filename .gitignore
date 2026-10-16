@@ -33,3 +33,10 @@ graphify-out/
 # Handoffs de design (prototypes HTML, archives) - materiel de travail local
 /design_handoff_*/
 *.zip
+
+# Expo / React Native (local caches and generated native projects)
+.expo/
+expo-env.d.ts
+/android/
+/ios/
+web/.netlify/

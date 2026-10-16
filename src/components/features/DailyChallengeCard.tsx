@@ -1,45 +1,48 @@
-import { Zap, CheckCircle2 } from "lucide-react";
-import { Card } from "@/components/ui/Card";
-import { Button } from "@/components/ui/Button";
-import { Badge } from "@/components/ui/Badge";
+import { Pressable, StyleSheet, View } from "react-native";
+import { LinearGradient } from "expo-linear-gradient";
+import { Zap, CheckCircle2 } from "lucide-react-native";
 import { DAILY_CHALLENGE_XP_BONUS } from "@/lib/gamification";
+import { HomeCard, HomeText, homeColors, homeStyles } from "./HomeUi";
 
-interface DailyChallengeCardProps {
-  done: boolean;
-  onStart: () => void;
-}
-
-/**
- * Carte d'accroche du Défi du jour sur le Home. Depuis l'absorption du défi par le module Quiz,
- * elle est un **raccourci** vers `/quiz/defi` : le Home garde son point d'entrée quotidien, mais le
- * quiz ne vit plus qu'à un seul endroit.
- */
+interface DailyChallengeCardProps { done: boolean; onStart: () => void }
+/** Home shortcut to the existing daily quiz; the quiz remains on its own screen. */
 export function DailyChallengeCard({ done, onStart }: DailyChallengeCardProps) {
   return (
-    <Card className="overflow-hidden">
-      <div className="flex flex-col gap-4 bg-gradient-to-br from-indigo to-[#5c4b9e] p-5 text-white md:flex-row md:items-center md:justify-between md:p-6">
-        <div className="flex items-center gap-3.5">
-          <div className="grid h-12 w-12 shrink-0 place-items-center rounded-full border-[2.5px] border-ink bg-gold text-ink">
-            <Zap className="h-6 w-6" fill="currentColor" />
-          </div>
-          <div>
-            <h3 className="text-lg font-extrabold">Défi du jour — Quiz éclair</h3>
-            <p className="text-sm font-medium text-white/85">
-              5 questions, dont celles que tu as ratées. Une seule tentative par jour.
-            </p>
-          </div>
-        </div>
-
+    <HomeCard style={{ overflow: "hidden" }}>
+      <LinearGradient colors={[homeColors.indigo, "#5c4b9e"]} start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }} style={StyleSheet.absoluteFill} />
+      <View style={[homeStyles.row, { padding: 12, gap: 10 }]}>
+        <View style={styles.symbol}><Zap size={18} color={homeColors.ink} fill={homeColors.ink} /></View>
+        <View style={homeStyles.flexible}>
+          <HomeText heading accessibilityRole="header" style={{ fontSize: 14, lineHeight: 20, color: homeColors.card }}>Défi du jour</HomeText>
+          <HomeText style={{ fontSize: 12, lineHeight: 18, fontWeight: "700", color: homeColors.card }}>Quiz éclair</HomeText>
+          <HomeText style={{ marginTop: 4, fontSize: 11.5, lineHeight: 17, color: "#ffffffd9" }}>Teste tes connaissances.</HomeText>
+        </View>
         {done ? (
-          <Badge tone="gold">
-            <CheckCircle2 className="h-3.5 w-3.5" /> Défi relevé ✓ — reviens demain
-          </Badge>
+          <View accessible accessibilityLabel="Défi relevé, reviens demain" style={styles.actions}>
+            <CheckCircle2 size={22} color={homeColors.gold} />
+            <HomeText heading style={{ fontSize: 10.5, lineHeight: 16, textAlign: "center", color: homeColors.gold }}>Défi relevé</HomeText>
+            <HomeText style={{ fontSize: 11, lineHeight: 16, color: homeColors.card }}>À demain</HomeText>
+          </View>
         ) : (
-          <Button variant="secondary" onClick={onStart} className="shrink-0">
-            Jouer (＋{DAILY_CHALLENGE_XP_BONUS} XP)
-          </Button>
+          <View style={styles.actions}>
+            <Pressable accessibilityRole="button" accessibilityLabel="Jouer au défi du jour" onPress={onStart} style={styles.playTarget}>
+              {({ pressed }) => (
+                <View pointerEvents="none" style={[styles.playButton, homeStyles.smallShadow, pressed && homeStyles.pressed]}>
+                  <HomeText style={{ fontFamily: "Poppins", fontSize: 12, lineHeight: 18, color: homeColors.card }}>Jouer</HomeText>
+                </View>
+              )}
+            </Pressable>
+            <HomeText style={{ fontSize: 11, lineHeight: 16, fontWeight: "700", color: homeColors.gold }}>＋{DAILY_CHALLENGE_XP_BONUS} XP</HomeText>
+          </View>
         )}
-      </div>
-    </Card>
+      </View>
+    </HomeCard>
   );
 }
+
+const styles = StyleSheet.create({
+  symbol: { width: 36, height: 36, flexShrink: 0, borderRadius: 18, borderWidth: 2, borderColor: homeColors.ink, backgroundColor: homeColors.gold, alignItems: "center", justifyContent: "center" },
+  actions: { width: 80, flexShrink: 0, alignItems: "center", gap: 4 },
+  playTarget: { width: "100%", minHeight: 44 },
+  playButton: { minHeight: 44, paddingHorizontal: 12, borderWidth: 2, borderColor: homeColors.ink, borderRadius: 10, backgroundColor: homeColors.primary, alignItems: "center", justifyContent: "center" },
+});

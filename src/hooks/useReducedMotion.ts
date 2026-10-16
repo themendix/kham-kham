@@ -1,17 +1,12 @@
 import { useEffect, useState } from "react";
-
-const QUERY = "(prefers-reduced-motion: reduce)";
-
-/** Vrai si l'utilisateur a demandé de réduire les animations (préférence système) */
+import { AccessibilityInfo } from "react-native";
 export function useReducedMotion(): boolean {
-  const [reduced, setReduced] = useState(() => window.matchMedia(QUERY).matches);
-
+  const [reduced, setReduced] = useState(false);
   useEffect(() => {
-    const mql = window.matchMedia(QUERY);
-    const handleChange = () => setReduced(mql.matches);
-    mql.addEventListener("change", handleChange);
-    return () => mql.removeEventListener("change", handleChange);
+    let active = true;
+    void AccessibilityInfo.isReduceMotionEnabled().then((value) => { if (active) setReduced(value); });
+    const subscription = AccessibilityInfo.addEventListener("reduceMotionChanged", setReduced);
+    return () => { active = false; subscription.remove(); };
   }, []);
-
   return reduced;
 }

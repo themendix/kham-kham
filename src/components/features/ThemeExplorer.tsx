@@ -1,25 +1,18 @@
-import { Link } from "react-router-dom";
+import { Pressable, ScrollView } from "react-native";
 import type { Category } from "@/types";
-import { SUBJECT_BG } from "@/lib/subjectStyles";
+import { useNavigate } from "@/native/router";
+import { HomeText, homeColors, homeStyles, homeSubjectColors } from "./HomeUi";
 
-interface ThemeExplorerProps {
-  categories: Category[];
-}
-
-/** Rangée de pastilles par matière, chacune ouvrant le tableau de bord de sa matière */
-export function ThemeExplorer({ categories }: ThemeExplorerProps) {
+export function ThemeExplorer({ categories }: { categories: Category[] }) {
+  const navigate = useNavigate();
   return (
-    <div className="scrollbar-none flex gap-3 overflow-x-auto pb-1 md:flex-wrap md:overflow-visible">
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 12, paddingTop: 2, paddingRight: 6, paddingBottom: 8 }}>
       {categories.map((category) => (
-        <Link
-          key={category.id}
-          to={`/biblio/${category.id}`}
-          className={`flex shrink-0 items-center gap-2 rounded-full border-[2.5px] border-ink px-4 py-2.5 font-heading text-sm font-bold shadow-sm transition-transform active:translate-y-[3px] active:shadow-none ${SUBJECT_BG[category.color]}`}
-        >
-          <span className="text-lg">{category.emoji}</span>
-          {category.name}
-        </Link>
+        <Pressable key={category.id} accessibilityRole="link" accessibilityLabel={category.name} onPress={() => navigate(`/biblio/${category.id}`)} style={({ pressed }) => [homeStyles.row, homeStyles.smallShadow, { gap: 8, minHeight: 48, paddingVertical: 10, paddingHorizontal: 16, borderRadius: 999, borderWidth: 2.5, borderColor: homeColors.ink, backgroundColor: homeSubjectColors[category.color] }, pressed && homeStyles.pressed]}>
+          <HomeText style={{ fontSize: 18 }}>{category.emoji}</HomeText>
+          <HomeText heading style={{ fontSize: 12, lineHeight: 18 }}>{category.name}</HomeText>
+        </Pressable>
       ))}
-    </div>
+    </ScrollView>
   );
 }

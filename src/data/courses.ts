@@ -44,7 +44,7 @@ export function getCourseOrWarn(
   options?: { strict?: boolean },
 ): Course | undefined {
   const course = getCourse(id);
-  if (!course && import.meta.env.DEV) {
+  if (!course && __DEV__) {
     const message = `[Sankofa] Référence de cours introuvable : "${id}" (source : ${source}).`;
     if (options?.strict) {
       throw new Error(`${message} Lance "npm run validate" pour détecter ce type d'anomalie avant le build.`);

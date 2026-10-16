@@ -1,3 +1,4 @@
+import { cloneProgress } from "@/platform/cloneProgress";
 import type { UserProgress } from "@/types";
 import { migrateCalendar } from "./calendarMigration";
 
@@ -112,7 +113,7 @@ export function createProgressPersistence(
       return { envelope: { version: 11, state: { progress }, metadata: meta }, imported: raw.version === 10 };
     }
     const legacy = environment.storage.getItem(LEGACY_PROGRESS_KEY);
-    let progress = structuredClone(initial);
+    let progress = cloneProgress(initial);
     if (legacy !== null) {
       const raw: unknown = JSON.parse(legacy);
       if (!record(raw) || !count(raw.version) || Number(raw.version) > 10 || !record(raw.state)) throw new ProgressError("invalid");
@@ -133,7 +134,7 @@ export function createProgressPersistence(
           const { envelope, imported } = read();
           const before = envelope.state.progress;
           const alreadyApplied = !!eventId && envelope.metadata.events.includes(eventId);
-          const progress = reduce && !alreadyApplied ? reduce(structuredClone(before), envelope.metadata) : before;
+          const progress = reduce && !alreadyApplied ? reduce(cloneProgress(before), envelope.metadata) : before;
           validateProgress(progress, false, true);
           if (eventId && !alreadyApplied) envelope.metadata.events.push(eventId);
           if ((imported && importMissing) || (reduce && !alreadyApplied)) {

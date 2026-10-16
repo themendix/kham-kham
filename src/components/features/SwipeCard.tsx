@@ -1,125 +1,63 @@
-import { Link } from "react-router-dom";
-import { X, Check, ArrowRight } from "lucide-react";
+import { Pressable, StyleSheet, View, useWindowDimensions } from "react-native";
+import { X, Check } from "lucide-react-native";
 import type { Category, CourseMeta } from "@/types";
-import { Card } from "@/components/ui/Card";
-import { Tag } from "@/components/ui/Tag";
-import { SUBJECT_GRADIENT } from "@/lib/subjectStyles";
-import { getCourseImage, getCourseImagePosition, OBJECT_POSITION } from "@/lib/courseImages";
+import { NativeBox } from "@/native/elements";
+import { useNavigate } from "@/native/router";
 import { useSwipeGesture } from "@/hooks/useSwipeGesture";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
+import { HomeCard, HomeCategoryTag, HomeCourseArtwork, HomeImageAction, HomeImageShade, HomeText, homeColors, homeStyles } from "./HomeUi";
 
 interface SwipeCardProps {
   course: CourseMeta;
   category: Category;
-  indexLabel: string;
-  /** ✗ — le cours ne sera plus proposé */
+  /** ✗ — le cours ne sera plus proposé. */
   onDismiss: () => void;
-  /** ✓ — le cours est mis de côté dans les favoris */
+  /** ✓ — le cours est mis de côté dans les favoris. */
   onKeep: () => void;
 }
-
-/**
- * Carte de découverte du fil Home : un **cours** du catalogue, montré tel quel — son
- * illustration, sa matière, son titre, sa description — que l'utilisateur met de côté (✓) ou
- * écarte (✗).
- *
- * C'est un outil de tri, pas de lecture : la carte ne déplie aucun contenu et ne valide aucun
- * apprentissage. Elle n'a donc besoin que des métadonnées du cours (`CourseMeta`), jamais du texte
- * de ses leçons. Le bouton favori d'autrefois a disparu : ici le ✓ **est** la mise en favori.
- */
-export function SwipeCard({ course, category, indexLabel, onDismiss, onKeep }: SwipeCardProps) {
+/** Discovery sorts course metadata, without awarding XP or marking a lesson read. */
+export function SwipeCard({ course, category, onDismiss, onKeep }: SwipeCardProps) {
+  const navigate = useNavigate();
+  const { fontScale } = useWindowDimensions();
   const reducedMotion = useReducedMotion();
-  const { ref, isDragging, handlers, triggerCommit } = useSwipeGesture({
-    onCommitLeft: onDismiss,
-    onCommitRight: onKeep,
-    reducedMotion,
-  });
-  const image = getCourseImage(course.id);
-
+  const { ref, handlers, triggerCommit, dragOffset } = useSwipeGesture({ onCommitLeft: onDismiss, onCommitRight: onKeep, reducedMotion });
   return (
-    <div>
-      <div
-        ref={ref}
-        {...handlers}
-        className={`touch-pan-y select-none ${isDragging ? "cursor-grabbing" : "cursor-grab"}`}
-      >
-        <Card className="relative overflow-hidden">
-          <div
-            aria-hidden
-            className="pointer-events-none absolute left-4 top-4 z-10 -rotate-12 rounded-lg border-[3px] border-ink bg-card px-3 py-1 font-heading text-lg font-extrabold text-success"
-            style={{ opacity: "var(--sankofa-learn-opacity, 0)" }}
-          >
-            INTÉRESSÉ ✓
-          </div>
-          <div
-            aria-hidden
-            className="pointer-events-none absolute right-4 top-4 z-10 rotate-12 rounded-lg border-[3px] border-ink bg-card px-3 py-1 font-heading text-lg font-extrabold text-danger"
-            style={{ opacity: "var(--sankofa-pass-opacity, 0)" }}
-          >
-            PAS INTÉRESSÉ ✗
-          </div>
-
-          <div
-            className={`relative flex h-[240px] items-center justify-center overflow-hidden border-b-[3px] border-ink bg-gradient-to-br ${SUBJECT_GRADIENT[category.color]}`}
-          >
-            {image ? (
-              <img
-                src={image.src}
-                srcSet={image.srcSet}
-                sizes="(min-width: 768px) 672px, 100vw"
-                alt=""
-                loading="lazy"
-                className={`absolute inset-0 h-full w-full object-cover ${OBJECT_POSITION[getCourseImagePosition(course.id)]}`}
-              />
-            ) : (
-              <span className="text-[96px] drop-shadow-[3px_4px_0_rgba(0,0,0,0.15)]">
-                {course.emoji}
-              </span>
+    <View>
+      <NativeBox ref={ref} {...handlers}>
+        <HomeCard style={[homeStyles.smallShadow, homeStyles.imageCard, { height: 280 * Math.max(1, fontScale) }]}>
+          <View style={homeStyles.imageClip}>
+            <HomeCourseArtwork course={course} category={category} emojiSize={72} />
+            <View style={{ position: "absolute", top: 12, left: 16, right: 16 }}>
+              <HomeCategoryTag category={category} />
+            </View>
+          <View pointerEvents="none" accessibilityElementsHidden importantForAccessibility="no-hide-descendants" style={{ position: "absolute", left: 12, right: 12, top: 56, zIndex: 1 }}>
+            <HomeText heading style={{ alignSelf: dragOffset >= 0 ? "flex-start" : "flex-end", paddingHorizontal: 12, paddingVertical: 7, borderWidth: 3, borderColor: homeColors.ink, borderRadius: 10, backgroundColor: homeColors.card, color: dragOffset >= 0 ? homeColors.success : homeColors.danger, opacity: Math.min(1, Math.abs(dragOffset) / 100), transform: [{ rotate: dragOffset >= 0 ? "-12deg" : "12deg" }] }}>{dragOffset >= 0 ? "INTÉRESSÉ ✓" : "PAS INTÉRESSÉ ✗"}</HomeText>
+          </View>
+          <View style={homeStyles.imageContent}>
+            <HomeImageShade />
+            <HomeText heading accessibilityRole="header" numberOfLines={2} ellipsizeMode="tail" style={homeStyles.imageTitle}>{course.title}</HomeText>
+            <HomeText numberOfLines={2} ellipsizeMode="tail" style={{ marginTop: 6, fontSize: 13, lineHeight: 19, color: "#ffffffe6" }}>{course.description}</HomeText>
+            <HomeImageAction label="Ouvrir le cours" onPress={() => navigate(`/cours/${course.id}`)} />
+          </View>
+          </View>
+        </HomeCard>
+      </NativeBox>
+      <View style={[homeStyles.row, { justifyContent: "center", gap: 56, marginTop: 16, paddingBottom: 4 }]}>
+        {([{ direction: "left", label: "Pas intéressé", hint: "Ne plus proposer ce cours", color: "#f7b7a8", Icon: X }, { direction: "right", label: "Intéressé", hint: "Ajouter ce cours aux favoris", color: "#a8e6bc", Icon: Check }] as const).map(({ direction, label, hint, color, Icon }) => (
+          <Pressable key={direction} accessibilityRole="button" accessibilityLabel={label} accessibilityHint={hint} onPress={() => triggerCommit(direction)} style={decisionStyles.touchTarget}>
+            {({ pressed }) => (
+              <View pointerEvents="none" style={[decisionStyles.circle, homeStyles.smallShadow, { backgroundColor: color }, pressed && homeStyles.pressed]}>
+                <Icon size={32} strokeWidth={3} color={homeColors.ink} />
+              </View>
             )}
-          </div>
-
-          <div className="px-5 pb-[22px] pt-[18px]">
-            <Tag label={category.name} emoji={category.emoji} variant="dark" />
-            <h3 className="mt-3.5 text-2xl font-extrabold leading-tight">{course.title}</h3>
-            <p className="mt-2 text-[15.5px] font-medium leading-relaxed text-ink-muted">
-              {course.description}
-            </p>
-            <div className="mt-3.5 flex items-center justify-between">
-              <span className="text-[12.5px] font-bold tracking-wide text-ink-faint">
-                {indexLabel}
-              </span>
-              <Link
-                to={`/cours/${course.id}`}
-                onClick={(e) => e.stopPropagation()}
-                className="flex items-center gap-1 text-[12.5px] font-bold text-primary-text"
-              >
-                Ouvrir le cours
-                <ArrowRight className="h-3.5 w-3.5" />
-              </Link>
-            </div>
-          </div>
-        </Card>
-      </div>
-
-      <p className="mt-4 text-center text-[13px] font-semibold text-ink-faint">
-        Glisse la carte, ou utilise les boutons ✗ / ✓
-      </p>
-      <div className="mt-2 flex justify-center gap-14">
-        <button
-          onClick={() => triggerCommit("left")}
-          aria-label="Pas intéressé"
-          className="grid h-[74px] w-[74px] place-items-center rounded-full border-[3px] border-ink bg-[#F7B7A8] text-ink shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
-        >
-          <X className="h-8 w-8" strokeWidth={3} />
-        </button>
-        <button
-          onClick={() => triggerCommit("right")}
-          aria-label="Intéressé"
-          className="grid h-[74px] w-[74px] place-items-center rounded-full border-[3px] border-ink bg-[#A8E6BC] text-ink shadow-sm transition-transform active:translate-y-[3px] active:shadow-none"
-        >
-          <Check className="h-8 w-8" strokeWidth={3} />
-        </button>
-      </div>
-    </div>
+          </Pressable>
+        ))}
+      </View>
+    </View>
   );
 }
+
+const decisionStyles = StyleSheet.create({
+  touchTarget: { width: 74, height: 74 },
+  circle: { width: 74, height: 74, borderRadius: 37, borderWidth: 3, borderColor: homeColors.ink, alignItems: "center", justifyContent: "center" },
+});

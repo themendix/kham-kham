@@ -1,0 +1,4201 @@
+{
+  "source_commit": "90427a58cd65ce7c5384ffb5edfeb9bf0f6a5616",
+  "files": [
+    {
+      "path": "src/data/africaMap.generated.ts",
+      "sha256": "1865c48db79042f69efd67451443b575e38f421d6594e00ea94c3f37bca590a5",
+      "bytes": 39566
+    },
+    {
+      "path": "src/data/categories.ts",
+      "sha256": "5f06c6fbbef7f87e3a524857f173eb253dcf796020db481db1841645a11cb656",
+      "bytes": 1048
+    },
+    {
+      "path": "src/data/courseContent.ts",
+      "sha256": "a55ddc5df8ee3e7a3b62d66967e6c95e21896323c2ee29b1c0d5298cb3b30d69",
+      "bytes": 5654
+    },
+    {
+      "path": "src/data/courseMeta.ts",
+      "sha256": "5c8671df760fdc240fd09d3b5953b3c3c09781af3b94b7d94cac007534cf5392",
+      "bytes": 1146
+    },
+    {
+      "path": "src/data/courses/decouverte.ts",
+      "sha256": "8104f6f1e24719b9337f3e23338c9889bcb8af7339519f5aa3e37bb8b3c960d8",
+      "bytes": 103022
+    },
+    {
+      "path": "src/data/courses/geographie.ts",
+      "sha256": "f01e9064e8ae1cb40aa16e4d28c2798eea5bd1d2be2f39f2a707b09420d84bbe",
+      "bytes": 342958
+    },
+    {
+      "path": "src/data/courses/histoire.ts",
+      "sha256": "6edc16b9f58774f6a19334ec9a5c1af2720c79a7602963caca2d9d8ee9880a70",
+      "bytes": 388890
+    },
+    {
+      "path": "src/data/courses/personnalites.ts",
+      "sha256": "7a6d7623f0044c809845e68e4bd67c3c2d108c471198c1c492a5f7a18fcef5d6",
+      "bytes": 295718
+    },
+    {
+      "path": "src/data/courses.ts",
+      "sha256": "07b28dd95ce86ac8f29be0bb971e1d0b1087d5324e49f404c3bfdcbd0e73f806",
+      "bytes": 2645
+    },
+    {
+      "path": "src/data/coursesIndex.generated.ts",
+      "sha256": "0beed9be36b1b8f21211a15b60f7d8830f4f49a55f8be7f95e7706a825e96401",
+      "bytes": 96236
+    },
+    {
+      "path": "src/data/courseTerritories.ts",
+      "sha256": "77292f8e221c6a994663cb5816b91dc45f86ea05d570443fe83ab0f7a8f79d32",
+      "bytes": 6361
+    },
+    {
+      "path": "src/data/parcours.ts",
+      "sha256": "4e4c22f3a05ab664f82af7e8d00afae08060c17e5cad6b762bd21b21e2702c78",
+      "bytes": 1179,
+      "sha256Lf": "fdbf9a69f7fc552309d42e334aaef3fc32307bdffad10e0b780f5720950c3053"
+    },
+    {
+      "path": "src/data/proverbs.ts",
+      "sha256": "a74ea51a19b97f0cfd51c130d77773ab7afd1fcf3ac542de9c4a902fa0c14ac4",
+      "bytes": 1951
+    },
+    {
+      "path": "src/data/questionTerritories.ts",
+      "sha256": "aa35e15235c20ad41b194eaa28ef7965d9263b20eefe63e7ba23224e07ad1a53",
+      "bytes": 17597
+    },
+    {
+      "path": "src/data/quizIndex.generated.ts",
+      "sha256": "fa571d0efef31e4bf38d400c2395012c71e5046cc8acda553c4fa39d2ddee82e",
+      "bytes": 464788
+    },
+    {
+      "path": "src/data/quizKeys.generated.ts",
+      "sha256": "b7ca822ac0101256604dab3aca26652d984b757b36dd489c5a1be8f3769e7462",
+      "bytes": 54948
+    },
+    {
+      "path": "src/data/quizLessonMap.ts",
+      "sha256": "bf03d1388a7921c66a75f0ecd0db7d4e432e3688f9911b4d5d89bc2e6fabc2bf",
+      "bytes": 41221
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-01-algerie-400w.webp",
+      "sha256": "be463dc988ccf19f250cb2bc3f7eca1af7666984234465fd65b7dedf138e4652",
+      "bytes": 14752
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-01-algerie-800w.webp",
+      "sha256": "f8f4e616388d8a30828e1140e8f094444c71f8b2e61c6578214019978824b07c",
+      "bytes": 34978
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-01-algerie.webp",
+      "sha256": "8e4a0fd1497c47f12f4b923647488079751b9a4d47b98b0eca3e8dfa547bad2d",
+      "bytes": 75092
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-02-egypte-400w.webp",
+      "sha256": "b7664b39b899154caf7658996ac66974f845171bebfabdb4f268a940bdd314cb",
+      "bytes": 9886
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-02-egypte-800w.webp",
+      "sha256": "aeb14088b01225c2d1c42d3dee025743c9bafe14c1b2d81a99138fe6acadf74a",
+      "bytes": 24948
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-02-egypte.webp",
+      "sha256": "1987cb05536ea3d1ed0e58033f3e1eca7491b6194cbdf4ae99f5fea4e02c1e66",
+      "bytes": 53802
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-03-libye-400w.webp",
+      "sha256": "ed4b60b8903d32e8f981eeb16beac99d1ab055b8efa63ebd417c2411a43078c9",
+      "bytes": 15010
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-03-libye-800w.webp",
+      "sha256": "5bf08da5e7a5e36ed5d24f8e4f0331322db077e3c2166817f74e662f664e24c6",
+      "bytes": 37070
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-03-libye.webp",
+      "sha256": "9d604b8b97c56ffa5f989760fbe1189469e3414d1e5c717bc7173106b353edbd",
+      "bytes": 75466
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-04-maroc-400w.webp",
+      "sha256": "0d592c067f149ef07f1a93df35cc567ab49a50fd1907f5341111a9616b841898",
+      "bytes": 14854
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-04-maroc-800w.webp",
+      "sha256": "c3625a4bb69a9f71ba6c397282ed315b0caacdefc08cfc4259a52011063cdcb9",
+      "bytes": 33680
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-04-maroc.webp",
+      "sha256": "4e6b80af09dedce487d391d976f95ca577d38b9ed08075843184da77363bfa6b",
+      "bytes": 70244
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-05-mauritanie-400w.webp",
+      "sha256": "8a4d2745cabb810973bd3f25cb2d39c1c00b479cbf783b9d93346f3c490848df",
+      "bytes": 11012
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-05-mauritanie-800w.webp",
+      "sha256": "f753bc031a65b2bbbf2b49f02435fa259e56e1da24d6cb97715e401925c250d0",
+      "bytes": 23200
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-05-mauritanie.webp",
+      "sha256": "8c3d36cc61121687a88786fd77e93600cf4c4c5130700347bd29211e7bd7ab05",
+      "bytes": 46396
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-06-soudan-400w.webp",
+      "sha256": "8dbbe54216db140e8bd7a87955b5b03b63c9f310414e0060bacde3ca8be27358",
+      "bytes": 12134
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-06-soudan-800w.webp",
+      "sha256": "1f5b0f425d8da0b2272db89fd3ac04ab5c5b3a12d32eeb003b1e31fc6a6063ad",
+      "bytes": 30236
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-06-soudan.webp",
+      "sha256": "fb3ac5b22329596dfddd6f8be6cfc6aadbe14ca7c9b0150649e4c077828dc2ae",
+      "bytes": 64296
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-07-tunisie-400w.webp",
+      "sha256": "6cb2b5518bd32116d6e16f1c420f8598cf8fa3e0828920364c7062c3b7d84ae4",
+      "bytes": 15106
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-07-tunisie-800w.webp",
+      "sha256": "0302053d3ee96957881a1eec96bd665ffc0f4027923b105179e2bf271d642ed0",
+      "bytes": 36830
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-07-tunisie.webp",
+      "sha256": "5896666e1481aa75eabac197ea18a04f40f4a18e72f426a08942cc1b3b355fe4",
+      "bytes": 73954
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-08-benin-400w.webp",
+      "sha256": "269017fb3bfee64f04bf610f092f7096c864460824b6ba863a7cd330d07e3451",
+      "bytes": 9544
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-08-benin-800w.webp",
+      "sha256": "040d5a5aaa8cc6fc53698a2012c4274f820d6c8c249969dd53571a1ffe1646d6",
+      "bytes": 24342
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-08-benin.webp",
+      "sha256": "ff8aa3c9ec6245637c3896f3346c15bc8928a765bd68e153833930215d568b83",
+      "bytes": 55424
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-09-burkina-faso-400w.webp",
+      "sha256": "a26402064eaa6121162c97b49d62024f2a75fc06cc1ec3db66e921ab68ec81c8",
+      "bytes": 14878
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-09-burkina-faso-800w.webp",
+      "sha256": "a248241d1a034c31d0658e5f9b1c71b57d5cf8d4b9f3800c6f04a4f0c67ababc",
+      "bytes": 40498
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-09-burkina-faso.webp",
+      "sha256": "a6bd0b23f1bdafaf5be77ae36dd8e2409bc6a9eae788255421f9c3961656d880",
+      "bytes": 82198
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-10-cap-vert-400w.webp",
+      "sha256": "92dd13977c0eb73eb80ed73913e52a5d69f2d32507107d20c30e3d2214a4c6a1",
+      "bytes": 11716
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-10-cap-vert-800w.webp",
+      "sha256": "7ae66dd1ca2e892cb2e8cf955b149d15e0e090f695178c64efff74272d92a998",
+      "bytes": 25778
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-10-cap-vert.webp",
+      "sha256": "a11a7914bdcc08bf71dcb3a7a5737336bf4fc0a7cb43688592586d81da05231d",
+      "bytes": 51288
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-11-cote-divoire-400w.webp",
+      "sha256": "96f87d8b18695a0c87fbb63f24827b35d2a3220759f49175ff7e205842c090f3",
+      "bytes": 16186
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-11-cote-divoire-800w.webp",
+      "sha256": "dffac3cb098f0df732aba47699aa1e1b718493541c8063a2633942c2eae86bb7",
+      "bytes": 40822
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-11-cote-divoire.webp",
+      "sha256": "e37d46c67ef4e952eef6bacb5b70ace3d33c6e361746dd9b0f5a8af142e81337",
+      "bytes": 83680
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-12-gambie-400w.webp",
+      "sha256": "b24af26755c031709b07228de6fd7b53953496bd8722d8f667c5b3671fb77ba8",
+      "bytes": 11808
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-12-gambie-800w.webp",
+      "sha256": "f560d86e913088dc1f7cb0e6eb5a5ac2d6e2e7e7f43db6b4dd1eadba90c6aa82",
+      "bytes": 27834
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-12-gambie.webp",
+      "sha256": "7342422e1632c05eb963559998c15228e233c91d4b33e3a7e7dfde729be352fb",
+      "bytes": 58822
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-13-ghana-400w.webp",
+      "sha256": "f89dddbccd85ad36d3d9dbd4b5d3886cbbce660580e5c865092b08b18b8ba6be",
+      "bytes": 11498
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-13-ghana-800w.webp",
+      "sha256": "217fe330063cbe95ef6924e9882337e620686e258dddcb602013a1c58f637447",
+      "bytes": 25262
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-13-ghana.webp",
+      "sha256": "63caf93063038bccdb3fb6cb520897d85183341aa5582de340f4e3b756a71c1b",
+      "bytes": 52844
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-14-guinee-400w.webp",
+      "sha256": "08f02db3c01b5d5b0937786521a8ff4cf0362187d4400dd46294d3e941ea3139",
+      "bytes": 9998
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-14-guinee-800w.webp",
+      "sha256": "6df6a2fc7e8364034c9945d0fec8838d8e5c3e241cdcc19d34da5cb8b16257f6",
+      "bytes": 21172
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-14-guinee.webp",
+      "sha256": "aab1e694e52ea77ab5870f7c27391ca0f83a967abb8ca205056e4a31dc5e6fca",
+      "bytes": 46282
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-15-guinee-bissau-400w.webp",
+      "sha256": "9f0676039f8085074f06bcbb6d3e9fcdaf8b9ed8e720b6c60126e1be1d7382c7",
+      "bytes": 12336
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-15-guinee-bissau-800w.webp",
+      "sha256": "62f15211458f1d1bfa953ab9fde133d40294eb7399c2f2d166a5a763fdc95bab",
+      "bytes": 28386
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-15-guinee-bissau.webp",
+      "sha256": "6837280aeec238dd1159d3cd35482fe9b4b1cdb2c444a91d83a2bfbf6b38f94c",
+      "bytes": 63934
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-16-liberia-400w.webp",
+      "sha256": "8e95daa395fa36698423265aaa677b4e3ff7a0acddec18f459eb605ebf6b0486",
+      "bytes": 12754
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-16-liberia-800w.webp",
+      "sha256": "4d34ea55114a4d11b220fd1947ca1e616acad0658e12ffad927caaaae2fce867",
+      "bytes": 28880
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-16-liberia.webp",
+      "sha256": "e8372c473397e264cb86630d84c67e9b8457d1dcb49508b8a35a4bcd42dcf261",
+      "bytes": 64268
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-17-mali-400w.webp",
+      "sha256": "75e12fa9b8204be2d1e3dd211cbafa10b0cc6b05134c5dc54063a25970c0ba14",
+      "bytes": 9726
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-17-mali-800w.webp",
+      "sha256": "8e152e894fc52e335bbd4f0f95f8179bc2d063b7ffe6f8b2545fb2d796138e03",
+      "bytes": 23388
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-17-mali.webp",
+      "sha256": "e251e120175647eeb155d32bbd9fcb8990354c9d3272aa2e35af60ad2672a3ab",
+      "bytes": 51054
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-18-niger-400w.webp",
+      "sha256": "cd04b158c37f6073e16bc65df4029985c2227b5335aaad17629e349807a114c6",
+      "bytes": 7796
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-18-niger-800w.webp",
+      "sha256": "2de44def87d234d41a24b2ef7fd027608e592c978f3f7aa33cf74865fecf975e",
+      "bytes": 16974
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-18-niger.webp",
+      "sha256": "001e5b5aadc19499ec37530bd01128232fcde4da5dcf8b47f2fc06275218b56a",
+      "bytes": 37880
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-19-nigeria-400w.webp",
+      "sha256": "a793a2d28d14104644dc313a2818a5746699feb80c93ac63995cec5914ccf851",
+      "bytes": 14282
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-19-nigeria-800w.webp",
+      "sha256": "8f51489c6b4ed711bb79a3a02febe14a0460c41396db00503e633c5451cdcc0f",
+      "bytes": 34776
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-19-nigeria.webp",
+      "sha256": "6c2abec7856c86aa6a1b28e8170ca618a99a1ec56a3f79274e015ab5c84141e8",
+      "bytes": 69526
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-20-senegal-400w.webp",
+      "sha256": "24633d4caf809ba8f54ff086d1454e132f819512aa2daac18950cd9295d723f6",
+      "bytes": 9738
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-20-senegal-800w.webp",
+      "sha256": "0de067defa45e826d11a39445e9b99f9cf98c6d1cb3d23143d1fcbd8b7a184da",
+      "bytes": 21014
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-20-senegal.webp",
+      "sha256": "5c585d97ff4fb3da8fdbe990dffd6a062c7dfd1946dfd5e67f05496a83d18a6b",
+      "bytes": 43776
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-21-sierra-leone-400w.webp",
+      "sha256": "220337b74d3352f7c60cbe8688d849c9b5df5b5470fea0957280931041f724da",
+      "bytes": 8038
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-21-sierra-leone-800w.webp",
+      "sha256": "1338b63f1877ae395b0b8c5539167608ce6e627c914b08fa94d49fca6e6a49f5",
+      "bytes": 15940
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-21-sierra-leone.webp",
+      "sha256": "00203c2a675a9af13bcfb72cabd4b202353010335b393c81a30cb3d9f0577c41",
+      "bytes": 32062
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-22-togo-400w.webp",
+      "sha256": "49b7b6f5ff2a8bd96ae1ee3abe1fea07698ace8d8a1601d4db9a8a3228052d7c",
+      "bytes": 13016
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-22-togo-800w.webp",
+      "sha256": "d0a0f5bae2b438d5b854c1c15951a2bb7e8f67296d64453291b7160a8775f31c",
+      "bytes": 28238
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-22-togo.webp",
+      "sha256": "230a5678951d7fc255a3caf65dd3e7c33c04a9f1f370c8aec6ce9fb5fd53735f",
+      "bytes": 57244
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-23-angola-400w.webp",
+      "sha256": "4c9b8b6d259037477282f1bc249f17305ab8a0f8ae5886ffeee9474a86bc6201",
+      "bytes": 9676
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-23-angola-800w.webp",
+      "sha256": "e0a2d83090b429018448efd3480e3135cafe0ab31cdb67f0d4fc10a4162b14ff",
+      "bytes": 21128
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-23-angola.webp",
+      "sha256": "4216d089803e47a0b2e5e9781005df83432cff65999856e17d09e18d1481c467",
+      "bytes": 43082
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-24-cameroun-400w.webp",
+      "sha256": "187aa8b48b0f8566049c5c37abbd4399d6f983af8bef91bc4a89ff8fb443c949",
+      "bytes": 7028
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-24-cameroun-800w.webp",
+      "sha256": "edc74aaff0a1b72897e5af95842e45b171f47e30e08e9b51132a42c4073bf7d2",
+      "bytes": 14234
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-24-cameroun.webp",
+      "sha256": "7319b4631bd6e8763fe629a9e697857fa5d9c60682c2d3e6a3eaf011717e74b8",
+      "bytes": 31564
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-25-centrafrique-400w.webp",
+      "sha256": "4f08c044e8dc0edac87adc748b3882b53d3480e66675abc6ca2af5873c01a754",
+      "bytes": 18482
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-25-centrafrique-800w.webp",
+      "sha256": "353b5a71e5fafe13c46b0d8eaa5201432d1cd5175f596cccfdf1c2f85aaa2171",
+      "bytes": 44398
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-25-centrafrique.webp",
+      "sha256": "99e87a9f5708e86f97b7ce3addb3140a5d5362f423fafe101c4af0504105e30d",
+      "bytes": 94750
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-26-congo-brazzaville-400w.webp",
+      "sha256": "5edb75f18d1b88b8e4f25ccfb795635c58ec5e622ee41d47faebe15df4e31e99",
+      "bytes": 16442
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-26-congo-brazzaville-800w.webp",
+      "sha256": "737959ffcd44a12718664b8f6bf9cad684281a29bf10c17ca09fdebd099fbcb6",
+      "bytes": 40888
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-26-congo-brazzaville.webp",
+      "sha256": "b4206c76f324a4666f3bb1868659ef5b585a932c8f44778262f4e29259d2736e",
+      "bytes": 90470
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-27-rd-congo-400w.webp",
+      "sha256": "069da75cc72bd39f43c4390c14406de521f794fb46f8a1d967d36aa756f47ef5",
+      "bytes": 19270
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-27-rd-congo-800w.webp",
+      "sha256": "734509f7181bcbb10a2e747451de04456be6112b45b0c800efef9084ec581842",
+      "bytes": 51876
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-27-rd-congo.webp",
+      "sha256": "f7e8694208e526cc1a082ba63ca7a60ef6de7c619763540a968e4790be9eaa75",
+      "bytes": 108480
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-28-gabon-400w.webp",
+      "sha256": "634d366818a89ea8477ff6c609b20cc65c7e7e628c8b0d13eebcd60d31ced254",
+      "bytes": 19266
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-28-gabon-800w.webp",
+      "sha256": "97683c7870b537f0a98452d64ce0e0c127b9014897206370823d7dd2756cb0d4",
+      "bytes": 45234
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-28-gabon.webp",
+      "sha256": "a77accedcf439628e17da4b1a0fc9185bd22f5929a429b86194042145da649fb",
+      "bytes": 95168
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-29-guinee-equatoriale-400w.webp",
+      "sha256": "5f16c0f482223cab68e9abc0b18b990f32b3498f6a1a2d1c1e6bcae36399a099",
+      "bytes": 12610
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-29-guinee-equatoriale-800w.webp",
+      "sha256": "140b300ab72d60002cc0dc4569f73031ee52597f7f33ec3715f00146e777c5bc",
+      "bytes": 28286
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-29-guinee-equatoriale.webp",
+      "sha256": "5fd6e9c5f6fab805b21e934c5378401cd2c3e23cd7f01356d12bf723e6c5ed0f",
+      "bytes": 56652
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-30-sao-tome-et-principe-400w.webp",
+      "sha256": "8f41fff494ee3e8055619d1601153a9dcb169f0686a08f32fe24b1ae99295081",
+      "bytes": 22708
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-30-sao-tome-et-principe-800w.webp",
+      "sha256": "1c96584dfe12905b679ace3158aaaf60e72ec8c3bc84141f63d40c657afeaf7e",
+      "bytes": 59058
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-30-sao-tome-et-principe.webp",
+      "sha256": "847db474830b302db9fe2e96a7d5234ef860bbfd611d259d238729da5e8e027f",
+      "bytes": 126218
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-31-tchad-400w.webp",
+      "sha256": "7057b1697100dc3277db9f52778eb32c0ed7a7156d6d6e3053eeb7802a135384",
+      "bytes": 12704
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-31-tchad-800w.webp",
+      "sha256": "9f434078e60558bc27ceede4b11a4f4c9d56b369578e16c2f238e1c2a08d53b6",
+      "bytes": 27566
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-31-tchad.webp",
+      "sha256": "b889cfdafa0cbbe0acfce28095e10d1e60f4abfc2072bbf346f1910fe9c0c063",
+      "bytes": 55786
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-32-burundi-400w.webp",
+      "sha256": "f90b57d454d831c39227aca704b6c9beb5738fcb64d882c5ef166a8059569014",
+      "bytes": 14620
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-32-burundi-800w.webp",
+      "sha256": "6b50003a26ab67448f95f74b437fd47c7a8a525ce68a4cc98cf790f762af5858",
+      "bytes": 36280
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-32-burundi.webp",
+      "sha256": "b16b9d3fe67fa53a687a7f498845dd95d5dff2059ffc7f46116019d47cff061f",
+      "bytes": 75688
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-33-comores-400w.webp",
+      "sha256": "edadb21c6eba3c9cecb5c5fc6b3e0894365eb3650ef1c1c3230b3e73e0cf58ca",
+      "bytes": 15750
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-33-comores-800w.webp",
+      "sha256": "30e2bcb210d4e403887939e3b5a4113eae64e970d1a3b650b219d7eadba858aa",
+      "bytes": 36646
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-33-comores.webp",
+      "sha256": "ea9513b29d1f9cb2c9adf24807ac5fb0a730e3e067dc6b8fb84fc85ad283e6d7",
+      "bytes": 76734
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-34-djibouti-400w.webp",
+      "sha256": "b6d3d843cc545e3dd33f4376d20bc6d7557ffc135b0945dae958963d254450df",
+      "bytes": 9130
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-34-djibouti-800w.webp",
+      "sha256": "ab72fc4cc78b03bc57c38ba0032c0023bfe39378b63a5af6f516da90d731d256",
+      "bytes": 21304
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-34-djibouti.webp",
+      "sha256": "b526cfe22fe1cdc5b1a29d4cff289737839f5d2d7c7b930f86ef30e1bb77fdda",
+      "bytes": 49644
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-35-erythree-400w.webp",
+      "sha256": "591d06113bca644f71f636d29cd735715a04007050ae8898ed3429d1619c2c86",
+      "bytes": 8268
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-35-erythree-800w.webp",
+      "sha256": "a3277adfcd1b798f71ea34838bd8047ef7a77b3b06c38249245018b60d871b35",
+      "bytes": 16904
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-35-erythree.webp",
+      "sha256": "96c22aad70a1d2526caebeb77b367c7f28d45ab6e2fbb46f9dd783d248aae50a",
+      "bytes": 36462
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-36-ethiopie-400w.webp",
+      "sha256": "093f3acc76815f8a5f143b7390c6f4c12fc86f9c86a3d824ae99769cf5689185",
+      "bytes": 18490
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-36-ethiopie-800w.webp",
+      "sha256": "6020c63742e1a53ac674a9ca23dba6468bad35c93094ee534d084b55e4686cc0",
+      "bytes": 47724
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-36-ethiopie.webp",
+      "sha256": "b6e330140140c5f821914bc3fb1da581fd1e64c62de6d6e2ae2d31955b09fe09",
+      "bytes": 104632
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-37-kenya-400w.webp",
+      "sha256": "caa7dab1e8cd38b27f48f0124754da6c6ba4d36a464b7987dd75cf4200196ae1",
+      "bytes": 17356
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-37-kenya-800w.webp",
+      "sha256": "109e4c486673cd90465095f51989940834094d7489f972b2e6d8e3e3e9f38f2a",
+      "bytes": 40492
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-37-kenya.webp",
+      "sha256": "4d1245b05e55ba16ad019d3f0d8ccd037eebe356e5955b43d12ec0fbb370cc32",
+      "bytes": 85846
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-38-madagascar-400w.webp",
+      "sha256": "a72248384f02dd0a662a4fee7ff35a46266ee764bd37c7b48fe7a38c30fc5047",
+      "bytes": 15554
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-38-madagascar-800w.webp",
+      "sha256": "88138dda4c20c0d286728d4877eee126f95b1af11df740a138613eca063c4c52",
+      "bytes": 35802
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-38-madagascar.webp",
+      "sha256": "8dc2938b3938505b7a103047fc3af7a0e4b66fea8009b4dfe8abe9b7df095d2b",
+      "bytes": 79652
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-39-maurice-400w.webp",
+      "sha256": "a6549061c6f7a21e19d9621d41b60e5851547d121d99097246ef8d695a352dae",
+      "bytes": 14546
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-39-maurice-800w.webp",
+      "sha256": "90a58de42deb6d645a34921a4eb7de9bdb0ef1c6c036fc3be792ccaaac00786b",
+      "bytes": 33238
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-39-maurice.webp",
+      "sha256": "89a8d48b4da41f2e1a7bd452e7fb1e63b33c960505eb8c2b1b31ab098a507e6a",
+      "bytes": 67068
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-40-ouganda-400w.webp",
+      "sha256": "6a2e0e783d342b764623e62d18c33abc01b1469731fa528439e11030a08b6519",
+      "bytes": 13204
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-40-ouganda-800w.webp",
+      "sha256": "2277c1b0acbe98709c16774ca9a342110532235cda7e5a2f58498ffb1af11a03",
+      "bytes": 30068
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-40-ouganda.webp",
+      "sha256": "02e625bbd8c995f01c0ac1a49bc6bed6dba73fc8ab16875ab94872a64e47e196",
+      "bytes": 61268
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-41-rwanda-400w.webp",
+      "sha256": "39e4ce5a36f0f4010356d4e479c52751c16a17c9c60f14637dcc038e59128583",
+      "bytes": 12746
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-41-rwanda-800w.webp",
+      "sha256": "9c01ab65288c2fdd903acd9733710e1e3699d524a1664be45623b7ebebeb3517",
+      "bytes": 27224
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-41-rwanda.webp",
+      "sha256": "b420e3a88ccb373fef03aa82bf392a75a7e6b1eb353d94e3e0bab362495e1197",
+      "bytes": 58778
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-42-seychelles-400w.webp",
+      "sha256": "c53b0c4bec8232ff40892e2dee4714f2d30799246d092fb60a8bb696ae009e23",
+      "bytes": 11540
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-42-seychelles-800w.webp",
+      "sha256": "ef28ff7b1ae41426a99153495233dee1a0c9de3853acd51633ad6e6e821d690d",
+      "bytes": 25940
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-42-seychelles.webp",
+      "sha256": "212be3e10660c351e0a09add07c1dba0b2bf2e5a0a5dd2db1248f134673a5f55",
+      "bytes": 56054
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-43-somalie-400w.webp",
+      "sha256": "84ac389533b6a86801ce7ebbd2f20dfb454d07d6261b50e75a37b4d8c501b7a2",
+      "bytes": 8554
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-43-somalie-800w.webp",
+      "sha256": "bd43a7a9735caa4ecfe620a3b3df7deddc4c1a5df580fea8d69c7dc871c37956",
+      "bytes": 18808
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-43-somalie.webp",
+      "sha256": "c0fef7a2e8a3beb7652800ade5db2069e8c0fb45bf7a361da2b92e01d0defbd6",
+      "bytes": 43456
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-44-soudan-du-sud-400w.webp",
+      "sha256": "d8c6b9c963e44cd42912227320bad0c893a55f7cb0e3fd501a341c5e3539f33b",
+      "bytes": 15992
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-44-soudan-du-sud-800w.webp",
+      "sha256": "8b296b147af37e80bba9ab227020f11d2f51cd7b1417c61fd354fcb109aeb8c5",
+      "bytes": 40564
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-44-soudan-du-sud.webp",
+      "sha256": "9994e458e41185c8aed4def1c1d5bd47aa97e556994bfb8f467f5183cb6fe8b4",
+      "bytes": 87836
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-45-tanzanie-400w.webp",
+      "sha256": "043d4b07ed633c5e3e1bc9b994f1838d126b954e3661f7215068b6e68f15cffd",
+      "bytes": 9244
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-45-tanzanie-800w.webp",
+      "sha256": "aac0a042137754964fb18f54fdc5f7d3bfe3676110d476622ca4ca9394c8fc06",
+      "bytes": 20818
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-45-tanzanie.webp",
+      "sha256": "651a5def3ac2bd214213f8a4089d826e528e8ef20cf27add0831ea27ec0b9718",
+      "bytes": 40796
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-46-afrique-du-sud-400w.webp",
+      "sha256": "f0361a5bdb1303e8d321fc7b4a35a06f40353512373d11081d5d25cae4edc368",
+      "bytes": 22462
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-46-afrique-du-sud-800w.webp",
+      "sha256": "55f96b458b837dcaf7ac8cee9102d1f889c91de9eb0b54ee508602cb4e7a76c3",
+      "bytes": 53626
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-46-afrique-du-sud.webp",
+      "sha256": "f5204d024b89f49499d07c6347f9aba708b61b8ff8d09f51185bc5a6146f9a1e",
+      "bytes": 108360
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-47-botswana-400w.webp",
+      "sha256": "5f97a4b3d2b4f321db561f7b029911e2690fb3df2c3668adfbddd482a11e30ed",
+      "bytes": 12844
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-47-botswana-800w.webp",
+      "sha256": "721d088c5a21b59c31ba0b775f83546475bd341669a44bcf7fc341708d35d303",
+      "bytes": 27692
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-47-botswana.webp",
+      "sha256": "c976ed00b45d515e97d7ebf3a588b123eacba1f65b5748b415212efaefc6e8ea",
+      "bytes": 61904
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-48-eswatini-400w.webp",
+      "sha256": "9dd94f6c25c8ffee278047f4e4a24db4d4f5129a3e33d7a7b604f35f8db0f10b",
+      "bytes": 10634
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-48-eswatini-800w.webp",
+      "sha256": "b5544a1b90726121540178798ced3ace027057e03d2476a8e5de7a2a308c91dd",
+      "bytes": 23916
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-48-eswatini.webp",
+      "sha256": "45c736772d588a3896e266096a3709dcddd9db249ae848fae0a44efdae5d78e7",
+      "bytes": 53594
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-49-lesotho-400w.webp",
+      "sha256": "b0b6aad5ba66a92c2883fc038777496348d93b891db8ad65d3a0fb144f854442",
+      "bytes": 13210
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-49-lesotho-800w.webp",
+      "sha256": "f9a16a94890e401f3bd8c7437b8b79e9a9a235f41360eccc2422427bdfc7e371",
+      "bytes": 28232
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-49-lesotho.webp",
+      "sha256": "0c293a9fcbded5358994f34b92329e2bdeb9d95c60eb277777b06902149b8f8e",
+      "bytes": 63572
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-50-malawi-400w.webp",
+      "sha256": "6cda711b62e454a735e57cdcb86b96670bd5f81108ac187a68f347abffb6095f",
+      "bytes": 8792
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-50-malawi-800w.webp",
+      "sha256": "95dfa67d480ef64711a6cdf7ed28fc0656293df78c37617e29542ac472e4fbba",
+      "bytes": 18768
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-50-malawi.webp",
+      "sha256": "2e03367e4d4dacef095141676a21766d162eea8b78578582a40a957c16c87d9c",
+      "bytes": 43118
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-51-mozambique-400w.webp",
+      "sha256": "39953b3453f9a1f8d1d041eaed3e382ee24c61cccc13dcb0be75a5d0b1ebce98",
+      "bytes": 11130
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-51-mozambique-800w.webp",
+      "sha256": "faeb6e92de275472d1ea9c3f5996581f219df06a096555cfb4dd1b76f64affd6",
+      "bytes": 24498
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-51-mozambique.webp",
+      "sha256": "8cb00c7776463f1f14d118e7bae14fa5599e3f58a35fb71774bf3ef81a05993e",
+      "bytes": 55322
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-52-namibie-400w.webp",
+      "sha256": "81942fbb31b5ffd51e14621180180ad9b20a2f4e7a0c794e0e84797d02028904",
+      "bytes": 7872
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-52-namibie-800w.webp",
+      "sha256": "82c58b86ffae3c3c02de6d916a2a5fb975e4e3b60b2a9b66ec3ad861760e5fd7",
+      "bytes": 16840
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-52-namibie.webp",
+      "sha256": "7e688b26df62a0c1bdea88e855b90106513751bedad48f31462b08a1a66c4189",
+      "bytes": 38398
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-53-zambie-400w.webp",
+      "sha256": "9ed58363c889bbb238dd48bffaa0ba973340b0abc00f559761897d68d6368fb2",
+      "bytes": 13674
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-53-zambie-800w.webp",
+      "sha256": "89596fea211769cbe49fc43229303c234e3c80a10be29feb53df8601add4f883",
+      "bytes": 28406
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-53-zambie.webp",
+      "sha256": "96b655774699c44408159e76d6b88516ab8d0be9fb49efacbcd744d3ed2806c3",
+      "bytes": 59980
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-54-zimbabwe-400w.webp",
+      "sha256": "63ed5c9e8d4c5dc63f7b7254f5503907775e9f72a558ddf7a71a3930a44c8a6a",
+      "bytes": 14842
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-54-zimbabwe-800w.webp",
+      "sha256": "2bd6ad9be29599a3906270ac6f306a69ed409d3b81fd0f739464ebf08c126b95",
+      "bytes": 35658
+    },
+    {
+      "path": "src/assets/cours/geographie/course-geographie-54-zimbabwe.webp",
+      "sha256": "33b4868a64d0b6343bc064c4ad68fe725c369d1bd8d70137d6e039310b75ef92",
+      "bytes": 78704
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-01-egypte-antique-400w.webp",
+      "sha256": "ec581ebec6973c68d0318ab8b8dba0a3be27a1117ab424cd8c5d49656be31021",
+      "bytes": 19168
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-01-egypte-antique-800w.webp",
+      "sha256": "e0fbd406a6a79d8aada7f5077ee55755c738592e49f5b171b472241239b6939f",
+      "bytes": 47134
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-01-egypte-antique.webp",
+      "sha256": "1fb3d85a8721d05e41fb630b57b7428029dfe1add18c7d6865a6ac84d9e1d134",
+      "bytes": 93678
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-02-koush-meroe-400w.webp",
+      "sha256": "2b27c033eca1a3a7a35c9943aaa52b180baeb6e7bdcac0ef680a43b07de02f01",
+      "bytes": 15938
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-02-koush-meroe-800w.webp",
+      "sha256": "3cc7a292852360c0e608e095f88bb684fd02ad541994e728378fcb7cb9a2f1bc",
+      "bytes": 37970
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-02-koush-meroe.webp",
+      "sha256": "c0c235805b1bbef3a90269af73e9e9e38722594937906f2c7fca7d293caaf5c3",
+      "bytes": 84846
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-03-aksoum-400w.webp",
+      "sha256": "9962b97bdac0e44e8b5ef81c1734353a72709fe05c5d89090bc1d3d1f8ef3a28",
+      "bytes": 15738
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-03-aksoum-800w.webp",
+      "sha256": "f6e0a0ea21d78ca0d847a3f4fabcb40f69707d3a6cd9941a2e5120bd688fcc84",
+      "bytes": 38350
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-03-aksoum.webp",
+      "sha256": "9c079ffc9845a6921baa586bb8cfecb567911d1da56dd92e18fe2279d83fa08e",
+      "bytes": 72184
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-04-carthage-afrique-du-nord-400w.webp",
+      "sha256": "ef33da4bd3d9e980d849a8f8e05a650083461f8eb7b3d0801b7dcfc17d5eba53",
+      "bytes": 14926
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-04-carthage-afrique-du-nord-800w.webp",
+      "sha256": "0b475d373a40dfa8782301a56f31186c9cedbc7690acca618cb0310595f85ddb",
+      "bytes": 37248
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-04-carthage-afrique-du-nord.webp",
+      "sha256": "81365897a044ea79c497b685cf039d51bed2bb3bb8d1b9a0c2773001dc62d6f6",
+      "bytes": 71016
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-05-empire-du-ghana-400w.webp",
+      "sha256": "771811c8002107a519d5835167261b9d77a83f4dafcdd98a4421bd22275367f7",
+      "bytes": 24568
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-05-empire-du-ghana-800w.webp",
+      "sha256": "8a67b33d15a0d78be0012f23ef6fd74594b3f1fb668b3af8e5dba7354ec4916b",
+      "bytes": 60264
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-05-empire-du-ghana.webp",
+      "sha256": "d01a38f76d659a08dd623990bc0a4a75fa3bae6e926c0a0cff6c9fb98d3b211b",
+      "bytes": 112676
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-06-soundiata-mali-400w.webp",
+      "sha256": "7b7b2713d0641bc3b0ae24fdd2b40e1ef27ab52a725f2d4e8c209f3b737ca2db",
+      "bytes": 24886
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-06-soundiata-mali-800w.webp",
+      "sha256": "6ae0180869902704e6aa47b22e9735efa9c980f2675253faf13dbcdd357cea0d",
+      "bytes": 63612
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-06-soundiata-mali.webp",
+      "sha256": "ece0ca0d35aa3a3a193596ebc09ca084c551d9fb09303ff44a127147b9dcb46a",
+      "bytes": 126406
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-07-mansa-moussa-400w.webp",
+      "sha256": "ddd4200cec9d4944cf75f473811d71b86bfcf5428b370015bbb4c70750276c28",
+      "bytes": 15008
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-07-mansa-moussa-800w.webp",
+      "sha256": "4a4fe400967f685096c6864cabddecc77b93449fa3fc649ba0d31bd1a7eccaa9",
+      "bytes": 40062
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-07-mansa-moussa.webp",
+      "sha256": "33949f556f547673126fdd50f8ee7e2616350d56d5c3961e362ebfef3b5980f3",
+      "bytes": 79614
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-08-empire-songhai-400w.webp",
+      "sha256": "dbd674bb79dbbe89aa398e9fd4c7958e3ae11696b9b93f58702bd72b35655822",
+      "bytes": 18962
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-08-empire-songhai-800w.webp",
+      "sha256": "17e50d188095760311783f9038a43b2ffcfd046af4baa4e69e89a0a5de7bcd99",
+      "bytes": 49580
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-08-empire-songhai.webp",
+      "sha256": "c2c552a7a5c5a1a74d1b38414ea484c467f45c7d97708fd8c11b4bf1534b33bc",
+      "bytes": 95340
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-09-tombouctou-djenne-400w.webp",
+      "sha256": "9089003467de999d766122615525a79a819bc245d213b3d3f87a9445f2dbcf13",
+      "bytes": 23580
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-09-tombouctou-djenne-800w.webp",
+      "sha256": "a176302061ec371f76da17353371fdd8114bde0ab0743952b520db60f13b28a4",
+      "bytes": 64712
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-09-tombouctou-djenne.webp",
+      "sha256": "dd066a5e5d053b19186cdfc352a09375a0d5ffdcdf034e9531f37c430eb6f1c8",
+      "bytes": 127142
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-10-kanem-bornou-400w.webp",
+      "sha256": "fcd85cd1ed5fddf160d533cac2805b1f53b8b62baa9df58c2685394fe461438f",
+      "bytes": 27144
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-10-kanem-bornou-800w.webp",
+      "sha256": "cb29f97c206439439e8aafee025430a24f711eebe3da9be1a6bc9834f50645c0",
+      "bytes": 73796
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-10-kanem-bornou.webp",
+      "sha256": "6b6d37525d165ef67145752b2e2c2760d502dff8202a7b40fd12248ce0d35b3c",
+      "bytes": 146910
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-11-cites-etats-haoussa-400w.webp",
+      "sha256": "520beeacfa98b7ad5023052bc564fdb61671c8fd9fec6169f471537a241f31e5",
+      "bytes": 28386
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-11-cites-etats-haoussa-800w.webp",
+      "sha256": "538759f4f9db15b3e79483627b17bb177e253570d941bf34f8a79e0079721e2e",
+      "bytes": 81854
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-11-cites-etats-haoussa.webp",
+      "sha256": "3519bdf57cdcb6c936cf0041b219a893df78bf248ecd20afb862a66aed320f18",
+      "bytes": 162916
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-12-royaume-benin-bronzes-400w.webp",
+      "sha256": "9e57002e32a0a704df4d88ad40a68745e4a6493c6c606f411732345a883f198d",
+      "bytes": 29228
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-12-royaume-benin-bronzes-800w.webp",
+      "sha256": "40e2ffb5c6d0dadcae68a8922542d3a8989f73487f0587f5e815eadf1d4235bf",
+      "bytes": 77808
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-12-royaume-benin-bronzes.webp",
+      "sha256": "e00532aaac3f318b09c3f6fc8c5bde506ba8192dff158bae710da033e6bd7ea4",
+      "bytes": 147534
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-13-empire-oyo-yoruba-400w.webp",
+      "sha256": "68e300caa4d1b505bb70e3d4082c7d9e4387b5cca42c60100ccaa1e707619b85",
+      "bytes": 29108
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-13-empire-oyo-yoruba-800w.webp",
+      "sha256": "d7a111300824eb0e608344ea448a1a5abed27f9f59e3053172fe4bbea1108b7b",
+      "bytes": 80978
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-13-empire-oyo-yoruba.webp",
+      "sha256": "ce3b10ded432a1f5a2df020156cca7d06a8f5a27ab3e1863c2342deb8540151b",
+      "bytes": 155942
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-14-royaume-ashanti-400w.webp",
+      "sha256": "20920c0f7d8aaeac7184b0f80554113e2f315489b1187fd84ef73b78c838364e",
+      "bytes": 28740
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-14-royaume-ashanti-800w.webp",
+      "sha256": "37b7143e63988b0c7ef62bf6d080e2bb3c7d37dd3b53df676e7bd9b4388fa169",
+      "bytes": 76776
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-14-royaume-ashanti.webp",
+      "sha256": "0c2116952e5fa20b9047a9374676825cbcb22149502f1d21d2dd494fb118f767",
+      "bytes": 144546
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-15-royaume-dahomey-400w.webp",
+      "sha256": "aed554331215dbed0a225bed380b574bb2845ec4968673b44a26cbbc6723559c",
+      "bytes": 13654
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-15-royaume-dahomey-800w.webp",
+      "sha256": "ad95f881ec1b50a4f54e7232d6f88491f733de4f4eca74762e803d8dfc3b49b1",
+      "bytes": 34544
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-15-royaume-dahomey.webp",
+      "sha256": "0208d6040ca138dd4bbe262c71e03d960c7b365db5c7cf2dcef3b14345943bd6",
+      "bytes": 66548
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-16-royaume-kongo-400w.webp",
+      "sha256": "c75c0bd8a5d9dd4af4ae3b4ce98354778f31f618c608b1126b0baa1a9ae8851e",
+      "bytes": 15458
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-16-royaume-kongo-800w.webp",
+      "sha256": "39473b40fb56a254afb6d9c83de7eb06e8c7d17f88edbeda2ed5c616e2202dae",
+      "bytes": 39250
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-16-royaume-kongo.webp",
+      "sha256": "3b91e55110bd37a65a6d7905aaa15ad1e3a9902c75b78e7513f5491a1be5e5ff",
+      "bytes": 72800
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-17-grand-zimbabwe-400w.webp",
+      "sha256": "b6413792c0d4acff7be45f05ae2650fbb4821fe3fade50ad6e324efeb56073e1",
+      "bytes": 19378
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-17-grand-zimbabwe-800w.webp",
+      "sha256": "1250a19993babbaeef8f8f96510ef4b74553fcb2f82559380913545fe2836b9a",
+      "bytes": 52400
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-17-grand-zimbabwe.webp",
+      "sha256": "f5a631fe0f15d5db628e1bd9c104f59fe48bd22d509508c9a593b45fc5fc0511",
+      "bytes": 103202
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-18-monomotapa-mutapa-400w.webp",
+      "sha256": "43c91f9062c09ccdc6059f0bd22168940ff05e41f7b06ee90c93054ca27f5f20",
+      "bytes": 25836
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-18-monomotapa-mutapa-800w.webp",
+      "sha256": "64bb2ac3766d0da8899f9d766ab0f7abe97f1e925242930d8468e437ff3a56fc",
+      "bytes": 72128
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-18-monomotapa-mutapa.webp",
+      "sha256": "3e63c01fbb07b98357d58ee26bc6fa8b111d1ccae293f292834f415849032524",
+      "bytes": 152058
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-19-royaumes-grands-lacs-400w.webp",
+      "sha256": "af580a12baacc93edd012508285119f09145514de23344ae7079df55cc67b2c0",
+      "bytes": 23996
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-19-royaumes-grands-lacs-800w.webp",
+      "sha256": "0f56b4f8f94f1220880edba342fb5137efb472cba7704d9ec469172b5a8894fa",
+      "bytes": 70432
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-19-royaumes-grands-lacs.webp",
+      "sha256": "101f6bec36160929fe8f18b5d22fadf48aec32f67ce6797ff0a2c1f5ba90501a",
+      "bytes": 154512
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-20-ethiopie-medievale-lalibela-400w.webp",
+      "sha256": "3d0be100eeec2e8d468c034cebe596394bea92a7b4ebab3f1870b5f046598503",
+      "bytes": 27564
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-20-ethiopie-medievale-lalibela-800w.webp",
+      "sha256": "944360743186d5e96c6e3c1091100c102afcedf8bfce0fa8d8a9e9a67b66f715",
+      "bytes": 72892
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-20-ethiopie-medievale-lalibela.webp",
+      "sha256": "508a77d805a08614af2bc51f2eeea5f34f55468c179a5ba35459218dbffc8987",
+      "bytes": 151824
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-21-commerce-transsaharien-400w.webp",
+      "sha256": "6b5d56978d548a8eb7de34d69d15ecd515969ce8b1515c7a03daf469b10497fc",
+      "bytes": 21518
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-21-commerce-transsaharien-800w.webp",
+      "sha256": "bffe0ab4e4fefc6e0bbb5af3ff90f310d18608f89d9351dd6731f89841fd26a6",
+      "bytes": 56476
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-21-commerce-transsaharien.webp",
+      "sha256": "8219e6a8c32720e8f547b8bb01a08b63ec02abc60aae58fec79e0bdb80554cbc",
+      "bytes": 113804
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-22-islamisation-afrique-ouest-400w.webp",
+      "sha256": "0b846d87b18388a8d8be932cab1badfcd81b0d59ab4fce9cb43d4cb620851042",
+      "bytes": 19966
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-22-islamisation-afrique-ouest-800w.webp",
+      "sha256": "8f02709766bc23eb83aa9b9f6f1c2482c60216675d64f188ee7a74da246e8b8d",
+      "bytes": 52866
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-22-islamisation-afrique-ouest.webp",
+      "sha256": "b5e3cc64c68117a7eb14a00c07148e95a6f399f02f3f03af2157df0c0bd06ed7",
+      "bytes": 105752
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-23-cote-swahilie-400w.webp",
+      "sha256": "d84482c174bc7ad71a38f701e873fc4111f157e16afb4eee5fc4a41e2531a954",
+      "bytes": 26862
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-23-cote-swahilie-800w.webp",
+      "sha256": "f6cc2bf39608fec34988e233f91d36d457395ac4ee5f5e749ec2dc77d910a589",
+      "bytes": 73468
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-23-cote-swahilie.webp",
+      "sha256": "0195d417ba1e7fdd803bdbd6cdb62b2a8044bbbc370641ba222e092a66a5ee92",
+      "bytes": 146864
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-24-traite-negriere-transatlantique-400w.webp",
+      "sha256": "a8b78e6aad72dbf6f8fecfbf3336fc4fe0d20c17970dd3c8da15ebf88e1cda63",
+      "bytes": 8252
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-24-traite-negriere-transatlantique-800w.webp",
+      "sha256": "09f46df377c3889d65948b204367ae8530cbdd86118aaffacb7259a3b5f3e193",
+      "bytes": 18178
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-24-traite-negriere-transatlantique.webp",
+      "sha256": "2f56bb558a0ceb782deea3f78d64bb965b35eedaf6e1a88c8bcbb89715174b6c",
+      "bytes": 39216
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-25-conference-berlin-400w.webp",
+      "sha256": "cc662daf36075f3cec07f74b85ad51f06b3210a0113825802b095ef7d9aa45b2",
+      "bytes": 23044
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-25-conference-berlin-800w.webp",
+      "sha256": "89873be8fa04900ae34c3b1efde0bafc3dd6cb5298c2fa9bbf53da7df945e0a0",
+      "bytes": 58446
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-25-conference-berlin.webp",
+      "sha256": "17d11f2bac79a17d333428c77e70fed44615ae2cc6d7db38908c69cf3e350ea5",
+      "bytes": 111236
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-26-resistances-colonisation-400w.webp",
+      "sha256": "fa7deb52e883302267c3a969c5ebc8f2fb5a9bcc7e6f9ef1c61883d830fa2c77",
+      "bytes": 19184
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-26-resistances-colonisation-800w.webp",
+      "sha256": "a0b77d796c8ed9730faee407ec42d35e2e09fcdb43afa350965dc3b7ed45973b",
+      "bytes": 47154
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-26-resistances-colonisation.webp",
+      "sha256": "c337dfdcea5f6b4f54013734fe69e5e555ac17357bfa36aea36346094595cdeb",
+      "bytes": 91818
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-27-bataille-adoua-400w.webp",
+      "sha256": "b6b2182954ae264401f6a00c7d94752c661d5dc8c31b2849e92fc991c3bc08c6",
+      "bytes": 25042
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-27-bataille-adoua-800w.webp",
+      "sha256": "a46a169188770bf6159627aba20b4e9bc5f09d009306e1b4417f2d67f30d2f17",
+      "bytes": 66426
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-27-bataille-adoua.webp",
+      "sha256": "03daeffd57403477869944988d3dc3031d4670e5f3c26aa6be155eee61291130",
+      "bytes": 130138
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-28-independances-africaines-400w.webp",
+      "sha256": "2344f5cadc4501ae3aa133cd10affb4fc8e83e3843e6170ab95db89fcabf2fec",
+      "bytes": 23938
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-28-independances-africaines-800w.webp",
+      "sha256": "f58c2f59478ced102000da6ac1bf6f3ace08dec15efef2e41dddd810e634c621",
+      "bytes": 57078
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-28-independances-africaines.webp",
+      "sha256": "cca3ff5b7dd8bc33a0c97cf5a94ac5229336541214941c3e9ebe6a1d45b3f164",
+      "bytes": 109958
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-29-panafricanisme-union-africaine-400w.webp",
+      "sha256": "ed6d2f274148e3e48edc1a31ceaab1841b3c2db427d5e83e9d0051add320284c",
+      "bytes": 21334
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-29-panafricanisme-union-africaine-800w.webp",
+      "sha256": "5c565fb07d63c8388f02da0871279b7ba51984499e044294aeb89d2cc32c8b8c",
+      "bytes": 54972
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-29-panafricanisme-union-africaine.webp",
+      "sha256": "cfa1bbc590420342ba34b011a8e2244317e0e3ff573c4f898c274fccdf60d839",
+      "bytes": 110024
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-30-apartheid-mandela-400w.webp",
+      "sha256": "03e463d024c5aab174eebc3c2fce692d61f2f49e534b95b51486af095c17b7fc",
+      "bytes": 26250
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-30-apartheid-mandela-800w.webp",
+      "sha256": "d886db329987ac925f99db502700f931c565e16efd4f089bb70e9ea5cf30cde8",
+      "bytes": 65696
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-30-apartheid-mandela.webp",
+      "sha256": "42abcfd3077fe2a691d4f3f7711855e1ec2e7f4a267e33185b30b440a84a9d62",
+      "bytes": 126632
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-31-tekrour-islam-400w.webp",
+      "sha256": "a443797ed6e504b489746699e016b53f5f063d876c74089275ba9d8d50dffba1",
+      "bytes": 20288
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-31-tekrour-islam-800w.webp",
+      "sha256": "589526615462168f326a77d9b1bd3be16a8a5d382ec3ae587265d3e022c24f62",
+      "bytes": 51766
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-31-tekrour-islam.webp",
+      "sha256": "be20af33f91f5dc2cca03d6fa67f2a94d983b7fcff7b87d8623c8ab946faa166",
+      "bytes": 99014
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-32-djolof-royaumes-wolof-400w.webp",
+      "sha256": "3ad51b64afbf03c167a9279d348be66d70554e9143e8d68fa54956c91058ba07",
+      "bytes": 29256
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-32-djolof-royaumes-wolof-800w.webp",
+      "sha256": "9ef908d640c3ca516a5517bf013db2d1a77dff7a3dd3ed50fa2b01e2b3ea8f14",
+      "bytes": 81788
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-32-djolof-royaumes-wolof.webp",
+      "sha256": "a356e7ad212758d9046d690fe8b05adb3d0c8ff19ee29bebf5bca8cad84ee36b",
+      "bytes": 168652
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-33-royaumes-serer-sine-saloum-400w.webp",
+      "sha256": "f6da54eed228e8b79cf4c2d2a6efe05ec2ed43a0ebcf55ca4256f365b29b3837",
+      "bytes": 18114
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-33-royaumes-serer-sine-saloum-800w.webp",
+      "sha256": "ad55b8169b34dd60113795166d4e5881bc2469a3a34732391d9d272c148acf08",
+      "bytes": 44868
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-33-royaumes-serer-sine-saloum.webp",
+      "sha256": "f44252a3cc5969223e45ab6629cfec72ec3f0835fbfbb94984ec1ed3c7f3f5ac",
+      "bytes": 84972
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-34-goree-saint-louis-400w.webp",
+      "sha256": "f29e6c9af555131681322dfe46f8563ff86595801de1fb9d65dbd1edbcd2a5bf",
+      "bytes": 17104
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-34-goree-saint-louis-800w.webp",
+      "sha256": "fec88f03117a90511ba4a594ad221340fc9d0998d9c4bac3c291ecc854704dde",
+      "bytes": 43134
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-34-goree-saint-louis.webp",
+      "sha256": "30c542f06f627d64cadc770bddee995ddd65a0e3ba1af1e4aa92ed764e62d9bd",
+      "bytes": 82308
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-35-lat-dior-cayor-400w.webp",
+      "sha256": "666982cb0dc5d4bf059552a38ebf84a7a51ba044db2b70f5c971252ca38af6d5",
+      "bytes": 17328
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-35-lat-dior-cayor-800w.webp",
+      "sha256": "104c6df35fc1c11abd5c89ef1aecc2972989dbf3ca9cab6960982f9d7cc67ae3",
+      "bytes": 43186
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-35-lat-dior-cayor.webp",
+      "sha256": "e15f5c2f9d53e4ee7b8bd99bd0292f4589d56164acad6e85c54f68b112f3e640",
+      "bytes": 82426
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-36-cheikh-ahmadou-bamba-mouridisme-400w.webp",
+      "sha256": "ffb9e4a3228bc104a64d552e259ec62a4d86fbc192c114c4574fc733b051e501",
+      "bytes": 8884
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-36-cheikh-ahmadou-bamba-mouridisme-800w.webp",
+      "sha256": "ff1a0f2a405962418602e757eac38e184df7481ff044a40978f7405a9c619539",
+      "bytes": 21710
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-36-cheikh-ahmadou-bamba-mouridisme.webp",
+      "sha256": "73077b187bb89d90f8918764a8960268c64d20934d98786db8a119f316ba8013",
+      "bytes": 41196
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-37-aline-sitoe-diatta-400w.webp",
+      "sha256": "76d2e334248d3477ecdbc7225cfe8bde2dd50f7a9613184c097e651d9b2adcc4",
+      "bytes": 30858
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-37-aline-sitoe-diatta-800w.webp",
+      "sha256": "5dd6374c28ed06ad53ab34d37f7f770773e721584ab8ff4ba29a32b4bd9f7dc6",
+      "bytes": 86788
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-37-aline-sitoe-diatta.webp",
+      "sha256": "279e7e76d20a085ec85c3d639dace805a1167226ba689955d2e3174276d91bb0",
+      "bytes": 175602
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-38-senghor-negritude-independance-400w.webp",
+      "sha256": "7426ef46bbb5df82db616a6b5c187b91f3d4fa3fe352021a590d4256a08a4094",
+      "bytes": 27096
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-38-senghor-negritude-independance-800w.webp",
+      "sha256": "1603f7c14e6e9d532e95e06e6adaeab955adcb9d433ecc281bf5cae667e68a9a",
+      "bytes": 67202
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-38-senghor-negritude-independance.webp",
+      "sha256": "3ff87a8132342663c6c30fc7ce0ab5240ef6483c581e3e0c37b3ffb7821536bf",
+      "bytes": 130318
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-39-reine-nzinga-angola-400w.webp",
+      "sha256": "0f2eeeefbf23f84c906327d657868c3193e599598604c4e0deac2fc2747e19bd",
+      "bytes": 24958
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-39-reine-nzinga-angola-800w.webp",
+      "sha256": "5cfe50737513e8fc06b70f76c1fe6a5ea9c26dd5c16877724303b5371bddfbc1",
+      "bytes": 66800
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-39-reine-nzinga-angola.webp",
+      "sha256": "8e2b321617bb1a1fcbe58ab5c5ec9f7836075d4fda765f9ca3aefb9876005fb2",
+      "bytes": 135810
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-40-chaka-zoulou-400w.webp",
+      "sha256": "50ea8a38cf2a0ef06cb57dbb214152a7e9c52a63250faa396c2d1d05a4a958aa",
+      "bytes": 22672
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-40-chaka-zoulou-800w.webp",
+      "sha256": "56fc38f5cad2b752baa81c1e03c53b5c043fbbc682768faff3c43ba24ca7b5ee",
+      "bytes": 63216
+    },
+    {
+      "path": "src/assets/cours/histoire/course-histoire-40-chaka-zoulou.webp",
+      "sha256": "ca7c4ebcfbf1ebbd641e3faad1249fbd7c82508cc56a12f89d08e76ce0b4de5f",
+      "bytes": 132000
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-01-hatchepsout-400w.webp",
+      "sha256": "341cee5ae98d2d2913a3eddf6fb3216ac215496e792348159f6387d16d7f93a7",
+      "bytes": 24004
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-01-hatchepsout-800w.webp",
+      "sha256": "949c1d7078adce3de69f6ba1517f43a6e0bbd42534186dda619d0443f849c42d",
+      "bytes": 59924
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-01-hatchepsout.webp",
+      "sha256": "580f4ac63a0baec835e25ca69324bd0919f93b9978fe4569e6daf3db6090abcd",
+      "bytes": 130054
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-02-taharqa-400w.webp",
+      "sha256": "cab1d3b0a2def46ae8120c5b8344b4b3ac94706317c067bff00fc94c682c03e6",
+      "bytes": 7664
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-02-taharqa-800w.webp",
+      "sha256": "4ad60c54638690917c25da58d98f470c95be3003fb71595e0f07cbe117b7484d",
+      "bytes": 18358
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-02-taharqa.webp",
+      "sha256": "fb069d11293093c1b12070c75bd00177b6b5b7aba69f778c8e2417f3024a8fbc",
+      "bytes": 40724
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-03-dihya-400w.webp",
+      "sha256": "6280071cf6cfaad30dce083ff9a666b2409fecc992eed05ea74c2a0765ce50a1",
+      "bytes": 24072
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-03-dihya-800w.webp",
+      "sha256": "beab7a1433388c4bf0c21a7ca0198cf7c2b22c99e9838ca2ce90a66352c7d8ff",
+      "bytes": 64044
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-03-dihya.webp",
+      "sha256": "cca5b75155c2f7cfc61402d0ead5e70cc310e6ae693f5739a4d5fbb835b5e22c",
+      "bytes": 142262
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-04-yennenga-400w.webp",
+      "sha256": "a26b0fba81e5c3400bf48b6d02b084919d1c34af9439f491422c68e09a434106",
+      "bytes": 17924
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-04-yennenga-800w.webp",
+      "sha256": "bdcc78d2b4a2f58479fa391c95e1e206e0d803265469b902d495b4d2537cffe8",
+      "bytes": 46654
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-04-yennenga.webp",
+      "sha256": "73b666630d80cd3eb4adb1807719e6ffbe2dacdb537dbf146dfa84e96482eb96",
+      "bytes": 101860
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-05-ibn-khaldoun-400w.webp",
+      "sha256": "fb3bf8b8000a17d4c53560d32ccbe3abd4a293627cd4585a2c617e1f8e17e29e",
+      "bytes": 18846
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-05-ibn-khaldoun-800w.webp",
+      "sha256": "15a4499a017c3cb10116d1cb242bc19891723eba5eeebe2b101c4f2d5b04dd7b",
+      "bytes": 53410
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-05-ibn-khaldoun.webp",
+      "sha256": "13328d9c7f99738c62c0fcf20cb94fce15f686c9611fba2396d24b978f782a77",
+      "bytes": 128748
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-06-sayyida-al-hurra-400w.webp",
+      "sha256": "956ef1f70aace6c40d497f10bdf0e01482bc17ccfcc8e7c44130c531e73d7e1b",
+      "bytes": 18736
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-06-sayyida-al-hurra-800w.webp",
+      "sha256": "e192df73e61d3a20c3cb25bfa5c7a56d6a35a15c32de1e5e7162698d9999ac8d",
+      "bytes": 50294
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-06-sayyida-al-hurra.webp",
+      "sha256": "8d5329472af7a57e2b45841f00a9acf7213afc755061e454b87f469703da76cd",
+      "bytes": 114594
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-07-kimpa-vita-400w.webp",
+      "sha256": "228bd3ef245ee78c17196581ddbde1b1b65faacf37821743d36f65e4ff3bd2b4",
+      "bytes": 18156
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-07-kimpa-vita-800w.webp",
+      "sha256": "78f5b3dab2edbf9aac0bae5f027b2168adaed4d8cf0a6d1549465f1caaa23cad",
+      "bytes": 52710
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-07-kimpa-vita.webp",
+      "sha256": "2e7f6d16a2ba84a310a4dc750f994d21e6e040b7ee26a908166eef967db40734",
+      "bytes": 124984
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-08-nanny-marrons-400w.webp",
+      "sha256": "b9059dbe389166de7a4796242f07a8e54ce927d62579d0f4e04cc56003940f90",
+      "bytes": 14044
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-08-nanny-marrons-800w.webp",
+      "sha256": "0f15a81761fde16955c16cc443a0552c13c2f7888b816658db18e6482fed58c2",
+      "bytes": 32174
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-08-nanny-marrons.webp",
+      "sha256": "e1fd4a4765cd6a87c9b0ff5ac02c1c3778bec3f3b7638fe73eb5fbe0c4c44b59",
+      "bytes": 69916
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-09-toussaint-louverture-400w.webp",
+      "sha256": "195f7be5d123c7a440c068e3950b65d19e59b534b31e963fef36e81ba8748f95",
+      "bytes": 15464
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-09-toussaint-louverture-800w.webp",
+      "sha256": "c1bb77b3b1cae79c17f61536a0c0ae4548deeeea7d4ee4e04fb94a20e09a44e5",
+      "bytes": 39292
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-09-toussaint-louverture.webp",
+      "sha256": "b82ee88b665ea3f962aae6b01fd635034aeff9d18a5a714fe6f9303c2acdddea",
+      "bytes": 84442
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-10-sojourner-truth-400w.webp",
+      "sha256": "1d4f0204eec9bce11159710041c2744569a3be370ed05ffd3c1c94aa1043daa7",
+      "bytes": 10350
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-10-sojourner-truth-800w.webp",
+      "sha256": "6639275075d7e49f99a9d0e15be0936b09b0890d6af5db8029151dfead783db2",
+      "bytes": 26516
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-10-sojourner-truth.webp",
+      "sha256": "7ca040ae408a218c7d3acc33f95fa6f2749254732c1cefac41ec47a5629f7450",
+      "bytes": 58474
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-11-abd-el-kader-400w.webp",
+      "sha256": "e108173f5d819e25cc99875e26e3d6ac1ffb4013e13aa35000a80dc920a91157",
+      "bytes": 21714
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-11-abd-el-kader-800w.webp",
+      "sha256": "94189c5883ab313b9f64540de1aad2c265060ff453c13e30ef4b8515a2b84db9",
+      "bytes": 62358
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-11-abd-el-kader.webp",
+      "sha256": "38352711122605083614e8304444cb3daa94ee3d57f7c49e51041b4ab5cb2958",
+      "bytes": 147814
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-12-samori-toure-400w.webp",
+      "sha256": "00f9ced8d2a12323dc6642a90ef1306ccb0930db1009afe93db9d8b415545378",
+      "bytes": 15422
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-12-samori-toure-800w.webp",
+      "sha256": "43ef1dea7b66a2e62b08467a81e835d9db13385a0913b33b13567884bb661ab1",
+      "bytes": 38434
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-12-samori-toure.webp",
+      "sha256": "329884ba88cf25d142bcbceb37ba2aadb9a627eb8acd5f245570dd0915299200",
+      "bytes": 80308
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-13-taytu-betul-400w.webp",
+      "sha256": "9cff4bc9d3d690b4e2c28f1f7b842384c0e218d38a97d308260afe66299d87c6",
+      "bytes": 12550
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-13-taytu-betul-800w.webp",
+      "sha256": "67066e7501add249c59834a5ca9468fc1ec67ecddb19d9b3ab93cd76dbe5764e",
+      "bytes": 30448
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-13-taytu-betul.webp",
+      "sha256": "1ad92d054e878fb7974a974b34a3be71966bb39b86b7f51cdacf9152e869e064",
+      "bytes": 63666
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-14-yaa-asantewaa-400w.webp",
+      "sha256": "e9dbafb24fc794e9ec304a94a4f418d31c0739efd6ee1f20b5affcb50dafde17",
+      "bytes": 15264
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-14-yaa-asantewaa-800w.webp",
+      "sha256": "d5abc952a7b340135f0b75877f36ce605bfb3628b7ef00aa3b14357b7cacdae6",
+      "bytes": 38744
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-14-yaa-asantewaa.webp",
+      "sha256": "ab3fcc587ca652314378c07aa0e5a4f925f345fc3956ca6f079365ff8ec4ef92",
+      "bytes": 86598
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-15-sarraounia-400w.webp",
+      "sha256": "29873aa77e39cbfa95c965684d68d7bca58fb8291e3e4783c1463bd9b4d2acab",
+      "bytes": 13546
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-15-sarraounia-800w.webp",
+      "sha256": "02df50098e0a16814517a0b4e455e1249eb818d8f00c59aa27baea8c1ac2e2f0",
+      "bytes": 35748
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-15-sarraounia.webp",
+      "sha256": "f7b30037859fae20f4b543d7377a404a54b99325de198129f7d4c3a36ebd11b1",
+      "bytes": 82062
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-16-du-bois-400w.webp",
+      "sha256": "51cf874cd307d72dd7cf52c22f1db749c3902284f145e3ebece3e8d1da5de91c",
+      "bytes": 16106
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-16-du-bois-800w.webp",
+      "sha256": "efa3bb13e4b49c542ecaf88c3d77e2cf11bd622324a65215e69f805952c881a0",
+      "bytes": 37474
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-16-du-bois.webp",
+      "sha256": "08b61310b3fecaf1bde7a7a8546adaa601f73a50be8e23485067878ecc65fa79",
+      "bytes": 80636
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-17-cheikh-anta-diop-400w.webp",
+      "sha256": "943a7b3a1bb3060592537dda9971f27b51f9788ad7786eea80714116bb74f310",
+      "bytes": 8798
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-17-cheikh-anta-diop-800w.webp",
+      "sha256": "ddbf4b4454e487315cd44b8fbc550bc90d60de43a01f9b7711279c63c29faae9",
+      "bytes": 20768
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-17-cheikh-anta-diop.webp",
+      "sha256": "b5c8891be2890ff992cfa1627818f804deb8c0088301b0381564a1acd2f34b1a",
+      "bytes": 44572
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-18-frantz-fanon-400w.webp",
+      "sha256": "c0547fe05629057451e4ddc97ba002f77d3259b846f079329e4da7af51491538",
+      "bytes": 13236
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-18-frantz-fanon-800w.webp",
+      "sha256": "e717ae4a6428b48c5e558bc91a00bcdfe3a10569e8e32cc49f5233e3bf5c0eb4",
+      "bytes": 34370
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-18-frantz-fanon.webp",
+      "sha256": "98dc97c59f4b124d9825b62600c2dc9dcd66d0adc501ce65a51aecd98af1a642",
+      "bytes": 79118
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-19-amilcar-cabral-400w.webp",
+      "sha256": "cf28caf30d4cf1d07571229a38a8deae21a0d6ba65e37c8ddb047d08d723960c",
+      "bytes": 24798
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-19-amilcar-cabral-800w.webp",
+      "sha256": "5b60a6c2dd5707c35292e7ead30672c9c72d347617b420662a33dec63ff26cc5",
+      "bytes": 64678
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-19-amilcar-cabral.webp",
+      "sha256": "ec3605415e95f947d4054677f56b1bc3ff8c9731630b8f0ced49581b834d6248",
+      "bytes": 145586
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-20-agostinho-neto-400w.webp",
+      "sha256": "a4f74a62b4808591773cd8e79771c94f588e7ae54f163f4f7b79de0bb8802b6a",
+      "bytes": 15804
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-20-agostinho-neto-800w.webp",
+      "sha256": "94c4fa7acedc9b3737dbade103cc36ea4476609a178faf5f04a3fd48efb8ff61",
+      "bytes": 40118
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-20-agostinho-neto.webp",
+      "sha256": "ef4bd9626a8470fbbed2d2d0e883c14c20b3f757542b700578828ceda4fb750d",
+      "bytes": 87324
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-21-kwame-nkrumah-400w.webp",
+      "sha256": "a296bb330824ea837439e5d67bdb9dc5f87bb175848969650231b4cb21b43490",
+      "bytes": 11158
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-21-kwame-nkrumah-800w.webp",
+      "sha256": "0a837857547e8725631635f50aeab637820106172d57f98ad619f388f11b2235",
+      "bytes": 27154
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-21-kwame-nkrumah.webp",
+      "sha256": "513445f85ef23902f7b45fa96ac6b8bdd5a28eedc17c8a4c01e107d2a3d72ec9",
+      "bytes": 63536
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-22-julius-nyerere-400w.webp",
+      "sha256": "1cbbe4ae022d1b481f3851de49621ec4877e393736d8b2c21c5a6cbff63e2b78",
+      "bytes": 9556
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-22-julius-nyerere-800w.webp",
+      "sha256": "6231f1d7fcc145eb5dabc369c512af2f7a22d59c343a2c25b4aa750205e559c7",
+      "bytes": 24886
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-22-julius-nyerere.webp",
+      "sha256": "3d757ca499d1c27a78cf4a5503eae0a9786e5774d9b3329ef5eb830ad9eff62f",
+      "bytes": 58478
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-23-haile-selassie-400w.webp",
+      "sha256": "c331b329280a518768119677937dc199a691f96c4ad5bdbe46a2cd63dab1c6c0",
+      "bytes": 16762
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-23-haile-selassie-800w.webp",
+      "sha256": "eec24abc18d52690f128be27092fbc2b334939a772fcb4a049262df770ba7745",
+      "bytes": 41176
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-23-haile-selassie.webp",
+      "sha256": "60b558f868ead41318765e4138e17f5190bc9fa8b07ad356fbba82a939c5edf4",
+      "bytes": 86182
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-24-patrice-lumumba-400w.webp",
+      "sha256": "eb3642539269a744fa0d13c721d267e442e30d5a56f16393edc82814ebcbe806",
+      "bytes": 18366
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-24-patrice-lumumba-800w.webp",
+      "sha256": "643cbe3b37a17dd3b8a74575ca01546655c8d37d265b6f5f9b0f637173e770d6",
+      "bytes": 47926
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-24-patrice-lumumba.webp",
+      "sha256": "7ac4e8bee79ac2b1b7a85885fc8b9b350d6f447c3cc7c8a4cac148525342eb12",
+      "bytes": 103004
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-25-jeanne-martin-cisse-400w.webp",
+      "sha256": "ee459f344c91abd92370021f8508161d83ec2fa9cfc062a835189ef2b4e05a2f",
+      "bytes": 13588
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-25-jeanne-martin-cisse-800w.webp",
+      "sha256": "02a741c91c7c465881d9aa3750525638b535806baba14cf814ee8200d7f7aa21",
+      "bytes": 33426
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-25-jeanne-martin-cisse.webp",
+      "sha256": "69e9910d4f59d444cd6282f54b5fd0a7b94c77d31f409c3312ae87df7d041ff2",
+      "bytes": 72964
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-26-funmilayo-ransome-kuti-400w.webp",
+      "sha256": "192b851f6e397bde3306ba419894d548de94a3ddece58b598f025c988b54cd0a",
+      "bytes": 20684
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-26-funmilayo-ransome-kuti-800w.webp",
+      "sha256": "7fdaefea7284542c9a0bb7fb6cb07ad4c809b26e7e0128031ba56dc48791e415",
+      "bytes": 61630
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-26-funmilayo-ransome-kuti.webp",
+      "sha256": "2ede848d589116d11f2bbabda8560961357e8ee84e84f92527e0457a2d4af05d",
+      "bytes": 149490
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-27-aoua-keita-400w.webp",
+      "sha256": "4bcbf4eeed8f3c77204120c3b620bffb504a2b718a88563bfdaf811772d75311",
+      "bytes": 13704
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-27-aoua-keita-800w.webp",
+      "sha256": "57835661d64ab0f1d7685e39f16327e6645c7c47760397fa0f8f01d91a64ec3b",
+      "bytes": 32360
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-27-aoua-keita.webp",
+      "sha256": "5dce73d330bf40fafd070bdbc99b058c7592b16f6f3fe5e58fff9d97cafee50d",
+      "bytes": 72378
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-28-albertina-sisulu-400w.webp",
+      "sha256": "4b3258d36cce342adf8283ddf4f85c9a3842f17204de253c53b68f3c45e9cf54",
+      "bytes": 21496
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-28-albertina-sisulu-800w.webp",
+      "sha256": "e687f1fc6fe738f038e926c06339b6a3c8a1a6b82b34a228eca71541e5b078c1",
+      "bytes": 63524
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-28-albertina-sisulu.webp",
+      "sha256": "d479204da1426b0ea35ab3aebd150ecd5bd55f7f08567faac7acad594a7a2776",
+      "bytes": 151164
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-29-miriam-makeba-400w.webp",
+      "sha256": "a48a88d2c3d723409c5b5f704fc85f110e6edd8fb37b29c12789518a4ab3e073",
+      "bytes": 14270
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-29-miriam-makeba-800w.webp",
+      "sha256": "346d3a1683b6f0bad0265e611a192a97e5db6d76f52bb1f786795de8f3b26a74",
+      "bytes": 32890
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-29-miriam-makeba.webp",
+      "sha256": "3abb631b395c0ea15672fadd0ae9839b41da182aae4819493619a3dd6780ff5d",
+      "bytes": 70450
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-30-wangari-maathai-400w.webp",
+      "sha256": "c9dac0930a78a2160d193b5be315ddc54c3b0a7fb2d4b3810985507922f7430b",
+      "bytes": 21454
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-30-wangari-maathai-800w.webp",
+      "sha256": "1a2952abd867765f04d02f84b10dd444c1909cd010b8ae461a42f1702ce0da52",
+      "bytes": 57060
+    },
+    {
+      "path": "src/assets/cours/personnalites/course-perso-30-wangari-maathai.webp",
+      "sha256": "e434c9555ce5614ae676763ad8cc6ce2268daa7213de838c4047cc87d57d5abf",
+      "bytes": 126614
+    },
+    {
+      "path": "src/assets/fonts/inter-variable.woff2",
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62",
+      "bytes": 48256
+    },
+    {
+      "path": "src/assets/fonts/poppins-700.woff2",
+      "sha256": "9338e65fc077355c7a87ae0d64cc101e23b9bf8ad78ae65f0f319c857311b526",
+      "bytes": 7816
+    },
+    {
+      "path": "src/assets/fonts/poppins-800.woff2",
+      "sha256": "60bf0aba6526436f3930c58c12047687fbb6bff4dd180cce4613458ed3439ea2",
+      "bytes": 7824
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-01-masques-sculptures-lesson-1-400w.webp",
+      "sha256": "01c6182b7ee6124543505d3ea723a248dd1b0772ee0ac1a33d130f78366fac0e",
+      "bytes": 10828
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-01-masques-sculptures-lesson-1-800w.webp",
+      "sha256": "19b649882514721dea1d01573517ec6336be5eddddbca48454f14c3a07db9c53",
+      "bytes": 32936
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-01-masques-sculptures-lesson-1.webp",
+      "sha256": "985e94403ba570a7ba09c059b0c4cd246f4ac434cd2f78bd753cd0831ce646bd",
+      "bytes": 95292
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-01-masques-sculptures-lesson-2-400w.webp",
+      "sha256": "d2d91292979151ffd2e3e5e5cb1214a0c0863dadd4e7d598fb018e1c61fb7ef7",
+      "bytes": 23524
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-01-masques-sculptures-lesson-2-800w.webp",
+      "sha256": "9070c43ca96de746e29f5525273b8e4717745a4d4625568d4a225c32446ebfe3",
+      "bytes": 77768
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-01-masques-sculptures-lesson-2.webp",
+      "sha256": "10a3160987f4ff71a746677e08a23a29345b15fdb0cb46d262962d85edce1d10",
+      "bytes": 237658
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-01-masques-sculptures-lesson-4-400w.webp",
+      "sha256": "4f558648ce58df76f6a1d915774362aeeac5e80bf3be189ecd31ea443a5c7679",
+      "bytes": 8576
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-01-masques-sculptures-lesson-4-800w.webp",
+      "sha256": "737d82dbc9308e057001cf337886f455b2ef5681ad98c491fb0d4bdb3f266e1a",
+      "bytes": 24210
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-01-masques-sculptures-lesson-4.webp",
+      "sha256": "89f11b9353d2210010f1456600372e630a6f849fdafcc5447001c3636f9c0631",
+      "bytes": 67160
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-1-400w.webp",
+      "sha256": "c3d47bd75ce3e33ea77aca89393d901b260f6577666d04b502cc0908ed7ab249",
+      "bytes": 42994
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-1-800w.webp",
+      "sha256": "7754846afacdcc083c38458d59e513570ce26e5686263e1bca3c0ee1a58fd70e",
+      "bytes": 145926
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-1.webp",
+      "sha256": "c279851a648c77aebb3d6b496dab7a73b456359faa9efeba876c1248e1f5636f",
+      "bytes": 388940
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-2-400w.webp",
+      "sha256": "4a78a451cb1865c05fb526a2209802bd7106ec0d87e9cd160bcddad32cdb2a88",
+      "bytes": 25066
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-2-800w.webp",
+      "sha256": "be3adf13bc1ad1b6123bde2b81ab62da888fef65b53c58f6b0eb4f39134e8dd6",
+      "bytes": 74588
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-2.webp",
+      "sha256": "db1e96d1c0b5dec150eaff1ca9882d5ddc11849a64d58ac4f8d7269367fd2d6d",
+      "bytes": 171162
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-3-400w.webp",
+      "sha256": "41a08143a4f446f0536b65ae23f2611eda69a34f82dae193e02a48a460986dce",
+      "bytes": 42700
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-3-800w.webp",
+      "sha256": "485f82b31ce4f21c10c8f84d67e094cd2627781ce59a63140f4844f08d8d8dce",
+      "bytes": 145786
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-3.webp",
+      "sha256": "1f76d2628d8d20ccd5413106b2ef691246a9d0a60d5de4186988d031e8fbcb76",
+      "bytes": 338100
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-4-400w.webp",
+      "sha256": "a2907dd00b4f73db40a5c6843301c892a44bc00cbb137e6235847dd77a014f91",
+      "bytes": 11550
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-4-800w.webp",
+      "sha256": "a53a0879b41ac945585d9aaf01294880529d29616a1ce3685c7f2a1792d16a32",
+      "bytes": 38266
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-4.webp",
+      "sha256": "a477b1583b73fc4e33265d0eb1f96ebe7e82aabadd7ba695e28c38128a4c63b7",
+      "bytes": 111760
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-5-400w.webp",
+      "sha256": "9086998de749017411e2639f033a81d5adb65cd5be2372a4100105f81e92cf3f",
+      "bytes": 14686
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-5-800w.webp",
+      "sha256": "b4aad02999353905a0d64ff2119c651f2fce90625d8d157a83fb24e7ca27d006",
+      "bytes": 42396
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-02-tissus-parures-lesson-5.webp",
+      "sha256": "913c6522dca2b35b6a4337cceabe28900cac20e894ed58fa9c3bbc505fa3a4ce",
+      "bytes": 141340
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-03-architectures-terre-lesson-1-400w.webp",
+      "sha256": "5d0cf0db58102689339935bd0e6c3074b4258ffcbbb5b54da631b1712653a1bd",
+      "bytes": 12452
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-03-architectures-terre-lesson-1-800w.webp",
+      "sha256": "b95c9e576fcac35af8d8320d93d5765e4f406f3e795221bc0dc77a739e62b63a",
+      "bytes": 38548
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-03-architectures-terre-lesson-1.webp",
+      "sha256": "314eeff41f41ce2c1650aa0842f32ba6077d256f38f067e25503e56b5322e163",
+      "bytes": 110658
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-03-architectures-terre-lesson-3-400w.webp",
+      "sha256": "418a0431384ce3bf806cbb9b0d8f7a4b419789c029fbb30b80e2c312819adf75",
+      "bytes": 24350
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-03-architectures-terre-lesson-3-800w.webp",
+      "sha256": "7f9a904ad7c3f81cc45a4cb4412eb1de91e265d825efe35a87b34b93dbcbff63",
+      "bytes": 79904
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-03-architectures-terre-lesson-3.webp",
+      "sha256": "8de88c5aa214c5e3538d83a0add80c9438a1568160afc08163189031678090a3",
+      "bytes": 200436
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-1-400w.webp",
+      "sha256": "134dad6ff0f8cde1f0941ff74f068d130ca7531c9b7b62053627c6c54ad53d6d",
+      "bytes": 11796
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-1-800w.webp",
+      "sha256": "a71b7b836ddf1f868924164a773ddf3ab00bc9e182828ba74dfc9ff738f0e362",
+      "bytes": 40528
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-1.webp",
+      "sha256": "a7857bc1a6f346f32ec733991dabd2a2807fe3eb222e3dd75c0e40291c8efb1f",
+      "bytes": 116202
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-2-400w.webp",
+      "sha256": "7f6666316563a12ced1072f1eb2df359fb9efc171b08b8cd15c949c33be9930e",
+      "bytes": 11366
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-2-800w.webp",
+      "sha256": "6075e3cc5ccc508782138f7cede3ed60f0c871e74f2ea9c12ecae388f0af0578",
+      "bytes": 30824
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-2.webp",
+      "sha256": "cdc595497962b7eed384804675a7740a62bc87bc93c95c9284cbabc9e17959c1",
+      "bytes": 71704
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-3-400w.webp",
+      "sha256": "dd7c2a2824a5c0ad2fd5c96cee13b4a763439559f1aae5317e76257a0dd469c4",
+      "bytes": 17970
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-3-800w.webp",
+      "sha256": "2abf507d26356fe5e0995d5de5eeefc40608651e5521914ebe583a260b97460c",
+      "bytes": 44146
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-3.webp",
+      "sha256": "5007be3a559fcb64490dc8b975f471f74cb472296f1a5955498af03d499bd8c0",
+      "bytes": 121650
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-5-400w.webp",
+      "sha256": "1cf13bd20b0230dfc917553ecedbe802c675f5d5c7e661a711144f3fd4669932",
+      "bytes": 19240
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-5-800w.webp",
+      "sha256": "990df79bd2a0bdac0f80274120500de97d229990a5b912fd2584893dff9ebbb1",
+      "bytes": 42252
+    },
+    {
+      "path": "src/assets/lecons/course-decouverte-06-litteratures-africaines-lesson-5.webp",
+      "sha256": "ba9539f2ee3a2dcaeca8d4fc84f179d4d5e02a8cbbe58aff6c4f8b93e3b192cd",
+      "bytes": 66326
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-1-400w.webp",
+      "sha256": "9f3ebf2a09d941890369332c053bc848b51ae317c59115f3ad790178afbfe7e2",
+      "bytes": 18700
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-1-800w.webp",
+      "sha256": "ac0e3072ef686456c25f88f0b9149deb18c355373636c4d6f93c412e5702bcaf",
+      "bytes": 76074
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-1.webp",
+      "sha256": "42a40bd1405aa594bd20cdc525851be4c6611f4763e73218b13aa6b6bf61b1b0",
+      "bytes": 230716
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-2-400w.webp",
+      "sha256": "6d5dd2a37a351eda2ab83d38ad860a627185dd5a3cd31904a91b31c102992ac6",
+      "bytes": 33082
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-2-800w.webp",
+      "sha256": "48a8005150c8dc371eae462ab9d940230812112186f08de0f4204cdd2b5a7beb",
+      "bytes": 62984
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-2.webp",
+      "sha256": "31deab909fd8e260977da99fa8e6f898ffb9ef570179e476e95a7dc4194d6567",
+      "bytes": 69986
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-3-400w.webp",
+      "sha256": "1c9ca195a4675761c72dd05e259d243d50ef136aa318959a4d35b8e15c8b3f3c",
+      "bytes": 32820
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-3-800w.webp",
+      "sha256": "eac5cc766ce82b9260e2d8f9b1f2b565716e67a03740558ceb8cb0c3582eb7e3",
+      "bytes": 127440
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-3.webp",
+      "sha256": "6a8e994df50e8804359bcc7af243af4479e22587426307cf96f61c6e849f8016",
+      "bytes": 342078
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-4-400w.webp",
+      "sha256": "e1fe5bdfbd4fd01a6788df0d4e24281880b41dafe65092e3324836ddb5573468",
+      "bytes": 18252
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-4-800w.webp",
+      "sha256": "4460376c53c5b45fd6c079298a3b65a03862351337969a6b20875a85cb158381",
+      "bytes": 56662
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-4.webp",
+      "sha256": "4b2dc4098af28940f099bbbefcf5ad7076a95833a8ef5f67484a4d03f480b6c8",
+      "bytes": 101058
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-5-400w.webp",
+      "sha256": "943b9552fe3734862c4985a261fd26eec3e25c4db2f298b7efe89ba44ea2b04d",
+      "bytes": 39134
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-5-800w.webp",
+      "sha256": "8554289ab5cf9dce650567d0ddf2165929acd69df2ef9688732f18c12d9169bb",
+      "bytes": 183130
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-01-egypte-antique-lesson-5.webp",
+      "sha256": "1afd4eae4f34a1a75e11a178a147ea9857e439ef613ff90062a46b9cee5a3e35",
+      "bytes": 598800
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-1-400w.webp",
+      "sha256": "ef7956f2a3994b02449a6ea906b4b1f296bfb805c94119007b8661b3d3f6f42a",
+      "bytes": 17676
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-1-800w.webp",
+      "sha256": "61c7ae4d0e33db089d2ccb595207a4a5fec9dcf5dc65f386b6f26a9c76dc277d",
+      "bytes": 51878
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-1.webp",
+      "sha256": "b8a4dc038458221cd5002abff96c55842349a30755b4d9a3610ecc73ac89bdd8",
+      "bytes": 166294
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-2-400w.webp",
+      "sha256": "fbce1d17ff94a5ed2aa7f6e80c6e9263b5f4916a36b15fb79f2170001f7e4d7c",
+      "bytes": 38258
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-2-800w.webp",
+      "sha256": "081fe2aac31f95e8734571ecae7ec86c5deae8529ecc91c5fa3871692ea7594a",
+      "bytes": 132906
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-2.webp",
+      "sha256": "67af9ce1b92a4d8e243b947ff24e81c30b906f2f913df8eea5b6b1760fca5484",
+      "bytes": 366354
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-3-400w.webp",
+      "sha256": "7ea1a287d6cd3591588d9c9a54dc875b58bb46fadcc53b595d263c6515f404cb",
+      "bytes": 8690
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-3-800w.webp",
+      "sha256": "08d674c135c38198cbb1c9ad059f40bede2e20c145fdaf777fbb7aee94bab521",
+      "bytes": 32468
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-3.webp",
+      "sha256": "a26afb131ab3b5b8dba7bca54cc3ef91def807d1e6379a8e37ecb07b9c102abb",
+      "bytes": 80690
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-4-400w.webp",
+      "sha256": "ee6443eae0c2452885938c229bfe62dea0e20e4bb6be5696776c9746e6647612",
+      "bytes": 58610
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-4-800w.webp",
+      "sha256": "a18e1e26548af60e30e641b9caf25e4a8a009398048dd1e829f9cae2483186ab",
+      "bytes": 152676
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-4.webp",
+      "sha256": "09f4a2c0d8c130066c232150ae321d1eb23dd443b06440992914043e106ea3a5",
+      "bytes": 262478
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-5-400w.webp",
+      "sha256": "e7b0e03fb1ec9df9f30a9c1a99fc36ea7dbf8d7e25c0ac7a51b9f699003253fe",
+      "bytes": 8074
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-5-800w.webp",
+      "sha256": "092e33805559745f05723e27d08a29198acee4716602de57b4a5bd09aa2adc12",
+      "bytes": 12536
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-02-koush-meroe-lesson-5.webp",
+      "sha256": "c26f98ccbd0f9cc791327b2c6dd45149ff6ec4946ccc9401023ea2a1aa7e140b",
+      "bytes": 13994
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-1-400w.webp",
+      "sha256": "8bf463d633a13a1ff63e8627892b75f654f7e619486ab5864f315045ebbac18c",
+      "bytes": 33740
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-1-800w.webp",
+      "sha256": "8d29d359db627c9cab57cfca4d71a40e2eec313c75f45d08cffcdecf398925a1",
+      "bytes": 106644
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-1.webp",
+      "sha256": "97c526e46514a5df4487185b50ab18df08f1d9fd07d9cb1496ebeb3bd32ae1a2",
+      "bytes": 185400
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-2-400w.webp",
+      "sha256": "628cd41e0276645d097c9e4fe5bdd64d7809e17898905c782ead48de875f0cb9",
+      "bytes": 26722
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-2-800w.webp",
+      "sha256": "17b8beaf900b3dd8d8ca5a04731106443b8848f41a85903d83017314d752e8f3",
+      "bytes": 81270
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-2.webp",
+      "sha256": "7fbb7be98647f93dfe11a70f4de36c2eb096ccc85c1660aacc083c16a493df19",
+      "bytes": 182870
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-3-400w.webp",
+      "sha256": "58442c88c43dd108080e5b7d078c132bea2a3d7050d5ab06b19ddbd12ddbb22e",
+      "bytes": 53556
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-3-800w.webp",
+      "sha256": "7b6a5bea81b146159fa4f9f20d73ff37debfeec4d991631c7a0264fb26eb29f5",
+      "bytes": 187732
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-3.webp",
+      "sha256": "cbf965f43d8b1911c99b1decfabbd4f90f0afac06232283b7b64ac9655dab524",
+      "bytes": 542768
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-4-400w.webp",
+      "sha256": "97d9dd8ef5279caa547497e241864c72e5ccfcd8b107e5dacd0b3dcdde4b944a",
+      "bytes": 16076
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-4-800w.webp",
+      "sha256": "08fa66139658a87412424d846594369812da4403599eb7e700576b1485673183",
+      "bytes": 29752
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-4.webp",
+      "sha256": "6fc13e6117fe79c648f7c213713b2aabe8e51171e03370a352da7d2482eeafb0",
+      "bytes": 33262
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-5-400w.webp",
+      "sha256": "5a54cccf4ab1c58275316d6eceed3303948b4a27c707661da3e52dd0e217d397",
+      "bytes": 41676
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-5-800w.webp",
+      "sha256": "682d5b40ea62b94f67544978dfd7c96b8f96f2fda75840c9acf2a2ade742c5d3",
+      "bytes": 149800
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-03-aksoum-lesson-5.webp",
+      "sha256": "55b189d598ba4f417c6d31acba95746c283de3e4bd370e5ec4c1169aae313b29",
+      "bytes": 452730
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-1-400w.webp",
+      "sha256": "c67c108e884f70f82a3ce32611002587fd0b81775fde7d79f29cfc3c36a9044b",
+      "bytes": 12474
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-1-800w.webp",
+      "sha256": "641363bfcea16b2f37cf6e060906036f1dcf0b18e5280225f6b1a7250cdf758b",
+      "bytes": 33606
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-1.webp",
+      "sha256": "7765bd3bab796ebf519ebea1f665a6843f05c3bc63cd094251fbf864f281f799",
+      "bytes": 72804
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-2-400w.webp",
+      "sha256": "680ac1d8a0c257bae4ad8476615403034c2f34d8c845954cd8889819822f8626",
+      "bytes": 20216
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-2-800w.webp",
+      "sha256": "30ec3108defa4daee90a5980a8dc11baa90738e4aefe4f0733d0bf6d8b7c303f",
+      "bytes": 76286
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-2.webp",
+      "sha256": "a1e313a90af604aff7391a1614aa1e1acd19beb272368feea279aaab2e2c6fe3",
+      "bytes": 213746
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-3-400w.webp",
+      "sha256": "ba5a01895bad400e9ae28293bbc2fae9c0c3d6497488835aa6f082dc0e0a6375",
+      "bytes": 17206
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-3-800w.webp",
+      "sha256": "dd0485d03aedfa38f4b1e8e998a95a779034dbe99dfe710e367e029959a86ba2",
+      "bytes": 44604
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-3.webp",
+      "sha256": "b962e2370a06563477adab6759e2f60f7cbc011d6de5d388640fdabcd812d9d3",
+      "bytes": 92968
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-4-400w.webp",
+      "sha256": "f518ef0a35fb0f5ac25927e7067cf14e1ff57e78ec36a5eba1723ef5d54e4afa",
+      "bytes": 9942
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-4-800w.webp",
+      "sha256": "a613b0cae40641c4146dbf8a80c8ce76376a5b10ef164ee1e441eacf7bd9f041",
+      "bytes": 21304
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-4.webp",
+      "sha256": "42f8c30877e36458610ab500cce9680e9861a1d05a0959aed9f347f4f8197e0a",
+      "bytes": 24396
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-5-400w.webp",
+      "sha256": "c282dabdcd75ff2888b04624b0b58758b3d90ccd1ae7cbc4de0b0404d2b7163c",
+      "bytes": 12858
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-5-800w.webp",
+      "sha256": "2999e7730b7aaaa0f9806cfe44474bdb27849b49045de057f16b7542a8af3f9b",
+      "bytes": 46738
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-04-carthage-afrique-du-nord-lesson-5.webp",
+      "sha256": "2973feac09f74446fec02b75ffbfbbe53993d870cdf808e898b8c51c90d1d40e",
+      "bytes": 125164
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-1-400w.webp",
+      "sha256": "433b04e0c468f0dadd278c8c6f42d8639f9e4679205ca1911189b792d7317098",
+      "bytes": 10426
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-1-800w.webp",
+      "sha256": "2ccef855a400c360b1825cbf6a5117a3fdfa3832f45dabeddbfe28d632219f16",
+      "bytes": 15150
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-1.webp",
+      "sha256": "6d6a9eb0334070a05430a8f0cb2a0bbc483ad64484e237b72546b57b5c3f2c61",
+      "bytes": 16764
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-2-400w.webp",
+      "sha256": "52de746d0fed5d3e9ec5627290aecdee6133b1b1826f823c4168150711713a79",
+      "bytes": 19986
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-2-800w.webp",
+      "sha256": "d911498e5bb15e17923cd1c9a0c4cc0c62ea57a4edd58adebe78f655ce5de99c",
+      "bytes": 57542
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-2.webp",
+      "sha256": "08fa55b3d5afc0c6772eaf6bbaef44034597ce07cf2815df952e1fea4d082864",
+      "bytes": 144944
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-3-400w.webp",
+      "sha256": "f25fc96445b0d2fc1e72ba07579cc5023d4e43df8f49d97d2166bb1175d10813",
+      "bytes": 20358
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-3-800w.webp",
+      "sha256": "c22fb16d8e49794b9df31807b278f49c0c3acfc1a5413827f508210180df5bb4",
+      "bytes": 52326
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-3.webp",
+      "sha256": "6f31b2ce9819ca4087bbbce750920b0562fbf6680f5af51fcc050b72878110b0",
+      "bytes": 56838
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-4-400w.webp",
+      "sha256": "7a2d95a9e6cb6b09a3e29898720f28ab1c940cb6af47dee7ea0030e1df14537e",
+      "bytes": 19018
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-4-800w.webp",
+      "sha256": "81f51aa7e3787ba2b46a7b6e5bb7b6e47fa812d407d004c0cb6cab99714ff671",
+      "bytes": 38970
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-4.webp",
+      "sha256": "98fcc846d9ad6d7fe5eeaf5441073066cd4001bfc7634eb17af728cf8da4f132",
+      "bytes": 69648
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-5-400w.webp",
+      "sha256": "ba3fcfcdb870a6d8d2d2920c1a7155f4bc87ad2a85d2f26cc4c4c8ab2d0086a8",
+      "bytes": 22698
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-5-800w.webp",
+      "sha256": "cd9a616d295905b7e64c177b82c4f1ff605bb200b96677b0450a1c7381399386",
+      "bytes": 102416
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-05-empire-du-ghana-lesson-5.webp",
+      "sha256": "9542437bd7ab851a8861c2225062878a3e53aa5c69f10e810f0c4e841f3be795",
+      "bytes": 286842
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-1-400w.webp",
+      "sha256": "5e25523682ee09e8cf54b8393a9e87d17ba89206fd2cbca4a791cc0fd0339d6f",
+      "bytes": 21064
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-1-800w.webp",
+      "sha256": "995f1bd5b4ad9e1302c8dd0e4250968da3881e24180c0f94a1e0ad85f8e2ac7d",
+      "bytes": 27114
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-1.webp",
+      "sha256": "468e3571b1e96c9795bc9a5029d13faf6cc37b0b5cd818e9af0cebef88d8235d",
+      "bytes": 30078
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-2-400w.webp",
+      "sha256": "81826ff816c7d08401e621c4438843cbfbb0303add72b284ca6a2d9540f7d6c5",
+      "bytes": 19198
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-2-800w.webp",
+      "sha256": "7e63550eaad7c021db789f8ec9eec831784d3d62dea6fcae7e876e97da45b72b",
+      "bytes": 48380
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-2.webp",
+      "sha256": "494b4570982a41a739c54866cdc49b55d7f604b417bf631228673462d64c97a0",
+      "bytes": 93858
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-4-400w.webp",
+      "sha256": "d33b24c865b8e2fe54a1881dd7db797eacc2017955610e8e72a991e43ff5233e",
+      "bytes": 35818
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-4-800w.webp",
+      "sha256": "e16852d0afde6b98c86517981e4bd005d67b5399c7991132367e6d6e90af65fb",
+      "bytes": 93726
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-4.webp",
+      "sha256": "81e86a329df29984d331f4ec51f368a4519a7e9830c4f3ebd1581627bf4073dc",
+      "bytes": 184590
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-5-400w.webp",
+      "sha256": "ed9bbd1b4307c003d8b4dcc86eece866cd0723006a4253ab8be2e95e0a61820f",
+      "bytes": 13254
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-5-800w.webp",
+      "sha256": "3c7f45b4c452536201762e850899c76e808f621196ded7de6ec2a1d77ae332f2",
+      "bytes": 34668
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-06-soundiata-mali-lesson-5.webp",
+      "sha256": "973164a51332f43ffc38b7650bb63b71b7b8bbe80876c5002a89624b21afffde",
+      "bytes": 86108
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-1-400w.webp",
+      "sha256": "a17d17aee57b2c30dce3550bc9b7f26e9659870f4007af13bea2facdf0ac5c69",
+      "bytes": 43404
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-1-800w.webp",
+      "sha256": "51337c02f73515de7d459db947cd4dd9e240cf7f5fffc4c3e213cdf418af95b9",
+      "bytes": 142320
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-1.webp",
+      "sha256": "ea1e7c2a7363f614686c30ddabd96514d82e41c2fbb5e30964b37eae34ef5054",
+      "bytes": 395784
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-2-400w.webp",
+      "sha256": "f308342ad963735e9342b92b35b2d859791453e9ae9201a5f0f8e94c3c9e8736",
+      "bytes": 34680
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-2-800w.webp",
+      "sha256": "70ac1d708accedb0e67dd1d43b5e9d82d192b15a543225b453ecdcabad8d4b02",
+      "bytes": 111212
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-2.webp",
+      "sha256": "b56716f98f8895c0b62c74e54f6db717d8cf99a30f488554d0b444c5671f302c",
+      "bytes": 195268
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-3-400w.webp",
+      "sha256": "e1f62e15e2158ce1e25809d782071a816b61359ab8032996d75d439d2b53e48d",
+      "bytes": 25468
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-3-800w.webp",
+      "sha256": "7b53e4286f40eaa9faa4f4142b69714a821d3035eaa31a58a3f1a6a03f8637e5",
+      "bytes": 85382
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-3.webp",
+      "sha256": "c49f0d248449c9b79a6cdb5256e81162669af9861e801b2534e3704e88581e91",
+      "bytes": 254556
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-4-400w.webp",
+      "sha256": "2bc8e96fb4e6046a09c6fbb1af4c31c32680dd3ed250a93b9afda0bf25ba746c",
+      "bytes": 6352
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-4-800w.webp",
+      "sha256": "0abcb399433853184550d7c2fcfdd4335d08b5d5bcedf76f0e78e5cd41507f6d",
+      "bytes": 21214
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-4.webp",
+      "sha256": "b1621922c0f072e3a3e63d300e5baeed3ed8057773e8c8bc778bd986259f3c15",
+      "bytes": 93268
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-5-400w.webp",
+      "sha256": "b1f218a7d3a2bb143b722c56e519767fed2abc7f4361307c34e88ba93593cc73",
+      "bytes": 26726
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-5-800w.webp",
+      "sha256": "364889829e0ecd60323be37478b2a3080fb9b5641bbd86ab4b0c333faad525da",
+      "bytes": 78456
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-07-mansa-moussa-lesson-5.webp",
+      "sha256": "ac97c2b526214a762dd2033ba78276114e5e86a41fd20f6303a100174cf1b1c1",
+      "bytes": 138400
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-1-400w.webp",
+      "sha256": "205e92aa6dbb71c5b61ba2f9f186a4e2ba6971314a0cadd96828bd3ac342b202",
+      "bytes": 11782
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-1-800w.webp",
+      "sha256": "ca26d1b673658e74bb0ffd7858da3861fcf862cc773092effd3a4dbca12c0325",
+      "bytes": 47886
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-1.webp",
+      "sha256": "43facf2754f20493f28a6a468222820f904b0a86741c7ab69984f1c8904fc622",
+      "bytes": 167834
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-2-400w.webp",
+      "sha256": "beae28fb339702035d715088389163183a74746214ab72905fca94829675595d",
+      "bytes": 9386
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-2-800w.webp",
+      "sha256": "d5056fe68700877d157c1bff951c02c7e23d49acb47cfa0dc1cdf94ae5e9ff9e",
+      "bytes": 19870
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-2.webp",
+      "sha256": "74008fb73eb82519e418c140fd74c24a51f2a28793222f808ad2904404ff467d",
+      "bytes": 36586
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-3-400w.webp",
+      "sha256": "57c96b41f4921418e3f433864ffb4978f6174e4135e0ec4c00f6ea4bdc2cdf50",
+      "bytes": 18510
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-3-800w.webp",
+      "sha256": "5f31c895fc942032b534901392681eddb255a5b7ba7fa488f2c0df0679c57bca",
+      "bytes": 34158
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-3.webp",
+      "sha256": "83be4d4b5f099d75e391be8e3bd612e1ab0891bf34ae65a09daa3561a7775fa5",
+      "bytes": 37658
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-4-400w.webp",
+      "sha256": "730474ecc88d7238dbc5f9a734133b8ade435b737427bd1b3a624cc2e7048d1f",
+      "bytes": 18434
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-4-800w.webp",
+      "sha256": "47a5b220d7d788b390e4294318107760aa3ee3f7e1fbb8b03b32e5476790dfa8",
+      "bytes": 68298
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-4.webp",
+      "sha256": "92ba088347932c74e3fdf2778614dd7fb49d6cbbbb69bdc5bda112e6b0e0f560",
+      "bytes": 148098
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-5-400w.webp",
+      "sha256": "64c531311036315bb5cc2a8ed725f7ed0d6e2aba7a02814044a991d4d89005d6",
+      "bytes": 12394
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-5-800w.webp",
+      "sha256": "791f2d7df51bb8416ecaab1cdf944979d33b884368987fbe5618baf8750e694d",
+      "bytes": 29674
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-08-empire-songhai-lesson-5.webp",
+      "sha256": "2d40ad478be5e617624b8425337ed7672a2efd8ff57098403b4ce1d7337c0f39",
+      "bytes": 56064
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-1-400w.webp",
+      "sha256": "7a2d95a9e6cb6b09a3e29898720f28ab1c940cb6af47dee7ea0030e1df14537e",
+      "bytes": 19018
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-1-800w.webp",
+      "sha256": "81f51aa7e3787ba2b46a7b6e5bb7b6e47fa812d407d004c0cb6cab99714ff671",
+      "bytes": 38970
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-1.webp",
+      "sha256": "98fcc846d9ad6d7fe5eeaf5441073066cd4001bfc7634eb17af728cf8da4f132",
+      "bytes": 69648
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-2-400w.webp",
+      "sha256": "3b98706caeb7c418ba48d96705d39c5eb372b92dafb290cdf3504d9545e5675f",
+      "bytes": 19972
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-2-800w.webp",
+      "sha256": "78d3f4760e18b51e280297db391438a378d74d680d9829fdbd753f2150b44291",
+      "bytes": 58308
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-2.webp",
+      "sha256": "b59fe6c1f9ce3af699998106674a53ff7ded9c83e68c9f3f3b812ac9ef656c6f",
+      "bytes": 155796
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-3-400w.webp",
+      "sha256": "444e14b153fdbc50ad5b49078ec5020db4d96094ef2d38e2c172139d0665a346",
+      "bytes": 31032
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-3-800w.webp",
+      "sha256": "84d752f387ad934bcc4348c51b677cbef707e5d8e9fd42912aac0d80e817de0d",
+      "bytes": 87234
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-3.webp",
+      "sha256": "d55b1fdbda482456b43de95f7f31ddd5532f8e21cc65684371589b8d9412fb34",
+      "bytes": 150958
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-4-400w.webp",
+      "sha256": "765ef9300afa7d770848880ad180408eaf751ee358b8a00971510ac8c5505492",
+      "bytes": 13708
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-4-800w.webp",
+      "sha256": "7f5859451c57de8907f3bf95b45a7e0013d20b2811aa02b7e96f47c2a69682e1",
+      "bytes": 50840
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-4.webp",
+      "sha256": "71fb4081886dee797491c0177dbbcf2296c346f7e01099415e7a135539e62b77",
+      "bytes": 153000
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-5-400w.webp",
+      "sha256": "72cca151f67425806cc1d3890356d106425b10d2ce28c4bbf92b593ebcf59f65",
+      "bytes": 29502
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-5-800w.webp",
+      "sha256": "e8ef8009172eb2949bf202b6009db2e7a77ffdfc9b725967005cdcf663670da9",
+      "bytes": 105658
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-09-tombouctou-djenne-lesson-5.webp",
+      "sha256": "ec036cd16475b43361af5efc0bf690c38f45d8d41a04e678296c31f9fb6862e3",
+      "bytes": 286794
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-1-400w.webp",
+      "sha256": "b10c795acd1f6bf49d875ba86fe9bf5891acd8c5284fd96e5951c3f958c280e4",
+      "bytes": 14354
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-1-800w.webp",
+      "sha256": "b25efeb28b96f932c1c85164f4a29394786507560314018b4cf28242b1e896ce",
+      "bytes": 36202
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-1.webp",
+      "sha256": "202c68c52b4f72e23e2ea50557005fa105afae2e07e8dd54a8dcd34b54f940ee",
+      "bytes": 62722
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-2-400w.webp",
+      "sha256": "c9bf565c628493413905830afe2a301bbc9f101797acfb44c7886eb523e5534d",
+      "bytes": 11530
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-2-800w.webp",
+      "sha256": "07aa7b330e3d31bc901f15b67914556ea22eb39d68805f81ed48bd2e58604f01",
+      "bytes": 29038
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-2.webp",
+      "sha256": "294b960859b6472ff9b8b6eecfb7c3dc18518306280556e091cc68e006b38e2f",
+      "bytes": 41368
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-3-400w.webp",
+      "sha256": "36dca2881273e3f9ecaac3bfb84f350f1db829c917f5b39b51c2172f9aa79abc",
+      "bytes": 10430
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-3-800w.webp",
+      "sha256": "c44c15735ee8747c26e7e8cf2ce9f1b8690388655ac462b7a56448e28c484775",
+      "bytes": 25008
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-3.webp",
+      "sha256": "4ad5073b6e5eff529e8c57a9a443baf9e27bd30a6341fbc5062f0a217aadc82e",
+      "bytes": 50508
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-5-400w.webp",
+      "sha256": "ffbdb075af395ad5e6d5152c3323f483fcaa71e0f10b96624f3459a904a6d819",
+      "bytes": 66454
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-5-800w.webp",
+      "sha256": "4380b73a3a18560fd498c038ea76a20979381eea8badbad740aa2a7b946c10d3",
+      "bytes": 307688
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-10-kanem-bornou-lesson-5.webp",
+      "sha256": "067497580d437528a9cf0507b49b9a421dab9697085740ca683317ade9a576dd",
+      "bytes": 559576
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-11-cites-etats-haoussa-lesson-1-400w.webp",
+      "sha256": "3e4f1962b082c46edb7261df999ccef6103e9e1b8c8708b5d064784f2780a381",
+      "bytes": 13170
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-11-cites-etats-haoussa-lesson-1-800w.webp",
+      "sha256": "8b63a6037384506da0cdb05b403748e68ee136111aa3f42897599c7ee8daedd1",
+      "bytes": 43956
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-11-cites-etats-haoussa-lesson-1.webp",
+      "sha256": "b66ab1ed2ff515c785fcc962e64cbb23129370c31d6cd8ba0805e8b916560b15",
+      "bytes": 80862
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-11-cites-etats-haoussa-lesson-2-400w.webp",
+      "sha256": "46b1eb3aa96563fcd5e6cc6b5d5dbfc183a83eeddee2d324a3c9c1f82e5fcf67",
+      "bytes": 20448
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-11-cites-etats-haoussa-lesson-2-800w.webp",
+      "sha256": "91f0275ae89543e4fc0298be91a994c35e2e21ce4d52ecdca6ea42eca92933fc",
+      "bytes": 57704
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-11-cites-etats-haoussa-lesson-2.webp",
+      "sha256": "e61914d27ddcc943e513478447adea3859ad02e97f6f2a3a0125cdb75f6487f6",
+      "bytes": 160566
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-12-royaume-benin-bronzes-lesson-2-400w.webp",
+      "sha256": "5fb68f54512bcb355db0d4e7a4f7053a4af042df80ae1928c5a7259b9ef7c98a",
+      "bytes": 26874
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-12-royaume-benin-bronzes-lesson-2-800w.webp",
+      "sha256": "bbf366aade7602eefb466d15fcb1f37bfd50f79ff7701474a53e444c05821708",
+      "bytes": 92482
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-12-royaume-benin-bronzes-lesson-2.webp",
+      "sha256": "f120755c92c7b40bfcc2e61b20ed644a78344d94a5fa92d8bdd7d6f012fa1a18",
+      "bytes": 226792
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-12-royaume-benin-bronzes-lesson-3-400w.webp",
+      "sha256": "51498c24775b9aed479c6d9cc183443457ae157e5edd4065708d88b97feb78ba",
+      "bytes": 26524
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-12-royaume-benin-bronzes-lesson-3-800w.webp",
+      "sha256": "77aa1990e21a2644a5eca2900cd8d622e5b5309ca5714c4dc7d854ce811c8a52",
+      "bytes": 93864
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-12-royaume-benin-bronzes-lesson-3.webp",
+      "sha256": "0f7e19ac6b409564a0317f1836f5e207b91df58716a4d68033fb25df9ea0eb3b",
+      "bytes": 275648
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-13-empire-oyo-yoruba-lesson-1-400w.webp",
+      "sha256": "29f77053ea535fef842efa11d1248ac5817be3276ffd527237f6a0e52f3479b8",
+      "bytes": 26920
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-13-empire-oyo-yoruba-lesson-1-800w.webp",
+      "sha256": "4065b7ae604283d965582efe97429815ef386f31e2ee6fcc40491ea67f0ffe03",
+      "bytes": 84760
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-13-empire-oyo-yoruba-lesson-1.webp",
+      "sha256": "1e694e641efe0d1b3336167613ddf4a9e2cb7cfc0cbc3a7c79bab7b46be6aafa",
+      "bytes": 180780
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-13-empire-oyo-yoruba-lesson-2-400w.webp",
+      "sha256": "3ee02a130b79afae2d8581bbc2f9f18733ead8224c432faf96471a441ceb8a3a",
+      "bytes": 15286
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-13-empire-oyo-yoruba-lesson-2-800w.webp",
+      "sha256": "60b13f28cac13f0f5d4da8995ed8fdfdfe33595bd3abfcc094fc68f61e7b06d5",
+      "bytes": 36384
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-13-empire-oyo-yoruba-lesson-2.webp",
+      "sha256": "0eb8b5c67e1ac81f7bf45807c9f2330834ecdeb75d6a15c64166635d54d1a9b9",
+      "bytes": 49166
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-14-royaume-ashanti-lesson-3-400w.webp",
+      "sha256": "f499fe18e301f515dd32392e098f2654494d40aef60497f2c3139880ee301a0d",
+      "bytes": 14750
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-14-royaume-ashanti-lesson-3-800w.webp",
+      "sha256": "a82948342e84a7f6884f68796c74a789fd5bb7a97d503da166a5d02986ca03a2",
+      "bytes": 46964
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-14-royaume-ashanti-lesson-3.webp",
+      "sha256": "51b6447042576e0931a485e1b8dc439f03091940bab0bbbf57e07dd9343cc22a",
+      "bytes": 130246
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-14-royaume-ashanti-lesson-4-400w.webp",
+      "sha256": "3df79a351a85dffd66ff9824c2236c18e7be51eb0d2ae996dd9fa13fe5b1d07f",
+      "bytes": 36088
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-14-royaume-ashanti-lesson-4-800w.webp",
+      "sha256": "2433933f5c118b16722e8acdbfcdaf8fb78a58ec67c1a7f2770258c47bd47155",
+      "bytes": 154412
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-14-royaume-ashanti-lesson-4.webp",
+      "sha256": "cbfe42bcc5ab0132973c6ed7ebf7ed51e4663b52142e6aa3ed6c37d439c26b87",
+      "bytes": 155702
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-15-royaume-dahomey-lesson-2-400w.webp",
+      "sha256": "90ae8a0cdec72c44e4a74771bf5ee06ca9b93fda7f91233f85c2374b90cfe3b5",
+      "bytes": 29640
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-15-royaume-dahomey-lesson-2-800w.webp",
+      "sha256": "05da0c61870ee60fc767eb0fa8976f330191646b5f0802f78187c8dcdab24c36",
+      "bytes": 101392
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-15-royaume-dahomey-lesson-2.webp",
+      "sha256": "ccc4f8fc0bb6c7bc44216d1d0f1ef7515cbd9ab19b146301dbe0e8d557a32bcd",
+      "bytes": 111378
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-15-royaume-dahomey-lesson-3-400w.webp",
+      "sha256": "9557f2d270d2784e9d4cb0161de78e74fa432fd3b52af30a30e2224895cfd4df",
+      "bytes": 19180
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-15-royaume-dahomey-lesson-3-800w.webp",
+      "sha256": "a46281f9c2bdf6ec11301948add09ff193c65e7250f8f0c702eae90325e16dc1",
+      "bytes": 73768
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-15-royaume-dahomey-lesson-3.webp",
+      "sha256": "1a56209195bb294ab713a6972d6711e1d32df29096c38c8a79e60b87e4512865",
+      "bytes": 129734
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-16-royaume-kongo-lesson-1-400w.webp",
+      "sha256": "e52f664846983c6a685d062109b73cc87544e9d26eefd89e4d16a679af39076d",
+      "bytes": 43502
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-16-royaume-kongo-lesson-1-800w.webp",
+      "sha256": "a5ab5caf1aad621da410cd7ac45df3214ec5e272d5b87b99de095a01d0c994ea",
+      "bytes": 132876
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-16-royaume-kongo-lesson-1.webp",
+      "sha256": "9de430d30a8d72d23a5a0e6018350c4dd131f64a7829313d2074a9d9d75c928a",
+      "bytes": 194062
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-16-royaume-kongo-lesson-3-400w.webp",
+      "sha256": "0faca679d9794dd9f4042d5ea2e0cb97e7954097c6a3361025dbda112a8ee35e",
+      "bytes": 19362
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-16-royaume-kongo-lesson-3-800w.webp",
+      "sha256": "f50d8252e58ec96d02b68c34ae08f49885ac40db004c0d8af5bcd35e7bc2ddb9",
+      "bytes": 31108
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-16-royaume-kongo-lesson-3.webp",
+      "sha256": "66184bf689d0f260cf7d3c56fa61217d0cfb714a5542d2d59c9fdfb6c3380c16",
+      "bytes": 31984
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-17-grand-zimbabwe-lesson-1-400w.webp",
+      "sha256": "4ed7a279fb3f8f4fa83f4a070e13a8fcc4cda049cfabb2e68ea335212d279a4e",
+      "bytes": 47942
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-17-grand-zimbabwe-lesson-1-800w.webp",
+      "sha256": "505c57141c2b51034f53e29f13b6cbacfa1f27ccc874a7782968eeba5934e1a8",
+      "bytes": 167386
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-17-grand-zimbabwe-lesson-1.webp",
+      "sha256": "3d237aa69a657aabc514e19f160f4e747df092240238344119b9401791aef5b9",
+      "bytes": 423538
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-17-grand-zimbabwe-lesson-3-400w.webp",
+      "sha256": "36c6fc34af8e15ca28af12fc1dbbce48c42b89713452d27111b68d2b78533ca8",
+      "bytes": 43492
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-17-grand-zimbabwe-lesson-3-800w.webp",
+      "sha256": "eef06aa4b49b882cb00ac8fc3de501dfcc339bccf03d6925b211f9546a87e6f8",
+      "bytes": 159508
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-17-grand-zimbabwe-lesson-3.webp",
+      "sha256": "8975f8e97ce8ec185b95d060a1fdd99482cfa09ea0bc4bfb5ad6fee84eb1473c",
+      "bytes": 260428
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-18-monomotapa-mutapa-lesson-2-400w.webp",
+      "sha256": "3f0886553c40d4be943c3c78db17b45249fe8e9661387c9da5d858dc19e04729",
+      "bytes": 46160
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-18-monomotapa-mutapa-lesson-2-800w.webp",
+      "sha256": "77c1eb66e7c2d7558fa1e4b03c89042d7dd2afca62956223191cf06576abcd61",
+      "bytes": 65526
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-18-monomotapa-mutapa-lesson-2.webp",
+      "sha256": "ea5c957b899c38fb722ae1ed08e85e7666bce15c9ad96ea32196811ff2b7ef3a",
+      "bytes": 81214
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-18-monomotapa-mutapa-lesson-3-400w.webp",
+      "sha256": "d11a3a394063a9ca0d5eede495f28be1724cfcbfa5afc7a738a98fc904fd0af3",
+      "bytes": 31482
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-18-monomotapa-mutapa-lesson-3-800w.webp",
+      "sha256": "9328301610dc58ad6d0134a5006e530302dc48e12a8cea71ecc8892f56159232",
+      "bytes": 98634
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-18-monomotapa-mutapa-lesson-3.webp",
+      "sha256": "9f5d9ffe9943d22c695c3fc865607bee221b4cad6bc23ed25c3f054c6c66e81c",
+      "bytes": 263204
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-19-royaumes-grands-lacs-lesson-2-400w.webp",
+      "sha256": "d7e1295db0748ea93603c81ab2b712ab45aed1e6b21c2fe733415257c1121704",
+      "bytes": 18476
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-19-royaumes-grands-lacs-lesson-2-800w.webp",
+      "sha256": "137444743563f39ce339144ea18511d9bfbd5a5df16534fc6bf4267ff1de5542",
+      "bytes": 63830
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-19-royaumes-grands-lacs-lesson-2.webp",
+      "sha256": "b02a9af101211a3d17315bfa6a67cb12ef031c87319699004893b5c5a156757a",
+      "bytes": 180044
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-19-royaumes-grands-lacs-lesson-4-400w.webp",
+      "sha256": "2cf980f7f556da8773968e735a8138c80a8a79e15fc5ac2c5a9a5040aeac257f",
+      "bytes": 29532
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-19-royaumes-grands-lacs-lesson-4-800w.webp",
+      "sha256": "3347d80281c6ccf97f64e43b35954570e6fbf6b4fb6e7f6be158bde5e235b74e",
+      "bytes": 113954
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-19-royaumes-grands-lacs-lesson-4.webp",
+      "sha256": "c1cdcccfc88ab2c7197a49ba33b2c580b9502894bae897deb310af13d3457e18",
+      "bytes": 186994
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-20-ethiopie-medievale-lalibela-lesson-2-400w.webp",
+      "sha256": "10a7ed9f74d4a5ff1dc1149a0a09e021da7b59269b0007ea398578d1779307d9",
+      "bytes": 26900
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-20-ethiopie-medievale-lalibela-lesson-2-800w.webp",
+      "sha256": "c1ac36f6e2aba95aea013339083a10e00d55cb37361d4afc7154c38e5acda6dc",
+      "bytes": 96018
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-20-ethiopie-medievale-lalibela-lesson-2.webp",
+      "sha256": "4e21db7d33fb13a4387d8d97aa2f7c2821d3bc35295e23575b570b0a20b7bde6",
+      "bytes": 279248
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-20-ethiopie-medievale-lalibela-lesson-3-400w.webp",
+      "sha256": "1a8f4d405d7199f64fbce7754e3508465c870ad7ccbc71110cf29cb164c57438",
+      "bytes": 60832
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-20-ethiopie-medievale-lalibela-lesson-3-800w.webp",
+      "sha256": "3802e9126c96a66523221b7f35e80a10057b14773a102afc52a817a2c7026eb7",
+      "bytes": 221242
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-20-ethiopie-medievale-lalibela-lesson-3.webp",
+      "sha256": "05ddae54f0bfa5242e2d659eed695114a9904e00a61ae69183da0078a65999db",
+      "bytes": 529524
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-21-commerce-transsaharien-lesson-1-400w.webp",
+      "sha256": "97208f969ca06f3f8567cf2324fae1786963ff6b6c3ec0ec41d89f13e35d969e",
+      "bytes": 21264
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-21-commerce-transsaharien-lesson-1-800w.webp",
+      "sha256": "b789c666a85121979c5e119c4d5a0694524e5c5ad3208e9679a2ac860c8b863a",
+      "bytes": 80568
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-21-commerce-transsaharien-lesson-1.webp",
+      "sha256": "c9ff8dd883fef621c93aac89a768bd4d6a97c564582b06d2140c37652bb3660b",
+      "bytes": 228954
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-21-commerce-transsaharien-lesson-2-400w.webp",
+      "sha256": "e9957948c24c0113ef541e1a4eda47f8b0757d9d50193f4c2e973654bb997373",
+      "bytes": 23222
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-21-commerce-transsaharien-lesson-2-800w.webp",
+      "sha256": "c395c650418e8d1feb4553166735946e74d263a4b90751886747e59d925aa6ac",
+      "bytes": 67446
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-21-commerce-transsaharien-lesson-2.webp",
+      "sha256": "d449182d195c0490ec1bf187cffadc934a3be5a7304bbaf4b671c5809524e1d3",
+      "bytes": 138154
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-22-islamisation-afrique-ouest-lesson-1-400w.webp",
+      "sha256": "1f64c3f04287753deb300c925fbec883baa518525f303ba2c3e5b9a07c253a73",
+      "bytes": 21180
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-22-islamisation-afrique-ouest-lesson-1-800w.webp",
+      "sha256": "f0959a7d5340e80a2be0e886c8d83758322d885130e840f84a7a44709c9c1f35",
+      "bytes": 43714
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-22-islamisation-afrique-ouest-lesson-1.webp",
+      "sha256": "bc595fa701d8f8c582f629244d045909a6b0712097b326282eb4bf541768a4bd",
+      "bytes": 67304
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-22-islamisation-afrique-ouest-lesson-3-400w.webp",
+      "sha256": "325b059ec9eba2a2d0164e53d6e9f2fa1d1fb6e127fe06dd16471cff70c4ebed",
+      "bytes": 19314
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-22-islamisation-afrique-ouest-lesson-3-800w.webp",
+      "sha256": "6a08624a7e6121b16f809ab8c5e26c925510787d74aaf7e1c547a2ff44086cbd",
+      "bytes": 71740
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-22-islamisation-afrique-ouest-lesson-3.webp",
+      "sha256": "06320d626c7b0fcf05f90f97373709662a56d8c61cfa48c67a1e0e4175d827ae",
+      "bytes": 213346
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-23-cote-swahilie-lesson-1-400w.webp",
+      "sha256": "69a19ee78a559a6250975fd571b8ad1e204ea4e2539ef5286bfbc35a552091e7",
+      "bytes": 21028
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-23-cote-swahilie-lesson-1-800w.webp",
+      "sha256": "8f410d397522d91067d2f56ff48c20bb2bb8f388f4451d81d85517a0c9edab85",
+      "bytes": 70764
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-23-cote-swahilie-lesson-1.webp",
+      "sha256": "08d92f330309b28c7343be40bfd547a621b9bea30d6ece6b01ab12ec4c6fe94c",
+      "bytes": 122562
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-23-cote-swahilie-lesson-4-400w.webp",
+      "sha256": "d19ab9c5338135e0e04778f4ddf9a497a292b618ad5e711ae527845349c97953",
+      "bytes": 30016
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-23-cote-swahilie-lesson-4-800w.webp",
+      "sha256": "9963cb6b7125f3445571af27e29fee1ca4b59dec72f2a29209e49961c708416a",
+      "bytes": 90292
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-23-cote-swahilie-lesson-4.webp",
+      "sha256": "33dbc004a62803c1f7dcb5fcdd67add4c8b9351e398897e7b0551757ce68844c",
+      "bytes": 203976
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-24-traite-negriere-transatlantique-lesson-1-400w.webp",
+      "sha256": "85c0033f6cb6621f31b9f20f4034c13bcd7f9bcce7753ef6c714595a817cdd38",
+      "bytes": 21882
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-24-traite-negriere-transatlantique-lesson-1-800w.webp",
+      "sha256": "2e00ac1ade5414803bae2d8e7220a87f9523050a581b62c8dbc2d482d68986bb",
+      "bytes": 76940
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-24-traite-negriere-transatlantique-lesson-1.webp",
+      "sha256": "6eabc61a7a5ec1c839c72ee5608d55d4b27fee0534f6f5b51b60da1bb753575c",
+      "bytes": 225850
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-24-traite-negriere-transatlantique-lesson-4-400w.webp",
+      "sha256": "bee0d4c6e70820d08f349892be3a0dcd54ac793ec352d2669fe48f0cab5473aa",
+      "bytes": 32854
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-24-traite-negriere-transatlantique-lesson-4-800w.webp",
+      "sha256": "d725d1cf39f4b3fad54c968a852dc1c6d260233907b568375a0d8507cdde0eec",
+      "bytes": 128864
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-24-traite-negriere-transatlantique-lesson-4.webp",
+      "sha256": "9c471d276e95d56d0d41aa4fc55065ffe5c4d0e77f1ba68b079592fe33e6350a",
+      "bytes": 218998
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-25-conference-berlin-lesson-2-400w.webp",
+      "sha256": "71bef121e7f79eee559dcbf1f1095450ab22a8f8a598937da4a8a2990de322cb",
+      "bytes": 27242
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-25-conference-berlin-lesson-2-800w.webp",
+      "sha256": "131e356dd91af93303b727c4c3d10191eb7d008f318d5947fdc1913d96d5d457",
+      "bytes": 104808
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-25-conference-berlin-lesson-2.webp",
+      "sha256": "b9077a537f0354b4ec4bb94835580dd4ddfbdcb033b315c2bd2855d1815f4393",
+      "bytes": 318900
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-25-conference-berlin-lesson-3-400w.webp",
+      "sha256": "082343adef1d4372fa5688caa34d381c8cb35fe1738a79cf9f51e917f51539cc",
+      "bytes": 22260
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-25-conference-berlin-lesson-3-800w.webp",
+      "sha256": "944a24300fcf2be8e5f8ca787bf36b47c80864204a1e009ea5a220cad0b5260d",
+      "bytes": 59426
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-25-conference-berlin-lesson-3.webp",
+      "sha256": "15ba4ef82f9ca45e8b2f8a2a2650cc2d0edbc61d1277e5d41995bf01a363a232",
+      "bytes": 91812
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-26-resistances-colonisation-lesson-2-400w.webp",
+      "sha256": "db0dbbed942afcfb5f6810ed93b1877881dcebf4b5602895b382a416c88bcfb8",
+      "bytes": 13720
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-26-resistances-colonisation-lesson-2-800w.webp",
+      "sha256": "db0dbbed942afcfb5f6810ed93b1877881dcebf4b5602895b382a416c88bcfb8",
+      "bytes": 13720
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-26-resistances-colonisation-lesson-2.webp",
+      "sha256": "926b1c8400ce2bad53bf3ff24eac77ecee72af5520b9a7177d80b75a951974fd",
+      "bytes": 13930
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-26-resistances-colonisation-lesson-3-400w.webp",
+      "sha256": "a1ddbb5c1a1ccf453bb73b798c95988bf41e8efe6bc715de8c6bf35791ed758d",
+      "bytes": 44078
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-26-resistances-colonisation-lesson-3-800w.webp",
+      "sha256": "bff47673d638d772c0624994aaca19b12c22c3018edbb7db5473d7d07dca85c2",
+      "bytes": 140792
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-26-resistances-colonisation-lesson-3.webp",
+      "sha256": "bb6edaa8088ab343c7e47338dfb846006cb88a798e867a8d8b748f0c9cd4e4eb",
+      "bytes": 141398
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-27-bataille-adoua-lesson-2-400w.webp",
+      "sha256": "3545fe37a02f53757e60444ba1b687fe36fcc16de560f853a3059e4491a4f2e2",
+      "bytes": 18694
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-27-bataille-adoua-lesson-2-800w.webp",
+      "sha256": "55145bd72db5f3647ca574848e97fd3f33a74d28f85c68b2f54a8d49d520b53e",
+      "bytes": 24404
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-27-bataille-adoua-lesson-2.webp",
+      "sha256": "81e4e08d5c3b237042cc48cd9d2c5d0dc7cec936dc68a15b4480b744e0083be6",
+      "bytes": 25426
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-27-bataille-adoua-lesson-3-400w.webp",
+      "sha256": "6eb5228efc6142a1fcb47fca969200e1ddb9382010d947fa7d0f4266dfb80a5c",
+      "bytes": 42120
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-27-bataille-adoua-lesson-3-800w.webp",
+      "sha256": "de9095cd75b2fef2bc314e9d471aff4bdf6e60cba8727afcd55acf3b81dab16a",
+      "bytes": 141010
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-27-bataille-adoua-lesson-3.webp",
+      "sha256": "9f7ded85cae2e6c6d4a227a357af08286db537355dad6107c780acce236097ad",
+      "bytes": 215170
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-28-independances-africaines-lesson-1-400w.webp",
+      "sha256": "ff61ca08e0610154998b290a5842a1aef03a9de38dfa7dad103da12236fbb33c",
+      "bytes": 24038
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-28-independances-africaines-lesson-1-800w.webp",
+      "sha256": "2c85ee3cbabc2cd7c7a5db2e5a51019c86f071bc9db66ef2c9bd83b6a1966c5f",
+      "bytes": 65246
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-28-independances-africaines-lesson-1.webp",
+      "sha256": "54794a5071c25cfdc17f61e915765bfa7aa422ac5aea9b32f2d04d5eabd535f3",
+      "bytes": 101138
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-28-independances-africaines-lesson-2-400w.webp",
+      "sha256": "7ab8ced1449107bd1fb1630abf2819e49449c65188298385c579f909a41dea7e",
+      "bytes": 7076
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-28-independances-africaines-lesson-2-800w.webp",
+      "sha256": "97835f742f9afdb1ec97d71a73b7ba2f94fd0aa2f55fd9cdab678f3fe786a074",
+      "bytes": 19362
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-28-independances-africaines-lesson-2.webp",
+      "sha256": "62e72baaf0ff318a5fa585f05b0d0bcfc769e800c4710ddd520121c2efb277ae",
+      "bytes": 48318
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-29-panafricanisme-union-africaine-lesson-1-400w.webp",
+      "sha256": "4de1434b814064a79608824b0ae3511e7640750cc1c211366a4a6268546419ee",
+      "bytes": 7922
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-29-panafricanisme-union-africaine-lesson-1-800w.webp",
+      "sha256": "7c394c79e290c09ffd06ae3fcc0de07e273b2930150e991d053698f4b4ddbcb3",
+      "bytes": 21564
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-29-panafricanisme-union-africaine-lesson-1.webp",
+      "sha256": "d0e524586b469c14606efa66a663423526762c1da3e6175b6a743ad6b8c16f6b",
+      "bytes": 45774
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-29-panafricanisme-union-africaine-lesson-4-400w.webp",
+      "sha256": "430ac72daefa70265321a7d18ce5ec3c77190e9cbaf3761e4f2f5be1e9400b3d",
+      "bytes": 45174
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-29-panafricanisme-union-africaine-lesson-4-800w.webp",
+      "sha256": "6249593d6377734e7594c9c4ddcdfa99d883c44b45640923162a2d5620a90a8a",
+      "bytes": 142370
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-29-panafricanisme-union-africaine-lesson-4.webp",
+      "sha256": "1e8cdf829efed72b9c29fcca9fd060f64f9941c7edb1dfcf30e5e1c7813b10d4",
+      "bytes": 223938
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-30-apartheid-mandela-lesson-1-400w.webp",
+      "sha256": "4a79acd08ff6b61197fb15e895137a2dc9ab975ee681f3b81049e71f3b26867a",
+      "bytes": 26742
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-30-apartheid-mandela-lesson-1-800w.webp",
+      "sha256": "01dedcbec2c4333963ace78508bf9790e3b942615c171ae9183e50fe5f74d14d",
+      "bytes": 85634
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-30-apartheid-mandela-lesson-1.webp",
+      "sha256": "86e736cad714027bdd6293fd7eaba4c4fa68c516edc91a9363d3fa1c64f86e14",
+      "bytes": 200764
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-30-apartheid-mandela-lesson-3-400w.webp",
+      "sha256": "c4effcadd2527e32a68ac5aaee8ebd629fd2b107117e1f6e2cbbafdbc5ef62b0",
+      "bytes": 7714
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-30-apartheid-mandela-lesson-3-800w.webp",
+      "sha256": "c6478a9b04f9fef22a80fc6563810426cbdd39ff93ba227032f8db98a4afb1f9",
+      "bytes": 25578
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-30-apartheid-mandela-lesson-3.webp",
+      "sha256": "e5a975b631b560baf3316e454c396686a8bad72090844dcd247982ca42610546",
+      "bytes": 51358
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-31-tekrour-islam-lesson-1-400w.webp",
+      "sha256": "c5e4c8448ac9ccbfcd973b83928da33796d81b5d256ce5e75b01fa83b3ac8c7c",
+      "bytes": 23950
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-31-tekrour-islam-lesson-1-800w.webp",
+      "sha256": "f8d7cbcaaae8dbcf826287e65572d390ace7669abb3aac24aea33e028d4b9f5f",
+      "bytes": 28968
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-31-tekrour-islam-lesson-1.webp",
+      "sha256": "abb5684b3c63cae59fe6a547362a0b33d4e0e103d0554f4b419cb4e41f1d9734",
+      "bytes": 29386
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-31-tekrour-islam-lesson-4-400w.webp",
+      "sha256": "fc247f60d2704f1c4f2957e3e70b04f9d4ba46b2d01c30981c3e9f590307b62f",
+      "bytes": 13704
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-31-tekrour-islam-lesson-4-800w.webp",
+      "sha256": "e05f0a7a508959d3487fc2b3bf959edfc7b4039ca3756763d41a4269162d740b",
+      "bytes": 18682
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-31-tekrour-islam-lesson-4.webp",
+      "sha256": "c5c29bdfda9b9812a9f33ffcb87e513fc0aed096c91877b1cedd651ec8d3ded3",
+      "bytes": 19490
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-32-djolof-royaumes-wolof-lesson-4-400w.webp",
+      "sha256": "eaf5638b97f4b6b951a57e7d520f7a33321a6518a0f55dad6bdef4c9f40f9abb",
+      "bytes": 15438
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-32-djolof-royaumes-wolof-lesson-4-800w.webp",
+      "sha256": "e0b0c33d1064c9812c6bf8bb845334898b5b9b99746aac835cca9a78c353a356",
+      "bytes": 37596
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-32-djolof-royaumes-wolof-lesson-4.webp",
+      "sha256": "ded195f11d8f553f7c10c9077d000766c70dc10ce69d5152f35dbe23903eeba5",
+      "bytes": 53784
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-32-djolof-royaumes-wolof-lesson-5-400w.webp",
+      "sha256": "a1ddbb5c1a1ccf453bb73b798c95988bf41e8efe6bc715de8c6bf35791ed758d",
+      "bytes": 44078
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-32-djolof-royaumes-wolof-lesson-5-800w.webp",
+      "sha256": "bff47673d638d772c0624994aaca19b12c22c3018edbb7db5473d7d07dca85c2",
+      "bytes": 140792
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-32-djolof-royaumes-wolof-lesson-5.webp",
+      "sha256": "bb6edaa8088ab343c7e47338dfb846006cb88a798e867a8d8b748f0c9cd4e4eb",
+      "bytes": 141398
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-33-royaumes-serer-sine-saloum-lesson-3-400w.webp",
+      "sha256": "47869106a082cedc44c1aeae96da7edec629c8b7c26f0bf6ec61e0a81e2ea789",
+      "bytes": 23090
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-33-royaumes-serer-sine-saloum-lesson-3-800w.webp",
+      "sha256": "7ba50121222d8af28b8169d7c5140a17ee1efb2855747a84638256dc36867d91",
+      "bytes": 90328
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-33-royaumes-serer-sine-saloum-lesson-3.webp",
+      "sha256": "63de150e641ad3d601d9d4dc5a06a9757935ce71bb714b2ae248f4cfcb1e057e",
+      "bytes": 152858
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-33-royaumes-serer-sine-saloum-lesson-5-400w.webp",
+      "sha256": "31243bf516157b30c9d032029d2649a080fdfbeaa4cbda7e638eb2e605fbe87d",
+      "bytes": 14160
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-33-royaumes-serer-sine-saloum-lesson-5-800w.webp",
+      "sha256": "388b182457155a6e56a1d5fe82ad66d22e5c527fdbd744ae31ac2603910c2c24",
+      "bytes": 35494
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-33-royaumes-serer-sine-saloum-lesson-5.webp",
+      "sha256": "7b03215852d538112006f6e3f60d2eb11fda2a3dca7c83dc75ed37611d3f5e91",
+      "bytes": 89098
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-34-goree-saint-louis-lesson-2-400w.webp",
+      "sha256": "acacee795cb34bb78a48e62d4741b7a39820cbbdf662b18aef2000788f8d14cc",
+      "bytes": 14632
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-34-goree-saint-louis-lesson-2-800w.webp",
+      "sha256": "c71ca858dd045ebefc47cc219e849f8b233e7f234eea9f56302d0a39d2516914",
+      "bytes": 41450
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-34-goree-saint-louis-lesson-2.webp",
+      "sha256": "3748a38ea0ee17af40010848728f89e5020f1a393fcf9da3b25fbeb1a0b54666",
+      "bytes": 110478
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-34-goree-saint-louis-lesson-3-400w.webp",
+      "sha256": "d2af659a036d6ff57e851930e7b1b81b13cec76357e6963cac5c50ef458d782e",
+      "bytes": 13452
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-34-goree-saint-louis-lesson-3-800w.webp",
+      "sha256": "2dc48157801ed1b614308486ac30fdf6428e15ffb1a2f69de803e98b43aae1cc",
+      "bytes": 22136
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-34-goree-saint-louis-lesson-3.webp",
+      "sha256": "0e0ddb7b899da2ba874f501ddc2ab96c1b15e9cca6d85ec97480c608c6720735",
+      "bytes": 23214
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-35-lat-dior-cayor-lesson-1-400w.webp",
+      "sha256": "6f6f145f3df801f3b2f6e02b64d625b4cbbd9904a007af03a2b230bb3c0e6079",
+      "bytes": 36906
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-35-lat-dior-cayor-lesson-1-800w.webp",
+      "sha256": "d9cc7727c30bb3cbef25d6cabdf9be6d3df05a3f2ffb52a77eb3406d6ea25481",
+      "bytes": 130824
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-35-lat-dior-cayor-lesson-1.webp",
+      "sha256": "73a750c9f40099850a2a2eaf858bf81f8993ef0c8cc672fa9837e4a331153d78",
+      "bytes": 144126
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-35-lat-dior-cayor-lesson-3-400w.webp",
+      "sha256": "eb16b9b2d180b1f86fc16c52e0c2256169ccfd31dd8a932739ee11634e44a571",
+      "bytes": 28450
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-35-lat-dior-cayor-lesson-3-800w.webp",
+      "sha256": "2940a6d53c7f763072712ec9c25555ac2361fb579c70e42f3f4adecdc93e5af0",
+      "bytes": 99838
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-35-lat-dior-cayor-lesson-3.webp",
+      "sha256": "203b085d00e88d971b2393c276bea0f0e5a845ef39ea3ce0a04f9648d0c6708c",
+      "bytes": 158940
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-1-400w.webp",
+      "sha256": "af8c7d135573dc11741f05e70c34d1975fe17f573a755936a0c47cb116b76595",
+      "bytes": 48722
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-1-800w.webp",
+      "sha256": "899a87946eced67db1b14ca54e37e6aa8930e2a6b3ad1eb49df8e50e6ff5ceb5",
+      "bytes": 124684
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-1.webp",
+      "sha256": "5c9643029169ea043ff9d42f671778f5eb767322831ae1101634a993dafc1a72",
+      "bytes": 128392
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-4-400w.webp",
+      "sha256": "14d8e9e052c44d09007661e14a849e0c78b6981c785182f2ec3ab21294a8e0f5",
+      "bytes": 19812
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-4-800w.webp",
+      "sha256": "ce1b8b2e196b0c5c6979831732f8cb5727e4e7cfebf0085e7fd53c75c2feeb27",
+      "bytes": 57190
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-36-cheikh-ahmadou-bamba-mouridisme-lesson-4.webp",
+      "sha256": "424f3afab3e079c30f2960d39a6b4f3e460d4b420698ee9432f6cd2efcfd4a0f",
+      "bytes": 141650
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-37-aline-sitoe-diatta-lesson-2-400w.webp",
+      "sha256": "d2f7c22d6dca636202665fd4266c8f13124f2f14488725b5c222c5ac7754e968",
+      "bytes": 48682
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-37-aline-sitoe-diatta-lesson-2-800w.webp",
+      "sha256": "6f6d9c79d145fd224ed5ad04c4a63685fa29765fa131a864e0b0c0d739b6ca1e",
+      "bytes": 182060
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-37-aline-sitoe-diatta-lesson-2.webp",
+      "sha256": "9145d11b5d0d23b2d90c0d1b7a72977e0f52ccbc21ec796da4e21c99d2ce8b59",
+      "bytes": 291248
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-37-aline-sitoe-diatta-lesson-5-400w.webp",
+      "sha256": "5262ce48e0576b6316014afbd5c84bb1de97c402d1705df9e27535334708b413",
+      "bytes": 17766
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-37-aline-sitoe-diatta-lesson-5-800w.webp",
+      "sha256": "0d25cd9069614acf77a602970d2a4dd40f8b0b694a2bbc8e964a09edfe13f626",
+      "bytes": 54728
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-37-aline-sitoe-diatta-lesson-5.webp",
+      "sha256": "8271eceec34a58720896895fa5e43602258d14b7cf4ad7e32c68569650d741f2",
+      "bytes": 94156
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-38-senghor-negritude-independance-lesson-2-400w.webp",
+      "sha256": "b38bf0b65b92fa43681e20051572540c425e8d83043917c74afd1c591f89ed01",
+      "bytes": 20480
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-38-senghor-negritude-independance-lesson-2-800w.webp",
+      "sha256": "fc2314a5558b9e1cf1fe56a1596e5efe763ed02c78f55600d98d81563aef96a8",
+      "bytes": 29970
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-38-senghor-negritude-independance-lesson-2.webp",
+      "sha256": "f70ace63c8723f5b30f301a58fa5ed63f1042253b61e6b2e37ca0857711e19a4",
+      "bytes": 32854
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-38-senghor-negritude-independance-lesson-4-400w.webp",
+      "sha256": "48d09b6327d8fb73f513e833b9408b8bf2eaa6a6355b2e539951c357be3abd0e",
+      "bytes": 12186
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-38-senghor-negritude-independance-lesson-4-800w.webp",
+      "sha256": "1971b67d12ae930e4561c4a94e768312d20c86daa55fd75d883fb44bd1745091",
+      "bytes": 30476
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-38-senghor-negritude-independance-lesson-4.webp",
+      "sha256": "889d0989b634154c27cbefbb4182a367186003cae7aac8115a58e7bd36d1cda7",
+      "bytes": 101754
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-39-reine-nzinga-angola-lesson-1-400w.webp",
+      "sha256": "0c55c45e0f3de924576bf12e678ea281465e344a12e47b20124fbf6a0fefd2d3",
+      "bytes": 16608
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-39-reine-nzinga-angola-lesson-1-800w.webp",
+      "sha256": "46525e294f5e93c696a4e96a46bedd9cd5a5225c9aec9a2406cd70e3e0f1dc65",
+      "bytes": 45706
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-39-reine-nzinga-angola-lesson-1.webp",
+      "sha256": "62a7ab36f2737d81c60673afe6bb7dfd35c4ff184923d4954fb8a08fd2817c9f",
+      "bytes": 56534
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-39-reine-nzinga-angola-lesson-2-400w.webp",
+      "sha256": "facc7d56a73a6fc37a9bf22d3c809f1e8fbf96e984b7e37737f8ff29a5cf16d2",
+      "bytes": 8462
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-39-reine-nzinga-angola-lesson-2-800w.webp",
+      "sha256": "d03f1338d30dff52b9254b8fc3e67e73c8e6214781b22218e91f55c9ba70fa9c",
+      "bytes": 23084
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-39-reine-nzinga-angola-lesson-2.webp",
+      "sha256": "85ab36f4fe45f0cb12e6f6c39eae1416f00bb8b1c0c2bbae3291cb5711ec18fd",
+      "bytes": 34868
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-40-chaka-zoulou-lesson-1-400w.webp",
+      "sha256": "68bb4376d9006034a36fc864740456a0404df2cdc10ab998e344522a3f62d61b",
+      "bytes": 21320
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-40-chaka-zoulou-lesson-1-800w.webp",
+      "sha256": "7732244dff6becc664508996b394eca58d3d086470f8747708321fccfb63b1d6",
+      "bytes": 66198
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-40-chaka-zoulou-lesson-1.webp",
+      "sha256": "fb31027a34f13fcb8b186c2c4ff25c828f692a2baf8d9f296a1e0f5cf79440f5",
+      "bytes": 72420
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-40-chaka-zoulou-lesson-5-400w.webp",
+      "sha256": "c313c65971b128b173935a0f1b5d466dfa84cb27a028f69f59765df400bd9c8c",
+      "bytes": 28976
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-40-chaka-zoulou-lesson-5-800w.webp",
+      "sha256": "084a4179fbc41d2ed1edb2c0dcc2790161adae55f60223e3e50545e75a304618",
+      "bytes": 115544
+    },
+    {
+      "path": "src/assets/lecons/course-histoire-40-chaka-zoulou-lesson-5.webp",
+      "sha256": "698f0a63ce7f1cbcd758322ecc59ee541abc83cee0da7d40b88a01f15827d729",
+      "bytes": 190800
+    },
+    {
+      "path": "src/assets/lecons/course-perso-01-hatchepsout-lesson-3-400w.webp",
+      "sha256": "828d94146377362e4cabb79a5b9c0210835598aca4872a28c0b0d164a14acf29",
+      "bytes": 32258
+    },
+    {
+      "path": "src/assets/lecons/course-perso-01-hatchepsout-lesson-3-800w.webp",
+      "sha256": "283bc0063d4e2bafe5ec13f1ac262bc6a7c9d51e03cbcba3571a06b94b2300c1",
+      "bytes": 119052
+    },
+    {
+      "path": "src/assets/lecons/course-perso-01-hatchepsout-lesson-3.webp",
+      "sha256": "37476a0fc535f0233f78c666c99991c95979570683133fa40b30a88654e93e47",
+      "bytes": 350370
+    },
+    {
+      "path": "src/assets/lecons/course-perso-02-taharqa-lesson-3-400w.webp",
+      "sha256": "d4a3788b37d2877625209eb2710ca627ec4fa82f4e9d3d43145c0f0dec864b20",
+      "bytes": 12428
+    },
+    {
+      "path": "src/assets/lecons/course-perso-02-taharqa-lesson-3-800w.webp",
+      "sha256": "ce33663eae414604656bc8750c40cb695911adc9fe369ba6ff445969aaab1bcb",
+      "bytes": 34790
+    },
+    {
+      "path": "src/assets/lecons/course-perso-02-taharqa-lesson-3.webp",
+      "sha256": "dbc18b71abfd8d3c5a2ba405bffbf7da1f336f553a7428e87aaa6b83fdbe2a4b",
+      "bytes": 121936
+    },
+    {
+      "path": "src/assets/lecons/course-perso-03-dihya-lesson-3-400w.webp",
+      "sha256": "5f010ee8d80b24ed0c571dad0991508a345174c4b7640fe4229c46076a31ab6b",
+      "bytes": 10396
+    },
+    {
+      "path": "src/assets/lecons/course-perso-03-dihya-lesson-3-800w.webp",
+      "sha256": "bfdc4faa7b01c6eadf0b51bc44a8cd339d4ca6fae85b96552fb001182c30969d",
+      "bytes": 33130
+    },
+    {
+      "path": "src/assets/lecons/course-perso-03-dihya-lesson-3.webp",
+      "sha256": "1ba60de00f28e0cf1b0faa7e8bfcb38b9beb922545cfdb7a1791fca52b3f8e13",
+      "bytes": 93616
+    },
+    {
+      "path": "src/assets/lecons/course-perso-05-ibn-khaldoun-lesson-2-400w.webp",
+      "sha256": "deb217cede10bdd635469789194960cb74dca8a806a99c7b3d5ec8434e0d3a41",
+      "bytes": 63356
+    },
+    {
+      "path": "src/assets/lecons/course-perso-05-ibn-khaldoun-lesson-2-800w.webp",
+      "sha256": "fd8e5e02c1b30e037aa12e8376158a7b7723c4b07cdf199ad59266bc09a51ee2",
+      "bytes": 143270
+    },
+    {
+      "path": "src/assets/lecons/course-perso-05-ibn-khaldoun-lesson-2.webp",
+      "sha256": "5524df32eb4f9450ec851e5c68a412bdb343e57afc6a8bb8870aa43e5c9172b9",
+      "bytes": 244092
+    },
+    {
+      "path": "src/assets/lecons/course-perso-06-sayyida-al-hurra-lesson-2-400w.webp",
+      "sha256": "9967002d721d504b0d7ee394b4ae21add487c24f057654cdbfcdf6ee067bb1c3",
+      "bytes": 18178
+    },
+    {
+      "path": "src/assets/lecons/course-perso-06-sayyida-al-hurra-lesson-2-800w.webp",
+      "sha256": "832cf4531e89d5c54714c4c1d84e8816475220a7cb95a6f70acd3050268c0bcc",
+      "bytes": 57410
+    },
+    {
+      "path": "src/assets/lecons/course-perso-06-sayyida-al-hurra-lesson-2.webp",
+      "sha256": "a5f994434fd2c16c176c7c6dc81eeed832eaac059270f84ea5db44dcb285c361",
+      "bytes": 153626
+    },
+    {
+      "path": "src/assets/lecons/course-perso-07-kimpa-vita-lesson-3-400w.webp",
+      "sha256": "3c177b008e38915fab6df0e88fbae5637826dfc9a322a67836f18e07f52ac096",
+      "bytes": 6482
+    },
+    {
+      "path": "src/assets/lecons/course-perso-07-kimpa-vita-lesson-3-800w.webp",
+      "sha256": "63711792426b5411f4bf8a6dda212793233d9e9b627f9d746db042c02d365392",
+      "bytes": 21358
+    },
+    {
+      "path": "src/assets/lecons/course-perso-07-kimpa-vita-lesson-3.webp",
+      "sha256": "65eba24f724d816754be869e965f9c6910ad64339c4a4af0265a7278dad9522d",
+      "bytes": 69744
+    },
+    {
+      "path": "src/assets/lecons/course-perso-08-nanny-marrons-lesson-5-400w.webp",
+      "sha256": "4c9f2701802228de934b9f6c9042ba1408b7448ac84db09eab8de1a02d59aa1c",
+      "bytes": 32056
+    },
+    {
+      "path": "src/assets/lecons/course-perso-08-nanny-marrons-lesson-5-800w.webp",
+      "sha256": "3942a1c67e4f757479e25e0fb920cf23c1e86c9713e55715f9c1b8bf61c683fa",
+      "bytes": 116800
+    },
+    {
+      "path": "src/assets/lecons/course-perso-08-nanny-marrons-lesson-5.webp",
+      "sha256": "94114712c000f9af67ed27894c08623583a129d1a16003833503e0c945266396",
+      "bytes": 129052
+    },
+    {
+      "path": "src/assets/lecons/course-perso-09-toussaint-louverture-lesson-3-400w.webp",
+      "sha256": "ffd39aed6c14bad5468427a9d7cd19fd27bb4d960eda794cebe605d3e0e4f893",
+      "bytes": 68714
+    },
+    {
+      "path": "src/assets/lecons/course-perso-09-toussaint-louverture-lesson-3-800w.webp",
+      "sha256": "c3f5cdf5fa1abc7da0e88e62085d5d4f5125b05bbef4002b6001f215b31cde7e",
+      "bytes": 280518
+    },
+    {
+      "path": "src/assets/lecons/course-perso-09-toussaint-louverture-lesson-3.webp",
+      "sha256": "086c6b86a7f8f4dc1d2ae35cfc433e549bb458e24419f30bd04533f331d8f9de",
+      "bytes": 736502
+    },
+    {
+      "path": "src/assets/lecons/course-perso-10-sojourner-truth-lesson-3-400w.webp",
+      "sha256": "46cfad9f10e03775e17ad71577e2a350a2d5ea0f77263002b286172ba8beade5",
+      "bytes": 16722
+    },
+    {
+      "path": "src/assets/lecons/course-perso-10-sojourner-truth-lesson-3-800w.webp",
+      "sha256": "2096f266bfdb2b74c820ea483ed2a4b004e2bd32277cfb0afa91fff3d79e9a1c",
+      "bytes": 40258
+    },
+    {
+      "path": "src/assets/lecons/course-perso-10-sojourner-truth-lesson-3.webp",
+      "sha256": "1a0e1d6283db80adeba57f5052c6b3905ce48ad6f3ff0e10698c60bea92ebd95",
+      "bytes": 104154
+    },
+    {
+      "path": "src/assets/lecons/course-perso-12-samori-toure-lesson-1-400w.webp",
+      "sha256": "94e44903412108a8ed4e7fc7aaf8327a06bfbaabdfd6e99733f3a194d3bbef66",
+      "bytes": 12288
+    },
+    {
+      "path": "src/assets/lecons/course-perso-12-samori-toure-lesson-1-800w.webp",
+      "sha256": "94e44903412108a8ed4e7fc7aaf8327a06bfbaabdfd6e99733f3a194d3bbef66",
+      "bytes": 12288
+    },
+    {
+      "path": "src/assets/lecons/course-perso-12-samori-toure-lesson-1.webp",
+      "sha256": "6f917b3453dfb2d408b7e884a28c1e706b897d9fa9caa2f33113155d9ea85081",
+      "bytes": 15226
+    },
+    {
+      "path": "src/assets/lecons/course-perso-13-taytu-betul-lesson-3-400w.webp",
+      "sha256": "fa2ced268886e75cb6f43aa05b90ede2d11bf3fc1129357cab10c6dcbfea56a6",
+      "bytes": 23180
+    },
+    {
+      "path": "src/assets/lecons/course-perso-13-taytu-betul-lesson-3-800w.webp",
+      "sha256": "a508764857b308a6265684dc2060268c7db27f3707a1317055d54167507122b7",
+      "bytes": 73036
+    },
+    {
+      "path": "src/assets/lecons/course-perso-13-taytu-betul-lesson-3.webp",
+      "sha256": "23a829addd71d1e1b3f04f73e023b23838f6cb6ac3a191c652c3c0b78adb5780",
+      "bytes": 232014
+    },
+    {
+      "path": "src/assets/lecons/course-perso-14-yaa-asantewaa-lesson-5-400w.webp",
+      "sha256": "2a2bae9d83eae6fa41628e5b2cc89a2adb99ceb286ea89579a271eb82b2df8de",
+      "bytes": 14014
+    },
+    {
+      "path": "src/assets/lecons/course-perso-14-yaa-asantewaa-lesson-5-800w.webp",
+      "sha256": "1a4f70b20a834867154504902823452d74d7fce5e15dcb48691e84d0a1f1f196",
+      "bytes": 44386
+    },
+    {
+      "path": "src/assets/lecons/course-perso-14-yaa-asantewaa-lesson-5.webp",
+      "sha256": "61a1fbcb768995cdb27967fdf219e86315a766716600161b80c78c46289d0463",
+      "bytes": 118720
+    },
+    {
+      "path": "src/assets/lecons/course-perso-16-du-bois-lesson-2-400w.webp",
+      "sha256": "503b28940e9d882eac0a7679ecf8d6b719c9cf04f45946c9113835586b053230",
+      "bytes": 6758
+    },
+    {
+      "path": "src/assets/lecons/course-perso-16-du-bois-lesson-2-800w.webp",
+      "sha256": "979c4e9d2249c000293799ee720fc34dbab40b99d68ed1521606875808fca872",
+      "bytes": 18652
+    },
+    {
+      "path": "src/assets/lecons/course-perso-16-du-bois-lesson-2.webp",
+      "sha256": "536bbf90e30e706e5c7fae0e5726847f86b42db8364cc8cd084434242116eff3",
+      "bytes": 55232
+    },
+    {
+      "path": "src/assets/lecons/course-perso-17-cheikh-anta-diop-lesson-1-400w.webp",
+      "sha256": "6f9ef159dc46e4db91f0f6c003b007495905e4a2ebf6bc06ac37abd29a5878ae",
+      "bytes": 14026
+    },
+    {
+      "path": "src/assets/lecons/course-perso-17-cheikh-anta-diop-lesson-1-800w.webp",
+      "sha256": "6f9ef159dc46e4db91f0f6c003b007495905e4a2ebf6bc06ac37abd29a5878ae",
+      "bytes": 14026
+    },
+    {
+      "path": "src/assets/lecons/course-perso-17-cheikh-anta-diop-lesson-1.webp",
+      "sha256": "35971c5a03ebcd5f4686d868115cf59f465380df5b95ba82625e8c924fdc9977",
+      "bytes": 18710
+    },
+    {
+      "path": "src/assets/lecons/course-perso-18-frantz-fanon-lesson-1-400w.webp",
+      "sha256": "16924a140cbb5c97c30317d4e416d31081d2a0af94f3ccc39add79bddef5216a",
+      "bytes": 14966
+    },
+    {
+      "path": "src/assets/lecons/course-perso-18-frantz-fanon-lesson-1-800w.webp",
+      "sha256": "2528ce4e498332e9e1e177ca3b4bdb3a60e9b13203aa0603b74093c1f5bbbf47",
+      "bytes": 38636
+    },
+    {
+      "path": "src/assets/lecons/course-perso-18-frantz-fanon-lesson-1.webp",
+      "sha256": "4fe4a6cb1c8e080e752612f9072c2776b8236c8c9cb3164607004d8baa7ee7a0",
+      "bytes": 87748
+    },
+    {
+      "path": "src/assets/lecons/course-perso-19-amilcar-cabral-lesson-1-400w.webp",
+      "sha256": "0280a03fb433fb21d22ab8e90d3f8969fc6a7ff05f8817331c5f2005eca4ba76",
+      "bytes": 18210
+    },
+    {
+      "path": "src/assets/lecons/course-perso-19-amilcar-cabral-lesson-1-800w.webp",
+      "sha256": "8bb200830237f71515639fa62156401f32f16635c4b442e8e0bff249d94695e0",
+      "bytes": 52092
+    },
+    {
+      "path": "src/assets/lecons/course-perso-19-amilcar-cabral-lesson-1.webp",
+      "sha256": "908c6c90e42a11f5396596d08ef1e9793598b3f75d3699e6cc9ef8f6ebfc5cff",
+      "bytes": 131552
+    },
+    {
+      "path": "src/assets/lecons/course-perso-20-agostinho-neto-lesson-1-400w.webp",
+      "sha256": "dc2475d617b8a5a62a4f0912a87b15396b434253fc4cbef86ed0bfee2a849705",
+      "bytes": 41490
+    },
+    {
+      "path": "src/assets/lecons/course-perso-20-agostinho-neto-lesson-1-800w.webp",
+      "sha256": "13663f338525e9db43a85d5eda8943d435503d953447bfacfcb10b65040ef859",
+      "bytes": 155640
+    },
+    {
+      "path": "src/assets/lecons/course-perso-20-agostinho-neto-lesson-1.webp",
+      "sha256": "df686ba8e6e28a9a9fbe8b9c142a34ba63b075c6436ea02e5fd9445e8b987e07",
+      "bytes": 395320
+    },
+    {
+      "path": "src/assets/lecons/course-perso-21-kwame-nkrumah-lesson-1-400w.webp",
+      "sha256": "7283360e5ca78ef8f33e29e47df0af18c66c2cc56b55dbc6e2511d1a353a414a",
+      "bytes": 20056
+    },
+    {
+      "path": "src/assets/lecons/course-perso-21-kwame-nkrumah-lesson-1-800w.webp",
+      "sha256": "8ea5b5d0782a9eb32331daf0352880bac3afb0d56aea5c91c3c1ee47fa8f8971",
+      "bytes": 54422
+    },
+    {
+      "path": "src/assets/lecons/course-perso-21-kwame-nkrumah-lesson-1.webp",
+      "sha256": "54794a5071c25cfdc17f61e915765bfa7aa422ac5aea9b32f2d04d5eabd535f3",
+      "bytes": 101138
+    },
+    {
+      "path": "src/assets/lecons/course-perso-22-julius-nyerere-lesson-1-400w.webp",
+      "sha256": "779a9ec022a46c22509998609a3e5267ebcd32725c306721258ae8d37e8b592a",
+      "bytes": 29124
+    },
+    {
+      "path": "src/assets/lecons/course-perso-22-julius-nyerere-lesson-1-800w.webp",
+      "sha256": "4e6b91b16cec5ac10ce2b2e865e59978c6de6b2b2406e76c0e0816a47fe42080",
+      "bytes": 121258
+    },
+    {
+      "path": "src/assets/lecons/course-perso-22-julius-nyerere-lesson-1.webp",
+      "sha256": "b636e4f6997b396a209d0d741d73c6919da46fb7947a41f09bec0d59e3026781",
+      "bytes": 412168
+    },
+    {
+      "path": "src/assets/lecons/course-perso-23-haile-selassie-lesson-1-400w.webp",
+      "sha256": "b83484586b690f69c4bd5319b7694690c4f632e6a18d984718c641aebc397507",
+      "bytes": 23958
+    },
+    {
+      "path": "src/assets/lecons/course-perso-23-haile-selassie-lesson-1-800w.webp",
+      "sha256": "38f2dfa2b665af0d5dbf1749e7feeb9ab227d993deec483ee22d979289bb8e4f",
+      "bytes": 46554
+    },
+    {
+      "path": "src/assets/lecons/course-perso-23-haile-selassie-lesson-1.webp",
+      "sha256": "097fd8d45e6c7f9faeb2500a594a5a4c39756dc945699695f37e818a1166c11e",
+      "bytes": 55162
+    },
+    {
+      "path": "src/assets/lecons/course-perso-24-patrice-lumumba-lesson-1-400w.webp",
+      "sha256": "ca18134b0cf8c18ee7da82616928ae75c97f4834810d4911940ae26c963d71e9",
+      "bytes": 7924
+    },
+    {
+      "path": "src/assets/lecons/course-perso-24-patrice-lumumba-lesson-1-800w.webp",
+      "sha256": "37f1c1a648b91da4778b31a05b0506aeb415b736bead5b137b2f2b13d1b9b41d",
+      "bytes": 29928
+    },
+    {
+      "path": "src/assets/lecons/course-perso-24-patrice-lumumba-lesson-1.webp",
+      "sha256": "84b0eeeba7617f3c49d46f57879c9740eed6f31171780d895c40d6cd2710d95c",
+      "bytes": 145294
+    },
+    {
+      "path": "src/assets/lecons/course-perso-25-jeanne-martin-cisse-lesson-1-400w.webp",
+      "sha256": "ac57784162b3ef78455981a72b3e98f92ed03b21decfa5b4e1f63753630e438e",
+      "bytes": 22678
+    },
+    {
+      "path": "src/assets/lecons/course-perso-25-jeanne-martin-cisse-lesson-1-800w.webp",
+      "sha256": "44d37405b83316bc081235fa26b54725d8b42ab679a864449dc75d20b4482871",
+      "bytes": 73362
+    },
+    {
+      "path": "src/assets/lecons/course-perso-25-jeanne-martin-cisse-lesson-1.webp",
+      "sha256": "6233bae1ce8597c6400caa1868c430eb2c2df667f78bdb278fd87c732fd4063b",
+      "bytes": 141438
+    },
+    {
+      "path": "src/assets/lecons/course-perso-26-funmilayo-ransome-kuti-lesson-1-400w.webp",
+      "sha256": "0f57571535ca73948b1ca40535847780bfff2fe8f7631780ea7527f2ee32aff6",
+      "bytes": 12948
+    },
+    {
+      "path": "src/assets/lecons/course-perso-26-funmilayo-ransome-kuti-lesson-1-800w.webp",
+      "sha256": "0f57571535ca73948b1ca40535847780bfff2fe8f7631780ea7527f2ee32aff6",
+      "bytes": 12948
+    },
+    {
+      "path": "src/assets/lecons/course-perso-26-funmilayo-ransome-kuti-lesson-1.webp",
+      "sha256": "e38f20e5adfee03a2d08f3609f058024d0b5afbbabe85be4dd84acff982c2cae",
+      "bytes": 14608
+    },
+    {
+      "path": "src/assets/lecons/course-perso-27-aoua-keita-lesson-1-400w.webp",
+      "sha256": "b9a382dc94c13f7648c6c38108f7d2bf456e771d2fefe95177b3036fd768d430",
+      "bytes": 17722
+    },
+    {
+      "path": "src/assets/lecons/course-perso-27-aoua-keita-lesson-1-800w.webp",
+      "sha256": "528731384ff3c845eb6c377a0a30f85fd6cc04068361917347483fb6ee04bd85",
+      "bytes": 43724
+    },
+    {
+      "path": "src/assets/lecons/course-perso-27-aoua-keita-lesson-1.webp",
+      "sha256": "6baba1b6c2c1c95eb527abddf723bbfab5d8dde29bd970f5e98705975b96d974",
+      "bytes": 106404
+    },
+    {
+      "path": "src/assets/lecons/course-perso-28-albertina-sisulu-lesson-1-400w.webp",
+      "sha256": "7d0f2e3fe12ee022efa17492154176ef88bed685b2f5f8ff99b858a27d50739f",
+      "bytes": 30066
+    },
+    {
+      "path": "src/assets/lecons/course-perso-28-albertina-sisulu-lesson-1-800w.webp",
+      "sha256": "d1218457252dacd8da2fda6bbbd64290581911c1dc2d80ef827544d1e0b5f20e",
+      "bytes": 95196
+    },
+    {
+      "path": "src/assets/lecons/course-perso-28-albertina-sisulu-lesson-1.webp",
+      "sha256": "953aed1a9b27b15a211a4c8cecb488e4675599d0dd4c161211405e39675748bd",
+      "bytes": 111550
+    },
+    {
+      "path": "src/assets/lecons/course-perso-29-miriam-makeba-lesson-1-400w.webp",
+      "sha256": "b0c2ccff4375fe385b08df27f4c4a2c7c50f8085a55d0e8a5d3365e6e0dfa13f",
+      "bytes": 17988
+    },
+    {
+      "path": "src/assets/lecons/course-perso-29-miriam-makeba-lesson-1-800w.webp",
+      "sha256": "161a02954ade42711da064182e3fa93d89fc915bef1ec7850fee3ca53b5e849c",
+      "bytes": 32558
+    },
+    {
+      "path": "src/assets/lecons/course-perso-29-miriam-makeba-lesson-1.webp",
+      "sha256": "b4c80ca51c79435c1d9ba383a928a6ea0a2ca76d7cc89d234e5f855fc6f8c3b9",
+      "bytes": 35916
+    },
+    {
+      "path": "src/assets/lecons/course-perso-30-wangari-maathai-lesson-1-400w.webp",
+      "sha256": "bb3d3268efe5ea14f72ac2abe863d28e9023b1a272b6e875f851e648a01bb656",
+      "bytes": 29446
+    },
+    {
+      "path": "src/assets/lecons/course-perso-30-wangari-maathai-lesson-1-800w.webp",
+      "sha256": "ee8b0d98468921044e3bbbb1efbe714a18b14a61d91389f27012d77bdd00fd9a",
+      "bytes": 51902
+    },
+    {
+      "path": "src/assets/lecons/course-perso-30-wangari-maathai-lesson-1.webp",
+      "sha256": "8347095b08335239dca81f8399d7285426c60efcd36bdfd2e12571e68b291254",
+      "bytes": 58636
+    }
+  ]
+}

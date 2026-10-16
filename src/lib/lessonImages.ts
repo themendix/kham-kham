@@ -1,11 +1,8 @@
 // Ne matche que les variantes 400w/800w : le fichier pleine résolution (sans suffixe) ne doit
 // jamais être copié dans dist/ — il ne sert que de source à `npm run images:variants`, jamais
 // affiché directement. Même règle et même mécanique que `src/lib/courseImages.ts`.
-const files = import.meta.glob("@/assets/lecons/**/*-{400w,800w}.webp", {
-  eager: true,
-  query: "?url",
-  import: "default",
-}) as Record<string, string>;
+import { imageAssets } from "@/native/imageAssets";
+const files = Object.fromEntries(Object.keys(imageAssets).filter((key) => key.includes("-lesson-")).map((key) => [key, key]));
 
 export interface LessonImageSet {
   /** URL de repli (attribut `src`), palier 800w — pour les navigateurs qui ignorent `srcset`. */

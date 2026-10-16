@@ -1,30 +1,25 @@
-import { Flame } from "lucide-react";
+import { Image, StyleSheet, Text, View } from "react-native";
+import { Flame } from "lucide-react-native";
 import { useAppStore } from "@/store/useAppStore";
 
-/** Barre supérieure fixe : logo Sankofa + compteur de streak */
+/** Minimal header: application logo and the existing streak count. */
 export function TopBar() {
   const streakCount = useAppStore((s) => s.progress.streak.count);
-
   return (
-    <header className="sticky top-0 z-10 border-b-[3px] border-ink bg-cream">
-      <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
-        <div className="flex items-center gap-2 font-heading text-[22px] font-extrabold">
-          {/* Logo servi depuis public/ : les déclinaisons sont générées par `npm run icons` (voir brand/LISEZ-MOI.md) */}
-          <img
-            src="/icon-192.png"
-            alt=""
-            aria-hidden="true"
-            width={32}
-            height={32}
-            className="h-8 w-8 rounded-xl border-[2.5px] border-ink object-cover shadow-sm"
-          />
-          Sankofa
-        </div>
-        <div className="flex items-center gap-1.5 rounded-full border-[2.5px] border-ink bg-card px-3.5 py-1.5 font-heading text-sm font-extrabold shadow-sm">
-          <Flame className="h-4 w-4 text-flame" fill="currentColor" />
-          {streakCount} {streakCount > 1 ? "JOURS" : "JOUR"}
-        </div>
-      </div>
-    </header>
+    <View style={styles.header}>
+      <Image source={require("../../../assets/brand/icon-192.png")} accessibilityLabel="Sankofa" style={styles.logo} />
+      <View accessible accessibilityLabel={`${streakCount} ${streakCount > 1 ? "jours" : "jour"} de série`} style={styles.streak}>
+        <Flame size={21} strokeWidth={2} color="#726a5d" />
+        <Text style={styles.counter}>{streakCount}</Text>
+        <Text style={styles.unit}>{streakCount > 1 ? "JOURS" : "JOUR"}</Text>
+      </View>
+    </View>
   );
 }
+const styles = StyleSheet.create({
+  header: { width: "100%", maxWidth: 704, alignSelf: "center", paddingHorizontal: 16, paddingTop: 8, paddingBottom: 10, flexDirection: "row", alignItems: "center", justifyContent: "space-between", gap: 16, backgroundColor: "#f6eedd" },
+  logo: { width: 46, height: 46, borderRadius: 13 },
+  streak: { minHeight: 44, flexDirection: "row", alignItems: "center", gap: 7, borderRadius: 999, borderWidth: 1.5, borderColor: "#e7dfd1", paddingHorizontal: 15, paddingVertical: 8, backgroundColor: "#ffffffcc" },
+  counter: { fontFamily: "Poppins", fontSize: 18, lineHeight: 25, includeFontPadding: false, color: "#1e1b18" },
+  unit: { fontFamily: "Inter", fontSize: 11, lineHeight: 17, includeFontPadding: false, color: "#5c554b", letterSpacing: 0.3 },
+});

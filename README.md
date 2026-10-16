@@ -1,59 +1,69 @@
-# Sankofa
+# Sankofa — React Native / Expo SDK 57
 
-[![CI](https://github.com/themendix/kham-kham/actions/workflows/ci.yml/badge.svg)](https://github.com/themendix/kham-kham/actions/workflows/ci.yml)
+Le projet principal est désormais l’application mobile **Expo SDK 57** dans ce
+dossier `kham-kham`. React 19.2.3 et React Native 0.86.3 sont verrouillés dans les
+dépendances. Ce dossier est le projet de travail principal ; l’ancienne application web est conservée dans `web/`.
 
-**Sankofa** est une application web de culture générale africaine, gamifiée façon micro-apprentissage : fil de cartes à swiper, bibliothèque de cours, parcours guidés et suivi de progression (XP, niveau, streak).
+## Lancer l’application mobile
 
-Le nom vient du concept akan *Sankofa* — « retourner chercher le savoir du passé ».
-
-## Stack technique
-
-- **React 18** + **Vite** + **TypeScript**
-- **Tailwind CSS v4** (configuration CSS-first via `@theme`, plugin `@tailwindcss/vite`)
-- **React Router** pour la navigation à 4 onglets
-- **Zustand** (+ middleware `persist`) pour l'état et la persistance `localStorage`
-- **lucide-react** pour les icônes
-- Aucun back-end : tout le contenu vit dans `src/data/*.ts`, seule la progression utilisateur est persistée côté client
-
-## Installation
-
-```bash
-npm install
-npm run dev
+```powershell
+cd "C:\IA BUSSINESS AND PROJECT\kham-kham"
+npm ci
+npm run start:clear   # Expo démarre en mode --tunnel
 ```
 
-L'application est accessible sur `http://localhost:5173`. C'est un vrai site web responsive : navigation en sidebar à gauche sur desktop, en barre d'onglets fixée en bas sur mobile, contenu qui utilise toute la largeur disponible (grilles de cours et de parcours sur grand écran).
+Ouvrir le QR code avec une version d’Expo Go compatible SDK 57 ou utiliser un
+development build. `npm run android` et `npm run ios` lancent Expo pour la plateforme
+choisie ; `npm run web` est l’aperçu navigateur de l’application Expo.
 
-Autres commandes :
+## Organisation
 
-```bash
-npm run build      # build de production (tsc + vite build)
-npm run typecheck  # vérification TypeScript seule
-npm run preview    # sert le build de production en local
+- `src/app/` : routes Expo Router.
+- `src/screens/`, `src/components/`, `src/native/` : interfaces et adaptations natives.
+- `src/data/`, `src/assets/` : cours, leçons, quiz, illustrations et polices.
+- `src/store/`, `src/platform/` : progression, migrations et persistance SQLite.
+- `web/` : ancienne application React 18 / Vite, conservée avec ses dépendances.
+- `reference/source-manifest.json` : empreintes des contenus web repris.
+- `docs/` : documentation historique ; les descriptions React/Vite concernent `web/`.
+
+La base mobile déjà préparée a été reprise ici, avec ses écrans et contenus.
+La parité visuelle et fonctionnelle complète reste à vérifier sur téléphone.
+Les versions web et mobile possèdent leur propre stockage ; la progression du
+navigateur n’est pas transférée automatiquement au téléphone. Les modifications
+faites dans une version ne sont pas synchronisées automatiquement avec l’autre.
+
+## Ancienne application web
+
+```powershell
+npm run install:web   # après un nouveau clonage
+npm run dev:web
+npm run build:web
 ```
 
-## Structure du projet
+`netlify.toml` utilise `web/` comme répertoire de base pour conserver la publication
+de l’application web. La préparation locale ne déclenche aucun déploiement.
 
-```
-src/
-  routes/       les 4 écrans (Home, Biblio, Collections, Profil)
-  components/
-    layout/     AppShell, TopBar, Sidebar (desktop), BottomNav (mobile)
-    ui/         Button, Card, Tag, Badge, ProgressBar
-    features/   SwipeCard, CourseCard, ParcoursCard, StatCard, StreakTracker, MasteryRadar
-  data/         contenu statique (catégories, cartes, cours, parcours)
-  store/        store Zustand persistant (progression utilisateur)
-  types/        modèle de données TypeScript
-  lib/          logique de gamification (XP → niveau/rang, streak)
-  styles/       design system (tokens Tailwind v4)
-docs/
-  ARCHITECTURE.md    vue d'ensemble technique et flux de données
-  DESIGN-SYSTEM.md   tokens de couleurs, typographies, style des composants
-CLAUDE.md            contexte projet pour les futures sessions IA
+## Vérifications
+
+```powershell
+npm run typecheck
+npm run verify:migration
+npm test
+npm run lint
+npm run export:android
+npm run export:ios
 ```
 
-Voir [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) et [docs/DESIGN-SYSTEM.md](docs/DESIGN-SYSTEM.md) pour le détail.
+Le contrôle de migration vérifie les contenus et illustrations contre leurs
+empreintes de référence. Les exports compilent le JavaScript et le bytecode Hermes ;
+ils ne produisent pas de binaires signés destinés aux stores.
 
-## État actuel du projet
+Les composants repris comportent encore des erreurs ESLint déjà présentes dans
+`sankofa-mobile`. Le lint reste exécuté et visible dans la CI en contrôle consultatif
+pendant cette préparation ; les autres contrôles mobiles et web restent bloquants.
 
-Cette base pose les **fondations** : échafaudage, design system, architecture, modèle de données, navigation à 4 onglets fonctionnelle avec contenu d'exemple minimal, et store persistant. Le contenu complet, le système de quiz interactif et les animations avancées sont prévus dans les phases suivantes (voir [CLAUDE.md](CLAUDE.md)).
+Les contrôles web restent accessibles avec `npm run lint:web`,
+`npm run typecheck:web`, `npm run test:web` et `npm run validate:web`.
+
+La sauvegarde de l’application web précédant cette réorganisation est dans
+`backups/kham-kham-web-before-expo57-20261016T020554Z.zip` (archive locale ignorée par Git).

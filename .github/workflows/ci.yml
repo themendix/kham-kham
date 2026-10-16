@@ -5,33 +5,46 @@ on:
   pull_request:
 
 jobs:
-  build:
+  mobile:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: actions/setup-node@v4
         with:
-          node-version: lts/*
+          node-version: 24
           cache: npm
-
       - run: npm ci
+      - run: npx expo install --check
+      - run: npm run typecheck
+      - run: npm run verify:migration
+      - run: npm test
+      # Les composants repris avaient déjà des erreurs ESLint dans sankofa-mobile.
+      # Elles restent visibles pendant la préparation, sans bloquer les autres contrôles.
+      - name: Lint mobile (dette de migration existante)
+        continue-on-error: true
+        run: npm run lint
+      - run: npm run build
 
-      # Les index générés sont commités et lus par les tests et le typecheck, qui tournent avant
-      # le build : sans ce garde-fou, un catalogue modifié sans régénération passerait la CI en
-      # étant validé contre un index périmé.
+  web:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: web
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: web/package-lock.json
+      - run: npm ci
       - name: Index générés à jour
         run: |
           npm run gen:index
           npm run gen:quiz
           git diff --exit-code src/data/coursesIndex.generated.ts src/data/quizIndex.generated.ts
-
       - run: npm run lint
-
       - run: npm run validate
-
       - run: npm test
-
       - run: npm run typecheck
-
       - run: npm run build

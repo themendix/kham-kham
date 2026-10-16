@@ -9,7 +9,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-01-egypte-antique",
     "categoryId": "histoire",
-    "title": "L'Égypte antique",
+    "title": "Égypte antique",
     "description": "Au bord du Nil, l'une des plus anciennes civilisations du monde est née en Afrique. Pharaons, pyramides, hiéroglyphes : découvre l'Égypte antique et ses liens profonds avec le reste du continent.",
     "emoji": "🏺",
     "xp": 70,
@@ -35,7 +35,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-02-koush-meroe",
     "categoryId": "histoire",
-    "title": "Le royaume de Koush et Méroé",
+    "title": "Koush et Méroé",
     "description": "Au sud de l'Égypte, le long du Nil, un puissant royaume africain a rivalisé avec les pharaons, régné sur l'Égypte, puis brillé par son fer et son écriture : le royaume de Koush.",
     "emoji": "🏹",
     "xp": 70,
@@ -61,7 +61,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-03-aksoum",
     "categoryId": "histoire",
-    "title": "Le royaume d'Aksoum",
+    "title": "Royaume d'Aksoum",
     "description": "Sur les hauts plateaux d'Éthiopie et d'Érythrée, Aksoum fut l'une des grandes puissances du monde antique, carrefour entre l'Afrique, l'Arabie et Rome — et l'un des premiers États chrétiens de l'histoire.",
     "emoji": "⛪",
     "xp": 70,
@@ -87,7 +87,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-04-carthage-afrique-du-nord",
     "categoryId": "histoire",
-    "title": "Carthage et l'Afrique du Nord antique",
+    "title": "Carthage antique",
     "description": "Fondée par des marchands venus d'Orient, Carthage devint une superpuissance méditerranéenne face à Rome. Autour d'elle, l'Afrique du Nord vit naître de puissants royaumes berbères.",
     "emoji": "⚓",
     "xp": 70,
@@ -113,7 +113,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-05-empire-du-ghana",
     "categoryId": "histoire",
-    "title": "L'empire du Ghana (Wagadou)",
+    "title": "Empire du Ghana",
     "description": "Bien avant le pays qui porte aujourd'hui son nom, l'empire du Ghana dominait le Sahel ouest-africain grâce à l'or et au commerce transsaharien. Les Arabes l'appelaient « le pays de l'or ».",
     "emoji": "🥇",
     "xp": 70,
@@ -139,7 +139,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-06-soundiata-mali",
     "categoryId": "histoire",
-    "title": "Soundiata Keïta et la naissance de l'empire du Mali",
+    "title": "Soundiata et le Mali",
     "description": "De prince exilé à fondateur d'empire, Soundiata Keïta a uni les Mandingues, bâti le Mali et donné à l'Afrique de l'Ouest l'une de ses plus anciennes chartes.",
     "emoji": "🦁",
     "xp": 70,
@@ -165,7 +165,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-07-mansa-moussa",
     "categoryId": "histoire",
-    "title": "Mansa Moussa et l'apogée du Mali",
+    "title": "Mansa Moussa",
     "description": "Souvent présenté comme l'homme le plus riche de l'histoire, Mansa Moussa a fait rayonner le Mali de Tombouctou jusqu'à La Mecque, et inscrit l'Afrique de l'Ouest sur les cartes du monde.",
     "emoji": "👑",
     "xp": 70,
@@ -191,7 +191,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-08-empire-songhai",
     "categoryId": "histoire",
-    "title": "L'empire Songhaï et Askia Mohammed",
+    "title": "Empire songhaï",
     "description": "Sur les rives du Niger, le Songhaï devint le plus vaste empire de l'histoire ouest-africaine, avec Gao pour capitale et de grands souverains réformateurs.",
     "emoji": "🐟",
     "xp": 70,
@@ -217,7 +217,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-09-tombouctou-djenne",
     "categoryId": "histoire",
-    "title": "Tombouctou et Djenné, foyers du savoir",
+    "title": "Tombouctou et Djenné",
     "description": "Deux villes de la boucle du Niger sont devenues des phares mondiaux de la connaissance, avec leurs universités, leurs bibliothèques de manuscrits et une architecture de terre unique au monde.",
     "emoji": "📚",
     "xp": 70,
@@ -243,7 +243,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-10-kanem-bornou",
     "categoryId": "histoire",
-    "title": "L'empire du Kanem-Bornou",
+    "title": "Kanem-Bornou",
     "description": "Autour du lac Tchad, un empire a duré près de mille ans, reliant l'Afrique centrale au monde méditerranéen par le commerce, la diplomatie et l'islam.",
     "emoji": "🐫",
     "xp": 70,
@@ -269,7 +269,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-11-cites-etats-haoussa",
     "categoryId": "histoire",
-    "title": "Les cités-États haoussa",
+    "title": "Cités haoussa",
     "description": "Dans le nord de l'actuel Nigeria, un réseau de cités marchandes prospères — Kano, Katsina, Zaria — a rayonné par le commerce, l'artisanat et le savoir, sans jamais former un empire unique.",
     "emoji": "🏙️",
     "xp": 70,
@@ -295,7 +295,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-12-royaume-benin-bronzes",
     "categoryId": "histoire",
-    "title": "Le royaume du Bénin (Edo) et ses bronzes",
+    "title": "Royaume du Bénin",
     "description": "Dans la forêt de l'actuel Nigeria, le royaume du Bénin a produit un art de cour d'une finesse exceptionnelle : les célèbres bronzes du Bénin, aujourd'hui au cœur d'un grand débat sur la restitution.",
     "emoji": "🎭",
     "xp": 70,
@@ -321,7 +321,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-13-empire-oyo-yoruba",
     "categoryId": "histoire",
-    "title": "L'empire Oyo et le monde yoruba",
+    "title": "Oyo et les Yoruba",
     "description": "Puissance de cavalerie de l'Afrique de l'Ouest, l'empire Oyo domina le pays yoruba grâce à un système politique équilibré et à une culture d'une richesse mondiale.",
     "emoji": "🐴",
     "xp": 70,
@@ -347,7 +347,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-14-royaume-ashanti",
     "categoryId": "histoire",
-    "title": "Le royaume ashanti",
+    "title": "Royaume ashanti",
     "description": "Au cœur de l'actuel Ghana, la confédération ashanti a bâti un puissant royaume de l'or, uni par un symbole sacré : le Tabouret d'or.",
     "emoji": "🪙",
     "xp": 70,
@@ -373,7 +373,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-15-royaume-dahomey",
     "categoryId": "histoire",
-    "title": "Le royaume du Dahomey",
+    "title": "Royaume du Dahomey",
     "description": "État militaire redouté du golfe de Guinée, le royaume du Dahomey s'est distingué par son armée — dont un célèbre corps de femmes soldats.",
     "emoji": "⚔️",
     "xp": 70,
@@ -399,7 +399,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-16-royaume-kongo",
     "categoryId": "histoire",
-    "title": "Le royaume du Kongo",
+    "title": "Royaume du Kongo",
     "description": "Vaste et bien organisé, le royaume du Kongo fut l'un des premiers États africains à nouer des relations diplomatiques d'égal à égal avec l'Europe — avant d'être miné par la traite.",
     "emoji": "✝️",
     "xp": 70,
@@ -425,7 +425,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-17-grand-zimbabwe",
     "categoryId": "histoire",
-    "title": "Le Grand Zimbabwe",
+    "title": "Grand Zimbabwe",
     "description": "En Afrique australe, une cité de pierre monumentale, bâtie sans mortier, témoigne d'un puissant royaume de l'or et du commerce — et dément les préjugés coloniaux.",
     "emoji": "🪨",
     "xp": 70,
@@ -451,7 +451,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-18-monomotapa-mutapa",
     "categoryId": "histoire",
-    "title": "Le royaume du Monomotapa (Mutapa)",
+    "title": "Monomotapa",
     "description": "Héritier du Grand Zimbabwe, l'empire du Mutapa domina l'Afrique australe et fascina les Portugais par la légende de ses mines d'or.",
     "emoji": "👑",
     "xp": 70,
@@ -477,7 +477,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-19-royaumes-grands-lacs",
     "categoryId": "histoire",
-    "title": "Les royaumes des Grands Lacs",
+    "title": "Royaumes des Grands Lacs",
     "description": "Autour des grands lacs d'Afrique de l'Est, des royaumes prospères — Buganda, Rwanda, Bunyoro — développèrent des États centralisés et des sociétés élaborées.",
     "emoji": "🌊",
     "xp": 70,
@@ -503,7 +503,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-20-ethiopie-medievale-lalibela",
     "categoryId": "histoire",
-    "title": "L'Éthiopie médiévale et les églises de Lalibela",
+    "title": "Éthiopie médiévale",
     "description": "Héritière d'Aksoum, l'Éthiopie chrétienne médiévale a taillé dans le roc des églises extraordinaires et maintenu, en plein cœur de l'Afrique, une civilisation unique.",
     "emoji": "⛪",
     "xp": 70,
@@ -529,7 +529,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-21-commerce-transsaharien",
     "categoryId": "histoire",
-    "title": "Le commerce transsaharien",
+    "title": "Commerce transsaharien",
     "description": "Pendant près de mille ans, des caravanes ont traversé le Sahara, reliant l'Afrique de l'Ouest au monde méditerranéen et faisant la fortune des grands empires du Sahel.",
     "emoji": "🐪",
     "xp": 70,
@@ -555,7 +555,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-22-islamisation-afrique-ouest",
     "categoryId": "histoire",
-    "title": "L'islamisation de l'Afrique de l'Ouest",
+    "title": "Islam en Afrique de l'Ouest",
     "description": "Porté par le commerce plutôt que par la conquête, l'islam s'est diffusé progressivement en Afrique de l'Ouest, se mêlant aux cultures locales pour donner un islam profondément africain.",
     "emoji": "☪️",
     "xp": 70,
@@ -581,7 +581,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-23-cote-swahilie",
     "categoryId": "histoire",
-    "title": "La côte swahilie et l'océan Indien",
+    "title": "Côte swahilie",
     "description": "Le long de la côte est-africaine, des cités marchandes florissantes ont fait le lien entre l'Afrique, l'Arabie, la Perse, l'Inde et la Chine, donnant naissance à la civilisation swahilie.",
     "emoji": "⛵",
     "xp": 70,
@@ -607,7 +607,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-24-traite-negriere-transatlantique",
     "categoryId": "histoire",
-    "title": "La traite négrière transatlantique",
+    "title": "Traite transatlantique",
     "description": "Du XVIᵉ au XIXᵉ siècle, des millions d'Africains furent déportés vers les Amériques. C'est l'une des plus grandes tragédies de l'histoire humaine, reconnue comme un crime contre l'humanité.",
     "emoji": "⛓️",
     "xp": 70,
@@ -633,7 +633,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-25-conference-berlin",
     "categoryId": "histoire",
-    "title": "La conférence de Berlin et le partage de l'Afrique",
+    "title": "Conférence de Berlin",
     "description": "En 1884-1885, les puissances européennes se réunirent à Berlin pour se partager l'Afrique — sans un seul Africain à la table. Ses conséquences pèsent encore aujourd'hui.",
     "emoji": "🗺️",
     "xp": 70,
@@ -659,7 +659,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-26-resistances-colonisation",
     "categoryId": "histoire",
-    "title": "Les grandes résistances à la colonisation",
+    "title": "Résister à la colonisation",
     "description": "Partout, les Africains ont résisté à la conquête coloniale — par les armes, la diplomatie ou la révolte. Des figures d'héroïsme trop souvent oubliées.",
     "emoji": "✊",
     "xp": 70,
@@ -685,7 +685,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-27-bataille-adoua",
     "categoryId": "histoire",
-    "title": "La bataille d'Adoua (1896)",
+    "title": "Bataille d'Adoua",
     "description": "En 1896, l'Éthiopie infligea à l'Italie une défaite retentissante — la plus grande victoire d'un État africain contre une puissance coloniale européenne.",
     "emoji": "🦅",
     "xp": 70,
@@ -711,7 +711,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-28-independances-africaines",
     "categoryId": "histoire",
-    "title": "Les indépendances africaines",
+    "title": "Indépendances africaines",
     "description": "Au milieu du XXᵉ siècle, les peuples africains reconquièrent leur souveraineté. L'année 1960 restera « l'année de l'Afrique ».",
     "emoji": "🎉",
     "xp": 70,
@@ -737,7 +737,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-29-panafricanisme-union-africaine",
     "categoryId": "histoire",
-    "title": "Le panafricanisme et l'Union africaine",
+    "title": "Panafricanisme",
     "description": "L'idée que les Africains partagent un destin commun a donné naissance à de puissants mouvements et à des institutions d'unité continentale, de l'OUA à l'Union africaine.",
     "emoji": "🌍",
     "xp": 70,
@@ -763,7 +763,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-30-apartheid-mandela",
     "categoryId": "histoire",
-    "title": "L'apartheid et Nelson Mandela",
+    "title": "Mandela et l'apartheid",
     "description": "En Afrique du Sud, un régime de ségrégation raciale a opprimé la majorité noire — jusqu'à la victoire d'une longue lutte pour la liberté, incarnée par Nelson Mandela.",
     "emoji": "🕊️",
     "xp": 70,
@@ -789,7 +789,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-31-tekrour-islam",
     "categoryId": "histoire",
-    "title": "Le Tekrour, berceau de l'islam au Sénégal",
+    "title": "Royaume du Tekrour",
     "description": "Sur les rives du fleuve Sénégal, le royaume du Tekrour fut l'un des tout premiers États d'Afrique de l'Ouest à embrasser l'islam, bien avant l'empire du Mali.",
     "emoji": "🕌",
     "xp": 70,
@@ -815,7 +815,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-32-djolof-royaumes-wolof",
     "categoryId": "histoire",
-    "title": "L'empire du Djolof et les royaumes wolof",
+    "title": "Empire du Djolof",
     "description": "Du XIVᵉ au XVIᵉ siècle, l'empire du Djolof rassembla les royaumes wolof et sérères du Sénégal, avant de se fragmenter en États rivaux qui structurèrent le pays jusqu'à la colonisation.",
     "emoji": "👑",
     "xp": 70,
@@ -841,7 +841,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-33-royaumes-serer-sine-saloum",
     "categoryId": "histoire",
-    "title": "Les royaumes sérères du Sine et du Saloum",
+    "title": "Sine et Saloum",
     "description": "Au cœur du Sénégal, les royaumes sérères du Sine et du Saloum ont préservé une culture originale, une religion ancestrale et de mystérieux monuments de pierre.",
     "emoji": "🪘",
     "xp": 70,
@@ -867,7 +867,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-34-goree-saint-louis",
     "categoryId": "histoire",
-    "title": "Gorée et Saint-Louis : comptoirs et mémoire de la traite",
+    "title": "Gorée et Saint-Louis",
     "description": "Deux sites du Sénégal, Gorée et Saint-Louis, furent des comptoirs européens majeurs — et sont aujourd'hui des lieux de mémoire classés au patrimoine mondial de l'UNESCO.",
     "emoji": "⚓",
     "xp": 70,
@@ -893,7 +893,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-35-lat-dior-cayor",
     "categoryId": "histoire",
-    "title": "Lat Dior et la résistance du Cayor",
+    "title": "Lat Dior et le Cayor",
     "description": "Damel du Cayor, Lat Dior incarna la résistance sénégalaise à la colonisation française, s'opposant notamment à la construction du chemin de fer.",
     "emoji": "🐎",
     "xp": 70,
@@ -919,7 +919,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-36-cheikh-ahmadou-bamba-mouridisme",
     "categoryId": "histoire",
-    "title": "Cheikh Ahmadou Bamba et le mouridisme",
+    "title": "Cheikh Ahmadou Bamba",
     "description": "Guide spirituel et fondateur du mouridisme, Cheikh Ahmadou Bamba mena une résistance pacifique à la colonisation et fonda la ville sainte de Touba.",
     "emoji": "☪️",
     "xp": 70,
@@ -945,7 +945,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-37-aline-sitoe-diatta",
     "categoryId": "histoire",
-    "title": "Aline Sitoé Diatta, héroïne de la Casamance",
+    "title": "Aline Sitoé Diatta",
     "description": "Jeune femme diola de Casamance, Aline Sitoé Diatta se dressa contre l'ordre colonial français — au point d'être surnommée « la Jeanne d'Arc de la Casamance ».",
     "emoji": "✊",
     "xp": 70,
@@ -971,7 +971,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-38-senghor-negritude-independance",
     "categoryId": "histoire",
-    "title": "Senghor, la Négritude et l'indépendance",
+    "title": "Senghor et la Négritude",
     "description": "Poète, penseur et homme d'État, Léopold Sédar Senghor porta le mouvement de la Négritude et devint le premier président du Sénégal indépendant.",
     "emoji": "📜",
     "xp": 70,
@@ -997,7 +997,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-39-reine-nzinga-angola",
     "categoryId": "histoire",
-    "title": "La reine Nzinga, résistante d'Angola",
+    "title": "Reine Nzinga",
     "description": "Reine du Ndongo et du Matamba, Nzinga fut une brillante diplomate et guerrière qui tint tête aux Portugais pendant près de quarante ans.",
     "emoji": "👑",
     "xp": 70,
@@ -1023,7 +1023,7 @@ export const COURSE_INDEX: CourseMeta[] = [
   {
     "id": "course-histoire-40-chaka-zoulou",
     "categoryId": "histoire",
-    "title": "Chaka Zoulou et le royaume zoulou",
+    "title": "Chaka et les Zoulous",
     "description": "Chef militaire de génie, Chaka transforma un petit clan en un puissant royaume zoulou et révolutionna l'art de la guerre en Afrique australe.",
     "emoji": "🛡️",
     "xp": 70,
@@ -1750,7 +1750,7 @@ export const COURSE_INDEX: CourseMeta[] = [
     "id": "course-geographie-36-ethiopie",
     "categoryId": "geo",
     "title": "Éthiopie",
-    "description": "Un géant des hauts plateaux, berceau de l'humanité et seul pays africain jamais colonisé, deuxième le plus peuplé du continent. Découvre l'Éthiopie.",
+    "description": "Un géant des hauts plateaux, berceau de l'humanité et terre de résistance à la conquête coloniale, deuxième pays le plus peuplé d'Afrique. Découvre l'Éthiopie.",
     "emoji": "🇪🇹",
     "xp": 50,
     "lessons": [
